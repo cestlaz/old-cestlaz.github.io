@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/</link>
+    <description>Recent content in Tags on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Sep 2018 19:02:09 -0400</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://cestlaz.github.io/tags/emacs/</link>
+      <pubDate>Wed, 19 Sep 2018 19:02:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>https://cestlaz.github.io/tags/meta/</link>
+      <pubDate>Fri, 21 Sep 2018 17:21:15 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/tags/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://cestlaz.github.io/tags/tools/</link>
+      <pubDate>Wed, 19 Sep 2018 19:02:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

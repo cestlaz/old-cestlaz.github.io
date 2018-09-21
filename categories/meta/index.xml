@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/categories/meta/</link>
+    <description>Recent content in Meta on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Sep 2018 17:21:15 -0400</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/categories/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First post again</title>
+      <link>https://cestlaz.github.io/post/firstpost/</link>
+      <pubDate>Fri, 21 Sep 2018 17:21:15 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/firstpost/</guid>
+      <description>The new site is live. I&#39;m now running a Hugo based blog. I set it up using the Mainroad theme which seems to support everything I want.
+Out of the box Hugo supports org-mode with pretty much all of its niceties like:
+ code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
+ MarthJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
+    </item>
+    
+  </channel>
+</rss>
