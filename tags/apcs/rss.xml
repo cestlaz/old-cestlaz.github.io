@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apcs on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/apcs/</link>
+    <description>Recent content in Apcs on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/apcs/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>How early for APCS</title>
+      <link>https://cestlaz.github.io/oldblog/how-early-apcs/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/how-early-apcs/</guid>
+      <description>In what grade should students take APCS? This question comes up from time to time.
+I&#39;ve heard answers ranging from middle school through never. Infact, years ago, my chairman relayed a conversation he had with Marvin Minsky where he asked Minsky what the high schools should be teaching with respect to CS. The answer was &#34;nothing.&#34; This was then amended to &#34;teach them to type.&#34; Of course this was a long time ago but I believe the sentiment was that college was the right time and the high schools don&#39;t know what they&#39;re doing and will just screw up the kids.</description>
+    </item>
+    
+    <item>
+      <title>Teaching APCS-A for the first time</title>
+      <link>https://cestlaz.github.io/oldblog/teaching-ap-first-time/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/teaching-ap-first-time/</guid>
+      <description>I got an email from a friend the other day. Among other things, he mentioned that he would be teaching APCS-A for the first time this year. He&#39;s a little trepidatious. He knows his stuff but he hasn&#39;t really done much using Java.
+I was going to respond in an email but thought I might share here instead.
+  TL;DR - for all you APCS teachers who are new or new to Java - learn  your core CS, lean on your resources and support and it&#39;s OK to tell  your kids &#34;</description>
+    </item>
+    
+    <item>
+      <title>A Plea to AP teachers- don&#39;t measure yourself by your scores</title>
+      <link>https://cestlaz.github.io/oldblog/teachers-you-arent-your-test-scores/</link>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/teachers-you-arent-your-test-scores/</guid>
+      <description>AP scores just came out. As usual, I see the posts and take part in conversations where teachers talk about their results. Some are happy about their results, some aren&#39;t, some don&#39;t really care.
+I just want to make a plea to all AP teachers out there:
+Don&#39;t let your value be dictated by the college board or any other exam.
+I never really cared much about my students&#39; actual AP scores.</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code 2016</title>
+      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016/</link>
+      <pubDate>Sat, 03 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016/</guid>
+      <description>Once again, it&#39;s time for Advent of Code - a series of small programming problems released once a day.
+I wrote a bit about it last year and you can still find last years problems here.
+It&#39;s only day three but so far, all of the problems look really nice for students in APCS-A or any similar intro course. I&#39;m thinking of looking at a couple of the problems this week with my class at Hunter.</description>
+    </item>
+    
+    <item>
+      <title>I guess I&#39;m a dumbass</title>
+      <link>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</link>
+      <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</guid>
+      <description>I like a fairly informal atmosphere in my classes. Students have to know that there&amp;rsquo;s a line between teacher and student but I also want them to feel like we&amp;rsquo;re all part of the Stuy CS family.
+Whenever we start a new term, it takes a while to break down the walls. The students don&amp;rsquo;t know what to expect of me, can they trust me? Am I a bozo? Who knows.</description>
+    </item>
+    
+    <item>
+      <title>Bucket Sorting</title>
+      <link>https://cestlaz.github.io/oldblog/2013-11-27-bucket-sorts/</link>
+      <pubDate>Wed, 27 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2013-11-27-bucket-sorts/</guid>
+      <description>In spite of the Java based annoyances I mentioned last time, I decided to go ahead and do Radix sort with my AP students. I usually don&amp;rsquo;t cover it in AP Computer Science, but I like getting the kids to think about using arrays as buckets as it&amp;rsquo;s a new way of thinking for them and it does give a non-trivial application that combines ararys and ArrayLists.
+It&amp;rsquo;s a nice little algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Teaching Languages</title>
+      <link>https://cestlaz.github.io/oldblog/2013-11-23-teaching-languages/</link>
+      <pubDate>Sat, 23 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2013-11-23-teaching-languages/</guid>
+      <description>Java&amp;rsquo;s never been my favorite language either for using or for teaching.
+As a programmer, after starting with languages like Fortran and Pascal, I really cut my teeth with C. More recently, Python has been my go to language to get real work done.
+From a teaching point of view most languages have good points and bad ones. When the AP class went from Pascal to C++ I lamented losing the simplicity and the low cost of entry.</description>
+    </item>
+    
+    <item>
+      <title>Stuyablo II</title>
+      <link>https://cestlaz.github.io/oldblog/2013-10-27-stuyabloii/</link>
+      <pubDate>Sun, 27 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2013-10-27-stuyabloii/</guid>
+      <description>Last week in my AP classes, we were working on inheritance.
+So, what to do?
+Last time around I had my classes work on a &amp;ldquo;speed dating&amp;rdquo; program - StuyDater. Back then JonAlf had his classes work on Stuyablo, that classic dungeon crawl.
+I still plan on reworking the StuyDater project, but first I decided to do my take on Stuyablo. Of course, we&amp;rsquo;ve improved on it. This time it&amp;rsquo;s Stuyablo II.</description>
+    </item>
+    
+    <item>
+      <title>Who won the election -- Quadratic to Linear Time!!!!!</title>
+      <link>https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_election-quadratic_to_linear_time/</link>
+      <pubDate>Sat, 23 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_election-quadratic_to_linear_time/</guid>
+      <description>Last week was crazy. Busy, stressful, late night after late night. It ended, though, on a great note.
+A young lady in my intro class found me in my office near the end of the day:
+ Student: Mr. Z, I wanted to make sure to catch you before vacation!
+Me: What&amp;rsquo;s up?
+Student: I wanted to tell you that today&amp;rsquo;s lesson was AWESOME!!!!!!
+ Wow. I&amp;rsquo;ve been teaching 23 years and that&amp;rsquo;s never happened before!</description>
+    </item>
+    
+  </channel>
+</rss>

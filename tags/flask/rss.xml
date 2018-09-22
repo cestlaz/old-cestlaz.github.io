@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flask on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/flask/</link>
+    <description>Recent content in Flask on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Oct 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/flask/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Installing Flask in a virtualenv</title>
+      <link>https://cestlaz.github.io/oldblog/flask-install-flask/</link>
+      <pubDate>Sat, 15 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/flask-install-flask/</guid>
+      <description>Second video in the Flask series. This one goes over installing Flask in a virtualenv and running a simple Flask application.
+Nothing much to say about this other then check out the video:</description>
+    </item>
+    
+    <item>
+      <title>Setting up Linux for Flask Web Development</title>
+      <link>https://cestlaz.github.io/oldblog/flask-setup-virtualenv/</link>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/flask-setup-virtualenv/</guid>
+      <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&#39;re in the program.
+This means we can finally start using the web as a way of displaying and sharing our projects.
+For this type of web development, I&#39;m a big fan of using Flask. Flask is a Python microframework.</description>
+    </item>
+    
+  </channel>
+</rss>

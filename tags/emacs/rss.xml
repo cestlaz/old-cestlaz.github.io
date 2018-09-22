@@ -20,5 +20,620 @@
       <description>Link to current configuration: https://github.com/zamansky/using-emacs Introduction Video 1 - Setting up the package manager Video 2 - Intro to Org Mode Video 3 - How to think about Emacs Video 4 - Buffers Video 5 - Windows Video 6 - Search / Swiper Video 7 - Navigation / avy Video 8 - Autocomplete Video 9 - Themes Video 10 - Org init files Video 11 - org-reveal / reveal.js Video 12 - Python, Flycheck, Jedi Video 13 - Python, Yasnippet Video 14 - Thoughts on Using Emacs Video 15 - Macros Video 16 - Undo Tree Video 17 - Small packages Video 18 - narrowing and iedit Video 19 - moving to a live config Video 20 - Yanking Video 21-web-mode Video 22-emacsclient Video 23 - capture 1 Video 24 - capture 2 Video 25 - Tramp Video 26 - Google Calendar and Org Agenda Video 27 - Shell and eshell Video 28 - Rectangles Video 29 - elfeed 1  Video 30 - elfeed 2 - Hydras  Video 31 - elfeed 3 - macros Video 32 - C++ Video 33 - Projectile Dumb-jump Video 34 - ibuffer and emmet Video 35 - blogging Video 36 - A Touch of Elisp Video 37 - Treemacs file browser Video 38 - dired Video 39 - mu4e Video 40 - Atomic chrome Video 41 - Pandoc Video 42 - Git Gutter and Timemachine Video 43 - Music Video 44 - pdf Video 45 - Company or Autocomplete Video 46 - auto yasnippets Video 47 - Magit Video 48 - silversearcher Video 49 - mu4e conversation Video 50 - presentations </description>
     </item>
     
+    <item>
+      <title>Rite Of Passage Projects</title>
+      <link>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</guid>
+      <description>JCS&#39;s post on Irreal today brought me back. It was about Brief which was the editing hotness back in the day. I played with it a little really mostly used Emacs clones for real work when I was stuck on MS-DOS systems. Usually either JOVE or Epsilon
+In the comments Jon reminded me about the MKS Toolkit which brought most everyday Unix tools to DOS along with a shell and a version of Vi.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs Episode 50 - presentations</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-50-presentations/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-50-presentations/</guid>
+      <description>Next weekend I&#39;ll be attending the Computer Science Teachers Association&#39;s annual conference. It&#39;s probably the biggest conference focussed on K12 Computer Science education. This year, in addition to attending, I&#39;ll be giving a talk on preservice and inservice CS teacher preparation programs. I&#39;ll be talking about the new New York State certification requirements along with what we&#39;re rolling out at Hunter College.
+This means putting together a slide deck for the session.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs Episode 49 mu4e-conversation</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-49-mu4e-conversation/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-49-mu4e-conversation/</guid>
+      <description>I&#39;ve been using Emacs for email for a couple of years now. Not for everything, for now my personal email is still Gmail but work is sent and read through Emacs. I&#39;m currently using mu4e and while it has a few quirks and limitations, I like it very much. You can take a look on how I configure and use it here.
+The other day I saw this thread on Emacs about a new package - mu4e-conversation.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 48 Silversearcher</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-48-silversearcher/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-48-silversearcher/</guid>
+      <description>A couple of days ago I wrote about on my lab grading workflow. In the post I mentioned that I used Emacs to easily navigate between student folders and files so I can actually look at their work in addition to their programs output and test results.
+The key is a combination of dired and ag, Emacs&#39;s interface to the Silver Searcher which is something like a recursive code grep on steroids.</description>
+    </item>
+    
+    <item>
+      <title>Unit Tests Grading Workflow</title>
+      <link>https://cestlaz.github.io/oldblog/unit-tests-grading-workflow/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/unit-tests-grading-workflow/</guid>
+      <description>I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.
+Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs Episode 47 - Magit</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-47-magit/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-47-magit/</guid>
+      <description>I&#39;ve been holding off on doing a Magit video for a while. Mostly because I wasn&#39;t using it exclusively and also because there are already a number of good Magit videos and resources out there.
+What changed? Along with the new version of Magin, Jonas Bernoulli wrote up a walkthrough of the Magit interface. For whatever reason, it all finally clicked.
+In spite of what the documentation says, Magit is not an interface for git.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 46 Auto Yasnippets</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-46-auto-yasnippets/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-46-auto-yasnippets/</guid>
+      <description>The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.
+It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.
+There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:
+count_of_red = get_total(&amp;#34;red&amp;#34;); count_of_blue = get_total(&amp;#34;blue&amp;#34;); count_of_green = get_total(&amp;#34;green&amp;#34;);  You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 45 - Company or Autocomplete</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-45-company/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-45-company/</guid>
+      <description>This is a good time to be an Emacs user. In addition to all of the great packages and tools being developed there seem to be more people regularly blogging and making videos about Emacs than ever before.
+Planet Emacsen aggregates a ton of Emcas blogs and Emacs Legend Sacha Chua posts what&#39;s going on in emacs every week on her blog.
+on the video front, uncle dave has recently joined the ranks of emacs video producers.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 44 - An org-mode workflow for application processing</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-44-pdf/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-44-pdf/</guid>
+      <description>One of my titles at Hunter College is Director of the Daedalus CS Honors program. It&#39;s something like a Hunter specific, CS specific version of the CUNY Macaulay Honors program.
+Hunter gives all its students the ability to get a great computer science education at a fraction of the cost of a private institution and if you&#39;re a Daedalus scholar you also get a scholarship, a laptop, special classes (with me :-) ), activities and more.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 43 - Music with MPD</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-43-music/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-43-music/</guid>
+      <description>I like to listen to music at work. Sometimes I just stream from YouTube, Soundcloud, Spotify or some other online source but if you&#39;re a person of a certain age, like me, you probably have quite an mp3 collection. All those CDs that have been ripped not to mention some converted vinyl.
+I used to use the Music Player Daemon or MPD back in the day. It would run in the background and you could connect to it using lots of clients.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 42 - Git Gutter and Time Machine</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-42-git-gutter/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-42-git-gutter/</guid>
+      <description>One day I&#39;ll do a Magit video but since there are already some good ones out there I thought I&#39;d share a couple of other great git related packages.
+The first is Git Gutter which adds markers on the side gutter of your buffer so you know what&#39;s changed since you&#39;re last commit. I pretty much use it exclusively for that visual but it can also be used to cmmit and revert individual chunks of your changes.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 41 Pandoc</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-41-pandoc/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-41-pandoc/</guid>
+      <description>Another Emacs quick hit today. Actually, not really Emacs. Today&#39;s video is a quick, really quick, look at Pandoc. Pandoc is a document converter.
+Here are the formats that Pandoc can covert read from:
+  Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,  MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,  LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,  Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,  Vimwiki, EPUB, ODT, and Word docx.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 40 - Atomic Chrome</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-40-atomic-chrome/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-40-atomic-chrome/</guid>
+      <description>Thanks to everyone who voted for topics or commented with suggestions for videos. I&#39;ll try to get to them in the coming months.
+Today is just a quick hit on Atomic Chrome - an Emacs package and browser extension that allows you to edit web form inputs with Emacs.
+UPDATE I forgot to mention that you can set a shortcut key, at least in chrome rather than clicking on the icon.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 2017 Recap</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-2017-recap/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-2017-recap/</guid>
+      <description>This past year I recorded 14 Using Emacs videos. This is on top of the 25 videos I made last year. The fall off in production is understandable. I got through my day to day configuration in the late 20s and since then the videos have just been on things I&#39;ve rediscovered, things that became useful and things that I just found interesting. It was also a busier year.
+Why did I start the series?</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 39 - mu4e</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-39-mu4e/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-39-mu4e/</guid>
+      <description>I generally use three email accounts. My personal one, work one, and one for my non-profit. For a couple of years, I&#39;ve been using mu4e under Emacs for both my work and non-profit email accounts and gmail for my personal account.
+ I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons: There are parts of my configuration that are copied from others and I really don&#39;t understand.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 38 - dired</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-38-dired/</link>
+      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-38-dired/</guid>
+      <description>The 38th installment of Using Emacs is about dired, Emacs&#39; built in mode for navigating and working with directories.
+I&#39;m not a dired power user and in fact am just now making a real effort to explore it and work it into my daily workflow and with that in mind, I&#39;d love to hear some configuration and use suggestions from people who use it regularly.
+Here&#39;s the configuration I use:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 37 - Treemacs file browser</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-37-treemacs/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-37-treemacs/</guid>
+      <description>I&#39;ve been meaning to get back to making Emacs videos but I&#39;ve been having trouble figuring out what to record.
+People have asked for Magit but I only use the basics and I think there are already some great videos on it out there. I&#39;d also like to get more comfortable with DIRED mode and then do a video on it but I&#39;m not there yet. I&#39;ve also been looking into packages that manage workspaces like Eyebrowse and Persp-mode but neither are really doing it for my workflow.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 36 - A Touch of Elisp</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-36-touch-of-elisp/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-36-touch-of-elisp/</guid>
+      <description>I&#39;ve been working on a vue.js project this summer. During the school year I really can&#39;t dive into code so it&#39;s been fun.
+I&#39;ve already showed you most of the Emacs tools I use for development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and all. One thing I couldn&#39;t easily do was arrange windows the way I wanted.
+I&#39;ve been setting up Emacs with one large window and a couple of smaller ones:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 35 - Blogging</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-35-blogging/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-35-blogging/</guid>
+      <description>Very little new Emacs in today&#39;s episode of Using Emacs. The video shows my old blogging workflow and what I&#39;m playing with now.
+The only new Emacs covered is the prodigy package which lets you run services under Emacs. I use it to run Nikola&#39;s development server but I think prodigy will also be useful when I start writing that knitting application I promised my wife.
+When I started this blog, I used Jekyll.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 34 - ibuffer and emmet</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-34-ibuffer-emmet/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-34-ibuffer-emmet/</guid>
+      <description>A couple of quick, unrelated packages today.
+first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
+Out of the box, C-x C-b is bound to the Emacs list-buffers** command. It brings up a buffer with all the buffers listed inside it. You can navigate that buffer and hit enter on a particular buffer to go to it.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 33 - projectile, dumb-jump</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-33-projectile-jump/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-33-projectile-jump/</guid>
+      <description>If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
+Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
+Here&#39;s my configuration:
+;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &amp;#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))  Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named **.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 32 - C&#43;&#43;</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-32-cpp/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-32-cpp/</guid>
+      <description>This video is specifically for my students or any students out there who are starting with C++ and emacs. The videos also longer than usual, coming in at a little over 20 minutes.
+The big difference is instead of building on my existing config, the code at the bottom is a complete standalone configuration. It&#39;s all pulled from the main config with one additional package.
+By taking the code at the bottom and putting in into a file named init.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 31 - elfeed part 3 - macros</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-31-elfeed-3/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-31-elfeed-3/</guid>
+      <description>In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
+Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 30 - elfeed part 2 - Hydras</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-30-elfeed-2/</link>
+      <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-30-elfeed-2/</guid>
+      <description>In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
+It&#39;s emacs so there has to be a solution.
+Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 29 -elfeed part 1</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-29-elfeed/</link>
+      <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-29-elfeed/</guid>
+      <description>Since the demise of Google Reader, I&#39;ve been using Feedly to read my streams. Feedly&#39;s a nice product and it&#39;s been working well for me for quite some time.
+A few days ago, I decided to see what emacs had to offer on the feed reader front. One solution was Gnus but then I&#39;ve never been able to get my head around Gnus. Another was elfeed.
+I thought I&#39;d give elfeed a go.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 28 -Rectangles</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-28-rectangles/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-28-rectangles/</guid>
+      <description>One of my favorite but little used emacs features is rectangular editing. It&#39;s little used because I don&#39;t need it all that often. It&#39;s one of my favorites because when I do need it, it&#39;s just so amazingly useful.
+The idea is you can mark a rectangle of text, cut it and later paste it. This means that if you have three columns of text:
+a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even just the b e and h, cut it and paste it elsewhere as a rectangle.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 27 - shell and eshell</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-27-shell/</link>
+      <pubDate>Fri, 27 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-27-shell/</guid>
+      <description>While I use emacs for all all sorts of things, one of the things I haven&#39;t done much is run shells from within emacs. I&#39;m not sure why. I&#39;m a command line wonk and adding command line goodness and emacs together seems like a natural. Maybe it&#39;s because back in the day I spent a lot of time on MS-DOS systems. You could get a reasonable Unixy facsimile using tools like the MKS toolkit and I like so many other young computer scientists wrote our own small shells when we learned C so I used that insted of command.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 26 - Google Calendar, Org Agenda</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-26-gcal/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-26-gcal/</guid>
+      <description>A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
+I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 25 - Tramp</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-25-tramp/</link>
+      <pubDate>Mon, 26 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-25-tramp/</guid>
+      <description>Today&#39;s video talks about using emacs Tramp mode.
+Tramp mode allows you to edit remote files using your local emacs. I usually do this over ssh.
+To edit a file on a machine www.cstuy.org I would first **find-file** using C-c C-f and then for the file name to open:
+/ssh:www.cstuy.org:/home/zamansky/sc/testfile  this would open the file testfile in the absolute directory **/home/zamansky/sc**. If my username on the remote machine is different:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 24 - Org Capture 2</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-24-capture-2/</link>
+      <pubDate>Sat, 03 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-24-capture-2/</guid>
+      <description>Not much in today&#39;s actual post. The video is a continuation of the last one on org-capture.
+The video goes over how I set things up to pop up a new frame to do a capture even if emacs isn&#39;t on screen (as long as it&#39;s running) by hitting F1. I would have preferred to bind to C-c c - the same as within emacs but I havn&#39;t figured out how to do that in Ubuntu or Mint Linux yet.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 23 - Org Capture 1</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-23-capture-1/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-23-capture-1/</guid>
+      <description>Org mode has an amazing feature - org-capture. I only started using it recently but it&#39;s really awesome.
+What took me so long?
+Probably that the manual seemed a little intimidating.
+It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
+ recording blog ideas managing bookmarks taking short Notes managing my calendar.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 21 - web mode</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-21-web-mode/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-21-web-mode/</guid>
+      <description>Quick post today.
+The video goes over web-mode - my preferred weapon for html and all the goodies you embed in an html file.
+It&#39;s multi-modal so it acts sensibly regardless of wether you&#39;re editing html, css, javascript or even templates in a single file.
+Note: In the video, web-mode wasn&#39;t automatically inserting quotes. I had to set hte following variable to fix this:
+(setq web-mode-enable-auto-quoting t)  Giving the final configuration I&#39;m currently using:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 22 - emacsclient</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-22-emacsclient/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-22-emacsclient/</guid>
+      <description>Another quick hit today.
+This video is really setting the stage for hte next two, where I talk about org-mode capturing.
+Today, we&#39;re demoing the use of the emacs server and client.
+Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 20 - yanking</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-20-yanking/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-20-yanking/</guid>
+      <description>Today&#39;s video is a bit of a follow up on the last one as well as a few miscillaneous configuration.
+We got some comments on alternate ways to load a file if it exists - it&#39;s always cool to see how different people end up doing similar things.
+We then talk about three little configurations. Two I found out about reading Jon Sander&#39;s (jcs) blog Irreal. Jon&#39;s blog is a terrific source of emacs info - if you don&#39;t subscribe, you should.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 19 - moving to a live config</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-19-live/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-19-live/</guid>
+      <description>Some of the videos I want to make are going to be much easier to do if I&#39;m working in my own account where my whole file tree is available.
+It&#39;s also a little annoying changing between my full emacs config and the one I&#39;m developing here.
+So, I decided to move to this config for my real config and as I make more videos move parts of my old configuration over to this new one.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 18 - Narrowing and iedit</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-18-narrow/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-18-narrow/</guid>
+      <description>I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.
+First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.
+For example, let&#39;s say you had the following code:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 17 - misc small packages</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-17-misc/</link>
+      <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-17-misc/</guid>
+      <description>I&#39;m working on getting enough of my real configuration into this series so that I can dump my current one and use this one all them time and grow it back up an episode at a time.
+I think we&#39;re almost there.
+This time, we&#39;re looking at a few small packages that I use all the time.
+Highlight line Mode (global-hl-line-mode t)  this turns on highlight line mode. It makes it easy to see the line the cursor&#39;s on.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 16 - Undo Tree</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-16-undo-tree/</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-16-undo-tree/</guid>
+      <description>If you use emacs, you should keep an eye on Jon Snader&#39;s blog, irreal.org. A few days he posted on Undo Tree - a package that extends Emacs&#39;s built in undo functionality.
+Basic emacs has undo, bound to C-/ or C-_ but that&#39;s about it. Undo tree, which you can set up with:
+(use-package undo-tree :ensure t :init (global-undo-tree-mode))  adds two key features. First is redo, which you get by adding the shift key to the undo keychords.</description>
+    </item>
+    
+    <item>
+      <title>User friendly - I do not think that means what you think it means</title>
+      <link>https://cestlaz.github.io/oldblog/user-friendly/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/user-friendly/</guid>
+      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.
+This called to mind those countless discussions about tools being user friendly. I&#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.
+Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39;t user friendly.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 15 - Macros</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-15-macros/</link>
+      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-15-macros/</guid>
+      <description>I originally planned on do some videos on C++ development but I&#39;m just not feeling it. Probably because I&#39;m excited to be working with my new class and we&#39;re working in Python. We&#39;re not going to be using C+++ for a few months so I&#39;ll get to those videos a little later.
+Today, I want to cover what I consider a leatherman or multi-tool for Emacs. Something that isn&#39;t perfect for any particular job but can get almost any job done: Macros.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 14 - Thoughts</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-14-thoughts/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-14-thoughts/</guid>
+      <description>Sorry for the incosistancy of the posts. I hope to get to that one video a week soon but I&#39;ve still got a hectic couple of weeks ahead.
+No new material this week, or at least very little. This week, I talk about some thoughts on the &#34;Using Emacs&#34; series.
+In the video I talk about Sacha Chua and her work as a leader in the Emacs community. Check out her stuff here: http://sachachua.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 13 - Yasnippet</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-13-yasnippet/</link>
+      <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-13-yasnippet/</guid>
+      <description>It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
+(use-package elpy :ensure t :config (elpy-enable))  The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 12 - Flycheck, Jedi, Python</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-12-python/</link>
+      <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-12-python/</guid>
+      <description>This week, we&#39;re going to look at my setup for Python programming.
+I&#39;m an educator, not a professional developer so I&#39;m not working in huge code bases with dozens or more files at a time. I do periodically work in medium size code bases and will talk about cross file navigation and project management later on. There are also more powerful emacs Python packages. One being elpy. Elpy looks pretty cool but for me, it&#39;s overkill.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 11 - Reveal.js presentations</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-11-reveal/</link>
+      <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-11-reveal/</guid>
+      <description>Happy to be back after a couple of weeks.
+My wife and son spent some time in San Francisco, Mountain View, and Seattle. The main reason was to see our daughter who&#39;s interning out there for the summer but it was also a great opportunity to catch up with over 100 former students. If you&#39;re interested in seeing more, I wrote a bit about it here.
+I was originally going to start talking about Python development but then saw this post on reddit about reveal.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 10 - org init files</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-10-org-init/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-10-org-init/</guid>
+      <description>I&#39;ll be traveling for the next couple of weeks so I probably won&#39;t have time for another video until mid to late July. I&#39;ll probably write a post about this series and do some regular blogging over that time but probably no new videos for a couple of weeks.
+ Also, a couple of notes about the series: Instead of making a separate git branch for each episode, I&#39;m just adding on to the master branch on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 9 - Themes</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-9-themes/</link>
+      <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-9-themes/</guid>
+      <description>Now that we have a nice basic configuration, let&#39;s make Emacs look a little nicer.
+Like most editors, Emacs can be extensively themed.
+As shown in the video, you can quickly see the built in themes using the customize-themes command.
+You can load one of these themes by using the load-theme command interactively or, more likely by putting:
+(load-theme &amp;#39;leuven t)  in your init.el. The above code loads the built in leuven theme.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 8 - Autocomplete</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-8-autocomplete/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-8-autocomplete/</guid>
+      <description>Out of the box, Emacs supports various types of completion.
+Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.
+We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 7- Navigation with Avy</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-7-avy/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-7-avy/</guid>
+      <description>Here&#39;s a really cool navigation method that I&#39;ve been meaning to use more. Avy is a replacement for ace-jump mode which is an implementation of easymotion, a vim plugin.
+It&#39;s pretty cool and lets you quickly navigate to any spot on the screen.
+After triggering avy, or more specifically the **avy-goto-char** function, emacs prompts you for a single character. When you type it, all instances of the character that start out words change to a highlighted letter.</description>
+    </item>
+    
+    <item>
+      <title>Better Comments or tooling as a time sink</title>
+      <link>https://cestlaz.github.io/oldblog/better-comments/</link>
+      <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/better-comments/</guid>
+      <description>The other day my friend and fellow CS Ed Blogger Alfred Thompson wrote about Better Comments, an extension for visual studio that displays comments that are marked up with special characters in order to highlight them. Here&#39;s a screenshot:
+https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png
+So, the first thing I though was &#34;I bet emacs could do that pretty easily&#34; and down the rabbit hole I went.
+I had to figure out something about how emacs themes and font-locking (emacs for syntax highlighting) works and of course spent far too much time learning about Emacs, my favored tool, rather than getting actual work done, but I came up with this:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 6 - Searching a Swiper</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-6-swiper/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-6-swiper/</guid>
+      <description>This video is all about using incremental search to navigate through your emacs buffers.
+
+You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).
+They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.
+Part of the Swiper package includes ivy and counsel which I use instead of ido.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 5 - Windows</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-5-windows/</link>
+      <pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-5-windows/</guid>
+      <description>Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.
+I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
+
+This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 3 - How to think about Emacs</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-3-elisp/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-3-elisp/</guid>
+      <description>Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+In some ways, it&#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.
+In this video, I try to explain the way I think about Emacs and why it&#39;s so cool.
+The only change we made to our configuration was adding:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - 4 - Buffers</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-4-buffers/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-4-buffers/</guid>
+      <description>Now that we&#39;re past the intro material, we&#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&#39;re covering, fit it into your work flow, and really get comfortable with it.
+This time we&#39;ll dive into using Emacs effectively with buffers.
+Watch the video and then make a real effort to use buffers over the next few emacs sessions. Before you know it, they&#39;ll be a natural part of your work flow.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - Intro to Org Mode</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-2-org/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-2-org/</guid>
+      <description>This video is a brief introduction to org-mode, a mode I use for all sorts of things.
+We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
+Actually, all my blog posts are written in org-mode.
+Here are the important lines to add to your Emacs init.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - Introduction</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-introduction/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-introduction/</guid>
+      <description>I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.
+I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs - Setting up the Package Manager</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-1-setup/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-1-setup/</guid>
+      <description>This video will step you through setting up Emacs to use MELPA for packages.
+
+We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
+Here&#39;s the contents of that file:
+(setq inhibit-startup-message t) (require &amp;#39;package)(setq package-enable-at-startup nil)(add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa&amp;#34; . &amp;#34;https://melpa.org/packages/&amp;#34;))(package-initialize);; Bootstrap `use-package&amp;#39; (unless (package-installed-p &amp;#39;use-package)(package-refresh-contents)(package-install &amp;#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages: *try*: let&#39;s you try packages without installing them.</description>
+    </item>
+    
   </channel>
 </rss>

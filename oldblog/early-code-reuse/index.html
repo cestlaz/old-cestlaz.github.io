@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Early Code Reuse</title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta property="og:title" content="Early Code Reuse" />
+<meta property="og:description" content="I&#39;ve been following the tweets coming out of ICER2018. I&#39;ve never been to ICER but now am thinking about trying to get funding to go next year. One set of tweets involved students writing or using APIs or Libraries. This overlaps with Owen Astrachan&#39;s talk from this past year&#39;s CSTA conference on sorting. I was planning on writing a post about Owen&#39;s talk but I thought I&#39;d leave it for the school year closer to when sorting is typically covered." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/oldblog/early-code-reuse/" /><meta property="article:published_time" content="2018-08-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-08-16T00:00:00&#43;00:00"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Early Code Reuse"/>
+<meta name="twitter:description" content="I&#39;ve been following the tweets coming out of ICER2018. I&#39;ve never been to ICER but now am thinking about trying to get funding to go next year. One set of tweets involved students writing or using APIs or Libraries. This overlaps with Owen Astrachan&#39;s talk from this past year&#39;s CSTA conference on sorting. I was planning on writing a post about Owen&#39;s talk but I thought I&#39;d leave it for the school year closer to when sorting is typically covered."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126185083-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+  
+  <style>
+   .zlogo { height:100px; width:100px;float:right;}
+    </style>
+	<div class="container">
+		<div class="logo" role="banner">
+		  <a class="logo__link" href="/" title="C&#39;est la Z" rel="home">
+		    <div class="logo__title">C&#39;est la Z
+
+                      <img class="zlogo" src="/assets/thluffy.jpg">
+
+
+		    </div>
+		    
+				<div class="logo__tagline">Musings about education, computer science, and maybe a few other miscellaneous topics.</div>
+			</a>
+		</div>
+	</div>
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/">HOME</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://cestlaz-nikola.github.io/">OLD BLOG</a></li>
+		<li class="menu__item"><a class="menu__link" href="/stories/emacs">EMACS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/categories">CATEGORIES</a></li>
+		<li class="menu__item"><a class="menu__link" href="/tags">TAGS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/about">ABOUT</a></li>
+	</ul>
+</nav>
+
+</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+
+    <header class="post__header">
+			<h1 class="post__title">Early Code Reuse</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2018-08-16T00:00:00">August 16, 2018</time></div>
+		</header><div class="content post__content clearfix">
+
+
+		  <p>I've been following the tweets coming out of <a href="https://icer.acm.org/" title="ICER2018">ICER2018</a>. I've never been
+to ICER but now am thinking about trying to get funding to go next
+year. One set of tweets involved students writing or using APIs or
+Libraries. This overlaps with Owen Astrachan's talk from this past
+year's CSTA conference on sorting. I was planning on writing a post
+about Owen's talk but I thought I'd leave it for the school year
+closer to when sorting is typically covered.</p>
+
+<p>The points alluded to in the tweets go far deeper than can be
+addressed in one blog post and are more suited to the sorting post
+I'll write later on but I thought I'd share a lab that I stole from a
+friend of mine years ago to try to get the kids to abstract code into
+functions or methods early and to start to think about reusing blocks
+of code.</p>
+
+<p>I've talked about abstracting out and reusing code <a href="https://cestlaz.github.io/posts/refactoring" title="before">before</a>, after
+students have covered repetition but this lab
+can be done even earlier.  Part of the motivation is the age old
+problem of objects / functions / methods early or control structures
+early. With o/f/m early kids think about decomposition, layers, and
+abstractions but they don't have the tools to do a whole lot of
+interesting things. On the other hand, with control structures early,
+kids tend to get in the mindset of throwing everything in "main" at
+the top level.</p>
+
+<p>This lab tries to get the kids abstracting out and reusing or sharing
+code but doesn't require much more than methods or functions.</p>
+
+<p>The idea is to create an ASCII art robot or something similar. Of
+course, this could also be done in a graphical environment:</p>
+
+<pre><code>
+
+######################
+#                    #
+#   XX          XX   #
+#                    #
+#       XXXXX        #
+#                    #
+######################
+###
+###
+#############
+#           #
+########           ########
+#           #
+#           #
+#           #
+#############
+##      ##
+##      ##
+##      ##
+_
+</code></pre>
+
+<p>This can easily be done with a series of output instructions or
+possibly by building a string with embedded newlines.</p>
+
+<p>The interesting part comes when you have the student write different
+functions for the parts of the robot - the head, body, and legs.</p>
+
+<p>Students end up with routines like this:</p>
+
+<pre><code class="language-java"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String <span style="color:#a6e22e">generateHead</span><span style="color:#f92672">(){</span>
+String h <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;##########\n&#34;</span><span style="color:#f92672">;</span>
+h <span style="color:#f92672">=</span>    h <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;#        #\n&#34;</span><span style="color:#f92672">;</span>
+h <span style="color:#f92672">=</span>    h <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;#  X  X  #\n&#34;</span><span style="color:#f92672">;</span>
+h <span style="color:#f92672">=</span>    h <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;#         #\n&#34;</span><span style="color:#f92672">;</span>
+h <span style="color:#f92672">=</span>    h <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;###########\n&#34;</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">return</span> h<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+</code></pre>
+
+<p>and then can generate their robot:</p>
+
+<pre><code class="language-java"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String <span style="color:#a6e22e">generateRobot</span><span style="color:#f92672">(){</span>
+String r <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+r <span style="color:#f92672">=</span> r <span style="color:#f92672">+</span> generatehead<span style="color:#f92672">();</span>
+r <span style="color:#f92672">=</span> r <span style="color:#f92672">+</span> generateBody<span style="color:#f92672">();</span>
+r <span style="color:#f92672">=</span> r <span style="color:#f92672">+</span> generateLegs<span style="color:#f92672">();</span>
+<span style="color:#66d9ef">return</span> r<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+</code></pre>
+
+<p>Now for the fun part. Students can make a variety of heads, legs, and
+bodies. Going further, introduce if statements and random numbers and
+they can generate random robots:</p>
+
+<pre><code class="language-java"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String <span style="color:#a6e22e">genRobot</span><span style="color:#f92672">(){</span>
+Random r <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Random<span style="color:#f92672">();</span>
+String robot<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span><span style="color:#a6e22e">nextInt</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+robot <span style="color:#f92672">=</span> robot <span style="color:#f92672">+</span> generateHead1<span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">==</span>1<span style="color:#f92672">){</span>
+robot <span style="color:#f92672">=</span> robot <span style="color:#f92672">+</span> generateHead2<span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+robot <span style="color:#f92672">=</span> robot <span style="color:#f92672">+</span> generoateHead3<span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">/* Generate the rest of the robot here */</span>
+
+<span style="color:#66d9ef">return</span> robot<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+</code></pre>
+
+<p>Not the most elegant code but this can be done VERY early when the
+students don't know more advanced constructs and techniques.</p>
+
+<p>The class can also share robot "components" as long as there's a
+simple code sharing mechanism - perhaps using <a href="https://help.github.com/articles/about-gists/" title="gists">gists</a>.</p>
+
+<p>Finally, this can be revisited if desired later on once the class has
+covered more advanced language constructs.</p>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		</div>
+		
+	</article>
+</main>
+
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/oldblog/class-communications/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Class Communications</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/oldblog/rite-of-passage-projects/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Rite Of Passage Projects</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar">
+  <div class="widget-categories widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<div class="widget__content">
+	  
+	  
+          To receive posts via email:
+								<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="CestLaZ" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+								
+                
+	</div>
+	<br/>
+	<div class="widget_content">
+
+	  <a href="https://twitter.com/zamansky?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<a href="https://twitter.com/intent/tweet?screen_name=zamansky&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	  
+	</div>
+</div>
+
+
+
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://cestlaz.github.io/" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/firstpost/">First post again</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/blight-move/">Blight Move</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/creating-a-school/">Creating a school for CS</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/that-time-bill-gates-visited-afse/">That Time Bill Gates Visited AFSE</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/why-binary/">Do you need to know binary for CS?</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/emacs">Emacs</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/meta">Meta</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/adventofcode" title="Adventofcode">Adventofcode (7)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/algorithms" title="Algorithms">Algorithms (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ap" title="Ap">Ap (6)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/apcs" title="Apcs">Apcs (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/assessment" title="Assessment">Assessment (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/certification" title="Certification">Certification (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cli" title="Cli">Cli (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/community" title="Community">Community (15)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/competitions" title="Competitions">Competitions (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs" title="Cs">Cs (56)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs-education" title="Cs education">Cs education (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csed" title="Csed">Csed (17)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cseducation" title="Cseducation">Cseducation (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csforall" title="Csforall">Csforall (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cstuy" title="Cstuy">Cstuy (7)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (9)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/draft" title="Draft">Draft (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/editing" title="Editing">Editing (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/education" title="Education">Education (46)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/emacs" title="Emacs">Emacs (57)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ethicalcs" title="Ethicalcs">Ethicalcs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/flask" title="Flask">Flask (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/gifted" title="Gifted">Gifted (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/git" title="Git">Git (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/github" title="Github">Github (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/intro" title="Intro">Intro (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/learning" title="Learning">Learning (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/misc" title="Misc">Misc (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pd" title="Pd">Pd (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pedagogy" title="Pedagogy">Pedagogy (32)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/policy" title="Policy">Policy (47)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/programming" title="Programming">Programming (9)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/python" title="Python">Python (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/resources" title="Resources">Resources (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/shell" title="Shell">Shell (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/software-engineering" title="Software engineering">Software engineering (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching" title="Teaching">Teaching (24)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching-cs" title="Teaching cs">Teaching cs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tech" title="Tech">Tech (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tools" title="Tools">Tools (71)</a>
+
+
+          
+
+
+
+          
+
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/zamansky" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:zamansky@gmail.com">
+				<svg class="widget-social__link-icon icon-mail" viewBox="0 0 416 288" width="24" height="24" fill="#fff"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>zamansky@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+  
+	  <div class="footer__copyright">&copy; 2018 Mike Zamansky. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script><script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100530816);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif" /></p></noscript>
+
+
+
+</body>
+</html>

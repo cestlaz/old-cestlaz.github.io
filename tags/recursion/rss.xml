@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recursion on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/recursion/</link>
+    <description>Recent content in Recursion on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/recursion/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Teaching recursion early? Make sure to use a good tool.</title>
+      <link>https://cestlaz.github.io/oldblog/recursion-early/</link>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/recursion-early/</guid>
+      <description>I replied this tweet yesterday and thought I&#39;d expound a bit.
+We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.
+&amp;mdash; Mike Zamansky (@zamansky) May 29, 2018 
+We introduced recursion very early in our intro course at Stuy and I think it worked well.</description>
+    </item>
+    
+  </channel>
+</rss>

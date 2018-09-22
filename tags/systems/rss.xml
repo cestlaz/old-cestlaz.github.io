@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/systems/</link>
+    <description>Recent content in Systems on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/systems/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Sigcse2018 - Malloc Lab</title>
+      <link>https://cestlaz.github.io/oldblog/sigcse2018-malloc-lab/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/sigcse2018-malloc-lab/</guid>
+      <description>I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.
+I really liked both the paper and the talk.
+CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective.</description>
+    </item>
+    
+  </channel>
+</rss>

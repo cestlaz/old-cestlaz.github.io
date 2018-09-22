@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/robotics/</link>
+    <description>Recent content in Robotics on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/robotics/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Robots platforms and practicalities</title>
+      <link>https://cestlaz.github.io/oldblog/robot-survey/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/robot-survey/</guid>
+      <description>I received an email from a friend the other day asking me about a particular robotics platform she recently saw.
+I&#39;ve played with robotics on and off over the years ranging from building them from (not using) scratch using Atmel chips and programming them in assembly to using Arduino based platforms to using pre-built robot platforms. They&#39;re really cool and since they interact with the real world you can do all sorts of interesting and motivational things with students.</description>
+    </item>
+    
+  </channel>
+</rss>

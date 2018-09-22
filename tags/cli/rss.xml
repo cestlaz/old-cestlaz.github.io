@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cli on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/cli/</link>
+    <description>Recent content in Cli on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/cli/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>User friendly - I do not think that means what you think it means</title>
+      <link>https://cestlaz.github.io/oldblog/user-friendly/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/user-friendly/</guid>
+      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.
+This called to mind those countless discussions about tools being user friendly. I&#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.
+Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39;t user friendly.</description>
+    </item>
+    
+    <item>
+      <title>Shell short - tagging old posts in Nikola</title>
+      <link>https://cestlaz.github.io/oldblog/shell-short-tagging/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/shell-short-tagging/</guid>
+      <description>Quick post to add to the recent command line fu I&#39;ve been writing about.
+Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
+Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
+Nikola has a plugin tags which lets you manage tags from the command line.</description>
+    </item>
+    
+    <item>
+      <title>BASH scripting?</title>
+      <link>https://cestlaz.github.io/oldblog/bash-scripting/</link>
+      <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/bash-scripting/</guid>
+      <description>Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.
+A number of us made suggestions. I linked to this old blog post.
+One group member said she asked around for similar suggestions and the response she got was &#34;vi and awk.&#34; I wanted to jokingly respond &#34;and after they suggested that they got into their time machine and went back to the 70&#39;s.</description>
+    </item>
+    
+    <item>
+      <title>REPOST - Shell games - who confirmed attendance</title>
+      <link>https://cestlaz.github.io/oldblog/duplicate-emails/</link>
+      <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/duplicate-emails/</guid>
+      <description>Repost This is a repost from March 2015. It didn&#39;t transfer when I rebooted the blog.
+Original Quick post on why I love the Unix command line.
+We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.
+The kids signed up on a Google doc but we all know the story -- when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+    </item>
+    
+    <item>
+      <title>Should We Teach HTML?</title>
+      <link>https://cestlaz.github.io/oldblog/teaching-html/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/teaching-html/</guid>
+      <description>Yesterday, Doug Peterson wrote a &#34;Whatever happened to&#34; post subtitled HTML as an essential 21st Century skill? It&#39;s a nice post.
+I left a comment but thought I&#39;d elaborate here.
+No, knowing HTML is not programming - it&#39;s markup. Even so, when I help people design CS programs, I&#39;ll frequently recommend starting with HTML or at least introducing it early.
+Why?
+It&#39;s a gateway and not just to programming.
+HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;b&amp;gt; and ==:</description>
+    </item>
+    
+    <item>
+      <title>Shell Games - an introduction</title>
+      <link>https://cestlaz.github.io/oldblog/2014-02-04-shellgames-1-intro/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2014-02-04-shellgames-1-intro/</guid>
+      <description>A few weeks ago, I noticed this Twitter conversation between Alfred Thompson and Steve Keinath
+
+I&amp;#39;d love to see an Intro to Linux (way more than just install) as a 3-hour workshop at #CSTA14 @csteachersa
+&amp;mdash; Steve Keinath (@keinath) November 12, 2013 @alfredtwo @csteachersa Right. I know very little &amp;amp; would love a &amp;quot;zero to hero&amp;quot; Linux workshop.
+&amp;mdash; Steve Keinath (@keinath) November 12, 2013  
+I briefly considered proposing a session for the conference but it was just a day or two before the deadline, I don&#39;t know if I&#39;m going to be able to attend the conference, and besides, who said anything I proposed would be accepted.</description>
+    </item>
+    
+    <item>
+      <title>Why we script</title>
+      <link>https://cestlaz.github.io/oldblog/2013-01-24-why-we-script/</link>
+      <pubDate>Thu, 24 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/2013-01-24-why-we-script/</guid>
+      <description>I tell my students &amp;ldquo;the cool thing about what we do is that if we&amp;rsquo;re not happy with the way something works, we&amp;rsquo;ve got a shot at fixing it.&amp;rdquo;
+That came up this morning so I thought I&amp;rsquo;d share.
+I recently posted about the in-term projects my Software Development kids were working on. Well, now it&amp;rsquo;s time to grade their final projects.
+The code is up on GitHub. This morning I was faced with independently going to every project page and cloning each one:</description>
+    </item>
+    
+  </channel>
+</rss>

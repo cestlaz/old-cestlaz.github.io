@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curriculum on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/curriculum/</link>
+    <description>Recent content in Curriculum on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/curriculum/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Time To Create An Ethics Course</title>
+      <link>https://cestlaz.github.io/oldblog/time-to-create-an-ethics-course/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/time-to-create-an-ethics-course/</guid>
+      <description>I think it&#39;s time for me to start developing a CS Ethics class.
+An ethics course isn&#39;t a replacement for having teachers that live and model good behavior and weave ethical issues throughout the curriculum but still, adding a separate course on top of that has its merits.
+I&#39;m not in a rush to create this course. I might be done in a month or it might take a couple of years.</description>
+    </item>
+    
+    <item>
+      <title>NYC CS4All - This Is Not The CS We&#39;re Looking For</title>
+      <link>https://cestlaz.github.io/oldblog/this-is-not-the-cs-were-looking-for/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/this-is-not-the-cs-were-looking-for/</guid>
+      <description>It&#39;s no secret that I&#39;m something of an old curmudgeon in the K12 CS Education world and I&#39;ve been critical of a number of initiatives and organizations over the years but I&#39;ve been pretty quiet on the CS4All movement in NYC Department of Education. I&#39;ve had and any number of concerns though.
+This past week at the inaugural meeting of New York City&#39;s CSTA chapter we got a taste of the NYC CS4All Blueprint.</description>
+    </item>
+    
+    <item>
+      <title>Ethics, Cybersecurity, ethics, curricula  and standards</title>
+      <link>https://cestlaz.github.io/oldblog/cyber-ethics-curricula-standards/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/cyber-ethics-curricula-standards/</guid>
+      <description>This morning, I read Alfred Thompson&#39;s post on teaching cybersecurity. as Alfred says, it&#39;s something of a CS Ed buzzword this summer.
+Another hot topic in K12 CS Ed this summer is the inclusion of ethics in our CS courses courtesy of efforts like the #ethicalCS twitter chat every Wednesday at 8:00 Eastern time hosted by Saber Khan.
+Discussions about both topics include &#34;where should we be doing this?&#34; &#34;What should we be doing?</description>
+    </item>
+    
+    <item>
+      <title>Designing a course with constraints</title>
+      <link>https://cestlaz.github.io/oldblog/design-course-with-constraints/</link>
+      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/design-course-with-constraints/</guid>
+      <description>One of the hats I wear at Hunter is to build a new CS Honors program and to bring my particular brand of insanity to Hunter College CS as a whole.
+Yesterday was my last class for the semester so I thought I&#39;d write a bit about the course.
+For the Fall semester, I taught an intro programming course to the entire cohort. For some in the cohort, this was their first exposure to CS.</description>
+    </item>
+    
+    <item>
+      <title>Starting with scheme</title>
+      <link>https://cestlaz.github.io/oldblog/staring-with-scheme/</link>
+      <pubDate>Wed, 15 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/staring-with-scheme/</guid>
+      <description>Scheme is one of the languages used in Stuy&#39;s intro CS course. Like any other language, there are pros and cons of using it to introduce students to CS. Here are some of the reasons why I like Scheme as a first language and why despite that, I don&#39;t recommend it in many cases.
+Scheme certainly isn&#39;t mainstream. That&#39;s not the main reason why I like it but it is a side benefit.</description>
+    </item>
+    
+    <item>
+      <title>Selecting a starting language - why not Javascript</title>
+      <link>https://cestlaz.github.io/oldblog/starting-with-js/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/starting-with-js/</guid>
+      <description>I was catching up with the team at Stuy the other day and they mentioned that they were periodically getting pushback on their choice of languages, particularly in the intro class. The pushback was mostly in the form of &#34;why don&#39;t you start them with Javascript?&#34;
+Back in the day, when I created our intro class where we use Scheme, NetLogo and then later Python, I&#39;d get similar pushback but then it was &#34;</description>
+    </item>
+    
+    <item>
+      <title>Essential topics for an intro course (not)</title>
+      <link>https://cestlaz.github.io/oldblog/essentials-for-an-intro-course/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/essentials-for-an-intro-course/</guid>
+      <description>What essential topics should we teach in our intro courses? This seems to be a recurring topic recently.
+It can be an important topic but, unfortunately, too often, it seems that people have too myopic a view
+I remember thinking about this years ago when APCS moved from C++ to Java. Both languages have good and bad points both for practical and educational use. A big loss in the move to Java was memory management and the topics you could cover when memory issues arose.</description>
+    </item>
+    
+    <item>
+      <title>Lesson plans - scripts to springboards</title>
+      <link>https://cestlaz.github.io/oldblog/lesson-plans/</link>
+      <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/lesson-plans/</guid>
+      <description>I spent last Saturday up at the Microsoft offices in Times Square observing a TEALS training session. My fried Nathaniel Granor, Teals Regional Manager in the east has invited me a number of times and this time I was able to make it.
+If you don&#39;t know, TEALS is a program that takes volunteers in the tech industry and places them in classrooms. Unlike other programs, the TEALS volunteers work with the teachers while the kids learn some CS.</description>
+    </item>
+    
+    <item>
+      <title>Navajo Math Circles</title>
+      <link>https://cestlaz.github.io/oldblog/navajo-circles/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/navajo-circles/</guid>
+      <description>Yesterday, I saw the New York Premiere of Navajo Math Circles, a documentary on a Math Circle put in place to support and enrich the currently under-served community in the Navajo educational system.
+At their core, Math Circles are math outreach and enrichment programs. I&#39;m most familiar with the New York Math Circle. I&#39;m friends with many of their teachers and organizers and my son took part in their summer program for a couple of years.</description>
+    </item>
+    
+  </channel>
+</rss>

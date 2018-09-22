@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/c/</link>
+    <description>Recent content in C on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/c/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Rite Of Passage Projects</title>
+      <link>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</guid>
+      <description>JCS&#39;s post on Irreal today brought me back. It was about Brief which was the editing hotness back in the day. I played with it a little really mostly used Emacs clones for real work when I was stuck on MS-DOS systems. Usually either JOVE or Epsilon
+In the comments Jon reminded me about the MKS Toolkit which brought most everyday Unix tools to DOS along with a shell and a version of Vi.</description>
+    </item>
+    
+  </channel>
+</rss>

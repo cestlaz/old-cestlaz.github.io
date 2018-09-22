@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lessons on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/lessons/</link>
+    <description>Recent content in Lessons on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/lessons/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>There&#39;s always something to learn (from your students)</title>
+      <link>https://cestlaz.github.io/oldblog/when-they-change-the-script/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/when-they-change-the-script/</guid>
+      <description>One thing I&#39;ve learned from teaching is that there&#39;s always something new to learn. For the kids, yes, but I&#39;m talking about for the teacher.
+The other day, I taught a lesson I&#39;ve taught many times. Find the mode of a data set. That&#39;s the problem that they solve but the lesson is really about run time complexity, hidden complexity and using data structures in alternate ways.
+I blogged about this before so you can get an earlier take there although the code isn&#39;t formatted correctly due to blog conversions.</description>
+    </item>
+    
+  </channel>
+</rss>

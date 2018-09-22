@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problems on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/problems/</link>
+    <description>Recent content in Problems on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/problems/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Early Interesting Problems - Happy Ladybugs</title>
+      <link>https://cestlaz.github.io/oldblog/happy_ladybug/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/happy_ladybug/</guid>
+      <description>We all love interesting problems. The trouble is that it&#39;s hard to find suitably interesting problems for students when they&#39;re just learning the basics. In the very beginning the problems practically dictate the solution:
+ loop over a list and add all the elements or calculate the sum of a list of integers. Determine if number is prime Convert a word into pig-Latin  It&#39;s not that there&#39;s no thought involved in solving these but the students already know the mechanics of solving these by hand so it&#39;s a direct translation into a program.</description>
+    </item>
+    
+  </channel>
+</rss>

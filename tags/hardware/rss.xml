@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/hardware/</link>
+    <description>Recent content in Hardware on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Oct 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/hardware/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Chromebooks in K12</title>
+      <link>https://cestlaz.github.io/oldblog/chromebooks/</link>
+      <pubDate>Thu, 06 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/chromebooks/</guid>
+      <description>The discussion today over on AVC was Chromebooks in K12, a title I conveniently lifted.
+In the comments, I was asked my thoughts on chromebooks vs Linux on low end hardware so, here they are.
+Chromebooks are cheap, near instant on, and, if you&#39;re using Google Apps for education, little to no administration necessary.
+This is a HUGE win for schools.
+There are some issues. School WiFi, for example, is frequently insufficient which can be a problem for a device that&#39;s meant to be connected to the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Robots platforms and practicalities</title>
+      <link>https://cestlaz.github.io/oldblog/robot-survey/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/robot-survey/</guid>
+      <description>I received an email from a friend the other day asking me about a particular robotics platform she recently saw.
+I&#39;ve played with robotics on and off over the years ranging from building them from (not using) scratch using Atmel chips and programming them in assembly to using Arduino based platforms to using pre-built robot platforms. They&#39;re really cool and since they interact with the real world you can do all sorts of interesting and motivational things with students.</description>
+    </item>
+    
+  </channel>
+</rss>

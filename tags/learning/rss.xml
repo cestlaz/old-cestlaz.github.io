@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/learning/</link>
+    <description>Recent content in Learning on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/learning/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Using Emacs 40 - Atomic Chrome</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-40-atomic-chrome/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-40-atomic-chrome/</guid>
+      <description>Thanks to everyone who voted for topics or commented with suggestions for videos. I&#39;ll try to get to them in the coming months.
+Today is just a quick hit on Atomic Chrome - an Emacs package and browser extension that allows you to edit web form inputs with Emacs.
+UPDATE I forgot to mention that you can set a shortcut key, at least in chrome rather than clicking on the icon.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 39 - mu4e</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-39-mu4e/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-39-mu4e/</guid>
+      <description>I generally use three email accounts. My personal one, work one, and one for my non-profit. For a couple of years, I&#39;ve been using mu4e under Emacs for both my work and non-profit email accounts and gmail for my personal account.
+ I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons: There are parts of my configuration that are copied from others and I really don&#39;t understand.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 38 - dired</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-38-dired/</link>
+      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-38-dired/</guid>
+      <description>The 38th installment of Using Emacs is about dired, Emacs&#39; built in mode for navigating and working with directories.
+I&#39;m not a dired power user and in fact am just now making a real effort to explore it and work it into my daily workflow and with that in mind, I&#39;d love to hear some configuration and use suggestions from people who use it regularly.
+Here&#39;s the configuration I use:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 37 - Treemacs file browser</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-37-treemacs/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-37-treemacs/</guid>
+      <description>I&#39;ve been meaning to get back to making Emacs videos but I&#39;ve been having trouble figuring out what to record.
+People have asked for Magit but I only use the basics and I think there are already some great videos on it out there. I&#39;d also like to get more comfortable with DIRED mode and then do a video on it but I&#39;m not there yet. I&#39;ve also been looking into packages that manage workspaces like Eyebrowse and Persp-mode but neither are really doing it for my workflow.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 36 - A Touch of Elisp</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-36-touch-of-elisp/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-36-touch-of-elisp/</guid>
+      <description>I&#39;ve been working on a vue.js project this summer. During the school year I really can&#39;t dive into code so it&#39;s been fun.
+I&#39;ve already showed you most of the Emacs tools I use for development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and all. One thing I couldn&#39;t easily do was arrange windows the way I wanted.
+I&#39;ve been setting up Emacs with one large window and a couple of smaller ones:</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 35 - Blogging</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-35-blogging/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-35-blogging/</guid>
+      <description>Very little new Emacs in today&#39;s episode of Using Emacs. The video shows my old blogging workflow and what I&#39;m playing with now.
+The only new Emacs covered is the prodigy package which lets you run services under Emacs. I use it to run Nikola&#39;s development server but I think prodigy will also be useful when I start writing that knitting application I promised my wife.
+When I started this blog, I used Jekyll.</description>
+    </item>
+    
+  </channel>
+</rss>

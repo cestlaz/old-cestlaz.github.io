@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/resources/</link>
+    <description>Recent content in Resources on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/resources/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Awesome Cs Revisited</title>
+      <link>https://cestlaz.github.io/oldblog/awesome-cs-revisted/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/awesome-cs-revisted/</guid>
+      <description>Saw this tweet the other day so I though I would try to plug the Awesome CS Education list I started on GitHub:
+#csteachers...didn&amp;#39;t I see a list of CS teacher blogs here recently?
+&amp;mdash; Pam Whitlock (@PamWhitlock1) September 21, 2017 
+To answer the tweet, the closet thing I know to a list is Alfred Thompson&#39;s blog roll which is actually a post he wrote on his blog in 2012.</description>
+    </item>
+    
+    <item>
+      <title>A Community Curated List of CS Education Resources</title>
+      <link>https://cestlaz.github.io/oldblog/awesome-cs/</link>
+      <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/awesome-cs/</guid>
+      <description>One of the things I mentioned in my post on the CS Educators StackExchange was the fragmentation of resources for CS Educators. My friend and fellow CS teacher Ben pointed out that this is appropriate as we&#39;re so young as a community. He&#39;s absolutely right but until we mature, discover-ability can be a problem. We all have our resources and I for one am frequently surprised when talking to a friend and discovering that they don&#39;t know about a site or a mailing list that I&#39;ve known about for years.</description>
+    </item>
+    
+  </channel>
+</rss>

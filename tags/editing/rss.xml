@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editing on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/editing/</link>
+    <description>Recent content in Editing on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/editing/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Using Emacs Episode 49 mu4e-conversation</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-49-mu4e-conversation/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-49-mu4e-conversation/</guid>
+      <description>I&#39;ve been using Emacs for email for a couple of years now. Not for everything, for now my personal email is still Gmail but work is sent and read through Emacs. I&#39;m currently using mu4e and while it has a few quirks and limitations, I like it very much. You can take a look on how I configure and use it here.
+The other day I saw this thread on Emacs about a new package - mu4e-conversation.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 48 Silversearcher</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-48-silversearcher/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-48-silversearcher/</guid>
+      <description>A couple of days ago I wrote about on my lab grading workflow. In the post I mentioned that I used Emacs to easily navigate between student folders and files so I can actually look at their work in addition to their programs output and test results.
+The key is a combination of dired and ag, Emacs&#39;s interface to the Silver Searcher which is something like a recursive code grep on steroids.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs Episode 47 - Magit</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-47-magit/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-47-magit/</guid>
+      <description>I&#39;ve been holding off on doing a Magit video for a while. Mostly because I wasn&#39;t using it exclusively and also because there are already a number of good Magit videos and resources out there.
+What changed? Along with the new version of Magin, Jonas Bernoulli wrote up a walkthrough of the Magit interface. For whatever reason, it all finally clicked.
+In spite of what the documentation says, Magit is not an interface for git.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 46 Auto Yasnippets</title>
+      <link>https://cestlaz.github.io/oldblog/using-emacs-46-auto-yasnippets/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/using-emacs-46-auto-yasnippets/</guid>
+      <description>The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.
+It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.
+There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:
+count_of_red = get_total(&amp;#34;red&amp;#34;); count_of_blue = get_total(&amp;#34;blue&amp;#34;); count_of_green = get_total(&amp;#34;green&amp;#34;);  You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue.</description>
+    </item>
+    
+  </channel>
+</rss>

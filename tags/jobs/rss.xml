@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/jobs/</link>
+    <description>Recent content in Jobs on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/jobs/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Whiteboard interviews</title>
+      <link>https://cestlaz.github.io/oldblog/whiteboard-interviews/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/whiteboard-interviews/</guid>
+      <description>A few days ago, I saw a piece on David Heinemeier Hansson&#39;s tweet on whiteboard interviews:
+&amp;lt;p&amp;gt; &amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; data-lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;p lang=&amp;quot;en&amp;quot; dir=&amp;quot;ltr&amp;quot;&amp;gt;Hello, my name is David. I would fail to write bubble sort on a whiteboard. I look code up on the internet all the time. I don&amp;amp;#39;t do riddles.&amp;lt;/p&amp;gt;&amp;amp;mdash; DHH (@dhh) &amp;lt;a href=&amp;quot;https://twitter.com/dhh/status/834146806594433025&amp;quot;&amp;gt;February 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/p&amp;gt;  I&#39;m not a huge fan of the whiteboard interview but I think many of the tweets missed the point.</description>
+    </item>
+    
+  </channel>
+</rss>

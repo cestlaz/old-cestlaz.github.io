@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs Education on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/cs-education/</link>
+    <description>Recent content in Cs Education on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/cs-education/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>A Community Curated List of CS Education Resources</title>
+      <link>https://cestlaz.github.io/oldblog/awesome-cs/</link>
+      <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/awesome-cs/</guid>
+      <description>One of the things I mentioned in my post on the CS Educators StackExchange was the fragmentation of resources for CS Educators. My friend and fellow CS teacher Ben pointed out that this is appropriate as we&#39;re so young as a community. He&#39;s absolutely right but until we mature, discover-ability can be a problem. We all have our resources and I for one am frequently surprised when talking to a friend and discovering that they don&#39;t know about a site or a mailing list that I&#39;ve known about for years.</description>
+    </item>
+    
+    <item>
+      <title>CS Educators StackExchange</title>
+      <link>https://cestlaz.github.io/oldblog/cs-educators-stackexchange/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/oldblog/cs-educators-stackexchange/</guid>
+      <description>The CS Educators StackExchange is now in public beta. For those of you who are not in tech, StackExchange is a network of question answering sites. StackOverflow is probably the most famous - many peoples go to site for computer science and programming questions and answers.
+During this period of public beta the site will be working on defining itself and also on developing a critical mass of users. I hope the site succeeds and I encourage everyone to check it out, ask questions, answer some and let&#39;s all see where this goes.</description>
+    </item>
+    
+  </channel>
+</rss>
