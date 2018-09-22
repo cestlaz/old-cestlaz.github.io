@@ -13,40 +13,40 @@
     
     <item>
       <title>Rite Of Passage Projects</title>
-      <link>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</link>
+      <link>https://cestlaz.github.io/posts/rite-of-passage-projects/</link>
       <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/rite-of-passage-projects/</guid>
+      <guid>https://cestlaz.github.io/posts/rite-of-passage-projects/</guid>
       <description>JCS&#39;s post on Irreal today brought me back. It was about Brief which was the editing hotness back in the day. I played with it a little really mostly used Emacs clones for real work when I was stuck on MS-DOS systems. Usually either JOVE or Epsilon
 In the comments Jon reminded me about the MKS Toolkit which brought most everyday Unix tools to DOS along with a shell and a version of Vi.</description>
     </item>
     
     <item>
       <title>Advent of Code 2017 - Day 1</title>
-      <link>https://cestlaz.github.io/oldblog/advent-2017-1/</link>
+      <link>https://cestlaz.github.io/posts/advent-2017-1/</link>
       <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-2017-1/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-2017-1/</guid>
       <description>It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
 Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
     </item>
     
     <item>
       <title>Motivating and understanding quicksort</title>
-      <link>https://cestlaz.github.io/oldblog/quick-sort-starting/</link>
+      <link>https://cestlaz.github.io/posts/quick-sort-starting/</link>
       <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/quick-sort-starting/</guid>
+      <guid>https://cestlaz.github.io/posts/quick-sort-starting/</guid>
       <description>Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?
 I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set.</description>
     </item>
     
     <item>
       <title>Programming Idioms</title>
-      <link>https://cestlaz.github.io/oldblog/programming-idioms/</link>
+      <link>https://cestlaz.github.io/posts/programming-idioms/</link>
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/programming-idioms/</guid>
+      <guid>https://cestlaz.github.io/posts/programming-idioms/</guid>
       <description>I just read Jeff Yearout&#39;s recent post titled The Beginner&#39;s Garden of Concepts. Not directly related but it got me thinking about programming idioms.
 I&#39;ve been using the phrase &#34;programming idiom&#34; for years to describe a short useful recurring code construct. I didn&#39;t realize that it was officially &#34;a thing&#34; until doing a web search on the phrase years later.
 As our students grow from newbies on I think it&#39;s helpful for them to see recurring and related patterns and programming idioms gives us a name to apply to many beginner patterns.</description>
@@ -54,10 +54,10 @@ As our students grow from newbies on I think it&#39;s helpful for them to see re
     
     <item>
       <title>A* is born</title>
-      <link>https://cestlaz.github.io/oldblog/a-star-is-born/</link>
+      <link>https://cestlaz.github.io/posts/a-star-is-born/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/a-star-is-born/</guid>
+      <guid>https://cestlaz.github.io/posts/a-star-is-born/</guid>
       <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.
 I taught A* as part of the APCS class at Stuy so I thought I&#39;d talk about what I did here.
 Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
@@ -65,10 +65,10 @@ Some time around mid year, we get to intermediate recursion. This is about the t
     
     <item>
       <title>Advent of Code 2016 - Check your data</title>
-      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016-check-data/</link>
+      <link>https://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016-check-data/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid>
       <description>I&#39;m spending the weekend up in Michigan. Visiting my brother and is family. We&#39;re here to see the UMGASS production of Gilbert and Sullivan&#39;s The Sorcerer. Batya also came up from Cornell to join us so the two families are all togehter for the first time in about 10 years.
 This hasn&#39;t left much time for Advent of Code but I did manage to finish yesterday&#39;s challenge this morning.
 What took me so long?</description>
@@ -76,10 +76,10 @@ What took me so long?</description>
     
     <item>
       <title>A Teacher looks at Advent of Code 2016 #2</title>
-      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016-2/</link>
+      <link>https://cestlaz.github.io/posts/advent-of-code-2016-2/</link>
       <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016-2/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-of-code-2016-2/</guid>
       <description>Today we&#39;re looking at Advent of Code 2016 number 2.
 To change things up, I thought I&#39;d do a video where I live code a solution.
 The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.
@@ -88,10 +88,10 @@ One of the things I really like about Advent of Code is that every problem has t
     
     <item>
       <title>A Teacher looks at Advent of Code 2016 #1</title>
-      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016-1/</link>
+      <link>https://cestlaz.github.io/posts/advent-of-code-2016-1/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016-1/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-of-code-2016-1/</guid>
       <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
 I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
 Take a minute to read it over.
@@ -100,10 +100,10 @@ At first glance, it might seem to a young programmer that this problem requires 
     
     <item>
       <title>Inverted Index Project</title>
-      <link>https://cestlaz.github.io/oldblog/inverted-index/</link>
+      <link>https://cestlaz.github.io/posts/inverted-index/</link>
       <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/inverted-index/</guid>
+      <guid>https://cestlaz.github.io/posts/inverted-index/</guid>
       <description>I haven&#39;t spoken much about the class I&#39;ve been teaching this semester. It&#39;s an intro CS course - a programming heavy intro. I decided to use Python with a transition at the end to C++. The transition is to mirror Hunter&#39;s normal first CS course that ends with a C++ intro to prepare the students for next semester&#39;s CS course which is a more intense OOP class using C++ - the language we use in our core courses.</description>
     </item>
     

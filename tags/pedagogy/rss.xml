@@ -13,19 +13,19 @@
     
     <item>
       <title>Two Faces of Project Based Learning</title>
-      <link>https://cestlaz.github.io/oldblog/two-faces-of-pbl/</link>
+      <link>https://cestlaz.github.io/posts/two-faces-of-pbl/</link>
       <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/two-faces-of-pbl/</guid>
+      <guid>https://cestlaz.github.io/posts/two-faces-of-pbl/</guid>
       <description>If one looks at my twitter feed they&#39;ll notice that in addition to CS Ed, another issue I&#39;m passionate about is school reform or rather resistance to what is popularly known as and mislabeled as school reform. I&#39;m anti vouchers, charter schools, high stakes testing and more. One of the heroes of this resistance is education historian Diane Ravitch. I&#39;m a big fan of Diane&#39;s and she&#39;s one of the true great champions of public schools, kids, and teachers.</description>
     </item>
     
     <item>
       <title>PD for people who know CS</title>
-      <link>https://cestlaz.github.io/oldblog/pd-for-cs/</link>
+      <link>https://cestlaz.github.io/posts/pd-for-cs/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/pd-for-cs/</guid>
+      <guid>https://cestlaz.github.io/posts/pd-for-cs/</guid>
       <description>I saw a couple of tweets from Sarah Judd this morning:
 A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?
 &amp;mdash; Sarah Judd (@SarahEJudd) June 27, 2018 
@@ -34,10 +34,10 @@ Yes! I love SIGCSE and CSTA. I just feel like.</description>
     
     <item>
       <title>Teaching recursion early? Make sure to use a good tool.</title>
-      <link>https://cestlaz.github.io/oldblog/recursion-early/</link>
+      <link>https://cestlaz.github.io/posts/recursion-early/</link>
       <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/recursion-early/</guid>
+      <guid>https://cestlaz.github.io/posts/recursion-early/</guid>
       <description>I replied this tweet yesterday and thought I&#39;d expound a bit.
 We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.
 &amp;mdash; Mike Zamansky (@zamansky) May 29, 2018 
@@ -46,39 +46,39 @@ We introduced recursion very early in our intro course at Stuy and I think it wo
     
     <item>
       <title>Do It The Dumb Way</title>
-      <link>https://cestlaz.github.io/oldblog/do-it-the-dumb-way/</link>
+      <link>https://cestlaz.github.io/posts/do-it-the-dumb-way/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/do-it-the-dumb-way/</guid>
+      <guid>https://cestlaz.github.io/posts/do-it-the-dumb-way/</guid>
       <description>There&#39;s so much to like in the shape drawing lessons I talked about in my refactoring post that I thought I&#39;d share a little more here.
 It can be argued that the most important things for a program to do is work. The most clever, elegant, creative program is worthless if it doesn&#39;t produce the desired result. All too often, beginners and hot shot beginners in particular try to be too clever too early and get themselves into trouble.</description>
     </item>
     
     <item>
       <title>Refactoring</title>
-      <link>https://cestlaz.github.io/oldblog/refactoring/</link>
+      <link>https://cestlaz.github.io/posts/refactoring/</link>
       <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/refactoring/</guid>
+      <guid>https://cestlaz.github.io/posts/refactoring/</guid>
       <description>One of my laments on teaching computer science is that students are rarely taught and given the chance to develop good programming practices. There&#39;s usually not enough time. Beginners work on small &#34;toys&#34; which don&#39;t lend themselves to good software development practices and later on, there&#39;s so much other material like algorithms, data structures etc. to teach and learn that programming practices usually amount to lines like:
   &#34;Make sure to comment your code.</description>
     </item>
     
     <item>
       <title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title>
-      <link>https://cestlaz.github.io/oldblog/sigcse2018-bootstrap/</link>
+      <link>https://cestlaz.github.io/posts/sigcse2018-bootstrap/</link>
       <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/sigcse2018-bootstrap/</guid>
+      <guid>https://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid>
       <description>I really didn&#39;t know what to expect at the Creativity, Customization, and Ownership: Game Design in Bootstrap: Algebra session. I&#39;ve been a big fan of Bootstrep for years and looking at the authors, Emmanuel Schanzer&#39;s been a freind forever. I&#39;ve never met Shriram Krishnamurthi in person but am looking forward to it. We&#39;ve traded emails and blog comments. I&#39;d like to consider him a friend and I certainly respect him and his work even though we frequently disagree around the edges.</description>
     </item>
     
     <item>
       <title>Sigcse2018 - Malloc Lab</title>
-      <link>https://cestlaz.github.io/oldblog/sigcse2018-malloc-lab/</link>
+      <link>https://cestlaz.github.io/posts/sigcse2018-malloc-lab/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/sigcse2018-malloc-lab/</guid>
+      <guid>https://cestlaz.github.io/posts/sigcse2018-malloc-lab/</guid>
       <description>I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.
 I really liked both the paper and the talk.
 CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective.</description>
@@ -86,50 +86,50 @@ CMU computer science students all take a systems course that uses Computer Syste
     
     <item>
       <title>Tools can shape how we think</title>
-      <link>https://cestlaz.github.io/oldblog/advent-2017-4-6/</link>
+      <link>https://cestlaz.github.io/posts/advent-2017-4-6/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-2017-4-6/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-2017-4-6/</guid>
       <description>I&#39;ve been having fun with this years Advent of Code competition. So far, I&#39;ve been able to keep up but with I expect that to change in another couple of days since I&#39;ll be traveling for the weekend.
 After solving a problem, I like looking over some of the other solutions on the Advent of Code subreddit. Even with similar agorithmic solutions there&#39;s a decent amount of variation in the actual code and solutions in different languages can look radically different.</description>
     </item>
     
     <item>
       <title>A new first language? What&#39;s the follow up plan?</title>
-      <link>https://cestlaz.github.io/oldblog/first-language-changing/</link>
+      <link>https://cestlaz.github.io/posts/first-language-changing/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/first-language-changing/</guid>
+      <guid>https://cestlaz.github.io/posts/first-language-changing/</guid>
       <description>This morning, Mark Guzdial wrote about Stanford possibly moving away from Java as their intro language. This comes on the heels of a semi-regular thread on one of the lists I&#39;m on asking about what languages are used at assorted colleges around the country. Invariably the Pascal - C++ - Java progression of APCS turns up in these threads.
 There are plenty of arguments to be made both for and against pretty much any language or platform.</description>
     </item>
     
     <item>
       <title>GitHub as a tool for education</title>
-      <link>https://cestlaz.github.io/oldblog/sigcse-2017-github-4/</link>
+      <link>https://cestlaz.github.io/posts/sigcse-2017-github-4/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/sigcse-2017-github-4/</guid>
+      <guid>https://cestlaz.github.io/posts/sigcse-2017-github-4/</guid>
       <description>When I started using git and GitHub with my students it was a natural progression having started with started with CVS and then, as technology changed moving through Subversion and then Mercurial. It was all about using sensible professional software development techniques while making it easier for students to submit work and for me to evaluate their submissions.
 Over time, I found that git and GitHub in fact provided some extra support for educators right out of the box.</description>
     </item>
     
     <item>
       <title>A free multi-state clicker with built in redundency</title>
-      <link>https://cestlaz.github.io/oldblog/thumb_clickers/</link>
+      <link>https://cestlaz.github.io/posts/thumb_clickers/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/thumb_clickers/</guid>
+      <guid>https://cestlaz.github.io/posts/thumb_clickers/</guid>
       <description>Last Friday, Mark Guzdial wrote about the woes of using clickers in a class. The amount of effort required to use his school&#39;s approved clicker technology sounds ridiculous so while we need tools to better engage students in large class settings we need better tools that can be integrated into our classes more easily.
 I&#39;ve never used clickers. On top of stories like Mark&#39;s, there are a number of problems with using clickers in a public school.</description>
     </item>
     
     <item>
       <title>A Teacher looks at Advent of Code 2016 #2</title>
-      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016-2/</link>
+      <link>https://cestlaz.github.io/posts/advent-of-code-2016-2/</link>
       <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016-2/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-of-code-2016-2/</guid>
       <description>Today we&#39;re looking at Advent of Code 2016 number 2.
 To change things up, I thought I&#39;d do a video where I live code a solution.
 The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.
@@ -138,10 +138,10 @@ One of the things I really like about Advent of Code is that every problem has t
     
     <item>
       <title>A Teacher looks at Advent of Code 2016 #1</title>
-      <link>https://cestlaz.github.io/oldblog/advent-of-code-2016-1/</link>
+      <link>https://cestlaz.github.io/posts/advent-of-code-2016-1/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-of-code-2016-1/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-of-code-2016-1/</guid>
       <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
 I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
 Take a minute to read it over.
@@ -150,50 +150,50 @@ At first glance, it might seem to a young programmer that this problem requires 
     
     <item>
       <title>New Term, New Tool - repl.it</title>
-      <link>https://cestlaz.github.io/oldblog/new-term-new-tool-repl.it/</link>
+      <link>https://cestlaz.github.io/posts/new-term-new-tool-repl.it/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/new-term-new-tool-repl.it/</guid>
+      <guid>https://cestlaz.github.io/posts/new-term-new-tool-repl.it/</guid>
       <description>We&#39;re now a week in to my first class at Hunter. It&#39;s a little early for me to really compare and contrast the high school to college experience but I thought I&#39;d share some thoughts on a tool that I&#39;ve recently started to play with.
 My students were all supposed to be issued laptops at the beginning of the semester. The plan was to have them learn Linux, the command line, and a little DevOps along the way.</description>
     </item>
     
     <item>
       <title>Lesson plans - scripts to springboards</title>
-      <link>https://cestlaz.github.io/oldblog/lesson-plans/</link>
+      <link>https://cestlaz.github.io/posts/lesson-plans/</link>
       <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/lesson-plans/</guid>
+      <guid>https://cestlaz.github.io/posts/lesson-plans/</guid>
       <description>I spent last Saturday up at the Microsoft offices in Times Square observing a TEALS training session. My fried Nathaniel Granor, Teals Regional Manager in the east has invited me a number of times and this time I was able to make it.
 If you don&#39;t know, TEALS is a program that takes volunteers in the tech industry and places them in classrooms. Unlike other programs, the TEALS volunteers work with the teachers while the kids learn some CS.</description>
     </item>
     
     <item>
       <title>Robots platforms and practicalities</title>
-      <link>https://cestlaz.github.io/oldblog/robot-survey/</link>
+      <link>https://cestlaz.github.io/posts/robot-survey/</link>
       <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/robot-survey/</guid>
+      <guid>https://cestlaz.github.io/posts/robot-survey/</guid>
       <description>I received an email from a friend the other day asking me about a particular robotics platform she recently saw.
 I&#39;ve played with robotics on and off over the years ranging from building them from (not using) scratch using Atmel chips and programming them in assembly to using Arduino based platforms to using pre-built robot platforms. They&#39;re really cool and since they interact with the real world you can do all sorts of interesting and motivational things with students.</description>
     </item>
     
     <item>
       <title>Navajo Math Circles</title>
-      <link>https://cestlaz.github.io/oldblog/navajo-circles/</link>
+      <link>https://cestlaz.github.io/posts/navajo-circles/</link>
       <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/navajo-circles/</guid>
+      <guid>https://cestlaz.github.io/posts/navajo-circles/</guid>
       <description>Yesterday, I saw the New York Premiere of Navajo Math Circles, a documentary on a Math Circle put in place to support and enrich the currently under-served community in the Navajo educational system.
 At their core, Math Circles are math outreach and enrichment programs. I&#39;m most familiar with the New York Math Circle. I&#39;m friends with many of their teachers and organizers and my son took part in their summer program for a couple of years.</description>
     </item>
     
     <item>
       <title>As curricula changes, what&#39;s falling through the cracks?</title>
-      <link>https://cestlaz.github.io/oldblog/semaphores/</link>
+      <link>https://cestlaz.github.io/posts/semaphores/</link>
       <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/semaphores/</guid>
+      <guid>https://cestlaz.github.io/posts/semaphores/</guid>
       <description>Edit: Just a brief note to clarify a couple of things. As indicated in the comments, this post isn&#39;t about what&#39;s appropriate for HS CS. It&#39;s more about what kids have after they finish their education - be it high school, college, code school, or other.
 Some of my thoughts are the results of pondering on the exacerbations of friends after interviewing people for entry level positions.
 The two examples are just to illustrate the point.</description>
@@ -201,20 +201,20 @@ The two examples are just to illustrate the point.</description>
     
     <item>
       <title>I guess I&#39;m a dumbass</title>
-      <link>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</link>
+      <link>https://cestlaz.github.io/posts/2014-02-27-dumbass/</link>
       <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-02-27-dumbass/</guid>
       <description>I like a fairly informal atmosphere in my classes. Students have to know that there&amp;rsquo;s a line between teacher and student but I also want them to feel like we&amp;rsquo;re all part of the Stuy CS family.
 Whenever we start a new term, it takes a while to break down the walls. The students don&amp;rsquo;t know what to expect of me, can they trust me? Am I a bozo? Who knows.</description>
     </item>
     
     <item>
       <title>Change the data</title>
-      <link>https://cestlaz.github.io/oldblog/2014-02-26-change-the-data/</link>
+      <link>https://cestlaz.github.io/posts/2014-02-26-change-the-data/</link>
       <pubDate>Wed, 26 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-02-26-change-the-data/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-02-26-change-the-data/</guid>
       <description>Patient: &amp;ldquo;Doctor, it hurts when I do this.&amp;rdquo;
 Doctor: &amp;ldquo;So, don&amp;rsquo;t do that.&amp;rdquo;
  We&amp;rsquo;ve been spending time on State Space Search. It&amp;rsquo;s a great topic. We deal with or at least introduce:
@@ -224,10 +224,10 @@ We started by developing a maze solver. It reads a text file representing the ma
     
     <item>
       <title>Fibonacci by the tail</title>
-      <link>https://cestlaz.github.io/oldblog/2014-02-13-fibonacci/</link>
+      <link>https://cestlaz.github.io/posts/2014-02-13-fibonacci/</link>
       <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-02-13-fibonacci/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-02-13-fibonacci/</guid>
       <description>We&amp;rsquo;re ramping up for recursion in my junior classes - state space search, nlg(n) sorts, etc. As a refresher, we took a quick look at the Fibonacci numbers.
 Now, some people seem to think that it&amp;rsquo;s a tired problem. It&amp;rsquo;s mathy, it&amp;rsquo;s played out, it&amp;rsquo;s boring etc.. They just might be missing the point.
 The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;s a platform on which you can look at many problem solving techniques.</description>
@@ -235,10 +235,10 @@ The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;
     
     <item>
       <title>Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques</title>
-      <link>https://cestlaz.github.io/oldblog/2014-01-07-rot13-gateway/</link>
+      <link>https://cestlaz.github.io/posts/2014-01-07-rot13-gateway/</link>
       <pubDate>Tue, 07 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-01-07-rot13-gateway/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-01-07-rot13-gateway/</guid>
       <description>I&amp;rsquo;ve written before about That One Inspirational Curriculum - the idea that it&amp;rsquo;s not the topic in the syllabus but rather what the teacher does with it.
 Some times a simple problem can lead to some really neat concepts.
 Take what we did in my AP classes over the past couple of days.
@@ -247,20 +247,20 @@ I wanted a nice little warm up after the break so we wrote a simple rotation cip
     
     <item>
       <title>Bucket Sorting</title>
-      <link>https://cestlaz.github.io/oldblog/2013-11-27-bucket-sorts/</link>
+      <link>https://cestlaz.github.io/posts/2013-11-27-bucket-sorts/</link>
       <pubDate>Wed, 27 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-11-27-bucket-sorts/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-11-27-bucket-sorts/</guid>
       <description>In spite of the Java based annoyances I mentioned last time, I decided to go ahead and do Radix sort with my AP students. I usually don&amp;rsquo;t cover it in AP Computer Science, but I like getting the kids to think about using arrays as buckets as it&amp;rsquo;s a new way of thinking for them and it does give a non-trivial application that combines ararys and ArrayLists.
 It&amp;rsquo;s a nice little algorithm.</description>
     </item>
     
     <item>
       <title>Teaching Languages</title>
-      <link>https://cestlaz.github.io/oldblog/2013-11-23-teaching-languages/</link>
+      <link>https://cestlaz.github.io/posts/2013-11-23-teaching-languages/</link>
       <pubDate>Sat, 23 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-11-23-teaching-languages/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-11-23-teaching-languages/</guid>
       <description>Java&amp;rsquo;s never been my favorite language either for using or for teaching.
 As a programmer, after starting with languages like Fortran and Pascal, I really cut my teeth with C. More recently, Python has been my go to language to get real work done.
 From a teaching point of view most languages have good points and bad ones. When the AP class went from Pascal to C++ I lamented losing the simplicity and the low cost of entry.</description>
@@ -268,10 +268,10 @@ From a teaching point of view most languages have good points and bad ones. When
     
     <item>
       <title>Build it first</title>
-      <link>https://cestlaz.github.io/oldblog/2013-11-19-build_it/</link>
+      <link>https://cestlaz.github.io/posts/2013-11-19-build_it/</link>
       <pubDate>Tue, 19 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-11-19-build_it/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-11-19-build_it/</guid>
       <description>The subtitle of this post is:
  and why my students are going to hate me tomorrow.
  When my good friend Gerry Seidman talks to my classes, he frequently says &amp;ldquo;never use a data structure or algorithm you couldn&amp;rsquo;t build yourself.&amp;rdquo;
@@ -280,10 +280,10 @@ This doesn&amp;rsquo;t mean that you have to write everything from scratch, just
     
     <item>
       <title>Stuyablo II</title>
-      <link>https://cestlaz.github.io/oldblog/2013-10-27-stuyabloii/</link>
+      <link>https://cestlaz.github.io/posts/2013-10-27-stuyabloii/</link>
       <pubDate>Sun, 27 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-10-27-stuyabloii/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-10-27-stuyabloii/</guid>
       <description>Last week in my AP classes, we were working on inheritance.
 So, what to do?
 Last time around I had my classes work on a &amp;ldquo;speed dating&amp;rdquo; program - StuyDater. Back then JonAlf had his classes work on Stuyablo, that classic dungeon crawl.
@@ -292,10 +292,10 @@ I still plan on reworking the StuyDater project, but first I decided to do my ta
     
     <item>
       <title>Databases - the next day</title>
-      <link>https://cestlaz.github.io/oldblog/2013-10-09-database-followup/</link>
+      <link>https://cestlaz.github.io/posts/2013-10-09-database-followup/</link>
       <pubDate>Wed, 09 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-10-09-database-followup/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-10-09-database-followup/</guid>
       <description>Two days ago I asked the students, in small groups, to come up with a design to store a school (or school district) database.
 Yesterday we discussed the designs.
 All the students took our brand of AP Computer Science last year - a superset of the old AB curriculum and in that class they implemented a number of data structures such as binary search trees and hash tables, but they really didn&amp;rsquo;t have an opportunity to design something more comprehensive.</description>
@@ -303,10 +303,10 @@ All the students took our brand of AP Computer Science last year - a superset of
     
     <item>
       <title>Databases - putting it all together</title>
-      <link>https://cestlaz.github.io/oldblog/2013-10-07-databases/</link>
+      <link>https://cestlaz.github.io/posts/2013-10-07-databases/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-10-07-databases/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-10-07-databases/</guid>
       <description>So, we&amp;rsquo;re into the second year of my Software Development class. It&amp;rsquo;s a little different since last time, I taught many of the kids in AP. This time, they&amp;rsquo;re mostly new to me.
 In AP, everything is low level. The students build linked lists, binary search trees, heaps, hash tables, graphs and the like. It&amp;rsquo;s all about building the data structure. The Node, if you would.
 We&amp;rsquo;re about to start talking about databases.</description>
@@ -314,40 +314,40 @@ We&amp;rsquo;re about to start talking about databases.</description>
     
     <item>
       <title>Real Data - Part II</title>
-      <link>https://cestlaz.github.io/oldblog/2013-05-20-real_data_part_ii/</link>
+      <link>https://cestlaz.github.io/posts/2013-05-20-real_data_part_ii/</link>
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-05-20-real_data_part_ii/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-05-20-real_data_part_ii/</guid>
       <description>About a month ago, I talked about using real data with our intro classes. After looking at the correlation between school&amp;rsquo;s SAT scores and free and reduced lunch rates, it was time to turn the students loose.
 The assignment: Find some interesting data out and do something with it. Make a web page that shows what you did and what you discoverde. We had already looked at the NYC Data Mine as well as a few other sources but students were encouraged to find new data sourcess.</description>
     </item>
     
     <item>
       <title>Madlib Madness</title>
-      <link>https://cestlaz.github.io/oldblog/2013-04-30-madlib_madness/</link>
+      <link>https://cestlaz.github.io/posts/2013-04-30-madlib_madness/</link>
       <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-04-30-madlib_madness/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-04-30-madlib_madness/</guid>
       <description>Earlier in the term, our intro classes spent a little time learning some basic HTML. We don&amp;rsquo;t spend a lot of time on it, just enough so that the students can present their work in a static web site. The end goal, though, was to programatically generate the web sites - there&amp;rsquo;s nothing quite as empowering to a student as when they can present their work to the world.
 Finally, it&amp;rsquo;s all coming together.</description>
     </item>
     
     <item>
       <title>Real Data</title>
-      <link>https://cestlaz.github.io/oldblog/2013-04-14-real_data/</link>
+      <link>https://cestlaz.github.io/posts/2013-04-14-real_data/</link>
       <pubDate>Sun, 14 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-04-14-real_data/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-04-14-real_data/</guid>
       <description>When looking for assignments for our classes, in addition to trying to craft assignments that develop and reinforce key ideas, we also strive to come up with ideas that &amp;ldquo;speak&amp;rdquo; to the students and keep their interest. We write small games, use problems within the student&amp;rsquo;s experiences, and in general try to find problems that are appealing.
 This is much easier to do when the kids can read data from a file.</description>
     </item>
     
     <item>
       <title>Who won the election -- Quadratic to Linear Time!!!!!</title>
-      <link>https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_election-quadratic_to_linear_time/</link>
+      <link>https://cestlaz.github.io/posts/2013-03-23-who_won_the_election-quadratic_to_linear_time/</link>
       <pubDate>Sat, 23 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_election-quadratic_to_linear_time/</guid>
+      <guid>https://cestlaz.github.io/posts/2013-03-23-who_won_the_election-quadratic_to_linear_time/</guid>
       <description>Last week was crazy. Busy, stressful, late night after late night. It ended, though, on a great note.
 A young lady in my intro class found me in my office near the end of the day:
  Student: Mr. Z, I wanted to make sure to catch you before vacation!

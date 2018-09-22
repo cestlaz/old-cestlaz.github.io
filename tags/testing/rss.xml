@@ -13,10 +13,10 @@
     
     <item>
       <title>Unit Tests Grading Workflow</title>
-      <link>https://cestlaz.github.io/oldblog/unit-tests-grading-workflow/</link>
+      <link>https://cestlaz.github.io/posts/unit-tests-grading-workflow/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/unit-tests-grading-workflow/</guid>
+      <guid>https://cestlaz.github.io/posts/unit-tests-grading-workflow/</guid>
       <description>I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.
 Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient.</description>
     </item>

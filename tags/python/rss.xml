@@ -13,29 +13,29 @@
     
     <item>
       <title>Advent of Code 2017 - Day 1</title>
-      <link>https://cestlaz.github.io/oldblog/advent-2017-1/</link>
+      <link>https://cestlaz.github.io/posts/advent-2017-1/</link>
       <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/advent-2017-1/</guid>
+      <guid>https://cestlaz.github.io/posts/advent-2017-1/</guid>
       <description>It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
 Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
     </item>
     
     <item>
       <title>Inverted Index Project</title>
-      <link>https://cestlaz.github.io/oldblog/inverted-index/</link>
+      <link>https://cestlaz.github.io/posts/inverted-index/</link>
       <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/inverted-index/</guid>
+      <guid>https://cestlaz.github.io/posts/inverted-index/</guid>
       <description>I haven&#39;t spoken much about the class I&#39;ve been teaching this semester. It&#39;s an intro CS course - a programming heavy intro. I decided to use Python with a transition at the end to C++. The transition is to mirror Hunter&#39;s normal first CS course that ends with a C++ intro to prepare the students for next semester&#39;s CS course which is a more intense OOP class using C++ - the language we use in our core courses.</description>
     </item>
     
     <item>
       <title>Flask - deploying to DigitalOcean</title>
-      <link>https://cestlaz.github.io/oldblog/digitaloceanflask/</link>
+      <link>https://cestlaz.github.io/posts/digitaloceanflask/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/digitaloceanflask/</guid>
+      <guid>https://cestlaz.github.io/posts/digitaloceanflask/</guid>
       <description>This post points to the next three videos in the Flask series.
 The first covers setting up a droplet (virtual server) on DigitalOcean. The second, deploying a flask application using Green Unicorn, and the third, using sshfs to remotely mount your files from your DO box to your local machine and how to set up DNS using FreeDNS.
 To help you on your way with DigitalOcean, here are links to a few of their tutorials</description>
@@ -43,20 +43,20 @@ To help you on your way with DigitalOcean, here are links to a few of their tuto
     
     <item>
       <title>Installing Flask in a virtualenv</title>
-      <link>https://cestlaz.github.io/oldblog/flask-install-flask/</link>
+      <link>https://cestlaz.github.io/posts/flask-install-flask/</link>
       <pubDate>Sat, 15 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/flask-install-flask/</guid>
+      <guid>https://cestlaz.github.io/posts/flask-install-flask/</guid>
       <description>Second video in the Flask series. This one goes over installing Flask in a virtualenv and running a simple Flask application.
 Nothing much to say about this other then check out the video:</description>
     </item>
     
     <item>
       <title>Setting up Linux for Flask Web Development</title>
-      <link>https://cestlaz.github.io/oldblog/flask-setup-virtualenv/</link>
+      <link>https://cestlaz.github.io/posts/flask-setup-virtualenv/</link>
       <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/flask-setup-virtualenv/</guid>
+      <guid>https://cestlaz.github.io/posts/flask-setup-virtualenv/</guid>
       <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&#39;re in the program.
 This means we can finally start using the web as a way of displaying and sharing our projects.
 For this type of web development, I&#39;m a big fan of using Flask. Flask is a Python microframework.</description>

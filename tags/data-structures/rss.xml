@@ -13,10 +13,10 @@
     
     <item>
       <title>A* is born</title>
-      <link>https://cestlaz.github.io/oldblog/a-star-is-born/</link>
+      <link>https://cestlaz.github.io/posts/a-star-is-born/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/a-star-is-born/</guid>
+      <guid>https://cestlaz.github.io/posts/a-star-is-born/</guid>
       <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.
 I taught A* as part of the APCS class at Stuy so I thought I&#39;d talk about what I did here.
 Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>

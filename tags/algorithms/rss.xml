@@ -13,10 +13,10 @@
     
     <item>
       <title>A* is born</title>
-      <link>https://cestlaz.github.io/oldblog/a-star-is-born/</link>
+      <link>https://cestlaz.github.io/posts/a-star-is-born/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/a-star-is-born/</guid>
+      <guid>https://cestlaz.github.io/posts/a-star-is-born/</guid>
       <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.
 I taught A* as part of the APCS class at Stuy so I thought I&#39;d talk about what I did here.
 Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
@@ -24,20 +24,20 @@ Some time around mid year, we get to intermediate recursion. This is about the t
     
     <item>
       <title>I guess I&#39;m a dumbass</title>
-      <link>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</link>
+      <link>https://cestlaz.github.io/posts/2014-02-27-dumbass/</link>
       <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-02-27-dumbass/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-02-27-dumbass/</guid>
       <description>I like a fairly informal atmosphere in my classes. Students have to know that there&amp;rsquo;s a line between teacher and student but I also want them to feel like we&amp;rsquo;re all part of the Stuy CS family.
 Whenever we start a new term, it takes a while to break down the walls. The students don&amp;rsquo;t know what to expect of me, can they trust me? Am I a bozo? Who knows.</description>
     </item>
     
     <item>
       <title>Fibonacci by the tail</title>
-      <link>https://cestlaz.github.io/oldblog/2014-02-13-fibonacci/</link>
+      <link>https://cestlaz.github.io/posts/2014-02-13-fibonacci/</link>
       <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/2014-02-13-fibonacci/</guid>
+      <guid>https://cestlaz.github.io/posts/2014-02-13-fibonacci/</guid>
       <description>We&amp;rsquo;re ramping up for recursion in my junior classes - state space search, nlg(n) sorts, etc. As a refresher, we took a quick look at the Fibonacci numbers.
 Now, some people seem to think that it&amp;rsquo;s a tired problem. It&amp;rsquo;s mathy, it&amp;rsquo;s played out, it&amp;rsquo;s boring etc.. They just might be missing the point.
 The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;s a platform on which you can look at many problem solving techniques.</description>

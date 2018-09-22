@@ -13,10 +13,10 @@
     
     <item>
       <title>It gets easier (or advent of code 2016 day 19)</title>
-      <link>https://cestlaz.github.io/oldblog/it-gets-easier-advent19/</link>
+      <link>https://cestlaz.github.io/posts/it-gets-easier-advent19/</link>
       <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/oldblog/it-gets-easier-advent19/</guid>
+      <guid>https://cestlaz.github.io/posts/it-gets-easier-advent19/</guid>
       <description>Today&#39;s Advent of Code problem was a variant on the Josephus problem.
 I recalled that there was a formula to figure out the sole survivor but I decide to run a simulation rather than looking it up. I also decided to write it up in C++, well, really C with cout instead of printf.
 Part 1 was the traditional problem. Part 2 was a variant where at each iteration, you remove the elf opposite the elf being processed (see the problem description for details).</description>
