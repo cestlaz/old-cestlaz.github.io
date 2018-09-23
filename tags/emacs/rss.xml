@@ -635,14 +635,5 @@ Here&#39;s the contents of that file:
 (setq inhibit-startup-message t) (require &amp;#39;package)(setq package-enable-at-startup nil)(add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa&amp;#34; . &amp;#34;https://melpa.org/packages/&amp;#34;))(package-initialize);; Bootstrap `use-package&amp;#39; (unless (package-installed-p &amp;#39;use-package)(package-refresh-contents)(package-install &amp;#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages: *try*: let&#39;s you try packages without installing them.</description>
     </item>
     
-    <item>
-      <title>Know your tools - intermediate Emacs</title>
-      <link>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate/</link>
-      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate/</guid>
-      <description>div.center {text-align:center;}    A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs.  I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.  I recommend that my students spend time not only in Emacs but also in tools like Vim or Sublime Text.</description>
-    </item>
-    
   </channel>
 </rss>

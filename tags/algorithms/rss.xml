@@ -23,24 +23,6 @@ Some time around mid year, we get to intermediate recursion. This is about the t
     </item>
     
     <item>
-      <title>Sorting - Subtle Errors</title>
-      <link>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting/</link>
-      <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting/</guid>
-      <description>div.center {text-align:center;}   Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons We started with Quickselect.  Then we did a quicksort, copying to new arrays during the partition  Then finally to an in place quicksort.    For the final quicksort we used a partition algorithm pretty much the same as the one described here.  We started testing using by building a randomly filled array like this: Random rnd = new Random(); int a[] = new int[n]; for (int i=0;i&amp;lt;n;i++) { a[i] = rnd.</description>
-    </item>
-    
-    <item>
-      <title>From selection to sorting</title>
-      <link>https://cestlaz.github.io/posts/2014-03-12-select-to-sort/</link>
-      <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort/</guid>
-      <description>div.center {text-align:center;}   When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced.</description>
-    </item>
-    
-    <item>
       <title>I guess I&#39;m a dumbass</title>
       <link>https://cestlaz.github.io/posts/2014-02-27-dumbass/</link>
       <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
@@ -59,15 +41,6 @@ Whenever we start a new term, it takes a while to break down the walls. The stud
       <description>We&amp;rsquo;re ramping up for recursion in my junior classes - state space search, nlg(n) sorts, etc. As a refresher, we took a quick look at the Fibonacci numbers.
 Now, some people seem to think that it&amp;rsquo;s a tired problem. It&amp;rsquo;s mathy, it&amp;rsquo;s played out, it&amp;rsquo;s boring etc.. They just might be missing the point.
 The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;s a platform on which you can look at many problem solving techniques.</description>
-    </item>
-    
-    <item>
-      <title>Sorting from the top and from the bottom</title>
-      <link>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom/</link>
-      <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom/</guid>
-      <description>Sorting from the top and from the bottom I&#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. I&#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles.</description>
     </item>
     
   </channel>
