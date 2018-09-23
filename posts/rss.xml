@@ -2475,6 +2475,220 @@ We ultimately decided not to run SHIP this summer. Mostly due to the fact that i
     </item>
     
     <item>
+      <title>I hate ruby or why I&#39;m switching blogging platforms</title>
+      <link>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</guid>
+      <description>I&#39;m moving to a new blogging platform. I&#39;m still going to use GitHub pages but after a few years of using Jekyll, I&#39;m switching to Nikola.  I think I&#39;ve got the move worked out but if you&#39;re reading this via an rss or atom reader, make sure to check back in a couple of days - you might have to re-subscribe.  Why am I switching?  Because I hate Ruby.</description>
+    </item>
+    
+    <item>
+      <title>IDE or the Cloud</title>
+      <link>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link>
+      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</guid>
+      <description>div.center {text-align:center;}    This weekend, I had a conversation on Twitter with my friend Roy Bahat: @zamansky Mike, unrelated, what do you think of https://t.co/BT1ublbajF ?
+&amp;mdash; Roy Bahat (@roybahat) April 9, 2016 
+@roybahatMaybe I&amp;#39;ll blog about my thoughts about online environments vs local installs
+&amp;mdash; Mike Zamansky (@zamansky) April 9, 2016
+@roybahat Agree with this but there are many issues. I&amp;#39;ll try to write more later.</description>
+    </item>
+    
+    <item>
+      <title>Hunter College - Honors CS</title>
+      <link>https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html/</link>
+      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html/</guid>
+      <description>div.center {text-align:center;} 
+ It&#39;s been a while since my last post and a while since I started at Hunter.  Time to share a bit about what I&#39;ve been up to.  One of the better kept secrets in New York City is Hunter College&#39;s computer science program. It&#39;s been around for years and it&#39;s been that way for years. In fact, when I was looking to get my masters degree back in the mid nineties I carefully researched all of the area&#39;s MS in CS programs.</description>
+    </item>
+    
+    <item>
+      <title>DevOps, or You don&#39;t know what the F you&#39;re doing!</title>
+      <link>https://cestlaz.github.io/posts/2016-01-31-devops.html/</link>
+      <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-31-devops.html/</guid>
+      <description>div.center {text-align:center;} 
+ Having just concluded almost a quarter century at one job in one place, I&#39;ve been reflecting on a number of things.  What I accomplished, what I&#39;ve failed to accomplish, highlights, low lights and everything in between.  I&#39;ve also learned a lot over these twenty five years.  One thing I learned is DevOps and System Administration.  Back around 1993 or 1994 Stuy wasn&#39;t really on the internet.</description>
+    </item>
+    
+    <item>
+      <title>Debugging deployment</title>
+      <link>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid>
+      <description>div.center {text-align:center;} 
+ SoftDev students are hard at work on their final projects. By now, they all have fairly complex code bases. This limits how much I can help them with debugging.  There are some problems, though, that they have to contend with that even with experience, are hard to spot. Notably because the very tools you use to debug these errors are part of the problem.  Last week, this happened twice.</description>
+    </item>
+    
+    <item>
+      <title>Cellular Automata for Pathfinding in NetLogo</title>
+      <link>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link>
+      <pubDate>Sun, 17 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid>
+      <description>div.center {text-align:center;} .smaller {height:200px;width:200px}
+.center {text-align:center;} .frame {width:600px;height:800px;}
+
+    Last time we took a look at implementing a Cellular Automaton in NetLogo to do some simple image manipulation. We just scratched the surface. In class, the kids write pretty nice Photoshop Light applications.  Today we&#39;ll look at some more ambitious problem solving - using a Cellular Automaton to find a path through a maze.</description>
+    </item>
+    
+    <item>
+      <title>Cellular Automata, NetLogo and real problems</title>
+      <link>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid>
+      <description>.center {text-align:center;} .frame {width:640px;height:800px;} 
+ We&#39;ve been using NetLogo in our intro course for years. It&#39;s a wonderful programming environment. Many of you recall the Logo programming language. NetLogo is like Logo but instead of programming a turtle, you write a program that&#39;s run by multiple, perhaps hundreds of turtles and also by the world the turtles live on.  Some of the reasons we like it are that it&#39;s: An easy accessible textual programming language Makes building a graphical interface trivial great for modeling Comes with tons of demo models</description>
+    </item>
+    
+    <item>
+      <title>International Blog Delurking Week 2016</title>
+      <link>https://cestlaz.github.io/posts/2016-01-06-delurking-week.html/</link>
+      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-06-delurking-week.html/</guid>
+      <description>div.center {text-align:center;} 
+ It&#39;s been pointed out by a couple of bloggers I follow: Gas station without pumps Computer Science Teacher (Alfred Thompson&#39;s blog) 
+ That it&#39;s International Blog Delurking Week.  So, I know I don&#39;t have a large readership, but if you do read this blog, why not give a brief hi in the comments. I&#39;d love to know who you are and what you do.</description>
+    </item>
+    
+    <item>
+      <title>Discussion Silos</title>
+      <link>https://cestlaz.github.io/posts/2016-01-03-discussion-silos.html/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-03-discussion-silos.html/</guid>
+      <description>div.center {text-align:center;} 
+ In response to the past couple of days where my friends and fellow CS Ed advocates Alfred Thompson, Rob Underwood, and I had a nice little discussion via our blogs, Alfred wrote this.  It&#39;s great when a number of voices in the community have an open discussion but one of the things I found myself lamenting was the fact that a lot of the discussion isn&#39;t truly accessible.</description>
+    </item>
+    
+    <item>
+      <title>Teaching Coding - getting beyond superficial syntax</title>
+      <link>https://cestlaz.github.io/posts/2016-01-01-different-languages.html/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-01-different-languages.html/</guid>
+      <description>div.center {text-align:center;} 
+ The other day, Alfred Thompson put up a piece about coding in multiple languages. Alfred references a post written last May by Rob Underwood.  Both pieces are worth a look.  Rob is trying to illustrate many of the superficial similarities in popular languages.  In the comments on Alfred&#39;s blog, both Alfred and I alluded to coding in an appropriate style for the language.</description>
+    </item>
+    
+    <item>
+      <title>Leaving Stuyvesant</title>
+      <link>https://cestlaz.github.io/posts/2015-12-23-leaving-stuy.html/</link>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-12-23-leaving-stuy.html/</guid>
+      <description>div.center {text-align:center;} 
+ Almost twenty six years. That&#39;s how long I&#39;ve been a NYC public school teacher. Most of that time at my alma mater, Stuyvesant.  A couple of years ago, the school paper wrote up an overview of my career. I re-posted it here. I&#39;m somtimes amazed at where we are now and how we got here.  Regulars here also know my frustrations. To Stuy, I&#39;m an interchangeable, generic math teacher and the DOE has shown no interested in supporting what we&#39;ve built.</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code - because I&#39;m an idiot</title>
+      <link>https://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</link>
+      <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</guid>
+      <description>div.center {text-align:center;} 
+
+ I wish our kids believed us when we tell them that we have the same programming troubles as they do. We stare at code for hours not seeing problems that could be a simple as passing the wrong value. We spend an inordinate amount of time trying to see the problem and then realize that we just forgot something silly.  At this point, it&#39;s common for us CS teachers to tell each other &#34;</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code</title>
+      <link>https://cestlaz.github.io/posts/2015-12-15-advent.html/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-12-15-advent.html/</guid>
+      <description>div.center {text-align:center;} 
+
+ Has everyone seen Advent of Code?  It&#39;s a site with a series of programming problems that are being revealed one a day, a la an advent calendar. You can read more about it here.  I came to the party a little late so I&#39;m only up to day 6.  Each problem comes in two parts. The second is revealed after you complete the first.</description>
+    </item>
+    
+    <item>
+      <title>We&#39;re Number One!! We&#39;re Number One!!!</title>
+      <link>https://cestlaz.github.io/posts/2015-11-19-were-number-one.html/</link>
+      <pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-19-were-number-one.html/</guid>
+      <description>div.center {text-align:center;} 
+ I woke up this morning to an email from my principal &#34;Stuy is #1.&#34; This followed a bunch of Facebook posts by friends and alums of a similar vein.  It was all about a couple of reports, here, and here. It turns out Stuy is ranked #1. Woo Hoo. We&#39;re awesome.  Of course, everyone whooping it up now was quick to say &#34;all those rankings are meaningless&#34;</description>
+    </item>
+    
+    <item>
+      <title>Other People&#39;s Code</title>
+      <link>https://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</guid>
+      <description>div.center {text-align:center;}     The coding on their project is reminiscent in many ways of an Ed Sheerhan song. It left me in tears and very confused as to what the author was trying to accomplish.  &amp;#x2013; a student commenting on their most recent project.      We had some fun last week. Well, OK, I had some fun. The SoftDev classes had just finished a little project.</description>
+    </item>
+    
+    <item>
+      <title>Announcing def hacks(&#34;Winter&#34;,2015)</title>
+      <link>https://cestlaz.github.io/posts/2015-11-09-def-hacks-winter-2015.html/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-09-def-hacks-winter-2015.html/</guid>
+      <description>div.center {text-align:center;} 
+ Last March, we (CSTUY) hosted our first hackathon - def hacks():  It was a tremendous success. Fifty students of all experience levels, a bunch of great mentors and judges - added all together and it was a terrific day.  I wrote about it here.  We&#39;re doing it again. We love last years hosts SumAll and are grateful that they continue to host our Saturday Hacking Sessions but we are also grateful to Facebook NY for allowing us to use their larger space for this edition of def hacks().</description>
+    </item>
+    
+    <item>
+      <title>Finding the Bell Tower</title>
+      <link>https://cestlaz.github.io/posts/2015-11-06-bell-tower.html/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-06-bell-tower.html/</guid>
+      <description>No Edu-Rant today nor a clever lesson plan.  I just thought I&#39;d share an email exchange that cracked me up.  We&#39;re out in Ann Arbor visiting our son Natan who is in his first year at Michigan.  Devorah sent an email asking where we should meet.  It turns out that Natan&#39;s last class of the day is Music Composition.  Here&#39;s what followed:  Natan:</description>
+    </item>
+    
+    <item>
+      <title>Interview questions and tests</title>
+      <link>https://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</link>
+      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</guid>
+      <description>The StuyCS Family mailing list was host to an interesting discussion today. One of our younger members asked if the practice of giving technical problems during an interview was going to follow him throughout his career or if it goes away for more senior applicants.  An interesting discussion followed.  It reminded me of a time I was talking to a few senior engineers at a large tech company.</description>
+    </item>
+    
+    <item>
+      <title>Teachers - boy do we suck!!!!</title>
+      <link>https://cestlaz.github.io/posts/2015-11-03-teachers-suck.html/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-03-teachers-suck.html/</guid>
+      <description>div.center {text-align:center;}    Today was a &#34;professional development day.&#34; That means that instead of teaching, we were supposed to work on our craft.  Rather than the normal nonsense - forcing CS teachers to sit through common core math lectures or how to use the latest calculator, our host principal, Randy Asher, of Brooklyn Tech let us do our thing.  Basically, it was a bunch of CS teachers from two schools - Stuy and Brooklyn Tech, talking shop for most of the day.</description>
+    </item>
+    
+    <item>
+      <title>Halloween 2015 - the video</title>
+      <link>https://cestlaz.github.io/posts/2015-11-01-halloween-video-2015.html/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-01-halloween-video-2015.html/</guid>
+      <description>div.center {text-align:center;} 
+ As a teacher, sometimes your gut tells you to do something and it turns out to be a really good idea.  That&#39;s what happened in October, 1994. I decided to dress up as Groo the Wanderer for Halloween. I never dressed in costume for school before and back then, no many did. A few students and very few teachers.  Afterwards, I noticed that my younger students - the ones that didn&#39;t know me that well yet, really loosened up and so a tradition was born.</description>
+    </item>
+    
+    <item>
+      <title>Inner voices</title>
+      <link>https://cestlaz.github.io/posts/2015-10-30-halloween-2015.html/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-30-halloween-2015.html/</guid>
+      <description>div.center {text-align:center;} div.half {width:50%;} 
+
+ It&#39;s Halloween again. This time, &#34;Inside Out.&#34;  No video yet, but stay tuned.  For the time being, enjoy some of our past madness:</description>
+    </item>
+    
+    <item>
       <title>Something growing in the Hudson Valley</title>
       <link>https://cestlaz.github.io/posts/2015-10-29-catskills-2015/</link>
       <pubDate>Thu, 29 Oct 2015 00:00:00 +0000</pubDate>
@@ -2484,6 +2698,727 @@ We ultimately decided not to run SHIP this summer. Mostly due to the fact that i
 https://www.flickr.com/photos/morganroderick/sets/72157660040372060/with/22362235148/
 &amp;ndash;!&amp;gt;
    The Hudson Valley&#39;s a beautiful place, particularly during the Fall. We don&#39;t get up there as much as we should - usually just for apple picking and then for the New York Sheep and Wool Festival.  It&#39;s a region with great food, hiking, natural beauty, history and more.  So, what exactly is growing?  The Hudson Valley Tech community.  I first heard about what Hudson Valley was doing around Tech back at the August New York Tech Meetup.</description>
+    </item>
+    
+    <item>
+      <title>Know your tools - intermediate Emacs</title>
+      <link>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</guid>
+      <description>div.center {text-align:center;}    A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs.  I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.  I recommend that my students spend time not only in Emacs but also in tools like Vim or Sublime Text.</description>
+    </item>
+    
+    <item>
+      <title>Self Appointed Experts</title>
+      <link>https://cestlaz.github.io/posts/2015-10-26-self-appointed-experts.html/</link>
+      <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-26-self-appointed-experts.html/</guid>
+      <description>div.center {text-align:center;} 
+ While looking over my tweet stream, I noticed this: RSVP today for the K-12 CS Education Panel, presented by @Uber + @FlatironSchool: https://t.co/nVBbSbRn9d pic.twitter.com/NAxowSIfff
+&amp;mdash; Flatiron School (@FlatironSchool) October 26, 2015 
+ So, on November 12, one can head over to Uber and listen to three experts talk about K12 CS Education. To quote the landing page: How can we engage our students in CS, and train our teachers to teach it?</description>
+    </item>
+    
+    <item>
+      <title>Alan Alda on Teaching Science</title>
+      <link>https://cestlaz.github.io/posts/2015-10-20-alda.html/</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-20-alda.html/</guid>
+      <description>div.center {text-align:center;} 
+ Scale, scale, scale. Scripted lessons. Online resources, Moocs. No excuses schools. All of these are modern trends in education. None of these are about good education. It&#39;s really demoralizing reading article after article devaluing true master teachers and real education.  So, last night was a real pleasure.  I attended a talk, given by Alan Alda on communicating science. The talk was sponsored by The Academy for Teachers.</description>
+    </item>
+    
+    <item>
+      <title>Looking under the hood</title>
+      <link>https://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</guid>
+      <description>div.center {text-align:center;} 
+ Just had an interesting conversation with Chris, one of our CSTUY mentors. Chris is working with one of our more advanced groups of hackers - they&#39;ll be creating a web based app that with ultimately be deployed as mobile using PhoneGap.  The question he had was &#34;Angular.js or Backbone.js.&#34;  Chris and I have had this conversation before. I was explaining at the time why I preferred to use Backbone.</description>
+    </item>
+    
+    <item>
+      <title>Grading Autograders</title>
+      <link>https://cestlaz.github.io/posts/2015-10-16-graders.html/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-16-graders.html/</guid>
+      <description>div.center {text-align:center;} 
+ The other day codehs made an announcement about their new autograder. Fellow CS Teaching veteran Alfred Thompson had his say up on his blog where he talked about Mark Guzdial&#39;s comment on autograders leading to less creative assignments.  I very much agree that autograders, due to their rigidness lend themselves to less creative projects, but thought I&#39;d write up a few of my own thoughts on autograders.</description>
+    </item>
+    
+    <item>
+      <title>Free labor for the College Board and more angst for the kids</title>
+      <link>https://cestlaz.github.io/posts/2015-10-13-psat.html/</link>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-13-psat.html/</guid>
+      <description>I won&#39;t be teaching my regular classes tomorrow. I&#39;ll be meeting all my kids but classes will only be 12 minutes long.  So, how will my colleagues and I spend the rest of the day?  Proctoring the PSAT.  This has always been a sore point with me. Back in the day, many schools, Stuy included, offered the PSAT on the weekend. If you wanted to proctor, you&#39;d come in and get paid a little extra.</description>
+    </item>
+    
+    <item>
+      <title>Coding schools - or why I chose NYCDA</title>
+      <link>https://cestlaz.github.io/posts/2015-10-12-nycda.html/</link>
+      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-12-nycda.html/</guid>
+      <description>Some of you might have noticed that a few months ago, I decided to affiliate myself with The New York Code and Design Academy or NYCDA. I took on the role of &#34;Academic Director, Youth Programs.&#34; It&#39;s a part time gig, at least for now and I&#39;m helping them develop their programs for middle and high school students.  Why did I choose them?  There are a number of coding schools with varying levels of hype around them.</description>
+    </item>
+    
+    <item>
+      <title>How it all began</title>
+      <link>https://cestlaz.github.io/posts/2015-10-09-be-a-cs-teacher.html/</link>
+      <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-09-be-a-cs-teacher.html/</guid>
+      <description>div.center {text-align:center;} 
+  This past week, Garth Flint wrote a couple of posts on how he got to be a CS teacher and on being a CS teacher. You can find them here: Part 1 Part 2 
+ They&#39;re both well worth a read.  It got me thinking about how I got my start.  I never planned on being a teacher. I figured I&#39;d just work in tech.</description>
+    </item>
+    
+    <item>
+      <title>I guess some people like the blues</title>
+      <link>https://cestlaz.github.io/posts/2015-10-01-fans.html/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-01-fans.html/</guid>
+      <description>div.center {text-align:center;} 
+ Funny story from yesterday.  Devorah, my better half, is an assistant principal at another high school. Yesterday evening, she was at work late for &#34;curriculum night.&#34; Parents came to the school after hours to hear a variety of presentations.  During her presentation, Devorah mentioned her name, that she had two former public school kids in college, and that&#39;s about it for the personal info.</description>
+    </item>
+    
+    <item>
+      <title>Hacking Sessions - iterating until it&#39;s right</title>
+      <link>https://cestlaz.github.io/posts/2015-09-26-hacking-sessions.html/</link>
+      <pubDate>Sat, 26 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-09-26-hacking-sessions.html/</guid>
+      <description>div.center {text-align:center;} 
+
+  Today we kicked off Hacking Sessions 2015. Saturday morning with sixty kids in a room brainstorming ideas. Soon they&#39;ll settle on teams and projects and we&#39;ll be off for a semester of exploring CS and tech.  The next couple of weeks will be a little chaotic with groups shifting, mentors figuring out which groups to work with and us, the instructors launching each team on its way.</description>
+    </item>
+    
+    <item>
+      <title>Suspension if disbelief and the Mikado</title>
+      <link>https://cestlaz.github.io/posts/2015-09-21-mikado.html/</link>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-09-21-mikado.html/</guid>
+      <description>div.center {text-align:center;} 
+ I was brought up on Gilberg and Sullvan. My father, who always wanted to be an opera singer sang with LOOM back in the day and there was always classical music playing. Either from the Hi Fi or my father singing.  Recently, there&#39;s been a kerfufle over what was to be NYGASP&#39;s production of Mikado.  My son, Natan wrote a terrific blog post on it and the suspension of belief in opera.</description>
+    </item>
+    
+    <item>
+      <title>Not in with the in crowd - concerns about NYC &amp;#35CS4All</title>
+      <link>https://cestlaz.github.io/posts/2015-09-18-in-crowd.html/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-09-18-in-crowd.html/</guid>
+      <description>div.center {text-align:center;}    Earlier this week, Mayor Bill deBlasio announced some ambitious CS Education Plans for NYC. I posted a response here. Now that a few days past, I thought I&#39;d clear a few things up.  First and foremost, I hope my concerns are unfounded and I hope the plan is a tremendous success.  What&#39;s got me bummed is not that I need to see my name in lights given that in many ways I&#39;ve been a CS Ed trailblazer (although who doesn&#39;t like a little ego stroking), rather that in my humble opinion NY has squandered a great opportunity and resource and as a results, kids won&#39;t get nearly all they could.</description>
+    </item>
+    
+    <item>
+      <title>I should be happy but feel like I&#39;ve failed</title>
+      <link>https://cestlaz.github.io/posts/2015-09-15-failed.html/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-09-15-failed.html/</guid>
+      <description>div.center {text-align:center;} 
+ The NY Times just posted an article - the mayor announced a 10 year deadline by which time all NYC public school students will be taking CS.  I should be happy.  I&#39;m not.  I feel thoroughly defeated.  As many of you know, I&#39;ve struggled for years to try to bring CS education to more kids and to train more teachers. You also probably know that over the years, I&#39;ve become pretty good at this.</description>
+    </item>
+    
+    <item>
+      <title>Why I have no faith in NYC Doing CS Ed right.</title>
+      <link>https://cestlaz.github.io/posts/2015-08-22-nycdo.html/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-08-22-nycdo.html/</guid>
+      <description>div.center text-align:center;    This post is in response to an email thread on the NYTM mailing list. I mentioned how the NYC DOE refused to even look at our program at Stuy let alone support us and help us get to more kids.  Rather than pollute an email thread, I said I&#39;d write up the story here.  I&#39;ve been at the CS Ed game for a long time.</description>
+    </item>
+    
+    <item>
+      <title>Setting kids up to fail - CS edition</title>
+      <link>https://cestlaz.github.io/posts/2015-08-17-setting-up-to-fail-cs.html/</link>
+      <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-08-17-setting-up-to-fail-cs.html/</guid>
+      <description>div.center {text-align:center;}    We talked about setting kids up to fail in math. What about CS?  Well, it&#39;s a little subtler.  I started thinking about this after a conversation with one of my graduates about Harvard&#39;s famous CS50. Since that conversation, I&#39;ve spoken to a number of my kids that have gone through CS50 and most seem to say the same things: They don&#39;t really teach anything  The kids rely on a group member who already knows stuff or will learn all the stuff on their own  If it weren&#39;t for my StuyCS background my group would have really struggled.</description>
+    </item>
+    
+    <item>
+      <title>Help us create a Saturday Hacking Space for kids</title>
+      <link>https://cestlaz.github.io/posts/2015-08-12-kickstarter.html/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-08-12-kickstarter.html/</guid>
+      <description>div.center {text-align:center;} 
+
+ As many of you know, I&#39;m part of the team behind CSTUY, a non-profit dedicated to bringing the best CS education to kids who wouldn&#39;t otherwise have the opportunity.  Over the past two summers we&#39;ve hosted our highly succesful immersion program SHIP. We were also able to run a small Saturday program thanks to the generosity of SumAll who provided space, and other members of the StuyCS family who provided laptops and the funds we needed.</description>
+    </item>
+    
+    <item>
+      <title>Setting kids up to fail - math class</title>
+      <link>https://cestlaz.github.io/posts/2015-08-11-set-up-to-fail-math.html/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-08-11-set-up-to-fail-math.html/</guid>
+      <description>div.center {text-align:center;} 
+ &#34;Four in ten NYC high schools don&#39;t offer Algebra 2 and both Physics and Chemistry.&#34;  At least that&#39;s what this article and linked report say.  The implication is clear - many of our students don&#39;t have the opportunity to advance in math and the sciences.  The truth though is much more disturbing.  The reason why these schools aren&#39;t offering Algebra 2 is very simple - the kids aren&#39;t ready for it.</description>
+    </item>
+    
+    <item>
+      <title>What makes a great manager? - Open praise for my team</title>
+      <link>https://cestlaz.github.io/posts/2015-07-30-ship-teachers.html/</link>
+      <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-07-30-ship-teachers.html/</guid>
+      <description>div.center {text-align:center;} 
+ Today was the last day of SHIP 2015, CSTUY&#39;s summer immersion program. I was blown away by the projects. The shipmates and the stewards all did tremendous work.  All through the reception parents would come up to me and rave about the job I did with the program. They&#39;d thank me, tell me how exited their child was every day, how proud they were of what they were learning and on and on.</description>
+    </item>
+    
+    <item>
+      <title>Teaching to the test - APCS</title>
+      <link>https://cestlaz.github.io/posts/2015-07-25-teaching-to-the-test.html/</link>
+      <pubDate>Sat, 25 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-07-25-teaching-to-the-test.html/</guid>
+      <description>This image has been making its rounds.  Largest expansion is pretty clear but are the largest gain in 3+ scores mean a higher percentage of 3+ scores or merely the result of more test takers?  I&#39;m curious, but that&#39;s not what I wanted to talk about.  Looking at our AP results from this year we had: 
+ For the past two years we&#39;ve been allowed to run 7 sections of AP Computer Science with about 30 kids per class.</description>
+    </item>
+    
+    <item>
+      <title>Why don&#39;t we trust teachers or Rubber Room Light?</title>
+      <link>https://cestlaz.github.io/posts/2015-06-24-grading-regents.html/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-24-grading-regents.html/</guid>
+      <description>div.center {text-align:center;} 
+ It&#39;s Wednesday morning. I&#39;m sitting in an unairconditioned room. I really shouldn&#39;t be writing this since we were told &#34;NO ELECTRONIC DEVICES!!!&#34;  Where am I? Up at a school on East 96th street grading the geometry regents.  Back in the day schools gave exams then schools graded exams. Typically by committee. You&#39;d get a room full of math teachers, each teacher would take a problem or two and we&#39;d work through class envelopes.</description>
+    </item>
+    
+    <item>
+      <title>Shipping a product</title>
+      <link>https://cestlaz.github.io/posts/2015-06-19-shipping-product.html/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-19-shipping-product.html/</guid>
+      <description>div.center {text-align:center;} 
+  Back in April, I was at the second annual &#34;Dream It, Code It, Win It!&#34; awards. Some of our kids had submitted work and were selected as awardees in the high school division.  It was great to see Jack and David Cahn there. Jack and David were both members of winning high school teams last year and they were back as college winners this time around.</description>
+    </item>
+    
+    <item>
+      <title>CS Semi Formal</title>
+      <link>https://cestlaz.github.io/posts/2015-06-15-semi-formal.html/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-15-semi-formal.html/</guid>
+      <description>div.center {text-align:center;} 
+  Today marked the last day of classes and time for the 8th annual Stuy CS Semi Formal.  
+  What&#39;s the Stuy CS Semi Formal? It&#39;s another bad idea that we refuse to let die. Eight years ago JonAlf joked that someone in class joked that they should have a party and they should all get dressed up. My thought? &#34;YEAH!!! LET&#39;S DO IT!</description>
+    </item>
+    
+    <item>
+      <title>Jazz Hands!!!!!!</title>
+      <link>https://cestlaz.github.io/posts/2015-06-11-jazz-hands.html/</link>
+      <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-11-jazz-hands.html/</guid>
+      <description>div.center {text-align:center;} 
+
+  The StuyCS Semi Formal, Clyde &#34;Thluffy&#34; Sinclair, and other assorted silliness - one of the reasons StuyCS is a family is that we try to have fun.  Jazz Hands day was the latest.  I got the idea at JonAlf&#39;s wedding. The wait staff were all wearing white gloves - all of a sudden it hit me - Jazz Hands!!!! and Jazz Hands day was born.</description>
+    </item>
+    
+    <item>
+      <title>Learning takes time, hype doesn&#39;t</title>
+      <link>https://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/</guid>
+      <description>or: what to watch out for in after school and summer programs  
+CAVEATS:  In writing this post I do not mean to say that there aren&#39;t some great programs out there - there are. I also know that most of the programs I&#39;m aware are being developed by people who are really trying to do some good.  
+  Since I wrote a post on my problem with drop in curricula on March 4 (http://cestlaz.</description>
+    </item>
+    
+    <item>
+      <title>def hack(2015)</title>
+      <link>https://cestlaz.github.io/posts/2015-03-29-defhacks.html/</link>
+      <pubDate>Sun, 29 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-03-29-defhacks.html/</guid>
+      <description>.center {text-align:center;} div.center {text-align:center;} 
+ 
+ This past Saturday, 50 high school students, 10 high school mentors, and 10 more post high school mentors headed down to SumAll to participate in def hacks(2015): CSTUY&#39;s first hackathon.  The fifty participants, came from all over the city, Long Island, and New Jersey. They ranged from having never programmed to three or four years experience.  Projects ranged from web sites to full stack applications.</description>
+    </item>
+    
+    <item>
+      <title>Shell games - who confirmed attendence</title>
+      <link>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</link>
+      <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid>
+      <description>div.center {text-align:center;} 
+ Quick post on why I love the Unix command line.  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+    </item>
+    
+    <item>
+      <title>Just another day at StuyCS</title>
+      <link>https://cestlaz.github.io/posts/2015-03-08-antother-day-stuycs.html/</link>
+      <pubDate>Sun, 08 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-03-08-antother-day-stuycs.html/</guid>
+      <description>div.center {text-align:center;} 
+ .photo {width:60%;}   Last post was a little heavy so just a short fun one for today.  &#34;Just another day at StuyCS.&#34; That was the subject of the email Brian sent with the photo above. What&#39;s going on?  We&#39;re working on advanced JavaScript while also looking at Backbone.js.  Now, as sometimes happens, Batya, while in her CS class up at college, decided to open up a Google chat with me.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s Expedient vs what&#39;s good - curriculum vs teachers</title>
+      <link>https://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/</link>
+      <pubDate>Wed, 04 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/</guid>
+      <description>div.center {text-align:center;} 
+  If we don&#39;t do anything then only schools like Stuy will have CS. 
+  I heard that the other day. It was a comment relating to a number of efforts, both in and out of NY to get CS into the classroom.  These programs abound and up front let me say that they&#39;re all well meaning and have the best of intentions.</description>
+    </item>
+    
+    <item>
+      <title>Believing in what you&#39;re doing</title>
+      <link>https://cestlaz.github.io/posts/2015-02-25-good-idea-avc.html/</link>
+      <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-02-25-good-idea-avc.html/</guid>
+      <description>div.center {text-align:center;} 
+ The other day, Fred Wilson sent out a short tweet storm turned post on determining if an entrepreneur&#39;s startup idea is a good one. It&#39;s short. Take a minute to read it over.  At its core, the post and the comments talk about belief in an idea and it got me thinking about some things as an educator.  Tweet 7:   and you have to believe in yourself and your idea or nobody else ever will</description>
+    </item>
+    
+    <item>
+      <title>A chocolate treasure in a city losing its soul</title>
+      <link>https://cestlaz.github.io/posts/2015-02-13-myzels.html/</link>
+      <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-02-13-myzels.html/</guid>
+      <description>div.center {text-align:center;} 
+
+ I&#39;m a born and bred New Yorker and more and more I&#39;m lamenting what the city&#39;s becoming.  New York used to be a collection of neighborhoods. Yes, we were the city that never slept, but there were scores of mom and pop stores, sole proprieterships. You could become a &#34;regular.&#34; I&#39;m reminded of Tom Shachman&#39;s book Around the Block which looks at the businesses around a single NYC block, mostly all gone now.</description>
+    </item>
+    
+    <item>
+      <title>Taking stock and tracking progress</title>
+      <link>https://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</guid>
+      <description>div.center {text-align:center;} 
+ When starting the spring semester, students are frequently a little rusty. They just had a high intensity month of study, tests, and projects. That was followed by a week of nothing.  I like to start with something lightweight that gets them coding again and ramps them up to speed.  In SoftDev I started with a brief overview of the HTML5 canvas and then gave them a small homework assignment to do something fun.</description>
+    </item>
+    
+    <item>
+      <title>Kids these days -- they don&#39;t know nuttin</title>
+      <link>https://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</guid>
+      <description>div.center {text-align:center;} 
+ Yesterday, I took part in a round table discussion on Ed Tech and Tech Ed, the latter being more, as they say, my wheelhouse. Afterwards a few of us were chatting and a friend observed that when she first started to talk to high school kids she was shocked that they really didn&#39;t know the local tech players - neither names nor companies.  A couple of years ago, another friend was helping me organize an event for high schoolers.</description>
+    </item>
+    
+    <item>
+      <title>CS Ed Predictions 2015</title>
+      <link>https://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</link>
+      <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</guid>
+      <description>div.center {text-align:center;} 
+ I just read Alfred Thompson&#39;s predictions for next year. I was going to leave a comment but since it would have gotten somewhat long winded, I thought I&#39;d comment in a post of my own.  If you haven&#39;t read Alfred&#39;s post yet, check it out: http://blog.acthompson.net/2015/01/computer-science-education-predictions.html On more states allowing CS to count for a graduation requirement:  Alfred&#39;s probably right but I&#39;m leery. Sure, it could end up terrific but I could see a number of ways this could play out badly.</description>
+    </item>
+    
+    <item>
+      <title>Boys, Girls, Arts, Tech, and Vacation</title>
+      <link>https://cestlaz.github.io/posts/2015-01-03-vacation.html/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-01-03-vacation.html/</guid>
+      <description>div.center {text-align:center;} 
+ Spent most of vacation relaxing. Finished off the remaining college recs, tried to catch up on sleep, and worked on a few project.  We&#39;ve had an interesting December break dynamic in our household for the past few years. My son, Natan is very much into his music, both as a performer and a composer. A few years ago we discovered KlezKamp. It spoke to both Natan and Devorah.</description>
+    </item>
+    
+    <item>
+      <title>Teachers, Rockstars, and the Godfather</title>
+      <link>https://cestlaz.github.io/posts/2014-12-14-rockstar-godfather.html/</link>
+      <pubDate>Sun, 14 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-12-14-rockstar-godfather.html/</guid>
+      <description>div.center {text-align:center;} 
+ In a recent post, Alfred Thompson referred to an earlier post where he mentioned rock star CS teachers. That&#39;s a term I&#39;ve heard thrown around a lot in the past few years. I&#39;ve heard some of my graduates referred to as rock stars - top tech people, and in fact I&#39;ve seen some of them courted for positions in a manner that a rock star might be accustomed to.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on diversity</title>
+      <link>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</link>
+      <pubDate>Sun, 07 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</guid>
+      <description>div.center {text-align:center;} 
+ Yesterday, my buddy Stan pointed me to this article: &#34;To address tech’s diversity woes, start with the vanishing Comp Sci classroom&#34;  It gives a reasonable overview of the gender issues in computer science education. The article talks about the drop in popularity of the old Advanced Placement AB course and its eventually being dropped as well as thoughts on how the current A course is pretty dry.</description>
+    </item>
+    
+    <item>
+      <title>Reunions part 2 - My Stuy, Your Stuy</title>
+      <link>https://cestlaz.github.io/posts/2014-11-30-reunions-2.html/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-30-reunions-2.html/</guid>
+      <description>div.center {text-align:center;} 
+ About a month ago, I was at my 30 year high school reunion. Yesterday I was at the class of 2009&#39;s 5 year one. Stuy 2004 also had their 10 year reunion last night.  It&#39;s always nice to be invited to reunions - I know it&#39;s largely dependent on who&#39;s on the organizing committee but it&#39;s nice to be remembered.  Last time I wrote about Stuy reunions I noted how similar they all are.</description>
+    </item>
+    
+    <item>
+      <title>Little details we take for granted</title>
+      <link>https://cestlaz.github.io/posts/2014-11-21-little-details.html/</link>
+      <pubDate>Fri, 21 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-21-little-details.html/</guid>
+      <description>div.center {text-align:center;} 
+  I&#39;m getting ready for my AP classes this morning. We&#39;re building a word search generator and we&#39;re at the point where we need to read a list of words from a file  First, I&#39;d better make sure I can do it. We&#39;re using the java scanner, mostly because it&#39;s easy.  First cut: public class wl { public static void main(String[] args) { Scanner sc = new Scanner(new File(&#34;</description>
+    </item>
+    
+    <item>
+      <title>Hidden Complexity</title>
+      <link>https://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</link>
+      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</guid>
+      <description>div.center {text-align:center;} 
+ I&#39;ve said it many times:   Never use a tool you couldn&#39;t write yourself. 
+ That is - make sure you understand what&#39;s going on under the hood.  In AP we&#39;ve been playing with ArrayLists. The problem for today? Create an ArrayList with consecutive integers and then write a routine that will randomize the ArrayList.  For example, you might start with this ArrayList: 0,1,2,3,4,5</description>
+    </item>
+    
+    <item>
+      <title>Hi, I&#39;m Mike, I went to high school with....</title>
+      <link>https://cestlaz.github.io/posts/2014-11-16-weddings.html/</link>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-16-weddings.html/</guid>
+      <description>div.center {text-align:center;} 
+ That&#39;s how I introduce myself whenever I attend a former student&#39;s wedding. It leads to all sorts of confusion.  Even better was the time I was at the wedding of two former students. I had just dropped around 65 pounds and was wearing my hair differently. I sat at a table filled with former students that didn&#39;t recognize me &amp;#x2013; they had no reason to expect me, out of context and all.</description>
+    </item>
+    
+    <item>
+      <title>Forty minutes to the punch line or &#34;we&#39;ll never look at functions the same way again&#34;</title>
+      <link>https://cestlaz.github.io/posts/2014-11-12-decorators.html/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-12-decorators.html/</guid>
+      <description>div.center {text-align:center;} 
+  How many times do we teach something and leave the kids thinking:  &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34;  It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class.  Today we started exploring some advanced python.  We started by showing that you can assign functions to variables or pass them as parameters: def inc(x): return x+1 def dec(x): return x-1</description>
+    </item>
+    
+    <item>
+      <title>Rich and Rich - two legends on opposite sides of the hall</title>
+      <link>https://cestlaz.github.io/posts/2014-11-07-rich-rich.html/</link>
+      <pubDate>Fri, 07 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-07-rich-rich.html/</guid>
+      <description>div.center {text-align:center;} .leftborder {border-left:1px; border-style:solid;} 
+ We&#39;ll get back to CS content soon, but for now:  Last Tuesday was Election day - no students in the school - a day devoted to professional development. Traditionally, math team coaches from around the city descend on Stuy for a day full of lectures, discussion, and general catching up. I&#39;ve never actually attended these meetings. In the past, they were for math team coaches only and this year, I was actually allowed to do something with the CS teachers.</description>
+    </item>
+    
+    <item>
+      <title>VamVoom - Turning teachers into rubble</title>
+      <link>https://cestlaz.github.io/posts/2014-11-02-vamvoom.html/</link>
+      <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-02-vamvoom.html/</guid>
+      <description>div.center {text-align:center;} 
+ Earlier today I saw a friend&#39;s Facebook post questioning the sanity of common core math. He had an issue with the way his daughter was being forced to work out problems. A few of us chimed in with our low op pinion on Common Core, others said they thought it was a good idea. I think the fact that my buddy was questioning it is a major strike against CC.</description>
+    </item>
+    
+    <item>
+      <title>Evil</title>
+      <link>https://cestlaz.github.io/posts/2014-10-31-halloween.html/</link>
+      <pubDate>Fri, 31 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-10-31-halloween.html/</guid>
+      <description>div.center {text-align:center;} 
+ October 31, 2014. Twenty years after my first Stuy Halloween.  
+ Little did I know that a goof of an idea would turn into a twenty year tradition. This year, I had a chance to team up with Natan in his senior year. Last time we had a Zamansky family duo for Halloween it was Batya cameoing in our Austin Powers - Dr. Evil sketch.</description>
+    </item>
+    
+    <item>
+      <title>Reunions, StuyCS and community</title>
+      <link>https://cestlaz.github.io/posts/2014-10-25-reunions.html/</link>
+      <pubDate>Sat, 25 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-10-25-reunions.html/</guid>
+      <description>div.center {text-align:center;} 
+  In a few hours Devorah and I will be off to our thirty year high school reunion. It&#39;s going to be a boat ride - reminiscent of those excursion day trips to Bear Mountain that Stuy had back in the day.  Having taught CS at Stuy for the last twenty plus years, I&#39;ve also been invited to my share of reunions as a teacher.</description>
+    </item>
+    
+    <item>
+      <title>Wait, I know that!!!!</title>
+      <link>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</guid>
+      <description>div.center {text-align:center;} 
+ If I&#39;m doing my job right, by the time my kids graduate they can learn on their own.  It&#39;s like when two years ago, before starting her summer internship, Batya listed all the tools and technologies she had to work with. When I pointed out that she hadn&#39;t ever used any of them before and asked how she was going to deal with it, she replied &#34;</description>
+    </item>
+    
+    <item>
+      <title>A birds eye view of my career</title>
+      <link>https://cestlaz.github.io/posts/2014-09-17-stuycs-spectator.html/</link>
+      <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-09-17-stuycs-spectator.html/</guid>
+      <description>div.center {text-align:center;} 
+ It&#39;s hard to believe that this is my 25th year teaching and that my first StuyCS class graduated in June 1995. It&#39;s really hard to believe that I&#39;m now looking at the end of a significant part of my life and career.  Over the summer, Mariya, Kachun, and Stella, all writers for Stuy&#39;s Spectator worte an article that chronicled StuyCS. It&#39;s a really nice piece.</description>
+    </item>
+    
+    <item>
+      <title>Building a High School Summer CS Program - SHIP</title>
+      <link>https://cestlaz.github.io/posts/2014-09-05-ship-index.html/</link>
+      <pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-09-05-ship-index.html/</guid>
+      <description>div.center {text-align:center;} 
+  I wanted to do a couple more posts on the CSTUY summer program SHIP, particularly about getting funding and reflections but I think I&#39;ll just wrap things up with the school year starting.  Overall it was an amazing success and I&#39;m amazingly proud of the entire team (in no particular order):  Devorah, JonAlf, Sam, Yulia, Topher, Ethan, Leslie, Brian, Andreas, Natan, Miranda, Nadia, Fawn, Lise, Jessica, Angela, Benedict, Elise, Fish, and Derek.</description>
+    </item>
+    
+    <item>
+      <title>Teacher Ratings</title>
+      <link>https://cestlaz.github.io/posts/2014-09-02-mosl.html/</link>
+      <pubDate>Tue, 02 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-09-02-mosl.html/</guid>
+      <description>div.center {text-align:center;} 
+  A while back I posted about the new teacher evaluation system in New York.  
+  I originally wrote about the system here and a little more here.     Well, the results are in and I got my evaluation. What type of teacher am I? According to New York City I&#39;m &#34;Effective,&#34; which is basically run of the mill.</description>
+    </item>
+    
+    <item>
+      <title>State test scores - don&#39;t fall into the trap</title>
+      <link>https://cestlaz.github.io/posts/2014-08-25-state-tests.html/</link>
+      <pubDate>Mon, 25 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-08-25-state-tests.html/</guid>
+      <description>div.center {text-align:center;} 
+Test results are in:  The other week, the NY State third through eight grade high stakes test results were released. This was immediately followed by the usual spin an posturing. The reformers privatizers would claim things like &#34;These charter schools did better than those public schools&#34; while people like me would say &#34;Those charter schools have different populations&#34; and so on.     As you know, I&#39;ve never bought into the &#34;</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - The Crew</title>
+      <link>https://cestlaz.github.io/posts/2014-08-16-ship-crew.html/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-08-16-ship-crew.html/</guid>
+      <description>div.center {text-align:center;}    The Crew    
+  One of the most important, possibly the most important part of SHIP&#39;s success was the crew and that&#39;s what sets us apart.  I&#39;ve seen CS Ed organizations run by business people, lawyers, investors and more.The people developing curriculum are EdTech people, entrepreneurs and anything but seasoned educators. I&#39;ve seen programs developed, curriculum created and then the search for teachers commence.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Our partner - St. Joseph&#39;s College</title>
+      <link>https://cestlaz.github.io/posts/2014-08-08-ship-partners.html/</link>
+      <pubDate>Fri, 08 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-08-08-ship-partners.html/</guid>
+      <description>div.center {text-align:center;} 
+  From the day we filed the paperwork to create CSTUY, we knew we wanted to run a summer program. In fact, we started looking for a space during the 2012/2013 school year. We were hoping to run SHIP for the first time in the summer of 2013 but we all knew it wasn&#39;t really a realistic goal.     Our original plans required at least one classroom sized space, and up to three for full days for a month.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Outcomes</title>
+      <link>https://cestlaz.github.io/posts/2014-08-05-ship-outcomes.html/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-08-05-ship-outcomes.html/</guid>
+      <description>div.center {text-align:center;} 
+  SHIP ended last week. So, how did we do? Time to look at outcomes.  Outcomes can be tricky. There are lots of programs out there and they all claim amazing results. Unfortunately, it seems to me, that everyone&#39;s so concerned with good PR that, well, you know, lies, damned lies, statistics.  
+  First you&#39;ve got claims like &#34;learn how to make a mobile app in under n weeks.</description>
+    </item>
+    
+    <item>
+      <title>Can&#39;t wait for CSTUY SHIP Demo day tomorrow</title>
+      <link>https://cestlaz.github.io/posts/2014-07-30-ship-demo-day-tomorrow.html/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-30-ship-demo-day-tomorrow.html/</guid>
+      <description>div.center {text-align:center;} 
+ Miranda and Nadia showing off their project 
+  Tomorrow is the last day of SHIP and we&#39;ll be capping the whole thing off with a day of demos, science fair style.  Both the shipmates and the stewards will be showing off their work and I can&#39;t wait. I&#39;ve intentionally stayed away from the shipmates because I want to be surprised but I&#39;ve seen what the stewards have been doing and I can&#39;t tell you how proud I am of their work.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Toolset</title>
+      <link>https://cestlaz.github.io/posts/2014-07-28-ship-toolset.html/</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-28-ship-toolset.html/</guid>
+      <description>div.center {text-align:center;} 
+  We&#39;re almost at the end of CSTUY SHIP&#39;s first journey. The Shipmates and stewards will be showing off their work in another day or so and I&#39;m excited to see their finished projects.  But what toolset are they using.     With knew we would be working with two rooms of relative beginners. We needed something that allowed us to develop the shipmates CS skills while also having a low cost of entry.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Outreach</title>
+      <link>https://cestlaz.github.io/posts/2014-07-20-ship-outreach.html/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-20-ship-outreach.html/</guid>
+      <description>div.center {text-align:center;} 
+  We&#39;ve got a few more topics to cover in the Building a SHIP series. We still have to cover: The Crew  Curricular Choices  The long term plan  Site and funding       But for today, we&#39;ll talk outreach.     Outreach proved to be particular challenge for SHIP. Our entire crew is made up of teachers.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Guest Stars</title>
+      <link>https://cestlaz.github.io/posts/2014-07-17-ship-guests.html/</link>
+      <pubDate>Thu, 17 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-17-ship-guests.html/</guid>
+      <description>div.center {text-align:center;} 
+ Cynthia Koo talking about UX 
+  Much like the Love Boat had every week, at CSTUY SHIP, we too have our guest stars.  On the one hand, it&#39;s important to have a focused program that leaves the shipmates empowered to continue their CS studies on their own. That means the shipmates have to explore something with sufficient depth so that the learning sticks.</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - the Stewards</title>
+      <link>https://cestlaz.github.io/posts/2014-07-10-ship-tas.html/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-10-ship-tas.html/</guid>
+      <description>div.center {text-align:center;} div.left {text-align:left; padding:20px;} div.right {text-align:right;padding:20px;} 
+ The Stewards: In size order.  And from the other side  Ok, seriously - here they are.    I thought I&#39;d share some thoughts on how we designed SHIP. I&#39;ll try to talk about curriculum choices, tools and more in the coming week but first, let&#39;s talk about our stewards.  
+  When we first designed SHIP, we knew we wanted to run two rooms each with around 24 shipmates and two teachers.</description>
+    </item>
+    
+    <item>
+      <title>Spreadsheet? I&#39;d rather use the command line.</title>
+      <link>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</link>
+      <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</guid>
+      <description>div.center {text-align:center;} 
+ Spreadsheets are terrific - we&#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students.  Go to Google Drive  Make a form  Send the form out to the students  Wait  
+ All the data gets dumped into a Google spreadsheet. The trouble is, what to do with it once it&#39;s in the spreadsheet.</description>
+    </item>
+    
+    <item>
+      <title>Preparing to launch SHIP</title>
+      <link>https://cestlaz.github.io/posts/2014-07-03-launching-ship.html/</link>
+      <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-03-launching-ship.html/</guid>
+      <description>div.center {text-align:center;} 
+ Some of our Ship Stewards (TAs) planning day one.   
+ What&#39;s been happening since the close of the school year? We&#39;ve been getting ready to start SHIP - CSTUY&#39;s first summer program.  SHIP will be running starting this Monday through the end of July and should be a great adventure. Fast facts: We have 47 students and 14 student teaching assistants (stewards)  We have 4 amazing teachers, 1 mentor for the TAs, me, and one official program mom.</description>
+    </item>
+    
+    <item>
+      <title>An old tradition reborn</title>
+      <link>https://cestlaz.github.io/posts/2014-06-25-joesshanghai.html/</link>
+      <pubDate>Wed, 25 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-06-25-joesshanghai.html/</guid>
+      <description>div.center {text-align:center;} 
+ Yesterday, some of the seniors from the 301 crowd along with a few teachers had an end of year dinner at Joe&#39;s Shanghai. 
+ While it&#39;s Famous for its soup dumplings: 
+ I&#39;m partial to the braised pork shoulder: 
+ We haven&#39;t had a 301 dinner in a long time, but I remember the crew, first unnamed, then using the moniker &#34;the Z-team&#34;</description>
+    </item>
+    
+    <item>
+      <title>Student Projects 2014 - Let&#39;s go to the video tape</title>
+      <link>https://cestlaz.github.io/posts/2014-06-23-softdev-videos-2014.html/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-06-23-softdev-videos-2014.html/</guid>
+      <description>div.center {text-align:center;} 
+ Just completed the second time through for my Software Development course. Last year we had a great time at our Demo Night hosted at Google.  This year, unfortunately, due to a variety of reasons, we couldn&#39;t get the event together. Still, the kids did great work so I thought I&#39;d share.  This year, I asked each group to make a short video.  First up, we&#39;ve got bit&amp;lt;&amp;lt;shift - a search engine for code.</description>
+    </item>
+    
+    <item>
+      <title>What I love about StuyCS</title>
+      <link>https://cestlaz.github.io/posts/2014-05-20-wolfram.html/</link>
+      <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-05-20-wolfram.html/</guid>
+      <description>div.center {text-align:center;} .pic {height:500px;width:500px;} 
+ One of the things I love about StuyCS is that we&#39;ve built a true Geek culture.  Last week, we had a last minute visitor - Stephen Wolfram. Well known for Mathematica and more importantly, Wolfram Alpha, without which our students wouldn&#39;t be able to complete all their homework.  The only problem was that we had about 24 hours from when the visit was confirmed til the talk was to take place.</description>
+    </item>
+    
+    <item>
+      <title>Dream It, Code It, Win It</title>
+      <link>https://cestlaz.github.io/posts/2014-05-01-dream-it.html/</link>
+      <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-05-01-dream-it.html/</guid>
+      <description>div.center {text-align:center;} 
+ Last night, I attended the Dream It, Code It, Win It awards.  I&#39;d actually write up the event but Fred Wilson&#39;s already done a better job at that than I could: http://avc.com/2014/05/dream-it-and-code-it/  As Fred stated on his blog, it&#39;s a real shame that the high schooler&#39;s didn&#39;t get to show off their work but it was great to see that there were entries from a variety of schools including The Academy for Software Engineering and The Young Women&#39;s Leadership Academy.</description>
+    </item>
+    
+    <item>
+      <title>Twitch Coding</title>
+      <link>https://cestlaz.github.io/posts/2014-04-10-twitch-coding.html/</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-04-10-twitch-coding.html/</guid>
+      <description>div.center {text-align:center;} 
+ We have the kids write programs in all sorts of ways on paper  solo  informally in pairs  &#34;pair programming&#34;  We have them trade code, pick up each others projects, and more.  
+ We do lots of different things to engage the kids in a lot of different ways and I love it when someone comes up with a new technique.</description>
+    </item>
+    
+    <item>
+      <title>Announcing SHIP</title>
+      <link>https://cestlaz.github.io/posts/2014-04-07-ship-announce.html/</link>
+      <pubDate>Mon, 07 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-04-07-ship-announce.html/</guid>
+      <description>div.center {text-align:center;} 
+ It&#39;s been a while since my last post.  That&#39;s mostly since I&#39;ve getting things ready for this announcement.  I&#39;ve talked about our non-profit CSTUY before. Well, we&#39;ve been hard at work getting things together for our first summer program: SHIP - Summer Hackers Immersion Program  We&#39;re really excited about this - taking our years of experience teaching kids at our schools and taking it to a wider audience.</description>
+    </item>
+    
+    <item>
+      <title>Sorting - Subtle Errors</title>
+      <link>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</link>
+      <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</guid>
+      <description>div.center {text-align:center;} 
+ Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons We started with Quickselect.  Then we did a quicksort, copying to new arrays during the partition  Then finally to an in place quicksort.  
+ For the final quicksort we used a partition algorithm pretty much the same as the one described here.  We started testing using by building a randomly filled array like this: Random rnd = new Random(); int a[] = new int[n]; for (int i0;i&amp;amp;lt;&amp;lt;span style=&amp;quot;color: #7CB8BB;&amp;quot;&amp;gt;n&amp;lt;/span&amp;gt;;i++) { a[i]  rnd.</description>
+    </item>
+    
+    <item>
+      <title>From selection to sorting</title>
+      <link>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</link>
+      <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</guid>
+      <description>div.center {text-align:center;} 
+ When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced.</description>
+    </item>
+    
+    <item>
+      <title>The new SAT - the more things stay the same</title>
+      <link>https://cestlaz.github.io/posts/2014-03-11-sat-the-same.html/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-11-sat-the-same.html/</guid>
+      <description>div.center {text-align:center;} .large {font-size:200%} 
+Plus ça change, plus c&#39;est la même chose 
+ The more things change, the more they stay the same.  Last week we heard all about the new SAT. Going back to 1600 points, writing optional, and reworking the verbal section.  Immediate responses ranged from the usual fact that SAT doesn&#39;t correlate with college success to the idea that the motive was not to improve the test but rather to recapture market share from the ACT.</description>
+    </item>
+    
+    <item>
+      <title>Be the ball</title>
+      <link>https://cestlaz.github.io/posts/2014-03-09-be-the-ball.html/</link>
+      <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-09-be-the-ball.html/</guid>
+      <description>div.center {text-align:center;} 
+ 
+ Crystal Furman wrote a nice post titled Coding Comprehension about a week ago. There was a little buzz about it in the APCS Facebook group and shortly after, Alfred Thompson added his two cents.  I thought I&#39;d add mine, at least a couple of thoughts.  There are a lot of issues - long term retention, transfer of knowledge from the basics to more advanced tools, pattern recognition, and more.</description>
     </item>
     
     <item>
@@ -2697,6 +3632,26 @@ Meanwhile, as an instructor and program designer I&amp;rsquo;m noticing the diff
     </item>
     
     <item>
+      <title>Four to beam up</title>
+      <link>https://cestlaz.github.io/posts/2013-10-31-halloween.html/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2013-10-31-halloween.html/</guid>
+      <description>Today was Halloween. This year we were the crew of the Enterprise. The original series, that is.
+ 
+Overall, the school had a much more subdued spirit than past years but it was fun. Certainly more fun for me than the past couple of years.  For those of you that don&#39;t know - I have a long history of going all out for Halloween. Starting in October 1994 as Groo the Wanderer:</description>
+    </item>
+    
+    <item>
+      <title>Floating Points</title>
+      <link>https://cestlaz.github.io/posts/2013-10-30-huffpost-floatingpoints.html/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2013-10-30-huffpost-floatingpoints.html/</guid>
+      <description>The other week I was invited by Brandon Diamond and Ilana Sufrin to participate in HuffPost Labs podcast - Floating Points.  I&#39;ve known Brandon for a while and he&#39;s a really awesome guy. He&#39;s a techie for sure but he also understands the importance of community building. Brandon and Ilana (also awesome but I haven&#39;t known her as long) are at HuffPost labs and also are working on important initiatives like Hacker Union.</description>
+    </item>
+    
+    <item>
       <title>Hacking Sessions - Week 2</title>
       <link>https://cestlaz.github.io/posts/2013-10-28-hacking-sessions-2/</link>
       <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
@@ -2842,6 +3797,15 @@ We&amp;rsquo;ve done rather well at Stuy. I might write more in depth at some po
     </item>
     
     <item>
+      <title>Graduation</title>
+      <link>https://cestlaz.github.io/posts/2013-07-02-graduation.html/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2013-07-02-graduation.html/</guid>
+      <description>One week ago today was Stuyvesant&#39;s graduation.  I usually know a number of seniors pretty well but, since I like to cycle through classes, every couple of years I have a group that I&#39;ve been with from 10th grade to 12th.  This was one of those years  It was extra special because it was also my daughter Batya&#39;s graduating class.  It&#39;s been an amazing gift to be able to work at her school for the past four years and she&#39;s been amazingly tolerant.</description>
+    </item>
+    
+    <item>
       <title>Demo Night</title>
       <link>https://cestlaz.github.io/posts/2013-06-27-demo_night/</link>
       <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
@@ -2916,6 +3880,15 @@ Student: I wanted to tell you that today&amp;rsquo;s lesson was AWESOME!!!!!!
     </item>
     
     <item>
+      <title>Taking it out of the school</title>
+      <link>https://cestlaz.github.io/posts/2013-02-10-taking-it-out-of-the-school.html/</link>
+      <pubDate>Sun, 10 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2013-02-10-taking-it-out-of-the-school.html/</guid>
+      <description>Inspired by the likes of Jon Simantov and David Lerner as well as the greater Stuy CS family, a few of us have been working on CSTUY, Computer Science and Technology for Urban Youth. Yeah, we backed into the acronym. Let&#39;s bring Stuy CS out of Stuy so we can work on inspiring a wider range of students.  Well, last Wednesday we had our inaugural event. Hosted by NY TechStars (thanks Moisey), we invited 75 youngsters to an evening of talks.</description>
+    </item>
+    
+    <item>
       <title>Why we script</title>
       <link>https://cestlaz.github.io/posts/2013-01-24-why-we-script/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0000</pubDate>
@@ -2934,6 +3907,37 @@ The code is up on GitHub. This morning I was faced with independently going to e
       
       <guid>https://cestlaz.github.io/posts/2012-12-20-investing-in-people/</guid>
       <description>A little over a year ago, I decided it was time to reach out to my alums, a group I refer to as the &amp;ldquo;Stuy CS family&amp;rdquo; and try to get us together. The most rewarding part of my job involves the relationships I&amp;rsquo;ve developed over the years but is was always between me and my alums and them to their classmates. This was an attempt to start building a network that spanned the years.</description>
+    </item>
+    
+    <item>
+      <title>Layers of a lesson</title>
+      <link>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link>
+      <pubDate>Mon, 17 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid>
+      <description>My last post I was talking about the fact that as teachers, our knowledge and experience is frequently trivialized. The tenor of the times is that anyone can design a course, anyone can teach, and in fact, we don&#39;t even need teachers, just videos or computer based systems. If you&#39;ve ever tutored a friend, you&#39;re more than qualified.
+ That might be a strong statement but everywhere you look you see &#34;</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s missing from the picture</title>
+      <link>https://cestlaz.github.io/posts/2012-12-12-whos-missing-from-the-picture.html/</link>
+      <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-12-12-whos-missing-from-the-picture.html/</guid>
+      <description>So, it&#39;s Computer Science Education Week. Full of rah rah events and everyone&#39;s gung ho about teaching computer science.
+ You all know that CS Ed is what I&#39;ve dedicated most of my life to and maybe that&#39;s why I&#39;m &#34;not feeling it&#34; in terms of CS Ed Week. Let me explain.
+ Yesterday there was a Twitter Conversation led by a &#34;national panel of thought leaders in the field.</description>
+    </item>
+    
+    <item>
+      <title>Real Projects</title>
+      <link>https://cestlaz.github.io/posts/2012-12-09-real-projects.html/</link>
+      <pubDate>Sun, 09 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-12-09-real-projects.html/</guid>
+      <description>This post was supposed to be about varsity academic teams but I wanted to share something else first.
+ For years I was unhappy with our &#34;research&#34; course but due to the misguided views of our past administration, I pretty much had to keep it running. Over the same time, I was frustrated by the fact that there was so much missing in our students computer science related education. Specifically, kids don&#39;t really get to experience creating large &#34;</description>
     </item>
     
     <item>
@@ -2962,6 +3966,449 @@ This year was a little quiet but I got to see more than my share of graduates ov
       
       <guid>https://cestlaz.github.io/posts/2012-11-02-back-to-work/</guid>
       <description>On going back to work today Since school was still out due to Sandy, we ran a second online class yesterday. At the end of the session, which I&amp;rsquo;ll summarize below, I told the class what I wanted them to accomplish today and over the weekend. One student queried &amp;ldquo;you mean no class on Friday :-(?&amp;rdquo; Alas no &amp;ndash; while students aren&amp;rsquo;t reporting to school this morning, teachers are.</description>
+    </item>
+    
+    <item>
+      <title>Sandy Bridge and Screen Casting</title>
+      <link>https://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</link>
+      <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</guid>
+      <description>Here&#39;s what the bridge leading across the West Side Highway over to Stuy during the storm. Hence the title with the weak tech reference.
+
+The storm has kept the schools closed all week so it&#39;s as good a time as any to try to resurrect this blog.  As you can see, I&#39;ve moved from blogger to a Jekyll based blog hosted on Github. I&#39;m really liking the way it works but more on that at a later date.</description>
+    </item>
+    
+    <item>
+      <title>My Favorite Year Teacher</title>
+      <link>https://cestlaz.github.io/posts/2012-05-09-my-favorite-year-teacher.html/</link>
+      <pubDate>Wed, 09 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-05-09-my-favorite-year-teacher.html/</guid>
+      <description>Sorry for the weak title and movie reference.
+It&#39;s teacher appreciation week -- one of our lesser celebrated weeks. I&#39;m waiting for the annual letter we get from the chancellor. Given the level of teacher bashing over the last few years, I&#39;ve recently found their emails amusing.
+I though I&#39;d take the time to thank a few of my most influential teachers. To paraphrase: whatever good I&#39;ve been able to do, it has been because I have stood on the shoulders of giants.</description>
+    </item>
+    
+    <item>
+      <title>Continuing the Journey</title>
+      <link>https://cestlaz.github.io/posts/2012-04-24-continuing-journey.html/</link>
+      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-04-24-continuing-journey.html/</guid>
+      <description>Shortly after our event at Foursquare, I was chatting with Kevin Friedman (Stuy &#39;96). Kevin&#39;s startup is Cojourneo&amp;nbsp;and since it has an educational bent, he thought I might be interested in hearing about it.
+I certainly was.
+Rather than visiting Kevin, I thought it would be fun to have him come down after school, present Cojourneo to any students that wanted to stay late and then field questions.
+Cojourneo is an interesting product.</description>
+    </item>
+    
+    <item>
+      <title>Anyone can cook</title>
+      <link>https://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</link>
+      <pubDate>Sun, 15 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</guid>
+      <description>Anyone can cook - Chef GusteauThese days the rage seems anyone can code.
+On line attempts to teach coding and computing abound.
+We&#39;ve got Udacity and Coursera trying to bring college level academic offerings to the masses on one extreme and more down to earth &#34;learn to code&#34; efforts with Codecademy getting the most press.
+While I applaud any effort to make knowledge more accessible, there are a lot of unanswered questions as to the effectiveness of these latest attempts.</description>
+    </item>
+    
+    <item>
+      <title>Checking in with the family</title>
+      <link>https://cestlaz.github.io/posts/2012-03-31-checking-in-with-family.html/</link>
+      <pubDate>Sat, 31 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-03-31-checking-in-with-family.html/</guid>
+      <description>&#34;...&amp;nbsp;the standardized courses don&#39;t shed much light on future opportunities and they make it hard for students to identify what they&#39;re most interested in. The CS department, on the other hand, is great at demonstrating all the things that are going on in the modern comp sci world.&#34;&amp;nbsp;-- Asa, one of our current CS students.Asa&#39;s comment was in response to an event we held last Tuesday. We brought 100 current students up to FourSquare&amp;nbsp;along with 100 of our CS alums for a mixer.</description>
+    </item>
+    
+    <item>
+      <title>Field Trip!!!!!!!!</title>
+      <link>https://cestlaz.github.io/posts/2012-03-03-field-trip.html/</link>
+      <pubDate>Sat, 03 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-03-03-field-trip.html/</guid>
+      <description>When kids are knee deep in nlog(n) algorithms and working on recursion, it&#39;s easy to lose track of the amazingly neat things that are right around the corner for them.
+I&#39;ve recently been working on organizing our Stuyvesant Computer Science alumni network and am putting together a page with some of the places our graduates work&amp;nbsp;here.
+It can be hard to see how one goes from sorting and searching in Java to working at places like Google, or FourSqurare or creating your own startup like DigitalOcean, Usable Health,&amp;nbsp;TimeHop, or PropHop.</description>
+    </item>
+    
+    <item>
+      <title>Pair Programming Tag Team Shootout</title>
+      <link>https://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout.html/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout.html/</guid>
+      <description>So today we changed things up a bit.
+Instead of having a typical lab type periods, we tried the Pair Programming Tag Team Shootout.
+We aren&#39;t annualized so while the kids that have been with me since September have been working in pairs for a while, the other half of the class is just getting used to how we do it. I also wanted to get the kids to mix a little more.</description>
+    </item>
+    
+    <item>
+      <title>Let me Google that for you</title>
+      <link>https://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you.html/</link>
+      <pubDate>Wed, 08 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you.html/</guid>
+      <description>Piloting a new course this semester - Intro to Computer Science part 2. Between the existing Intro part 1 and this, we should be able to do a pretty thorough job in preparing our kids for the future.
+We decided that we wanted the kids to make deliverables in the form of web pages - plain old html written by hand. Part of the idea was to demystify things, part was to let the kids show off their work, part was to have something that they can generate programatically as the course progressed, and part was to give them a tool they might find valuable beyond their computer science classes.</description>
+    </item>
+    
+    <item>
+      <title>CS Stress</title>
+      <link>https://cestlaz.github.io/posts/2012-01-29-cs-stress.html/</link>
+      <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-01-29-cs-stress.html/</guid>
+      <description>I&#39;ve been mostly underwater for the last couple of weeks.
+End of term issues combined with the Academy of Software Engineering announcement has pretty much eaten up all of my out of class time.
+It&#39;s going to be a week or so before I can finish writing the posts I was planning on, but it looks like a storm is brewing around Stuyvesant and Computer Science so I thought I&#39;d put up this short semi-related post.</description>
+    </item>
+    
+    <item>
+      <title>My Favorite Student</title>
+      <link>https://cestlaz.github.io/posts/2012-01-15-my-favorite-student.html/</link>
+      <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-01-15-my-favorite-student.html/</guid>
+      <description>Fred Wilson and me at #SOTC2012Last week I was given the honor of attending the State of the City address. The mayor was announcing a new school for the fall. An Academy for Software Engineering. This has been in the works for a while and has a long way to go but the announcement was a major step. The project really got its start a couple of years ago. I&#39;d been working hard for years prior trying to get the city to help me grow the program I developed at Stuyvesant, but until Fred got involved, there was no movement.</description>
+    </item>
+    
+    <item>
+      <title>Pretty sneaky, Sis</title>
+      <link>https://cestlaz.github.io/posts/2012-01-11-pretty-sneaky-sis.html/</link>
+      <pubDate>Wed, 11 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-01-11-pretty-sneaky-sis.html/</guid>
+      <description>I&#39;ve always lamented the fact that we don&#39;t have the time or structure to really teach our kids to program.
+In their early classes, they learn syntax, algorithms, and &amp;nbsp;some ways of storing data and while they &amp;nbsp;will probably work on some larger projects as they study CS, kids seem to be mostly left on their own in terms of how to take a project from problem or idea to completion.</description>
+    </item>
+    
+    <item>
+      <title>Stanford classes -- what I&#39;d do next</title>
+      <link>https://cestlaz.github.io/posts/2011-12-15-stanford-classes-what-id-do-next.html/</link>
+      <pubDate>Thu, 15 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2011-12-15-stanford-classes-what-id-do-next.html/</guid>
+      <description>Now that the ML and AI courses are at an end, here are some of the things I would do moving forward.
+Both courses already have a basic track where students just watch the lectures and do the in lecture quizzes and an advanced track where students also complete weekly assignments. I think we can be certain that there were students who just watched a few lectures, many who completed every assignment, and those who fell at all points in between.</description>
+    </item>
+    
+    <item>
+      <title>ML and AI Courses - how they were taught</title>
+      <link>https://cestlaz.github.io/posts/2011-12-08-ml-and-ai-courses-how-they-were-taught.html/</link>
+      <pubDate>Thu, 08 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2011-12-08-ml-and-ai-courses-how-they-were-taught.html/</guid>
+      <description>This is the first in a three part series.
+Part 1 talks about my take on how the courses were presented.
+in Part 2, I&#39;ll discuss my take on how to improve the experience
+and finally, in part 3, we&#39;ll look at on line education with an emphasis on the high school market.
+ 
+ 
+ 
+As some of you know, I&#39;ve been taking the on line Machine Learning andArtificial Intelligence courses offered by Stanford this semester.</description>
+    </item>
+    
+    <item>
+      <title>Where&#39;s Waldo - Text style</title>
+      <link>https://cestlaz.github.io/posts/2011-12-03-wheres-waldo-text-style.html/</link>
+      <pubDate>Sat, 03 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2011-12-03-wheres-waldo-text-style.html/</guid>
+      <description>Ok, it&#39;s a word search.
+We&#39;re always looking for interesting applications to build lessons around. Over the years, I&#39;ve tried different things when teaching 2 dimensional arrays. Simple game boards, representing a crossword puzzle, tables of various sorts, etc.
+This year,&amp;nbsp;JonAlf, one of my amazingly talented colleagues,&amp;nbsp;decided to go with building a word search. I decided to steal the idea. It&#39;s a great one.
+I thought I&#39;d use this post to go through the project and why I like it.</description>
+    </item>
+    
+    <item>
+      <title>Reboot</title>
+      <link>https://cestlaz.github.io/posts/2011-11-27-reboot.html/</link>
+      <pubDate>Sun, 27 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2011-11-27-reboot.html/</guid>
+      <description>A couple of weeks ago, I attended the K-12 workshop at the Grace Hopper Celebration of Women in Computing Conference. It was great to reconnect with some old friends, make some new ones, and talk shop for the weekend.
+One result was that I promised to start blogging again.
+I&#39;ve got a number of ideas for posts lined up. Some on pedagogy, some technical, and some cultural. Hope you enjoy them.</description>
+    </item>
+    
+    <item>
+      <title>The Rest of the Trip</title>
+      <link>https://cestlaz.github.io/posts/2010-08-15-rest-of-trip.html/</link>
+      <pubDate>Sun, 15 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-15-rest-of-trip.html/</guid>
+      <description>Now for the rest of the trip.
+Rome to Little Falls
+We had some trouble getting out of Rome. As always, once we&#39;re on trail, it&#39;s pretty easy to follow, but entering and leaving towns and cities, with the exceptions of canal side towns like Lockport, can be a challenge. During the day, we found that we could either follow the official Erie Canal Trail signs or the pink trail blazes painted on the streets for the Erie Canal Tour (that preceded us by a week).</description>
+    </item>
+    
+    <item>
+      <title>No wifi</title>
+      <link>https://cestlaz.github.io/posts/2010-08-13-no-wifi.html/</link>
+      <pubDate>Fri, 13 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-13-no-wifi.html/</guid>
+      <description>No wifi last night.hopefully tonight.</description>
+    </item>
+    
+    <item>
+      <title>Too tired to blog</title>
+      <link>https://cestlaz.github.io/posts/2010-08-13-too-tired-to-blog.html/</link>
+      <pubDate>Fri, 13 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-13-too-tired-to-blog.html/</guid>
+      <description>Got in to Amsterdam NY a few hours ago. Just finished mapping out tomorrow&#39;s route. Hope to get all the details and pictures for the past three days up tomorrow or Sunday. Too sleepy to do it now.
+Miles Yesterday: 44.5
+Miles Today: 49
+Total: 362.5 (but I think I lost a handful of miles somewhere).
+Tomorrow we make our way to Albany.</description>
+    </item>
+    
+    <item>
+      <title>All roads may lead to Rome, but not all are paved</title>
+      <link>https://cestlaz.github.io/posts/2010-08-11-all-roads-may-lead-to-rome-but-not-all.html/</link>
+      <pubDate>Wed, 11 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-11-all-roads-may-lead-to-rome-but-not-all.html/</guid>
+      <description>Today figured to be one of our longer days mileage wise, we didn&#39;t think it would be that tough or tricky to navigate.
+We checked out of our hotel at about 8:30 and hit the road. Streets through Syracuse, up a few hills towards the outskirts of town. Our directions and actual streets didn&#39;t quite jive so we had a little trouble finding our way back to the canal path, but once we did we figured it would be smooth sailing.</description>
+    </item>
+    
+    <item>
+      <title>Nothing to see here</title>
+      <link>https://cestlaz.github.io/posts/2010-08-10-nothing-to-see-here.html/</link>
+      <pubDate>Tue, 10 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-10-nothing-to-see-here.html/</guid>
+      <description>Yesterday we left Seneca Falls and headed back north up to Syracuse. Our fifth day in a row of riding. Figured it could be one of the tougher days between the changing terrain and the return of the heat and humidity.&amp;nbsp; Apparently, there&#39;s no shade in northern NY.
+Turned out to be true. The first part of the ride was mostly on road. Easy surface, but up and down.&amp;nbsp; When we got to the old canal path, it was more gravely than crushed stone.</description>
+    </item>
+    
+    <item>
+      <title>Day 5</title>
+      <link>https://cestlaz.github.io/posts/2010-08-09-day-5.html/</link>
+      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-09-day-5.html/</guid>
+      <description>Angel 1: What are the Zamansky&#39;s doing next to that bridge?
+Angel 2: Maybe they&#39;re pondering if their lives have had any meaning in this world.
+
+Angel 1: Do you think we should send Clarence to straighten them out? He seemed to do a good job
+&amp;nbsp;the last time we had a troubled person on that bridge. He even earned his wings.
+Angel 2: I don&#39;t know, maybe they&#39;re just trying to decide on where to go to dinner.</description>
+    </item>
+    
+    <item>
+      <title>Weak wifi last night</title>
+      <link>https://cestlaz.github.io/posts/2010-08-09-weak-wifi-last-night.html/</link>
+      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-09-weak-wifi-last-night.html/</guid>
+      <description>Weak wifi last night so I wasn&#39;t able too post a full report.&amp;nbsp; Hopefully tonight from syracuse. 42 miles yesterday for a total of 177.</description>
+    </item>
+    
+    <item>
+      <title>Brockport to Palmyra</title>
+      <link>https://cestlaz.github.io/posts/2010-08-07-brockport-to-palmyra.html/</link>
+      <pubDate>Sat, 07 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-07-brockport-to-palmyra.html/</guid>
+      <description>Beautiful weather today, just like yesterday. Forgot to mention yesterday that Clarence Birdseye started his quick freezing experiments in Brockport.
+Let&#39;s start with the requisite canal pics:
+
+And a picture of my trusty steed:
+
+We originally figured we&#39;d get lunch at Rochester -- about 18 miles into the ride. If we felt good, we&#39;d try to push on to Pittsford. We were pretty excited when we saw:</description>
+    </item>
+    
+    <item>
+      <title>Lockport to Brockport</title>
+      <link>https://cestlaz.github.io/posts/2010-08-06-lockport-to-brockport.html/</link>
+      <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-06-lockport-to-brockport.html/</guid>
+      <description>Day 3. From Lockport to Brockport.
+Lockport is &#34;famous&#34; for it&#39;s locks -- the two channel 5 step ones. Brockport is famous for it&#39;s... brocks?
+After a reasonable nights sleep and breakfast at Hambleton House, our BnB, we were off.
+
+&amp;nbsp;Here&#39;s one of the many lift bridges that cross the canal. Right now it&#39;s down. It&#39;s raised when a boat has to pass under. Back in the day, as there was much less road traffic, the bridges stayed in the raised position so boats and barges could pass.</description>
+    </item>
+    
+    <item>
+      <title>Erie Canal - Day 2</title>
+      <link>https://cestlaz.github.io/posts/2010-08-05-erie-canal-day-2.html/</link>
+      <pubDate>Thu, 05 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-05-erie-canal-day-2.html/</guid>
+      <description>Surpassing our day 1 total of 1 mile wasn&#39;t going to be hard. We set out for breakfast. Rode down by the Niagara River and over the Rainbow Bridge. I was a little surprised not to find Asgard on the other side.
+Back in New York, we continued on. Our first stretch was on Bike Route 5:
+
+Paved but cragly and full of holes. Not very scenic either, at least not until we got closer to Tonowanda where we found the Seabee&#39;s memorial:</description>
+    </item>
+    
+    <item>
+      <title>Erie Canal Day 1</title>
+      <link>https://cestlaz.github.io/posts/2010-08-05-erie-canal-day-1.html/</link>
+      <pubDate>Thu, 05 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-08-05-erie-canal-day-1.html/</guid>
+      <description>Yesterday we started on a 12 day adventure. From Niagara Falls, Ont to Albany, mostly along the Erie Canal Tow path all by bike. A little more ambitious than our four day excursion outside of Pittsburgh last year.
+Bright and early we set out -- at Penn Station by 6:00am. That&#39;s where we had our first scare -- the Amtrak agent said we couldn&#39;t bring out bikes. Amtrak policy say&#39;s otherwise (folding bikes that fold to within a certain size are allowed at any time according to their on line regulations.</description>
+    </item>
+    
+    <item>
+      <title>Circumnavigating the Island (mostly)</title>
+      <link>https://cestlaz.github.io/posts/2010-06-20-circumnavigating-island-moastly.html/</link>
+      <pubDate>Sun, 20 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-06-20-circumnavigating-island-moastly.html/</guid>
+      <description>&amp;nbsp;Been a while since my last post but summer&#39;s coming so I think I&#39;ll have more time and energy. For today, a break from CS and Education issues and something on one of my other passions, bicycling.
+Having not gone on a substantial ride for a while, yesterday, we decided to do a modified circumnavigation of NYC. Starting from home, we rode east over to first avenue. From there North...</description>
+    </item>
+    
+    <item>
+      <title>Flatbreads</title>
+      <link>https://cestlaz.github.io/posts/2010-05-02-flatbreads.html/</link>
+      <pubDate>Sun, 02 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-05-02-flatbreads.html/</guid>
+      <description>I made chapati the other day. Based on a couple of recipe requests and the fact that this blog has been dormant for a while, I thought I&#39;d post the recipe here.
+&amp;nbsp;To start -- Chapati is an Indian flatbread. I guess what I made is technically Pulka but it&#39;s really easy to make and quite tasty.
+Ingredients:
+2 cups whole wheat flour1 cup water1 tsp saltMix all the ingredients together to form a dough.</description>
+    </item>
+    
+    <item>
+      <title>Sorting from the top and from the bottom</title>
+      <link>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</link>
+      <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</guid>
+      <description>Sorting from the top and from the bottom I&#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. I&#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s Next</title>
+      <link>https://cestlaz.github.io/posts/2010-02-18-whats-next.html/</link>
+      <pubDate>Thu, 18 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-18-whats-next.html/</guid>
+      <description>Just a short follow up on the last post.
+In thinking about how I frequently programs, once I have a plan, I work on one part of the project, and then ask myself &#34;what&#39;s next?&#34; That is, what is the next step towards completion.
+It reminded me about a guest speaker we had a about a year and a half ago at one of our &#34;professional development&#34; days. For the past two years, our school has had &#34;</description>
+    </item>
+    
+    <item>
+      <title>They teach programming, don&#39;t they?</title>
+      <link>https://cestlaz.github.io/posts/2010-02-15-they-teach-programming-dont-they.html/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-15-they-teach-programming-dont-they.html/</guid>
+      <description>One evening, many years ago, when I was in college, I had an epiphany. Maybe not as enlightening as the epiphany I had while watching &#34;The Mummy Returns&#34;&amp;nbsp; many years later, but that&#39;s a story for another day.
+While working on some class project, I realized that soon, within a couple of&amp;nbsp; years, I&#39;d be working for a real company and I&#39;d actually have to write code that REALLY works. Not just something that gets past the grader, or answers all the test cases.</description>
+    </item>
+    
+    <item>
+      <title>Subversion for Homework part II and the start of the new term</title>
+      <link>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</guid>
+      <description>Starting the new semester tomorrow and I&#39;ve got a whole bunch of interesting topics to blog about. Some about pedagogy, some technical, and some that I can&#39;t really catagorize.
+For now, though, just a brief follow up on using Subversion for homework collection.
+The basic model used in New York City for teacher improvement and evaluation is the official &#34;observation.&#34; Either your supervisor or the principal sits in on one of your classes.</description>
+    </item>
+    
+    <item>
+      <title>Subversion in the classroom</title>
+      <link>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</link>
+      <pubDate>Tue, 19 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</guid>
+      <description>Ok, not subversion, rather subversion, the version control system.
+I&#39;ve used subversion as a way for students to hand in their projects for years. I haven&#39;t used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it&#39;s worked very well as a method of collection and I think it&#39;s good to get the kids in the habit of using versioning systems.</description>
+    </item>
+    
+    <item>
+      <title>Cold Weather Commuting</title>
+      <link>https://cestlaz.github.io/posts/2010-01-15-cold-weather-commuting.html/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-15-cold-weather-commuting.html/</guid>
+      <description>That&#39;s me with my trusty Bike Friday New World Tourist. Love the bike. Love riding. It&#39;s the fastest, most pleasant way to get around the city. My commute by bike, door to door is 12 minutes. Subway is 20 - 25. Walking about 45. One certainly can&#39;t let winter weather get in the way. 
+I&#39;ve got the body covered with my Assos Fugu jacket. With just a cheap long sleeve duofold shirt it&#39;s great to about 16 degrees.</description>
+    </item>
+    
+    <item>
+      <title>Towers of Hanoi</title>
+      <link>https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi.html/</link>
+      <pubDate>Sun, 10 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi.html/</guid>
+      <description>Closed out last week teaching the Towers of Hanoi. It&#39;s a wonderful topic. Not because it&#39;s so interesting in and of itself, but as a platform from which you can explore any number of interesting topics.
+Many books appropriate for the AP (AB) curriculum mention the towers, but to my knowledge most only scratch the surface. I randomly grabbed two books that I consider good from the shelf before writing this.</description>
+    </item>
+    
+    <item>
+      <title>Who is this man?</title>
+      <link>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</link>
+      <pubDate>Thu, 07 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</guid>
+      <description>Who is this man?
+I showed this to Devorah last night and she immediately said &#34;Hey, that&#39;s the metal filing guy!!!&#34; Yes, you got it -- Wooly Willy!!! Everybody&#39;s favorite party toy.
+Why did this come up? Well, yesterday, Rick put this together at work. So much for any productivity after that.
+It&#39;s amazing all the time sinks you can throw together with just a few lines of code and NetLogo.</description>
+    </item>
+    
+    <item>
+      <title>Talking Shop</title>
+      <link>https://cestlaz.github.io/posts/2010-01-06-talking-shop.html/</link>
+      <pubDate>Wed, 06 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-06-talking-shop.html/</guid>
+      <description>During my first few years teaching computer science, I frequently felt isolated. As pretty much the only CS guy I really didn&#39;t have any one to &#34;talk shop&#34; with. It&#39;s hard to bounce pedagogical ideas off of your colleagues when they teach subjects that are tangentially related, at best. I now consider myself extremely fortunate that I have four terrific friends and colleagues teaching CS with me. Now we have the same advantage that other teachers have enjoyed for years.</description>
+    </item>
+    
+    <item>
+      <title>First Day Back</title>
+      <link>https://cestlaz.github.io/posts/2010-01-04-first-day-back.html/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-04-first-day-back.html/</guid>
+      <description>First day back after a break is always hard. By the last day of vacation, I&#39;m actually sleeping a little later and shifting the body clock back is rather harsh. It&#39;s tough enough getting started again, but it&#39;s even worse when you&#39;re thrown a curve ball. I got in at my usual 7:00, made my coffee, and started getting my lessons ready for the day. At about 7:30 we lost power in half of the room.</description>
+    </item>
+    
+    <item>
+      <title>Looking for interesting questions</title>
+      <link>https://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</link>
+      <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</guid>
+      <description>For the winter break, I assigned this set of A exam questions (actually, just the three that don&#39;t deal with the case study) to my AP classes. I wanted to assign something that wasn&#39;t particularly heavy but I didn&#39;t want my students to forget everything over break. As with most AP exam questions, they&#39;re long, wordy, and somewhat brain dead. They take a long time to read, but they frequently take you step by step through what they want you to do.</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://cestlaz.github.io/posts/2010-01-02-welcome.html/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-02-welcome.html/</guid>
+      <description>Over the past twenty years or so, I&#39;ve mulled, discussed, and argued various aspects of education, computer science, and of course computer science education with friends, students, and colleagues.
+This past summer, I had the privilege to get to meet and briefly work with comp sci educators from around the country and started to thing that there were other like minded people, but we didn&#39;t have a forum with which to communicate.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/</guid>
+      <description>title: &#34;Code.org and the College Board - what&#39;s the catch and is it a cash cow?&#34; date: &#34;2015-05-19&#34; tags: policy     div.center {text-align:center;} 
+  Big announcement the other day. Code.org will be partnering with the College Board.  They&#39;ll help school&#39;s adopt their CS courses and provide funding for Code.org&#39;s professional development.  You can read about it on Code.org&#39;s blog here and a USA Today article here.</description>
     </item>
     
     <item>

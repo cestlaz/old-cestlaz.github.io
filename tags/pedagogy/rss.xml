@@ -200,6 +200,274 @@ The two examples are just to illustrate the point.</description>
     </item>
     
     <item>
+      <title>IDE or the Cloud</title>
+      <link>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link>
+      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</guid>
+      <description>div.center {text-align:center;}    This weekend, I had a conversation on Twitter with my friend Roy Bahat: @zamansky Mike, unrelated, what do you think of https://t.co/BT1ublbajF ?
+&amp;mdash; Roy Bahat (@roybahat) April 9, 2016 
+@roybahatMaybe I&amp;#39;ll blog about my thoughts about online environments vs local installs
+&amp;mdash; Mike Zamansky (@zamansky) April 9, 2016
+@roybahat Agree with this but there are many issues. I&amp;#39;ll try to write more later.</description>
+    </item>
+    
+    <item>
+      <title>DevOps, or You don&#39;t know what the F you&#39;re doing!</title>
+      <link>https://cestlaz.github.io/posts/2016-01-31-devops.html/</link>
+      <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-31-devops.html/</guid>
+      <description>div.center {text-align:center;} 
+ Having just concluded almost a quarter century at one job in one place, I&#39;ve been reflecting on a number of things.  What I accomplished, what I&#39;ve failed to accomplish, highlights, low lights and everything in between.  I&#39;ve also learned a lot over these twenty five years.  One thing I learned is DevOps and System Administration.  Back around 1993 or 1994 Stuy wasn&#39;t really on the internet.</description>
+    </item>
+    
+    <item>
+      <title>Debugging deployment</title>
+      <link>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid>
+      <description>div.center {text-align:center;} 
+ SoftDev students are hard at work on their final projects. By now, they all have fairly complex code bases. This limits how much I can help them with debugging.  There are some problems, though, that they have to contend with that even with experience, are hard to spot. Notably because the very tools you use to debug these errors are part of the problem.  Last week, this happened twice.</description>
+    </item>
+    
+    <item>
+      <title>Cellular Automata for Pathfinding in NetLogo</title>
+      <link>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link>
+      <pubDate>Sun, 17 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid>
+      <description>div.center {text-align:center;} .smaller {height:200px;width:200px}
+.center {text-align:center;} .frame {width:600px;height:800px;}
+
+    Last time we took a look at implementing a Cellular Automaton in NetLogo to do some simple image manipulation. We just scratched the surface. In class, the kids write pretty nice Photoshop Light applications.  Today we&#39;ll look at some more ambitious problem solving - using a Cellular Automaton to find a path through a maze.</description>
+    </item>
+    
+    <item>
+      <title>Cellular Automata, NetLogo and real problems</title>
+      <link>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid>
+      <description>.center {text-align:center;} .frame {width:640px;height:800px;} 
+ We&#39;ve been using NetLogo in our intro course for years. It&#39;s a wonderful programming environment. Many of you recall the Logo programming language. NetLogo is like Logo but instead of programming a turtle, you write a program that&#39;s run by multiple, perhaps hundreds of turtles and also by the world the turtles live on.  Some of the reasons we like it are that it&#39;s: An easy accessible textual programming language Makes building a graphical interface trivial great for modeling Comes with tons of demo models</description>
+    </item>
+    
+    <item>
+      <title>Teaching Coding - getting beyond superficial syntax</title>
+      <link>https://cestlaz.github.io/posts/2016-01-01-different-languages.html/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-01-different-languages.html/</guid>
+      <description>div.center {text-align:center;} 
+ The other day, Alfred Thompson put up a piece about coding in multiple languages. Alfred references a post written last May by Rob Underwood.  Both pieces are worth a look.  Rob is trying to illustrate many of the superficial similarities in popular languages.  In the comments on Alfred&#39;s blog, both Alfred and I alluded to coding in an appropriate style for the language.</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code - because I&#39;m an idiot</title>
+      <link>https://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</link>
+      <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</guid>
+      <description>div.center {text-align:center;} 
+
+ I wish our kids believed us when we tell them that we have the same programming troubles as they do. We stare at code for hours not seeing problems that could be a simple as passing the wrong value. We spend an inordinate amount of time trying to see the problem and then realize that we just forgot something silly.  At this point, it&#39;s common for us CS teachers to tell each other &#34;</description>
+    </item>
+    
+    <item>
+      <title>Other People&#39;s Code</title>
+      <link>https://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</guid>
+      <description>div.center {text-align:center;}     The coding on their project is reminiscent in many ways of an Ed Sheerhan song. It left me in tears and very confused as to what the author was trying to accomplish.  &amp;#x2013; a student commenting on their most recent project.      We had some fun last week. Well, OK, I had some fun. The SoftDev classes had just finished a little project.</description>
+    </item>
+    
+    <item>
+      <title>Interview questions and tests</title>
+      <link>https://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</link>
+      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</guid>
+      <description>The StuyCS Family mailing list was host to an interesting discussion today. One of our younger members asked if the practice of giving technical problems during an interview was going to follow him throughout his career or if it goes away for more senior applicants.  An interesting discussion followed.  It reminded me of a time I was talking to a few senior engineers at a large tech company.</description>
+    </item>
+    
+    <item>
+      <title>Alan Alda on Teaching Science</title>
+      <link>https://cestlaz.github.io/posts/2015-10-20-alda.html/</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-20-alda.html/</guid>
+      <description>div.center {text-align:center;} 
+ Scale, scale, scale. Scripted lessons. Online resources, Moocs. No excuses schools. All of these are modern trends in education. None of these are about good education. It&#39;s really demoralizing reading article after article devaluing true master teachers and real education.  So, last night was a real pleasure.  I attended a talk, given by Alan Alda on communicating science. The talk was sponsored by The Academy for Teachers.</description>
+    </item>
+    
+    <item>
+      <title>Looking under the hood</title>
+      <link>https://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</guid>
+      <description>div.center {text-align:center;} 
+ Just had an interesting conversation with Chris, one of our CSTUY mentors. Chris is working with one of our more advanced groups of hackers - they&#39;ll be creating a web based app that with ultimately be deployed as mobile using PhoneGap.  The question he had was &#34;Angular.js or Backbone.js.&#34;  Chris and I have had this conversation before. I was explaining at the time why I preferred to use Backbone.</description>
+    </item>
+    
+    <item>
+      <title>Grading Autograders</title>
+      <link>https://cestlaz.github.io/posts/2015-10-16-graders.html/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-16-graders.html/</guid>
+      <description>div.center {text-align:center;} 
+ The other day codehs made an announcement about their new autograder. Fellow CS Teaching veteran Alfred Thompson had his say up on his blog where he talked about Mark Guzdial&#39;s comment on autograders leading to less creative assignments.  I very much agree that autograders, due to their rigidness lend themselves to less creative projects, but thought I&#39;d write up a few of my own thoughts on autograders.</description>
+    </item>
+    
+    <item>
+      <title>Setting kids up to fail - CS edition</title>
+      <link>https://cestlaz.github.io/posts/2015-08-17-setting-up-to-fail-cs.html/</link>
+      <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-08-17-setting-up-to-fail-cs.html/</guid>
+      <description>div.center {text-align:center;}    We talked about setting kids up to fail in math. What about CS?  Well, it&#39;s a little subtler.  I started thinking about this after a conversation with one of my graduates about Harvard&#39;s famous CS50. Since that conversation, I&#39;ve spoken to a number of my kids that have gone through CS50 and most seem to say the same things: They don&#39;t really teach anything  The kids rely on a group member who already knows stuff or will learn all the stuff on their own  If it weren&#39;t for my StuyCS background my group would have really struggled.</description>
+    </item>
+    
+    <item>
+      <title>Shipping a product</title>
+      <link>https://cestlaz.github.io/posts/2015-06-19-shipping-product.html/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-19-shipping-product.html/</guid>
+      <description>div.center {text-align:center;} 
+  Back in April, I was at the second annual &#34;Dream It, Code It, Win It!&#34; awards. Some of our kids had submitted work and were selected as awardees in the high school division.  It was great to see Jack and David Cahn there. Jack and David were both members of winning high school teams last year and they were back as college winners this time around.</description>
+    </item>
+    
+    <item>
+      <title>Jazz Hands!!!!!!</title>
+      <link>https://cestlaz.github.io/posts/2015-06-11-jazz-hands.html/</link>
+      <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-06-11-jazz-hands.html/</guid>
+      <description>div.center {text-align:center;} 
+
+  The StuyCS Semi Formal, Clyde &#34;Thluffy&#34; Sinclair, and other assorted silliness - one of the reasons StuyCS is a family is that we try to have fun.  Jazz Hands day was the latest.  I got the idea at JonAlf&#39;s wedding. The wait staff were all wearing white gloves - all of a sudden it hit me - Jazz Hands!!!! and Jazz Hands day was born.</description>
+    </item>
+    
+    <item>
+      <title>Taking stock and tracking progress</title>
+      <link>https://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</guid>
+      <description>div.center {text-align:center;} 
+ When starting the spring semester, students are frequently a little rusty. They just had a high intensity month of study, tests, and projects. That was followed by a week of nothing.  I like to start with something lightweight that gets them coding again and ramps them up to speed.  In SoftDev I started with a brief overview of the HTML5 canvas and then gave them a small homework assignment to do something fun.</description>
+    </item>
+    
+    <item>
+      <title>Kids these days -- they don&#39;t know nuttin</title>
+      <link>https://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</guid>
+      <description>div.center {text-align:center;} 
+ Yesterday, I took part in a round table discussion on Ed Tech and Tech Ed, the latter being more, as they say, my wheelhouse. Afterwards a few of us were chatting and a friend observed that when she first started to talk to high school kids she was shocked that they really didn&#39;t know the local tech players - neither names nor companies.  A couple of years ago, another friend was helping me organize an event for high schoolers.</description>
+    </item>
+    
+    <item>
+      <title>Little details we take for granted</title>
+      <link>https://cestlaz.github.io/posts/2014-11-21-little-details.html/</link>
+      <pubDate>Fri, 21 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-21-little-details.html/</guid>
+      <description>div.center {text-align:center;} 
+  I&#39;m getting ready for my AP classes this morning. We&#39;re building a word search generator and we&#39;re at the point where we need to read a list of words from a file  First, I&#39;d better make sure I can do it. We&#39;re using the java scanner, mostly because it&#39;s easy.  First cut: public class wl { public static void main(String[] args) { Scanner sc = new Scanner(new File(&#34;</description>
+    </item>
+    
+    <item>
+      <title>Hidden Complexity</title>
+      <link>https://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</link>
+      <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</guid>
+      <description>div.center {text-align:center;} 
+ I&#39;ve said it many times:   Never use a tool you couldn&#39;t write yourself. 
+ That is - make sure you understand what&#39;s going on under the hood.  In AP we&#39;ve been playing with ArrayLists. The problem for today? Create an ArrayList with consecutive integers and then write a routine that will randomize the ArrayList.  For example, you might start with this ArrayList: 0,1,2,3,4,5</description>
+    </item>
+    
+    <item>
+      <title>Forty minutes to the punch line or &#34;we&#39;ll never look at functions the same way again&#34;</title>
+      <link>https://cestlaz.github.io/posts/2014-11-12-decorators.html/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-11-12-decorators.html/</guid>
+      <description>div.center {text-align:center;} 
+  How many times do we teach something and leave the kids thinking:  &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34;  It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class.  Today we started exploring some advanced python.  We started by showing that you can assign functions to variables or pass them as parameters: def inc(x): return x+1 def dec(x): return x-1</description>
+    </item>
+    
+    <item>
+      <title>Wait, I know that!!!!</title>
+      <link>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</guid>
+      <description>div.center {text-align:center;} 
+ If I&#39;m doing my job right, by the time my kids graduate they can learn on their own.  It&#39;s like when two years ago, before starting her summer internship, Batya listed all the tools and technologies she had to work with. When I pointed out that she hadn&#39;t ever used any of them before and asked how she was going to deal with it, she replied &#34;</description>
+    </item>
+    
+    <item>
+      <title>Building a SHIP - Outreach</title>
+      <link>https://cestlaz.github.io/posts/2014-07-20-ship-outreach.html/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-20-ship-outreach.html/</guid>
+      <description>div.center {text-align:center;} 
+  We&#39;ve got a few more topics to cover in the Building a SHIP series. We still have to cover: The Crew  Curricular Choices  The long term plan  Site and funding       But for today, we&#39;ll talk outreach.     Outreach proved to be particular challenge for SHIP. Our entire crew is made up of teachers.</description>
+    </item>
+    
+    <item>
+      <title>Twitch Coding</title>
+      <link>https://cestlaz.github.io/posts/2014-04-10-twitch-coding.html/</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-04-10-twitch-coding.html/</guid>
+      <description>div.center {text-align:center;} 
+ We have the kids write programs in all sorts of ways on paper  solo  informally in pairs  &#34;pair programming&#34;  We have them trade code, pick up each others projects, and more.  
+ We do lots of different things to engage the kids in a lot of different ways and I love it when someone comes up with a new technique.</description>
+    </item>
+    
+    <item>
+      <title>Sorting - Subtle Errors</title>
+      <link>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</link>
+      <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</guid>
+      <description>div.center {text-align:center;} 
+ Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons We started with Quickselect.  Then we did a quicksort, copying to new arrays during the partition  Then finally to an in place quicksort.  
+ For the final quicksort we used a partition algorithm pretty much the same as the one described here.  We started testing using by building a randomly filled array like this: Random rnd = new Random(); int a[] = new int[n]; for (int i0;i&amp;amp;lt;&amp;lt;span style=&amp;quot;color: #7CB8BB;&amp;quot;&amp;gt;n&amp;lt;/span&amp;gt;;i++) { a[i]  rnd.</description>
+    </item>
+    
+    <item>
+      <title>From selection to sorting</title>
+      <link>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</link>
+      <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</guid>
+      <description>div.center {text-align:center;} 
+ When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced.</description>
+    </item>
+    
+    <item>
+      <title>Be the ball</title>
+      <link>https://cestlaz.github.io/posts/2014-03-09-be-the-ball.html/</link>
+      <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-03-09-be-the-ball.html/</guid>
+      <description>div.center {text-align:center;} 
+ 
+ Crystal Furman wrote a nice post titled Coding Comprehension about a week ago. There was a little buzz about it in the APCS Facebook group and shortly after, Alfred Thompson added his two cents.  I thought I&#39;d add mine, at least a couple of thoughts.  There are a lot of issues - long term retention, transfer of knowledge from the basics to more advanced tools, pattern recognition, and more.</description>
+    </item>
+    
+    <item>
       <title>I guess I&#39;m a dumbass</title>
       <link>https://cestlaz.github.io/posts/2014-02-27-dumbass/</link>
       <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
@@ -354,6 +622,65 @@ A young lady in my intro class found me in my office near the end of the day:
 Me: What&amp;rsquo;s up?
 Student: I wanted to tell you that today&amp;rsquo;s lesson was AWESOME!!!!!!
  Wow. I&amp;rsquo;ve been teaching 23 years and that&amp;rsquo;s never happened before!</description>
+    </item>
+    
+    <item>
+      <title>Layers of a lesson</title>
+      <link>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link>
+      <pubDate>Mon, 17 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid>
+      <description>My last post I was talking about the fact that as teachers, our knowledge and experience is frequently trivialized. The tenor of the times is that anyone can design a course, anyone can teach, and in fact, we don&#39;t even need teachers, just videos or computer based systems. If you&#39;ve ever tutored a friend, you&#39;re more than qualified.
+ That might be a strong statement but everywhere you look you see &#34;</description>
+    </item>
+    
+    <item>
+      <title>Real Projects</title>
+      <link>https://cestlaz.github.io/posts/2012-12-09-real-projects.html/</link>
+      <pubDate>Sun, 09 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-12-09-real-projects.html/</guid>
+      <description>This post was supposed to be about varsity academic teams but I wanted to share something else first.
+ For years I was unhappy with our &#34;research&#34; course but due to the misguided views of our past administration, I pretty much had to keep it running. Over the same time, I was frustrated by the fact that there was so much missing in our students computer science related education. Specifically, kids don&#39;t really get to experience creating large &#34;</description>
+    </item>
+    
+    <item>
+      <title>Sorting from the top and from the bottom</title>
+      <link>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</link>
+      <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</guid>
+      <description>Sorting from the top and from the bottom I&#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. I&#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s Next</title>
+      <link>https://cestlaz.github.io/posts/2010-02-18-whats-next.html/</link>
+      <pubDate>Thu, 18 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-18-whats-next.html/</guid>
+      <description>Just a short follow up on the last post.
+In thinking about how I frequently programs, once I have a plan, I work on one part of the project, and then ask myself &#34;what&#39;s next?&#34; That is, what is the next step towards completion.
+It reminded me about a guest speaker we had a about a year and a half ago at one of our &#34;professional development&#34; days. For the past two years, our school has had &#34;</description>
+    </item>
+    
+    <item>
+      <title>Towers of Hanoi</title>
+      <link>https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi.html/</link>
+      <pubDate>Sun, 10 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi.html/</guid>
+      <description>Closed out last week teaching the Towers of Hanoi. It&#39;s a wonderful topic. Not because it&#39;s so interesting in and of itself, but as a platform from which you can explore any number of interesting topics.
+Many books appropriate for the AP (AB) curriculum mention the towers, but to my knowledge most only scratch the surface. I randomly grabbed two books that I consider good from the shelf before writing this.</description>
+    </item>
+    
+    <item>
+      <title>Looking for interesting questions</title>
+      <link>https://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</link>
+      <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</guid>
+      <description>For the winter break, I assigned this set of A exam questions (actually, just the three that don&#39;t deal with the case study) to my AP classes. I wanted to assign something that wasn&#39;t particularly heavy but I didn&#39;t want my students to forget everything over break. As with most AP exam questions, they&#39;re long, wordy, and somewhat brain dead. They take a long time to read, but they frequently take you step by step through what they want you to do.</description>
     </item>
     
   </channel>

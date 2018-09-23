@@ -780,6 +780,68 @@ HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;
     </item>
     
     <item>
+      <title>I hate ruby or why I&#39;m switching blogging platforms</title>
+      <link>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</guid>
+      <description>I&#39;m moving to a new blogging platform. I&#39;m still going to use GitHub pages but after a few years of using Jekyll, I&#39;m switching to Nikola.  I think I&#39;ve got the move worked out but if you&#39;re reading this via an rss or atom reader, make sure to check back in a couple of days - you might have to re-subscribe.  Why am I switching?  Because I hate Ruby.</description>
+    </item>
+    
+    <item>
+      <title>IDE or the Cloud</title>
+      <link>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link>
+      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</guid>
+      <description>div.center {text-align:center;}    This weekend, I had a conversation on Twitter with my friend Roy Bahat: @zamansky Mike, unrelated, what do you think of https://t.co/BT1ublbajF ?
+&amp;mdash; Roy Bahat (@roybahat) April 9, 2016 
+@roybahatMaybe I&amp;#39;ll blog about my thoughts about online environments vs local installs
+&amp;mdash; Mike Zamansky (@zamansky) April 9, 2016
+@roybahat Agree with this but there are many issues. I&amp;#39;ll try to write more later.</description>
+    </item>
+    
+    <item>
+      <title>Debugging deployment</title>
+      <link>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid>
+      <description>div.center {text-align:center;} 
+ SoftDev students are hard at work on their final projects. By now, they all have fairly complex code bases. This limits how much I can help them with debugging.  There are some problems, though, that they have to contend with that even with experience, are hard to spot. Notably because the very tools you use to debug these errors are part of the problem.  Last week, this happened twice.</description>
+    </item>
+    
+    <item>
+      <title>Know your tools - intermediate Emacs</title>
+      <link>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</guid>
+      <description>div.center {text-align:center;}    A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs.  I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.  I recommend that my students spend time not only in Emacs but also in tools like Vim or Sublime Text.</description>
+    </item>
+    
+    <item>
+      <title>Shell games - who confirmed attendence</title>
+      <link>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</link>
+      <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid>
+      <description>div.center {text-align:center;} 
+ Quick post on why I love the Unix command line.  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+    </item>
+    
+    <item>
+      <title>Spreadsheet? I&#39;d rather use the command line.</title>
+      <link>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</link>
+      <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</guid>
+      <description>div.center {text-align:center;} 
+ Spreadsheets are terrific - we&#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students.  Go to Google Drive  Make a form  Send the form out to the students  Wait  
+ All the data gets dumped into a Google spreadsheet. The trouble is, what to do with it once it&#39;s in the spreadsheet.</description>
+    </item>
+    
+    <item>
       <title>Shell Games - an introduction</title>
       <link>https://cestlaz.github.io/posts/2014-02-04-shellgames-1-intro/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
@@ -791,6 +853,27 @@ I&amp;#39;d love to see an Intro to Linux (way more than just install) as a 3-ho
 &amp;mdash; Steve Keinath (@keinath) November 12, 2013 @alfredtwo @csteachersa Right. I know very little &amp;amp; would love a &amp;quot;zero to hero&amp;quot; Linux workshop.
 &amp;mdash; Steve Keinath (@keinath) November 12, 2013  
 I briefly considered proposing a session for the conference but it was just a day or two before the deadline, I don&#39;t know if I&#39;m going to be able to attend the conference, and besides, who said anything I proposed would be accepted.</description>
+    </item>
+    
+    <item>
+      <title>Subversion for Homework part II and the start of the new term</title>
+      <link>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</guid>
+      <description>Starting the new semester tomorrow and I&#39;ve got a whole bunch of interesting topics to blog about. Some about pedagogy, some technical, and some that I can&#39;t really catagorize.
+For now, though, just a brief follow up on using Subversion for homework collection.
+The basic model used in New York City for teacher improvement and evaluation is the official &#34;observation.&#34; Either your supervisor or the principal sits in on one of your classes.</description>
+    </item>
+    
+    <item>
+      <title>Subversion in the classroom</title>
+      <link>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</link>
+      <pubDate>Tue, 19 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</guid>
+      <description>Ok, not subversion, rather subversion, the version control system.
+I&#39;ve used subversion as a way for students to hand in their projects for years. I haven&#39;t used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it&#39;s worked very well as a method of collection and I think it&#39;s good to get the kids in the habit of using versioning systems.</description>
     </item>
     
   </channel>
