@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softeng on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/softeng/</link>
+    <description>Recent content in Softeng on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/softeng/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Pair Programming Tag Team Shootout</title>
+      <link>https://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout/</guid>
+      <description>So today we changed things up a bit.
+Instead of having a typical lab type periods, we tried the Pair Programming Tag Team Shootout.
+We aren&#39;t annualized so while the kids that have been with me since September have been working in pairs for a while, the other half of the class is just getting used to how we do it. I also wanted to get the kids to mix a little more.</description>
+    </item>
+    
+    <item>
+      <title>Let me Google that for you</title>
+      <link>https://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you/</link>
+      <pubDate>Wed, 08 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you/</guid>
+      <description>Piloting a new course this semester - Intro to Computer Science part 2. Between the existing Intro part 1 and this, we should be able to do a pretty thorough job in preparing our kids for the future.
+We decided that we wanted the kids to make deliverables in the form of web pages - plain old html written by hand. Part of the idea was to demystify things, part was to let the kids show off their work, part was to have something that they can generate programatically as the course progressed, and part was to give them a tool they might find valuable beyond their computer science classes.</description>
+    </item>
+    
+    <item>
+      <title>Subversion for Homework part II and the start of the new term</title>
+      <link>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and/</guid>
+      <description>Starting the new semester tomorrow and I&#39;ve got a whole bunch of interesting topics to blog about. Some about pedagogy, some technical, and some that I can&#39;t really catagorize.
+For now, though, just a brief follow up on using Subversion for homework collection.
+The basic model used in New York City for teacher improvement and evaluation is the official &#34;observation.&#34; Either your supervisor or the principal sits in on one of your classes.</description>
+    </item>
+    
+    <item>
+      <title>Subversion in the classroom</title>
+      <link>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom/</link>
+      <pubDate>Tue, 19 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom/</guid>
+      <description>Ok, not subversion, rather subversion, the version control system.
+I&#39;ve used subversion as a way for students to hand in their projects for years. I haven&#39;t used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it&#39;s worked very well as a method of collection and I think it&#39;s good to get the kids in the habit of using versioning systems.</description>
+    </item>
+    
+  </channel>
+</rss>
