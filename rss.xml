@@ -6,10 +6,20 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Sep 2018 18:08:35 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 12:08:35 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CS vs CT vs Coding</title>
+      <link>https://cestlaz.github.io/post/cs-ct-cc/</link>
+      <pubDate>Fri, 28 Sep 2018 12:08:35 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/cs-ct-cc/</guid>
+      <description>There&#39;s been a lot of buzz recently concernting Computational Thinking (CT) vs Computer Science (CS) vs Coding / Programming on the interwebs.
+ Some of the questions and concerns that I&#39;ve seen recently include: What is CT?? Will rich schools get CS and poor only CT? Will rich schools get CS and poor on coding?  The first question is a big one and as a community we haven&#39;t answered it yet.</description>
+    </item>
     
     <item>
       <title>Not every lesson has to be magic</title>
@@ -1158,17 +1168,6 @@ I was going to respond in an email but thought I might share here instead.
       
       <guid>https://cestlaz.github.io/posts/cost-of-ap-exams/</guid>
       <description>Now that I&#39;m back from vacation and summer&#39;s winding down I thought I&#39;d start getting back to more classroom related posts. I still have a few summer topics I want to write about -- standards and side projects in particular but I&#39;m also looking forward to talking more about the classroom since, after all, at my core, I&#39;m a teacher. When I saw this article in my inbox this morning I thought I&#39;d talk about it.</description>
-    </item>
-    
-    <item>
-      <title>Ethics, Cybersecurity, ethics, curricula  and standards</title>
-      <link>https://cestlaz.github.io/posts/cyber-ethics-curricula-standards/</link>
-      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/cyber-ethics-curricula-standards/</guid>
-      <description>This morning, I read Alfred Thompson&#39;s post on teaching cybersecurity. as Alfred says, it&#39;s something of a CS Ed buzzword this summer.
-Another hot topic in K12 CS Ed this summer is the inclusion of ethics in our CS courses courtesy of efforts like the #ethicalCS twitter chat every Wednesday at 8:00 Eastern time hosted by Saber Khan.
-Discussions about both topics include &#34;where should we be doing this?&#34; &#34;What should we be doing?</description>
     </item>
     
     <item>
