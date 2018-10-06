@@ -6,10 +6,21 @@
     <description>Recent content in Programming on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Oct 2018 15:48:55 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Globals Breaks And Returns, oh my</title>
+      <link>https://cestlaz.github.io/post/globals-breaks-and-returns/</link>
+      <pubDate>Sat, 06 Oct 2018 15:48:55 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/globals-breaks-and-returns/</guid>
+      <description>Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
+They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
+Alfred post was topically on global variables. Actually it was deeper than just global variables. It&#39;s also about how students progress - what they can figure out at various stages of progress and how what seems like a good idea early on the path to computer science doesn&#39;t seem so great later on.</description>
+    </item>
     
     <item>
       <title>Rite Of Passage Projects</title>
