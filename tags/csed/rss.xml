@@ -6,10 +6,20 @@
     <description>Recent content in Csed on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Oct 2018 17:16:23 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 13 Oct 2018 16:04:59 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/csed/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Who Played Spiderman part 2</title>
+      <link>https://cestlaz.github.io/post/who-played-spiderman-2/</link>
+      <pubDate>Sat, 13 Oct 2018 16:04:59 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/who-played-spiderman-2/</guid>
+      <description>When we left off last time we used a search engine API to gather a whole bunch of documents with the term &#34;played Spiderman&#34; or &#34;who played Spiderman.&#34; Now we have to process these documents to answer the question. Fortunately, the documents are basically just big strings of text.
+Since we&#39;re doing a &#34;who&#34; query we want to find all the names in all the documents. This leads to a class discussion on how to find names in a large string.</description>
+    </item>
     
     <item>
       <title>Who Played Spiderman part 1 or my Nifty Assignment (that was rejected)</title>
