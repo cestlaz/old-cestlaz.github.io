@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Oct 2018 17:00:55 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 14:35:15 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs Episode 52 - Eyebrowse</title>
+      <link>https://cestlaz.github.io/post/using-emacs-52-eyebrowse/</link>
+      <pubDate>Tue, 30 Oct 2018 14:35:15 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-52-eyebrowse/</guid>
+      <description>I was originally going to do a video on how I set things up so that I get an email every morning with my org-mode agenda but that&#39;s going to be something of an ordeal. I have to create a droploet on Digital Ocean, set up SyncThing and a mail server and lots of other things.
+I&#39;ll get to that video at some point but in the meantime I saw this thread on the Emacs subreddit.</description>
+    </item>
     
     <item>
       <title>Catskills Conf -  Knitting for Good 2018</title>
