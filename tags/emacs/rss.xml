@@ -6,10 +6,19 @@
     <description>Recent content in Emacs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Oct 2018 14:35:15 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Nov 2018 08:55:23 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/emacs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 53 Emailing Org Agenda</title>
+      <link>https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/</link>
+      <pubDate>Sat, 03 Nov 2018 08:55:23 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/</guid>
+      <description>I use both org-mode and Google Calendar for scheduling. I like Google Calendar because: It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(.   I prefer using org-mode beacuse: Emacs I prefer, for the most part, to control my data.  I partially sync the two platforms.</description>
+    </item>
     
     <item>
       <title>Using Emacs Episode 52 - Eyebrowse</title>
