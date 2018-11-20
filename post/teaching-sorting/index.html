@@ -150,7 +150,7 @@ swapping the next smallest item each time. This time coded with an array::</p>
 <pre><code class="language-java">  int min_index;
   int value;
   for (int i = 0; i &lt; a.length();i++) {
-      min_index = findMinIndex(a);
+      min_index = findMinIndex(a,1,a.length()); // find min excluding what's sorted so far
       value = a.get(min_index);
       swap(a[i],a[min_index]);
   }
@@ -459,7 +459,7 @@ I'll save those ideas for a future post.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (11)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (10)</a>
 
 
           
@@ -501,7 +501,7 @@ I'll save those ideas for a future post.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/education" title="Education">Education (49)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/education" title="Education">Education (48)</a>
 
 
           
