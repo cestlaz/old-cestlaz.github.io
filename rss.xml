@@ -6,10 +6,21 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Nov 2018 19:43:36 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 20:04:08 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Teaching Sorting</title>
+      <link>https://cestlaz.github.io/post/teaching-sorting/</link>
+      <pubDate>Mon, 19 Nov 2018 20:04:08 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teaching-sorting/</guid>
+      <description>Earlier today I saw a facebook post asking for thoughts on teaching sorting. The question was specifically not about motivations like having the class act out sorts or sort cards but rather about the coding.
+I&#39;ve been meaning to write about this since last summer when I attended Owen Astrachan&#39;s talk on the same subject.
+Early in my career when teaching sorting I developed the n^2 sorts as standalone routines just as they&#39;re presented in most books but as I gained more experience as a teacher, I changed it up to build the sorts (at least some of them) from existing concepts.</description>
+    </item>
     
     <item>
       <title>PD in NYC</title>
