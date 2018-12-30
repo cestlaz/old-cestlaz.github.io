@@ -6,10 +6,19 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Dec 2018 15:49:44 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Dec 2018 15:17:14 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent of Code, Data Structures, and Hidden Complexity</title>
+      <link>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</link>
+      <pubDate>Sun, 30 Dec 2018 15:17:14 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</guid>
+      <description>Since 2015, Eric Wastl has gifted us each December with Advent of Code - a 25 day programming competition that I very much enjoy. This year I haven&#39;t been able to get to too many of the problems. I only completed the first two days on the day they were released, problem three a day late and then I didn&#39;t get back to the problems until almost 12/25 - the final day of the competition.</description>
+    </item>
     
     <item>
       <title>Visiting schools and talking tech</title>
