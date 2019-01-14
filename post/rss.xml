@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jan 2019 15:24:16 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 11:34:13 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 54 Org Tables</title>
+      <link>https://cestlaz.github.io/post/using-emacs-54-org-tables/</link>
+      <pubDate>Mon, 14 Jan 2019 11:34:13 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-54-org-tables/</guid>
+      <description>As you know I use Emacs for all sorts of things. In addition to coding, I use it for email, my schedule, note taking, and much much more. As part of my job at Hunter, I read and evaluate some of the Macaulay Honors College applications. I also have to evaluate all the applicants to my CS honors program. I described how I use Org-mode and Emacs to help with that here.</description>
+    </item>
     
     <item>
       <title>Is There a First Grade Machine Learning Achievement Gap?</title>
