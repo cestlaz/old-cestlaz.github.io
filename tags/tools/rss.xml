@@ -6,10 +6,20 @@
     <description>Recent content in Tools on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 11:34:13 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 08:27:41 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs Episode 55 - Irony Completions</title>
+      <link>https://cestlaz.github.io/post/using-emacs-55-irony-completions/</link>
+      <pubDate>Mon, 21 Jan 2019 08:27:41 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-55-irony-completions/</guid>
+      <description>Last year I put together a post and video on some basics of Emacs for C++ development. In the video I didn&#39;t quite get completions fully working. I also used ggtags in that video but find myself using dumb-jump more frequently.
+Here&#39;s a quick video showing how to set up irony-mode which uses libclang for completions. It&#39;s pretty slick. Now the only thing I think I&#39;m missing is header file completions.</description>
+    </item>
     
     <item>
       <title>Using Emacs 54 Org Tables</title>
@@ -57,7 +67,7 @@ Take a look at how I use Emacs and more specifically org-mode for my day to day 
       <pubDate>Wed, 19 Sep 2018 19:02:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/stories/emacs/</guid>
-      <description>Link to current configuration: https://github.com/zamansky/using-emacs Introduction Video 1 - Setting up the package manager Video 2 - Intro to Org Mode Video 3 - How to think about Emacs Video 4 - Buffers Video 5 - Windows Video 6 - Search / Swiper Video 7 - Navigation / avy Video 8 - Autocomplete Video 9 - Themes Video 10 - Org init files Video 11 - org-reveal / reveal.js Video 12 - Python, Flycheck, Jedi Video 13 - Python, Yasnippet Video 14 - Thoughts on Using Emacs Video 15 - Macros Video 16 - Undo Tree Video 17 - Small packages Video 18 - narrowing and iedit Video 19 - moving to a live config Video 20 - Yanking Video 21-web-mode Video 22-emacsclient Video 23 - capture 1 Video 24 - capture 2 Video 25 - Tramp Video 26 - Google Calendar and Org Agenda Video 27 - Shell and eshell Video 28 - Rectangles Video 29 - elfeed 1  Video 30 - elfeed 2 - Hydras  Video 31 - elfeed 3 - macros Video 32 - C++ Video 33 - Projectile Dumb-jump Video 34 - ibuffer and emmet Video 35 - blogging Video 36 - A Touch of Elisp Video 37 - Treemacs file browser Video 38 - dired Video 39 - mu4e Video 40 - Atomic chrome Video 41 - Pandoc Video 42 - Git Gutter and Timemachine Video 43 - Music Video 44 - pdf Video 45 - Company or Autocomplete Video 46 - auto yasnippets Video 47 - Magit Video 48 - silversearcher Video 49 - mu4e conversation Video 50 - presentations Video 51 - Day to day with org-mode Video 52 - eyebrowse Video 53 - Emailing org-agenda Video 54 - Org Tables </description>
+      <description>Link to current configuration: https://github.com/zamansky/using-emacs Introduction Video 1 - Setting up the package manager Video 2 - Intro to Org Mode Video 3 - How to think about Emacs Video 4 - Buffers Video 5 - Windows Video 6 - Search / Swiper Video 7 - Navigation / avy Video 8 - Autocomplete Video 9 - Themes Video 10 - Org init files Video 11 - org-reveal / reveal.js Video 12 - Python, Flycheck, Jedi Video 13 - Python, Yasnippet Video 14 - Thoughts on Using Emacs Video 15 - Macros Video 16 - Undo Tree Video 17 - Small packages Video 18 - narrowing and iedit Video 19 - moving to a live config Video 20 - Yanking Video 21-web-mode Video 22-emacsclient Video 23 - capture 1 Video 24 - capture 2 Video 25 - Tramp Video 26 - Google Calendar and Org Agenda Video 27 - Shell and eshell Video 28 - Rectangles Video 29 - elfeed 1  Video 30 - elfeed 2 - Hydras  Video 31 - elfeed 3 - macros Video 32 - C++ Video 33 - Projectile Dumb-jump Video 34 - ibuffer and emmet Video 35 - blogging Video 36 - A Touch of Elisp Video 37 - Treemacs file browser Video 38 - dired Video 39 - mu4e Video 40 - Atomic chrome Video 41 - Pandoc Video 42 - Git Gutter and Timemachine Video 43 - Music Video 44 - pdf Video 45 - Company or Autocomplete Video 46 - auto yasnippets Video 47 - Magit Video 48 - silversearcher Video 49 - mu4e conversation Video 50 - presentations Video 51 - Day to day with org-mode Video 52 - eyebrowse Video 53 - Emailing org-agenda Video 54 - Org Tables Video 55 - Irony Completions </description>
     </item>
     
     <item>
