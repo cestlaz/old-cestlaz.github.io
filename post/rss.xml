@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jan 2019 16:06:08 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 16:58:11 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs Episode 56 - Dictionaries</title>
+      <link>https://cestlaz.github.io/post/using-emacs-56-dictionaries/</link>
+      <pubDate>Mon, 28 Jan 2019 16:58:11 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-56-dictionaries/</guid>
+      <description>One of the great things about Emacs is that it&#39;s not just for writing programs. Sure, you can set it up as an IDE for just about every programming language under the sun but that&#39;s just the tip of the iceberg. I use Emacs for just about all my text processing. This includes writing blog posts, reading and writing emails, creating lesson plans and pretty much anything and everything having to do with text.</description>
+    </item>
     
     <item>
       <title>Sequencing Topics</title>
