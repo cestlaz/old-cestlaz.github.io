@@ -6,10 +6,20 @@
     <description>Recent content in Github on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 09:44:29 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/github/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Github Classroom and Travis CI</title>
+      <link>https://cestlaz.github.io/post/github-classroom-travis/</link>
+      <pubDate>Sat, 02 Feb 2019 09:44:29 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/github-classroom-travis/</guid>
+      <description>I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my workflows down. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well.
+A few years ago, the GitHub Education team started GitHub Classroom. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it.</description>
+    </item>
     
     <item>
       <title>Pull Requests and Other People&#39;s Code</title>
