@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/java/</link>
+    <description>Recent content in Java on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Feb 2019 09:40:44 -0400</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/tags/java/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Java Interfaces</title>
+      <link>https://cestlaz.github.io/post/java-interfaces/</link>
+      <pubDate>Fri, 08 Feb 2019 09:40:44 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/java-interfaces/</guid>
+      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.
+Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary.</description>
+    </item>
+    
+  </channel>
+</rss>
