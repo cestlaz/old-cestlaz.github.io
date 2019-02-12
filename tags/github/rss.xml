@@ -6,10 +6,20 @@
     <description>Recent content in Github on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Feb 2019 09:44:29 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 18:55:22 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/github/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>GitHub Helps Me Help Students</title>
+      <link>https://cestlaz.github.io/post/github-helps-me-help-students/</link>
+      <pubDate>Mon, 11 Feb 2019 18:55:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/github-helps-me-help-students/</guid>
+      <description>Earlier today I was reminded why I love GitHub in support of my classes. One of my students posted a question about our current lab. They posted a synopsis of the problem along with the error message.
+Since we&#39;re all working on GitHub the student&#39;s work was already up online Since I started using GitHub Classroom I was able to quickly navigate to the repo. This might have been enough but to really in to the students work I cloned the repo and went into Emacs.</description>
+    </item>
     
     <item>
       <title>Github Classroom and Travis CI</title>
