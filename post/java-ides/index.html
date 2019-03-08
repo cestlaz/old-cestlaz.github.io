@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Evaluating Java IDES for teaching teachers.</title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta property="og:title" content="Evaluating Java IDES for teaching teachers." />
+<meta property="og:description" content="Since Hunter uses C&#43;&#43; as it&#39;s core language, I haven&#39;t used Java much in the past three years. That&#39;s going to change pretty soon. Once we start offering our CS teacher Certificate and Masters programs I&#39;ll once again start teaching with Java as that&#39;s one of the langauges that we want to prepare our teachers with.
+That means deciding on a set of tools and so I&#39;ve been spending time evaluating Java programming environments with an eye on the beginner since not only do the teachers I work with have to be comfortable with the tool but more importantly they will have to be able to support the tool for all of their students." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/java-ides/" /><meta property="article:published_time" content="2019-03-08T13:29:18-04:00"/>
+<meta property="article:modified_time" content="2019-03-08T13:29:18-04:00"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Evaluating Java IDES for teaching teachers."/>
+<meta name="twitter:description" content="Since Hunter uses C&#43;&#43; as it&#39;s core language, I haven&#39;t used Java much in the past three years. That&#39;s going to change pretty soon. Once we start offering our CS teacher Certificate and Masters programs I&#39;ll once again start teaching with Java as that&#39;s one of the langauges that we want to prepare our teachers with.
+That means deciding on a set of tools and so I&#39;ve been spending time evaluating Java programming environments with an eye on the beginner since not only do the teachers I work with have to be comfortable with the tool but more importantly they will have to be able to support the tool for all of their students."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126185083-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+  
+  <style>
+   .zlogo { height:100px; width:100px;float:right;}
+    </style>
+	<div class="container">
+		<div class="logo" role="banner">
+		  <a class="logo__link" href="/" title="C&#39;est la Z" rel="home">
+		    <div class="logo__title">C&#39;est la Z
+
+                      <img class="zlogo" src="/assets/thluffy.jpg">
+
+
+		    </div>
+		    
+				<div class="logo__tagline">Musings about education, computer science, and maybe a few other miscellaneous topics.</div>
+			</a>
+		</div>
+	</div>
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/">HOME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/stories/emacs">EMACS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/archive">ARCHIVE</a></li>
+		<li class="menu__item"><a class="menu__link" href="/categories">CATEGORIES</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://cestlaz-nikola.github.io/">OLD BLOG</a></li>
+		<li class="menu__item"><a class="menu__link" href="/tags">TAGS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/about">ABOUT</a></li>
+		<li class="menu__item"><a class="menu__link" href="/rss.xml">RSS</a></li>
+	</ul>
+</nav>
+
+</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+
+    <header class="post__header">
+			<h1 class="post__title">Evaluating Java IDES for teaching teachers.</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2019-03-08T13:29:18">March 08, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/tools" rel="category">tools</a></span>
+</span></div>
+			<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+<a href="/post/java-ides/#disqus_thread"># COMMENTS</a>
+
+		</header><div class="content post__content clearfix">
+
+
+		  <p>Since Hunter uses C++ as it's core language, I haven't used Java much
+in the past three years. That's going to change pretty soon. Once we
+start offering our CS teacher Certificate and Masters programs I'll
+once again start teaching with Java as that's one of the langauges
+that we want to prepare our teachers with.</p>
+
+<p>That means deciding on a set of tools and so I've been spending time
+evaluating Java programming environments with an eye on the
+beginner since not only do the teachers I work with have to be
+comfortable with the tool but more importantly they will have to be
+able to support the tool for all of their students.</p>
+
+<p>One tool we're likely to use is <a href="https://repl.it/" title="repl.it">repl.it</a>. That's an online environment
+for Java and a bunch of other languages. There's a lot to like about
+it and teachers might go with it or a similar cloud based option in
+their classes but it's important that we also prepare teachers to
+build programs locally.</p>
+
+<h2 id="the-tool-has-to-install-easily-on-all-platforms">The tool has to install easily on all platforms</h2>
+
+<p>So, here's my criteria and here's what I found.</p>
+
+<p>I started with my desktop Linux machine. I'm running LinuxMint which
+is pretty mainstream and I installed the Java tools using Mint's
+package manager. The packages are openjdk-11 and it looks like running
+Java 10. If the IDE or editor I installed  didn't work off the bat it
+was no good. If it installed and I liked it I'll pass it off to
+friends who use Windows and Macs to see if the install there is
+equally seamless.</p>
+
+<h2 id="the-tool-has-to-be-easy-to-run">The tool has to be easy to run</h2>
+
+<p>After install you have to be able to run it easily. No fancy <code>java
+-jar blah blah blah</code>.</p>
+
+<h2 id="i-m-not-looking-for-a-professional-tool">I'm not looking for a professional tool</h2>
+
+<p>Professional tools can be too compex and do too much for students. I
+was looking for the sweet spot of giving a nice amount of support but
+not giving away the store.</p>
+
+<p>Here are the tools I looked at (and you can debate if something
+belongs in the other category in some cases):</p>
+
+<h3 id="editors">Editors</h3>
+
+<ul>
+<li>Emacs</li>
+<li>Gedit</li>
+<li>Vim</li>
+<li>Sublime Text</li>
+<li>Atom</li>
+<li>Jedit</li>
+</ul>
+
+<h3 id="ides">IDES</h3>
+
+<ul>
+<li>Eclipse</li>
+<li>DrJava</li>
+<li>Geany</li>
+<li>BlueJ</li>
+<li>IntelliJ</li>
+<li>VSCode</li>
+<li>JGrasp</li>
+</ul>
+
+<h2 id="editor-vs-ide">Editor vs IDE</h2>
+
+<p>The line between editor and IDE is a blurry one. I tend to think of an
+editor as multi-purpose and multi-language where an also useful for
+non programming text realted tasks whereas an IDE comes with more
+programming bells and whistles. The truth is, though. that some IDES
+can do well with non programming tasks and many editors are pretty
+close to IDEs.</p>
+
+<p>In any event, for a teacher, there's something to be said for keeping
+it "close to the metal" and have them use an editor to edit source
+code and compile from the command line. This doesn't mean they
+shouldn't also see IDEs and perhaps use them with their students but
+a teacher should know a little more about what's going on than just
+load a program, write some code, and click run. If a teacher is that
+limited you end up in situations similar to that common comment from
+people who finish a beginner course on Codecademy - "I finished the
+course and I can program in their environment but I don't know how to
+actually make something anywhere else."</p>
+
+<h2 id="the-editors">The Editors</h2>
+
+<p>Here the idea would be start as I mentioned above. Edit files adn then
+compile on the command line. Eventually, though, many of these tools
+can be used as IDEs</p>
+
+<h3 id="emacs">Emacs</h3>
+
+<p><a href="https://www.gnu.org/software/emacs/" title="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a></p>
+
+<p>I've got to start with my tool of choice although I can't really be
+unbiased. I think it gets a bad wrap because it's old and out of the
+box looks plain but, yes, you can use your mouse and it does have
+menus. The upside is that it can do everything an IDE can do and a
+thousand times more. I do email, read rss feeds, maintain my calendar
+and more in Emacs.</p>
+
+<p>The downside is that it doesn't do Java well out of the box and kids
+like shinier objects.</p>
+
+<p>I don't think I'd start the teachers with Emacs but I'd probably shift
+my instruction to using it at some point and show some of the cooler
+features (many highlighted in my <a href="https://cestlaz.github.io/stories/emacs/" title="Emcacs videos">Emcacs videos</a>)</p>
+
+<h3 id="gedit">Gedit</h3>
+
+<p><a href="https://wiki.gnome.org/Apps/Gedit%0A" title="https://wiki.gnome.org/Apps/Gedit%0A">https://wiki.gnome.org/Apps/Gedit%0A</a></p>
+
+<p>This is a plain simple editor. You can bucket in notepad+ and whatever
+the basic Mac editor is in here. Nothing special and nothing
+fancy. It's easy enough to load, edit a file and save but not much
+more. I'd be fine using it were it not for better options.</p>
+
+<h3 id="vim">Vim</h3>
+
+<p><a href="https://www.vim.org/" title="https://www.vim.org/">https://www.vim.org/</a></p>
+
+<p>No</p>
+
+<h3 id="sublime-text">Sublime Text</h3>
+
+<p><a href="https://www.sublimetext.com/%0A" title="https://www.sublimetext.com/%0A">https://www.sublimetext.com/%0A</a></p>
+
+<p>This was the hotness for a while and it's a pretty slick editor. I
+can't recommend it for teachers though for two reasons. One is that
+it's not free (although it isn't expensive). The other is that it's
+not open source. There were other hot editors before sublime and when
+their companies folded or sunset the editor all those plugins and
+customizations had to be redone on a new platform.</p>
+
+<h3 id="atom">Atom</h3>
+
+<p><a href="https://atom.io/" title="https://atom.io/">https://atom.io/</a></p>
+
+<p>Atom's an editor I want to like. It's open source and looks pretty
+neat but it seems more focused on the JS ecosystem. I couldn't find
+enough Java related plugins to make it better than Gedit although it
+was easy to theme and customize the keys. Were I not an Emacs guy I'd
+probably use Atom for much of my non-Java development but it doesn't
+seem like a great fit for Java</p>
+
+<h3 id="jedit">Jedit</h3>
+
+<p><a href="http://www.jedit.org/" title="http://www.jedit.org/">http://www.jedit.org/</a></p>
+
+<p>This looked like the strongest contender for Java. Not too
+complicated. Nice syntax highlighting out of the box. It doesn't do
+completion but that's arguably a good thing when teaching
+programming (incidentally, Emacs doesn't do completion out of the box
+but it can be added so you can up the tools ability as the class moves
+along). From my limited explorations you can install plugins like a
+Java Linter and you can run a console from inside JEdit which means
+you can actually type things like <code>javac file.java</code> and then run the
+program all from within the editor.</p>
+
+<p>Jedit also has some nice builtin macros for boilerplate code like
+setters and getters.</p>
+
+<h2 id="ides-1">IDEs</h2>
+
+<h3 id="eclipse">Eclipse</h3>
+
+<p><a href="https://www.eclipse" title="https://www.eclipse">https://www.eclipse</a></p>
+
+<p>I've used eclipse before and as a Java environment, it's actually
+pretty nice. You can customize the keys so I set mine to Emacs. It has
+a lot of plugins, you can compile and test your program from within
+the IDE and do tons of other things. It's a VERY nice professional
+tool.</p>
+
+<p>I don't like it for teaching for three reasons. First, it does too
+much. By giving too much professional support kids rely too much on
+the tool. Second, it's made for big projects using build systems not
+small AP class programs consisting of one or two files where you run
+javac manually. Yes, you can do this in Eclipse but it seems more
+awkward. Third, becasue there's so much going on you need a HUGE
+screen and kids and schools might not have enough screen real estate.</p>
+
+<p>There's also a fourth reason which is that I installed Eclipse using
+LinuxMint's package manager and it crashed when running. If I'm going
+to recommend a teacher roll out a tool that all of their students are
+going to install at home on their own, at the very least it has to
+install and run seamlessly.</p>
+
+<h3 id="drjava">DrJava</h3>
+
+<p><a href="http://www.drjava.org/" title="http://www.drjava.org/">http://www.drjava.org/</a></p>
+
+<p>Like Eclipse, I've used DrJava before. It's similar to DrRacket (nee
+Scheme) and Dr. Python. It's close to perfect. You get highlighting,
+helpful error finding, can run your program from within Dr. Java and
+more.</p>
+
+<p>The killer problem is that I can't get the latest version to
+run. Actually the first problem is that it's just a jar file so you
+have to run it with <code>java -jar drjava.jar</code>. Beyond that, it didn't
+work out of the box. It loaded but compilign and running didn't After
+some mucking around, I got it to compile but it doesn't run the
+programs.</p>
+
+<p>This is too bad because when it runs it's a terrific learning
+environment.</p>
+
+<h3 id="bluej">BlueJ</h3>
+
+<p><a href="https://bluej.org/" title="https://bluej.org/">https://bluej.org/</a></p>
+
+<p>This is another tool that was DOA. I tried the debian package as well
+as the jar file. Couldn't get it working.</p>
+
+<p>I have used an older version so I'll describe that instead just
+remember things might be different in the current version.</p>
+
+<p>BlueJ does one thing very well - objects. It visually shows object
+creation and relationships. I recall that you can create an opject,
+click on it's box in a visual graph pane, inspect it, instantiate new
+ones and in general explore and expirement. If you're big on OOP and
+like Object First by all means check BlueJ out. It's probably best in
+class for that approach.</p>
+
+<p>On the other hand, it's a one trick pony. If you, like me, are not all
+in on OOP or an Objects first and all the time approach it's probably
+not the tool for you.</p>
+
+<h3 id="geany">Geany</h3>
+
+<p><a href="https://www.geany.org/" title="https://www.geany.org/">https://www.geany.org/</a></p>
+
+<p>I hadn't heard of this one before but it looks like a contender. It
+has a  pretty clean interface and it worked out of the box. I
+installed it using the package manager.</p>
+
+
+<figure>
+    
+        <img src="/img/geany.png" width="250px" />
+    
+    
+</figure>
+
+
+<p>Class browser on the right, files on the left and console (terminal),
+compiler status etc on the bottom. It supports some level of
+autocomplete but it doesn't do everything. I'm not sure yet but it
+might hit the completion sweet spot.</p>
+
+<p>It says it does snippets but I haven't figured that out yet.</p>
+
+<h3 id="intellij">IntelliJ</h3>
+
+<p><a href="https://www.jetbrains.com/idea/" title="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+
+<p>IntelliJ is fro JetBrains. They make a bunch of IDEs each focussed on
+a different toolset but all with the same look and feel. You can also
+add plugins to each to make them multi-modal. I believe the editor at
+the core is JEdit. I've used their IDEs in the past and as far as
+professional IDEs go I like them. They're more lightweight than say
+Eclipse and don't need the real estate.</p>
+
+<p>Still, I think it's too much for a beginner. For example, you can
+in theory run your program from the build menu but, much like Eclipse,
+it takes you to a configuration screen. I was pretty lost and I'm not
+a beginner. Much like Eclipse it's made for projects not small class
+programs.</p>
+
+<p>I found the Python version of JetBrains IDEs more approachable
+probably because the ecosystem is much simpler.</p>
+
+<h3 id="vscode">VSCode</h3>
+
+<p><a href="https://code.visualstudio.com/" title="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+
+<p>This one shocked me - I actually found myself liking a Microsoft
+product. I guess this really isn't your father's Microsoft.</p>
+
+
+<figure>
+    
+        <img src="/img/vscode.png" width="250px" />
+    
+    
+</figure>
+
+
+<p>Much like Geany it has a clean interface and like Geany you don't need
+a whole Java build system. It does more completions out of the box
+which you may or may not like as well as snippets. A single key will
+compile and run your program and on top of all that it has en "Emacs"
+setting for keybindings.</p>
+
+<p>I'm not sure if I like Geany or VSCode better but I think both are
+really good options. I'd probably lean towards Geany due to the less
+robust completions. Were I writing code for real rather than teaching,
+I'd probably go the other way.</p>
+
+<h3 id="jgrasp">JGrasp</h3>
+
+
+<figure>
+    
+        <img src="/img/vscode.png" width="250px" />
+    
+    
+</figure>
+
+
+<p>JGrasp feels much the same as the other contenders - Geany and VSCode
+but the interface just looks a bit clunkier to me. I know that's
+purely subjective.</p>
+
+<h3 id="processing">Processing</h3>
+
+<p>The biggest difference I'm seeing out of the box is that JGrasp
+doesn't do completions so depending on where you fall with that you
+might want Jgrasp for none, Geany for some, and VSCode for all.
+<a href="https://processing.org/" title="https://processing.org/">https://processing.org/</a></p>
+
+<p>I'm not going to talk about processing but I felt that it would be
+negligent not to mention it at all. Processing is a IDE, wrapper and
+graphical library that's essentially Java under the hood (although
+there are Processing bindings in many other languages probably the
+most well known now is <a href="https://p5js.org/" title="p5.js">p5.js</a>). It's great if you want to do graphical
+work or base your class around the libraries that are available to
+processing which include ones for web cameras, hardware access,
+networking, sound and more but it's not the same as an IDE or editor
+for traditional Java development.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>Just about all of these tools have multiple themes and are fairly
+customizable so don't go by the screenshots above, on the homepages or
+what they look like when you first install them.</p>
+
+<p>All of the tools I liked installed right out of the box either by
+using the package manager or downloading and extracting from an
+archive. I can't say yet if they install as easily on a Mac or Windows
+box but since Linux is usually the unloved stepchild of sortware
+packaging and distribution my guess is that if anything it'll be
+easier on those platforms.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>I'll always be an Emacs guy. Org-mode is too useful and I can get IDE
+like behavior for pretty much any language I want to work in. In some
+cases like Clojure, I haven't seen an IDE that can match Emacs and
+Cider, it's premier Clojure development setup. I also haven't a Git
+interface nearly as slick and powerful as <a href="https://magit.vc/" title="Magit">Magit</a> which works under
+Emacs.</p>
+
+<p>For my teachers though, I'll probably start with Geany or VSCode,
+switch to Emacs for myself at some point in the program and make sure
+to spend time on the command line along the way.</p>
+
+<p>If I missed any editors or IDEs or have something to add on one of the
+ones I mentioned, please share in the comments.</p>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/java/" rel="tag">java</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/tools/" rel="tag">tools</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/csed/" rel="tag">csed</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/sigcse-2019-keynotes/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">SIGCSE 2019 - the keynotes</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar">
+  <div class="widget-categories widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<div class="widget__content">
+	  
+	  
+          To receive posts via email:
+								<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="CestLaZ" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+								
+                
+	</div>
+	<br/>
+	<div class="widget_content">
+
+	  <a href="https://twitter.com/zamansky?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<a href="https://twitter.com/intent/tweet?screen_name=zamansky&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	  
+	</div>
+</div>
+
+
+
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://cestlaz.github.io/" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/java-ides/">Evaluating Java IDES for teaching teachers.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/sigcse-2019-keynotes/">SIGCSE 2019 - the keynotes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/pd-apcs-a-and-beyond-3-14-2019/">March PD for CS Teachers</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/code-fest-2019/">Hunter College Winter Codefest 2019</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/college-boards-two-codes/">Why the Thomas Friedman&#39;s editorial on the College Board&#39;s Two Codes left me concerned</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/apcs-a">Apcs a</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/community">Community</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cs">Cs</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/csed">Csed</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cseducation">Cseducation</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/curriculum">Curriculum</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/education">Education</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/emacs">Emacs</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/hunter">Hunter</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/languages">Languages</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/meta">Meta</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/misc">Misc</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/ny-tech">Ny tech</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/pd">Pd</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/pedagogy">Pedagogy</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/policy">Policy</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/sigcse">Sigcse</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software-engineering">Software engineering</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/teaching">Teaching</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tools">Tools</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/adventofcode" title="Adventofcode">Adventofcode (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/algorithms" title="Algorithms">Algorithms (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ap" title="Ap">Ap (8)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/apcs" title="Apcs">Apcs (11)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/assessment" title="Assessment">Assessment (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/bike" title="Bike">Bike (14)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/certification" title="Certification">Certification (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cli" title="Cli">Cli (9)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/college" title="College">College (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/community" title="Community">Community (38)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/competitions" title="Competitions">Competitions (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs" title="Cs">Cs (67)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs-education" title="Cs education">Cs education (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs4all" title="Cs4all">Cs4all (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csed" title="Csed">Csed (45)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cseducation" title="Cseducation">Cseducation (5)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csforall" title="Csforall">Csforall (8)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cstuy" title="Cstuy">Cstuy (23)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ct" title="Ct">Ct (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (13)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/editing" title="Editing">Editing (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/education" title="Education">Education (54)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/emacs" title="Emacs">Emacs (64)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ethicalcs" title="Ethicalcs">Ethicalcs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/flask" title="Flask">Flask (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/gifted" title="Gifted">Gifted (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/git" title="Git">Git (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/github" title="Github">Github (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hs" title="Hs">Hs (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hunter" title="Hunter">Hunter (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/intro" title="Intro">Intro (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/java" title="Java">Java (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/langauges" title="Langauges">Langauges (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/learning" title="Learning">Learning (6)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/lessons" title="Lessons">Lessons (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/misc" title="Misc">Misc (25)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/moocs" title="Moocs">Moocs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/netlogo" title="Netlogo">Netlogo (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/nytech" title="Nytech">Nytech (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pd" title="Pd">Pd (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pedagogy" title="Pedagogy">Pedagogy (74)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/policy" title="Policy">Policy (76)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/problem-solving" title="Problem solving">Problem solving (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/productivity" title="Productivity">Productivity (6)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/programming" title="Programming">Programming (11)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/python" title="Python">Python (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/resources" title="Resources">Resources (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/reunions" title="Reunions">Reunions (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/shell" title="Shell">Shell (9)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/softeng" title="Softeng">Softeng (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/software-engineering" title="Software engineering">Software engineering (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching" title="Teaching">Teaching (27)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching-cs" title="Teaching cs">Teaching cs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tech" title="Tech">Tech (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tools" title="Tools">Tools (89)</a>
+
+
+          
+
+
+
+          
+
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/zamansky" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:zamansky@gmail.com">
+				<svg class="widget-social__link-icon icon-mail" viewBox="0 0 416 288" width="24" height="24" fill="#fff"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>zamansky@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+  
+	  <div class="footer__copyright">&copy; 2019 Mike Zamansky. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script><script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100530816);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif" /></p></noscript>
+
+
+
+</body>
+</html>
