@@ -6,10 +6,21 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2019 11:57:57 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 16:23:43 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Implicit Curricula</title>
+      <link>https://cestlaz.github.io/post/implicit-curricula/</link>
+      <pubDate>Sun, 07 Apr 2019 16:23:43 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/implicit-curricula/</guid>
+      <description>The state got back to us the other week on our CSEd programs. Still no approval.
+One of the requirements is that we have 12 graduate CS credits in our program and that in those courses these five major areas:
+ Algorithms and programming Computing systems Data and analysis Impacts of computing Networks and the internet  as described in the K12 CS Framework. Even though many of the items described in the framework fit better in an education side course NY is requiring that it&#39;s all covered in CS courses offered by a CS department.</description>
+    </item>
     
     <item>
       <title>Using Emacs 57 Dired Narrow</title>
