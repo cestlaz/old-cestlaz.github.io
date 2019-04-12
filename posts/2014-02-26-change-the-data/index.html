@@ -131,19 +131,31 @@ maze.</p>
 
 <p>We represented a state as a board with the knight&rsquo;s current position and where it&rsquo;s been. An easy way to do this is to use an array of ints. So we have an empty 5x5 board:</p>
 
-<p>0 0 0 0 0
-0 0 0 0 0
-0 0 0 0 0
-0 0 0 0 0
+<p><verbatim>
 0 0 0 0 0</p>
+
+<p>0 0 0 0 0</p>
+
+<p>0 0 0 0 0</p>
+
+<p>0 0 0 0 0</p>
+
+<p>0 0 0 0 0
+</verbatim></p>
 
 <p>Or a board after a few moves:</p>
 
-<p>1 0 0 0 0
-4 0 2 0 0
-0 0 5 0 0
-0 3 0 0 6
-0 0 0 0 0</p>
+<p><verbatim>
+1 0 0 0 0</p>
+
+<p>4 0 2 0 0</p>
+
+<p>0 0 5 0 0</p>
+
+<p>0 3 0 0 6</p>
+
+<p>0 0 0 0 0
+</verbatim></p>
 
 <p>The kids saw three base cases:</p>
 
@@ -159,15 +171,25 @@ at our maze code, we never checked bounds there. Why not. Well it
 turns out that our maze had wall all around. It was stored in a 2D
 array but the entire outer edge was wall. Why not do the same for the chess board:</p>
 
-<p>-1 -1 -1 -1 -1 -1 -1 -1 -1
--1 -1 -1 -1 -1 -1 -1 -1 -1
--1 -1  0  0  0  0  0 -1 -1
--1 -1  0  0  0  0  0 -1 -1
--1 -1  0  0  0  0  0 -1 -1
--1 -1  0  0  0  0  0 -1 -1
--1 -1  0  0  0  0  0 -1 -1
--1 -1 -1 -1 -1 -1 -1 -1 -1
+<p><verbatim>
 -1 -1 -1 -1 -1 -1 -1 -1 -1</p>
+
+<p>-1 -1 -1 -1 -1 -1 -1 -1 -1</p>
+
+<p>-1 -1  0  0  0  0  0 -1 -1</p>
+
+<p>-1 -1  0  0  0  0  0 -1 -1</p>
+
+<p>-1 -1  0  0  0  0  0 -1 -1</p>
+
+<p>-1 -1  0  0  0  0  0 -1 -1</p>
+
+<p>-1 -1  0  0  0  0  0 -1 -1</p>
+
+<p>-1 -1 -1 -1 -1 -1 -1 -1 -1</p>
+
+<p>-1 -1 -1 -1 -1 -1 -1 -1 -1
+</verbatim></p>
 
 <p>Now, as long as we start on the board, if the Knight jumps off the
 edge, it will end on a -1 square and backtrack. By modifying our data
@@ -266,11 +288,11 @@ case of index out of bounds.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pd-at-gwg/">CS Teacher PD at Grow with Google</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/implicit-curricula/">Implicit Curricula</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/using-emacs-57-dired-narrow/">Using Emacs 57 Dired Narrow</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/busy-week/">Busy Week</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/choosing-a-textbook/">Choosing A Textbook</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/adapting-a-nifty-assignment/">Adapting A Nifty Assignment</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/new-monitor/">New Monitor</a></li>
 		</ul>
 	</div>
 </div>
@@ -452,21 +474,21 @@ case of index out of bounds.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/csed" title="Csed">Csed (47)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csed" title="Csed">Csed (48)</a>
 
 
           
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/cseducation" title="Cseducation">Cseducation (5)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cseducation" title="Cseducation">Cseducation (7)</a>
 
 
           
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/csforall" title="Csforall">Csforall (8)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csforall" title="Csforall">Csforall (9)</a>
 
 
           
@@ -491,7 +513,7 @@ case of index out of bounds.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (13)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (14)</a>
 
 
           
