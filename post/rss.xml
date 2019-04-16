@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Apr 2019 08:12:54 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 11:36:27 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Code Review Revisited or research - the teacher version</title>
+      <link>https://cestlaz.github.io/post/code-review-2/</link>
+      <pubDate>Tue, 16 Apr 2019 11:36:27 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/code-review-2/</guid>
+      <description>Last semester I wrote about how I was introducing my students to code review. I thought it worked pretty well and was anxious to try it again.
+Well, I did the lesson(s) again this past week and it looks like it&#39;s a keeper. The setup was pretty much the same with some hiccups due to using a new platform. Last semester I used plain GitHub public repos. This time, I&#39;ve been using GitHub classroom which I like very much but I forgot that I made this assignment use private repos which turned out to be a hassle.</description>
+    </item>
     
     <item>
       <title>CS Teacher PD at Grow with Google</title>
@@ -17,7 +27,7 @@
       <pubDate>Fri, 12 Apr 2019 08:12:54 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/pd-at-gwg/</guid>
-      <description>Yesterday we held our third monthly Professional Development session for teachers of &#34;APCS-A, Similar, and Beyond.&#34; It&#39;s great to see that we&#39;re starting to form a core of a community of CS teachers teaching some of the more advanced classes as there is a core group that keeps coming back for more. Even better is the fact that we&#39;re gaining a couple of new teachers at each session.
+      <description>Yesterday we held our third monthle Professional Development session for teachers of &#34;APCS-A, Similar, and Beyond.&#34; It&#39;s great to see that we&#39;re starting to form a core of a community of CS teachers teaching some of the more advanced classes as there is a core group that keeps coming back for more. Even better is the fact that we&#39;re gaining a couple of new teachers at each session.
 Last time, we were at Digital Ocean, a cloud provide that has been very involved in education since their creation and has been a tremendous boon to my education projects over the years.</description>
     </item>
     
@@ -619,6 +629,18 @@ If you&#39;ve been here before you probably know I&#39;m not a fan of the standa
 Out of the box Hugo supports org-mode with pretty much all of its niceties like:
  code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
  MathJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cestlaz.github.io/post/soe-cal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
+      <description>ADVISORY COMMITTEES AND CURRICULUM COMMITTEE :PROPERTIES: :LOCATION: Dean&#39;s Conference Room 1000 West :LINK: Go to gcal web page :ID: 17p6dq0ao7nhh41m3ljhlad5nb :END:
+SENATE :PROPERTIES: :LOCATION: ROOM WEST 714 :LINK: Go to gcal web page :ID: 7qd4gguptnaa8vgahbo4a81qs7 :END:
+F P &amp; B :PROPERTIES: :LOCATION: EAST 1700 :LINK: Go to gcal web page :ID: 4nf9gujudrrotuosflaq4gkan2 :END:
+CONVERSATION WITH THE DEAN FINAL VOTE ON PROMOTIONS :PROPERTIES: :LOCATION: ROOM WEST 1007 :LINK: Go to gcal web page :ID: 3mvl2qos94oo5s6sde4kv1e3du :END:</description>
     </item>
     
   </channel>
