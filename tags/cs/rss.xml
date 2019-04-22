@@ -6,10 +6,21 @@
     <description>Recent content in Cs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Mar 2019 08:20:47 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 13:51:52 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/cs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Seam Carving and Dynamic Programming</title>
+      <link>https://cestlaz.github.io/post/seam-carving/</link>
+      <pubDate>Mon, 22 Apr 2019 13:51:52 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/seam-carving/</guid>
+      <description>It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
+Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
+Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
+    </item>
     
     <item>
       <title>Adapting A Nifty Assignment</title>
