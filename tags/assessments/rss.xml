@@ -6,10 +6,23 @@
     <description>Recent content in Assessments on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 12:03:10 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/assessments/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Predicting Grades</title>
+      <link>https://cestlaz.github.io/post/predicting-grades/</link>
+      <pubDate>Sat, 18 May 2019 12:03:10 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/predicting-grades/</guid>
+      <description>Just saw this:
+Evaluation metric idea: take snapshots of students&amp;#39; grades each week (specifically, the grade they actually see in your LMS). How well do these correlate with your final assigned grade? Were students getting good estimates?
+&amp;mdash; Austin Cory Bart (@AustinCorgiBart) May 18, 2019 
+It made me think of a couple of conversations I had with more senior teachers early in my career.
+They&#39;d tell me &#34;by and large, you know what the kids are going to get after a few week.</description>
+    </item>
     
     <item>
       <title>Do the students finish the tests or does the test finish the students</title>
