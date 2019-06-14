@@ -6,10 +6,20 @@
     <description>Recent content in Programming on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 May 2019 08:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 15:53:54 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Back To Python</title>
+      <link>https://cestlaz.github.io/post/back-to-python/</link>
+      <pubDate>Fri, 14 Jun 2019 15:53:54 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/back-to-python/</guid>
+      <description>With summer right around the corner I&#39;m hoping to spend at least a little time on some personal coding projects. There are a few work related tools I&#39;d love to develop and just some random areas of CS I&#39;d like to explore. If I finish them, the work projects will be web based.
+I was thinking about using this as an opportunity to do a deeper dive into Clojure having used it for some experiments and competitions like Advent of Code but at the end of the day I decided not to.</description>
+    </item>
     
     <item>
       <title>Give me a break (and a continue)</title>
