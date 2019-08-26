@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cestlaz.github.io/post/is-ct-new/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/exploring-complex-projects/</loc>
     <lastmod>2019-08-07T19:20:17-04:00</lastmod>
   </url>
@@ -2673,7 +2678,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2019-08-07T19:20:17-04:00</lastmod>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2739,7 +2744,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/computational-thinking/</loc>
-    <lastmod>2019-07-30T17:54:21-04:00</lastmod>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/computational-thinking/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2938,6 +2949,12 @@
   <url>
     <loc>https://cestlaz.github.io/categories/education/</loc>
     <lastmod>2019-05-18T12:03:10-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/elementary-ed/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3297,7 +3314,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2019-08-07T19:20:17-04:00</lastmod>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
