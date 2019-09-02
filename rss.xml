@@ -6,10 +6,20 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2019 16:32:17 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2019 17:33:51 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Different languages, different techniques, different solutions</title>
+      <link>https://cestlaz.github.io/post/different-languages/</link>
+      <pubDate>Mon, 02 Sep 2019 17:33:51 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/different-languages/</guid>
+      <description>I spent this weekend diving back into Clojure or more specifically, Clojurescript. For those who don&#39;t know, Clojure is a Lisp that runs on the JVM. The solution it particularly seeks to &#34;solve&#34; is immutability. Clojurescript is Clojure that compiles to Javascript for web applications. Tooling aside, it&#39;s all pretty neat.
+I didn&#39;t do anything earth shaking, just a quick implementation of Conway&#39;s game of life and Snake. While the code isn&#39;t particularly good, you can check them out here (Snake, Life).</description>
+    </item>
     
     <item>
       <title>Is Computation Thinking a new idea or a new opportunity</title>
