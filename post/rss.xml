@@ -6,10 +6,21 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2019 17:41:13 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2019 17:11:29 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Pig Latin - a beginner lesson with some depth</title>
+      <link>https://cestlaz.github.io/post/piglatin/</link>
+      <pubDate>Wed, 25 Sep 2019 17:11:29 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/piglatin/</guid>
+      <description>I recently did a unit where I had my students convert words into Pig Latin. I like the problem because to start it only requires strings, functions and if statements but there is some depth to the unit.
+We start with simplified rules:
+ If the word starts with a vowel, add &#34;ay&#34; to the end of the word If it starts with a consonant move the first latter to the end and add &#34;</description>
+    </item>
     
     <item>
       <title>Advanced CS Early - Are they learning it or just using it?</title>
