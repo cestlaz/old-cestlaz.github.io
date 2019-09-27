@@ -6,10 +6,20 @@
     <description>Recent content in Software Engineering on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 19:20:17 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2019 12:34:04 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/software-engineering/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Teaching techniques - industry to classroom and classroom to industry</title>
+      <link>https://cestlaz.github.io/post/industry-techniques-in-class/</link>
+      <pubDate>Fri, 27 Sep 2019 12:34:04 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/industry-techniques-in-class/</guid>
+      <description>There are things we do in school and there are things we do in industry and they&#39;re not always the same. In school we might use a learning language or an IDE which gives additional support and at times even take away language features while at work you might you might make heavy use of continuous integration tools.
+On the other hand, sometimes we use the same things. Java is used in schools and in industry, StackOverflow consulted in both and many schools use professional IDEs like Eclipse.</description>
+    </item>
     
     <item>
       <title>Exploring Complex Projects</title>
