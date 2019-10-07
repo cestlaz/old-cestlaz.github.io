@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2019 11:57:57 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 11:57:57 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 58 - lsp-mode</title>
+      <link>https://cestlaz.github.io/post/using-emacs-58-lsp-mode/</link>
+      <pubDate>Mon, 07 Oct 2019 11:57:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-58-lsp-mode/</guid>
+      <description>I&#39;ve been wanting to check out lsp-mode under Emacs for a while now. LSP stands for Language Protocol Service. The idea is that you have a standard interface between your editor and some language server. If you program in multiple languages and each has an LSP server you end up, in theory, with a simpler configuration and a consistent interface.
+This certainly sounds more appealing than how we did it in the old days where you have some ad hoc configuraiton for each language you work in.</description>
+    </item>
     
     <item>
       <title>Using Emacs 57 Dired Narrow</title>
