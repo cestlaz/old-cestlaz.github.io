@@ -6,19 +6,18 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Oct 2019 08:34:04 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 11:57:57 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
-      <title>High Ed Web 2019</title>
-      <link>https://cestlaz.github.io/post/highedweb2019/</link>
-      <pubDate>Wed, 16 Oct 2019 08:34:04 -0400</pubDate>
+      <title>Using Emacs 59 - markdown</title>
+      <link>https://cestlaz.github.io/post/using-emacs-59-markdown/</link>
+      <pubDate>Fri, 18 Oct 2019 11:57:57 -0400</pubDate>
       
-      <guid>https://cestlaz.github.io/post/highedweb2019/</guid>
-      <description>I spent the last few days in Milwuakee at High Ed web 2019, a conference for higher education web professionals. Most attendees were college web developers or designers along people who run web operations at colleges and universities and related vendors. Being a CS teacher, I was a bit of an outsider but still got a lot out of the conference.
-It was our first time in Milwuakee so we had to see some sights.</description>
+      <guid>https://cestlaz.github.io/post/using-emacs-59-markdown/</guid>
+      <description>Org-mode is my markup of choice. I spend the vast majority of my time working on text files working in org-mode. Since GitHUb started rendering org-mode files in their site I&#39;ve also used org-mode for things like Readme files in my projects. I even force it on my students at times. WHen I make an assignment, I seed it with an org-mode file that they have to modify - that is - fill in things like their names, group members etc.</description>
     </item>
     
     <item>
@@ -1094,15 +1093,6 @@ If you&#39;ve been here before you probably know I&#39;m not a fan of the standa
 Out of the box Hugo supports org-mode with pretty much all of its niceties like:
  code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
  MathJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://cestlaz.github.io/post/soe-cal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
-      <description></description>
     </item>
     
   </channel>
