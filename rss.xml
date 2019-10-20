@@ -6,10 +6,22 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 11:57:57 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 20 Oct 2019 13:18:04 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>What companies look for in a tech hire</title>
+      <link>https://cestlaz.github.io/post/what-companies-look-for/</link>
+      <pubDate>Sun, 20 Oct 2019 13:18:04 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/what-companies-look-for/</guid>
+      <description>My friend Ria tweeted this earlier today:
+If you are a software developer/engineer, please reply with a trait (or traits) that you look for in hiring new engineers (new grads). This can be something you glean from a resume, technical interview, behavorial interview, or all of the above.
+&amp;mdash; Ria Galanos (@cscheerleader) October 20, 2019 
+I&#39;m not hiring for a tech company but I thought I&#39;d share some thoughts anyway.</description>
+    </item>
     
     <item>
       <title>Using Emacs 59 - markdown</title>
@@ -18,6 +30,16 @@
       
       <guid>https://cestlaz.github.io/post/using-emacs-59-markdown/</guid>
       <description>Org-mode is my markup of choice. I spend the vast majority of my time working on text files working in org-mode. Since GitHUb started rendering org-mode files in their site I&#39;ve also used org-mode for things like Readme files in my projects. I even force it on my students at times. When I make an assignment, I seed it with an org-mode file that they have to modify - that is - fill in things like their names, group members etc.</description>
+    </item>
+    
+    <item>
+      <title>High Ed Web 2019</title>
+      <link>https://cestlaz.github.io/post/highedweb2019/</link>
+      <pubDate>Wed, 16 Oct 2019 08:34:04 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/highedweb2019/</guid>
+      <description>I spent the last few days in Milwuakee at High Ed web 2019, a conference for higher education web professionals. Most attendees were college web developers or designers along people who run web operations at colleges and universities and related vendors. Being a CS teacher, I was a bit of an outsider but still got a lot out of the conference.
+It was our first time in Milwuakee so we had to see some sights.</description>
     </item>
     
     <item>
@@ -2210,6 +2232,17 @@ I was going to respond in an email but thought I might share here instead.
       
       <guid>https://cestlaz.github.io/posts/cost-of-ap-exams/</guid>
       <description>Now that I&#39;m back from vacation and summer&#39;s winding down I thought I&#39;d start getting back to more classroom related posts. I still have a few summer topics I want to write about -- standards and side projects in particular but I&#39;m also looking forward to talking more about the classroom since, after all, at my core, I&#39;m a teacher. When I saw this article in my inbox this morning I thought I&#39;d talk about it.</description>
+    </item>
+    
+    <item>
+      <title>Ethics, Cybersecurity, ethics, curricula  and standards</title>
+      <link>https://cestlaz.github.io/posts/cyber-ethics-curricula-standards/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/posts/cyber-ethics-curricula-standards/</guid>
+      <description>This morning, I read Alfred Thompson&#39;s post on teaching cybersecurity. as Alfred says, it&#39;s something of a CS Ed buzzword this summer.
+Another hot topic in K12 CS Ed this summer is the inclusion of ethics in our CS courses courtesy of efforts like the #ethicalCS twitter chat every Wednesday at 8:00 Eastern time hosted by Saber Khan.
+Discussions about both topics include &#34;where should we be doing this?&#34; &#34;What should we be doing?</description>
     </item>
     
     <item>
@@ -5500,6 +5533,15 @@ It&#39;s amazing all the time sinks you can throw together with just a few lines
       <guid>https://cestlaz.github.io/posts/2010-01-02-welcome.html/</guid>
       <description>Over the past twenty years or so, I&#39;ve mulled, discussed, and argued various aspects of education, computer science, and of course computer science education with friends, students, and colleagues.
 This past summer, I had the privilege to get to meet and briefly work with comp sci educators from around the country and started to thing that there were other like minded people, but we didn&#39;t have a forum with which to communicate.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cestlaz.github.io/post/soe-cal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
+      <description></description>
     </item>
     
     <item>
