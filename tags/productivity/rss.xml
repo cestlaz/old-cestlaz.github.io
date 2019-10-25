@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 11:57:57 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 11:57:57 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 60 - Restclient</title>
+      <link>https://cestlaz.github.io/post/using-emacs-60-restclient/</link>
+      <pubDate>Fri, 25 Oct 2019 11:57:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-60-restclient/</guid>
+      <description>I started to work on a web application the other day. It&#39;s nothing special but if I ever finish it, it will be a pretty complete project. The backend will be a REST API and I&#39;m planning on writing the frontend in Clojurescript.
+The problem with developing a web application like this is that you can&#39;t really write the front end until you have enough of the backend to provide data.</description>
+    </item>
     
     <item>
       <title>Using Emacs 59 - markdown</title>
