@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Nov 2019 10:17:18 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 16:18:51 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Working with texts part 1 - cleaning the data</title>
+      <link>https://cestlaz.github.io/post/cleaning-textx/</link>
+      <pubDate>Fri, 15 Nov 2019 16:18:51 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/cleaning-textx/</guid>
+      <description>I run periodic professional development sessions here in New York with my partner in crime JonAlf Dyrland-Weaver. I call them PD for &#34;APCS-A, similar or beyond&#34; and they&#39;re designed to fill a professional development gap. We try to run them once a month but it&#39;s a little less frequent than that.
+The NYCDOE has taken on the monster task of CS for all and since they&#39;re trying to get to everyone they have to run a bazillion sessions but all at an introductory level.</description>
+    </item>
     
     <item>
       <title>Communicating With Students - maybe GitHub to the rescue</title>
@@ -1159,6 +1169,15 @@ If you&#39;ve been here before you probably know I&#39;m not a fan of the standa
 Out of the box Hugo supports org-mode with pretty much all of its niceties like:
  code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
  MathJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cestlaz.github.io/post/soe-cal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
+      <description></description>
     </item>
     
   </channel>
