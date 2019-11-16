@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2019 16:18:51 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 05:00:57 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 61 - org-msg</title>
+      <link>https://cestlaz.github.io/post/using-emacs-61-org-msg/</link>
+      <pubDate>Sat, 16 Nov 2019 05:00:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-61-org-msg/</guid>
+      <description>By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:</description>
+    </item>
     
     <item>
       <title>Working with texts part 1 - cleaning the data</title>
