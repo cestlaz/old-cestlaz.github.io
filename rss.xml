@@ -6,10 +6,20 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Nov 2019 05:00:57 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2019 16:17:37 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using GitHub issues for class communicatoin</title>
+      <link>https://cestlaz.github.io/post/git-issues/</link>
+      <pubDate>Sun, 17 Nov 2019 16:17:37 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/git-issues/</guid>
+      <description>Last week I talked about using GitHub issues as a mechanism for class communication. I thought it might be helpful to follow up on it and also felt that a video would be better than text.
+So, here it is, 16 minutes on how you can use GitHub issues for class communication. I don&#39;t show examples of everything like @ tagging but I think it shows some of the power of using GitHub and GitHub classroom beyond just a software repo and versioning.</description>
+    </item>
     
     <item>
       <title>Using Emacs 61 - org-msg</title>
