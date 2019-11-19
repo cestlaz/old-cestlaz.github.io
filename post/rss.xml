@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Nov 2019 16:17:37 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 12:25:58 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 62 Magit Forge</title>
+      <link>https://cestlaz.github.io/post/using-emacs-62-magit-forge/</link>
+      <pubDate>Tue, 19 Nov 2019 12:25:58 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-62-magit-forge/</guid>
+      <description>Ever since I started looking at Magit as a &#34;git dashboard&#34; instead of as a &#34;git interface&#34; it&#39;s been yet another Emacs killer app to me. I just recently started playing with forge which allows Magit to interface and interact with git &#34;forges&#34; like GitHub. This allows you to work on issues and pull requests without ever leaving Emacs.
+Here&#39;s a video on how easy it is. The video doesn&#39;t show this but the first time you fire forge up it will prompt you for credentials.</description>
+    </item>
     
     <item>
       <title>Using GitHub issues for class communicatoin</title>
@@ -1188,15 +1198,6 @@ If you&#39;ve been here before you probably know I&#39;m not a fan of the standa
 Out of the box Hugo supports org-mode with pretty much all of its niceties like:
  code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
  MathJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://cestlaz.github.io/post/soe-cal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
-      <description></description>
     </item>
     
   </channel>

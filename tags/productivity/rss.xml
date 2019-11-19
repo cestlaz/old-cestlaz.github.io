@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Nov 2019 05:00:57 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 12:25:58 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 62 Magit Forge</title>
+      <link>https://cestlaz.github.io/post/using-emacs-62-magit-forge/</link>
+      <pubDate>Tue, 19 Nov 2019 12:25:58 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-62-magit-forge/</guid>
+      <description>Ever since I started looking at Magit as a &#34;git dashboard&#34; instead of as a &#34;git interface&#34; it&#39;s been yet another Emacs killer app to me. I just recently started playing with forge which allows Magit to interface and interact with git &#34;forges&#34; like GitHub. This allows you to work on issues and pull requests without ever leaving Emacs.
+Here&#39;s a video on how easy it is. The video doesn&#39;t show this but the first time you fire forge up it will prompt you for credentials.</description>
+    </item>
     
     <item>
       <title>Using Emacs 61 - org-msg</title>
