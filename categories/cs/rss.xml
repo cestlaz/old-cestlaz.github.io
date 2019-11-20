@@ -6,10 +6,20 @@
     <description>Recent content in Cs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Apr 2019 11:36:27 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 08:15:41 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/categories/cs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Working with texts part 2 - bag of words</title>
+      <link>https://cestlaz.github.io/post/bag-of-words/</link>
+      <pubDate>Wed, 20 Nov 2019 08:15:41 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/bag-of-words/</guid>
+      <description>Following up on a previous post, we&#39;re going to continue to talk about playing with text. This time, building and working with a bag of words from a text.
+A bag of words is a simple language processing model where you just consider individual words in a text. What they are and how many times they occur. This is a pretty simple model but you can still have a good bit of fun with your students with it.</description>
+    </item>
     
     <item>
       <title>Code Review Revisited or research - the teacher version</title>
