@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs Ed on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/categories/cs-ed/</link>
+    <description>Recent content in Cs Ed on C&#39;est la Z</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Nov 2019 13:55:09 -0400</lastBuildDate>
+    
+	<atom:link href="https://cestlaz.github.io/categories/cs-ed/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Lesson and project inspiration from old BSD games</title>
+      <link>https://cestlaz.github.io/post/bsdgames/</link>
+      <pubDate>Fri, 22 Nov 2019 13:55:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/bsdgames/</guid>
+      <description>When I was writing the I Speak Jive post, the first thing I had to do was find those old programs. It turned out to be harder than I thought. I found online versions but it took a while to find this GitHub repo.
+On the way, I seemed to recall that these might be bundled with a bunch of old BSD games so I took a look at the BSD games package for Linux.</description>
+    </item>
+    
+  </channel>
+</rss>
