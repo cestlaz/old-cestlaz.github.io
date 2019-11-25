@@ -6,10 +6,19 @@
     <description>Recent content in Data Structures on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2019 08:15:41 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2019 05:45:55 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/data-structures/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Working with texts part 3 - word chains</title>
+      <link>https://cestlaz.github.io/post/word-chains/</link>
+      <pubDate>Mon, 25 Nov 2019 05:45:55 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/word-chains/</guid>
+      <description>At this point, we&#39;ve done a fair amount of playing with text so it&#39;s time for a fun little project. We&#39;re going to generate some text &#34;in the style&#34; of a source text. The technique we&#39;re going to use is usually called a Markov Chain text generator. Basically a model where the next state or word is based entirely on the current state. I don&#39;t dwell on the math under the hood but in case you&#39;re interested, here are a few links: Wikipedia, Explained Visually, UC Davis Math.</description>
+    </item>
     
     <item>
       <title>Working with texts part 2 - bag of words</title>
