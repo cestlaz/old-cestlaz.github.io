@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Advent 2019 Day 2</title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta property="og:title" content="Advent 2019 Day 2" />
+<meta property="og:description" content="Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.
+At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day2/" /><meta property="article:published_time" content="2019-12-02T17:11:43-04:00"/>
+<meta property="article:modified_time" content="2019-12-02T17:11:43-04:00"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent 2019 Day 2"/>
+<meta name="twitter:description" content="Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.
+At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126185083-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+  
+  <style>
+   .zlogo { height:100px; width:100px;float:right;}
+    </style>
+	<div class="container">
+		<div class="logo" role="banner">
+		  <a class="logo__link" href="/" title="C&#39;est la Z" rel="home">
+		    <div class="logo__title">C&#39;est la Z
+
+                      <img class="zlogo" src="/assets/thluffy.jpg">
+
+
+		    </div>
+		    
+				<div class="logo__tagline">Musings about education, computer science, and maybe a few other miscellaneous topics.</div>
+			</a>
+		</div>
+	</div>
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/">HOME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/stories/emacs">EMACS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/archive">ARCHIVE</a></li>
+		<li class="menu__item"><a class="menu__link" href="/categories">CATEGORIES</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://cestlaz-nikola.github.io/">OLD BLOG</a></li>
+		<li class="menu__item"><a class="menu__link" href="/tags">TAGS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/about">ABOUT</a></li>
+		<li class="menu__item"><a class="menu__link" href="/rss.xml">RSS</a></li>
+	</ul>
+</nav>
+
+</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+
+    <header class="post__header">
+			<h1 class="post__title">Advent 2019 Day 2</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2019-12-02T17:11:43">December 02, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/advent-of-code" rel="category">Advent of Code</a></span>
+</span></div>
+			<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+<a href="/post/advent-2019-day2/#disqus_thread"># COMMENTS</a>
+
+		</header><div class="content post__content clearfix">
+
+
+		  <p><a href="https://adventofcode.com/2019/day/2" title="Day 2">Day 2</a> of Advent of Code 2019 was also pretty straightforward and once
+again I wrote <a href="https://github.com/zamansky/advent2019/blob/master/day02.clj" title="my solution">my solution</a> in Clojure but in order to talk about this
+from a teacher's point of view, we'll look at a <a href="https://github.com/zamansky/advent2019/blob/master/day02.py" title="Python solution">Python solution</a>.</p>
+
+<p>At its core, this is a simulation problem - read the data into an
+array or list and write a program to run through the steps. At first I
+was hoping that the solution would consume the data - that is, once
+you read past an instruction you don't go back to it. If it was, I was
+going to try to write some clever reduce. It wasn't. In this problem,
+any instruction could affect any part of the data set. This means you
+have to keep the entire data set in memory and preferably in a random
+access structure like an array.</p>
+
+<p>Step 1 is to read in the data and convert it into a list of integers.</p>
+
+<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]</code></pre></div>
+</code></pre>
+
+<p>If you don't know comprehensions you can just do something like this:</p>
+
+<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> []
+  <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>):
+      data<span style="color:#f92672">.</span>append(int(item))</code></pre></div>
+</code></pre>
+
+<p>Now we just have to run the simulation:</p>
+
+<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-pythonf" data-lang="pythonf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>def run_program(program):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>    ip = 0
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    while True:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>        op = program[ip]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>        if op == 99:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>            break
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>        a = program[ program[ip+1] ]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>        b = program[ program[ip+2] ]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>        dest = program[ip+3]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>        if op == 1:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>            program[dest] =  a + b
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>        else:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>            program[dest] = a * b
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>        ip = ip + 4
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>    return program[0]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>def part1(program):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>    program[1]=12
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>    program[2]=2
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>    return run_program((program))</code></pre></div>
+</code></pre>
+
+<p>The most likely source of error here is forgetting to change the
+values in <code>program[1]</code> and <code>program[2]</code> in lines 18 and 19 as
+specified in the question. The other likely error is forgetting to do
+the two level indirection in lines 7 and 8. That is writing
+~program[ip+1]~ and <code>program[ip+2]</code> by mistake. Truth be told, I made
+both of these mistakes but I didn't find them to be "interesting"
+mistakes.</p>
+
+<p>The interesting part of this program is part 2 where instead of
+setting <code>program[1]</code> to <code>12</code> and <code>program[2]</code> to <code>2</code> you have to try
+values between 0 and 99 inclusive for each entry until you find a
+specific answer.</p>
+
+<p>This is a great platform to talk about memory. The problem refers to
+the values you put into <code>program[1]</code> as <strong>nouns</strong> and <code>program[2]</code> as
+*verbs*. The issue is that every time you run your program for a
+specific <strong>noun verb</strong> combination you change the array (list)
+representing your program. If you don't reset the array to its
+original contents before the next run, the next run will be working
+off of new values and therefore give you incorrect results.</p>
+
+<p>This is a great platform for discussion. Students usually start with
+*pass by value* semantics so passing a list to a function and then
+having the list change can seem weird even though it can still be pass
+by value:</p>
+
+<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># bad example to follow</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">change_list</span>(l):
+      l[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">9999</span>
+
+  l<span style="color:#f92672">=</span>[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>]
+  change_list(l)
+  <span style="color:#75715e"># changes l[3] to 9999</span></code></pre></div>
+</code></pre>
+
+<p>Here's a finished solution:</p>
+
+<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_program</span>(program):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>    ip <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>    <span style="color:#66d9ef">while</span> True:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>        op <span style="color:#f92672">=</span> program[ip]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>        <span style="color:#66d9ef">if</span> op <span style="color:#f92672">==</span> <span style="color:#ae81ff">99</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>            <span style="color:#66d9ef">break</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>        a <span style="color:#f92672">=</span> program[ program[ip<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] ]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>        b <span style="color:#f92672">=</span> program[ program[ip<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>] ]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>        dest <span style="color:#f92672">=</span> program[ip<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>        <span style="color:#66d9ef">if</span> op <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>            program[dest] <span style="color:#f92672">=</span>  a <span style="color:#f92672">+</span> b
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>        <span style="color:#66d9ef">else</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>            program[dest] <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> b
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>        ip <span style="color:#f92672">=</span> ip <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>    <span style="color:#66d9ef">return</span> program[<span style="color:#ae81ff">0</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">part1</span>(data):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>    program <span style="color:#f92672">=</span> data[:]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>    program[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>    program[<span style="color:#ae81ff">2</span>]<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>    <span style="color:#66d9ef">return</span> run_program((program))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">part2</span>(data):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>    results <span style="color:#f92672">=</span> []
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>    <span style="color:#66d9ef">for</span> noun <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">100</span>):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>        <span style="color:#66d9ef">for</span> verb <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">100</span>):
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>            program <span style="color:#f92672">=</span> data[:]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>            program[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> noun
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>            program[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> verb
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>            r <span style="color:#f92672">=</span> run_program(program)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>            results<span style="color:#f92672">.</span>append( (<span style="color:#ae81ff">100</span><span style="color:#f92672">*</span>noun<span style="color:#f92672">+</span>verb, r))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span>    ans <span style="color:#f92672">=</span> [ x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> results <span style="color:#66d9ef">if</span> x[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">==</span><span style="color:#ae81ff">19690720</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span>    <span style="color:#66d9ef">return</span> ans
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>    
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span><span style="color:#66d9ef">print</span>(part1(data))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span><span style="color:#66d9ef">print</span>(part2(data))</code></pre></div>
+</code></pre>
+
+<p>Note that in line 30 we copy over the original data for each noun,verb
+combo. also note the list comprehension in line 35 to find the final
+answer.</p>
+
+<p>One last potential error point is notice that we had to add the array
+copy in line 20. Otherwise part1 will change the data and if we run it
+before part2 we won't get the correct result.</p>
+
+<p>So there it is. Another nice problem and even though it's a
+straightforward problem, there's still some interesting meat to
+discuss with your students.</p>
+
+<p>Tomorrow, snowstorm notwithstanding, I'll be heading up to Albany for
+the remainder of the week so might not be able to get to day 3 and
+beyond until Friday so who knows if I'll post any more of these
+write ups.</p>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/advent-of-code/" rel="tag">Advent of Code</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/programming/" rel="tag">programming</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/cs/" rel="tag">CS</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/advent-2019-day1/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Advent of Code 2019 Day 1</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar">
+  <div class="widget-categories widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<div class="widget__content">
+	  
+	  
+          To receive posts via email:
+								<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="CestLaZ" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+								
+                
+	</div>
+	<br/>
+	<div class="widget_content">
+
+	  <a href="https://twitter.com/zamansky?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<a href="https://twitter.com/intent/tweet?screen_name=zamansky&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @zamansky</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	  
+	</div>
+</div>
+
+
+
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://cestlaz.github.io/" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/advent-2019-day2/">Advent 2019 Day 2</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/advent-2019-day1/">Advent of Code 2019 Day 1</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/advent-of-code-2019/">Advent Of Code 2019</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/presenting-at-csta/">Presenting At CSTA 2020</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/word-chains/">Working with texts part 3 - word chains</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/advent-of-code">Advent of code</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/algorithms">Algorithms</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/ap">Ap</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/apcs-a">Apcs a</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/community">Community</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/competitions">Competitions</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/computational-thinking">Computational thinking</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cs">Cs</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cs-ed">Cs ed</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cs-education">Cs education</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/csed">Csed</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cseducation">Cseducation</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/csta">Csta</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/curriculum">Curriculum</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/database">Database</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/education">Education</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/emacs">Emacs</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/hackathons">Hackathons</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/hunter">Hunter</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/languages">Languages</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/meta">Meta</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/misc">Misc</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/ny-tech">Ny tech</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/outreach">Outreach</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/pd">Pd</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/pedagogy">Pedagogy</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/policy">Policy</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/problem-solving">Problem solving</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/professional-development">Professional development</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/sigcse">Sigcse</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software-engineering">Software engineering</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/teaching">Teaching</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tools">Tools</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/web">Web</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/advent-of-code" title="Advent of code">Advent of code (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/adventofcode" title="Adventofcode">Adventofcode (10)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/algorithms" title="Algorithms">Algorithms (9)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ap" title="Ap">Ap (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/apcs" title="Apcs">Apcs (12)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/apcs-a" title="Apcs a">Apcs a (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/assessment" title="Assessment">Assessment (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/assessments" title="Assessments">Assessments (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/bike" title="Bike">Bike (14)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/career" title="Career">Career (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/certification" title="Certification">Certification (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cli" title="Cli">Cli (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/coding" title="Coding">Coding (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/college" title="College">College (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/community" title="Community">Community (42)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/competitions" title="Competitions">Competitions (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/computational-thinking" title="Computational thinking">Computational thinking (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/conferences" title="Conferences">Conferences (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs" title="Cs">Cs (78)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs-education" title="Cs education">Cs education (21)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cs4all" title="Cs4all">Cs4all (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csed" title="Csed">Csed (52)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cseducation" title="Cseducation">Cseducation (7)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csforall" title="Csforall">Csforall (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/csta" title="Csta">Csta (7)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/cstuy" title="Cstuy">Cstuy (23)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ct" title="Ct">Ct (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/curriculum" title="Curriculum">Curriculum (15)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/data-structures" title="Data structures">Data structures (3)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/editing" title="Editing">Editing (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/education" title="Education">Education (58)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/emacs" title="Emacs">Emacs (70)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/ethicalcs" title="Ethicalcs">Ethicalcs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/flask" title="Flask">Flask (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/gifted" title="Gifted">Gifted (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/git" title="Git">Git (6)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/github" title="Github">Github (7)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/grading" title="Grading">Grading (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hackathons" title="Hackathons">Hackathons (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hs" title="Hs">Hs (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hunter" title="Hunter">Hunter (5)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/interviews" title="Interviews">Interviews (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/intro" title="Intro">Intro (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/java" title="Java">Java (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/langauges" title="Langauges">Langauges (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/languages" title="Languages">Languages (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/learning" title="Learning">Learning (6)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/lessons" title="Lessons">Lessons (3)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux (6)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/misc" title="Misc">Misc (31)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/moocs" title="Moocs">Moocs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/netlogo" title="Netlogo">Netlogo (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/nltk" title="Nltk">Nltk (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/nytech" title="Nytech">Nytech (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pd" title="Pd">Pd (7)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pedagogy" title="Pedagogy">Pedagogy (82)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/pedgogy" title="Pedgogy">Pedgogy (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/policy" title="Policy">Policy (77)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/problem-solving" title="Problem solving">Problem solving (4)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/productivity" title="Productivity">Productivity (12)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/programming" title="Programming">Programming (15)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/python" title="Python">Python (5)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/resources" title="Resources">Resources (2)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/reunions" title="Reunions">Reunions (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/shell" title="Shell">Shell (9)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/sigcse" title="Sigcse">Sigcse (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/softeng" title="Softeng">Softeng (4)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/software-engineering" title="Software engineering">Software engineering (11)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching" title="Teaching">Teaching (29)</a>
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/teaching-cs" title="Teaching cs">Teaching cs (2)</a>
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tech" title="Tech">Tech (8)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tools" title="Tools">Tools (96)</a>
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+
+
+          
+
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/zamansky" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:zamansky@gmail.com">
+				<svg class="widget-social__link-icon icon-mail" viewBox="0 0 416 288" width="24" height="24" fill="#fff"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>zamansky@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+  
+	  <div class="footer__copyright">&copy; 2019 Mike Zamansky. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script><script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100530816);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif" /></p></noscript>
+
+
+
+</body>
+</html>

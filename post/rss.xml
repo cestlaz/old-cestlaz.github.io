@@ -6,13 +6,23 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 14:23:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 17:11:43 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
-      <title>Advent of Code 2019 Day1</title>
+      <title>Advent 2019 Day 2</title>
+      <link>https://cestlaz.github.io/post/advent-2019-day2/</link>
+      <pubDate>Mon, 02 Dec 2019 17:11:43 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2019-day2/</guid>
+      <description>Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.
+At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it.</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code 2019 Day 1</title>
       <link>https://cestlaz.github.io/post/advent-2019-day1/</link>
       <pubDate>Sun, 01 Dec 2019 14:23:35 -0400</pubDate>
       
