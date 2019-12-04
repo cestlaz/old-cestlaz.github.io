@@ -6,10 +6,20 @@
     <description>Recent content in Cs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Dec 2019 17:11:43 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 19:01:13 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/cs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent 2019 Day 3</title>
+      <link>https://cestlaz.github.io/post/advent-2019-day3/</link>
+      <pubDate>Tue, 03 Dec 2019 19:01:13 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2019-day3/</guid>
+      <description>Today&#39;s problem dealt with intersecting paths. You start with two inputs, figure out the paths they represent and where they intersect and then find the intersection that correctly answers the question.
+For part 1 you have to find the intersection closest to the origin. From a teacher&#39;s point of view, the interesting part here is data representation. This problem deals with a two dimensional grid on which the paths live. For most students, at least in my experience, if they&#39;re trained in a language like C++ or Java they go for the direct representation - a 2D array.</description>
+    </item>
     
     <item>
       <title>Advent 2019 Day 2</title>
