@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 08:42:32 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 17:04:30 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent 2019 Day 8 - addendum - generating inputs</title>
+      <link>https://cestlaz.github.io/post/advent-2019-day8-part2/</link>
+      <pubDate>Sun, 08 Dec 2019 17:04:30 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2019-day8-part2/</guid>
+      <description>As I sad in my last post, day 8 would be a nice project or lesson in an APCS-A or college CS1 class. Another nice problem would be to write a program to generate an image in the format required by the question. Alternatively, a teacher doing day 8 with their classes might want to generate a bunch of images for the students to test their decoders on.
+I thought I&#39;d write one to see how appropriate it would be for the students.</description>
+    </item>
     
     <item>
       <title>Advent 2019 Day - 8</title>
@@ -1298,6 +1308,15 @@ If you&#39;ve been here before you probably know I&#39;m not a fan of the standa
 Out of the box Hugo supports org-mode with pretty much all of its niceties like:
  code highlighting org-mode structure (lists, tables) html can be directly embedded tags and categories  The Mainroad theme added:
  MathJax Analytics An easy menu widgets for the sidebar  It was pretty easy to customize and deploying to GitHub pages is pretty simple.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cestlaz.github.io/post/soe-cal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/soe-cal/</guid>
+      <description></description>
     </item>
     
   </channel>
