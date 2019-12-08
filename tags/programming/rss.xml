@@ -6,10 +6,19 @@
     <description>Recent content in Programming on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2019 19:32:34 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 08:42:32 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent 2019 Day - 8</title>
+      <link>https://cestlaz.github.io/post/advent-2019-day8/</link>
+      <pubDate>Sun, 08 Dec 2019 08:42:32 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2019-day8/</guid>
+      <description>I spent most of last week up in Albany working on the NY State K12 CS Standards so fell a bit behind. I had to go back to complete day 5 but still haven&#39;t finished day 7 which builds on day 5 which in turn builds on day 2. I might not get to finishing 7 for a while but it looks like a good chance to play with core.async - Clojure&#39;s facilities for concurrency.</description>
+    </item>
     
     <item>
       <title>Advent 2019 Day 4</title>
