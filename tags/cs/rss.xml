@@ -6,10 +6,20 @@
     <description>Recent content in Cs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 17:04:30 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 17:19:27 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/cs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Multi Stage Assignments - the good and the bad - Advent of Code</title>
+      <link>https://cestlaz.github.io/post/multi-stage-assignments/</link>
+      <pubDate>Thu, 12 Dec 2019 17:19:27 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/multi-stage-assignments/</guid>
+      <description>In the real world you&#39;re usually not building your own projects from scratch. Much more frequently you&#39;re working on a team and you and other players come and go over time.
+This is in stark contrast to most CS educational experiences where students typically complete relatively small assignments from beginning to end. One of my biggest fears way back when as I was about to graduate college was when I woke up one night in a cold sweath &#34;</description>
+    </item>
     
     <item>
       <title>Advent 2019 Day 8 - addendum - generating inputs</title>
