@@ -6,10 +6,21 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Dec 2019 17:19:27 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2019 11:56:23 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Keeping Current Between Semesters</title>
+      <link>https://cestlaz.github.io/post/keeping-current-between-semesters/</link>
+      <pubDate>Fri, 27 Dec 2019 11:56:23 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/keeping-current-between-semesters/</guid>
+      <description>People say that one of the impossible problems for CS teachers is keeping current - they say the field is constantly changing, how can a teacher keep up with all the new things going on.
+Well, on the one hand it isn&#39;t true - most of the core of CS is the same. We still teach roughly the same programming constructs, data structures and algorithms.
+On the other hand, it is true.</description>
+    </item>
     
     <item>
       <title>Multi Stage Assignments - the good and the bad - Advent of Code</title>
