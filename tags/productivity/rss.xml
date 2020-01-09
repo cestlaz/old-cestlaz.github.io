@@ -6,10 +6,21 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Nov 2019 12:25:58 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 08:11:52 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 63 ClojureScript</title>
+      <link>https://cestlaz.github.io/post/using-emacs-63-clojurescript/</link>
+      <pubDate>Thu, 09 Jan 2020 08:11:52 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-63-clojurescript/</guid>
+      <description>I&#39;ve been playing with ClojureScipt for my web projects recently and really like it. Much more fun than any of the JavaScript frameworks I&#39;ve used.
+Still, getting started was somewhat difficult due to the number of options in tooling and uneven documentation and learning resources.
+Here&#39;s a video that shows how I use Emacs for ClojureScript development but the focus of the video is on how to get started with ClojureScript and Emacs takes a back seat other than an example of my workflow.</description>
+    </item>
     
     <item>
       <title>Using Emacs 62 Magit Forge</title>
