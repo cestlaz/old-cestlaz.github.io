@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cestlaz.github.io/posts/code-beyond-apcs/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/using-emacs-63-clojurescript/</loc>
     <lastmod>2020-01-09T08:11:52-04:00</lastmod>
   </url>
@@ -2840,7 +2845,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/apcs/</loc>
-    <lastmod>2019-06-03T13:27:22-04:00</lastmod>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/apcs/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2906,7 +2917,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2020-01-09T08:11:52-04:00</lastmod>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3111,6 +3122,12 @@
   <url>
     <loc>https://cestlaz.github.io/tags/csforall/</loc>
     <lastmod>2019-04-12T08:12:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/csfroall/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3619,14 +3636,14 @@
   </url>
   
   <url>
-    <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2020-01-09T08:11:52-04:00</lastmod>
+    <loc>https://cestlaz.github.io/posts/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cestlaz.github.io/posts/</loc>
-    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+    <loc>https://cestlaz.github.io/post/</loc>
+    <lastmod>2020-01-09T08:11:52-04:00</lastmod>
     <priority>0</priority>
   </url>
   
