@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cestlaz.github.io/post/clojurescript-components/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/code-beyond-apcs/</loc>
     <lastmod>2020-01-10T17:51:14-04:00</lastmod>
   </url>
@@ -2917,7 +2922,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2954,6 +2959,24 @@
   <url>
     <loc>https://cestlaz.github.io/tags/cli/</loc>
     <lastmod>2016-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/clojure/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/clojure/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/clojurescript/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3636,14 +3659,14 @@
   </url>
   
   <url>
-    <loc>https://cestlaz.github.io/posts/</loc>
-    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+    <loc>https://cestlaz.github.io/post/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2020-01-09T08:11:52-04:00</lastmod>
+    <loc>https://cestlaz.github.io/posts/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3979,7 +4002,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/webdev/</loc>
-    <lastmod>2016-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   

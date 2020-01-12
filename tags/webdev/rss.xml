@@ -6,10 +6,21 @@
     <description>Recent content in Webdev on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 12:19:00 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/webdev/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Clojurescript Components</title>
+      <link>https://cestlaz.github.io/post/clojurescript-components/</link>
+      <pubDate>Sun, 12 Jan 2020 12:19:00 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/clojurescript-components/</guid>
+      <description>I got some positive feedback from my first Clojurescript post and video so I thought I&#39;d continue with the series.
+Here we&#39;ll continue to build a simple Clojurescript/Shadow-cljs/Reagent/Tailwindcss application by creating some reusable components. It&#39;s one of the things that make Clojurescript so nice for web development.
+Here&#39;s a link to the GitHub repo with the code: https://github.com/zamansky/shadow-cljs-demo</description>
+    </item>
     
     <item>
       <title>Setting up Linux for Flask Web Development</title>
