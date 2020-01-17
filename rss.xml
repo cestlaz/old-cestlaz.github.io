@@ -6,10 +6,19 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 09:37:17 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 08:07:26 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Education is not a spectator sport</title>
+      <link>https://cestlaz.github.io/post/education-not-spec-sport/</link>
+      <pubDate>Fri, 17 Jan 2020 08:07:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/education-not-spec-sport/</guid>
+      <description>As many of you know, the CS Education programs I designed here at Hunter were finally approved by NY State late last year. We&#39;re planning to get started this summer. I&#39;ve received many questions about the program and will write up the details here sooner or later but one question I frequently get is &#34;will it be offered online?&#34; This is also something I&#39;ve been asked more than once internal to Hunter.</description>
+    </item>
     
     <item>
       <title>Clojurescript - building a simple router</title>
