@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jan 2020 08:11:52 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2020 08:52:01 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 64 - Notmuch</title>
+      <link>https://cestlaz.github.io/post/using-emacs-64-notmuch/</link>
+      <pubDate>Sat, 18 Jan 2020 08:52:01 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-64-notmuch/</guid>
+      <description>I&#39;ve been using the gmail web interface for a long time. My first email or at least the oldest one still in the system dates back to Oct 18, 2004 7:29am. It was a letter to a buddy about an indoor turkey fryer and if he needed a lift to Fairway the following morning to shop.
+Before that, I used my Panix shell account - probably with PINE. Work email was using my own servers at Stuy along with either PINE or Emacs using VM mode which has long been deprecated.</description>
+    </item>
     
     <item>
       <title>Using Emacs 63 ClojureScript</title>
