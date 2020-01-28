@@ -6,10 +6,21 @@
     <description>Recent content in Algorithms on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jun 2019 07:29:30 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 13:10:47 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/algorithms/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Sorting by hand or searching and inserting</title>
+      <link>https://cestlaz.github.io/post/sorting-by-hand/</link>
+      <pubDate>Sun, 26 Jan 2020 13:10:47 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sorting-by-hand/</guid>
+      <description>Natan commenting on work the other day:
+
+&#34;You have two lists. One is sorted, the other is not. Every item in one list corresponds to an item in the other. Is it faster to sort the unsorted list and then merge them, or simply go through the unsorted list in order and pair each item with the item you can find in the presorted list?&#34; is a question I asked today in the dressing room of an off-Broadway theater.</description>
+    </item>
     
     <item>
       <title>Grokking Algorithms</title>
