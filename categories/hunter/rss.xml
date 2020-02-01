@@ -6,10 +6,24 @@
     <description>Recent content in Hunter on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 17:34:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 13:41:03 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/categories/hunter/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Codefest 2020</title>
+      <link>https://cestlaz.github.io/post/codefest-2020/</link>
+      <pubDate>Sat, 01 Feb 2020 13:41:03 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/codefest-2020/</guid>
+      <description>Two of the challenges faced by young computer science students are finding the time to build independent projects for their portfolios and getting feedback from and networking with tech professionals.
+Enter Huner Codefest 2020
+ .row { display: flex; }
+.column { flex: 33.33%; padding: 5px; } .flip { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); } 
+  
+Hunter, like most colleges has a Fall semester that runs from late August through the end of Decemeber and a Spring semester that starts at the end of January and runs through late may.</description>
+    </item>
     
     <item>
       <title>Hunter College Winter Codefest 2019</title>
