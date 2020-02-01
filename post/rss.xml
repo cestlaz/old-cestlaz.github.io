@@ -19,10 +19,8 @@
       <guid>https://cestlaz.github.io/post/codefest-2020/</guid>
       <description>Two of the challenges faced by young computer science students are finding the time to build independent projects for their portfolios and getting feedback from and networking with tech professionals.
 Enter Hunter Codefest 2020
- .row {Having seen what display: flex; }
-.column { flex: 33.33%; padding: 5px; } .flip { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); } 
-  
-Hunter, like most colleges has a Fall semester that runs from late August through the end of Decemeber and a Spring semester that starts at the end of January and runs through late may.</description>
+ .flip { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); } 
+   Hunter, like most colleges has a Fall semester that runs from late August through the end of Decemeber and a Spring semester that starts at the end of January and runs through late may.</description>
     </item>
     
     <item>
