@@ -6,10 +6,21 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2020 13:41:03 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 13:13:09 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 65 - Live Python</title>
+      <link>https://cestlaz.github.io/post/using-emacs-65-live-python/</link>
+      <pubDate>Sun, 02 Feb 2020 13:13:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-65-live-python/</guid>
+      <description>The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level.
+Normally, when you code Python, if you&#39;re working in a REPL, every time you hit  the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.
+With this module, your file is continually evaluated as you type and it shows you the results in a side window.</description>
+    </item>
     
     <item>
       <title>Hunter Codefest 2020</title>
