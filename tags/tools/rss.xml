@@ -6,10 +6,20 @@
     <description>Recent content in Tools on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Feb 2020 16:42:08 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 08:12:22 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 66 - an eshell switchert in elisp</title>
+      <link>https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/</link>
+      <pubDate>Sat, 08 Feb 2020 08:12:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/</guid>
+      <description>I thought it was time to give eshell in Emacs another try. It has some pretty cool features but for whatever reason, I&#39;ve never really been able to adopt Emacs as my go to shell.
+Eshell out of the box is pretty cool but could use some enhancements. When launching at login it doesn&#39;t know about the path you set in your .bashrc or .zshrc in my case files. It just seemed to have problems with paths in general but that was fixed with the exce-path-from-shell package.</description>
+    </item>
     
     <item>
       <title>Riffing on the CS Ed Podcast - Episode 1 - David Malan</title>
@@ -238,7 +248,7 @@ Take a look at how I use Emacs and more specifically org-mode for my day to day 
       <pubDate>Wed, 19 Sep 2018 19:02:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/stories/emacs/</guid>
-      <description>Link to current configuration: https://github.com/zamansky/using-emacs Introduction Video 1 - Setting up the package manager Video 2 - Intro to Org Mode Video 3 - How to think about Emacs Video 4 - Buffers Video 5 - Windows Video 6 - Search / Swiper Video 7 - Navigation / avy Video 8 - Autocomplete Video 9 - Themes Video 10 - Org init files Video 11 - org-reveal / reveal.js Video 12 - Python, Flycheck, Jedi Video 13 - Python, Yasnippet Video 14 - Thoughts on Using Emacs Video 15 - Macros Video 16 - Undo Tree Video 17 - Small packages Video 18 - narrowing and iedit Video 19 - moving to a live config Video 20 - Yanking Video 21-web-mode Video 22-emacsclient Video 23 - capture 1 Video 24 - capture 2 Video 25 - Tramp Video 26 - Google Calendar and Org Agenda Video 27 - Shell and eshell Video 28 - Rectangles Video 29 - elfeed 1  Video 30 - elfeed 2 - Hydras  Video 31 - elfeed 3 - macros Video 32 - C++ Video 33 - Projectile Dumb-jump Video 34 - ibuffer and emmet Video 35 - blogging Video 36 - A Touch of Elisp Video 37 - Treemacs file browser Video 38 - dired Video 39 - mu4e Video 40 - Atomic chrome Video 41 - Pandoc Video 42 - Git Gutter and Timemachine Video 43 - Music Video 44 - pdf Video 45 - Company or Autocomplete Video 46 - auto yasnippets Video 47 - Magit Video 48 - silversearcher Video 49 - mu4e conversation Video 50 - presentations Video 51 - Day to day with org-mode Video 52 - eyebrowse Video 53 - Emailing org-agenda Video 54 - Org Tables Video 55 - Irony Completions Video 56 - Dictionaries Video 57 - Dired Narrow Video 58 - lsp-mode Video 59 - markdown Video 60 - restclient Video 61 - org-msg Video 62 - Magit Forge Video 63 - ClojureScript Video 64 - Notmuch Video 65 - Live Python </description>
+      <description>Link to current configuration: https://github.com/zamansky/using-emacs Introduction Video 1 - Setting up the package manager Video 2 - Intro to Org Mode Video 3 - How to think about Emacs Video 4 - Buffers Video 5 - Windows Video 6 - Search / Swiper Video 7 - Navigation / avy Video 8 - Autocomplete Video 9 - Themes Video 10 - Org init files Video 11 - org-reveal / reveal.js Video 12 - Python, Flycheck, Jedi Video 13 - Python, Yasnippet Video 14 - Thoughts on Using Emacs Video 15 - Macros Video 16 - Undo Tree Video 17 - Small packages Video 18 - narrowing and iedit Video 19 - moving to a live config Video 20 - Yanking Video 21-web-mode Video 22-emacsclient Video 23 - capture 1 Video 24 - capture 2 Video 25 - Tramp Video 26 - Google Calendar and Org Agenda Video 27 - Shell and eshell Video 28 - Rectangles Video 29 - elfeed 1  Video 30 - elfeed 2 - Hydras  Video 31 - elfeed 3 - macros Video 32 - C++ Video 33 - Projectile Dumb-jump Video 34 - ibuffer and emmet Video 35 - blogging Video 36 - A Touch of Elisp Video 37 - Treemacs file browser Video 38 - dired Video 39 - mu4e Video 40 - Atomic chrome Video 41 - Pandoc Video 42 - Git Gutter and Timemachine Video 43 - Music Video 44 - pdf Video 45 - Company or Autocomplete Video 46 - auto yasnippets Video 47 - Magit Video 48 - silversearcher Video 49 - mu4e conversation Video 50 - presentations Video 51 - Day to day with org-mode Video 52 - eyebrowse Video 53 - Emailing org-agenda Video 54 - Org Tables Video 55 - Irony Completions Video 56 - Dictionaries Video 57 - Dired Narrow Video 58 - lsp-mode Video 59 - markdown Video 60 - restclient Video 61 - org-msg Video 62 - Magit Forge Video 63 - ClojureScript Video 64 - Notmuch Video 65 - Live Python Video 66 - Eshell - Elisp </description>
     </item>
     
     <item>

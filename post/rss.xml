@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Feb 2020 16:42:08 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 08:12:22 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 66 - an eshell switchert in elisp</title>
+      <link>https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/</link>
+      <pubDate>Sat, 08 Feb 2020 08:12:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/</guid>
+      <description>I thought it was time to give eshell in Emacs another try. It has some pretty cool features but for whatever reason, I&#39;ve never really been able to adopt Emacs as my go to shell.
+Eshell out of the box is pretty cool but could use some enhancements. When launching at login it doesn&#39;t know about the path you set in your .bashrc or .zshrc in my case files. It just seemed to have problems with paths in general but that was fixed with the exce-path-from-shell package.</description>
+    </item>
     
     <item>
       <title>Riffing on the CS Ed Podcast - Episode 1 - David Malan</title>
