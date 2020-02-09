@@ -6,10 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 08:12:22 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 16:22:18 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>My code works -- and I have no idea why!!!</title>
+      <link>https://cestlaz.github.io/post/my-code-works/</link>
+      <pubDate>Sun, 09 Feb 2020 16:22:18 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/my-code-works/</guid>
+      <description>One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.
+Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request.</description>
+    </item>
     
     <item>
       <title>Using Emacs 66 - an eshell switcher in elisp</title>
