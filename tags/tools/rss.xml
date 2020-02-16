@@ -6,10 +6,19 @@
     <description>Recent content in Tools on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Feb 2020 08:41:21 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 12:53:59 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Github Org Explorer - now with oauth</title>
+      <link>https://cestlaz.github.io/post/github-org-explorer-oauth/</link>
+      <pubDate>Sun, 16 Feb 2020 12:53:59 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/github-org-explorer-oauth/</guid>
+      <description>A while ago I wrote about a small side project - GitHub Org Explorer - a small tool to make it easier to manager GitHub repositories based on organization. I&#39;m using it as a replacement for the GitHub provided Classroom Assistant. I find it more flexible in terms of exporting assignments to my own machine and it allows me to delete repos en masse which is critical after the semester is over.</description>
+    </item>
     
     <item>
       <title>CS Ed Podcast 2 - Dan Garcia on test creation</title>
