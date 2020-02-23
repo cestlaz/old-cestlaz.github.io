@@ -6,10 +6,20 @@
     <description>Recent content in Emacs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 08:12:22 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 07:57:08 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/categories/emacs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs Episode 67 - Emacs vs Vi a rant with some historical perspective</title>
+      <link>https://cestlaz.github.io/post/using-emacs-67-emacs-rant/</link>
+      <pubDate>Sun, 23 Feb 2020 07:57:08 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-67-emacs-rant/</guid>
+      <description>I&#39;ve been meaning to do my version of the Emacs VI rant for a while. A few years ago I staged out a video showing what it would be like for a beginner to start with Emacs, Vim, Atom, and Sublime Text but decided it would be long, unwieldy and clunky to present - particularly when it came to customization.
+I tabled it for a while but recently have been seeing a bunch of threads, videos and posts talking about Emacs and Vim.</description>
+    </item>
     
     <item>
       <title>Using Emacs 66 - an eshell switcher in elisp</title>

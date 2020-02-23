@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/tags/tools/" />
-<meta property="og:updated_time" content="2016-06-24T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2016-06-26T00:00:00&#43;00:00"/>
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tools"/>
 <meta name="twitter:description" content=""/>
@@ -82,6 +82,32 @@ if (!doNotTrack) {
 	<header class="main__header">
 		<h1 class="main__title">Tools</h1>
 	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/posts/using-emacs-8-autocomplete/" rel="bookmark">
+			Using Emacs - 8 - Autocomplete
+			</a>
+		</h3><div class="list__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2016-06-26T00:00:00">June 26, 2016</time></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Out of the box, Emacs supports various types of completion.
+Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're interested in the others, follow the links.
+We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion.
+                
+          <br>
+            <a href="/posts/using-emacs-8-autocomplete/#disqus_thread"># COMMENTS</a>
+            
+	</div>
+
+                
+        <div class="list__footer">
+          <a class="list__footer-readmore btn" href="/posts/using-emacs-8-autocomplete/">Read more…</a>
+	</div>
+</article>
+<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/posts/using-emacs-7-avy/" rel="bookmark">
@@ -310,33 +336,6 @@ I recommend that budding computer science students develop a good tool set and e
           <a class="list__footer-readmore btn" href="/posts/using-emacs-introduction/">Read more…</a>
 	</div>
 </article>
-<article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/posts/using-emacs-1-setup/" rel="bookmark">
-			Using Emacs - Setting up the Package Manager
-			</a>
-		</h3><div class="list__meta meta">
-<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-<time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		This video will step you through setting up Emacs to use MELPA for packages.
-
-We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
-Here's the contents of that file:
-(setq inhibit-startup-message t) (require &#39;package)(setq package-enable-at-startup nil)(add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;))(package-initialize);; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package)(package-refresh-contents)(package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages: *try*: let's you try packages without installing them.
-                
-          <br>
-            <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>
-            
-	</div>
-
-                
-        <div class="list__footer">
-          <a class="list__footer-readmore btn" href="/posts/using-emacs-1-setup/">Read more…</a>
-	</div>
-</article>
 
 </main>
 
@@ -386,11 +385,11 @@ Here's the contents of that file:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/using-emacs-67-emacs-rant/">Using Emacs Episode 67 - Emacs vs Vi a rant with some historical perspective</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/cseducation-subreddit/">The CS Education Subreddit</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/github-org-explorer-oauth/">Github Org Explorer - now with oauth</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/cs-ed-podcast-2/">CS Ed Podcast 2 - Dan Garcia on test creation</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/my-code-works/">My code works -- and I have no idea why!!!</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/using-emacs-66-eshell-elisp/">Using Emacs 66 - an eshell switcher in elisp</a></li>
 		</ul>
 	</div>
 </div>
@@ -804,7 +803,7 @@ Here's the contents of that file:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/emacs" title="Emacs">Emacs (74)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/emacs" title="Emacs">Emacs (75)</a>
 
 
           
@@ -1123,7 +1122,7 @@ Here's the contents of that file:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/productivity" title="Productivity">Productivity (16)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/productivity" title="Productivity">Productivity (17)</a>
 
 
           
@@ -1303,7 +1302,7 @@ Here's the contents of that file:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/tools" title="Tools">Tools (104)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/tools" title="Tools">Tools (105)</a>
 
 
           
