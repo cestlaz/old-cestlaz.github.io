@@ -6,10 +6,20 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Feb 2020 07:57:08 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 18:52:08 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CSEvents.nyc</title>
+      <link>https://cestlaz.github.io/post/csevents-nyc/</link>
+      <pubDate>Mon, 24 Feb 2020 18:52:08 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/csevents-nyc/</guid>
+      <description>A couple of weeks ago, a handful of CS Ed folks got together. One issue we discussed was that of finding CS related events both for students and teachers.
+One of our conveners, Dan Fenjves of UPPERLINE CODE talked about possibly hosting a central site. Today, Dan announced http://csevents.nyc/. A site where organizers can submit and students and teachers can find upcoming events. Right now it&#39;s NY centric but it does list some events beyond the city.</description>
+    </item>
     
     <item>
       <title>Using Emacs Episode 67 - Emacs vs Vi a rant with some historical perspective</title>
