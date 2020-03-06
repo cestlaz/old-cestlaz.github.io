@@ -6,10 +6,22 @@
     <description>Recent content on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2020 09:34:40 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 08:40:26 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CS Ed Podcast 3 -  Debugging</title>
+      <link>https://cestlaz.github.io/post/cs-ed-podcast-3-debugging/</link>
+      <pubDate>Fri, 06 Mar 2020 08:40:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/cs-ed-podcast-3-debugging/</guid>
+      <description>Everyone knows that debugging is twice as hard as writing a program in the first place. So if you&#39;re as clever as you can be when you write it, how will you ever debug it?
+-- Brian Kernighan 
+Debugging is what the third episode of the CS Ed Podcast was all about. Kristin Stephens-Martinez of Duke University speaks with Amy Ko of the University of Washington.
+The long and the short of it is that debugging is hard, teaching is hard, and teaching debugging is hard.</description>
+    </item>
     
     <item>
       <title>Remote Classes</title>
