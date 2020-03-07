@@ -6,10 +6,19 @@
     <description>Recent content in Pd on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2019 16:18:51 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 08:12:55 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/pd/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Interesting Problems</title>
+      <link>https://cestlaz.github.io/post/interesting-problems/</link>
+      <pubDate>Sat, 07 Mar 2020 08:12:55 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/interesting-problems/</guid>
+      <description>I organize a monthly professional development session for CS teachers. It&#39;s targeted at teachers who are beyond the beginner stage and don&#39;t want yet another hello world blinky arduino scratch workshop. Don&#39;t get me wrong, given the need for CS teachers we need plenty of beginner workshops but we also need to take teachers to the next level. I refer to my workshops as being for teachers of APCS-A, similar, or beyond.</description>
+    </item>
     
     <item>
       <title>Working with texts part 1 - cleaning the data</title>
