@@ -6,10 +6,21 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2020 17:46:35 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 20:57:08 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs Episode 68 - Tramp and org-publush</title>
+      <link>https://cestlaz.github.io/post/using-emacs-68-tramp-org-publish/</link>
+      <pubDate>Sat, 14 Mar 2020 20:57:08 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-68-tramp-org-publish/</guid>
+      <description>I maintain a couple of small simple web sites. One provides information about my undergraduate honors CS program and another that isn&#39;t live yet is a FAQ for my CS teacher certification program.
+Traditionally I would use ssh to connect to the host machine, fire up Emacs and edit the html files to update the sites. I always forget that with Emacs we can do better.
+One way is with Tramp Mode.</description>
+    </item>
     
     <item>
       <title>Focus To Feel Normal</title>
