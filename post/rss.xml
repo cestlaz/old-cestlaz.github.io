@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2020 20:57:08 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 16:49:36 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Teaching online - a test run</title>
+      <link>https://cestlaz.github.io/post/online-testrun/</link>
+      <pubDate>Mon, 16 Mar 2020 16:49:36 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/online-testrun/</guid>
+      <description>Hunter&#39;s classes are still on hiatus while we figure out how we&#39;re going to deliver instruction remotely. I have it easier than most. First, my students all get laptops as being part of the Daedalus program. This doesn&#39;t mean they have great internet access or access at all but it does mean they have a device that can run everything we need them to run. I don&#39;t yet know if they all have adequate internet access but I&#39;m hoping it&#39;s either not an issue or one that we can easily figure out.</description>
+    </item>
     
     <item>
       <title>Using Emacs Episode 68 - Tramp and org-publish</title>
