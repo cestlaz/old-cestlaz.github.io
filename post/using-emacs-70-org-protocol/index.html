@@ -118,7 +118,7 @@ starts it. That meant that I only had to add ~(require 'org-protocol)~
 to my Emacs config file.</p>
 
 <p>I followed the instructions in the documentation by typing in these
-lines:#using-emacs-70-org-protocol.org#</p>
+lines:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command <span style="color:#e6db74">&#39;/usr/local/bin/emacsclient %s&#39;</span> --type String
 
@@ -128,7 +128,7 @@ gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean t
 
 <p>I ended up following the instructions I found in <a href="https://stackoverflow.com/questions/7464951/how-to-make-org-protocol-work" title="this post">this post</a> creating a
 file named <code>org-protocol.desktop</code> in the folder
- <code>~/.local/share/applications</code> containing:10-years-blogging.org
+ <code>~/.local/share/applications</code> containing:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>Desktop Entry<span style="color:#f92672">]</span>
 Name<span style="color:#f92672">=</span>org-protocol
 Exec<span style="color:#f92672">=</span>emacsclient %u
