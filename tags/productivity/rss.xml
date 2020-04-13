@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 10:52:37 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 15:15:28 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 70 Org Protocol</title>
+      <link>https://cestlaz.github.io/post/using-emacs-70-org-protocol/</link>
+      <pubDate>Fri, 27 Mar 2020 15:15:28 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-70-org-protocol/</guid>
+      <description>I spent part of today cleaning up my Emacs workflow. Specifically, how I capture emails and links into org-mode
+I already wrote about how I used org-capture (here and here). It&#39;s pretty clean and easy but there was one thing that always nagged at me. When I capture from mu4e within Emacs by hitting C-c m it&#39;s set up to automatically populate the capture template with a link to the email labelled with the email&#39;s subject.</description>
+    </item>
     
     <item>
       <title>Using Emacs 69 Floobits</title>

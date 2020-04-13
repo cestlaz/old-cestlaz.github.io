@@ -6,10 +6,94 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 18:59:40 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 17:21:47 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>John Conway</title>
+      <link>https://cestlaz.github.io/post/conway/</link>
+      <pubDate>Mon, 13 Apr 2020 17:21:47 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/conway/</guid>
+      <description>We lost Mathematician John Conway to COVID-19 over the weekend. To us non mathematicians Conway was most well known for his Game of Life - a particularly interesting cellular automaton. If you poke around the web you can find all sorts of neat things relating to the Game of Life including a Turing Machine.
+Some times, I&#39;d have classes explore the Game of Life and variants as a whole unit though more often, I use it as a stepping stone to using Cellular Automata to solve problems.</description>
+    </item>
+    
+    <item>
+      <title>Sherlock Holmes, consulting developer</title>
+      <link>https://cestlaz.github.io/post/sherlock-holmes-dev/</link>
+      <pubDate>Sun, 12 Apr 2020 08:34:40 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sherlock-holmes-dev/</guid>
+      <description>Stuart Halloway is a name in the Clojure community. I was rewatching one of his talks this morning and I thought some of you would enjoy it. Lots of gems on approaching programming and development.
+Nothing radical or new here but lots of good stuff very well presented.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s okay, I Get It</title>
+      <link>https://cestlaz.github.io/post/i-get-it/</link>
+      <pubDate>Fri, 10 Apr 2020 14:13:08 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/i-get-it/</guid>
+      <description>I was reading Mary Clair Wright&#39;s new blog the other day. It&#39;s always great to see another teacher sharing publicly online.
+One line caught my eye in her latest post -
+ Remote instruction is weird, I can’t see them. I have to trust that they will message me with questions. 
+This is a real problem. It&#39;s hard enough in a regular class where we can pick up an all sorts of cues and use all sorts formal and informal assessments but when the students are on the other end of a teleconference or even more challenging an email or chat it&#39;s even harder.</description>
+    </item>
+    
+    <item>
+      <title>Passover 2020</title>
+      <link>https://cestlaz.github.io/post/passover-2020/</link>
+      <pubDate>Thu, 09 Apr 2020 07:59:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/passover-2020/</guid>
+      <description>Yesterday was the start of Passover and like many others we weren&#39;t able to physically gather with friends and family to celebrate. Since the Talmud, unlike the NYC Dept of Education, doesn&#39;t seem to ban Zoom, like many others, we used Zoom to connect with family.
+Tonight we&#39;ll do it again.
+In the meantime, I thought I&#39;d share this small bit of research Natan did a couple of years ago on a traditional part of the seder: A Historically Informed Echad Mi Yodea</description>
+    </item>
+    
+    <item>
+      <title>To Zoom or not to Zoom</title>
+      <link>https://cestlaz.github.io/post/zoom-or-not/</link>
+      <pubDate>Tue, 07 Apr 2020 14:03:13 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/zoom-or-not/</guid>
+      <description>Zoom has been on a wild ride. As teachers scrambled to try to deliver instruction from there homes to student homes Zoom quickly became a favorite. It was easy, performed well, and had features that other services seemed to lack. Features like being able to mute students and for me a big one - breakout rooms. Now, these features weren&#39;t flawless as I mentioned in my last post but that&#39;s okay.</description>
+    </item>
+    
+    <item>
+      <title>Limitations Of Remote Teaching</title>
+      <link>https://cestlaz.github.io/post/limitations-of-remote-teaching/</link>
+      <pubDate>Mon, 30 Mar 2020 14:41:35 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/limitations-of-remote-teaching/</guid>
+      <description>While tools like Zoom, Slack and others are a tremendous boon as we&#39;re forced to do all our teaching remotely the limitations become apparent as we settle in and try to go beyond the basics of an offsite meeting.
+Today was code review day in my CS1 class. It&#39;s a lesson that I enjoy teaching and I think my students get a lot out of it. Today we had to do it remote.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs 70 Org Protocol</title>
+      <link>https://cestlaz.github.io/post/using-emacs-70-org-protocol/</link>
+      <pubDate>Fri, 27 Mar 2020 15:15:28 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-70-org-protocol/</guid>
+      <description>I spent part of today cleaning up my Emacs workflow. Specifically, how I capture emails and links into org-mode
+I already wrote about how I used org-capture (here and here). It&#39;s pretty clean and easy but there was one thing that always nagged at me. When I capture from mu4e within Emacs by hitting C-c m it&#39;s set up to automatically populate the capture template with a link to the email labelled with the email&#39;s subject.</description>
+    </item>
+    
+    <item>
+      <title>Class Legends</title>
+      <link>https://cestlaz.github.io/post/class-legends/</link>
+      <pubDate>Wed, 25 Mar 2020 15:43:54 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/class-legends/</guid>
+      <description>Let&#39;s talk about something other than distance learning and COVID-19.
+You know you&#39;ve been doing something a long time when you&#39;ve got legends.
+Over on my alumni mailing list JonAlf shared a web site showing off what his current students were doing in their computer graphics class. Somewhere in the thread, Con replied:
+ Someone should put up a video of the fabulous and fantastically famous hand animation called FINGER.MDL. It dates from a little before my time, but stories elevated it to legendary status.</description>
+    </item>
     
     <item>
       <title>Necessity is the mother of invention</title>

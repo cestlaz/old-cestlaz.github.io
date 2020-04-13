@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cestlaz.github.io/post/conway/</loc>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/sherlock-holmes-dev/</loc>
+    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/i-get-it/</loc>
+    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/passover-2020/</loc>
+    <lastmod>2020-04-09T07:59:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/zoom-or-not/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/limitations-of-remote-teaching/</loc>
+    <lastmod>2020-03-30T14:41:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/using-emacs-70-org-protocol/</loc>
+    <lastmod>2020-03-27T15:15:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/class-legends/</loc>
+    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/mother-of-invention/</loc>
     <lastmod>2020-03-23T18:59:40-04:00</lastmod>
   </url>
@@ -2934,7 +2974,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/</loc>
-    <lastmod>2016-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3090,7 +3130,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3103,6 +3143,18 @@
   <url>
     <loc>https://cestlaz.github.io/categories/</loc>
     <lastmod>2019-12-12T17:19:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cellular-automata/</loc>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cellular-automata/</loc>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3174,13 +3226,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/community/</loc>
-    <lastmod>2020-03-14T17:46:35-04:00</lastmod>
+    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/categories/community/</loc>
-    <lastmod>2020-03-14T17:46:35-04:00</lastmod>
+    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3235,6 +3287,12 @@
   <url>
     <loc>https://cestlaz.github.io/tags/covid-19/</loc>
     <lastmod>2020-03-19T11:48:20-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/covid19/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3414,13 +3472,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/development/</loc>
-    <lastmod>2020-02-09T16:22:18-04:00</lastmod>
+    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/categories/development/</loc>
-    <lastmod>2020-02-09T16:22:18-04:00</lastmod>
+    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3445,6 +3503,18 @@
   <url>
     <loc>https://cestlaz.github.io/tags/ed/</loc>
     <lastmod>2017-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ed-tech/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/ed-tech/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3486,13 +3556,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/emacs/</loc>
-    <lastmod>2020-03-21T10:52:37-04:00</lastmod>
+    <lastmod>2020-03-27T15:15:28-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/categories/emacs/</loc>
-    <lastmod>2020-03-21T10:52:37-04:00</lastmod>
+    <lastmod>2020-03-27T15:15:28-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3708,13 +3778,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/misc/</loc>
-    <lastmod>2020-03-23T06:53:49-04:00</lastmod>
+    <lastmod>2020-04-09T07:59:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/categories/misc/</loc>
-    <lastmod>2020-03-20T15:55:03-04:00</lastmod>
+    <lastmod>2020-04-09T07:59:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3846,7 +3916,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/pedagogy/</loc>
-    <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+    <lastmod>2020-03-30T14:41:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3900,7 +3970,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3942,7 +4012,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/productivity/</loc>
-    <lastmod>2020-03-21T10:52:37-04:00</lastmod>
+    <lastmod>2020-03-27T15:15:28-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4134,7 +4204,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/</loc>
-    <lastmod>2016-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4146,13 +4216,13 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/teaching/</loc>
-    <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/categories/teaching/</loc>
-    <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4206,7 +4276,7 @@
   
   <url>
     <loc>https://cestlaz.github.io/tags/tools/</loc>
-    <lastmod>2020-03-21T10:52:37-04:00</lastmod>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
