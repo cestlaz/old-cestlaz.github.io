@@ -6,10 +6,20 @@
     <description>Recent content in Data Structures on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 18:45:50 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 12:54:05 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/categories/data-structures/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Alternate Representations</title>
+      <link>https://cestlaz.github.io/post/alternate-representations/</link>
+      <pubDate>Tue, 28 Apr 2020 12:54:05 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/alternate-representations/</guid>
+      <description>There was a comment on my last post about arbitary trees on Reddit talking about how this type of data structure was a hold over from the old days when computer resources were more limited. Nowadays having a list of children makes more sense. The comment was of course correct but I still think it&#39;s worth teaching representations like the one I spoke of in my last post.
+Looking at interesting and different ways of representing data and modeling solutions is one of the things that separates programmers or coders from computer scientists and software engineers.</description>
+    </item>
     
     <item>
       <title>Arbitrary Trees</title>
