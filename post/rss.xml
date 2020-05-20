@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2020 07:41:29 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 08:10:54 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Errors Are Hard To Find</title>
+      <link>https://cestlaz.github.io/post/errors-are-hard-to-find/</link>
+      <pubDate>Wed, 20 May 2020 08:10:54 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/errors-are-hard-to-find/</guid>
+      <description>Programming is amazing. You get the thrill of victory and the agony of defeat. It&#39;s a great feeling when you write something and it works - even it it&#39;s small and simple. It also feels good to hunt down, discover and eliminate subtle bugs in our code. On the other hand, I&#39;ll frequently feel like a bozo when I pour over my code for days only to find a super silly error.</description>
+    </item>
     
     <item>
       <title>Hunter&#39;s first Honors CS Cohort</title>
