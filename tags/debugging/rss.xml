@@ -6,10 +6,20 @@
     <description>Recent content in Debugging on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 08:10:54 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 08:11:25 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/tags/debugging/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>More thoughts on debugging</title>
+      <link>https://cestlaz.github.io/post/debug/</link>
+      <pubDate>Thu, 21 May 2020 08:11:25 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/debug/</guid>
+      <description>Yesterday&#39;s post on errors led to some interesting discussion over on Facebook. Specifically on teaching students to use a debugger.
+My contention is that while it&#39;s easy to demonstrate a debugger it&#39;s hard to get student buy in. In my CS0, we start with Thonny which has a great integrated debugger. In my CS1 I also show and use gdb. Regardless of my approach the subset of students who actively end up using the debugger has remained both constant and small.</description>
+    </item>
     
     <item>
       <title>Errors Are Hard To Find</title>
