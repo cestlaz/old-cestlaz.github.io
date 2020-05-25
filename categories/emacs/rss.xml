@@ -6,20 +6,10 @@
     <description>Recent content in Emacs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 14:47:59 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 11:45:39 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/categories/emacs/rss.xml" rel="self" type="application/rss" />
     
-    
-    <item>
-      <title>Using Emacs 72 - Customizing Elfeed</title>
-      <link>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</link>
-      <pubDate>Thu, 21 May 2020 14:47:59 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</guid>
-      <description>I made this video write after I made the openwith one so even though I don&#39;t mention anything in this video, I wanted to share some updates on dired and openwith.
-I got a lot of suggestions on alternate ways to achieve the workflow I was seeking - being able to open a file using an external viewer. One person noted that under newer versions of Emacs, the W key is bound to the command (browse-url-of-dired-file) which does exactly what I wanted.</description>
-    </item>
     
     <item>
       <title>Using Emacs 71 Openwith</title>

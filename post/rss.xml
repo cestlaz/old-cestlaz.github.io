@@ -6,19 +6,20 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 14:47:59 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 16:33:17 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
-      <title>Using Emacs 72 - Customizing Elfeed</title>
-      <link>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</link>
-      <pubDate>Thu, 21 May 2020 14:47:59 -0400</pubDate>
+      <title>Zoom alternatives that aren&#39;t from MicroGoogle</title>
+      <link>https://cestlaz.github.io/post/bigbluebutton/</link>
+      <pubDate>Mon, 25 May 2020 16:33:17 -0400</pubDate>
       
-      <guid>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</guid>
-      <description>I made this video write after I made the openwith one so even though I don&#39;t mention anything in this video, I wanted to share some updates on dired and openwith.
-I got a lot of suggestions on alternate ways to achieve the workflow I was seeking - being able to open a file using an external viewer. One person noted that under newer versions of Emacs, the W key is bound to the command (browse-url-of-dired-file) which does exactly what I wanted.</description>
+      <guid>https://cestlaz.github.io/post/bigbluebutton/</guid>
+      <description>As we scrambled to move online in March we used what we knew, what we heard of and what we were allowed. This usually meant Zoom, Google Meet, or Microsoft Teams.
+I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it.
+Now that the emergency rush has passed we have time to see if there are some better alternatives.</description>
     </item>
     
     <item>
