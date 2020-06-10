@@ -6,23 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs - 6 - Searching a Swiper</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs - 6 - Searching a Swiper" />
-<meta property="og:description" content="This video is all about using incremental search to navigate through your emacs buffers.
-
-You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).
-They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.
-Part of the Swiper package includes ivy and counsel which I use instead of ido." />
+<meta property="og:description" content="This video is all about using incremental search to navigate through your emacs buffers.  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0mwwN0S1dnQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).  They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.  Part of the Swiper package includes ivy and counsel which I use instead of ido." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-6-swiper/" /><meta property="article:published_time" content="2016-06-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-06-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-6-swiper/" />
+<meta property="article:published_time" content="2016-06-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-06-20T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 6 - Searching a Swiper"/>
-<meta name="twitter:description" content="This video is all about using incremental search to navigate through your emacs buffers.
-
-You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).
-They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.
-Part of the Swiper package includes ivy and counsel which I use instead of ido."/>
+<meta name="twitter:description" content="This video is all about using incremental search to navigate through your emacs buffers.  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0mwwN0S1dnQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).  They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.  Part of the Swiper package includes ivy and counsel which I use instead of ido."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,23 +92,31 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>This video is all about using incremental search to navigate through your emacs buffers.</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/0mwwN0S1dnQ" frameborder="0" allowfullscreen></iframe></p>
-
-<p>You can use the default incremental searchb, bound to <strong><strong>C-s</strong></strong> for
-isearch-forward <strong><strong>C-r</strong></strong> to search backwards (reverse).</p>
-
-<p>They work really well as is but I prefer using <a href="https://github.com/abo-abo/swiper" title="Swiper">Swiper</a>. The video demos
-both and the <a href="https://github.com/abo-abo/swiper" title="Swiper">Swiper</a> home page has loads of details.</p>
-
-<p>Part of the Swiper package includes ivy and counsel which I use instead of ido.</p>
-
-<p>The video also mentions lorem-ipsum mode for generating text quickly and <strong><strong>describe-mode</strong></strong> in the help system.</p>
-
-<p>Here's the code we added for swiper:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; it looks like counsel is a requirement for swiper</span>
+		  <p>
+This video is all about using incremental search to navigate through your emacs buffers.
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/0mwwN0S1dnQ">https://www.youtube.com/embed/0mwwN0S1dnQ</a>&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
+You can use the default incremental searchb, bound to <strong><strong>C-s</strong></strong> for
+isearch-forward <strong><strong>C-r</strong></strong> to search backwards (reverse).
+</p>
+<p>
+They work really well as is but I prefer using <a href="https://github.com/abo-abo/swiper">Swiper</a>. The video demos
+both and the <a href="https://github.com/abo-abo/swiper">Swiper</a> home page has loads of details.
+</p>
+<p>
+Part of the Swiper package includes ivy and counsel which I use instead of ido.
+</p>
+<p>
+The video also mentions lorem-ipsum mode for generating text quickly and <strong><strong>describe-mode</strong></strong> in the help system.
+</p>
+<p>
+Here&#39;s the code we added for swiper:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; it looks like counsel is a requirement for swiper</span>
 (use-package counsel
 :ensure <span style="color:#66d9ef">t</span>
 )
@@ -141,31 +143,67 @@ both and the <a href="https://github.com/abo-abo/swiper" title="Swiper">Swiper</
 (global-set-key (kbd <span style="color:#e6db74">&#34;C-x l&#34;</span>) <span style="color:#e6db74">&#39;counsel-locate</span>)
 (global-set-key (kbd <span style="color:#e6db74">&#34;C-S-o&#34;</span>) <span style="color:#e6db74">&#39;counsel-rhythmbox</span>)
 (<span style="color:#a6e22e">define-key</span> read-expression-map (kbd <span style="color:#e6db74">&#34;C-r&#34;</span>) <span style="color:#e6db74">&#39;counsel-expression-history</span>)
-))</code></pre></div>
-</code></pre>
-
-<p>and we commented out the ido stuff:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; using swiper so ido no longer needed</span>
+))</code></pre></div></code></pre></div>
+</div>
+<p>
+and we commented out the ido stuff:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; using swiper so ido no longer needed</span>
 <span style="color:#75715e">;;(setq ido-enable-flex-matching t)</span>
 <span style="color:#75715e">;;(setq ido-everywhere t)</span>
-<span style="color:#75715e">;;(ido-mode 1)</span></code></pre></div>
-</code></pre>
-
-<p>If you want to see a nice video specifically on swiper by the author, here it is:</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/VvnJQpTFVDc" frameborder="0" allowfullscreen></iframe></p>
-
-<ul>
+<span style="color:#75715e">;;(ido-mode 1)</span></code></pre></div></code></pre></div>
+</div>
+<p>
+If you want to see a nice video specifically on swiper by the author, here it is:
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/VvnJQpTFVDc">https://www.youtube.com/embed/VvnJQpTFVDc</a>&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
 Relevant links:
-<li>Swiper: <a href="https://github.com/abo-abo/swiper" title="https://github.com/abo-abo/swiper">https://github.com/abo-abo/swiper</a></li>
-<li>The Swiper Manual: http://oremacs.com/swiper/</li>
-<li>Video series overview page:</li>
-<li>http://cestlaz.github.io/stories/emacs</li>
-<li>Code for this video:</li>
-<li>https://github.com/zamansky/using-emacs/tree/lesson-6-swiper</li>
-<li>Complete code built up over all videos:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master" title="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></li>
+</p>
+<ul>
+<li>
+<p>
+Swiper: <a href="https://github.com/abo-abo/swiper"><a href="https://github.com/abo-abo/swiper">https://github.com/abo-abo/swiper</a></a>
+</p>
+</li>
+<li>
+<p>
+The Swiper Manual: <a href="http://oremacs.com/swiper/">http://oremacs.com/swiper/</a>
+</p>
+</li>
+<li>
+<p>
+Video series overview page:
+</p>
+</li>
+<li>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
+</li>
+<li>
+<p>
+Code for this video:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-6-swiper">https://github.com/zamansky/using-emacs/tree/lesson-6-swiper</a>
+</p>
+</li>
+<li>
+<p>
+Complete code built up over all videos:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
+</li>
 </ul>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -255,11 +293,11 @@ Relevant links:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -323,13 +361,6 @@ Relevant links:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -794,7 +825,7 @@ Relevant links:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

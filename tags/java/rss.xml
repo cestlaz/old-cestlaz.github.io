@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on C&#39;est la Z</title>
+    <title>java on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/java/</link>
-    <description>Recent content in Java on C&#39;est la Z</description>
+    <description>Recent content in java on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Mar 2019 13:29:18 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 08 Mar 2019 13:29:18 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/java-ides/</guid>
-      <description>Since Hunter uses C++ as it&#39;s core language, I haven&#39;t used Java much in the past three years. That&#39;s going to change pretty soon. Once we start offering our CS teacher Certificate and Masters programs I&#39;ll once again start teaching with Java as that&#39;s one of the langauges that we want to prepare our teachers with.
-That means deciding on a set of tools and so I&#39;ve been spending time evaluating Java programming environments with an eye on the beginner since not only do the teachers I work with have to be comfortable with the tool but more importantly they will have to be able to support the tool for all of their students.</description>
+      <description>Since Hunter uses C++ as it&amp;#39;s core language, I haven&amp;#39;t used Java much in the past three years. That&amp;#39;s going to change pretty soon. Once we start offering our CS teacher Certificate and Masters programs I&amp;#39;ll once again start teaching with Java as that&amp;#39;s one of the langauges that we want to prepare our teachers with.  That means deciding on a set of tools and so I&amp;#39;ve been spending time evaluating Java programming environments with an eye on the beginner since not only do the teachers I work with have to be comfortable with the tool but more importantly they will have to be able to support the tool for all of their students.</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@ That means deciding on a set of tools and so I&#39;ve been spending time evaluat
       <pubDate>Fri, 08 Feb 2019 09:40:44 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/java-interfaces/</guid>
-      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.
-Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary.</description>
+      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&amp;#39;s not that they&amp;#39;re super difficult topics but rather that they&amp;#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.  Inheritance is its own can of worms and to be honest, something I&amp;#39;ve not found to be all that useful or necessary.</description>
     </item>
     
   </channel>

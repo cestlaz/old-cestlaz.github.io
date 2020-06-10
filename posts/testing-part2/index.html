@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Testing Part 2</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Testing Part 2" />
-<meta property="og:description" content="A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.
-My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class. I decided to use one of those labs as a first foray into testing." />
+<meta property="og:description" content="A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.  My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/testing-part2/" /><meta property="article:published_time" content="2018-03-18T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-03-18T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/testing-part2/" />
+<meta property="article:published_time" content="2018-03-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-03-18T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Testing Part 2"/>
-<meta name="twitter:description" content="A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.
-My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class. I decided to use one of those labs as a first foray into testing."/>
+<meta name="twitter:description" content="A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.  My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,83 +92,101 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE" title="introducing testing">introducing testing</a> in CS classes,
+		  <p>
+A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
 specifically using a testing framework. In that post I talked about
-the plan but now I can talk about the results.</p>
-
-<p>My class interleaves with Hunter's CSCI 13500 - Software Analysis and
+the plan but now I can talk about the results.
+</p>
+<p>
+My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and
 Design I class. One day each week, my students have complete a hands
 on lab focusing on whatever is being covered in the 13500 class. I
-decided to use one of those labs as a first foray into testing.</p>
-
-<p>I had each student use a classmates lab solution. They were to examine
-their solution and write a test suite for the lab using the <a href="https://github.com/onqtam/doctest" title="doctest">doctest</a>
-C++ testing framework.</p>
-
-<p>I think this proved to be a valuable exercise.</p>
-
-<p>Partway into the exercise, a few students independently had an issue -
-they couldn't even build the tests.</p>
-
-<p>The code looked right. Something like this:</p>
-
-<pre><code class="language-c"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">TEST_CASE(<span style="color:#e6db74">&#34;Lab 4 Tests&#34;</span>){
-CHECK(getValue(<span style="color:#e6db74">&#34;3/12/2016&#34;</span>)<span style="color:#f92672">==</span><span style="color:#ae81ff">54.3</span>);
-}</code></pre></div>
-</code></pre>
-
-<p>It looked like at textbook example of a test case but it wouldn't even
-compile.</p>
-
-<p>In all cases, the original student code compiled and ran and gave the
-correct result. All the students had code similar to this:</p>
-
-<pre><code class="language-c"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Testing getValue for 3/12/2016: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> getValue(<span style="color:#e6db74">&#34;3/12/2016&#34;</span>) <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;</code></pre></div>
-</code></pre>
-
-<p>This stumped everyone for a while - why wouldn't the test even
-compile.</p>
-
-<p>The answer was "data types." The lab specification required that
+decided to use one of those labs as a first foray into testing.
+</p>
+<p>
+I had each student use a classmates lab solution. They were to examine
+their solution and write a test suite for the lab using the <a href="https://github.com/onqtam/doctest">doctest</a>
+C++ testing framework.
+</p>
+<p>
+I think this proved to be a valuable exercise.
+</p>
+<p>
+Partway into the exercise, a few students independently had an issue -
+they couldn&#39;t even build the tests.
+</p>
+<p>
+The code looked right. Something like this:
+</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
+</div>
+<p>
+It looked like at textbook example of a test case but it wouldn&#39;t even
+compile.
+</p>
+<p>
+In all cases, the original student code compiled and ran and gave the
+correct result. All the students had code similar to this:
+</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
+</div>
+<p>
+This stumped everyone for a while - why wouldn&#39;t the test even
+compile.
+</p>
+<p>
+The answer was &#34;data types.&#34; The lab specification required that
 getValue was supposed to return a <code>double</code> but in all the problem
 cases, the student returned a <code>std::string</code>. The lab appeared to work
 since <code>std::cout</code> handles strings as well as numeric data types but
 once they put it in to a test case that actually checked types the
-problem was apparent and easy to fix.</p>
-
-<p>As it turns out, I was pretty excited about this -- even before
+problem was apparent and easy to fix.
+</p>
+<p>
+As it turns out, I was pretty excited about this – even before
 finishign the tests, the act of writing tests revealed a problem. This
-is a good thing.</p>
-
-<p>From there, it was pretty easy for students to finish writing the
-tests for their classmates labs.</p>
-
-<p>Fast forward a week. This was the first lab where I required
+is a good thing.
+</p>
+<p>
+From there, it was pretty easy for students to finish writing the
+tests for their classmates labs.
+</p>
+<p>
+Fast forward a week. This was the first lab where I required
 the students to submit their own test suite as part of their lab. This
-didn't seem to slow anyone down by an appreciable and time will tell
+didn&#39;t seem to slow anyone down by an appreciable and time will tell
 if this leads to better development practices but it certainly made my
-life easier. I was able to quickly move from repo to repo and type:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make tests
+life easier. I was able to quickly move from repo to repo and type:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make tests
 ./tests -s
 ... watch the tests run
 make
 ./main
---- watch the program run</code></pre></div>
-</code></pre>
-
-<p>Easy peasy.</p>
-
-<p>Not only did it make it faster for me, it also gave me insights into
-their programs by seeing their decisions in terms of test writing.</p>
-
-<p>Is it a win?</p>
-
-<p>At the very worst, they're learning an
-industry practice and at best, it's going to help them improve as
-software engineers. Add on the fact that it's making my life as a
+--- watch the program run</code></pre></div></code></pre></div>
+</div>
+<p>
+Easy peasy.
+</p>
+<p>
+Not only did it make it faster for me, it also gave me insights into
+their programs by seeing their decisions in terms of test writing.
+</p>
+<p>
+Is it a win?
+</p>
+<p>
+At the very worst, they&#39;re learning an
+industry practice and at best, it&#39;s going to help them improve as
+software engineers. Add on the fact that it&#39;s making my life as a
 teacher easier both in terms of understanding the students work and in
-terms of speed of evaluation. Sounds like a win to me.</p>
+terms of speed of evaluation. Sounds like a win to me.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -258,11 +276,11 @@ terms of speed of evaluation. Sounds like a win to me.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -326,13 +344,6 @@ terms of speed of evaluation. Sounds like a win to me.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -797,7 +808,7 @@ terms of speed of evaluation. Sounds like a win to me.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

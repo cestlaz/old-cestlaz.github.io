@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Globals Breaks And Returns, oh my</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Globals Breaks And Returns, oh my" />
-<meta property="og:description" content="Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
-They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
-Alfred post was topically on global variables. Actually it was deeper than just global variables. It&#39;s also about how students progress - what they can figure out at various stages of progress and how what seems like a good idea early on the path to computer science doesn&#39;t seem so great later on." />
+<meta property="og:description" content="Never use global variables    Never break out of a loop    These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.  They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.  Alfred post was topically on global variables." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/globals-breaks-and-returns/" /><meta property="article:published_time" content="2018-10-06T15:48:55-04:00"/>
-<meta property="article:modified_time" content="2018-10-06T15:48:55-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/globals-breaks-and-returns/" />
+<meta property="article:published_time" content="2018-10-06T15:48:55-04:00" />
+<meta property="article:modified_time" content="2018-10-06T15:48:55-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Globals Breaks And Returns, oh my"/>
-<meta name="twitter:description" content="Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
-They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
-Alfred post was topically on global variables. Actually it was deeper than just global variables. It&#39;s also about how students progress - what they can figure out at various stages of progress and how what seems like a good idea early on the path to computer science doesn&#39;t seem so great later on."/>
+<meta name="twitter:description" content="Never use global variables    Never break out of a loop    These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.  They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.  Alfred post was topically on global variables."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,118 +96,150 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <ul>
-<li>Never use global variables</li>
-<li>Never break out of a loop</li>
+		  
+<ul>
+<li>
+<p>
+Never use global variables
+</p>
+</li>
+<li>
+<p>
+Never break out of a loop
+</p>
+</li>
 </ul>
-
-<p>These are two "best practices" that are frequently touted in early CS
-classes both at the high school and college level.</p>
-
-<p>They came up a couple of times yesterday. Once in the Facebook APCS-A
-teachers group and once on <a href="http://blog.acthompson.net/2018/10/if-you-are-using-global-variables-you.html" title="Alfred Thompson">Alfred Thompson</a>'s blog.</p>
-
-<p>Alfred post was topically on global variables. Actually it was deeper than just global
-variables. It's also about how students progress - what they can figure
+<p>
+These are two &#34;best practices&#34; that are frequently touted in early CS
+classes both at the high school and college level.
+</p>
+<p>
+They came up a couple of times yesterday. Once in the Facebook APCS-A
+teachers group and once on <a href="http://blog.acthompson.net/2018/10/if-you-are-using-global-variables-you.html">Alfred Thompson</a>&#39;s blog.
+</p>
+<p>
+Alfred post was topically on global variables. Actually it was deeper than just global
+variables. It&#39;s also about how students progress - what they can figure
 out at various stages of progress and how what seems like a good idea
-early on the path to computer science doesn't seem so great later on.</p>
-
-<p>The discussion on the APCS-A group started with a discussion of this
-code and its <code>break</code> statement as opposed to having the loop's exit
-condition in the boolean up top:</p>
-
-<pre><code class="language-java">  while (true)
-      {
-          // do stuff
-          if (condition) break;
-      }
-</code></pre>
-
-<p>These two "best practices" - not using globals and not breaking out of
+early on the path to computer science doesn&#39;t seem so great later on.
+</p>
+<p>
+The discussion on the APCS-A group started with a discussion of this
+code and its <code>break</code> statement as opposed to having the loop&#39;s exit
+condition in the boolean up top:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span>
+      <span style="color:#f92672">{</span>
+          <span style="color:#75715e">// do stuff
+</span><span style="color:#75715e"></span>          <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>condition<span style="color:#f92672">)</span> <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span></code></pre></div>
+</div>
+<p>
+These two &#34;best practices&#34; - not using globals and not breaking out of
 loops are frequently taught to students at a point when reasons for
-the best practice aren't always clear.</p>
+the best practice aren&#39;t always clear. 
+</p>
+<p>
+Actually, these aren&#39;t even universally best practices.
+</p>
+<p>
+Looking at the while loop, You might have event driven code with a
+while loop acting as a dispatcher:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">){</span>
+      <span style="color:#75715e">// do stuff
+</span><span style="color:#75715e"></span>
+      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>some event<span style="color:#f92672">)</span>
+          <span style="color:#66d9ef">do</span> that event<span style="color:#f92672">;</span>
 
-<p>Actually, these aren't even universally best practices.</p>
+      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>some other event<span style="color:#f92672">)</span>
+          <span style="color:#66d9ef">do</span> that event<span style="color:#f92672">;</span>
 
-<p>Looking at the while loop, You might have event driven code with a
-while loop acting as a dispatcher:</p>
-
-<pre><code class="language-java">  while (true){
-      // do stuff
-
-      if (some event)
-          do that event;
-
-      if (some other event)
-          do that event;
-
-      // etc
-
-      if (exit event)
-          break;
-  }
-</code></pre>
-
-<p>Nothing wrong with that structure. It's clean, easy to read and easy
-to reason about.</p>
-
-<p>I've seen loops that use extra variables and crazy boolean expressions
-so as to avoid using a <code>break</code> statement so that they follow the "best
-practice" but end up with much messier code.</p>
-
-<p>This is not to say that you should always use <code>break</code> or <code>continue</code> for that matter but rather that the best practice should be to
+      <span style="color:#75715e">// etc
+</span><span style="color:#75715e"></span>
+      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>exit event<span style="color:#f92672">)</span>
+          <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">}</span></code></pre></div>
+</div>
+<p>
+Nothing wrong with that structure. It&#39;s clean, easy to read and easy
+to reason about. 
+</p>
+<p>
+I&#39;ve seen loops that use extra variables and crazy boolean expressions
+so as to avoid using a <code>break</code> statement so that they follow the &#34;best
+practice&#34; but end up with much messier code.
+</p>
+<p>
+This is not to say that you should always use <code>break</code> or <code>continue</code> for that matter but rather that the best practice should be to
 consider if it makes the code cleaner, easier to read, and more
-maintainable or not.</p>
-
-<p>On the global front things are also not so clear. Sure, storing
+maintainable or not. 
+</p>
+<p>
+On the global front things are also not so clear. Sure, storing
 information in globals  and then using them indiscriminantly in
 assorted methods or functions is both bad form and dangerous but there
-are times when using globals make sense.</p>
-
-<p>Back in "the day" I was a C programmer. I used single C source files
-along with their matching .h include files to enable *object typed*
+are times when using globals make sense. 
+</p>
+<p>
+Back in &#34;the day&#34; I was a C programmer. I used single C source files
+along with their matching .h include files to enable <strong>object typed</strong>
 programming. Each file was a singleton object. Functions in the file
 were methods using some naming convention to demarcate public vs
 private, and variables that were global to the file as class variables
 (or instance variables but there was only ever one instance of any
 given class). Technically I broke the rules but the technique was very
-effective and allowed me to write large maintainable systems.</p>
-
-<p>More recently I've been playing with <a href="https://vuejs.org/" title="Vue.js">Vue.js</a> for front end
+effective and allowed me to write large maintainable systems. 
+</p>
+<p>
+More recently I&#39;ve been playing with <a href="https://vuejs.org/">Vue.js</a> for front end
 development. Vue uses a central data store - Vuex to maintain
 state. Basically a place for global variables to manage the state of
 your application. Again, technically global but with rules and
 protocols to make things work without the usual danger associated with
-globals.</p>
-
-<p>A great comment on the Facebook thread <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> included this Hal
-Ableson quote:</p>
-
+globals.
+</p>
+<p>
+A great comment on the Facebook thread <sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> included this Hal
+Ableson quote:
+</p>
 <blockquote>
 <p>
-"Programs must be written for people to read, and only incidentally for machines to execute." 
+&#34;Programs must be written for people to read, and only incidentally for machines to execute.&#34; 
 </p>
 </blockquote>
-
-<p>and noted that this is particularly true on the AP Exam and after all,
+<p>
+and noted that this is particularly true on the AP Exam and after all,
 the original question was posed on a forum about APCS-A. With this in
-mind, you shouldn't <strong>try</strong> to use globals or cleverly or creatively 
-use <code>break</code> or <code>continue</code> but they do have their places.</p>
-
-<p>I've used globals in both professional and personal work when
-appropriate and I don't shy away from <code>break</code> and <code>continue</code> and use
+mind, you shouldn&#39;t <strong>try</strong> to use globals or cleverly or creatively 
+use <code>break</code> or <code>continue</code> but they do have their places.
+</p>
+<p>
+I&#39;ve used globals in both professional and personal work when
+appropriate and I don&#39;t shy away from <code>break</code> and <code>continue</code> and use
 them regularly. The real <strong>best practice</strong> is that you consider why you
-are or aren't using these constructs and make a choice that makes
-sense for you, your group, or your team.</p>
-
-<h1 id="footnotes">Footnotes</h1>
+are or aren&#39;t using these constructs and make a choice that makes
+sense for you, your group, or your team. 
+</p>
+<h2 id="headline-1">
+Footnotes
+</h2>
 <div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">While I will identify sources when they publish content publicly on ablog or Twitter, since the Facebook group is semi-private, I don't feel it's appropriate to state the names of commenters without asking] <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-</ol>
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+While I will identify sources when they publish content publicly on ablog or Twitter, since
+the Facebook group is semi-private, I don&#39;t feel it&#39;s appropriate to
+state the names of commenters without asking]
+</p>
+</div>
+</div>
+</div>
 </div>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -300,11 +330,11 @@ sense for you, your group, or your team.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -368,13 +398,6 @@ sense for you, your group, or your team.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -839,7 +862,7 @@ sense for you, your group, or your team.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

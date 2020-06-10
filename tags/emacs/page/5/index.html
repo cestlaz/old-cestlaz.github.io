@@ -4,16 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Emacs</title>
+	<title>emacs</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
-	<meta property="og:title" content="Emacs" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
+	<meta property="og:title" content="emacs" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/tags/emacs/" />
-<meta property="og:updated_time" content="2017-07-30T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-05-21T14:47:59-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Emacs"/>
+<meta name="twitter:title" content="emacs"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -80,7 +81,7 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Emacs</h1>
+		<h1 class="main__title">emacs</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
@@ -92,9 +93,7 @@ if (!doNotTrack) {
 <time class="post__meta-date meta-date" datetime="2017-07-30T00:00:00">July 30, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		I've been working on a vue.js project this summer. During the school year I really can't dive into code so it's been fun.
-I've already showed you most of the Emacs tools I use for development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and all. One thing I couldn't easily do was arrange windows the way I wanted.
-I've been setting up Emacs with one large window and a couple of smaller ones:
+		I&#39;ve been working on a vue.js project this summer. During the school year I really can&#39;t dive into code so it&#39;s been fun.  I&#39;ve already showed you most of the Emacs tools I use for development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and all. One thing I couldn&#39;t easily do was arrange windows the way I wanted.  I&#39;ve been setting up Emacs with one large window and a couple of smaller ones:   I can easily switch the buffer in the window and I can easily switch windows but what I wanted to do was swap the buffer in the large window with one of the smaller buffers and leave focus in the larger buffer:   I started looking at perspective mode and persp mode but neither work with the latest Emacs.
                 
           <br>
             <a href="/posts/using-emacs-36-touch-of-elisp/#disqus_thread"># COMMENTS</a>
@@ -117,9 +116,7 @@ I've been setting up Emacs with one large window and a couple of smaller ones:
 <time class="post__meta-date meta-date" datetime="2017-06-27T00:00:00">June 27, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Very little new Emacs in today's episode of Using Emacs. The video shows my old blogging workflow and what I'm playing with now.
-The only new Emacs covered is the prodigy package which lets you run services under Emacs. I use it to run Nikola's development server but I think prodigy will also be useful when I start writing that knitting application I promised my wife.
-When I started this blog, I used Jekyll.
+		Very little new Emacs in today&#39;s episode of Using Emacs. The video shows my old blogging workflow and what I&#39;m playing with now.  The only new Emacs covered is the prodigy package which lets you run services under Emacs. I use it to run Nikola&#39;s development server but I think prodigy will also be useful when I start writing that knitting application I promised my wife.  When I started this blog, I used Jekyll.
                 
           <br>
             <a href="/posts/using-emacs-35-blogging/#disqus_thread"># COMMENTS</a>
@@ -142,9 +139,7 @@ When I started this blog, I used Jekyll.
 <time class="post__meta-date meta-date" datetime="2017-06-15T00:00:00">June 15, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		A couple of quick, unrelated packages today.
-first up, ibuffer. If you keep Emacs open all the time, you'll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
-Out of the box, C-x C-b is bound to the Emacs list-buffers** command. It brings up a buffer with all the buffers listed inside it. You can navigate that buffer and hit enter on a particular buffer to go to it.
+		A couple of quick, unrelated packages today.  first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.  Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it.
                 
           <br>
             <a href="/posts/using-emacs-34-ibuffer-emmet/#disqus_thread"># COMMENTS</a>
@@ -167,10 +162,7 @@ Out of the box, C-x C-b is bound to the Emacs list-buffers** command. It brings 
 <time class="post__meta-date meta-date" datetime="2017-04-28T00:00:00">April 28, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
-Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
-Here's my configuration:
-;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))  Projectile considers a sub-directory tree to be a project if it's a git or other source control repo, if it's created by tool like lein, maven, or sbt, or if you put an empty file named **.
+		If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.  Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.  Here&#39;s my configuration: ;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))   Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named .
                 
           <br>
             <a href="/posts/using-emacs-33-projectile-jump/#disqus_thread"># COMMENTS</a>
@@ -193,9 +185,7 @@ Here's my configuration:
 <time class="post__meta-date meta-date" datetime="2017-03-04T00:00:00">March 04, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		This video is specifically for my students or any students out there who are starting with C++ and emacs. The videos also longer than usual, coming in at a little over 20 minutes.
-The big difference is instead of building on my existing config, the code at the bottom is a complete standalone configuration. It's all pulled from the main config with one additional package.
-By taking the code at the bottom and putting in into a file named init.
+		This video is specifically for my students or any students out there who are starting with C++ and emacs. The videos also longer than usual, coming in at a little over 20 minutes.  The big difference is instead of building on my existing config, the code at the bottom is a complete standalone configuration. It&#39;s all pulled from the main config with one additional package.  By taking the code at the bottom and putting in into a file named init.
                 
           <br>
             <a href="/posts/using-emacs-32-cpp/#disqus_thread"># COMMENTS</a>
@@ -218,8 +208,7 @@ By taking the code at the bottom and putting in into a file named init.
 <time class="post__meta-date meta-date" datetime="2017-03-01T00:00:00">March 01, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
-Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra.
+		In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.  Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra.
                 
           <br>
             <a href="/posts/using-emacs-31-elfeed-3/#disqus_thread"># COMMENTS</a>
@@ -242,9 +231,7 @@ Basically, I had to somehow or other, take a list of all the active tags and wit
 <time class="post__meta-date meta-date" datetime="2017-02-25T00:00:00">February 25, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I'm really liking it but there's been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
-It's emacs so there has to be a solution.
-Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages.
+		In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.  It&#39;s emacs so there has to be a solution.  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages.
                 
           <br>
             <a href="/posts/using-emacs-30-elfeed-2/#disqus_thread"># COMMENTS</a>
@@ -267,9 +254,7 @@ Enter hydra - a terrific emacs package from the same guy who brought us swiper, 
 <time class="post__meta-date meta-date" datetime="2017-02-22T00:00:00">February 22, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Since the demise of Google Reader, I've been using Feedly to read my streams. Feedly's a nice product and it's been working well for me for quite some time.
-A few days ago, I decided to see what emacs had to offer on the feed reader front. One solution was Gnus but then I've never been able to get my head around Gnus. Another was elfeed.
-I thought I'd give elfeed a go.
+		Since the demise of Google Reader, I&#39;ve been using Feedly to read my streams. Feedly&#39;s a nice product and it&#39;s been working well for me for quite some time.  A few days ago, I decided to see what emacs had to offer on the feed reader front. One solution was Gnus but then I&#39;ve never been able to get my head around Gnus. Another was elfeed.  I thought I&#39;d give elfeed a go.
                 
           <br>
             <a href="/posts/using-emacs-29-elfeed/#disqus_thread"># COMMENTS</a>
@@ -292,9 +277,7 @@ I thought I'd give elfeed a go.
 <time class="post__meta-date meta-date" datetime="2017-02-09T00:00:00">February 09, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		One of my favorite but little used emacs features is rectangular editing. It's little used because I don't need it all that often. It's one of my favorites because when I do need it, it's just so amazingly useful.
-The idea is you can mark a rectangle of text, cut it and later paste it. This means that if you have three columns of text:
-a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even just the b e and h, cut it and paste it elsewhere as a rectangle.
+		One of my favorite but little used emacs features is rectangular editing. It&#39;s little used because I don&#39;t need it all that often. It&#39;s one of my favorites because when I do need it, it&#39;s just so amazingly useful.  The idea is you can mark a rectangle of text, cut it and later paste it. This means that if you have three columns of text: a b c d e f g h i j k l   You can easily mark the middle column (b e h k) or even just the b e and h, cut it and paste it elsewhere as a rectangle.
                 
           <br>
             <a href="/posts/using-emacs-28-rectangles/#disqus_thread"># COMMENTS</a>
@@ -317,7 +300,7 @@ a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even
 <time class="post__meta-date meta-date" datetime="2017-01-27T00:00:00">January 27, 2017</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		While I use emacs for all all sorts of things, one of the things I haven't done much is run shells from within emacs. I'm not sure why. I'm a command line wonk and adding command line goodness and emacs together seems like a natural. Maybe it's because back in the day I spent a lot of time on MS-DOS systems. You could get a reasonable Unixy facsimile using tools like the MKS toolkit and I like so many other young computer scientists wrote our own small shells when we learned C so I used that insted of command.
+		While I use emacs for all all sorts of things, one of the things I haven&#39;t done much is run shells from within emacs. I&#39;m not sure why. I&#39;m a command line wonk and adding command line goodness and emacs together seems like a natural. Maybe it&#39;s because back in the day I spent a lot of time on MS-DOS systems. You could get a reasonable Unixy facsimile using tools like the MKS toolkit and I like so many other young computer scientists wrote our own small shells when we learned C so I used that insted of command.
                 
           <br>
             <a href="/posts/using-emacs-27-shell/#disqus_thread"># COMMENTS</a>
@@ -378,11 +361,11 @@ a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -446,13 +429,6 @@ a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -917,7 +893,7 @@ a b c d e f g h i j k l  You can easily mark the middle column (b e h k) or even
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

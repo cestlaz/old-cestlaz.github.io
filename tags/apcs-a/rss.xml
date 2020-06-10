@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apcs A on C&#39;est la Z</title>
+    <title>APCS-A on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/apcs-a/</link>
-    <description>Recent content in Apcs A on C&#39;est la Z</description>
+    <description>Recent content in APCS-A on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Nov 2019 13:55:09 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 22 Nov 2019 13:55:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/bsdgames/</guid>
-      <description>When I was writing the I Speak Jive post, the first thing I had to do was find those old programs. It turned out to be harder than I thought. I found online versions but it took a while to find this GitHub repo.
-On the way, I seemed to recall that these might be bundled with a bunch of old BSD games so I took a look at the BSD games package for Linux.</description>
+      <description>When I was writing the I Speak Jive post, the first thing I had to do was find those old programs. It turned out to be harder than I thought. I found online versions but it took a while to find this GitHub repo.  On the way, I seemed to recall that these might be bundled with a bunch of old BSD games so I took a look at the BSD games package for Linux.</description>
     </item>
     
     <item>
@@ -27,11 +26,7 @@ On the way, I seemed to recall that these might be bundled with a bunch of old B
       <pubDate>Mon, 14 Oct 2019 21:47:18 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/classes-or-afterschool/</guid>
-      <description>This morning Mark Guzdial tweeted on his latest post:
-Results from Longitudinal Study of Female Persistence in CS: AP CS matters, After-school programs and Internships do not https://t.co/GOzp3045Hp
-&amp;mdash; Mark Guzdial (@guzdial) October 14, 2019 
-I&#39;m glad Mark wrote about this as it&#39;s something that&#39;s important to both research and publicize but it&#39;s really not a surprise.
-I&#39;m going to start by dismissing the statement that &#34;... participation in the Aspirations awards program were teh best predictors of persistence three years after the high school survey in both CS and other technology-related majors.</description>
+      <description>This morning Mark Guzdial tweeted on his latest post:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;Results from Longitudinal Study of Female Persistence in CS: AP CS matters, After-school programs and Internships do not &amp;lt;a href=&amp;#34;https://t.co/GOzp3045Hp&amp;#34;&amp;gt;https://t.co/GOzp3045Hp&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Mark Guzdial (@guzdial) &amp;lt;a href=&amp;#34;https://twitter.com/guzdial/status/1183699009766121473?ref_src=twsrc%5Etfw&amp;#34;&amp;gt;October 14, 2019&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;https://platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  I&amp;#39;m glad Mark wrote about this as it&amp;#39;s something that&amp;#39;s important to both research and publicize but it&amp;#39;s really not a surprise.  I&amp;#39;m going to start by dismissing the statement that &amp;#34;… participation in the Aspirations awards program were teh best predictors of persistence three years after the high school survey in both CS and other technology-related majors.</description>
     </item>
     
     <item>
@@ -40,7 +35,7 @@ I&#39;m going to start by dismissing the statement that &#34;... participation i
       <pubDate>Wed, 24 Jul 2019 11:22:12 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/big-code-and-case-studies/</guid>
-      <description>I&#39;m enjoying reading about Ria Galanos&#39; new chapter on her blog. In her most recent post Ria briefly talks about the fact that very few professional developers start from scratch and most work in existing large code bases. She wonders why the College Board got rid of the APCS-A case study and talked about how it gave students an opportunity to work on a multi-file complex system. Over the past few years others have wondered if the College Board should bring it back.</description>
+      <description>I&amp;#39;m enjoying reading about Ria Galanos&amp;#39; new chapter on her blog. In her most recent post Ria briefly talks about the fact that very few professional developers start from scratch and most work in existing large code bases. She wonders why the College Board got rid of the APCS-A case study and talked about how it gave students an opportunity to work on a multi-file complex system. Over the past few years others have wondered if the College Board should bring it back.</description>
     </item>
     
     <item>
@@ -49,8 +44,7 @@ I&#39;m going to start by dismissing the statement that &#34;... participation i
       <pubDate>Fri, 08 Feb 2019 09:40:44 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/java-interfaces/</guid>
-      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.
-Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary.</description>
+      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&amp;#39;s not that they&amp;#39;re super difficult topics but rather that they&amp;#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.  Inheritance is its own can of worms and to be honest, something I&amp;#39;ve not found to be all that useful or necessary.</description>
     </item>
     
   </channel>

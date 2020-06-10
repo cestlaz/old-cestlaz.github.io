@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Structures on C&#39;est la Z</title>
+    <title>data structures on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/data-structures/</link>
-    <description>Recent content in Data Structures on C&#39;est la Z</description>
+    <description>Recent content in data structures on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 13:53:43 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 01 May 2020 13:53:43 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/heaps/</guid>
-      <description>Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.
-Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right.</description>
+      <description>Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.  Heaps are one of my favorite topics in CS2. If you&amp;#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right.</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@ Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them
       <pubDate>Tue, 28 Apr 2020 12:54:05 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/alternate-representations/</guid>
-      <description>There was a comment on my last post about arbitary trees on Reddit talking about how this type of data structure was a hold over from the old days when computer resources were more limited. Nowadays having a list of children makes more sense. The comment was of course correct but I still think it&#39;s worth teaching representations like the one I spoke of in my last post.
-Looking at interesting and different ways of representing data and modeling solutions is one of the things that separates programmers or coders from computer scientists and software engineers.</description>
+      <description>There was a comment on my last post about arbitary trees on Reddit talking about how this type of data structure was a hold over from the old days when computer resources were more limited. Nowadays having a list of children makes more sense. The comment was of course correct but I still think it&amp;#39;s worth teaching representations like the one I spoke of in my last post.  Looking at interesting and different ways of representing data and modeling solutions is one of the things that separates programmers or coders from computer scientists and software engineers.</description>
     </item>
     
     <item>
@@ -37,9 +35,7 @@ Looking at interesting and different ways of representing data and modeling solu
       <pubDate>Mon, 27 Apr 2020 18:45:50 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/arbitrary-trees/</guid>
-      <description>It&#39;s been 10 days from my last post. Not really a big break for me historically but certainly a big one given how much I&#39;ve been posting this year.
-Been under the weather for the past couple of weeks dealing with COVID-19. Haven&#39;t had super bad symptoms and as symptoms have been getting fewer and less severe I&#39;m hoping I&#39;m close to a full recovery.
-In any event, I&#39;m feeling good enough for a quick post.</description>
+      <description>It&amp;#39;s been 10 days from my last post. Not really a big break for me historically but certainly a big one given how much I&amp;#39;ve been posting this year.  Been under the weather for the past couple of weeks dealing with COVID-19. Haven&amp;#39;t had super bad symptoms and as symptoms have been getting fewer and less severe I&amp;#39;m hoping I&amp;#39;m close to a full recovery.  In any event, I&amp;#39;m feeling good enough for a quick post.</description>
     </item>
     
   </channel>

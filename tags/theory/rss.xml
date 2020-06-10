@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theory on C&#39;est la Z</title>
+    <title>theory on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/theory/</link>
-    <description>Recent content in Theory on C&#39;est la Z</description>
+    <description>Recent content in theory on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse2018-theory/</guid>
-      <description>Next up from SIGCSE 2018 is John MacCormick&#39;s session on Strategies for Baing the CS Theory Course on Non-decision Problems
-MacCormicks&#39;s stance is that CS theory is tough the first time around and using non-decision problems is a viable approach to make theory more accessible to beginners. As MacCormick said in his paper:
-  ... a decision problem may ask the yes/no question, &#34;Does this graph  have a Hamilton cycle?</description>
+      <description>Next up from SIGCSE 2018 is John MacCormick&amp;#39;s session on Strategies for Baing the CS Theory Course on Non-decision Problems  MacCormicks&amp;#39;s stance is that CS theory is tough the first time around and using non-decision problems is a viable approach to make theory more accessible to beginners. As MacCormick said in his paper:   … a decision problem may ask the yes/no question, &amp;#34;Does this graph have a Hamilton cycle?</description>
     </item>
     
   </channel>

@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Little details we take for granted</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Little details we take for granted" />
-<meta property="og:description" content="div.center {text-align:center;} 
-  I&#39;m getting ready for my AP classes this morning. We&#39;re building a word search generator and we&#39;re at the point where we need to read a list of words from a file  First, I&#39;d better make sure I can do it. We&#39;re using the java scanner, mostly because it&#39;s easy.  First cut: public class wl { public static void main(String[] args) { Scanner sc = new Scanner(new File(&#34;" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt; &lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt; &lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt; &lt;p&gt; I&#39;m getting ready for my AP classes this morning. We&#39;re building a &lt;a href=&#34;http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak&#34;&gt;word search generator&lt;/a&gt; and we&#39;re at the point where we need to read a list of words from a file &lt;/p&gt;  &lt;p&gt; First, I&#39;d better make sure I can do it. We&#39;re using the java &lt;b&gt;&lt;b&gt;scanner&lt;/b&gt;&lt;/b&gt;, mostly because it&#39;s easy." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2014-11-21-little-details.html/" /><meta property="article:published_time" content="2014-11-21T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-11-21T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/2014-11-21-little-details.html/" />
+<meta property="article:published_time" content="2014-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-21T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Little details we take for granted"/>
-<meta name="twitter:description" content="div.center {text-align:center;} 
-  I&#39;m getting ready for my AP classes this morning. We&#39;re building a word search generator and we&#39;re at the point where we need to read a list of words from a file  First, I&#39;d better make sure I can do it. We&#39;re using the java scanner, mostly because it&#39;s easy.  First cut: public class wl { public static void main(String[] args) { Scanner sc = new Scanner(new File(&#34;"/>
+<meta name="twitter:description" content="&lt;!DOCTYPE html&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt; &lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt; &lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt; &lt;p&gt; I&#39;m getting ready for my AP classes this morning. We&#39;re building a &lt;a href=&#34;http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak&#34;&gt;word search generator&lt;/a&gt; and we&#39;re at the point where we need to read a list of words from a file &lt;/p&gt;  &lt;p&gt; First, I&#39;d better make sure I can do it. We&#39;re using the java &lt;b&gt;&lt;b&gt;scanner&lt;/b&gt;&lt;/b&gt;, mostly because it&#39;s easy."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,162 +92,188 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p><!DOCTYPE html></p>
-
-<p><style>
-div.center {text-align:center;}
-</style></p>
-
-<p><div id="outline-container-unnumbered-1" class="outline-2">
-<h2 id="unnumbered-1"></h2>
-<div class="outline-text-2" id="text-unnumbered-1">
-<p>
-I'm getting ready for my AP classes this morning. We're building a
-<a href="http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak">word search generator</a> and we're at the point where we need to read a
-list of words from a file
-</p></p>
-
-<p><p>
-First, I'd better make sure I can do it. We're using the java
-<b><b>scanner</b></b>, mostly because it's easy.
-</p></p>
-
-<p><p>
-First cut:
+		  <p>
+&lt;!DOCTYPE html&gt;
 </p>
-<div class="org-src-container"></p>
-
-<p><pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">class</span> <span style="color: #00ff00;">wl</span> {
-<span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">static</span> <span style="color: #00ff00;">void</span> <span style="color: #0000ff; font-weight: bold;">main</span>(<span style="color: #00ff00;">String</span>[] <span style="color: #ffff00;">args</span>) {
-<span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
-<span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
-<span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+<p>
+&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+</p>
+<p>
+&lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt;
+&lt;p&gt;
+I&#39;m getting ready for my AP classes this morning. We&#39;re building a
+&lt;a href=&#34;<a href="http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak">http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak</a>&#34;&gt;word search generator&lt;/a&gt; and we&#39;re at the point where we need to read a
+list of words from a file
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+First, I&#39;d better make sure I can do it. We&#39;re using the java
+&lt;b&gt;&lt;b&gt;scanner&lt;/b&gt;&lt;/b&gt;, mostly because it&#39;s easy.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+First cut:
+&lt;/p&gt;
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-java&#34;&gt;&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;wl&lt;/span&gt; {
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color: #0000ff; font-weight: bold;&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt;[] &lt;span style=&#34;color: #ffff00;&#34;&gt;args&lt;/span&gt;) {
+&lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;sc&lt;/span&gt; = &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt;(&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;File&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;words&#34;&lt;/span&gt;));
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;while&lt;/span&gt; (sc.hasNext()){
+&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;s&lt;/span&gt; = sc.next();
 System.out.println(s);
 }
 }
 }
-</pre>
-</div></p>
-
-<p><p>
-Oh yes, I forgot the
+&lt;/pre&gt;
+&lt;/div&gt;
 </p>
-<pre class="example">
+<p>
+&lt;p&gt;
+Oh yes, I forgot the
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
 import java.io.*;
 import java.util.*;
-</pre></p>
-
-<p><p>
-Oh, and also the fact that I've got deal with exceptions when working
+&lt;/pre&gt;
+</p>
+<p>
+&lt;p&gt;
+Oh, and also the fact that I&#39;ve got deal with exceptions when working
 with files:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">try</span> {
-<span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
-<span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
-<span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-java&#34;&gt;&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;try&lt;/span&gt; {
+&lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;sc&lt;/span&gt; = &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt;(&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;File&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;words&#34;&lt;/span&gt;));
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;while&lt;/span&gt; (sc.hasNext()){
+&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;s&lt;/span&gt; = sc.next();
 System.out.println(s);
 }
-} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
-System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+} &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color: #00ff00;&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;e&lt;/span&gt;){
+System.out.println(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;Can&#39;t open file.&#34;&lt;/span&gt;);
 System.exit(0);
 }
-</pre>
-</div></p>
-
-<p><p>
-But we don't want to wrap our entire program in an exception:
+&lt;/pre&gt;
+&lt;/div&gt;
 </p>
-<div class="org-src-container"></p>
-
-<p><pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">try</span> {
-<span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
-} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
-System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+<p>
+&lt;p&gt;
+But we don&#39;t want to wrap our entire program in an exception:
+&lt;/p&gt;
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-java&#34;&gt;&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;try&lt;/span&gt; {
+&lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;sc&lt;/span&gt; = &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt;(&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;File&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;words&#34;&lt;/span&gt;));
+} &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color: #00ff00;&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;e&lt;/span&gt;){
+System.out.println(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;Can&#39;t open file.&#34;&lt;/span&gt;);
 System.exit(0);
-}</p>
-
-<p><span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
-<span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
-System.out.println(s);</p>
-
-<p>}
-</pre>
-</div></p>
-
-<p><p>
-Now it doesn't work because the <b><b>Scanner sc</b></b> might not exist after the
+}
+</p>
+<p>
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;while&lt;/span&gt; (sc.hasNext()){
+&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;s&lt;/span&gt; = sc.next();
+System.out.println(s);
+</p>
+<p>
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+Now it doesn&#39;t work because the &lt;b&gt;&lt;b&gt;Scanner sc&lt;/b&gt;&lt;/b&gt; might not exist after the
 try catch block (if an exception occurred), so we need:
+&lt;/p&gt;
+&lt;div class=&#34;org-src-container&#34;&gt;
 </p>
-<div class="org-src-container"></p>
-
-<p><pre class="src src-java"><span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span>
-<span style="color: #00ffff; font-weight: bold;">try</span> {
-sc = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
-} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
-System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+<p>
+&lt;pre class=&#34;src src-java&#34;&gt;&lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;sc&lt;/span&gt;
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;try&lt;/span&gt; {
+sc = &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt;(&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;File&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;words&#34;&lt;/span&gt;));
+} &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color: #00ff00;&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;e&lt;/span&gt;){
+System.out.println(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;Can&#39;t open file.&#34;&lt;/span&gt;);
 System.exit(0);
-}</p>
-
-<p><span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
-<span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
-System.out.println(s);</p>
-
-<p>}
-</pre>
-</div></p>
-
-<p><p>
-And now this doesn't work because <b><b>sc</b></b> might not have a value so we
+}
+</p>
+<p>
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;while&lt;/span&gt; (sc.hasNext()){
+&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;s&lt;/span&gt; = sc.next();
+System.out.println(s);
+</p>
+<p>
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+And now this doesn&#39;t work because &lt;b&gt;&lt;b&gt;sc&lt;/b&gt;&lt;/b&gt; might not have a value so we
 finally get to the working version:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">import</span> <span style="color: #ff00ff;">java</span>.<span style="color: #ff00ff;">io</span>.*;
-<span style="color: #00ffff; font-weight: bold;">import</span> <span style="color: #ff00ff;">java</span>.<span style="color: #ff00ff;">util</span>.*;
-<span style="color: #00ffff; font-weight: bold;">publ</span><span style="color: #00ff00;">ic c</span><span style="color: #00ffff; font-weight: bold;">lass</span> <span style="color: #00ff00;">wl</span> {
-<span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">static</span> <span style="color: #00ff00;">void</span> <span style="color: #0000ff; font-weight: bold;">main</span>(<span style="color: #00ff00;">String</span>[] <span style="color: #ffff00;">args</span>) {
-<span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #ff00ff;">null</span>;
-<span style="color: #00ffff; font-weight: bold;">try</span> {
-sc = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
-} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
-System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-java&#34;&gt;&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #ff00ff;&#34;&gt;java&lt;/span&gt;.&lt;span style=&#34;color: #ff00ff;&#34;&gt;io&lt;/span&gt;.*;
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #ff00ff;&#34;&gt;java&lt;/span&gt;.&lt;span style=&#34;color: #ff00ff;&#34;&gt;util&lt;/span&gt;.*;
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;publ&lt;/span&gt;&lt;span style=&#34;color: #00ff00;&#34;&gt;ic c&lt;/span&gt;&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;lass&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;wl&lt;/span&gt; {
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color: #0000ff; font-weight: bold;&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt;[] &lt;span style=&#34;color: #ffff00;&#34;&gt;args&lt;/span&gt;) {
+&lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;sc&lt;/span&gt; = &lt;span style=&#34;color: #ff00ff;&#34;&gt;null&lt;/span&gt;;
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;try&lt;/span&gt; {
+sc = &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;Scanner&lt;/span&gt;(&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color: #00ff00;&#34;&gt;File&lt;/span&gt;(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;words&#34;&lt;/span&gt;));
+} &lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color: #00ff00;&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;e&lt;/span&gt;){
+System.out.println(&lt;span style=&#34;color: #00ff00;&#34;&gt;&#34;Can&#39;t open file.&#34;&lt;/span&gt;);
 System.exit(0);
 }
-<span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
-<span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
-System.out.println(<span style="color: #00ff00;">s</span>);</p>
-
-<p>}
+&lt;span style=&#34;color: #00ffff; font-weight: bold;&#34;&gt;while&lt;/span&gt; (sc.hasNext()){
+&lt;span style=&#34;color: #00ff00;&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color: #ffff00;&#34;&gt;s&lt;/span&gt; = sc.next();
+System.out.println(&lt;span style=&#34;color: #00ff00;&#34;&gt;s&lt;/span&gt;);
+</p>
+<p>
 }
 }
-</pre>
-</div></p>
-
-<p><p>
-Really simple program but that's a long list of things that can go
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+Really simple program but that&#39;s a long list of things that can go
 wrong along the way. Nothing big, but each a stumbling block for a
-beginning student that doesn't have the wealth of experience that
+beginning student that doesn&#39;t have the wealth of experience that
 someone like me has.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 I had an interesting discussion with one of my seniors the other day
 on this subject - all the base knowledge that experienced programmers
-have that students don't and how we have to approach teaching so that
+have that students don&#39;t and how we have to approach teaching so that
 students are supported and not frustrated by these little but
-important speed-bumps that they'll hit along the way.
-</p></p>
-
-<p><p>
-I hope to write more about this soon, but for now I'll leave you to
-ponder the issue.
+important speed-bumps that they&#39;ll hit along the way.
+&lt;/p&gt;
 </p>
-</div>
-</div></p>
+<p>
+&lt;p&gt;
+I hope to write more about this soon, but for now I&#39;ll leave you to
+ponder the issue.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -335,11 +361,11 @@ ponder the issue.
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -403,13 +429,6 @@ ponder the issue.
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -874,7 +893,7 @@ ponder the issue.
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

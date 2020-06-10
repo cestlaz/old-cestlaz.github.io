@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Pig Latin - a beginner lesson with some depth</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Pig Latin - a beginner lesson with some depth" />
-<meta property="og:description" content="I recently did a unit where I had my students convert words into Pig Latin. I like the problem because to start it only requires strings, functions and if statements but there is some depth to the unit.
-We start with simplified rules:
- If the word starts with a vowel, add &#34;ay&#34; to the end of the word If it starts with a consonant move the first latter to the end and add &#34;" />
+<meta property="og:description" content="I recently did a unit where I had my students convert words into Pig Latin. I like the problem because to start it only requires strings, functions and if statements but there is some depth to the unit.  We start with simplified rules:    If the word starts with a vowel, add &#34;ay&#34; to the end of the word    If it starts with a consonant move the first latter to the end and add &#34;ay&#34;    don&#39;t worry about anything else    Students usually start with something like this:    as students realize it&#39;s much easier to check for vowels rather than consonants." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/piglatin/" /><meta property="article:published_time" content="2019-09-25T17:11:29-04:00"/>
-<meta property="article:modified_time" content="2019-09-25T17:11:29-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/piglatin/" />
+<meta property="article:published_time" content="2019-09-25T17:11:29-04:00" />
+<meta property="article:modified_time" content="2019-09-25T17:11:29-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Pig Latin - a beginner lesson with some depth"/>
-<meta name="twitter:description" content="I recently did a unit where I had my students convert words into Pig Latin. I like the problem because to start it only requires strings, functions and if statements but there is some depth to the unit.
-We start with simplified rules:
- If the word starts with a vowel, add &#34;ay&#34; to the end of the word If it starts with a consonant move the first latter to the end and add &#34;"/>
+<meta name="twitter:description" content="I recently did a unit where I had my students convert words into Pig Latin. I like the problem because to start it only requires strings, functions and if statements but there is some depth to the unit.  We start with simplified rules:    If the word starts with a vowel, add &#34;ay&#34; to the end of the word    If it starts with a consonant move the first latter to the end and add &#34;ay&#34;    don&#39;t worry about anything else    Students usually start with something like this:    as students realize it&#39;s much easier to check for vowels rather than consonants."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,162 +96,112 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>I recently did a unit where I had my students convert words into <a href="https://en.wikipedia.org/wiki/Pig_Latin" title="Pig
-Latin">Pig
+		  <p>
+I recently did a unit where I had my students convert words into <a href="https://en.wikipedia.org/wiki/Pig_Latin">Pig
 Latin</a>. I like the problem because to start it only requires strings,
-functions and if statements but there is some depth to the unit.</p>
-
-<p>We start with simplified rules:</p>
-
+functions and if statements but there is some depth to the unit.
+</p>
+<p>
+We start with simplified rules:
+</p>
 <ol>
-<li>If the word starts with a vowel, add "ay" to the end of the word</li>
-<li>If it starts with a consonant move the first latter to the end and</li>
-    add "ay"
-<li>don't worry about anything else</li>
+<li>
+<p>
+If the word starts with a vowel, add &#34;ay&#34; to the end of the word
+</p>
+</li>
+<li>
+<p>
+If it starts with a consonant move the first latter to the end and
+add &#34;ay&#34;
+</p>
+</li>
+<li>
+<p>
+don&#39;t worry about anything else
+</p>
+</li>
 </ol>
-
-<p>Students usually start with something like this:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">piglatinify</span>(word):
-      first <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">0</span>]
-      <span style="color:#66d9ef">if</span> first <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#f92672">or</span> first <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;e&#34;</span> <span style="color:#f92672">or</span> firts <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;i&#34;</span> \
-         <span style="color:#f92672">or</span> first <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;o&#34;</span> <span style="color:#f92672">or</span> first <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;u&#34;</span>:
-          result <span style="color:#f92672">=</span> word <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">else</span>:
-          result <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> first <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">return</span> result</code></pre></div>
-</code></pre>
-
-<p>as students realize it's much easier to check for vowels rather than
-consonants.</p>
-
-<p>Some students discover that you can do any of the following instead of
-the big compound <strong>or</strong> :</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  first <span style="color:#f92672">in</span> (<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;i&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;u&#39;</span>)
-
-  first <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;i&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;u&#39;</span>]
-
-  first <span style="color:#f92672">in</span> <span style="color:#e6db74">&#34;aeiou&#34;</span></code></pre></div>
-</code></pre>
-
-<p>This allows us to talk a little about lists (and tuples if you like)
-as well as now strings are similar to them in certain ways.</p>
-
-<p>By itself, this is a nice little beginner project but it gets better.</p>
-
-<p>Since we talked a bit about lists and strings in the refinement, we
-then talk about using python's <code>split()</code> method that parses a string
+<p>
+Students usually start with something like this:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+as students realize it&#39;s much easier to check for vowels rather than
+consonants. 
+</p>
+<p>
+Some students discover that you can do any of the following instead of
+the big compound <strong>or</strong> :
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+This allows us to talk a little about lists (and tuples if you like)
+as well as now strings are similar to them in certain ways.
+</p>
+<p>
+By itself, this is a nice little beginner project but it gets better. 
+</p>
+<p>
+Since we talked a bit about lists and strings in the refinement, we
+then talk about using python&#39;s <code>split()</code> method that parses a string
 on whitespace. We also talk about the <code>for</code> loop. Ultimately this
-leads us to writing a function to convert a sentence into Pig Latin:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sentence</span><span style="color:#f92672">-</span>to<span style="color:#f92672">-</span>piglatin(sentence):
-      result_list <span style="color:#f92672">=</span> []
-      <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> sentence<span style="color:#f92672">.</span>split():
-          result_list<span style="color:#f92672">.</span>append(piglatinify(word))
-      <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join(result_list)</code></pre></div>
-</code></pre>
-
-<p>But this doesn't work with real sentences. Let's focus on two
-problems. The first is that it won't handle the period at the end of
-the sentence properly. It would take that last word, let's say <strong>dog.</strong> 
-and convert it to <strong>og,day</strong> rather than <strong>ogday.</strong>. It also doesn't
+leads us to writing a function to convert a sentence into Pig Latin:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+But this doesn&#39;t work with real sentences. Let&#39;s focus on two
+problems. The first is that it won&#39;t handle the period at the end of
+the sentence properly. It would take that last word, let&#39;s say <strong>dog.</strong> 
+and convert it to <strong>og,day</strong> rather than <strong>ogday.</strong>. It also doesn&#39;t
 handle capital letters. There are other issues but they have similar
-solutions to the ones we'll use for these two.</p>
-
-<p>This is where things get fun.</p>
-
-<p>To handle the period, students frequently jump to modifying the <strong>if</strong> 
-conditions in <code>piglatinify</code> :</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">piglatinify</span>(word):
-      first <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">0</span>]
-      <span style="color:#66d9ef">if</span> first <span style="color:#f92672">in</span> <span style="color:#e6db74">&#34;aeiou&#34;</span>:
-          <span style="color:#66d9ef">if</span> word[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span>:
-              result <span style="color:#f92672">=</span> word[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;ay.&#34;</span>
-          <span style="color:#66d9ef">else</span>:
-              result <span style="color:#f92672">=</span> word<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">else</span>:
-          <span style="color:#66d9ef">if</span> word[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span>:
-              result <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">1</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>first<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;ay.&#34;</span>
-          <span style="color:#66d9ef">else</span>:
-              result <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> first <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">return</span> result</code></pre></div>
-</code></pre>
-
-<p>or something similar.</p>
-
-<p>This is a straighforward working solution but it's also a great place to introduce the idea of changing the data
+solutions to the ones we&#39;ll use for these two.
+</p>
+<p>
+This is where things get fun. 
+</p>
+<p>
+To handle the period, students frequently jump to modifying the <strong>if</strong> 
+conditions in <code>piglatinify</code> :
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+or something similar.
+</p>
+<p>
+This is a straighforward working solution but it&#39;s also a great place to introduce the idea of changing the data
 instead of using complex conditionals to handle special cases (earlier
-posts <a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data/" title="here">here</a> and <a href="https://cestlaz.github.io/posts/advent-of-code-2016-2/" title="here">here</a>).</p>
-
-<p>If we take out the period we can do our regular piglatinify and then
-add it back in. This leads us to a solution like this:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">piglatinify</span>(word):
-
-      <span style="color:#75715e"># at some point we added this</span>
-      <span style="color:#66d9ef">if</span> len(word)<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>:
-          <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-
-      <span style="color:#75715e"># if the last character is a &#39;.&#39; store it and remove it from word</span>
-      last_char <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-      <span style="color:#66d9ef">if</span> word[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span>:
-          word <span style="color:#f92672">=</span> word[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
-          last_char <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;.&#39;</span>
-
-      first <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">0</span>]
-      <span style="color:#66d9ef">if</span> first <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;aeiou&#39;</span>:
-          result <span style="color:#f92672">=</span> word <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">else</span>:
-          result <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> first <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-
-      result <span style="color:#f92672">=</span> result <span style="color:#f92672">+</span> last_char
-      <span style="color:#66d9ef">return</span> result</code></pre></div>
-</code></pre>
-
-<p>We can do something similar to deal with words that start with upper
-case letters:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">piglatinify</span>(word):
-
-
-      <span style="color:#75715e"># at some point we added this</span>
-      <span style="color:#66d9ef">if</span> len(word)<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>:
-          <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-
-      <span style="color:#75715e"># handle periods</span>
-      <span style="color:#75715e"># if the last character is a &#39;.&#39; store it and remove it from word</span>
-      last_char <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-      <span style="color:#66d9ef">if</span> word[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span>:
-          word <span style="color:#f92672">=</span> word[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
-          last_char <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;.&#39;</span>
-
-      <span style="color:#75715e"># check for capital</span>
-      starts_with_capital <span style="color:#f92672">=</span> False
-      <span style="color:#66d9ef">if</span> word[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> word[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>upper():
-          starts_with_capital <span style="color:#f92672">=</span> True
-        
-      word <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>lower()<span style="color:#f92672">+</span>word[<span style="color:#ae81ff">1</span>:]
-
-      first <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">0</span>]
-
-      <span style="color:#66d9ef">if</span> first <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;aeiou&#39;</span>:
-          result <span style="color:#f92672">=</span> word <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-      <span style="color:#66d9ef">else</span>:
-          result <span style="color:#f92672">=</span> word[<span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> first <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;ay&#34;</span>
-
-      result <span style="color:#f92672">=</span> result <span style="color:#f92672">+</span> last_char
-      <span style="color:#66d9ef">if</span> starts_with_capital:
-          result <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span>capitalize()
-        
-      <span style="color:#66d9ef">return</span> result</code></pre></div>
-</code></pre>
-
-<p>You can approach other special cases similarly.</p>
-
-<p>So, there you have it. A fun little problem that you can do with your students
-early on in a CS0 with surprising depth.</p>
+posts <a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data/">here</a> and <a href="https://cestlaz.github.io/posts/advent-of-code-2016-2/">here</a>).
+</p>
+<p>
+If we take out the period we can do our regular piglatinify and then
+add it back in. This leads us to a solution like this:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+We can do something similar to deal with words that start with upper
+case letters:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+You can approach other special cases similarly.
+</p>
+<p>
+So, there you have it. A fun little problem that you can do with your students
+early on in a CS0 with surprising depth.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -342,11 +290,11 @@ early on in a CS0 with surprising depth.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -410,13 +358,6 @@ early on in a CS0 with surprising depth.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -881,7 +822,7 @@ early on in a CS0 with surprising depth.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

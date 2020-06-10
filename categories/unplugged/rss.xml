@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unplugged on C&#39;est la Z</title>
+    <title>unplugged on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/unplugged/</link>
-    <description>Recent content in Unplugged on C&#39;est la Z</description>
+    <description>Recent content in unplugged on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2020 13:10:47 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 26 Jan 2020 13:10:47 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/sorting-by-hand/</guid>
-      <description>Natan commenting on work the other day:
-
-&#34;You have two lists. One is sorted, the other is not. Every item in one list corresponds to an item in the other. Is it faster to sort the unsorted list and then merge them, or simply go through the unsorted list in order and pair each item with the item you can find in the presorted list?&#34; is a question I asked today in the dressing room of an off-Broadway theater.</description>
+      <description>&amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt;  Natan commenting on work the other day:  &amp;lt;blockquote&amp;gt;  &amp;#34;You have two lists. One is sorted, the other is not. Every item in one list corresponds to an item in the other. Is it faster to sort the unsorted list and then merge them, or simply go through the unsorted list in order and pair each item with the item you can find in the presorted list?</description>
     </item>
     
   </channel>

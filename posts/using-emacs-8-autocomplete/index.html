@@ -6,21 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs - 8 - Autocomplete</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs - 8 - Autocomplete" />
-<meta property="og:description" content="Out of the box, Emacs supports various types of completion.
-Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
-I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.
-We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion." />
+<meta property="og:description" content="Out of the box, Emacs supports various types of completion.  Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.  I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.  We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-8-autocomplete/" /><meta property="article:published_time" content="2016-06-26T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-06-26T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-8-autocomplete/" />
+<meta property="article:published_time" content="2016-06-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-06-26T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 8 - Autocomplete"/>
-<meta name="twitter:description" content="Out of the box, Emacs supports various types of completion.
-Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
-I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.
-We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion."/>
+<meta name="twitter:description" content="Out of the box, Emacs supports various types of completion.  Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.  I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.  We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -96,54 +92,98 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>Out of the box, Emacs supports various types of completion.</p>
-
-<p>Tab completion for filenames and commands basically work right out of
-the box and Emacs has built in modes like <a href="https://www.emacswiki.org/emacs/AbbrevMode" title="Abbrev">Abbrev</a>, <a href="https://www.emacswiki.org/emacs/HippieExpand" title="Hippie Expand">Hippie Expand</a>, and
-<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html" title="Dabbrev">Dabbrev</a> provide a manner of completion for in buffer text.</p>
-
-<p>I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're
-interested in the others, follow the links.</p>
-
-<p>We saw ow the built in Ido mode and third party packages like Ivy,
+		  <p>
+Out of the box, Emacs supports various types of completion.
+</p>
+<p>
+Tab completion for filenames and commands basically work right out of
+the box and Emacs has built in modes like <a href="https://www.emacswiki.org/emacs/AbbrevMode">Abbrev</a>, <a href="https://www.emacswiki.org/emacs/HippieExpand">Hippie Expand</a>, and
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html">Dabbrev</a> provide a manner of completion for in buffer text.
+</p>
+<p>
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re
+interested in the others, follow the links.
+</p>
+<p>
+We saw ow the built in Ido mode and third party packages like Ivy,
 which I prefer, and Helm make for better completions on functions,
 filenames, and the like and Emacs also has third party packages for in
-buffer completion.</p>
-
-<p>The two main contenders are <a href="https://github.com/auto-complete/auto-complete" title="auto-complete Mode">auto-complete Mode</a> and <a href="http://company-mode.github.io/%0A" title="company Mode">company Mode</a>. I use
+buffer completion.
+</p>
+<p>
+The two main contenders are <a href="https://github.com/auto-complete/auto-complete">auto-complete Mode</a> and <a href="http://company-mode.github.io/%0A">company Mode</a>. I use
 auto-complete, others swear by company. The video shows the basics of
-auto-complete mode but check both out and decide for yourself.</p>
-
-<p>If you feel strongly about one or the other, please share in the
-comments.</p>
-
-<p>Here's a basic configuration:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package auto-complete
+auto-complete mode but check both out and decide for yourself.
+</p>
+<p>
+If you feel strongly about one or the other, please share in the
+comments.
+</p>
+<p>
+Here&#39;s a basic configuration:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package auto-complete
 :ensure <span style="color:#66d9ef">t</span>
 :init
 (progn
 (ac-config-default)
 (global-auto-complete-mode <span style="color:#66d9ef">t</span>)
-))</code></pre></div>
-</code></pre>
-
-<p>We'll modify this as move along in the series.</p>
-
-<p>Here's the video:</p>
-
-<p><iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen></iframe></p>
-
-<ul>
+))</code></pre></div></code></pre></div>
+</div>
+<p>
+We&#39;ll modify this as move along in the series.
+</p>
+<p>
+Here&#39;s the video:
+</p>
+<p>
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/5FBVhdyU4dA">https://www.youtube.com/embed/5FBVhdyU4dA</a>&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
 Relevant links:
-<li>Autocomplete home page: https://github.com/auto-complete/auto-complete</li>
-<li>Autocomplete manual: http://auto-complete.org/doc/manual.html</li>
-<li>Video series overview page:</li>
-<li>http://cestlaz.github.io/stories/emacs</li>
-<li>Code for this video</li>
-<li>https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</li>
-<li>Complete code built up over all videos:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master" title="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></li>
+</p>
+<ul>
+<li>
+<p>
+Autocomplete home page: <a href="https://github.com/auto-complete/auto-complete">https://github.com/auto-complete/auto-complete</a>
+</p>
+</li>
+<li>
+<p>
+Autocomplete manual: <a href="http://auto-complete.org/doc/manual.html">http://auto-complete.org/doc/manual.html</a>
+</p>
+</li>
+<li>
+<p>
+Video series overview page:
+</p>
+</li>
+<li>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
+</li>
+<li>
+<p>
+Code for this video
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete">https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</a>
+</p>
+</li>
+<li>
+<p>
+Complete code built up over all videos:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
+</li>
 </ul>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -233,11 +273,11 @@ Relevant links:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -301,13 +341,6 @@ Relevant links:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -772,7 +805,7 @@ Relevant links:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

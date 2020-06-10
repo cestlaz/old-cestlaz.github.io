@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Adventofcode on C&#39;est la Z</title>
+    <title>adventofcode on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/adventofcode/</link>
-    <description>Recent content in Adventofcode on C&#39;est la Z</description>
+    <description>Recent content in adventofcode on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Nov 2019 09:02:09 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 29 Nov 2019 09:02:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-of-code-2019/</guid>
-      <description>It&#39;s almost December which means it&#39;s almost time for Advent of Code 2019. Advent of code is an annual computer programming competition created and ruyn by Eric Wastl. It&#39;s been running since 2015. I&#39;ve written about it before, mostly from a teacher&#39;s point of view (Solve A to Solve B, Data structures and Hidden Complexity, Tools can shape how we think and a few others).
-Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.</description>
+      <description>It&amp;#39;s almost December which means it&amp;#39;s almost time for Advent of Code 2019. Advent of code is an annual computer programming competition created and ruyn by Eric Wastl. It&amp;#39;s been running since 2015. I&amp;#39;ve written about it before, mostly from a teacher&amp;#39;s point of view (Solve A to Solve B, Data structures and Hidden Complexity, Tools can shape how we think and a few others).  Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.</description>
     </item>
     
     <item>
@@ -27,7 +26,7 @@ Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.
       <pubDate>Fri, 18 Jan 2019 19:36:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/solve-a-to-solve-b/</guid>
-      <description>So many programming assignments involve a direct solution. Write a program to do this or write a problem to solve that. It&#39;s pretty typical. There&#39;s nothing wrong with assignments like these. They allow students to practice what they&#39;ve been learning and it gives them the opportunity to create some cool programs. All the same, I like it when there&#39;s an indirect problem. You&#39;re faced with a problem but in order to solve it you first have to solve some other problem</description>
+      <description>So many programming assignments involve a direct solution. Write a program to do this or write a problem to solve that. It&amp;#39;s pretty typical. There&amp;#39;s nothing wrong with assignments like these. They allow students to practice what they&amp;#39;ve been learning and it gives them the opportunity to create some cool programs. All the same, I like it when there&amp;#39;s an indirect problem. You&amp;#39;re faced with a problem but in order to solve it you first have to solve some other problem  That&amp;#39;s why I liked day 10 from this year&amp;#39;s Advent of Code.</description>
     </item>
     
     <item>
@@ -36,7 +35,7 @@ Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.
       <pubDate>Sun, 30 Dec 2018 15:17:14 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</guid>
-      <description>Since 2015, Eric Wastl has gifted us each December with Advent of Code - a 25 day programming competition that I very much enjoy. This year I haven&#39;t been able to get to too many of the problems. I only completed the first two days on the day they were released, problem three a day late and then I didn&#39;t get back to the problems until almost 12/25 - the final day of the competition.</description>
+      <description>Since 2015, Eric Wastl has gifted us each December with Advent of Code - a 25 day programming competition that I very much enjoy. This year I haven&amp;#39;t been able to get to too many of the problems. I only completed the first two days on the day they were released, problem three a day late and then I didn&amp;#39;t get back to the problems until almost 12/25 - the final day of the competition.</description>
     </item>
     
     <item>
@@ -45,8 +44,7 @@ Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-2017-4-6/</guid>
-      <description>I&#39;ve been having fun with this years Advent of Code competition. So far, I&#39;ve been able to keep up but with I expect that to change in another couple of days since I&#39;ll be traveling for the weekend.
-After solving a problem, I like looking over some of the other solutions on the Advent of Code subreddit. Even with similar agorithmic solutions there&#39;s a decent amount of variation in the actual code and solutions in different languages can look radically different.</description>
+      <description>I&amp;#39;ve been having fun with this years Advent of Code competition. So far, I&amp;#39;ve been able to keep up but with I expect that to change in another couple of days since I&amp;#39;ll be traveling for the weekend.  After solving a problem, I like looking over some of the other solutions on the Advent of Code subreddit. Even with similar agorithmic solutions there&amp;#39;s a decent amount of variation in the actual code and solutions in different languages can look radically different.</description>
     </item>
     
     <item>
@@ -55,8 +53,7 @@ After solving a problem, I like looking over some of the other solutions on the 
       <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-2017-1/</guid>
-      <description>It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
-Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
+      <description>It&amp;#39;s once again time for Advent of Code. That one a day programming competition that&amp;#39;s been running now for three years.  Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
     </item>
     
     <item>
@@ -65,9 +62,7 @@ Here are some thoughts on day 1. The core of the problem is that you have a larg
       <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/it-gets-easier-advent19/</guid>
-      <description>Today&#39;s Advent of Code problem was a variant on the Josephus problem.
-I recalled that there was a formula to figure out the sole survivor but I decide to run a simulation rather than looking it up. I also decided to write it up in C++, well, really C with cout instead of printf.
-Part 1 was the traditional problem. Part 2 was a variant where at each iteration, you remove the elf opposite the elf being processed (see the problem description for details).</description>
+      <description>Today&amp;#39;s Advent of Code problem was a variant on the Josephus problem.  I recalled that there was a formula to figure out the sole survivor but I decide to run a simulation rather than looking it up. I also decided to write it up in C++, well, really C with cout instead of printf.  Part 1 was the traditional problem. Part 2 was a variant where at each iteration, you remove the elf opposite the elf being processed (see the problem description for details).</description>
     </item>
     
     <item>
@@ -76,9 +71,7 @@ Part 1 was the traditional problem. Part 2 was a variant where at each iteration
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid>
-      <description>I&#39;m spending the weekend up in Michigan. Visiting my brother and is family. We&#39;re here to see the UMGASS production of Gilbert and Sullivan&#39;s The Sorcerer. Batya also came up from Cornell to join us so the two families are all togehter for the first time in about 10 years.
-This hasn&#39;t left much time for Advent of Code but I did manage to finish yesterday&#39;s challenge this morning.
-What took me so long?</description>
+      <description>I&amp;#39;m spending the weekend up in Michigan. Visiting my brother and is family. We&amp;#39;re here to see the UMGASS production of Gilbert and Sullivan&amp;#39;s The Sorcerer. Batya also came up from Cornell to join us so the two families are all togehter for the first time in about 10 years.  This hasn&amp;#39;t left much time for Advent of Code but I did manage to finish yesterday&amp;#39;s challenge this morning.</description>
     </item>
     
     <item>
@@ -87,10 +80,7 @@ What took me so long?</description>
       <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-2/</guid>
-      <description>Today we&#39;re looking at Advent of Code 2016 number 2.
-To change things up, I thought I&#39;d do a video where I live code a solution.
-The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.
-One of the things I really like about Advent of Code is that every problem has two parts and depending on how you solved part 1, you may or may not have extra work to do for part 2.</description>
+      <description>Today we&amp;#39;re looking at Advent of Code 2016 number 2.  To change things up, I thought I&amp;#39;d do a video where I live code a solution.  The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.  One of the things I really like about Advent of Code is that every problem has two parts and depending on how you solved part 1, you may or may not have extra work to do for part 2.</description>
     </item>
     
     <item>
@@ -99,10 +89,7 @@ One of the things I really like about Advent of Code is that every problem has t
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-1/</guid>
-      <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
-I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
-Take a minute to read it over.
-At first glance, it might seem to a young programmer that this problem requires a two dimensional array - all about (x,y) coordinates but then there&#39;s a problem - there are no limits on coordinates and we can&#39;t make an unlimited size array.</description>
+      <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.  I thought I&amp;#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.  Take a minute to read it over.</description>
     </item>
     
     <item>
@@ -111,9 +98,7 @@ At first glance, it might seem to a young programmer that this problem requires 
       <pubDate>Sat, 03 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016/</guid>
-      <description>Once again, it&#39;s time for Advent of Code - a series of small programming problems released once a day.
-I wrote a bit about it last year and you can still find last years problems here.
-It&#39;s only day three but so far, all of the problems look really nice for students in APCS-A or any similar intro course. I&#39;m thinking of looking at a couple of the problems this week with my class at Hunter.</description>
+      <description>Once again, it&amp;#39;s time for Advent of Code - a series of small programming problems released once a day.  I wrote a bit about it last year and you can still find last years problems here.  It&amp;#39;s only day three but so far, all of the problems look really nice for students in APCS-A or any similar intro course. I&amp;#39;m thinking of looking at a couple of the problems this week with my class at Hunter.</description>
     </item>
     
   </channel>

@@ -6,21 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Shell short - tagging old posts in Nikola</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Shell short - tagging old posts in Nikola" />
-<meta property="og:description" content="Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line." />
+<meta property="og:description" content="Quick post to add to the recent command line fu I&#39;ve been writing about.  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/shell-short-tagging/" /><meta property="article:published_time" content="2016-05-15T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-05-15T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/shell-short-tagging/" />
+<meta property="article:published_time" content="2016-05-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-05-15T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shell short - tagging old posts in Nikola"/>
-<meta name="twitter:description" content="Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line."/>
+<meta name="twitter:description" content="Quick post to add to the recent command line fu I&#39;ve been writing about.  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -96,89 +92,122 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>Quick post to add to the recent command line fu I've been writing
-about.</p>
-
-<p><a href="https://twitter.com/dougpete" title="Douglas Peterson">Douglas Peterson</a> had another <strong><strong>Whatever happened to</strong></strong> post. This time
-on <a href="https://dougpete.wordpress.com/2016/05/15/whatever-happened-to-6/" title="Logo">Logo</a>. I wanted to reply, talk about NetLogo  and link to some of my
-old NetLogo posts to help show how cool it is.</p>
-
-<p>Nikola supports tags, makes a nice <a href="http://cestlaz.github.io/categories" title="tags">tags</a> page and for each tag, a nice
-page of all the <a href="http://cestlaz.github.io/categories/netlogo" title="links">links</a>.</p>
-
-<p>Nikola has a plugin <strong><strong>tags</strong></strong> which lets you manage tags from the
-command line. For instance:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo posts/somepost.org</code></pre></div>
-</code></pre>
-
-<p>Would add the tag <strong><strong>netlogo</strong></strong> to the specified post.</p>
-
-<p>The problem: The tags plugin only works if the post has a **tag:**
-line already present in it's header comment and I hadn't put them in
-my older posts.</p>
-
-<p>I had a bunch of posts, all of them in one directory. All the new ones
-were **.org** files and had the tag slug. The others were **.md** markdown
-files and **.html** html files.</p>
-
-<p>Here's what a typical top block looks like:</p>
-
-<pre><code class="language-html"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--
+		  
+<p>
+Quick post to add to the recent command line fu I&#39;ve been writing
+about.
+</p>
+<p>
+<a href="https://twitter.com/dougpete">Douglas Peterson</a> had another <strong><strong>Whatever happened to</strong></strong> post. This time
+on <a href="https://dougpete.wordpress.com/2016/05/15/whatever-happened-to-6/">Logo</a>. I wanted to reply, talk about NetLogo  and link to some of my
+old NetLogo posts to help show how cool it is.
+</p>
+<p>
+Nikola supports tags, makes a nice <a href="http://cestlaz.github.io/categories">tags</a> page and for each tag, a nice
+page of all the <a href="http://cestlaz.github.io/categories/netlogo">links</a>.
+</p>
+<p>
+Nikola has a plugin <strong><strong>tags</strong></strong> which lets you manage tags from the
+command line. For instance:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo posts/somepost.org</code></pre></div></code></pre></div>
+</div>
+<p>
+Would add the tag <strong><strong>netlogo</strong></strong> to the specified post.
+</p>
+<p>
+The problem: The tags plugin only works if the post has a <strong><strong>tag:</strong></strong>
+line already present in it&#39;s header comment and I hadn&#39;t put them in
+my older posts.
+</p>
+<p>
+I had a bunch of posts, all of them in one directory. All the new ones
+were <strong><strong>.org</strong></strong> files and had the tag slug. The others were <strong><strong>.md</strong></strong> markdown
+files and <strong><strong>.html</strong></strong> html files.
+</p>
+<p>
+Here&#39;s what a typical top block looks like:
+</p>
+<div class="src src-html">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--
 </span><span style="color:#75715e">title: &#34;Looking for interesting questions&#34;
 </span><span style="color:#75715e">date: 2010-01-03
-</span><span style="color:#75715e">--&gt;</span></code></pre></div>
-</code></pre>
-
-<p>Sed to the rescue. Here's the what I ended up typing (from within the
+</span><span style="color:#75715e">--&gt;</span></code></pre></div></code></pre></div>
+</div>
+<p>
+Sed to the rescue. Here&#39;s the what I ended up typing (from within the
 posts directory) to add the
-**tags** slug to the top comments right above the **.. type: text:** line:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls *md *html | <span style="color:#66d9ef">while</span> read filename
+<strong><strong>tags</strong></strong> slug to the top comments right above the <strong><strong>.. type: text:</strong></strong> line:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls *md *html | <span style="color:#66d9ef">while</span> read filename
 <span style="color:#66d9ef">do</span>
 sed <span style="color:#e6db74">&#34;/type: text/ i .. tags: &#34;</span> $filename
-<span style="color:#66d9ef">done</span></code></pre></div>
-</code></pre>
-
-<h2 id="ls-md-html">ls *md *html</h2>
-
-<h2 id="while-read-filename">| while read filename</h2>
-
-<h2 id="sed-type-text-i-tags-filename">sed "/ type: text/  i .. tags: " $filename</h2>
-
-<p>A line at a time:
-This lists all the files with that end in <strong><strong>md</strong></strong> or <strong><strong>html**
-The vertical bar (pipe) sends the output of **ls</strong></strong> into the <strong><strong>while read**
-command. The **while</strong></strong> command sets up a loop which, each time
+<span style="color:#66d9ef">done</span></code></pre></div></code></pre></div>
+</div>
+<p>
+A line at a time:
+</p>
+<h3 id="headline-1">
+ls *md *html
+</h3>
+<p>
+This lists all the files with that end in <strong><strong>md</strong></strong> or <strong><strong>html</strong></strong>
+</p>
+<h3 id="headline-2">
+| while read filename
+</h3>
+<p>
+The vertical bar (pipe) sends the output of <strong><strong>ls</strong></strong> into the <strong><strong>while read</strong></strong>
+command. The <strong><strong>while</strong></strong> command sets up a loop which, each time
 through, reads the next input and places into the variable
-**filename**. The body of the loop is between the <strong><strong>do</strong></strong> and the
-**done**.
+<strong><strong>filename</strong></strong>. The body of the loop is between the <strong><strong>do</strong></strong> and the
+<strong><strong>done</strong></strong>.
+</p>
+<h3 id="headline-3">
+sed &#34;/ type: text/  i .. tags: &#34; $filename
+</h3>
+<p>
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text <strong><strong>type: text</strong></strong> in it. The <strong><strong>i</strong></strong> inserts a line above and
 the rest of the stuff in the quotes is what to insert. The
-**$filename** expands to each filename, one each time through the
-loop.</p>
-
-<p>Now all of my files have blank <strong><strong>tag</strong></strong> slugs so I can find my netlogo
-posts and tag them:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo <span style="color:#e6db74">`</span>grep -i -l netlogo posts/*<span style="color:#e6db74">`</span></code></pre></div>
-</code></pre>
-
-<p>Any command in backticks expands to the result of the commmand. The
+<strong><strong>$filename</strong></strong> expands to each filename, one each time through the
+loop.
+</p>
+<p>
+Now all of my files have blank <strong><strong>tag</strong></strong> slugs so I can find my netlogo
+posts and tag them:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo <span style="color:#e6db74">`</span>grep -i -l netlogo posts/*<span style="color:#e6db74">`</span></code></pre></div></code></pre></div>
+</div>
+<p>
+Any command in backticks expands to the result of the commmand. The
 grep command has two argiments: <strong><strong>-i</strong></strong> means ignore case so it will
 find netlogo, NetLogo, NETLOGO, etc.. The <strong><strong>-l</strong></strong> tells grep to just
 output the filenames. So, the grep command will expand to a list of
 files that mention netlogo. The full command adds the netlogo tag to
-all of them.</p>
-
+all of them.
+</p>
+<p>
+So, just a bit of quick shell scripting and I&#39;ve:
+</p>
 <ul>
-So, just a bit of quick shell scripting and I've:
-<li>modified all old posts to accept tags.</li>
-<li>added the netlogo tag to all my netlogo posts.</li>
+<li>
+<p>
+modified all old posts to accept tags.
+</p>
+</li>
+<li>
+<p>
+added the netlogo tag to all my netlogo posts.
+</p>
+</li>
 </ul>
-
-<p>You can find all those posts <a href="http://cestlaz.github.io/categories/netlogo" title="here">here</a>.</p>
+<p>
+You can find all those posts <a href="http://cestlaz.github.io/categories/netlogo">here</a>.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -270,11 +299,11 @@ So, just a bit of quick shell scripting and I've:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -338,13 +367,6 @@ So, just a bit of quick shell scripting and I've:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -809,7 +831,7 @@ So, just a bit of quick shell scripting and I've:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

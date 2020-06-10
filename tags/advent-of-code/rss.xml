@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advent of Code on C&#39;est la Z</title>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 12 Dec 2019 17:19:27 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/multi-stage-assignments/</guid>
-      <description>In the real world you&#39;re usually not building your own projects from scratch. Much more frequently you&#39;re working on a team and you and other players come and go over time.
-This is in stark contrast to most CS educational experiences where students typically complete relatively small assignments from beginning to end. One of my biggest fears way back when as I was about to graduate college was when I woke up one night in a cold sweath &#34;</description>
+      <description>In the real world you&amp;#39;re usually not building your own projects from scratch. Much more frequently you&amp;#39;re working on a team and you and other players come and go over time.  This is in stark contrast to most CS educational experiences where students typically complete relatively small assignments from beginning to end. One of my biggest fears way back when as I was about to graduate college was when I woke up one night in a cold sweath &amp;#34;oh crap - in a couple of weeks I&amp;#39;m going to have to actually produce good code.</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@ This is in stark contrast to most CS educational experiences where students typi
       <pubDate>Sun, 08 Dec 2019 17:04:30 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day8-part2/</guid>
-      <description>As I sad in my last post, day 8 would be a nice project or lesson in an APCS-A or college CS1 class. Another nice problem would be to write a program to generate an image in the format required by the question. Alternatively, a teacher doing day 8 with their classes might want to generate a bunch of images for the students to test their decoders on.
-I thought I&#39;d write one to see how appropriate it would be for the students.</description>
+      <description>As I sad in my last post, day 8 would be a nice project or lesson in an APCS-A or college CS1 class. Another nice problem would be to write a program to generate an image in the format required by the question. Alternatively, a teacher doing day 8 with their classes might want to generate a bunch of images for the students to test their decoders on.  I thought I&amp;#39;d write one to see how appropriate it would be for the students.</description>
     </item>
     
     <item>
@@ -37,7 +35,7 @@ I thought I&#39;d write one to see how appropriate it would be for the students.
       <pubDate>Sun, 08 Dec 2019 08:42:32 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day8/</guid>
-      <description>I spent most of last week up in Albany working on the NY State K12 CS Standards so fell a bit behind. I had to go back to complete day 5 but still haven&#39;t finished day 7 which builds on day 5 which in turn builds on day 2. I might not get to finishing 7 for a while but it looks like a good chance to play with core.async - Clojure&#39;s facilities for concurrency.</description>
+      <description>I spent most of last week up in Albany working on the NY State K12 CS Standards so fell a bit behind. I had to go back to complete day 5 but still haven&amp;#39;t finished day 7 which builds on day 5 which in turn builds on day 2. I might not get to finishing 7 for a while but it looks like a good chance to play with core.</description>
     </item>
     
     <item>
@@ -46,8 +44,7 @@ I thought I&#39;d write one to see how appropriate it would be for the students.
       <pubDate>Wed, 04 Dec 2019 19:32:34 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day4/</guid>
-      <description>Day 4. Most of the day was spent working on the NY State CS standards to I didn&#39;t figure to have much time to work on the problem. Fortunately, I was able to knock out part 1 before work started and part 2 was a quick adjustment when I got back to it at the start of lunch.
-Once again, it was a problem with a few interesting teacher side aspects.</description>
+      <description>Day 4. Most of the day was spent working on the NY State CS standards to I didn&amp;#39;t figure to have much time to work on the problem. Fortunately, I was able to knock out part 1 before work started and part 2 was a quick adjustment when I got back to it at the start of lunch.  Once again, it was a problem with a few interesting teacher side aspects.</description>
     </item>
     
     <item>
@@ -56,8 +53,7 @@ Once again, it was a problem with a few interesting teacher side aspects.</descr
       <pubDate>Tue, 03 Dec 2019 19:01:13 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day3/</guid>
-      <description>Today&#39;s problem dealt with intersecting paths. You start with two inputs, figure out the paths they represent and where they intersect and then find the intersection that correctly answers the question.
-For part 1 you have to find the intersection closest to the origin. From a teacher&#39;s point of view, the interesting part here is data representation. This problem deals with a two dimensional grid on which the paths live. For most students, at least in my experience, if they&#39;re trained in a language like C++ or Java they go for the direct representation - a 2D array.</description>
+      <description>Today&amp;#39;s problem dealt with intersecting paths. You start with two inputs, figure out the paths they represent and where they intersect and then find the intersection that correctly answers the question.  For part 1 you have to find the intersection closest to the origin. From a teacher&amp;#39;s point of view, the interesting part here is data representation. This problem deals with a two dimensional grid on which the paths live.</description>
     </item>
     
     <item>
@@ -66,8 +62,7 @@ For part 1 you have to find the intersection closest to the origin. From a teach
       <pubDate>Mon, 02 Dec 2019 17:11:43 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day2/</guid>
-      <description>Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.
-At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it.</description>
+      <description>Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&amp;#39;s point of view, we&amp;#39;ll look at a Python solution.  At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&amp;#39;t go back to it.</description>
     </item>
     
     <item>
@@ -76,9 +71,7 @@ At its core, this is a simulation problem - read the data into an array or list 
       <pubDate>Sun, 01 Dec 2019 14:23:35 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day1/</guid>
-      <description>Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.
-I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.
-The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed).</description>
+      <description>Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.  I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&amp;#39;d talk about today&amp;#39;s challenge from a teacher&amp;#39;s point of view.  The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed).</description>
     </item>
     
   </channel>

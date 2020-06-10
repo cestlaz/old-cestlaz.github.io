@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cli on C&#39;est la Z</title>
+    <title>cli on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/cli/</link>
-    <description>Recent content in Cli on C&#39;est la Z</description>
+    <description>Recent content in cli on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Sep 2016 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/user-friendly/</guid>
-      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.
-This called to mind those countless discussions about tools being user friendly. I&#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.
-Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39;t user friendly.</description>
+      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.  This called to mind those countless discussions about tools being user friendly. I&amp;#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.  Don&amp;#39;t use Emacs, it isn&amp;#39;t user friendly. Don&amp;#39;t use Linux, it isn&amp;#39;t user friendly.</description>
     </item>
     
     <item>
@@ -28,10 +26,7 @@ Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/shell-short-tagging/</guid>
-      <description>Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line.</description>
+      <description>Quick post to add to the recent command line fu I&amp;#39;ve been writing about.  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.</description>
     </item>
     
     <item>
@@ -40,9 +35,7 @@ Nikola has a plugin tags which lets you manage tags from the command line.</desc
       <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/bash-scripting/</guid>
-      <description>Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.
-A number of us made suggestions. I linked to this old blog post.
-One group member said she asked around for similar suggestions and the response she got was &#34;vi and awk.&#34; I wanted to jokingly respond &#34;and after they suggested that they got into their time machine and went back to the 70&#39;s.</description>
+      <description>Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.  A number of us made suggestions. I linked to this old blog post.  One group member said she asked around for similar suggestions and the response she got was &amp;#34;vi and awk.&amp;#34; I wanted to jokingly respond &amp;#34;and after they suggested that they got into their time machine and went back to the 70&amp;#39;s.</description>
     </item>
     
     <item>
@@ -51,10 +44,7 @@ One group member said she asked around for similar suggestions and the response 
       <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/duplicate-emails/</guid>
-      <description>Repost This is a repost from March 2015. It didn&#39;t transfer when I rebooted the blog.
-Original Quick post on why I love the Unix command line.
-We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.
-The kids signed up on a Google doc but we all know the story -- when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+      <description>Repost   This is a repost from March 2015. It didn&amp;#39;t transfer when I rebooted the blog. Original   Quick post on why I love the Unix command line.  We&amp;#39;re busy organizing CSTUY&amp;#39;s first hackathon. It&amp;#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story – when people sign up for a free event, even one with free food and t-shirts, many don&amp;#39;t show.</description>
     </item>
     
     <item>
@@ -63,12 +53,7 @@ The kids signed up on a Google doc but we all know the story -- when people sign
       <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/teaching-html/</guid>
-      <description>Yesterday, Doug Peterson wrote a &#34;Whatever happened to&#34; post subtitled HTML as an essential 21st Century skill? It&#39;s a nice post.
-I left a comment but thought I&#39;d elaborate here.
-No, knowing HTML is not programming - it&#39;s markup. Even so, when I help people design CS programs, I&#39;ll frequently recommend starting with HTML or at least introducing it early.
-Why?
-It&#39;s a gateway and not just to programming.
-HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;b&amp;gt; and ==:</description>
+      <description>Yesterday, Doug Peterson wrote a &amp;#34;Whatever happened to&amp;#34; post subtitled HTML as an essential 21st Century skill? It&amp;#39;s a nice post.  I left a comment but thought I&amp;#39;d elaborate here.  No, knowing HTML is not programming - it&amp;#39;s markup. Even so, when I help people design CS programs, I&amp;#39;ll frequently recommend starting with HTML or at least introducing it early.  Why?  It&amp;#39;s a gateway and not just to programming.</description>
     </item>
     
     <item>
@@ -77,8 +62,7 @@ HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid>
-      <description>div.center {text-align:center;} 
- Quick post on why I love the Unix command line.  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Quick post on why I love the Unix command line. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; We&amp;#39;re busy organizing &amp;lt;a href=&amp;#34;http://cstuy.org&amp;#34;&amp;gt;CSTUY&amp;#39;s&amp;lt;/a&amp;gt; first &amp;lt;a href=&amp;#34;http://cstuy.org/programs/defhacks&amp;#34;&amp;gt;hackathon&amp;lt;/a&amp;gt;. It&amp;#39;s going to be at &amp;lt;a href=&amp;#34;http://sumall.com&amp;#34;&amp;gt;SumAll&amp;lt;/a&amp;gt;, where we hold our weekly &amp;lt;a href=&amp;#34;http://cstuy.org/programs/hacking_sessions&amp;#34;&amp;gt;hacking sessions&amp;lt;/a&amp;gt; but while taking registration, we had a little program. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; The kids signed up on a Google doc but we all know the story &amp;amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&amp;#39;t show.</description>
     </item>
     
     <item>
@@ -87,9 +71,7 @@ HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;
       <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</guid>
-      <description>div.center {text-align:center;} 
- Spreadsheets are terrific - we&#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students.  Go to Google Drive  Make a form  Send the form out to the students  Wait  
- All the data gets dumped into a Google spreadsheet. The trouble is, what to do with it once it&#39;s in the spreadsheet.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Spreadsheets are terrific - we&amp;#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students. &amp;lt;/p&amp;gt;  &amp;lt;div id=&amp;#34;outline-container-sec-1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;sec-1&amp;#34;&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-1&amp;#34;&amp;gt; &amp;lt;ul class=&amp;#34;org-ul&amp;#34;&amp;gt; &amp;lt;li&amp;gt;Go to Google Drive &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Make a form &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Send the form out to the students &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Wait &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt; All the data gets dumped into a Google spreadsheet.</description>
     </item>
     
     <item>
@@ -98,12 +80,8 @@ HTML is pretty easy, you want something bold, you just wrap the word in &amp;lt;
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2014-02-04-shellgames-1-intro/</guid>
-      <description>A few weeks ago, I noticed this Twitter conversation between Alfred Thompson and Steve Keinath
-
-I&amp;#39;d love to see an Intro to Linux (way more than just install) as a 3-hour workshop at #CSTA14 @csteachersa
-&amp;mdash; Steve Keinath (@keinath) November 12, 2013 @alfredtwo @csteachersa Right. I know very little &amp;amp; would love a &amp;quot;zero to hero&amp;quot; Linux workshop.
-&amp;mdash; Steve Keinath (@keinath) November 12, 2013  
-I briefly considered proposing a session for the conference but it was just a day or two before the deadline, I don&#39;t know if I&#39;m going to be able to attend the conference, and besides, who said anything I proposed would be accepted.</description>
+      <description>A few weeks ago, I noticed this Twitter conversation between Alfred Thompsonand Steve KeinathI briefly considered proposing a session for the conference but it was just a day or two before the deadline, I don&amp;rsquo;t know if I&amp;rsquo;m going to be able to attend the conference, and besides, who said anything I proposed would be accepted.
+Still, I liked the idea - I&amp;rsquo;ve been an educator for 23 years, a Linux user for most of that time and an Unix user for longer.</description>
     </item>
     
     <item>
@@ -114,7 +92,7 @@ I briefly considered proposing a session for the conference but it was just a da
       <guid>https://cestlaz.github.io/posts/2013-01-24-why-we-script/</guid>
       <description>I tell my students &amp;ldquo;the cool thing about what we do is that if we&amp;rsquo;re not happy with the way something works, we&amp;rsquo;ve got a shot at fixing it.&amp;rdquo;
 That came up this morning so I thought I&amp;rsquo;d share.
-I recently posted about the in-term projects my Software Development kids were working on. Well, now it&amp;rsquo;s time to grade their final projects.
+I recently postedabout the in-term projects my Software Development kids were working on. Well, now it&amp;rsquo;s time to grade their final projects.
 The code is up on GitHub. This morning I was faced with independently going to every project page and cloning each one:</description>
     </item>
     

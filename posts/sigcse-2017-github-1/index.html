@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>SIGCSE 2017 - a path to github part 1</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="SIGCSE 2017 - a path to github part 1" />
-<meta property="og:description" content="Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.
-This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.
-As with any new tool, there will be some resistance but once git saves them once, they get religion." />
+<meta property="og:description" content="Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.  This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.  As with any new tool, there will be some resistance but once git saves them once, they get religion." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse-2017-github-1/" /><meta property="article:published_time" content="2017-03-16T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-03-16T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse-2017-github-1/" />
+<meta property="article:published_time" content="2017-03-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-03-16T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SIGCSE 2017 - a path to github part 1"/>
-<meta name="twitter:description" content="Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.
-This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.
-As with any new tool, there will be some resistance but once git saves them once, they get religion."/>
+<meta name="twitter:description" content="Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.  This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.  As with any new tool, there will be some resistance but once git saves them once, they get religion."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -94,141 +92,190 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>Both at and prior to SIGCSE 2017, I promised to write up the steps I
-take to introduce and use revision control systems in my classes.</p>
-
-<p>This series is not meant to be a git or <a href="http://github.com" title="GitHub">GitHub</a> tutorial. There are
-plenty of those already (two of which I've linked to below).  This is
-about the process I use with my students to get them up to speed.</p>
-
-<p>As with any new tool, there will be some resistance but once git saves
+		  
+<p>
+Both at and prior to SIGCSE 2017, I promised to write up the steps I
+take to introduce and use revision control systems in my classes.
+</p>
+<p>
+This series is not meant to be a git or <a href="http://github.com">GitHub</a> tutorial. There are
+plenty of those already (two of which I&#39;ve linked to below).  This is
+about the process I use with my students to get them up to speed.
+</p>
+<p>
+As with any new tool, there will be some resistance but once git saves
 them once, they get religion. There will also be some bumps in the
 road but at the end of the day, the students will be using a valuable
-and necessary tool.</p>
-
-<p>I was also surprised at the ancillary benefits I got as a teacher by
-using GitHub in particular. I'll talk about that at the end of the
-series.</p>
-
-<p>Here's part one.</p>
-
-<p>I'm doing this with git and GitHub but there's no reason why other
-systems and hosts can't be used. I'd also recommend that any educator
-or student sign up for the assorted <a href="https://education.github.com/" title="discounts">discounts</a> offered by GitHub.</p>
-
-<p>I've followed this basic idea multiple times and done it over the
+and necessary tool.
+</p>
+<p>
+I was also surprised at the ancillary benefits I got as a teacher by
+using GitHub in particular. I&#39;ll talk about that at the end of the
+series.
+</p>
+<p>
+Here&#39;s part one.
+</p>
+<p>
+I&#39;m doing this with git and GitHub but there&#39;s no reason why other
+systems and hosts can&#39;t be used. I&#39;d also recommend that any educator
+or student sign up for the assorted <a href="https://education.github.com/">discounts</a> offered by GitHub.
+</p>
+<p>
+I&#39;ve followed this basic idea multiple times and done it over the
 course of a single semester, a year, and even two years. Regardless of
 time frame, the idea is the same. Make each step simple and relevant
-and introduce complexity and roadblocks a piece at a time.</p>
-
-<h1 id="step-1-code-distribution">Step 1 - code distribution</h1>
-
-<p>To start, I don't even talk about version control. We start with code
-distribution. For years, I've looked for efficient ways of sharing
+and introduce complexity and roadblocks a piece at a time.
+</p>
+<h2 id="headline-1">
+Step 1 - code distribution
+</h2>
+<p>
+To start, I don&#39;t even talk about version control. We start with code
+distribution. For years, I&#39;ve looked for efficient ways of sharing
 code with my classes. Both code developed in class and code for
-assignments.</p>
-
-<p>I've tried things like NFS, Dropbox, online code repositories like the
-files section of systems like Moodle or Blackboard.</p>
-
-<p>At Stuy, we've always had efficiency problems with NFS and Dropbox has
+assignments.
+</p>
+<p>
+I&#39;ve tried things like NFS, Dropbox, online code repositories like the
+files section of systems like Moodle or Blackboard.
+</p>
+<p>
+At Stuy, we&#39;ve always had efficiency problems with NFS and Dropbox has
 multiple problems ranging from students not being able to install the
 client on school machines to the problems of the network hit when a
-room full of kids are syncing at the same time.</p>
-
-<p>Uploading to a CMS system was also problematic - I'm a command line
+room full of kids are syncing at the same time.
+</p>
+<p>
+Uploading to a CMS system was also problematic - I&#39;m a command line
 wonk and hate going through slow web page menus to navigate a
 filesystem and upload files. I also had to remember to get the files
 off of whatever machine I was working on in class and then transfer
-them to the CMS when I had a free moment.</p>
-
-<p>Enter git. Now, of course, if you're going to use git in the classroom
+them to the CMS when I had a free moment.
+</p>
+<p>
+Enter git. Now, of course, if you&#39;re going to use git in the classroom
 you have to know it. There are plenty of resources out there. Online
-courses, articles, videos, and tutorials. Here are a couple:</p>
-
+courses, articles, videos, and tutorials. Here are a couple:
+</p>
 <ul>
-<li>https://try.github.io/</li>
-<li>https://www.youtube.com/watch?v=0fKg7e37bQE</li>
+<li>
+<p>
+<a href="https://try.github.io/">https://try.github.io/</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://www.youtube.com/watch?v=0fKg7e37bQE">https://www.youtube.com/watch?v=0fKg7e37bQE</a>
+</p>
+</li>
 </ul>
-
-<p>I also want to point out that I just use raw command line git along
-with native GitHub. GitHub has rolled out <a href="https://classroom.github.com/" title="GitHub Classroom">GitHub Classroom</a> which adds
-a layer of support for educators. I don't use it because, as I said,
-I'm an old school command line wonk and also because I figured out a
+<p>
+I also want to point out that I just use raw command line git along
+with native GitHub. GitHub has rolled out <a href="https://classroom.github.com/">GitHub Classroom</a> which adds
+a layer of support for educators. I don&#39;t use it because, as I said,
+I&#39;m an old school command line wonk and also because I figured out a
 sequence that worked for me and my students before GitHub Classroom
-existed. Were I starting now, I'd take some time to look at their
-current offerings before jumping in.</p>
-
-<h2 id="set-up">Set up</h2>
-
-<p>Before starting, make sure you register your ssh keys. <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" title="This">This</a> help page
-has more information. You'll want to register an ssh key from every
-machine you use - home, work, laptop.</p>
-
-<p>Now go over to GitHub and make a new repository. I usually name it
-**classcode**. <strong><strong>BEGINNER NOTE:</strong></strong> when creating the repo, make sure to
-check the "initialize this repository with a README" box. If you don't
-you'll be given a set of instructions on how to set things up once you
-click <strong><strong>Create repository</strong></strong> but it's easier and easier to follow if
-you start with an initialized repo with a README.</p>
-
-<p>I make the repo public -- it's code I'm distributing -- nothing to
-hide here. If you aren't comfortable with that, just make the repo
-private. If you've registered as a teacher with GitHub, you can set up
-an organization and you'll be able to set up free private repos within
-it. The other downside here is that you'll have to individually give
-each student access to the repo. That's a mild annoyance but it only
-has to be done once.</p>
-
-<h2 id="teacher-use">Teacher use</h2>
-
-<p>Next, clone out the repo. <strong><strong>BEGINNER NOTE:</strong></strong> Make sure you check out
+existed. Were I starting now, I&#39;d take some time to look at their
+current offerings before jumping in.
+</p>
+<h3 id="headline-2">
+Set up
+</h3>
+<p>
+Before starting, make sure you register your ssh keys. <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">This</a> help page
+has more information. You&#39;ll want to register an ssh key from every
+machine you use - home, work, laptop.
+</p>
+<p>
+Now go over to GitHub and make a new repository. I usually name it
+<strong><strong>classcode</strong></strong>. <strong><strong>BEGINNER NOTE:</strong></strong> when creating the repo, make sure to
+check the &#34;initialize this repository with a README&#34; box. If you don&#39;t
+you&#39;ll be given a set of instructions on how to set things up once you
+click <strong><strong>Create repository</strong></strong> but it&#39;s easier and easier to follow if
+you start with an initialized repo with a README.
+</p>
+<p>
+I make the repo public – it&#39;s code I&#39;m distributing – nothing to
+hide here. If you aren&#39;t comfortable with that, just make the repo
+private. If you&#39;ve registered as a teacher with GitHub, you can set up
+an organization and you&#39;ll be able to set up free private repos within
+it. The other downside here is that you&#39;ll have to individually give
+each student access to the repo. That&#39;s a mild annoyance but it only
+has to be done once.
+</p>
+<h3 id="headline-3">
+Teacher use
+</h3>
+<p>
+Next, clone out the repo. <strong><strong>BEGINNER NOTE:</strong></strong> Make sure you check out
 the ssh version not the https version. Just make sure that when you
-click the <strong><strong>clone</strong></strong> button, it says "Clone with SSH." If not, just
-click the "Use SSH" link in the same box. Students will clone the
-using https.</p>
-
-<p>From the teacher point of view, you can just start using the repo. My
-work flow is typically:</p>
-
+click the <strong><strong>clone</strong></strong> button, it says &#34;Clone with SSH.&#34; If not, just
+click the &#34;Use SSH&#34; link in the same box. Students will clone the
+using https.
+</p>
+<p>
+From the teacher point of view, you can just start using the repo. My
+work flow is typically:
+</p>
 <ol>
-<li><strong><strong>git pull</strong></strong> at the start of class</li>
-<li>write code throughout class</li>
-<li><strong><strong>git add</strong></strong>, <strong><strong>git commit</strong></strong>, and <strong><strong>git push</strong></strong> at the end of class</li>
+<li>
+<p>
+<strong><strong>git pull</strong></strong> at the start of class
+</p>
+</li>
+<li>
+<p>
+write code throughout class
+</p>
+</li>
+<li>
+<p>
+<strong><strong>git add</strong></strong>, <strong><strong>git commit</strong></strong>, and <strong><strong>git push</strong></strong> at the end of class
+</p>
+</li>
 </ol>
-
-<h2 id="student-use">Student use</h2>
-
-<p>I use a similar flow when I want to add files in my office or at home.
+<p>
+I use a similar flow when I want to add files in my office or at home.
+</p>
+<h3 id="headline-4">
+Student use
+</h3>
+<p>
 From the student point of view, assuming a public repo, they just have to clone the repo and
 at the beginning of every class or work session, do a <strong><strong>git
-pull</strong></strong>. That's all there is to it.</p>
-
-<h2 id="thoughts">Thoughts</h2>
-
-<p>That's it. The kids are now using GitHub -- they're probably looking
+pull</strong></strong>. That&#39;s all there is to it.
+</p>
+<h3 id="headline-5">
+Thoughts
+</h3>
+<p>
+That&#39;s it. The kids are now using GitHub – they&#39;re probably looking
 at and poking around on the web site as well as pulling files to their
 machines. You can also, in class, show things like <strong><strong>git status</strong></strong>,
-**git log**, and <strong><strong>git diff</strong></strong> to set the stage for step 2 of this
-process and beyond.</p>
-
-<p>Since the students aren't adding, committing or pushing, you probably won't
-get any errors.</p>
-
-<p>The only problem that could reasonably occur is if a student places a
+<strong><strong>git log</strong></strong>, and <strong><strong>git diff</strong></strong> to set the stage for step 2 of this
+process and beyond.
+</p>
+<p>
+Since the students aren&#39;t adding, committing or pushing, you probably won&#39;t
+get any errors.
+</p>
+<p>
+The only problem that could reasonably occur is if a student places a
 file in their local copy of the repo with the same name as something
-they haven't pulled yet. This is pretty easy to address and provides a
+they haven&#39;t pulled yet. This is pretty easy to address and provides a
 nice stepping stone lesson to again, set the stage for more complex
-operations.</p>
-
-<p>I'm happy with this as a first step towards git using GitHub. It
+operations.
+</p>
+<p>
+I&#39;m happy with this as a first step towards git using GitHub. It
 provides a nice way of sharing class code while gently introducing the
-students to the tool.</p>
-
-<p>The next step  is having the students add files to a repo. That's the
-next post in this series.</p>
-<!--  LocalWords:  Moodle Dropbox NFS CMS filesystem classcode repo -->
-<!--  LocalWords:  workflows -->
+students to the tool.
+</p>
+<p>
+The next step  is having the students add files to a repo. That&#39;s the
+next post in this series.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -317,11 +364,11 @@ next post in this series.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -385,13 +432,6 @@ next post in this series.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -856,7 +896,7 @@ next post in this series.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

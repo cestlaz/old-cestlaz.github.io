@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Forty minutes to the punch line or &#34;we&#39;ll never look at functions the same way again&#34;</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Forty minutes to the punch line or &#34;we&#39;ll never look at functions the same way again&#34;" />
-<meta property="og:description" content="div.center {text-align:center;} 
-  How many times do we teach something and leave the kids thinking:  &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34;  It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class.  Today we started exploring some advanced python.  We started by showing that you can assign functions to variables or pass them as parameters: def inc(x): return x&#43;1 def dec(x): return x-1" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt; &lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt; &lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt; &lt;p&gt; How many times do we teach something and leave the kids thinking: &lt;/p&gt;  &lt;p&gt; &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34; &lt;/p&gt;  &lt;p&gt; It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2014-11-12-decorators.html/" /><meta property="article:published_time" content="2014-11-12T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-11-12T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/2014-11-12-decorators.html/" />
+<meta property="article:published_time" content="2014-11-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-12T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Forty minutes to the punch line or &#34;we&#39;ll never look at functions the same way again&#34;"/>
-<meta name="twitter:description" content="div.center {text-align:center;} 
-  How many times do we teach something and leave the kids thinking:  &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34;  It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class.  Today we started exploring some advanced python.  We started by showing that you can assign functions to variables or pass them as parameters: def inc(x): return x&#43;1 def dec(x): return x-1"/>
+<meta name="twitter:description" content="&lt;!DOCTYPE html&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt; &lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt; &lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt; &lt;p&gt; How many times do we teach something and leave the kids thinking: &lt;/p&gt;  &lt;p&gt; &#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the plain old fashioned &#34;that&#39;s weird.&#34; &lt;/p&gt;  &lt;p&gt; It&#39;s pretty cool when a lesson starts out that way but you get to the payoff by the end of the class."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,253 +92,308 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p><!DOCTYPE html></p>
-
-<p><style>
-div.center {text-align:center;}
-</style></p>
-
-<p><div id="outline-container-unnumbered-1" class="outline-2">
-<h2 id="unnumbered-1"></h2>
-<div class="outline-text-2" id="text-unnumbered-1">
+		  <p>
+&lt;!DOCTYPE html&gt;
+</p>
 <p>
+&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+</p>
+<p>
+&lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;unnumbered-1&#34;&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt;
+&lt;p&gt;
 How many times do we teach something and leave the kids thinking:
-</p></p>
-
-<p><p>
-"what's the point of this?" "When will I use this?" or even just the
-plain old fashioned "that's weird."
-</p></p>
-
-<p><p>
-It's pretty cool when a lesson starts out that way but you get to the
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+&#34;what&#39;s the point of this?&#34; &#34;When will I use this?&#34; or even just the
+plain old fashioned &#34;that&#39;s weird.&#34;
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+It&#39;s pretty cool when a lesson starts out that way but you get to the
 payoff by the end of the class.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Today we started exploring some advanced python.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 We started by showing that you can assign functions to variables or
 pass them as parameters:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inc</span>(x):
-<span style="color: #a020f0;">return</span> x+1
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dec</span>(x):
-<span style="color: #a020f0;">return</span> x-1</p>
-
-<p><span style="color: #a0522d;">f</span> = inc
-<span style="color: #a020f0;">print</span> f(5)</p>
-
-<p><span style="color: #a0522d;">flist</span> = [inc,dec]</p>
-
-<p><span style="color: #a020f0;">print</span> flist[1](5)
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;inc&lt;/span&gt;(x):
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; x+1
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;dec&lt;/span&gt;(x):
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; x-1
+</p>
+<p>
+&lt;span style=&#34;color: #a0522d;&#34;&gt;f&lt;/span&gt; = inc
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; f(5)
+</p>
+<p>
+&lt;span style=&#34;color: #a0522d;&#34;&gt;flist&lt;/span&gt; = [inc,dec]
+</p>
+<p>
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; flist[1](5)
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 We then looked at closures in python:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">makeAdder</span>(n):
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inner</span>(x):
-<span style="color: #a020f0;">return</span> x+n
-<span style="color: #a020f0;">return</span> inner</p>
-
-<p><span style="color: #a0522d;">add3</span> = makeAdder(3)
-<span style="color: #a0522d;">add5</span> = makeAdder(5)</p>
-
-<p><span style="color: #a020f0;">print</span> add3(10)
-<span style="color: #a020f0;">print</span> add5(10)
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;makeAdder&lt;/span&gt;(n):
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;inner&lt;/span&gt;(x):
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; x+n
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; inner
+</p>
+<p>
+&lt;span style=&#34;color: #a0522d;&#34;&gt;add3&lt;/span&gt; = makeAdder(3)
+&lt;span style=&#34;color: #a0522d;&#34;&gt;add5&lt;/span&gt; = makeAdder(5)
+</p>
+<p>
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; add3(10)
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; add5(10)
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 The idea that we can make a function that builds and returns a
-function. When we call <b><b>makeAdder(3)</b></b>, the 3 is passed as parameter
-n so the inner function reduces to <b><b>return x+3</b></b> and then we return
+function. When we call &lt;b&gt;&lt;b&gt;makeAdder(3)&lt;/b&gt;&lt;/b&gt;, the 3 is passed as parameter
+n so the inner function reduces to &lt;b&gt;&lt;b&gt;return x+3&lt;/b&gt;&lt;/b&gt; and then we return
 that inner function. When we later run it: add3(10) it adds
 10+3. makeAdder(5) works similarly but passing a 5 in for n instead
 of a 3.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Even a somewhat clunky way of doing class type abstractions:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">make_counter</span>():
-<span style="color: #b22222;"># </span><span style="color: #b22222;">private "instance" data</span>
-<span style="color: #b22222;"># </span><span style="color: #b22222;">has to be a list due to weird python scoping rules</span>
-<span style="color: #a0522d;">count</span> = [0]</p>
-
-<p><span style="color: #b22222;"># </span><span style="color: #b22222;">public methods</span>
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inc</span>():
-<span style="color: #a0522d;">count</span>[0]=count[0]+1
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dec</span>():
-<span style="color: #a0522d;">count</span>[0]=count[0]-1
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">reset</span>():
-<span style="color: #a0522d;">count</span>[0]=0
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get</span>():
-<span style="color: #a020f0;">return</span> count[0]</p>
-
-<p><span style="color: #b22222;"># </span><span style="color: #b22222;">send back a dictionary so we have access to all the methods</span>
-<span style="color: #a020f0;">return</span> {<span style="color: #8b2252;">'inc'</span>: inc, <span style="color: #8b2252;">'dec'</span>: dec, <span style="color: #8b2252;">'reset'</span>: reset, <span style="color: #8b2252;">'get'</span>: get}</p>
-
-<p><span style="color: #a0522d;">c1</span> = make_counter()
-<span style="color: #a0522d;">c2</span> = make_counter()</p>
-
-<p><span style="color: #b22222;"># </span><span style="color: #b22222;">we've got to use the clunky list notation </span>
-c1[<span style="color: #8b2252;">'inc'</span>]()
-c1[<span style="color: #8b2252;">'inc'</span>]()
-c1[<span style="color: #8b2252;">'inc'</span>]()
-<span style="color: #a020f0;">print</span> c1[<span style="color: #8b2252;">'get'</span>]()
-c2[<span style="color: #8b2252;">'inc'</span>]()
-<span style="color: #a020f0;">print</span> c2[<span style="color: #8b2252;">'get'</span>]()
-c1[<span style="color: #8b2252;">'reset'</span>]()
-<span style="color: #a020f0;">print</span> c1[<span style="color: #8b2252;">'get'</span>]()
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;make_counter&lt;/span&gt;():
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;private &#34;instance&#34; data&lt;/span&gt;
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;has to be a list due to weird python scoping rules&lt;/span&gt;
+&lt;span style=&#34;color: #a0522d;&#34;&gt;count&lt;/span&gt; = [0]
+</p>
+<p>
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;public methods&lt;/span&gt;
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;inc&lt;/span&gt;():
+&lt;span style=&#34;color: #a0522d;&#34;&gt;count&lt;/span&gt;[0]=count[0]+1
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;dec&lt;/span&gt;():
+&lt;span style=&#34;color: #a0522d;&#34;&gt;count&lt;/span&gt;[0]=count[0]-1
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;reset&lt;/span&gt;():
+&lt;span style=&#34;color: #a0522d;&#34;&gt;count&lt;/span&gt;[0]=0
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;get&lt;/span&gt;():
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; count[0]
+</p>
+<p>
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;send back a dictionary so we have access to all the methods&lt;/span&gt;
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; {&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;inc&#39;&lt;/span&gt;: inc, &lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;dec&#39;&lt;/span&gt;: dec, &lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;reset&#39;&lt;/span&gt;: reset, &lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;get&#39;&lt;/span&gt;: get}
+</p>
+<p>
+&lt;span style=&#34;color: #a0522d;&#34;&gt;c1&lt;/span&gt; = make_counter()
+&lt;span style=&#34;color: #a0522d;&#34;&gt;c2&lt;/span&gt; = make_counter()
+</p>
+<p>
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;we&#39;ve got to use the clunky list notation &lt;/span&gt;
+c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;inc&#39;&lt;/span&gt;]()
+c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;inc&#39;&lt;/span&gt;]()
+c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;inc&#39;&lt;/span&gt;]()
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;get&#39;&lt;/span&gt;]()
+c2[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;inc&#39;&lt;/span&gt;]()
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; c2[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;get&#39;&lt;/span&gt;]()
+c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;reset&#39;&lt;/span&gt;]()
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; c1[&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;get&#39;&lt;/span&gt;]()
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 Up to now the students are able to see how this works but the why is
 unclear.
-</p></p>
-
-<p><p>
-So now we'll look at where this is useful.
-</p></p>
-
-<p><p>
-Let's suppose we have routines like the following. It returns a
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+So now we&#39;ll look at where this is useful.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+Let&#39;s suppose we have routines like the following. It returns a
 string:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">import</span> random
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get_name</span>():
-<span style="color: #a0522d;">names</span> = [<span style="color: #8b2252;">'tom'</span>,<span style="color: #8b2252;">'sue'</span>,<span style="color: #8b2252;">'harry'</span>,<span style="color: #8b2252;">'lisa'</span>,<span style="color: #8b2252;">'sarah'</span>,<span style="color: #8b2252;">'horatio'</span>]
-<span style="color: #a020f0;">return</span> random.choice(names)
-</pre>
-</div></p>
-
-<p><p>
-get<sub>name</sub> and routines like it might be scattered throughout our
-code. Let's suppose, for some strange reason, we want to double the
-name every time we use it. A "traditional" way of doing this might be:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dble</span>(f):
-<span style="color: #a0522d;">name</span> = f()
-<span style="color: #a020f0;">return</span> name+name</p>
-
-<p><span style="color: #a020f0;">print</span> dble(get_name) <span style="color: #b22222;"># </span><span style="color: #b22222;">returns something like tomtom</span>
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;import&lt;/span&gt; random
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;get_name&lt;/span&gt;():
+&lt;span style=&#34;color: #a0522d;&#34;&gt;names&lt;/span&gt; = [&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;tom&#39;&lt;/span&gt;,&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;sue&#39;&lt;/span&gt;,&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;harry&#39;&lt;/span&gt;,&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;lisa&#39;&lt;/span&gt;,&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;sarah&#39;&lt;/span&gt;,&lt;span style=&#34;color: #8b2252;&#34;&gt;&#39;horatio&#39;&lt;/span&gt;]
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; random.choice(names)
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+get&lt;sub&gt;name&lt;/sub&gt; and routines like it might be scattered throughout our
+code. Let&#39;s suppose, for some strange reason, we want to double the
+name every time we use it. A &#34;traditional&#34; way of doing this might be:
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;dble&lt;/span&gt;(f):
+&lt;span style=&#34;color: #a0522d;&#34;&gt;name&lt;/span&gt; = f()
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; name+name
+</p>
+<p>
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; dble(get_name) &lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;returns something like tomtom&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 Here, we pass a function which returns a string and then dble returns
-that string repeated twice. The problem here is that if we've got
-get<sub>name</sub> all over our code base, we have to find it and change each
-instance to <b><b>dble(get<sub>name</sub>)</b></b>
-</p></p>
-
-<p><p>
+that string repeated twice. The problem here is that if we&#39;ve got
+get&lt;sub&gt;name&lt;/sub&gt; all over our code base, we have to find it and change each
+instance to &lt;b&gt;&lt;b&gt;dble(get&lt;sub&gt;name&lt;/sub&gt;)&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 What if we write it as a function that returns a function:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">doubler</span>(f):
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inner</span>():
-<span style="color: #a0522d;">name</span>=f()
-<span style="color: #a020f0;">return</span> name+name
-<span style="color: #a020f0;">return</span> inner
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;doubler&lt;/span&gt;(f):
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;inner&lt;/span&gt;():
+&lt;span style=&#34;color: #a0522d;&#34;&gt;name&lt;/span&gt;=f()
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; name+name
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; inner
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 Now, in this case, we can do something like:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #b22222;"># </span><span style="color: #b22222;">make a new function that wraps get_name in "inner"</span>
-<span style="color: #b22222;"># </span><span style="color: #b22222;">when we call inner, it returns the string twice</span>
-<span style="color: #a0522d;">f</span> = doubler(get_name)
-<span style="color: #b22222;"># </span><span style="color: #b22222;">and then later</span>
-<span style="color: #a020f0;">print</span> f() <span style="color: #b22222;"># </span><span style="color: #b22222;">will print something like tomtom</span>
-</pre>
-</div></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;make a new function that wraps get_name in &#34;inner&#34;&lt;/span&gt;
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;when we call inner, it returns the string twice&lt;/span&gt;
+&lt;span style=&#34;color: #a0522d;&#34;&gt;f&lt;/span&gt; = doubler(get_name)
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;and then later&lt;/span&gt;
+&lt;span style=&#34;color: #a020f0;&#34;&gt;print&lt;/span&gt; f() &lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;will print something like tomtom&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 The cool part is that we can also do this:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #a0522d;">get_name</span> = double(get_name)
-</pre>
-</div></p>
-
-<p><p>
-And then whenever we call our new <b><b>get<sub>name</sub></b></b> we end up calling the
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #a0522d;&#34;&gt;get_name&lt;/span&gt; = double(get_name)
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+And then whenever we call our new &lt;b&gt;&lt;b&gt;get&lt;sub&gt;name&lt;/sub&gt;&lt;/b&gt;&lt;/b&gt; we end up calling the
 wrapped function.
-</p></p>
-
-<p><p>
-This was the first A-ha. We don't have to change get<sub>name</sub> all over our
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+This was the first A-ha. We don&#39;t have to change get&lt;sub&gt;name&lt;/sub&gt; all over our
 code base - we only have to change it once.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Once we write a function like doubler, instead of re-assigning
-get<sub>name</sub> as we did above, we can do the following:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #228b22;">@doubler</span>
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get_name</span>():
-<span style="color: #b22222;"># </span><span style="color: #b22222;">rest of code as defined above</span></p>
-
-<p><span style="color: #228b22;">@doubler</span>():
-<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">demo</span>():
-<span style="color: #a020f0;">return</span> <span style="color: #8b2252;">"hello"</span>
-</pre>
-</div></p>
-
-<p><p>
-The second example will have demo return "hellohello" whenever we
+get&lt;sub&gt;name&lt;/sub&gt; as we did above, we can do the following:
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #228b22;&#34;&gt;@doubler&lt;/span&gt;
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;get_name&lt;/span&gt;():
+&lt;span style=&#34;color: #b22222;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;color: #b22222;&#34;&gt;rest of code as defined above&lt;/span&gt;
+</p>
+<p>
+&lt;span style=&#34;color: #228b22;&#34;&gt;@doubler&lt;/span&gt;():
+&lt;span style=&#34;color: #a020f0;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0000ff;&#34;&gt;demo&lt;/span&gt;():
+&lt;span style=&#34;color: #a020f0;&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #8b2252;&#34;&gt;&#34;hello&#34;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+The second example will have demo return &#34;hellohello&#34; whenever we
 invoke it.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 A Python decorator is merely shorthand for calling a wrapper type
 function like doubler.
-</p></p>
-
-<p><p>
-This was the second A-ha moment &#x2013; we can write functions that
-transform functions.
-</p></p>
-
-<p><p>
-We'll cover more decorator and closure plumbing tomorrow and then
-start doing some fun stuff with these concepts.
+&lt;/p&gt;
 </p>
-</div>
-</div></p>
+<p>
+&lt;p&gt;
+This was the second A-ha moment &amp;#x2013; we can write functions that
+transform functions.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+We&#39;ll cover more decorator and closure plumbing tomorrow and then
+start doing some fun stuff with these concepts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -426,11 +481,11 @@ start doing some fun stuff with these concepts.
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -494,13 +549,6 @@ start doing some fun stuff with these concepts.
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -965,7 +1013,7 @@ start doing some fun stuff with these concepts.
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

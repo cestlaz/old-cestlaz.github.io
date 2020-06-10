@@ -6,21 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs 46 Auto Yasnippets</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs 46 Auto Yasnippets" />
-<meta property="og:description" content="The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.
-It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.
-There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:
-count_of_red = get_total(&#34;red&#34;); count_of_blue = get_total(&#34;blue&#34;); count_of_green = get_total(&#34;green&#34;);  You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue." />
+<meta property="og:description" content="The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.  It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.  There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:    You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/" /><meta property="article:published_time" content="2018-03-15T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-03-15T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/" />
+<meta property="article:published_time" content="2018-03-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-03-15T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 46 Auto Yasnippets"/>
-<meta name="twitter:description" content="The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.
-It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.
-There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:
-count_of_red = get_total(&#34;red&#34;); count_of_blue = get_total(&#34;blue&#34;); count_of_green = get_total(&#34;green&#34;);  You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue."/>
+<meta name="twitter:description" content="The other day I discovered auto-yasnippet, another great package by Oleh Krehel or abo-abo.  It looks like it&#39;s going to be a great way to solve a particular problem that come up now and again.  There are plenty of times when I want to create a number of similar but slightly different blocks of text. The example on the project site is:    You could use multiple cursors, a macro, or other methods to put in the common text but you still have to deal with the parts of each line that are unique, the red, green, and blue."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -96,41 +92,49 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet" title="auto-yasnippet">auto-yasnippet</a>, another great package by
-<a href="https://github.com/abo-abo" title="Oleh Krehel">Oleh Krehel</a> or abo-abo.</p>
-
-<p>It looks like it's going to be a great way to solve a particular
-problem that come up now and again.</p>
-
-<p>There are plenty of times when I want to create a number of similar
+		  <p>
+The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
+<a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
+</p>
+<p>
+It looks like it&#39;s going to be a great way to solve a particular
+problem that come up now and again.
+</p>
+<p>
+There are plenty of times when I want to create a number of similar
 but slightly different blocks of text. The example on the project
-site  is:</p>
-
-<pre><code class="language-c"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">count_of_red <span style="color:#f92672">=</span> get_total(<span style="color:#e6db74">&#34;red&#34;</span>);
-count_of_blue <span style="color:#f92672">=</span> get_total(<span style="color:#e6db74">&#34;blue&#34;</span>);
-count_of_green <span style="color:#f92672">=</span> get_total(<span style="color:#e6db74">&#34;green&#34;</span>);</code></pre></div>
-</code></pre>
-
-<p>You could use multiple cursors, a macro, or other methods to put in
+site  is:
+</p>
+<div class="src src-c">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
+</div>
+<p>
+You could use multiple cursors, a macro, or other methods to put in
 the common text but you still have to deal with the parts of each line
-that are unique, the red, green, and blue.</p>
-
-<p>You could use a yasnippet but it's unlikely that you'll have a snippet
+that are unique, the red, green, and blue.
+</p>
+<p>
+You could use a yasnippet but it&#39;s unlikely that you&#39;ll have a snippet
 for every occasion. This is where auto-yasnippet comes in. You would
-write the first line but add  a tilda as a placeholder:</p>
-
-<pre><code class="language-c"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">count_of<span style="color:#f92672">~</span>red <span style="color:#f92672">=</span> get_total(<span style="color:#e6db74">&#34;~red&#34;</span>)</code></pre></div>
-</code></pre>
-
-<p>and then invoke <code>aya-create</code>. This will get rid of the tildas and
+write the first line but add  a tilda as a placeholder:
+</p>
+<div class="src src-c">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
+</div>
+<p>
+and then invoke <code>aya-create</code>. This will get rid of the tildas and
 create the auto-snippet. Then when you run <code>aya-expand</code> it will put in
-the snippet with the tilda locations as placeholders.</p>
-
-<p>Very cool.</p>
-
-<p>Check out the video:</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+the snippet with the tilda locations as placeholders.
+</p>
+<p>
+Very cool.
+</p>
+<p>
+Check out the video:
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/utrMabxgXbg">https://www.youtube.com/embed/utrMabxgXbg</a>&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -220,11 +224,11 @@ the snippet with the tilda locations as placeholders.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -288,13 +292,6 @@ the snippet with the tilda locations as placeholders.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -759,7 +756,7 @@ the snippet with the tilda locations as placeholders.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

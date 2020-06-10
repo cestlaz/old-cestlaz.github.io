@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs - 13 - Yasnippet</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs - 13 - Yasnippet" />
-<meta property="og:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
-(use-package elpy :ensure t :config (elpy-enable))  The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out." />
+<meta property="og:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is: (use-package elpy :ensure t :config (elpy-enable))   The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-13-yasnippet/" /><meta property="article:published_time" content="2016-08-04T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-08-04T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-13-yasnippet/" />
+<meta property="article:published_time" content="2016-08-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-08-04T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 13 - Yasnippet"/>
-<meta name="twitter:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
-(use-package elpy :ensure t :config (elpy-enable))  The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out."/>
+<meta name="twitter:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is: (use-package elpy :ensure t :config (elpy-enable))   The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,68 +92,125 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>It turns out that <a href="https://github.com/jorgenschaefer/elpy" title="Elpy">Elpy</a>, a popular emacs package for python development
+		  <p>
+It turns out that <a href="https://github.com/jorgenschaefer/elpy">Elpy</a>, a popular emacs package for python development
 is much easier to set up than I remember. It turns out all you need
-is:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elpy
+is:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elpy
 :ensure <span style="color:#66d9ef">t</span>
 :config
-(elpy-enable))</code></pre></div>
-</code></pre>
-
-<p>The video shows how to install and a bit of use. I don't think it's a
-package I'm going to use much since I use other tools to do similar
-things but it's worth checking out.</p>
-
-<p>The main event this week is <a href="https://github.com/joaotavora/yasnippet" title="yasnippet">yasnippet</a>, a package that lets you expand
-text aliases. Let's say you want to put the fairly standard:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-main()</code></pre></div>
-</code></pre>
-
-<p>in my file. I can just type <strong><strong>ifm</strong></strong> and then hit the <strong><strong>TAB</strong></strong> key and
+(elpy-enable))</code></pre></div></code></pre></div>
+</div>
+<p>
+The video shows how to install and a bit of use. I don&#39;t think it&#39;s a
+package I&#39;m going to use much since I use other tools to do similar
+things but it&#39;s worth checking out.
+</p>
+<p>
+The main event this week is <a href="https://github.com/joaotavora/yasnippet">yasnippet</a>, a package that lets you expand
+text aliases. Let&#39;s say you want to put the fairly standard:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+in my file. I can just type <strong><strong>ifm</strong></strong> and then hit the <strong><strong>TAB</strong></strong> key and
 it would expand to the above code. Yasnippet also lets you leave
-placeholders for variables, function names and more. It's a pretty
-neat package.</p>
-
-<p>I use it for boilerplate code. The example in the video shows how I
+placeholders for variables, function names and more. It&#39;s a pretty
+neat package.
+</p>
+<p>
+I use it for boilerplate code. The example in the video shows how I
 set up a snippet for the boilerplate code used when creating an
-application with the <strong><strong>Flask</strong></strong> python microframework.</p>
-
-<p>Setting up yasnippet is as easy as:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package yasnippet
+application with the <strong><strong>Flask</strong></strong> python microframework.
+</p>
+<p>
+Setting up yasnippet is as easy as:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package yasnippet
 :ensure <span style="color:#66d9ef">t</span>
 :init
-(yas-global-mode <span style="color:#ae81ff">1</span>))</code></pre></div>
-</code></pre>
-
-<p>and it has built in support for <a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d" title="tons of langauges">tons of langauges</a>. You can also easily
+(yas-global-mode <span style="color:#ae81ff">1</span>))</code></pre></div></code></pre></div>
+</div>
+<p>
+and it has built in support for <a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d">tons of langauges</a>. You can also easily
 create your own snippets. See the documentation for details on the
 file format. Just create a text file for the snippet and place it in a
 subidectory under the snippets subdirectory of .emacs.d. The name of
 the subdirectory should be the name of the emacs mode for which the
 snippet is defined. I put up the snippet I use for flask so feel free
-to check that out.</p>
-
-<p><iframe width="420" height="315" src="https://www.youtube.com/embed/4aYMa8f6B0o" frameborder="0" allowfullscreen></iframe></p>
-
-<ul>
+to check that out.
+</p>
+<p>
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/4aYMa8f6B0o">https://www.youtube.com/embed/4aYMa8f6B0o</a>&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
 Relevant links:
-<li>Yasnippet:</li>
-<li><a href="https://github.com/joaotavora/yasnippet" title="Home Page">Home Page</a></li>
-<li><a href="http://joaotavora.github.io/yasnippet/" title="Docs">Docs</a></li>
-<li><a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d" title="Included snippets">Included snippets</a></li>
-<li>Elpy:</li>
-<li><a href="https://github.com/jorgenschaefer/elpy" title="Home Page">Home Page</a></li>
-<li>Flask:</li>
-<li><a href="http://flask.pocoo" title="Flask Home Page">Flask Home Page</a></li>
-<li>Video series overview page:</li>
-<li>http://cestlaz.github.io/stories/emacs</li>
-<li>Code:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master" title="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></li>
+</p>
+<ul>
+<li>
+<p>
+Yasnippet:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/joaotavora/yasnippet">Home Page</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://joaotavora.github.io/yasnippet/">Docs</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d">Included snippets</a>
+</p>
+</li>
+<li>
+<p>
+Elpy:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/jorgenschaefer/elpy">Home Page</a>
+</p>
+</li>
+<li>
+<p>
+Flask:
+</p>
+</li>
+<li>
+<p>
+<a href="http://flask.pocoo.org">Flask Home Page</a>
+</p>
+</li>
+<li>
+<p>
+Video series overview page:
+</p>
+</li>
+<li>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
+</li>
+<li>
+<p>
+Code:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
+</li>
 </ul>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -243,11 +300,11 @@ Relevant links:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -311,13 +368,6 @@ Relevant links:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -782,7 +832,7 @@ Relevant links:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

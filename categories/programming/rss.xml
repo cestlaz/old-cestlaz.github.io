@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on C&#39;est la Z</title>
+    <title>programming on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/programming/</link>
-    <description>Recent content in Programming on C&#39;est la Z</description>
+    <description>Recent content in programming on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Jun 2019 15:53:54 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 14 Jun 2019 15:53:54 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/back-to-python/</guid>
-      <description>With summer right around the corner I&#39;m hoping to spend at least a little time on some personal coding projects. There are a few work related tools I&#39;d love to develop and just some random areas of CS I&#39;d like to explore. If I finish them, the work projects will be web based.
-I was thinking about using this as an opportunity to do a deeper dive into Clojure having used it for some experiments and competitions like Advent of Code but at the end of the day I decided not to.</description>
+      <description>With summer right around the corner I&amp;#39;m hoping to spend at least a little time on some personal coding projects. There are a few work related tools I&amp;#39;d love to develop and just some random areas of CS I&amp;#39;d like to explore. If I finish them, the work projects will be web based.  I was thinking about using this as an opportunity to do a deeper dive into Clojure having used it for some experiments and competitions like Advent of Code but at the end of the day I decided not to.</description>
     </item>
     
     <item>
@@ -27,7 +26,7 @@ I was thinking about using this as an opportunity to do a deeper dive into Cloju
       <pubDate>Wed, 01 May 2019 08:39:41 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/break-continue/</guid>
-      <description>What can I do to discourage my students from using the &#34;break&#34;  statement?  That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;</description>
+      <description>What can I do to discourage my students from using the &amp;#34;break&amp;#34; statement?   That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&amp;#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &amp;#34;how can I stop them&amp;#34; one. I equally dislike when the offered advice is basically &amp;#34;never use break no matter what&amp;#34; or something similar.</description>
     </item>
     
     <item>
@@ -36,9 +35,7 @@ I was thinking about using this as an opportunity to do a deeper dive into Cloju
       <pubDate>Sat, 06 Oct 2018 15:48:55 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/globals-breaks-and-returns/</guid>
-      <description>Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
-They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
-Alfred post was topically on global variables. Actually it was deeper than just global variables. It&#39;s also about how students progress - what they can figure out at various stages of progress and how what seems like a good idea early on the path to computer science doesn&#39;t seem so great later on.</description>
+      <description>Never use global variables    Never break out of a loop    These are two &amp;#34;best practices&amp;#34; that are frequently touted in early CS classes both at the high school and college level.  They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&amp;#39;s blog.  Alfred post was topically on global variables.</description>
     </item>
     
   </channel>

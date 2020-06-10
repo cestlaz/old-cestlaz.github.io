@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sigcse2018 - Malloc Lab</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Sigcse2018 - Malloc Lab" />
-<meta property="og:description" content="I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.
-I really liked both the paper and the talk.
-CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective." />
+<meta property="og:description" content="I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.  I really liked both the paper and the talk.  CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse2018-malloc-lab/" /><meta property="article:published_time" content="2018-03-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-03-01T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse2018-malloc-lab/" />
+<meta property="article:published_time" content="2018-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-03-01T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Sigcse2018 - Malloc Lab"/>
-<meta name="twitter:description" content="I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.
-I really liked both the paper and the talk.
-CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective."/>
+<meta name="twitter:description" content="I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.  I really liked both the paper and the talk.  CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -94,109 +92,140 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>I wasn't going to go to this session. I started out in a panel on
+		  <p>
+I wasn&#39;t going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
 expectations I moved over to my second choice - the system programming
-sessions where I saw <a href="https://dl.acm.org/citation.cfm?id=3159597" title="Implementing Malloc: Students and Systems
-Programming">Implementing Malloc: Students and Systems
-Programming</a>, a paper presented by <a href="http://www.cs.cmu.edu/~bpr/" title="Brian Railing">Brian Railing</a> of CMU.</p>
-
-<p>I really liked both the paper and the talk.</p>
-
-<p>CMU computer science students all take a systems course that uses
-<a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ" title="Computer Systems: A Programmer's Perspective">Computer Systems: A Programmer's Perspective</a>. It's a great book. I
+sessions where I saw <a href="https://dl.acm.org/citation.cfm?id=3159597">Implementing Malloc: Students and Systems
+Programming</a>, a paper presented by <a href="http://www.cs.cmu.edu/~bpr/">Brian Railing</a> of CMU.
+</p>
+<p>
+I really liked both the paper and the talk.
+</p>
+<p>
+CMU computer science students all take a systems course that uses
+<a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ">Computer Systems: A Programmer&#39;s Perspective</a>. It&#39;s a great book. I
 read through the first edition years ago and felt it was great
 resource not only in a systems course but also for self study. One of
 the labs has the students implement their own memory allocation calls,
-or <strong>malloc</strong> for us old time C wonks.</p>
-
-<p>There were a number of self perceived  deficiencies with the
+or <strong>malloc</strong> for us old time C wonks.
+</p>
+<p>
+There were a number of self perceived  deficiencies with the
 assignment such as encouraging bad programming style by modeling
 less than ideal practices but the biggest deficiency as that students
 could game the assignment. Students could do very well on the
 assignment by exploiting knowledge of the assignment rather than by
 writing a full and correct malloc implementation. One example is that
 students were able to figure out that no allocation would be more than
-100MB so they really didn't have to deal with 64 bit pointers. They
+100MB so they really didn&#39;t have to deal with 64 bit pointers. They
 could use smaller offsets thus simplifying the assignment. The
 assignment became more about figuring out how to get it through the
-grader and less about learning memory management. I'm sure I'm
-overstating it but that's the idea.</p>
-
-<p>Railing explained all of the deficiencies and then how they changed
-the assignment to address them.</p>
-
-<p>At the end of the day, the assignment had fewer loopholes to game so
+grader and less about learning memory management. I&#39;m sure I&#39;m
+overstating it but that&#39;s the idea.
+</p>
+<p>
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+</p>
+<p>
+At the end of the day, the assignment had fewer loopholes to game so
 students had to really write the malloc library and presumably learn
-about memory management.</p>
-
-<p>They also added an intermediate deliverable so students couldn't leave
-everything for the last minute.</p>
-
-<p>Near the end of the talk, Railing discussed results where he pointed
-out that students final exam scores didn't change but they did better
-on the malloc questions. It wasn't clear if the overall scores didn't
+about memory management.
+</p>
+<p>
+They also added an intermediate deliverable so students couldn&#39;t leave
+everything for the last minute.
+</p>
+<p>
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn&#39;t change but they did better
+on the malloc questions. It wasn&#39;t clear if the overall scores didn&#39;t
 change, meaning that the students did better on the malloc questions
 but worse somewhere else or if they did similarly to past students on
 the other sections and in addition they scored better on the malloc
-questions. I'm not sold on the final exam questions being the best way
-to evaluate learning but it is an easy data point.</p>
-
-<p>I loved the presentation and paper and I love what Railing is doing
-but my big takeaway was...</p>
-
-<p>Well, Duh...</p>
-
+questions. I&#39;m not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point.
+</p>
+<p>
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+</p>
+<p>
+Well, Duh…
+</p>
 <ul>
-<li>students aren't doing as they should</li>
-<li>teacher realizes students are gaming assignment</li>
-<li>teacher reworks assignment</li>
-<li>students do better</li>
+<li>
+<p>
+students aren&#39;t doing as they should
+</p>
+</li>
+<li>
+<p>
+teacher realizes students are gaming assignment
+</p>
+</li>
+<li>
+<p>
+teacher reworks assignment
+</p>
+</li>
+<li>
+<p>
+students do better
+</p>
+</li>
 </ul>
-
-<p>Teachers do this all the time. Of course when we do it, it's not
-"research." This was a recurring theme for me at SIGCSE2018 and I
-tweeted it. While it's true that K12 teachers can learn a lot about CS
+<p>
+Teachers do this all the time. Of course when we do it, it&#39;s not
+&#34;research.&#34; This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it&#39;s true that K12 teachers can learn a lot about CS
 content from higher ed, people in higher ed can learn a lot about
-teaching from teachers.</p>
-
-<p>What Railing presented was terrific and important as changing
-assignments like this will now be considered by people who haven't
+teaching from teachers.
+</p>
+<p>
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven&#39;t
 thought about this before but this is second nature to a teacher. Of
-course I'm talking about a good teacher, not one who blindly follows
-scripted lessons.</p>
-
-<p>I don't mean this as a slight to professors. They're hired and
+course I&#39;m talking about a good teacher, not one who blindly follows
+scripted lessons.
+</p>
+<p>
+I don&#39;t mean this as a slight to professors. They&#39;re hired and
 promoted based on research so much of their job involves another skill
 set. I know many professors who care very much about teaching but they
 might only teach one or two classes a semester that meets once or
 twice a week while a typical high school teacher meets 150 students a
 day five days a week over five different classes a day.  Much more of
-an opportunity for deliberate practice.</p>
-
-<p>This presents a huge challenge. How can professors who are hired and
+an opportunity for deliberate practice.
+</p>
+<p>
+This presents a huge challenge. How can professors who are hired and
 promoted as researchers be given the time and ability to develop as
-teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+teachers? What about adjuncts or Teaching Assistants? I&#39;d imagine it&#39;s
 even harder for them. I know that colleges have lines for teaching
 faculty but from what I can see, those instructors are usually super
-overloaded with classes and students so that doesn't solve the
+overloaded with classes and students so that doesn&#39;t solve the
 problem. Even if you do have teaching faculty that have the time to
 develop their craft, how do you get those teaching chops over to the
-research faculty?</p>
-
-<p>After the session, I was talking about this with <a href="http://www.cs.cmu.edu/~mjs/" title="Mark Stehlik">Mark Stehlik</a>,
-Assistant Dean at CMU's School of Computer Science. Mark was telling
-me about CMU's efforts to develop teaching faculty across the
+research faculty?
+</p>
+<p>
+After the session, I was talking about this with <a href="http://www.cs.cmu.edu/~mjs/">Mark Stehlik</a>,
+Assistant Dean at CMU&#39;s School of Computer Science. Mark was telling
+me about CMU&#39;s efforts to develop teaching faculty across the
 disciplines. I was happy to hear about the efforts CMU was taking but
 it sounds like they have the same challenges with respect to pedagogy
-as everyone else. If it's a challenge for CMU with all their
-resources, what does that mean for the rest of us?</p>
-
-<p>Still, it was encouraging to go to a number of sessions where it was
+as everyone else. If it&#39;s a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+</p>
+<p>
+Still, it was encouraging to go to a number of sessions where it was
 clear that professors - both teaching and research faculty are serious
 about the craft of teaching and conferences like SIGCSE can bring them
-together with those of us who don't have the chops as researchers but
-do so as teachers.</p>
+together with those of us who don&#39;t have the chops as researchers but
+do so as teachers.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -286,11 +315,11 @@ do so as teachers.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -354,13 +383,6 @@ do so as teachers.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -825,7 +847,7 @@ do so as teachers.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

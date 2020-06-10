@@ -6,20 +6,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Change the data</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Change the data" />
 <meta property="og:description" content="Patient: &ldquo;Doctor, it hurts when I do this.&rdquo;
-Doctor: &ldquo;So, don&rsquo;t do that.&rdquo;
+  Doctor: &ldquo;So, don&rsquo;t do that.&rdquo;
  We&rsquo;ve been spending time on State Space Search. It&rsquo;s a great topic. We deal with or at least introduce:
  Recursion Blind search Heuristic search foreshadowing things like A* and Dijkstra&rsquo;s algorithm.  and more. Today, however. I want to talk about something else.
 We started by developing a maze solver. It reads a text file representing the maze and then proceeds to find an exit." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2014-02-26-change-the-data/" /><meta property="article:published_time" content="2014-02-26T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-02-26T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/2014-02-26-change-the-data/" />
+<meta property="article:published_time" content="2014-02-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-02-26T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Change the data"/>
 <meta name="twitter:description" content="Patient: &ldquo;Doctor, it hurts when I do this.&rdquo;
-Doctor: &ldquo;So, don&rsquo;t do that.&rdquo;
+  Doctor: &ldquo;So, don&rsquo;t do that.&rdquo;
  We&rsquo;ve been spending time on State Space Search. It&rsquo;s a great topic. We deal with or at least introduce:
  Recursion Blind search Heuristic search foreshadowing things like A* and Dijkstra&rsquo;s algorithm.  and more. Today, however. I want to talk about something else.
 We started by developing a maze solver. It reads a text file representing the maze and then proceeds to find an exit."/>
@@ -100,106 +102,71 @@ if (!doNotTrack) {
 
 		  <blockquote>
 <p>Patient: &ldquo;Doctor, it hurts when I do this.&rdquo;</p>
-
+</blockquote>
+<blockquote>
 <p>Doctor: &ldquo;So, don&rsquo;t do that.&rdquo;</p>
 </blockquote>
-
 <p>We&rsquo;ve been spending time on
 <a href="http://en.wikipedia.org/wiki/State_space_search">State Space Search</a>. It&rsquo;s
 a great topic. We deal with or at least introduce:</p>
-
 <ul>
 <li>Recursion</li>
 <li>Blind search</li>
 <li>Heuristic search</li>
 <li>foreshadowing things like A* and Dijkstra&rsquo;s algorithm.</li>
 </ul>
-
 <p>and more. Today, however. I want to talk about something else.</p>
-
 <p>We started by developing a maze solver. It reads a text file
 representing the maze and then proceeds to find an exit. One version
 of the source code can be found
 <a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/maze">here</a>.</p>
-
 <p>It&rsquo;s really cool to see how such a short program, about 10 lines of
 work code, can solve such an open sounding problem. From there we talk
 about state spaces, graphs, etc. We then moved on to the
 <a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/maze">Knight&rsquo;s tour</a>. By
 viewing it as a state space problem we can look at it just like the
 maze.</p>
-
 <p>We represented a state as a board with the knight&rsquo;s current position and where it&rsquo;s been. An easy way to do this is to use an array of ints. So we have an empty 5x5 board:</p>
-
-<p><verbatim>
-0 0 0 0 0</p>
-
+<!-- raw HTML omitted -->
 <p>0 0 0 0 0</p>
-
 <p>0 0 0 0 0</p>
-
 <p>0 0 0 0 0</p>
-
 <p>0 0 0 0 0
-</verbatim></p>
-
+<!-- raw HTML omitted --></p>
 <p>Or a board after a few moves:</p>
-
-<p><verbatim>
-1 0 0 0 0</p>
-
+<!-- raw HTML omitted -->
 <p>4 0 2 0 0</p>
-
 <p>0 0 5 0 0</p>
-
 <p>0 3 0 0 6</p>
-
 <p>0 0 0 0 0
-</verbatim></p>
-
+<!-- raw HTML omitted --></p>
 <p>The kids saw three base cases:</p>
-
 <ol>
 <li>When our count got up to n^2 (and in fact, we&rsquo;re done)</li>
 <li>When we land on a non-zero space (when we just return or backtrack)</li>
 <li>When we try to move off the board, for an index out of bounds error.</li>
 </ol>
-
 <p>I wanted to look at that third one. We talked for a bit about using an
 if or a try/catch but I pointed out that I didn&rsquo;t like either. Looking
 at our maze code, we never checked bounds there. Why not. Well it
 turns out that our maze had wall all around. It was stored in a 2D
 array but the entire outer edge was wall. Why not do the same for the chess board:</p>
-
-<p><verbatim>
--1 -1 -1 -1 -1 -1 -1 -1 -1</p>
-
+<!-- raw HTML omitted -->
 <p>-1 -1 -1 -1 -1 -1 -1 -1 -1</p>
-
 <p>-1 -1  0  0  0  0  0 -1 -1</p>
-
 <p>-1 -1  0  0  0  0  0 -1 -1</p>
-
 <p>-1 -1  0  0  0  0  0 -1 -1</p>
-
 <p>-1 -1  0  0  0  0  0 -1 -1</p>
-
 <p>-1 -1  0  0  0  0  0 -1 -1</p>
-
 <p>-1 -1 -1 -1 -1 -1 -1 -1 -1</p>
-
 <p>-1 -1 -1 -1 -1 -1 -1 -1 -1
-</verbatim></p>
-
+<!-- raw HTML omitted --></p>
 <p>Now, as long as we start on the board, if the Knight jumps off the
 edge, it will end on a -1 square and backtrack. By modifying our data
 structure and data to contain a border, we&rsquo;ve eliminated the special
 case of index out of bounds.</p>
-
 <p>I always like doing that.</p>
-
 <p>####Some Links</p>
-
 <p><a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/knights">Source code for Knight&rsquo;s tour</a></p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -288,11 +255,11 @@ case of index out of bounds.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -356,13 +323,6 @@ case of index out of bounds.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -827,7 +787,7 @@ case of index out of bounds.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

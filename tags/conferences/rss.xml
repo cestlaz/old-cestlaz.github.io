@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conferences on C&#39;est la Z</title>
+    <title>conferences on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/conferences/</link>
-    <description>Recent content in Conferences on C&#39;est la Z</description>
+    <description>Recent content in conferences on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Jul 2019 19:46:38 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 22 Jul 2019 19:46:38 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/codeland-2019/</guid>
-      <description>I spent today at Codeland, a one day conference in NYC designed for developers in the early stages of their careers. Just as at CSTA, I was there with the GitHub contingent.
-Codeland had talks and a keynote in a common auditorium, smaller breakout workshops and a couple of small vendor areas.
-I spent most of the morning upstairs in the GitHub lounge so I onl caught part of one morning talk.</description>
+      <description>I spent today at Codeland, a one day conference in NYC designed for developers in the early stages of their careers. Just as at CSTA, I was there with the GitHub contingent.  Codeland had talks and a keynote in a common auditorium, smaller breakout workshops and a couple of small vendor areas.  I spent most of the morning upstairs in the GitHub lounge so I onl caught part of one morning talk.</description>
     </item>
     
     <item>
@@ -28,8 +26,7 @@ I spent most of the morning upstairs in the GitHub lounge so I onl caught part o
       <pubDate>Wed, 26 Jun 2019 12:09:48 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/csta-2019-github/</guid>
-      <description>With ISTE ending, the next big event for CS treachers is the annual CSTA Conference. I first attended two years ago in Baltimore. Last year the conference, in Omaha was bigger and better in every way imaginable. I expect this year to be the best yet.
-I don&#39;t go to a lot of conferences so I don&#39;t have much to compare CSTA with but I like the fact that it&#39;s is about half the size of SIGCSE.</description>
+      <description>With ISTE ending, the next big event for CS treachers is the annual CSTA Conference. I first attended two years ago in Baltimore. Last year the conference, in Omaha was bigger and better in every way imaginable. I expect this year to be the best yet.  I don&amp;#39;t go to a lot of conferences so I don&amp;#39;t have much to compare CSTA with but I like the fact that it&amp;#39;s is about half the size of SIGCSE.</description>
     </item>
     
     <item>
@@ -38,7 +35,7 @@ I don&#39;t go to a lot of conferences so I don&#39;t have much to compare CSTA 
       <pubDate>Tue, 18 Jun 2019 19:35:17 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/mongodb-world/</guid>
-      <description>For those of you who don&#39;t know, MongoDB is a very popular NoSQL database. NoSQL is an overarching term describing databases that are not relational and don&#39;t implement Structured Query Language (SQL). In a relational database your data is stored in tables with columns - think spreadsheet where each row of the table is a record in the database. You link tables together via a common field or row name. NoSQL databases work differently.</description>
+      <description>For those of you who don&amp;#39;t know, MongoDB is a very popular NoSQL database. NoSQL is an overarching term describing databases that are not relational and don&amp;#39;t implement Structured Query Language (SQL). In a relational database your data is stored in tables with columns - think spreadsheet where each row of the table is a record in the database. You link tables together via a common field or row name.</description>
     </item>
     
   </channel>

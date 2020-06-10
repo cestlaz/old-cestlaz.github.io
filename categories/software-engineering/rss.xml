@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Engineering on C&#39;est la Z</title>
+    <title>software engineering on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/software-engineering/</link>
-    <description>Recent content in Software Engineering on C&#39;est la Z</description>
+    <description>Recent content in software engineering on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Aug 2019 19:20:17 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Wed, 07 Aug 2019 19:20:17 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/exploring-complex-projects/</guid>
-      <description>A couple of weeks ago there were some discussions about students working on and in larger projects. Most CS educators think it&#39;s a good idea to expose students to large projects even if we don&#39;t all agree as to what the best time is.
-Regardless of when, figuring out a large project can be a bear and that&#39;s not just true for students. I saw this on my Tweetstream about onboarding software engineers:</description>
+      <description>A couple of weeks ago there were some discussions about students working on and in larger projects. Most CS educators think it&amp;#39;s a good idea to expose students to large projects even if we don&amp;#39;t all agree as to what the best time is.  Regardless of when, figuring out a large project can be a bear and that&amp;#39;s not just true for students. I saw this on my Tweetstream about onboarding software engineers:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;Leaving them alone with their laptop and telling them to look at the codebase.</description>
     </item>
     
     <item>
@@ -27,9 +26,7 @@ Regardless of when, figuring out a large project can be a bear and that&#39;s no
       <pubDate>Tue, 09 Oct 2018 14:46:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/compile-each-concept/</guid>
-      <description>We&#39;ve all been there:
-  Student: Teacher, I need help  Teacher (comes over)  Student (shows screen listing three bazillion errors)  The student has just written pages of code and finally decided to try to run it only to end up with pages of errors.
-Error messages can at times be hard to read for beginners but to see and truth be told, they frequently don&#39;t even read them but over the years I&#39;ve developed a practice that I&#39;ve found helpful as a software developer and if students adopt the same practice it can save them a lot of time and effort.</description>
+      <description>We&amp;#39;ve all been there:   Student: Teacher, I need help Teacher (comes over) Student (shows screen listing three bazillion errors)   The student has just written pages of code and finally decided to try to run it only to end up with pages of errors.  Error messages can at times be hard to read for beginners but to see and truth be told, they frequently don&amp;#39;t even read them but over the years I&amp;#39;ve developed a practice that I&amp;#39;ve found helpful as a software developer and if students adopt the same practice it can save them a lot of time and effort.</description>
     </item>
     
   </channel>

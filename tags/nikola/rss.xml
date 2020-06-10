@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nikola on C&#39;est la Z</title>
+    <title>nikola on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/nikola/</link>
-    <description>Recent content in Nikola on C&#39;est la Z</description>
+    <description>Recent content in nikola on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 May 2016 00:00:00 +0000</lastBuildDate>
@@ -17,10 +17,7 @@
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/shell-short-tagging/</guid>
-      <description>Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line.</description>
+      <description>Quick post to add to the recent command line fu I&amp;#39;ve been writing about.  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.</description>
     </item>
     
   </channel>

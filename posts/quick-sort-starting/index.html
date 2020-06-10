@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Motivating and understanding quicksort</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Motivating and understanding quicksort" />
-<meta property="og:description" content="Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?
-I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set." />
+<meta property="og:description" content="Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?  I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/quick-sort-starting/" /><meta property="article:published_time" content="2017-11-21T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-11-21T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/quick-sort-starting/" />
+<meta property="article:published_time" content="2017-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-11-21T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Motivating and understanding quicksort"/>
-<meta name="twitter:description" content="Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?
-I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set."/>
+<meta name="twitter:description" content="Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?  I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,61 +92,86 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>Thks question was posed the other day - how can one get students to
-truly understand the quicksort algorithm?</p>
-
-<p>I've written a few posts about quicksort. The last time I did a <a href="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/" title="lesson
-writeup">lesson
+		  <p>
+Thks question was posed the other day - how can one get students to
+truly understand the quicksort algorithm?
+</p>
+<p>
+I&#39;ve written a few posts about quicksort. The last time I did a <a href="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/">lesson
 writeup</a> on the subject I wrote about first looking and quickselect and
 then moving to the quicksort. The class was first faced with the
 problem of writing a routine to find the Kth smallest item in an
 unsorted data set. The first solution was n^2 and then refined to a
-quickselect. This led directly to the quicksort.</p>
-
-<p>I liked the lesson and I think it worked well when I taught it but
+quickselect. This led directly to the quicksort.
+</p>
+<p>
+I liked the lesson and I think it worked well when I taught it but
 that was partly due to the overall tenor of that particular group of
-students.</p>
-
-<p>A similar approach develops the quicksort in a similar way but is
-both more direct and accessible.</p>
-
-<p>The motivating problem is to put one item in a data set in its proper
+students.
+</p>
+<p>
+A similar approach develops the quicksort in a similar way but is
+both more direct and accessible.
+</p>
+<p>
+The motivating problem is to put one item in a data set in its proper
 place. You could select one person in class and arrange the class so
 that the selected student is in their proper size place, that is
 everyone shorter on one side, taller on the other. You could also do
 this for age. A similar exercise could be done with any number of
-manipulatives.</p>
-
-<p>This operation of arranging the rest of the set around one selected
-item or person is very easy and in fact it's trivial to show that this
-can be done in linear time.</p>
-
-<p>Once we've done this arrangement, we can discuss what we can infer
-from this new arrangement. We can now tell that:</p>
-
+manipulatives.
+</p>
+<p>
+This operation of arranging the rest of the set around one selected
+item or person is very easy and in fact it&#39;s trivial to show that this
+can be done in linear time.
+</p>
+<p>
+Once we&#39;ve done this arrangement, we can discuss what we can infer
+from this new arrangement. We can now tell that:
+</p>
 <ul>
-<li>everyone to the left of the "pivot" is less than the pivot</li>
-<li>everyone to the right is greater</li>
-<li>The pivot element is at its true location if the list were</li>
-sorted. That is, if we started arranging around item k, then we've
-moved item k to the kth location in the dataset.
+<li>
+<p>
+everyone to the left of the &#34;pivot&#34; is less than the pivot
+</p>
+</li>
+<li>
+<p>
+everyone to the right is greater
+</p>
+</li>
+<li>
+<p>
+The pivot element is at its true location if the list were
+</p>
+</li>
 </ul>
-
-<p>From here it's a small jump to the quicksort algorithm, just repeat
-the process on the left and right data sets.</p>
-
-<p>This approach not only makes the algorithm and its development clear
+<p>
+sorted. That is, if we started arranging around item k, then we&#39;ve
+moved item k to the kth location in the dataset.
+</p>
+<p>
+From here it&#39;s a small jump to the quicksort algorithm, just repeat
+the process on the left and right data sets.
+</p>
+<p>
+This approach not only makes the algorithm and its development clear
 and simple but it also can be used to illustrate the worst case n^2
-behavior.</p>
-
-<p>The whole thing, minus the coding, can also be done as an unplugged activity.</p>
-
-<p>In case anyone's interested, I also wrote a post on subtle
-implementation errors when writing the quicksort (<a href="https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html" title="here">here</a>) and also
+behavior.
+</p>
+<p>
+The whole thing, minus the coding, can also be done as an unplugged activity.
+</p>
+<p>
+In case anyone&#39;s interested, I also wrote a post on subtle
+implementation errors when writing the quicksort (<a href="https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html">here</a>) and also
 looking at the qucksort from the point of view of different
-programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html" title="here">here</a>).</p>
-
-<p>Enjoy.</p>
+programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html">here</a>).
+</p>
+<p>
+Enjoy.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -236,11 +261,11 @@ programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorti
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -304,13 +329,6 @@ programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorti
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -775,7 +793,7 @@ programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorti
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

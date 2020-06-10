@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithms on C&#39;est la Z</title>
+    <title>algorithms on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/algorithms/</link>
-    <description>Recent content in Algorithms on C&#39;est la Z</description>
+    <description>Recent content in algorithms on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2020 13:10:47 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 26 Jan 2020 13:10:47 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/sorting-by-hand/</guid>
-      <description>Natan commenting on work the other day:
-
-&#34;You have two lists. One is sorted, the other is not. Every item in one list corresponds to an item in the other. Is it faster to sort the unsorted list and then merge them, or simply go through the unsorted list in order and pair each item with the item you can find in the presorted list?&#34; is a question I asked today in the dressing room of an off-Broadway theater.</description>
+      <description>&amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt;  Natan commenting on work the other day:  &amp;lt;blockquote&amp;gt;  &amp;#34;You have two lists. One is sorted, the other is not. Every item in one list corresponds to an item in the other. Is it faster to sort the unsorted list and then merge them, or simply go through the unsorted list in order and pair each item with the item you can find in the presorted list?</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Tue, 11 Jun 2019 07:29:30 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/grokking-algorithms/</guid>
-      <description>Someone mentioned Grokking Algorithms by Aditya Y. Bhargava in one of the CS educator Facbeook groups. It looked interesting so I thought I&#39;d give it a once over.
-It&#39;s certainly an accessible book. Text mixed with cute line drawings, &#34;hand written&#34; text, diagrams and picture.s It reminded me of one of my favorite, most accessible Calculus books Who Was Fourier.
-Overall I enjoyed the book but I&#39;m not sure what its best audience is.</description>
+      <description>Someone mentioned Grokking Algorithms by Aditya Y. Bhargava in one of the CS educator Facbeook groups. It looked interesting so I thought I&amp;#39;d give it a once over.  It&amp;#39;s certainly an accessible book. Text mixed with cute line drawings, &amp;#34;hand written&amp;#34; text, diagrams and picture.s It reminded me of one of my favorite, most accessible Calculus books Who Was Fourier.  Overall I enjoyed the book but I&amp;#39;m not sure what its best audience is.</description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@ Overall I enjoyed the book but I&#39;m not sure what its best audience is.</desc
       <pubDate>Mon, 22 Apr 2019 13:51:52 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/seam-carving/</guid>
-      <description>It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
-Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
-Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
+      <description>It&amp;#39;s spring break and for me that&amp;#39;s always been a good time to explore some new ideas.  Here&amp;#39;s one that some of you might like, particularly if you&amp;#39;re teaching APCS-A or something similar.  Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
     </item>
     
     <item>
@@ -50,9 +44,7 @@ Many APCS-A teachers do a unit on image processing using the picture lab (altern
       <pubDate>Mon, 19 Nov 2018 20:04:08 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/teaching-sorting/</guid>
-      <description>Earlier today I saw a facebook post asking for thoughts on teaching sorting. The question was specifically not about motivations like having the class act out sorts or sort cards but rather about the coding.
-I&#39;ve been meaning to write about this since last summer when I attended Owen Astrachan&#39;s talk on the same subject.
-Early in my career when teaching sorting I developed the n^2 sorts as standalone routines just as they&#39;re presented in most books but as I gained more experience as a teacher, I changed it up to build the sorts (at least some of them) from existing concepts.</description>
+      <description>Earlier today I saw a facebook post asking for thoughts on teaching sorting. The question was specifically not about motivations like having the class act out sorts or sort cards but rather about the coding.  I&amp;#39;ve been meaning to write about this since last summer when I attended Owen Astrachan&amp;#39;s talk on the same subject.  Early in my career when teaching sorting I developed the n^2 sorts as standalone routines just as they&amp;#39;re presented in most books but as I gained more experience as a teacher, I changed it up to build the sorts (at least some of them) from existing concepts.</description>
     </item>
     
     <item>
@@ -61,9 +53,7 @@ Early in my career when teaching sorting I developed the n^2 sorts as standalone
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/a-star-is-born/</guid>
-      <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.
-I taught A* as part of the APCS class at Stuy so I thought I&#39;d talk about what I did here.
-Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
+      <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.  I taught A* as part of the APCS class at Stuy so I thought I&amp;#39;d talk about what I did here.  Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
     </item>
     
     <item>
@@ -72,9 +62,7 @@ Some time around mid year, we get to intermediate recursion. This is about the t
       <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</guid>
-      <description>div.center {text-align:center;} 
- Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons We started with Quickselect.  Then we did a quicksort, copying to new arrays during the partition  Then finally to an in place quicksort.  
- For the final quicksort we used a partition algorithm pretty much the same as the one described here.  We started testing using by building a randomly filled array like this: Random rnd = new Random(); int a[] = new int[n]; for (int i0;i&amp;amp;lt;&amp;lt;span style=&amp;quot;color: #7CB8BB;&amp;quot;&amp;gt;n&amp;lt;/span&amp;gt;;i++) { a[i]  rnd.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons &amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;#34;org-ul&amp;#34;&amp;gt; &amp;lt;li&amp;gt;We started with &amp;lt;a href=&amp;#34;http://cestlaz.github.io/2014/03/12/select-to-sort.html#.UyJRTh_G8RM&amp;#34;&amp;gt;Quickselect&amp;lt;/a&amp;gt;. &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Then we did a quicksort, copying to new arrays during the partition &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Then finally to an in place quicksort. &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt; For the final quicksort we used a partition algorithm pretty much the same as the one described &amp;lt;a href=&amp;#34;http://en.</description>
     </item>
     
     <item>
@@ -83,8 +71,7 @@ Some time around mid year, we get to intermediate recursion. This is about the t
       <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</guid>
-      <description>div.center {text-align:center;} 
- When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;http://orgmode.org/mathjax/MathJax.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;assets/static/mj.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; When I first saw the &amp;lt;a href=&amp;#34;http://en.wikipedia.org/wiki/Quicksort&amp;#34;&amp;gt;quicksort&amp;lt;/a&amp;gt; it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did &amp;lt;a href=&amp;#34;http://en.wikipedia.org/wiki/Quickselect&amp;#34;&amp;gt;quickselect&amp;lt;/a&amp;gt;. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&amp;#39;s pretty easy to write.</description>
     </item>
     
     <item>
@@ -114,7 +101,7 @@ The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;
       <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</guid>
-      <description>Sorting from the top and from the bottom I&#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. I&#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;div id=&amp;#34;content&amp;#34;&amp;gt;&amp;lt;h1 class=&amp;#34;title&amp;#34;&amp;gt;Sorting from the top and from the bottom&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;I&amp;#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;I&amp;#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process.</description>
     </item>
     
   </channel>

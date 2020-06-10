@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teaching Cs on C&#39;est la Z</title>
+    <title>teaching cs on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/teaching-cs/</link>
-    <description>Recent content in Teaching Cs on C&#39;est la Z</description>
+    <description>Recent content in teaching cs on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Mar 2017 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse-2017-recap/</guid>
-      <description>As a high school teacher, I was never able to attend SIGCSE, the conference of the ACM&#39;s Special Interest Group on Computer Science Education. Between the number of instructional days I would lose and the cost, I could never justify going. Instead I looked over the proceedings and read many of the papers.
- Now that I&#39;m at Hunter, I was finally able to attend. This year in Seattle, the conference ran from Wednesday through Saturday.</description>
+      <description>As a high school teacher, I was never able to attend SIGCSE, the conference of the ACM&amp;#39;s Special Interest Group on Computer Science Education. Between the number of instructional days I would lose and the cost, I could never justify going. Instead I looked over the proceedings and read many of the papers.  Now that I&amp;#39;m at Hunter, I was finally able to attend. This year in Seattle, the conference ran from Wednesday through Saturday.</description>
     </item>
     
     <item>
@@ -27,9 +26,7 @@
       <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/essentials-for-an-intro-course/</guid>
-      <description>What essential topics should we teach in our intro courses? This seems to be a recurring topic recently.
-It can be an important topic but, unfortunately, too often, it seems that people have too myopic a view
-I remember thinking about this years ago when APCS moved from C++ to Java. Both languages have good and bad points both for practical and educational use. A big loss in the move to Java was memory management and the topics you could cover when memory issues arose.</description>
+      <description>What essential topics should we teach in our intro courses? This seems to be a recurring topic recently.  It can be an important topic but, unfortunately, too often, it seems that people have too myopic a view  I remember thinking about this years ago when APCS moved from C++ to Java. Both languages have good and bad points both for practical and educational use. A big loss in the move to Java was memory management and the topics you could cover when memory issues arose.</description>
     </item>
     
   </channel>

@@ -1,10 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cestlaz.github.io/post/pinebook-update/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/hardware/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/hardware/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/post/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/</loc>
+    <lastmod>2020-06-10T17:10:51-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/pinebook/</loc>
     <lastmod>2020-06-07T17:24:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/misc/</loc>
+    <lastmod>2020-06-07T10:56:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/misc/</loc>
+    <lastmod>2020-06-07T10:56:52-04:00</lastmod>
   </url>
   
   <url>
@@ -23,7 +68,37 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/teaching/</loc>
+    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/tools/</loc>
+    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/tools/</loc>
+    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/covid-19/</loc>
+    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/grading-consequences/</loc>
+    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/policy/</loc>
+    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/policy/</loc>
     <lastmod>2020-05-27T07:08:12-04:00</lastmod>
   </url>
   
@@ -33,8 +108,33 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/emacs/</loc>
+    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/emacs/</loc>
+    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/productivity/</loc>
+    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</loc>
     <lastmod>2020-05-21T14:47:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/debugging/</loc>
+    <lastmod>2020-05-21T08:11:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/debugging/</loc>
+    <lastmod>2020-05-21T08:11:25-04:00</lastmod>
   </url>
   
   <url>
@@ -45,6 +145,16 @@
   <url>
     <loc>https://cestlaz.github.io/post/errors-are-hard-to-find/</loc>
     <lastmod>2020-05-20T08:10:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/hunter/</loc>
+    <lastmod>2020-05-19T07:41:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/hunter/</loc>
+    <lastmod>2020-05-19T07:41:29-04:00</lastmod>
   </url>
   
   <url>
@@ -63,6 +173,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/data-structures/</loc>
+    <lastmod>2020-05-01T13:53:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/data-structures/</loc>
+    <lastmod>2020-05-01T13:53:43-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/heaps/</loc>
     <lastmod>2020-05-01T13:53:43-04:00</lastmod>
   </url>
@@ -78,8 +198,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/cs/</loc>
+    <lastmod>2020-04-27T18:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/trees/</loc>
+    <lastmod>2020-04-27T18:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/email-or-usps/</loc>
     <lastmod>2020-04-17T14:00:41-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ed-tech/</loc>
+    <lastmod>2020-04-15T08:33:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/teaching/</loc>
+    <lastmod>2020-04-15T08:33:20-04:00</lastmod>
   </url>
   
   <url>
@@ -88,8 +228,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/cellular-automata/</loc>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cellular-automata/</loc>
+    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/conway/</loc>
     <lastmod>2020-04-13T17:21:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/development/</loc>
+    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/development/</loc>
+    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
   </url>
   
   <url>
@@ -108,12 +268,27 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/covid19/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/ed-tech/</loc>
+    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/zoom-or-not/</loc>
     <lastmod>2020-04-07T14:03:13-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/post/limitations-of-remote-teaching/</loc>
+    <lastmod>2020-03-30T14:41:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/pedagogy/</loc>
     <lastmod>2020-03-30T14:41:35-04:00</lastmod>
   </url>
   
@@ -128,8 +303,23 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/community/</loc>
+    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/community/</loc>
+    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/mother-of-invention/</loc>
     <lastmod>2020-03-23T18:59:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/guest/</loc>
+    <lastmod>2020-03-23T06:53:49-04:00</lastmod>
   </url>
   
   <url>
@@ -145,6 +335,16 @@
   <url>
     <loc>https://cestlaz.github.io/post/carrot-cake/</loc>
     <lastmod>2020-03-20T15:55:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/online/</loc>
+    <lastmod>2020-03-19T11:48:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/online/</loc>
+    <lastmod>2020-03-19T11:48:20-04:00</lastmod>
   </url>
   
   <url>
@@ -168,8 +368,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/edtech/</loc>
+    <lastmod>2020-03-10T23:54:18-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/preparing-for-online/</loc>
     <lastmod>2020-03-10T23:54:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/pedagogy/</loc>
+    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/pedegogy/</loc>
+    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/sorting/</loc>
+    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
   </url>
   
   <url>
@@ -183,6 +403,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/pd/</loc>
+    <lastmod>2020-03-07T08:12:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cs-ed/</loc>
+    <lastmod>2020-03-06T08:40:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/cs-ed-podcast-3-debugging/</loc>
     <lastmod>2020-03-06T08:40:26-04:00</lastmod>
   </url>
@@ -190,6 +420,21 @@
   <url>
     <loc>https://cestlaz.github.io/post/remote-classes/</loc>
     <lastmod>2020-03-03T09:34:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cs-education/</loc>
+    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cs-education/</loc>
+    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cs4all/</loc>
+    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
   </url>
   
   <url>
@@ -213,8 +458,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/github/</loc>
+    <lastmod>2020-02-16T12:53:59-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/github-org-explorer-oauth/</loc>
     <lastmod>2020-02-16T12:53:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cs-ed/</loc>
+    <lastmod>2020-02-13T08:41:21-04:00</lastmod>
   </url>
   
   <url>
@@ -248,8 +503,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/pipeline/</loc>
+    <lastmod>2020-02-01T13:41:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ai/</loc>
+    <lastmod>2020-01-31T07:00:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/ai/</loc>
+    <lastmod>2020-01-31T07:00:01-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/pd-ai-for-all/</loc>
     <lastmod>2020-01-31T07:00:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/algorithms/</loc>
+    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
   </url>
   
   <url>
@@ -258,8 +533,23 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/unplugged/</loc>
+    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/unplugged/</loc>
+    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/career-directions/</loc>
     <lastmod>2020-01-24T14:39:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/curriculum/</loc>
+    <lastmod>2020-01-20T10:03:27-04:00</lastmod>
   </url>
   
   <url>
@@ -278,12 +568,37 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/education/</loc>
+    <lastmod>2020-01-17T08:07:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/education/</loc>
+    <lastmod>2020-01-17T08:07:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/education-not-spec-sport/</loc>
     <lastmod>2020-01-17T08:07:26-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/clojurescript/</loc>
+    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/clojurescript/</loc>
+    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/clojurescript-router/</loc>
+    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/webdev/</loc>
     <lastmod>2020-01-15T09:37:17-04:00</lastmod>
   </url>
   
@@ -293,12 +608,37 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/clojure/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/clojure/</loc>
+    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/clojurescript-components/</loc>
     <lastmod>2020-01-12T12:19:00-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/apcs/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/apcs/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/code-beyond-apcs/</loc>
+    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/csfroall/</loc>
     <lastmod>2020-01-10T17:51:14-04:00</lastmod>
   </url>
   
@@ -310,6 +650,16 @@
   <url>
     <loc>https://cestlaz.github.io/post/github-org-explorer/</loc>
     <lastmod>2020-01-03T14:40:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cs-for-all/</loc>
+    <lastmod>2020-01-02T08:27:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cs-for-all/</loc>
+    <lastmod>2020-01-02T08:27:20-04:00</lastmod>
   </url>
   
   <url>
@@ -328,12 +678,47 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/blogging/</loc>
+    <lastmod>2019-12-30T09:06:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/blogging/</loc>
+    <lastmod>2019-12-30T09:06:16-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/keeping-current-between-semesters/</loc>
     <lastmod>2019-12-27T11:56:23-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/tech/</loc>
+    <lastmod>2019-12-27T11:56:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/tech/</loc>
+    <lastmod>2019-12-27T11:56:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/advent-of-code/</loc>
+    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/advent-of-code/</loc>
+    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/multi-stage-assignments/</loc>
+    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/programming/</loc>
     <lastmod>2019-12-12T17:19:27-04:00</lastmod>
   </url>
   
@@ -373,13 +758,53 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/adventofcode/</loc>
+    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/coding/</loc>
+    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/competition/</loc>
+    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/competitions/</loc>
+    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/problem-solving/</loc>
+    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/presenting-at-csta/</loc>
     <lastmod>2019-11-26T13:05:45-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/categories/cs/</loc>
+    <lastmod>2019-11-25T05:45:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/nltk/</loc>
+    <lastmod>2019-11-25T05:45:55-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/word-chains/</loc>
     <lastmod>2019-11-25T05:45:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/apcs-a/</loc>
+    <lastmod>2019-11-22T13:55:09-04:00</lastmod>
   </url>
   
   <url>
@@ -398,6 +823,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/git/</loc>
+    <lastmod>2019-11-17T16:17:37-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/git-issues/</loc>
     <lastmod>2019-11-17T16:17:37-04:00</lastmod>
   </url>
@@ -405,6 +835,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/using-emacs-61-org-msg/</loc>
     <lastmod>2019-11-16T05:00:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/computer-science/</loc>
+    <lastmod>2019-11-15T16:18:51-04:00</lastmod>
   </url>
   
   <url>
@@ -418,8 +853,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/communication/</loc>
+    <lastmod>2019-11-13T10:17:18-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/i-speak-jive/</loc>
     <lastmod>2019-11-08T07:48:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/lessons/</loc>
+    <lastmod>2019-11-08T07:48:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/outreach/</loc>
+    <lastmod>2019-11-06T12:25:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/outreach/</loc>
+    <lastmod>2019-11-06T12:25:17-04:00</lastmod>
   </url>
   
   <url>
@@ -430,6 +885,21 @@
   <url>
     <loc>https://cestlaz.github.io/post/using-emacs-60-restclient/</loc>
     <lastmod>2019-10-25T11:57:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/career/</loc>
+    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ny-tech/</loc>
+    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/ny-tech/</loc>
+    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
   </url>
   
   <url>
@@ -448,8 +918,33 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/support/</loc>
+    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/web/</loc>
+    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/web/</loc>
+    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/apcs-a/</loc>
+    <lastmod>2019-10-14T21:47:18-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/classes-or-afterschool/</loc>
     <lastmod>2019-10-14T21:47:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/assessments/</loc>
+    <lastmod>2019-10-09T17:13:24-04:00</lastmod>
   </url>
   
   <url>
@@ -468,6 +963,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/csta/</loc>
+    <lastmod>2019-10-01T11:46:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/csta/</loc>
+    <lastmod>2019-10-01T11:46:32-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/csta-awards-2020/</loc>
     <lastmod>2019-10-01T11:46:32-04:00</lastmod>
   </url>
@@ -475,6 +980,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/cheating-on-projects/</loc>
     <lastmod>2019-09-30T17:33:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/software-engineering/</loc>
+    <lastmod>2019-09-27T12:34:04-04:00</lastmod>
   </url>
   
   <url>
@@ -503,12 +1013,47 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/languages/</loc>
+    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/languages/</loc>
+    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/paradigms/</loc>
+    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/computational-thinking/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/computational-thinking/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/elementary-ed/</loc>
+    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/is-ct-new/</loc>
     <lastmod>2019-08-25T16:32:17-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/post/exploring-complex-projects/</loc>
+    <lastmod>2019-08-07T19:20:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/software-engineering/</loc>
     <lastmod>2019-08-07T19:20:17-04:00</lastmod>
   </url>
   
@@ -523,8 +1068,23 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/ct/</loc>
+    <lastmod>2019-07-30T17:54:21-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/professional-development/</loc>
+    <lastmod>2019-07-30T17:54:21-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/alumni-anniversaries/</loc>
     <lastmod>2019-07-28T07:32:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/assessment/</loc>
+    <lastmod>2019-07-26T19:23:32-04:00</lastmod>
   </url>
   
   <url>
@@ -543,7 +1103,22 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/conferences/</loc>
+    <lastmod>2019-07-22T19:46:38-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/maze-solving-code-tracing/</loc>
+    <lastmod>2019-07-20T16:40:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/mazes/</loc>
+    <lastmod>2019-07-20T16:40:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/problem-solving/</loc>
     <lastmod>2019-07-20T16:40:16-04:00</lastmod>
   </url>
   
@@ -568,13 +1143,43 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/travel/</loc>
+    <lastmod>2019-07-08T10:41:36-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/planning-for-csta-2019/</loc>
     <lastmod>2019-07-04T17:26:57-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/categories/csed/</loc>
+    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/math/</loc>
+    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/math-in-cs/</loc>
+    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/math-not-fun/</loc>
     <lastmod>2019-07-01T09:08:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/padagogy/</loc>
+    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/blanket-statement/</loc>
+    <lastmod>2019-06-29T05:03:59-04:00</lastmod>
   </url>
   
   <url>
@@ -588,8 +1193,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/guest-speakers/</loc>
+    <lastmod>2019-06-25T07:00:12-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/proof-by-authority/</loc>
     <lastmod>2019-06-25T07:00:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/database/</loc>
+    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/database/</loc>
+    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/mongodb/</loc>
+    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
   </url>
   
   <url>
@@ -598,8 +1223,28 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/hackathons/</loc>
+    <lastmod>2019-06-16T17:32:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/hackathons/</loc>
+    <lastmod>2019-06-16T17:32:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/judging-a-hackathon/</loc>
     <lastmod>2019-06-16T17:32:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ap/</loc>
+    <lastmod>2019-06-15T12:24:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/ap/</loc>
+    <lastmod>2019-06-15T12:24:01-04:00</lastmod>
   </url>
   
   <url>
@@ -613,13 +1258,33 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/categories/programming/</loc>
+    <lastmod>2019-06-14T15:53:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/web-dev/</loc>
+    <lastmod>2019-06-14T15:53:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/semester-review/</loc>
     <lastmod>2019-06-12T09:02:19-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/book-review/</loc>
+    <lastmod>2019-06-11T07:29:30-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/grokking-algorithms/</loc>
     <lastmod>2019-06-11T07:29:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/csed/</loc>
+    <lastmod>2019-06-10T08:00:08-04:00</lastmod>
   </url>
   
   <url>
@@ -633,6 +1298,21 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/cs0/</loc>
+    <lastmod>2019-06-03T13:27:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cs1/</loc>
+    <lastmod>2019-06-03T13:27:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/grading/</loc>
+    <lastmod>2019-05-18T12:03:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/predicting-grades/</loc>
     <lastmod>2019-05-18T12:03:10-04:00</lastmod>
   </url>
@@ -640,6 +1320,16 @@
   <url>
     <loc>https://cestlaz.github.io/post/blog-for-pd/</loc>
     <lastmod>2019-05-16T07:12:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/cseducation/</loc>
+    <lastmod>2019-05-16T07:12:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/college/</loc>
+    <lastmod>2019-05-08T08:25:12-04:00</lastmod>
   </url>
   
   <url>
@@ -653,6 +1343,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/interviews/</loc>
+    <lastmod>2019-04-28T11:27:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/technical-interviews-and-diversity/</loc>
     <lastmod>2019-04-28T11:27:46-04:00</lastmod>
   </url>
@@ -660,6 +1355,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/ebooks-nypl-and-process-starvation/</loc>
     <lastmod>2019-04-26T12:04:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/algorithms/</loc>
+    <lastmod>2019-04-22T13:51:52-04:00</lastmod>
   </url>
   
   <url>
@@ -673,7 +1373,22 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/pedgogy/</loc>
+    <lastmod>2019-04-16T11:36:27-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/pd-at-gwg/</loc>
+    <lastmod>2019-04-12T08:12:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cseducation/</loc>
+    <lastmod>2019-04-12T08:12:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/csforall/</loc>
     <lastmod>2019-04-12T08:12:54-04:00</lastmod>
   </url>
   
@@ -703,6 +1418,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/sigcse/</loc>
+    <lastmod>2019-03-16T08:20:47-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/new-monitor/</loc>
     <lastmod>2019-03-09T17:38:09-04:00</lastmod>
   </url>
@@ -710,6 +1430,16 @@
   <url>
     <loc>https://cestlaz.github.io/post/java-ides/</loc>
     <lastmod>2019-03-08T13:29:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/java/</loc>
+    <lastmod>2019-03-08T13:29:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/sigcse/</loc>
+    <lastmod>2019-03-04T15:25:59-04:00</lastmod>
   </url>
   
   <url>
@@ -738,6 +1468,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/nytech/</loc>
+    <lastmod>2019-02-15T11:14:59-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/tech-jobs-amazon/</loc>
     <lastmod>2019-02-15T11:14:59-04:00</lastmod>
   </url>
@@ -750,6 +1485,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/github-helps-me-help-students/</loc>
     <lastmod>2019-02-11T18:55:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/langauges/</loc>
+    <lastmod>2019-02-09T15:08:18-04:00</lastmod>
   </url>
   
   <url>
@@ -775,6 +1515,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/using-emacs-56-dictionaries/</loc>
     <lastmod>2019-01-28T16:58:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/educaction/</loc>
+    <lastmod>2019-01-26T16:06:08-04:00</lastmod>
   </url>
   
   <url>
@@ -808,6 +1553,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/categories/curriculum/</loc>
+    <lastmod>2019-01-07T08:49:17-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/when-does-a-new-course-get-developed/</loc>
     <lastmod>2019-01-07T08:49:17-04:00</lastmod>
   </url>
@@ -830,6 +1580,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</loc>
     <lastmod>2018-12-30T15:17:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/hs/</loc>
+    <lastmod>2018-12-21T15:49:44-04:00</lastmod>
   </url>
   
   <url>
@@ -858,6 +1613,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/pedagoy/</loc>
+    <lastmod>2018-12-01T19:36:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/reunions/</loc>
+    <lastmod>2018-11-25T15:59:55-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/post/reunions-2018/</loc>
     <lastmod>2018-11-25T15:59:55-04:00</lastmod>
   </url>
@@ -865,6 +1630,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/teaching-sorting/</loc>
     <lastmod>2018-11-19T20:04:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/pd/</loc>
+    <lastmod>2018-11-18T19:43:36-04:00</lastmod>
   </url>
   
   <url>
@@ -905,6 +1675,11 @@
   <url>
     <loc>https://cestlaz.github.io/post/from-scripts-to-freestyle/</loc>
     <lastmod>2018-10-26T17:35:56-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/org-mode/</loc>
+    <lastmod>2018-10-24T17:30:45-04:00</lastmod>
   </url>
   
   <url>
@@ -973,7 +1748,22 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/meta/</loc>
+    <lastmod>2018-09-21T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/categories/meta/</loc>
+    <lastmod>2018-09-21T17:21:15-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/about/</loc>
+    <lastmod>2018-09-19T19:02:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/stories/</loc>
     <lastmod>2018-09-19T19:02:09-04:00</lastmod>
   </url>
   
@@ -988,7 +1778,17 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/posts/</loc>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/creating-a-school/</loc>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/schools/</loc>
     <lastmod>2018-09-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -1023,6 +1823,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/c/</loc>
+    <lastmod>2018-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/projects/</loc>
+    <lastmod>2018-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/rite-of-passage-projects/</loc>
     <lastmod>2018-08-17T00:00:00+00:00</lastmod>
   </url>
@@ -1043,13 +1853,43 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/pbl/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/two-faces-of-pbl/</loc>
     <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/digitaldivide/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/keyboarding/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/keyboarding-dig-divite/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/skills/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ethicalcs/</loc>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ethics/</loc>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1083,6 +1923,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/tests/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/certification-the-old-way/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
   </url>
@@ -1090,6 +1935,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/csta-2018/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/presentations/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1108,6 +1958,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/editing/</loc>
+    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</loc>
     <lastmod>2018-06-21T00:00:00+00:00</lastmod>
   </url>
@@ -1115,6 +1970,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/how-i-grokked-oop/</loc>
     <lastmod>2018-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/gifted/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1130,6 +1990,16 @@
   <url>
     <loc>https://cestlaz.github.io/posts/tech-or-teacher/</loc>
     <lastmod>2018-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/recursion/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/scheme/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1178,8 +2048,23 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/testing/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/unit-tests-grading-workflow/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/workflow/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/programs/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1193,6 +2078,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/certification/</loc>
+    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/strong-teacher-certification/</loc>
     <lastmod>2018-04-10T00:00:00+00:00</lastmod>
   </url>
@@ -1203,7 +2093,17 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/competitions/</loc>
+    <lastmod>2018-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/hs-competitions/</loc>
+    <lastmod>2018-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/events/</loc>
     <lastmod>2018-04-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -1224,6 +2124,16 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/ethics-in-cs/</loc>
+    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/preservicexs/</loc>
+    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/teachers/</loc>
     <lastmod>2018-03-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -1258,6 +2168,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/theory/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-45-company/</loc>
     <lastmod>2018-03-11T00:00:00+00:00</lastmod>
   </url>
@@ -1268,8 +2183,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/research/</loc>
+    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/sigcse2018-code-tracing/</loc>
     <lastmod>2018-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/pdf/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1288,8 +2213,23 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/systems/</loc>
+    <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/sigcse2018/</loc>
     <lastmod>2018-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/mpd/</loc>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/music/</loc>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1313,8 +2253,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/admin/</loc>
+    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/google-sheets/</loc>
     <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/learning/</loc>
+    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1378,6 +2328,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/contests/</loc>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/advent-2017-making-tests/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
   </url>
@@ -1398,6 +2353,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/python/</loc>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/trust-the-kids/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
   </url>
@@ -1408,8 +2368,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/stuycs/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-38-dired/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/algorithms.-unplugged/</loc>
+    <lastmod>2017-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1419,6 +2389,11 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/hunter-tech-kickoff/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/tech-community/</loc>
     <lastmod>2017-11-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -1434,6 +2409,11 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/happy_ladybug/</loc>
+    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/problems/</loc>
     <lastmod>2017-10-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -1455,6 +2435,16 @@
   <url>
     <loc>https://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</loc>
     <lastmod>2017-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/ed/</loc>
+    <lastmod>2017-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/standards/</loc>
+    <lastmod>2017-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1488,6 +2478,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/resources/</loc>
+    <lastmod>2017-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/cs-teachers-smart/</loc>
     <lastmod>2017-09-15T00:00:00+00:00</lastmod>
   </url>
@@ -1495,6 +2490,16 @@
   <url>
     <loc>https://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</loc>
     <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/stem/</loc>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/currulum/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1528,6 +2533,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/soft-skills/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</loc>
     <lastmod>2017-07-30T00:00:00+00:00</lastmod>
   </url>
@@ -1549,6 +2559,11 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/cs-teacher-eval/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/supervision/</loc>
     <lastmod>2017-07-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -1638,6 +2653,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/startups/</loc>
+    <lastmod>2017-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</loc>
     <lastmod>2017-04-28T00:00:00+00:00</lastmod>
   </url>
@@ -1678,8 +2698,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/teaching-cs/</loc>
+    <lastmod>2017-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/sigcse-2017/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/jobs/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1744,6 +2774,11 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/trump-issues/</loc>
+    <lastmod>2017-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/politics/</loc>
     <lastmod>2017-01-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -1833,6 +2868,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/intro/</loc>
+    <lastmod>2016-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/inverted-index/</loc>
     <lastmod>2016-11-26T00:00:00+00:00</lastmod>
   </url>
@@ -1868,6 +2908,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/devops/</loc>
+    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/digitaloceanflask/</loc>
     <lastmod>2016-11-08T00:00:00+00:00</lastmod>
   </url>
@@ -1880,6 +2925,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/cornell-tech-proj-studio/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/halloween/</loc>
+    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1908,8 +2958,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/flask/</loc>
+    <lastmod>2016-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/flask-install-flask/</loc>
     <lastmod>2016-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/linux/</loc>
+    <lastmod>2016-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1930,6 +2990,16 @@
   <url>
     <loc>https://cestlaz.github.io/posts/scotland/</loc>
     <lastmod>2016-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cli/</loc>
+    <lastmod>2016-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/shell/</loc>
+    <lastmod>2016-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1983,6 +3053,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/disruption/</loc>
+    <lastmod>2016-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/ed-disrupt-why-diff/</loc>
     <lastmod>2016-07-25T00:00:00+00:00</lastmod>
   </url>
@@ -2033,6 +3108,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/teals/</loc>
+    <lastmod>2016-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/better-comments/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
   </url>
@@ -2043,6 +3123,16 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/robotics/</loc>
+    <lastmod>2016-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/robots/</loc>
+    <lastmod>2016-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/robot-survey/</loc>
     <lastmod>2016-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -2050,6 +3140,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/using-emacs-5-windows/</loc>
     <lastmod>2016-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/civic-tech/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -2088,8 +3183,18 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/cheating/</loc>
+    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/collaborative-coding-or-cheating/</loc>
     <lastmod>2016-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/nikola/</loc>
+    <lastmod>2016-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -2125,6 +3230,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/semaphores/</loc>
     <lastmod>2016-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/cstuy/</loc>
+    <lastmod>2016-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -2169,6 +3279,11 @@
   
   <url>
     <loc>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</loc>
+    <lastmod>2016-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/netlogo/</loc>
     <lastmod>2016-01-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -2748,6 +3863,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/bike/</loc>
+    <lastmod>2013-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/2013-08-15-bikeshares-citibike-vs-bixi/</loc>
     <lastmod>2013-08-15T00:00:00+00:00</lastmod>
   </url>
@@ -2893,6 +4013,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/softeng/</loc>
+    <lastmod>2012-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you.html/</loc>
     <lastmod>2012-02-08T00:00:00+00:00</lastmod>
   </url>
@@ -2910,6 +4035,11 @@
   <url>
     <loc>https://cestlaz.github.io/posts/2012-01-11-pretty-sneaky-sis.html/</loc>
     <lastmod>2012-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cestlaz.github.io/tags/moocs/</loc>
+    <lastmod>2011-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -2998,6 +4128,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/food/</loc>
+    <lastmod>2010-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</loc>
     <lastmod>2010-03-14T00:00:00+00:00</lastmod>
   </url>
@@ -3048,6 +4183,11 @@
   </url>
   
   <url>
+    <loc>https://cestlaz.github.io/tags/it/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</loc>
     <lastmod>2010-01-03T00:00:00+00:00</lastmod>
   </url>
@@ -3058,1383 +4198,11 @@
   </url>
   
   <url>
-    <loc>https://cestlaz.github.io/tags/</loc>
-    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/archive/</loc>
-  </url>
-  
-  <url>
     <loc>https://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/</loc>
   </url>
   
   <url>
     <loc>https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/admin/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/advent-of-code/</loc>
-    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/advent-of-code/</loc>
-    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/adventofcode/</loc>
-    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ai/</loc>
-    <lastmod>2020-01-31T07:00:01-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/ai/</loc>
-    <lastmod>2020-01-31T07:00:01-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/algorithms/</loc>
-    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/algorithms/</loc>
-    <lastmod>2019-04-22T13:51:52-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/algorithms.-unplugged/</loc>
-    <lastmod>2017-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ap/</loc>
-    <lastmod>2019-06-15T12:24:01-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/ap/</loc>
-    <lastmod>2019-06-15T12:24:01-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/apcs/</loc>
-    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/apcs/</loc>
-    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/apcs-a/</loc>
-    <lastmod>2019-11-22T13:55:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/apcs-a/</loc>
-    <lastmod>2019-10-14T21:47:18-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/assessment/</loc>
-    <lastmod>2019-07-26T19:23:32-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/assessments/</loc>
-    <lastmod>2019-10-09T17:13:24-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/bike/</loc>
-    <lastmod>2013-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/blanket-statement/</loc>
-    <lastmod>2019-06-29T05:03:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/blogging/</loc>
-    <lastmod>2019-12-30T09:06:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/blogging/</loc>
-    <lastmod>2019-12-30T09:06:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/book-review/</loc>
-    <lastmod>2019-06-11T07:29:30-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/c/</loc>
-    <lastmod>2018-08-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2020-06-07T17:24:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/career/</loc>
-    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/</loc>
-    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cellular-automata/</loc>
-    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cellular-automata/</loc>
-    <lastmod>2020-04-13T17:21:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/certification/</loc>
-    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cheating/</loc>
-    <lastmod>2016-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/civic-tech/</loc>
-    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cli/</loc>
-    <lastmod>2016-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/clojure/</loc>
-    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/clojure/</loc>
-    <lastmod>2020-01-12T12:19:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/clojurescript/</loc>
-    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/clojurescript/</loc>
-    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/coding/</loc>
-    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/college/</loc>
-    <lastmod>2019-05-08T08:25:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/communication/</loc>
-    <lastmod>2019-11-13T10:17:18-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/community/</loc>
-    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/community/</loc>
-    <lastmod>2020-03-25T15:43:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/competition/</loc>
-    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/competitions/</loc>
-    <lastmod>2018-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/competitions/</loc>
-    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/computational-thinking/</loc>
-    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/computational-thinking/</loc>
-    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/computer-science/</loc>
-    <lastmod>2019-11-15T16:18:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/conferences/</loc>
-    <lastmod>2019-07-22T19:46:38-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/contests/</loc>
-    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/covid-19/</loc>
-    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/covid19/</loc>
-    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs/</loc>
-    <lastmod>2020-04-27T18:45:50-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cs/</loc>
-    <lastmod>2019-11-25T05:45:55-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs-ed/</loc>
-    <lastmod>2020-03-06T08:40:26-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cs-ed/</loc>
-    <lastmod>2020-02-13T08:41:21-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs-education/</loc>
-    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cs-education/</loc>
-    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs-for-all/</loc>
-    <lastmod>2020-01-02T08:27:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cs-for-all/</loc>
-    <lastmod>2020-01-02T08:27:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs0/</loc>
-    <lastmod>2019-06-03T13:27:22-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs1/</loc>
-    <lastmod>2019-06-03T13:27:22-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cs4all/</loc>
-    <lastmod>2020-02-26T18:50:11-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/csed/</loc>
-    <lastmod>2019-06-10T08:00:08-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/csed/</loc>
-    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cseducation/</loc>
-    <lastmod>2019-04-12T08:12:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/cseducation/</loc>
-    <lastmod>2019-05-16T07:12:44-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/csforall/</loc>
-    <lastmod>2019-04-12T08:12:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/csfroall/</loc>
-    <lastmod>2020-01-10T17:51:14-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/csta/</loc>
-    <lastmod>2019-10-01T11:46:32-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/csta/</loc>
-    <lastmod>2019-10-01T11:46:32-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/cstuy/</loc>
-    <lastmod>2016-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ct/</loc>
-    <lastmod>2019-07-30T17:54:21-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/curriculum/</loc>
-    <lastmod>2020-01-20T10:03:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/curriculum/</loc>
-    <lastmod>2019-01-07T08:49:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/currulum/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/data-structures/</loc>
-    <lastmod>2020-05-01T13:53:43-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/data-structures/</loc>
-    <lastmod>2020-05-01T13:53:43-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/database/</loc>
-    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/database/</loc>
-    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/debugging/</loc>
-    <lastmod>2020-05-21T08:11:25-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/debugging/</loc>
-    <lastmod>2020-05-21T08:11:25-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/development/</loc>
-    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/development/</loc>
-    <lastmod>2020-04-12T08:34:40-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/devops/</loc>
-    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/digitaldivide/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/disruption/</loc>
-    <lastmod>2016-07-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ed/</loc>
-    <lastmod>2017-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ed-tech/</loc>
-    <lastmod>2020-04-15T08:33:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/ed-tech/</loc>
-    <lastmod>2020-04-07T14:03:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/editing/</loc>
-    <lastmod>2018-06-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/edtech/</loc>
-    <lastmod>2020-03-10T23:54:18-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/educaction/</loc>
-    <lastmod>2019-01-26T16:06:08-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/education/</loc>
-    <lastmod>2020-01-17T08:07:26-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/education/</loc>
-    <lastmod>2020-01-17T08:07:26-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/elementary-ed/</loc>
-    <lastmod>2019-08-25T16:32:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/emacs/</loc>
-    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/emacs/</loc>
-    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ethicalcs/</loc>
-    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ethics/</loc>
-    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/events/</loc>
-    <lastmod>2018-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/flask/</loc>
-    <lastmod>2016-10-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/food/</loc>
-    <lastmod>2010-05-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/gifted/</loc>
-    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/git/</loc>
-    <lastmod>2019-11-17T16:17:37-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/github/</loc>
-    <lastmod>2020-02-16T12:53:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/grading/</loc>
-    <lastmod>2019-05-18T12:03:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/guest/</loc>
-    <lastmod>2020-03-23T06:53:49-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/guest-speakers/</loc>
-    <lastmod>2019-06-25T07:00:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/hackathons/</loc>
-    <lastmod>2019-06-16T17:32:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/hackathons/</loc>
-    <lastmod>2019-06-16T17:32:10-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/halloween/</loc>
-    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/hardware/</loc>
-    <lastmod>2020-06-07T17:24:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/hardware/</loc>
-    <lastmod>2020-06-07T17:24:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/hs/</loc>
-    <lastmod>2018-12-21T15:49:44-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/hunter/</loc>
-    <lastmod>2020-05-19T07:41:29-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/hunter/</loc>
-    <lastmod>2020-05-19T07:41:29-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/interviews/</loc>
-    <lastmod>2019-04-28T11:27:46-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/intro/</loc>
-    <lastmod>2016-11-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/it/</loc>
-    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/java/</loc>
-    <lastmod>2019-03-08T13:29:18-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/jobs/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/keyboarding/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/langauges/</loc>
-    <lastmod>2019-02-09T15:08:18-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/languages/</loc>
-    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/languages/</loc>
-    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/learning/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/lessons/</loc>
-    <lastmod>2019-11-08T07:48:14-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/linux/</loc>
-    <lastmod>2016-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/math/</loc>
-    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/math-in-cs/</loc>
-    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/mazes/</loc>
-    <lastmod>2019-07-20T16:40:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/meta/</loc>
-    <lastmod>2018-09-21T17:21:15-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/meta/</loc>
-    <lastmod>2018-09-21T17:21:15-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/misc/</loc>
-    <lastmod>2020-06-07T10:56:52-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/misc/</loc>
-    <lastmod>2020-06-07T10:56:52-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/mongodb/</loc>
-    <lastmod>2019-06-18T19:35:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/moocs/</loc>
-    <lastmod>2011-12-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/mpd/</loc>
-    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/music/</loc>
-    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/netlogo/</loc>
-    <lastmod>2016-01-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/nikola/</loc>
-    <lastmod>2016-05-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/nltk/</loc>
-    <lastmod>2019-11-25T05:45:55-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/ny-tech/</loc>
-    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/ny-tech/</loc>
-    <lastmod>2019-10-20T13:18:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/nytech/</loc>
-    <lastmod>2019-02-15T11:14:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/online/</loc>
-    <lastmod>2020-03-19T11:48:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/online/</loc>
-    <lastmod>2020-03-19T11:48:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/org-mode/</loc>
-    <lastmod>2018-10-24T17:30:45-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/outreach/</loc>
-    <lastmod>2019-11-06T12:25:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/outreach/</loc>
-    <lastmod>2019-11-06T12:25:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/padagogy/</loc>
-    <lastmod>2019-07-01T09:08:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/paradigms/</loc>
-    <lastmod>2019-09-02T17:33:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pbl/</loc>
-    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pd/</loc>
-    <lastmod>2020-03-07T08:12:55-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/pd/</loc>
-    <lastmod>2018-11-18T19:43:36-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pdf/</loc>
-    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pedagogy/</loc>
-    <lastmod>2020-03-30T14:41:35-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/pedagogy/</loc>
-    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pedagoy/</loc>
-    <lastmod>2018-12-01T19:36:37-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pedegogy/</loc>
-    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pedgogy/</loc>
-    <lastmod>2019-04-16T11:36:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/pipeline/</loc>
-    <lastmod>2020-02-01T13:41:03-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/policy/</loc>
-    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/policy/</loc>
-    <lastmod>2020-05-27T07:08:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/politics/</loc>
-    <lastmod>2017-01-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2020-06-07T17:24:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/posts/</loc>
-    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/presentations/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/preservicexs/</loc>
-    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/problem-solving/</loc>
-    <lastmod>2019-11-29T09:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/problem-solving/</loc>
-    <lastmod>2019-07-20T16:40:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/problems/</loc>
-    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/productivity/</loc>
-    <lastmod>2020-05-21T14:47:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/professional-development/</loc>
-    <lastmod>2019-07-30T17:54:21-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/programming/</loc>
-    <lastmod>2019-12-12T17:19:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/programming/</loc>
-    <lastmod>2019-06-14T15:53:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/programs/</loc>
-    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/projects/</loc>
-    <lastmod>2018-08-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/python/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/recursion/</loc>
-    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/research/</loc>
-    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/resources/</loc>
-    <lastmod>2017-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/reunions/</loc>
-    <lastmod>2018-11-25T15:59:55-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/robotics/</loc>
-    <lastmod>2016-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/robots/</loc>
-    <lastmod>2016-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/scheme/</loc>
-    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/schools/</loc>
-    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/shell/</loc>
-    <lastmod>2016-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/sigcse/</loc>
-    <lastmod>2019-03-16T08:20:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/sigcse/</loc>
-    <lastmod>2019-03-04T15:25:59-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/skills/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/soft-skills/</loc>
-    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/softeng/</loc>
-    <lastmod>2012-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/software-engineering/</loc>
-    <lastmod>2019-09-27T12:34:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/software-engineering/</loc>
-    <lastmod>2019-08-07T19:20:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/sorting/</loc>
-    <lastmod>2020-03-09T11:11:51-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/standards/</loc>
-    <lastmod>2017-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/startups/</loc>
-    <lastmod>2017-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/stem/</loc>
-    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/stories/</loc>
-    <lastmod>2018-09-19T19:02:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/stuycs/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/supervision/</loc>
-    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/support/</loc>
-    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/systems/</loc>
-    <lastmod>2018-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/</loc>
-    <lastmod>2020-04-10T14:13:08-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/teachers/</loc>
-    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/teaching/</loc>
-    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/teaching/</loc>
-    <lastmod>2020-04-15T08:33:20-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/teaching-cs/</loc>
-    <lastmod>2017-03-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/teals/</loc>
-    <lastmod>2016-06-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/tech/</loc>
-    <lastmod>2019-12-27T11:56:23-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/tech/</loc>
-    <lastmod>2019-12-27T11:56:23-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/tech-community/</loc>
-    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/testing/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/tests/</loc>
-    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/theory/</loc>
-    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/tools/</loc>
-    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/tools/</loc>
-    <lastmod>2020-05-29T19:00:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/travel/</loc>
-    <lastmod>2019-07-08T10:41:36-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/trees/</loc>
-    <lastmod>2020-04-27T18:45:50-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/unplugged/</loc>
-    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/unplugged/</loc>
-    <lastmod>2020-01-26T13:10:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/web/</loc>
-    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/categories/web/</loc>
-    <lastmod>2019-10-16T08:34:04-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/web-dev/</loc>
-    <lastmod>2019-06-14T15:53:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/webdev/</loc>
-    <lastmod>2020-01-15T09:37:17-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cestlaz.github.io/tags/workflow/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

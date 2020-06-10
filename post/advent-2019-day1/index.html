@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Advent of Code 2019 Day 1</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Advent of Code 2019 Day 1" />
-<meta property="og:description" content="Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.
-I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.
-The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed)." />
+<meta property="og:description" content="Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.  I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.  The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day1/" /><meta property="article:published_time" content="2019-12-01T14:23:35-04:00"/>
-<meta property="article:modified_time" content="2019-12-01T14:23:35-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day1/" />
+<meta property="article:published_time" content="2019-12-01T14:23:35-04:00" />
+<meta property="article:modified_time" content="2019-12-01T14:23:35-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advent of Code 2019 Day 1"/>
-<meta name="twitter:description" content="Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.
-I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.
-The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed)."/>
+<meta name="twitter:description" content="Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.  I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.  The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed)."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,99 +96,81 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>Like most programming challenges, <a href="http://adventofcode.com" title="Advent of Code">Advent of Code</a> ramps out from
+		  <p>
+Like most programming challenges, <a href="http://adventofcode.com">Advent of Code</a> ramps out from
 easier, more accessible problems to harder, more complex ones. As
 such, a number of the early challenges are great problems for early CS
-students.</p>
-
-<p>I thought that while I watched my NY Giants play valiantly in their
-attempt to get a high draft pick I'd talk about today's <a href="https://adventofcode.com/2019/day/1" title="challenge">challenge</a>
-from a teacher's point of view.</p>
-
-<p>The summary of part one is that you have a list of inputs (masses of
+students. 
+</p>
+<p>
+I thought that while I watched my NY Giants play valiantly in their
+attempt to get a high draft pick I&#39;d talk about today&#39;s <a href="https://adventofcode.com/2019/day/1">challenge</a>
+from a teacher&#39;s point of view.
+</p>
+<p>
+The summary of part one is that you have a list of inputs (masses of
 components) and for each one you have to perform a calculation (how
-much fuel is needed). The answer will be the sum of the fuels.</p>
-
-<p>The most challenging part of this for a beginner might be reading in
-the data but that's not too much of a challenge:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()</code></pre></div>
-</code></pre>
-
-<p>Now we can calculate part1:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
-
-  sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-  <span style="color:#66d9ef">for</span> mass <span style="color:#f92672">in</span> data:
-      sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-  <span style="color:#66d9ef">print</span>(sum)</code></pre></div>
-</code></pre>
-
-<p>Part 2 adds a twist. Now, you have to also consider the fuel needed
-for the fuel you've added. Basically, you have to calculate how much
-fuel you'll need for a given item and then how much fuel you'll need
+much fuel is needed). The answer will be the sum of the fuels.
+</p>
+<p>
+The most challenging part of this for a beginner might be reading in
+the data but that&#39;s not too much of a challenge:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+Now we can calculate part1:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+Part 2 adds a twist. Now, you have to also consider the fuel needed
+for the fuel you&#39;ve added. Basically, you have to calculate how much
+fuel you&#39;ll need for a given item and then how much fuel you&#39;ll need
 for that fuel. You repeat this until the amount of fuel you need is
-either 0 or negative. See <a href="https://adventofcode.com/2019/day/1" title="the challenge">the challenge</a> for more info on this.</p>
-
-<p>This is our first "teaching moment." This is going to be messy to work
+either 0 or negative. See <a href="https://adventofcode.com/2019/day/1">the challenge</a> for more info on this. 
+</p>
+<p>
+This is our first &#34;teaching moment.&#34; This is going to be messy to work
 into our part1 solution but if we had factored out the original fuel
 calculation we could probably reused it and maybe more of our
-solution:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
-      <span style="color:#66d9ef">return</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-
-  sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-  <span style="color:#66d9ef">for</span> mass <span style="color:#f92672">in</span> data:
-      sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> calc_fuel(mass)
-  <span style="color:#66d9ef">print</span>(sum)</code></pre></div>
-</code></pre>
-
-<p>Now we can just add an inner loop that repeatedly adds the fuel costs.</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
-      <span style="color:#66d9ef">return</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-
-  sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-  <span style="color:#66d9ef">for</span> mass <span style="color:#f92672">in</span> data:
-      fuel <span style="color:#f92672">=</span> calc_fuel(mass)
-      <span style="color:#66d9ef">while</span> fuel <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-          sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> fuel
-          fuel <span style="color:#f92672">=</span>  calc_fuel(fuel)
-  <span style="color:#66d9ef">print</span>(sum)</code></pre></div>
-</code></pre>
-
-<p>More "teachable moments." We have to change up variables in our fuel
+solution:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+Now we can just add an inner loop that repeatedly adds the fuel costs.
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+More &#34;teachable moments.&#34; We have to change up variables in our fuel
 calculations (lines 8 and 11) and for a beginner, the loop within a
-loop can be somewhat muddled. It's more complex but it's doing
-something that <strong>is</strong> more complex. It's also good nested loop practice.</p>
-
-<p>For more advanced students, if they're familiar with list
-comprehensions you can really clean up part 1:</p>
-
-<pre><code class="language-python"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
-  data <span style="color:#f92672">=</span> [int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data] <span style="color:#75715e"># convert to ints before starting</span>
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
-      <span style="color:#66d9ef">return</span> mass<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-
-  <span style="color:#75715e"># part 1</span>
-  part1 <span style="color:#f92672">=</span> sum([calc_fuel(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data])</code></pre></div>
-</code></pre>
-
-<pre><code class="language-python">
-</code></pre>
-
-<p>but I think part 2 either stay's more or less as is.</p>
-
-<p>Personally, I wrote my solutions in Clojure:</p>
-
-<pre><code class="language-clojure"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">ns </span>day01
+loop can be somewhat muddled. It&#39;s more complex but it&#39;s doing
+something that <strong>is</strong> more complex. It&#39;s also good nested loop practice.
+</p>
+<p>
+For more advanced students, if they&#39;re familiar with list
+comprehensions you can really clean up part 1:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+</div>
+<p>
+#+END_SRC
+</p>
+<p>
+but I think part 2 either stay&#39;s more or less as is.
+</p>
+<p>
+Personally, I wrote my solutions in Clojure:
+</p>
+<div class="src src-clojure">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">ns </span>day01
   (<span style="color:#e6db74">:require</span> [clojure.string <span style="color:#e6db74">:as</span> string]
             [utils <span style="color:#e6db74">:as</span> u]))
 
@@ -198,7 +178,7 @@ comprehensions you can really clean up part 1:</p>
 (<span style="color:#66d9ef">def </span>test-masses [<span style="color:#ae81ff">12</span> <span style="color:#ae81ff">14</span> <span style="color:#ae81ff">1969</span> <span style="color:#ae81ff">100756</span>])
 
 <span style="color:#75715e">;; load data</span>
-(<span style="color:#66d9ef">def </span>masses (-&gt;&gt;
+(<span style="color:#66d9ef">def </span>masses (<span style="color:#a6e22e">-&gt;&gt;</span>
              (slurp <span style="color:#e6db74">&#34;day01.dat&#34;</span>)
              string/split-lines
              (map u/parse-int)
@@ -215,31 +195,33 @@ comprehensions you can really clean up part 1:</p>
 
 
 (<span style="color:#66d9ef">defn </span>calc-mass-part2
-  ([mass] (calc-mass-part2 mass <span style="color:#ae81ff">0</span>))
+  ([mass] (<span style="color:#a6e22e">calc-mass-part2</span> mass <span style="color:#ae81ff">0</span>))
   ([mass cost]
    <span style="color:#e6db74">&#34;Same as part 1 but loop to calculate fuel for the fuel&#34;</span>
-   (<span style="color:#66d9ef">let </span>[fuel (calc-mass-part1 mass)]
+   (<span style="color:#66d9ef">let </span>[fuel (<span style="color:#a6e22e">calc-mass-part1</span> mass)]
      (<span style="color:#66d9ef">if </span>(&lt;= fuel <span style="color:#ae81ff">0</span>)
        cost
-       (recur fuel (+ cost fuel))))))
+       (<span style="color:#a6e22e">recur</span> fuel (+ cost fuel))))))
   
 (<span style="color:#66d9ef">defn </span>part2 [masses]
   (reduce + (map calc-mass-part2 masses )))
 
 (<span style="color:#66d9ef">defn </span>main []
-(println (str <span style="color:#e6db74">&#34;Part1: &#34;</span> (part1 masses)))
-(println (str <span style="color:#e6db74">&#34;Part2: &#34;</span> (part2 masses)))
+(println (str <span style="color:#e6db74">&#34;Part1: &#34;</span> (<span style="color:#a6e22e">part1</span> masses)))
+(println (str <span style="color:#e6db74">&#34;Part2: &#34;</span> (<span style="color:#a6e22e">part2</span> masses)))
 )
 
-(main)</code></pre></div>
-</code></pre>
-
-<p>So that's day 1. I don't know if I'll write up any more or, given my
-travel and work schedule for the week,if I'll even be able  to work
-on more problems until next weekend.</p>
-
-<p>In any event. If you're teaching CS0 or CS1 students, you should
-really check out Advent of Code.</p>
+(<span style="color:#a6e22e">main</span>)</code></pre></div></code></pre></div>
+</div>
+<p>
+So that&#39;s day 1. I don&#39;t know if I&#39;ll write up any more or, given my
+travel and work schedule for the week,if I&#39;ll even be able  to work
+on more problems until next weekend. 
+</p>
+<p>
+In any event. If you&#39;re teaching CS0 or CS1 students, you should
+really check out Advent of Code.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -329,11 +311,11 @@ really check out Advent of Code.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -397,13 +379,6 @@ really check out Advent of Code.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -868,7 +843,7 @@ really check out Advent of Code.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Making contest problems and writing tests</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Making contest problems and writing tests" />
-<meta property="og:description" content="I&#39;m now well behind in Advent of Code. Traveling up to Michigan to see my son and my brother and his family will do that.
-I was planning on working to catch up but got distracted earlier by this thread on the Advent of Code subreddit. Specifically this comment by Eric Wastl, the contest creator. The thread is about the level of difficulty of the various problems and Eric&#39;s comment talks about some of the factors that go into creating a good collection of problems for a contest and the difficulties involved." />
+<meta property="og:description" content="I&#39;m now well behind in Advent of Code. Traveling up to Michigan to see my son and my brother and his family will do that.  I was planning on working to catch up but got distracted earlier by this thread on the Advent of Code subreddit. Specifically this comment by Eric Wastl, the contest creator. The thread is about the level of difficulty of the various problems and Eric&#39;s comment talks about some of the factors that go into creating a good collection of problems for a contest and the difficulties involved." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/advent-2017-making-tests/" /><meta property="article:published_time" content="2017-12-11T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-12-11T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/advent-2017-making-tests/" />
+<meta property="article:published_time" content="2017-12-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-12-11T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Making contest problems and writing tests"/>
-<meta name="twitter:description" content="I&#39;m now well behind in Advent of Code. Traveling up to Michigan to see my son and my brother and his family will do that.
-I was planning on working to catch up but got distracted earlier by this thread on the Advent of Code subreddit. Specifically this comment by Eric Wastl, the contest creator. The thread is about the level of difficulty of the various problems and Eric&#39;s comment talks about some of the factors that go into creating a good collection of problems for a contest and the difficulties involved."/>
+<meta name="twitter:description" content="I&#39;m now well behind in Advent of Code. Traveling up to Michigan to see my son and my brother and his family will do that.  I was planning on working to catch up but got distracted earlier by this thread on the Advent of Code subreddit. Specifically this comment by Eric Wastl, the contest creator. The thread is about the level of difficulty of the various problems and Eric&#39;s comment talks about some of the factors that go into creating a good collection of problems for a contest and the difficulties involved."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,56 +92,81 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>I'm now well behind in <a href="http://adventofcode.com" title="Advent of Code">Advent of Code</a>. Traveling up to Michigan to see
-my son and my brother and his family will do that.</p>
-
-<p>I was planning on working to catch up but got distracted earlier by
-<a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/" title="this thread">this thread</a> on the Advent of Code subreddit. Specifically <a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/" title="this comment">this comment</a>
-by <a href="http://was.tl/" title="Eric Wastl">Eric Wastl</a>, the contest creator. The thread is about the level of
-difficulty of the various problems and Eric's comment talks about some
+		  <p>
+I&#39;m now well behind in <a href="http://adventofcode.com">Advent of Code</a>. Traveling up to Michigan to see
+my son and my brother and his family will do that.
+</p>
+<p>
+I was planning on working to catch up but got distracted earlier by
+<a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/">this thread</a> on the Advent of Code subreddit. Specifically <a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/">this comment</a>
+by <a href="http://was.tl/">Eric Wastl</a>, the contest creator. The thread is about the level of
+difficulty of the various problems and Eric&#39;s comment talks about some
 of the factors that go into creating a good collection of problems for
-a contest and the difficulties involved.</p>
-
-<p>It made me think of a conversation I had twenty years ago with Rob
+a contest and the difficulties involved.
+</p>
+<p>
+It made me think of a conversation I had twenty years ago with Rob
 Kolstad. We were chatting at a programming competition while the
 students were hacking away. We were discussing that there were only so
 many questions that a typical high school or college competition can
-ask:</p>
-
+ask:
+</p>
 <ol>
-<li>The Mathy question</li>
-<li>Recursion / divide and conquer etc.</li>
-<li>Graph stuff</li>
-<li>Dynamic Programming</li>
+<li>
+<p>
+The Mathy question
+</p>
+</li>
+<li>
+<p>
+Recursion / divide and conquer etc.
+</p>
+</li>
+<li>
+<p>
+Graph stuff
+</p>
+</li>
+<li>
+<p>
+Dynamic Programming
+</p>
+</li>
 </ol>
-
-<p>and I think one or two more. The actual questions were just window
-dressing on these fundamental question types.</p>
-
-<p>You can see this in many competitions including Advent of Code -
+<p>
+and I think one or two more. The actual questions were just window
+dressing on these fundamental question types.
+</p>
+<p>
+You can see this in many competitions including Advent of Code -
 particularly if you look over all three years. This is not a
 criticism. I love Advent of Code and think that Eric and the people
-he's working with are doing a great job . Read Eric's comment to get a
-deeper dive into what he thinks about as a contest designer.</p>
-
-<p>I also got to thinking how similar creating a competition is to
-creating an exam. Maybe that's because I'm currently writing the final
+he&#39;s working with are doing a great job . Read Eric&#39;s comment to get a
+deeper dive into what he thinks about as a contest designer.
+</p>
+<p>
+I also got to thinking how similar creating a competition is to
+creating an exam. Maybe that&#39;s because I&#39;m currently writing the final
 my students will take in a couple of days. In class tests are
 certainly not the best of assessments but they do have their place and
-in any event, they're frequently  required by school or departmental
-policy.</p>
-
-<p>There are many similarities between what teachers consider when making
+in any event, they&#39;re frequently  required by school or departmental
+policy.
+</p>
+<p>
+There are many similarities between what teachers consider when making
 tests to what contest designers consider. What concepts and techniques
 must the students use? Are the problems too similar? Do they ramp up
 in difficulty? Are they all or nothing or can a student incrementally
-work their way to a solution? Does one problem lead into another?</p>
-
-<p>There's no big reveal or surprise here today. Just something I've been
-thinking about.</p>
-
-<p>A couple of busy days coming up but maybe over the weekend I can get
-back to Advent of Code.</p>
+work their way to a solution? Does one problem lead into another?
+</p>
+<p>
+There&#39;s no big reveal or surprise here today. Just something I&#39;ve been
+thinking about.
+</p>
+<p>
+A couple of busy days coming up but maybe over the weekend I can get
+back to Advent of Code.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -230,11 +255,11 @@ back to Advent of Code.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -298,13 +323,6 @@ back to Advent of Code.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -769,7 +787,7 @@ back to Advent of Code.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithms on C&#39;est la Z</title>
+    <title>algorithms on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/algorithms/</link>
-    <description>Recent content in Algorithms on C&#39;est la Z</description>
+    <description>Recent content in algorithms on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Apr 2019 13:51:52 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 22 Apr 2019 13:51:52 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/seam-carving/</guid>
-      <description>It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
-Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
-Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
+      <description>It&amp;#39;s spring break and for me that&amp;#39;s always been a good time to explore some new ideas.  Here&amp;#39;s one that some of you might like, particularly if you&amp;#39;re teaching APCS-A or something similar.  Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
     </item>
     
   </channel>

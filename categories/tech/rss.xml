@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on C&#39;est la Z</title>
+    <title>tech on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/tech/</link>
-    <description>Recent content in Tech on C&#39;est la Z</description>
+    <description>Recent content in tech on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Dec 2019 11:56:23 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 27 Dec 2019 11:56:23 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/keeping-current-between-semesters/</guid>
-      <description>People say that one of the impossible problems for CS teachers is keeping current - they say the field is constantly changing, how can a teacher keep up with all the new things going on.
-Well, on the one hand it isn&#39;t true - most of the core of CS is the same. We still teach roughly the same programming constructs, data structures and algorithms.
-On the other hand, it is true.</description>
+      <description>People say that one of the impossible problems for CS teachers is keeping current - they say the field is constantly changing, how can a teacher keep up with all the new things going on.  Well, on the one hand it isn&amp;#39;t true - most of the core of CS is the same. We still teach roughly the same programming constructs, data structures and algorithms.  On the other hand, it is true.</description>
     </item>
     
   </channel>

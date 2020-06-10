@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mpd on C&#39;est la Z</title>
+    <title>mpd on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/mpd/</link>
-    <description>Recent content in Mpd on C&#39;est la Z</description>
+    <description>Recent content in mpd on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-43-music/</guid>
-      <description>I like to listen to music at work. Sometimes I just stream from YouTube, Soundcloud, Spotify or some other online source but if you&#39;re a person of a certain age, like me, you probably have quite an mp3 collection. All those CDs that have been ripped not to mention some converted vinyl.
-I used to use the Music Player Daemon or MPD back in the day. It would run in the background and you could connect to it using lots of clients.</description>
+      <description>I like to listen to music at work. Sometimes I just stream from YouTube, Soundcloud, Spotify or some other online source but if you&amp;#39;re a person of a certain age, like me, you probably have quite an mp3 collection. All those CDs that have been ripped not to mention some converted vinyl.  I used to use the Music Player Daemon or MPD back in the day. It would run in the background and you could connect to it using lots of clients.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on C&#39;est la Z</title>
+    <title>linux on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/linux/</link>
-    <description>Recent content in Linux on C&#39;est la Z</description>
+    <description>Recent content in linux on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Oct 2016 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/flask-setup-virtualenv/</guid>
-      <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&#39;re in the program.
-This means we can finally start using the web as a way of displaying and sharing our projects.
-For this type of web development, I&#39;m a big fan of using Flask. Flask is a Python microframework.</description>
+      <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&amp;#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&amp;#39;re in the program.  This means we can finally start using the web as a way of displaying and sharing our projects.  For this type of web development, I&amp;#39;m a big fan of using Flask. Flask is a Python microframework.</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@ For this type of web development, I&#39;m a big fan of using Flask. Flask is a P
       <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/user-friendly/</guid>
-      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.
-This called to mind those countless discussions about tools being user friendly. I&#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.
-Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39;t user friendly.</description>
+      <description>Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.  This called to mind those countless discussions about tools being user friendly. I&amp;#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.  Don&amp;#39;t use Emacs, it isn&amp;#39;t user friendly. Don&amp;#39;t use Linux, it isn&amp;#39;t user friendly.</description>
     </item>
     
     <item>
@@ -39,10 +35,7 @@ Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/shell-short-tagging/</guid>
-      <description>Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line.</description>
+      <description>Quick post to add to the recent command line fu I&amp;#39;ve been writing about.  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.</description>
     </item>
     
     <item>
@@ -51,9 +44,7 @@ Nikola has a plugin tags which lets you manage tags from the command line.</desc
       <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/bash-scripting/</guid>
-      <description>Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.
-A number of us made suggestions. I linked to this old blog post.
-One group member said she asked around for similar suggestions and the response she got was &#34;vi and awk.&#34; I wanted to jokingly respond &#34;and after they suggested that they got into their time machine and went back to the 70&#39;s.</description>
+      <description>Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.  A number of us made suggestions. I linked to this old blog post.  One group member said she asked around for similar suggestions and the response she got was &amp;#34;vi and awk.&amp;#34; I wanted to jokingly respond &amp;#34;and after they suggested that they got into their time machine and went back to the 70&amp;#39;s.</description>
     </item>
     
     <item>
@@ -62,10 +53,7 @@ One group member said she asked around for similar suggestions and the response 
       <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/duplicate-emails/</guid>
-      <description>Repost This is a repost from March 2015. It didn&#39;t transfer when I rebooted the blog.
-Original Quick post on why I love the Unix command line.
-We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.
-The kids signed up on a Google doc but we all know the story -- when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+      <description>Repost   This is a repost from March 2015. It didn&amp;#39;t transfer when I rebooted the blog. Original   Quick post on why I love the Unix command line.  We&amp;#39;re busy organizing CSTUY&amp;#39;s first hackathon. It&amp;#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story – when people sign up for a free event, even one with free food and t-shirts, many don&amp;#39;t show.</description>
     </item>
     
     <item>
@@ -74,8 +62,7 @@ The kids signed up on a Google doc but we all know the story -- when people sign
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid>
-      <description>div.center {text-align:center;} 
- Quick post on why I love the Unix command line.  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Quick post on why I love the Unix command line. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; We&amp;#39;re busy organizing &amp;lt;a href=&amp;#34;http://cstuy.org&amp;#34;&amp;gt;CSTUY&amp;#39;s&amp;lt;/a&amp;gt; first &amp;lt;a href=&amp;#34;http://cstuy.org/programs/defhacks&amp;#34;&amp;gt;hackathon&amp;lt;/a&amp;gt;. It&amp;#39;s going to be at &amp;lt;a href=&amp;#34;http://sumall.com&amp;#34;&amp;gt;SumAll&amp;lt;/a&amp;gt;, where we hold our weekly &amp;lt;a href=&amp;#34;http://cstuy.org/programs/hacking_sessions&amp;#34;&amp;gt;hacking sessions&amp;lt;/a&amp;gt; but while taking registration, we had a little program. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; The kids signed up on a Google doc but we all know the story &amp;amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&amp;#39;t show.</description>
     </item>
     
   </channel>

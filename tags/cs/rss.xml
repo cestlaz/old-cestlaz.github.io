@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cs on C&#39;est la Z</title>
+    <title>CS on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/cs/</link>
-    <description>Recent content in Cs on C&#39;est la Z</description>
+    <description>Recent content in CS on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Apr 2020 18:45:50 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 27 Apr 2020 18:45:50 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/arbitrary-trees/</guid>
-      <description>It&#39;s been 10 days from my last post. Not really a big break for me historically but certainly a big one given how much I&#39;ve been posting this year.
-Been under the weather for the past couple of weeks dealing with COVID-19. Haven&#39;t had super bad symptoms and as symptoms have been getting fewer and less severe I&#39;m hoping I&#39;m close to a full recovery.
-In any event, I&#39;m feeling good enough for a quick post.</description>
+      <description>It&amp;#39;s been 10 days from my last post. Not really a big break for me historically but certainly a big one given how much I&amp;#39;ve been posting this year.  Been under the weather for the past couple of weeks dealing with COVID-19. Haven&amp;#39;t had super bad symptoms and as symptoms have been getting fewer and less severe I&amp;#39;m hoping I&amp;#39;m close to a full recovery.  In any event, I&amp;#39;m feeling good enough for a quick post.</description>
     </item>
     
     <item>
@@ -28,7 +26,7 @@ In any event, I&#39;m feeling good enough for a quick post.</description>
       <pubDate>Sat, 07 Mar 2020 08:12:55 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/interesting-problems/</guid>
-      <description>I organize a monthly professional development session for CS teachers. It&#39;s targeted at teachers who are beyond the beginner stage and don&#39;t want yet another hello world blinky arduino scratch workshop. Don&#39;t get me wrong, given the need for CS teachers we need plenty of beginner workshops but we also need to take teachers to the next level. I refer to my workshops as being for teachers of APCS-A, similar, or beyond.</description>
+      <description>I organize a monthly professional development session for CS teachers. It&amp;#39;s targeted at teachers who are beyond the beginner stage and don&amp;#39;t want yet another hello world blinky arduino scratch workshop. Don&amp;#39;t get me wrong, given the need for CS teachers we need plenty of beginner workshops but we also need to take teachers to the next level. I refer to my workshops as being for teachers of APCS-A, similar, or beyond.</description>
     </item>
     
     <item>
@@ -37,8 +35,7 @@ In any event, I&#39;m feeling good enough for a quick post.</description>
       <pubDate>Sun, 09 Feb 2020 16:22:18 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/my-code-works/</guid>
-      <description>One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.
-Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request.</description>
+      <description>One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.  Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &amp;#34;basic&amp;#34; authentication where it sent a username and password with every request.</description>
     </item>
     
     <item>
@@ -47,9 +44,7 @@ Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub cla
       <pubDate>Fri, 31 Jan 2020 07:00:01 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/pd-ai-for-all/</guid>
-      <description>Yesterday we had another Professional Development Workshop for High School CS Teachers and as usual, I wnat to express my thanks to Digital Ocean for continuing to provide space, food, and great overall support.
-This time though, instead of JonAlf and I having to run the show we had a guest speaker. We were joined by Sarah Judd of AI4ALL.
-Sarah gave an overview of what AI4ALL was up to and why but the core of her presentation was taking us through some of the exercises they have been developing at AI4All.</description>
+      <description>Yesterday we had another Professional Development Workshop for High School CS Teachers and as usual, I wnat to express my thanks to Digital Ocean for continuing to provide space, food, and great overall support.  This time though, instead of JonAlf and I having to run the show we had a guest speaker. We were joined by Sarah Judd of AI4ALL.  Sarah gave an overview of what AI4ALL was up to and why but the core of her presentation was taking us through some of the exercises they have been developing at AI4All.</description>
     </item>
     
     <item>
@@ -58,9 +53,7 @@ Sarah gave an overview of what AI4ALL was up to and why but the core of her pres
       <pubDate>Fri, 27 Dec 2019 11:56:23 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/keeping-current-between-semesters/</guid>
-      <description>People say that one of the impossible problems for CS teachers is keeping current - they say the field is constantly changing, how can a teacher keep up with all the new things going on.
-Well, on the one hand it isn&#39;t true - most of the core of CS is the same. We still teach roughly the same programming constructs, data structures and algorithms.
-On the other hand, it is true.</description>
+      <description>People say that one of the impossible problems for CS teachers is keeping current - they say the field is constantly changing, how can a teacher keep up with all the new things going on.  Well, on the one hand it isn&amp;#39;t true - most of the core of CS is the same. We still teach roughly the same programming constructs, data structures and algorithms.  On the other hand, it is true.</description>
     </item>
     
     <item>
@@ -69,8 +62,7 @@ On the other hand, it is true.</description>
       <pubDate>Thu, 12 Dec 2019 17:19:27 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/multi-stage-assignments/</guid>
-      <description>In the real world you&#39;re usually not building your own projects from scratch. Much more frequently you&#39;re working on a team and you and other players come and go over time.
-This is in stark contrast to most CS educational experiences where students typically complete relatively small assignments from beginning to end. One of my biggest fears way back when as I was about to graduate college was when I woke up one night in a cold sweath &#34;</description>
+      <description>In the real world you&amp;#39;re usually not building your own projects from scratch. Much more frequently you&amp;#39;re working on a team and you and other players come and go over time.  This is in stark contrast to most CS educational experiences where students typically complete relatively small assignments from beginning to end. One of my biggest fears way back when as I was about to graduate college was when I woke up one night in a cold sweath &amp;#34;oh crap - in a couple of weeks I&amp;#39;m going to have to actually produce good code.</description>
     </item>
     
     <item>
@@ -79,8 +71,7 @@ This is in stark contrast to most CS educational experiences where students typi
       <pubDate>Sun, 08 Dec 2019 17:04:30 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day8-part2/</guid>
-      <description>As I sad in my last post, day 8 would be a nice project or lesson in an APCS-A or college CS1 class. Another nice problem would be to write a program to generate an image in the format required by the question. Alternatively, a teacher doing day 8 with their classes might want to generate a bunch of images for the students to test their decoders on.
-I thought I&#39;d write one to see how appropriate it would be for the students.</description>
+      <description>As I sad in my last post, day 8 would be a nice project or lesson in an APCS-A or college CS1 class. Another nice problem would be to write a program to generate an image in the format required by the question. Alternatively, a teacher doing day 8 with their classes might want to generate a bunch of images for the students to test their decoders on.  I thought I&amp;#39;d write one to see how appropriate it would be for the students.</description>
     </item>
     
     <item>
@@ -89,7 +80,7 @@ I thought I&#39;d write one to see how appropriate it would be for the students.
       <pubDate>Sun, 08 Dec 2019 08:42:32 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day8/</guid>
-      <description>I spent most of last week up in Albany working on the NY State K12 CS Standards so fell a bit behind. I had to go back to complete day 5 but still haven&#39;t finished day 7 which builds on day 5 which in turn builds on day 2. I might not get to finishing 7 for a while but it looks like a good chance to play with core.async - Clojure&#39;s facilities for concurrency.</description>
+      <description>I spent most of last week up in Albany working on the NY State K12 CS Standards so fell a bit behind. I had to go back to complete day 5 but still haven&amp;#39;t finished day 7 which builds on day 5 which in turn builds on day 2. I might not get to finishing 7 for a while but it looks like a good chance to play with core.</description>
     </item>
     
     <item>
@@ -98,8 +89,7 @@ I thought I&#39;d write one to see how appropriate it would be for the students.
       <pubDate>Wed, 04 Dec 2019 19:32:34 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day4/</guid>
-      <description>Day 4. Most of the day was spent working on the NY State CS standards to I didn&#39;t figure to have much time to work on the problem. Fortunately, I was able to knock out part 1 before work started and part 2 was a quick adjustment when I got back to it at the start of lunch.
-Once again, it was a problem with a few interesting teacher side aspects.</description>
+      <description>Day 4. Most of the day was spent working on the NY State CS standards to I didn&amp;#39;t figure to have much time to work on the problem. Fortunately, I was able to knock out part 1 before work started and part 2 was a quick adjustment when I got back to it at the start of lunch.  Once again, it was a problem with a few interesting teacher side aspects.</description>
     </item>
     
     <item>
@@ -108,8 +98,7 @@ Once again, it was a problem with a few interesting teacher side aspects.</descr
       <pubDate>Tue, 03 Dec 2019 19:01:13 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day3/</guid>
-      <description>Today&#39;s problem dealt with intersecting paths. You start with two inputs, figure out the paths they represent and where they intersect and then find the intersection that correctly answers the question.
-For part 1 you have to find the intersection closest to the origin. From a teacher&#39;s point of view, the interesting part here is data representation. This problem deals with a two dimensional grid on which the paths live. For most students, at least in my experience, if they&#39;re trained in a language like C++ or Java they go for the direct representation - a 2D array.</description>
+      <description>Today&amp;#39;s problem dealt with intersecting paths. You start with two inputs, figure out the paths they represent and where they intersect and then find the intersection that correctly answers the question.  For part 1 you have to find the intersection closest to the origin. From a teacher&amp;#39;s point of view, the interesting part here is data representation. This problem deals with a two dimensional grid on which the paths live.</description>
     </item>
     
     <item>
@@ -118,8 +107,7 @@ For part 1 you have to find the intersection closest to the origin. From a teach
       <pubDate>Mon, 02 Dec 2019 17:11:43 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day2/</guid>
-      <description>Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.
-At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it.</description>
+      <description>Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&amp;#39;s point of view, we&amp;#39;ll look at a Python solution.  At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&amp;#39;t go back to it.</description>
     </item>
     
     <item>
@@ -128,9 +116,7 @@ At its core, this is a simulation problem - read the data into an array or list 
       <pubDate>Sun, 01 Dec 2019 14:23:35 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-2019-day1/</guid>
-      <description>Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.
-I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.
-The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed).</description>
+      <description>Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.  I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&amp;#39;d talk about today&amp;#39;s challenge from a teacher&amp;#39;s point of view.  The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed).</description>
     </item>
     
     <item>
@@ -139,8 +125,7 @@ The summary of part one is that you have a list of inputs (masses of components)
       <pubDate>Fri, 29 Nov 2019 09:02:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/advent-of-code-2019/</guid>
-      <description>It&#39;s almost December which means it&#39;s almost time for Advent of Code 2019. Advent of code is an annual computer programming competition created and ruyn by Eric Wastl. It&#39;s been running since 2015. I&#39;ve written about it before, mostly from a teacher&#39;s point of view (Solve A to Solve B, Data structures and Hidden Complexity, Tools can shape how we think and a few others).
-Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.</description>
+      <description>It&amp;#39;s almost December which means it&amp;#39;s almost time for Advent of Code 2019. Advent of code is an annual computer programming competition created and ruyn by Eric Wastl. It&amp;#39;s been running since 2015. I&amp;#39;ve written about it before, mostly from a teacher&amp;#39;s point of view (Solve A to Solve B, Data structures and Hidden Complexity, Tools can shape how we think and a few others).  Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.</description>
     </item>
     
     <item>
@@ -149,7 +134,7 @@ Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.
       <pubDate>Mon, 25 Nov 2019 05:45:55 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/word-chains/</guid>
-      <description>At this point, we&#39;ve done a fair amount of playing with text so it&#39;s time for a fun little project. We&#39;re going to generate some text &#34;in the style&#34; of a source text. The technique we&#39;re going to use is usually called a Markov Chain text generator. Basically a model where the next state or word is based entirely on the current state. I don&#39;t dwell on the math under the hood but in case you&#39;re interested, here are a few links: Wikipedia, Explained Visually, UC Davis Math.</description>
+      <description>At this point, we&amp;#39;ve done a fair amount of playing with text so it&amp;#39;s time for a fun little project. We&amp;#39;re going to generate some text &amp;#34;in the style&amp;#34; of a source text. The technique we&amp;#39;re going to use is usually called a Markov Chain text generator. Basically a model where the next state or word is based entirely on the current state. I don&amp;#39;t dwell on the math under the hood but in case you&amp;#39;re interested, here are a few links: Wikipedia, Explained Visually, UC Davis Math.</description>
     </item>
     
     <item>
@@ -158,8 +143,7 @@ Basically, Eric releases one poblem a day at midnight from Dec 1 through Dec 25.
       <pubDate>Fri, 22 Nov 2019 13:55:09 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/bsdgames/</guid>
-      <description>When I was writing the I Speak Jive post, the first thing I had to do was find those old programs. It turned out to be harder than I thought. I found online versions but it took a while to find this GitHub repo.
-On the way, I seemed to recall that these might be bundled with a bunch of old BSD games so I took a look at the BSD games package for Linux.</description>
+      <description>When I was writing the I Speak Jive post, the first thing I had to do was find those old programs. It turned out to be harder than I thought. I found online versions but it took a while to find this GitHub repo.  On the way, I seemed to recall that these might be bundled with a bunch of old BSD games so I took a look at the BSD games package for Linux.</description>
     </item>
     
     <item>
@@ -168,8 +152,7 @@ On the way, I seemed to recall that these might be bundled with a bunch of old B
       <pubDate>Wed, 20 Nov 2019 08:15:41 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/bag-of-words/</guid>
-      <description>Following up on a previous post, we&#39;re going to continue to talk about playing with text. This time, building and working with a bag of words from a text.
-A bag of words is a simple language processing model where you just consider individual words in a text. What they are and how many times they occur. This is a pretty simple model but you can still have a good bit of fun with your students with it.</description>
+      <description>Following up on a previous post, we&amp;#39;re going to continue to talk about playing with text. This time, building and working with a bag of words from a text.  A bag of words is a simple language processing model where you just consider individual words in a text. What they are and how many times they occur. This is a pretty simple model but you can still have a good bit of fun with your students with it.</description>
     </item>
     
     <item>
@@ -178,9 +161,7 @@ A bag of words is a simple language processing model where you just consider ind
       <pubDate>Wed, 06 Nov 2019 12:25:17 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/school-visit-update-2019/</guid>
-      <description>I&#39;ve been spending a lot of time at area high schools this fall. Today I was at FDR High School in Broooklyn.
-  I only learned about FDR HS a little over a year ago when I met their CS teacher Josh Hans at a NYC PD event. I visit last fall and then again today.
-Whenever I visit a school it&#39;s a different experience. Sometimes I speak to the CS classes, sometimes at an event like a CS Week hackathon, once I even got to address an entire senior class in an auditorium.</description>
+      <description>I&amp;#39;ve been spending a lot of time at area high schools this fall. Today I was at FDR High School in Broooklyn.  &amp;lt;figure&amp;gt; &amp;lt;img src=&amp;#34;&amp;#34; width=&amp;#34;500px&amp;#34;/&amp;gt; &amp;lt;/figure&amp;gt;  I only learned about FDR HS a little over a year ago when I met their CS teacher Josh Hans at a NYC PD event. I visit last fall and then again today.  Whenever I visit a school it&amp;#39;s a different experience.</description>
     </item>
     
     <item>
@@ -189,7 +170,7 @@ Whenever I visit a school it&#39;s a different experience. Sometimes I speak to 
       <pubDate>Wed, 01 May 2019 08:39:41 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/break-continue/</guid>
-      <description>What can I do to discourage my students from using the &#34;break&#34;  statement?  That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;</description>
+      <description>What can I do to discourage my students from using the &amp;#34;break&amp;#34; statement?   That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&amp;#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &amp;#34;how can I stop them&amp;#34; one. I equally dislike when the offered advice is basically &amp;#34;never use break no matter what&amp;#34; or something similar.</description>
     </item>
     
     <item>
@@ -198,8 +179,7 @@ Whenever I visit a school it&#39;s a different experience. Sometimes I speak to 
       <pubDate>Sun, 28 Apr 2019 11:27:46 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/technical-interviews-and-diversity/</guid>
-      <description>I recently stumbled upon Laurie Barth on Twitter and noticed a couple of tweets about tech interviews and the hiring process, something I&#39;ve been thinking about recently.
-Solid rant. I think the teach to the programming test market already exists. And it’s why interviewers who subscribe to these tactics get upset if a candidate admits they’ve seen the problem previously. Because it ruins the illusion that this is revealing how candidates think.</description>
+      <description>I recently stumbled upon Laurie Barth on Twitter and noticed a couple of tweets about tech interviews and the hiring process, something I&amp;#39;ve been thinking about recently.  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;Solid rant. I think the teach to the programming test market already exists. And it’s why interviewers who subscribe to these tactics get upset if a candidate admits they’ve seen the problem previously. Because it ruins the illusion that this is revealing how candidates think.</description>
     </item>
     
     <item>
@@ -208,9 +188,7 @@ Solid rant. I think the teach to the programming test market already exists. And
       <pubDate>Mon, 22 Apr 2019 13:51:52 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/seam-carving/</guid>
-      <description>It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
-Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
-Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
+      <description>It&amp;#39;s spring break and for me that&amp;#39;s always been a good time to explore some new ideas.  Here&amp;#39;s one that some of you might like, particularly if you&amp;#39;re teaching APCS-A or something similar.  Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image.</description>
     </item>
     
     <item>
@@ -219,9 +197,7 @@ Many APCS-A teachers do a unit on image processing using the picture lab (altern
       <pubDate>Sat, 16 Mar 2019 08:20:47 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/adapting-a-nifty-assignment/</guid>
-      <description>The Nifty Assignments session at SGICSE is always a popular one.
-Go to the site and you&#39;ll find links to all the assignments presented from 1999 to the present year.
-On the one hand, it&#39;s a great resource. On the other, the assignments vary in nifty-ness depending on one&#39;s personal taste. To me, there seemed to be a run of nifty assignments that were really just &#34;take a generic assignment and fancy up the graphics&#34;</description>
+      <description>&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;&amp;#34;/&amp;gt; &amp;lt;/figure&amp;gt;  The Nifty Assignments session at SGICSE is always a popular one.  Go to the site and you&amp;#39;ll find links to all the assignments presented from 1999 to the present year.  On the one hand, it&amp;#39;s a great resource. On the other, the assignments vary in nifty-ness depending on one&amp;#39;s personal taste. To me, there seemed to be a run of nifty assignments that were really just &amp;#34;take a generic assignment and fancy up the graphics&amp;#34; mixed in with one&amp;#39;s that I found really cool.</description>
     </item>
     
     <item>
@@ -230,9 +206,7 @@ On the one hand, it&#39;s a great resource. On the other, the assignments vary i
       <pubDate>Mon, 04 Mar 2019 15:25:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/sigcse-2019-keynotes/</guid>
-      <description>It&#39;s that time of the year to write a series of blog posts about SIGCSE. I thought I&#39;d start with one on the keynotes.
-There were four keynote speakers. Marie desJardins, Gloria Townsend, Mark Guzdial, and Blair Taylor. I wasn&#39;t at the first timer&#39;s lunch where Townsend spoke so I won&#39;t talk at all about that keynote.
-I&#39;m also not going to summarize the talks. Andy Ko wrote up a terrific summary of his SIGCSE experience and did a much better job giving overviews to the keynotes than I ever could so I&#39;ll just refer you to Andy&#39;s blog post.</description>
+      <description>It&amp;#39;s that time of the year to write a series of blog posts about SIGCSE. I thought I&amp;#39;d start with one on the keynotes.  There were four keynote speakers. Marie desJardins, Gloria Townsend, Mark Guzdial, and Blair Taylor. I wasn&amp;#39;t at the first timer&amp;#39;s lunch where Townsend spoke so I won&amp;#39;t talk at all about that keynote.  I&amp;#39;m also not going to summarize the talks. Andy Ko wrote up a terrific summary of his SIGCSE experience and did a much better job giving overviews to the keynotes than I ever could so I&amp;#39;ll just refer you to Andy&amp;#39;s blog post.</description>
     </item>
     
     <item>
@@ -241,8 +215,7 @@ I&#39;m also not going to summarize the talks. Andy Ko wrote up a terrific summa
       <pubDate>Tue, 26 Feb 2019 15:49:22 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/pd-apcs-a-and-beyond-3-14-2019/</guid>
-      <description>Back in December we ran our first PD session for CS teachers. This was to address the need for professional development for teachers who were more experienced in terms of computer science - we aimed this at people who were ready to teach APCS-A, similar, or beyond and also to start to build a community for these teachers.
-We had trouble setting things up for February but we&#39;re good to go for March, April and May.</description>
+      <description>Back in December we ran our first PD session for CS teachers. This was to address the need for professional development for teachers who were more experienced in terms of computer science - we aimed this at people who were ready to teach APCS-A, similar, or beyond and also to start to build a community for these teachers.  We had trouble setting things up for February but we&amp;#39;re good to go for March, April and May.</description>
     </item>
     
     <item>
@@ -251,8 +224,7 @@ We had trouble setting things up for February but we&#39;re good to go for March
       <pubDate>Fri, 08 Feb 2019 09:40:44 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/java-interfaces/</guid>
-      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.
-Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary.</description>
+      <description>Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&amp;#39;s not that they&amp;#39;re super difficult topics but rather that they&amp;#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.  Inheritance is its own can of worms and to be honest, something I&amp;#39;ve not found to be all that useful or necessary.</description>
     </item>
     
     <item>
@@ -261,7 +233,7 @@ Inheritance is its own can of worms and to be honest, something I&#39;ve not fou
       <pubDate>Fri, 18 Jan 2019 19:36:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/solve-a-to-solve-b/</guid>
-      <description>So many programming assignments involve a direct solution. Write a program to do this or write a problem to solve that. It&#39;s pretty typical. There&#39;s nothing wrong with assignments like these. They allow students to practice what they&#39;ve been learning and it gives them the opportunity to create some cool programs. All the same, I like it when there&#39;s an indirect problem. You&#39;re faced with a problem but in order to solve it you first have to solve some other problem</description>
+      <description>So many programming assignments involve a direct solution. Write a program to do this or write a problem to solve that. It&amp;#39;s pretty typical. There&amp;#39;s nothing wrong with assignments like these. They allow students to practice what they&amp;#39;ve been learning and it gives them the opportunity to create some cool programs. All the same, I like it when there&amp;#39;s an indirect problem. You&amp;#39;re faced with a problem but in order to solve it you first have to solve some other problem  That&amp;#39;s why I liked day 10 from this year&amp;#39;s Advent of Code.</description>
     </item>
     
     <item>
@@ -270,7 +242,7 @@ Inheritance is its own can of worms and to be honest, something I&#39;ve not fou
       <pubDate>Sun, 30 Dec 2018 15:17:14 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</guid>
-      <description>Since 2015, Eric Wastl has gifted us each December with Advent of Code - a 25 day programming competition that I very much enjoy. This year I haven&#39;t been able to get to too many of the problems. I only completed the first two days on the day they were released, problem three a day late and then I didn&#39;t get back to the problems until almost 12/25 - the final day of the competition.</description>
+      <description>Since 2015, Eric Wastl has gifted us each December with Advent of Code - a 25 day programming competition that I very much enjoy. This year I haven&amp;#39;t been able to get to too many of the problems. I only completed the first two days on the day they were released, problem three a day late and then I didn&amp;#39;t get back to the problems until almost 12/25 - the final day of the competition.</description>
     </item>
     
     <item>
@@ -279,9 +251,7 @@ Inheritance is its own can of worms and to be honest, something I&#39;ve not fou
       <pubDate>Sat, 15 Dec 2018 08:56:06 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/pd-apcs-a-and-beyond/</guid>
-      <description>A while ago I wrote about our plans at Hunter to run professional development for CS teachers. Specifically, running once a month sessions for teachers who teach APCS-A, similar and beyond.
-The idea started as a joke but morphed into a legit idea.
-I was talking to some friends about CTLE hours and how ridiculous the system is. NY State teachers need 100 hours of CTLE credit (PD hours) every so many years.</description>
+      <description>A while ago I wrote about our plans at Hunter to run professional development for CS teachers. Specifically, running once a month sessions for teachers who teach APCS-A, similar and beyond.  The idea started as a joke but morphed into a legit idea.  I was talking to some friends about CTLE hours and how ridiculous the system is. NY State teachers need 100 hours of CTLE credit (PD hours) every so many years.</description>
     </item>
     
     <item>
@@ -290,9 +260,7 @@ I was talking to some friends about CTLE hours and how ridiculous the system is.
       <pubDate>Sun, 18 Nov 2018 19:43:36 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/pd-in-nyc/</guid>
-      <description>I spent this past Saturday morning up at the Microsoft building in Times Square. What was I doing there? Aankit Patel invited me to check out the professional development that he and his team organized for the teachers involved in the assorted CSforAllNYC programs that his office runs.
-Wow.
-Lots of great things going on. I was only able to stay for a couple of hours but I spent some time in two rooms run by TEALS, a room of BJC teachers, a group working with p5.</description>
+      <description>I spent this past Saturday morning up at the Microsoft building in Times Square. What was I doing there? Aankit Patel invited me to check out the professional development that he and his team organized for the teachers involved in the assorted CSforAllNYC programs that his office runs.  Wow.  Lots of great things going on. I was only able to stay for a couple of hours but I spent some time in two rooms run by TEALS, a room of BJC teachers, a group working with p5.</description>
     </item>
     
     <item>
@@ -301,7 +269,7 @@ Lots of great things going on. I was only able to stay for a couple of hours but
       <pubDate>Tue, 16 Oct 2018 17:25:33 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/who-played-spiderman-3/</guid>
-      <description>Parts 1 and 2  Part 1 Part 2  Part 3 In the first two parts of this set of posts I wrote about the motivation and design a question answering system that can answer &#34;who&#34; queries like &#34;who played Spiderman&#34; or &#34;who shot John Lennon?&#34; It&#39;s not perfect. When doing the Spiderman query, chances are the desired answer will be at or near the top of the list of most frequently appearing names but so will &#34;</description>
+      <description>Parts 1 and 2     Part 1    Part 2   Part 3   In the first two parts of this set of posts I wrote about the motivation and design a question answering system that can answer &amp;#34;who&amp;#34; queries like &amp;#34;who played Spiderman&amp;#34; or &amp;#34;who shot John Lennon?&amp;#34; It&amp;#39;s not perfect. When doing the Spiderman query, chances are the desired answer will be at or near the top of the list of most frequently appearing names but so will &amp;#34;Peter Parker.</description>
     </item>
     
     <item>
@@ -310,8 +278,7 @@ Lots of great things going on. I was only able to stay for a couple of hours but
       <pubDate>Sat, 13 Oct 2018 16:04:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/who-played-spiderman-2/</guid>
-      <description>Parts 1 and 3  Part 1 Part 3  Part 2 When we left off last time we used a search engine API to gather a whole bunch of documents with the term &#34;played Spiderman&#34; or &#34;who played Spiderman.&#34; Now we have to process these documents to answer the question. Fortunately, the documents are basically just big strings of text.
-Since we&#39;re doing a &#34;who&#34; query we want to find all the names in all the documents.</description>
+      <description>Parts 1 and 3     Part 1    Part 3   Part 2   When we left off last time we used a search engine API to gather a whole bunch of documents with the term &amp;#34;played Spiderman&amp;#34; or &amp;#34;who played Spiderman.&amp;#34; Now we have to process these documents to answer the question. Fortunately, the documents are basically just big strings of text.</description>
     </item>
     
     <item>
@@ -320,8 +287,7 @@ Since we&#39;re doing a &#34;who&#34; query we want to find all the names in all
       <pubDate>Thu, 11 Oct 2018 17:16:23 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/who-played-spiderman/</guid>
-      <description>Parts 2 and 3  Part 2 Part 3  I wasn&#39;t going to teach this lesson today. I was planning on starting a multi day project starting with an exercise in specification writing and design.
-Beforehand though, we had to talk about classes. One of my students asked if probability and/or statistics were really important for CS. I started to cite a few examples and then decided to segue into this.</description>
+      <description>Parts 2 and 3     [[/post/who-played-spiderman-2/][Part 2]    Part 3    I wasn&amp;#39;t going to teach this lesson today. I was planning on starting a multi day project starting with an exercise in specification writing and design.  Beforehand though, we had to talk about classes. One of my students asked if probability and/or statistics were really important for CS. I started to cite a few examples and then decided to segue into this.</description>
     </item>
     
     <item>
@@ -330,9 +296,7 @@ Beforehand though, we had to talk about classes. One of my students asked if pro
       <pubDate>Tue, 09 Oct 2018 14:46:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/compile-each-concept/</guid>
-      <description>We&#39;ve all been there:
-  Student: Teacher, I need help  Teacher (comes over)  Student (shows screen listing three bazillion errors)  The student has just written pages of code and finally decided to try to run it only to end up with pages of errors.
-Error messages can at times be hard to read for beginners but to see and truth be told, they frequently don&#39;t even read them but over the years I&#39;ve developed a practice that I&#39;ve found helpful as a software developer and if students adopt the same practice it can save them a lot of time and effort.</description>
+      <description>We&amp;#39;ve all been there:   Student: Teacher, I need help Teacher (comes over) Student (shows screen listing three bazillion errors)   The student has just written pages of code and finally decided to try to run it only to end up with pages of errors.  Error messages can at times be hard to read for beginners but to see and truth be told, they frequently don&amp;#39;t even read them but over the years I&amp;#39;ve developed a practice that I&amp;#39;ve found helpful as a software developer and if students adopt the same practice it can save them a lot of time and effort.</description>
     </item>
     
     <item>
@@ -341,10 +305,7 @@ Error messages can at times be hard to read for beginners but to see and truth b
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/creating-a-school/</guid>
-      <description>Do we really need CS focused high schools?
-That&#39;s the question Alfred Thompson asked partly in reaction to my post talking about Bill Gates&#39; visit to AFSE, a NYC public school with a CS focus.
-On both posts, Michael Preston shared some important and good points about AFSE as a starting point and gateway that helped lead to CS4All in NYC and also specifically about AFSE.
-In response to Alfred&#39;s question I thought it was time I shared a bit about what I was pushing for AFSE back when I was involved.</description>
+      <description>Do we really need CS focused high schools?  That&amp;#39;s the question Alfred Thompson asked partly in reaction to my post talking about Bill Gates&amp;#39; visit to AFSE, a NYC public school with a CS focus.  On both posts, Michael Preston shared some important and good points about AFSE as a starting point and gateway that helped lead to CS4All in NYC and also specifically about AFSE.  In response to Alfred&amp;#39;s question I thought it was time I shared a bit about what I was pushing for AFSE back when I was involved.</description>
     </item>
     
     <item>
@@ -353,9 +314,7 @@ In response to Alfred&#39;s question I thought it was time I shared a bit about 
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/why-binary/</guid>
-      <description>Yesterday, Alfred Thompson asked &#34;Why is it important for CS students to understand binary?&#34; on Twitter which led to a number of interesting responses. Alfred summarized and wrote his own thoughts on his blog.
-I wanted to add a comment but I already wrote a post for yesterday so put it off until today.
-First let me say that you can have a very successful career in tech and not really know binary or number bases other than 10.</description>
+      <description>Yesterday, Alfred Thompson asked &amp;#34;Why is it important for CS students to understand binary?&amp;#34; on Twitter which led to a number of interesting responses. Alfred summarized and wrote his own thoughts on his blog.  I wanted to add a comment but I already wrote a post for yesterday so put it off until today.  First let me say that you can have a very successful career in tech and not really know binary or number bases other than 10.</description>
     </item>
     
     <item>
@@ -364,8 +323,7 @@ First let me say that you can have a very successful career in tech and not real
       <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/rite-of-passage-projects/</guid>
-      <description>JCS&#39;s post on Irreal today brought me back. It was about Brief which was the editing hotness back in the day. I played with it a little really mostly used Emacs clones for real work when I was stuck on MS-DOS systems. Usually either JOVE or Epsilon
-In the comments Jon reminded me about the MKS Toolkit which brought most everyday Unix tools to DOS along with a shell and a version of Vi.</description>
+      <description>JCS&amp;#39;s post on Irreal today brought me back. It was about Brief which was the editing hotness back in the day. I played with it a little really mostly used Emacs clones for real work when I was stuck on MS-DOS systems. Usually either JOVE or Epsilon  In the comments Jon reminded me about the MKS Toolkit which brought most everyday Unix tools to DOS along with a shell and a version of Vi.</description>
     </item>
     
     <item>
@@ -374,8 +332,7 @@ In the comments Jon reminded me about the MKS Toolkit which brought most everyda
       <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/hunter-cs-year-two/</guid>
-      <description>Yesterday I was back on campus for an early orientation session for Hunter&#39;s incoming Daedalus CS honors students. It was the first time all of us got to meet face to face. The students I met with will be my third cohort. I got to thinking how far we&#39;ve come in under three years.
-Hunter&#39;s had a strong but little known undergraduate CS program for as long as I&#39;ve known. Much like any program, we&#39;ve got our strengths and weaknesses but you go through our program and academically you&#39;ll be as well prepared as from anywhere else.</description>
+      <description>Yesterday I was back on campus for an early orientation session for Hunter&amp;#39;s incoming Daedalus CS honors students. It was the first time all of us got to meet face to face. The students I met with will be my third cohort. I got to thinking how far we&amp;#39;ve come in under three years.  Hunter&amp;#39;s had a strong but little known undergraduate CS program for as long as I&amp;#39;ve known.</description>
     </item>
     
     <item>
@@ -384,10 +341,7 @@ Hunter&#39;s had a strong but little known undergraduate CS program for as long 
       <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/recursion-early/</guid>
-      <description>I replied this tweet yesterday and thought I&#39;d expound a bit.
-We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.
-&amp;mdash; Mike Zamansky (@zamansky) May 29, 2018 
-We introduced recursion very early in our intro course at Stuy and I think it worked well.</description>
+      <description>I replied this tweet yesterday and thought I&amp;#39;d expound a bit.  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.&amp;lt;/p&amp;gt;&amp;amp;mdash; Mike Zamansky (@zamansky) &amp;lt;a href=&amp;#34;https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw&amp;#34;&amp;gt;May 29, 2018&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;https://platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  We introduced recursion very early in our intro course at Stuy and I think it worked well.</description>
     </item>
     
     <item>
@@ -396,9 +350,7 @@ We introduced recursion very early in our intro course at Stuy and I think it wo
       <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/strong-teacher-certification/</guid>
-      <description>About a week ago New York State&#39;s new regulation creating a K12 CS teacher certification went live. Just the other day I was honored to be interviewed by Matt Flamm of Crain&#39;s New York in a follow up piece about it.
-Having K12 CS teacher certification is big and having quality programs that lead to certification is HUGE. In my view, it&#39;s a game changer.
-Let&#39;s Focus on high school, my wheelhouse.</description>
+      <description>About a week ago New York State&amp;#39;s new regulation creating a K12 CS teacher certification went live. Just the other day I was honored to be interviewed by Matt Flamm of Crain&amp;#39;s New York in a follow up piece about it.  Having K12 CS teacher certification is big and having quality programs that lead to certification is HUGE. In my view, it&amp;#39;s a game changer.  Let&amp;#39;s Focus on high school, my wheelhouse.</description>
     </item>
     
     <item>
@@ -407,8 +359,7 @@ Let&#39;s Focus on high school, my wheelhouse.</description>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/hs-competitions/</guid>
-      <description>Today&#39;s the last day of spring break. After the weekend it&#39;s back to the grind. It really hasn&#39;t been much of a spring break. The rain and the snow made for very little spring and between working on the Hunter / CUNY2X Internship program and reviewing applications for my Hunter Daedalus CS Honors program there has been very little break.
-Today was no exception - I spent much of the day working but I did take a few hours to head over to Cornell Tech on Roosevelt Island.</description>
+      <description>Today&amp;#39;s the last day of spring break. After the weekend it&amp;#39;s back to the grind. It really hasn&amp;#39;t been much of a spring break. The rain and the snow made for very little spring and between working on the Hunter / CUNY2X Internship program and reviewing applications for my Hunter Daedalus CS Honors program there has been very little break.  Today was no exception - I spent much of the day working but I did take a few hours to head over to Cornell Tech on Roosevelt Island.</description>
     </item>
     
     <item>
@@ -417,8 +368,7 @@ Today was no exception - I spent much of the day working but I did take a few ho
       <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/tools-and-complexity/</guid>
-      <description>Alfred Thompson wrote about CS education tools earlier today. I&#39;ve also been meaning to write on the topic but from a different point of view.
-I do my best to keep up with the latest and greatest in the CS world both on the academic side as well as the professional one. That&#39;s not really possible, but I do my best. When I have a small project to work on I&#39;ll some times use it as an excuse to play with some recent technology.</description>
+      <description>Alfred Thompson wrote about CS education tools earlier today. I&amp;#39;ve also been meaning to write on the topic but from a different point of view.  I do my best to keep up with the latest and greatest in the CS world both on the academic side as well as the professional one. That&amp;#39;s not really possible, but I do my best. When I have a small project to work on I&amp;#39;ll some times use it as an excuse to play with some recent technology.</description>
     </item>
     
     <item>
@@ -427,8 +377,7 @@ I do my best to keep up with the latest and greatest in the CS world both on the
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/do-it-the-dumb-way/</guid>
-      <description>There&#39;s so much to like in the shape drawing lessons I talked about in my refactoring post that I thought I&#39;d share a little more here.
-It can be argued that the most important things for a program to do is work. The most clever, elegant, creative program is worthless if it doesn&#39;t produce the desired result. All too often, beginners and hot shot beginners in particular try to be too clever too early and get themselves into trouble.</description>
+      <description>There&amp;#39;s so much to like in the shape drawing lessons I talked about in my refactoring post that I thought I&amp;#39;d share a little more here.  It can be argued that the most important things for a program to do is work. The most clever, elegant, creative program is worthless if it doesn&amp;#39;t produce the desired result. All too often, beginners and hot shot beginners in particular try to be too clever too early and get themselves into trouble.</description>
     </item>
     
     <item>
@@ -437,8 +386,7 @@ It can be argued that the most important things for a program to do is work. The
       <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/refactoring/</guid>
-      <description>One of my laments on teaching computer science is that students are rarely taught and given the chance to develop good programming practices. There&#39;s usually not enough time. Beginners work on small &#34;toys&#34; which don&#39;t lend themselves to good software development practices and later on, there&#39;s so much other material like algorithms, data structures etc. to teach and learn that programming practices usually amount to lines like:
-  &#34;Make sure to comment your code.</description>
+      <description>One of my laments on teaching computer science is that students are rarely taught and given the chance to develop good programming practices. There&amp;#39;s usually not enough time. Beginners work on small &amp;#34;toys&amp;#34; which don&amp;#39;t lend themselves to good software development practices and later on, there&amp;#39;s so much other material like algorithms, data structures etc. to teach and learn that programming practices usually amount to lines like:   &amp;#34;Make sure to comment your code.</description>
     </item>
     
     <item>
@@ -447,8 +395,7 @@ It can be argued that the most important things for a program to do is work. The
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/testing-part2/</guid>
-      <description>A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.
-My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class. I decided to use one of those labs as a first foray into testing.</description>
+      <description>A few weeks ago I wrote about introducing testing in CS classes, specifically using a testing framework. In that post I talked about the plan but now I can talk about the results.  My class interleaves with Hunter&amp;#39;s CSCI 13500 - Software Analysis and Design I class. One day each week, my students have complete a hands on lab focusing on whatever is being covered in the 13500 class.</description>
     </item>
     
     <item>
@@ -457,9 +404,7 @@ My class interleaves with Hunter&#39;s CSCI 13500 - Software Analysis and Design
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse2018-theory/</guid>
-      <description>Next up from SIGCSE 2018 is John MacCormick&#39;s session on Strategies for Baing the CS Theory Course on Non-decision Problems
-MacCormicks&#39;s stance is that CS theory is tough the first time around and using non-decision problems is a viable approach to make theory more accessible to beginners. As MacCormick said in his paper:
-  ... a decision problem may ask the yes/no question, &#34;Does this graph  have a Hamilton cycle?</description>
+      <description>Next up from SIGCSE 2018 is John MacCormick&amp;#39;s session on Strategies for Baing the CS Theory Course on Non-decision Problems  MacCormicks&amp;#39;s stance is that CS theory is tough the first time around and using non-decision problems is a viable approach to make theory more accessible to beginners. As MacCormick said in his paper:   … a decision problem may ask the yes/no question, &amp;#34;Does this graph have a Hamilton cycle?</description>
     </item>
     
     <item>
@@ -468,7 +413,7 @@ MacCormicks&#39;s stance is that CS theory is tough the first time around and us
       <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid>
-      <description>I really didn&#39;t know what to expect at the Creativity, Customization, and Ownership: Game Design in Bootstrap: Algebra session. I&#39;ve been a big fan of Bootstrep for years and looking at the authors, Emmanuel Schanzer&#39;s been a freind forever. I&#39;ve never met Shriram Krishnamurthi in person but am looking forward to it. We&#39;ve traded emails and blog comments. I&#39;d like to consider him a friend and I certainly respect him and his work even though we frequently disagree around the edges.</description>
+      <description>I really didn&amp;#39;t know what to expect at the Creativity, Customization, and Ownership: Game Design in Bootstrap: Algebra session. I&amp;#39;ve been a big fan of Bootstrep for years and looking at the authors, Emmanuel Schanzer&amp;#39;s been a freind forever. I&amp;#39;ve never met Shriram Krishnamurthi in person but am looking forward to it. We&amp;#39;ve traded emails and blog comments. I&amp;#39;d like to consider him a friend and I certainly respect him and his work even though we frequently disagree around the edges.</description>
     </item>
     
     <item>
@@ -477,9 +422,7 @@ MacCormicks&#39;s stance is that CS theory is tough the first time around and us
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse2018-malloc-lab/</guid>
-      <description>I wasn&#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.
-I really liked both the paper and the talk.
-CMU computer science students all take a systems course that uses Computer Systems: A Programmer&#39;s Perspective.</description>
+      <description>I wasn&amp;#39;t going to go to this session. I started out in a panel on integrating social good into CS Ed. With the panel not meeting my expectations I moved over to my second choice - the system programming sessions where I saw Implementing Malloc: Students and Systems Programming, a paper presented by Brian Railing of CMU.  I really liked both the paper and the talk.  CMU computer science students all take a systems course that uses Computer Systems: A Programmer&amp;#39;s Perspective.</description>
     </item>
     
     <item>
@@ -488,8 +431,7 @@ CMU computer science students all take a systems course that uses Computer Syste
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/testing-testing/</guid>
-      <description>With CS4All being the buzzword of the day we&#39;re paying a lot of attention to the fact that when we teach a CS class for all students, most of them won&#39;t end up studying CS or going directly into a tech heavy field.
-Among those that do study CS though, there is another division. Those studying CS as an academic exercise or to go on to graduate studies and those who are going in to the tech sector.</description>
+      <description>With CS4All being the buzzword of the day we&amp;#39;re paying a lot of attention to the fact that when we teach a CS class for all students, most of them won&amp;#39;t end up studying CS or going directly into a tech heavy field.  Among those that do study CS though, there is another division. Those studying CS as an academic exercise or to go on to graduate studies and those who are going in to the tech sector.</description>
     </item>
     
     <item>
@@ -498,9 +440,7 @@ Among those that do study CS though, there is another division. Those studying C
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid>
-      <description>Advanced Placement Computer Science got top billing on Alfred Thompson&#39;s Things I&#39;m Watching in 2017 post. Alfred talks about how APCS-P exploded onto the scene and wonders what will happen with APCS this year.
-I have some questions as well but mine won&#39;t be answered for years to come, if ever.
-Like it or not, the College Board has an out sized influence on K12 education. As long as people are convinced that AP=good there will be a push for more and more AP classes and APCS-P is a perfect class to push.</description>
+      <description>Advanced Placement Computer Science got top billing on Alfred Thompson&amp;#39;s Things I&amp;#39;m Watching in 2017 post. Alfred talks about how APCS-P exploded onto the scene and wonders what will happen with APCS this year.  I have some questions as well but mine won&amp;#39;t be answered for years to come, if ever.  Like it or not, the College Board has an out sized influence on K12 education. As long as people are convinced that AP=good there will be a push for more and more AP classes and APCS-P is a perfect class to push.</description>
     </item>
     
     <item>
@@ -509,8 +449,7 @@ Like it or not, the College Board has an out sized influence on K12 education. A
       <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/2017-review-hunter-cs/</guid>
-      <description>I usually don&#39;t do year in review posts. At Stuy, not much changed year after year so I never felt it worth summarizing the past and projecting the future. At Hunter, now that I&#39;m a couple of years in, projects are really picking up steam so I think it&#39;s worth talking about them.
-One of my two major missions at Hunter was to build a CS Honors program and raise the profile of Hunter&#39;s undergraduate CS program in general.</description>
+      <description>I usually don&amp;#39;t do year in review posts. At Stuy, not much changed year after year so I never felt it worth summarizing the past and projecting the future. At Hunter, now that I&amp;#39;m a couple of years in, projects are really picking up steam so I think it&amp;#39;s worth talking about them.  One of my two major missions at Hunter was to build a CS Honors program and raise the profile of Hunter&amp;#39;s undergraduate CS program in general.</description>
     </item>
     
     <item>
@@ -519,8 +458,7 @@ One of my two major missions at Hunter was to build a CS Honors program and rais
       <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/whats-next/</guid>
-      <description>This question appeared on Facebook a few days ago:
-  Does anyone have an effective way to teach students how to break down  a problem into steps and then solve each step one by one? I think my  students are struggling with a large question and breaking it in  subsequent parts.  There were some good suggestions. I wanted to add something but didn&#39;t have time then so I thought I&#39;d write it up now.</description>
+      <description>This question appeared on Facebook a few days ago:   Does anyone have an effective way to teach students how to break down a problem into steps and then solve each step one by one? I think my students are struggling with a large question and breaking it in subsequent parts.   There were some good suggestions. I wanted to add something but didn&amp;#39;t have time then so I thought I&amp;#39;d write it up now.</description>
     </item>
     
     <item>
@@ -538,8 +476,7 @@ One of my two major missions at Hunter was to build a CS Honors program and rais
       <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-2017-1/</guid>
-      <description>It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
-Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
+      <description>It&amp;#39;s once again time for Advent of Code. That one a day programming competition that&amp;#39;s been running now for three years.  Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right.</description>
     </item>
     
     <item>
@@ -548,8 +485,7 @@ Here are some thoughts on day 1. The core of the problem is that you have a larg
       <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/quick-sort-starting/</guid>
-      <description>Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?
-I&#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set.</description>
+      <description>Thks question was posed the other day - how can one get students to truly understand the quicksort algorithm?  I&amp;#39;ve written a few posts about quicksort. The last time I did a lesson writeup on the subject I wrote about first looking and quickselect and then moving to the quicksort. The class was first faced with the problem of writing a routine to find the Kth smallest item in an unsorted data set.</description>
     </item>
     
     <item>
@@ -558,8 +494,7 @@ I&#39;ve written a few posts about quicksort. The last time I did a lesson write
       <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/election-day-pd-2017/</guid>
-      <description>Today was Election Day. One of the few days each year when students stay home and teachers spend all day attending what is generously known as professional development.
-Years ago I was in a room with a few colleagues when my friend Dave - one of the best math teachers I know said &#34;you know, every time we have a PD day in NJ and my wife and I have to scramble to take care of the kids I get a little annoyed but then think I shouldn&#39;t get annoyed since they&#39;re spending the day doing all sorts of valuable PD.</description>
+      <description>Today was Election Day. One of the few days each year when students stay home and teachers spend all day attending what is generously known as professional development.  Years ago I was in a room with a few colleagues when my friend Dave - one of the best math teachers I know said &amp;#34;you know, every time we have a PD day in NJ and my wife and I have to scramble to take care of the kids I get a little annoyed but then think I shouldn&amp;#39;t get annoyed since they&amp;#39;re spending the day doing all sorts of valuable PD.</description>
     </item>
     
     <item>
@@ -568,8 +503,7 @@ Years ago I was in a room with a few colleagues when my friend Dave - one of the
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/happy_ladybug/</guid>
-      <description>We all love interesting problems. The trouble is that it&#39;s hard to find suitably interesting problems for students when they&#39;re just learning the basics. In the very beginning the problems practically dictate the solution:
- loop over a list and add all the elements or calculate the sum of a list of integers. Determine if number is prime Convert a word into pig-Latin  It&#39;s not that there&#39;s no thought involved in solving these but the students already know the mechanics of solving these by hand so it&#39;s a direct translation into a program.</description>
+      <description>We all love interesting problems. The trouble is that it&amp;#39;s hard to find suitably interesting problems for students when they&amp;#39;re just learning the basics. In the very beginning the problems practically dictate the solution:    loop over a list and add all the elements or calculate the sum of a    list of integers.    Determine if number is prime    Convert a word into pig-Latin    It&amp;#39;s not that there&amp;#39;s no thought involved in solving these but the students already know the mechanics of solving these by hand so it&amp;#39;s a direct translation into a program.</description>
     </item>
     
     <item>
@@ -578,9 +512,7 @@ Years ago I was in a room with a few colleagues when my friend Dave - one of the
       <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/when-they-change-the-script/</guid>
-      <description>One thing I&#39;ve learned from teaching is that there&#39;s always something new to learn. For the kids, yes, but I&#39;m talking about for the teacher.
-The other day, I taught a lesson I&#39;ve taught many times. Find the mode of a data set. That&#39;s the problem that they solve but the lesson is really about run time complexity, hidden complexity and using data structures in alternate ways.
-I blogged about this before so you can get an earlier take there although the code isn&#39;t formatted correctly due to blog conversions.</description>
+      <description>One thing I&amp;#39;ve learned from teaching is that there&amp;#39;s always something new to learn. For the kids, yes, but I&amp;#39;m talking about for the teacher.  The other day, I taught a lesson I&amp;#39;ve taught many times. Find the mode of a data set. That&amp;#39;s the problem that they solve but the lesson is really about run time complexity, hidden complexity and using data structures in alternate ways.  I blogged about this before so you can get an earlier take there although the code isn&amp;#39;t formatted correctly due to blog conversions.</description>
     </item>
     
     <item>
@@ -589,8 +521,7 @@ I blogged about this before so you can get an earlier take there although the co
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid>
-      <description>This past weekend was Catskillsconf - my favorite event of the year. I spent the weekend up in Ulster County with a bunch of my students. some great friends old and new, and Devorah. It was a great weekend but I was mostly offline.
-As a result I missed a rather heated discussion in the CS Ed Facebook groups. The debate was over whether or not Strong AP CSP exam results are indicative of a good curriculum or good professional development (PD).</description>
+      <description>This past weekend was Catskillsconf - my favorite event of the year. I spent the weekend up in Ulster County with a bunch of my students. some great friends old and new, and Devorah. It was a great weekend but I was mostly offline.  As a result I missed a rather heated discussion in the CS Ed Facebook groups. The debate was over whether or not Strong AP CSP exam results are indicative of a good curriculum or good professional development (PD).</description>
     </item>
     
     <item>
@@ -599,7 +530,7 @@ As a result I missed a rather heated discussion in the CS Ed Facebook groups. Th
       <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/standards-who-for/</guid>
-      <description>The big push at last year&#39;s CSTA conference was the release of the new CSTA K12 standards. It seemed that every other session was pushing them in one way or another. I&#39;ve been meaning to share my thoughts about them or, more specifically, learning standards in general for a while but with announcement about federal funding for CS coming from the White House last week I thought it was time.</description>
+      <description>The big push at last year&amp;#39;s CSTA conference was the release of the new CSTA K12 standards. It seemed that every other session was pushing them in one way or another. I&amp;#39;ve been meaning to share my thoughts about them or, more specifically, learning standards in general for a while but with announcement about federal funding for CS coming from the White House last week I thought it was time.</description>
     </item>
     
     <item>
@@ -608,9 +539,7 @@ As a result I missed a rather heated discussion in the CS Ed Facebook groups. Th
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/programming-idioms/</guid>
-      <description>I just read Jeff Yearout&#39;s recent post titled The Beginner&#39;s Garden of Concepts. Not directly related but it got me thinking about programming idioms.
-I&#39;ve been using the phrase &#34;programming idiom&#34; for years to describe a short useful recurring code construct. I didn&#39;t realize that it was officially &#34;a thing&#34; until doing a web search on the phrase years later.
-As our students grow from newbies on I think it&#39;s helpful for them to see recurring and related patterns and programming idioms gives us a name to apply to many beginner patterns.</description>
+      <description>I just read Jeff Yearout&amp;#39;s recent post titled The Beginner&amp;#39;s Garden of Concepts. Not directly related but it got me thinking about programming idioms.  I&amp;#39;ve been using the phrase &amp;#34;programming idiom&amp;#34; for years to describe a short useful recurring code construct. I didn&amp;#39;t realize that it was officially &amp;#34;a thing&amp;#34; until doing a web search on the phrase years later.  As our students grow from newbies on I think it&amp;#39;s helpful for them to see recurring and related patterns and programming idioms gives us a name to apply to many beginner patterns.</description>
     </item>
     
     <item>
@@ -619,10 +548,7 @@ As our students grow from newbies on I think it&#39;s helpful for them to see re
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/awesome-cs-revisted/</guid>
-      <description>Saw this tweet the other day so I though I would try to plug the Awesome CS Education list I started on GitHub:
-#csteachers...didn&amp;#39;t I see a list of CS teacher blogs here recently?
-&amp;mdash; Pam Whitlock (@PamWhitlock1) September 21, 2017 
-To answer the tweet, the closet thing I know to a list is Alfred Thompson&#39;s blog roll which is actually a post he wrote on his blog in 2012.</description>
+      <description>Saw this tweet the other day so I though I would try to plug the Awesome CS Education list I started on GitHub:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;https://twitter.com/hashtag/csteachers?src=hash&amp;#34;&amp;gt;#csteachers&amp;lt;/a&amp;gt;…didn&amp;amp;#39;t I see a list of CS teacher blogs here recently?&amp;lt;/p&amp;gt;&amp;amp;mdash; Pam Whitlock (@PamWhitlock1) &amp;lt;a href=&amp;#34;https://twitter.com/PamWhitlock1/status/910662628757864448&amp;#34;&amp;gt;September 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  To answer the tweet, the closet thing I know to a list is Alfred Thompson&amp;#39;s blog roll which is actually a post he wrote on his blog in 2012.</description>
     </item>
     
     <item>
@@ -631,7 +557,7 @@ To answer the tweet, the closet thing I know to a list is Alfred Thompson&#39;s 
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/new-tool-thonny/</guid>
-      <description>Last year I wrote about repl.it, an online IDE that supports multiple languages. At the time it had some rudimentary classroom support and since I started using it, repl.it has become better and better. I used it last year with my class because I had to start the year in a lab where I couldn&#39;t easily install my own software. I&#39;ll continue to use repl.it - mostly for it&#39;s ability to schedule publish and manage assignments but when possible, I like having my students work locally.</description>
+      <description>Last year I wrote about repl.it, an online IDE that supports multiple languages. At the time it had some rudimentary classroom support and since I started using it, repl.it has become better and better. I used it last year with my class because I had to start the year in a lab where I couldn&amp;#39;t easily install my own software. I&amp;#39;ll continue to use repl.it - mostly for it&amp;#39;s ability to schedule publish and manage assignments but when possible, I like having my students work locally.</description>
     </item>
     
     <item>
@@ -640,8 +566,7 @@ To answer the tweet, the closet thing I know to a list is Alfred Thompson&#39;s 
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/cs-teachers-smart/</guid>
-      <description>People sometimes accuse me of being an elitist CS snob that I feel that CS teachers have to have advanced CS degrees.
-It&#39;s not that at all. Rather, I feel that CS teachers are smart and capable. Circumstances frequently result in a teacher in front of a CS class with limited content and pedagogical content knowledge. It&#39;s not ideal but it&#39;s reality. Of course I feel that we should do everything to support and encourage these teachers but we should also insist that after a reasonable period of time, they know their stuff.</description>
+      <description>People sometimes accuse me of being an elitist CS snob that I feel that CS teachers have to have advanced CS degrees.  It&amp;#39;s not that at all. Rather, I feel that CS teachers are smart and capable. Circumstances frequently result in a teacher in front of a CS class with limited content and pedagogical content knowledge. It&amp;#39;s not ideal but it&amp;#39;s reality. Of course I feel that we should do everything to support and encourage these teachers but we should also insist that after a reasonable period of time, they know their stuff.</description>
     </item>
     
     <item>
@@ -650,9 +575,7 @@ It&#39;s not that at all. Rather, I feel that CS teachers are smart and capable.
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/theseuss-curriculum/</guid>
-      <description>With the school year starting I was originally planning on writing about my class rules.
-Instead I think I&#39;ll riff on Alfred Thompson&#39;s post today titled Curriculum is Hard. I&#39;m guessing I found curriculum design and development daunting decades ago but at this point in my career it&#39;s something I enjoy. In any event, Alfred got me to thinking - when is a curriculum your own?
-If you grab a curriculum complete with lesson plans, assignments; the whole kit and caboodle and you use it verbatim it&#39;s clearly not your curriculum.</description>
+      <description>With the school year starting I was originally planning on writing about my class rules.  Instead I think I&amp;#39;ll riff on Alfred Thompson&amp;#39;s post today titled Curriculum is Hard. I&amp;#39;m guessing I found curriculum design and development daunting decades ago but at this point in my career it&amp;#39;s something I enjoy. In any event, Alfred got me to thinking - when is a curriculum your own?  If you grab a curriculum complete with lesson plans, assignments; the whole kit and caboodle and you use it verbatim it&amp;#39;s clearly not your curriculum.</description>
     </item>
     
     <item>
@@ -661,7 +584,7 @@ If you grab a curriculum complete with lesson plans, assignments; the whole kit 
       <pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/cs-teachers-blog/</guid>
-      <description>At this past year&#39;s CSTA conference, a few of us huddled in a corner voiced a very common lament - &#34;it would be great if more CS teachers blogged.&#34; It really would be. We&#39;re still a relatively small community and while there&#39;s some good conversation going on on mailing lists and on Facebook, those aren&#39;t easily discoverable or accessible and in the case of Facebook, there&#39;s a question of ownership and permanence.</description>
+      <description>At this past year&amp;#39;s CSTA conference, a few of us huddled in a corner voiced a very common lament - &amp;#34;it would be great if more CS teachers blogged.&amp;#34; It really would be. We&amp;#39;re still a relatively small community and while there&amp;#39;s some good conversation going on on mailing lists and on Facebook, those aren&amp;#39;t easily discoverable or accessible and in the case of Facebook, there&amp;#39;s a question of ownership and permanence.</description>
     </item>
     
     <item>
@@ -670,9 +593,7 @@ If you grab a curriculum complete with lesson plans, assignments; the whole kit 
       <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/teaching-ap-first-time/</guid>
-      <description>I got an email from a friend the other day. Among other things, he mentioned that he would be teaching APCS-A for the first time this year. He&#39;s a little trepidatious. He knows his stuff but he hasn&#39;t really done much using Java.
-I was going to respond in an email but thought I might share here instead.
-  TL;DR - for all you APCS teachers who are new or new to Java - learn  your core CS, lean on your resources and support and it&#39;s OK to tell  your kids &#34;</description>
+      <description>I got an email from a friend the other day. Among other things, he mentioned that he would be teaching APCS-A for the first time this year. He&amp;#39;s a little trepidatious. He knows his stuff but he hasn&amp;#39;t really done much using Java.  I was going to respond in an email but thought I might share here instead.   TL;DR - for all you APCS teachers who are new or new to Java - learn your core CS, lean on your resources and support and it&amp;#39;s OK to tell your kids &amp;#34;I don&amp;#39;t know, I&amp;#39;ll get back to you.</description>
     </item>
     
     <item>
@@ -681,9 +602,7 @@ I was going to respond in an email but thought I might share here instead.
       <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid>
-      <description>Yesterday Mark Guzdial blogged about a NY Times piece discussing Silicon Valleys influence on education through Code.org.
-Mark questioned the validity of the piece. If you don&#39;t read Mark&#39;s blog and you&#39;re in CS Ed you probably should.
-I tried to leave a comment on Mark&#39;s blog - not about the NY Times article but rather my thoughts on why I think it&#39;s important that we remain wary and vigilant to industry and outsiders influence and impact on CS education and on education in general.</description>
+      <description>Yesterday Mark Guzdial blogged about a NY Times piece discussing Silicon Valleys influence on education through Code.org.  Mark questioned the validity of the piece. If you don&amp;#39;t read Mark&amp;#39;s blog and you&amp;#39;re in CS Ed you probably should.  I tried to leave a comment on Mark&amp;#39;s blog - not about the NY Times article but rather my thoughts on why I think it&amp;#39;s important that we remain wary and vigilant to industry and outsiders influence and impact on CS education and on education in general.</description>
     </item>
     
     <item>
@@ -692,7 +611,7 @@ I tried to leave a comment on Mark&#39;s blog - not about the NY Times article b
       <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/cs-ed-and-all-ed/</guid>
-      <description>For anyone involved in K12 CS education, the past few years have been a wild ride. When I first tried to make inroads in the DOE decades ago I couldn&#39;t get through the door. Now, CS Education is everyone&#39;s darling. It&#39;s really amazing. It&#39;s been a combination of grass roots efforts by teachers, non profit education efforts such as TEALS, advocacy of groups like Code.org and amazing individuals like Fred Wilson who has probably done more to move the needle of CS Ed in NY than any other 10 people combined.</description>
+      <description>For anyone involved in K12 CS education, the past few years have been a wild ride. When I first tried to make inroads in the DOE decades ago I couldn&amp;#39;t get through the door. Now, CS Education is everyone&amp;#39;s darling. It&amp;#39;s really amazing. It&amp;#39;s been a combination of grass roots efforts by teachers, non profit education efforts such as TEALS, advocacy of groups like Code.org and amazing individuals like Fred Wilson who has probably done more to move the needle of CS Ed in NY than any other 10 people combined.</description>
     </item>
     
     <item>
@@ -701,10 +620,7 @@ I tried to leave a comment on Mark&#39;s blog - not about the NY Times article b
       <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/languages-or-cs/</guid>
-      <description>I was part of this conversation the other day:
-When science teachers asked me if I taught AP Java I&amp;#39;d always respond by asking them if they taught AP Microscope.
-&amp;mdash; Mike Zamansky (@zamansky) July 7, 2017 
-I always use that line to emphasize that I teach CS - a way of thinking and problem solving and looking at the world. The languages we use in our classes are tools to help us communicate ideas not the ends but rather a means.</description>
+      <description>I was part of this conversation the other day:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;When science teachers asked me if I taught AP Java I&amp;amp;#39;d always respond by asking them if they taught AP Microscope.&amp;lt;/p&amp;gt;&amp;amp;mdash; Mike Zamansky (@zamansky) &amp;lt;a href=&amp;#34;https://twitter.com/zamansky/status/883327927831711745&amp;#34;&amp;gt;July 7, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  I always use that line to emphasize that I teach CS - a way of thinking and problem solving and looking at the world.</description>
     </item>
     
     <item>
@@ -713,8 +629,7 @@ I always use that line to emphasize that I teach CS - a way of thinking and prob
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/disclosing-bugs/</guid>
-      <description>Over on Facebook, a fellow CS educator 1 made a comment on something he wanted to try with his students this summer: having the students pre-disclose bugs when they submit their projects.
-The post was asking for any links to &#34;the literature.&#34; I can&#39;t speak to that but I I&#39;ve done something similar to what the post was asking about so, as per usual, I thought I&#39;d write about it here.</description>
+      <description>Over on Facebook, a fellow CS educator 1 made a comment on something he wanted to try with his students this summer: having the students pre-disclose bugs when they submit their projects.  The post was asking for any links to &amp;#34;the literature.&amp;#34; I can&amp;#39;t speak to that but I I&amp;#39;ve done something similar to what the post was asking about so, as per usual, I thought I&amp;#39;d write about it here.</description>
     </item>
     
     <item>
@@ -723,9 +638,7 @@ The post was asking for any links to &#34;the literature.&#34; I can&#39;t speak
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/a-star-is-born/</guid>
-      <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.
-I taught A* as part of the APCS class at Stuy so I thought I&#39;d talk about what I did here.
-Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
+      <description>Over on the CS Educator StachExchange, which is in private beta for a few more days, I saw a post asking about how to introduce the A* search algorithm.  I taught A* as part of the APCS class at Stuy so I thought I&amp;#39;d talk about what I did here.  Some time around mid year, we get to intermediate recursion. This is about the time, give or take, when we talk about the nlogn sorts.</description>
     </item>
     
     <item>
@@ -734,8 +647,7 @@ Some time around mid year, we get to intermediate recursion. This is about the t
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/first-language-changing/</guid>
-      <description>This morning, Mark Guzdial wrote about Stanford possibly moving away from Java as their intro language. This comes on the heels of a semi-regular thread on one of the lists I&#39;m on asking about what languages are used at assorted colleges around the country. Invariably the Pascal - C++ - Java progression of APCS turns up in these threads.
-There are plenty of arguments to be made both for and against pretty much any language or platform.</description>
+      <description>This morning, Mark Guzdial wrote about Stanford possibly moving away from Java as their intro language. This comes on the heels of a semi-regular thread on one of the lists I&amp;#39;m on asking about what languages are used at assorted colleges around the country. Invariably the Pascal -&amp;gt; C++ -&amp;gt; Java progression of APCS turns up in these threads.  There are plenty of arguments to be made both for and against pretty much any language or platform.</description>
     </item>
     
     <item>
@@ -744,9 +656,7 @@ There are plenty of arguments to be made both for and against pretty much any la
       <pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse-2017-github-1/</guid>
-      <description>Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.
-This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.
-As with any new tool, there will be some resistance but once git saves them once, they get religion.</description>
+      <description>Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.  This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&amp;#39;ve linked to below). This is about the process I use with my students to get them up to speed.  As with any new tool, there will be some resistance but once git saves them once, they get religion.</description>
     </item>
     
     <item>
@@ -755,8 +665,7 @@ As with any new tool, there will be some resistance but once git saves them once
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/sigcse-2017-recap/</guid>
-      <description>As a high school teacher, I was never able to attend SIGCSE, the conference of the ACM&#39;s Special Interest Group on Computer Science Education. Between the number of instructional days I would lose and the cost, I could never justify going. Instead I looked over the proceedings and read many of the papers.
- Now that I&#39;m at Hunter, I was finally able to attend. This year in Seattle, the conference ran from Wednesday through Saturday.</description>
+      <description>As a high school teacher, I was never able to attend SIGCSE, the conference of the ACM&amp;#39;s Special Interest Group on Computer Science Education. Between the number of instructional days I would lose and the cost, I could never justify going. Instead I looked over the proceedings and read many of the papers.  Now that I&amp;#39;m at Hunter, I was finally able to attend. This year in Seattle, the conference ran from Wednesday through Saturday.</description>
     </item>
     
     <item>
@@ -765,8 +674,7 @@ As with any new tool, there will be some resistance but once git saves them once
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/whiteboard-interviews/</guid>
-      <description>A few days ago, I saw a piece on David Heinemeier Hansson&#39;s tweet on whiteboard interviews:
-&amp;lt;p&amp;gt; &amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; data-lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;p lang=&amp;quot;en&amp;quot; dir=&amp;quot;ltr&amp;quot;&amp;gt;Hello, my name is David. I would fail to write bubble sort on a whiteboard. I look code up on the internet all the time. I don&amp;amp;#39;t do riddles.&amp;lt;/p&amp;gt;&amp;amp;mdash; DHH (@dhh) &amp;lt;a href=&amp;quot;https://twitter.com/dhh/status/834146806594433025&amp;quot;&amp;gt;February 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/p&amp;gt;  I&#39;m not a huge fan of the whiteboard interview but I think many of the tweets missed the point.</description>
+      <description>A few days ago, I saw a piece on David Heinemeier Hansson&amp;#39;s tweet on whiteboard interviews:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;Hello, my name is David. I would fail to write bubble sort on a whiteboard. I look code up on the internet all the time. I don&amp;amp;#39;t do riddles.&amp;lt;/p&amp;gt;&amp;amp;mdash; DHH (@dhh) &amp;lt;a href=&amp;#34;https://twitter.com/dhh/status/834146806594433025&amp;#34;&amp;gt;February 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   I&amp;#39;m not a huge fan of the whiteboard interview but I think many of the tweets missed the point.</description>
     </item>
     
     <item>
@@ -775,8 +683,7 @@ As with any new tool, there will be some resistance but once git saves them once
       <pubDate>Sun, 19 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/quality-devs-and-coding-contests/</guid>
-      <description>I&#39;ve been planning to put together a response to Alfred Thompson&#39;s recent post - Software Developers - Quantity vs Quality.
-TL;DR, although it isn&#39;t really long and I do encourage you to read Alfred&#39;s post: a couple of articles talk about how the U.S. has the most people entering CS competitions like HackerRank but Americans are not at the top of the leaderboard. does this mean that there&#39;s less talent in America?</description>
+      <description>I&amp;#39;ve been planning to put together a response to Alfred Thompson&amp;#39;s recent post - Software Developers - Quantity vs Quality.  TL;DR, although it isn&amp;#39;t really long and I do encourage you to read Alfred&amp;#39;s post: a couple of articles talk about how the U.S. has the most people entering CS competitions like HackerRank but Americans are not at the top of the leaderboard. does this mean that there&amp;#39;s less talent in America?</description>
     </item>
     
     <item>
@@ -785,8 +692,7 @@ TL;DR, although it isn&#39;t really long and I do encourage you to read Alfred&#
       <pubDate>Wed, 15 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/staring-with-scheme/</guid>
-      <description>Scheme is one of the languages used in Stuy&#39;s intro CS course. Like any other language, there are pros and cons of using it to introduce students to CS. Here are some of the reasons why I like Scheme as a first language and why despite that, I don&#39;t recommend it in many cases.
-Scheme certainly isn&#39;t mainstream. That&#39;s not the main reason why I like it but it is a side benefit.</description>
+      <description>Scheme is one of the languages used in Stuy&amp;#39;s intro CS course. Like any other language, there are pros and cons of using it to introduce students to CS. Here are some of the reasons why I like Scheme as a first language and why despite that, I don&amp;#39;t recommend it in many cases.  Scheme certainly isn&amp;#39;t mainstream. That&amp;#39;s not the main reason why I like it but it is a side benefit.</description>
     </item>
     
     <item>
@@ -795,8 +701,7 @@ Scheme certainly isn&#39;t mainstream. That&#39;s not the main reason why I like
       <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/starting-with-js/</guid>
-      <description>I was catching up with the team at Stuy the other day and they mentioned that they were periodically getting pushback on their choice of languages, particularly in the intro class. The pushback was mostly in the form of &#34;why don&#39;t you start them with Javascript?&#34;
-Back in the day, when I created our intro class where we use Scheme, NetLogo and then later Python, I&#39;d get similar pushback but then it was &#34;</description>
+      <description>I was catching up with the team at Stuy the other day and they mentioned that they were periodically getting pushback on their choice of languages, particularly in the intro class. The pushback was mostly in the form of &amp;#34;why don&amp;#39;t you start them with Javascript?&amp;#34;  Back in the day, when I created our intro class where we use Scheme, NetLogo and then later Python, I&amp;#39;d get similar pushback but then it was &amp;#34;why not Java?</description>
     </item>
     
     <item>
@@ -805,9 +710,7 @@ Back in the day, when I created our intro class where we use Scheme, NetLogo and
       <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/cs-ed-in-bed-college-board/</guid>
-      <description>I&#39;m guessing my views on this aren&#39;t very popular -that&#39;s OK, every community needs a curmudgeon.
-A few years ago, I cautioned if we weren&#39;t careful, once the big players got involved, CS Ed would go the way of other disciplines, and not in a good way. It looks like indeed we&#39;re well on our way down that road.
-I&#39;ve ranted before about things like non-profits, drop in and summer programs.</description>
+      <description>I&amp;#39;m guessing my views on this aren&amp;#39;t very popular -that&amp;#39;s OK, every community needs a curmudgeon.  A few years ago, I cautioned if we weren&amp;#39;t careful, once the big players got involved, CS Ed would go the way of other disciplines, and not in a good way. It looks like indeed we&amp;#39;re well on our way down that road.  I&amp;#39;ve ranted before about things like non-profits, drop in and summer programs.</description>
     </item>
     
     <item>
@@ -816,8 +719,7 @@ I&#39;ve ranted before about things like non-profits, drop in and summer program
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/ba-bs/</guid>
-      <description>I didn&#39;t know Hunter College had computer science.  I heard that refrain more than once during my fall visits to high schools. Part of the reason for this is due to Hunter CS&#39;s low profile and small size in spite of its high quality.
-Part, though, was also because of some misconceptions about Computer Science programs. I&#39;d hear things like &#34;but they only offer a BA not a BS,&#34;</description>
+      <description>I didn&amp;#39;t know Hunter College had computer science.   I heard that refrain more than once during my fall visits to high schools. Part of the reason for this is due to Hunter CS&amp;#39;s low profile and small size in spite of its high quality.  Part, though, was also because of some misconceptions about Computer Science programs. I&amp;#39;d hear things like &amp;#34;but they only offer a BA not a BS,&amp;#34; or &amp;#34;but Hunter isn&amp;#39;t an engineering school.</description>
     </item>
     
     <item>
@@ -826,9 +728,7 @@ Part, though, was also because of some misconceptions about Computer Science pro
       <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/it-gets-easier-advent19/</guid>
-      <description>Today&#39;s Advent of Code problem was a variant on the Josephus problem.
-I recalled that there was a formula to figure out the sole survivor but I decide to run a simulation rather than looking it up. I also decided to write it up in C++, well, really C with cout instead of printf.
-Part 1 was the traditional problem. Part 2 was a variant where at each iteration, you remove the elf opposite the elf being processed (see the problem description for details).</description>
+      <description>Today&amp;#39;s Advent of Code problem was a variant on the Josephus problem.  I recalled that there was a formula to figure out the sole survivor but I decide to run a simulation rather than looking it up. I also decided to write it up in C++, well, really C with cout instead of printf.  Part 1 was the traditional problem. Part 2 was a variant where at each iteration, you remove the elf opposite the elf being processed (see the problem description for details).</description>
     </item>
     
     <item>
@@ -837,9 +737,7 @@ Part 1 was the traditional problem. Part 2 was a variant where at each iteration
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid>
-      <description>I&#39;m spending the weekend up in Michigan. Visiting my brother and is family. We&#39;re here to see the UMGASS production of Gilbert and Sullivan&#39;s The Sorcerer. Batya also came up from Cornell to join us so the two families are all togehter for the first time in about 10 years.
-This hasn&#39;t left much time for Advent of Code but I did manage to finish yesterday&#39;s challenge this morning.
-What took me so long?</description>
+      <description>I&amp;#39;m spending the weekend up in Michigan. Visiting my brother and is family. We&amp;#39;re here to see the UMGASS production of Gilbert and Sullivan&amp;#39;s The Sorcerer. Batya also came up from Cornell to join us so the two families are all togehter for the first time in about 10 years.  This hasn&amp;#39;t left much time for Advent of Code but I did manage to finish yesterday&amp;#39;s challenge this morning.</description>
     </item>
     
     <item>
@@ -848,10 +746,7 @@ What took me so long?</description>
       <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-2/</guid>
-      <description>Today we&#39;re looking at Advent of Code 2016 number 2.
-To change things up, I thought I&#39;d do a video where I live code a solution.
-The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.
-One of the things I really like about Advent of Code is that every problem has two parts and depending on how you solved part 1, you may or may not have extra work to do for part 2.</description>
+      <description>Today we&amp;#39;re looking at Advent of Code 2016 number 2.  To change things up, I thought I&amp;#39;d do a video where I live code a solution.  The solution I present is pretty straightforward - use a 2D array (or technically, an array of strings) to represent the keypad, parse the input, and follow the input instructions to build the code.  One of the things I really like about Advent of Code is that every problem has two parts and depending on how you solved part 1, you may or may not have extra work to do for part 2.</description>
     </item>
     
     <item>
@@ -860,10 +755,7 @@ One of the things I really like about Advent of Code is that every problem has t
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016-1/</guid>
-      <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
-I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
-Take a minute to read it over.
-At first glance, it might seem to a young programmer that this problem requires a two dimensional array - all about (x,y) coordinates but then there&#39;s a problem - there are no limits on coordinates and we can&#39;t make an unlimited size array.</description>
+      <description>I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.  I thought I&amp;#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.  Take a minute to read it over.</description>
     </item>
     
     <item>
@@ -872,9 +764,7 @@ At first glance, it might seem to a young programmer that this problem requires 
       <pubDate>Sat, 03 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016/</guid>
-      <description>Once again, it&#39;s time for Advent of Code - a series of small programming problems released once a day.
-I wrote a bit about it last year and you can still find last years problems here.
-It&#39;s only day three but so far, all of the problems look really nice for students in APCS-A or any similar intro course. I&#39;m thinking of looking at a couple of the problems this week with my class at Hunter.</description>
+      <description>Once again, it&amp;#39;s time for Advent of Code - a series of small programming problems released once a day.  I wrote a bit about it last year and you can still find last years problems here.  It&amp;#39;s only day three but so far, all of the problems look really nice for students in APCS-A or any similar intro course. I&amp;#39;m thinking of looking at a couple of the problems this week with my class at Hunter.</description>
     </item>
     
     <item>
@@ -883,7 +773,7 @@ It&#39;s only day three but so far, all of the problems look really nice for stu
       <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/inverted-index/</guid>
-      <description>I haven&#39;t spoken much about the class I&#39;ve been teaching this semester. It&#39;s an intro CS course - a programming heavy intro. I decided to use Python with a transition at the end to C++. The transition is to mirror Hunter&#39;s normal first CS course that ends with a C++ intro to prepare the students for next semester&#39;s CS course which is a more intense OOP class using C++ - the language we use in our core courses.</description>
+      <description>I haven&amp;#39;t spoken much about the class I&amp;#39;ve been teaching this semester. It&amp;#39;s an intro CS course - a programming heavy intro. I decided to use Python with a transition at the end to C++. The transition is to mirror Hunter&amp;#39;s normal first CS course that ends with a C++ intro to prepare the students for next semester&amp;#39;s CS course which is a more intense OOP class using C++ - the language we use in our core courses.</description>
     </item>
     
     <item>
@@ -892,8 +782,7 @@ It&#39;s only day three but so far, all of the problems look really nice for stu
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/cornell-tech-proj-studio/</guid>
-      <description>I spent this evening as a crit advisor for this semesters Project Studio. The class is basically a finishing class for their Masters students. The class forms teams that work with a &#34;company champion&#34; that acts an advisor to build a product.
-As a Crit Advisor, I, along with two other people from the tech industry have a give and take with three groups and hopefully we can provide useful feedback.</description>
+      <description>I spent this evening as a crit advisor for this semesters Project Studio. The class is basically a finishing class for their Masters students. The class forms teams that work with a &amp;#34;company champion&amp;#34; that acts an advisor to build a product.  As a Crit Advisor, I, along with two other people from the tech industry have a give and take with three groups and hopefully we can provide useful feedback.</description>
     </item>
     
     <item>
@@ -902,8 +791,7 @@ As a Crit Advisor, I, along with two other people from the tech industry have a 
       <pubDate>Fri, 30 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/scotland/</guid>
-      <description>I&#39;m way behind on my Communications of the ACM. I generally only read them when I use my trainer in the mornings and with summer running and outside riding, I&#39;m still on the December 2015 issue.
-This morning, I read a viewpoint by Jeremy Scott and Alan Bundy on a program in Scotland. If you&#39;re an ACM member, and if you&#39;re a CS practitioner, student, academic, or teacher you should be, you can read the piece for details.</description>
+      <description>I&amp;#39;m way behind on my Communications of the ACM. I generally only read them when I use my trainer in the mornings and with summer running and outside riding, I&amp;#39;m still on the December 2015 issue.  This morning, I read a viewpoint by Jeremy Scott and Alan Bundy on a program in Scotland. If you&amp;#39;re an ACM member, and if you&amp;#39;re a CS practitioner, student, academic, or teacher you should be, you can read the piece for details.</description>
     </item>
     
     <item>
@@ -912,9 +800,7 @@ This morning, I read a viewpoint by Jeremy Scott and Alan Bundy on a program in 
       <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/nycist/</guid>
-      <description>I only learned about NYCIST last spring. They&#39;re the &#34;New York Consortium for Independent School Technologists.&#34; They had something of an open house that I attended. I heard about them from friend and fellow CS educator Saber Khan.
-Last Thursday I spent an afternoon and evening with NYCIST members for a discussion of the state of K12 Computer Science Education in the City.
-Most of my work has been with public schools and most of the teachers I know, public school teachers so it was great to make new friends in the Independent school community.</description>
+      <description>I only learned about NYCIST last spring. They&amp;#39;re the &amp;#34;New York Consortium for Independent School Technologists.&amp;#34; They had something of an open house that I attended. I heard about them from friend and fellow CS educator Saber Khan.  Last Thursday I spent an afternoon and evening with NYCIST members for a discussion of the state of K12 Computer Science Education in the City.  Most of my work has been with public schools and most of the teachers I know, public school teachers so it was great to make new friends in the Independent school community.</description>
     </item>
     
   </channel>

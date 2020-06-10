@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cellular Automata on C&#39;est la Z</title>
+    <title>cellular automata on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/categories/cellular-automata/</link>
-    <description>Recent content in Cellular Automata on C&#39;est la Z</description>
+    <description>Recent content in cellular automata on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Apr 2020 17:21:47 -0400</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Mon, 13 Apr 2020 17:21:47 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/conway/</guid>
-      <description>We lost Mathematician John Conway to COVID-19 over the weekend. To us non mathematicians Conway was most well known for his Game of Life - a particularly interesting cellular automaton. If you poke around the web you can find all sorts of neat things relating to the Game of Life including a Turing Machine.
-Some times, I&#39;d have classes explore the Game of Life and variants as a whole unit though more often, I use it as a stepping stone to using Cellular Automata to solve problems.</description>
+      <description>We lost Mathematician John Conway to COVID-19 over the weekend. To us non mathematicians Conway was most well known for his Game of Life - a particularly interesting cellular automaton. If you poke around the web you can find all sorts of neat things relating to the Game of Life including a Turing Machine.  Some times, I&amp;#39;d have classes explore the Game of Life and variants as a whole unit though more often, I use it as a stepping stone to using Cellular Automata to solve problems.</description>
     </item>
     
   </channel>

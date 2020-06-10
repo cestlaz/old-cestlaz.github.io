@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Seam Carving and Dynamic Programming</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Seam Carving and Dynamic Programming" />
-<meta property="og:description" content="It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
-Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
-Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image." />
+<meta property="og:description" content="It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.  Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.  Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/seam-carving/" /><meta property="article:published_time" content="2019-04-22T13:51:52-04:00"/>
-<meta property="article:modified_time" content="2019-04-22T13:51:52-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/seam-carving/" />
+<meta property="article:published_time" content="2019-04-22T13:51:52-04:00" />
+<meta property="article:modified_time" content="2019-04-22T13:51:52-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Seam Carving and Dynamic Programming"/>
-<meta name="twitter:description" content="It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.
-Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.
-Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image."/>
+<meta name="twitter:description" content="It&#39;s spring break and for me that&#39;s always been a good time to explore some new ideas.  Here&#39;s one that some of you might like, particularly if you&#39;re teaching APCS-A or something similar.  Many APCS-A teachers do a unit on image processing using the picture lab (alternate resource). Image processing is a nice platform to explore two dimensional arrays. You basically use a 2D array of pixels (points) to represent an image."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,28 +96,32 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>It's spring break and for me that's always been a good time to explore
-some new ideas.</p>
-
-<p>Here's one that some of you might like, particularly if you're
-teaching APCS-A or something similar.</p>
-
-<p>Many APCS-A teachers do a unit on image processing using the <a href="https://docs.google.com/viewer?url=http%253A%252F%252Fmedia.collegeboard.com%252FdigitalServices%252Fpdf%252Fap%252Fpicture-lab-studentguide.pdf%0A" title="picture
-lab">picture
-lab</a> (<a href="http://www.apcs.mathorama.com/index.php?n=Main.PictureLab" title="alternate resource">alternate resource</a>). Image processing is a nice platform to
+		  <p>
+It&#39;s spring break and for me that&#39;s always been a good time to explore
+some new ideas.
+</p>
+<p>
+Here&#39;s one that some of you might like, particularly if you&#39;re
+teaching APCS-A or something similar. 
+</p>
+<p>
+Many APCS-A teachers do a unit on image processing using the <a href="https://docs.google.com/viewer?url=http%253A%252F%252Fmedia.collegeboard.com%252FdigitalServices%252Fpdf%252Fap%252Fpicture-lab-studentguide.pdf%0A">picture
+lab</a> (<a href="http://www.apcs.mathorama.com/index.php?n=Main.PictureLab">alternate resource</a>). Image processing is a nice platform to
 explore two dimensional arrays. You basically use a 2D array of pixels
 (points) to represent an image. You can just use a 2D array of ints
 and store 0-255 at each location for a grayscale image and three ints
 per pixel for red, green, blue. For this you can just use a simple
-2D array of some color class - I think there's even one built into
-Java that you can use.</p>
-
-<p>I like to use the PPM format to save and later reload the images. PPM
+2D array of some color class - I think there&#39;s even one built into
+Java that you can use.
+</p>
+<p>
+I like to use the PPM format to save and later reload the images. PPM
 is a simple text format. It starts with a header, then an optional
 comment (starting with #), the width and height (4x4 in the example
-below), then the maximum color number. Here's an example:</p>
-
-<pre><code>P3
+below), then the maximum color number. Here&#39;s an example:
+</p>
+<pre class="example">
+P3
 # feep.ppm
 4 4
 15
@@ -127,168 +129,179 @@ below), then the maximum color number. Here's an example:</p>
  0  0  0    0 15  7    0  0  0    0  0  0
  0  0  0    0  0  0    0 15  7    0  0  0
 15  0 15    0  0  0    0  0  0    0  0  0
-</code></pre>
-
-<p>You can even cut and paste the above into a file and view it with an
-image viewer.</p>
-
-<p>You can find the full format specification <a href="http://netpbm.sourceforge.net/doc/ppm.html%0A" title="here">here</a> (<a href="https://en.wikipedia.org/wiki/Netpbm_format" title="alternate resource">alternate resource</a>).</p>
-
-<p>The picture lab has a bunch of interesting exercise ideas but if
-you're looking for something "next level" check this out:</p>
-
-<p><iframe width="560" height="315"
-src="https://www.youtube.com/embed/6NcIJXTlugc" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe></p>
-
-<p>Seam Carving is no longer a new cutting edge
-technique but it still blows me away. It's also a really cool project
-for more advanced students for two reasons: one, it's not a toy
-assignment - it's from real research and two, it contains a very
-approachable example of dynamic programming which I'll talk about in a
-bit.</p>
-
-<p>If you watch the video, there are two pieces that can sound
-intimidating. One is the "dynamic programming algorithm." The other is
-when they talk about the "gradient magnitude."</p>
-
-<p>Gradient magnitude. That sounds pretty hard. Actually, it could be
+</pre>
+<p>
+You can even cut and paste the above into a file and view it with an
+image viewer. 
+</p>
+<p>
+You can find the full format specification <a href="http://netpbm.sourceforge.net/doc/ppm.html%0A">here</a> (<a href="https://en.wikipedia.org/wiki/Netpbm_format">alternate resource</a>). 
+</p>
+<p>
+The picture lab has a bunch of interesting exercise ideas but if
+you&#39;re looking for something &#34;next level&#34; check this out:
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;<a href="https://www.youtube.com/embed/6NcIJXTlugc">https://www.youtube.com/embed/6NcIJXTlugc</a>&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
+Seam Carving is no longer a new cutting edge
+technique but it still blows me away. It&#39;s also a really cool project
+for more advanced students for two reasons: one, it&#39;s not a toy
+assignment - it&#39;s from real research and two, it contains a very
+approachable example of dynamic programming which I&#39;ll talk about in a
+bit.
+</p>
+<p>
+If you watch the video, there are two pieces that can sound
+intimidating. One is the &#34;dynamic programming algorithm.&#34; The other is
+when they talk about the &#34;gradient magnitude.&#34; 
+</p>
+<p>
+Gradient magnitude. That sounds pretty hard. Actually, it could be
 worse. When I first starting looking at the basics of image processing
-it was described as "the derivative of the pixels." <strong>The dirivative of
+it was described as &#34;the derivative of the pixels.&#34; <strong>The dirivative of
 the pixels????</strong> I have to know calculus for this?????? Not really. I
-hate it when they use big words for simple ideas. All they're really
+hate it when they use big words for simple ideas. All they&#39;re really
 talking about is the difference between the color of neighboring
 pixels. That is, how much the color changes from one pixel to the
-next. Let's say you have a greyscale image (or have converted an image
+next. Let&#39;s say you have a greyscale image (or have converted an image
 to greyscale by averaging the red green and blue values), if you have
-a vertical row of pixels with all the values of, let's say 200 and the
+a vertical row of pixels with all the values of, let&#39;s say 200 and the
 row right next to it is also of values 200, then the two lines are of
 the same color - there is no difference. If one pixel has a value of
-200 and its neighbor has a value of 50, it changes quite a lot.</p>
-
-<p>The APCS-A picture lab describes a simple way to calculate this in
-exercise 9 (linked above). You can also just do a search on "edge
-detection tutorial" or "sobol edge detection tutorial" or something
-similar.</p>
-
-<p>For Seam Carving, you have to find a sequence of pixels from one side
+200 and its neighbor has a value of 50, it changes quite a lot.
+</p>
+<p>
+The APCS-A picture lab describes a simple way to calculate this in
+exercise 9 (linked above). You can also just do a search on &#34;edge
+detection tutorial&#34; or &#34;sobol edge detection tutorial&#34; or something
+similar.
+</p>
+<p>
+For Seam Carving, you have to find a sequence of pixels from one side
 of the image to the other where the sum off all the differences is the
-lowest. This is where the dynamic programming comes in.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Dynamic_programming" title="Dynamic Programming">Dynamic Programming</a> is a technique that, in basic terms takes a
+lowest. This is where the dynamic programming comes in.
+</p>
+<p>
+<a href="https://en.wikipedia.org/wiki/Dynamic_programming">Dynamic Programming</a> is a technique that, in basic terms takes a
 problem that decomposes into subproblems and you store the optimal
-subproblem solution rather than recalculating it.</p>
+subproblem solution rather than recalculating it.
+</p>
+<p>
+Probably the easiest example is Fibonacci numbers. You can generate
+Fibonacci numbers recursively using something like this:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fib</span>(n):
+      <span style="color:#66d9ef">if</span> n<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">2</span>:
+          <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+      <span style="color:#66d9ef">else</span>:
+          <span style="color:#66d9ef">return</span> fib(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span>fib(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)</code></pre></div>
+</div>
+<p>
+It&#39;s very simple but it gets very slow very fast. That&#39;s because it
+keeps recalculating the same subproblems over and over and over.
+</p>
+<p>
+You can &#34;fix&#34; this by creating a list of previously found Fibonacci 
+numbers and just return them rather than recalculating:
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  fibs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">1000</span> <span style="color:#75715e"># make room for 1000 fib numbers</span>
 
-<p>Probably the easiest example is Fibonacci numbers. You can generate
-Fibonacci numbers recursively using something like this:</p>
-
-<pre><code class="language-python">  def fib(n):
-      if n&lt;=2:
-          return 1
-      else:
-          return fib(n-1)+fib(n-2)
-</code></pre>
-
-<p>It's very simple but it gets very slow very fast. That's because it
-keeps recalculating the same subproblems over and over and over.</p>
-
-<p>You can "fix" this by creating a list of previously found Fibonacci 
-numbers and just return them rather than recalculating:</p>
-
-<pre><code class="language-python">  fibs = [0]*1000 # make room for 1000 fib numbers
-
-  def fib(n):
-      if fibs[n] != 0:
-          # we already have the answer, just return it
-          return fibs[n]
-      else:
-          # otherwise, calculate it, store it, return it
-          f = fib(n-1)+fib(n-2)
-          fibs[n]=f
-          return f
-</code></pre>
-
-<p>and that's a dynamic programming solution for Fibonacci numbers,
-specifically using a technique known as <a href="https://en.wikipedia.org/wiki/Memoization" title="memoization">memoization</a>.</p>
-
-<p>How does this apply to finding the proper seam to remove? The one with
-the lowest total change?</p>
-
-<p>First, go through the image array and build a second 2D array where
-each element contains the pixels "gradient magnitude" or change using
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fib</span>(n):
+      <span style="color:#66d9ef">if</span> fibs[n] <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+          <span style="color:#75715e"># we already have the answer, just return it</span>
+          <span style="color:#66d9ef">return</span> fibs[n]
+      <span style="color:#66d9ef">else</span>:
+          <span style="color:#75715e"># otherwise, calculate it, store it, return it</span>
+          f <span style="color:#f92672">=</span> fib(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span>fib(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)
+          fibs[n]<span style="color:#f92672">=</span>f
+          <span style="color:#66d9ef">return</span> f</code></pre></div>
+</div>
+<p>
+and that&#39;s a dynamic programming solution for Fibonacci numbers,
+specifically using a technique known as <a href="https://en.wikipedia.org/wiki/Memoization">memoization</a>.  
+</p>
+<p>
+How does this apply to finding the proper seam to remove? The one with
+the lowest total change? 
+</p>
+<p>
+First, go through the image array and build a second 2D array where
+each element contains the pixels &#34;gradient magnitude&#34; or change using
 either the method described in task 9 of the picture lab or
-elsewhere.</p>
-
-<p>For the first row, the sum of each pixels path so far is just the
-array element.</p>
-
-<p>For each successive row, the value of any pixel is going to be it's
+elsewhere. 
+</p>
+<p>
+For the first row, the sum of each pixels path so far is just the
+array element.
+</p>
+<p>
+For each successive row, the value of any pixel is going to be it&#39;s
 value plus one of the values abov it, either up left, up center, or up
-right. Specifically, the elements new value will be it's value + the
-smallest of the above three.</p>
-
-<p>For example, given this array representing the color changes:</p>
-
-
-<figure class="z_image_center">
-    
-        <img src="/img/seam-mat1.png" />
-    
-    
-</figure>
-
-
-<p>When calculating the second item in the second row, you'll consider
-the three values above it:</p>
-
-
-<figure class="z_image_center">
-    
-        <img src="/img/seam-mat2.png" />
-    
-    
-</figure>
-
-
-<p>The smallest is 0 so that 2 remains a 2. If we do this for every
-element in the second row we get the following:</p>
-
-
-<figure class="z_image_center">
-    
-        <img src="/img/seam-mat3.png" />
-    
-    
-</figure>
-
-
-<p>The green boxes added a 0 from the line above but the yellow ones
+right. Specifically, the elements new value will be it&#39;s value + the
+smallest of the above three.
+</p>
+<p>
+For example, given this array representing the color changes:
+</p>
+<p>
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;/img/seam-mat1.png&#34;/&gt; 
+&lt;/figure&gt;
+</p>
+<p>
+When calculating the second item in the second row, you&#39;ll consider
+the three values above it:
+</p>
+<p>
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;/img/seam-mat2.png&#34;/&gt; 
+&lt;/figure&gt;
+</p>
+<p>
+The smallest is 0 so that 2 remains a 2. If we do this for every
+element in the second row we get the following:
+</p>
+<p>
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;/img/seam-mat3.png&#34;/&gt; 
+&lt;/figure&gt;
+</p>
+<p>
+The green boxes added a 0 from the line above but the yellow ones
 added the smallest non zero value from the above  row. Note that the
-edges just considered the two values above them and didn't wrap.</p>
-
-<p>Working the rest of the way through, you get this final array:</p>
-
-
-<figure class="z_image_center">
-    
-        <img src="/img/seam-mat4.png" />
-    
-    
-</figure>
-
-
-<p>You can now easily identify the best seam to remove by finding the
-smallest value in the bottom row and working your way up to the top.</p>
-
-<p>All together this is very doable by an advanced APCS-A student and the
+edges just considered the two values above them and didn&#39;t wrap.
+</p>
+<p>
+Working the rest of the way through, you get this final array:
+</p>
+<p>
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;/img/seam-mat4.png&#34;/&gt; 
+&lt;/figure&gt;
+</p>
+<p>
+You can now easily identify the best seam to remove by finding the
+smallest value in the bottom row and working your way up to the top.
+</p>
+<p>
+All together this is very doable by an advanced APCS-A student and the
 results are very cool, particularly if you do it in an interactive
-environment like processing.</p>
-
-<p>So, check out seam carving. I'll leave you with one more link to a
-longer presentation on the topic:</p>
-
-<p><a href="https://www.youtube.com/watch?v=ZBtXl3EuU14" title="https://www.youtube.com/watch?v=ZBtXl3EuU14">https://www.youtube.com/watch?v=ZBtXl3EuU14</a></p>
+environment like processing.
+</p>
+<p>
+So, check out seam carving. I&#39;ll leave you with one more link to a
+longer presentation on the topic: 
+</p>
+<p>
+<a href="https://www.youtube.com/watch?v=ZBtXl3EuU14"><a href="https://www.youtube.com/watch?v=ZBtXl3EuU14">https://www.youtube.com/watch?v=ZBtXl3EuU14</a></a>
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -378,11 +391,11 @@ longer presentation on the topic:</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -446,13 +459,6 @@ longer presentation on the topic:</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -917,7 +923,7 @@ longer presentation on the topic:</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

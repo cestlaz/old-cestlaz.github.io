@@ -6,15 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Give me a break (and a continue)</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Give me a break (and a continue)" />
-<meta property="og:description" content="What can I do to discourage my students from using the &#34;break&#34;  statement?  That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;" />
+<meta property="og:description" content="What can I do to discourage my students from using the &#34;break&#34; statement?   That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;never use break no matter what&#34; or something similar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/break-continue/" /><meta property="article:published_time" content="2019-05-01T08:39:41-04:00"/>
-<meta property="article:modified_time" content="2019-05-01T08:39:41-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/break-continue/" />
+<meta property="article:published_time" content="2019-05-01T08:39:41-04:00" />
+<meta property="article:modified_time" content="2019-05-01T08:39:41-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Give me a break (and a continue)"/>
-<meta name="twitter:description" content="What can I do to discourage my students from using the &#34;break&#34;  statement?  That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;"/>
+<meta name="twitter:description" content="What can I do to discourage my students from using the &#34;break&#34; statement?   That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;never use break no matter what&#34; or something similar."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -96,185 +98,132 @@ if (!doNotTrack) {
 
 		  <blockquote>
 <p>
-What can I do to discourage my students from using the "break"
-</p>
-<p>
+What can I do to discourage my students from using the &#34;break&#34;
 statement?
 </p>
 </blockquote>
-
-<p>That was more or less the gist of the comment and it elicited some
-good responses. This time the conversation was on Facebook but I've
+<p>
+That was more or less the gist of the comment and it elicited some
+good responses. This time the conversation was on Facebook but I&#39;ve
 seen this one and participated in it many times before. I never liked
-the question when presented as a "how can I stop them" one.  I equally
-dislike when the offered advice is basically "never use break no
-matter what" or something similar. When writing code the best advice
+the question when presented as a &#34;how can I stop them&#34; one.  I equally
+dislike when the offered advice is basically &#34;never use break no
+matter what&#34; or something similar. When writing code the best advice
 is rarely to never or always do something. The question should really
-be "when is it appropriate for my students to use a break statement
-and how can I steer them  towards using it correctly." The answer, of
-course is "it depends."</p>
-
-<p>For those unfamiliar with the statements, <code>break</code> jumps to the end and
-exits the loop or switch statement that encloses it. The ~continue~
-statement jumps up to the next iteration of its enclosing loop. I'll
-show some examples below.</p>
-
-<p>It's true that you never <strong>need</strong> to use break but in my opinion, if
-used correctly it can create clearer code. Let's look at a related
+be &#34;when is it appropriate for my students to use a break statement
+and how can I steer them  towards using it correctly.&#34; The answer, of
+course is &#34;it depends.&#34;
+</p>
+<p>
+For those unfamiliar with the statements, <code>break</code> jumps to the end and
+exits the loop or switch statement that encloses it. The <code>continue</code>
+statement jumps up to the next iteration of its enclosing loop. I&#39;ll
+show some examples below.
+</p>
+<p>
+It&#39;s true that you never <strong>need</strong> to use break but in my opinion, if
+used correctly it can create clearer code. Let&#39;s look at a related
 situation. Suppose you write a function to find and return some item
-from  a data set (in pseudocode):</p>
-
-<pre><code class="language-java"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  itemtype <span style="color:#a6e22e">search</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">){</span>
-      intemtype t<span style="color:#f92672">;</span>
-      <span style="color:#66d9ef">boolean</span> found <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
-      <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i in dataset<span style="color:#f92672">){</span>
-          <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> id<span style="color:#f92672">){</span>
-              t <span style="color:#f92672">=</span> dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
-              found <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-          <span style="color:#f92672">}</span>
-      <span style="color:#f92672">}</span>
-      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>found<span style="color:#f92672">){</span>
-          <span style="color:#66d9ef">return</span> t<span style="color:#f92672">;</span>
-      <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-          <span style="color:#66d9ef">return</span> notfounddataitemstuff<span style="color:#f92672">;</span>
-      <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span></code></pre></div>
-</code></pre>
-
-<p>You could tighten it up a bit but there are two things that I don't
+from  a data set (in pseudocode):
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+</div>
+<p>
+You could tighten it up a bit but there are two things that I don&#39;t
 like about the above solution. First, it goes through the entire data
-set even if the item you're searching for is near the beginning. You
-could fix that by putting in a more complex loop boolean:</p>
-
+set even if the item you&#39;re searching for is near the beginning. You
+could fix that by putting in a more complex loop boolean:
+</p>
+<p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> numitems <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>found <span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">...</span></code></pre></div>
-
-<p>Second. you've got the conditional after the loop. I find the
-following much clearer:</p>
-
-<pre><code class="language-java">  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    itemtype <span style="color:#a6e22e">search</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> id<span style="color:#f92672">){</span>
-      
-        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i in dataset<span style="color:#f92672">){</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> id<span style="color:#f92672">){</span>
-                <span style="color:#66d9ef">return</span> dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> notfounddataitemstuff<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-  </code></pre></div>
-</code></pre>
-
-<p>To me this is perfectly clear. Look for an item, if and when we find
-it, we're done so let's get out of here. If not, the loop finishes and
-we return the not found stuff at the end. It's clean, easy to
-understand, and potentially a little faster.</p>
-
-<p>You have a similar situation with <code>break</code>. Without it you might have
-code like this:</p>
-
-<pre><code class="language-java">  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">boolean</span> found<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
-  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> numitems <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>found<span style="color:#f92672">;</span> i<span style="color:#f92672">++){</span>
-      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> id<span style="color:#f92672">){</span>
-          process dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
-          found <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-      <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>
-
-  </code></pre></div>
-</code></pre>
-
-<p>And with:</p>
-
-<pre><code class="language-java">  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i in dataset<span style="color:#f92672">){</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> id<span style="color:#f92672">){</span>
-                process dataset<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-
-  </code></pre></div>
-</code></pre>
-
-<p>Not significantly different.</p>
-
-<p>People who don't like the break statement usually adhere to a very
+</p>
+<p>
+Second. you&#39;ve got the conditional after the loop. I find the
+following much clearer:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+</div>
+<p>
+To me this is perfectly clear. Look for an item, if and when we find
+it, we&#39;re done so let&#39;s get out of here. If not, the loop finishes and
+we return the not found stuff at the end. It&#39;s clean, easy to
+understand, and potentially a little faster.
+</p>
+<p>
+You have a similar situation with <code>break</code>. Without it you might have
+code like this:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+</div>
+<p>
+And with:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+</div>
+<p>
+Not significantly different. 
+</p>
+<p>
+People who don&#39;t like the break statement usually adhere to a very
 strict interpretation of structured programming - one entry point, one
-exit point but I'd argue that break (and continue) are not like
-arbitrary jumps. They're well defined and don't introduce spaghetti
+exit point but I&#39;d argue that break (and continue) are not like
+arbitrary jumps. They&#39;re well defined and don&#39;t introduce spaghetti
 code. They either specifically exit a bounding language construct or
 jump to the next iteration. Actually, now that I think about it,
-~exceptions~ can be used in a way that mucks with clear code in a much
-more dangerous way than break and continue can.</p>
-
-<p>Here's an example with continue:</p>
-
-<pre><code class="language-java">    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">          <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i in dataset<span style="color:#f92672">){</span>
-
-              <span style="color:#75715e">// do the processing that we do for all items
-</span><span style="color:#75715e"></span>	    
-              <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span>
-                  <span style="color:#66d9ef">continue</span><span style="color:#f92672">;</span> <span style="color:#75715e">// don&#39;t do additional procesing for negatives
-</span><span style="color:#75715e"></span>
-              <span style="color:#75715e">// do the additional processing of the positives
-</span><span style="color:#75715e"></span>          <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>
-  </code></pre></div>
-</code></pre>
-
-<p>as opposed to:</p>
-
-<pre><code class="language-java">    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">          <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i in dataset<span style="color:#f92672">){</span>
-	    
-              <span style="color:#75715e">// do some processing on i
-</span><span style="color:#75715e"></span>
-              <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">&gt;=</span>0<span style="color:#f92672">){</span>
-                  <span style="color:#75715e">// do the processing that we only do on positive ones
-</span><span style="color:#75715e"></span>              <span style="color:#f92672">}</span>
-          <span style="color:#f92672">}</span>
-  </code></pre></div>
-</code></pre>
-
-<p>Which is better? It's purely subjective. Nothing wrong with either.</p>
-
-<p>I'll share a final example. This one lifted from an <a href="https://cestlaz.github.io/post/globals-breaks-and-returns/" title="older post">older post</a> on
-"best practices." If you're writing an event handler, you could put
+<code>exceptions</code> can be used in a way that mucks with clear code in a much
+more dangerous way than break and continue can.
+</p>
+<p>
+Here&#39;s an example with continue:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
+</div>
+<p>
+as opposed to:
+</p>
+<div class="src src-java">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
+</div>
+<p>
+Which is better? It&#39;s purely subjective. Nothing wrong with either.
+</p>
+<p>
+I&#39;ll share a final example. This one lifted from an <a href="https://cestlaz.github.io/post/globals-breaks-and-returns/">older post</a> on
+&#34;best practices.&#34; If you&#39;re writing an event handler, you could put
 the exit event in the loop boolean but I find including it
-as a case using a <code>break</code> to be cleaner:</p>
-
-<pre><code class="language-c"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">){</span>
-      <span style="color:#75715e">// do stuff
-</span><span style="color:#75715e"></span>
-      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>some event<span style="color:#f92672">)</span>
-          <span style="color:#66d9ef">do</span> that event<span style="color:#f92672">;</span>
-
-      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>some other event<span style="color:#f92672">)</span>
-          <span style="color:#66d9ef">do</span> that event<span style="color:#f92672">;</span>
-
-      <span style="color:#75715e">// etc
-</span><span style="color:#75715e"></span>
-      <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>exit event<span style="color:#f92672">)</span>
-          <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-  <span style="color:#f92672">}</span></code></pre></div>
-
-</code></pre>
-
-<p>At the end of the day, <code>break</code> and <code>continue</code>, like most langauge
+as a case using a <code>break</code> to be cleaner:
+</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
+</div>
+<p>
+At the end of the day, <code>break</code> and <code>continue</code>, like most langauge
 constructs can be used for either good or evil. There have been times
-when they've led me to cleaner code so I've used them. At other times,
-using them would have been forced.</p>
-
-<p>If we agree that <code>break</code> and <code>continue</code> can be appropriate, the other
+when they&#39;ve led me to cleaner code so I&#39;ve used them. At other times,
+using them would have been forced.
+</p>
+<p>
+If we agree that <code>break</code> and <code>continue</code> can be appropriate, the other
 question is when to introduce them. One comment from the most recent
-Facebook thread on this (name withheld since that's a semi-private
-forum) was that it shouldn't be right off the bat but rather after
-they're comfortable with loops, conditionals and booleans so that they
+Facebook thread on this (name withheld since that&#39;s a semi-private
+forum) was that it shouldn&#39;t be right off the bat but rather after
+they&#39;re comfortable with loops, conditionals and booleans so that they
 can use the new constructs when they make sense and not willy-nilly. I
-tend to agree with this.</p>
-
-<p>Personally, I think it's important to show our kids constructs like
-~break~ and <code>continue</code> and it's also important for us to talk about
-good code and <a href="https://cestlaz.github.io/posts/best-practices-cli/" title="best practices">best practices</a> but the important thing is that we don't
+tend to agree with this.
+</p>
+<p>
+Personally, I think it&#39;s important to show our kids constructs like
+<code>break</code> and <code>continue</code> and it&#39;s also important for us to talk about
+good code and <a href="https://cestlaz.github.io/posts/best-practices-cli/">best practices</a> but the important thing is that we don&#39;t
 have our kids blindly follow any practice but empower them to make good
-decisions based on their situations.</p>
+decisions based on their situations.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -366,11 +315,11 @@ decisions based on their situations.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -434,13 +383,6 @@ decisions based on their situations.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -905,7 +847,7 @@ decisions based on their situations.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>From selection to sorting</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="From selection to sorting" />
-<meta property="og:description" content="div.center {text-align:center;} 
- When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced." />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt;  &lt;script type=&#34;text/javascript&#34; src=&#34;http://orgmode.org/mathjax/MathJax.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34; src=&#34;assets/static/mj.js&#34;&gt;&lt;/script&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;p&gt; When I first saw the &lt;a href=&#34;http://en.wikipedia.org/wiki/Quicksort&#34;&gt;quicksort&lt;/a&gt; it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did &lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;quickselect&lt;/a&gt;. &lt;/p&gt;  &lt;p&gt; Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/" /><meta property="article:published_time" content="2014-03-12T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-03-12T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/" />
+<meta property="article:published_time" content="2014-03-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-03-12T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="From selection to sorting"/>
-<meta name="twitter:description" content="div.center {text-align:center;} 
- When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced."/>
+<meta name="twitter:description" content="&lt;!DOCTYPE html&gt;  &lt;script type=&#34;text/javascript&#34; src=&#34;http://orgmode.org/mathjax/MathJax.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34; src=&#34;assets/static/mj.js&#34;&gt;&lt;/script&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt;  &lt;p&gt; When I first saw the &lt;a href=&#34;http://en.wikipedia.org/wiki/Quicksort&#34;&gt;quicksort&lt;/a&gt; it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did &lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;quickselect&lt;/a&gt;. &lt;/p&gt;  &lt;p&gt; Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,161 +92,195 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p><!DOCTYPE html></p>
-
-<p><script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
-<script type="text/javascript" src="assets/static/mj.js"></script></p>
-
-<p><style>
+		  <p>
+&lt;!DOCTYPE html&gt;
+</p>
+<p>
+&lt;script type=&#34;text/javascript&#34; src=&#34;<a href="http://orgmode.org/mathjax/MathJax.js">http://orgmode.org/mathjax/MathJax.js</a>&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;assets/static/mj.js&#34;&gt;&lt;/script&gt;
+</p>
+<p>
+&lt;style&gt;
 div.center {text-align:center;}
-</style></p>
-
-<p><p>
-When I first saw the <a href="http://en.wikipedia.org/wiki/Quicksort">quicksort</a> it was in an algorithms class back in
+&lt;/style&gt;
+</p>
+<p>
+&lt;p&gt;
+When I first saw the &lt;a href=&#34;<a href="http://en.wikipedia.org/wiki/Quicksort">http://en.wikipedia.org/wiki/Quicksort</a>&#34;&gt;quicksort&lt;/a&gt; it was in an algorithms class back in
 the day. We first learned the quicksort, then choosing a good pivot
-element and then as an afterthought we did <a href="http://en.wikipedia.org/wiki/Quickselect">quickselect</a>.
-</p></p>
-
-<p><p>
+element and then as an afterthought we did &lt;a href=&#34;<a href="http://en.wikipedia.org/wiki/Quickselect">http://en.wikipedia.org/wiki/Quickselect</a>&#34;&gt;quickselect&lt;/a&gt;.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Fast forward to teaching. I was never really happy teaching
-quicksort. Mergesort is easy to motivate and it's pretty easy to
+quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to
 write. Quicksort always felt a little forced.
-</p></p>
-
-<p><p>
-I thought I'd try switching things up this time and doing quickselect
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+I thought I&#39;d try switching things up this time and doing quickselect
 first.
-</p></p>
-
-<p><p>
-The motivating problem: find the K<sup>th</sup> smallest item in a list - in our
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+The motivating problem: find the K&lt;sup&gt;th&lt;/sup&gt; smallest item in a list - in our
 case the list is an array of ints.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 I want to start with the least efficient algorithm so I stack the
-deck. I remind them that we've been finding the smallest item in a
+deck. I remind them that we&#39;ve been finding the smallest item in a
 list for two years now.
-</p></p>
-
-<p><p>
-They don't disappoint and suggest something like this:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #DFAF8F;">L</span> = [10,3,28,82,14,42,66,74,81]</p>
-
-<p><span style="color: #F0DFAF; font-weight: bold;">def</span> <span style="color: #93E0E3;">findKth</span>(L,k):
-<span style="color: #DFAF8F;">omits</span>=[]
-<span style="color: #F0DFAF; font-weight: bold;">for</span> i <span style="color: #F0DFAF; font-weight: bold;">in</span> <span style="color: #DCDCCC; font-weight: bold;">range</span>(k):
-<span style="color: #DFAF8F;">ans</span>=<span style="color: #DCDCCC; font-weight: bold;">max</span>(L)
-<span style="color: #F0DFAF; font-weight: bold;">for</span> item <span style="color: #F0DFAF; font-weight: bold;">in</span> L:
-<span style="color: #F0DFAF; font-weight: bold;">if</span> item &lt; ans <span style="color: #F0DFAF; font-weight: bold;">and</span> item <span style="color: #F0DFAF; font-weight: bold;">not</span> <span style="color: #F0DFAF; font-weight: bold;">in</span> omits:
-<span style="color: #DFAF8F;">ans</span>=item
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+They don&#39;t disappoint and suggest something like this:
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #DFAF8F;&#34;&gt;L&lt;/span&gt; = [10,3,28,82,14,42,66,74,81]
+</p>
+<p>
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #93E0E3;&#34;&gt;findKth&lt;/span&gt;(L,k):
+&lt;span style=&#34;color: #DFAF8F;&#34;&gt;omits&lt;/span&gt;=[]
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #DCDCCC; font-weight: bold;&#34;&gt;range&lt;/span&gt;(k):
+&lt;span style=&#34;color: #DFAF8F;&#34;&gt;ans&lt;/span&gt;=&lt;span style=&#34;color: #DCDCCC; font-weight: bold;&#34;&gt;max&lt;/span&gt;(L)
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;in&lt;/span&gt; L:
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;if&lt;/span&gt; item &amp;lt; ans &lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;and&lt;/span&gt; item &lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;in&lt;/span&gt; omits:
+&lt;span style=&#34;color: #DFAF8F;&#34;&gt;ans&lt;/span&gt;=item
 omits.append(ans)
-<span style="color: #F0DFAF; font-weight: bold;">return</span> ans</p>
-
-<p><span style="color: #F0DFAF; font-weight: bold;">print</span> findKth(L,3)
-</pre>
-</div></p>
-
-<p><p>
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;return&lt;/span&gt; ans
+</p>
+<p>
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;print&lt;/span&gt; findKth(L,3)
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
 Clearly an \(O(n^2)\) algorithm.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Can we do better?
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Certainly.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 The students then suggest sorting the data set first. If we use
 mergesort, we can sort in \(O(nLg (n))\) time. This lead to a great
-conversation about sorting being so fast it's practically free and
-that you don't have to hard code everything from scratch. Not only is
-sorting the data set then plucking the k<sup>th</sup> item out much faster, if
-you already have a sort written or if you use your language's
-library's sort, it's much easier as well:
-</p></p>
-
-<p><div class="org-src-container"></p>
-
-<p><pre class="src src-python"><span style="color: #F0DFAF; font-weight: bold;">def</span> <span style="color: #93E0E3;">findKth</span>(L,k):
-<span style="color: #DFAF8F;">tmp</span> = <span style="color: #DCDCCC; font-weight: bold;">sorted</span>(L)
-<span style="color: #F0DFAF; font-weight: bold;">return</span> tmp[k]
-</pre>
-</div></p>
-
-<p><p>
-But we can do even better. So now we talk about <b>quickselect</b>
-</p></p>
-
-<p><p>
+conversation about sorting being so fast it&#39;s practically free and
+that you don&#39;t have to hard code everything from scratch. Not only is
+sorting the data set then plucking the k&lt;sup&gt;th&lt;/sup&gt; item out much faster, if
+you already have a sort written or if you use your language&#39;s
+library&#39;s sort, it&#39;s much easier as well:
+&lt;/p&gt;
+</p>
+<p>
+&lt;div class=&#34;org-src-container&#34;&gt;
+</p>
+<p>
+&lt;pre class=&#34;src src-python&#34;&gt;&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #93E0E3;&#34;&gt;findKth&lt;/span&gt;(L,k):
+&lt;span style=&#34;color: #DFAF8F;&#34;&gt;tmp&lt;/span&gt; = &lt;span style=&#34;color: #DCDCCC; font-weight: bold;&#34;&gt;sorted&lt;/span&gt;(L)
+&lt;span style=&#34;color: #F0DFAF; font-weight: bold;&#34;&gt;return&lt;/span&gt; tmp[k]
+&lt;/pre&gt;
+&lt;/div&gt;
+</p>
+<p>
+&lt;p&gt;
+But we can do even better. So now we talk about &lt;b&gt;quickselect&lt;/b&gt;
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 We pick a random pivot, partition the list a la quicksort (reorder the
 list such that all items less than the pivot are to its left, and all
 items greater than the pivot are to its right).
-</p></p>
-
-<p><p>
-We now know that after partitioning. the pivot is in it's exact
-location. If its index is <b>k</b> then we're done. If not, we can
-recursively <b>quickselect</b> on either the left or right side.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+We now know that after partitioning. the pivot is in it&#39;s exact
+location. If its index is &lt;b&gt;k&lt;/b&gt; then we&#39;re done. If not, we can
+recursively &lt;b&gt;quickselect&lt;/b&gt; on either the left or right side.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Pretty cool, but is it faster?
-</p></p>
-
-<p><p>
-It's easy to see that if we keep choosing a bad pivot (the smallest or
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+It&#39;s easy to see that if we keep choosing a bad pivot (the smallest or
 largest in the list), each iteration takes \(n\) time to partition and
 each iteration takes one item out of contention. This takes us back to
 \(O(n^2)\).
-</p></p>
-
-<p><p>
-However&#x2026;
-</p></p>
-
-<p><p>
-If we choose a good partition &#x2013; at the middle of the list, each
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+However&amp;#x2026;
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+If we choose a good partition &amp;#x2013; at the middle of the list, each
 partition takes less and less time. We get a run time of:
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 \(n+\frac{n}{2} +\frac{n}{4}+\frac{n}{8}+\dots\) and since \(\frac{n}{2}
 +\frac{n}{4}+\frac{n}{8}\dots=n\) this becomes an \(O(2n)\), or \(O(n)\) algorithm.
-</p></p>
-
-<p><p>
-That's really cool.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
+That&#39;s really cool.
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Homework was the actual implementation.
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 I think this might be a better way to approach quicksort. It seems
 less forced, plus the class gets to go through the exercise of taking
 an algorithm form \(O(n^2)\) to \(O(nlg(n))\) to \(O(n)\).
-</p></p>
-
-<p><p>
+&lt;/p&gt;
+</p>
+<p>
+&lt;p&gt;
 Next, moving to the quicksort and also showing that we can indeed
 avoid those really bad pivots.
-</p></p>
-
-<p><h4>Addendum</h4></p>
-
-<p>We moved to quicksort today and overall I'm happy with this
+&lt;/p&gt;
+</p>
+<p>
+&lt;h4&gt;Addendum&lt;/h4&gt;
+</p>
+<p>
+We moved to quicksort today and overall I&#39;m happy with this
 approach. The only thing I think needs tweaking is going from the idea
 of partitioning to Java code. Java makes it somewhat of a bear.
-<br></p>
+&lt;br&gt;
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -335,11 +369,11 @@ of partitioning to Java code. Java makes it somewhat of a bear.
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -403,13 +437,6 @@ of partitioning to Java code. Java makes it somewhat of a bear.
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -874,7 +901,7 @@ of partitioning to Java code. Java makes it somewhat of a bear.
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

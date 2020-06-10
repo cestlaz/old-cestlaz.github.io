@@ -6,13 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Real Data</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Real Data" />
 <meta property="og:description" content="When looking for assignments for our classes, in addition to trying to craft assignments that develop and reinforce key ideas, we also strive to come up with ideas that &ldquo;speak&rdquo; to the students and keep their interest. We write small games, use problems within the student&rsquo;s experiences, and in general try to find problems that are appealing.
 This is much easier to do when the kids can read data from a file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2013-04-14-real_data/" /><meta property="article:published_time" content="2013-04-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-04-14T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/2013-04-14-real_data/" />
+<meta property="article:published_time" content="2013-04-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2013-04-14T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Real Data"/>
 <meta name="twitter:description" content="When looking for assignments for our classes, in addition to trying to craft assignments that develop and reinforce key ideas, we also strive to come up with ideas that &ldquo;speak&rdquo; to the students and keep their interest. We write small games, use problems within the student&rsquo;s experiences, and in general try to find problems that are appealing.
@@ -97,85 +99,60 @@ craft assignments that develop and reinforce key ideas, we also strive
 to come up with ideas that &ldquo;speak&rdquo; to the students and keep their
 interest. We write small games, use problems within the student&rsquo;s
 experiences, and in general try to find problems that are appealing.</p>
-
 <p>This is much easier to do when the kids can read data from a file. The
 tool we&rsquo;re using with our sophomores right now is Python and Python
 makes reading files very easy. Combining file input with basic string
 functions and all of a sudden, we can read and parse comma separated
 values.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">l<span style="color:#f92672">=</span>[]
 <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> open(filename)<span style="color:#f92672">.</span>readlines():
 l<span style="color:#f92672">.</span>append(line<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)</code></pre></div>
-
 <p>True, this doesn&rsquo;t handle quotes and embedded commas, but that just
 leads to a discussion on cleaning up data and when we do list
 comprehensions, things get even slicker.</p>
-
 <p>We could just make up some sample data, for example, student test scores:</p>
-
 <p>Tom,95,87,97,93</p>
-
 <p>Sarah,98,98,84,92</p>
-
 <p>Harry,90,90,90,90</p>
-
 <p>Sue,94,95,96,97</p>
-
 <p>But it&rsquo;s so much more fun with the wealth of CSV data waiting to be
 grabbed. If your kids like sports, you can check
-out <a href="http://www.baseball-reference.com/">baseball-reference.com</a>
+out <!-- raw HTML omitted -->baseball-reference.com<!-- raw HTML omitted -->
 or it&rsquo;s counterparts for basketball or football.</p>
-
 <p>We decided to look at government data instead.</p>
-
-<p>Federal data can be found at <a href="http://www.data.gov/">data.gov</a> but we focused on <a href="https://data.cityofnewyork.us/">New York City</a>. We
+<p>Federal data can be found at <!-- raw HTML omitted -->data.gov<!-- raw HTML omitted --> but we focused on <!-- raw HTML omitted -->New York City<!-- raw HTML omitted -->. We
 settled
-on <a href="https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4">SAT</a>
+on <!-- raw HTML omitted -->SAT<!-- raw HTML omitted -->
 data. SAT math, reading, and writing scores for all NYC public
 schools. Something Stuy kids are very interested in. We were able to
 look for comparable schools, which schools had large spreads between
 math and verbal, which schools had score increases over time, etc.</p>
-
 <p>Much more interesting to look at real SAT data than made up student
 grade info.</p>
-
 <p>Tomorrow we&rsquo;ll look at combining data sets &ndash; looking at
 the relationship between SAT scores and school ratings and
 demographics. It should be interesting. Later, we&rsquo;ll grab books
-from <a href="http://www.gutenberg.org/">Project Gutenberg</a> and see
+from <!-- raw HTML omitted -->Project Gutenberg<!-- raw HTML omitted --> and see
 how we can analyze large texts.</p>
-
 <p>The moral of the story - there&rsquo;s lots of great data easily accessible
 &ndash; let&rsquo;s use it to motivate and engage our students.</p>
-
-<p><b>UPDATE:</b></p>
-
+<p><!-- raw HTML omitted -->UPDATE:<!-- raw HTML omitted --></p>
 <p>It&rsquo;s taken me a while to post this, and in the meantime we analyzed
 the SAT data from one NYC data set and matched it with a data set of
 demographic data:</p>
-
-<div align="center">
-<a href="/img/SAT_SCORES.png" rel="lightbox">
-<img width="50%" src="/img/SAT_SCORES.png" class="" alt="" />
-</a>
-</div>
-
+<!-- raw HTML omitted -->
 <p>The graph shows a strong correlation between schools with a high number of
 students eligable for free lunch (the Y-axis) and low SAT scores (the
 X-axis). This led to a very interesting conversation on the effects of
 poverty.</p>
-
 <p>We also noticed a couple of outliers. There&rsquo;s one school at about
 (1400,82). High poverty (free lunch) and national average SAT. Also two
 schools with low free lunch numbers and middling SAT scores
 (1400,17ish).</p>
-
 <p>The (1400,82) point turns out to be a school that caters to English
 Language Learners and we presume has a large number of recent
 immigrants (partially noted by the name and also by the fact that
 their SAT math scores far surpassed the English ones).</p>
-
 <p>Great discussions ensued all due to applying CS to real world data.</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -264,11 +241,11 @@ their SAT math scores far surpassed the English ones).</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -332,13 +309,6 @@ their SAT math scores far surpassed the English ones).</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -803,7 +773,7 @@ their SAT math scores far surpassed the English ones).</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

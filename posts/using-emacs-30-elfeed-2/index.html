@@ -6,19 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs - 30 - elfeed part 2 - Hydras</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs - 30 - elfeed part 2 - Hydras" />
-<meta property="og:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
-It&#39;s emacs so there has to be a solution.
-Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages." />
+<meta property="og:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.  It&#39;s emacs so there has to be a solution.  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-30-elfeed-2/" /><meta property="article:published_time" content="2017-02-25T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-02-25T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-30-elfeed-2/" />
+<meta property="article:published_time" content="2017-02-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-02-25T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 30 - elfeed part 2 - Hydras"/>
-<meta name="twitter:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
-It&#39;s emacs so there has to be a solution.
-Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages."/>
+<meta name="twitter:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.  It&#39;s emacs so there has to be a solution.  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -94,28 +92,35 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>In <a href="http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/" title="part 1">part 1</a>, I talked about <a href="https://github.com/skeeto/elfeed" title="elfeed">elfeed</a>, a really awesome feed reader for
-emacs. Generally, I'm really liking it but there's been one problem -
+		  <p>
+In <a href="http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/">part 1</a>, I talked about <a href="https://github.com/skeeto/elfeed">elfeed</a>, a really awesome feed reader for
+emacs. Generally, I&#39;m really liking it but there&#39;s been one problem -
 not being able to navigate quickly between groups of feeds with a
-keystroke or two.</p>
-
-<p>It's emacs so there has to be a solution.</p>
-
-<p>Enter <a href="https://github.com/abo-abo/hydra" title="hydra">hydra</a> - a terrific emacs package from the same guy who brought
-us <a href="https://github.com/abo-abo/hydra" title="swiper">swiper</a>, another one of my favorite emacs packages.</p>
-
-<p>Basically, Hydra allows us to create Hydras - a collection of emacs
+keystroke or two.
+</p>
+<p>
+It&#39;s emacs so there has to be a solution.
+</p>
+<p>
+Enter <a href="https://github.com/abo-abo/hydra">hydra</a> - a terrific emacs package from the same guy who brought
+us <a href="https://github.com/abo-abo/hydra">swiper</a>, another one of my favorite emacs packages.
+</p>
+<p>
+Basically, Hydra allows us to create Hydras - a collection of emacs
 commands tied o a single prefix along with a nice interface and help
-system.</p>
-
-<p>Truth be told, I don't use hydra as much anymore since <a href="https://github.com/justbur/emacs-which-key" title="which-key">which-key</a>
+system.
+</p>
+<p>
+Truth be told, I don&#39;t use hydra as much anymore since <a href="https://github.com/justbur/emacs-which-key">which-key</a>
 does such a great job most of the time. Which-key, however, is no help
-here.</p>
-
-<p>Here's the code to install hydra along with a some of sample Hydra's
-I use:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package hydra
+here.
+</p>
+<p>
+Here&#39;s the code to install hydra along with a some of sample Hydra&#39;s
+I use:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package hydra
 :ensure <span style="color:#66d9ef">t</span>)
 
 <span style="color:#75715e">;; Hydra for modes that toggle on and off</span>
@@ -162,14 +167,16 @@ I use:</p>
 (<span style="color:#e6db74">&#34;o&#34;</span> org-clock-out <span style="color:#e6db74">&#34;Clock-Out&#34;</span>) <span style="color:#75715e">; you might also want (setq org-log-note-clock-out t)</span>
 (<span style="color:#e6db74">&#34;j&#34;</span> org-clock-goto <span style="color:#e6db74">&#34;Clock Goto&#34;</span>) <span style="color:#75715e">; global visit the clocked task</span>
 (<span style="color:#e6db74">&#34;c&#34;</span> org-capture <span style="color:#e6db74">&#34;Capture&#34;</span>) <span style="color:#75715e">; Don&#39;t forget to define the captures you want http://orgmode.org/manual/Capture.html</span>
-(<span style="color:#e6db74">&#34;l&#34;</span> (or )rg-capture-goto-last-stored <span style="color:#e6db74">&#34;Last Capture&#34;</span>))</code></pre></div>
-</code></pre>
-
-<p>Take a look at the <a href="https://github.com/abo-abo/hydra" title="Hydra">Hydra</a> home page for detailed information.</p>
-
-<p>With Hydra installed, I can creat one for navigating in elfeed:</p>
-
-<pre><code class="language-emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
+(<span style="color:#e6db74">&#34;l&#34;</span> (or )rg-capture-goto-last-stored <span style="color:#e6db74">&#34;Last Capture&#34;</span>))</code></pre></div></code></pre></div>
+</div>
+<p>
+Take a look at the <a href="https://github.com/abo-abo/hydra">Hydra</a> home page for detailed information.
+</p>
+<p>
+With Hydra installed, I can creat one for navigating in elfeed:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
 <span style="color:#e6db74">&#34;filter&#34;</span>
 (<span style="color:#e6db74">&#34;c&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@6-months-ago +cs&#34;</span>) <span style="color:#e6db74">&#34;cs&#34;</span>)
 (<span style="color:#e6db74">&#34;e&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@6-months-ago +emacs&#34;</span>) <span style="color:#e6db74">&#34;emacs&#34;</span>)
@@ -180,10 +187,40 @@ I use:</p>
 (<span style="color:#e6db74">&#34;T&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@1-day-ago&#34;</span>) <span style="color:#e6db74">&#34;Today&#34;</span>)
 (<span style="color:#e6db74">&#34;Q&#34;</span> bjm/elfeed-save-db-and-bury <span style="color:#e6db74">&#34;Quit Elfeed&#34;</span> :color blue)
 (<span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#66d9ef">nil</span> <span style="color:#e6db74">&#34;quit&#34;</span> :color blue)
-)</code></pre></div>
-</code></pre>
+)</code></pre></div></code></pre></div>
+</div>
+<p>
+and add a binding to the elfeed key map:
+</p>
+<p>
+#+BEGIN_SRC emacs-lisp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elfeed
+:ensure <span style="color:#66d9ef">t</span>
+:bind (:map elfeed-search-mode-map
+(<span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#f92672">.</span> bjm/elfeed-save-db-and-bury)
+(<span style="color:#e6db74">&#34;Q&#34;</span> <span style="color:#f92672">.</span> bjm/elfeed-save-db-and-bury)
+(<span style="color:#e6db74">&#34;m&#34;</span> <span style="color:#f92672">.</span> elfeed-toggle-star)
+(<span style="color:#e6db74">&#34;M&#34;</span> <span style="color:#f92672">.</span> elfeed-toggle-star)
+(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#f92672">.</span> mz/hydra-elfeed/body)
+(<span style="color:#e6db74">&#34;J&#34;</span> <span style="color:#f92672">.</span> mz/hydra-elfeed/body)))
 
-<p>and add a binding to the elfeed key map:</p>
+<span style="color:#960050;background-color:#1e0010">#</span>+End_SRC
+
+This isn<span style="color:#e6db74">&#39;t</span> the actual Hydra I use -- we<span style="color:#e6db74">&#39;ll</span> <span style="color:#a6e22e">get</span> to that in the next
+installment where I<span style="color:#e6db74">&#39;ll</span> show how to make a Hydra on the fly that
+contains keys for all your elfeed tags but this is a reasonable example.
+
+Here<span style="color:#e6db74">&#39;s</span> the video:
+
+&lt;iframe width=<span style="color:#e6db74">&#34;560&#34;</span> height=<span style="color:#e6db74">&#34;315&#34;</span> src=<span style="color:#e6db74">&#34;https://www.youtube.com/embed/tjnK1rkO7RU&#34;</span> frameborder=<span style="color:#e6db74">&#34;0&#34;</span> allowfullscreen&gt;&lt;/iframe&gt;
+
+Enjoy.
+Relevant links:
+<span style="color:#a6e22e">-</span> Video series overview page:
+<span style="color:#a6e22e">-</span> http://cestlaz.github.io/stories/emacs
+<span style="color:#a6e22e">-</span> Code:
+<span style="color:#a6e22e">-</span> [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]</code></pre></div>
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -272,11 +309,11 @@ I use:</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -340,13 +377,6 @@ I use:</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -811,7 +841,7 @@ I use:</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

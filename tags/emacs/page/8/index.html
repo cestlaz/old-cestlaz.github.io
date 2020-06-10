@@ -4,16 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Emacs</title>
+	<title>emacs</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
-	<meta property="og:title" content="Emacs" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
+	<meta property="og:title" content="emacs" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/tags/emacs/" />
-<meta property="og:updated_time" content="2016-06-24T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-05-21T14:47:59-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Emacs"/>
+<meta name="twitter:title" content="emacs"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -80,7 +81,7 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Emacs</h1>
+		<h1 class="main__title">emacs</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
@@ -92,9 +93,7 @@ if (!doNotTrack) {
 <time class="post__meta-date meta-date" datetime="2016-06-24T00:00:00">June 24, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Here's a really cool navigation method that I've been meaning to use more. Avy is a replacement for ace-jump mode which is an implementation of easymotion, a vim plugin.
-It's pretty cool and lets you quickly navigate to any spot on the screen.
-After triggering avy, or more specifically the **avy-goto-char** function, emacs prompts you for a single character. When you type it, all instances of the character that start out words change to a highlighted letter.
+		Here&#39;s a really cool navigation method that I&#39;ve been meaning to use more. Avy is a replacement for ace-jump mode which is an implementation of easymotion, a vim plugin.  It&#39;s pretty cool and lets you quickly navigate to any spot on the screen.  After triggering avy, or more specifically the avy-goto-char function, emacs prompts you for a single character. When you type it, all instances of the character that start out words change to a highlighted letter.
                 
           <br>
             <a href="/posts/using-emacs-7-avy/#disqus_thread"># COMMENTS</a>
@@ -117,10 +116,7 @@ After triggering avy, or more specifically the **avy-goto-char** function, emacs
 <time class="post__meta-date meta-date" datetime="2016-06-22T00:00:00">June 22, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		The other day my friend and fellow CS Ed Blogger Alfred Thompson wrote about Better Comments, an extension for visual studio that displays comments that are marked up with special characters in order to highlight them. Here's a screenshot:
-https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png
-So, the first thing I though was "I bet emacs could do that pretty easily" and down the rabbit hole I went.
-I had to figure out something about how emacs themes and font-locking (emacs for syntax highlighting) works and of course spent far too much time learning about Emacs, my favored tool, rather than getting actual work done, but I came up with this:
+		The other day my friend and fellow CS Ed Blogger Alfred Thompson wrote about Better Comments, an extension for visual studio that displays comments that are marked up with special characters in order to highlight them. Here&#39;s a screenshot:  https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png  So, the first thing I though was &#34;I bet emacs could do that pretty easily&#34; and down the rabbit hole I went.  I had to figure out something about how emacs themes and font-locking (emacs for syntax highlighting) works and of course spent far too much time learning about Emacs, my favored tool, rather than getting actual work done, but I came up with this: (make-face &#39;font-lock-comment-important) (set-face-foreground &#39;font-lock-comment-important &#34;#00ff00&#34;) (make-face &#39;font-lock-comment-todo) (set-face-foreground &#39;font-lock-comment-todo &#34;#ff0000&#34;) (make-face &#39;font-lock-comment-strike) (set-face-attribute &#39;font-lock-comment-strike nil :strike-through t) (defun add-custom-keyw() &#34;adds a few special keywords&#34; (font-lock-add-keywords nil &#39;((&#34;cx \\(.
                 
           <br>
             <a href="/posts/better-comments/#disqus_thread"># COMMENTS</a>
@@ -143,11 +139,7 @@ I had to figure out something about how emacs themes and font-locking (emacs for
 <time class="post__meta-date meta-date" datetime="2016-06-20T00:00:00">June 20, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		This video is all about using incremental search to navigate through your emacs buffers.
-
-You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).
-They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.
-Part of the Swiper package includes ivy and counsel which I use instead of ido.
+		This video is all about using incremental search to navigate through your emacs buffers.  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0mwwN0S1dnQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).  They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.  Part of the Swiper package includes ivy and counsel which I use instead of ido.
                 
           <br>
             <a href="/posts/using-emacs-6-swiper/#disqus_thread"># COMMENTS</a>
@@ -170,10 +162,7 @@ Part of the Swiper package includes ivy and counsel which I use instead of ido.
 <time class="post__meta-date meta-date" datetime="2016-06-14T00:00:00">June 14, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.
-I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
-
-This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn't have to ever leave emacs.
+		Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D6OUMVbPKSA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.
                 
           <br>
             <a href="/posts/using-emacs-5-windows/#disqus_thread"># COMMENTS</a>
@@ -196,10 +185,7 @@ This video concerns using windows. By using buffers and windows and the basics y
 <time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
-In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.
-In this video, I try to explain the way I think about Emacs and why it's so cool.
-The only change we made to our configuration was adding:
+		&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nyQxRarVYH4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt; Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.  In some ways, it&#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.  In this video, I try to explain the way I think about Emacs and why it&#39;s so cool.
                 
           <br>
             <a href="/posts/using-emacs-3-elisp/#disqus_thread"># COMMENTS</a>
@@ -222,9 +208,7 @@ The only change we made to our configuration was adding:
 <time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Now that we're past the intro material, we'll start looking at emacs features one at a time. This will let you focus on using the one feature we're covering, fit it into your work flow, and really get comfortable with it.
-This time we'll dive into using Emacs effectively with buffers.
-Watch the video and then make a real effort to use buffers over the next few emacs sessions. Before you know it, they'll be a natural part of your work flow.
+		&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/v5eTK5lC0xs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  Now that we&#39;re past the intro material, we&#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&#39;re covering, fit it into your work flow, and really get comfortable with it.  This time we&#39;ll dive into using Emacs effectively with buffers.  Watch the video and then make a real effort to use buffers over the next few emacs sessions.
                 
           <br>
             <a href="/posts/using-emacs-4-buffers/#disqus_thread"># COMMENTS</a>
@@ -247,10 +231,7 @@ Watch the video and then make a real effort to use buffers over the next few ema
 <time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		This video is a brief introduction to org-mode, a mode I use for all sorts of things.
-We'll dive into org-mode later in the series. Right now I just want you to see the basics since we'll be using org-mode for any notes that are written up during this series.
-Actually, all my blog posts are written in org-mode.
-Here are the important lines to add to your Emacs init.
+		&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  This video is a brief introduction to org-mode, a mode I use for all sorts of things.  We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.  Actually, all my blog posts are written in org-mode.  Here are the important lines to add to your Emacs init.
                 
           <br>
             <a href="/posts/using-emacs-2-org/#disqus_thread"># COMMENTS</a>
@@ -273,8 +254,7 @@ Here are the important lines to add to your Emacs init.
 <time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		I'm sure I've mentioned that I've been an Emacs wonk for decades. Since the mid-80's in fact. I've spent time using other editors, word processors, and development tools but always find my way back.
-I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it's pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn't a clear path to take you from beginner to using it as an efficient tool let alone customizing it.
+		I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.  I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it.
                 
           <br>
             <a href="/posts/using-emacs-introduction/#disqus_thread"># COMMENTS</a>
@@ -297,11 +277,7 @@ I recommend that budding computer science students develop a good tool set and e
 <time class="post__meta-date meta-date" datetime="2016-05-23T00:00:00">May 23, 2016</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		This video will step you through setting up Emacs to use MELPA for packages.
-
-We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
-Here's the contents of that file:
-(setq inhibit-startup-message t) (require &#39;package)(setq package-enable-at-startup nil)(add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;))(package-initialize);; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package)(package-refresh-contents)(package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages: *try*: let's you try packages without installing them.
+		This video will step you through setting up Emacs to use MELPA for packages.  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&#39;s the contents of that file: (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&#39;s you try packages without installing them.
                 
           <br>
             <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>
@@ -324,7 +300,7 @@ Here's the contents of that file:
 <time class="post__meta-date meta-date" datetime="2015-10-28T00:00:00">October 28, 2015</time></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		div.center {text-align:center;}    A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs.  I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.  I recommend that my students spend time not only in Emacs but also in tools like Vim or Sublime Text.
+		&lt;!DOCTYPE html&gt;  &lt;style&gt; div.center {text-align:center;} &lt;/style&gt; &lt;div id=&#34;outline-container-orgheadline1&#34; class=&#34;outline-2&#34;&gt; &lt;h2 id=&#34;orgheadline1&#34;&gt;&lt;/h2&gt; &lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgheadline1&#34;&gt; &lt;p&gt; A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs. &lt;/p&gt;  &lt;p&gt; I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.
                 
           <br>
             <a href="/posts/2015-10-28-emacs-intermediate.html/#disqus_thread"># COMMENTS</a>
@@ -384,11 +360,11 @@ Here's the contents of that file:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -452,13 +428,6 @@ Here's the contents of that file:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -923,7 +892,7 @@ Here's the contents of that file:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

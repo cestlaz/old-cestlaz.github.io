@@ -6,15 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs 53 Emailing Org Agenda</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs 53 Emailing Org Agenda" />
-<meta property="og:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because: It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(.   I prefer using org-mode beacuse: Emacs I prefer, for the most part, to control my data.  I partially sync the two platforms." />
+<meta property="og:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:    It&#39;s pretty universal so I can issue and accept calendar invites.    It works well with my phone and other mobile devices.    The rest of my family doesn&#39;t live in Emacs :-(.    I prefer using org-mode beacuse:    Emacs    I prefer, for the most part, to control my data." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/" /><meta property="article:published_time" content="2018-11-03T08:55:23-04:00"/>
-<meta property="article:modified_time" content="2018-11-03T08:55:23-04:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/" />
+<meta property="article:published_time" content="2018-11-03T08:55:23-04:00" />
+<meta property="article:modified_time" content="2018-11-03T08:55:23-04:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 53 Emailing Org Agenda"/>
-<meta name="twitter:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because: It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(.   I prefer using org-mode beacuse: Emacs I prefer, for the most part, to control my data.  I partially sync the two platforms."/>
+<meta name="twitter:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:    It&#39;s pretty universal so I can issue and accept calendar invites.    It works well with my phone and other mobile devices.    The rest of my family doesn&#39;t live in Emacs :-(.    I prefer using org-mode beacuse:    Emacs    I prefer, for the most part, to control my data."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -94,52 +96,90 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <ul>
+		  <p>
 I use both org-mode and Google Calendar for scheduling. I like Google
 Calendar because:
-<li>It's pretty universal so I can issue and accept calendar invites.</li>
-<li>It works well with my phone and other mobile devices.</li>
-<li>The rest of my family doesn't live in Emacs :-(.</li>
-</ul>
-
+</p>
 <ul>
+<li>
+<p>
+It&#39;s pretty universal so I can issue and accept calendar invites.
+</p>
+</li>
+<li>
+<p>
+It works well with my phone and other mobile devices.
+</p>
+</li>
+<li>
+<p>
+The rest of my family doesn&#39;t live in Emacs :-(.
+</p>
+</li>
+</ul>
+<p>
 I prefer using org-mode beacuse:
-<li>Emacs</li>
-<li>I prefer, for the most part, to control my data.</li>
-</ul>
-
-<p>I partially sync the two platforms. I've already talked about <a href="https://cestlaz.github.io/posts/using-emacs-26-gcal/" title="syncing
-Google Calendar and org-mode">syncing
-Google Calendar and org-mode</a>. Right now, I'm just pulling from Google
-rather than also pushing up from org-mode because I'm still getting
-double entry issues. This means that I have my entire schedule in
-Emacs but only part of it in my Google calendar.</p>
-
-<p>To help resolve the problem, I do a few things. First, I sync my
-orgfiles on all my computers. I used to do this with Dropbox but am
-now moving over to <a href="https://syncthing.net/" title="Syncthing">Syncthing</a>. I also like to set up a <a href="http://digitalocean.com" title="Digital Ocean">Digital Ocean</a>
-droplet so that I have a single machine that's always on.</p>
-
+</p>
 <ul>
-I've set things up to have that droplet send me an email with my
+<li>
+<p>
+Emacs
+</p>
+</li>
+<li>
+<p>
+I prefer, for the most part, to control my data.
+</p>
+</li>
+</ul>
+<p>
+I partially sync the two platforms. I&#39;ve already talked about <a href="https://cestlaz.github.io/posts/using-emacs-26-gcal/">syncing
+Google Calendar and org-mode</a>. Right now, I&#39;m just pulling from Google
+rather than also pushing up from org-mode because I&#39;m still getting
+double entry issues. This means that I have my entire schedule in
+Emacs but only part of it in my Google calendar.
+</p>
+<p>
+To help resolve the problem, I do a few things. First, I sync my
+orgfiles on all my computers. I used to do this with Dropbox but am
+now moving over to <a href="https://syncthing.net/">Syncthing</a>. I also like to set up a <a href="http://digitalocean.com">Digital Ocean</a>
+droplet so that I have a single machine that&#39;s always on.
+</p>
+<p>
+I&#39;ve set things up to have that droplet send me an email with my
 agenda. It turns out that org has commands to do things with Emacs
 from the command line:
-<li>org-batch-agenda</li>
-<li>org-batch-store-agenda-views</li>
-<li>org-batch-agenda-csv </li>
+</p>
+<ul>
+<li>
+<p>
+org-batch-agenda
+</p>
+</li>
+<li>
+<p>
+org-batch-store-agenda-views
+</p>
+</li>
+<li>
+<p>
+org-batch-agenda-csv 
+</p>
+</li>
 </ul>
-
-<p>They can be run from the command line to output a formatted agenda as
-a string:</p>
-
-<pre><code class="language-sh">emacs --batch -l ~/.emacs.d/init.el  -eval '(org-batch-agenda &quot;a&quot; org-agenda-span 14)' 
-</code></pre>
-
-<p>or as csv:</p>
-
-<pre><code class="language-sh">emacs --batch -l ~/.emacs.d/init.el  -eval '(org-batch-agenda-csv &quot;a&quot; org-agenda-span 14)' 
-</code></pre>
-
+<p>
+They can be run from the command line to output a formatted agenda as
+a string:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
+</div>
+<p>
+or as csv:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda-csv &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
+</div>
 <table>
 <tbody>
 <tr>
@@ -148,28 +188,24 @@ a string:</p>
 <td>2018-10-29</td>
 <td>15:40-16:40</td>
 </tr>
-
 <tr>
 <td>gcal</td>
 <td>RBS Workshop 3</td>
 <td>2018-10-29</td>
 <td>17:30-21:00</td>
 </tr>
-
 <tr>
 <td>gcal</td>
 <td>FDR High School</td>
 <td>2018-10-30</td>
 <td>7:45- 8:45</td>
 </tr>
-
 <tr>
 <td>soe-cal</td>
 <td>ACERT -  LUNCH  SEMINAR</td>
 <td>2018-10-30</td>
 <td>12:00-14:00</td>
 </tr>
-
 <tr>
 <td>gcal</td>
 <td>Maxim Vengerov Carnegie Hall</td>
@@ -178,28 +214,35 @@ a string:</p>
 </tr>
 </tbody>
 </table>
-
-<p>Note that you have to specify the location of the startup file
-(~/emacs.d/init.e;) since when you run emacs in batch mode it won't
-load your normal config by default</p>
-
-<p>In the video you'll see how I use my DigitalOcean dropplet, set up
+<p>
+Note that you have to specify the location of the startup file
+(~/emacs.d/init.e;) since when you run emacs in batch mode it won&#39;t
+load your normal config by default
+</p>
+<p>
+In the video you&#39;ll see how I use my DigitalOcean dropplet, set up
 with the Postfix mail server and Syncthing to send me an email with my
-agenda every morning.</p>
-
-<p>The command I actually use to send the email is:</p>
-
-<pre><code class="language-sh">/usr/bin/emacs --batch -l ~/.emacs  -eval '(org-batch-agenda &quot;a&quot; org-agenda-span 14)' 2&gt;/dev/null | mail -s &quot;Mike's Agenda for $(date +'\%A \%D')&quot; zamansky@gmail.com
-</code></pre>
-
-<p>which I put in a crontab entry to get it to run every day.</p>
-
-<p>If people want, I can make a runthrough of setting up the actual
-dropplet and SyncThing.</p>
-
-<p>Enjoy!</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/wus8R1TWYZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+agenda every morning.
+</p>
+<p>
+The command I actually use to send the email is:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/bin/emacs --batch -l ~/.emacs  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span> 2&gt;/dev/null | mail -s <span style="color:#e6db74">&#34;Mike&#39;s Agenda for </span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#39;\%A \%D&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> zamansky@gmail.com</code></pre></div>
+</div>
+<p>
+which I put in a crontab entry to get it to run every day.
+</p>
+<p>
+If people want, I can make a runthrough of setting up the actual
+dropplet and SyncThing.
+</p>
+<p>
+Enjoy!
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/wus8R1TWYZ4">https://www.youtube.com/embed/wus8R1TWYZ4</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -289,11 +332,11 @@ dropplet and SyncThing.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -357,13 +400,6 @@ dropplet and SyncThing.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -828,7 +864,7 @@ dropplet and SyncThing.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

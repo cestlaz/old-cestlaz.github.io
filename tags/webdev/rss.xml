@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Webdev on C&#39;est la Z</title>
+    <title>webdev on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/webdev/</link>
-    <description>Recent content in Webdev on C&#39;est la Z</description>
+    <description>Recent content in webdev on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2020 09:37:17 -0400</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Wed, 15 Jan 2020 09:37:17 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/clojurescript-router/</guid>
-      <description>In this video we&#39;ll look at creating a small router.
-I originally looked at using one of the available libraries to set up routing. I considered reitit and bidi but in the end decided to figure out how to do it myself.
-It turns out that whenever you change the hash part of a url - everything following a # at the end of a url you get a ~hashchange~ event.</description>
+      <description>In this video we&amp;#39;ll look at creating a small router.  I originally looked at using one of the available libraries to set up routing. I considered reitit and bidi but in the end decided to figure out how to do it myself.  It turns out that whenever you change the hash part of a url - everything following a # at the end of a url you get a hashchange event.</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@ It turns out that whenever you change the hash part of a url - everything follow
       <pubDate>Sun, 12 Jan 2020 12:19:00 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/clojurescript-components/</guid>
-      <description>I got some positive feedback from my first Clojurescript post and video so I thought I&#39;d continue with the series.
-Here we&#39;ll continue to build a simple Clojurescript/Shadow-cljs/Reagent/Tailwindcss application by creating some reusable components. It&#39;s one of the things that make Clojurescript so nice for web development.
-Here&#39;s a link to the GitHub repo with the code: https://github.com/zamansky/shadow-cljs-demo</description>
+      <description> I got some positive feedback from my first Clojurescript post and video so I thought I&amp;#39;d continue with the series.  Here we&amp;#39;ll continue to build a simple Clojurescript/Shadow-cljs/Reagent/Tailwindcss application by creating some reusable components. It&amp;#39;s one of the things that make Clojurescript so nice for web development.  Here&amp;#39;s a link to the GitHub repo with the code: https://github.com/zamansky/shadow-cljs-demo  &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/_CTTbC6owS0&amp;#34; frameborder=&amp;#34;0&amp;#34; allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt; </description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@ Here&#39;s a link to the GitHub repo with the code: https://github.com/zamansky/
       <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/flask-setup-virtualenv/</guid>
-      <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&#39;re in the program.
-This means we can finally start using the web as a way of displaying and sharing our projects.
-For this type of web development, I&#39;m a big fan of using Flask. Flask is a Python microframework.</description>
+      <description>Those laptops that my Hunter students were supposed to get have finally arrived. We&amp;#39;re distributing them on Monday. Each student will have a Dell laptop running Ubuntu 16.04 for as long as they&amp;#39;re in the program.  This means we can finally start using the web as a way of displaying and sharing our projects.  For this type of web development, I&amp;#39;m a big fan of using Flask. Flask is a Python microframework.</description>
     </item>
     
   </channel>

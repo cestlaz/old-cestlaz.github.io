@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Admin on C&#39;est la Z</title>
+    <title>admin on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/admin/</link>
-    <description>Recent content in Admin on C&#39;est la Z</description>
+    <description>Recent content in admin on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/google-sheets/</guid>
-      <description>I make regular use of Google&#39;s office suite. I use Google forms all the time to collect data, Google docs when I have to leave Emacs for document preparation - usually when I have to collaborate with others online and I use Google Sheets as my greadebook.
-I don&#39;t do a lot of data processing using Google sheets. For that I download the data and write small scripts. On the other hand it turns out that you can do some pretty nifty things by scripting right in Google sheets.</description>
+      <description>I make regular use of Google&amp;#39;s office suite. I use Google forms all the time to collect data, Google docs when I have to leave Emacs for document preparation - usually when I have to collaborate with others online and I use Google Sheets as my greadebook.  I don&amp;#39;t do a lot of data processing using Google sheets. For that I download the data and write small scripts. On the other hand it turns out that you can do some pretty nifty things by scripting right in Google sheets.</description>
     </item>
     
   </channel>

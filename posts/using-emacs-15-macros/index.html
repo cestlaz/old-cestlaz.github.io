@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Using Emacs - 15 - Macros</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Using Emacs - 15 - Macros" />
-<meta property="og:description" content="I originally planned on do some videos on C&#43;&#43; development but I&#39;m just not feeling it. Probably because I&#39;m excited to be working with my new class and we&#39;re working in Python. We&#39;re not going to be using C&#43;&#43;&#43; for a few months so I&#39;ll get to those videos a little later.
-Today, I want to cover what I consider a leatherman or multi-tool for Emacs. Something that isn&#39;t perfect for any particular job but can get almost any job done: Macros." />
+<meta property="og:description" content="I originally planned on do some videos on C&#43;&#43; development but I&#39;m just not feeling it. Probably because I&#39;m excited to be working with my new class and we&#39;re working in Python. We&#39;re not going to be using C&#43;&#43;&#43; for a few months so I&#39;ll get to those videos a little later.  Today, I want to cover what I consider a leatherman or multi-tool for Emacs. Something that isn&#39;t perfect for any particular job but can get almost any job done: Macros." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-15-macros/" /><meta property="article:published_time" content="2016-09-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-09-02T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-15-macros/" />
+<meta property="article:published_time" content="2016-09-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-09-02T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 15 - Macros"/>
-<meta name="twitter:description" content="I originally planned on do some videos on C&#43;&#43; development but I&#39;m just not feeling it. Probably because I&#39;m excited to be working with my new class and we&#39;re working in Python. We&#39;re not going to be using C&#43;&#43;&#43; for a few months so I&#39;ll get to those videos a little later.
-Today, I want to cover what I consider a leatherman or multi-tool for Emacs. Something that isn&#39;t perfect for any particular job but can get almost any job done: Macros."/>
+<meta name="twitter:description" content="I originally planned on do some videos on C&#43;&#43; development but I&#39;m just not feeling it. Probably because I&#39;m excited to be working with my new class and we&#39;re working in Python. We&#39;re not going to be using C&#43;&#43;&#43; for a few months so I&#39;ll get to those videos a little later.  Today, I want to cover what I consider a leatherman or multi-tool for Emacs. Something that isn&#39;t perfect for any particular job but can get almost any job done: Macros."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,24 +92,30 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>I originally planned on do some videos on C++ development but I'm just
-not feeling it. Probably because I'm excited to be working with my
-new class and we're working in Python. We're not going to be using
-C+++ for a few months so I'll get to those videos a little later.</p>
-
-<p>Today, I want to cover what I consider a leatherman or multi-tool for
-Emacs. Something that isn't perfect for any particular job but can get
-almost any job done: Macros.</p>
-
-<p>In their simplest form, macros let you record and play back
-keystrokes.</p>
-
-<p>The video goes over the specifics.</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Y1oVNBuIoXo" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Here are the main functions / keystrokes.</p>
-
+		  <p>
+I originally planned on do some videos on C++ development but I&#39;m just
+not feeling it. Probably because I&#39;m excited to be working with my
+new class and we&#39;re working in Python. We&#39;re not going to be using
+C+++ for a few months so I&#39;ll get to those videos a little later.
+</p>
+<p>
+Today, I want to cover what I consider a leatherman or multi-tool for
+Emacs. Something that isn&#39;t perfect for any particular job but can get
+almost any job done: Macros.
+</p>
+<p>
+In their simplest form, macros let you record and play back
+keystrokes.
+</p>
+<p>
+The video goes over the specifics.
+</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/Y1oVNBuIoXo">https://www.youtube.com/embed/Y1oVNBuIoXo</a>&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+<p>
+Here are the main functions / keystrokes.
+</p>
 <table>
 <thead>
 <tr>
@@ -122,44 +128,73 @@ keystrokes.</p>
 <td>kmacro-start-macro-or-insert-counter</td>
 <td>F3</td>
 </tr>
-
 <tr>
 <td>kmacro-end-and-call-macro</td>
 <td>F4</td>
 </tr>
-
 <tr>
 <td>kmacro-name-last-macro</td>
 <td></td>
 </tr>
-
 <tr>
 <td>insert-kbd-macro</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-
-<p>This covers most of my use of macros but there's more. You can adjust
-or set the counter, edit old macros and there's even a way to have a
-macro pause for input in the middle.</p>
-
-<ul>
+<p>
+This covers most of my use of macros but there&#39;s more. You can adjust
+or set the counter, edit old macros and there&#39;s even a way to have a
+macro pause for input in the middle.
+</p>
+<p>
 Here are some links with more information:
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html#Keyboard-Macros" title="Emacs manual on macros">Emacs manual on macros</a></li>
-<li>http://ergoemacs.org/emacs/emacs_macro_example.html</li>
-<li>http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html</li>
-</ul>
-
-<p>If you're interested in checking out <a href="http://repl.it" title="Repl.it">Repl.it</a>, which I reference in the
-video, check out <a href="http://cestlaz.github.io/posts/new-term-new-tool-replit/#.V8n_Ed9vH0o%0A" title="my blog post">my blog post</a>.</p>
-
+</p>
 <ul>
+<li>
+<p>
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html#Keyboard-Macros">Emacs manual on macros</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://ergoemacs.org/emacs/emacs_macro_example.html">http://ergoemacs.org/emacs/emacs_macro_example.html</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html">http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html</a>
+</p>
+</li>
+</ul>
+<p>
+If you&#39;re interested in checking out <a href="http://repl.it">Repl.it</a>, which I reference in the
+video, check out <a href="http://cestlaz.github.io/posts/new-term-new-tool-replit/#.V8n_Ed9vH0o%0A">my blog post</a>.
+</p>
+<p>
 Relevant links:
-<li>Video series overview page:</li>
-<li>http://cestlaz.github.io/stories/emacs</li>
-<li>Code:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master" title="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></li>
+</p>
+<ul>
+<li>
+<p>
+Video series overview page:
+</p>
+</li>
+<li>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
+</li>
+<li>
+<p>
+Code:
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
+</li>
 </ul>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -249,11 +284,11 @@ Relevant links:
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -317,13 +352,6 @@ Relevant links:
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -788,7 +816,7 @@ Relevant links:
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           

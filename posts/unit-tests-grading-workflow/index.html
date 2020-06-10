@@ -6,17 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Unit Tests Grading Workflow</title>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.73.0-DEV" />
 	<meta property="og:title" content="Unit Tests Grading Workflow" />
-<meta property="og:description" content="I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.
-Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient." />
+<meta property="og:description" content="I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.  Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/unit-tests-grading-workflow/" /><meta property="article:published_time" content="2018-04-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-04-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://cestlaz.github.io/posts/unit-tests-grading-workflow/" />
+<meta property="article:published_time" content="2018-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-20T00:00:00+00:00" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Unit Tests Grading Workflow"/>
-<meta name="twitter:description" content="I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.
-Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient."/>
+<meta name="twitter:description" content="I&#39;ve talked before about unit testing (here, and here). My premise is that in addition to being an important industry technique, it&#39;s a sound practice for students studying CS. I also contend that it can make grading easier on the teacher. Maybe not as easy as an auto-grader but those have their own problems.  Since I spent most of today grading I thought I&#39;d share my current workflow and how unit tests have made me more efficient."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -92,32 +92,37 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 
 
-		  <p>I've talked before about unit testing (<a href="http://cestlaz.github.io/posts/testing-testing" title="here">here</a>, and <a href="http://cestlaz.github.io/posts/testing-part2" title="here">here</a>). My premise is
-that in addition to being an important industry technique, it's a
+		  <p>
+I&#39;ve talked before about unit testing (<a href="http://cestlaz.github.io/posts/testing-testing">here</a>, and <a href="http://cestlaz.github.io/posts/testing-part2">here</a>). My premise is
+that in addition to being an important industry technique, it&#39;s a
 sound practice for students studying CS. I also contend that it can
 make grading easier on the teacher. Maybe not as easy as an
-auto-grader but those have <a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE" title="their own problems">their own problems</a>.</p>
-
-<p>Since I spent most of today grading I thought I'd share my current
-workflow and how unit tests have made me more efficient.</p>
-
-<p>I have each student make a single GitHub repo for all individual
-homeworks, labs and small projects. They'll make additional repos for
+auto-grader but those have <a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE">their own problems</a>.
+</p>
+<p>
+Since I spent most of today grading I thought I&#39;d share my current
+workflow and how unit tests have made me more efficient.
+</p>
+<p>
+I have each student make a single GitHub repo for all individual
+homeworks, labs and small projects. They&#39;ll make additional repos for
 larger and group projects. They fill out a Google form to give me the
-repo link. I download the form and end up with a CSV file something like this:</p>
-
-<pre><code class="language-csv"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csv" data-lang="csv">Doe, John, git@github.com:johndoe/mymoework.git
+repo link. I download the form and end up with a CSV file something like this:
+</p>
+<div class="src src-csv">
+<pre><code class="language-csv" data-lang="csv"><pre><code class="language-csv" data-lang="csv">Doe, John, git@github.com:johndoe/mymoework.git
 Doe, Jane, git@github.com:janedoe/labs.git
-etc.</code></pre></div>
-</code></pre>
-
-<p>My goal is to clone each students repo into a directory and then
+etc.</code></pre></code></pre>
+</div>
+<p>
+My goal is to clone each students repo into a directory and then
 throughout the term, they add assignments to their own repos using the
 names and specifications I give them. For example, after assigning
 three assignments, I could pull everything from their repos and I
-would have a directory structure something like this:</p>
-
-<pre><code>hw
+would have a directory structure something like this:
+</p>
+<pre class="example">
+hw
 ├── doe_jane
 │   ├── hw_01
 │   ├── hw_02
@@ -126,69 +131,78 @@ would have a directory structure something like this:</p>
 └── doe_john
 ├── hw_01
 └── hw_02
-</code></pre>
-
-<p>To get there, I have to change the csv file to a small shell script:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:johndoe/mymoework.git doe_john
+</pre>
+<p>
+To get there, I have to change the csv file to a small shell script:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:johndoe/mymoework.git doe_john
 git clone git@github.com:janedoe/labs.git doe_jane
-etc.</code></pre></div>
-</code></pre>
-
-<p>I usually do this in Emacs with a macro.</p>
-
-<p>Now I'm ready to go.</p>
-
-<p>Whenever there's a new assignment, I just have to update all the
+etc.</code></pre></div></code></pre></div>
+</div>
+<p>
+I usually do this in Emacs with a macro.
+</p>
+<p>
+Now I&#39;m ready to go.
+</p>
+<p>
+Whenever there&#39;s a new assignment, I just have to update all the
 repos. I go into the root hw directory and loop through all the
-subdirectoryes:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cs /path/to/hw_root
+subdirectoryes:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cs /path/to/hw_root
 <span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">`</span>ls<span style="color:#e6db74">`</span>
 <span style="color:#66d9ef">do</span>
 cd /path/to/hw_root/$i
 git pull
-<span style="color:#66d9ef">done</span></code></pre></div>
-</code></pre>
-
-<p>At this point I could go into each repo but we can do better. Since I
+<span style="color:#66d9ef">done</span></code></pre></div></code></pre></div>
+</div>
+<p>
+At this point I could go into each repo but we can do better. Since I
 have all of my students submit a Makefile with a default target to
 build an executable named <code>main</code> and also a target named <code>tests</code> which
 will build an executable to run the unit tests named <code>tests</code> I do this
-instead of a straight pull:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cs /path/to/hw_root
+instead of a straight pull:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cs /path/to/hw_root
 <span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">`</span>ls<span style="color:#e6db74">`</span>
 <span style="color:#66d9ef">do</span>
 cd /path/to/hw_root/$i
 git pull
-cd hw_03 <span style="color:#75715e"># or whatever assignment I&#39;m grading
-</span><span style="color:#75715e"></span>make tests
+cd hw_03 <span style="color:#75715e"># or whatever assignment I&#39;m grading</span>
+make tests
 make
-<span style="color:#66d9ef">done</span></code></pre></div>
-</code></pre>
-
-<p>Now, if I want, I can go into each directory, run the tests by typing
-~./tests~  and the hw or project with <code>./main</code>. I can also add a
-couple of lines to the for loop above like:</p>
-
-<pre><code class="language-bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74"> Test Report\n----------------\n&#34;</span> &gt;&gt; /path/to/hw_root/test_report
+<span style="color:#66d9ef">done</span></code></pre></div></code></pre></div>
+</div>
+<p>
+Now, if I want, I can go into each directory, run the tests by typing
+<code>./tests</code>  and the hw or project with <code>./main</code>. I can also add a
+couple of lines to the for loop above like:
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74"> Test Report\n----------------\n&#34;</span> &gt;&gt; /path/to/hw_root/test_report
 ./tests &gt;&gt; /path/to/hw_root/test_rport
-echo <span style="color:#e6db74">&#34;----------------------\n\n&#34;</span></code></pre></div>
-</code></pre>
-
-<p>This gives me a single file with everyone's test results. Either by
+echo <span style="color:#e6db74">&#34;----------------------\n\n&#34;</span></code></pre></div></code></pre></div>
+</div>
+<p>
+This gives me a single file with everyone&#39;s test results. Either by
 doing this or by running the tests in each folder manually I can
-quickly see what works and what doesn't.</p>
-
-<p>While I'm doing this, I have Emacs up and with <strong>dired mode</strong> and more
+quickly see what works and what doesn&#39;t.
+</p>
+<p>
+While I&#39;m doing this, I have Emacs up and with <strong>dired mode</strong> and more
 specifically <strong>ag-dired-regexp</strong> which lets me easily
-navigate to any student's files. Combined with the test results I can
-quickly evaluate the entire assignment.</p>
-
-<p>Put all of this together and it makes grading somewhat bearable. I can
+navigate to any student&#39;s files. Combined with the test results I can
+quickly evaluate the entire assignment.
+</p>
+<p>
+Put all of this together and it makes grading somewhat bearable. I can
 work through well written, correct assignments extremely quickly and
-drill down into the other projects efficiently as well.</p>
+drill down into the other projects efficiently as well.
+</p>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out @zamansky's latest post: " data-via="zamansky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -279,11 +293,11 @@ drill down into the other projects efficiently as well.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/pinebook-update/">A Quick Pinebook Pro update</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pinebook/">Pinebook Pro - an $200 Linux Laptop</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/teachers-police/">Teachers and Police</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/privilege/">Before condemning try walking in their shoes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/pro-version-or-ed-version/">Pro Version Or Education Version</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/grading-consequences/">Future consequences of today&#39;s grading policies</a></li>
 		</ul>
 	</div>
 </div>
@@ -347,13 +361,6 @@ drill down into the other projects efficiently as well.</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-
-
-          
-
-
-
-	  <a class="widget-taglist__link widget__link btn" href="/tags/" title=""> (5)</a>
 
 
           
@@ -818,7 +825,7 @@ drill down into the other projects efficiently as well.</p>
 
 
 
-	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (4)</a>
+	  <a class="widget-taglist__link widget__link btn" href="/tags/hardware" title="Hardware">Hardware (5)</a>
 
 
           
