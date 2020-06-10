@@ -940,65 +940,67 @@
     
     <item>
       <title>Should We Teach HTML?</title>
-      <link>https://cestlaz.github.io/posts/teaching-html/</link>
+      <link>https://cestlaz.github.io/posts/teaching_html/</link>
       <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/teaching-html/</guid>
+      <guid>https://cestlaz.github.io/posts/teaching_html/</guid>
       <description>Yesterday, Doug Peterson wrote a &amp;#34;Whatever happened to&amp;#34; post subtitled HTML as an essential 21st Century skill? It&amp;#39;s a nice post.  I left a comment but thought I&amp;#39;d elaborate here.  No, knowing HTML is not programming - it&amp;#39;s markup. Even so, when I help people design CS programs, I&amp;#39;ll frequently recommend starting with HTML or at least introducing it early.  Why?  It&amp;#39;s a gateway and not just to programming.</description>
     </item>
     
     <item>
       <title>I hate ruby or why I&#39;m switching blogging platforms</title>
-      <link>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</link>
+      <link>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</link>
       <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;p&amp;gt; I&amp;#39;m moving to a new blogging platform. I&amp;#39;m still going to use GitHub pages but after a few years of using &amp;lt;a href=&amp;#34;https://jekyllrb.com/&amp;#34;&amp;gt;Jekyll&amp;lt;/a&amp;gt;, I&amp;#39;m switching to &amp;lt;a href=&amp;#34;https://getnikola.com/&amp;#34;&amp;gt;Nikola&amp;lt;/a&amp;gt;. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; I think I&amp;#39;ve got the move worked out but if you&amp;#39;re reading this via an rss or atom reader, make sure to check back in a couple of days - you might have to re-subscribe. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; Why am I switching?</description>
+      <guid>https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</guid>
+      <description>I&#39;m moving to a new blogging platform. I&#39;m still going to use GitHub pages but after a few years of using Jekyll, I&#39;m switching to Nikola.  I think I&#39;ve got the move worked out but if you&#39;re reading this via an rss or atom reader, make sure to check back in a couple of days - you might have to re-subscribe.  Why am I switching?  Because I hate Ruby.</description>
     </item>
     
     <item>
       <title>IDE or the Cloud</title>
-      <link>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link>
+      <link>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud/</link>
       <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt; &amp;lt;div id=&amp;#34;outline-container-orgheadline1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;orgheadline1&amp;#34;&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-orgheadline1&amp;#34;&amp;gt; &amp;lt;p&amp;gt; This weekend, I had a conversation on Twitter with my friend &amp;lt;a href=&amp;#34;https://twitter.com/roybahat&amp;#34;&amp;gt;Roy Bahat&amp;lt;/a&amp;gt;: &amp;lt;/p&amp;gt;  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-conversation=&amp;#34;none&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;https://twitter.com/zamansky&amp;#34;&amp;gt;@zamansky&amp;lt;/a&amp;gt; Mike, unrelated, what do you think of &amp;lt;a href=&amp;#34;https://t.co/BT1ublbajF&amp;#34;&amp;gt;https://t.co/BT1ublbajF&amp;lt;/a&amp;gt; ?&amp;lt;/p&amp;gt;&amp;amp;mdash; Roy Bahat (@roybahat) &amp;lt;a href=&amp;#34;https://twitter.com/roybahat/status/718835740738650112&amp;#34;&amp;gt;April 9, 2016&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;https://twitter.com/roybahat&amp;#34;&amp;gt;@roybahat&amp;lt;/a&amp;gt;Maybe I&amp;amp;#39;ll blog about my thoughts about online environments vs local installs&amp;lt;/p&amp;gt;&amp;amp;mdash; Mike Zamansky (@zamansky) &amp;lt;a href=&amp;#34;https://twitter.</description>
+      <guid>https://cestlaz.github.io/posts/2016-04-12-ide-or-cloud/</guid>
+      <description>div.center {text-align:center;}    This weekend, I had a conversation on Twitter with my friend Roy Bahat: @zamansky Mike, unrelated, what do you think of https://t.co/BT1ublbajF ?
+&amp;mdash; Roy Bahat (@roybahat) April 9, 2016  @roybahatMaybe I&amp;#39;ll blog about my thoughts about online environments vs local installs
+&amp;mdash; Mike Zamansky (@zamansky) April 9, 2016 @roybahat Agree with this but there are many issues. I&amp;#39;ll try to write more later.</description>
     </item>
     
     <item>
       <title>Debugging deployment</title>
-      <link>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link>
+      <link>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment/</link>
       <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; SoftDev students are hard at work on their final projects. By now, they all have fairly complex code bases. This limits how much I can help them with debugging. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; There are some problems, though, that they have to contend with that even with experience, are hard to spot. Notably because the very tools you use to debug these errors are part of the problem.</description>
+      <guid>https://cestlaz.github.io/posts/2016-01-23-debugging-deployment/</guid>
+      <description>div.center {text-align:center;}   SoftDev students are hard at work on their final projects. By now, they all have fairly complex code bases. This limits how much I can help them with debugging.  There are some problems, though, that they have to contend with that even with experience, are hard to spot. Notably because the very tools you use to debug these errors are part of the problem.  Last week, this happened twice.</description>
     </item>
     
     <item>
       <title>Know your tools - intermediate Emacs</title>
-      <link>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</link>
+      <link>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate/</link>
       <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt; &amp;lt;div id=&amp;#34;outline-container-orgheadline1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;orgheadline1&amp;#34;&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-orgheadline1&amp;#34;&amp;gt; &amp;lt;p&amp;gt; A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.</description>
+      <guid>https://cestlaz.github.io/posts/2015-10-28-emacs-intermediate/</guid>
+      <description>div.center {text-align:center;}    A good workman is known by his tools, or so the saying goes. My tools of choice are my terminal shell and Emacs.  I suppose if I was a full time developer working with a limited set of tools I might like an IDE like JetBrains or Eclipse but no matter how many alternatives I try, I always end back in Emacs.  I recommend that my students spend time not only in Emacs but also in tools like Vim or Sublime Text.</description>
     </item>
     
     <item>
       <title>Shell games - who confirmed attendence</title>
-      <link>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</link>
+      <link>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails/</link>
       <pubDate>Thu, 19 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Quick post on why I love the Unix command line. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; We&amp;#39;re busy organizing &amp;lt;a href=&amp;#34;http://cstuy.org&amp;#34;&amp;gt;CSTUY&amp;#39;s&amp;lt;/a&amp;gt; first &amp;lt;a href=&amp;#34;http://cstuy.org/programs/defhacks&amp;#34;&amp;gt;hackathon&amp;lt;/a&amp;gt;. It&amp;#39;s going to be at &amp;lt;a href=&amp;#34;http://sumall.com&amp;#34;&amp;gt;SumAll&amp;lt;/a&amp;gt;, where we hold our weekly &amp;lt;a href=&amp;#34;http://cstuy.org/programs/hacking_sessions&amp;#34;&amp;gt;hacking sessions&amp;lt;/a&amp;gt; but while taking registration, we had a little program. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; The kids signed up on a Google doc but we all know the story &amp;amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&amp;#39;t show.</description>
+      <guid>https://cestlaz.github.io/posts/2015-03-19-duplicate-emails/</guid>
+      <description>div.center {text-align:center;}   Quick post on why I love the Unix command line.  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &amp;#x2013; when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.</description>
     </item>
     
     <item>
       <title>Spreadsheet? I&#39;d rather use the command line.</title>
-      <link>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</link>
+      <link>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli/</link>
       <pubDate>Sun, 06 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Spreadsheets are terrific - we&amp;#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students. &amp;lt;/p&amp;gt;  &amp;lt;div id=&amp;#34;outline-container-sec-1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;sec-1&amp;#34;&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-1&amp;#34;&amp;gt; &amp;lt;ul class=&amp;#34;org-ul&amp;#34;&amp;gt; &amp;lt;li&amp;gt;Go to Google Drive &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Make a form &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Send the form out to the students &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Wait &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt; All the data gets dumped into a Google spreadsheet.</description>
+      <guid>https://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli/</guid>
+      <description>div.center {text-align:center;}   Spreadsheets are terrific - we&#39;ve all used them. I particularly like Google spreadsheets - I use them all the time to collect data, usually from students.  Go to Google Drive  Make a form  Send the form out to the students  Wait    All the data gets dumped into a Google spreadsheet. The trouble is, what to do with it once it&#39;s in the spreadsheet.</description>
     </item>
     
     <item>
@@ -1013,20 +1015,23 @@ Still, I liked the idea - I&amp;rsquo;ve been an educator for 23 years, a Linux 
     
     <item>
       <title>Subversion for Homework part II and the start of the new term</title>
-      <link>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</link>
+      <link>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and/</link>
       <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  Starting the new semester tomorrow and I&amp;#39;ve got a whole bunch of interesting topics to blog about. Some about pedagogy, some technical, and some that I can&amp;#39;t really catagorize.&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;For now, though, just a brief follow up on using Subversion for homework collection.&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;The basic model used in New York City for teacher improvement and evaluation is the official &amp;#34;observation.&amp;#34; Either your supervisor or the principal sits in on one of your classes.</description>
+      <guid>https://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and/</guid>
+      <description>Starting the new semester tomorrow and I&#39;ve got a whole bunch of interesting topics to blog about. Some about pedagogy, some technical, and some that I can&#39;t really catagorize.
+For now, though, just a brief follow up on using Subversion for homework collection.
+The basic model used in New York City for teacher improvement and evaluation is the official &#34;observation.&#34; Either your supervisor or the principal sits in on one of your classes.</description>
     </item>
     
     <item>
       <title>Subversion in the classroom</title>
-      <link>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</link>
+      <link>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom/</link>
       <pubDate>Tue, 19 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  Ok, not &amp;lt;a href=&amp;#34;http://www.merriam-webster.com/dictionary/subversion&amp;#34;&amp;gt;subversion&amp;lt;/a&amp;gt;, rather &amp;lt;a href=&amp;#34;http://subversion.tigris.org/&amp;#34;&amp;gt;subversion&amp;lt;/a&amp;gt;, the version control system.&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;I&amp;#39;ve used subversion as a way for students to hand in their projects for years. I haven&amp;#39;t used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it&amp;#39;s worked very well as a method of collection and I think it&amp;#39;s good to get the kids in the habit of using versioning systems.</description>
+      <guid>https://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom/</guid>
+      <description>Ok, not subversion, rather subversion, the version control system.
+I&#39;ve used subversion as a way for students to hand in their projects for years. I haven&#39;t used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it&#39;s worked very well as a method of collection and I think it&#39;s good to get the kids in the habit of using versioning systems.</description>
     </item>
     
   </channel>

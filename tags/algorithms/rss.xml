@@ -58,20 +58,20 @@
     
     <item>
       <title>Sorting - Subtle Errors</title>
-      <link>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</link>
+      <link>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting/</link>
       <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons &amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;#34;org-ul&amp;#34;&amp;gt; &amp;lt;li&amp;gt;We started with &amp;lt;a href=&amp;#34;http://cestlaz.github.io/2014/03/12/select-to-sort.html#.UyJRTh_G8RM&amp;#34;&amp;gt;Quickselect&amp;lt;/a&amp;gt;. &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Then we did a quicksort, copying to new arrays during the partition &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Then finally to an in place quicksort. &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt; For the final quicksort we used a partition algorithm pretty much the same as the one described &amp;lt;a href=&amp;#34;http://en.</description>
+      <guid>https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting/</guid>
+      <description>div.center {text-align:center;}   Time to wrap up sorting for a while. We just finished quicksort having gone through a series of lessons We started with Quickselect.  Then we did a quicksort, copying to new arrays during the partition  Then finally to an in place quicksort.    For the final quicksort we used a partition algorithm pretty much the same as the one described here.  We started testing using by building a randomly filled array like this: Random rnd = new Random(); int a[] = new int[n]; for (int i=0;i&amp;lt;n;i++) { a[i] = rnd.</description>
     </item>
     
     <item>
       <title>From selection to sorting</title>
-      <link>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</link>
+      <link>https://cestlaz.github.io/posts/2014-03-12-select-to-sort/</link>
       <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;http://orgmode.org/mathjax/MathJax.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;assets/static/mj.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; When I first saw the &amp;lt;a href=&amp;#34;http://en.wikipedia.org/wiki/Quicksort&amp;#34;&amp;gt;quicksort&amp;lt;/a&amp;gt; it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did &amp;lt;a href=&amp;#34;http://en.wikipedia.org/wiki/Quickselect&amp;#34;&amp;gt;quickselect&amp;lt;/a&amp;gt;. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&amp;#39;s pretty easy to write.</description>
+      <guid>https://cestlaz.github.io/posts/2014-03-12-select-to-sort/</guid>
+      <description>div.center {text-align:center;}   When I first saw the quicksort it was in an algorithms class back in the day. We first learned the quicksort, then choosing a good pivot element and then as an afterthought we did quickselect.  Fast forward to teaching. I was never really happy teaching quicksort. Mergesort is easy to motivate and it&#39;s pretty easy to write. Quicksort always felt a little forced.</description>
     </item>
     
     <item>
@@ -97,11 +97,11 @@ The beauty isn&amp;rsquo;t in the problem itself, but rather, that it&amp;rsquo;
     
     <item>
       <title>Sorting from the top and from the bottom</title>
-      <link>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</link>
+      <link>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom/</link>
       <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;div id=&amp;#34;content&amp;#34;&amp;gt;&amp;lt;h1 class=&amp;#34;title&amp;#34;&amp;gt;Sorting from the top and from the bottom&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;I&amp;#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;I&amp;#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process.</description>
+      <guid>https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom/</guid>
+      <description>Sorting from the top and from the bottom I&#39;ve been meaning to write this post for a couple of weeks, but some times life just gets in the way. I&#39;ve always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles.</description>
     </item>
     
   </channel>

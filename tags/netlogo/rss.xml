@@ -13,65 +13,68 @@
     
     <item>
       <title>Cellular Automata for Pathfinding in NetLogo</title>
-      <link>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link>
+      <link>https://cestlaz.github.io/posts/2016-01-17-maze-ca/</link>
       <pubDate>Sun, 17 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;link href=&amp;#34;//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34; /&amp;gt; &amp;lt;script src=&amp;#34;//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js&amp;#34; type=&amp;#34;text/javascript&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; div.center {text-align:center;} .smaller {height:200px;width:200px}  .center {text-align:center;} .frame {width:600px;height:800px;}  &amp;lt;/style&amp;gt;  &amp;lt;div class=&amp;#34;center&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;center&amp;#34; href=&amp;#34;#&amp;#34; data-featherlight=&amp;#34;/img/maze-ca/maze-start.png&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;/img/maze-ca/maze-start.png&amp;#34;&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt;  &amp;lt;div id=&amp;#34;outline-container-orgheadline1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;orgheadline1&amp;#34;&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-orgheadline1&amp;#34;&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;#34;http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE&amp;#34;&amp;gt;Last time&amp;lt;/a&amp;gt; we took a look at implementing a Cellular Automaton in NetLogo to do some simple image manipulation. We just scratched the surface.</description>
+      <guid>https://cestlaz.github.io/posts/2016-01-17-maze-ca/</guid>
+      <description>div.center {text-align:center;} .smaller {height:200px;width:200px} .center {text-align:center;} .frame {width:600px;height:800px;}      Last time we took a look at implementing a Cellular Automaton in NetLogo to do some simple image manipulation. We just scratched the surface. In class, the kids write pretty nice Photoshop Light applications.  Today we&#39;ll look at some more ambitious problem solving - using a Cellular Automaton to find a path through a maze.</description>
     </item>
     
     <item>
       <title>Cellular Automata, NetLogo and real problems</title>
-      <link>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link>
+      <link>https://cestlaz.github.io/posts/2016-01-15-shift-image/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; .center {text-align:center;} .frame {width:640px;height:800px;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; We&amp;#39;ve been using &amp;lt;a href=&amp;#34;https://ccl.northwestern.edu/netlogo/&amp;#34;&amp;gt;NetLogo&amp;lt;/a&amp;gt; in our intro course for years. It&amp;#39;s a wonderful programming environment. Many of you recall the &amp;lt;a href=&amp;#34;https://en.wikipedia.org/wiki/Logo_(programming_language)&amp;#34;&amp;gt;Logo&amp;lt;/a&amp;gt; programming language. NetLogo is like Logo but instead of programming a turtle, you write a program that&amp;#39;s run by multiple, perhaps hundreds of turtles and also by the world the turtles live on. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; Some of the reasons we like it are that it&amp;#39;s: &amp;lt;/p&amp;gt;  &amp;lt;ul class=&amp;#34;org-ul&amp;#34;&amp;gt; &amp;lt;li&amp;gt;An easy accessible textual programming language&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Makes building a graphical interface trivial&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;great for modeling&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Comes with tons of demo models&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt; And now, with the latest version, NetLogo programs/models can be deployed as web sites.</description>
+      <guid>https://cestlaz.github.io/posts/2016-01-15-shift-image/</guid>
+      <description>.center {text-align:center;} .frame {width:640px;height:800px;}   We&#39;ve been using NetLogo in our intro course for years. It&#39;s a wonderful programming environment. Many of you recall the Logo programming language. NetLogo is like Logo but instead of programming a turtle, you write a program that&#39;s run by multiple, perhaps hundreds of turtles and also by the world the turtles live on.  Some of the reasons we like it are that it&#39;s: An easy accessible textual programming language Makes building a graphical interface trivial great for modeling Comes with tons of demo models   And now, with the latest version, NetLogo programs/models can be deployed as web sites.</description>
     </item>
     
     <item>
       <title>CS Ed Predictions 2015</title>
-      <link>https://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</link>
+      <link>https://cestlaz.github.io/posts/2015-01-04-predictions-2015/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; I just read &amp;lt;a href=&amp;#34;https://twitter.com/alfredtwo&amp;#34;&amp;gt;Alfred Thompson&amp;#39;s&amp;lt;/a&amp;gt; predictions for next year. I was going to leave a comment but since it would have gotten somewhat long winded, I thought I&amp;#39;d comment in a post of my own. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; If you haven&amp;#39;t read Alfred&amp;#39;s post yet, check it out: &amp;lt;a href=&amp;#34;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&amp;#34;&amp;gt;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt;  &amp;lt;div id=&amp;#34;outline-container-unnumbered-1&amp;#34; class=&amp;#34;outline-2&amp;#34;&amp;gt; &amp;lt;h2 id=&amp;#34;unnumbered-1&amp;#34;&amp;gt;On more states allowing CS to count for a graduation requirement:&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;outline-text-2&amp;#34; id=&amp;#34;text-unnumbered-1&amp;#34;&amp;gt; &amp;lt;p&amp;gt; Alfred&amp;#39;s probably right but I&amp;#39;m leery.</description>
+      <guid>https://cestlaz.github.io/posts/2015-01-04-predictions-2015/</guid>
+      <description>div.center {text-align:center;}   I just read Alfred Thompson&#39;s predictions for next year. I was going to leave a comment but since it would have gotten somewhat long winded, I thought I&#39;d comment in a post of my own.  If you haven&#39;t read Alfred&#39;s post yet, check it out: http://blog.acthompson.net/2015/01/computer-science-education-predictions.html On more states allowing CS to count for a graduation requirement:  Alfred&#39;s probably right but I&#39;m leery. Sure, it could end up terrific but I could see a number of ways this could play out badly.</description>
     </item>
     
     <item>
       <title>Thoughts on diversity</title>
-      <link>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</link>
+      <link>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity/</link>
       <pubDate>Sun, 07 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; Yesterday, my buddy &amp;lt;a href=&amp;#34;https://twitter.com/snikolov&amp;#34;&amp;gt;Stan&amp;lt;/a&amp;gt; pointed me to this article: &amp;lt;a href=&amp;#34;http://arstechnica.com/business/2014/12/to-address-techs-diversity-woes-start-with-the-vanishing-comp-sci-classroom/&amp;#34;&amp;gt;&amp;#34;To address tech’s diversity woes, start with the vanishing Comp Sci classroom&amp;#34;&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; It gives a reasonable overview of the gender issues in computer science education. The article talks about the drop in popularity of the old Advanced Placement AB course and its eventually being dropped as well as thoughts on how the current A course is pretty dry.</description>
+      <guid>https://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity/</guid>
+      <description>div.center {text-align:center;}   Yesterday, my buddy Stan pointed me to this article: &#34;To address tech’s diversity woes, start with the vanishing Comp Sci classroom&#34;  It gives a reasonable overview of the gender issues in computer science education. The article talks about the drop in popularity of the old Advanced Placement AB course and its eventually being dropped as well as thoughts on how the current A course is pretty dry.</description>
     </item>
     
     <item>
       <title>Wait, I know that!!!!</title>
-      <link>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</link>
+      <link>https://cestlaz.github.io/posts/2014-09-23-i-know-that/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2014-09-23-i-know-that.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;style&amp;gt; div.center {text-align:center;} &amp;lt;/style&amp;gt;  &amp;lt;p&amp;gt; If I&amp;#39;m doing my job right, by the time my kids graduate they can learn on their own. &amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt; It&amp;#39;s like when two years ago, before starting her summer internship, Batya listed all the tools and technologies she had to work with. When I pointed out that she hadn&amp;#39;t ever used any of them before and asked how she was going to deal with it, she replied &amp;#34;I&amp;#39;ll figure it out.</description>
+      <guid>https://cestlaz.github.io/posts/2014-09-23-i-know-that/</guid>
+      <description>div.center {text-align:center;}   If I&#39;m doing my job right, by the time my kids graduate they can learn on their own.  It&#39;s like when two years ago, before starting her summer internship, Batya listed all the tools and technologies she had to work with. When I pointed out that she hadn&#39;t ever used any of them before and asked how she was going to deal with it, she replied &#34;</description>
     </item>
     
     <item>
       <title>Layers of a lesson</title>
-      <link>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link>
+      <link>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson/</link>
       <pubDate>Mon, 17 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;div align=&amp;#34;center&amp;#34;&amp;gt; &amp;lt;img width=&amp;#34;50%&amp;#34; src=&amp;#34;/img/turtle-anim.gif&amp;#34; class=&amp;#34;&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt;  &amp;lt;p&amp;gt; &amp;lt;p&amp;gt; My last post I was talking about the fact that as teachers, our knowledge and experience is frequently trivialized. The tenor of the times is that anyone can design a course, anyone can teach, and in fact, we don&amp;#39;t even need teachers, just videos or computer based systems. If you&amp;#39;ve ever tutored a friend, you&amp;#39;re more than qualified.</description>
+      <guid>https://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson/</guid>
+      <description>My last post I was talking about the fact that as teachers, our knowledge and experience is frequently trivialized. The tenor of the times is that anyone can design a course, anyone can teach, and in fact, we don&#39;t even need teachers, just videos or computer based systems. If you&#39;ve ever tutored a friend, you&#39;re more than qualified.  That might be a strong statement but everywhere you look you see &#34;</description>
     </item>
     
     <item>
       <title>Who is this man?</title>
-      <link>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</link>
+      <link>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man/</link>
       <pubDate>Thu, 07 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</guid>
-      <description>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;div class=&amp;#34;separator&amp;#34; style=&amp;#34;clear: both; text-align: center;&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;&amp;#34; imageanchor=&amp;#34;1&amp;#34; style=&amp;#34;margin-left: 1em; margin-right: 1em;&amp;#34;&amp;gt;&amp;lt;img border=&amp;#34;0&amp;#34; src=&amp;#34;&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br /&amp;gt;Who is this man?&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;I showed this to Devorah last night and she immediately said &amp;#34;Hey, that&amp;#39;s the metal filing guy!!!&amp;#34; Yes, you got it – &amp;lt;a href=&amp;#34;http://www.smethporthistory.org/smethportspeciality/wollypage.htm&amp;#34;&amp;gt;Wooly Willy&amp;lt;/a&amp;gt;!!! Everybody&amp;#39;s favorite party toy.&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;Why did this come up? Well, yesterday, Rick put &amp;lt;a href=&amp;#34;http://www.zamansky.net/wooly.html&amp;#34;&amp;gt;this&amp;lt;/a&amp;gt; together at work. So much for any productivity after that.</description>
+      <guid>https://cestlaz.github.io/posts/2010-01-07-who-is-this-man/</guid>
+      <description>Who is this man?
+I showed this to Devorah last night and she immediately said &#34;Hey, that&#39;s the metal filing guy!!!&#34; Yes, you got it -- Wooly Willy!!! Everybody&#39;s favorite party toy.
+Why did this come up? Well, yesterday, Rick put this together at work. So much for any productivity after that.
+It&#39;s amazing all the time sinks you can throw together with just a few lines of code and NetLogo.</description>
     </item>
     
   </channel>
