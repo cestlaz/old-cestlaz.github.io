@@ -6,10 +6,19 @@
     <description>Recent content in Posts on C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2020 12:22:26 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 09:03:05 -0400</lastBuildDate>
     
 	<atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Time For A New Theme</title>
+      <link>https://cestlaz.github.io/post/time-for-a-new-theme/</link>
+      <pubDate>Sat, 13 Jun 2020 09:03:05 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/time-for-a-new-theme/</guid>
+      <description>While setting up my Pinebook Pro I wanted to make sure I could write blog posts. Go and Hugo installed and ran no problem but I switched to Hugo in April 2020 back when it was version .49 or something like that. Now it&amp;#39;s up to .73. It turns out there have been a few changes. First, I set up my blog with two directories for posts. One for the posts I wrote originally in Jekyll and one for the ones I wrote for Hugo.</description>
+    </item>
     
     <item>
       <title>Supporting Our Students</title>
