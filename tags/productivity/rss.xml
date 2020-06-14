@@ -6,10 +6,53 @@
     <description>C&#39;est la Z (productivity)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 14:47:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 11:58:11 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 73 - Ripgrep and updating the blog</title>
+      <link>https://cestlaz.github.io/post/using-emacs-72-rg/</link>
+      <pubDate>Sun, 14 Jun 2020 11:58:11 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-72-rg/</guid>
+      <description>&lt;p&gt;
+As I said in my &lt;a href=&#34;As I mentioned in my &#34;&gt;last post&lt;/a&gt;, I&amp;#39;m moving to a new Hugo theme. I decided
+on &lt;a href=&#34;https://github.com/mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt;. It&amp;#39;s simple and clean. Unfortunately, in this change over,
+many things broke. Specifically, all my embedded html. Using earlier
+version of Hugo I could directly embed HTML and it would render. Now I
+have to bracket the HTML with special org markup - &lt;strong&gt;#+begin_export html&lt;/strong&gt; and &lt;strong&gt;#+end_export html&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+#+begin_export html
+&amp;lt;h1&amp;gt;html stuff to render goes in here &amp;lt;/h1&amp;gt;
+#+end_export
+&lt;/pre&gt;
+&lt;p&gt;
+Minimally I had to find all my embedded videos and all my embedded
+Tweets. There&amp;#39;s probably a lot more. Fortunately with Emacs this is
+pretty easy. I used &lt;a href=&#34;https://github.com/dajva/rg.el&#34;&gt;rg.el&lt;/a&gt; which is an Emacs front end to &lt;a href=&#34;https://github.com/BurntSushi/ripgrep&#34;&gt;ripgrep&lt;/a&gt;. If
+you don&amp;#39;t know ripgrep, it&amp;#39;s kind of like a super fast, super enhanced grep on
+steroids. 
+&lt;/p&gt;
+&lt;p&gt;
+In Emacs, I was able to do a ripgrep search which created a buffer
+containing all the embedded html fragments from all my blog posts
+across all the directories. I then used Emacs&amp;#39; &lt;a href=&#34;https://github.com/mhayashi1120/Emacs-wgrep&#34;&gt;wgrep&lt;/a&gt; feature which
+allowed me to edit that combined buffer and save all the results back
+to the original files. 
+&lt;/p&gt;
+&lt;p&gt;
+All in all it just took a few minutes. There are still some things I
+have to clean up from older posts but at least the site is workable now.
+&lt;/p&gt;
+&lt;p&gt;
+Check out the video for a walkthrough:
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OcR-Ke2CiPo&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 72 - Customizing Elfeed</title>
