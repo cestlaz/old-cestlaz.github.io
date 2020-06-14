@@ -836,7 +836,7 @@
       <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-6-swiper/</guid>
-      <description>This video is all about using incremental search to navigate through your emacs buffers.  &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/0mwwN0S1dnQ&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;  You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).  They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.  Part of the Swiper package includes ivy and counsel which I use instead of ido.</description>
+      <description>This video is all about using incremental search to navigate through your emacs buffers.   You can use the default incremental searchb, bound to C-s for isearch-forward C-r to search backwards (reverse).  They work really well as is but I prefer using Swiper. The video demos both and the Swiper home page has loads of details.  Part of the Swiper package includes ivy and counsel which I use instead of ido.</description>
     </item>
     
     <item>
@@ -854,7 +854,7 @@
       <pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-5-windows/</guid>
-      <description>Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.  &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/D6OUMVbPKSA&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;  This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&amp;#39;t have to ever leave emacs.</description>
+      <description>Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.   This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&amp;#39;t have to ever leave emacs.</description>
     </item>
     
     <item>
@@ -863,7 +863,7 @@
       <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-3-elisp/</guid>
-      <description>&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/nyQxRarVYH4&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt; Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.  In some ways, it&amp;#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.  In this video, I try to explain the way I think about Emacs and why it&amp;#39;s so cool.</description>
+      <description>Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.  In some ways, it&amp;#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.  In this video, I try to explain the way I think about Emacs and why it&amp;#39;s so cool.  The only change we made to our configuration was adding: (tool-bar-mode -1)   Which gets rid of the tool bar at the top.</description>
     </item>
     
     <item>
@@ -872,7 +872,7 @@
       <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-4-buffers/</guid>
-      <description>&amp;lt;iframe width=&amp;#34;480&amp;#34; height=&amp;#34;270&amp;#34; src=&amp;#34;https://www.youtube.com/embed/v5eTK5lC0xs&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;  Now that we&amp;#39;re past the intro material, we&amp;#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&amp;#39;re covering, fit it into your work flow, and really get comfortable with it.  This time we&amp;#39;ll dive into using Emacs effectively with buffers.  Watch the video and then make a real effort to use buffers over the next few emacs sessions.</description>
+      <description>Now that we&amp;#39;re past the intro material, we&amp;#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&amp;#39;re covering, fit it into your work flow, and really get comfortable with it.  This time we&amp;#39;ll dive into using Emacs effectively with buffers.  Watch the video and then make a real effort to use buffers over the next few emacs sessions.</description>
     </item>
     
     <item>
@@ -881,7 +881,7 @@
       <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-2-org/</guid>
-      <description>&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;  This video is a brief introduction to org-mode, a mode I use for all sorts of things.  We&amp;#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&amp;#39;ll be using org-mode for any notes that are written up during this series.  Actually, all my blog posts are written in org-mode.  Here are the important lines to add to your Emacs init.</description>
+      <description>This video is a brief introduction to org-mode, a mode I use for all sorts of things.  We&amp;#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&amp;#39;ll be using org-mode for any notes that are written up during this series.  Actually, all my blog posts are written in org-mode.  Here are the important lines to add to your Emacs init.</description>
     </item>
     
     <item>
@@ -899,7 +899,7 @@
       <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/using-emacs-1-setup/</guid>
-      <description>This video will step you through setting up Emacs to use MELPA for packages.  &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&amp;#39;s the contents of that file: (setq inhibit-startup-message t) (require &amp;#39;package) (setq package-enable-at-startup nil) (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa&amp;#34; . &amp;#34;https://melpa.org/packages/&amp;#34;)) (package-initialize) ;; Bootstrap `use-package&amp;#39; (unless (package-installed-p &amp;#39;use-package) (package-refresh-contents) (package-install &amp;#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&amp;#39;s you try packages without installing them.</description>
+      <description>This video will step you through setting up Emacs to use MELPA for packages.   We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&amp;#39;s the contents of that file: (setq inhibit-startup-message t) (require &amp;#39;package) (setq package-enable-at-startup nil) (add-to-list &amp;#39;package-archives &amp;#39;(&amp;#34;melpa&amp;#34; . &amp;#34;https://melpa.org/packages/&amp;#34;)) (package-initialize) ;; Bootstrap `use-package&amp;#39; (unless (package-installed-p &amp;#39;use-package) (package-refresh-contents) (package-install &amp;#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&amp;#39;s you try packages without installing them.</description>
     </item>
     
     <item>
