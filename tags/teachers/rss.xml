@@ -3,12 +3,12 @@
   <channel>
     <title>teachers on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/teachers/</link>
-    <description>Recent content in teachers on C&#39;est la Z</description>
+    <description>C&#39;est la Z (teachers)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cestlaz.github.io/tags/teachers/rss.xml" rel="self" type="application/rss" />
+    <atom:link href="https://cestlaz.github.io/tags/teachers/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
@@ -17,7 +17,99 @@
       <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/ethics-in-cs/</guid>
-      <description>I&amp;#39;ve been meaning to write about ethics in CS education for a while. Probably since I saw this article in the NY Times but got sidetracked.  I was reminded when I saw this tweet by Hadi the other day:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;This message is bigger than Facebook. Computer science faces an ethics crisis. That’s why &amp;lt;a href=&amp;#34;https://twitter.com/codeorg?ref_src=twsrc%5Etfw&amp;#34;&amp;gt;@codeorg&amp;lt;/a&amp;gt; covers ethics and digital citizenship in our computer science courses.</description>
+      <description>&lt;p&gt;
+I&amp;#39;ve been meaning to write about ethics in CS education for a
+while. Probably since I saw &lt;a href=&#34;https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share&#34;&gt;this article&lt;/a&gt; in the NY Times but got sidetracked.
+&lt;/p&gt;
+&lt;p&gt;
+I was reminded when I saw this tweet by Hadi the other day:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;This message is bigger than Facebook. Computer science faces an ethics crisis. That’s why &amp;lt;a href=&amp;#34;&lt;a href=&#34;https://twitter.com/codeorg?ref_src=twsrc&#34;&gt;https://twitter.com/codeorg?ref_src=twsrc&lt;/a&gt;%5Etfw&amp;#34;&amp;gt;@codeorg&amp;lt;/a&amp;gt; covers ethics and digital citizenship in our computer science courses. (And we’re thankful that most of the largest tech companies support us) &amp;lt;a href=&amp;#34;&lt;a href=&#34;https://t.co/roSkAzANQM&#34;&gt;https://t.co/roSkAzANQM&lt;/a&gt;&amp;#34;&amp;gt;&lt;a href=&#34;https://t.co/roSkAzANQM&#34;&gt;https://t.co/roSkAzANQM&lt;/a&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Hadi Partovi (@hadip) &amp;lt;a href=&amp;#34;&lt;a href=&#34;https://twitter.com/hadip/status/977673429485731840?ref_src=twsrc&#34;&gt;https://twitter.com/hadip/status/977673429485731840?ref_src=twsrc&lt;/a&gt;%5Etfw&amp;#34;&amp;gt;March 24, 2018&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;#34;&lt;a href=&#34;https://platform.twitter.com/widgets.js&#34;&gt;https://platform.twitter.com/widgets.js&lt;/a&gt;&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/p&gt;
+&lt;p&gt;
+I think we can all agree that bringing ethics and digital citizenship
+and, frankly, citizenship in general to our students is important. What I wonder is
+what approaches will lead to meaningful results and what methods will
+lead us to checking off the &amp;#34;covered that&amp;#34; box.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m skeptical of throwing an ethics course into the curriculum as some
+places seem to be doing. A class might be required, might fulfill an
+elective requirement or it might just be an extra course. If it&amp;#39;s
+required, what does it replace or are you just going to add more to
+the student load. If it fulfills an elective credit, will it be
+perceived as &amp;#34;the easy course&amp;#34; as opposed to say, theory and if it&amp;#39;s
+just an extra course, who&amp;#39;s going to take it? Will it just become
+preaching to the choir.
+&lt;/p&gt;
+&lt;p&gt;
+Better is what Hadi mentioned in his tweet - embed ethics throughout
+all of your courses and while I think this type of embedding is
+important and I&amp;#39;d argue necessary, I&amp;#39;m still betting it won&amp;#39;t be
+enough to make a difference.
+&lt;/p&gt;
+&lt;p&gt;
+When teaching a course, teachers cover the curriculum but when you
+drill down to where they focus their time, it comes down to:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+what they think is important for the kids to know.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+what they think the kids will need for that high stakes exam.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+If a teacher feels embedding ethical concerns is important they&amp;#39;ll
+spend time on it, if not, it will be lip service. Even if it&amp;#39;s on the
+high stakes exam, unless the teacher really believes that this is
+important it will just be teaching to the test.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;d argue that it has to go even further since teachers can only do so
+much. How many schools have honor codes and how many of us know
+graduates from those schools who exhibit less than ethical behaviour.
+&lt;/p&gt;
+&lt;p&gt;
+So what do we do?
+&lt;/p&gt;
+&lt;p&gt;
+Well, of course we do have to embed ethical concerns across the
+curriculum. Teachers should be armed with both the materials and time
+needed to address ethical concerns but beyond that, we need teachers
+for which ethical CS is important.
+&lt;/p&gt;
+&lt;p&gt;
+My friend &lt;a href=&#34;https://twitter.com/ed_saber&#34;&gt;Saber Khan&lt;/a&gt; has been facilitating a monthly #ethicalCS
+twitter chat for close to a year now. I don&amp;#39;t take part in too many
+twitter chats but do recognize that they&amp;#39;re important in raising both
+awareness and community. I&amp;#39;ve also seen ethical CS issues more
+frequently appear as conference sessions and professional development.
+&lt;/p&gt;
+&lt;p&gt;
+The next big step is to start at the beginning - pre service teacher
+training and in my opinion, not with a course but rather embedding
+ethical issues throughout teacher preparation.
+&lt;/p&gt;
+&lt;p&gt;
+If we want to crack this nut it can&amp;#39;t just be from curriculum and from
+the choir. Pre service CS teacher training is in it&amp;#39;s infancy and has
+not yet really found its form.
+&lt;/p&gt;
+&lt;p&gt;
+Much to my chagrin, a lot of CS Ed has gone the way of other Ed: Math
+Ed, Science Ed, etc. and not in a good way. Let&amp;#39;s see if we can make
+sure that pre service CS teacher preparation develops to attract and
+create great teachers for which ethical CS is part of their core.
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>

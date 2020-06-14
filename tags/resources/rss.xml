@@ -3,12 +3,12 @@
   <channel>
     <title>resources on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/resources/</link>
-    <description>Recent content in resources on C&#39;est la Z</description>
+    <description>C&#39;est la Z (resources)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cestlaz.github.io/tags/resources/rss.xml" rel="self" type="application/rss" />
+    <atom:link href="https://cestlaz.github.io/tags/resources/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
@@ -17,7 +17,70 @@
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/awesome-cs-revisted/</guid>
-      <description>Saw this tweet the other day so I though I would try to plug the Awesome CS Education list I started on GitHub:  &amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;https://twitter.com/hashtag/csteachers?src=hash&amp;#34;&amp;gt;#csteachers&amp;lt;/a&amp;gt;…didn&amp;amp;#39;t I see a list of CS teacher blogs here recently?&amp;lt;/p&amp;gt;&amp;amp;mdash; Pam Whitlock (@PamWhitlock1) &amp;lt;a href=&amp;#34;https://twitter.com/PamWhitlock1/status/910662628757864448&amp;#34;&amp;gt;September 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  To answer the tweet, the closet thing I know to a list is Alfred Thompson&amp;#39;s blog roll which is actually a post he wrote on his blog in 2012.</description>
+      <description>&lt;p&gt;
+Saw this tweet the other day so I though I would try to plug the
+&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education&#34;&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;blockquote class=&amp;#34;twitter-tweet&amp;#34; data-lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;p lang=&amp;#34;en&amp;#34; dir=&amp;#34;ltr&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;&lt;a href=&#34;https://twitter.com/hashtag/csteachers?src=hash&#34;&gt;https://twitter.com/hashtag/csteachers?src=hash&lt;/a&gt;&amp;#34;&amp;gt;#csteachers&amp;lt;/a&amp;gt;…didn&amp;amp;#39;t I see a list of CS teacher blogs here recently?&amp;lt;/p&amp;gt;&amp;amp;mdash; Pam Whitlock (@PamWhitlock1) &amp;lt;a href=&amp;#34;&lt;a href=&#34;https://twitter.com/PamWhitlock1/status/910662628757864448&#34;&gt;https://twitter.com/PamWhitlock1/status/910662628757864448&lt;/a&gt;&amp;#34;&amp;gt;September 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;#34;//platform.twitter.com/widgets.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/p&gt;
+&lt;p&gt;
+To answer the tweet, the closet thing I know to a list is &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred
+Thompson&lt;/a&gt;&amp;#39;s blog roll which is actually a post he wrote on his blog
+in 2012. Unfortunately his list can be hard to find and is somewhat
+out of date.
+&lt;/p&gt;
+&lt;p&gt;
+The idea of an &amp;#34;awesome&amp;#34; list is publicly hosting a simple site that
+is community driven and anyone can suggest additions and edits.
+&lt;/p&gt;
+&lt;p&gt;
+I put up a starter &lt;a href=&#34;https://github.com/zamansky/awesome-cs-education&#34;&gt;here&lt;/a&gt; and a few people have contributed but I&amp;#39;d love
+to get more people involved. Awesome lists have a number of advantages
+over other repositories.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Unlike blog posts, the site is easy to find.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Unlike private mailing lists or Facebook, anyone can see the content.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Anyone can suggest additions (although you need to create a Github
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+account).
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Anyone can download or fork the site.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s essentially plain text and is easy to edit (just read the
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&#34;&gt;contribution guide&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+So, there you have it. If you have a blog or resource to share please
+submit a pull request. Over time this could be a terrific single
+starting point for educators to get to a wealth of resources.
+&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +89,50 @@
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/awesome-cs/</guid>
-      <description>One of the things I mentioned in my post on the CS Educators StackExchange was the fragmentation of resources for CS Educators. My friend and fellow CS teacher Ben pointed out that this is appropriate as we&amp;#39;re so young as a community. He&amp;#39;s absolutely right but until we mature, discover-ability can be a problem. We all have our resources and I for one am frequently surprised when talking to a friend and discovering that they don&amp;#39;t know about a site or a mailing list that I&amp;#39;ve known about for years.</description>
+      <description>&lt;p&gt;
+One of the things I mentioned in my post on the &lt;a href=&#34;http://cestlaz.github.io/posts/cs-educators-stackexchange/&#34;&gt;CS Educators
+StackExchange&lt;/a&gt; was the fragmentation of resources for CS Educators. My
+friend and fellow CS teacher Ben pointed out that this is appropriate
+as we&amp;#39;re so young as a community. He&amp;#39;s absolutely right but until we
+mature, discover-ability can be a problem. We all have our resources
+and I for one am frequently surprised when talking to a friend and
+discovering that they don&amp;#39;t know about a site or a mailing list that
+I&amp;#39;ve known about for years. Likewise, I&amp;#39;m appreciative when others
+share resources with me.
+&lt;/p&gt;
+&lt;p&gt;
+There are some collections of information, for instance, &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred
+Thompson&lt;/a&gt; has a list of CS Education bloggers but it&amp;#39;s not so easy to
+discover and it certainly shouldn&amp;#39;t fall on Alfred to maintain such
+a list making sure the links are all active and always being
+responsible for adding new ones.
+&lt;/p&gt;
+&lt;p&gt;
+Recently I&amp;#39;ve noticed a proliferation of &lt;strong&gt;&lt;strong&gt;awesome&lt;/strong&gt;&lt;/strong&gt;
+lists. These are community curated lists hosted up on GitHub for a
+variety of projects. I find myself using &lt;a href=&#34;https://github.com/emacs-tw/awesome-emacs&#34;&gt;awesome-emacs&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/vinta/awesome-python&#34;&gt;awesome-python&lt;/a&gt; more and more and there are tons of other such lists.
+&lt;/p&gt;
+&lt;p&gt;
+I thought we, as a community could benefit from such a list.
+&lt;/p&gt;
+&lt;p&gt;
+I started one off. It&amp;#39;s over at
+&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education&#34;&gt;&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education&#34;&gt;https://github.com/zamansky/awesome-cs-education&lt;/a&gt;&lt;/a&gt; with instructions on
+contributing at
+&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&#34;&gt;&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&#34;&gt;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&lt;/a&gt;&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+I seeded it with a few items but I&amp;#39;d love everyone to get involved. I
+also started it with a few categories and a specific format but I&amp;#39;d
+love to see that evolve into something most useful for the community
+as well.
+&lt;/p&gt;
+&lt;p&gt;
+If you agree that this could be something useful, please contribute to
+it and help spread the word.
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>
