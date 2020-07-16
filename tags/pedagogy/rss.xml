@@ -6,10 +6,71 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 10:31:53 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 19:00:55 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Merge Over Zoom - A Hunter CS Certification Program Update</title>
+      <link>https://cestlaz.github.io/post/merge-over-zoom/</link>
+      <pubDate>Thu, 16 Jul 2020 19:00:55 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/merge-over-zoom/</guid>
+      <description>&lt;p&gt;
+We&amp;#39;ve been talking sorting and searching in our teacher certification
+program and today was all about the merge sort. One of the strategies
+we use when teaching it in person involves sorting a deck of cards by
+&lt;a href=&#34;https://cestlaz.github.io/posts/2014-02-27-dumbass/&#34;&gt;Tom Sawyering&lt;/a&gt; it with the class. It&amp;#39;s fun and it&amp;#39;s effective but you
+can&amp;#39;t do it over Zoom. What to do? We didn&amp;#39;t want to just jump into
+the nuts and bolts of merge sort. We could - we&amp;#39;ve got a great group
+of teachers who could handle it but we&amp;#39;re not just talking about
+content in the program we&amp;#39;re also talking about pedagogy.
+&lt;/p&gt;
+&lt;p&gt;
+How could we adapt a divide and conquer algorithm where we split a
+deck of cards and pass it out to the class to a remote environment.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s what we came up with.
+&lt;/p&gt;
+&lt;p&gt;
+I started with a story about how I pitched Hunter about having a party
+with this first cohort when they all earn their NY State CS Teaching
+Certificates (assuming we could have a party in person). They said yes
+but to keep costs down I had to get them a list of possible
+restaurants to order from sorted by lowest price. We decided to use
+Chinese restaurants and the price of pork dumplings. 
+&lt;/p&gt;
+&lt;p&gt;
+I had a long list and was going to have to go to the seamless page for
+each one and get the price and then sort them. Not fun.
+&lt;/p&gt;
+&lt;p&gt;
+Since I&amp;#39;m running the program but have two instructors - JonAlf and
+Topher working with me, we decided I could &amp;#34;volunteer&amp;#34; each to do half
+the list. They weren&amp;#39;t happy so they looked for Teaching Assistants to
+pawn the work off on but having none went to the students. We
+continued with the split until a bunch of students each had to look up
+one and only one restaurant to find the price of the pork. We then
+passed the restaurants and prices back up the chain and voila - merge
+sort. .
+&lt;/p&gt;
+&lt;p&gt;
+We basically were able to replicate the in class card sorting
+experience with something that we could do over Zoom. It went over
+pretty well. 
+&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;re going to talk more about what we did and why and the idea of
+actively engaging students in different ways over virtual conference
+technologies tomorrow. 
+&lt;/p&gt;
+&lt;p&gt;
+It was all pretty cool.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hunter&#39;s CS Teacher Certification program Week 2</title>
