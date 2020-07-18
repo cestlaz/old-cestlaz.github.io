@@ -6077,24 +6077,20 @@ If not, perhaps I&amp;#39;ll blog more specifics after the event.
 &lt;p&gt;
 Natan commenting on work the  other day:
 &lt;/p&gt;
-&lt;p&gt;
-&amp;lt;blockquote&amp;gt;
-&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;You have two lists. One is sorted, the other is not. Every item in
+&lt;blockquote&gt;
+
+&#34;You have two lists. One is sorted, the other is not. Every item in
 one list corresponds to an item in the other. Is it faster to sort the
 unsorted list and then merge them, or simply go through the unsorted
 list in order and pair each item with the item you can find in the
-presorted list?&amp;#34; is a question I asked today in the dressing room of
-an off-Broadway theater. I&amp;#39;ve used RegEx at my job before, but I never
+presorted list?&#34; is a question I asked today in the dressing room of
+an off-Broadway theater. I&#39;ve used RegEx at my job before, but I never
 thought Big O notation would become relevant!
-&lt;/p&gt;
-&lt;p&gt;
+
 Let this be submitted as evidence that a computer science education is
-valuable no matter what field you go into. That, or I&amp;#39;m just a
+valuable no matter what field you go into. That, or I&#39;m just a
 particular kind of crazy.
-&amp;lt;/blockquote&amp;gt;
-&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;
 There&amp;#39;s clearly an unplugged activity here :-)
 &lt;/p&gt;
