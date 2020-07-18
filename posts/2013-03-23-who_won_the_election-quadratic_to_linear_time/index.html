@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1594942576" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1595114036" />
 
 
 
@@ -102,13 +102,13 @@ ended, though, on a great note.</p>
 <p>So, what was the hubbub about?</p>
 <p>We&rsquo;ve been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_max</span>(L):
-maxval <span style="color:#f92672">=</span> L[<span style="color:#ae81ff">0</span>]
-i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> i<span style="color:#f92672">&lt;</span>len(L):
-<span style="color:#66d9ef">if</span> L[i]<span style="color:#f92672">&gt;</span>maxval:
-maxval<span style="color:#f92672">=</span>L[i]
-i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">return</span> maxVal</code></pre></div>
+  maxval <span style="color:#f92672">=</span> L[<span style="color:#ae81ff">0</span>]
+  i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">while</span> i<span style="color:#f92672">&lt;</span>len(L):
+    <span style="color:#66d9ef">if</span> L[i]<span style="color:#f92672">&gt;</span>maxval:
+     maxval<span style="color:#f92672">=</span>L[i]
+  i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">return</span> maxVal</code></pre></div>
 <p>We&rsquo;ve also done basic searching, counting elements, removing elements, etc.</p>
 <p>Today we started with finding the mode of a list of grades.</p>
 <p>Most students approached the problem as a maximum problem. Assume the
@@ -116,18 +116,18 @@ first item is the mode and find it&rsquo;s frequency, then proceed through
 the list each time seeing if the current node occurs more fequently
 than the &ldquo;mode so far.&rdquo; Pretty much the same idea as find_max (but in this case, returning a list of all the modes).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mode</span>(L):
-modecount <span style="color:#f92672">=</span> L<span style="color:#f92672">.</span>count( L[<span style="color:#ae81ff">0</span>] )
-modes <span style="color:#f92672">=</span> [ L[<span style="color:#ae81ff">0</span>] ]
-i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(L):
-c <span style="color:#f92672">=</span> L<span style="color:#f92672">.</span>count(L[i])
-<span style="color:#66d9ef">if</span> c <span style="color:#f92672">&gt;</span> modecount:
-modecount <span style="color:#f92672">=</span> c
-modes <span style="color:#f92672">=</span> [ L[i] ]
-<span style="color:#66d9ef">elif</span> c<span style="color:#f92672">==</span>modecount <span style="color:#f92672">and</span> L[i] <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> modes:
-modes<span style="color:#f92672">.</span>append( L[i] )
-i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">return</span> modes</code></pre></div>
+  modecount <span style="color:#f92672">=</span> L<span style="color:#f92672">.</span>count( L[<span style="color:#ae81ff">0</span>] )
+  modes <span style="color:#f92672">=</span> [ L[<span style="color:#ae81ff">0</span>] ]
+  i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(L):
+    c <span style="color:#f92672">=</span> L<span style="color:#f92672">.</span>count(L[i])
+    <span style="color:#66d9ef">if</span> c <span style="color:#f92672">&gt;</span> modecount:
+      modecount <span style="color:#f92672">=</span> c
+      modes <span style="color:#f92672">=</span> [ L[i] ]
+    <span style="color:#66d9ef">elif</span> c<span style="color:#f92672">==</span>modecount <span style="color:#f92672">and</span> L[i] <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> modes:
+      modes<span style="color:#f92672">.</span>append( L[i] )
+    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">return</span> modes</code></pre></div>
 <p>Pretty cool. The kids are doing something pretty sophisticated here.</p>
 <p>Time to look deeper. We started running this on larger and larger data
 sets. Things started really slowing down at about 20K. We then timed
@@ -144,28 +144,28 @@ well. If we go to 100 items, it becomes 100x100.</p>
 <p>Time to talk about what&rsquo;s probably the most discussed instance of mode
 finding - elections. The winner is &ldquo;the mode of the ballots.&rdquo;</p>
 <p>Of course we don&rsquo;t use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates &ldquo;bucket.&rdquo;</p>
-<!-- raw HTML omitted -->
+<p><img src="/img/tally.png" alt=""></p>
 <p>From here, it&rsquo;s a short step to see that we can use a list. It&rsquo;s
 indices represent the grade values and the data in the list the counts
 or tallies:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fastmode</span>(L):
-i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-counts <span style="color:#f92672">=</span> []
-<span style="color:#66d9ef">while</span> i<span style="color:#f92672">&lt;</span>max(L)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:
-counts<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">0</span>)
-i<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(L):
-counts[ L[i] ] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-modecount <span style="color:#f92672">=</span> max(counts)
-modes <span style="color:#f92672">=</span> []
-i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(counts):
-<span style="color:#66d9ef">if</span> counts[i]<span style="color:#f92672">==</span>modecount:
-modes<span style="color:#f92672">.</span>append(i)
-i<span style="color:#f92672">=</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">return</span> modes</code></pre></div>
+  i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  counts <span style="color:#f92672">=</span> []
+  <span style="color:#66d9ef">while</span> i<span style="color:#f92672">&lt;</span>max(L)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:
+    counts<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">0</span>)
+    i<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+  i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(L):
+    counts[ L[i] ] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+  modecount <span style="color:#f92672">=</span> max(counts)
+  modes <span style="color:#f92672">=</span> []
+  i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(counts):
+    <span style="color:#66d9ef">if</span> counts[i]<span style="color:#f92672">==</span>modecount:
+    modes<span style="color:#f92672">.</span>append(i)
+    i<span style="color:#f92672">=</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">return</span> modes</code></pre></div>
 <p>We go through the list once to build the tallies and then the &ldquo;tally&rdquo;
 list once to get the modes. Simple, straightforward, and linear
 time!!!!!!!!!</p>
