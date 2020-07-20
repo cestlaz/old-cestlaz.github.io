@@ -6,10 +6,118 @@
     <description>C&#39;est la Z (tools)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2020 11:58:11 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 16:12:47 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Github and Student Feedback</title>
+      <link>https://cestlaz.github.io/post/github-student-feedback/</link>
+      <pubDate>Mon, 20 Jul 2020 16:12:47 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/github-student-feedback/</guid>
+      <description>&lt;p&gt;
+Beyond the CS specifics We&amp;#39;ve been primarily using three tools in our
+summer certification program.
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+Zoom for video conferencing
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Slack for text based communicaiton
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+GitHub for just about everything else
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+We use GitHub as a CMS - a place to share code and assignments as well
+as collect them. We&amp;#39;re also playing with GitHub discussions although
+that&amp;#39;s fallen somewhat to the wayside with Slack being preferred. 
+&lt;/p&gt;
+&lt;p&gt;
+One of the choices I&amp;#39;m digging more than ever is &lt;a href=&#34;https://classroom.github.com/&#34;&gt;GitHub Classroom&lt;/a&gt; for
+assignments. Recently GitHub added a feedback feature powered through
+what known as Pull Requests. You just have to check the &amp;#34;feedback&amp;#34;
+button when you create an assignment. I also set my notifications so I
+receive an email alert whenever a students submits anything.
+&lt;/p&gt;
+&lt;p&gt;
+Whenever a student updates an assignment or in Git parlance commits
+and pushes up a change, I get an email alert. The email includes: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+The repo where the change was made 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A brief message describing the most recent change
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A link the the students GitHub account
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A link to the actual change.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Clicking on the change and I get to a screen like this:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/github-diff.png/&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+A summary of exactly what changed. I see lines that were deleted,
+lines that were added and lines that were modified. At the top I see
+the one line brief description which the student put in when making
+the commit. I can also easily navigate through their assignment both
+to see other parts of it as well as earlier versions.
+&lt;/p&gt;
+&lt;p&gt;
+If you scroll down the page there&amp;#39;s a place you can leave a comment
+which will go to the student. 
+&lt;/p&gt;
+&lt;p&gt;
+This all makes for a very quick and easy feedback mechanism. You can
+also go to the &amp;#34;pull request&amp;#34; section of the repo (link at the top of
+the repo page) where you can find all the comments.
+&lt;/p&gt;
+&lt;p&gt;
+All in all this provides a very quick and painless way of seeing what
+students are up to and a quick way to provide some feedback.
+&lt;/p&gt;
+&lt;p&gt;
+The only catch is that this only works when the students actively push
+changes up to GitHub. While this group of teachers have been great
+that&amp;#39;s sometimes a challenge with high school or college
+students. Working on strategies to get this type of buy in from my
+first years in the Fall.
+&lt;/p&gt;
+&lt;p&gt;
+So, GitHub Classroom&amp;#39;s feedback mechanism? A big win and more great
+work from the GitHub education team.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 73 - Ripgrep and updating the blog</title>

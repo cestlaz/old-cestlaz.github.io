@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1595114746" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1595277534" />
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/tags/tools/" />
-<meta property="og:updated_time" content="2020-06-14T11:58:11-04:00" />
+<meta property="og:updated_time" content="2020-07-20T16:12:47-04:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="tools"/>
@@ -74,6 +74,40 @@
     <div class="post-info">
         <a href="https://cestlaz.github.io/tags">To all tags</a>
     </div>
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/using-emacs-1-setup/">Using Emacs - Setting up the Package Manager</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        This video will step you through setting up Emacs to use MELPA for packages.   We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&#39;s the contents of that file: (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&#39;s you try packages without installing them.
+    </div>
+
+            <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2016-05-23</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
     
         <article class="post-list">
     <header>
@@ -394,44 +428,6 @@
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/2015-03-19-duplicate-emails/">Shell games - who confirmed attendence</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        div.center {text-align:center;}   Quick post on why I love the Unix command line.  We're busy organizing CSTUY's first hackathon. It's going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.  The kids signed up on a Google doc but we all know the story &#x2013; when people sign up for a free event, even one with free food and t-shirts, many don't show.
-    </div>
-
-            <a href="/posts/2015-03-19-duplicate-emails/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2015-03-19</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/linux">#linux</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
                     
                 </ul>
         
