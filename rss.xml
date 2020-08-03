@@ -6,10 +6,133 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2020 13:23:23 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 06:16:52 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Preparing teachers to teach CS</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-recap-intro/</link>
+      <pubDate>Mon, 03 Aug 2020 06:16:52 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-recap-intro/</guid>
+      <description>&lt;p&gt;
+Now that the summer portion of Hunter College&amp;#39;s Advanced Certificate
+in Teaching Computer Science is over I thought I&amp;#39;d do a
+postmortem. That is, a few posts about what we did and how it all
+went. 
+&lt;/p&gt;
+&lt;p&gt;
+First, though, an overview of the program.
+&lt;/p&gt;
+&lt;p&gt;
+The Advanced Certificate program is geared towards teachers who are
+currently certified in another subject area who wish to earn an
+additional New York State teaching certificate in Computer
+Science. Aspiring teachers - people who don&amp;#39;t currently have either a
+Masters degree or any teaching certification can enroll in our Masters
+in Computer Science Education program. We&amp;#39;re starting a small cohort
+of five on that in the Fall. 
+&lt;/p&gt;
+&lt;p&gt;
+The certificate program consists of a bunch of graduate classes plus
+field work which is required by the state. Over the summer we covered
+four of the classes. 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Programming - essentially a CS1 type course.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Data Structures - since K12 teachers should go deeper than the last
+HS course which is typically APCS-A.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Topcs in Compute rScience - since K12 teachers need a wide breadth
+of CS knowledge.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Methods - since teachers need to know how to teach CS.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+In the fall, we&amp;#39;ll continue with Ethics in Computer Science and
+Curriculum Development which also includes the field work.
+&lt;/p&gt;
+&lt;p&gt;
+For this summer we started with a cohort of 22 practicing teachers but
+lost one along the way. They all came from different schools and we
+had all five boroughs represented. Most of the teachers worked in high
+schools but we had some middle school representation and in terms of
+current certifications, we had at least math, special ed, and science
+represented but that&amp;#39;s something we didn&amp;#39;t officially track.
+&lt;/p&gt;
+&lt;p&gt;
+Staffing wise, it was me along with two of my long time collaborators
+JonAlf Dyrland-Weaver and Topher Mykolyk. JonAlf and Topher are two of
+the best educators out there and part of my former core team at
+Stuy. That team is the biggest thing I still miss having come over to
+Hunter. They&amp;#39;re quite simply the best.
+&lt;/p&gt;
+&lt;p&gt;
+The program ran basically all day every day during the month of
+July. we knew it would be tight so we also added on some pre-work
+which made sure all participants had some experience with Java prior
+to our official start. 
+&lt;/p&gt;
+&lt;p&gt;
+More will be revealed over the next few posts but I&amp;#39;ll spoil the
+ending - I&amp;#39;m super proud of our 21 participants - while they still
+have more work to do to earn their certifications, if I ran a school,
+I&amp;#39;d love to have any of them teaching my CS classes. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m not planning on writing much about the programming and data
+structure classes except possibly through the methods eye because both
+of those courses are pretty well established and cut and dry but I do
+plan to write at least the following: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+The methods course 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+More on the methods course 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The topics course 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Use of tools for remote teaching 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Our overall philosophy in designing and running the program.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+So, stay tuned for more.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Scared teachers can&#39;t teach and scared students won&#39;t learn</title>
