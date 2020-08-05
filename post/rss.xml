@@ -6,10 +6,133 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2020 06:47:08 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 07:13:01 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CS Teacher Certification - Topics in CS</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-topics/</link>
+      <pubDate>Wed, 05 Aug 2020 07:13:01 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-topics/</guid>
+      <description>&lt;p&gt;
+Officially, the last course of the summer was &amp;#34;Modern Topics in
+Computer Science.&amp;#34; The idea was that K12 CS teachers on the one hand
+need depth beyond the typical terminal high school course, hence data
+structures and also breadth so that they could create electives, mix
+teasers in to the regular courses, or help precocious students with
+independent or semi-independant explorations. 
+&lt;/p&gt;
+&lt;p&gt;
+If someone was teaching this in a typical fall or spring semester
+course, they&amp;#39;d probably have a list of topics and spend a couple of
+weeks on each. We wanted to do it a little differently. 
+&lt;/p&gt;
+&lt;p&gt;
+The original thought was to integrate some of the topics in with the
+earlier computer science but there weren&amp;#39;t too many opportunities due
+to the compressed nature of the program. Instead, a few days before we
+wrapped up data structures we gave the cohort a list of potential
+topics and asked them to select one. Since the cohort had all already
+been teaching CS and had differing content backgrounds we also
+encouraged them to choose a topic not on the list.
+&lt;/p&gt;
+&lt;p&gt;
+When it was time for them to begin work on the topics part of the
+intensive, they all shared their desired topic. Fortunately, things
+worked out. We ended up with two solo students and a bunch of small
+teams. The teams were tasked with learning about the topic and
+designing a lesson or unit covering it. This could be for their
+current students or some other hypothetical group. Each group would
+also have to create a program or programs to show an implementation
+and or use of the topic. Once they chose their topics, we picked a few
+out of the remaining selections as topics that we&amp;#39;d present. 
+&lt;/p&gt;
+&lt;p&gt;
+The next few days were Topher, JonAlf and I delivering our topics and
+the cohort working in groups. When they worked, we&amp;#39;d drop in and
+support. The final two days consisted of the groups presenting their
+work.
+&lt;/p&gt;
+&lt;p&gt;
+The topics they selected were:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Data Mining
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Public Key Encryption
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Blockchain
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Natural Language Processing
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Classic AI - Decision Trees
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+SQL / Cyber Security
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Visualization
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Machine Learning / Cipher Decryption
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Genetic Algorithms
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Classic AI - Search
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+We weren&amp;#39;t sure exactly what to expect but we were blown away both in
+terms of the CS content as well as what they prepared in terms of
+lessons and units. 
+&lt;/p&gt;
+&lt;p&gt;
+Since this is just year one of the program we thought we&amp;#39;d get ahead
+of the game and set up a site where we could host and share these
+units and other resources so check them out &lt;a href=&#34;https://github.com/hunter-teacher-cert/Teacher-Resources/blob/master/README.org&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+We didn&amp;#39;t have a strict format for the cohort to use so each one is a
+little different but each link&amp;#39;s README.md file will get you started.
+&lt;/p&gt;
+&lt;p&gt;
+As I said, we were blown away by their work but super proud that we
+also have the bonus of being able to make their work available to the
+general CS Ed community. If you&amp;#39;re looking to create a unit in any of
+these, check them out.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - adding methods to our madness</title>
