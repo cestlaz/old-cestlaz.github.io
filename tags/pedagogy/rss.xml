@@ -6,10 +6,113 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2020 06:47:08 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 07:37:12 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Preparing CS Teachers - what to leave in, what to leave out</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-methods-choosing/</link>
+      <pubDate>Thu, 06 Aug 2020 07:37:12 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-methods-choosing/</guid>
+      <description>&lt;p&gt;
+Teachers always make decisions in their courses - what to leave in,
+what to leave out. I&amp;#39;ve seen programming and data structure classes
+where everything is written from scratch and others where a few things
+are explained and the students just use built in types like the
+java LinkedList  or Arrays.sort() method.
+&lt;/p&gt;
+&lt;p&gt;
+Do too much from scratch and you&amp;#39;ll never finish the curriculum. Do to
+little and the students won&amp;#39;t really understand what&amp;#39;s going on and
+walk a path towards being programmers or coders rather than computer
+scientists. Most teachers work somewhere between the extremes.
+&lt;/p&gt;
+&lt;p&gt;
+We not only had to make these decisions for our CS content but also
+for our methods. We decided to leave out two particular
+methods that are very popular - pair programming and Parsons
+problems. We did mention both in passing and did a little talk on pair
+programming but the treatment was far less than say live coding,
+subgoal labeling or the many other teaching techniques we decided to
+explicitly cover. 
+&lt;/p&gt;
+&lt;p&gt;
+Why did we leave out these two topics? 
+&lt;/p&gt;
+&lt;p&gt;
+Partly pragmatism and pragmatism is something that&amp;#39;s always left out
+when talking about teaching. Let&amp;#39;s look at Parsons problems. If you&amp;#39;re
+unfamiliar with them, they&amp;#39;re basically scrambled code
+fragments. Students have to put them in order. They&amp;#39;re cool puzzles
+and a nice change of pace. but you have to create them and get them to
+your students. That didn&amp;#39;t fit all that well with us. By the time we
+got to content that would benefit from Parsons problems our pace or approach
+didn&amp;#39;t really fit using them. It&amp;#39;s also worth noting that we haven&amp;#39;t
+seen any good online Parson problem generator systems which would be
+both a boon to problem creation and potentially distribution and
+assessment. 
+&lt;/p&gt;
+&lt;p&gt;
+There just wasn&amp;#39;t that much bang for the buck in giving them more than
+lip service. Since our cohort was composed of experienced teachers, we
+were confident that they can find the appropriate Parsons problems
+resources and use them where appropriate in their classes.
+&lt;/p&gt;
+&lt;p&gt;
+On pair programming we had similar pragmatic issues - it didn&amp;#39;t fit
+all that well given how tight the program was and we had to figure out
+how bet to do it remotely on the fly. We also knew that the cohort had
+all been to at least some NYC CS4All training and so were at least
+exposed to the idea. Still, we, or more accurately, Topher, who&amp;#39;s had
+great success getting student buy in did do a brief talk on the
+subject. Some of the things we covered were: 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+How to motivate pair programming in a collaborative way
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+What activities can you give the navigator while the driver&amp;#39;s
+setting up the environment to involve them.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+How in the &amp;#34;real world&amp;#34; some developers love PP and some hate it
+and that there are many variations on the theme.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+You&amp;#39;d not always going to get student buy in.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+That last point is &lt;strong&gt;very&lt;/strong&gt; important. Teachers are going to try things
+that don&amp;#39;t always work and unfortunately, the system of evaluation
+doesn&amp;#39;t promote such necessary experimentation. What&amp;#39;s more every time
+you go to a professional development or training session or head
+something online it&amp;#39;s about how the presented did it and it worked
+perfectly and if you follow the same recipe it&amp;#39;ll work for you. It
+might, but then, it might not. It&amp;#39;s all about building the toolbox of
+tricks and using them when appropriate and even then, not every lesson
+is going to be John Keating or Jaime Escalante on the big screen.
+&lt;/p&gt;
+&lt;p&gt;
+So, in the end we made choices. We&amp;#39;re they the right ones? I think
+so. Next time around the cohort will be different and the
+circumstances a little as well. Will we make the same choices? Maybe,
+we&amp;#39;ll have to wait and see. 
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - adding methods to our madness</title>
