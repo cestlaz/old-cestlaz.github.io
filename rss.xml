@@ -6,10 +6,95 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2020 07:37:12 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2020 07:25:57 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Preparing CS teachers - Curricula don&#39;t add richness, teachers do</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-topics-curriculum/</link>
+      <pubDate>Fri, 07 Aug 2020 07:25:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-topics-curriculum/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve frequently been asked for curricula. I&amp;#39;ll hear from a school or
+someone otherwise involved in a school or education and they&amp;#39;ll ask
+for a course they can drop in and teach.
+&lt;/p&gt;
+&lt;p&gt;
+I explain it doesn&amp;#39;t work that way. A syllabus or curriculum is only
+so good. A great curriculum with a bad teacher will still be bad but a
+great teacher can do a lot to salvage a horrible curriculum.
+&lt;/p&gt;
+&lt;p&gt;
+A curriculum only goes so far. At it&amp;#39;s most sparse, it&amp;#39;s a list of
+topics. At the other end we frequently see worked out prescribed
+lessons that can be a boon to a beginner but in the end constrains
+great teachers. 
+&lt;/p&gt;
+&lt;p&gt;
+As a side note, this was something I noticed years ago when touring
+elementary schools for my own children. We saw one school where
+everything was in lockstep - every classroom looked basically the
+same. Every teacher taught the same subject at the same time as every
+other teacher each day and what they taught and how they taught it was
+tightly controlled. We opted for  a school where the teachers were
+much more free to actually teach. The school in question was well
+regarded and the more we dug in the more we realized that the
+strictness the principal imposed helped bring the bad teachers up to a
+certain level and got most students through the standardized tests but
+there was no joy. Great teachers weren&amp;#39;t allowed to teach. It was a
+perfect example of a Bloomberg era stat mill. 
+&lt;/p&gt;
+&lt;p&gt;
+Anyway back to CS.
+&lt;/p&gt;
+&lt;p&gt;
+I was thinking about this while we watched the summer cohort&amp;#39;s topic
+presentations. Three of the topics were ones that I teach annually -
+AI Search, NLP, and Cipher decryption. Some of the others I&amp;#39;m planning
+on mixing in next year. The presentations and supporting materials
+were all terrific but in every case, the teachers chose to spin and
+emphasize aspects different to those I would emphasize.
+&lt;/p&gt;
+&lt;p&gt;
+In the case of the cipher decryption lesson, the cohort emphasized the
+machine learning type aspect. I spin the lesson more towards a
+recommender system. Neither is better or worse. My guess is that we
+each selected aspects that were exciting to us and riffed on
+those. Similarly the other groups brought up nuances and emphases that
+differed from mine. 
+&lt;/p&gt;
+&lt;p&gt;
+It was terrific.
+&lt;/p&gt;
+&lt;p&gt;
+If you look at a syllabus, the search topic might just say &amp;#34;Depth
+First Search.&amp;#34; It might be in the recursion section of the class and
+thus lead you to teaching a recursive solution or it might be in
+the data structure / stack section and lead you to implement your own
+stack. If the curriculum is fleshed out it&amp;#39;ll give more specifics but
+will it talk about states and state space? How about implicit data
+structures? 
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s so much richness to a well taught course that&amp;#39;s never captured
+by a curriculum and that includes tangents, side stories and limitless
+discoveries. 
+&lt;/p&gt;
+&lt;p&gt;
+When I talk to my students decades later it&amp;#39;s usually not those lines
+on the syllabus they remember but the richness that lives in the ether
+of a well taught class.
+&lt;/p&gt;
+&lt;p&gt;
+So cool that our certification program created an environment where
+we&amp;#39;ve been able to mix the spices from so many different chefs and
+each of us is leaving with something new and richer.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - what to leave in, what to leave out</title>
