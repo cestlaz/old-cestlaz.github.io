@@ -6,10 +6,187 @@
     <description>C&#39;est la Z (tools)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 07:52:24 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 06:07:26 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Preparing CS Teachers - tools for remote instruction</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-tools/</link>
+      <pubDate>Mon, 10 Aug 2020 06:07:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-tools/</guid>
+      <description>&lt;p&gt;
+Our summer intensive was supposed to be in person but COVID-19 changed
+that in a hurry. We had to scramble to redesign and figure out how we
+were going to run things.
+&lt;/p&gt;
+&lt;p&gt;
+We decided to go with the following:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Zoom for live meetings 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Slack for chat
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Git and GitHub
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+GitHub classroom for assignments 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+GitHub repos for code distribution, class website and resource
+sharing. 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+GitHub discussions for off hour and long form discussion
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+While Zoom is a great platform it was lacking in a few areas so we
+also ended up using: 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assorted whiteboarding tools.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Here&amp;#39;s the breakdown.
+&lt;/p&gt;
+&lt;p&gt;
+We used Zoom as you might imagine - big zoom for direct instruction
+and whole class work and lots of breakout rooms. Screen sharing worked
+great but the whiteboarding was less than ideal so we turned to screen
+sharing with other tools. The big things missing from Zoom were a
+collaborative writing/drawing space and flexibility for breakout
+rooms. I would have loved to be able to spy on a breakout room or have
+more fluidity between them but it still did a pretty good job
+considering Zoom wasn&amp;#39;t designed for education. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://bigbluebutton.org/&#34;&gt;Big Blue Button&lt;/a&gt; is an open source alternative to Zoom. It&amp;#39;s design for
+teaching so it has some of the features that Zoom lacks but it&amp;#39;s not
+quite there yet in terms of quality and reliability.
+&lt;/p&gt;
+&lt;p&gt;
+Instead of the Zoom chat, we decided to use Slack. Zoom&amp;#39;s slack only
+works while Zoom is up and there were times when the cohort was
+working &amp;#34;offline.&amp;#34; Also, slack gave us both threads and different
+channels as well as arbitrary private chats. 
+&lt;/p&gt;
+&lt;p&gt;
+In addition to the general class chat we had channels like #git-fu, #java-fu, #fall-is-coming to discuss COVID-19 and the public schools,
+&lt;/p&gt;
+&lt;p&gt;
+Funny thing - this was the first time any of us had strong Slack
+adoption. We&amp;#39;ve tried it before but never got buy in. This time we
+did. Maybe because we were together morning through afternoon and when
+we broke we were still in the same physical location with out
+computers nearby. In any event, Slack was used for both in class and
+out of class communication and is still being used now albeit at a
+lower volume. 
+&lt;/p&gt;
+&lt;p&gt;
+Slack also gave us a place, besides the zoom to build
+community. Having some fun channels like #duckygram and #cs-educationy-goodness  set a light tone. Every day, Alex would wait
+until right before our start to put a gif in the #attendance channel
+each day outdoing the ridiculousness of the rest of the class. It was
+the cohort that made the community but Slack as a platform helped.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m wondering if a I&amp;#39;ll get better buy in with my undergrads in a few
+weeks as we&amp;#39;re starting the semester online but at least for this
+cohort, it worked.
+&lt;/p&gt;
+&lt;p&gt;
+My only problem with Slack is the price. I have zero budget which
+leaves us with the free tier. That means limited integrations  and
+limited history. I might check out some self-hosted options like Zulip
+and Rocketchat to see if they&amp;#39;re viable alternatives.
+&lt;/p&gt;
+&lt;p&gt;
+We originally planned to use GitHub discussions for longer form
+communication. It hit most of the buttons for me – threaded
+discussion, reply via email, customizable alerts. All good. It&amp;#39;s
+lacking tags and search but it looked like it could be a viable long
+form discussion platform. We kicked off with it but the class voted
+with their feet. They kept going back to Slack so while GitHub was our
+main platform for code, GitHub discussions fell by the wayside as
+Slack won the day.
+&lt;/p&gt;
+&lt;p&gt;
+Along the way we learned some tricks. Even though Topher was paid for
+teaching two courses, JonAlf two, and I was just officially
+supervising and coordinating, all three of us were pretty much on all
+the time. Ones strategy that developed was having one of us man Slack
+while another ran the Zoom. I might be running a Zoom based activity
+while Topher or JonAlf would answer questions or highlight and
+emphasize key points on Slack. I don&amp;#39;t know yet if it helped the class
+educationally or was a distraction but we all liked the
+flow. Something to look at further. 
+&lt;/p&gt;
+&lt;p&gt;
+We also had to figure out how not to double or triple respond to
+questions. We each adopted an emoji and when a question was asked,
+whoever got there first would mark the thread with that emoji letting
+the others know we had it covered. 
+&lt;/p&gt;
+&lt;p&gt;
+Another skill we mastered was the &amp;#34;slack-moji&amp;#34; poll - pre-staging
+Slack polls and content to cut and paste over. Actually, there&amp;#39;s a
+cool remote class tool, &lt;a href=&#34;https://prismia.chat/&#34;&gt;Primsia&lt;/a&gt; (formerly babylon.hosue) which is much
+better at that than Slack but it isn&amp;#39;t up 24x7 and is more set up for
+a teacher actively managing class discussion rather than a free form
+chat.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;d love to see Big Blue Button grow to be a suitable Zoom replacement
+as it&amp;#39;s better suited for education and I&amp;#39;m hoping that Zulip proves
+to be a good free alternative to Slack but regardless of specific
+tool, the combination of video conferencing, chat, long form message,
+and whiteboarding make up a pretty good remote classroom. It would be
+nice if collaborative coding was easier but there aren&amp;#39;t that many
+options there. &lt;a href=&#34;https://repl.it&#34;&gt;Repl.it&lt;/a&gt; is awesome but we decided to have them develop
+on their local machines and adding a tool like &lt;a href=&#34;https://floobits.com/&#34;&gt;Floobits&lt;/a&gt; would have
+been too much to ask for most of the cohort. 
+&lt;/p&gt;
+&lt;p&gt;
+We think it all went pretty well. If given the option next summer, I&amp;#39;m
+leaning towards a hybrid program as even without COVID-19, remote is
+easier for many teachers for geographic and school scheduling
+reasons. I figure open in person and maybe do one day or a couple of
+half days a week on site and the rest remote. I think we&amp;#39;ll talk about
+it as a cohort once the Fall begins and can start thinking about
+cohort 2.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Tools matter when teaching (and learning)</title>
