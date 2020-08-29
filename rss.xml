@@ -6,10 +6,96 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2020 08:56:04 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 08:56:23 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Starting the new semester</title>
+      <link>https://cestlaz.github.io/post/new-semester/</link>
+      <pubDate>Fri, 28 Aug 2020 08:56:23 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/new-semester/</guid>
+      <description>&lt;p&gt;
+Thursday was the first day of the new semester. The big change was
+that my classes were done remotely but there were also some other
+differences. Other changes were that I only met one of my two CS
+classes on Thursday. That&amp;#39;s my CS0. I&amp;#39;m also teaching a recitation for
+CS1 which only meets once a week. I&amp;#39;ll see those students as well as
+my CS0 students for a second time on Monday.
+&lt;/p&gt;
+&lt;p&gt;
+I opted to use &lt;a href=&#34;https://codingrooms.com/&#34;&gt;Coding Rooms&lt;/a&gt; instead of Zoom since Coding Rooms has a
+nice built in REPL. We had a couple of students drop a couple of times
+and I had to reload once but even that&amp;#39;s no worse than typical Zoom
+performance. It&amp;#39;s funny how once one product becomes &lt;strong&gt;it&lt;/strong&gt; everything
+that&amp;#39;s different is labeled as harder and whenever there&amp;#39;s a hiccup
+it&amp;#39;s so much worse. The truth is, I&amp;#39;ve now used a bunch of platforms
+and none is harder than the others - you just have to look to
+different places. For example, in Zoom, you &amp;#34;raise your hand&amp;#34; by
+clicking in one place and in Coding Rooms (or Big Blue Button)
+another. Neither is inherently better - just different but people seem
+to think that the non Zoom one is worse just because Zoom got so hot
+so fast. Likewise, other platforms periodically drop people and crash
+but so does Zoom. This is all a digression but it&amp;#39;s something that
+bothers me. Zoom does some things really well but then again so do the
+other platforms I&amp;#39;ve been playing with. So far, there&amp;#39;s no silver
+bullet.
+&lt;/p&gt;
+&lt;p&gt;
+As you might imagine, class had a different feel. I think it went
+pretty well but it&amp;#39;s certainly going to be harder to build a sense of
+community. Since there was a good deal of class logistics to cover we
+didn&amp;#39;t really get to play with the Coding Rooms REPL but I&amp;#39;ll report
+on that soon. I&amp;#39;ll also mention that we&amp;#39;re going to see about using
+&lt;a href=&#34;https://zulip.com/&#34;&gt;Zulip&lt;/a&gt; instead of Slack for chat both in class and out. Like Zoom,
+Slack is the de facto standard but Zulip seems to have a few distinct
+advantages: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s open source
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+You can self host it (and it&amp;#39;s free if you self host)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s built around threads so I suspect it will be easier to deal
+with discussions both synchronously and asynchronously more easily.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+The disadvantages are that there aren&amp;#39;t as many integrations, most
+notably there&amp;#39;s no Giphy and it&amp;#39;s not the eponymous chat
+platform. Note that it&amp;#39;s not that I don&amp;#39;t like Slack but was driven to
+look for alternatives because I don&amp;#39;t have a budget and the free tier
+has limited history and I believe integrations.
+&lt;/p&gt;
+&lt;p&gt;
+The other big change this semester involve our K12 CS teacher
+certification program. Our summer cohort kicked off there next two
+classes on Thursday afternoon and evening - Ethics in Computer Science
+and Curriculum Development for CS. I designed both courses but am not
+the official teacher. Topher and JonAlf who worked the summer with me
+are each taking one but I&amp;#39;m going to be very involved. We also had
+four students start in our Masters program. I&amp;#39;ll be writing about all
+of this over the course of the school year.
+&lt;/p&gt;
+&lt;p&gt;
+Spent most of yesterday getting ready for Monday - setting up the
+Zulip server, GitHub repos and GitHub classroom and the like. As
+usual, I&amp;#39;m a slow starter but hopefully by mid next week will feel
+like I&amp;#39;m in the swing of things.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Unplugging with Bob Ross</title>
@@ -3955,69 +4041,6 @@ Now I can confidently add both Public Key Encryption and Blockchain to
 possible topics for my classes. It was also another reminder that
 finding bugs is hard. That&amp;#39;s something not only important for us to
 remember but also important that we convince our students of this.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hunter&#39;s first Honors CS Cohort</title>
-      <link>https://cestlaz.github.io/post/first-daedalus-class/</link>
-      <pubDate>Tue, 19 May 2020 07:41:29 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/first-daedalus-class/</guid>
-      <description>&lt;p&gt;
-Almost four and a half years ago I left Stuyvesant and joined Hunter
-College. One of the initiatives I was charged with was the creation of
-a computer science honors program - the Daedalus scholars. Now, a
-little over four years later, our first cohort is graduating.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m super proud of that first cohort and what we&amp;#39;ve collectively been
-building. 
-&lt;/p&gt;
-&lt;p&gt;
-I joined Hunter at the end of January 2016 - a month after college
-applications had closed. This meant that we had to build our first
-cohort after the fact. Nobody applied to Hunter to be a part of the
-Daedalus scholars because we didn&amp;#39;t exist. 
-&lt;/p&gt;
-&lt;p&gt;
-Still, by looking at the students who had already applied to Hunter we
-found a few that were interested and qualified. We lost a few along
-the way - a student who really wanted an engineering program, one who
-had already conditionally been accepted to another school but took our
-money for the semester (I really hate it when people exploit a system
-like this but that&amp;#39;s another story), one who really didn&amp;#39;t know what
-CS was and ended up not liking the subject, and one who really wanted
-to leave the city. 
-&lt;/p&gt;
-&lt;p&gt;
-During our first semester, some Macaulay students found out about our
-program and wanted to join so we padded our numbers with a small
-number of them. Overall we ended up with a small group of 12.
-&lt;/p&gt;
-&lt;p&gt;
-As I said, I&amp;#39;m proud of all of them for what they did at Hunter and
-for what lies ahead.
-&lt;/p&gt;
-&lt;p&gt;
-Now, four years later we get hundreds of applicants including a
-growing number from outside the city and are taking in many more great
-students. I don&amp;#39;t know the other colleges that our first cohort
-members were accepted to but now we&amp;#39;re competing for students with
-Stony Brook, NYU, RIT, and in some cases bigger &amp;#34;names.&amp;#34; My goal was
-for us to become the best value CS and the best CS in NYC and we&amp;#39;re
-well on our way. with the first cohort, we prototyped some activities
-and events that have evolved into staples - tech mentoring, codefest,
-interview prep and more. 
-&lt;/p&gt;
-&lt;p&gt;
-Our first cohort led the way and I&amp;#39;m super proud of them. Now they&amp;#39;ll
-become our first graduates and continue to be resource for both each
-other and future Hunter CS students. This is now the start of another
-endeavor - it took decades to create the StuyCS Mafia and now I get to
-repeat the process with HunterCS  but this time, since I know what&amp;#39;s
-to come I can enjoy the show as it unfolds.
 &lt;/p&gt;
 </description>
     </item>

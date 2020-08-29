@@ -6,10 +6,96 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2020 20:03:21 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 08:56:23 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Starting the new semester</title>
+      <link>https://cestlaz.github.io/post/new-semester/</link>
+      <pubDate>Fri, 28 Aug 2020 08:56:23 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/new-semester/</guid>
+      <description>&lt;p&gt;
+Thursday was the first day of the new semester. The big change was
+that my classes were done remotely but there were also some other
+differences. Other changes were that I only met one of my two CS
+classes on Thursday. That&amp;#39;s my CS0. I&amp;#39;m also teaching a recitation for
+CS1 which only meets once a week. I&amp;#39;ll see those students as well as
+my CS0 students for a second time on Monday.
+&lt;/p&gt;
+&lt;p&gt;
+I opted to use &lt;a href=&#34;https://codingrooms.com/&#34;&gt;Coding Rooms&lt;/a&gt; instead of Zoom since Coding Rooms has a
+nice built in REPL. We had a couple of students drop a couple of times
+and I had to reload once but even that&amp;#39;s no worse than typical Zoom
+performance. It&amp;#39;s funny how once one product becomes &lt;strong&gt;it&lt;/strong&gt; everything
+that&amp;#39;s different is labeled as harder and whenever there&amp;#39;s a hiccup
+it&amp;#39;s so much worse. The truth is, I&amp;#39;ve now used a bunch of platforms
+and none is harder than the others - you just have to look to
+different places. For example, in Zoom, you &amp;#34;raise your hand&amp;#34; by
+clicking in one place and in Coding Rooms (or Big Blue Button)
+another. Neither is inherently better - just different but people seem
+to think that the non Zoom one is worse just because Zoom got so hot
+so fast. Likewise, other platforms periodically drop people and crash
+but so does Zoom. This is all a digression but it&amp;#39;s something that
+bothers me. Zoom does some things really well but then again so do the
+other platforms I&amp;#39;ve been playing with. So far, there&amp;#39;s no silver
+bullet.
+&lt;/p&gt;
+&lt;p&gt;
+As you might imagine, class had a different feel. I think it went
+pretty well but it&amp;#39;s certainly going to be harder to build a sense of
+community. Since there was a good deal of class logistics to cover we
+didn&amp;#39;t really get to play with the Coding Rooms REPL but I&amp;#39;ll report
+on that soon. I&amp;#39;ll also mention that we&amp;#39;re going to see about using
+&lt;a href=&#34;https://zulip.com/&#34;&gt;Zulip&lt;/a&gt; instead of Slack for chat both in class and out. Like Zoom,
+Slack is the de facto standard but Zulip seems to have a few distinct
+advantages: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s open source
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+You can self host it (and it&amp;#39;s free if you self host)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s built around threads so I suspect it will be easier to deal
+with discussions both synchronously and asynchronously more easily.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+The disadvantages are that there aren&amp;#39;t as many integrations, most
+notably there&amp;#39;s no Giphy and it&amp;#39;s not the eponymous chat
+platform. Note that it&amp;#39;s not that I don&amp;#39;t like Slack but was driven to
+look for alternatives because I don&amp;#39;t have a budget and the free tier
+has limited history and I believe integrations.
+&lt;/p&gt;
+&lt;p&gt;
+The other big change this semester involve our K12 CS teacher
+certification program. Our summer cohort kicked off there next two
+classes on Thursday afternoon and evening - Ethics in Computer Science
+and Curriculum Development for CS. I designed both courses but am not
+the official teacher. Topher and JonAlf who worked the summer with me
+are each taking one but I&amp;#39;m going to be very involved. We also had
+four students start in our Masters program. I&amp;#39;ll be writing about all
+of this over the course of the school year.
+&lt;/p&gt;
+&lt;p&gt;
+Spent most of yesterday getting ready for Monday - setting up the
+Zulip server, GitHub repos and GitHub classroom and the like. As
+usual, I&amp;#39;m a slow starter but hopefully by mid next week will feel
+like I&amp;#39;m in the swing of things.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - index post</title>
@@ -3808,127 +3894,6 @@ use Emacs in general:
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Designing a course with constraints</title>
-      <link>https://cestlaz.github.io/posts/design-course-with-constraints/</link>
-      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/design-course-with-constraints/</guid>
-      <description>
-&lt;p&gt;
-One of the hats I wear at Hunter is to build a new &lt;a href=&#34;https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html&#34;&gt;CS Honors program&lt;/a&gt;
-and to bring my particular brand of insanity to &lt;a href=&#34;https://cestlaz.github.io/posts/hunter-cs-important&#34;&gt;Hunter College CS&lt;/a&gt; as a
-whole.
-&lt;/p&gt;
-&lt;p&gt;
-Yesterday was my last class for the semester so I thought I&amp;#39;d write a
-bit about the course.
-&lt;/p&gt;
-&lt;p&gt;
-For the Fall semester, I taught an intro programming course to the
-entire cohort. For some in the cohort, this was their first exposure
-to CS. Others had one or more classes under their belt. It was a
-Python based programming class and a big part of it was to start
-building the cohort into a community. I&amp;#39;m going to work on tweaking
-what I taught for next time around but the constraints of designing
-such a course are pretty common – an intro course where the students
-all want to be there the level of previous experience varies to some degree.
-&lt;/p&gt;
-&lt;p&gt;
-Second semester was more of a challenge. The &amp;#34;next&amp;#34; course was CSCI
-135, CS 100 - like APCS but in C++. I could teach that but since some
-of my students had APCS credit, they didn&amp;#39;t need 135. This would break
-up the group. There was also the issue of the students getting credit
-for the course without showing any proficiency in C++.
-&lt;/p&gt;
-&lt;p&gt;
-Fortunately, Hunter requires students in 135 to take CSCI 136. A 1
-credit programming lab. It meets once a week in a computer lab and the
-students complete a weekly programming assignment. The lab meets for 2
-hours. The instructor goes over anything that&amp;#39;s needed for the lab
-that hasn&amp;#39;t been covered yet and then the students work independently
-(with the instructors support) on the lab. Overall it works well. It
-makes sure the students are spending at least a couple of hours a week
-coding in a supported environment.
-&lt;/p&gt;
-&lt;p&gt;
-How did 136 help me? I taught a 3 credit course where 1 day was
-basically the lab component (what the students were to do in 136) and
-one day was enrichment - the stuff I was going to do with them. This
-enabled us keeping the cohort together and it also made sure that by
-taking the class, the honors cohort members with AP credit would
-indeed get up to speed in C++.
-&lt;/p&gt;
-&lt;p&gt;
-I was happy with the basic structure. I was able to cover some topics
-in project development, testing, debugging, and software engineering but the
-designing and teaching the class proved to be challenging for a number
-of reasons.
-&lt;/p&gt;
-&lt;p&gt;
-One was timing. The lab class meets 1 day a week for 1 hour. My class,
-2 days a week for 1 hour 15. This meant that if we were to keep the
-lab to one day either the students would have less time or I&amp;#39;d have to
-impose on them to stay late or come early. I wasn&amp;#39;t happy with that
-but given the inconsistency in the way the other sections handled lab
-timings, I think it worked out OK.
-&lt;/p&gt;
-&lt;p&gt;
-Some of the other difficulties included:
-&lt;/p&gt;
-&lt;h3 id=&#34;headline-1&#34;&gt;
-The language was C++:
-&lt;/h3&gt;
-&lt;p&gt;
-Since the labs were to be done in C++, I had to use that as the
-language for the class. That meant no &amp;#34;fun&amp;#34; libraries or frameworks.
-&lt;/p&gt;
-&lt;h3 id=&#34;headline-2&#34;&gt;
-The labs were solo assignments:
-&lt;/h3&gt;
-&lt;p&gt;
-Since the labs were solo projects and there was one per week it made
-it very difficult to structure group experiences. I wanted to cover
-things like group development, code review, working off of other
-peoples code bases but this proved difficult with an outside separate
-lab being handed down each week.
-&lt;/p&gt;
-&lt;h3 id=&#34;headline-3&#34;&gt;
-Someone else dictated the language sequence:
-&lt;/h3&gt;
-&lt;p&gt;
-The labs were designed to support what the students were learning in
-135 and were only distributed a day or two before the week was to
-start. This meant that I couldn&amp;#39;t plan too far ahead and had to adjust
-frequently. This should be easier next year.
-&lt;/p&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Labs didn&amp;#39;t match the supplemental material:
-&lt;/h3&gt;
-&lt;p&gt;
-The best example of this was when we were talking about testing. We
-ended up using &lt;a href=&#34;https://github.com/philsquared/Catch&#34;&gt;Catch&lt;/a&gt; as a testing framework. The problem was that
-right afterwards the lab (and also 135 project) didn&amp;#39;t lend themselves
-to using a testing framework like catch.
-&lt;/p&gt;
-&lt;p&gt;
-There were more challenges but overall I think the class went fairly
-well. I&amp;#39;ll know more when I get feedback from the students and when we
-all look back next year with some perspective.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s been an interesting experience designing a class that had to
-interleave with another, existing class. I&amp;#39;ve designed many classes
-over the years and I know that whatever you plan, it probably changes
-once you&amp;#39;re actually in the classroom and working with the kids, or as
-Mike Tyson said: &amp;#34;Everyone has a plan until they get punched in the
-mouth.&amp;#34; This has been a little more of a challenge but I think the
-first go through went well and that the course will get better and be
-better defined as we go through a couple more iterations.
-&lt;/p&gt;
 </description>
     </item>
     
