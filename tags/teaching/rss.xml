@@ -6,10 +6,88 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2020 08:56:23 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 11:05:49 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Multiple Cameras For Remote Teaching</title>
+      <link>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</link>
+      <pubDate>Sun, 30 Aug 2020 11:05:49 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</guid>
+      <description>&lt;p&gt;
+We used Zoom for remote classes over the summer but at this point,
+I&amp;#39;ve also used &lt;a href=&#34;https://codingrooms.com&#34;&gt;Coding Rooms&lt;/a&gt;, &lt;a href=&#34;https://bigbluebutton.org&#34;&gt;Big Blue Button&lt;/a&gt;, and Google meet as
+well. They each have their own strong points and failings but all are
+limited in terms of sharing multiple cameras and screen
+components. All will let you share your camera or share your screen
+and when you share you screen you can either share it all or a single
+window. Zoom is the only one that seems to allow for easy camera
+switching but it&amp;#39;s still pretty clunky.
+&lt;/p&gt;
+&lt;p&gt;
+Why do I want to switch cameras? Because I can&amp;#39;t draw using a mouse or
+touchpad. I&amp;#39;ve gotten myself a Wacom tablet but am still not
+particularly proficient at it. 
+&lt;/p&gt;
+&lt;p&gt;
+So, I got myself one of &lt;a href=&#34;https://www.amazon.com/gp/product/B000TTIP40/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;these&lt;/a&gt; to use as a document camera. It worked
+but as I said, switching between the webcam and document camera was
+clunky at best.
+&lt;/p&gt;
+&lt;p&gt;
+OBS to the rescue!!!!!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://obsproject.com/&#34;&gt;OBS&lt;/a&gt; Studio is the &lt;a href=&#34;https://obsproject.com/&#34;&gt;Open Broadcaster Software&lt;/a&gt;. It&amp;#39;s a cross platform
+streaming studio. You can set up any number of devices and then
+compose them into scenes. I use it for recording my &lt;a href=&#34;https://cestlaz.github.io/stories/emacs&#34;&gt;Emacs&lt;/a&gt; videos. It&amp;#39;s
+easy to set up devices for every camera you own plus monitors and
+individual windows. It only took a minute or so to set up a scene with
+me in the corner and my desktop: 
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/desktop.png&#34;&gt;
+&lt;p&gt;
+One for my document camera: 
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/doccam.png&#34;&gt;
+&lt;p&gt;
+And one for my desktop with the doccam overlayed.
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/mixed.png&#34;&gt;
+&lt;p&gt;
+I can switch between them by clicking on which I want. I can also
+select a transition like fade. 
+&lt;/p&gt;
+&lt;p&gt;
+This is all great for recording or streaming to a service like Twitch
+but what about using with meeting software? It turns out that you can
+set up OBS to act as a virtual camera. There are plugins for Mac and
+Windows. You can find them by searching for them but for Linux, I
+followed this video and it worked perfectly: 
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Eca509IDLdM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+I also found this video if the above one doesn&amp;#39;t work: &lt;a href=&#34;https://www.youtube.com/watch?v=zaJSkj-dLoI&#34;&gt;https://www.youtube.com/watch?v=zaJSkj-dLoI&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I set up the virtual camera as per the video and then selected it as
+the camera on both Zoom and Coding Rooms and it worked perfectly. It
+should work on the other platforms as well. 
+&lt;/p&gt;
+&lt;p&gt;
+This is HUGE. Now, instead of explicitly sharing my screen I can hacve
+my screen as my image and quickly and easily switch over to another
+window, a document camera or anything else. 
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re teaching remotely using a conferencing platform I recommend
+you check this out.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Starting the new semester</title>
@@ -3763,137 +3841,6 @@ made in a semi-private forum and I haven&amp;#39;t asked permission.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Python - Editor or IDE</title>
-      <link>https://cestlaz.github.io/posts/python-editors/</link>
-      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/python-editors/</guid>
-      <description>&lt;p&gt;
-Earlier today I read Garth Flint&amp;#39;s latest post on &lt;a href=&#34;https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A&#34;&gt;choosing a Python
-environment for his classes&lt;/a&gt;. While our classes and populations are
-different it looks like Garth and I share a lot of thoughts on the
-subject.
-&lt;/p&gt;
-&lt;p&gt;
-I started to write a comment to leave on Garth&amp;#39;s blog but since it was
-getting a little long I thought I&amp;#39;d write it up as a post.
-&lt;/p&gt;
-&lt;p&gt;
-The question of development environment can be an important one and
-can make a big difference. When I designed the intro course at Stuy,
-the fact that Dr. Scheme existed made the use of Scheme in the class
-an option. Without it as a supportive and simple environment for the
-students I probably wouldn&amp;#39;t have been able to use Scheme even though
-I really liked it as a teaching and learning tool.
-&lt;/p&gt;
-&lt;p&gt;
-Garth writes about issues relating to choosing a local development
-environment so that&amp;#39;s what I&amp;#39;m going to stick to here. If you want an
-online environment check out &lt;a href=&#34;http://codesters.com&#34;&gt;Codesters&lt;/a&gt; - a terrific online Python
-environment with lots of educational support materials and features
-and &lt;a href=&#34;http://repl.it&#34;&gt;repl.it&lt;/a&gt; - an online environment that supports many languages and
-is also developing great teacher and class support – I very much like
-both of these platforms.
-&lt;/p&gt;
-&lt;p&gt;
-The first question is editor or IDE?
-&lt;/p&gt;
-&lt;p&gt;
-As a user, I&amp;#39;m very pro editor. Learn a tool that you can customize to
-your tastes and that will work for all sorts of text editing chores
-from coding to document preparation to scheduling and more and you&amp;#39;re
-in great shape. Personally, I&amp;#39;m an &lt;a href=&#34;http://cestlaz.github.io/stories/emacs&#34;&gt;Emacs wonk&lt;/a&gt; but there are other
-choices as well.
-&lt;/p&gt;
-&lt;p&gt;
-As a teacher, though, Emacs or another programmers editor can be
-overwhelming for younger students and rank beginners.
-&lt;/p&gt;
-&lt;p&gt;
-This can make IDEs attractive.
-&lt;/p&gt;
-&lt;p&gt;
-Some IDEs are too big and cumbersome and can add even more cognitive
-load than an editor - think Eclipse for Java development. If you think
-writing
-&lt;/p&gt;
-&lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-is a lot of overhead, just wait until you have a novice try to start a
-Java project in Eclipse.
-&lt;/p&gt;
-&lt;p&gt;
-Other IDEs are more streamlined. One common choice is
-Idle. It&amp;#39;s big advantage is that it&amp;#39;s always available and is &amp;#34;part&amp;#34;
-of Python. On the other hand, it doesn&amp;#39;t seem to add much to a bare
-editor and I&amp;#39;ve found that it can be somewhat confusing.
-&lt;/p&gt;
-&lt;p&gt;
-Garth seems to have settled on &lt;a href=&#34;https://www.jetbrains.com/pycharm/&#34;&gt;PyCharm&lt;/a&gt; from &lt;a href=&#34;https://jetbrains.com&#34;&gt;JetBrains&lt;/a&gt;. It&amp;#39;s pretty
-streamlined and really easy to get up and running. JetBrains also
-provides a free community edition as well as a heavier professional
-one available for purchase. Garth notes that it&amp;#39;s a Python only IDE
-but JetBrains has similar IDEs for a whole bunch of languages and I
-seem to recall you can add plugins across their IDEs to basically make
-them multi-language development environments.
-&lt;/p&gt;
-&lt;p&gt;
-I really like the JetBrains products and if I used an IDE I&amp;#39;m pretty
-sure I&amp;#39;d use their products. As a teacher though, I find their IDEs a
-little too powerful for my tastes. I want a learner IDE to provide the
-bare minimum of features - an interactive REPL, a code window, run and
-debug buttons, some completion and help - but to make those features
-really easy to use. JetBrains does a little too much.
-&lt;/p&gt;
-&lt;p&gt;
-What I ended up using in the past is &lt;a href=&#34;http://drpython.sourceforge.net/&#34;&gt;Dr Python&lt;/a&gt;. For me it hit the
-sweet spot. As an added bonus we were already using Dr. Racket (nee
-Dr. Scheme) and Dr. Java so our students had a similar environment
-across languages and even NetLogo looked and behaved similarly.
-&lt;/p&gt;
-&lt;p&gt;
-Is there a right answer? Probably not. Just as with choosing a first
-language there are always trade offs. Besides, if you don&amp;#39;t have the
-right solution, there will be another one next week. Just recently I
-saw &lt;a href=&#34;http://thonny.org/&#34;&gt;this project&lt;/a&gt;. A new beginners IDE for python. It looks interesting
-and worth checking out.
-&lt;/p&gt;
-&lt;p&gt;
-The right IDE can make a big difference while keeping the overhead low
-and giving just the right amount of support. For me, the last time
-around it was Dr. Python. For Garth, it looks like PyCharm fits the
-bill. Looking at the overall plan, I usually start the kids off with a
-simple learners IDE and then transition them to a programmers editor
-like Emacs as they gain more comfort and experience.
-&lt;/p&gt;
-&lt;p&gt;
-As a postscript, let me share these links on how I use Emacs for
-Python development (each with a video) as well as my series on how I
-use Emacs in general:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/stories/emacs/&#34;&gt;http://cestlaz.github.io/stories/emacs/&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-12-python&#34;&gt;http://cestlaz.github.io/posts/using-emacs-12-python&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&#34;&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

@@ -6,10 +6,88 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2020 08:56:23 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 11:05:49 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Multiple Cameras For Remote Teaching</title>
+      <link>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</link>
+      <pubDate>Sun, 30 Aug 2020 11:05:49 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</guid>
+      <description>&lt;p&gt;
+We used Zoom for remote classes over the summer but at this point,
+I&amp;#39;ve also used &lt;a href=&#34;https://codingrooms.com&#34;&gt;Coding Rooms&lt;/a&gt;, &lt;a href=&#34;https://bigbluebutton.org&#34;&gt;Big Blue Button&lt;/a&gt;, and Google meet as
+well. They each have their own strong points and failings but all are
+limited in terms of sharing multiple cameras and screen
+components. All will let you share your camera or share your screen
+and when you share you screen you can either share it all or a single
+window. Zoom is the only one that seems to allow for easy camera
+switching but it&amp;#39;s still pretty clunky.
+&lt;/p&gt;
+&lt;p&gt;
+Why do I want to switch cameras? Because I can&amp;#39;t draw using a mouse or
+touchpad. I&amp;#39;ve gotten myself a Wacom tablet but am still not
+particularly proficient at it. 
+&lt;/p&gt;
+&lt;p&gt;
+So, I got myself one of &lt;a href=&#34;https://www.amazon.com/gp/product/B000TTIP40/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;these&lt;/a&gt; to use as a document camera. It worked
+but as I said, switching between the webcam and document camera was
+clunky at best.
+&lt;/p&gt;
+&lt;p&gt;
+OBS to the rescue!!!!!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://obsproject.com/&#34;&gt;OBS&lt;/a&gt; Studio is the &lt;a href=&#34;https://obsproject.com/&#34;&gt;Open Broadcaster Software&lt;/a&gt;. It&amp;#39;s a cross platform
+streaming studio. You can set up any number of devices and then
+compose them into scenes. I use it for recording my &lt;a href=&#34;https://cestlaz.github.io/stories/emacs&#34;&gt;Emacs&lt;/a&gt; videos. It&amp;#39;s
+easy to set up devices for every camera you own plus monitors and
+individual windows. It only took a minute or so to set up a scene with
+me in the corner and my desktop: 
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/desktop.png&#34;&gt;
+&lt;p&gt;
+One for my document camera: 
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/doccam.png&#34;&gt;
+&lt;p&gt;
+And one for my desktop with the doccam overlayed.
+&lt;/p&gt;
+&lt;img src=&#34;https://cestlaz.github.io/img/obs/mixed.png&#34;&gt;
+&lt;p&gt;
+I can switch between them by clicking on which I want. I can also
+select a transition like fade. 
+&lt;/p&gt;
+&lt;p&gt;
+This is all great for recording or streaming to a service like Twitch
+but what about using with meeting software? It turns out that you can
+set up OBS to act as a virtual camera. There are plugins for Mac and
+Windows. You can find them by searching for them but for Linux, I
+followed this video and it worked perfectly: 
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Eca509IDLdM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+I also found this video if the above one doesn&amp;#39;t work: &lt;a href=&#34;https://www.youtube.com/watch?v=zaJSkj-dLoI&#34;&gt;https://www.youtube.com/watch?v=zaJSkj-dLoI&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I set up the virtual camera as per the video and then selected it as
+the camera on both Zoom and Coding Rooms and it worked perfectly. It
+should work on the other platforms as well. 
+&lt;/p&gt;
+&lt;p&gt;
+This is HUGE. Now, instead of explicitly sharing my screen I can hacve
+my screen as my image and quickly and easily switch over to another
+window, a document camera or anything else. 
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re teaching remotely using a conferencing platform I recommend
+you check this out.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Starting the new semester</title>
@@ -3869,178 +3947,6 @@ program. I&amp;#39;d love to find a way to convince more students of the
 utility of a good toolset that includes debuggers but I&amp;#39;d also just
 love to be more effective in getting them to carefully read and
 analyze their code.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Errors Are Hard To Find</title>
-      <link>https://cestlaz.github.io/post/errors-are-hard-to-find/</link>
-      <pubDate>Wed, 20 May 2020 08:10:54 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/errors-are-hard-to-find/</guid>
-      <description>&lt;p&gt;
-Programming is amazing. You get the thrill of victory and &lt;a href=&#34;https://www.youtube.com/watch?v=Asxr5v9arH4&#34;&gt;the agony of
-defeat&lt;/a&gt;. It&amp;#39;s a great feeling when you write something and it works -
-even it it&amp;#39;s small and simple. It also feels good to hunt down,
-discover and eliminate subtle bugs in our code. On the other hand,
-I&amp;#39;ll frequently feel like a bozo when I pour over my code for days
-only to find a super silly error. Unfortunately, that&amp;#39;s the most kind
-of error. It helps if you can laugh at yourself. It&amp;#39;s something I&amp;#39;ve
-written about &lt;a href=&#34;https://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/&#34;&gt;before&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-As a teacher it&amp;#39;s something I try to convey to my students. When they
-don&amp;#39;t see a bug, it&amp;#39;s probably not them. It&amp;#39;s like when they read an
-essay over and over and don&amp;#39;t see their mistake because their brain
-autocorrects.
-&lt;/p&gt;
-&lt;p&gt;
-So, what had me kicking myself this time?
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m going to be teaching a CS topics course as part of our teacher
-certification program this summer. I already have a lot of possible
-topics to choose form:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-WebDev via Flask
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-3D Graphics / transformations
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Ray Tracing
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Data mining
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Machine Learning
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-NLP
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-and more
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-I had never quite grokked &lt;strong&gt;Blockchain&lt;/strong&gt; - specifically its use as a
-platform so I thought I&amp;#39;d see about that as a topic. I started
-playing, exploring and building but when I got to signing transactions
-that led me to add &lt;strong&gt;Public Key Encryption&lt;/strong&gt; as another topic.
-&lt;/p&gt;
-&lt;p&gt;
-Traditional encryption requires a key to be used by both parties. This
-means that both parties can both encrypt and decrypt so they must
-trust each other. This leads to some issues:
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-Both parties have to share the key securely.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-All parties with the key can encrypt and decrypt. 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-On the other hand, public key encryption uses two keys. A public one
-that everyone has access to is used to encrypt data and a private one
-known only to the owner. This can be used to decrypt the data. This
-means I can share my public key with the world and receive secure
-transmissions that only I can decrypt. It also means that two parties
-can share secure data with each other without both parties knowing the
-others private key.
-&lt;/p&gt;
-&lt;p&gt;
-I decided that it would be a good idea to get my head around all of
-this.
-&lt;/p&gt;
-&lt;p&gt;
-There are a bunch of good resources on the web but the basic idea is
-that you take two primes - large primes, multiply them together, chant
-some mystic incantations and come up with a private and a public
-key. You can then use one key to encrypt a message and the other to
-decrypt that encrypted message. 
-&lt;/p&gt;
-&lt;p&gt;
-For this to work, you want to use large primes but to work through the
-math and make sure I got it, I started with small numbers - 7
-and 13. I went through all the math, everything worked and it made
-sense.
-&lt;/p&gt;
-&lt;p&gt;
-Now time to write some code.
-&lt;/p&gt;
-&lt;p&gt;
-I wrote up a small program and things seemed to work and then decided
-to set up a mock student application - something that would encrypt a
-sentence. If I were writing this &amp;#34;for real&amp;#34; I would figure out some
-reasonable way to chunk my data for encryption but for this test I
-figured it would be easy to just take each character from the input
-string and encrypt it.
-&lt;/p&gt;
-&lt;p&gt;
-First few tests worked. I encrypted and decrypted &amp;#34;ABC.&amp;#34; Then I tried
-the classic &amp;#34;Hello World!&amp;#34; and things went kablooey.
-&lt;/p&gt;
-&lt;p&gt;
-I was getting weird results and couldn&amp;#39;t for the life of me figure out
-why. Every time I did an individual test it seemed to work.
-&lt;/p&gt;
-&lt;p&gt;
-Finally, it clicked - Duh, of course it wasn&amp;#39;t working.
-&lt;/p&gt;
-&lt;p&gt;
-When you encrypt or decrypt a number, which in our case is a
-character, it involves modulo arithmetic. Given a  number &lt;strong&gt;X&lt;/strong&gt; you
-calculate \(X^e\  mod\  n\ \) where e is your key and n is the product of the
-primes you selected. I chose 7 and 13 as my primes which made my
- &lt;strong&gt;n&lt;/strong&gt; 91. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;OF COURSE IT DIDN&amp;#34;T WORK!!!!!&lt;/strong&gt; It worked for A, B, and C because
-they had ascii values of 65, 66, and 67 -  all less than 91. Once I
-added lower case letters all was lost. The characeter &amp;#39;e&amp;#39; has an ascii
-code of 101. There&amp;#39;s no way I can get some encoded value back to 101
-if I&amp;#39;m modding by 91. 
-&lt;/p&gt;
-&lt;p&gt;
-D&amp;#39;oh
-&lt;/p&gt;
-&lt;p&gt;
-From there it was an easy fix - I just had to account for this. I
-selected larger primes, derived new keys and everything worked. 
-&lt;/p&gt;
-&lt;p&gt;
-I felt pretty stupid but on the other hand I got that surge of joy at
-it finally working.
-&lt;/p&gt;
-&lt;p&gt;
-Now I can confidently add both Public Key Encryption and Blockchain to
-possible topics for my classes. It was also another reminder that
-finding bugs is hard. That&amp;#39;s something not only important for us to
-remember but also important that we convince our students of this.
 &lt;/p&gt;
 </description>
     </item>
