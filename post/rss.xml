@@ -6,10 +6,127 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 11:05:49 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 13:03:14 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 74 Eglot</title>
+      <link>https://cestlaz.github.io/post/using-emacs-74-eglot/</link>
+      <pubDate>Mon, 31 Aug 2020 13:03:14 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-74-eglot/</guid>
+      <description>&lt;p&gt;
+I primarily program in four languages these days -
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Clojure 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+C++
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Python
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Java
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+And most of the time, my Emacs configuration has handled each one
+differently. Cider for Clojure, Irony for C++, Elpy and Jedi for
+Python and Java I could never figure out. This is of course on top of
+tools that work across languages like company for completions, or
+flycheck for general language syntax checking. 
+&lt;/p&gt;
+&lt;p&gt;
+A while ago I heard about lsp-mode - Language Server Protocol
+mode. Basically, you set up the mode and it connects to back end
+language servers. The idea is to keep configuration down and provide a
+consistent interface across langauges while leveraging the types of
+support these back ends can provide. I wrote a bit about lsp-mode and
+made a video and you can find it &lt;a href=&#34;https://cestlaz.github.io/post/using-emacs-58-lsp-mode/&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+When I first tried LSP it just didn&amp;#39;t work. I tried it again later and
+it basically worked but was finicky. Configuration took more work than
+I wanted, particularly for customizing per language and even when
+working it didn&amp;#39;t work as expected. 
+&lt;/p&gt;
+&lt;p&gt;
+This past summer, I had to teach using Java so I tried lsp-mode
+again. Setup wasn&amp;#39;t too bad and most of the issues were more related
+to Java than to lsp-mode but I didn&amp;#39;t like the results. While it might
+be great for the professional developer there were too many popups and
+made the screen way too busy for teaching. 
+&lt;/p&gt;
+&lt;p&gt;
+Still, the idea of a single simple configuration was enticing.
+&lt;/p&gt;
+&lt;p&gt;
+So, when I decided to get my configuration together for the Fall
+semester I decided to try yet again and discovered &lt;a href=&#34;https://github.com/joaotavora/eglot&#34;&gt;eglot&lt;/a&gt; for
+Emacs. Eglot turned out to be easier to install and gave me more of
+the experience I was looking for.
+&lt;/p&gt;
+&lt;p&gt;
+To start, I set it up for C++ using
+&lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(use-package eglot :ensure t)
+(add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
+(add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
+(add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Eglot defaults to &lt;a href=&#34;https://github.com/MaskRay/ccls&#34;&gt;ccls&lt;/a&gt; as a C++ language server. I didn&amp;#39;t want to have
+to build it but was able to &lt;code&gt;apt-get install clangd-10&lt;/code&gt; and use that
+instead by adding clangd-10 to the eglot-server-programs in the second
+configuration line.
+&lt;/p&gt;
+&lt;p&gt;
+For python I had to install &lt;a href=&#34;https://github.com/palantir/python-language-server&#34;&gt;pyls&lt;/a&gt;, the Python Language Server but that
+was easy to do and then I just had to add &lt;code&gt;(add-hook &amp;#39;python-mode-hook
+&amp;#39;eglot-ensure)&lt;/code&gt; to my config.
+&lt;/p&gt;
+&lt;p&gt;
+Finally, Java was more of an issue I had to get &lt;a href=&#34;https://github.com/eclipse/eclipse.jdt.ls&#34;&gt;eclipse.jdt.ls&lt;/a&gt; on my
+system. It turns out that lsp-mode installed it for me already so I
+just had to point to it:
+&lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
+(defun my-eglot-eclipse-jdt-contact (interactive)
+  &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
+  (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
+    (setenv &amp;#34;CLASSPATH&amp;#34; (concat cp &amp;#34;:&amp;#34; my-eclipse-jdt-home))
+    (unwind-protect (eglot--eclipse-jdt-contact nil)
+      (setenv &amp;#34;CLASSPATH&amp;#34; cp))))
+(setcdr (assq &amp;#39;java-mode eglot-server-programs) #&amp;#39;my-eglot-eclipse-jdt-contact)
+(add-hook &amp;#39;java-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+So far, I&amp;#39;m liking eglot very much. I&amp;#39;ll probably check lsp-mode out
+again somewhere down the line but as of now it&amp;#39;s Cider for Clojure and
+Eglot for everything else.
+&lt;/p&gt;
+&lt;p&gt;
+The video has a run through and demo. Check it out.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ROnceqt3kpE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Multiple Cameras For Remote Teaching</title>
@@ -28,7 +145,7 @@ window. Zoom is the only one that seems to allow for easy camera
 switching but it&amp;#39;s still pretty clunky.
 &lt;/p&gt;
 &lt;p&gt;
-Why do I want to switch cameras? Because I can&amp;#39;t draw using a mouse or
+Why do I want to switch cameras? Because I can&amp;#39;t draw us ing a mouse or
 touchpad. I&amp;#39;ve gotten myself a Wacom tablet but am still not
 particularly proficient at it. 
 &lt;/p&gt;
@@ -3787,167 +3904,6 @@ The video has all the details. Enjoy.
 src=&#34;https://www.youtube.com/embed/G1NGNR40lB4&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>More thoughts on debugging</title>
-      <link>https://cestlaz.github.io/post/debug/</link>
-      <pubDate>Thu, 21 May 2020 08:11:25 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/debug/</guid>
-      <description>&lt;p&gt;
-Yesterday&amp;#39;s post on &lt;a href=&#34;https://cestlaz.github.io/post/errors-are-hard-to-find/&#34;&gt;errors&lt;/a&gt; led to some interesting discussion over on
-Facebook. Specifically on teaching students to use a debugger. 
-&lt;/p&gt;
-&lt;p&gt;
-My contention is that while it&amp;#39;s easy to demonstrate a debugger it&amp;#39;s
-hard to get student buy in. In my CS0, we start with &lt;a href=&#34;https://thonny.org/&#34;&gt;Thonny&lt;/a&gt; which has
-a great integrated debugger. In my CS1 I also show and use
-gdb. Regardless of my approach the subset of students who actively end
-up using the debugger has remained both constant and small.
-&lt;/p&gt;
-&lt;p&gt;
-A few students will use the debugger in the very early stages to help
-understand basic constructs but fewer will go back to the tool later
-when a real error occurs. One of the difficulties probably relates to
-the fact that it&amp;#39;s hard to present a natural, organic example of using
-a debugger. You either have to force an appropriate error situation or
-you have to wait and hope for the right situation to present itself at
-a good time.
-&lt;/p&gt;
-&lt;p&gt;
-Truth be told, I don&amp;#39;t use debuggers all that much. Mostly, I&amp;#39;ll use
-them in C or C++ to get in the ballpark of where my error is - usually
-via postmortem debugging. 
-&lt;/p&gt;
-&lt;p&gt;
-In any event, while the students should know of the existence and
-power of debugging tools the real skill is how to think about your
-craft.
-&lt;/p&gt;
-&lt;p&gt;
-Whether one uses a debugger or print statements the questions are
-really: 
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-what problem is the student trying to solve - do they understand it?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-How are they solving it?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-What specifically are they telling their program to do? 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-That last one is important. I always tell my students that &amp;#34;Computers
-are really bad at doing what you want them to do but they&amp;#39;re really
-good at what you tell them to do!&amp;#34; 
-&lt;/p&gt;
-&lt;p&gt;
-Here are some errors that I&amp;#39;ve seen stump kids time and time again:
-&lt;/p&gt;
-&lt;p&gt;
-A typical intro to recursion problem is the Fibonacci numbers. The
-recursive definition gives:
-&lt;/p&gt;
-&lt;p&gt;
-\[
-f(n) = \left\{
-\begin{array}{ll}
-1 &amp;amp; if x \leq 2 \\
-f(n-1) + f(n-2) &amp;amp; otherwise
-\end{array}
-\right.
-\]
-&lt;/p&gt;
-&lt;p&gt;
-This translates directly to code
-&lt;/p&gt;
-&lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-See the problem?
-&lt;/p&gt;
-&lt;p&gt;
-I see this at least a couple of times a year. 
-&lt;/p&gt;
-&lt;p&gt;
-The student writes &lt;code&gt;(n-1) + (n-2)&lt;/code&gt; instead of &lt;code&gt;f(n-1) + f(n-2)&lt;/code&gt;. In
-fact, when they read off their code they&amp;#39;re more likely than not to
-say it correctly - the brain autocorrects. It&amp;#39;s just when you read an
-essay with a glaring mistake over and over. A debugger might bring
-attention to this but then so can careful code tracing. This is a time
-that rubber duck debugging can also be effective. Another good
-strategy would be to just take a break and come back with fresh eyes.
-&lt;/p&gt;
-&lt;p&gt;
-Another one is when students are starting to work with loops and
-arrays. I&amp;#39;ve seen all sorts of variations on the error so will only
-share one. Suppose the students are looking for the largest in a data
-set. I might see code like this:
-&lt;/p&gt;
-&lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Once again, the student will usually describe the algorithm correctly
-but their code is comparing adjacent elements not each element against
-a &amp;#34;source of truth.&amp;#34; The computer is doing what they told it to do not
-what they want it to do.
-&lt;/p&gt;
-&lt;p&gt;
-A debugger would probably be more helpful here but again, it all comes
-down to careful analysis of the code. 
-&lt;/p&gt;
-&lt;p&gt;
-In the previous two examples, a debugger could help but the real
-requirement is careful code tracing be it via tool, print statements
-or by hand. Here&amp;#39;s an example where a debugger can really shed some
-light for a beginner. This time in C++:
-&lt;/p&gt;
-&lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-What causes the error isn&amp;#39;t important. What happens is that students
-start to add print statements and ultimately get to the point where a
-print is the very first line of the program and it still outputs
-nothing.
-&lt;/p&gt;
-&lt;p&gt;
-The culprit here is output buffering. &lt;code&gt;cout&lt;/code&gt; is the same as
- &lt;code&gt;System.out.print&lt;/code&gt; - no newline. The output buffers and won&amp;#39;t actually
-appear until you send a &lt;code&gt;\n&lt;/code&gt;. If your program crashes before then you
-won&amp;#39;t see anything. This is why we have &lt;code&gt;cerr&lt;/code&gt; in C++,  &lt;code&gt;stderr&lt;/code&gt; for C
-and &lt;code&gt;System.err&lt;/code&gt; in Java. The error streams are unbuffered and will
- output immediately. Not as good but still effective would be adding a
- newline to the original print statement. 
-&lt;/p&gt;
-&lt;p&gt;
-In any event, this is a case where stepping through with a debugger
-can be truly enlightening. 
-&lt;/p&gt;
-&lt;p&gt;
-Now with all of this, the real key is to carefully consider what
-you&amp;#39;re trying to do and how you end up communicating it in
-program. I&amp;#39;d love to find a way to convince more students of the
-utility of a good toolset that includes debuggers but I&amp;#39;d also just
-love to be more effective in getting them to carefully read and
-analyze their code.
-&lt;/p&gt;
 </description>
     </item>
     
