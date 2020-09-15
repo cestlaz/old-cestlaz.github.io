@@ -6,10 +6,145 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 06:07:26 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 07:09:25 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Quarter Century Courses</title>
+      <link>https://cestlaz.github.io/post/quarter-century-courses/</link>
+      <pubDate>Tue, 15 Sep 2020 07:09:25 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/quarter-century-courses/</guid>
+      <description>&lt;p&gt;
+I was talking in our Curriculum Development class last week about the
+courses I&amp;#39;ve created over the years. From the first computer graphics
+course to the current teacher education courses. JonAlf pointed out
+that we missed an &amp;#34;important&amp;#34; occasion last spring - the twenty fifth
+offering of my computer graphics class at Stuy. I haven&amp;#39;t taught it in
+almost 10 years but it&amp;#39;s been running continuously for a quarter
+century since it first ran back in the mid 90s. Systems will hit that
+mark this year and the intro course I designed a couple of years from
+now.
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s pretty cool.
+&lt;/p&gt;
+&lt;p&gt;
+Looking back at all the courses I&amp;#39;ve designed and taught it&amp;#39;s
+interesting to see what I got right, what I got wrong, and why. Some
+courses evolved slowly over time. The intro course fits that bill. On
+the other hand, Systems had a complete reboot a few years in and has
+been reasonably stable since. Interestingly enough Graphics has
+probably been the most stable over the years. That&amp;#39;s not to say that
+it hasn&amp;#39;t been tweaked here and there but overall, it&amp;#39;s largely the
+same now as it was a quarter century ago. It&amp;#39;s been re-evaluated many
+times but it just turns out that when I was teaching it I felt that it
+was still hitting the right notes and my successor seems to feel
+similarly. 
+&lt;/p&gt;
+&lt;p&gt;
+Funny because graphics was designed with the least thought of all of
+my courses. I probably didn&amp;#39;t feel that way at the time, but it&amp;#39;s
+true. I had only been teaching around 5 year - a beginner at best and
+didn&amp;#39;t really know what I was doing. Even 10 years in you&amp;#39;re still an
+advanced beginner in terms of teaching. Most teachers, if they don&amp;#39;t
+burn out, hit there stride at 15 - 20 and after that become truly
+experienced. 
+&lt;/p&gt;
+&lt;p&gt;
+I basically created graphics because I was teaching 4 APCS/AB classes
+and one geometry and &lt;strong&gt;hated&lt;/strong&gt; grading proofs!!!! I needed to create one
+more CS class. I decided on graphics because I knew I could teach it
+and thought the students might enjoy it. Systems was created using
+similarly deep contemplations. I got better and spent much more time
+and effort designing future courses.
+&lt;/p&gt;
+&lt;p&gt;
+For the graphics class I had a few choices to make but not many. The
+students mostly only knew Pascal from APCS so the language wasn&amp;#39;t an
+issue like it would become later on and since we were working on DOS
+machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
+library like OpenGL. The course basically started with the ability to
+draw a point and then went though: 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines in 3D and 3D transformations
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+polygons (triangles)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A motion description language interpreter (stack and tree based
+shape hierarchies)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lighting and shading
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+ray tracing
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The motion description language piece had an entire unit that was
+really an intro to compilers / interpreters. 
+&lt;/p&gt;
+&lt;p&gt;
+In retrospect, the course really did make sense. It was taught to
+second term seniors so it was a terminal course. It combined the
+programming, algorithms and data structures from APCS, math they
+did in trig, precalc (and baby calc), and a bit of physics. It as also
+project based and they wrote programs that made pretty pictures so
+that helped stave off senioritis. 
+&lt;/p&gt;
+&lt;p&gt;
+While the course has remained largely the same, there has been some
+evolution. When Systems students started learning C we ended up
+supporting that as well in graphics and now the course is more
+language agnostic. We also played with topics and unit length. We
+spend less time on the compiler piece now and treat that more like a
+black box and have at times looked at additional topics like texture
+mapping. There&amp;#39;s also been a good deal of work put in to safety nets
+and scaffolding. When you have a course where the main assessment is
+one BIG semester long project you&amp;#39;ve got to make sure students don&amp;#39;t
+end up falling into a hole they can&amp;#39;t climb out of.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s not a surprise that the first couple of courses I designed -
+graphics and systems were somewhat arbitrary. Graphics turned out to
+be a solid design and just needed some fine tuning but Systems got a
+complete reboot. Over the years, I learned more about curriculum
+design and feel pretty comfortable designing new experiences now. Of
+course, this is thirty years into my career as a teacher. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe I&amp;#39;ll talk about the design of other classes here in the future
+but for now, you can look at one of my first student&amp;#39;s graphics
+project and read about it &lt;a href=&#34;https://cestlaz.github.io/post/class-legends/&#34;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - tools for remote instruction</title>
@@ -4391,88 +4526,6 @@ isn&amp;#39;t taught in a vacuum.
 &lt;p&gt;
 I fear, however that too often we&amp;#39;re paying attention to the intake of
 the pipe and not so much the output.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GitHub as a tool for education</title>
-      <link>https://cestlaz.github.io/posts/sigcse-2017-github-4/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/sigcse-2017-github-4/</guid>
-      <description>&lt;p&gt;
-When I started using git and GitHub with my students it was a natural
-progression having started with started with CVS and then, as
-technology changed moving through Subversion and then Mercurial. It
-was all about using sensible professional software development
-techniques while making it easier for students to submit work and for
-me to evaluate their submissions.
-&lt;/p&gt;
-&lt;p&gt;
-Over time, I found that git and GitHub in fact provided some extra
-support for educators right out of the box.
-&lt;/p&gt;
-&lt;p&gt;
-In my &lt;a href=&#34;http://cestlaz.github.io/posts/sigcse-2017-github-3&#34;&gt;last github post&lt;/a&gt; I talked about using the results of &lt;code&gt;git log&lt;/code&gt;
-and looking at diffs. Both provide ways of seeing what a student did
-and when. The commit log and history make it easier to hold students accountable to working
-through a project and not leavings for the last minute. The diffs make
-it easier to see what&amp;#39;s changed both to see progress and also to help
-support students as they develop their projects.
-&lt;/p&gt;
-&lt;p&gt;
-If you use Emacs, as I do, you can use the &lt;a href=&#34;https://github.com/pidu/git-timemachine&#34;&gt;git timemachine&lt;/a&gt; package
-which does a great job visualizing changes:
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/sigcse-github/timemachine.gif&#34; alt=&#34;/img/sigcse-github/timemachine.gif&#34; title=&#34;/img/sigcse-github/timemachine.gif&#34; align=&#34;center&#34;/&gt;
-&lt;p&gt;
-Other editors might have a similar feature.
-&lt;/p&gt;
-&lt;p&gt;
-The contribution graphs also provide a quick snapshot which shows what
-team members are contributing and when:
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/sigcse-github/githubgraph.png&#34; alt=&#34;/img/sigcse-github/githubgraph.png&#34; title=&#34;/img/sigcse-github/githubgraph.png&#34; align=&#34;center&#34;/&gt;
-&lt;p&gt;
-The punchcard graph is also useful to see when students actually do
-their work.
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/sigcse-github/githubgraph2.png&#34; alt=&#34;/img/sigcse-github/githubgraph2.png&#34; title=&#34;/img/sigcse-github/githubgraph2.png&#34; align=&#34;center&#34;/&gt;
-&lt;p&gt;
-GitHub also make it easy to set up starter code or to have students
-&amp;#34;take over&amp;#34; each others projects by forking.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m very happy using git and GitHub as is but if you want more
-support, check out &lt;a href=&#34;https://classroom.github.com/&#34;&gt;GitHub Classroom&lt;/a&gt;. Had it existed when I started,
-I&amp;#39;d probably have used it but since I had already gotten used to my
-work flows I&amp;#39;ve stuck with raw git and github.
-&lt;/p&gt;
-&lt;p&gt;
-In case you missed the earlier posts describing the process I use to
-introduce github to my classes here they are:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/sigcse-2017-github-1&#34;&gt;Part 1&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/sigcse-2017-github-2&#34;&gt;Part 2&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/sigcse-2017-github-3&#34;&gt;Part 3&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-I&amp;#39;m hoping some of you have found this set of four posts useful or at
-least interesting.
 &lt;/p&gt;
 </description>
     </item>

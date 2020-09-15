@@ -6,10 +6,145 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 11:05:49 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 07:09:25 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Quarter Century Courses</title>
+      <link>https://cestlaz.github.io/post/quarter-century-courses/</link>
+      <pubDate>Tue, 15 Sep 2020 07:09:25 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/quarter-century-courses/</guid>
+      <description>&lt;p&gt;
+I was talking in our Curriculum Development class last week about the
+courses I&amp;#39;ve created over the years. From the first computer graphics
+course to the current teacher education courses. JonAlf pointed out
+that we missed an &amp;#34;important&amp;#34; occasion last spring - the twenty fifth
+offering of my computer graphics class at Stuy. I haven&amp;#39;t taught it in
+almost 10 years but it&amp;#39;s been running continuously for a quarter
+century since it first ran back in the mid 90s. Systems will hit that
+mark this year and the intro course I designed a couple of years from
+now.
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s pretty cool.
+&lt;/p&gt;
+&lt;p&gt;
+Looking back at all the courses I&amp;#39;ve designed and taught it&amp;#39;s
+interesting to see what I got right, what I got wrong, and why. Some
+courses evolved slowly over time. The intro course fits that bill. On
+the other hand, Systems had a complete reboot a few years in and has
+been reasonably stable since. Interestingly enough Graphics has
+probably been the most stable over the years. That&amp;#39;s not to say that
+it hasn&amp;#39;t been tweaked here and there but overall, it&amp;#39;s largely the
+same now as it was a quarter century ago. It&amp;#39;s been re-evaluated many
+times but it just turns out that when I was teaching it I felt that it
+was still hitting the right notes and my successor seems to feel
+similarly. 
+&lt;/p&gt;
+&lt;p&gt;
+Funny because graphics was designed with the least thought of all of
+my courses. I probably didn&amp;#39;t feel that way at the time, but it&amp;#39;s
+true. I had only been teaching around 5 year - a beginner at best and
+didn&amp;#39;t really know what I was doing. Even 10 years in you&amp;#39;re still an
+advanced beginner in terms of teaching. Most teachers, if they don&amp;#39;t
+burn out, hit there stride at 15 - 20 and after that become truly
+experienced. 
+&lt;/p&gt;
+&lt;p&gt;
+I basically created graphics because I was teaching 4 APCS/AB classes
+and one geometry and &lt;strong&gt;hated&lt;/strong&gt; grading proofs!!!! I needed to create one
+more CS class. I decided on graphics because I knew I could teach it
+and thought the students might enjoy it. Systems was created using
+similarly deep contemplations. I got better and spent much more time
+and effort designing future courses.
+&lt;/p&gt;
+&lt;p&gt;
+For the graphics class I had a few choices to make but not many. The
+students mostly only knew Pascal from APCS so the language wasn&amp;#39;t an
+issue like it would become later on and since we were working on DOS
+machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
+library like OpenGL. The course basically started with the ability to
+draw a point and then went though: 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines in 3D and 3D transformations
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+polygons (triangles)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A motion description language interpreter (stack and tree based
+shape hierarchies)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lighting and shading
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+ray tracing
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The motion description language piece had an entire unit that was
+really an intro to compilers / interpreters. 
+&lt;/p&gt;
+&lt;p&gt;
+In retrospect, the course really did make sense. It was taught to
+second term seniors so it was a terminal course. It combined the
+programming, algorithms and data structures from APCS, math they
+did in trig, precalc (and baby calc), and a bit of physics. It as also
+project based and they wrote programs that made pretty pictures so
+that helped stave off senioritis. 
+&lt;/p&gt;
+&lt;p&gt;
+While the course has remained largely the same, there has been some
+evolution. When Systems students started learning C we ended up
+supporting that as well in graphics and now the course is more
+language agnostic. We also played with topics and unit length. We
+spend less time on the compiler piece now and treat that more like a
+black box and have at times looked at additional topics like texture
+mapping. There&amp;#39;s also been a good deal of work put in to safety nets
+and scaffolding. When you have a course where the main assessment is
+one BIG semester long project you&amp;#39;ve got to make sure students don&amp;#39;t
+end up falling into a hole they can&amp;#39;t climb out of.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s not a surprise that the first couple of courses I designed -
+graphics and systems were somewhat arbitrary. Graphics turned out to
+be a solid design and just needed some fine tuning but Systems got a
+complete reboot. Over the years, I learned more about curriculum
+design and feel pretty comfortable designing new experiences now. Of
+course, this is thirty years into my career as a teacher. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe I&amp;#39;ll talk about the design of other classes here in the future
+but for now, you can look at one of my first student&amp;#39;s graphics
+project and read about it &lt;a href=&#34;https://cestlaz.github.io/post/class-legends/&#34;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Multiple Cameras For Remote Teaching</title>
@@ -1103,13 +1238,12 @@ Over on my alumni mailing list JonAlf shared a web site showing off
 what his current students were doing in their computer graphics
 class. Somewhere in the thread, Con replied:
 &lt;/p&gt;
-&lt;p&gt;
-&amp;lt;blockquote&amp;gt;
+
+&lt;blockquote&gt;
 Someone should put up a video of the fabulous and fantastically famous
 hand animation called FINGER.MDL. It dates from a little before my
 time, but stories elevated it to legendary status.
-&amp;lt;/blockquote&amp;gt;
-&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;
 Indeed it had reached legendary status. Other projects over the years
 including Larry&amp;#39;s anatomically correct robot had also risen to
@@ -1194,12 +1328,10 @@ at a computer by the door.
 Jinx walked in again. This time with the school&amp;#39;s chancelor to be
 greeted by:
 &lt;/p&gt;
-&lt;p&gt;
-&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
-src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34;&gt;https://www.youtube.com/embed/Ca_8q3ct6J4&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
-allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
 Once again, a quick about face.
 &lt;/p&gt;
@@ -3743,104 +3875,6 @@ do PD now to get something started but it&amp;#39;s not enough. I wanted my
 kids math teachers to know math and how to teach it. We should demand
 no less from our CS teachers.
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Disclosing Bugs - requiring a project roadmap</title>
-      <link>https://cestlaz.github.io/posts/disclosing-bugs/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/disclosing-bugs/</guid>
-      <description>&lt;p&gt;
-Over on Facebook, a fellow CS educator &lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
-wanted to try with his students this summer: having the students
-pre-disclose bugs when they submit their projects.
-&lt;/p&gt;
-&lt;p&gt;
-The post was asking for any links to &amp;#34;the literature.&amp;#34; I can&amp;#39;t speak
-to that but I I&amp;#39;ve done something similar to what the post was asking
-about so, as per usual, I thought I&amp;#39;d write about it here. It may not
-be &amp;#34;research&amp;#34; but I&amp;#39;m more interested in teacher practices than ivory
-towers anyway so here goes…
-&lt;/p&gt;
-&lt;p&gt;
-At a very basic level, I ask my students to provide a roadmap to any
-project they submit - usually in a readme file. I basically ask:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-How to use the project
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-What&amp;#39;s cool and I should make sure to check out
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-What doesn&amp;#39;t work, where were the sticking points and what&amp;#39;s the
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-status.
-&lt;/p&gt;
-&lt;p&gt;
-I tell my students that when I test the project, I&amp;#39;m not &amp;#34;out to get
-them&amp;#34; and by their telling me how to navigate the project, it makes
-sure I see things in the best possible light. I also tell them that I
-will be more harsh on bugs that they don&amp;#39;t tell me about -
-particularly bugs that only occur some of the time.
-&lt;/p&gt;
-&lt;p&gt;
-I also encourage (and sometimes require) that students maintain a
-changelog in their repo and also sometimes encourage them to have a
-todo list and list of bugs and for longer projects, I expect to see
-these and the readme updated over the course of the project (which
-should always be up to date on &lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4&#34;&gt;GitHub&lt;/a&gt;, Dropbox or wherever the project
-is living).
-&lt;/p&gt;
-&lt;p&gt;
-When the students provide a good write up it makes evaluating the
-project much easier.
-&lt;/p&gt;
-&lt;p&gt;
-When students buy in, they&amp;#39;re hopefully thinking more deeply about
-their projects in terms of design and implementation and also from the
-point of view of someone else using their product. When they maintain
-the readme and other files over time, it also enables me to better
-support them.
-&lt;/p&gt;
-&lt;p&gt;
-So, does this work? Yes but with some caveats. It works better once
-the class and teacher know each other. If the students trust the
-teacher they&amp;#39;re more likely to be open and honest when they write up
-the project. On the other hand, there will always be some students to
-&amp;#34;phone it in&amp;#34; and do the bare minimum in terms of writing up their
-projects.
-&lt;/p&gt;
-&lt;p&gt;
-The bottom line is that having the students do this is has a low cost
-and is beneficial to both the students and the teacher. When it works,
-it&amp;#39;s great and when it doesn&amp;#39;t, it&amp;#39;s still pretty good.
-&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr class=&#34;footnotes-separatator&#34;&gt;
-&lt;div class=&#34;footnote-definitions&#34;&gt;
-&lt;div class=&#34;footnote-definition&#34;&gt;
-&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-I&amp;#39;m not sharing names from the Facebook post because it was
-made in a semi-private forum and I haven&amp;#39;t asked permission.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     

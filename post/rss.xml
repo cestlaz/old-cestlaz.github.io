@@ -6,10 +6,145 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2020 13:03:14 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 07:09:25 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Quarter Century Courses</title>
+      <link>https://cestlaz.github.io/post/quarter-century-courses/</link>
+      <pubDate>Tue, 15 Sep 2020 07:09:25 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/quarter-century-courses/</guid>
+      <description>&lt;p&gt;
+I was talking in our Curriculum Development class last week about the
+courses I&amp;#39;ve created over the years. From the first computer graphics
+course to the current teacher education courses. JonAlf pointed out
+that we missed an &amp;#34;important&amp;#34; occasion last spring - the twenty fifth
+offering of my computer graphics class at Stuy. I haven&amp;#39;t taught it in
+almost 10 years but it&amp;#39;s been running continuously for a quarter
+century since it first ran back in the mid 90s. Systems will hit that
+mark this year and the intro course I designed a couple of years from
+now.
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s pretty cool.
+&lt;/p&gt;
+&lt;p&gt;
+Looking back at all the courses I&amp;#39;ve designed and taught it&amp;#39;s
+interesting to see what I got right, what I got wrong, and why. Some
+courses evolved slowly over time. The intro course fits that bill. On
+the other hand, Systems had a complete reboot a few years in and has
+been reasonably stable since. Interestingly enough Graphics has
+probably been the most stable over the years. That&amp;#39;s not to say that
+it hasn&amp;#39;t been tweaked here and there but overall, it&amp;#39;s largely the
+same now as it was a quarter century ago. It&amp;#39;s been re-evaluated many
+times but it just turns out that when I was teaching it I felt that it
+was still hitting the right notes and my successor seems to feel
+similarly. 
+&lt;/p&gt;
+&lt;p&gt;
+Funny because graphics was designed with the least thought of all of
+my courses. I probably didn&amp;#39;t feel that way at the time, but it&amp;#39;s
+true. I had only been teaching around 5 year - a beginner at best and
+didn&amp;#39;t really know what I was doing. Even 10 years in you&amp;#39;re still an
+advanced beginner in terms of teaching. Most teachers, if they don&amp;#39;t
+burn out, hit there stride at 15 - 20 and after that become truly
+experienced. 
+&lt;/p&gt;
+&lt;p&gt;
+I basically created graphics because I was teaching 4 APCS/AB classes
+and one geometry and &lt;strong&gt;hated&lt;/strong&gt; grading proofs!!!! I needed to create one
+more CS class. I decided on graphics because I knew I could teach it
+and thought the students might enjoy it. Systems was created using
+similarly deep contemplations. I got better and spent much more time
+and effort designing future courses.
+&lt;/p&gt;
+&lt;p&gt;
+For the graphics class I had a few choices to make but not many. The
+students mostly only knew Pascal from APCS so the language wasn&amp;#39;t an
+issue like it would become later on and since we were working on DOS
+machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
+library like OpenGL. The course basically started with the ability to
+draw a point and then went though: 
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lines in 3D and 3D transformations
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+polygons (triangles)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+A motion description language interpreter (stack and tree based
+shape hierarchies)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+lighting and shading
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+ray tracing
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The motion description language piece had an entire unit that was
+really an intro to compilers / interpreters. 
+&lt;/p&gt;
+&lt;p&gt;
+In retrospect, the course really did make sense. It was taught to
+second term seniors so it was a terminal course. It combined the
+programming, algorithms and data structures from APCS, math they
+did in trig, precalc (and baby calc), and a bit of physics. It as also
+project based and they wrote programs that made pretty pictures so
+that helped stave off senioritis. 
+&lt;/p&gt;
+&lt;p&gt;
+While the course has remained largely the same, there has been some
+evolution. When Systems students started learning C we ended up
+supporting that as well in graphics and now the course is more
+language agnostic. We also played with topics and unit length. We
+spend less time on the compiler piece now and treat that more like a
+black box and have at times looked at additional topics like texture
+mapping. There&amp;#39;s also been a good deal of work put in to safety nets
+and scaffolding. When you have a course where the main assessment is
+one BIG semester long project you&amp;#39;ve got to make sure students don&amp;#39;t
+end up falling into a hole they can&amp;#39;t climb out of.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s not a surprise that the first couple of courses I designed -
+graphics and systems were somewhat arbitrary. Graphics turned out to
+be a solid design and just needed some fine tuning but Systems got a
+complete reboot. Over the years, I learned more about curriculum
+design and feel pretty comfortable designing new experiences now. Of
+course, this is thirty years into my career as a teacher. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe I&amp;#39;ll talk about the design of other classes here in the future
+but for now, you can look at one of my first student&amp;#39;s graphics
+project and read about it &lt;a href=&#34;https://cestlaz.github.io/post/class-legends/&#34;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 74 Eglot</title>
@@ -2639,7 +2774,7 @@ exciting announcements or events.
 Read the tweet below for instructions:
 &lt;/p&gt;
 &lt;p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;NEWS: The NYC &lt;a href=&#34;https://twitter.com/csteachersorg?ref_src=twsrc%5Etfw&#34;&gt;@csteachersorg&lt;/a&gt; chapter is moving platforms from Meetup to CSTA&amp;#39;s membership site!&lt;br&gt;&lt;br&gt;1. Join CSTA at &lt;a href=&#34;https://t.co/ze7ix0491W&#34;&gt;https://t.co/ze7ix0491W&lt;/a&gt;&lt;br&gt;2. Select &amp;quot;CSTA NYC&amp;quot; in the Member Area&lt;a href=&#34;https://twitter.com/hashtag/cs4allnyc?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#cs4allnyc&lt;/a&gt; &lt;a href=&#34;https://twitter.com/diane_levitt?ref_src=twsrc%5Etfw&#34;&gt;@diane_levitt&lt;/a&gt; &lt;a href=&#34;https://twitter.com/csnyc?ref_src=twsrc%5Etfw&#34;&gt;@csnyc&lt;/a&gt; &lt;a href=&#34;https://twitter.com/CSforAllNYC?ref_src=twsrc%5Etfw&#34;&gt;@CSforAllNYC&lt;/a&gt; &lt;a href=&#34;https://twitter.com/UpperlineCode?ref_src=twsrc%5Etfw&#34;&gt;@UpperlineCode&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ed_saber?ref_src=twsrc%5Etfw&#34;&gt;@ed_saber&lt;/a&gt; &lt;a href=&#34;https://twitter.com/learningdrive?ref_src=twsrc%5Etfw&#34;&gt;@learningdrive&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ronsummersnyc?ref_src=twsrc%5Etfw&#34;&gt;@ronsummersnyc&lt;/a&gt; &lt;a href=&#34;https://t.co/5KBHeErZPT&#34;&gt;pic.twitter.com/5KBHeErZPT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tom O&amp;#39;Connell 🏳️‍🌈 (@mrtomocon) &lt;a href=&#34;https://twitter.com/mrtomocon/status/1273276485638504455?ref_src=twsrc%5Etfw&#34;&gt;June 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;NEWS: The NYC &lt;a href=&#34;https://twitter.com/csteachersorg?ref_src=twsrc%5Etfw&#34;&gt;@csteachersorg&lt;/a&gt; chapter is moving platforms from Meetup to CSTA&amp;#39;s membership site!&lt;br&gt;&lt;br&gt;1. Join CSTA at &lt;a href=&#34;https://t.co/ze7ix0491W&#34;&gt;https://t.co/ze7ix0491W&lt;/a&gt;&lt;br&gt;2. Select &amp;quot;CSTA NYC&amp;quot; in the Member Area&lt;a href=&#34;https://twitter.com/hashtag/cs4allnyc?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#cs4allnyc&lt;/a&gt; &lt;a href=&#34;https://twitter.com/diane_levitt?ref_src=twsrc%5Etfw&#34;&gt;@diane_levitt&lt;/a&gt; &lt;a href=&#34;https://twitter.com/csnyc?ref_src=twsrc%5Etfw&#34;&gt;@csnyc&lt;/a&gt; &lt;a href=&#34;https://twitter.com/CSforAllNYC?ref_src=twsrc%5Etfw&#34;&gt;@CSforAllNYC&lt;/a&gt; &lt;a href=&#34;https://twitter.com/UpperlineCode?ref_src=twsrc%5Etfw&#34;&gt;@UpperlineCode&lt;/a&gt; @ed_saber &lt;a href=&#34;https://twitter.com/learningdrive?ref_src=twsrc%5Etfw&#34;&gt;@learningdrive&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ronsummersnyc?ref_src=twsrc%5Etfw&#34;&gt;@ronsummersnyc&lt;/a&gt; &lt;a href=&#34;https://t.co/5KBHeErZPT&#34;&gt;pic.twitter.com/5KBHeErZPT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tom O&amp;#39;Connell 🏳️‍🌈 (@mrtomocon) &lt;a href=&#34;https://twitter.com/mrtomocon/status/1273276485638504455?ref_src=twsrc%5Etfw&#34;&gt;June 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;/p&gt;
@@ -3835,75 +3970,6 @@ source alternatives offered by Zoom, Microsoft, and Google.
 Next, well look at another platform  that&amp;#39;s based on BBB that adds
 some very cool features for CS Teachers.
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Emacs 72 - Customizing Elfeed</title>
-      <link>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</link>
-      <pubDate>Thu, 21 May 2020 14:47:59 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/</guid>
-      <description>&lt;p&gt;
-I made this video write after I made the &lt;a href=&#34;https://cestlaz.github.io/post/using-emacs-71-openwith/&#34;&gt;openwith&lt;/a&gt; one so even though
-I don&amp;#39;t mention anything in this video, I wanted to share some updates
-on dired and openwith.
-&lt;/p&gt;
-&lt;p&gt;
-I got a lot of suggestions on alternate ways to achieve the workflow I
-was seeking - being able to open a file using an external viewer. One
-person noted that under newer versions of Emacs, the &lt;code&gt;W&lt;/code&gt; key is bound
-to the command &lt;code&gt;(browse-url-of-dired-file)&lt;/code&gt; which does exactly what I
-wanted. Problem solved with no customizing or extra packages. 
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s a good thing I got a solution when I did - I needed it. I&amp;#39;ve been
-reviewing applications for my new Teacher Certification program. It&amp;#39;s
-a 21 credit graduate program that results in participants receiving a
-brand spanking new New York State Computer Science teaching
-license. The applications consist of a bunch of files incuding PDFs,
-images (photos), doc and text files and source code samples. I&amp;#39;ve got
-all the applications in a Google drive which I&amp;#39;ve downloaded and now I
-can just drop into dired and go through each directory, hit &lt;code&gt;enter&lt;/code&gt; for
-source code and it&amp;#39;s loaded in an Emacs buffer and &lt;code&gt;W&lt;/code&gt; for everything
-else.
-&lt;/p&gt;
-&lt;p&gt;
-Now for today&amp;#39;s video. It&amp;#39;s about a small customization I made to the
-elfeed RSS reader. It&amp;#39;s also about the advantages and limitations of
-Emacs built in documentation. I&amp;#39;m not particularly strong in elisp -
-I&amp;#39;m a dabbler at best but even so, using Emac&amp;#39;s built in help I was
-able to get to elisp code that was very close to what I wanted to do
-and then customize it. It also looks at the limitations - there still
-some code that I looked at that I have no clue as to what it does.
-&lt;/p&gt;
-&lt;p&gt;
-Specifically, elfeed lets you open a link in an external brower by
-hitting &lt;code&gt;b&lt;/code&gt;. That&amp;#39;s how I like reading most of my feeds. I&amp;#39;ll scroll
-up and down and hit &lt;code&gt;b&lt;/code&gt; for what I want to read. The trouble is that
-when you hit &lt;code&gt;b&lt;/code&gt; focus goes to the browser and at the same time,
-elfeed marks the entry as read and advances. I want it not to mark as
-read. After I made the video, I decided I also didn&amp;#39;t want elfeed to
-advance to the next story. 
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s what I did.
-&lt;/p&gt;
-&lt;p&gt;
-I went in to elfeed and instead of typing &lt;code&gt;b&lt;/code&gt; on an entry, I ran
-&lt;code&gt;(describe-key&lt;/code&gt;)~ which is bound to &lt;code&gt;C-h k&lt;/code&gt;. I then typed &lt;code&gt;b&lt;/code&gt; which
-revealed that it ran &lt;code&gt;elfeed-search-browse-url&lt;/code&gt;. I followed the
-hyperlinks in the help to open &lt;code&gt;elfeed-search.el&lt;/code&gt; and found the
-function. From there I just copied it over to my Emacs config, tweaked
-it and voila, problem solved.
-&lt;/p&gt;
-&lt;p&gt;
-The video has all the details. Enjoy.
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
-src=&#34;https://www.youtube.com/embed/G1NGNR40lB4&#34; frameborder=&#34;0&#34;
-allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
