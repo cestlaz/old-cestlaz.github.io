@@ -6,10 +6,65 @@
     <description>C&#39;est la Z (productivity)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2020 13:03:14 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 13:17:41 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/productivity/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 75 - Bufler</title>
+      <link>https://cestlaz.github.io/post/using-emacs-75-bufler/</link>
+      <pubDate>Tue, 22 Sep 2020 13:17:41 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-75-bufler/</guid>
+      <description>&lt;p&gt;
+Quick Emacs hit today.
+&lt;/p&gt;
+&lt;p&gt;
+After my last video, I received a comment noting that I was using
+ibuffer and that there was another package I might want to consider -
+&lt;a href=&#34;https://github.com/alphapapa/bufler.el&#34;&gt;bufler&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+I started with basic ibuffer and then started to &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/&#34;&gt;customize it&lt;/a&gt; to group
+buffers but that was always somewhat finicky. More often than not I
+couldn&amp;#39;t tune it the way I wanted. Most recently, I started using
+&lt;a href=&#34;https://github.com/purcell/ibuffer-projectile&#34;&gt;ibuffer-projectile&lt;/a&gt; which group projects for me but lost the other
+customizations. In any event, I was more or less happy with things.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/alphapapa/bufler.el&#34;&gt;Bufler&lt;/a&gt; though looks to be a nice alternative. Out of the box it looks
+like it groups things pretty well and has a nice Emacs &lt;a href=&#34;https://github.com/abo-abo/hydra&#34;&gt;hydra&lt;/a&gt; that you
+can bring up with &lt;code&gt;?&lt;/code&gt; to remind you how to do things like kill one or
+more buffers.  
+&lt;/p&gt;
+&lt;p&gt;
+Right now, I&amp;#39;m using it as an ibuffer replacement but it also has its
+own version of switch buffer that I plan to play with as well. 
+&lt;/p&gt;
+&lt;p&gt;
+The only knit I&amp;#39;ve found thus far is that when you run bufler, it
+splits the window and lists the buffers in the new space. If I&amp;#39;m using
+ibuffer I want it to use the whole Emacs frame. Otherwise I just use
+ivy-switch-buffer (or now bufler-switch-buffer). I couldn&amp;#39;t figure out
+a way built in so ended up writing a small function: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
+  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
+  (bufler-list)
+  (delete-other-windows)
+
+)
+
+(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Check out the video for more details.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 74 Eglot</title>

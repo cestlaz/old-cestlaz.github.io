@@ -6,10 +6,65 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2020 14:01:23 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 13:17:41 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 75 - Bufler</title>
+      <link>https://cestlaz.github.io/post/using-emacs-75-bufler/</link>
+      <pubDate>Tue, 22 Sep 2020 13:17:41 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-75-bufler/</guid>
+      <description>&lt;p&gt;
+Quick Emacs hit today.
+&lt;/p&gt;
+&lt;p&gt;
+After my last video, I received a comment noting that I was using
+ibuffer and that there was another package I might want to consider -
+&lt;a href=&#34;https://github.com/alphapapa/bufler.el&#34;&gt;bufler&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+I started with basic ibuffer and then started to &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/&#34;&gt;customize it&lt;/a&gt; to group
+buffers but that was always somewhat finicky. More often than not I
+couldn&amp;#39;t tune it the way I wanted. Most recently, I started using
+&lt;a href=&#34;https://github.com/purcell/ibuffer-projectile&#34;&gt;ibuffer-projectile&lt;/a&gt; which group projects for me but lost the other
+customizations. In any event, I was more or less happy with things.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/alphapapa/bufler.el&#34;&gt;Bufler&lt;/a&gt; though looks to be a nice alternative. Out of the box it looks
+like it groups things pretty well and has a nice Emacs &lt;a href=&#34;https://github.com/abo-abo/hydra&#34;&gt;hydra&lt;/a&gt; that you
+can bring up with &lt;code&gt;?&lt;/code&gt; to remind you how to do things like kill one or
+more buffers.  
+&lt;/p&gt;
+&lt;p&gt;
+Right now, I&amp;#39;m using it as an ibuffer replacement but it also has its
+own version of switch buffer that I plan to play with as well. 
+&lt;/p&gt;
+&lt;p&gt;
+The only knit I&amp;#39;ve found thus far is that when you run bufler, it
+splits the window and lists the buffers in the new space. If I&amp;#39;m using
+ibuffer I want it to use the whole Emacs frame. Otherwise I just use
+ivy-switch-buffer (or now bufler-switch-buffer). I couldn&amp;#39;t figure out
+a way built in so ended up writing a small function: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
+  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
+  (bufler-list)
+  (delete-other-windows)
+
+)
+
+(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Check out the video for more details.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Zulip - maybe the answer for class communication</title>
@@ -3714,154 +3769,6 @@ I don&amp;#39;t have any inspirational message here or any real answers. The
 work goes on. I&amp;#39;ll continue my work in public education try to support
 my students and understand them and their challenges more and more and
 try to be a better ally to those less privileged than I. 
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pro Version Or Education Version</title>
-      <link>https://cestlaz.github.io/post/pro-version-or-ed-version/</link>
-      <pubDate>Fri, 29 May 2020 19:00:13 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/pro-version-or-ed-version/</guid>
-      <description>&lt;p&gt;
-I woke up to this tweet by Mark Guzdial today:#pro-version-or
-ed-version.org#
-&lt;/p&gt;
-  &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;An indication
-that CS Ed in US high schools is about vocational training: 2 (of 5)
-recommended sessions at the &lt;a
-href=&#34;https://twitter.com/csteachersorg?ref_src=twsrc%5Etfw&#34;&gt;@csteachersorg&lt;/a&gt;
-conference are on Github and Agile. Is &lt;a
-href=&#34;https://twitter.com/CSforALL?ref_src=twsrc%5Etfw&#34;&gt;@CSforAll&lt;/a&gt;
-a Silicon Valley jobs program? &lt;a
-href=&#34;https://t.co/n8ugnmTU84&#34;&gt;https://t.co/n8ugnmTU84&lt;/a&gt;&lt;/p&gt;&amp;mdash;
-Mark Guzdial (@guzdial) &lt;a
-href=&#34;https://twitter.com/guzdial/status/1265986599952822272?ref_src=twsrc%5Etfw&#34;&gt;May
-28, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async
-src=&#34;https://platform.twitter.com/widgets.js&#34;
-charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-This led to a lively discussion throughout the day with lots of likes
-and lots of comments. Two themes emerged. One wondered if the CSTA
-conference should be highlighting these talks about professional
-sensibilities and the other questioned the use of tools designed for
-industry vs those designed for schools.
-&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s look at the former first. For full disclosure JonAlf and I are
-co-presenters of the GitHub session that was highlighted. Truth be
-told I had no idea it was highlighted until I read Mark&amp;#39;s tweet
-:-). CSTA is a conference for teachers, K12 teachers. Teachers go
-to learn new practices. Sure there are sessions about advocacy and
-the like but
-it&amp;#39;s really more like a multi day professional development session on
-steroids. That&amp;#39;s one of the things that makes it so wonderful. If a
-session gives teachers something of value it&amp;#39;s worth presenting. It
-can be what they teach, how they teach, or something ancillary to
-teaching even things as mundane as gradebook management. If it helps
-make a CS teacher better, it&amp;#39;s appropriate to include. 
-&lt;/p&gt;
-&lt;p&gt;
-I can&amp;#39;t say why any particular session was chosen for highlight
-but it really isn&amp;#39;t a big deal. There are always sessions on specific lesson
-ideas, cross curricular stuff, ethics, standards, equity, CS4All,
-APCS, and lots lots more. 
-&lt;/p&gt;
-&lt;p&gt;
-Now, what I&amp;#39;d like to see would be a banner on the conference page
-where every time you go there it displays a random assortment of
-sessions that are being offered. 
-&lt;/p&gt;
-&lt;p&gt;
-What about the second point - professional tools or educational ones. First
-let&amp;#39;s lump things together, git is a tool, so is GitHub. Same for
-agile - it&amp;#39;s a tools as are programming languages. Now a great
-craftsman is a great craftsman but their job is a whole lot easier
-with a full chest of quality tools. 
-&lt;/p&gt;
-&lt;p&gt;
-If a professional tool makes a teacher better it&amp;#39;s worth learning. 
-&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s look at agile. I&amp;#39;ve never used terms like scrum or sprint in my
-class but pair programming comes out of agile and that&amp;#39;s become a
-mainstay of CS classes. Same thing for the short development cycle and
-all the testing. These are agile concepts that we take for granted as
-education tools. Are we going to use everything about agile in every
-CS class? No. Does it belong in CS when CS is embedded in other
-subject areas? Who knows but if a teacher gets exposed to it at CSTA
-then they can make an informed decision and use it when and as
-appropriate. 
-&lt;/p&gt;
-&lt;p&gt;
-What about git/GitHub? I wouldn&amp;#39;t teach using it when CS is embedded
-but I might in a HS programming course and I certainly would in APCS-A
-or beyond. I&amp;#39;ve found that there are many positives of using them and
-I&amp;#39;ve written about it before on this blog. 
-&lt;/p&gt;
-&lt;p&gt;
-The truth is that both git and agile provide ways of increasing
-student communication and collaboration and these are good things.
-&lt;/p&gt;
-&lt;p&gt;
-Even if I decided that my classes shouldn&amp;#39;t use git, I&amp;#39;d still use it
-for my web presence and to distribute materials and that too makes it
-worth learning.
-&lt;/p&gt;
-&lt;p&gt;
-Just because a tool came from industry it&amp;#39;s not
-necessarily bad and if it came fro education it&amp;#39;s not necessarily
-good. 
-&lt;/p&gt;
-&lt;p&gt;
-Thonny is a beginner Python IDE. It was designed specifically to be a
-learner environment. It&amp;#39;s great for that. Eclipse is a professional
-IDE and I hate it for education. Other people disagree with me on both
-counts.
-&lt;/p&gt;
-&lt;p&gt;
-On the other hand I&amp;#39;ve seen tools written by people in education that
-are god awful.
-&lt;/p&gt;
-&lt;p&gt;
-Then you also have well designed education tools but they fill a
-narrow niche - they&amp;#39;re so specialize that a teacher and student can
-only use them in a specific case. A teacher then needs to find
-multiple tools for their multiple classes and students need to learn
-even more.
-&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s assume we have a bunch of these educational tools and their all
-pretty well designed and help students get to whatever it is they&amp;#39;re
-supposed to learn. Taken individually each tool seems great but taken
-as a whole? Where&amp;#39;s the line? Is it better to have the teacher learn
-and support a handful of these and students learn even more or should
-they spend more time/efforn to learn one or two tools where the tool
-will beuseful beyond the narrow scope of the specialized one.
-&lt;/p&gt;
-&lt;p&gt;
-The answer is of course, it depends.
-&lt;/p&gt;
-&lt;p&gt;
-I was part of a workshop this past summer and this came up. We were
-looking at a pretty sweet specialized tool that worked really well for
-one niche area. We also looked at Google Sheets which were less
-intuitive but more versatile and universal. Which to use? We never
-came up with a compelling answer either way. 
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s nothing inherently bad about industry tools and there&amp;#39;s
-nothing inherently good about educational ones. It&amp;#39;s true that
-industry tools are designed for industry but education tools are by
-and large not designed by teachers. They might be designed by people
-who teach as part of their job or who have taught but that&amp;#39;s not the
-same thing. Sometimes they hit but sometimes they miss their mark.
-&lt;/p&gt;
-&lt;p&gt;
-In math class we would typically draw arcs and circles on the board
-with a giant chalk compass. It was specifically designed for
-education. You know what works better? A shoelace.
 &lt;/p&gt;
 </description>
     </item>
