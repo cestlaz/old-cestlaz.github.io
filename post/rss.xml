@@ -6,10 +6,54 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 20:36:01 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 13:41:22 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 76 Bookmarks and Burly</title>
+      <link>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</link>
+      <pubDate>Fri, 23 Oct 2020 13:41:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</guid>
+      <description>&lt;p&gt;
+I read a post on &lt;a href=&#34;https://www.reddit.com/r/emacs/&#34;&gt;/r/emacs&lt;/a&gt; the other day asking if people used Emacs
+bookmarks among other things. I thought about it for a bit and
+wondered why I didn&amp;#39;t use Bookmarks? I did set a few bindings to load
+frequently used files and those are like bookmarks but I have to set
+those up in my configuration. It turns out that Emacs bookmarks are
+pretty easy and effective and work right out of the box. I cover the
+basics in the video and you can also check the documentation &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+In the video I mention that the bookmark bindings are part of the
+bindings used for registers which also include rectangles. If you&amp;#39;re
+interested in those aspects you can find out all about registers by
+viewing &lt;a href=&#34;https://www.youtube.com/watch?v=u1YoF4ycLTY&#34;&gt;this nice video&lt;/a&gt; by Prot and I cover rectangle editing &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-28-rectangles/&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+I also noticed another post on /r/emacs about &lt;a href=&#34;https://github.com/alphapapa/burly.el&#34;&gt;burly&lt;/a&gt; - a package for
+managing windows and their associated buffers. It&amp;#39;s pretty cool. In
+the video I confused myself and thought it might be mapping the
+buffers to windows wrong but that was just me confusing myself. 
+&lt;/p&gt;
+&lt;p&gt;
+Burly uses bookmarks to store the configurations which is cool and it
+was much easier for me to get my head around it than other
+solutions. Burly&amp;#39;s install instructions use &lt;a href=&#34;https://github.com/quelpa/quelpa&#34;&gt;quelpa&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/quelpa/quelpa-use-package&#34;&gt;quelpa-use-package&lt;/a&gt; so now it looks like I&amp;#39;ll have to figure those out
+as well :-).
+&lt;/p&gt;
+&lt;p&gt;
+The run through is all in the video.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/JVFnaQVNEE0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>53 trips around the sun</title>
@@ -3503,101 +3547,6 @@ next few posts.
 &lt;p&gt;
 Hopefully I&amp;#39;ll be able to get everything working again sooner rather
 than later.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Supporting Our Students</title>
-      <link>https://cestlaz.github.io/post/supporting-our-students/</link>
-      <pubDate>Fri, 12 Jun 2020 12:22:26 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/supporting-our-students/</guid>
-      <description>&lt;p&gt;
-Austin Cory Bart put together a great &lt;a href=&#34;https://acbart.github.io//2020/06/10/race-in-cs1/&#34;&gt;post&lt;/a&gt; about supporting Black
-students in CS1. Cory asked about this on the SIGCSE mailing list and
-in his post he both breaks things down and shares all the resources
-that he compiled from the ensuing discussion. 
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s a lot of good stuff both in the post and in the links but
-there&amp;#39;s a lot to get lost in. As teachers we can sometimes affect
-change at a department or school level but we can always make a
-difference in our classes and with our students.
-&lt;/p&gt;
-&lt;p&gt;
-I titled this post &amp;#34;Supporting Our Students&amp;#34; and not &amp;#34;Supporting Black
-Students.&amp;#34; I&amp;#39;m certainly &lt;strong&gt;not&lt;/strong&gt; pulling any all lives matter BS but
-rather reflecting back on something that shaped my approach with my
-students and started to open my eyes and that specific experience for
-me was an all students experience.
-&lt;/p&gt;
-&lt;p&gt;
-I cut my teach at Seward Park High School down on the Lower East
-Side. It was a high poverty school and a very diverse one. I had
-top flight honors students, criminal thugs, druggies, sweet kids whom
-the system failed and everything else you can imagine. The main groups
-were classified back then as Chinese and Hispanic and then Black then
-White but within those groups there were subdivisions. Shortly before
-I got the gig the school had brokered an in school truce between the
-factions of Chinese gangs and while the term of the day was
-Hispanic the students were from a variety of places.
-&lt;/p&gt;
-&lt;p&gt;
-One day I was talking to a guidance counselor in the hall. We didn&amp;#39;t
-know each other - I shanghaied her in another conversation - I had
-something to ask. She said &amp;#34;wait - you&amp;#39;re Zamansky right?&amp;#34; Yep. &amp;#34;I was
-wondering who you were, all the students want to be in your class.&amp;#34; I
-was confused. I wasn&amp;#39;t super popular - I was just in about a year and
-a half. I also wasn&amp;#39;t so good. I&amp;#39;d rate myself as an above average
-very raw young teacher but that&amp;#39;s about it. She explained that I was
-one of the only teachers where students from all the population groups
-wanted to be in my class. The Hispanic students, for instance all
-wanted to be in Pablo Chang&amp;#39;s math class, the Chinese in another
-teachers but apparently I appealed to everyone equally. 
-&lt;/p&gt;
-&lt;p&gt;
-I started to think about why that might be the case and it got me
-thinking about what I had learned in my short time teaching. Prior to
-teaching I led a pretty sheltered life. I went to public school up
-until college and had a pretty diverse group of friends but as a kid
-you can be pretty oblivious to economic and race related
-differences. As an adult I went to a private college, NYU, and started off
-at Goldman Sachs. Not exactly a recipe for awareness. I quickly
-realized that not all kids learned the same, thought the same and
-going further, lived the same.
-&lt;/p&gt;
-&lt;p&gt;
-It taught me that it&amp;#39;s not merely about talking to your students, it&amp;#39;s
-about listening to them. Given time and the chance, they&amp;#39;ll open up
-and you&amp;#39;ll learn about their challenges. When it seems there giving
-you a song and dance, don&amp;#39;t assume they&amp;#39;re trying to pull a fast
-one. Give them the benefit of the doubt. You&amp;#39;ll get burned now and
-again by a kid taking advantage but things have a way of coming clean
-and if you don&amp;#39;t give the kid the benefit of the doubt you can
-irreparably harm your relationship. Trust is key in
-education.  Besides I&amp;#39;ve been burned way more by giving the benefit of
-the doubt to people professionally than as a teacher and at the end of
-the day I&amp;#39;d rather lose sleep angry over being taken advantage of than
-lose sleep feeling guilty for damaging my relationship with a student
-for the wrong reasons.
-&lt;/p&gt;
-&lt;p&gt;
-If you treat your students like people - young people but  people
-nonetheless and earnestly listen and try to learn from them and learn
-about them that&amp;#39;s your guide. I&amp;#39;m not saying I&amp;#39;m particularly good at
-helping my kids - I&amp;#39;m your stereotypical socially awkward computer
-geek but the more I listened the more I understood the individual
-issues my students had to deal with. My Black students, my immigrant
-students, my poor students and all the rest. Sure there were common
-themes but every one has a unique story.
-&lt;/p&gt;
-&lt;p&gt;
-While we teach our assorted subjects to our students really at the end
-of the day more so than teaching any specific computer science I hope
-to be a force for good in their lives and their development as
-people. The best way I can do that is to listen, try to learn, try to
-understand and then try to help and support.
 &lt;/p&gt;
 </description>
     </item>

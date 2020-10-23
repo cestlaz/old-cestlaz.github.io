@@ -6,10 +6,54 @@
     <description>C&#39;est la Z (emacs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2020 13:17:41 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 13:41:22 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/emacs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 76 Bookmarks and Burly</title>
+      <link>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</link>
+      <pubDate>Fri, 23 Oct 2020 13:41:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</guid>
+      <description>&lt;p&gt;
+I read a post on &lt;a href=&#34;https://www.reddit.com/r/emacs/&#34;&gt;/r/emacs&lt;/a&gt; the other day asking if people used Emacs
+bookmarks among other things. I thought about it for a bit and
+wondered why I didn&amp;#39;t use Bookmarks? I did set a few bindings to load
+frequently used files and those are like bookmarks but I have to set
+those up in my configuration. It turns out that Emacs bookmarks are
+pretty easy and effective and work right out of the box. I cover the
+basics in the video and you can also check the documentation &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+In the video I mention that the bookmark bindings are part of the
+bindings used for registers which also include rectangles. If you&amp;#39;re
+interested in those aspects you can find out all about registers by
+viewing &lt;a href=&#34;https://www.youtube.com/watch?v=u1YoF4ycLTY&#34;&gt;this nice video&lt;/a&gt; by Prot and I cover rectangle editing &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-28-rectangles/&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+I also noticed another post on /r/emacs about &lt;a href=&#34;https://github.com/alphapapa/burly.el&#34;&gt;burly&lt;/a&gt; - a package for
+managing windows and their associated buffers. It&amp;#39;s pretty cool. In
+the video I confused myself and thought it might be mapping the
+buffers to windows wrong but that was just me confusing myself. 
+&lt;/p&gt;
+&lt;p&gt;
+Burly uses bookmarks to store the configurations which is cool and it
+was much easier for me to get my head around it than other
+solutions. Burly&amp;#39;s install instructions use &lt;a href=&#34;https://github.com/quelpa/quelpa&#34;&gt;quelpa&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/quelpa/quelpa-use-package&#34;&gt;quelpa-use-package&lt;/a&gt; so now it looks like I&amp;#39;ll have to figure those out
+as well :-).
+&lt;/p&gt;
+&lt;p&gt;
+The run through is all in the video.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/JVFnaQVNEE0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 75 - Bufler</title>
@@ -1761,7 +1805,7 @@ Link to current configuration: &lt;a href=&#34;https://github.com/zamansky/using
 &lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-27-shell&#34;&gt;Video 27 - Shell and eshell&lt;/a&gt;
 &lt;/h3&gt;
 &lt;h3 id=&#34;headline-30&#34;&gt;
-&lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-27-rectangles&#34;&gt;Video 28 - Rectangles&lt;/a&gt;
+&lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-28-rectangles&#34;&gt;Video 28 - Rectangles&lt;/a&gt;
 &lt;/h3&gt;
 &lt;h3 id=&#34;headline-31&#34;&gt;
 &lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-29-elfeed&#34;&gt;Video 29 - elfeed 1 &lt;/a&gt;
@@ -1903,6 +1947,9 @@ Link to current configuration: &lt;a href=&#34;https://github.com/zamansky/using
 &lt;/h3&gt;
 &lt;h3 id=&#34;headline-77&#34;&gt;
 &lt;a href=&#34;https://cestlaz.github.io/post/using-emacs-75-bufler&#34;&gt;Video 75 - bufler&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id=&#34;headline-78&#34;&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly&#34;&gt;Video 75 - Bookmarks and Burly&lt;/a&gt;
 &lt;/h3&gt;
 </description>
     </item>
