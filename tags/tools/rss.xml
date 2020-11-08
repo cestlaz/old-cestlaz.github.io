@@ -6,54 +6,10 @@
     <description>C&#39;est la Z (tools)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2020 13:41:22 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 13:17:41 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
-    
-    <item>
-      <title>Using Emacs 76 Bookmarks and Burly</title>
-      <link>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</link>
-      <pubDate>Fri, 23 Oct 2020 13:41:22 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</guid>
-      <description>&lt;p&gt;
-I read a post on &lt;a href=&#34;https://www.reddit.com/r/emacs/&#34;&gt;/r/emacs&lt;/a&gt; the other day asking if people used Emacs
-bookmarks among other things. I thought about it for a bit and
-wondered why I didn&amp;#39;t use Bookmarks? I did set a few bindings to load
-frequently used files and those are like bookmarks but I have to set
-those up in my configuration. It turns out that Emacs bookmarks are
-pretty easy and effective and work right out of the box. I cover the
-basics in the video and you can also check the documentation &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html&#34;&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-In the video I mention that the bookmark bindings are part of the
-bindings used for registers which also include rectangles. If you&amp;#39;re
-interested in those aspects you can find out all about registers by
-viewing &lt;a href=&#34;https://www.youtube.com/watch?v=u1YoF4ycLTY&#34;&gt;this nice video&lt;/a&gt; by Prot and I cover rectangle editing &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-28-rectangles/&#34;&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-I also noticed another post on /r/emacs about &lt;a href=&#34;https://github.com/alphapapa/burly.el&#34;&gt;burly&lt;/a&gt; - a package for
-managing windows and their associated buffers. It&amp;#39;s pretty cool. In
-the video I confused myself and thought it might be mapping the
-buffers to windows wrong but that was just me confusing myself. 
-&lt;/p&gt;
-&lt;p&gt;
-Burly uses bookmarks to store the configurations which is cool and it
-was much easier for me to get my head around it than other
-solutions. Burly&amp;#39;s install instructions use &lt;a href=&#34;https://github.com/quelpa/quelpa&#34;&gt;quelpa&lt;/a&gt; and
-&lt;a href=&#34;https://github.com/quelpa/quelpa-use-package&#34;&gt;quelpa-use-package&lt;/a&gt; so now it looks like I&amp;#39;ll have to figure those out
-as well :-).
-&lt;/p&gt;
-&lt;p&gt;
-The run through is all in the video.
-&lt;/p&gt;
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/JVFnaQVNEE0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
     
     <item>
       <title>Using Emacs 75 - Bufler</title>
@@ -4040,6 +3996,44 @@ dropplet and SyncThing.
 Enjoy!
 &lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wus8R1TWYZ4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs Episode 52 - Eyebrowse</title>
+      <link>https://cestlaz.github.io/post/using-emacs-52-eyebrowse/</link>
+      <pubDate>Tue, 30 Oct 2018 14:35:15 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-52-eyebrowse/</guid>
+      <description>&lt;p&gt;
+I was originally going to do a video on how I set things up so that I
+get an email every morning with my org-mode agenda but that&amp;#39;s going to
+be something of an ordeal. I have to create a droploet on Digital
+Ocean, set up SyncThing and a mail server and lots of other things.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll get to that video at some point but in the meantime I saw &lt;a href=&#34;https://www.reddit.com/r/emacs/comments/9rvboq/what_emacs_packages_have_upped_your_game_recently/&#34;&gt;this
+thread&lt;/a&gt; on the Emacs subreddit.
+&lt;/p&gt;
+&lt;p&gt;
+It asked about packages people used to &amp;#34;up their Emacs game.&amp;#34; I&amp;#39;ve
+done videos on some of the packages mentioned and there were some
+packages that I&amp;#39;d never heard of that I now have to check out. 
+&lt;/p&gt;
+&lt;p&gt;
+One of the packages, &lt;a href=&#34;https://github.com/wasamasa/eyebrowse&#34;&gt;eyebrowse&lt;/a&gt; was one that I&amp;#39;ve been meaning to play
+with for a while. Eyebrowse allows you to easily keep track of
+window/buffer configurations. It&amp;#39;s pretty easy and pretty cool.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s a quick video overview:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
+src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/s6IXj0bS7L8&#34;&gt;https://www.youtube.com/embed/s6IXj0bS7L8&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
+allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
 </description>
     </item>
     

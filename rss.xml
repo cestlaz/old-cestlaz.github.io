@@ -6,52 +6,235 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2020 13:41:22 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 06:56:55 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
     
     <item>
-      <title>Using Emacs 76 Bookmarks and Burly</title>
-      <link>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</link>
-      <pubDate>Fri, 23 Oct 2020 13:41:22 -0400</pubDate>
+      <title>Election Thoughts - feeling hope but still concerned</title>
+      <link>https://cestlaz.github.io/post/election-thoughts/</link>
+      <pubDate>Sun, 08 Nov 2020 06:56:55 -0400</pubDate>
       
-      <guid>https://cestlaz.github.io/post/using-emacs-76-bookmarks-burly/</guid>
-      <description>&lt;p&gt;
-I read a post on &lt;a href=&#34;https://www.reddit.com/r/emacs/&#34;&gt;/r/emacs&lt;/a&gt; the other day asking if people used Emacs
-bookmarks among other things. I thought about it for a bit and
-wondered why I didn&amp;#39;t use Bookmarks? I did set a few bindings to load
-frequently used files and those are like bookmarks but I have to set
-those up in my configuration. It turns out that Emacs bookmarks are
-pretty easy and effective and work right out of the box. I cover the
-basics in the video and you can also check the documentation &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html&#34;&gt;here&lt;/a&gt;. 
+      <guid>https://cestlaz.github.io/post/election-thoughts/</guid>
+      <description>
+&lt;p&gt;
+I don&amp;#39;t usually talk  politics on this blog but it is the news of the
+day. We truly are at a turning point in this country and we should all
+be concerned with the road we take.
 &lt;/p&gt;
 &lt;p&gt;
-In the video I mention that the bookmark bindings are part of the
-bindings used for registers which also include rectangles. If you&amp;#39;re
-interested in those aspects you can find out all about registers by
-viewing &lt;a href=&#34;https://www.youtube.com/watch?v=u1YoF4ycLTY&#34;&gt;this nice video&lt;/a&gt; by Prot and I cover rectangle editing &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-28-rectangles/&#34;&gt;here&lt;/a&gt;. 
+Yesterday the media outlets called the election for Biden/Harris. It&amp;#39;s
+not over but I thought this would be as good a time as any to share
+some thoughts and more importantly concerns.
 &lt;/p&gt;
 &lt;p&gt;
-I also noticed another post on /r/emacs about &lt;a href=&#34;https://github.com/alphapapa/burly.el&#34;&gt;burly&lt;/a&gt; - a package for
-managing windows and their associated buffers. It&amp;#39;s pretty cool. In
-the video I confused myself and thought it might be mapping the
-buffers to windows wrong but that was just me confusing myself. 
+Let&amp;#39;s look at some of the bad that we&amp;#39;ve got to pay attention to
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+The Bad
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+70,000,000  voted for Trump.
 &lt;/p&gt;
 &lt;p&gt;
-Burly uses bookmarks to store the configurations which is cool and it
-was much easier for me to get my head around it than other
-solutions. Burly&amp;#39;s install instructions use &lt;a href=&#34;https://github.com/quelpa/quelpa&#34;&gt;quelpa&lt;/a&gt; and
-&lt;a href=&#34;https://github.com/quelpa/quelpa-use-package&#34;&gt;quelpa-use-package&lt;/a&gt; so now it looks like I&amp;#39;ll have to figure those out
-as well :-).
+That should be both sobering and
+frightening. Some of these are rich selfish people, some are racist,
+some brainwashed by Fox and AM talk radio but there&amp;#39;s also a huge
+undercurrent of lack of decency.  
 &lt;/p&gt;
 &lt;p&gt;
-The run through is all in the video.
+Trump has time and again shown these traits: bullying, ignorance,
+protectionism, isolationism, ignorance, compulsive lying, misogyny,
+divisiveness, racism and white supremacy.
 &lt;/p&gt;
 &lt;p&gt;
-Enjoy.
+A vote for Trump says that none of those were disqualifiers. A Trump
+voter may fancy themselves not racist but are fine with a racist as
+the American President.
 &lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/JVFnaQVNEE0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+This should be very concerning. 
+&lt;/p&gt;
+&lt;p&gt;
+Can we educate this group? Bring them over? We should not and can
+not just all be friends and pretend nothing ever happened. If I&amp;#39;ve
+got a friend who has any of the above traits I hope that I&amp;#39;d try to
+bring them over from the dark side but our friendship would be over
+if they just doubled down as Trump and Trump supporters have done
+time and agian.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Republicans leaders haven&amp;#39;t congratulated Biden/Harris
+&lt;/p&gt;
+&lt;p&gt;
+Republican leadership has shown no indication of recognizing or
+wanting to work with our new Presiden. How will the Democrats react?
+Will they &amp;#34;reach across the aisle&amp;#34; only to be burned again? This
+would be a HUGE mistake. Sure, now is the time to extend the olive
+branch but come January, if the republicans still want to go
+scorched earth the Democrats must respond. 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It ain&amp;#39;t over til it&amp;#39;s over
+&lt;/p&gt;
+&lt;p&gt;
+Trumps team &lt;strong&gt;and&lt;/strong&gt; the GOP are still forging ahead to contest the
+election and some GOP leaders are telling states to forgo the will
+of the people and quite simply give the election to Trump. Even if
+this doesn&amp;#39;t happen this should terrify you. Even if all goes well
+and we move on to a Biden/Harris presidency, these GOP leaders are
+still in power and they&amp;#39;ve shown their true selves.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+The Democrats still refuse to learn
+&lt;/p&gt;
+&lt;p&gt;
+I thought Biden&amp;#39;s speech was great last night. He hit all the right
+notes but let&amp;#39;s see what the party actually does.
+&lt;/p&gt;
+&lt;p&gt;
+Right after the election I saw tweets from Democratic candidates
+attacking the progressive wing of the party yet to my knowledge all
+the candidates that actively campaigned on progressive issues
+won. It wast he old school Democrats (that is, the ones who are
+really 1980s republicans with better social positions) that had
+difficulties. It certainly appears that most Americans want police
+reform, health care that&amp;#39;s not contingent on employment or being
+independently wealthy and I do dare say most don&amp;#39;t want to destroy
+the planet. 
+&lt;/p&gt;
+&lt;p&gt;
+If the Democrats continue to ignore the future, ignore the working
+and middle class, address income inequity and the aforementioned
+progressive line items we&amp;#39;ll be back where we were in 2016 before
+you know it.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Low turnout
+&lt;/p&gt;
+&lt;p&gt;
+Finally, on the bad side, even though the past few presidential
+elections have had record highs for voter turnout we&amp;#39;re still under
+50% which is just sad. We have to both address the GOP&amp;#39;s repeated
+attempts to disenfranchise voters and get more people to the polls.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+The eh
+&lt;/h2&gt;
+&lt;p&gt;
+Senate is still up in the air but it doesn&amp;#39;t look like the Republicans
+will lose control. It&amp;#39;s bad but I can&amp;#39;t say it&amp;#39;s a failure. It&amp;#39;s
+certainly bad that Kentucky keeps sending McConnell to the Senate with
+him possibly doing more damage than even trump but not a surprise. The
+Democrats shouldn&amp;#39;t have lost seats in the house  but I haven&amp;#39;t dug
+into those races carefully enough to say anything.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+The Good
+&lt;/h2&gt;
+&lt;p&gt;
+Fortunately, there&amp;#39;s some good as well.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+close to 75,000 voted for Biden/Harris
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s millions more than voted for Trump and they got support from
+all corners. This is terrific. Biden wasn&amp;#39;t my first choice nor was
+Harris but both have grown on me and it looks like a broad coalition 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Blue wave?
+&lt;/p&gt;
+&lt;p&gt;
+While it may not seem like there was a blue wave, maybe there
+was. Taking the senate was probably not a realistic goal and there&amp;#39;s
+still a chance. You could say the Democrats lost some seats but
+instead of comparing 2020 to the midterms, compare 2020 to 2016 when
+the Republicans held the house. This plus looking at the states that
+went or still could go Biden? Maybe there was a blue wave afterall.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The world response
+&lt;/p&gt;
+&lt;p&gt;
+Certainly seems like our allies are happy with the results.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+We have a first dog
+&lt;/p&gt;
+&lt;p&gt;
+Nuff said.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The response of the American people.
+&lt;/p&gt;
+&lt;p&gt;
+Parties in the streets all across the country. In New York, the
+party started with the announcement and kept going through the
+evening. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve &lt;strong&gt;never&lt;/strong&gt; seen anything like this before. Not even when Obama was
+elected. I saw tweets talking about how this is the behavior you see
+when dictators are overthrown. Well, there you have it.
+&lt;/p&gt;
+&lt;p&gt;
+This outpouring of emotion and relief never seen in our lifetime in
+America This says a lot about where we are and where we were.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+What&amp;#39;s next?
+&lt;/h2&gt;
+&lt;p&gt;
+That&amp;#39;s the question. 
+&lt;/p&gt;
+&lt;p&gt;
+If the parties don&amp;#39;t change nothing&amp;#39;s going to change and the parties
+aren&amp;#39;t going to change unless the people force them to change. Groups
+like &lt;a href=&#34;https://brandnewcongress.org/&#34;&gt;Brand New Congress&lt;/a&gt; are a start but we&amp;#39;ve all got to be active
+supporting candidates (or running), calling out injustice, using our
+position and platforms for those that can&amp;#39;t.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s been a rough four years and a super stressful election
+season. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m still concerned about this election and very concerned
+about our future but for the first time in a while I&amp;#39;m also hopeful. 
+&lt;/p&gt;
+&lt;p&gt;
+Just remember though, hope without action won&amp;#39;t take us from hope to
+reality.
+&lt;/p&gt;
 </description>
     </item>
     
