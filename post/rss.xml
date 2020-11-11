@@ -6,10 +6,118 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 06:56:55 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2020 13:31:21 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Language choices for APCS</title>
+      <link>https://cestlaz.github.io/post/apcs-languages/</link>
+      <pubDate>Wed, 11 Nov 2020 13:31:21 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/apcs-languages/</guid>
+      <description>&lt;p&gt;
+Over on Facebook the semi-regular &amp;#34;is APCS-A going to Python&amp;#34; once
+again appeared. I&amp;#39;m not going to get into Python vs Java. Each language giveth and
+each language taketh away but it got me thinking about the history of
+language changes.
+&lt;/p&gt;
+&lt;p&gt;
+I titled this &amp;#34;Language choices for APCS&amp;#34; not APCS-A because back in
+the day it was just APCS. At some point that split with APCS-A being similar
+to what we have today and APCS-A being that plus a CS2 (data
+structures) class. Finally after 2009, APCS-AB was dropped due to low
+participation, I mean, my school represented 10% of the total test
+takers - that&amp;#39;s nuts - 10% from one school.
+&lt;/p&gt;
+&lt;p&gt;
+I took the exam during the first administration in 1984 and taught
+APCS-AB from 1991 I think up until I left Stuy.
+&lt;/p&gt;
+&lt;p&gt;
+Originally, APCS was in Pascal. Back then, the course guide said that
+they intended for the exam to become language agnostic but that never
+happened. Instead we went to C++ in 2000 and then to Java in 2004.
+&lt;/p&gt;
+&lt;p&gt;
+Now, I don&amp;#39;t have any inside information here. I&amp;#39;ve never been in on
+any internal meetings so this is all just conjecture but I think it&amp;#39;s
+interesting food for thought. 
+&lt;/p&gt;
+&lt;p&gt;
+Back in 1984, schools were transitioning from either no
+computers or Commodore PETS to Apple IIs. At Stuy, where I was a
+student, the teacher had a single copy of a Pascal compiler on a
+floppy disk and he made copies - one for each computer in the lab. Not
+too much concern about piracy here. 
+&lt;/p&gt;
+&lt;p&gt;
+As we approached 2000 when APCS switched to C++ the knocks on Pascal
+were: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+It&amp;#39;s a teaching language 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+You can&amp;#39;t have programs that were more than one file. 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It wasn&amp;#39;t Object Oriented witch had gained a lot of steam over the
+decade. 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+The first item was also mentioned as a strength and item 2 really
+wasn&amp;#39;t an issue in terms of what most people taught. In any event, the
+College Board decided on a change. 
+&lt;/p&gt;
+&lt;p&gt;
+I started thinking about why C++ over Pascal? I know that C++ was the
+hot industry language at the time and to be honest, I don&amp;#39;t remember
+what other languages might have also been viable. I did think though
+about one big factor in C++&amp;#39;s favor. By this time schools were moving
+to IBM PCs and C++ had a really big hidden value - the existence of
+Turbo C++. A C++ compiler and IDE that ran on the IBM PC and was
+cheap. Prior to Turbo Pascal and Turbo C/C++ schools didn&amp;#39;t have the
+ability to cheaply compile programs and certainly students who were
+fortunate enough to have computers certainly couldn&amp;#39;t afford a
+compiler. 
+&lt;/p&gt;
+&lt;p&gt;
+I have no idea if this factored into the decision but I think the
+economics and the fact that compilers and development environments
+were just not that available back then are an interesting bit of
+history.
+&lt;/p&gt;
+&lt;p&gt;
+What about the next change? C++ to Java in 2004. By then I had moved
+Stuy over to Linux but most schools were still on Windows. By this
+time there were more affordable and even free compiler choices so I&amp;#39;m
+guessing school economics didn&amp;#39;t have to enter the decision. What
+probably did was the fact that APCS-A participants were stagnant and
+APCS-AB were declining. One might conjecture that the complexity of
+C++ had something to do with this. While Pascal also had memory
+management C++ memory management is more complicated and less
+forgiving. Also, since C++ is really a multimodal with &amp;#34;many ways to
+do it&amp;#34; it was probably much harder for both students and teachers,
+many of whom didn&amp;#39;t have a CS background. Java was the hot up and
+comer, was not multi-modal but was indeed object oriented, and really
+is a much simpler language. 
+&lt;/p&gt;
+&lt;p&gt;
+Now, as I said, I have no idea what was discussed internally at the
+college board but I think it&amp;#39;s interesting to think about the history.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Election Thoughts - feeling hope but still concerned</title>
@@ -3697,45 +3805,6 @@ have to clean up from older posts but at least the site is workable now.
 Check out the video for a walkthrough:
 &lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OcR-Ke2CiPo&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Time For A New Theme</title>
-      <link>https://cestlaz.github.io/post/time-for-a-new-theme/</link>
-      <pubDate>Sat, 13 Jun 2020 09:03:05 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/time-for-a-new-theme/</guid>
-      <description>&lt;p&gt;
-While setting up my &lt;a href=&#34;https://cestlaz.github.io/post/pinebook-update/&#34;&gt;Pinebook Pro&lt;/a&gt; I wanted to make sure I could write
-blog posts. &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; installed and ran no problem but I switched to
-Hugo in April 2020 back when it was version .49 or something like
-that. Now it&amp;#39;s up to .73. It turns out there have been a few
-changes. First, I set up my blog with two directories for posts. One
-for the posts I wrote originally in Jekyll and one for the ones I
-wrote for Hugo. I had to make a few changes to get that to work with
-the new version.
-&lt;/p&gt;
-&lt;p&gt;
-I also discovered that my archive page no longer works under the
-current version of Hugo. As I poked around a little more, it turns out
-that HTML embedding changed so I&amp;#39;m going to have to tweak all my Emacs
-posts as well as posts where I embed tweets or other content.
-&lt;/p&gt;
-&lt;p&gt;
-All of this is to say that some or maybe many of my older posts will
-be wonky until I can get around to fixing them. 
-&lt;/p&gt;
-&lt;p&gt;
-Rather than figuring out how to fix them under my current blog theme I
-figured it was also a good time to explore a new Hugo theme so don&amp;#39;t
-be surprised if the overall look here changes a few times over the
-next few posts.
-&lt;/p&gt;
-&lt;p&gt;
-Hopefully I&amp;#39;ll be able to get everything working again sooner rather
-than later.
-&lt;/p&gt;
 </description>
     </item>
     
