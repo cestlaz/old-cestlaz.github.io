@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1606336169" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1606765918" />
 
 
 
@@ -113,9 +113,9 @@ superior in any way, it&#39;s just what I ended up writing).
 <p>
 I make use of tuple destructuring:
 </p>
-<div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
-</div>
+<p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)</code></pre></div>
+</p>
 <p>
 which assigns <strong><strong>x</strong></strong> to the first item in the tuple and <strong><strong>y</strong></strong> the
 second. I used that a number of times
@@ -124,9 +124,9 @@ second. I used that a number of times
 I also use a list  I call <strong><strong>dirs</strong></strong> to hold dx and dy values for the
 four direcitons:
 </p>
-<div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
-</div>
+<p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dirs<span style="color:#f92672">=</span>[(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>),(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>),(<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>),(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)]</code></pre></div>
+</p>
 <p>
 This made it easier to to update the location based on the 4
 directions. I could also have just used if statements.
@@ -134,9 +134,56 @@ directions. I could also have just used if statements.
 <p>
 Here&#39;s all the code:
 </p>
-<div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
-</div>
+<p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>) <span style="color:#75715e"># assume our starting location is 0,0</span>
+
+<span style="color:#75715e"># we start with d=0 -&gt; facing north</span>
+<span style="color:#75715e"># as we turn left or right, we can just increment or decrement d</span>
+<span style="color:#75715e"># and dirs[d] will give us the appropriate dx and dy to update</span>
+<span style="color:#75715e"># our locatoin for the next step</span>
+dirs<span style="color:#f92672">=</span>[(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>),(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>),(<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>),(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)]
+d<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># This is only needed for part 2  - We track visited locations</span>
+<span style="color:#75715e"># by adding them to the dictionary. If we try to add a location</span>
+<span style="color:#75715e"># that&#39;s already been visited we know that we&#39;ve found our final</span>
+<span style="color:#75715e"># location</span>
+<span style="color:#75715e"># locs={}  # uncomment this line for part 2</span>
+
+
+totalsteps<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> l:
+
+<span style="color:#75715e"># the first char in i is the direction to turn in (L or R)</span>
+<span style="color:#75715e"># the rest represents the number of steps.</span>
+dir<span style="color:#f92672">=</span>i[<span style="color:#ae81ff">0</span>]
+steps<span style="color:#f92672">=</span>int(i[<span style="color:#ae81ff">1</span>:])
+
+<span style="color:#66d9ef">if</span> dir<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;L&#34;</span>:
+d <span style="color:#f92672">=</span> (d<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">4</span>
+<span style="color:#66d9ef">else</span>:
+d <span style="color:#f92672">=</span> (d<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">4</span>
+(dx,dy) <span style="color:#f92672">=</span> dirs[d]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(steps):
+(x,y) <span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> dx, y <span style="color:#f92672">+</span> dy)
+totalsteps<span style="color:#f92672">=</span>totalsteps<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+
+<span style="color:#75715e"># Uncomment this block for part 2</span>
+<span style="color:#75715e"># each time we have a new location, see if it&#39;s already in</span>
+<span style="color:#75715e"># locs, if it isn&#39;t, add it.</span>
+<span style="color:#75715e"># if it is, we&#39;re visiting somewhere twice so we&#39;re done.</span>
+<span style="color:#75715e">#if ((x,y) not in locs):</span>
+<span style="color:#75715e">#    locs[(x,y)]=1</span>
+<span style="color:#75715e">#else:</span>
+<span style="color:#75715e">#    print((x,y))</span>
+<span style="color:#75715e">#    print(abs(x)+abs(y)) # the answer</span>
+<span style="color:#75715e">#    sys.exit(0)</span>
+<span style="color:#75715e">#    break</span>
+
+
+<span style="color:#66d9ef">print</span>(x,y)
+<span style="color:#66d9ef">print</span>(abs(x)<span style="color:#f92672">+</span>abs(y)) <span style="color:#75715e"># the answer</span></code></pre></div>
+</p>
 <p>
 Overall, a nice little problem for beginning and intermediate
 students.

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Advent of Code 2020 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1606765918" />
+
+
+
+<meta property="og:title" content="Advent of Code 2020" />
+<meta property="og:description" content="Tomorrow, or more practically, tonight at Midnight, Eric Wastl will once again launch the Advent of Code. As I&#39;ve written before, it&#39;s a month long event where each day a new programming problem is released. The problems range in difficulty and complexity. Some are very approachable to beginners and some are crazy challenging. I&#39;ve written a bunch about AOC in past years:    Solve A to Solve B    Data structures and Hidden Complexity    Tools can shape- how we think    2019 day 1    2019 day 2    2019 day 3    2019 day 4    2019 day 8    2019 day 8 addendum    and a few more not listed." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-leadin/" />
+<meta property="article:published_time" content="2020-11-30T14:21:17-04:00" />
+<meta property="article:modified_time" content="2020-11-30T14:21:17-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent of Code 2020"/>
+<meta name="twitter:description" content="Tomorrow, or more practically, tonight at Midnight, Eric Wastl will once again launch the Advent of Code. As I&#39;ve written before, it&#39;s a month long event where each day a new programming problem is released. The problems range in difficulty and complexity. Some are very approachable to beginners and some are crazy challenging. I&#39;ve written a bunch about AOC in past years:    Solve A to Solve B    Data structures and Hidden Complexity    Tools can shape- how we think    2019 day 1    2019 day 2    2019 day 3    2019 day 4    2019 day 8    2019 day 8 addendum    and a few more not listed."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Advent of Code 2020</h1>
+        </header>
+        <div class="content">
+            <p>
+Tomorrow, or more practically, tonight at Midnight,  <a href="https://twitter.com/ericwastl">Eric Wastl</a> will
+once again launch the <a href="https://adventofcode.com">Advent of Code</a>. As I&#39;ve written before, it&#39;s a
+month long event where each day a new programming problem is
+released. The problems range in difficulty and complexity. Some are
+very approachable to beginners and some are crazy challenging. I&#39;ve
+written a bunch about AOC in past years:
+</p>
+<ul>
+<li>
+<p>
+<a href="https://cestlaz.github.io/post/solve-a-to-solve-b/">Solve A to Solve B</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/">Data structures and Hidden Complexity</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://cestlaz.github.io/posts/advent-2017-4-6/">Tools can shape- how we think</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day1/">2019 day 1</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day2/">2019 day 2</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day3/">2019 day 3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day4/">2019 day 4</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day8/">2019 day 8</a>
+</p>
+</li>
+<li>
+<p>
+<a href="/post/advent-2019-day8-part2/">2019 day 8 addendum</a>
+</p>
+</li>
+</ul>
+<p>
+and a few more not listed.
+</p>
+<p>
+If you haven&#39;t heard of AOC, at the stroke of midnight (Eastern), a
+new problem is released. From there you can read the problem, get the
+input and figure out a solution, usually by writing a program. You
+then type in your answer and if it&#39;s correct you get part 2 - usually
+a creative spin on part one. Usually you&#39;ll write a program to solve
+the problems but sometimes you&#39;ll write code just to explore and come
+up with an answer. 
+</p>
+<p>
+Even though there&#39;s a leader board and people can set up their own
+private leader boards, I describe AOC as an event not as a
+competition. I&#39;ve had former students up near the top but a getting
+there requires a lot more than just problem solving. First, you have
+to be up when the problem is released, then you have to shortcut scan
+what the question is asking. Having a library of pre-written utility
+routines is a big help as is using a language that has a lot of
+interactive scripty functionality like Python. It also assumes that
+even if you do all that is needed, that life doesn&#39;t get in the
+way. This means that to get to the top of the leader board, like in
+most competitions you have to train and prepare to do just that and
+training for that doesn&#39;t really translate to the rest of life&#39;s
+challenges.
+</p>
+<p>
+Solving the problems, though, can translate to other challenges you
+might face so I look at AOC as an opportunity to explore some
+interesting problems. 
+</p>
+<p>
+I&#39;ve never finished all of them and that&#39;s okay. Here&#39;s my star count
+for each of the years. You get one star for each part of each question
+so that&#39;s 50 total.
+</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Year:</strong></td>
+<td class="align-right">2015</td>
+<td class="align-right">2016</td>
+<td class="align-right">2017</td>
+<td class="align-right">2018</td>
+<td class="align-right">2019</td>
+</tr>
+<tr>
+<td><strong>Stars:</strong></td>
+<td class="align-right">26</td>
+<td class="align-right">40</td>
+<td class="align-right">11</td>
+<td class="align-right">23</td>
+<td class="align-right">31</td>
+</tr>
+</tbody>
+</table>
+<p>
+I&#39;ve never gotten more than 40. I typically wake up and read the
+question and see if I can solve it either then or over the course of
+the day. Sometimes I&#39;ll come back to a problem but usually not. Last
+year, many problems were based on earlier ones. I had an issue in one
+of those earlier solutions so never completed the later ones. 
+</p>
+<p>
+Maybe I&#39;ll go back and finish more, maybe I won&#39;t.
+</p>
+<p>
+None of this matters. 
+</p>
+<p>
+I had fun, learned a lot and as an added bonus, each problem gives me
+an opportunity to reflect on how I might teach it or teach concepts
+related to it.
+</p>
+<p>
+It all starts in a few hours so if you&#39;re already planning on
+participating, have a blast. If you haven&#39;t, check it out.
+</p>
+<p>
+Advent of code can be found here: <a href="https://adventofcode.combination">https://adventofcode.combination</a>
+</p>
+<p>
+And, the AOC subreddit, which is great for problem discussions can be
+found here: <a href="https://www.reddit.com/r/adventofcode/">https://www.reddit.com/r/adventofcode/</a>
+</p>
+<p>
+Enjoy. 
+</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-11-30</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/aoc">aoc</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#advent of code</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/aoc">#aoc</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming">#programming</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2020<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

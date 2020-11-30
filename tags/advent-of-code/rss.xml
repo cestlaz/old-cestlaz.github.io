@@ -6,10 +6,163 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Dec 2019 17:19:27 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 14:21:17 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent of Code 2020</title>
+      <link>https://cestlaz.github.io/post/advent-2020-leadin/</link>
+      <pubDate>Mon, 30 Nov 2020 14:21:17 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-leadin/</guid>
+      <description>&lt;p&gt;
+Tomorrow, or more practically, tonight at Midnight,  &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt; will
+once again launch the &lt;a href=&#34;https://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt;. As I&amp;#39;ve written before, it&amp;#39;s a
+month long event where each day a new programming problem is
+released. The problems range in difficulty and complexity. Some are
+very approachable to beginners and some are crazy challenging. I&amp;#39;ve
+written a bunch about AOC in past years:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve A to Solve B&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape- how we think&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day1/&#34;&gt;2019 day 1&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day2/&#34;&gt;2019 day 2&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day3/&#34;&gt;2019 day 3&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day4/&#34;&gt;2019 day 4&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8/&#34;&gt;2019 day 8&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8-part2/&#34;&gt;2019 day 8 addendum&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+and a few more not listed.
+&lt;/p&gt;
+&lt;p&gt;
+If you haven&amp;#39;t heard of AOC, at the stroke of midnight (Eastern), a
+new problem is released. From there you can read the problem, get the
+input and figure out a solution, usually by writing a program. You
+then type in your answer and if it&amp;#39;s correct you get part 2 - usually
+a creative spin on part one. Usually you&amp;#39;ll write a program to solve
+the problems but sometimes you&amp;#39;ll write code just to explore and come
+up with an answer. 
+&lt;/p&gt;
+&lt;p&gt;
+Even though there&amp;#39;s a leader board and people can set up their own
+private leader boards, I describe AOC as an event not as a
+competition. I&amp;#39;ve had former students up near the top but a getting
+there requires a lot more than just problem solving. First, you have
+to be up when the problem is released, then you have to shortcut scan
+what the question is asking. Having a library of pre-written utility
+routines is a big help as is using a language that has a lot of
+interactive scripty functionality like Python. It also assumes that
+even if you do all that is needed, that life doesn&amp;#39;t get in the
+way. This means that to get to the top of the leader board, like in
+most competitions you have to train and prepare to do just that and
+training for that doesn&amp;#39;t really translate to the rest of life&amp;#39;s
+challenges.
+&lt;/p&gt;
+&lt;p&gt;
+Solving the problems, though, can translate to other challenges you
+might face so I look at AOC as an opportunity to explore some
+interesting problems. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve never finished all of them and that&amp;#39;s okay. Here&amp;#39;s my star count
+for each of the years. You get one star for each part of each question
+so that&amp;#39;s 50 total.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Year:&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2015&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2016&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2017&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2018&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2019&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Stars:&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;26&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;40&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;11&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;23&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+I&amp;#39;ve never gotten more than 40. I typically wake up and read the
+question and see if I can solve it either then or over the course of
+the day. Sometimes I&amp;#39;ll come back to a problem but usually not. Last
+year, many problems were based on earlier ones. I had an issue in one
+of those earlier solutions so never completed the later ones. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe I&amp;#39;ll go back and finish more, maybe I won&amp;#39;t.
+&lt;/p&gt;
+&lt;p&gt;
+None of this matters. 
+&lt;/p&gt;
+&lt;p&gt;
+I had fun, learned a lot and as an added bonus, each problem gives me
+an opportunity to reflect on how I might teach it or teach concepts
+related to it.
+&lt;/p&gt;
+&lt;p&gt;
+It all starts in a few hours so if you&amp;#39;re already planning on
+participating, have a blast. If you haven&amp;#39;t, check it out.
+&lt;/p&gt;
+&lt;p&gt;
+Advent of code can be found here: &lt;a href=&#34;https://adventofcode.combination&#34;&gt;https://adventofcode.combination&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+And, the AOC subreddit, which is great for problem discussions can be
+found here: &lt;a href=&#34;https://www.reddit.com/r/adventofcode/&#34;&gt;https://www.reddit.com/r/adventofcode/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy. 
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Multi Stage Assignments - the good and the bad - Advent of Code</title>
@@ -125,7 +278,7 @@ minutes on &lt;a href=&#34;https://adventofcode.com/2019/day/20&#34;&gt;day 20&l
       
       <guid>https://cestlaz.github.io/post/advent-2019-day8-part2/</guid>
       <description>&lt;p&gt;
-As I sad in my &lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8/&#34;&gt;last post&lt;/a&gt;, &lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;day 8&lt;/a&gt; would be a nice project or lesson in
+As I said in my &lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8/&#34;&gt;last post&lt;/a&gt;, &lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;day 8&lt;/a&gt; would be a nice project or lesson in
 an APCS-A or college CS1 class. Another nice problem would be to
 write a program to generate an image in the format required by the
 question. Alternatively, a teacher doing day 8 with their classes
@@ -751,22 +904,41 @@ access structure like an array.
 &lt;/p&gt;
 &lt;p&gt;
 Step 1 is to read in the data and convert it into a list of integers.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
 &lt;p&gt;
 If you don&amp;#39;t know comprehensions you can just do something like this:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;):
+      data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(int(item))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Now we just have to run the simulation:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-pythonf&#34; data-lang=&#34;pythonf&#34;&gt;def run_program(program):
+    ip = 0
+    while True:
+        op = program[ip]
+        if op == 99:
+            break
+        a = program[ program[ip+1] ]
+        b = program[ program[ip+2] ]
+        dest = program[ip+3]
+        if op == 1:
+            program[dest] =  a + b
+        else:
+            program[dest] = a * b
+        ip = ip + 4
+    return program[0]
+
+def part1(program):
+    program[1]=12
+    program[2]=2
+    return run_program((program))&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
 &lt;p&gt;
 The most likely source of error here is forgetting to change the
 values in &lt;code&gt;program[1]&lt;/code&gt; and &lt;code&gt;program[2]&lt;/code&gt; in lines 18 and 19 as
@@ -797,15 +969,59 @@ This is a great platform for discussion. Students usually start with
 having the list change can seem weird even though it can still be pass
 by value:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# bad example to follow&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;change_list&lt;/span&gt;(l):
+      l[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9999&lt;/span&gt;
+
+  l&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;]
+  change_list(l)
+  &lt;span style=&#34;color:#75715e&#34;&gt;# changes l[3] to 9999&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s a finished solution:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run_program&lt;/span&gt;(program):
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;    ip &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; True:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;        op &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; program[ip]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; op &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;        a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; program[ program[ip&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] ]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;        b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; program[ program[ip&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;] ]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11&lt;/span&gt;        dest &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; program[ip&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; op &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13&lt;/span&gt;            program[dest] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;            program[dest] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; b
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;        ip &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ip &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; program[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;part1&lt;/span&gt;(data):
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20&lt;/span&gt;    program &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[:]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21&lt;/span&gt;    program[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22&lt;/span&gt;    program[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; run_program((program))
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;25&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;26&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;part2&lt;/span&gt;(data):
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;27&lt;/span&gt;    results &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;28&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; noun &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;):
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;29&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; verb &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;):
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;30&lt;/span&gt;            program &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[:]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;31&lt;/span&gt;            program[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noun
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;32&lt;/span&gt;            program[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; verb
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;33&lt;/span&gt;            r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; run_program(program)
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;34&lt;/span&gt;            results&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append( (&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;noun&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;verb, r))
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35&lt;/span&gt;    ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; results &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;19690720&lt;/span&gt;]
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37&lt;/span&gt;    
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;38&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(part1(data))
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;39&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(part2(data))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Note that in line 30 we copy over the original data for each noun,verb
 combo. also note the list comprehension in line 35 to find the final
@@ -856,15 +1072,20 @@ much fuel is needed). The answer will be the sum of the fuels.
 The most challenging part of this for a beginner might be reading in
 the data but that&amp;#39;s not too much of a challenge:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Now we can calculate part1:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+
+  sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mass &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+      sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Part 2 adds a twist. Now, you have to also consider the fuel needed
 for the fuel you&amp;#39;ve added. Basically, you have to calculate how much
@@ -878,15 +1099,34 @@ into our part1 solution but if we had factored out the original fuel
 calculation we could probably reused it and maybe more of our
 solution:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+
+  sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mass &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+      sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; calc_fuel(mass)
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Now we can just add an inner loop that repeatedly adds the fuel costs.
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+
+  sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mass &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+      fuel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; calc_fuel(mass)
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; fuel &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+          sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; fuel
+          fuel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  calc_fuel(fuel)
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 More &amp;#34;teachable moments.&amp;#34; We have to change up variables in our fuel
 calculations (lines 8 and 11) and for a beginner, the loop within a
@@ -897,11 +1137,15 @@ something that &lt;strong&gt;is&lt;/strong&gt; more complex. It&amp;#39;s also g
 For more advanced students, if they&amp;#39;re familiar with list
 comprehensions you can really clean up part 1:
 &lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
 &lt;p&gt;
-#+END_SRC
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data] &lt;span style=&#34;color:#75715e&#34;&gt;# convert to ints before starting&lt;/span&gt;
+
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; mass&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+
+  &lt;span style=&#34;color:#75715e&#34;&gt;# part 1&lt;/span&gt;
+  part1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum([calc_fuel(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 &lt;p&gt;
 but I think part 2 either stay&amp;#39;s more or less as is.

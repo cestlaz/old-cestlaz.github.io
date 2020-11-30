@@ -21,8 +21,7 @@
 It&amp;#39;s almost December which means it&amp;#39;s almost time for &lt;a href=&#34;http:/adventofcode.com&#34;&gt;Advent of Code
 2019&lt;/a&gt;. Advent of code is an annual computer programming competition
 created and ruyn by &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt;. It&amp;#39;s been running since 2015. I&amp;#39;ve
-written about it before, mostly from a teacher&amp;#39;s point of view (&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve
-A to Solve B&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape
+written about it before, mostly from a teacher&amp;#39;s point of view (&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve A to Solve B&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape
 how we think&lt;/a&gt; and a few others). 
 &lt;/p&gt;
 &lt;p&gt;
@@ -257,9 +256,30 @@ the &lt;a href=&#34;http://adventofcode.com/2016/day/19&#34;&gt;problem descript
 &lt;p&gt;
 For both solutions I coded up a circular doubly linked list:
 &lt;/p&gt;
-&lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;make_ring&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; size){
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;n;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;current,&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;first;
+
+first &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)malloc(&lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node));
+first&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+current&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;first;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;  (i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;size&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;i&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)malloc(&lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node));
+n&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+n&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;prev&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;current;
+current&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;next&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n;
+current&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n;
+
+}
+current&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;next&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;first;
+first&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;prev&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;current;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; first;
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;
 You can see my complete solutions &lt;a href=&#34;https://github.com/zamansky/advent2016/blob/master/day19.cpp&#34;&gt;here&lt;/a&gt;.
 &lt;/p&gt;

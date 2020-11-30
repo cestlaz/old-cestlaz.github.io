@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aoc on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/aoc/</link>
+    <description>C&#39;est la Z (aoc)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2020 14:21:17 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/tags/aoc/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Advent of Code 2020</title>
+      <link>https://cestlaz.github.io/post/advent-2020-leadin/</link>
+      <pubDate>Mon, 30 Nov 2020 14:21:17 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-leadin/</guid>
+      <description>&lt;p&gt;
+Tomorrow, or more practically, tonight at Midnight,  &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt; will
+once again launch the &lt;a href=&#34;https://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt;. As I&amp;#39;ve written before, it&amp;#39;s a
+month long event where each day a new programming problem is
+released. The problems range in difficulty and complexity. Some are
+very approachable to beginners and some are crazy challenging. I&amp;#39;ve
+written a bunch about AOC in past years:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve A to Solve B&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape- how we think&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day1/&#34;&gt;2019 day 1&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day2/&#34;&gt;2019 day 2&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day3/&#34;&gt;2019 day 3&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day4/&#34;&gt;2019 day 4&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8/&#34;&gt;2019 day 8&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8-part2/&#34;&gt;2019 day 8 addendum&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+and a few more not listed.
+&lt;/p&gt;
+&lt;p&gt;
+If you haven&amp;#39;t heard of AOC, at the stroke of midnight (Eastern), a
+new problem is released. From there you can read the problem, get the
+input and figure out a solution, usually by writing a program. You
+then type in your answer and if it&amp;#39;s correct you get part 2 - usually
+a creative spin on part one. Usually you&amp;#39;ll write a program to solve
+the problems but sometimes you&amp;#39;ll write code just to explore and come
+up with an answer. 
+&lt;/p&gt;
+&lt;p&gt;
+Even though there&amp;#39;s a leader board and people can set up their own
+private leader boards, I describe AOC as an event not as a
+competition. I&amp;#39;ve had former students up near the top but a getting
+there requires a lot more than just problem solving. First, you have
+to be up when the problem is released, then you have to shortcut scan
+what the question is asking. Having a library of pre-written utility
+routines is a big help as is using a language that has a lot of
+interactive scripty functionality like Python. It also assumes that
+even if you do all that is needed, that life doesn&amp;#39;t get in the
+way. This means that to get to the top of the leader board, like in
+most competitions you have to train and prepare to do just that and
+training for that doesn&amp;#39;t really translate to the rest of life&amp;#39;s
+challenges.
+&lt;/p&gt;
+&lt;p&gt;
+Solving the problems, though, can translate to other challenges you
+might face so I look at AOC as an opportunity to explore some
+interesting problems. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve never finished all of them and that&amp;#39;s okay. Here&amp;#39;s my star count
+for each of the years. You get one star for each part of each question
+so that&amp;#39;s 50 total.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Year:&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2015&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2016&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2017&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2018&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2019&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Stars:&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;26&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;40&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;11&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;23&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+I&amp;#39;ve never gotten more than 40. I typically wake up and read the
+question and see if I can solve it either then or over the course of
+the day. Sometimes I&amp;#39;ll come back to a problem but usually not. Last
+year, many problems were based on earlier ones. I had an issue in one
+of those earlier solutions so never completed the later ones. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe I&amp;#39;ll go back and finish more, maybe I won&amp;#39;t.
+&lt;/p&gt;
+&lt;p&gt;
+None of this matters. 
+&lt;/p&gt;
+&lt;p&gt;
+I had fun, learned a lot and as an added bonus, each problem gives me
+an opportunity to reflect on how I might teach it or teach concepts
+related to it.
+&lt;/p&gt;
+&lt;p&gt;
+It all starts in a few hours so if you&amp;#39;re already planning on
+participating, have a blast. If you haven&amp;#39;t, check it out.
+&lt;/p&gt;
+&lt;p&gt;
+Advent of code can be found here: &lt;a href=&#34;https://adventofcode.combination&#34;&gt;https://adventofcode.combination&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+And, the AOC subreddit, which is great for problem discussions can be
+found here: &lt;a href=&#34;https://www.reddit.com/r/adventofcode/&#34;&gt;https://www.reddit.com/r/adventofcode/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
