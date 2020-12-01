@@ -6,10 +6,163 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 14:21:17 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 09:03:39 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher Looks at Advent of Code 2020 - Day 1</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day-01/</link>
+      <pubDate>Tue, 01 Dec 2020 09:03:39 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day-01/</guid>
+      <description>&lt;p&gt;
+So, yesterday I was chatting with my daughter. She was talking with
+her team and for some reason one of them pulled out an interview
+question from their company&amp;#39;s question bank. Turns out it was today&amp;#39;s
+Advent of Code problem. 
+&lt;/p&gt;
+&lt;p&gt;
+As with past years, I&amp;#39;m going to try to solve the problems in Clojure
+but if I can will talk Python when I talk about solutions. 
+&lt;/p&gt;
+&lt;p&gt;
+Part 1 of the problem basically asks for you to find a pair of numbers
+in an array that sum to a specific value. In this case 2020. Figuring
+that this was day 1 I didn&amp;#39;t expect a crazy large data set or any
+other tricks or weirdness - a straightforward solution should
+suffice. Simply a loop within a loop and sum up all the pairs: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;:
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Nothing fancy but it gets the job done. It does print out the answer
+twice since x and y both go through all the indices but that&amp;#39;s no big
+deal.
+&lt;/p&gt;
+&lt;p&gt;
+The part 2 twist was that now you were looking for a set of three
+entries that added up to 220. Once again, not a big deal: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; z &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;z &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;:
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;z)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+As before, you&amp;#39;ll get multiple answers but no big deal.
+&lt;/p&gt;
+&lt;p&gt;
+What I like about this one is that you can think about this as a
+looping exercise as above but you can also think about it as a list
+processing exercise, that is, by thinking about it with more of a
+functional programming bent. 
+&lt;/p&gt;
+&lt;p&gt;
+The key insight here is that the question was clear in that there will
+only be one pair in part 1 that satisfies the problem and likewise
+only one pair in part 2. 
+&lt;/p&gt;
+&lt;p&gt;
+If we look at each item in our data set, it&amp;#39;s part of the answer if
+and only if there&amp;#39;s another number in the set equal to 2020 minus that
+item. This leads to a list comprehension
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part1_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now, part1_list should contain the two items we need. The first value &lt;code&gt;x&lt;/code&gt;
+was found when the comprehension saw that &lt;code&gt;2020 - x&lt;/code&gt; was in the list
+and &lt;code&gt;2020-x&lt;/code&gt; which is the second value was confirmed when the for part
+of the comprehension gets to it and finds that the first item is in
+the list. Then, it&amp;#39;s a simple matter of just multiplying the two
+numbers together for the answer.
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 is similar but you can use a list comprehension to iterate over
+all pairs of elements and then you calculate the third:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y) &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Of course you could have put &lt;code&gt;y&lt;/code&gt; or &lt;code&gt;2020-(x+y)&lt;/code&gt; in place of that
+first &lt;code&gt;x&lt;/code&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 has an additional subtlety in that you&amp;#39;ll get the solution
+multiple times which makes sense you&amp;#39;re hitting each triple multiple
+times. To fix that, turn it into a set: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_set &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(part2_list)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+and then calculate the product.
+&lt;/p&gt;
+&lt;p&gt;
+At the core, both of these solutions are really the same but you get
+to them by thinking very differently. The first one is all about the
+loops - thinking about data[i] at a very low discrete level. The
+second approach is thinking about the data as a list and processing
+that list at a much higher level. This could be an ice problem to
+transition between the two approaches.
+&lt;/p&gt;
+&lt;p&gt;
+Looking forward to what tomorrow&amp;#39;s problem brings.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Advent of Code 2020</title>
@@ -4007,75 +4160,6 @@ email Devorah at &lt;a href=&#34;http://mailto:blanketstatementproject@gmail.com
 &lt;p&gt;
 Hope to see many friends at CSTA2020 and hope many do some productive
 fidgeting to crowdsource a blanket for a chile in need.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hunter&#39;s CS Teacher Certification program  Week 1</title>
-      <link>https://cestlaz.github.io/post/teacher-cert-week-1/</link>
-      <pubDate>Thu, 02 Jul 2020 13:48:21 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/teacher-cert-week-1/</guid>
-      <description>&lt;p&gt;
-Time for an update on our NY State Teacher Certification Program. 
-&lt;/p&gt;
-&lt;p&gt;
-We kicked off on Monday. Twenty two students working with three
-instructors from 9:00 - 3:00 every day. We&amp;#39;ve been using a combination
-of synchronous with Zoom and async using Slack and GitHub
-discussions. We&amp;#39;re using GitHub as our main platform.
-&lt;/p&gt;
-&lt;p&gt;
-Day 0 was very Zoom heavy but we&amp;#39;re trying to balance one big Zoom
-session a day combined with other work so as to minimize fatigue. 
-&lt;/p&gt;
-&lt;p&gt;
-Due to our time constraints we had some prework before we officially
-started. We had to debrief on that at the start and then also had to
-deliver new instruction and all that made for a rough first day. 
-&lt;/p&gt;
-&lt;p&gt;
-Things got better in day 1. We were able to do one zoom session in the
-morning to set the stage on 2D arrays and were able to work more
-independently with slack support in the afternoon.
-&lt;/p&gt;
-&lt;p&gt;
-On Day 2 I finally got to teach as I had been running a &lt;a href=&#34;https://cestlaz.github.io/post/teaching-cs-in-all-the-grades/&#34;&gt;Computational
-Thinking&lt;/a&gt; workshop during days 0 and 1. I led the morning session on
-Conway&amp;#39;s Game of Life which led to a coding project in the afternoon. 
-&lt;/p&gt;
-&lt;p&gt;
-Today we flipped the script doing self directed work in the morning
-and then got together to go over objects and classes in the afternoon.
-&lt;/p&gt;
-&lt;p&gt;
-While there&amp;#39;s more to tweak I&amp;#39;m very happy with how things are
-going. We have a great cohort. In addition to supporting each other in
-class they&amp;#39;ve started to organize their own study groups and sessions
-both off hours and during our independant work. I haven&amp;#39;t said
-anything about this nor have I intruded as I think it&amp;#39;s healthy for
-the cohort to have their own self directed space. I&amp;#39;m glad it&amp;#39;s
-happening without me having to prod behind the scenes.
-&lt;/p&gt;
-&lt;p&gt;
-While I&amp;#39;m very happy with how it&amp;#39;s gone so far there are some areas of
-concern. Since this is a new program with an unknown cohort we&amp;#39;re
-figuring out a lot on the fly. We&amp;#39;re doing better on the format and
-pacing of activities but I feel we can still do better. With this in
-mind we&amp;#39;re all having an online discussion throughout the weekend
-about how to adjust and by we I mean the entire cohort and all the
-instructors. If you&amp;#39;ve got a cohort of 22 experienced teachers you&amp;#39;re
-foolish not to exploit their expertise. I&amp;#39;m also a little concerned
-about the methods component. We&amp;#39;re already integrating some things -
-live coding and subgoal labeling for example but some of the methods I
-wanted to cover just don&amp;#39;t fit well in a remote model and we also have
-to be careful about not overloading the teachers while many are just
-learning the CS.
-&lt;/p&gt;
-&lt;p&gt;
-Next week we&amp;#39;ll start getting into data structures. We&amp;#39;ve got four
-more weeks but we&amp;#39;re well on our way.
 &lt;/p&gt;
 </description>
     </item>
