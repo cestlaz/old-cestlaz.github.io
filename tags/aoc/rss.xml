@@ -6,10 +6,40 @@
     <description>C&#39;est la Z (AOC)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Dec 2020 12:27:27 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 14:27:02 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/aoc/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher Looks at Advent of Code 2020 - Day 3</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day03/</link>
+      <pubDate>Thu, 03 Dec 2020 14:27:02 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day03/</guid>
+      <description>&lt;p&gt;
+I thought I&amp;#39;d do a video for today. No particular reason. Mostly why
+not.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll talk about day 3&amp;#39;s problem and code up a solution in Clojure. If
+you haven&amp;#39;t ever used Clojure, hopefully this will give a bit of the
+flavor. This video also serves double duty as being my next Using
+Emacs video since it demos Emacs&amp;#39;s Clojure tools. Mostly Cider which
+even with a few quirks is the best development environment I&amp;#39;ve ever
+used. 
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t know if I&amp;#39;ll do any more videos or blog posts on AOC this
+year. I hope to but I&amp;#39;m going to have to get to end of semester
+obligations soon so you never know.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy!
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ecJ1TJGWrfs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher Looks at Advent of Code 2020 - Day 2</title>

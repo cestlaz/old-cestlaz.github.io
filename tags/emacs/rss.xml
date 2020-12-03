@@ -6,10 +6,40 @@
     <description>C&#39;est la Z (emacs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2020 13:17:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 14:27:02 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/emacs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher Looks at Advent of Code 2020 - Day 3</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day03/</link>
+      <pubDate>Thu, 03 Dec 2020 14:27:02 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day03/</guid>
+      <description>&lt;p&gt;
+I thought I&amp;#39;d do a video for today. No particular reason. Mostly why
+not.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll talk about day 3&amp;#39;s problem and code up a solution in Clojure. If
+you haven&amp;#39;t ever used Clojure, hopefully this will give a bit of the
+flavor. This video also serves double duty as being my next Using
+Emacs video since it demos Emacs&amp;#39;s Clojure tools. Mostly Cider which
+even with a few quirks is the best development environment I&amp;#39;ve ever
+used. 
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t know if I&amp;#39;ll do any more videos or blog posts on AOC this
+year. I hope to but I&amp;#39;m going to have to get to end of semester
+obligations soon so you never know.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy!
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ecJ1TJGWrfs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Emacs 75 - Bufler</title>
@@ -2704,70 +2734,6 @@ Set the shortcut for Atomic Chrome
 Enjoy:
 &lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wyPZws66Sic&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Emacs 2017 Recap</title>
-      <link>https://cestlaz.github.io/posts/using-emacs-2017-recap/</link>
-      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/using-emacs-2017-recap/</guid>
-      <description>&lt;p&gt;
-This past year I recorded 14 Using Emacs videos. This is on top of the
-25 videos I made last year. The fall off in production is
-understandable. I got through my day to day configuration in the
-late 20s and since then the videos have just been on things I&amp;#39;ve
-rediscovered, things that became useful and things that I just found
-interesting. It was also a busier year.
-&lt;/p&gt;
-&lt;p&gt;
-Why did I start the series? Mostly for my students. There&amp;#39;s the built
-in Emacs tutorial and other beginner resources but how do you go from
-the basics to a real working configuration? For years I would show my
-kids Emacs and use it in class but there was never a path for them to
-follow from beginner to craftsman. I hoped the videos would fill the
-void.
-&lt;/p&gt;
-&lt;p&gt;
-It probably didn&amp;#39;t. I don&amp;#39;t think I&amp;#39;m getting greater Emacs adoption
-from my students but on the other hand, I&amp;#39;ve found making the series
-rewarding for other reasons.
-&lt;/p&gt;
-&lt;p&gt;
-First and foremost, it&amp;#39;s allowed me to be an active contributing
-member of the Emacs community. I haven&amp;#39;t written any Emacs packages
-nor am I an active guy on any Emacs forums but this is a way I can do
-my part.
-&lt;/p&gt;
-&lt;p&gt;
-Second, although there hasn&amp;#39;t been a great deal of comments on the
-videos or blog posts I&amp;#39;ve gotten to know a few people that I wouldn&amp;#39;t
-have gotten to know otherwise.
-&lt;/p&gt;
-&lt;p&gt;
-It also shows that that if you put things out there people might find
-it useful. I don&amp;#39;t know how many people saw my Emacs posts at the
-start but a year and half later I&amp;#39;ve got 1,700 YouTube
-subscribers. Sure, that&amp;#39;s nothing compared to many YouTubers but
-for a guy making schlocky videos at his desk about an as much as I hate to admit it
-non-maintream editor, I think it&amp;#39;s pretty cool.
-&lt;/p&gt;
-&lt;p&gt;
-The question is what to make videos on moving forward?
-&lt;/p&gt;
-&lt;p&gt;
-I thought I&amp;#39;d throw it out to the community. Here&amp;#39;s an embedded
-poll. Feel free to suggest other topics either on the blog or
-as a Twitter reply.
-&lt;/p&gt;
-&lt;p&gt;
-I can&amp;#39;t promise I&amp;#39;ll get to all or any but I&amp;#39;ll certainly check out
-the popular suggestions.
-&lt;/p&gt;
-&lt;p&gt;
-&amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;&lt;a href=&#34;http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de&#34;&gt;http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de&lt;/a&gt;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;a class=&amp;#34;OPP-powered-by&amp;#34; href=&amp;#34;&lt;a href=&#34;http://www.objectplanet.com/opinio/&#34;&gt;http://www.objectplanet.com/opinio/&lt;/a&gt;&amp;#34; style=&amp;#34;text-decoration:none;&amp;#34;&amp;gt;&amp;lt;div style=&amp;#34;font: 9px arial; color: gray;&amp;#34;&amp;gt;survey service&amp;lt;/div&amp;gt;&amp;lt;/a&amp;gt;
-&lt;/p&gt;
 </description>
     </item>
     
