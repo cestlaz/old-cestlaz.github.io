@@ -6,10 +6,153 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 14:27:02 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 17:31:06 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher Looks at Advent of Code 2020 - Day 4</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day04/</link>
+      <pubDate>Fri, 04 Dec 2020 17:31:06 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day04/</guid>
+      <description>&lt;p&gt;
+One of the nice things about Advent of Code is that it gets me to
+explore language features I haven&amp;#39;t used yet. Today&amp;#39;s problem got me
+to explore Clojure Spec which is a very cool validation
+library. There&amp;#39;s a complete run through of the solution in Clojure in
+the video but here I&amp;#39;ll talk about the problem in Python (mostly). 
+&lt;/p&gt;
+&lt;p&gt;
+Today&amp;#39;s &lt;a href=&#34;https://adventofcode.com/2020/day/4&#34;&gt;problem&lt;/a&gt; is about validating passports. You start with a text
+file consisting of passport information. Each passport is one or more
+lines with each line having a bunch of key value pairs. For example,
+these two lines represent a passport for someone who&amp;#39;s eye color (ecl)
+is gray (gry) and who was born (byr) in 1937:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
+byr:1937 iyr:2017 cid:147 hgt:183cm
+&lt;/pre&gt;
+&lt;p&gt;
+The catch is that one passport can span multiple lines and that
+passports are separated by two consecutive newlines in the file.
+&lt;/p&gt;
+&lt;p&gt;
+A passport has 8 field types with one, Country of Origin (cid) being
+optional.
+&lt;/p&gt;
+&lt;p&gt;
+For part 1, a valid passport is one that contains all 7 required
+fields. 
+&lt;/p&gt;
+&lt;p&gt;
+The video goes over a Clojure solution which, I think is cleaner but
+the idea is the same as the Python I&amp;#39;ll talk about here.
+&lt;/p&gt;
+&lt;p&gt;
+Splitting the data into a list of potential passports is easy because
+you can split the string on two newlines: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample04.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()
+data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now we have a list of string. 
+&lt;/p&gt;
+&lt;p&gt;
+Next, we can split each string on whitespace so that each string in
+each sublist is a string in the form &lt;strong&gt;k:v&lt;/strong&gt;: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+    data_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append([item &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+So, for example, data_list[0] might look like this: 
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+[&amp;#39;ecl:gry&amp;#39;, &amp;#39;pid:860033327&amp;#39;, &amp;#39;eyr:2020&amp;#39;, &amp;#39;hcl:#fffffd&amp;#39;, &amp;#39;byr:1937&amp;#39;, &amp;#39;iyr:2017&amp;#39;, &amp;#39;cid:147&amp;#39;, &amp;#39;hgt:183cm&amp;#39;]
+&lt;/pre&gt;
+&lt;p&gt;
+Finally, we can convert each passport into a dictionary: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_list:
+    temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]:item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d} 
+    temp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cid&amp;#39;&lt;/span&gt;,None)
+    data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(temp)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way I came up with to check if a passport was valid was to
+make a set out of a list of required field names, make a set out of
+each potential passports field names (they&amp;#39;re dictionary keys) and see
+if they&amp;#39;re equal: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;fields &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;byr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hgt&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hcl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ecl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;])
+valid_passports &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  [set(x&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keys()) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; fields &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_dicts]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I think the Clojure code is cleaner but it&amp;#39;s much the same.
+&lt;/p&gt;
+&lt;p&gt;
+Part two added a twist - you now have to not only see if the required
+fields are there but you had to make sure they had valid data. For
+example, height had to start with a positive integer followed by
+either &lt;strong&gt;cm&lt;/strong&gt; or &lt;strong&gt;in&lt;/strong&gt;. If it was &lt;strong&gt;cm&lt;/strong&gt;, the number had to be in a certain
+range and if it was &lt;strong&gt;in&lt;/strong&gt; it had to be within a different range. 
+&lt;/p&gt;
+&lt;p&gt;
+This didn&amp;#39;t sound hard but could get tricky. For each field type you
+could write a function that took in the value and returned true or
+false depending on its validity - lots of ad hoc code. You could then
+loop over all the passports and test to see if all the conditions were
+met. 
+&lt;/p&gt;
+&lt;p&gt;
+It turns out that Clojure has a really cool library - Clojure Spec
+that does just that. You set up validators for each field type and
+then one for an entire passport. Here&amp;#39;s the code: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;1920&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2002&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2010&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2030&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? hgt-test))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#[0-9a-f]{6}&amp;#34;&lt;/span&gt; %)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amb|blu|brn|gry|grn|hzl|oth&amp;#34;&lt;/span&gt; %)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^[0-9]{9}$&amp;#34;&lt;/span&gt; % )))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt; string?)
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/keys&lt;/span&gt;
+                   &lt;span style=&#34;color:#e6db74&#34;&gt;:req&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt;]
+                   &lt;span style=&#34;color:#e6db74&#34;&gt;:opt&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt;]))
+
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/valid?&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; test-passport)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The last line would test to see if &lt;strong&gt;test-passport&lt;/strong&gt; was valid. It&amp;#39;s all
+covered in detail in the video.
+&lt;/p&gt;
+&lt;p&gt;
+Clojure spec wasn&amp;#39;t required for this problem but I&amp;#39;ve been meaning to
+play with it for a while and it led to a clean and elegant way of
+testing passports. 
+&lt;/p&gt;
+&lt;p&gt;
+Not sure if I&amp;#39;ll get to more posts or even solve more problems - I&amp;#39;m
+trying to limit my own screen time over the weekends but we&amp;#39;ll see.
+&lt;/p&gt;
+&lt;p&gt;
+If you want to check out all the Clojure goodness here it is: Enjoy!
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/QzdCrJgXsww&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher Looks at Advent of Code 2020 - Day 3</title>
@@ -4137,68 +4280,6 @@ students are not doing well in isolation and that remote school is
 both less effective than in person and a hardship all around but when
 we open it has to make sense both in terms of safety and in terms of
 education. de Blasio and Carranza&amp;#39;s plan is neither.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Productive Fidgeting at CSTA2020 - Build a Blanket for good</title>
-      <link>https://cestlaz.github.io/post/blanket-statement-2020/</link>
-      <pubDate>Mon, 06 Jul 2020 15:49:30 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/blanket-statement-2020/</guid>
-      <description>&lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/blanket2019.png&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s almost time for CSTA2020. I&amp;#39;m looking forward to it but since
-it&amp;#39;s going remote it is going to be interesting.
-&lt;/p&gt;
-&lt;p&gt;
-Since CSTA is, at least to me, very much a  &amp;#34;people conference&amp;#34; as
-opposed to a &amp;#34;session conference&amp;#34; it&amp;#39;ll be interesting to see how it
-all plays out.
-&lt;/p&gt;
-&lt;p&gt;
-One of the things I was super excited about last year was Devorah&amp;#39;s
-getting her &lt;a href=&#34;http://blanketstatementproject.com/&#34;&gt;Blanket Statement&lt;/a&gt; project off the ground. The whole idea
-was to have knitters and crocheters make squares while attending
-conference sessions instead of incessantly checking their
-phones. Productive fidgeting she calls it. At the end, Devorah put the
-squares together into a blanket and it was donated to a child in need.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Finished! 44 / 49 blocks crafted by CSTA participants. Thank you &lt;a href=&#34;https://twitter.com/GitHubEducation?ref_src=twsrc%5Etfw&#34;&gt;@GitHubEducation&lt;/a&gt; for hosting, &lt;a href=&#34;https://twitter.com/csteachersorg?ref_src=twsrc%5Etfw&#34;&gt;@csteachersorg&lt;/a&gt; for allowing and promoting and to all who participated whether I have your handle / name or not! &lt;a href=&#34;https://twitter.com/akohart?ref_src=twsrc%5Etfw&#34;&gt;@akohart&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Sputtnikme?ref_src=twsrc%5Etfw&#34;&gt;@sputtnikme&lt;/a&gt; &lt;a href=&#34;https://twitter.com/RebekahCLang?ref_src=twsrc%5Etfw&#34;&gt;@RebekahCLang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/TweetsInShadow?ref_src=twsrc%5Etfw&#34;&gt;@TweetsInShadow&lt;/a&gt; &lt;a href=&#34;https://twitter.com/karmaturner?ref_src=twsrc%5Etfw&#34;&gt;@Karmaturner&lt;/a&gt; ... &lt;a href=&#34;https://t.co/96XzrVRcCG&#34;&gt;pic.twitter.com/96XzrVRcCG&lt;/a&gt;&lt;/p&gt;&amp;mdash; BlanketStatement (@BlanketStmtProj) &lt;a href=&#34;https://twitter.com/BlanketStmtProj/status/1150878754916450304?ref_src=twsrc%5Etfw&#34;&gt;July 15, 2019&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;/p&gt;
-&lt;p&gt;
-It was really cool. Our friends at GitHub Education provided space at
-their booth where Devorah could teach knitters or people could stop by
-on a break to make a square or two.
-&lt;/p&gt;
-&lt;p&gt;
-It was really cool.
-&lt;/p&gt;
-&lt;p&gt;
-While we can&amp;#39;t do it again in person we can do it remotely. So, if you
-knit or crochet, pick up those needles or hooks while you&amp;#39;re watching
-those sessions and knit some squares. 
-&lt;/p&gt;
-&lt;p&gt;
-You can &lt;del&gt;email&lt;/del&gt; mail  your squares to Devorah and she&amp;#39;ll put them all together
-into a blanket or you can donate them locally. 
-&lt;/p&gt;
-&lt;p&gt;
-You can find more details at &lt;a href=&#34;http://blanketstatementproject.com&#34;&gt;http://blanketstatementproject.com&lt;/a&gt; or
-email Devorah at &lt;a href=&#34;http://mailto:blanketstatementproject@gmail.com&#34;&gt;blanketstatementproject@gmail.com&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Hope to see many friends at CSTA2020 and hope many do some productive
-fidgeting to crowdsource a blanket for a chile in need.
 &lt;/p&gt;
 </description>
     </item>

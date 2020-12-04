@@ -6,10 +6,153 @@
     <description>C&#39;est la Z (AOC)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 14:27:02 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 17:31:06 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/aoc/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher Looks at Advent of Code 2020 - Day 4</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day04/</link>
+      <pubDate>Fri, 04 Dec 2020 17:31:06 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day04/</guid>
+      <description>&lt;p&gt;
+One of the nice things about Advent of Code is that it gets me to
+explore language features I haven&amp;#39;t used yet. Today&amp;#39;s problem got me
+to explore Clojure Spec which is a very cool validation
+library. There&amp;#39;s a complete run through of the solution in Clojure in
+the video but here I&amp;#39;ll talk about the problem in Python (mostly). 
+&lt;/p&gt;
+&lt;p&gt;
+Today&amp;#39;s &lt;a href=&#34;https://adventofcode.com/2020/day/4&#34;&gt;problem&lt;/a&gt; is about validating passports. You start with a text
+file consisting of passport information. Each passport is one or more
+lines with each line having a bunch of key value pairs. For example,
+these two lines represent a passport for someone who&amp;#39;s eye color (ecl)
+is gray (gry) and who was born (byr) in 1937:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
+byr:1937 iyr:2017 cid:147 hgt:183cm
+&lt;/pre&gt;
+&lt;p&gt;
+The catch is that one passport can span multiple lines and that
+passports are separated by two consecutive newlines in the file.
+&lt;/p&gt;
+&lt;p&gt;
+A passport has 8 field types with one, Country of Origin (cid) being
+optional.
+&lt;/p&gt;
+&lt;p&gt;
+For part 1, a valid passport is one that contains all 7 required
+fields. 
+&lt;/p&gt;
+&lt;p&gt;
+The video goes over a Clojure solution which, I think is cleaner but
+the idea is the same as the Python I&amp;#39;ll talk about here.
+&lt;/p&gt;
+&lt;p&gt;
+Splitting the data into a list of potential passports is easy because
+you can split the string on two newlines: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample04.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()
+data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now we have a list of string. 
+&lt;/p&gt;
+&lt;p&gt;
+Next, we can split each string on whitespace so that each string in
+each sublist is a string in the form &lt;strong&gt;k:v&lt;/strong&gt;: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+    data_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append([item &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+So, for example, data_list[0] might look like this: 
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+[&amp;#39;ecl:gry&amp;#39;, &amp;#39;pid:860033327&amp;#39;, &amp;#39;eyr:2020&amp;#39;, &amp;#39;hcl:#fffffd&amp;#39;, &amp;#39;byr:1937&amp;#39;, &amp;#39;iyr:2017&amp;#39;, &amp;#39;cid:147&amp;#39;, &amp;#39;hgt:183cm&amp;#39;]
+&lt;/pre&gt;
+&lt;p&gt;
+Finally, we can convert each passport into a dictionary: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_list:
+    temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]:item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d} 
+    temp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cid&amp;#39;&lt;/span&gt;,None)
+    data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(temp)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way I came up with to check if a passport was valid was to
+make a set out of a list of required field names, make a set out of
+each potential passports field names (they&amp;#39;re dictionary keys) and see
+if they&amp;#39;re equal: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;fields &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;byr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hgt&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hcl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ecl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;])
+valid_passports &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  [set(x&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keys()) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; fields &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_dicts]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I think the Clojure code is cleaner but it&amp;#39;s much the same.
+&lt;/p&gt;
+&lt;p&gt;
+Part two added a twist - you now have to not only see if the required
+fields are there but you had to make sure they had valid data. For
+example, height had to start with a positive integer followed by
+either &lt;strong&gt;cm&lt;/strong&gt; or &lt;strong&gt;in&lt;/strong&gt;. If it was &lt;strong&gt;cm&lt;/strong&gt;, the number had to be in a certain
+range and if it was &lt;strong&gt;in&lt;/strong&gt; it had to be within a different range. 
+&lt;/p&gt;
+&lt;p&gt;
+This didn&amp;#39;t sound hard but could get tricky. For each field type you
+could write a function that took in the value and returned true or
+false depending on its validity - lots of ad hoc code. You could then
+loop over all the passports and test to see if all the conditions were
+met. 
+&lt;/p&gt;
+&lt;p&gt;
+It turns out that Clojure has a really cool library - Clojure Spec
+that does just that. You set up validators for each field type and
+then one for an entire passport. Here&amp;#39;s the code: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;1920&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2002&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2010&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2030&lt;/span&gt;)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? hgt-test))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#[0-9a-f]{6}&amp;#34;&lt;/span&gt; %)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amb|blu|brn|gry|grn|hzl|oth&amp;#34;&lt;/span&gt; %)))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^[0-9]{9}$&amp;#34;&lt;/span&gt; % )))
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt; string?)
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/keys&lt;/span&gt;
+                   &lt;span style=&#34;color:#e6db74&#34;&gt;:req&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt;]
+                   &lt;span style=&#34;color:#e6db74&#34;&gt;:opt&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt;]))
+
+(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/valid?&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; test-passport)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The last line would test to see if &lt;strong&gt;test-passport&lt;/strong&gt; was valid. It&amp;#39;s all
+covered in detail in the video.
+&lt;/p&gt;
+&lt;p&gt;
+Clojure spec wasn&amp;#39;t required for this problem but I&amp;#39;ve been meaning to
+play with it for a while and it led to a clean and elegant way of
+testing passports. 
+&lt;/p&gt;
+&lt;p&gt;
+Not sure if I&amp;#39;ll get to more posts or even solve more problems - I&amp;#39;m
+trying to limit my own screen time over the weekends but we&amp;#39;ll see.
+&lt;/p&gt;
+&lt;p&gt;
+If you want to check out all the Clojure goodness here it is: Enjoy!
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/QzdCrJgXsww&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher Looks at Advent of Code 2020 - Day 3</title>
