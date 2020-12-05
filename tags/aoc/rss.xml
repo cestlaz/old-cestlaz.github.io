@@ -86,6 +86,11 @@ You&amp;#39;ve got the basic data parsing as usual but I love that this can be
 brute forced but by noticing the base 2 nature of the data you can
 write up a number of different elegant solutions. 
 &lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s a complete solution coded up in Clojure. You can also check all
+my Advent of Code solutions up on GitHub
+&lt;a href=&#34;https://github.com/zamansky/advent2020&#34;&gt;https://github.com/zamansky/advent2020&lt;/a&gt;. 
+&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lq5AdWkzyjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
