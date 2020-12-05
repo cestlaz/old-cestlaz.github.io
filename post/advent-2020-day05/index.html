@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>A teacher looks at Advent of Code 2020 - Day 5 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1607187151" />
+
+
+
+<meta property="og:title" content="A teacher looks at Advent of Code 2020 - Day 5" />
+<meta property="og:description" content="Day five&#39;s problem is a nice one for an early CS class. It can be very much brute forced but it also touches on some nice concepts and can be solved pretty elegantly. I&#39;ve embedded a walk through in Clojure at the end but a Python solution would be pretty similar.  Read the problem over if you haven&#39;t. At it&#39;s core you are taking a boarding pass representing a coded airplane seat number and you&#39;re converting it to a known seat (row and column)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day05/" />
+<meta property="article:published_time" content="2020-12-05T11:18:59-04:00" />
+<meta property="article:modified_time" content="2020-12-05T11:18:59-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A teacher looks at Advent of Code 2020 - Day 5"/>
+<meta name="twitter:description" content="Day five&#39;s problem is a nice one for an early CS class. It can be very much brute forced but it also touches on some nice concepts and can be solved pretty elegantly. I&#39;ve embedded a walk through in Clojure at the end but a Python solution would be pretty similar.  Read the problem over if you haven&#39;t. At it&#39;s core you are taking a boarding pass representing a coded airplane seat number and you&#39;re converting it to a known seat (row and column)."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">A teacher looks at Advent of Code 2020 - Day 5</h1>
+        </header>
+        <div class="content">
+            <p>
+<a href="https://adventofcode.com/2020/day/5">Day five&#39;s problem</a> is a nice one for an early CS class. It can be very
+much brute forced but it also touches on some nice concepts and can be
+solved pretty elegantly. I&#39;ve embedded a walk through in Clojure at
+the end but a Python solution would be pretty similar.  
+</p>
+<p>
+Read the problem over if you haven&#39;t. At it&#39;s core you are taking a boarding
+pass representing a coded airplane seat number and you&#39;re converting
+it to a known seat (row and column). The encoding scheme uses <a href="https://en.wikipedia.org/wiki/Binary_space_partitioning">binary
+space partitioning</a>. The <a href="https://adventofcode.com/2020/day/5">question statement</a> goes over the details.
+</p>
+<p>
+One of the first things to notice is that you should separate the pass
+into two parts - the row, which consists of the first seven characters
+each one being an <strong>F</strong> or a <strong>B</strong> and the last three which are the
+columns and they are marked with either a <strong>R</strong> or an <strong>L</strong>.
+</p>
+<p>
+So, the sample pass <strong>FBFBBFFRLR</strong> separates into <strong>FBFBBFF</strong> for the row
+and <strong>RLR</strong> for the clumn.
+</p>
+<p>
+There are 128 rows numbered 0 through 127 so you start with 127 (the
+back of the plane) and then depending on if the next character is an
+<strong>F</strong> or a <strong>B</strong> you either subtract out half the range size or you
+don&#39;t. If the character is an <strong>B</strong> you don&#39;t since you&#39;re at the back
+of the section and the back rows are higher. If it&#39;s a <strong>F</strong> you do
+since you&#39;re at the front and front rows have lower numbers.
+</p>
+<p>
+So, the first <strong>F</strong> says you&#39;re at the front so you subtract <strong>half</strong> the
+range and now you&#39;re looking at 0-63. The next character is a <strong>B</strong> so
+you don&#39;t subtract anything but you&#39;ll be next looking at 32 through
+63 etc. The question has a full walk through.
+</p>
+<p>
+Looking at the  row string, you have <strong>FBFBBFF</strong>. If we substitute the
+amount we subtract for the letters we get <code>64 0 16 0 0 2 1</code> or the
+place values of a binary number <strong>in reverse</strong>. 
+</p>
+<p>
+In my solution, I reversed the string and then converted each <strong>F</strong> or <strong>B</strong>
+into a number. A <strong>B</strong> became a 0 and an <strong>F</strong> became 2^i where <strong>i</strong> is the
+location (index) in the string. For the sample string, once reversed
+to <strong>FFBBFBF</strong> it gives <code>1 2 0 0 16 0 64</code>. If we sum those up and
+subtract from 127 we get our row number.
+</p>
+<p>
+We basically can do the same thing for the column but there you
+subtract from 7.
+</p>
+<p>
+Part 1 of the question asks you to map the row and column to a final
+number by calcualing <code>row*8+col</code> and then find the highest seat number
+from a give list of boarding passes.
+</p>
+<p>
+Part 2 requires you look through all the boarding passes to determine
+your actual seat - the one seat missing from the data set.
+</p>
+<p>
+Lots of good stuff for a class in this question.
+</p>
+<p>
+You&#39;ve got the basic data parsing as usual but I love that this can be
+brute forced but by noticing the base 2 nature of the data you can
+write up a number of different elegant solutions. 
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lq5AdWkzyjg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-12-05</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/AOC">AOC</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/aoc">#AOC</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2020<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

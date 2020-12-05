@@ -6,10 +6,89 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 17:31:06 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 05 Dec 2020 11:18:59 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A teacher looks at Advent of Code 2020 - Day 5</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day05/</link>
+      <pubDate>Sat, 05 Dec 2020 11:18:59 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day05/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://adventofcode.com/2020/day/5&#34;&gt;Day five&amp;#39;s problem&lt;/a&gt; is a nice one for an early CS class. It can be very
+much brute forced but it also touches on some nice concepts and can be
+solved pretty elegantly. I&amp;#39;ve embedded a walk through in Clojure at
+the end but a Python solution would be pretty similar.  
+&lt;/p&gt;
+&lt;p&gt;
+Read the problem over if you haven&amp;#39;t. At it&amp;#39;s core you are taking a boarding
+pass representing a coded airplane seat number and you&amp;#39;re converting
+it to a known seat (row and column). The encoding scheme uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_space_partitioning&#34;&gt;binary
+space partitioning&lt;/a&gt;. The &lt;a href=&#34;https://adventofcode.com/2020/day/5&#34;&gt;question statement&lt;/a&gt; goes over the details.
+&lt;/p&gt;
+&lt;p&gt;
+One of the first things to notice is that you should separate the pass
+into two parts - the row, which consists of the first seven characters
+each one being an &lt;strong&gt;F&lt;/strong&gt; or a &lt;strong&gt;B&lt;/strong&gt; and the last three which are the
+columns and they are marked with either a &lt;strong&gt;R&lt;/strong&gt; or an &lt;strong&gt;L&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+So, the sample pass &lt;strong&gt;FBFBBFFRLR&lt;/strong&gt; separates into &lt;strong&gt;FBFBBFF&lt;/strong&gt; for the row
+and &lt;strong&gt;RLR&lt;/strong&gt; for the clumn.
+&lt;/p&gt;
+&lt;p&gt;
+There are 128 rows numbered 0 through 127 so you start with 127 (the
+back of the plane) and then depending on if the next character is an
+&lt;strong&gt;F&lt;/strong&gt; or a &lt;strong&gt;B&lt;/strong&gt; you either subtract out half the range size or you
+don&amp;#39;t. If the character is an &lt;strong&gt;B&lt;/strong&gt; you don&amp;#39;t since you&amp;#39;re at the back
+of the section and the back rows are higher. If it&amp;#39;s a &lt;strong&gt;F&lt;/strong&gt; you do
+since you&amp;#39;re at the front and front rows have lower numbers.
+&lt;/p&gt;
+&lt;p&gt;
+So, the first &lt;strong&gt;F&lt;/strong&gt; says you&amp;#39;re at the front so you subtract &lt;strong&gt;half&lt;/strong&gt; the
+range and now you&amp;#39;re looking at 0-63. The next character is a &lt;strong&gt;B&lt;/strong&gt; so
+you don&amp;#39;t subtract anything but you&amp;#39;ll be next looking at 32 through
+63 etc. The question has a full walk through.
+&lt;/p&gt;
+&lt;p&gt;
+Looking at the  row string, you have &lt;strong&gt;FBFBBFF&lt;/strong&gt;. If we substitute the
+amount we subtract for the letters we get &lt;code&gt;64 0 16 0 0 2 1&lt;/code&gt; or the
+place values of a binary number &lt;strong&gt;in reverse&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+In my solution, I reversed the string and then converted each &lt;strong&gt;F&lt;/strong&gt; or &lt;strong&gt;B&lt;/strong&gt;
+into a number. A &lt;strong&gt;B&lt;/strong&gt; became a 0 and an &lt;strong&gt;F&lt;/strong&gt; became 2^i where &lt;strong&gt;i&lt;/strong&gt; is the
+location (index) in the string. For the sample string, once reversed
+to &lt;strong&gt;FFBBFBF&lt;/strong&gt; it gives &lt;code&gt;1 2 0 0 16 0 64&lt;/code&gt;. If we sum those up and
+subtract from 127 we get our row number.
+&lt;/p&gt;
+&lt;p&gt;
+We basically can do the same thing for the column but there you
+subtract from 7.
+&lt;/p&gt;
+&lt;p&gt;
+Part 1 of the question asks you to map the row and column to a final
+number by calcualing &lt;code&gt;row*8+col&lt;/code&gt; and then find the highest seat number
+from a give list of boarding passes.
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 requires you look through all the boarding passes to determine
+your actual seat - the one seat missing from the data set.
+&lt;/p&gt;
+&lt;p&gt;
+Lots of good stuff for a class in this question.
+&lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;ve got the basic data parsing as usual but I love that this can be
+brute forced but by noticing the base 2 nature of the data you can
+write up a number of different elegant solutions. 
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lq5AdWkzyjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher Looks at Advent of Code 2020 - Day 4</title>

@@ -6,10 +6,89 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 17:31:06 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 05 Dec 2020 11:18:59 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A teacher looks at Advent of Code 2020 - Day 5</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day05/</link>
+      <pubDate>Sat, 05 Dec 2020 11:18:59 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day05/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://adventofcode.com/2020/day/5&#34;&gt;Day five&amp;#39;s problem&lt;/a&gt; is a nice one for an early CS class. It can be very
+much brute forced but it also touches on some nice concepts and can be
+solved pretty elegantly. I&amp;#39;ve embedded a walk through in Clojure at
+the end but a Python solution would be pretty similar.  
+&lt;/p&gt;
+&lt;p&gt;
+Read the problem over if you haven&amp;#39;t. At it&amp;#39;s core you are taking a boarding
+pass representing a coded airplane seat number and you&amp;#39;re converting
+it to a known seat (row and column). The encoding scheme uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_space_partitioning&#34;&gt;binary
+space partitioning&lt;/a&gt;. The &lt;a href=&#34;https://adventofcode.com/2020/day/5&#34;&gt;question statement&lt;/a&gt; goes over the details.
+&lt;/p&gt;
+&lt;p&gt;
+One of the first things to notice is that you should separate the pass
+into two parts - the row, which consists of the first seven characters
+each one being an &lt;strong&gt;F&lt;/strong&gt; or a &lt;strong&gt;B&lt;/strong&gt; and the last three which are the
+columns and they are marked with either a &lt;strong&gt;R&lt;/strong&gt; or an &lt;strong&gt;L&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+So, the sample pass &lt;strong&gt;FBFBBFFRLR&lt;/strong&gt; separates into &lt;strong&gt;FBFBBFF&lt;/strong&gt; for the row
+and &lt;strong&gt;RLR&lt;/strong&gt; for the clumn.
+&lt;/p&gt;
+&lt;p&gt;
+There are 128 rows numbered 0 through 127 so you start with 127 (the
+back of the plane) and then depending on if the next character is an
+&lt;strong&gt;F&lt;/strong&gt; or a &lt;strong&gt;B&lt;/strong&gt; you either subtract out half the range size or you
+don&amp;#39;t. If the character is an &lt;strong&gt;B&lt;/strong&gt; you don&amp;#39;t since you&amp;#39;re at the back
+of the section and the back rows are higher. If it&amp;#39;s a &lt;strong&gt;F&lt;/strong&gt; you do
+since you&amp;#39;re at the front and front rows have lower numbers.
+&lt;/p&gt;
+&lt;p&gt;
+So, the first &lt;strong&gt;F&lt;/strong&gt; says you&amp;#39;re at the front so you subtract &lt;strong&gt;half&lt;/strong&gt; the
+range and now you&amp;#39;re looking at 0-63. The next character is a &lt;strong&gt;B&lt;/strong&gt; so
+you don&amp;#39;t subtract anything but you&amp;#39;ll be next looking at 32 through
+63 etc. The question has a full walk through.
+&lt;/p&gt;
+&lt;p&gt;
+Looking at the  row string, you have &lt;strong&gt;FBFBBFF&lt;/strong&gt;. If we substitute the
+amount we subtract for the letters we get &lt;code&gt;64 0 16 0 0 2 1&lt;/code&gt; or the
+place values of a binary number &lt;strong&gt;in reverse&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+In my solution, I reversed the string and then converted each &lt;strong&gt;F&lt;/strong&gt; or &lt;strong&gt;B&lt;/strong&gt;
+into a number. A &lt;strong&gt;B&lt;/strong&gt; became a 0 and an &lt;strong&gt;F&lt;/strong&gt; became 2^i where &lt;strong&gt;i&lt;/strong&gt; is the
+location (index) in the string. For the sample string, once reversed
+to &lt;strong&gt;FFBBFBF&lt;/strong&gt; it gives &lt;code&gt;1 2 0 0 16 0 64&lt;/code&gt;. If we sum those up and
+subtract from 127 we get our row number.
+&lt;/p&gt;
+&lt;p&gt;
+We basically can do the same thing for the column but there you
+subtract from 7.
+&lt;/p&gt;
+&lt;p&gt;
+Part 1 of the question asks you to map the row and column to a final
+number by calcualing &lt;code&gt;row*8+col&lt;/code&gt; and then find the highest seat number
+from a give list of boarding passes.
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 requires you look through all the boarding passes to determine
+your actual seat - the one seat missing from the data set.
+&lt;/p&gt;
+&lt;p&gt;
+Lots of good stuff for a class in this question.
+&lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;ve got the basic data parsing as usual but I love that this can be
+brute forced but by noticing the base 2 nature of the data you can
+write up a number of different elegant solutions. 
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lq5AdWkzyjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher Looks at Advent of Code 2020 - Day 4</title>
@@ -4153,133 +4232,6 @@ Monday. It&amp;#39;s also hard on the students - 12 credits in one month.
 That said, we&amp;#39;re chugging along and they&amp;#39;re doing great. More
 confident than ever that we&amp;#39;re going to have a 21 new leaders in CS Ed
 in NY come the program&amp;#39;s conclusion.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reopening Schools - de Blasio and Carranza throw kids and teachers under the bus.</title>
-      <link>https://cestlaz.github.io/post/reopening-schools/</link>
-      <pubDate>Thu, 09 Jul 2020 08:18:21 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/reopening-schools/</guid>
-      <description>&lt;p&gt;
-Yesterday, Bill de Blasio and Richard Carranza unveiled their open the
-schools in the fall plan. 
-&lt;/p&gt;
-&lt;p&gt;
-The plan is perfectly consistent with de Blasio and Carranza&amp;#39;s
-education policies and efforts in general - tone deaf, ineffective,
-and in this case, unsafe.
-&lt;/p&gt;
-&lt;p&gt;
-I know we were told that part of this came from survey results but we
-all know that surveys are super easy to fix. I mean, ask any teacher
-or parent &amp;#34;do you want schools to be open and in person in the Fall?&amp;#34;
-and everyone will say &amp;#34;yes.&amp;#34; Of course, there&amp;#39;s the implication that
-it&amp;#39;s safe and I bet that part didn&amp;#39;t make it in to the surveys.
-&lt;/p&gt;
-&lt;p&gt;
-I didn&amp;#39;t watch the news conference live, but I was told that while
-principals, parents, and children were mentioned over and over as
-consulted constituents when forming the plan, somehow teachers never
-came up. Typical.
-&lt;/p&gt;
-&lt;p&gt;
-The basics of the plan is that students could go all remote or hybrid
-and under the hybrid model, they&amp;#39;d be in the schools some days and not
-others.
-&lt;/p&gt;
-&lt;p&gt;
-Does this address health concerns? Doubtful. They&amp;#39;re talking about a
-third to half the students attending at a time. Take a look at any
-school on opening and closing - it&amp;#39;s wall to wall from the school to
-the subway. It&amp;#39;s a mess. Many schools are already split schedule -
-they have their kids entry and egress staggered into halves or thirds
-and the beginning and end of days there are &lt;strong&gt;STILL&lt;/strong&gt; wall to wall for
-blocks not to mention the subway platforms and cars. Even 1/3 isn&amp;#39;t
-going to do it and the more you stagger, the more you lengthen the
-school days and this affects both staff and families. What good is
-having a kid go to school so you can work if they don&amp;#39;t start until
-mid day?
-&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s assume, although I don&amp;#39;t think it&amp;#39;s a safe assumption, that you
-can get the kids to and from school safety. How big are the
-classrooms? I heard that some Stuy teacher&amp;#39;s measured them and they
-could safely accommodate something like 9 -  12 people. That&amp;#39;s in line
-with what DbD said but what about transfer between classes? Some
-schools - particularly those in converted spaces have TINY halls or
-limited stairwells. What about bathrooms? None of this has been
-addressed.
-&lt;/p&gt;
-&lt;p&gt;
-What about cleaning? Teachers have regularly begged for basic
-supplies. Schools go without necessities like toilet paper and the
-Mayor&amp;#39;s saying that we&amp;#39;ll have sufficient masks and cleaning supplies?
-Good luck with that! 
-&lt;/p&gt;
-&lt;p&gt;
-Even if we have the supplies, will they be used and used correctly and
-often enough? 
-&lt;/p&gt;
-&lt;p&gt;
-What about compliance? For years, schools had a &amp;#34;no hats&amp;#34; policy but
-rarely are there no hats. Even when the policy works, usually it&amp;#39;s a
-result of teachers continually asking students to remove their
-hats. How did those cell phone bans work? Do we really believe we can
-get 100% compliance from students, teachers, and staff? What about the
-younger grades? We really expect them to comply with adult
-protocols?????
-&lt;/p&gt;
-&lt;p&gt;
-Even if everything is implemented, will it keep everyone safe?
-Unlikely. Professional and big time college sports have extreme
-incentive to &amp;#34;open up&amp;#34;, boatloads of money and everyone pulling in the
-same direction. They test all the time, have all the space they need
-and can implement whatever protocols they want. Even with all this we
-keep hearing about new cases in those populations. If they can&amp;#39;t do it
-how can underfunded schools?
-&lt;/p&gt;
-&lt;p&gt;
-With all of this, even if it&amp;#39;s safe and even if schools can manage
-reasonable schedules, students will only be going to school a couple
-of times a week - will this really help parents? Maybe not. I remember
-when we had Batya. We were looking for child care for just a couple of
-days a week. Five days was easy, no days was easy but just a couple -
-not so much. What about the shifted days? Large schools might need 4
-shifts. Kids either start and end super early or super late. Will that
-help parents who work &amp;#34;regular time&amp;#34; jobs?
-&lt;/p&gt;
-&lt;p&gt;
-Finally, let&amp;#39;s get to the education side of things. High school
-teachers teach five classes a day. Around 34 kids in a class. Given
-room size restrictions that  means we have to split into threes. If
-one teacher has to deal with this then it&amp;#39;s a HUGE increase in
-work. If kids come to school on different days they&amp;#39;ll get different
-live lessons - for each class teachers will have to make at least one
-in person lesson and at least one corresponding remote lesson and I&amp;#39;m
-over simplifying. Since you&amp;#39;re now &amp;#34;teaching&amp;#34; 10 or 15 classes instead
-of 5 I don&amp;#39;t see how you can meet with them in person and deliver
-synchronous remote instruction which means you&amp;#39;re only actually
-interacting with your students once or twice a week and there&amp;#39;s no way
-teachers will be able to actually develop materials, assess students,
-and maintain meaningful contact unless someone finds a whole lot of
-hours to the day.
-&lt;/p&gt;
-&lt;p&gt;
-On the other hand, if the teacher just does the in person and another
-or other teachers do the remote you&amp;#39;ll have multiple teachers teaching
-a single class without any real coordination  - this is yet another
-recipe for disaster.
-&lt;/p&gt;
-&lt;p&gt;
-I get it - we all want to get back to normal. I want to be with my
-students but I want to be with them safely. I also get that some
-students are not doing well in isolation and that remote school is
-both less effective than in person and a hardship all around but when
-we open it has to make sense both in terms of safety and in terms of
-education. de Blasio and Carranza&amp;#39;s plan is neither.
 &lt;/p&gt;
 </description>
     </item>
