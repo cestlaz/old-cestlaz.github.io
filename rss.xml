@@ -6,10 +6,94 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Dec 2020 11:18:59 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 10:14:03 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher looks at Advent of Code 2020 - Day 06</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day06/</link>
+      <pubDate>Sun, 06 Dec 2020 10:14:03 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day06/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://adventofcode.com/2020/day/6&#34;&gt;Day 6&lt;/a&gt; turned out to be pretty straightforward. Like day 4 you had to
+deal with two consecutive newlines when parsing the data but assuming
+you did day 4 that&amp;#39;s no problem. 
+&lt;/p&gt;
+&lt;p&gt;
+The gist is that a group is formed by consecutive lines and groups are
+separated by a blank line. Each line in each group is a string of
+letters representing answers to questions. For instance, for this
+group: 
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+abc
+abd
+ab
+&lt;/pre&gt;
+&lt;p&gt;
+you have three people. The first answered &amp;#39;yes&amp;#39; to a, b, and c. the
+second to a,b, and d and the third to a and b. 
+&lt;/p&gt;
+&lt;p&gt;
+Your goal was to figure out how many different questions did each
+group answer &amp;#39;yes&amp;#39; to and what was the total across the groups. 
+&lt;/p&gt;
+&lt;p&gt;
+It seemed that the easiest thing to do was to take each group, remove
+the newlines and then count the unique characters. 
+&lt;/p&gt;
+&lt;p&gt;
+In Python, something like this (Clojure in the video and on &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day06.clj&#34;&gt;GitHub&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;d&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
+d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d)
+ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+So, you just have to do that for each group and add them all up.
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 added a small twist. Now you wanted to look at each group and
+count the number of answers that everyone in that group answered &amp;#34;yes&amp;#34;
+to. For the above example, it would be 2 - everyone answered a and b.
+&lt;/p&gt;
+&lt;p&gt;
+Assuming your language supports set operations, you can just use
+union.
+&lt;/p&gt;
+&lt;p&gt;
+Again in Python: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
+d_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()
+result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;])
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
+    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; set(item)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(result)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Again,  do it for all the groups and add it up.
+&lt;/p&gt;
+&lt;p&gt;
+This is a great question to go over set operations!!
+&lt;/p&gt;
+&lt;p&gt;
+Check out the Clojure video for that approach where I also talk about
+easier ways to complete yesterday&amp;#39;s problem.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy!
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/I8dbKJ_315Q&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>A teacher looks at Advent of Code 2020 - Day 5</title>
@@ -4175,75 +4259,6 @@ technologies tomorrow.
 &lt;/p&gt;
 &lt;p&gt;
 It was all pretty cool.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Virtual Conferences - CSTA 2020 part 2</title>
-      <link>https://cestlaz.github.io/post/csta-2020/</link>
-      <pubDate>Wed, 15 Jul 2020 19:32:17 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/csta-2020/</guid>
-      <description>&lt;p&gt;
-Now that CSTA 2020&amp;#39;s over time for some more thoughts on the
-conference and also on virtual conferences in general.
-&lt;/p&gt;
-&lt;p&gt;
-I only got to attend a couple of sessions as I was working my CS
-teacher certification program but a nice feature is that I was able to
-hop in and out of sessions without disturbing or disrupting. You can&amp;#39;t
-really do that in person. I&amp;#39;m also looking forward to when they
-release the sessions for later viewing. In addition to not being able
-to get to everything I wanted, my session overlapped with Nifty
-Assignments - always a fun show. Now I still get to see it!!!!
-&lt;/p&gt;
-&lt;p&gt;
-Speaking of my session, JonAlf and I had fun but I would have much
-preferred doing it in person. After a few minor hiccups, Hopin worked
-perfectly but it suffers the same problem as Zoom when your kids turn
-off their cameras. I didn&amp;#39;t really feel connected to the audience,
-Sure, there was the chat, but with the number of people in the
-session, it flew by way to fast. We could have invited a few attendees
-&amp;#34;up on stage&amp;#34; but that would have made the dual screen share
-smaller. None of this was a deal breaker but the tech still has some
-limitations.
-&lt;/p&gt;
-&lt;p&gt;
-So, sessions worked but had some pluses and minuses against in person
-and the networking feature I described &lt;a href=&#34;https://cestlaz.github.io/post/virtual-conf/&#34;&gt;last time&lt;/a&gt; was a clear winner so
-what&amp;#39;s next - the exhibits. Exhibits didn&amp;#39;t work for me. I can&amp;#39;t say
-why. I think it&amp;#39;s because I like strolling the exhibit hall and just
-chatting with both attendees and company reps. I generally don&amp;#39;t like
-the formal booth talk and that&amp;#39;s all we got here. Nothing wrong with
-the booth presentation but it&amp;#39;s just normally not my thing. 
-&lt;/p&gt;
-&lt;p&gt;
-The other thing missing and it&amp;#39;s related to those exhibition hall
-chats was the hallway track. That was the biggest loss. The informal
-and semi-formal meetups. Impromptu lunches and dinners and one offs
-that just happen. Can&amp;#39;t really have that with the current virtual
-tools.
-&lt;/p&gt;
-&lt;p&gt;
-A final point was that when I go to a conference I get to both explore
-a new part of the world and I get to turn off the outside world for a
-couple of days - I can just enjoy the conference. You can&amp;#39;t do that if
-it&amp;#39;s virtual but you get other advantages - no cost of travel and the
-ability to attend at all your schedule doesn&amp;#39;t allow you to get away
-for half a week.
-&lt;/p&gt;
-&lt;p&gt;
-So, what&amp;#39;s the verdict? 
-&lt;/p&gt;
-&lt;p&gt;
-The 2020 edition of the CSTA conference was a big win in my book. I
-hope we can do it in person next year but even if we can, it would be
-great to offer at least parts virtually to make at least sessions
-available to a wider audience.
-&lt;/p&gt;
-&lt;p&gt;
-Either way, I&amp;#39;m there.
 &lt;/p&gt;
 </description>
     </item>
