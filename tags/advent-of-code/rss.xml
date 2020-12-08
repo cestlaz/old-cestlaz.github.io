@@ -6,10 +6,103 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 10:14:03 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 14:47:17 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher looks at Advent of Code 2020 - Days 7 and 8</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day0708/</link>
+      <pubDate>Tue, 08 Dec 2020 14:47:17 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day0708/</guid>
+      <description>&lt;p&gt;
+Today we&amp;#39;ll talk about days &lt;a href=&#34;https://adventofcode.com/2020/day/7&#34;&gt;seven&lt;/a&gt; and &lt;a href=&#34;https://adventofcode.com/2020/day/8&#34;&gt;eight&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s start with 7. I teach all morning on Mondays. I woke up and
+worked out and then took a look at the problem in the few minutes
+before class. It was certainly harder than days one through six but I
+felt it was something I knew I could do based on past experience so I
+quickly started to throw something together. I tried to finish it in
+the between classes but couldn&amp;#39;t get the right answer to part
+one. After class I spent more time debugging. I was pretty certain my
+algorithm was right and it turns out it was. The problem was in my
+parsing.
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, to the problem. Read it over if you haven&amp;#39;t yet.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;ve studied data structures and algorithms you&amp;#39;ll recognize that
+this problem can be viewed as a graph problem. Bags are nodes in the
+graph and edges tell you what bags each bag can contain.
+&lt;/p&gt;
+&lt;p&gt;
+The data is set up to represent a graph like this: 
+&lt;/p&gt;
+&lt;img width=&#34;50%&#34; src=&#34;https://cestlaz.github.io/img/advent2020-0708/g1.png&#34;&gt;
+&lt;p&gt;
+I left out the weights (numbers of bags). This can be represented in
+an adjacency list. The video does this in Clojure but in Python, you&amp;#39;d
+get something that starts like this:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lightred&amp;#39;&lt;/span&gt;     : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkorange&amp;#39;&lt;/span&gt;   : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibrantplum&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;],
+ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibtrantplum&amp;#39;&lt;/span&gt; :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;]}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The challenge comes when you see that many starting points can lead to
+the goal of the shiny gold bag. 
+&lt;/p&gt;
+&lt;p&gt;
+The insight comes when you notice that you can &amp;#34;reverse the edges.&amp;#34;
+For example, when we saw the line that led to the lightred contains
+brightwhite and mutedyellow, instead we represent it the other way
+making two entries - brightwhite is contained by lightred and also
+mutedyellow is contained by lightred. 
+&lt;/p&gt;
+&lt;p&gt;
+Once we set this up the solution is a breadth or depth first search. 
+&lt;/p&gt;
+&lt;p&gt;
+The video doesn&amp;#39;t do a complet walk through but goes into more
+details. 
+&lt;/p&gt;
+&lt;p&gt;
+I like this type of problem for classes because students can see that
+sometimes changing the data can make the problem much easier. If you
+implement the adjacency list as it&amp;#39;s presented the problem seems
+hard. Once you see you can go from shinygold out instead of from  all
+the bags to shinygold the porblem becomes much easier.
+&lt;/p&gt;
+&lt;p&gt;
+The other interesting point is that without fundamental data
+structures and algorithms this is a hard problem. With them, it&amp;#39;s
+pretty straightforward. Remind your students of this when they ask why
+they need data structures and algorithms. This problem might be made
+up but graphs represent a lot of things in the real world and graph
+traversals and algorithms can solve a lot of real world problems
+&lt;/p&gt;
+&lt;p&gt;
+Now to day 8. 
+&lt;/p&gt;
+&lt;p&gt;
+Day 8 involved a simple machine simulator and leads to a very
+straightforward solution - write a program that simulates the computer
+stated in the problem. My solution tries to approach the problem in a
+functional way and also makes use of a function lookup table to avoid
+multiple ifs. The solution and complete walk through is in the video
+and in Clojure but a similar solution can be written in Python.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher looks at Advent of Code 2020 - Day 06</title>
