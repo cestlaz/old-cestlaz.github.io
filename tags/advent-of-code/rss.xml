@@ -6,10 +6,219 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Dec 2020 14:47:17 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 10 Dec 2020 16:52:45 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Teacher looks at Advent of Code 2020 - days 9 and 10</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day0910/</link>
+      <pubDate>Thu, 10 Dec 2020 16:52:45 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day0910/</guid>
+      <description>&lt;p&gt;
+As we get closer to the end of the semester and time becomes scarcer
+I&amp;#39;m wondering how many more I&amp;#39;ll finish. Barely had time to do days 9
+and 10.
+&lt;/p&gt;
+&lt;p&gt;
+Not much to say about &lt;a href=&#34;https://adventofcode.com/2020/day/9&#34;&gt;day 9&lt;/a&gt; Part one was basically a rehash of day 1
+part 1 but with a sliding widow. Part 2? I just brute force tried all
+the subranges. I meant to go back to try to improve the solution but
+didn&amp;#39;t have a chance. 
+&lt;/p&gt;
+&lt;p&gt;
+Clojure code can be found &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day09.clj&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://adventofcode.com/2020/day/10&#34;&gt;Day 10&lt;/a&gt; was more interesting. 
+&lt;/p&gt;
+&lt;p&gt;
+I misread part 1 but ultimately, my solution was to: 
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+read in the data
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+sort it
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+prepend a 0
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+append an additional value of the max + 3 to the end
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Then loop through comparing adjacent values and keep track of the
+differences which can be 1, 2, or 3. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample10-1.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()]
+data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sort()
+data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(max(data)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
+
+j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
+    diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;data[i]
+    j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Part 2 was where the fun starts - how many combinations of adapters
+will take you from the start to the end.
+&lt;/p&gt;
+&lt;p&gt;
+For example, if we had adapters with voltages 1,4,5,6 given the
+problem constraints that you can only connect an adapter to another
+with a &amp;#34;joltage&amp;#34; of up to three less, you can only use the 1 voltage 1
+way (coming from the source of 0).
+&lt;/p&gt;
+&lt;p&gt;
+4 can connect to only 1 so it can only be used 1 way.
+&lt;/p&gt;
+&lt;p&gt;
+5 can connect to 4 so it too can only be used 1 way.
+&lt;/p&gt;
+&lt;p&gt;
+6 is a change, it can connect to 5 or 4 so you could chain either
+6–&amp;gt;5–&amp;gt;4–&amp;gt;1 or 6–&amp;gt;4–&amp;gt;1 so you can get to 6 two ways. 
+&lt;/p&gt;
+&lt;p&gt;
+If a student knows recursion and recursive search it&amp;#39;s easy enough to
+code something that tries all the paths but it&amp;#39;s going to get very
+slow very fast.
+&lt;/p&gt;
+&lt;p&gt;
+With a couple of insights though this can lead to a nice dynamic
+programming type solution. 
+&lt;/p&gt;
+&lt;p&gt;
+First thing to notice is that, similar to day 7, instead of looking at
+how many adapters a lower joltage adapter can lead to we can look at how
+many lower joltage adapters a given adapter could have come from. 
+&lt;/p&gt;
+&lt;p&gt;
+To do this, we can look at the adapters as a graph. We can build a
+dictionary where the keys are the adapter joltages and the entries are
+the lower joltage adapters it can connect with:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build_reverse_map&lt;/span&gt;(data):
+    graph&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
+    data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)):
+        current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[i]
+        j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (j&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;len(data) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; data[i] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; data[j] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
+            j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+        graph[current]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:j]
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; graph
+
+rmap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; build_reverse_map(data)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+Line 3 reverses the list then for each item in the list, lines 6
+through 8 find the adapters it can connect with. 
+&lt;/p&gt;
+&lt;p&gt;
+The next insight is that instead of calculating all the possibilities
+we can build them a step at a time. 
+&lt;/p&gt;
+&lt;p&gt;
+Consider the first voltage from our above example of 1,4,5,6.
+&lt;/p&gt;
+&lt;p&gt;
+1 – it can only go to 0 so 0 is its only &amp;#34;neighbor&amp;#34; in the graph. We
+can only get there 1 way so we can store 1 in ways[1].
+&lt;/p&gt;
+&lt;p&gt;
+4 – same deal - its only neighbor is 1. You can only get to 1 one way
+so you can only get to 4 1 way - store it in ways[4]
+&lt;/p&gt;
+&lt;p&gt;
+5 – same deal, ways[5] = 1.
+&lt;/p&gt;
+&lt;p&gt;
+6 - now six is different. It has 2 neighbors - 5 and 4. You can get to
+5 one way and 4 one way so we can get to 6 two ways (the sum of the
+ways to get to each of it&amp;#39;s neighbors). Store that in ways[6]
+&lt;/p&gt;
+&lt;p&gt;
+Go through all the nodes and then ways[the last node] will have your
+answer:  
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;ways&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
+    neighbors &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rmap[d]
+    sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; neighbors:
+        sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; ways[n]
+    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sum&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+Relatively straightforward and lightning fast. Dynamic programming
+can be really hard to teach but I think this problem might be a good
+one to do with an advanced data structures class. 
+&lt;/p&gt;
+&lt;p&gt;
+For comparison, you can find the clojure code &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day10.clj&#34;&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Fun problem today. Looking forward to tomorrow.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher looks at Advent of Code 2020 - Days 7 and 8</title>
