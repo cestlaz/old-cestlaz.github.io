@@ -6,10 +6,88 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Dec 2020 16:52:45 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Dec 2020 15:00:43 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A teacher looks at Advent of Code 2020 - Day 11</title>
+      <link>https://cestlaz.github.io/post/advent-2020-day11/</link>
+      <pubDate>Fri, 11 Dec 2020 15:00:43 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2020-day11/</guid>
+      <description>&lt;p&gt;
+Today was &lt;a href=&#34;https://en.wikipedia.org/wiki/Cellular_automaton&#34;&gt;Cellular Automaton&lt;/a&gt; Day at Advent of Code. You have a world
+that&amp;#39;s usually represented as a grid of cells. Each cell can be in a
+certain state. Given a certain state, the next state is determined by
+simple rules like for a given cell how many of it&amp;#39;s neighbors are the
+same color. 
+&lt;/p&gt;
+&lt;p&gt;
+The most popular Cellular Automat is probably &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34;&gt;Conway&amp;#39;s Game of Life&lt;/a&gt;
+where each cell can be either alive or dead in a given generation and
+in the next generation the state will be determined by how many of its
+neighbors are currently dead or alive. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve always liked teaching with Celluar Automata and explored it
+deeply in the intro course I designed at Stuy. NetLogo is perfect for
+representing a CA (&lt;a href=&#34;https://cestlaz.github.io/posts/2016-01-15-shift-image/&#34;&gt;old post&lt;/a&gt;) and we even do things like using a CS to
+&lt;a href=&#34;https://cestlaz.github.io/posts/2016-01-17-maze-ca/&#34;&gt;solve a maze&lt;/a&gt;. Good stuff.
+&lt;/p&gt;
+&lt;p&gt;
+Today&amp;#39;s problem set up a CA where each cell can be one of three
+states - floor, occupied chair, unoccupied chair. The floor never
+changed but the chairs can change from occupied to unoccupied and back
+based on neighbors. I actually really like teh question. It&amp;#39;s posed as
+passengers prefer to sit in s eats next to other empty seats which is
+true and the overall problem is much more realistic and therefor
+accessible than Conway&amp;#39;s game of life. I think I might lead with it if
+I do CA again with my students. 
+&lt;/p&gt;
+&lt;p&gt;
+You can find my Clojure solutions &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day11.clj&#34;&gt;here&lt;/a&gt;. They were pretty
+straightforward. I spend too much time going down the &amp;#34;learn how to
+write a lazy sequence in Clojure&amp;#34; rabbit hole for part 2 before just
+writing it in a more traditional way.
+&lt;/p&gt;
+&lt;p&gt;
+To me there are a couple of interesting things at play when teaching
+CA. The first is state management and synchronization. When beginners
+work on a CA they frequently look at a cell, figure out it&amp;#39;s next
+generation value and then replace the cell with its new value. Then,
+later they look at a neighboring cell and when that cell looks at its
+neighbors it gets the changed value not the original one. Clearly a
+problem. 
+&lt;/p&gt;
+&lt;p&gt;
+Writing a CA makes it clear that you have to keep your state clean
+while you build a new state for the next generation. That&amp;#39;s an
+important lesson to learn.
+&lt;/p&gt;
+&lt;p&gt;
+The other interesting teaching point is with data representation. CA
+is frequently taught as a 2D array exercise. This makes sense -
+simulations like Conway&amp;#39;s Game of Life work perfectly in a 2D array
+and if you&amp;#39;re doing graphics with your class you can also get cool
+animations through the generations. 
+&lt;/p&gt;
+&lt;p&gt;
+That said, there are other valid representations that could be
+superior at times. You might have a list of living cells or a hash
+tabe of cells if you have more than 2 living states. This can be far
+superior from a space efficiency point of view if you don&amp;#39;t have a lot
+of living cells compared with your world size - say you have a CA with
+a theoretically unlimited size. 
+&lt;/p&gt;
+&lt;p&gt;
+So, there it is - thoughts on today&amp;#39;s problem. As I said, it was
+pretty straightforward but I also really like the setup and will
+probably use it in class at some point in the future.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A Teacher looks at Advent of Code 2020 - days 9 and 10</title>
@@ -4328,67 +4406,6 @@ first years in the Fall.
 &lt;p&gt;
 So, GitHub Classroom&amp;#39;s feedback mechanism? A big win and more great
 work from the GitHub education team.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Merge Over Zoom - A Hunter CS Certification Program Update</title>
-      <link>https://cestlaz.github.io/post/merge-over-zoom/</link>
-      <pubDate>Thu, 16 Jul 2020 19:00:55 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/merge-over-zoom/</guid>
-      <description>&lt;p&gt;
-We&amp;#39;ve been talking sorting and searching in our teacher certification
-program and today was all about the merge sort. One of the strategies
-we use when teaching it in person involves sorting a deck of cards by
-&lt;a href=&#34;https://cestlaz.github.io/posts/2014-02-27-dumbass/&#34;&gt;Tom Sawyering&lt;/a&gt; it with the class. It&amp;#39;s fun and it&amp;#39;s effective but you
-can&amp;#39;t do it over Zoom. What to do? We didn&amp;#39;t want to just jump into
-the nuts and bolts of merge sort. We could - we&amp;#39;ve got a great group
-of teachers who could handle it but we&amp;#39;re not just talking about
-content in the program we&amp;#39;re also talking about pedagogy.
-&lt;/p&gt;
-&lt;p&gt;
-How could we adapt a divide and conquer algorithm where we split a
-deck of cards and pass it out to the class to a remote environment.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s what we came up with.
-&lt;/p&gt;
-&lt;p&gt;
-I started with a story about how I pitched Hunter about having a party
-with this first cohort when they all earn their NY State CS Teaching
-Certificates (assuming we could have a party in person). They said yes
-but to keep costs down I had to get them a list of possible
-restaurants to order from sorted by lowest price. We decided to use
-Chinese restaurants and the price of pork dumplings. 
-&lt;/p&gt;
-&lt;p&gt;
-I had a long list and was going to have to go to the seamless page for
-each one and get the price and then sort them. Not fun.
-&lt;/p&gt;
-&lt;p&gt;
-Since I&amp;#39;m running the program but have two instructors - JonAlf and
-Topher working with me, we decided I could &amp;#34;volunteer&amp;#34; each to do half
-the list. They weren&amp;#39;t happy so they looked for Teaching Assistants to
-pawn the work off on but having none went to the students. We
-continued with the split until a bunch of students each had to look up
-one and only one restaurant to find the price of the pork. We then
-passed the restaurants and prices back up the chain and voila - merge
-sort. .
-&lt;/p&gt;
-&lt;p&gt;
-We basically were able to replicate the in class card sorting
-experience with something that we could do over Zoom. It went over
-pretty well. 
-&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;re going to talk more about what we did and why and the idea of
-actively engaging students in different ways over virtual conference
-technologies tomorrow. 
-&lt;/p&gt;
-&lt;p&gt;
-It was all pretty cool.
 &lt;/p&gt;
 </description>
     </item>
