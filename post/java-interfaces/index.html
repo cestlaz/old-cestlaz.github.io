@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1607979316" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608159277" />
 
 
 
@@ -81,17 +81,14 @@ Two of the hardest topics to make meaningful to students in APCS-A are
 inheritance and interfaces. It&#39;s not that they&#39;re super difficult
 topics but rather that they&#39;re not often needed, useful, or superior
 to not using them on beginner assignments. More often than not the
-motivation is a bit forced as are the assignments. 
-</p>
+motivation is a bit forced as are the assignments. </p>
 <p>
 Inheritance is its own can of worms and to be honest, something I&#39;ve
 not found to be all that useful or necessary. The class abstraction
 made sense to me for a number of projects but deep inheritance just
-hasn&#39;t come up much. 
-</p>
+hasn&#39;t come up much. </p>
 <p>
-In any event, today I thought I&#39;d talk about interfaces.
-</p>
+In any event, today I thought I&#39;d talk about interfaces.</p>
 <p>
 When Java was first built a decision was made not to allow multiple
 inheritance - the idea that a class can be derived from multiple
@@ -102,21 +99,17 @@ you needed features that multiple inheritance provide. Specifically
 there are times when you need some functionality that operates across
 multiple unrelated classes. Without any other features, you&#39;d have to
 start <strong>all</strong> of your classes from a single based class and include that
-functionality. Clearly not a good idea.
-</p>
+functionality. Clearly not a good idea.</p>
 <p>
-The first useful example is probably <code>Comparable</code>
-</p>
+The first useful example is probably <code>Comparable</code></p>
 <div class="src src-java">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
 <p>
-At first blush it might not seem all that useful. 
-</p>
+At first blush it might not seem all that useful. </p>
 <p>
 Let&#39;s suppose you are doing something like finding the first String
-(alphabetically) from an array:
-</p>
+(alphabetically) from an array:</p>
 <div class="src src-java">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
@@ -128,8 +121,7 @@ interfaces you would need three independent search routines or set up
 a crazy inheritance hierarchy where <code>String</code>, <code>Person</code> and <code>Shape</code> all
 come from the same parent. Instead, by having your two new classes
 implement the <code>Comparable</code> interface all three can use the same
-search:
-</p>
+search:</p>
 <div class="src src-java">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
@@ -137,33 +129,27 @@ search:
 This is not entirely true. The above solution will give you compiler
 warnings. You&#39;ll have to decide if it makes sense to jump through the
 hoops necessary to get rid of the warnings or if it&#39;s sufficient to do
-some vigorous had waving.
-</p>
+some vigorous had waving.</p>
 <p>
 This is the benefit of interfaces. You can create functionality that
 works across classes. In addition to writing things like our
  <code>findSmallest</code> above, if our classes implement <code>Comparable</code> we can sort
-collections of our classes using the built in sort methods.
-</p>
+collections of our classes using the built in sort methods.</p>
 <p>
-This is a benefit that our students can probably appreciate.
-</p>
+This is a benefit that our students can probably appreciate.</p>
 <p>
 Anther place interfaces come up and make sense are with GUI
 programming. It&#39;s pretty easy to show the utility of using interfaces
 with the assorted listeners. That said, Java GUI programming is
-something of a bear so maybe that&#39;s not the way to go.
-</p>
+something of a bear so maybe that&#39;s not the way to go.</p>
 <p>
 Where else can you explore interfaces in APCS-A? Any program where you
 have different entities that change in different ways over time. This
 might be a simulation where time passes via a control loop or maybe a
-game where time passes a turn at a time.
-</p>
+game where time passes a turn at a time.</p>
 <p>
 For example, you might have a simulation with various resources that
-implement an interface with an <code>update</code> routine:
-</p>
+implement an interface with an <code>update</code> routine:</p>
 <div class="src src-java">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
@@ -171,20 +157,17 @@ implement an interface with an <code>update</code> routine:
 Maybe a food resource updates by raising or lowering the amount of
 food it provides or perhaps an animal resource updates its location. You could
 have an array of objects that implement this interface and just call
-update on each one.
-</p>
+update on each one.</p>
 <p>
 You could do the same with a game. Maybe the human player&#39;s <code>update</code> 
 prompts for keyboard input while non player characters just calculate
-their next state.
-</p>
+their next state.</p>
 <p>
 Interfaces are not the easiest thing to teach. The mechanics are
 straightforward but the motivation is frequently forced for
 beginners. I was never 100% happy with how I did it and now that I&#39;m
 in a C++ shop it doesn&#39;t come up but I hope this is helpful to some of
-you out there.
-</p>
+you out there.</p>
 
         </div>
         

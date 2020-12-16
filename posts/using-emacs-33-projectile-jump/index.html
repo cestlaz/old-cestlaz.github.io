@@ -14,12 +14,15 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1607979317" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608159278" />
 
 
 
 <meta property="og:title" content="Using Emacs - 33 - projectile, dumb-jump" />
-<meta property="og:description" content="If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.  Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.  Here&#39;s my configuration: ;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))   Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named ." />
+<meta property="og:description" content="If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
+ Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
+ Here&#39;s my configuration:
+;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))   Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/" />
 <meta property="article:published_time" content="2017-04-28T00:00:00+00:00" />
@@ -27,7 +30,10 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 33 - projectile, dumb-jump"/>
-<meta name="twitter:description" content="If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.  Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.  Here&#39;s my configuration: ;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))   Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named ."/>
+<meta name="twitter:description" content="If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
+ Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
+ Here&#39;s my configuration:
+;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on))   Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named ."/>
 
 
 
@@ -78,16 +84,13 @@
         <div class="content">
             <p>
 If you keep Emacs open all the time you end up accumulating lots of
-buffers. That can make navigating a little bit awkward.
-</p>
+buffers. That can make navigating a little bit awkward.</p>
 <p>
 <a href="https://github.com/bbatsov/projectile">Projectile</a> is a really nice package that makes navigating in and
 between projects much easier. I also have <a href="https://github.com/ericdanan/counsel-projectile">counsel-projectile</a>
-installed.
-</p>
+installed.</p>
 <p>
-Here&#39;s my configuration:
-</p>
+Here&#39;s my configuration:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; projectile</span>
 (use-package projectile
@@ -105,30 +108,24 @@ Here&#39;s my configuration:
 Projectile considers a sub-directory tree to be a project if it&#39;s a
 git or other source control repo, if it&#39;s created by tool like lein,
 maven, or sbt, or if you put an empty file named <strong><strong>.projectile</strong></strong> in
-the root directory of the project.
-</p>
+the root directory of the project.</p>
 <p>
 Projectile learns about projects when you open a file in that project
 and then stores that information in an Emacs bookmark file in your
-.emacs.d directory.
-</p>
+.emacs.d directory.</p>
 <p>
 You can switch between projects using <code>C-c p</code> and when in a project,
 load another file using <code>C-c f</code>. If you use the <strong><strong>which-key</strong></strong> package
 as I do, just type <code>C-c</code> - the projectile prefix and then which-key
-will bring up help.
-</p>
+will bring up help.</p>
 <p>
 The video goes through some of my favorite features and you can find
-the full documentation can be found <a href="http://projectile.readthedocs.io/en/latest/">here</a>.
-</p>
+the full documentation can be found <a href="http://projectile.readthedocs.io/en/latest/">here</a>.</p>
 <p>
 The other package I show is <a href="https://github.com/jacktasia/dumb-jump">dumb-jump</a>. It&#39;s basically a zero (or
-almost zero) configuration tags replacement. Really nice.
-</p>
+almost zero) configuration tags replacement. Really nice.</p>
 <p>
-Here&#39;s my current config:
-</p>
+Here&#39;s my current config:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package dumb-jump
 :bind ((<span style="color:#e6db74">&#34;M-g o&#34;</span> <span style="color:#f92672">.</span> dumb-jump-go-other-window)
@@ -146,32 +143,22 @@ Here&#39;s my current config:
 )</code></pre></div></code></pre></div>
 </div>
 <p>
-Enjoy.
-</p>
+Enjoy.</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/wBfZzaff77g" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:
-</p>
+Relevant links:</p>
 <ul>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code:
-</p>
+<p>Code:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 </ul>
 

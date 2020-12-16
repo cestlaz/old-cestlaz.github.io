@@ -21,64 +21,49 @@
 Over on Facebook the semi-regular &amp;#34;is APCS-A going to Python&amp;#34; once
 again appeared. I&amp;#39;m not going to get into Python vs Java. Each language giveth and
 each language taketh away but it got me thinking about the history of
-language changes.
-&lt;/p&gt;
+language changes.&lt;/p&gt;
 &lt;p&gt;
 I titled this &amp;#34;Language choices for APCS&amp;#34; not APCS-A because back in
 the day it was just APCS. At some point that split with APCS-A being similar
 to what we have today and APCS-A being that plus a CS2 (data
 structures) class. Finally after 2009, APCS-AB was dropped due to low
 participation, I mean, my school represented 10% of the total test
-takers - that&amp;#39;s nuts - 10% from one school.
-&lt;/p&gt;
+takers - that&amp;#39;s nuts - 10% from one school.&lt;/p&gt;
 &lt;p&gt;
 I took the exam during the first administration in 1984 and taught
-APCS-AB from 1991 I think up until I left Stuy.
-&lt;/p&gt;
+APCS-AB from 1991 I think up until I left Stuy.&lt;/p&gt;
 &lt;p&gt;
 Originally, APCS was in Pascal. Back then, the course guide said that
 they intended for the exam to become language agnostic but that never
-happened. Instead we went to C++ in 2000 and then to Java in 2004.
-&lt;/p&gt;
+happened. Instead we went to C++ in 2000 and then to Java in 2004.&lt;/p&gt;
 &lt;p&gt;
 Now, I don&amp;#39;t have any inside information here. I&amp;#39;ve never been in on
 any internal meetings so this is all just conjecture but I think it&amp;#39;s
-interesting food for thought. 
-&lt;/p&gt;
+interesting food for thought. &lt;/p&gt;
 &lt;p&gt;
 Back in 1984, schools were transitioning from either no
 computers or Commodore PETS to Apple IIs. At Stuy, where I was a
 student, the teacher had a single copy of a Pascal compiler on a
 floppy disk and he made copies - one for each computer in the lab. Not
-too much concern about piracy here. 
-&lt;/p&gt;
+too much concern about piracy here. &lt;/p&gt;
 &lt;p&gt;
 As we approached 2000 when APCS switched to C++ the knocks on Pascal
-were: 
-&lt;/p&gt;
+were: &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s a teaching language 
-&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s a teaching language &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-You can&amp;#39;t have programs that were more than one file. 
-&lt;/p&gt;
+&lt;p&gt;You can&amp;#39;t have programs that were more than one file. &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-It wasn&amp;#39;t Object Oriented which gained a lot of steam over the
-decade. 
-&lt;/p&gt;
+&lt;p&gt;It wasn&amp;#39;t Object Oriented which gained a lot of steam over the
+decade. &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-The first item was also mentioned as a strength and item 2 really
+&lt;p&gt;The first item was also mentioned as a strength and item 2 really
 wasn&amp;#39;t an issue in terms of what most people taught. In any event, the
-College Board decided on a change. 
-&lt;/p&gt;
+College Board decided on a change. &lt;/p&gt;
 &lt;p&gt;
 I started thinking about why C++ over Pascal? I know that C++ was the
 hot industry language at the time and to be honest, I don&amp;#39;t remember
@@ -89,14 +74,12 @@ Turbo C++. A C++ compiler and IDE that ran on the IBM PC and was
 cheap. Prior to Turbo Pascal and Turbo C/C++ schools didn&amp;#39;t have the
 ability to cheaply compile programs and certainly students who were
 fortunate enough to have computers certainly couldn&amp;#39;t afford a
-compiler. 
-&lt;/p&gt;
+compiler. &lt;/p&gt;
 &lt;p&gt;
 I have no idea if this factored into the decision but I think the
 economics and the fact that compilers and development environments
 were just not that available back then are an interesting bit of
-history.
-&lt;/p&gt;
+history.&lt;/p&gt;
 &lt;p&gt;
 What about the next change? C++ to Java in 2004. By then I had moved
 Stuy over to Linux but most schools were still on Windows. By this
@@ -110,12 +93,10 @@ forgiving. Also, since C++ is really a multimodal with &amp;#34;many ways to
 do it&amp;#34; it was probably much harder for both students and teachers,
 many of whom didn&amp;#39;t have a CS background. Java was the hot up and
 comer, was not multi-modal but was indeed object oriented, and really
-is a much simpler language. 
-&lt;/p&gt;
+is a much simpler language. &lt;/p&gt;
 &lt;p&gt;
 Now, as I said, I have no idea what was discussed internally at the
-college board but I think it&amp;#39;s interesting to think about the history.
-&lt;/p&gt;
+college board but I think it&amp;#39;s interesting to think about the history.&lt;/p&gt;
 </description>
     </item>
     
@@ -128,52 +109,37 @@ college board but I think it&amp;#39;s interesting to think about the history.
       <description>&lt;p&gt;
 Yesterday was, I think the fourth, To Code and Beyond conference hosted by
 &lt;a href=&#34;https://twitter.com/diane_levitt&#34;&gt;Diane Levitt&lt;/a&gt; at Cornell Technion. I might blog about a few of the
-talks but for today let&amp;#39;s start with one.
-&lt;/p&gt;
+talks but for today let&amp;#39;s start with one.&lt;/p&gt;
 &lt;p&gt;
 In spite of my anti College Board bias, I really enjoyed Barbara
 Ericson&amp;#39;s talk on APCS statistics. Barbara&amp;#39;s been breaking down the
 APCS numbers for years - how many took the exam(s), how many passed
-them. By state, gender, etc. It&amp;#39;s all up on her &lt;a href=&#34;https://cs4all.home.blog/&#34;&gt;blog&lt;/a&gt;.
-&lt;/p&gt;
+them. By state, gender, etc. It&amp;#39;s all up on her &lt;a href=&#34;https://cs4all.home.blog/&#34;&gt;blog&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 While Barb had earlier provided the data online, in her talk, she 
 did a great job drawing out and highlighting important and interesting
-points. 
-&lt;/p&gt;
+points. &lt;/p&gt;
 &lt;p&gt;
-The TL;DR summary takeaways from the talk were:
-&lt;/p&gt;
+The TL;DR summary takeaways from the talk were:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-There has been some progress.
-&lt;/p&gt;
+&lt;p&gt;There has been some progress.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-We can do better.
-&lt;/p&gt;
+&lt;p&gt;We can do better.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-We have to do better.
-&lt;/p&gt;
+&lt;p&gt;We have to do better.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-The numbers are sometimes so low that it wouldn&amp;#39;t take much to do
- better.
-&lt;/p&gt;
+&lt;p&gt;The numbers are sometimes so low that it wouldn&amp;#39;t take much to do
+ better.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-That isn&amp;#39;t enough.
-&lt;/p&gt;
+&lt;p&gt;That isn&amp;#39;t enough.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-One point of comparison that came up was that while the number of APCS
+&lt;p&gt;One point of comparison that came up was that while the number of APCS
 exams is growing they still pale in comparison to the AP English and
 AP Calc numbers. This makes sense though. Calc is generally percieved
 as &amp;#34;the next math class&amp;#34; so students who finish precalc prior to
@@ -182,30 +148,25 @@ the past with more and more schools implementing a 4 year math
 requirement. AP English is also a special case since it basically
 replaces a regular English class so it might not even add anything to
 a students day depending on the workload of AP vs their school&amp;#39;s
-regular English class.
-&lt;/p&gt;
+regular English class.&lt;/p&gt;
 &lt;p&gt;
 Personally, I don&amp;#39;t care how many APCS exams are given but I&amp;#39;d love to
 see a quality year of CS Education required in high schools across the
-country.
-&lt;/p&gt;
+country.&lt;/p&gt;
 &lt;p&gt;
 All of Barbara&amp;#39;s analysis is based on the public data that the College
 Board releases. I got to thinking about all the factors we can&amp;#39;t
 account for since the data either isn&amp;#39;t released by the College Board
-or isn&amp;#39;t available at all.
-&lt;/p&gt;
+or isn&amp;#39;t available at all.&lt;/p&gt;
 &lt;p&gt;
 First, the data is on the state level. How many states are small
 enough and homogeneous enough that we can treat them as a unit?
 Certainly not NY. I&amp;#39;d love to see the AP data broken down by NYC vs
 the rest of the state. It would also be great to be able to run stats
-that looked at school factors. All this data could be made available.
-&lt;/p&gt;
+that looked at school factors. All this data could be made available.&lt;/p&gt;
 &lt;p&gt;
 If we had more data to play with we might learn or at least be able to
-explore some interesting things.
-&lt;/p&gt;
+explore some interesting things.&lt;/p&gt;
 &lt;p&gt;
 Take APCS-P. In 2019 7553 exams were given in New York State with 5239
 passing. Now, it turns out that Brooklyn Tech decided to require
@@ -215,12 +176,10 @@ JUST ONE SCHOOL!!!!!!  It&amp;#39;s also a test school. Just about every Stuy
 student who takes APCS-A passes the exam so I&amp;#39;d guess the vast
 majority of Tech APCS-P test takers do the same. Take out 1500 passing
 exams and see what that does to the pass rate. Once again we have a
-HUGE influence by one school.
-&lt;/p&gt;
+HUGE influence by one school.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m don&amp;#39;t know if this means anything one way or another but it is
-interesting.
-&lt;/p&gt;
+interesting.&lt;/p&gt;
 &lt;p&gt;
 Going further, it would be great to know how schools are making
 decisions as to what to offer and to whom. Is APCS-P required? Are the
@@ -232,8 +191,7 @@ growth and adoption are that it&amp;#39;s low hanging fruit. Schools want to
 do some CS and this checks the box. Also, schools can move up in those
 BS school ratings by having their kids take more AP exams and having a
 relatively easy AP exam that can be passed by 9th and 10th graders is
-an easy way to build your reputation.
-&lt;/p&gt;
+an easy way to build your reputation.&lt;/p&gt;
 &lt;p&gt;
 Of course, the ratings game doesn&amp;#39;t always serve students. I once
 heard a talk given by the principal of the highly lauded school
@@ -245,19 +203,16 @@ during the year in question and only 10 passed. The principal parlayed
 these wonderful results into a much higher profile principalship of a
 school so highly regarded it was mentioned by name at a State of the
 Union address but I think it&amp;#39;s horribly cruel to set students up to
-fail so. 
-&lt;/p&gt;
+fail so. &lt;/p&gt;
 &lt;p&gt;
 Getting back to Barbara&amp;#39;s talk - even with the limited granularity of
 the data provided by the college board we can learn some interesting
 things. Given the newness of APCS-P and in fact the newness of the CS
 For All push it will be years before we can really figure anything out
-but it&amp;#39;s all food for thought. 
-&lt;/p&gt;
+but it&amp;#39;s all food for thought. &lt;/p&gt;
 &lt;p&gt;
 Thanks to Barbara for continuing on what she described as &amp;#34;an unpaid
-job for life&amp;#34; as we&amp;#39;re all the beneficiaries of her work.
-&lt;/p&gt;
+job for life&amp;#34; as we&amp;#39;re all the beneficiaries of her work.&lt;/p&gt;
 </description>
     </item>
     
@@ -271,12 +226,10 @@ job for life&amp;#34; as we&amp;#39;re all the beneficiaries of her work.
 Just like last year, I&amp;#39;m taking in two classes worth of students in to
 my honors program. The challenge is that I can only teach two classes
 and I&amp;#39;ve got to figure out what to teach  and then which students
-belong in which class.
-&lt;/p&gt;
+belong in which class.&lt;/p&gt;
 &lt;p&gt;
 It basically comes down to one of two courses, our CS0 (CSCI127) and
-our CS1 (CSCI135). 
-&lt;/p&gt;
+our CS1 (CSCI135). &lt;/p&gt;
 &lt;p&gt;
 CSCI127 is a first programming experience. The normal class is taught
 as a large lecture with small recitation/labs. It&amp;#39;s Python based and
@@ -286,8 +239,7 @@ truth tables, simple circuits, a baby look at an Assembly language
 and an intro to C++ at the end. My version also uses
 Python but is much more of a deep dive and also brings in a few
 Softwae Engineering practices. I don&amp;#39;t do the extras other than the
-C++ intro.
-&lt;/p&gt;
+C++ intro.&lt;/p&gt;
 &lt;p&gt;
 CSCI135 is most analogous to APCS-A with the biggest difference being
 our core language is C++. That means memory management, references and
@@ -296,15 +248,13 @@ AP. For instance, we don&amp;#39;t do sorting at all until the second semester
 but do deal with pointers. I don&amp;#39;t actually teach CSCI135 at all. Most
 Hunter students take a 1 credit programming lab (CSCI136) to go along
 with CSCI135. I teach a 3 credit version of that where we do a bunch
-of enrichment.
-&lt;/p&gt;
+of enrichment.&lt;/p&gt;
 &lt;p&gt;
 On the student side, they come in with a range of CS experiences. Some
 are 100% new to the subject, some are self taught, a few have taken
 after school or summer programs like GWC, Technovation, or others and
 a bunch have taken some CS in school with the largest numbers being
-either APCS-A or APCS-Principles. 
-&lt;/p&gt;
+either APCS-A or APCS-Principles. &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve found the quality of the outside experiences to be uneven at
 best. More often than not kids who come from them and think they&amp;#39;re
@@ -312,8 +262,7 @@ experienced programmers and really haven&amp;#39;t learned anything. I&amp;#39;v
 got to be careful with them but placement is easy. They  go to
 CSCI127. The same is true for kids coming in from APCS-P. APCS-P is
 also very uneven in terms of what the kids come out with and it&amp;#39;s not
-a direct replacement for our CSCI127.
-&lt;/p&gt;
+a direct replacement for our CSCI127.&lt;/p&gt;
 &lt;p&gt;
 The big question is what to do with the APCS-A kids. APCS-A does give
 students a decent programming background but it&amp;#39;s in a different
@@ -322,8 +271,7 @@ subjects. It&amp;#39;s clear that for most students, even with APCS-A, our
 CSCI135 is the right place. That said, we do offer an in house exam to
 place out of it. A few of my students have done that but still do my
 enrichment/lab class so I can be confident that the student is up to
-speed on C++ and related issues.
-&lt;/p&gt;
+speed on C++ and related issues.&lt;/p&gt;
 &lt;p&gt;
 All of this has led to some discussion in our department recently -
 should APCS-A exempt students from our CS0? My argument is that it
@@ -335,8 +283,7 @@ specifically, number bases, truth tables, simple circuits, assembly,
 and into C++. The argument against placing the kids out of CS0 is that
 early exposure to those topics is valuable in preparing the students
 for later courses such as those in our required  systems/architecture
-track. 
-&lt;/p&gt;
+track. &lt;/p&gt;
 &lt;p&gt;
 Does that early exposure really make a difference? In this case, I
 don&amp;#39;t think it does. For some topics, specifically recursion, I&amp;#39;ve
@@ -347,20 +294,17 @@ the early introduction seemed to help. On the other hand, I never
 found early exposure to truth tables, base conversions and circuits to
 make a difference even though we did do some of that in some
 experimental sections of Stuy&amp;#39;s intro course and then revisted them in
-the senior systems course. 
-&lt;/p&gt;
+the senior systems course. &lt;/p&gt;
 &lt;p&gt;
 Why did it seem to make a difference for recursion and not for the
 other topics? Probably because the other topics are mechanical and
 don&amp;#39;t require new thinking or deep thinking. You see it, you got
 it. Recursion on the other hand is a problem solving technique so
-there&amp;#39;s more to understand so the early exposure seems to help.
-&lt;/p&gt;
+there&amp;#39;s more to understand so the early exposure seems to help.&lt;/p&gt;
 &lt;p&gt;
 This also seems to be born out  at Hunter where my early cohorts
 didn&amp;#39;t get those small extra topics but all did very well in the
-courses that &amp;#34;required&amp;#34; that knowledge.
-&lt;/p&gt;
+courses that &amp;#34;required&amp;#34; that knowledge.&lt;/p&gt;
 &lt;p&gt;
 In the Fall this discussion will continue.  I&amp;#39;m not concerned about my
 kids as I have a fair amount of leeway in getting them into the
@@ -368,8 +312,7 @@ classes they need. The trick is how to make sure that we&amp;#39;re not
 forcing other kids to take classes they don&amp;#39;t need. We need to get these
 kids to where they can start to interview for internships sooner
 rather than later. At the same time, we have to make sure we&amp;#39;re not
-placing kids to far up the track and setting them up for failure. 
-&lt;/p&gt;
+placing kids to far up the track and setting them up for failure. &lt;/p&gt;
 </description>
     </item>
     
@@ -382,8 +325,7 @@ placing kids to far up the track and setting them up for failure.
       <description>
 &lt;p&gt;
 In what grade should students take APCS? This question comes up from
-time to time.
-&lt;/p&gt;
+time to time.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve heard answers ranging from middle school through never. Infact,
 years ago, my chairman relayed a conversation he had with Marvin
@@ -394,33 +336,30 @@ the sentiment was that college was the right time and the high schools
 don&amp;#39;t know what they&amp;#39;re doing and will just screw up the
 kids. Actually, I still see some of this attitude today and it gets
 passed down where high school teachers sometimes don&amp;#39;t want the
-middle schools to &amp;#34;mess up their kids&amp;#34; and on down the line.
-&lt;/p&gt;
+middle schools to &amp;#34;mess up their kids&amp;#34; and on down the line.&lt;/p&gt;
 &lt;p&gt;
 At this point, it&amp;#39;s pretty clear that you can do good CS at the high
 school level and as things are being pushed down the grades we&amp;#39;ll
-eventually figure out what&amp;#39;s right and when.
-&lt;/p&gt;
+eventually figure out what&amp;#39;s right and when.&lt;/p&gt;
 &lt;p&gt;
 Still, within the high school the question of what grade for APCS-A
-remains.
-&lt;/p&gt;
+remains.&lt;/p&gt;
 &lt;p&gt;
 There isn&amp;#39;t a single right answer for this but I can share
 my experience and what I ended up deciding when I developed things at
-Stuy.
-&lt;/p&gt;
+Stuy.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 MATH BOOKS and Physics First
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 As parents, my wife and I learned early on that we&amp;#39;d have to
 supplement what our kids would learn in school, particularly in terms
 of math and science. I was in charge of math. Since I used assorted
 books to help, math time came to be known simply as &amp;#34;MATH BOOKS.&amp;#34; It&amp;#39;s
 funny that now while my kids don&amp;#39;t look back super fondly on MATH BOOKS
-they agree that it was an important thing for us to do.
-&lt;/p&gt;
+they agree that it was an important thing for us to do.&lt;/p&gt;
 &lt;p&gt;
 I discovered, as I&amp;#39;m sure many parents do, that there are times when a
 kid is just not ready for a subject. At one point I tried to introduce
@@ -430,20 +369,17 @@ the mechanics and solve problems based on rules and formulae but they
 really didn&amp;#39;t &amp;#34;get it.&amp;#34; A third attempt some time later, they were
 ready. They mastered the subject with deep understanding easily. It
 could be argued that the early exposure helped but I don&amp;#39;t think it
-did.
-&lt;/p&gt;
+did.&lt;/p&gt;
 &lt;p&gt;
 The takeaway here is that kids can do the mechanics and appear to
-succeed but if it&amp;#39;s too early, they don&amp;#39;t really learn the subject.
-&lt;/p&gt;
+succeed but if it&amp;#39;s too early, they don&amp;#39;t really learn the subject.&lt;/p&gt;
 &lt;p&gt;
 I saw this on a larger scale with &amp;#34;Physics First.&amp;#34; At Stuy, most
 freshmen would take Bio in 9th grade followed by Chem and then Physics
 in their Junior year. Physics first kids would take Physics in the 9th
 grade. I don&amp;#39;t have any evidence for this but based on my inquiries
 over the years it seemed that the kids who took physics in their
-junior year had a deeper understanding of the subject.
-&lt;/p&gt;
+junior year had a deeper understanding of the subject.&lt;/p&gt;
 &lt;p&gt;
 I also personally saw this when teaching math classes early on in my
 career. Most Stuy freshmen take geometry. The math aces take
@@ -452,19 +388,21 @@ middle school. They were pushed through geometry in 8th  grade and
 started Stuy in Algebra 2 and Trig. The majority of these kids that I
 taught could spit back all the formulas and theorems from geometry but
 very few were actually ready for Alg2/Trig and struggled
-considerably.
-&lt;/p&gt;
+considerably.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 APCS
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 So what about APCS? At Stuy we always taught a superset of the old
 APCS-AB. It&amp;#39;s mostly APCS-A in the Fall semester and Data Structures
 in the Spring. When I started, there was no prerequisite for APCS so I
 had students in all grades. Mostly Juniors and Seniors but a few
 Sophomores. I think I only had a freshman in APCS once and they were
-an outlier.
-&lt;/p&gt;
+an outlier.&lt;/p&gt;
 &lt;p&gt;
 Some of my sophomores were ready, more could merely spit back material
 and do the mechanics - enough to pass the APCS-AB exam but they really
@@ -472,16 +410,14 @@ didn&amp;#39;t get it. There were some, however that weren&amp;#39;t ready. Thes
 very bright kids and while I can&amp;#39;t say for sure, deep down I very much
 suspect that if they took my class a year later they would have done
 much better and they might have followed a very different path towards
-their future.
-&lt;/p&gt;
+their future.&lt;/p&gt;
 &lt;p&gt;
 As a teachers we can change lives for the better and in fact save
 lives. We can also do great damage. Because of the latter, teachers
 should follow the mantra &amp;#34;first do no harm.&amp;#34; This led me to a general
 rule of taking kids into APCS-AB until their junior year. If I were to
 allow a sophomore in I wanted to be pretty sure that the kid was
-ready.
-&lt;/p&gt;
+ready.&lt;/p&gt;
 &lt;p&gt;
 Later we were able to create a sophomore year CS requirement which
 gave all kids exposure to CS prior to APCS-A (we still taught AB but
@@ -489,47 +425,48 @@ by now only the A exam was offered) and also gave us a platform to vet
 the outliers who might be ready for APCS. For those kids, in addition
 to an interview we had them self study APCS-A, do a project and sit
 for the APCS-A final exam and then we&amp;#39;d add them to the second half of
-our AP class.
-&lt;/p&gt;
+our AP class.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Has it worked?
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 By and large the system has worked. Kids now get an intro in the 10th
 grade followed by APCS in 11 and more electives if desired in the
 12th. For the kid that&amp;#39;s truly ready for APCS in the 10th grade, we
-have a path. We don&amp;#39;t make it easy but the path is there.
-&lt;/p&gt;
+have a path. We don&amp;#39;t make it easy but the path is there.&lt;/p&gt;
 &lt;p&gt;
 Over the years we&amp;#39;ve had some CS superstars come through the
 program. Some have pushed back – &amp;#34;why do I have to take the intro?&amp;#34;
 &amp;#34;Why can&amp;#39;t i start right away in APCS?&amp;#34; – after all was said and
 done, all but one came back to say that we did it the right way and
-that they benefited from all our classes.
-&lt;/p&gt;
+that they benefited from all our classes.&lt;/p&gt;
 &lt;p&gt;
 At Stuy, it seems that for most students, 11th grade is right for our
 APCS. Between academic maturity, other classes, scheduling and
-everything else, it seems that this works the best for us.
-&lt;/p&gt;
+everything else, it seems that this works the best for us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Why the rush?
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Frequently the question as to when to teach APCS revolves around how
 early it can be taught. I have to ask - why are we so caught up with
-doing things so early?
-&lt;/p&gt;
+doing things so early?&lt;/p&gt;
 &lt;p&gt;
 If we&amp;#39;re just pushing college level courses down to high school then
 what&amp;#39;s the point? The kids will have to take the classes again if
-they&amp;#39;re going to major in CS anyway.
-&lt;/p&gt;
+they&amp;#39;re going to major in CS anyway.&lt;/p&gt;
 &lt;p&gt;
 If you have a program that doesn&amp;#39;t duplicate college courses you might
 want to have kids finish APCS-A earlier but I wonder how early you
-really need.
-&lt;/p&gt;
+really need.&lt;/p&gt;
 &lt;p&gt;
 As a society we keep pushing things down younger and younger. We&amp;#39;re
 pushing AP classes like history or APCS-P down to 10th grade or even
@@ -537,49 +474,48 @@ earlier. You have to ask, is a course that&amp;#39;s developmentally
 appropriate for a 18-22 year old developmentally appropriate for a 14
 or 15 year old? Probably not. You also have to ask that if it makes
 more sense to push further ahead or if it&amp;#39;s better to do enrichment at
-a level the kids can handle.
-&lt;/p&gt;
+a level the kids can handle.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m an enrichment over acceleration guy but other people differ. Just
 like the question of when for APCS, there&amp;#39;s probably not a single
-right answer to this.
-&lt;/p&gt;
+right answer to this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 Last words and what should you do?
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 As I said up front, there&amp;#39;s no right answer to this. I&amp;#39;m still
 convinced that 11th grade is probably the best general entry point for
 APCS-AB but if I were only teaching APCS-A maybe I&amp;#39;d shift it down a
 year. My gut tells me no, partially based on teaching non APCS to 8th,
 9th, and 10th graders but maybe. Of course, we all teach different
-students in different environments so your mileage may vary.
-&lt;/p&gt;
+students in different environments so your mileage may vary.&lt;/p&gt;
 &lt;p&gt;
 There are also those outlier kids that can truly master the subject at
 an earlier age, I&amp;#39;m not really considering them here but they should
-be accommodated when possible.
-&lt;/p&gt;
+be accommodated when possible.&lt;/p&gt;
 &lt;p&gt;
 If you&amp;#39;ve been running a program for a while, look at the data - not
 how many kids pass the exam - look at how many master the next level
 material. If your kids next class is data structures in college, find
 out how well prepared they were and see if and how it maps to the
 grade in which they took APCS. If you&amp;#39;re just starting, I&amp;#39;d recommend
-erring on the side of caution - remember &amp;#34;do no harm.&amp;#34;
-&lt;/p&gt;
+erring on the side of caution - remember &amp;#34;do no harm.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 If you have to teach CS and it turns out you have to teach it when the
 kids are too young to master APCS-A then don&amp;#39;t teach APCS-A, teach
-great CS at a level that&amp;#39;s appropriate.
-&lt;/p&gt;
+great CS at a level that&amp;#39;s appropriate.&lt;/p&gt;
 &lt;p&gt;
 All of this will work itself out in time. Until we get there, there
 will be some mis-steps - I know I&amp;#39;ve had mine. As long
 as we continue to move the kids forward and give them something that they
 wouldn&amp;#39;t have been getting otherwise while we figure all this out,
-we&amp;#39;re doing pretty good.
-&lt;/p&gt;
+we&amp;#39;re doing pretty good.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -593,18 +529,14 @@ we&amp;#39;re doing pretty good.
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this
 year. He&amp;#39;s a little trepidatious. He knows his stuff but he hasn&amp;#39;t
-really done much using Java.
-&lt;/p&gt;
+really done much using Java.&lt;/p&gt;
 &lt;p&gt;
 I was going to respond in an email but thought I might share here
-instead.
-&lt;/p&gt;
+instead.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-TL;DR - for all you APCS teachers who are new or new to Java - learn
+&lt;p&gt;TL;DR - for all you APCS teachers who are new or new to Java - learn
 your core CS, lean on your resources and support and it&amp;#39;s OK to tell
-your kids &amp;#34;I don&amp;#39;t know, I&amp;#39;ll get back to you.&amp;#34;. Don&amp;#39;t worry, you&amp;#39;ll be great.
-&lt;/p&gt;
+your kids &amp;#34;I don&amp;#39;t know, I&amp;#39;ll get back to you.&amp;#34;. Don&amp;#39;t worry, you&amp;#39;ll be great.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 The first time I taught APCS was some time around 1991 or 1992. It was at
@@ -619,8 +551,7 @@ and a half at that point but never CS and by any measure I was still
 wet behind the ears. I never finished that first experience because I
 was excessed to Stuy mid semester. I wasn&amp;#39;t particularly happy with my
 performance but looking back, I think I did a pretty good job given
-the situation and my experience.
-&lt;/p&gt;
+the situation and my experience.&lt;/p&gt;
 &lt;p&gt;
 After teaching math for a year and a half I was back in APCS at
 Stuy. Still in Pascal. I spent the next few years figuring out how to
@@ -633,15 +564,13 @@ number of my C systems in an Object Typed design: I would use a single
 file per &amp;#34;class&amp;#34; where local variables were de facto instance
 variables and functions in the file were methods and each file was a
 singleton class. I read &lt;a href=&#34;https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_1?ie=UTF8&amp;amp;qid=1503519770&amp;amp;sr=8-1&amp;amp;keywords=Grady+Booch&#34;&gt;Booch&lt;/a&gt; and &lt;a href=&#34;https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554/ref=asap_bc?ie=UTF8&#34;&gt;Meyer&lt;/a&gt; on my own but I had no
-schooling in OOP and no professional experience.
-&lt;/p&gt;
+schooling in OOP and no professional experience.&lt;/p&gt;
 &lt;p&gt;
 As it turned out, I didn&amp;#39;t have to worry. I knew my CS and while it
 took me a while to become comfortable with OOP, the class, and of
 course I knew this from the get go, started from nothing and built
 up complexity a step at a time. The worst that might have happened is
-that some of my solutions might have been more C-esque than C++.
-&lt;/p&gt;
+that some of my solutions might have been more C-esque than C++.&lt;/p&gt;
 &lt;p&gt;
 The move to Java was a little more jarring. Now we had a totally new
 language. I couldn&amp;#39;t fall back on C. It removed memory management and
@@ -655,38 +584,32 @@ wanted. My friend Mike told me &amp;#34;you just don&amp;#39;t do it that way in
 Java.&amp;#34; Again, it turned out that I didn&amp;#39;t have to worry. The basic
 coding was still the same as were the data structures and
 algorithms. The only challenge was that I had to get into a Java OOP
-mindset which it turned out wasn&amp;#39;t that hard.
-&lt;/p&gt;
+mindset which it turned out wasn&amp;#39;t that hard.&lt;/p&gt;
 &lt;p&gt;
 While I never really warmed up to OOP - I find other paradigms more
 natural for me, I knew my CS and got more and more comfortable with
 the Java (or C++) way of doing things as time wore on. Sometimes I
-would say &amp;#34;I don&amp;#39;t know&amp;#34; or &amp;#34;let&amp;#39;s figure it out&amp;#34; but that&amp;#39;s OK.
-&lt;/p&gt;
+would say &amp;#34;I don&amp;#39;t know&amp;#34; or &amp;#34;let&amp;#39;s figure it out&amp;#34; but that&amp;#39;s OK.&lt;/p&gt;
 &lt;p&gt;
 Nowadays, there are many more resources available for CS teachers. If
 you&amp;#39;re new, lean on them. Use the mailing lists, stackexchange,
 facebook groups. Online resources like repl.it, codehs.com etc. Yes,
 it&amp;#39;s true that you&amp;#39;ll be better next time around and even better years
-down the road but right now, you&amp;#39;re probably better than you think.
-&lt;/p&gt;
+down the road but right now, you&amp;#39;re probably better than you think.&lt;/p&gt;
 &lt;p&gt;
 A number of my former students volunteer for &lt;a href=&#34;https://www.tealsk12.org/&#34;&gt;TEALS&lt;/a&gt; - a really great
 program that brings software engineers into the classroom to work with
 non-CS teachers to deliver instruction. A number of my kids have
-shared the following sentiment:
-&lt;/p&gt;
+shared the following sentiment:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 I don&amp;#39;t know if I&amp;#39;m really helping
 the teacher to become self sufficient or if I&amp;#39;m a great teacher but I
 do know one thing - while I&amp;#39;m there, the kids are getting a hell of a
-lot more than if I wasn&amp;#39;t there.&amp;#34;
-&lt;/p&gt;
+lot more than if I wasn&amp;#39;t there.&amp;#34;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
-– Remember that as well.
-&lt;/p&gt;
+– Remember that as well.&lt;/p&gt;
 </description>
     </item>
     
@@ -699,15 +622,12 @@ lot more than if I wasn&amp;#39;t there.&amp;#34;
       <description>&lt;p&gt;
 AP scores just came out. As usual, I see the posts and take part in
 conversations where teachers talk about their results. Some are happy
-about their results, some aren&amp;#39;t, some don&amp;#39;t really care.
-&lt;/p&gt;
+about their results, some aren&amp;#39;t, some don&amp;#39;t really care.&lt;/p&gt;
 &lt;p&gt;
-I just want to make a plea to all AP teachers out there:
-&lt;/p&gt;
+I just want to make a plea to all AP teachers out there:&lt;/p&gt;
 &lt;p&gt;
 &lt;strong&gt;&lt;strong&gt;Don&amp;#39;t let your value be dictated by the college board or any other
-exam.&lt;/strong&gt;&lt;/strong&gt;
-&lt;/p&gt;
+exam.&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 I never really cared much about my students&amp;#39; actual AP scores. There
 were a number of years when I never even saw the results. Of course, I
@@ -720,41 +640,35 @@ we were doing fine, explained why I couldn&amp;#39;t advocate more teaching to
 the test (such as more than paying lip service to the case study or
 more rote practice on the multiple choice), and told him how I
 measured our success as a program. He was happy with my answer and
-that was that.
-&lt;/p&gt;
+that was that.&lt;/p&gt;
 &lt;p&gt;
 The AP exam is one test on one day and in my opinion the least
 valuable measure of my students&amp;#39; achievement. This is one of
 the reasons I was so dismayed by the CSEd community&amp;#39;s efforts in
-pushing the AP exams - not the class or the subject but the actual exam.
-&lt;/p&gt;
+pushing the AP exams - not the class or the subject but the actual exam.&lt;/p&gt;
 &lt;p&gt;
 So, how should you judge your success? That&amp;#39;s up to you. I can only
-tell you how I judge myself.
-&lt;/p&gt;
+tell you how I judge myself.&lt;/p&gt;
 &lt;p&gt;
 First and foremost - and I know this sounds cheesy - are you a &amp;#34;force
 for good&amp;#34; in your student&amp;#39;s lives. Do you leave them in a better
 place? Have you opened the door to a possible future for them? Have
 you helped them grow? Beyond that, have they progressed in your
-subject and as students in general.
-&lt;/p&gt;
+subject and as students in general.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve had kids &amp;#34;fail&amp;#34; the AP exam and go on to wonderful careers in
 tech and come back to thank me for giving them their start. I&amp;#39;ve also
 had kids that have gone into other fields but appreciate what we&amp;#39;ve
 done for them. I&amp;#39;ve also had my failures and I do mean my
 failures. Students I couldn&amp;#39;t reach or couldn&amp;#39;t figure out how to
-help.
-&lt;/p&gt;
+help.&lt;/p&gt;
 &lt;p&gt;
 As teachers, we work day to day trying to improve but we can get a
 great overview of how we&amp;#39;re doing by using a much longer feedback
 loop - looking at what our graduates are up to. When young teachers
 would comment on former students coming back or running into them at
 tech events that they would have graduates of their own in a few years
-and invariably they do.
-&lt;/p&gt;
+and invariably they do.&lt;/p&gt;
 &lt;p&gt;
 To really evaluate how you&amp;#39;re doing you have to go with the long
 game. Very few people get that. I remember talking to a Google
@@ -763,13 +677,11 @@ effect of &amp;#34;I know we won&amp;#39;t know if this program works for about 
 years but we&amp;#39;ll have to come up with something short term to satisfy
 the powers that be.&amp;#34;  That so few &amp;#34;get it&amp;#34; and need instant feedback
 is one of the reasons that our society is so test driven. We shouldn&amp;#39;t
-be. Our focus should be on helping the students learn and progress.
-&lt;/p&gt;
+be. Our focus should be on helping the students learn and progress.&lt;/p&gt;
 &lt;p&gt;
 So don&amp;#39;t get distressed over AP results and don&amp;#39;t get to high on them
 either. Certainly don&amp;#39;t use them to drive what and how you teach. Let
-your students and your conscience be your guide.
-&lt;/p&gt;
+your students and your conscience be your guide.&lt;/p&gt;
 </description>
     </item>
     
@@ -781,37 +693,30 @@ your students and your conscience be your guide.
       <guid>https://cestlaz.github.io/posts/advent-of-code-2016/</guid>
       <description>&lt;p&gt;
 Once again, it&amp;#39;s time for &lt;a href=&#34;http://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt; - a series of small
-programming problems released once a day.
-&lt;/p&gt;
+programming problems released once a day.&lt;/p&gt;
 &lt;p&gt;
 I wrote a bit about it &lt;a href=&#34;http://cestlaz.github.io/posts/2015-12-15-advent.html/&#34;&gt;last&lt;/a&gt; &lt;a href=&#34;http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/#.WEMqBB9ieYQ&#34;&gt;year&lt;/a&gt; and you can still find last years
-problems &lt;a href=&#34;http://adventofcode.com/2015/&#34;&gt;here&lt;/a&gt;.
-&lt;/p&gt;
+problems &lt;a href=&#34;http://adventofcode.com/2015/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s only day three but so far, all of the problems look really nice
 for students in APCS-A or any similar intro course. I&amp;#39;m thinking of
-looking at a couple of the problems this week with my class at Hunter.
-&lt;/p&gt;
+looking at a couple of the problems this week with my class at Hunter.&lt;/p&gt;
 &lt;p&gt;
 I didn&amp;#39;t think about this much last year but one thing I really like
 about the competition is that each problem comes in two parts. You&amp;#39;re
 first presented with the problem and the input and once you put in the
-correct answer, you&amp;#39;re presented with part two.
-&lt;/p&gt;
+correct answer, you&amp;#39;re presented with part two.&lt;/p&gt;
 &lt;p&gt;
 This can be annoying at times, particularly when it requires a large
 code rewrite but it also means that well designed, not too specific
-solutions are rewarded.
-&lt;/p&gt;
+solutions are rewarded.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s not quite the same as changing the specs on a project mid way but
 it does encourage thinking about more than just solving a super
-specific problem.
-&lt;/p&gt;
+specific problem.&lt;/p&gt;
 &lt;p&gt;
 Check out &lt;a href=&#34;http://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt; and see if it&amp;#39;s something you or your classes
-might enjoy.
-&lt;/p&gt;
+might enjoy.&lt;/p&gt;
 </description>
     </item>
     

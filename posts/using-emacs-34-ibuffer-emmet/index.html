@@ -14,12 +14,14 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1607979317" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608159278" />
 
 
 
 <meta property="og:title" content="Using Emacs - 34 - ibuffer and emmet" />
-<meta property="og:description" content="A couple of quick, unrelated packages today.  first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.  Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it." />
+<meta property="og:description" content="A couple of quick, unrelated packages today.
+ first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
+ Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/" />
 <meta property="article:published_time" content="2017-06-15T00:00:00+00:00" />
@@ -27,7 +29,9 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 34 - ibuffer and emmet"/>
-<meta name="twitter:description" content="A couple of quick, unrelated packages today.  first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.  Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it."/>
+<meta name="twitter:description" content="A couple of quick, unrelated packages today.
+ first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
+ Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it."/>
 
 
 
@@ -77,36 +81,30 @@
         </header>
         <div class="content">
             <p>
-A couple of quick, unrelated packages today.
-</p>
+A couple of quick, unrelated packages today.</p>
 <p>
 first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start
 to accumulate buffers. Last time, I talked about using <a href="http://cestlaz.github.io/posts/using-emacs-33-projectile-jump">projectile</a> and
 how that can help when navigating between buffers. IBuffer is another
-one.
-</p>
+one.</p>
 <p>
 Out of the box, <code>C-x C-b</code> is bound to the Emacs <strong><strong>list-buffers</strong></strong>
 command. It brings up a buffer with all the buffers listed inside
 it. You can navigate that buffer and hit enter on a particular buffer
 to go to it. You can also mark buffers and then operate on all the
 marked buffers. Hitting <strong><strong>h</strong></strong> in the list-buffers buffer brings up
-more details.
-</p>
+more details.</p>
 <p>
 IBuffer is like list-buffers on steroids. It looks much nicer and I
 think it has more functionality (again hitting <strong><strong>h</strong></strong> in the buffer
-brings up help).
-</p>
+brings up help).</p>
 <p>
 IBuffer really shines though, once you start customizing it. I found
 <a href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html">this</a> post by Martin Owen which shows how to customize the way ibuffer
 appears. You can group buffers however you want or even omit some from
-the listing.
-</p>
+the listing.</p>
 <p>
-Here&#39;s my configuration (mostly stolen from Owen):
-</p>
+Here&#39;s my configuration (mostly stolen from Owen):</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(global-set-key (kbd <span style="color:#e6db74">&#34;C-x C-b&#34;</span>) <span style="color:#e6db74">&#39;ibuffer</span>)
 (setq ibuffer-saved-filter-groups
@@ -141,11 +139,9 @@ Here&#39;s my configuration (mostly stolen from Owen):
 The video also shows <a href="https://github.com/smihica/emmet-mode">emmet</a> mode. A terrific mode for quickly creating
 HTML and CSS. I tried it a long time ago when it was called zencoding
 and found it lacking but after watching <a href="https://www.youtube.com/watch?v=gGPv7jsQGpc&amp;t=329s">this video</a> at Build Fun Things
-I started playing with it again. It&#39;s a real winner.
-</p>
+I started playing with it again. It&#39;s a real winner.</p>
 <p>
-Here&#39;s the config I&#39;m using:
-</p>
+Here&#39;s the config I&#39;m using:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package emmet-mode
 :ensure <span style="color:#66d9ef">t</span>
@@ -156,32 +152,22 @@ Here&#39;s the config I&#39;m using:
 )</code></pre></div></code></pre></div>
 </div>
 <p>
-Check them both out:
-</p>
+Check them both out:</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/yUfA-7wWNKA" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:
-</p>
+Relevant links:</p>
 <ul>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code:
-</p>
+<p>Code:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 </ul>
 

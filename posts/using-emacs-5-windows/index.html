@@ -14,12 +14,14 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1607979317" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608159278" />
 
 
 
 <meta property="og:title" content="Using Emacs - 5 - Windows" />
-<meta property="og:description" content="Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.   This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs." />
+<meta property="og:description" content="Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.
+ I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
+  This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-5-windows/" />
 <meta property="article:published_time" content="2016-06-14T00:00:00+00:00" />
@@ -27,7 +29,9 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 5 - Windows"/>
-<meta name="twitter:description" content="Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.   This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs."/>
+<meta name="twitter:description" content="Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.
+ I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
+  This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs."/>
 
 
 
@@ -78,23 +82,18 @@
         <div class="content">
             <p>
 Sorry for the delay in getting this next video / post up. I spent the
-last part of last week at <a href="http://go.personaldemocracy.com/">The Personal Democracy Forum 2016</a> which is really an exceptional conference.
-</p>
+last part of last week at <a href="http://go.personaldemocracy.com/">The Personal Democracy Forum 2016</a> which is really an exceptional conference.</p>
 <p>
-I posted a bit about it in my <a href="http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk">last post</a> and plan to write some more on it, but for now, more Emacs.
-</p>
+I posted a bit about it in my <a href="http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk">last post</a> and plan to write some more on it, but for now, more Emacs.</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/D6OUMVbPKSA" frameborder="0" allowfullscreen></iframe>
 <p>
 This video concerns using windows. By using buffers and windows and
-the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.
-</p>
+the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.</p>
 <p>
 From here, we&#39;ll be able to start going over effective Emacs and then
-using it for things like development or document creation.
-</p>
+using it for things like development or document creation.</p>
 <p>
-Some of the key window bindings:
-</p>
+Some of the key window bindings:</p>
 <table>
 <thead>
 <tr>
@@ -127,24 +126,20 @@ Some of the key window bindings:
 </table>
 <p>
 You also have frames which use <strong><strong>C-x 5</strong></strong> as the prefix, so <strong><strong>C-x 5 2</strong></strong>
-creats a new frame and <strong><strong>C-x 5 1</strong></strong> closes the other frames.
-</p>
+creats a new frame and <strong><strong>C-x 5 1</strong></strong> closes the other frames.</p>
 <p>
 Remember, you can always use the help system, in particular <strong><strong>C-x k</strong></strong>
-to describe a key and <strong><strong>C-x f</strong></strong> to describe a function.
-</p>
+to describe a key and <strong><strong>C-x f</strong></strong> to describe a function.</p>
 <p>
 <strong><strong>C-x o</strong></strong> can be a little clunky so some people like to use
 <strong><strong>windmove</strong></strong> which lets you move between windows by holding the shift
 key and with the arrows. To set that up, you can add this to your
-<strong><strong>init.el</strong></strong>
-</p>
+<strong><strong>init.el</strong></strong></p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(windmove<span style="color:#f92672">-</span>default<span style="color:#f92672">-</span>keybindings)</code></pre></div></code></pre></div>
 </div>
 <p>
-I prefer using <strong><strong>ace-window</strong></strong> mode which still uses <strong><strong>C-x o</strong></strong>:
-</p>
+I prefer using <strong><strong>ace-window</strong></strong> mode which still uses <strong><strong>C-x o</strong></strong>:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">; add this to init<span style="color:#f92672">.</span>el
 (use<span style="color:#f92672">-</span>package ace<span style="color:#f92672">-</span>window
@@ -158,53 +153,36 @@ I prefer using <strong><strong>ace-window</strong></strong> mode which still use
 ))</code></pre></div></code></pre></div>
 </div>
 <p>
-The other mode I mention in the video is winner mode:
-</p>
+The other mode I mention in the video is winner mode:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(winner<span style="color:#f92672">-</span>mode <span style="color:#ae81ff">1</span>)</code></pre></div></code></pre></div>
 </div>
 <p>
 Which will allow you to use <strong><strong>C-c left or right</strong></strong> to move through past
-window configurations.
-</p>
+window configurations.</p>
 <p>
-Relevant links:
-</p>
+Relevant links:</p>
 <ul>
 <li>
-<p>
-Ace window mode: <a href="https://github.com/abo-abo/ace-window">https://github.com/abo-abo/ace-window</a>
-</p>
+<p>Ace window mode: <a href="https://github.com/abo-abo/ace-window">https://github.com/abo-abo/ace-window</a></p>
 </li>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code for this video:
-</p>
+<p>Code for this video:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-5-windows">https://github.com/zamansky/using-emacs/tree/lesson-5-windows</a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/lesson-5-windows">https://github.com/zamansky/using-emacs/tree/lesson-5-windows</a></p>
 </li>
 <li>
-<p>
-Complete code built up over all videos:
-</p>
+<p>Complete code built up over all videos:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 </ul>
 
