@@ -14,13 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608159373" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608316806" />
 
 
 
 <meta property="og:title" content="Using Emacs - 26 - Google Calendar, Org Agenda" />
-<meta property="og:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
- I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list." />
+<meta property="og:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.  I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-26-gcal/" />
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
@@ -28,8 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 26 - Google Calendar, Org Agenda"/>
-<meta name="twitter:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
- I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list."/>
+<meta name="twitter:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.  I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list."/>
 
 
 
@@ -81,21 +79,25 @@
             <p>
 A while ago I did a couple of videos on how I use org-capture
 (<a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1/">part 1</a>, <a href="http://cestlaz.github.io/posts/using-emacs-24-capture-2/">part 2</a>). I didn&#39;t get into a big part of org-capture - how I
-use org-mode and capture to manage my calendar and todo lists.</p>
+use org-mode and capture to manage my calendar and todo lists.
+</p>
 <p>
 I was waiting to see if I liked my current setup - using <a href="https://github.com/myuhe/org-gcal.el">org-gcal</a> to
 sync with my Google Calendar for appointments while using my main org
-file for my todo list.</p>
+file for my todo list.
+</p>
 <p>
 Coincidentally, Rainer König recently put up a video on how he <a href="https://www.youtube.com/watch?v=cIzzjSaq2N8&amp;amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;amp;index=33">syncs
 with his Google calendar</a>. He uses a different method than the one I
 present in this video so make sure to check out his approach. In fact,
-you should check out his entire <a href="https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE">series on org-mode</a>.</p>
+you should check out his entire <a href="https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE">series on org-mode</a>.
+</p>
 <p>
 Here&#39;s the code I use install org-gcal. The video steps through
 setting up things on the Google side. You&#39;ll have to replace the
 <strong><strong>client ID</strong></strong> and <strong><strong>client secrets</strong></strong> in the code below as well as use
-your calendar name and whatever org file you want to sync with.</p>
+your calendar name and whatever org file you want to sync with.
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq package-check-signature <span style="color:#66d9ef">nil</span>)
 
@@ -111,33 +113,47 @@ org-gcal-file-alist <span style="color:#f92672">&#39;</span>((<span style="color
 I use these two hooks to sync things semi-automatically. The first
 hook syncs whenever I load the agenda. Since this happens in the
 background, if I just added something to my calendar, I might have to
-reload the agenda by hitting <strong><strong>r</strong></strong> in the agenda view.</p>
+reload the agenda by hitting <strong><strong>r</strong></strong> in the agenda view.
+</p>
 <p>
-The second hook syncs with my Google calendar when I capture.</p>
+The second hook syncs with my Google calendar when I capture.
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(add-hook <span style="color:#e6db74">&#39;org-agenda-mode-hook</span> (lambda () (org-gcal-sync) ))
 (add-hook <span style="color:#e6db74">&#39;org-capture-after-finalize-hook</span> (lambda () (org-gcal-sync) ))</code></pre></div></code></pre></div>
 </div>
 <p>
 Here are the rest of my settings. The org files I want to include in
-my agenda views:</p>
+my agenda views:
+</p>
 <ul>
 <li>
-<p>gcal.org – the one I&#39;m syncing</p>
-</li>
-<li>
-<p>i.org – my main org file for todo items (the todo capture places</p>
-</li>
-</ul>
-<p>things in here)</p>
-<ul>
-<li>
-<p>schedule.org – my old schedule before I was syncing with</p>
-</li>
-</ul>
-<p>Google. Not active anymore. I should probably remove it.</p>
 <p>
-Also, my capture settings:</p>
+gcal.org – the one I&#39;m syncing
+</p>
+</li>
+<li>
+<p>
+i.org – my main org file for todo items (the todo capture places
+</p>
+</li>
+</ul>
+<p>
+things in here)
+</p>
+<ul>
+<li>
+<p>
+schedule.org – my old schedule before I was syncing with
+</p>
+</li>
+</ul>
+<p>
+Google. Not active anymore. I should probably remove it.
+</p>
+<p>
+Also, my capture settings:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-files (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>
 <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span>
@@ -166,10 +182,12 @@ accept a calendar invite) and it appears in my org-mode
 agenda. Likewise, I can add a scheduled event using capture and it
 will sync up to Google. I can also just add an event by editing
 gcal.org but then would have to run <strong><strong>org-gcal-post-at-point</strong></strong> to send
-it up to Google.</p>
+it up to Google.
+</p>
 <p>
 Now, I can use bring up a regular agenda <strong><strong>C-a a</strong></strong>, my todo list <strong><strong>C-a
-t</strong></strong> or by adding a custom agenda command:</p>
+t</strong></strong> or by adding a custom agenda command:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-custom-commands
 <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;Simple agenda view&#34;</span>
@@ -177,10 +195,12 @@ t</strong></strong> or by adding a custom agenda command:</p>
 (alltodo <span style="color:#e6db74">&#34;&#34;</span>)))))</code></pre></div></code></pre></div>
 </div>
 <p>
-a combined agenda and todo view using <strong><strong>C-a n</strong></strong></p>
+a combined agenda and todo view using <strong><strong>C-a n</strong></strong>
+</p>
 <p>
 Finally, there&#39;s <a href="https://github.com/kiwanami/emacs-calfw">calfw</a>. It&#39;s a nice tool to view calendars in
-Google. I don&#39;t use it much anymore but it is nice:</p>
+Google. I don&#39;t use it much anymore but it is nice:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package calfw
 :ensure <span style="color:#75715e">;TODO:</span>
@@ -207,27 +227,39 @@ Google. I don&#39;t use it much anymore but it is nice:</p>
 (require <span style="color:#e6db74">&#39;calfw-gcal</span>))</code></pre></div></code></pre></div>
 </div>
 <p>
-Enjoy.</p>
+Enjoy.
+</p>
 <p>
-Better version:</p>
+Better version:
+</p>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/vO_RF2dK7M0" frameborder="0" allowfullscreen></iframe>
 <p>
-Old, bad version:</p>
+Old, bad version:
+</p>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/RyNBtfu9AJ4" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:</p>
+Relevant links:
+</p>
 <ul>
 <li>
-<p>Video series overview page:</p>
+<p>
+Video series overview page:
+</p>
 </li>
 <li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
 </li>
 <li>
-<p>Code:</p>
+<p>
+Code:
+</p>
 </li>
 <li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
 </li>
 </ul>
 
