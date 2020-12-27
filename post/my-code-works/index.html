@@ -14,12 +14,13 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608830424" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1609102475" />
 
 
 
 <meta property="og:title" content="My code works -- and I have no idea why!!!" />
-<meta property="og:description" content="One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.  Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request." />
+<meta property="og:description" content="One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.
+ Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/my-code-works/" />
 <meta property="article:published_time" content="2020-02-09T16:22:18-04:00" />
@@ -27,7 +28,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My code works -- and I have no idea why!!!"/>
-<meta name="twitter:description" content="One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.  Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request."/>
+<meta name="twitter:description" content="One of my pet annoyances is how code ecosystems have gotten more and more complex. Sometimes I think tool designers put together build systems to show how clever they are rather than to solve dependency problems as cleanly and simply as possible.
+ Over the break I wrote GitHub Org Explorer - a tool to help deal with GitHub classroom repositories. It worked but was using &#34;basic&#34; authentication where it sent a username and password with every request."/>
 
 
 
@@ -80,92 +82,71 @@
 <figure>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-4l2Bv_a85wYiS-5pWgYdfb6lb50CIwZ3GvjtNIwqVL1VruoL"/> 
 </figure>
-
 </p>
 <p>
 One of my pet annoyances is how code ecosystems have gotten more and
 more complex. Sometimes I think tool designers put together build
 systems to show how clever they are rather than to solve dependency
-problems as cleanly and simply as possible.
-</p>
+problems as cleanly and simply as possible.</p>
 <p>
 Over the break I wrote <a href="https://cestlaz.github.io/post/github-org-explorer/">GitHub Org Explorer</a> - a tool to help deal with
 GitHub classroom repositories. It worked but was using &#34;basic&#34;
 authentication where it sent a username and password with every
 request. As GitHub was deprecating that from their API I started to
-look at converting the application to use oauth. 
-</p>
+look at converting the application to use oauth. </p>
 <p>
 First I threw together a little <a href="https://github.com/zamansky/clojurescript-electron-oauth-test">proof of concept app</a> that just
 authenticated with GitHub and then started to move that code into my
-explorer app.
-</p>
+explorer app.</p>
 <p>
 First problem – the code that that worked in the proof of concept was
 crashing out in my actual app. I ultimately did a line by line
 analysis and couldn&#39;t find a difference. Even the configuration files
-appeared the same. 
-</p>
+appeared the same. </p>
 <p>
 Finally, in a fit of desperation, I killed all the supporting
-libraries that the build system installed and downloaded them again. 
-</p>
+libraries that the build system installed and downloaded them again. </p>
 <p>
-It worked!!!!!
-</p>
+It worked!!!!!</p>
 <p>
-It didn&#39;t inspire much confidence though.
-</p>
+It didn&#39;t inspire much confidence though.</p>
 <p>
 So, I went on and finished converting the app to oauth. All done,
-right? Wrong.
-</p>
+right? Wrong.</p>
 <p>
 I tried to build everything on another system and it crashed
-out. Weird. It worked on one machine but not another. 
-</p>
+out. Weird. It worked on one machine but not another. </p>
 <p>
 Solved that problem by wiping out the entire build system - node and
-npm using nvm and shadow-cljs and it worked.
-</p>
+npm using nvm and shadow-cljs and it worked.</p>
 <p>
-But it didn&#39;t. 
-</p>
+But it didn&#39;t. </p>
 <p>
-There was one final hurdle. 
-</p>
+There was one final hurdle. </p>
 <p>
 When I used the build system to compile and run in &#34;development&#34; mode
-everything worked. Compile for production? Not so much.
-</p>
+everything worked. Compile for production? Not so much.</p>
 <p>
-What could it be?
-</p>
+What could it be?</p>
 <p>
 After about a day of fretting, I discovered  that for some reason,
 when compiling for dev you get certain libraries including a string
 formatting one I was using. When compiling for production you didn&#39;t
-get them. Why would anyone set up a build system that way???????
-</p>
+get them. Why would anyone set up a build system that way???????</p>
 <p>
 Given that I&#39;m using a bunch of tools that I&#39;m new to - using
 shadow-cljs to go from clojurescript to javascript all ending up with
-a build for the electron platform - I just stopped using the library 
-</p>
+a build for the electron platform - I just stopped using the library </p>
 <p>
-Problem solved. 
-</p>
+Problem solved. </p>
 <p>
-Well, sort of. 
-</p>
+Well, sort of. </p>
 <p>
-I can now run my app but I&#39;m still not filled with confidence.
-</p>
+I can now run my app but I&#39;m still not filled with confidence.</p>
 <p>
 Now, I&#39;ve been at this game for a very long time. I&#39;ve been
 programming for around 40 years. Imagine what it&#39;s like for student or
-beginner.
-</p>
+beginner.</p>
 <p>
 I can&#39;t tell you how many times I&#39;ve seen a post on the learn
 programming subreddit from some beginner who learned using an online
@@ -173,16 +154,13 @@ tool or in a class that had them develop in a sandbox and they left
 with no clue how to write a real program outside of the classroom
 environment. If they&#39;re not prepared to merely write a program outside
 of some courseware system they&#39;ll have little chance going up against
-webpack, lienengen, cmake and the like.
-</p>
+webpack, lienengen, cmake and the like.</p>
 <p>
 I&#39;m not saying that we should throw our beginners out into the wild
 and start them with vi, C, and autotools but nobody&#39;s paying attention
-to the whole journey from Hello World to the real world.
-</p>
+to the whole journey from Hello World to the real world.</p>
 <p>
-Somebody should.
-</p>
+Somebody should.</p>
 
         </div>
         

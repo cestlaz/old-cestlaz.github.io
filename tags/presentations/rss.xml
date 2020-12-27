@@ -24,8 +24,7 @@ focussed on K12 Computer Science education. This year, in addition to
 attending, I&amp;#39;ll be giving a talk on preservice and inservice CS
 teacher preparation programs. I&amp;#39;ll be talking about the new New York
 State certification requirements along with what we&amp;#39;re rolling out at
-Hunter College.
-&lt;/p&gt;
+Hunter College.&lt;/p&gt;
 &lt;p&gt;
 This means putting together a slide deck for the session. When I have
 to work collaboratively with non-Emacs users, I will usually go to
@@ -33,12 +32,10 @@ Google Docs for presentations. It works and the collaborative aspects
 are nice but tools like Google Docs and Powerpoint are designed around
 composing slides manually. I much prefer to use a tool where I can
 focus on writing my presentation and have the tool turn it into a
-presentation.
-&lt;/p&gt;
+presentation.&lt;/p&gt;
 &lt;p&gt;
 Org-mode is of course the ideal tool. As an outliner, it lends itself
-to organizing a talk:
-&lt;/p&gt;
+to organizing a talk:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;,* topic 1
 the content for slide one
@@ -57,12 +54,10 @@ quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer pres
 creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
 use &lt;code&gt;ox-reveal&lt;/code&gt; as it&amp;#39;s pretty simple and flexible and I can also directly serve
 the final presentation from my own laptop, a usb drive, or directly
-from GitHub.
-&lt;/p&gt;
+from GitHub.&lt;/p&gt;
 &lt;p&gt;
 Check out the video to see how. If you want more information on using
-&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-11-reveal&#34;&gt;Using Emacs post and video&lt;/a&gt;.
-&lt;/p&gt;
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-11-reveal&#34;&gt;Using Emacs post and video&lt;/a&gt;.&lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/bRoSpJ23Kzk&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>

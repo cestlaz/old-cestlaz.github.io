@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608830424" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1609102475" />
 
 
 
@@ -83,53 +83,41 @@ the style&#34; of a source text. The technique we&#39;re going to use is
 usually called a Markov Chain text generator. Basically a model where
 the next state or word is based entirely on the current state. I don&#39;t
 dwell on the math under the hood but in case you&#39;re interested, here
-are a few links: <a href="https://en.m.wikipedia.org/wiki/Markov_chain">Wikipedia</a>, <a href="http://setosa.io/ev/markov-chains/">Explained Visually</a>, <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/MarkovChain_9_18.html">UC Davis Math</a>. 
-</p>
+are a few links: <a href="https://en.m.wikipedia.org/wiki/Markov_chain">Wikipedia</a>, <a href="http://setosa.io/ev/markov-chains/">Explained Visually</a>, <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/MarkovChain_9_18.html">UC Davis Math</a>. </p>
 <p>
 You can motivate this lesson in a number of ways. One is to start by
 showing some generated text - for this, a flowery, poetic text like
 the Book of Psalms works well. You can generate text a bunch of times
-until you get a good result. 
-</p>
+until you get a good result. </p>
 <p>
-Here&#39;s the start of the Book of Psalms:
-</p>
+Here&#39;s the start of the Book of Psalms:</p>
 <blockquote>
-<p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Blessed is the man that walketh not in the counsel of the
 ungodly, nor standeth in the way of sinners, nor sitteth in
 the seat of the scornful.</code></pre></div>
-</p>
 </blockquote>
 <p>
-and here&#39;s some generated text:
-</p>
+and here&#39;s some generated text:</p>
 <blockquote>
-<p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Blessed is the people that delight in war. Princes shall come out of
 Zion,  the perfection of beauty god hath shined our god shall come and
 shall declare thy mighty acts. I will speak of the glory of the lord
 surely i will not lie unto David.</code></pre></div>
-</p>
 </blockquote>
 <p>
 I added the punctuation as our generator strips it all and converts
-the text to lower case.
-</p>
+the text to lower case.</p>
 <p>
 The generated text looks reasonable in some ways but is clearly wrong
-in others.
-</p>
+in others.</p>
 <p>
-This leads to the conversation.
-</p>
+This leads to the conversation.</p>
 <p>
 If we look at the original text, it starts with &#34;blessed&#34; but if we
 look at our bag of words we also can see that &#34;blessed&#34; appears 49
 times. What&#39;s interesting for generating text are the words the follow
 &#34;blessed&#34; and the number of times they follow it. Here they are
-(sorted for convenience):
-</p>
+(sorted for convenience):</p>
 <blockquote>
 <table>
 <thead>
@@ -211,62 +199,44 @@ So we&#39;ll have a lot of things like &#34;blessed be the&#34; &#34;blessed be 
 etc. but only one occurrence of &#34;blessed upon….&#34; To generate text, we
 can build a dictionary where the keys are the words and the values are
 all the words that follow the key. We can build this with a variation
-on our bag of words builder:
-</p>
+on our bag of words builder:</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  </code></pre></div>
 </div>
 <p>
 Note that we need a counting loop rather than just iterating over the
 list since we need both the current item and the one after it in each
-iteration.
-</p>
+iteration.</p>
 <p>
-The (partial) value for the wordlists for the Book of Psalms would be:
-</p>
+The (partial) value for the wordlists for the Book of Psalms would be:</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  </code></pre></div>
 </div>
 <p>
-At this point, generating text is easy. 
-</p>
+At this point, generating text is easy. </p>
 <ol>
 <li>
-<p>
-Start with a word
-</p>
+<p>Start with a word</p>
 </li>
 <li>
-<p>
-Add the word to yoru story.
-</p>
+<p>Add the word to yoru story.</p>
 </li>
 <li>
-<p>
-Look  it up in your wordlists dictionary.
-</p>
+<p>Look  it up in your wordlists dictionary.</p>
 </li>
 <li>
-<p>
-select a random word from that words dictionary entry (it&#39;s list).
-</p>
+<p>select a random word from that words dictionary entry (it&#39;s list).</p>
 </li>
 <li>
-<p>
-That becomes the word for the next iteration
-</p>
+<p>That becomes the word for the next iteration</p>
 </li>
 <li>
-<p>
-Repeat until you have enough words.
-</p>
+<p>Repeat until you have enough words.</p>
 </li>
 </ol>
-<p>
-This won&#39;t add any punctuation and it will crash when it gets to the
+<p>This won&#39;t add any punctuation and it will crash when it gets to the
 last word in the original text (as it can&#39;t find any &#34;next words&#34; but
-basically it will work. Here&#39;s the code:
-</p>
+basically it will work. Here&#39;s the code:</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  </code></pre></div>
 </div>
@@ -275,20 +245,17 @@ The <code>random.choice()</code> randomly selects a word from a list. This is
 perfect for us since words that follow our key more frequently will
 have more entries in the list and thus appear more often. I decided to
 build a list of words and then use the <code>&#34; &#34;.join()</code> to turn it all
-into a space separated string.
-</p>
+into a space separated string.</p>
 <p>
 This is pretty fun but the students will note that it really doesn&#39;t
 work that well. This can lead to increasing our sample. Instead of
 using a single word as our key and having chain links based on two
 words (key, random choice from value), we can use three word
 links. Use a two word tuple for the key and the same list of words as
-the value.
-</p>
+the value.</p>
 <p>
 For example, a partial dictionary based on this idea from Macbeth Act
-1 Scene 1 could be:
-</p>
+1 Scene 1 could be:</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  </code></pre></div>
 </div>
@@ -297,18 +264,15 @@ This takes a bit more work to build and also a bit more work to
 generate text but it&#39;s eminently doable and the result is
 better. What about three word keys? Four? These aren&#39;t hard to write
 and ambitious students can write a generic dicitonary builder and
-story generator routine so as to be able to use any key lenght.
-</p>
+story generator routine so as to be able to use any key lenght.</p>
 <p>
 Students will find that the longer the key, the better the resultant
 story. They&#39;ll also notice that at some point, all you&#39;ll ever
 generate is the original back again. This is a great time to talk
-about over-training.
-</p>
+about over-training.</p>
 <p>
 This can be a fun unit and / or assignment. I used source materials
-that I like but any text will work.
-</p>
+that I like but any text will work.</p>
 
         </div>
         

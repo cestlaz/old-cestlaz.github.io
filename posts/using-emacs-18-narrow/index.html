@@ -14,12 +14,14 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608830425" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1609102476" />
 
 
 
 <meta property="og:title" content="Using Emacs - 18 - Narrowing and iedit" />
-<meta property="og:description" content="I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.  First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.  For example, let&#39;s say you had the following code:    You could mark one instance of somevar, hit C-; and you&#39;d be editing them all at once." />
+<meta property="og:description" content="I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.
+ First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.
+ For example, let&#39;s say you had the following code:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-18-narrow/" />
 <meta property="article:published_time" content="2016-11-02T00:00:00+00:00" />
@@ -27,7 +29,9 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 18 - Narrowing and iedit"/>
-<meta name="twitter:description" content="I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.  First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.  For example, let&#39;s say you had the following code:    You could mark one instance of somevar, hit C-; and you&#39;d be editing them all at once."/>
+<meta name="twitter:description" content="I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.
+ First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.
+ For example, let&#39;s say you had the following code:"/>
 
 
 
@@ -78,83 +82,63 @@
         <div class="content">
             <p>
 I meant to cover these last time but decided not to so as to keep the
-videos to about 10 minutes each.
-</p>
+videos to about 10 minutes each.</p>
 <p>
 First up this time round is <a href="https://github.com/victorhge/iedit">iedit</a> - a really cool mode that lets you
 select all the instances of the marked selection at the same time and
-edit them all at once. By default it&#39;s bound to <strong><strong>C-l</strong></strong>.
-</p>
+edit them all at once. By default it&#39;s bound to <strong><strong>C-l</strong></strong>.</p>
 <p>
-For example, let&#39;s say you had the following code:
-</p>
+For example, let&#39;s say you had the following code:</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 You could mark one instance of <strong><strong>somevar</strong></strong>, hit <strong><strong>C-;</strong></strong> and you&#39;d be
 editing them all at once. When you&#39;re done, you hit <strong><strong>C-;</strong></strong> again and
-everything is un-selected.
-</p>
+everything is un-selected.</p>
 <p>
 There are other ways to modify multiple instances of a selection. You
 can always search and replace or use Magnar Sveen&#39;s really cool
 <a href="https://github.com/magnars/multiple-cursors.el">multiple cursors</a> package and I&#39;m sure there are others but I like
 iedit since it&#39;s small and simple. It also works for rectangular
 editing but I didn&#39;t cover that in the video. I&#39;ll probably demo it
-when I cover rectangular editing in general.
-</p>
+when I cover rectangular editing in general.</p>
 <p>
 Iedit has limitations. For insance, since it works globally, it isn&#39;t
 perfect for renaming variables. If the above code snippet was part of
 a larger program with many other instances of <strong><strong>somevar</strong></strong>, iedit
-wouldn&#39;t, by itself, be as useful.
-</p>
+wouldn&#39;t, by itself, be as useful.</p>
 <p>
 You could reach for a language specific refactoring package but for
 me, that&#39;s where <strong><strong>narrowing</strong></strong> comes in. You can mark a region and
 tell emcas to <strong><strong>narrow-to-region</strong></strong> which hides everything outside the
 region and temporarily (until you <strong><strong>widen</strong></strong>) treats the region as the
-whole document.
-</p>
+whole document.</p>
 <p>
 So, you could narrow to the section of code you want to edit and then
-use iedit from within.
-</p>
+use iedit from within.</p>
 <p>
 To make things easier, I grabed <a href="http://endlessparentheses.com/emacs-narrow-or-widen-dwim.html">narrow-or-winden-dwim</a> from <a href="http://endlessparentheses.com/">Endless
-Parentheses</a>.
-</p>
+Parentheses</a>.</p>
 <p>
-I think the video makes the behaviour pretty clear.
-</p>
+I think the video makes the behaviour pretty clear.</p>
 <p>
-Enjoy
-</p>
+Enjoy</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/xne0kS1DfVs" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:
-</p>
+Relevant links:</p>
 <ul>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code:
-</p>
+<p>Code:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 </ul>
 

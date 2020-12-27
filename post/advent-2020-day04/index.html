@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1608830424" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1609102474" />
 
 
 
@@ -81,103 +81,83 @@ One of the nice things about Advent of Code is that it gets me to
 explore language features I haven&#39;t used yet. Today&#39;s problem got me
 to explore Clojure Spec which is a very cool validation
 library. There&#39;s a complete run through of the solution in Clojure in
-the video but here I&#39;ll talk about the problem in Python (mostly). 
-</p>
+the video but here I&#39;ll talk about the problem in Python (mostly). </p>
 <p>
 Today&#39;s <a href="https://adventofcode.com/2020/day/4">problem</a> is about validating passports. You start with a text
 file consisting of passport information. Each passport is one or more
 lines with each line having a bunch of key value pairs. For example,
 these two lines represent a passport for someone who&#39;s eye color (ecl)
-is gray (gry) and who was born (byr) in 1937:
-</p>
+is gray (gry) and who was born (byr) in 1937:</p>
 <pre class="example">
 ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
 byr:1937 iyr:2017 cid:147 hgt:183cm
 </pre>
 <p>
 The catch is that one passport can span multiple lines and that
-passports are separated by two consecutive newlines in the file.
-</p>
+passports are separated by two consecutive newlines in the file.</p>
 <p>
 A passport has 8 field types with one, Country of Origin (cid) being
-optional.
-</p>
+optional.</p>
 <p>
 For part 1, a valid passport is one that contains all 7 required
-fields. 
-</p>
+fields. </p>
 <p>
 The video goes over a Clojure solution which, I think is cleaner but
-the idea is the same as the Python I&#39;ll talk about here.
-</p>
+the idea is the same as the Python I&#39;ll talk about here.</p>
 <p>
 Splitting the data into a list of potential passports is easy because
-you can split the string on two newlines: 
-</p>
+you can split the string on two newlines: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;../data/sample04.dat&#34;</span>)<span style="color:#f92672">.</span>read()
-data<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)</code></pre></div>
-</p>
+data<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)</code></pre></div></p>
 <p>
-Now we have a list of string. 
-</p>
+Now we have a list of string. </p>
 <p>
 Next, we can split each string on whitespace so that each string in
-each sublist is a string in the form <strong>k:v</strong>: 
-</p>
+each sublist is a string in the form <strong>k:v</strong>: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data_list <span style="color:#f92672">=</span> []
 <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> data:
-    data_list<span style="color:#f92672">.</span>append([item <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> d<span style="color:#f92672">.</span>split()])</code></pre></div>
-</p>
+    data_list<span style="color:#f92672">.</span>append([item <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> d<span style="color:#f92672">.</span>split()])</code></pre></div></p>
 <p>
-So, for example, data_list[0] might look like this: 
-</p>
+So, for example, data_list[0] might look like this: </p>
 <pre class="example">
 [&#39;ecl:gry&#39;, &#39;pid:860033327&#39;, &#39;eyr:2020&#39;, &#39;hcl:#fffffd&#39;, &#39;byr:1937&#39;, &#39;iyr:2017&#39;, &#39;cid:147&#39;, &#39;hgt:183cm&#39;]
 </pre>
 <p>
-Finally, we can convert each passport into a dictionary: 
-</p>
+Finally, we can convert each passport into a dictionary: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data_dicts<span style="color:#f92672">=</span>[]
 <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> data_list:
     temp <span style="color:#f92672">=</span> { item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;:&#34;</span>)[<span style="color:#ae81ff">0</span>]:item<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;:&#34;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> d} 
     temp<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;cid&#39;</span>,None)
-    data_dicts<span style="color:#f92672">.</span>append(temp)</code></pre></div>
-</p>
+    data_dicts<span style="color:#f92672">.</span>append(temp)</code></pre></div></p>
 <p>
 The easiest way I came up with to check if a passport was valid was to
 make a set out of a list of required field names, make a set out of
 each potential passports field names (they&#39;re dictionary keys) and see
-if they&#39;re equal: 
-</p>
+if they&#39;re equal: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fields <span style="color:#f92672">=</span> set([<span style="color:#e6db74">&#34;byr&#34;</span>,<span style="color:#e6db74">&#34;iyr&#34;</span>,<span style="color:#e6db74">&#34;eyr&#34;</span>,<span style="color:#e6db74">&#34;hgt&#34;</span>,<span style="color:#e6db74">&#34;hcl&#34;</span>,<span style="color:#e6db74">&#34;ecl&#34;</span>,<span style="color:#e6db74">&#34;pid&#34;</span>])
-valid_passports <span style="color:#f92672">=</span>  [set(x<span style="color:#f92672">.</span>keys()) <span style="color:#f92672">==</span> fields <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data_dicts]</code></pre></div>
-</p>
+valid_passports <span style="color:#f92672">=</span>  [set(x<span style="color:#f92672">.</span>keys()) <span style="color:#f92672">==</span> fields <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data_dicts]</code></pre></div></p>
 <p>
-I think the Clojure code is cleaner but it&#39;s much the same.
-</p>
+I think the Clojure code is cleaner but it&#39;s much the same.</p>
 <p>
 Part two added a twist - you now have to not only see if the required
 fields are there but you had to make sure they had valid data. For
 example, height had to start with a positive integer followed by
 either <strong>cm</strong> or <strong>in</strong>. If it was <strong>cm</strong>, the number had to be in a certain
-range and if it was <strong>in</strong> it had to be within a different range. 
-</p>
+range and if it was <strong>in</strong> it had to be within a different range. </p>
 <p>
 This didn&#39;t sound hard but could get tricky. For each field type you
 could write a function that took in the value and returned true or
 false depending on its validity - lots of ad hoc code. You could then
 loop over all the passports and test to see if all the conditions were
-met. 
-</p>
+met. </p>
 <p>
 It turns out that Clojure has a really cool library - Clojure Spec
 that does just that. You set up validators for each field type and
-then one for an entire passport. Here&#39;s the code: 
-</p>
+then one for an entire passport. Here&#39;s the code: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">s/def</span> <span style="color:#e6db74">::byr</span> (<span style="color:#a6e22e">s/and</span> string? <span style="color:#f92672">#</span>(&gt;= (<span style="color:#a6e22e">u/parse-int</span> %) <span style="color:#ae81ff">1920</span>) <span style="color:#f92672">#</span>(&lt;= (<span style="color:#a6e22e">u/parse-int</span> %) <span style="color:#ae81ff">2002</span>)))
 (<span style="color:#a6e22e">s/def</span> <span style="color:#e6db74">::iyr</span> (<span style="color:#a6e22e">s/and</span> string? <span style="color:#f92672">#</span>(&gt;= (<span style="color:#a6e22e">u/parse-int</span> %) <span style="color:#ae81ff">2010</span>) <span style="color:#f92672">#</span>(&lt;= (<span style="color:#a6e22e">u/parse-int</span> %) <span style="color:#ae81ff">2020</span>)))
@@ -191,24 +171,19 @@ then one for an entire passport. Here&#39;s the code:
                    <span style="color:#e6db74">:req</span> [<span style="color:#e6db74">::byr</span> <span style="color:#e6db74">::iyr</span> <span style="color:#e6db74">::eyr</span> <span style="color:#e6db74">::hgt</span> <span style="color:#e6db74">::hcl</span> <span style="color:#e6db74">::ecl</span> <span style="color:#e6db74">::pid</span>]
                    <span style="color:#e6db74">:opt</span> [<span style="color:#e6db74">::cid</span>]))
 
-(<span style="color:#a6e22e">s/valid?</span> <span style="color:#e6db74">::passport</span> test-passport)</code></pre></div>
-</p>
+(<span style="color:#a6e22e">s/valid?</span> <span style="color:#e6db74">::passport</span> test-passport)</code></pre></div></p>
 <p>
 The last line would test to see if <strong>test-passport</strong> was valid. It&#39;s all
-covered in detail in the video.
-</p>
+covered in detail in the video.</p>
 <p>
 Clojure spec wasn&#39;t required for this problem but I&#39;ve been meaning to
 play with it for a while and it led to a clean and elegant way of
-testing passports. 
-</p>
+testing passports. </p>
 <p>
 Not sure if I&#39;ll get to more posts or even solve more problems - I&#39;m
-trying to limit my own screen time over the weekends but we&#39;ll see.
-</p>
+trying to limit my own screen time over the weekends but we&#39;ll see.</p>
 <p>
-If you want to check out all the Clojure goodness here it is: Enjoy!
-</p>
+If you want to check out all the Clojure goodness here it is: Enjoy!</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QzdCrJgXsww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
