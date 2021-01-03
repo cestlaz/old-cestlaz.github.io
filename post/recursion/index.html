@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>On Teaching Recursion - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1609702995" />
+
+
+
+<meta property="og:title" content="On Teaching Recursion" />
+<meta property="og:description" content="Yesterday I read three posts on teaching recursion. First by Shriram Krishnamurthi discussing his thoughts on how recursion is taught incorrectly. This prompted Adam Michlin to write about teaching recursion later with some commentary on APCS and then finally, Alfred Thompson added his thoughts.  Much like everything else in education there is no single right way to do things. To say as an absolute that you should or shouldn&#39;t teach in a certain way is wrong - too many variable." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/recursion/" />
+<meta property="article:published_time" content="2021-01-03T13:49:00-04:00" />
+<meta property="article:modified_time" content="2021-01-03T13:49:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="On Teaching Recursion"/>
+<meta name="twitter:description" content="Yesterday I read three posts on teaching recursion. First by Shriram Krishnamurthi discussing his thoughts on how recursion is taught incorrectly. This prompted Adam Michlin to write about teaching recursion later with some commentary on APCS and then finally, Alfred Thompson added his thoughts.  Much like everything else in education there is no single right way to do things. To say as an absolute that you should or shouldn&#39;t teach in a certain way is wrong - too many variable."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">On Teaching Recursion</h1>
+        </header>
+        <div class="content">
+            
+<p>
+Yesterday I read three posts on teaching recursion. <a href="https://parentheticallyspeaking.org/articles/how-not-to-teach-recursion/">First</a> by Shriram
+Krishnamurthi discussing his thoughts on how recursion is taught
+incorrectly. This prompted Adam Michlin to <a href="https://blog.ceos.io/2021/01/02/why-you-shouldnt-teach-recursion-yet/">write about</a> teaching
+recursion later with some commentary on APCS and then finally, Alfred
+Thompson added <a href="https://blog.acthompson.net/2021/01/recursionhow-and-when-to-teach.html">his thoughts</a>. </p>
+<p>
+Much like everything else in education there is no single right way to
+do things. To say as an absolute that you should or shouldn&#39;t teach in
+a certain way is wrong - too many variable.s In my experience you can
+teach recursion early or late but the structure of your program and
+your choice of tools can influence how successful you&#39;ll be. If you&#39;re
+teaching a programming course in a language like Python or Java and
+are teaching control structures first you&#39;re going to have a hard time
+doing recursion early. They&#39;ll get looping structures before they know
+the constructs that support recursion - either for control or for
+representing data. On the other hand, if you teach objects first you
+might have more success.</p>
+<p>
+On the other hand, if you&#39;re using a language like Scheme where lists
+and recursion are right in the forefront you&#39;ll likely have more
+success with recursion early rather than late. I wrote a bit about
+this <a href="https://cestlaz.github.io/posts/recursion-early/">a couple of years ago</a>. </p>
+<p>
+I&#39;ll leave the &#34;how important is recursion&#34; question for annother time
+but I want to address one more thing here. In yesterday&#39;s posts four
+traditional recursion problems received a solid bashing and I don&#39;t
+think it was fair. As I said up top, <del>only a Sith deals in absolutes</del>
+in teaching, there are no absolutes. Is factorial a wonderful
+motivation for recursion - particularly for a student who knows loops?
+Probably not but can it have some value? Let&#39;s see…</p>
+<div id="outline-container-headline-1" class="outline-3">
+<h3 id="headline-1">
+Factorial
+</h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>
+While this might not be a terrific motivator it does have some
+niceties. Most students will know factorial but will only be able
+describe it informally - &#34;multiply all the numbers between 1 and n.&#34;
+The recursive definition is more, precise, for lack of a better word.</p>
+<p>
+Then, there&#39;s a direct translation between the recursive definition
+and the code. </p>
+<p>
+Finally, it&#39;s about as bare bones as you get - no data structures or
+undue complexity. </p>
+<p>
+Is this going to motivate a student to learn recursion? No.</p>
+<p>
+Can it be used to help paint a more complete picture? Probably.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Fibonacci 
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>
+Also got a bad rap in the above linked posts. It shares the benefit of
+the recursive definition directly translating to a coded solution with
+factorial. </p>
+<p>
+Fibonacci is also a problem where they originally learned it via the
+recurssive rule &#34;the next Fibonacci number is the sum of the two
+previous fibonacci numbers.&#34;</p>
+<p>
+It also seems that when students find the Fibonacci number problem
+challenging to solve as beginners without recursion. The whole a
+becomes b. b becomes c thing can be tricky for beginners. In  my
+experience, they find the recursive solution to be more natural. This
+is also interesting because they usually don&#39;t find recursive
+factorial more natural than a loop (assuming they learned loops
+first).</p>
+<p>
+Next, the slowness of the solution is feature, not a bug. It&#39;s a
+platform to talk about how recursion isn&#39;t always the answer but you
+can think about a problem recursively and if the solution isn&#39;t right
+it might lead you to a better solution. This comes up later with
+dynamic programming. Just last year (he he) during Advent of Code I
+ended up solving one of the problems via dynamic programming. How did
+I get there? Thinking about the problem recursively. </p>
+<p>
+Here you get a great platform for now comparing solutions - iterative,
+recursive, tail recursive, memoization - take it as far as you want.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Euclid&#39;s algorithm 
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>
+I can&#39;t comment on Euclid&#39;s algorithm since I can&#39;t recall ever
+teaching it as part of recursion so I&#39;ll substitute Newton&#39;s method
+for square root approximation. </p>
+<p>
+The thing is that here, the goal isn&#39;t really recursion. It&#39;s just a
+problem that can be tackled with either recursion or iteration. The
+reason it&#39;s a neat problem is because you can talk about floating
+point accuracy issues along with how close of an approximation you
+might want or need. </p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Towers of Hanoi
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+Finally we get the Towers of Hanoi. Sure it&#39;s contrived but it can
+also be fun and by being a new and different problem students can try
+to use any strategies that might lead to a solution, recursive or
+otherwise:</p>
+<ul>
+<li>
+<p>try some small examples</p>
+</li>
+<li>
+<p>see if examples relate to each other</p>
+</li>
+<li>
+<p>base case?</p>
+</li>
+<li>
+<p>etc.</p>
+</li>
+</ul>
+<p>The big deal though is that Towers of Hanoi isn&#39;t really about Towers
+of Hanoi - it&#39;s really a platform to talk about all sorts of good
+stuff. I wrote all about it <a href="https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi/">a decade ago</a>. </p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Other stuff
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>
+Now, of course you can introduce recursion in other ways particularly
+if you use a language like Scheme. </p>
+<p>
+Bottom line is that without taking into considerations lots of other
+factors - student backgrounds, teacher comfort. Time, experience,
+facilities, goals and desired aoutcomes, and more you can&#39;t really say
+one way is right or one way is wrong.</p>
+</div>
+</div>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-01-03</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/cs">cs</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/cs">#cs</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/recursion">#recursion</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
