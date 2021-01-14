@@ -6,10 +6,143 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 13:49:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jan 2021 14:14:14 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Censorship, TOS, and a slippery slope</title>
+      <link>https://cestlaz.github.io/post/censorship/</link>
+      <pubDate>Thu, 14 Jan 2021 14:14:14 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/censorship/</guid>
+      <description>
+&lt;p&gt;
+Lots of chatter with Donald Trump being kicked off
+platforms left and right. On the one hand we&amp;#39;re getting a lot of &amp;#34;it&amp;#39;s
+censorship, it&amp;#39;s unust&amp;#34; and on the other side we have &amp;#34;it&amp;#39;s about
+time.&amp;#34; I&amp;#39;m of course in the &amp;#34;it&amp;#39;s about time&amp;#34; category but even so,
+there&amp;#39;s a cause for concern and a lot of meat for a discussion on tech
+policies.&lt;/p&gt;
+&lt;p&gt;
+What makes this interesting discussion fodder is that Trump was
+removed from different levels of the internet. First you&amp;#39;ve got actual
+applications like Twitter and Facebook. Next you&amp;#39;ve got the Play and
+Apple stores and finally, you&amp;#39;ve got AWS which provided cloud services
+to Parlor. At each level the removal of Trump and others inciting hate
+and violence have different ramifications and nuances.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Facebook and Twitter
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+First let&amp;#39;s look at Facebook and Twitter. On the one hand this is an
+easy one. They&amp;#39;re not government agencies - they&amp;#39;re private
+companies so the first amendment doesn&amp;#39;t apply. Next, were they
+denying service to Trump? No - he had an account on both
+services. What did happen is that he violated terms of service. While
+I&amp;#39;d never follow Trump, I did follow an account that tweeted his
+tweets. The account was set up to see if it would be suspended - guess
+what, it was - more than once. This isn&amp;#39;t discrimination or
+censorship, this is bouncing the unruly patron at the bar or, dare I
+say removing the person who refuses to wear a mask from your store. &lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re one of those free market regulation bad people I don&amp;#39;t want
+to hear it. In this case, the market did indeed decide. &lt;/p&gt;
+&lt;p&gt;
+There is, however, a big problem and that&amp;#39;s the fact that Twitter,
+Facebook and a few other players have so much power. You could argue
+they&amp;#39;re de facto monopolies. For years they willingly amiplified
+Trump&amp;#39;s lies and now overnight removed him. That&amp;#39;s a huge amount of
+power for a company to have. People like me have felt that for years,
+Facebook and Twitter have been behaving irresponsibly and as of last
+week people on the right feel that way and Dorsey and Zuck can&amp;#39;t be
+voted out of office. One can of course argue &amp;#34;The Market&amp;#34; but it&amp;#39;s not
+that simple with the market being dominated by a small number of
+players. &lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m doubting that calls to split up the tech giants will be helpful. I
+don&amp;#39;t know if we&amp;#39;re better off now as opposed to before AT&amp;amp;T split and
+I&amp;#39;m not sure that strongarm regulation is the answer. &lt;/p&gt;
+&lt;p&gt;
+Enforcing open proticols, APIs and standards would probably help a
+great deal but in any event, we do have a problem with big tech but
+it&amp;#39;s not what the right is crying about now.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+The stores and AWS
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Next we have the app stores removing Parlor. I&amp;#39;m guessing this is also
+a violation of TOS issue but there&amp;#39;s another issue here which is
+liability. Is Google or Apple liable or responsible for something on
+an application they distribute. &lt;/p&gt;
+&lt;p&gt;
+Related but different is AWS - are they responsible for things that
+occur on their servers even though it&amp;#39;s Parlor or whomever creates and
+runs the applications running on the Amazon Cloud?&lt;/p&gt;
+&lt;p&gt;
+Napster enters the chat.&lt;/p&gt;
+&lt;p&gt;
+Not exactly the same, but similar. For you youngsters, Napster was one
+of the early file sharing services. It was basically an IRC based
+setup to locate mp3 files in order to facilitate their
+transfer. Napster never hosted any of the files in question but the
+music industry went hard after them. &lt;/p&gt;
+&lt;p&gt;
+Even earlier you had alt.pictures.binaries. Back in the day they said
+that people came to the internet for email but stayed for &lt;a href=&#34;https://en.wikipedia.org/wiki/Usenet&#34;&gt;Usenet&lt;/a&gt;
+news. Basically, they were forums or chatrooms on just about any
+topic. I of course subscribed to comp.lang.c,
+alt.sports.basketball.nyknicks and a bunch of others. You connected to
+your news server to retrieve and post messages and messages were
+transferred periodically between servers. Originally using UUCP which
+had computers dialing each other up on set schedules but later over
+the internet. The servers didn&amp;#39;t own or even know what was in the
+messages. They just stored and forwarded.&lt;/p&gt;
+&lt;p&gt;
+The question came up with binary groups - alt.pictures.binaries in
+particular. Groups like alt.pictures.binaries would contain messages
+with encoded images. A single image wouldn&amp;#39;t fit into a message and
+messages were ascii so binary data couldn&amp;#39;t be directly sent. Images
+were encode using a program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Uuencoding&#34;&gt;uuencode&lt;/a&gt; and split into a bunch of
+messages. &lt;/p&gt;
+&lt;p&gt;
+As one might expect, the binary groups ended up a place to traffic
+adult and/or illegal material. &lt;/p&gt;
+&lt;p&gt;
+The question was were the server&amp;#39;s owners responsible? They didn&amp;#39;t
+create or own the posted material. They probably weren&amp;#39;t even aware it
+was on their servers. &lt;/p&gt;
+&lt;p&gt;
+This is a question cloud hosts like AWS have to consider on top of
+public perception and just doing what&amp;#39;s right (whatever that is).&lt;/p&gt;
+&lt;p&gt;
+A final note on this is that Net Neutrality, while maybe not applying
+in this specific instance harps on the same questions - with net
+neutrality, ISPS must treat all network traffic the same. Without it
+they are free to do what they want - they could slow down or block
+services they don&amp;#39;t want to support. Not the same since cloud servers
+are not ISPs but certainly similar. &lt;/p&gt;
+&lt;p&gt;
+Lots of meat here and there&amp;#39;s no clear cut right thing to do. Should
+the market decide? Is regulation needed? If so how much. Should it
+just be at the application level or how about the cloud? The Net
+Neutrality issue isn&amp;#39;t that old but when it came up nobody was talking
+about the cloud and app stores as gatekeepers didn&amp;#39;t exist. Add to
+that the fact that our elected officials are, let us say, not the most
+up on modern tech and tech issues. &lt;/p&gt;
+&lt;p&gt;
+I can see a lot of rich discussion coming out of this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>On Teaching Recursion</title>
@@ -4083,98 +4216,6 @@ So, in the end we made choices. We&amp;#39;re they the right ones? I think
 so. Next time around the cohort will be different and the
 circumstances a little as well. Will we make the same choices? Maybe,
 we&amp;#39;ll have to wait and see. &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CS Teacher Certification - Topics in CS</title>
-      <link>https://cestlaz.github.io/post/teacher-cert-topics/</link>
-      <pubDate>Wed, 05 Aug 2020 07:13:01 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/teacher-cert-topics/</guid>
-      <description>&lt;p&gt;
-Officially, the last course of the summer was &amp;#34;Modern Topics in
-Computer Science.&amp;#34; The idea was that K12 CS teachers on the one hand
-need depth beyond the typical terminal high school course, hence data
-structures and also breadth so that they could create electives, mix
-teasers in to the regular courses, or help precocious students with
-independent or semi-independant explorations. &lt;/p&gt;
-&lt;p&gt;
-If someone was teaching this in a typical fall or spring semester
-course, they&amp;#39;d probably have a list of topics and spend a couple of
-weeks on each. We wanted to do it a little differently. &lt;/p&gt;
-&lt;p&gt;
-The original thought was to integrate some of the topics in with the
-earlier computer science but there weren&amp;#39;t too many opportunities due
-to the compressed nature of the program. Instead, a few days before we
-wrapped up data structures we gave the cohort a list of potential
-topics and asked them to select one. Since the cohort had all already
-been teaching CS and had differing content backgrounds we also
-encouraged them to choose a topic not on the list.&lt;/p&gt;
-&lt;p&gt;
-When it was time for them to begin work on the topics part of the
-intensive, they all shared their desired topic. Fortunately, things
-worked out. We ended up with two solo students and a bunch of small
-teams. The teams were tasked with learning about the topic and
-designing a lesson or unit covering it. This could be for their
-current students or some other hypothetical group. Each group would
-also have to create a program or programs to show an implementation
-and or use of the topic. Once they chose their topics, we picked a few
-out of the remaining selections as topics that we&amp;#39;d present. &lt;/p&gt;
-&lt;p&gt;
-The next few days were Topher, JonAlf and I delivering our topics and
-the cohort working in groups. When they worked, we&amp;#39;d drop in and
-support. The final two days consisted of the groups presenting their
-work.&lt;/p&gt;
-&lt;p&gt;
-The topics they selected were:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Data Mining&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Public Key Encryption&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Blockchain&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Natural Language Processing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Classic AI - Decision Trees&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SQL / Cyber Security&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Visualization&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Machine Learning / Cipher Decryption&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Genetic Algorithms&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Classic AI - Search&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We weren&amp;#39;t sure exactly what to expect but we were blown away both in
-terms of the CS content as well as what they prepared in terms of
-lessons and units. &lt;/p&gt;
-&lt;p&gt;
-Since this is just year one of the program we thought we&amp;#39;d get ahead
-of the game and set up a site where we could host and share these
-units and other resources so check them out &lt;a href=&#34;https://github.com/hunter-teacher-cert/Teacher-Resources/blob/master/README.org&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;
-We didn&amp;#39;t have a strict format for the cohort to use so each one is a
-little different but each link&amp;#39;s README.md file will get you started.&lt;/p&gt;
-&lt;p&gt;
-As I said, we were blown away by their work but super proud that we
-also have the bonus of being able to make their work available to the
-general CS Ed community. If you&amp;#39;re looking to create a unit in any of
-these, check them out.&lt;/p&gt;
 </description>
     </item>
     
