@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
@@ -76,23 +76,28 @@
             <h1 class="post-title">Inverted Index Project</h1>
         </header>
         <div class="content">
-            <p>I haven&#39;t spoken much about the class I&#39;ve been teaching this
+            <p>
+I haven&#39;t spoken much about the class I&#39;ve been teaching this
 semester. It&#39;s an intro CS course - a programming heavy intro. I
 decided to use Python with a transition at the end to C++. The
 transition is to mirror Hunter&#39;s normal first CS course that ends with
 a C++ intro to prepare the students for next semester&#39;s CS course
 which is a more intense OOP class using C++ - the language we use in
-our core courses.</p>
+our core courses.
+</p>
 <p>
 Throughout the semester I&#39;ve tried to use a variety of interesting
 application areas so as to try to give the students some idea of the
-possibilities that studying CS will open up for them.</p>
+possibilities that studying CS will open up for them.
+</p>
 <p>
 After covering Python dictionaries and lists I thought we&#39;d play by
-building an inverted Index.</p>
+building an inverted Index.
+</p>
 <p>
 The basic idea is to map a set of words back to source files. For
-example, given the following four one line files:</p>
+example, given the following four one line files:
+</p>
 <table>
 <thead>
 <tr>
@@ -131,7 +136,8 @@ example, given the following four one line files:</p>
 </table>
 <p>
 You could build a data structure mapping each word back to the file(s)
-that contain it (partially shown here),</p>
+that contain it (partially shown here),
+</p>
 <table>
 <thead>
 <tr>
@@ -170,28 +176,33 @@ that contain it (partially shown here),</p>
 </table>
 <p>
 You can, of course, store more information - how many times a word
-appears in a file, where it appears, etc.</p>
+appears in a file, where it appears, etc.
+</p>
 <p>
 This is a fairly easy structure to build. A dictionary where the keys
 are the words in the file and the values are lists of the documents
-containing the words.</p>
+containing the words.
+</p>
 <div class="src src-python">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 In addition to letting us work with dictionaries and lists, we can
-also review file access and even the python CSV module if we want.</p>
+also review file access and even the python CSV module if we want.
+</p>
 <p>
 We can immediately write simple queries – &#34;what document(s) contain
 the word &#39;prick,&#39; but things get more interesting if you write
 functions to perform <strong><strong>and</strong></strong> and <strong><strong>or</strong></strong> queries - &#34;what document(s)
-contain the words &#39;prick&#39; <strong><strong>or</strong></strong> &#39;do&#39;&#34; for instance.</p>
+contain the words &#39;prick&#39; <strong><strong>or</strong></strong> &#39;do&#39;&#34; for instance.
+</p>
 <p>
 Why are we building this (besides as a data structure and programming
 exercise)? I&#39;ve seen a number of references to using an inverted index
 when building a web search engine. In fact, I think that&#39;s something
 you do early on in the Udacity Mooc. I just wanted to play with
-information retrieval.</p>
+information retrieval.
+</p>
 <p>
 I remembered that there was a collection of information, including
 last statements from <a href="https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html">executed offenders in Texas</a>. Someone conveniently
@@ -199,23 +210,28 @@ converted it into a <a href="https://docs.google.com/spreadsheets/d/1HAjZTtPriCl
 different from our simple four file example but then there&#39;s more
 data. It&#39;s straightforward enough to download the spreadsheet as a CSV
 file and then read it with a Python program that builds it into an
-inverted index.</p>
+inverted index.
+</p>
 <p>
-Now we have some interesting data to play with.</p>
+Now we have some interesting data to play with.
+</p>
 <p>
 How many offenders used words like &#34;sorry&#34; or &#34;apologize?&#34; How about
 references to religion? We can do all sorts of <strong><strong>and</strong></strong> and <strong><strong>or</strong></strong>
-queries.</p>
+queries.
+</p>
 <p>
 We just played with this a bit but I could see all sorts of
 explorations. What about taking some great work of literature and
 turning it into an inverted index by chapter. You could query
 characters or certain words and see where and when they appear in the
-book. A new and different way of exploring literature.</p>
+book. A new and different way of exploring literature.
+</p>
 <p>
 So, there you have it - an interesting little project we played with
 this past semester. We did it in an intro Python course but I could
-see it as an interesting project in AP CS A using hashmaps and lists.</p>
+see it as an interesting project in AP CS A using hashmaps and lists.
+</p>
 
         </div>
         

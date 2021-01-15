@@ -14,13 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
 <meta property="og:title" content="Using Emacs - 31 - elfeed part 3 - macros" />
-<meta property="og:description" content="In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
- Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra." />
+<meta property="og:description" content="In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.  Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-31-elfeed-3/" />
 <meta property="article:published_time" content="2017-03-01T00:00:00+00:00" />
@@ -28,8 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 31 - elfeed part 3 - macros"/>
-<meta name="twitter:description" content="In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
- Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra."/>
+<meta name="twitter:description" content="In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.  Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra."/>
 
 
 
@@ -82,18 +80,22 @@
 In <a href="http://cestlaz.github.io/posts/using-emacs-30-elfeed-2">part 2</a> I talked about how I used <a href="https://github.com/abo-abo/hydra">Hyrdas</a> to quickly navigate through
 elfeed tags. It was a nice step up but the fact that I still had to
 manually edit my configuration code for every new tag to update the
-hydra was a problem.</p>
+hydra was a problem.
+</p>
 <p>
 Basically, I had to somehow or other, take a list of all the active
 tags and with it build a <strong><strong>defhydra</strong></strong> command that will then make my
-Hydra.</p>
+Hydra.
+</p>
 <p>
 Fortunately, emacs, being a lisp, has macros. I&#39;m not talking about
 keyboard macros which I talked about in <a href="http://cestlaz.github.io/posts/using-emacs-15-macros/#.WLbj5t9idKQ">episode 15</a> but rather <a href="http://wiki.c2.com/?LispMacro">Lisp
 style macros</a>. Macros let you transform code and then execute the
-transformed code.</p>
+transformed code.
+</p>
 <p>
-The example I give in the video:</p>
+The example I give in the video:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defmacro infix (a op b)
 <span style="color:#f92672">`</span>(<span style="color:#f92672">,</span>op <span style="color:#f92672">,</span>a <span style="color:#f92672">,</span>b))
@@ -102,24 +104,30 @@ The example I give in the video:</p>
 </div>
 <p>
 This transforms the <strong><strong>3+8</strong></strong> into <strong><strong>(+ 3 8)</strong></strong> and then evaluates it to
-be 11.</p>
+be 11.
+</p>
 <p>
-We can use this idea with our Hydra.</p>
+We can use this idea with our Hydra.
+</p>
 <p>
 We can use the call <strong><strong>elfeed-db-get-all-tags</strong></strong> to get a list of all
 the tags in our database. I decided that if I had an uppercase letter
 in the tag, I&#39;d use the lowercase version of that letter as my &#34;hotkey&#34;
-and if it didn&#39;t, I&#39;d just use the first letter.</p>
+and if it didn&#39;t, I&#39;d just use the first letter.
+</p>
 <p>
-So, given a tag list of:</p>
+So, given a tag list of:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(active blogs cs eDucation emacs local misc sports star tech unread webcomics)</code></pre></div></code></pre></div>
 </div>
 <p>
-I&#39;d want a &#34;hotkey&#34; of <strong><strong>b</strong></strong> for logs and <strong><strong>d</strong></strong> for eDucation.</p>
+I&#39;d want a &#34;hotkey&#34; of <strong><strong>b</strong></strong> for logs and <strong><strong>d</strong></strong> for eDucation.
+</p>
 <p>
 The routine <strong><strong>z/hasCap</strong></strong> tests to see if a tag has a capital letter in
-it and <strong><strong>z/get-hydra-option-key</strong></strong> returns the final &#34;hotkey:&#34;</p>
+it and <strong><strong>z/get-hydra-option-key</strong></strong> returns the final &#34;hotkey:&#34;
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defun z/hasCap (s) <span style="color:#e6db74">&#34;&#34;</span>
 (let ((case-fold-search <span style="color:#66d9ef">nil</span>))
@@ -138,7 +146,8 @@ it and <strong><strong>z/get-hydra-option-key</strong></strong> returns the fina
 </div>
 <p>
 <strong><strong>mz/make-elfeed-cats</strong></strong> takes a list of tags and returns a list of
-items where each item is in the form expected by the hydra definition:</p>
+items where each item is in the form expected by the hydra definition:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;t&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@6-months-ago +tagname&#34;</span>) <span style="color:#e6db74">&#34;tagname&#34;</span>)</code></pre></div></code></pre></div>
 </div>
@@ -156,7 +165,8 @@ items where each item is in the form expected by the hydra definition:</p>
 tags))</code></pre></div></code></pre></div>
 </div>
 <p>
-Finally, here&#39;s our macro:</p>
+Finally, here&#39;s our macro:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defmacro mz/make-elfeed-hydra ()
 <span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
@@ -173,10 +183,12 @@ Finally, here&#39;s our macro:</p>
 <p>
 The line that starts with <strong><strong>,@</strong></strong> calls the routine that builds lines
 of code for all the tags in the database and the macro leaves me with
-the defhydra I need.</p>
+the defhydra I need.
+</p>
 <p>
 I then redefine the hydra every time I need it, just in case tags
-changed:</p>
+changed:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defun mz/make-and-run-elfeed-hydra ()
 <span style="color:#e6db74">&#34;&#34;</span>
@@ -187,34 +199,47 @@ changed:</p>
 <p>
 and bind <strong><strong>mz/make-and-run-elfeed-hydra</strong></strong> to j and J in my elfeed
 keymap (this code goes in the bind section of my use-package elfeed
-section):</p>
+section):
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#f92672">.</span> mz/make-and-run-elfeed-hydra)
 (<span style="color:#e6db74">&#34;J&#34;</span> <span style="color:#f92672">.</span> mz/make-and-run-elfeed-hydra)</code></pre></div></code></pre></div>
 </div>
 <p>
 As long as I remember to name my tags in a way that they don&#39;t
-conflict with one another I can quickly navigate all around elfeed.</p>
+conflict with one another I can quickly navigate all around elfeed.
+</p>
 <p>
-Macros FTW!!!!</p>
+Macros FTW!!!!
+</p>
 <p>
-Here&#39;s the video:</p>
+Here&#39;s the video:
+</p>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/5zuSUbAHH8c" frameborder="0" allowfullscreen></iframe>
 <p>
 Enjoy.
-Relevant links:</p>
+Relevant links:
+</p>
 <ul>
 <li>
-<p>Video series overview page:</p>
+<p>
+Video series overview page:
+</p>
 </li>
 <li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
 </li>
 <li>
-<p>Code:</p>
+<p>
+Code:
+</p>
 </li>
 <li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
 </li>
 </ul>
 

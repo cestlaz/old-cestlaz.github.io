@@ -14,14 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
 <meta property="og:title" content="Using Emacs - 30 - elfeed part 2 - Hydras" />
-<meta property="og:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
- It&#39;s emacs so there has to be a solution.
- Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages." />
+<meta property="og:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.  It&#39;s emacs so there has to be a solution.  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-30-elfeed-2/" />
 <meta property="article:published_time" content="2017-02-25T00:00:00+00:00" />
@@ -29,9 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 30 - elfeed part 2 - Hydras"/>
-<meta name="twitter:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
- It&#39;s emacs so there has to be a solution.
- Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages."/>
+<meta name="twitter:description" content="In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.  It&#39;s emacs so there has to be a solution.  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages."/>
 
 
 
@@ -84,23 +80,29 @@
 In <a href="http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/">part 1</a>, I talked about <a href="https://github.com/skeeto/elfeed">elfeed</a>, a really awesome feed reader for
 emacs. Generally, I&#39;m really liking it but there&#39;s been one problem -
 not being able to navigate quickly between groups of feeds with a
-keystroke or two.</p>
+keystroke or two.
+</p>
 <p>
-It&#39;s emacs so there has to be a solution.</p>
+It&#39;s emacs so there has to be a solution.
+</p>
 <p>
 Enter <a href="https://github.com/abo-abo/hydra">hydra</a> - a terrific emacs package from the same guy who brought
-us <a href="https://github.com/abo-abo/hydra">swiper</a>, another one of my favorite emacs packages.</p>
+us <a href="https://github.com/abo-abo/hydra">swiper</a>, another one of my favorite emacs packages.
+</p>
 <p>
 Basically, Hydra allows us to create Hydras - a collection of emacs
 commands tied o a single prefix along with a nice interface and help
-system.</p>
+system.
+</p>
 <p>
 Truth be told, I don&#39;t use hydra as much anymore since <a href="https://github.com/justbur/emacs-which-key">which-key</a>
 does such a great job most of the time. Which-key, however, is no help
-here.</p>
+here.
+</p>
 <p>
 Here&#39;s the code to install hydra along with a some of sample Hydra&#39;s
-I use:</p>
+I use:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package hydra
 :ensure <span style="color:#66d9ef">t</span>)
@@ -152,9 +154,11 @@ I use:</p>
 (<span style="color:#e6db74">&#34;l&#34;</span> (or )rg-capture-goto-last-stored <span style="color:#e6db74">&#34;Last Capture&#34;</span>))</code></pre></div></code></pre></div>
 </div>
 <p>
-Take a look at the <a href="https://github.com/abo-abo/hydra">Hydra</a> home page for detailed information.</p>
+Take a look at the <a href="https://github.com/abo-abo/hydra">Hydra</a> home page for detailed information.
+</p>
 <p>
-With Hydra installed, I can creat one for navigating in elfeed:</p>
+With Hydra installed, I can creat one for navigating in elfeed:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
 <span style="color:#e6db74">&#34;filter&#34;</span>
@@ -170,8 +174,10 @@ With Hydra installed, I can creat one for navigating in elfeed:</p>
 )</code></pre></div></code></pre></div>
 </div>
 <p>
-and add a binding to the elfeed key map:</p>
-<p>#+BEGIN_SRC emacs-lisp
+and add a binding to the elfeed key map:
+</p>
+<p>
+#+BEGIN_SRC emacs-lisp
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elfeed
 :ensure <span style="color:#66d9ef">t</span>
 :bind (:map elfeed-search-mode-map
@@ -200,7 +206,8 @@ Relevant links:
 <span style="color:#a6e22e">-</span> Video series overview page:
 <span style="color:#a6e22e">-</span> http://cestlaz.github.io/stories/emacs
 <span style="color:#a6e22e">-</span> Code:
-<span style="color:#a6e22e">-</span> [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]</code></pre></div></p>
+<span style="color:#a6e22e">-</span> [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]</code></pre></div>
+</p>
 
         </div>
         

@@ -14,13 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
 <meta property="og:title" content="Using Emacs 75 - Bufler" />
-<meta property="og:description" content="Quick Emacs hit today.
- After my last video, I received a comment noting that I was using ibuffer and that there was another package I might want to consider - bufler.  I started with basic ibuffer and then started to customize it to group buffers but that was always somewhat finicky. More often than not I couldn&#39;t tune it the way I wanted. Most recently, I started using ibuffer-projectile which group projects for me but lost the other customizations." />
+<meta property="og:description" content="Quick Emacs hit today.  After my last video, I received a comment noting that I was using ibuffer and that there was another package I might want to consider - bufler.  I started with basic ibuffer and then started to customize it to group buffers but that was always somewhat finicky. More often than not I couldn&#39;t tune it the way I wanted. Most recently, I started using ibuffer-projectile which group projects for me but lost the other customizations." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-75-bufler/" />
 <meta property="article:published_time" content="2020-09-22T13:17:41-04:00" />
@@ -28,8 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 75 - Bufler"/>
-<meta name="twitter:description" content="Quick Emacs hit today.
- After my last video, I received a comment noting that I was using ibuffer and that there was another package I might want to consider - bufler.  I started with basic ibuffer and then started to customize it to group buffers but that was always somewhat finicky. More often than not I couldn&#39;t tune it the way I wanted. Most recently, I started using ibuffer-projectile which group projects for me but lost the other customizations."/>
+<meta name="twitter:description" content="Quick Emacs hit today.  After my last video, I received a comment noting that I was using ibuffer and that there was another package I might want to consider - bufler.  I started with basic ibuffer and then started to customize it to group buffers but that was always somewhat finicky. More often than not I couldn&#39;t tune it the way I wanted. Most recently, I started using ibuffer-projectile which group projects for me but lost the other customizations."/>
 
 
 
@@ -79,31 +77,37 @@
         </header>
         <div class="content">
             <p>
-Quick Emacs hit today.</p>
+Quick Emacs hit today.
+</p>
 <p>
 After my last video, I received a comment noting that I was using
 ibuffer and that there was another package I might want to consider -
-<a href="https://github.com/alphapapa/bufler.el">bufler</a>. </p>
+<a href="https://github.com/alphapapa/bufler.el">bufler</a>. 
+</p>
 <p>
 I started with basic ibuffer and then started to <a href="https://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/">customize it</a> to group
 buffers but that was always somewhat finicky. More often than not I
 couldn&#39;t tune it the way I wanted. Most recently, I started using
 <a href="https://github.com/purcell/ibuffer-projectile">ibuffer-projectile</a> which group projects for me but lost the other
-customizations. In any event, I was more or less happy with things.</p>
+customizations. In any event, I was more or less happy with things.
+</p>
 <p>
 <a href="https://github.com/alphapapa/bufler.el">Bufler</a> though looks to be a nice alternative. Out of the box it looks
 like it groups things pretty well and has a nice Emacs <a href="https://github.com/abo-abo/hydra">hydra</a> that you
 can bring up with <code>?</code> to remind you how to do things like kill one or
-more buffers.  </p>
+more buffers.  
+</p>
 <p>
 Right now, I&#39;m using it as an ibuffer replacement but it also has its
-own version of switch buffer that I plan to play with as well. </p>
+own version of switch buffer that I plan to play with as well. 
+</p>
 <p>
 The only knit I&#39;ve found thus far is that when you run bufler, it
 splits the window and lists the buffers in the new space. If I&#39;m using
 ibuffer I want it to use the whole Emacs frame. Otherwise I just use
 ivy-switch-buffer (or now bufler-switch-buffer). I couldn&#39;t figure out
-a way built in so ended up writing a small function: </p>
+a way built in so ended up writing a small function: 
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defun mz/bufler-one-window (<span style="color:#66d9ef">&amp;optional</span> force-refresh)
   (interactive <span style="color:#e6db74">&#34;P&#34;</span>)
@@ -112,9 +116,11 @@ a way built in so ended up writing a small function: </p>
 
 )
 
-(global-set-key (kbd <span style="color:#e6db74">&#34;C-x C-b&#34;</span>) <span style="color:#e6db74">&#39;mz/bufler-one-window</span>)</code></pre></div></p>
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-x C-b&#34;</span>) <span style="color:#e6db74">&#39;mz/bufler-one-window</span>)</code></pre></div>
+</p>
 <p>
-Check out the video for more details.</p>
+Check out the video for more details.
+</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KqvjeRf84do" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
@@ -82,59 +82,75 @@ an APCS-A or college CS1 class. Another nice problem would be to
 write a program to generate an image in the format required by the
 question. Alternatively, a teacher doing day 8 with their classes
 might want to generate a bunch of images for the students to test
-their decoders on. </p>
+their decoders on. 
+</p>
 <p>
 I thought I&#39;d write one to see how appropriate it would be for the
-students. I tried to do it without anything fancy or advanced.</p>
+students. I tried to do it without anything fancy or advanced.
+</p>
 <p>
 To start, you&#39;ll need a way to generate the block text for the
 images. I found <a href="http://www.patorjk.com/software/taag/#p=display&amp;f=Banner3&amp;t=Hello">this</a> site and used the <strong>Banner3</strong> font. I generated
 some text and saved it in a file. The important thing for our purposes
-is that any space will count as white and any character as black.</p>
+is that any space will count as white and any character as black.
+</p>
 <p>
 The encoded image is a N * Width * Height sequence of digits  where
 each Width * Height sequence of digits represents one layer. See the
-<a href="https://adventofcode.com/2019/day/8">problem text</a> for details.</p>
+<a href="https://adventofcode.com/2019/day/8">problem text</a> for details.
+</p>
 <p>
-You can follow along with the code <a href="https://github.com/zamansky/advent2019/blob/master/day08-generator.py">here</a>. </p>
+You can follow along with the code <a href="https://github.com/zamansky/advent2019/blob/master/day08-generator.py">here</a>. 
+</p>
 <p>
-So, here&#39;s how the program works:</p>
+So, here&#39;s how the program works:
+</p>
 <p>
 The top 51 lines of the program consist of a routine which I&#39;ll
 describe later and code to handle command line argument (to set the
-number of layers).</p>
+number of layers).
+</p>
 <p>
-Then, on line 55 I erad  in the file with the source image (from stdin). </p>
+Then, on line 55 I erad  in the file with the source image (from stdin). 
+</p>
 <p>
 In line 57 through 63, I loop over the data and changed each non space
 or newline to a star character. I really don&#39;t have to do this but I
-wanted to see what the image looked like in just &#34;black and white.&#34;</p>
+wanted to see what the image looked like in just &#34;black and white.&#34;
+</p>
 <p>
 Line 65 through 67 is where I split on the newlines. Now I could take
 the length of any line to get the image width and the number of lines
-the height.</p>
+the height.
+</p>
 <p>
 70 through 79 creates a long list for the image. At each location, I
 generate a list of values. Each list has one entry per layer. The
 actual pixel value (1 or 0) is stored at a random location. Everything
 before that is a random choice between the real color and transparent
 and everything after is just random. Details for that step are in the
-<code>genpixel</code> routine.</p>
+<code>genpixel</code> routine.
+</p>
 <p>
 Finally, in 83 through 89 I loop over each layer and for each layer
-the image and and output all the values into a single string. </p>
+the image and and output all the values into a single string. 
+</p>
 <p>
-This is then output to stdout while the dimensions go to stderr.</p>
+This is then output to stdout while the dimensions go to stderr.
+</p>
 <p>
 If I had a source image in a file named &#34;hello.dat&#34; I&#39;d convert it to
 source input for day 8 by typing <code>cat hello.dat | python3 day08-generator.py
--l 10 &gt; day08-input.dat</code>. This would create a 10 layer input.</p>
+-l 10 &gt; day08-input.dat</code>. This would create a 10 layer input.
+</p>
 <p>
 That&#39;s it. Once again, the code is all <a href="https://github.com/zamansky/advent2019/blob/master/day08-generator.py">here</a>. It would make for another
 nice student assignment or for a teacher to prepare inputs for the
-class.</p>
+class.
+</p>
 <p>
-Enjoy.</p>
+Enjoy.
+</p>
 
         </div>
         

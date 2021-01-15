@@ -24,19 +24,19 @@ platforms left and right. On the one hand we&amp;#39;re getting a lot of &amp;#3
 censorship, it&amp;#39;s unust&amp;#34; and on the other side we have &amp;#34;it&amp;#39;s about
 time.&amp;#34; I&amp;#39;m of course in the &amp;#34;it&amp;#39;s about time&amp;#34; category but even so,
 there&amp;#39;s a cause for concern and a lot of meat for a discussion on tech
-policies.&lt;/p&gt;
+policies.
+&lt;/p&gt;
 &lt;p&gt;
 What makes this interesting discussion fodder is that Trump was
 removed from different levels of the internet. First you&amp;#39;ve got actual
 applications like Twitter and Facebook. Next you&amp;#39;ve got the Play and
 Apple stores and finally, you&amp;#39;ve got AWS which provided cloud services
-to Parlor. At each level the removal of Trump and others inciting hate
-and violence have different ramifications and nuances.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+to Parler. At each level the removal of Trump and others inciting hate
+and violence have different ramifications and nuances.
+&lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Facebook and Twitter
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 First let&amp;#39;s look at Facebook and Twitter. On the one hand this is an
 easy one. They&amp;#39;re not government agencies - they&amp;#39;re private
@@ -47,10 +47,12 @@ I&amp;#39;d never follow Trump, I did follow an account that tweeted his
 tweets. The account was set up to see if it would be suspended - guess
 what, it was - more than once. This isn&amp;#39;t discrimination or
 censorship, this is bouncing the unruly patron at the bar or, dare I
-say removing the person who refuses to wear a mask from your store. &lt;/p&gt;
+say removing the person who refuses to wear a mask from your store. 
+&lt;/p&gt;
 &lt;p&gt;
 If you&amp;#39;re one of those free market regulation bad people I don&amp;#39;t want
-to hear it. In this case, the market did indeed decide. &lt;/p&gt;
+to hear it. In this case, the market did indeed decide. 
+&lt;/p&gt;
 &lt;p&gt;
 There is, however, a big problem and that&amp;#39;s the fact that Twitter,
 Facebook and a few other players have so much power. You could argue
@@ -61,39 +63,42 @@ Facebook and Twitter have been behaving irresponsibly and as of last
 week people on the right feel that way and Dorsey and Zuck can&amp;#39;t be
 voted out of office. One can of course argue &amp;#34;The Market&amp;#34; but it&amp;#39;s not
 that simple with the market being dominated by a small number of
-players. &lt;/p&gt;
+players. 
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m doubting that calls to split up the tech giants will be helpful. I
 don&amp;#39;t know if we&amp;#39;re better off now as opposed to before AT&amp;amp;T split and
-I&amp;#39;m not sure that strongarm regulation is the answer. &lt;/p&gt;
+I&amp;#39;m not sure that strongarm regulation is the answer. 
+&lt;/p&gt;
 &lt;p&gt;
 Enforcing open proticols, APIs and standards would probably help a
 great deal but in any event, we do have a problem with big tech but
-it&amp;#39;s not what the right is crying about now.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+it&amp;#39;s not what the right is crying about now.
+&lt;/p&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 The stores and AWS
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-Next we have the app stores removing Parlor. I&amp;#39;m guessing this is also
+Next we have the app stores removing Parler. I&amp;#39;m guessing this is also
 a violation of TOS issue but there&amp;#39;s another issue here which is
 liability. Is Google or Apple liable or responsible for something on
-an application they distribute. &lt;/p&gt;
+an application they distribute. 
+&lt;/p&gt;
 &lt;p&gt;
 Related but different is AWS - are they responsible for things that
-occur on their servers even though it&amp;#39;s Parlor or whomever creates and
-runs the applications running on the Amazon Cloud?&lt;/p&gt;
+occur on their servers even though it&amp;#39;s Parler or whomever creates and
+runs the applications running on the Amazon Cloud?
+&lt;/p&gt;
 &lt;p&gt;
-Napster enters the chat.&lt;/p&gt;
+Napster enters the chat.
+&lt;/p&gt;
 &lt;p&gt;
 Not exactly the same, but similar. For you youngsters, Napster was one
 of the early file sharing services. It was basically an IRC based
 setup to locate mp3 files in order to facilitate their
 transfer. Napster never hosted any of the files in question but the
-music industry went hard after them. &lt;/p&gt;
+music industry went hard after them. 
+&lt;/p&gt;
 &lt;p&gt;
 Even earlier you had alt.pictures.binaries. Back in the day they said
 that people came to the internet for email but stayed for &lt;a href=&#34;https://en.wikipedia.org/wiki/Usenet&#34;&gt;Usenet&lt;/a&gt;
@@ -104,31 +109,37 @@ your news server to retrieve and post messages and messages were
 transferred periodically between servers. Originally using UUCP which
 had computers dialing each other up on set schedules but later over
 the internet. The servers didn&amp;#39;t own or even know what was in the
-messages. They just stored and forwarded.&lt;/p&gt;
+messages. They just stored and forwarded.
+&lt;/p&gt;
 &lt;p&gt;
 The question came up with binary groups - alt.pictures.binaries in
 particular. Groups like alt.pictures.binaries would contain messages
 with encoded images. A single image wouldn&amp;#39;t fit into a message and
 messages were ascii so binary data couldn&amp;#39;t be directly sent. Images
 were encode using a program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Uuencoding&#34;&gt;uuencode&lt;/a&gt; and split into a bunch of
-messages. &lt;/p&gt;
+messages. 
+&lt;/p&gt;
 &lt;p&gt;
 As one might expect, the binary groups ended up a place to traffic
-adult and/or illegal material. &lt;/p&gt;
+adult and/or illegal material. 
+&lt;/p&gt;
 &lt;p&gt;
 The question was were the server&amp;#39;s owners responsible? They didn&amp;#39;t
 create or own the posted material. They probably weren&amp;#39;t even aware it
-was on their servers. &lt;/p&gt;
+was on their servers. 
+&lt;/p&gt;
 &lt;p&gt;
 This is a question cloud hosts like AWS have to consider on top of
-public perception and just doing what&amp;#39;s right (whatever that is).&lt;/p&gt;
+public perception and just doing what&amp;#39;s right (whatever that is).
+&lt;/p&gt;
 &lt;p&gt;
 A final note on this is that Net Neutrality, while maybe not applying
 in this specific instance harps on the same questions - with net
 neutrality, ISPS must treat all network traffic the same. Without it
 they are free to do what they want - they could slow down or block
 services they don&amp;#39;t want to support. Not the same since cloud servers
-are not ISPs but certainly similar. &lt;/p&gt;
+are not ISPs but certainly similar. 
+&lt;/p&gt;
 &lt;p&gt;
 Lots of meat here and there&amp;#39;s no clear cut right thing to do. Should
 the market decide? Is regulation needed? If so how much. Should it
@@ -136,11 +147,11 @@ just be at the application level or how about the cloud? The Net
 Neutrality issue isn&amp;#39;t that old but when it came up nobody was talking
 about the cloud and app stores as gatekeepers didn&amp;#39;t exist. Add to
 that the fact that our elected officials are, let us say, not the most
-up on modern tech and tech issues. &lt;/p&gt;
+up on modern tech and tech issues. 
+&lt;/p&gt;
 &lt;p&gt;
-I can see a lot of rich discussion coming out of this.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+I can see a lot of rich discussion coming out of this.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -154,12 +165,14 @@ I can see a lot of rich discussion coming out of this.&lt;/p&gt;
 &lt;p&gt;
 Teachers are back and students will soon follow either in person or
 remote. In person means in person one or two days a week with the
-rest of the time from home.&lt;/p&gt;
+rest of the time from home.
+&lt;/p&gt;
 &lt;p&gt;
 This of course shows horrible leadership. It fails in terms of
 education, safety and even freeing up parents to get back to
 work. After all, if your kid is only in school one or two days a week
-it hardly allows you to get back to your own full time job. &lt;/p&gt;
+it hardly allows you to get back to your own full time job. 
+&lt;/p&gt;
 &lt;p&gt;
 Of course the plan gets worse. It&amp;#39;s optimized to provide the worst
 possible educational experience. I won&amp;#39;t rehash the plans here but
@@ -167,7 +180,8 @@ it&amp;#39;s looking to increase the teachers workload tremendously while at
 the same time killing continuity for the students (unless of course
 the DOE can hire thousands of extra teachers and somehow arrange for
 them to mind meld with the  main teacher). I&amp;#39;m not going to hash out
-the details here but they&amp;#39;re easy enough to find on the interwebs.&lt;/p&gt;
+the details here but they&amp;#39;re easy enough to find on the interwebs.
+&lt;/p&gt;
 &lt;p&gt;
 Now in terms of leadership I&amp;#39;m not writing about De Blasio or
 Carranza. We all know they&amp;#39;re absolutely horrible. It&amp;#39;s hard to
@@ -176,7 +190,8 @@ while I&amp;#39;m no fan of Bloomberg on education at least you could say that
 he had a vision, albeit an incorrect one of applying business sense to
 schools and followed it while De Blasio is tone deaf, arrogant and
 clueless which could make him more dangerous. I&amp;#39;m talking about in
-school leadership.&lt;/p&gt;
+school leadership.
+&lt;/p&gt;
 &lt;p&gt;
 What did schools do? Well some tried to make the best of a bad
 situation. They recognized that the Mayor&amp;#39;s hybrid model was bunk and
@@ -188,15 +203,18 @@ decided to basically set up remote from in school. Students who wanted
 to or had to go to school would be sent to specific parts of the
 school where they would receive the same remote instruction as their
 classmates. This would accommodate students who couldn&amp;#39;t work from
-home while allowing for a sensible overall schedule.&lt;/p&gt;
+home while allowing for a sensible overall schedule.
+&lt;/p&gt;
 &lt;p&gt;
 Sounds like good leadership to me and in some cases it is. On the
-other hand, in some cases you have to  dig deeper.&lt;/p&gt;
+other hand, in some cases you have to  dig deeper.
+&lt;/p&gt;
 &lt;p&gt;
 The first question has to do with the student pods. Can they be set up
 safely. What about entering and leaving? Bathrooms? Lunch? I&amp;#39;m
 guessing some schools have a good plan in place but I&amp;#39;ve also heard
-teachers refer to their upcoming student learning pods as &amp;#34;deathpods.&amp;#34;&lt;/p&gt;
+teachers refer to their upcoming student learning pods as &amp;#34;deathpods.&amp;#34;
+&lt;/p&gt;
 &lt;p&gt;
 The next question has to do with teachers working from the building or
 from home. The DOE decreed that unless you get a medical excemption
@@ -206,12 +224,14 @@ already written about it - &lt;a href=&#34;https://cestlaz.github.io/post/scared
 leadership kicks in. I&amp;#39;ve heard through the grapevine that some
 schools had teachers working from home without DOE permission. Sounds
 like good leadership to me - trust your people to do the job and do
-the right thing.&lt;/p&gt;
+the right thing.
+&lt;/p&gt;
 &lt;p&gt;
 Recently, the DOE backpedaled and gave schools the ability to allow
 teachers to work from home without medical excemptions so long as it
 worked within their COVID plans. Looks like some schools are jumping
-on this.&lt;/p&gt;
+on this.
+&lt;/p&gt;
 &lt;p&gt;
 Unfortunately, others aren&amp;#39;t. I&amp;#39;ve heard of principals that are
 setting up their schools to be &amp;#34;remote from school&amp;#34; but requiring all
@@ -223,27 +243,29 @@ brave the subways and share facilities like bathrooms only to spend
 the day teaching in isolation serves no purpose other than to exert
 power over them. If a teacher is teaching all remote and isn&amp;#39;t needed
 for the pods, let them teach from home. They&amp;#39;ll be more comfortable
-and thus more effective. &lt;/p&gt;
+and thus more effective. 
+&lt;/p&gt;
 &lt;p&gt;
 It sounds like some principals are being true educators and leaders in
 these times but many are not and in these times when we can&amp;#39;t count on
 our elected officials or his appointees to do the right thing, we need
-all our principals to step up.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+all our principals to step up.
+&lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Footnotes
 &lt;/h2&gt;
-&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;Note that I&amp;#39;m only talking here about the general population at
+&lt;p&gt;
+Note that I&amp;#39;m only talking here about the general population at
 the high school level. I don&amp;#39;t claim to know the best format for the
 younger grades and accomodating special needs students are a whole
-different kettle of fish.&lt;/p&gt;
+different kettle of fish.
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -259,26 +281,31 @@ different kettle of fish.&lt;/p&gt;
       <guid>https://cestlaz.github.io/post/reopening-schools/</guid>
       <description>&lt;p&gt;
 Yesterday, Bill de Blasio and Richard Carranza unveiled their open the
-schools in the fall plan. &lt;/p&gt;
+schools in the fall plan. 
+&lt;/p&gt;
 &lt;p&gt;
 The plan is perfectly consistent with de Blasio and Carranza&amp;#39;s
 education policies and efforts in general - tone deaf, ineffective,
-and in this case, unsafe.&lt;/p&gt;
+and in this case, unsafe.
+&lt;/p&gt;
 &lt;p&gt;
 I know we were told that part of this came from survey results but we
 all know that surveys are super easy to fix. I mean, ask any teacher
 or parent &amp;#34;do you want schools to be open and in person in the Fall?&amp;#34;
 and everyone will say &amp;#34;yes.&amp;#34; Of course, there&amp;#39;s the implication that
-it&amp;#39;s safe and I bet that part didn&amp;#39;t make it in to the surveys.&lt;/p&gt;
+it&amp;#39;s safe and I bet that part didn&amp;#39;t make it in to the surveys.
+&lt;/p&gt;
 &lt;p&gt;
 I didn&amp;#39;t watch the news conference live, but I was told that while
 principals, parents, and children were mentioned over and over as
 consulted constituents when forming the plan, somehow teachers never
-came up. Typical.&lt;/p&gt;
+came up. Typical.
+&lt;/p&gt;
 &lt;p&gt;
 The basics of the plan is that students could go all remote or hybrid
 and under the hybrid model, they&amp;#39;d be in the schools some days and not
-others.&lt;/p&gt;
+others.
+&lt;/p&gt;
 &lt;p&gt;
 Does this address health concerns? Doubtful. They&amp;#39;re talking about a
 third to half the students attending at a time. Take a look at any
@@ -290,7 +317,8 @@ blocks not to mention the subway platforms and cars. Even 1/3 isn&amp;#39;t
 going to do it and the more you stagger, the more you lengthen the
 school days and this affects both staff and families. What good is
 having a kid go to school so you can work if they don&amp;#39;t start until
-mid day?&lt;/p&gt;
+mid day?
+&lt;/p&gt;
 &lt;p&gt;
 Let&amp;#39;s assume, although I don&amp;#39;t think it&amp;#39;s a safe assumption, that you
 can get the kids to and from school safety. How big are the
@@ -299,15 +327,18 @@ could safely accommodate something like 9 -  12 people. That&amp;#39;s in line
 with what DbD said but what about transfer between classes? Some
 schools - particularly those in converted spaces have TINY halls or
 limited stairwells. What about bathrooms? None of this has been
-addressed.&lt;/p&gt;
+addressed.
+&lt;/p&gt;
 &lt;p&gt;
 What about cleaning? Teachers have regularly begged for basic
 supplies. Schools go without necessities like toilet paper and the
 Mayor&amp;#39;s saying that we&amp;#39;ll have sufficient masks and cleaning supplies?
-Good luck with that! &lt;/p&gt;
+Good luck with that! 
+&lt;/p&gt;
 &lt;p&gt;
 Even if we have the supplies, will they be used and used correctly and
-often enough? &lt;/p&gt;
+often enough? 
+&lt;/p&gt;
 &lt;p&gt;
 What about compliance? For years, schools had a &amp;#34;no hats&amp;#34; policy but
 rarely are there no hats. Even when the policy works, usually it&amp;#39;s a
@@ -315,7 +346,8 @@ result of teachers continually asking students to remove their
 hats. How did those cell phone bans work? Do we really believe we can
 get 100% compliance from students, teachers, and staff? What about the
 younger grades? We really expect them to comply with adult
-protocols?????&lt;/p&gt;
+protocols?????
+&lt;/p&gt;
 &lt;p&gt;
 Even if everything is implemented, will it keep everyone safe?
 Unlikely. Professional and big time college sports have extreme
@@ -323,7 +355,8 @@ incentive to &amp;#34;open up&amp;#34;, boatloads of money and everyone pulling 
 same direction. They test all the time, have all the space they need
 and can implement whatever protocols they want. Even with all this we
 keep hearing about new cases in those populations. If they can&amp;#39;t do it
-how can underfunded schools?&lt;/p&gt;
+how can underfunded schools?
+&lt;/p&gt;
 &lt;p&gt;
 With all of this, even if it&amp;#39;s safe and even if schools can manage
 reasonable schedules, students will only be going to school a couple
@@ -332,7 +365,8 @@ when we had Batya. We were looking for child care for just a couple of
 days a week. Five days was easy, no days was easy but just a couple -
 not so much. What about the shifted days? Large schools might need 4
 shifts. Kids either start and end super early or super late. Will that
-help parents who work &amp;#34;regular time&amp;#34; jobs?&lt;/p&gt;
+help parents who work &amp;#34;regular time&amp;#34; jobs?
+&lt;/p&gt;
 &lt;p&gt;
 Finally, let&amp;#39;s get to the education side of things. High school
 teachers teach five classes a day. Around 34 kids in a class. Given
@@ -347,19 +381,22 @@ synchronous remote instruction which means you&amp;#39;re only actually
 interacting with your students once or twice a week and there&amp;#39;s no way
 teachers will be able to actually develop materials, assess students,
 and maintain meaningful contact unless someone finds a whole lot of
-hours to the day.&lt;/p&gt;
+hours to the day.
+&lt;/p&gt;
 &lt;p&gt;
 On the other hand, if the teacher just does the in person and another
 or other teachers do the remote you&amp;#39;ll have multiple teachers teaching
 a single class without any real coordination  - this is yet another
-recipe for disaster.&lt;/p&gt;
+recipe for disaster.
+&lt;/p&gt;
 &lt;p&gt;
 I get it - we all want to get back to normal. I want to be with my
 students but I want to be with them safely. I also get that some
 students are not doing well in isolation and that remote school is
 both less effective than in person and a hardship all around but when
 we open it has to make sense both in terms of safety and in terms of
-education. de Blasio and Carranza&amp;#39;s plan is neither.&lt;/p&gt;
+education. de Blasio and Carranza&amp;#39;s plan is neither.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -371,18 +408,22 @@ education. de Blasio and Carranza&amp;#39;s plan is neither.&lt;/p&gt;
       <guid>https://cestlaz.github.io/post/teachers-police-2/</guid>
       <description>&lt;p&gt;
 My friend Neal Zupancic, actually former student, friend, and long
-time teacher Neal Zupancic posted this on Facebook. &lt;/p&gt;
+time teacher Neal Zupancic posted this on Facebook. 
+&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s 100% spot on. I&amp;#39;d add my two cents but Neal captured it better
-than I ever could. &lt;/p&gt;
+than I ever could. 
+&lt;/p&gt;
 &lt;p&gt;
-Take a minute to read it:&lt;/p&gt;
+Take a minute to read it:
+&lt;/p&gt;
 &lt;p&gt;
 In my ten years of teaching, I&amp;#39;ve dealt with a number of situations
 that could have potentially turned dangerous.  I&amp;#39;ve taught in public
 schools and private; urban schools and rural.  I have de-escalated
 every last one of those situations.  I have never once used force.  I
-once broke up a fist fight using only my voice and my presence.&lt;/p&gt;
+once broke up a fist fight using only my voice and my presence.
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve never felt the need to announce that before, because it&amp;#39;s just a
 part of my profession.  Every teacher knows it and most of the public
@@ -397,7 +438,8 @@ situations without using force or violence.  Some of us are
 well-trained, and some of us are thrown in and just go on instinct.
 But we de-escalate.  We calm.  We soothe.  We help.  We repair and
 restore the community.  We heal people.  We build an environment in
-which those we are responsible for can thrive.&lt;/p&gt;
+which those we are responsible for can thrive.
+&lt;/p&gt;
 &lt;p&gt;
 I keep seeing people ask &amp;#34;who would want to be a cop if you could get
 fired for doing your job?&amp;#34;  But literally any teacher could do that
@@ -409,7 +451,8 @@ him dead, knowing that the system would provide accountability for his
 resisting arrest and that you didn&amp;#39;t have to be his executioner.
 Literally any teacher knows that by the time you are in a power
 struggle with a student, you have already lost.
-Literally. any. teacher.&lt;/p&gt;
+Literally. any. teacher.
+&lt;/p&gt;
 &lt;p&gt;
 I hear these cops whining on social media and it sickens me.  They
 wouldn&amp;#39;t last a day teaching.  And of course we see that when we see
@@ -417,14 +460,16 @@ how often cops in schools arrest kids for routine behavior problems
 that teachers could have solved peacefully.  We already know cops
 can&amp;#39;t handle teenagers without resorting to force.  We already know
 cops in schools exacerbate racism and inequality - just like they do
-outside of schools.&lt;/p&gt;
+outside of schools.
+&lt;/p&gt;
 &lt;p&gt;
 And the reason for that is that we fire teachers who can&amp;#39;t control
 their tempers.  We fire teachers who use force rather than let them
 stay on the job and keep escalating that force until they kill
 someone.  We &lt;strong&gt;weed out&lt;/strong&gt; the bad apples.  And no teacher would ever
 dream of protesting or walking off the job in support of someone who
-got fired for assaulting a student.  Are you kidding me?&lt;/p&gt;
+got fired for assaulting a student.  Are you kidding me?
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m reading posts in teacher&amp;#39;s groups about going back to school in
 fall - or in some cases, in July or August to extend the school year -
@@ -439,19 +484,23 @@ for shooting people, and it&amp;#39;s like - what are your priorities?  Where
 is your perspective?  What kind of society do you expect to raise into
 the next generation when you&amp;#39;ll fund a militarized occupying force
 with impunity for homicide but you won&amp;#39;t buy teachers masks and
-sanitizer during a pandemic?&lt;/p&gt;
+sanitizer during a pandemic?
+&lt;/p&gt;
 &lt;p&gt;
 And teachers never, ever, ever whine like these cops do.  My
-&lt;strong&gt;students&lt;/strong&gt; don&amp;#39;t even whine like these cops do.&lt;/p&gt;
+&lt;strong&gt;students&lt;/strong&gt; don&amp;#39;t even whine like these cops do.
+&lt;/p&gt;
 &lt;p&gt;
 Seriously - where do they find these people?  Our job is a hundred
 times harder and if we mess up even once the way cops do every day,
 we&amp;#39;re out in a heartbeat.  And yet if I whined about it the way cops
 whine about it, people would say &amp;#34;hey man, maybe you should stfu and
-find a different job.&amp;#34;  And they&amp;#39;d be right.&lt;/p&gt;
+find a different job.&amp;#34;  And they&amp;#39;d be right.
+&lt;/p&gt;
 &lt;p&gt;
 So to all the cops out there who think they have it rough: You ain&amp;#39;t
-nothing compared to a teacher.  STFU and find a different job.&lt;/p&gt;
+nothing compared to a teacher.  STFU and find a different job.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -462,30 +511,36 @@ nothing compared to a teacher.  STFU and find a different job.&lt;/p&gt;
       
       <guid>https://cestlaz.github.io/post/grading-consequences/</guid>
       <description>&lt;p&gt;
-How are we going to deal with grades? &lt;/p&gt;
+How are we going to deal with grades? 
+&lt;/p&gt;
 &lt;p&gt;
 This has garnered a lot of attention since COVID-19 struck.  Over on
 the AP side people wonder if colleges will give credit? Do the tests
 mean anything? What about the material they won&amp;#39;t be testing? We also
 have had standardized tests canceled and a variety of grading
-policies.&lt;/p&gt;
+policies.
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m going to stay away from AP this time around - you all know my
 feelings about the college board. I will leave you with a couple of
 good posts though that share many of my views (&lt;a href=&#34;https://www.insidehighered.com/admissions/views/2020/05/26/ap-courses-do-not-deserve-college-credit-opinion&#34;&gt;AP Courses don&amp;#39;t
-deserve college credit&lt;/a&gt;,&lt;a href=&#34;https://jd2718.org/2020/05/18/retiring-advanced-placement/&#34;&gt; Retiring Advanced Placement&lt;/a&gt;).&lt;/p&gt;
+deserve college credit&lt;/a&gt;,&lt;a href=&#34;https://jd2718.org/2020/05/18/retiring-advanced-placement/&#34;&gt; Retiring Advanced Placement&lt;/a&gt;).
+&lt;/p&gt;
 &lt;p&gt;
 The bottom line is that student and teachers lives have been severely
 disrupted  since early March. In NYC public schools that means three
 to four months which is a considerable chunk of the semester. In
-college the percent is slightly less but it&amp;#39;s still a good chunk. &lt;/p&gt;
+college the percent is slightly less but it&amp;#39;s still a good chunk. 
+&lt;/p&gt;
 &lt;p&gt;
 Some students have done fine but many have had difficulty and I&amp;#39;d
 venture a guess to say most won&amp;#39;t end the semester in the same place
-they would have under normal circumstances.&lt;/p&gt;
+they would have under normal circumstances.
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve been thinking about this as a result of Hunter&amp;#39;s policy and I
-don&amp;#39;t really have a good answer. &lt;/p&gt;
+don&amp;#39;t really have a good answer. 
+&lt;/p&gt;
 &lt;p&gt;
 Hunter decided that instructors would award grades as they normally
 would. Each instructor would follow their own counsel on how to
@@ -494,12 +549,14 @@ because of perceived cheating (don&amp;#39;t get me started on this), same old
 same old or some other method. Once grades were awarded, students have
 the ability to change any or all classes to pass/fail. Normally if a
 student takes a class pass/fail it can&amp;#39;t be used as a prerequisite or
-to fill a major requirement but for this past semester, it can. &lt;/p&gt;
+to fill a major requirement but for this past semester, it can. 
+&lt;/p&gt;
 &lt;p&gt;
 Overall I like this policy - it gives the students most of the control
 and they don&amp;#39;t have to decide on anything until after the fact. The
 bad part comes in though with the any passed class counting as a
-prerequisite of for the major. &lt;/p&gt;
+prerequisite of for the major. 
+&lt;/p&gt;
 &lt;p&gt;
 Let&amp;#39;s say I have a student in CS1 who was doing well but really
 struggled at the end after we went remote. Maybe that student was
@@ -511,26 +568,32 @@ student&amp;#39;s environment. Even if that assumption were 100% true the Covid
 Curve Ball was not the students fault and the negative impact to their
 studies could not only be due to their circumstances but also due to
 actions of the college or the way the instructor reacted to the
-circumstances. &lt;/p&gt;
+circumstances. 
+&lt;/p&gt;
 &lt;p&gt;
 With Hunter&amp;#39;s policy, I could award any passing grade - even a D and
-the student could convert it to a Pass and move on to CS2. &lt;/p&gt;
+the student could convert it to a Pass and move on to CS2. 
+&lt;/p&gt;
 &lt;p&gt;
 The danger here is that the student might not be prepared for CS2. We
 cover memory pointers, memory management, and classes at the end of
 CS1. So much of CS2 is built on pointer based programs that a student
-who missed out on that in CS1 is going to struggle mightily. &lt;/p&gt;
+who missed out on that in CS1 is going to struggle mightily. 
+&lt;/p&gt;
 &lt;p&gt;
 You might say that the kid could have retaken CS1 but there&amp;#39;s a wrench
 in the works. If the kid failed CS1 they could retake it. With a Pass
-they can&amp;#39;t. &lt;/p&gt;
+they can&amp;#39;t. 
+&lt;/p&gt;
 &lt;p&gt;
 A student could, with the permission of some instructor audit the
 missed parts of CS1 or self study but we know that won&amp;#39;t always
-happen.&lt;/p&gt;
+happen.
+&lt;/p&gt;
 &lt;p&gt;
 The alternative is to award a failing grade to the student which would
-then hurt their GPA and force them to retake the entire course.&lt;/p&gt;
+then hurt their GPA and force them to retake the entire course.
+&lt;/p&gt;
 &lt;p&gt;
 You might say that the school could just adjust the curricula for next
 year but it&amp;#39;s not that simple. In high school most students progress
@@ -538,14 +601,17 @@ in lockstep. In college there&amp;#39;s more variation. Next semester&amp;#39;s 
 will have students who completed CS1 this past semester under the
 cloud of COVID-19, students who completed it on the Fall, some from
 summer and some from other places. This is where curricular
-consistency is somewhat more important.&lt;/p&gt;
+consistency is somewhat more important.
+&lt;/p&gt;
 &lt;p&gt;
 I do like Hunter&amp;#39;s policy and I do think it&amp;#39;s on the side of the
-student but I&amp;#39;m not happy about this loophole.&lt;/p&gt;
+student but I&amp;#39;m not happy about this loophole.
+&lt;/p&gt;
 &lt;p&gt;
 This probably won&amp;#39;t affect a huge number of students but some will
 fall through the cracks. As I said, I don&amp;#39;t have a good answer but it
-is something I&amp;#39;m really concerned about.&lt;/p&gt;
+is something I&amp;#39;m really concerned about.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -556,37 +622,33 @@ is something I&amp;#39;m really concerned about.&lt;/p&gt;
       
       <guid>https://cestlaz.github.io/post/guest-jonalf-dw/</guid>
       <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Preamble
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 I&amp;#39;ve never accepted a guest post before but when my friend and long
 time colleague JonAlf Dyrland-Weaver said he had something to say I
-was all for it. &lt;/p&gt;
+was all for it. 
+&lt;/p&gt;
 &lt;p&gt;
 JonAlf&amp;#39;s one of the best teachers I know - he started at Brandeis HS and
 has been at Stuy forever. Really sharp guy, great teacher, and really
 perceptive. When he has something to say it&amp;#39;s 100% worth listening
-to. &lt;/p&gt;
+to. 
+&lt;/p&gt;
 &lt;p&gt;
 To JonAlf - since I know this is one of my blog posts you&amp;#39;ll actually
 read - you should set up a blog of your own. The community would be
-all the better for it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+all the better for it.
+&lt;/p&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Missing out on a great opportunity in education
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 By JonAlf Dyrland-Weaver
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;In the wake of the COVID-19 crisis, educators across the nation are
+&lt;p&gt;
+In the wake of the COVID-19 crisis, educators across the nation are
 adapting to remote learning. I’ve watched my colleagues work hard
 putting together plans on how to deliver content, engage students and
 assess their learning. Some, like myself, are combining multiple tools
@@ -595,62 +657,48 @@ platform for it all. I count myself lucky that the administration in
 my school has given its teachers the leeway to select their own tools
 instead of forcing a single platform on us. Last week, as I was
 thinking through what my plan was going to be, a particular thought
-kept nagging at me:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+kept nagging at me:
+&lt;/p&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 How much of this work will be seen?
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 We are facing an amazing opportunity in the world of education. Think
 of how many lessons, worksheets, notes, examples, etc. are being put
-out in some electronic form.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+out in some electronic form.
+&lt;/p&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 How much of this work will be seen?
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Students will (hopefully) have access to the materials for their
-classes, and teachers in the same school may also be able to.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+classes, and teachers in the same school may also be able to.
+&lt;/p&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 How much of this work will never be seen?
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-What about the teacher three states away that’s struggling to find good resources or new problems?&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+What about the teacher three states away that’s struggling to find good resources or new problems?
+&lt;/p&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 How much of this work will never be seen?
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 What about the student in a different district, perhaps one that has
 shut down entirely, who just wants to learn and do some work in order
-to help fill the days?&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+to help fill the days?
+&lt;/p&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 How much of this work will never be seen?
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 The internet gives us the ability to put all of these resources out
 there to the public, and it pains me to think about how much of this
 work is going to be hidden behind one platform or another. So many of
 the educational technologies make it very easy to post work for your
 class and very hard, if not impossible, to share it with other people
-(you’re school doesn’t also have a license for XYZ?, sorry).&lt;/p&gt;
+(you’re school doesn’t also have a license for XYZ?, sorry).
+&lt;/p&gt;
 &lt;p&gt;
 Of course, there are many teachers out there that have no choice, they
 are being mandated to use whatever the school decrees. There are
@@ -662,22 +710,21 @@ you have the knowhow, or would like to learn, there are ways to make
 your work publicly available. Last summer Mike and I ran a session at
 the CSTA conference on using GitHub for just this purpose, and hope to
 run a workshop on it this summer (For those interested, I made a brief
-tutorial about how to do this.&lt;/p&gt;
+tutorial about how to do this.
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
 src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/KzSE_H3rfMs&#34;&gt;https://www.youtube.com/embed/KzSE_H3rfMs&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
 allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 For my part, I’ll be putting everything on my class websites, if you
 need any ideas for intro to cs in python here’s my class:
 &lt;a href=&#34;https://www.stuycs.org/intro1-dw/&#34;&gt;&lt;a href=&#34;https://www.stuycs.org/intro1-dw/&#34;&gt;https://www.stuycs.org/intro1-dw/&lt;/a&gt;&lt;/a&gt;. If your’re looking for advanced cs,
 I’ve got a computer graphics class here:
-&lt;a href=&#34;https://www.stuycs.org/graphics-dw/&#34;&gt;&lt;a href=&#34;https://www.stuycs.org/graphics-dw/&#34;&gt;https://www.stuycs.org/graphics-dw/&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;a href=&#34;https://www.stuycs.org/graphics-dw/&#34;&gt;&lt;a href=&#34;https://www.stuycs.org/graphics-dw/&#34;&gt;https://www.stuycs.org/graphics-dw/&lt;/a&gt;&lt;/a&gt;.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -690,18 +737,24 @@ I’ve got a computer graphics class here:
       <description>&lt;p&gt;
 There was some buzz over &lt;a href=&#34;https://www.nytimes.com/2019/02/12/opinion/college-board-sat-ap.html&#34;&gt;this editorial&lt;/a&gt; about the College Board last
 week. The two codes every child needs - Coding and the US
-Constitution? Who could argue with that.&lt;/p&gt;
+Constitution? Who could argue with that.
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m not going to disagree. Civics and CS are important and can&amp;#39;t wait
 until college. The thing that left me chilled though was that nobody&amp;#39;s
 paying attention to the fact that the College Board - a private entity
-with its own interests has so much influence over American education.&lt;/p&gt;
+with its own interests has so much influence over American education.
+&lt;/p&gt;
 &lt;p&gt;
-In the piece, Friedman states:&lt;/p&gt;
+In the piece, Friedman states:
+&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;So rather than have SAT exams and Advanced Placement courses based on things that you cram for and forget, they are shifting them, where they can, to promote the “two codes.”&lt;/p&gt;
 &lt;p&gt;
-In 2016, the College Board completely revamped its approach toA.P. computer science courses and exams. &lt;/p&gt;
+So rather than have SAT exams and Advanced Placement courses based on things that you cram for and forget, they are shifting them, where they can, to promote the “two codes.”
+&lt;/p&gt;
+&lt;p&gt;
+In 2016, the College Board completely revamped its approach toA.P. computer science courses and exams. 
+&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 Nothing wrong here but the AP program is supposed to offer &amp;#34;college
@@ -712,17 +765,23 @@ flipping the script. They&amp;#39;re dictating what they think should be
 taught at the high school level and, oh by the way, it&amp;#39;s college level
 because it has the AP designation. The editorial goes into some
 details. Now, I&amp;#39;m not against what they&amp;#39;re doing with AP US Gov, it
-sounds like a really good idea. I&amp;#39;m against their overall influence.&lt;/p&gt;
+sounds like a really good idea. I&amp;#39;m against their overall influence.
+&lt;/p&gt;
 &lt;p&gt;
-The biggest concern I had though was with this:&lt;/p&gt;
+The biggest concern I had though was with this:
+&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Besides revamping the government course and the exam on that subject, Coleman and Sanford in 2014 made a staple of the regular SAT a long reading comprehension passage from one of the founding documents, such as the Constitution, or another important piece of democracy, like a great presidential speech. That said to students and teachers something the SAT had never dared say before: Some content is disproportionately more powerful and important, and if you prepare for it you will be rewarded on the SAT.&lt;/p&gt;
+&lt;p&gt;
+Besides revamping the government course and the exam on that subject, Coleman and Sanford in 2014 made a staple of the regular SAT a long reading comprehension passage from one of the founding documents, such as the Constitution, or another important piece of democracy, like a great presidential speech. That said to students and teachers something the SAT had never dared say before: Some content is disproportionately more powerful and important, and if you prepare for it you will be rewarded on the SAT.
+&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 If we put this on the SAT, schools will teach it so the kids will do
-better the SAT.&lt;/p&gt;
+better the SAT.
+&lt;/p&gt;
 &lt;p&gt;
-This should be chilling to everyone. &lt;/p&gt;
+This should be chilling to everyone. 
+&lt;/p&gt;
 &lt;p&gt;
 No, I&amp;#39;m not against the details but it&amp;#39;s frightening to have a private
 entity with so much influence on public policy like
@@ -734,17 +793,20 @@ to nobody. As long as students are told to take AP classes and the
 SAT, particularly with politicians and boards of education agreeing to
 pay the college board with taxpayers money, the public has very little
 say. Sure, more better civics and CS is good but who&amp;#39;s to say the next
-initiative will be in the public&amp;#39;s interest?&lt;/p&gt;
+initiative will be in the public&amp;#39;s interest?
+&lt;/p&gt;
 &lt;p&gt;
 The same can be said for any of the major education players - for and
 non profit alike both in and out of CS. We have to be more aware,
 vigilant, and vocal when the power players accomplish things by being
 the 800 pound gorilla even when we agree with what some of those
-things are.&lt;/p&gt;
+things are.
+&lt;/p&gt;
 &lt;p&gt;
 This is a big reason why I frequently speak out against the College
 Board and other power players, some of whom I greatly like, respect,
-and admire, and feel that others should feel obligated to do the same.&lt;/p&gt;
+and admire, and feel that others should feel obligated to do the same.
+&lt;/p&gt;
 </description>
     </item>
     

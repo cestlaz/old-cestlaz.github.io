@@ -14,15 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
 <meta property="og:title" content="Using Emacs - 22 - emacsclient" />
-<meta property="og:description" content="Another quick hit today.
- This video is really setting the stage for hte next two, where I talk about org-mode capturing.
- Today, we&#39;re demoing the use of the emacs server and client.
- Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever." />
+<meta property="og:description" content="Another quick hit today.  This video is really setting the stage for hte next two, where I talk about org-mode capturing.  Today, we&#39;re demoing the use of the emacs server and client.  Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-22-emacsclient/" />
 <meta property="article:published_time" content="2016-11-16T00:00:00+00:00" />
@@ -30,10 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 22 - emacsclient"/>
-<meta name="twitter:description" content="Another quick hit today.
- This video is really setting the stage for hte next two, where I talk about org-mode capturing.
- Today, we&#39;re demoing the use of the emacs server and client.
- Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever."/>
+<meta name="twitter:description" content="Another quick hit today.  This video is really setting the stage for hte next two, where I talk about org-mode capturing.  Today, we&#39;re demoing the use of the emacs server and client.  Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever."/>
 
 
 
@@ -83,19 +77,24 @@
         </header>
         <div class="content">
             <p>
-Another quick hit today.</p>
+Another quick hit today.
+</p>
 <p>
-This video is really setting the stage for hte next two, where I talk about org-mode capturing.</p>
+This video is really setting the stage for hte next two, where I talk about org-mode capturing.
+</p>
 <p>
-Today, we&#39;re demoing the use of the emacs server and client.</p>
+Today, we&#39;re demoing the use of the emacs server and client.
+</p>
 <p>
 Back in the old days, emacs took a LOOONG time to load. A complex
 conviguration could take on the order of 10 to 20 seconds. This
 resulted in people loading emacs at the start of the day and leaving
 it up forever. While load times aren&#39;t much of an issue anymore, it&#39;s
-still nice to leave emacs around all the time.</p>
+still nice to leave emacs around all the time.
+</p>
 <p>
-That&#39;s where running emacs as a server comes in.. I set up a keyboard shortcut my window manager to run:</p>
+That&#39;s where running emacs as a server comes in.. I set up a keyboard shortcut my window manager to run:
+</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacsclient -a <span style="color:#e6db74">&#34;&#34;</span> -c</code></pre></div></code></pre></div>
 </div>
@@ -103,28 +102,40 @@ That&#39;s where running emacs as a server comes in.. I set up a keyboard shortc
 Rather than trying to run emacs, this tries to connect to an already
 running emacs server. The <strong><strong>-c</strong></strong> creates a new frame. Instead if you
 use <strong><strong>-t</strong></strong> it will open emacs in the terminal. The <strong><strong>-a &#34;&#34;</strong></strong> tells
-emacs to run itself as a server (daemon) if it isn&#39;t already running.</p>
+emacs to run itself as a server (daemon) if it isn&#39;t already running.
+</p>
 <p>
-Later on, running <strong><strong>emacsclient -c</strong></strong> will very quickly bring up a new frame to the server.</p>
+Later on, running <strong><strong>emacsclient -c</strong></strong> will very quickly bring up a new frame to the server.
+</p>
 <p>
 In addition to instant loading, Running emacs this way has the
 advantage, or some may say disadvantage of keeping buffers around
-forever since you just keep emacs up and running.</p>
+forever since you just keep emacs up and running.
+</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9AHGsCtsClg" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:</p>
+Relevant links:
+</p>
 <ul>
 <li>
-<p>Video series overview page:</p>
+<p>
+Video series overview page:
+</p>
 </li>
 <li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
 </li>
 <li>
-<p>Code:</p>
+<p>
+Code:
+</p>
 </li>
 <li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
 </li>
 </ul>
 

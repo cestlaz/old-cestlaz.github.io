@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610654263" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
 
 
 
@@ -79,12 +79,14 @@
             <p>
 <a href="https://adventofcode.com/2020/day/6">Day 6</a> turned out to be pretty straightforward. Like day 4 you had to
 deal with two consecutive newlines when parsing the data but assuming
-you did day 4 that&#39;s no problem. </p>
+you did day 4 that&#39;s no problem. 
+</p>
 <p>
 The gist is that a group is formed by consecutive lines and groups are
 separated by a blank line. Each line in each group is a string of
 letters representing answers to questions. For instance, for this
-group: </p>
+group: 
+</p>
 <pre class="example">
 abc
 abd
@@ -92,31 +94,40 @@ ab
 </pre>
 <p>
 you have three people. The first answered &#39;yes&#39; to a, b, and c. the
-second to a,b, and d and the third to a and b. </p>
+second to a,b, and d and the third to a and b. 
+</p>
 <p>
 Your goal was to figure out how many different questions did each
-group answer &#39;yes&#39; to and what was the total across the groups. </p>
+group answer &#39;yes&#39; to and what was the total across the groups. 
+</p>
 <p>
 It seemed that the easiest thing to do was to take each group, remove
-the newlines and then count the unique characters. </p>
+the newlines and then count the unique characters. 
+</p>
 <p>
-In Python, something like this (Clojure in the video and on <a href="https://github.com/zamansky/advent2020/blob/main/src/day06.clj">GitHub</a>)</p>
+In Python, something like this (Clojure in the video and on <a href="https://github.com/zamansky/advent2020/blob/main/src/day06.clj">GitHub</a>)
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;abc</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">abd</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">ab&#34;</span>
 d <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>)
 s <span style="color:#f92672">=</span> set(d)
-ans <span style="color:#f92672">=</span> len(s)</code></pre></div></p>
+ans <span style="color:#f92672">=</span> len(s)</code></pre></div>
+</p>
 <p>
-So, you just have to do that for each group and add them all up.</p>
+So, you just have to do that for each group and add them all up.
+</p>
 <p>
 Part 2 added a small twist. Now you wanted to look at each group and
 count the number of answers that everyone in that group answered &#34;yes&#34;
-to. For the above example, it would be 2 - everyone answered a and b.</p>
+to. For the above example, it would be 2 - everyone answered a and b.
+</p>
 <p>
 Assuming your language supports set operations, you can just use
-union.</p>
+union.
+</p>
 <p>
-Again in Python: </p>
+Again in Python: 
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abc</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">abd</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">ab&#34;</span>
 d_list <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>split()
@@ -124,16 +135,21 @@ result <span style="color:#f92672">=</span> set(d_list[<span style="color:#ae81f
 
 <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> d_list[<span style="color:#ae81ff">1</span>:]:
     result <span style="color:#f92672">=</span> result <span style="color:#f92672">&amp;</span> set(item)
-<span style="color:#66d9ef">print</span>(result)</code></pre></div></p>
+<span style="color:#66d9ef">print</span>(result)</code></pre></div>
+</p>
 <p>
-Again,  do it for all the groups and add it up.</p>
+Again,  do it for all the groups and add it up.
+</p>
 <p>
-This is a great question to go over set operations!!</p>
+This is a great question to go over set operations!!
+</p>
 <p>
 Check out the Clojure video for that approach where I also talk about
-easier ways to complete yesterday&#39;s problem.</p>
+easier ways to complete yesterday&#39;s problem.
+</p>
 <p>
-Enjoy!</p>
+Enjoy!
+</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I8dbKJ_315Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
