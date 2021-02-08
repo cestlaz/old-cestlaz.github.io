@@ -14,12 +14,15 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744886" />
 
 
 
 <meta property="og:title" content="Using Emacs - Setting up the Package Manager" />
-<meta property="og:description" content="This video will step you through setting up Emacs to use MELPA for packages.   We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&#39;s the contents of that file: (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&#39;s you try packages without installing them." />
+<meta property="og:description" content="This video will step you through setting up Emacs to use MELPA for packages.
+  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
+ Here&#39;s the contents of that file:
+(setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-1-setup/" />
 <meta property="article:published_time" content="2016-05-23T00:00:00+00:00" />
@@ -27,7 +30,10 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - Setting up the Package Manager"/>
-<meta name="twitter:description" content="This video will step you through setting up Emacs to use MELPA for packages.   We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&#39;s the contents of that file: (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&#39;s you try packages without installing them."/>
+<meta name="twitter:description" content="This video will step you through setting up Emacs to use MELPA for packages.
+  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
+ Here&#39;s the contents of that file:
+(setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:"/>
 
 
 
@@ -77,16 +83,13 @@
         </header>
         <div class="content">
             <p>
-This video will step you through setting up Emacs to use <a href="http://melpa.org/#/">MELPA</a> for packages.
-</p>
+This video will step you through setting up Emacs to use <a href="http://melpa.org/#/">MELPA</a> for packages.</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen></iframe>
 <p>
 We configured emacs by creating a folder named <strong>.emacs.d</strong> and creating a
-file within it named <strong>init.el</strong>.
-</p>
+file within it named <strong>init.el</strong>.</p>
 <p>
-Here&#39;s the contents of that file:
-</p>
+Here&#39;s the contents of that file:</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(setq inhibit<span style="color:#f92672">-</span>startup<span style="color:#f92672">-</span>message t)
 
@@ -112,73 +115,46 @@ Here&#39;s the contents of that file:
 (which<span style="color:#f92672">-</span>key<span style="color:#f92672">-</span>mode))</code></pre></div></code></pre></div>
 </div>
 <p>
-The last two <strong>inituse-package</strong> clauses install two helpful packages:
-</p>
+The last two <strong>inituse-package</strong> clauses install two helpful packages:</p>
 <ul>
 <li>
-<p>
-<strong>try</strong>: let&#39;s you try packages without installing them.
-</p>
+<p><strong>try</strong>: let&#39;s you try packages without installing them.</p>
 </li>
 <li>
-<p>
-<strong>which-key</strong>: brings up help on key combinations.
-</p>
+<p><strong>which-key</strong>: brings up help on key combinations.</p>
 </li>
 </ul>
-<p>
-Relavent links:
-</p>
+<p>Relavent links:</p>
 <ul>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code for this video:
-</p>
+<p>Code for this video:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup">https://github.com/zamansky/using-emacs/tree/lesson-1-setup</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup">https://github.com/zamansky/using-emacs/tree/lesson-1-setup</a></a></p>
 </li>
 <li>
-<p>
-Complete code built up over all videos:
-</p>
+<p>Complete code built up over all videos:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 <li>
-<p>
-Melpa and packages
-</p>
+<p>Melpa and packages</p>
 </li>
 <li>
-<p>
-<a href="http://melpa.org"><a href="http://melpa.org">http://melpa.org</a></a>
-</p>
+<p><a href="http://melpa.org"><a href="http://melpa.org">http://melpa.org</a></a></p>
 </li>
 <li>
-<p>
-<a href="https://github.com/justbur/emacs-which-key">which-key</a>
-</p>
+<p><a href="https://github.com/justbur/emacs-which-key">which-key</a></p>
 </li>
 <li>
-<p>
-<a href="https://github.com/larstvei/Try">try</a>
-</p>
+<p><a href="https://github.com/larstvei/Try">try</a></p>
 </li>
 </ul>
 

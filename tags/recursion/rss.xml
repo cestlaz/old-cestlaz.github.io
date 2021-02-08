@@ -23,8 +23,7 @@ Yesterday I read three posts on teaching recursion. &lt;a href=&#34;https://pare
 Krishnamurthi discussing his thoughts on how recursion is taught
 incorrectly. This prompted Adam Michlin to &lt;a href=&#34;https://blog.ceos.io/2021/01/02/why-you-shouldnt-teach-recursion-yet/&#34;&gt;write about&lt;/a&gt; teaching
 recursion later with some commentary on APCS and then finally, Alfred
-Thompson added &lt;a href=&#34;https://blog.acthompson.net/2021/01/recursionhow-and-when-to-teach.html&#34;&gt;his thoughts&lt;/a&gt;. 
-&lt;/p&gt;
+Thompson added &lt;a href=&#34;https://blog.acthompson.net/2021/01/recursionhow-and-when-to-teach.html&#34;&gt;his thoughts&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
 Much like everything else in education there is no single right way to
 do things. To say as an absolute that you should or shouldn&amp;#39;t teach in
@@ -36,14 +35,12 @@ are teaching control structures first you&amp;#39;re going to have a hard time
 doing recursion early. They&amp;#39;ll get looping structures before they know
 the constructs that support recursion - either for control or for
 representing data. On the other hand, if you teach objects first you
-might have more success.
-&lt;/p&gt;
+might have more success.&lt;/p&gt;
 &lt;p&gt;
 On the other hand, if you&amp;#39;re using a language like Scheme where lists
 and recursion are right in the forefront you&amp;#39;ll likely have more
 success with recursion early rather than late. I wrote a bit about
-this &lt;a href=&#34;https://cestlaz.github.io/posts/recursion-early/&#34;&gt;a couple of years ago&lt;/a&gt;. 
-&lt;/p&gt;
+this &lt;a href=&#34;https://cestlaz.github.io/posts/recursion-early/&#34;&gt;a couple of years ago&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ll leave the &amp;#34;how important is recursion&amp;#34; question for annother time
 but I want to address one more thing here. In yesterday&amp;#39;s posts four
@@ -51,44 +48,42 @@ traditional recursion problems received a solid bashing and I don&amp;#39;t
 think it was fair. As I said up top, &lt;del&gt;only a Sith deals in absolutes&lt;/del&gt;
 in teaching, there are no absolutes. Is factorial a wonderful
 motivation for recursion - particularly for a student who knows loops?
-Probably not but can it have some value? Let&amp;#39;s see…
-&lt;/p&gt;
+Probably not but can it have some value? Let&amp;#39;s see…&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
 Factorial
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 While this might not be a terrific motivator it does have some
 niceties. Most students will know factorial but will only be able
 describe it informally - &amp;#34;multiply all the numbers between 1 and n.&amp;#34;
-The recursive definition is more, precise, for lack of a better word.
-&lt;/p&gt;
+The recursive definition is more, precise, for lack of a better word.&lt;/p&gt;
 &lt;p&gt;
 Then, there&amp;#39;s a direct translation between the recursive definition
-and the code. 
-&lt;/p&gt;
+and the code. &lt;/p&gt;
 &lt;p&gt;
 Finally, it&amp;#39;s about as bare bones as you get - no data structures or
-undue complexity. 
-&lt;/p&gt;
+undue complexity. &lt;/p&gt;
 &lt;p&gt;
-Is this going to motivate a student to learn recursion? No.
-&lt;/p&gt;
+Is this going to motivate a student to learn recursion? No.&lt;/p&gt;
 &lt;p&gt;
-Can it be used to help paint a more complete picture? Probably.
-&lt;/p&gt;
+Can it be used to help paint a more complete picture? Probably.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 Fibonacci 
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Also got a bad rap in the above linked posts. It shares the benefit of
 the recursive definition directly translating to a coded solution with
-factorial. 
-&lt;/p&gt;
+factorial. &lt;/p&gt;
 &lt;p&gt;
 Fibonacci is also a problem where they originally learned it via the
 recurssive rule &amp;#34;the next Fibonacci number is the sum of the two
-previous fibonacci numbers.&amp;#34;
-&lt;/p&gt;
+previous fibonacci numbers.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 It also seems that when students find the Fibonacci number problem
 challenging to solve as beginners without recursion. The whole a
@@ -96,8 +91,7 @@ becomes b. b becomes c thing can be tricky for beginners. In  my
 experience, they find the recursive solution to be more natural. This
 is also interesting because they usually don&amp;#39;t find recursive
 factorial more natural than a loop (assuming they learned loops
-first).
-&lt;/p&gt;
+first).&lt;/p&gt;
 &lt;p&gt;
 Next, the slowness of the solution is feature, not a bug. It&amp;#39;s a
 platform to talk about how recursion isn&amp;#39;t always the answer but you
@@ -105,76 +99,73 @@ can think about a problem recursively and if the solution isn&amp;#39;t right
 it might lead you to a better solution. This comes up later with
 dynamic programming. Just last year (he he) during Advent of Code I
 ended up solving one of the problems via dynamic programming. How did
-I get there? Thinking about the problem recursively. 
-&lt;/p&gt;
+I get there? Thinking about the problem recursively. &lt;/p&gt;
 &lt;p&gt;
 Here you get a great platform for now comparing solutions - iterative,
-recursive, tail recursive, memoization - take it as far as you want.
-&lt;/p&gt;
+recursive, tail recursive, memoization - take it as far as you want.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 Euclid&amp;#39;s algorithm 
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 I can&amp;#39;t comment on Euclid&amp;#39;s algorithm since I can&amp;#39;t recall ever
 teaching it as part of recursion so I&amp;#39;ll substitute Newton&amp;#39;s method
-for square root approximation. 
-&lt;/p&gt;
+for square root approximation. &lt;/p&gt;
 &lt;p&gt;
 The thing is that here, the goal isn&amp;#39;t really recursion. It&amp;#39;s just a
 problem that can be tackled with either recursion or iteration. The
 reason it&amp;#39;s a neat problem is because you can talk about floating
 point accuracy issues along with how close of an approximation you
-might want or need. 
-&lt;/p&gt;
+might want or need. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 Towers of Hanoi
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Finally we get the Towers of Hanoi. Sure it&amp;#39;s contrived but it can
 also be fun and by being a new and different problem students can try
 to use any strategies that might lead to a solution, recursive or
-otherwise:
-&lt;/p&gt;
+otherwise:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-try some small examples
-&lt;/p&gt;
+&lt;p&gt;try some small examples&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-see if examples relate to each other
-&lt;/p&gt;
+&lt;p&gt;see if examples relate to each other&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-base case?
-&lt;/p&gt;
+&lt;p&gt;base case?&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-etc.
-&lt;/p&gt;
+&lt;p&gt;etc.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-The big deal though is that Towers of Hanoi isn&amp;#39;t really about Towers
+&lt;p&gt;The big deal though is that Towers of Hanoi isn&amp;#39;t really about Towers
 of Hanoi - it&amp;#39;s really a platform to talk about all sorts of good
-stuff. I wrote all about it &lt;a href=&#34;https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi/&#34;&gt;a decade ago&lt;/a&gt;. 
-&lt;/p&gt;
+stuff. I wrote all about it &lt;a href=&#34;https://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi/&#34;&gt;a decade ago&lt;/a&gt;. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Other stuff
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Now, of course you can introduce recursion in other ways particularly
-if you use a language like Scheme. 
-&lt;/p&gt;
+if you use a language like Scheme. &lt;/p&gt;
 &lt;p&gt;
 Bottom line is that without taking into considerations lots of other
 factors - student backgrounds, teacher comfort. Time, experience,
 facilities, goals and desired aoutcomes, and more you can&amp;#39;t really say
-one way is right or one way is wrong.
-&lt;/p&gt;
+one way is right or one way is wrong.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -185,8 +176,7 @@ one way is right or one way is wrong.
       
       <guid>https://cestlaz.github.io/posts/recursion-early/</guid>
       <description>&lt;p&gt;
-I replied this tweet yesterday and thought I&amp;#39;d expound a bit.
-&lt;/p&gt;
+I replied this tweet yesterday and thought I&amp;#39;d expound a bit.&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.&lt;/p&gt;&amp;mdash; Mike Zamansky (@zamansky) &lt;a href=&#34;https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw&#34;&gt;May 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
@@ -194,13 +184,11 @@ We introduced recursion very early in our intro course at Stuy and I
 think it worked well. In that course we started by using Racket (nee
 Scheme) as the first programming unit. Originally we
 started the kids out first using NetLogo or StarLogo and followed with
-Scheme but after a few years we switched the order.
-&lt;/p&gt;
+Scheme but after a few years we switched the order.&lt;/p&gt;
 &lt;p&gt;
 I wouldn&amp;#39;t always recommend Scheme for a first course and in fact
 frequently don&amp;#39;t but given how the Stuy course was introduced and
-developed it made sense and worked.
-&lt;/p&gt;
+developed it made sense and worked.&lt;/p&gt;
 &lt;p&gt;
 Was it worth doing things this way? I think so. Prior to that intro
 course becoming a requirement I got to see students coming in from
@@ -212,75 +200,54 @@ mastering loops and iteration but had an easier time getting to the
 more advanced recursive techniques. This wasn&amp;#39;t a surprise - it wasn&amp;#39;t
 their first rodeo. This also jived with reports I read at the time
 that felt that when students did recursion first, iteration was just
-as easy but when they did iteration first, recursion was harder.
-&lt;/p&gt;
+as easy but when they did iteration first, recursion was harder.&lt;/p&gt;
 &lt;p&gt;
 You can of course make a strong case that recursion isn&amp;#39;t necessary
 for a kid that isn&amp;#39;t going to study more CS. I&amp;#39;ll merely argue that
 what we did at Stuy worked with that population and I wouldn&amp;#39;t change
 it. At the same time, I&amp;#39;ve helped a number of teachers design classes and programs
-where we agreed that recursion first was not the way to go.
-&lt;/p&gt;
+where we agreed that recursion first was not the way to go.&lt;/p&gt;
 &lt;p&gt;
 In any event, it wasn&amp;#39;t that I specifically wanted to do recursion
 early but rather, there were a number of things I wanted to do with
 the class for which Scheme made sense and recursion was just one of
-them.
-&lt;/p&gt;
+them.&lt;/p&gt;
 &lt;p&gt;
-Some reasons to like (or for some, to dislike) Scheme early:
-&lt;/p&gt;
+Some reasons to like (or for some, to dislike) Scheme early:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s functional – everything is a function. While this is
-&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s functional – everything is a function. While this is&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-technically not true, we can fudge it a bit at this level. You put
+&lt;p&gt;technically not true, we can fudge it a bit at this level. You put
 things in parens so instead of add(a,b) you write (add a b) or
 really (+ a b). You can also do (+ a b c). Things that would be
 statements are also functions: (if Booelean TruePart FalsePart) is the &lt;strong&gt;if&lt;/strong&gt;
 statement. For example &lt;code&gt;(if (&amp;gt;= a b) a b)&lt;/code&gt; returns the larger of a
-and b.
-&lt;/p&gt;
+and b.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being
-&lt;/p&gt;
+&lt;p&gt;Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-for assignment rather than comparison.
-&lt;/p&gt;
+&lt;p&gt;for assignment rather than comparison.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-It has great support for list processing.
-&lt;/p&gt;
+&lt;p&gt;It has great support for list processing.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Recursion is much more natural.
-&lt;/p&gt;
+&lt;p&gt;Recursion is much more natural.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s a super simple language with simple rules and a simple, small  syntax
-&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s a super simple language with simple rules and a simple, small  syntax&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Of course, Scheme isn&amp;#39;t perfect and some people dislike the above
+&lt;p&gt;Of course, Scheme isn&amp;#39;t perfect and some people dislike the above
 reasons. It&amp;#39;s also easy to come up with a number of other good reasons
-not to use a language like Scheme.
-&lt;/p&gt;
+not to use a language like Scheme.&lt;/p&gt;
 &lt;p&gt;
 On the recursion front, it makes things much easier. There are no
-loops so recursion develops as a natural form for repetition:
-&lt;/p&gt;
+loops so recursion develops as a natural form for repetition:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (* x  (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -288,8 +255,7 @@ loops so recursion develops as a natural form for repetition:
 &lt;p&gt;
 This defines a function that takes one parameter and returns
 &lt;code&gt;x*(x-1)*(x-2)...&lt;/code&gt;. It repeats, but never ends. This leads to adding
-a base case:
-&lt;/p&gt;
+a base case:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt; x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
@@ -297,8 +263,7 @@ a base case:
 (* x (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-Which is your basic factorial function.
-&lt;/p&gt;
+Which is your basic factorial function.&lt;/p&gt;
 &lt;p&gt;
 Since this use of recursion for repetition  develops naturally as we
 introduce language concepts it&amp;#39;s easier for kids to get their heads
@@ -307,72 +272,49 @@ around it as opposed to when they&amp;#39;ve seen loops already and have an
 recursion this way in a language with loops like Python but once loops
 are available and particularly when loops are idiomatic, students will
 find them and getting them to think recursively will be more
-difficult.
-&lt;/p&gt;
+difficult.&lt;/p&gt;
 &lt;p&gt;
 Scheme and most other functional programming languages also have
 strong support for lists and list recursion. This means you don&amp;#39;t have
-to limit yourself to mathy problems. Think about a todo list:
-&lt;/p&gt;
+to limit yourself to mathy problems. Think about a todo list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-Go to the market
-&lt;/p&gt;
+&lt;p&gt;Go to the market&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Buy a gallon of milk
-&lt;/p&gt;
+&lt;p&gt;Buy a gallon of milk&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-If they have eggs, get a dozen (heh heh)
-&lt;/p&gt;
+&lt;p&gt;If they have eggs, get a dozen (heh heh)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Go home
-&lt;/p&gt;
+&lt;p&gt;Go home&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-Processing a todo list is really a recursive problem:
-&lt;/p&gt;
+&lt;p&gt;Processing a todo list is really a recursive problem:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-If the list is empty you&amp;#39;re done
-&lt;/p&gt;
+&lt;p&gt;If the list is empty you&amp;#39;re done&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Take the first item off  the list
-&lt;/p&gt;
+&lt;p&gt;Take the first item off  the list&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Do it
-&lt;/p&gt;
+&lt;p&gt;Do it&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Recurse
-&lt;/p&gt;
+&lt;p&gt;Recurse&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-Once you start working with lists, you can play with all sorts of
-recursive examples.
-&lt;/p&gt;
+&lt;p&gt;Once you start working with lists, you can play with all sorts of
+recursive examples.&lt;/p&gt;
 &lt;p&gt;
 At the end of the Scheme unit the big project is creating a sentence
 generator. The kids don&amp;#39;t know it but they&amp;#39;re learning about grammars
 and in fact are writing a recursive descent parser - they just think
 they&amp;#39;re writing a program that creates silly sentences. It&amp;#39;s a really
 nice project that uses recursion in a way that&amp;#39;s different and I&amp;#39;d
-argue more fun and interesting than the usual approaches.
-&lt;/p&gt;
+argue more fun and interesting than the usual approaches.&lt;/p&gt;
 &lt;p&gt;
 I chose Scheme for a variety of reasons. I also chose NetLogo for
 specific reasons. Unlike Scheme (or most other popular learning
@@ -380,15 +322,13 @@ languages), NetLogo is really all about agent based parallel
 processing. There are concepts that we can explore easily and in depth
 with NetLogo that would be tremendously difficult in any other
 language and at the same time, there are things that are easy to
-explore in other languages that Netlogo doesn&amp;#39;t lend itself to.
-&lt;/p&gt;
+explore in other languages that Netlogo doesn&amp;#39;t lend itself to.&lt;/p&gt;
 &lt;p&gt;
 So, in the end, this post really isn&amp;#39;t about when to teach
 recursion. It&amp;#39;s more about how languages lend themselves to solving
 different problems and teaching different concepts in different
 ways. If all you have is a hammer, everything looks like a
-nail. Fortunately, we can do better.
-&lt;/p&gt;
+nail. Fortunately, we can do better.&lt;/p&gt;
 </description>
     </item>
     

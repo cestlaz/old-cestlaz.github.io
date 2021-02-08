@@ -14,12 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744885" />
 
 
 
 <meta property="og:title" content="Using Emacs 61 - org-msg" />
-<meta property="og:description" content="By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:    rich text emails (embedded links, images, etc)    calendar integration    contacts    periodic Maildir sync problems with mbsync    Calendar integration isn&#39;t a make or break issue and contacts with mu4e is good enough so that leaves two pain points." />
+<meta property="og:description" content="By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-61-org-msg/" />
 <meta property="article:published_time" content="2019-11-16T05:00:57-04:00" />
@@ -27,7 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 61 - org-msg"/>
-<meta name="twitter:description" content="By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:    rich text emails (embedded links, images, etc)    calendar integration    contacts    periodic Maildir sync problems with mbsync    Calendar integration isn&#39;t a make or break issue and contacts with mu4e is good enough so that leaves two pain points."/>
+<meta name="twitter:description" content="By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:"/>
 
 
 
@@ -83,54 +83,40 @@ documents, and yes, even email. I&#39;ve been using <a href="https://cestlaz.git
 client for a while now. Currently, I&#39;m using Emacs for my work email
 and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e
 and possibly migrating from Gmail to a new email provider for the
-personal stuff but there are still a few pain points with Emacs email:
-</p>
+personal stuff but there are still a few pain points with Emacs email:</p>
 <ul>
 <li>
-<p>
-rich text emails (embedded links, images, etc)
-</p>
+<p>rich text emails (embedded links, images, etc)</p>
 </li>
 <li>
-<p>
-calendar integration
-</p>
+<p>calendar integration</p>
 </li>
 <li>
-<p>
-contacts 
-</p>
+<p>contacts </p>
 </li>
 <li>
-<p>
-periodic Maildir sync problems with mbsync
-</p>
+<p>periodic Maildir sync problems with mbsync</p>
 </li>
 </ul>
-<p>
-Calendar integration isn&#39;t a make or break issue and contacts with
+<p>Calendar integration isn&#39;t a make or break issue and contacts with
 mu4e is good enough so that leaves two pain points. Formatted emails
 which I think is now pretty much solved (see below) and the Maildir
-stuff.
-</p>
+stuff.</p>
 <p>
 On the Maildir side, I&#39;m trying deal with my email across four
 machines - work laptop, work desktop, home laptop, home desktop. I
 originally synced each one separately and that worked but I was having
 archive problems - it seems that I was only archiving on the local
 machine so if I archived an email at work and I needed to get to it at
-home, I was out of luck. 
-</p>
+home, I was out of luck. </p>
 <p>
 Then, I moved to sharing my Maildir using Syncthing - an opensource
 Dropbox-alike. That mostly worked but if I wasn&#39;t careful I&#39;d get
 syncing errors where I have to go into my Maildir directory and
-manually rename or remove messages - a real pain.
-</p>
+manually rename or remove messages - a real pain.</p>
 <p>
 If anyone out there has a solution (and <a href="http://pragmaticemacs.com/emacs/fixing-duplicate-uid-errors-when-using-mbsync-and-mu4e/">this</a> fix doesn&#39;t fully work
-for me), I&#39;d love to hear about it.
-</p>
+for me), I&#39;d love to hear about it.</p>
 <p>
 Let&#39;s get back to the formatted email. I was already to create an
 email in org mode using <code>org-mu4e-compose-org-mode</code> which I think is
@@ -141,15 +127,13 @@ found a solution recently. It&#39;s <a href="https://github.com/jeremy-compostel
 you compose an email in org-mode. It seems to have better support than
 org-mu4e-compose-org-mode. It does the basic formatting, tables, etc
 and also executes source blocks. The only thing that was missing for
-me was LaTeX formatting but I use that so rarely I don&#39;t really care.
-</p>
+me was LaTeX formatting but I use that so rarely I don&#39;t really care.</p>
 <p>
 The package author, Jeremy Compostella, is also very responsive. When
 I first installed org-msg it wasn&#39;t integrating seamlessly with
 mu4e. It was still workable but I had to manually insert some
 configuration at the top of all my emails. I opened an issue on this
-and within a day it was fixed.
-</p>
+and within a day it was fixed.</p>
 <p>
 It also has a very cool preview mode so you can see what you&#39;re
 sending. On that, though, I did have an issue but I&#39;m pretty sure it&#39;s
@@ -159,17 +143,14 @@ correctly. When I do the same on my laptop, it runs GitHub Classroom
 Assistant - an application I installed and use for other
 purposes. I&#39;ve had this happen before with other emacs xdg things. If
 anyone else has seen this and better has a solution, I&#39;d love to hear
-about that as well.
-</p>
+about that as well.</p>
 <p>
-Anyway, here&#39;s a video that shows org-msg in action:
-</p>
+Anyway, here&#39;s a video that shows org-msg in action:</p>
 <p>
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34;
 src=&#34;<a href="https://www.youtube.com/embed/cPZe0AGOUJU">https://www.youtube.com/embed/cPZe0AGOUJU</a>&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</p>
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</p>
 
         </div>
         

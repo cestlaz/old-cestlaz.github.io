@@ -14,12 +14,13 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744886" />
 
 
 
 <meta property="og:title" content="Using Emacs - Introduction" />
-<meta property="og:description" content="I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.  I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it." />
+<meta property="og:description" content="I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.
+ I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-introduction/" />
 <meta property="article:published_time" content="2016-05-23T00:00:00+00:00" />
@@ -27,7 +28,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - Introduction"/>
-<meta name="twitter:description" content="I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.  I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it."/>
+<meta name="twitter:description" content="I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.
+ I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it."/>
 
 
 
@@ -81,143 +83,101 @@
 I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for
 decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other
 editors, word processors, and development tools but always find my way
-back.
-</p>
+back.</p>
 <p>
 I recommend that budding computer science students develop a good tool
 set and encourage them to explore Emacs but while it&#39;s pretty easy to
 load Emacs and find your way around, particularly if you use the mouse
 and menus there isn&#39;t a clear path to take you from beginner to using
-it as an efficient tool let alone customizing it.
-</p>
+it as an efficient tool let alone customizing it.</p>
 <p>
 Inspired by <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured">Mattias Petter Johansson</a>, or MPJ who make a weekly video,
 I decided to try to create a series of YouTube videos and matching
 blog posts. I&#39;ll try to post one a week and I&#39;ll try to keep the
 videos, at least after the first couple to just a few minutes and have
 them focus on <a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/">micro-habits</a> - one or two small things that you can
-bring to your work flow and internalize.
-</p>
+bring to your work flow and internalize.</p>
 <p>
 The first three four (this one and the next three) will focus on
-setting things up. After this post we&#39;ll have
-</p>
+setting things up. After this post we&#39;ll have</p>
 <ul>
 <li>
-<p>
-Setting up the package manager
-</p>
+<p>Setting up the package manager</p>
 </li>
 <li>
-<p>
-Intro to org-mode (just so that you recognize the markup)
-</p>
+<p>Intro to org-mode (just so that you recognize the markup)</p>
 </li>
 <li>
-<p>
-Intro to Elisp (just so you have an idea of those configuration
-</p>
+<p>Intro to Elisp (just so you have an idea of those configuration</p>
 </li>
 </ul>
-<p>
-lines)
-</p>
+<p>lines)</p>
 <p>
 and then we&#39;re off to the races. Here&#39;s what I&#39;m thinking about for
-the first few topics after the above mentioned ones:
-</p>
+the first few topics after the above mentioned ones:</p>
 <ul>
 <li>
-<p>
-Efficient Navigation
-</p>
+<p>Efficient Navigation</p>
 </li>
 <li>
-<p>
-Windows and Buffers
-</p>
+<p>Windows and Buffers</p>
 </li>
 <li>
-<p>
-Theming
-</p>
+<p>Theming</p>
 </li>
 <li>
-<p>
-Auto Completion
-</p>
+<p>Auto Completion</p>
 </li>
 </ul>
-<p>
-and then a series of short topics to show some of my favorite editing
-tools. We&#39;ll also cover some larger topics including:
-</p>
+<p>and then a series of short topics to show some of my favorite editing
+tools. We&#39;ll also cover some larger topics including:</p>
 <ul>
 <li>
-<p>
-Python Development
-</p>
+<p>Python Development</p>
 </li>
 <li>
-<p>
-C/C++ Development
-</p>
+<p>C/C++ Development</p>
 </li>
 <li>
-<p>
-Document Preparation
-</p>
+<p>Document Preparation</p>
 </li>
 <li>
-<p>
-Scheduling / Calendaring / Note Taking
-</p>
+<p>Scheduling / Calendaring / Note Taking</p>
 </li>
 </ul>
-<p>
-I&#39;ll put together an index to these posts along with any ancillary
-materials here: <a href="/stories/emacs"><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></a>.
-</p>
+<p>I&#39;ll put together an index to these posts along with any ancillary
+materials here: <a href="/stories/emacs"><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></a>.</p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Getting started
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 This series is going to assume you&#39;ve installed emacs and worked your
-way through the included tutorial.
-</p>
+way through the included tutorial.</p>
 <p>
 To help you get to that point, here are some links to posts and sites
-that I&#39;ve found useful:
-</p>
+that I&#39;ve found useful:</p>
 <ul>
 <li>
-<p>
-<a href="http://www.braveclojure.com/basic-emacs/">http://www.braveclojure.com/basic-emacs/</a>
-</p>
+<p><a href="http://www.braveclojure.com/basic-emacs/">http://www.braveclojure.com/basic-emacs/</a></p>
 </li>
 <li>
-<p>
-<a href="https://www.masteringemacs.org/article/beginners-guide-to-emacs">https://www.masteringemacs.org/article/beginners-guide-to-emacs</a>
-</p>
+<p><a href="https://www.masteringemacs.org/article/beginners-guide-to-emacs">https://www.masteringemacs.org/article/beginners-guide-to-emacs</a></p>
 </li>
 <li>
-<p>
-<a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs">http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs</a>
-</p>
+<p><a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs">http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs</a></p>
 </li>
 <li>
-<p>
-<a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux">https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux</a>
-</p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux">https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux</a></p>
 </li>
 </ul>
-<p>
-And here&#39;s a 10 minute getting started guide:
-</p>
+<p>And here&#39;s a 10 minute getting started guide:</p>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/K3_SFerNIeI" frameborder="0" allowfullscreen></iframe>
 <p>
-So, stay tuned.
-</p>
+So, stay tuned.</p>
+</div>
+</div>
 
         </div>
         

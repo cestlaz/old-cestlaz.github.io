@@ -14,12 +14,13 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744885" />
 
 
 
 <meta property="og:title" content="Heaps" />
-<meta property="og:description" content="Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.  Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right." />
+<meta property="og:description" content="Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.
+ Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/heaps/" />
 <meta property="article:published_time" content="2020-05-01T13:53:43-04:00" />
@@ -27,7 +28,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Heaps"/>
-<meta name="twitter:description" content="Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.  Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right."/>
+<meta name="twitter:description" content="Continuing with the theme of alternate representations we just started heaps. Specifically binary heaps. binary min and max heaps.
+ Heaps are one of my favorite topics in CS2. If you&#39;re not familiar with them, a binary min heap is a complete binary tree that enforces the heap property. By being complete we mean that every level except possibly the last one is full - that is 2 children. The last level is as filled left to right."/>
 
 
 
@@ -79,22 +81,19 @@
             <p>
 Continuing with the theme of alternate representations we just 
 started <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)">heaps</a>. Specifically <a href="https://en.wikipedia.org/wiki/Binary_heap">binary heaps</a>. 
-binary min and max heaps.
-</p>
+binary min and max heaps.</p>
 <p>
 Heaps are one of my favorite topics in CS2. If you&#39;re not familiar
 with them, a binary min heap is a complete binary tree that enforces
 the heap property. By being complete we mean that every level except
 possibly the last one is full - that is 2 children. The last level is
-as filled left to right. 
-</p>
+as filled left to right. </p>
 <p>
 The heap property for a min heap is that the key value stored in any
 node is less than the values in it&#39;s children. Heaps are frequently
 used as priority queues. There are plenty of great web sites and
 videos that talk all about heaps - creating them, standard operations,
-run time etc. 
-</p>
+run time etc. </p>
 <p>
 One of the things I love about them though is that they tie together
 arrays and trees. Up until now, we&#39;ve been using pointers to represent
@@ -103,26 +102,21 @@ root node. Each node has pointers to left and right
 children. Technically you could represent a heap in this way but with
 a heap you have to be able to not only navigate easily from parent to
 child but also from child to parent. This would make things a bit
-unwieldy with additional parent pointers. 
-</p>
+unwieldy with additional parent pointers. </p>
 <p>
-Instead consider the following tree:
-</p>
+Instead consider the following tree:</p>
 <p>
 <figure>
     <img src="/img/heap/heap1.png"/> 
 </figure>
-
 </p>
 <p>
 I&#39;ve numbered each of the nodes with the root - node 0 holding a key
-value of 10. We can easily store this tree in an array:#heaps.org#
-</p>
+value of 10. We can easily store this tree in an array:#heaps.org#</p>
 <p>
 <figure>
     <img src="/img/heap/heap1-array.png"/> 
 </figure>
-
 </p>
 <p>
 We have an easy relationship between parent and child. Given any node <code>n</code>,
@@ -131,17 +125,14 @@ integer division  <code>(n-1)/2</code> to find a node&#39;s parent. Easy peasy. 
 is both easy and efficient and of course we can also go from an array
 to a tree and in fact, the <a href="https://en.wikipedia.org/wiki/Heapsort">heapsort</a> algorithm takes an arrray and
 rearranges the elements into a heap and then uses heap operations to
-sort the array all in place and in O(nlgn) time.
-</p>
+sort the array all in place and in O(nlgn) time.</p>
 <p>
 Here we have another cool representation. We can of course represent a
 tree by explicitly creating classes for nodes with all the required
 pointers but here we are implicitly creating a tree by using a mapping
-to relate nodes.
-</p>
+to relate nodes.</p>
 <p>
-We could of course do this for any binary tree:
-</p>
+We could of course do this for any binary tree:</p>
 <p>
 <figure>
     <img src="/img/heap/heap2.png"/> 
@@ -150,27 +141,23 @@ We could of course do this for any binary tree:
 <figure>
     <img src="/img/heap/heap2-array.png"/> 
 </figure>
-
 </p>
 <p>
 <strong>NOTE:</strong> Nodes 11 and 12 in the tree above should be 13 and 14. I messed up the
 graphviz dot source for the diagram and am too lazy to
 correct. Likewise there should be two extre cells in the array and the
-32 and 50 should be in cells 13 and 14 respectively. 
-</p>
+32 and 50 should be in cells 13 and 14 respectively. </p>
 <p>
 This is where the completeness comes in. The fact that a heap is
 complete and the last level is filled in left to right means that
 there aren&#39;t any unused cells in the array. If we just had any old
 binary tree like the one above, we&#39;re going to waste space. It could
-still at times be a useful representation.
-</p>
+still at times be a useful representation.</p>
 <p>
 I like talking to my students about these types of data structures and
 representations. Without considering cases like this you can get
 programmers who adhere to the saying that &#34;If your only tool is a
-hammer then every problem looks like a nail.&#34;
-</p>
+hammer then every problem looks like a nail.&#34;</p>
 
         </div>
         

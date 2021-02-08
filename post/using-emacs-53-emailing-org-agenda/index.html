@@ -14,12 +14,18 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744885" />
 
 
 
 <meta property="og:title" content="Using Emacs 53 Emailing Org Agenda" />
-<meta property="og:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:    It&#39;s pretty universal so I can issue and accept calendar invites.    It works well with my phone and other mobile devices.    The rest of my family doesn&#39;t live in Emacs :-(.    I prefer using org-mode beacuse:    Emacs    I prefer, for the most part, to control my data." />
+<meta property="og:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:
+  It&#39;s pretty universal so I can issue and accept calendar invites.
+  It works well with my phone and other mobile devices.
+  The rest of my family doesn&#39;t live in Emacs :-(.
+  I prefer using org-mode beacuse:
+  Emacs
+  I prefer, for the most part, to control my data." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/" />
 <meta property="article:published_time" content="2018-11-03T08:55:23-04:00" />
@@ -27,7 +33,13 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 53 Emailing Org Agenda"/>
-<meta name="twitter:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:    It&#39;s pretty universal so I can issue and accept calendar invites.    It works well with my phone and other mobile devices.    The rest of my family doesn&#39;t live in Emacs :-(.    I prefer using org-mode beacuse:    Emacs    I prefer, for the most part, to control my data."/>
+<meta name="twitter:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:
+  It&#39;s pretty universal so I can issue and accept calendar invites.
+  It works well with my phone and other mobile devices.
+  The rest of my family doesn&#39;t live in Emacs :-(.
+  I prefer using org-mode beacuse:
+  Emacs
+  I prefer, for the most part, to control my data."/>
 
 
 
@@ -78,85 +90,59 @@
         <div class="content">
             <p>
 I use both org-mode and Google Calendar for scheduling. I like Google
-Calendar because:
-</p>
+Calendar because:</p>
 <ul>
 <li>
-<p>
-It&#39;s pretty universal so I can issue and accept calendar invites.
-</p>
+<p>It&#39;s pretty universal so I can issue and accept calendar invites.</p>
 </li>
 <li>
-<p>
-It works well with my phone and other mobile devices.
-</p>
+<p>It works well with my phone and other mobile devices.</p>
 </li>
 <li>
-<p>
-The rest of my family doesn&#39;t live in Emacs :-(.
-</p>
+<p>The rest of my family doesn&#39;t live in Emacs :-(.</p>
 </li>
 </ul>
-<p>
-I prefer using org-mode beacuse:
-</p>
+<p>I prefer using org-mode beacuse:</p>
 <ul>
 <li>
-<p>
-Emacs
-</p>
+<p>Emacs</p>
 </li>
 <li>
-<p>
-I prefer, for the most part, to control my data.
-</p>
+<p>I prefer, for the most part, to control my data.</p>
 </li>
 </ul>
-<p>
-I partially sync the two platforms. I&#39;ve already talked about <a href="https://cestlaz.github.io/posts/using-emacs-26-gcal/">syncing
+<p>I partially sync the two platforms. I&#39;ve already talked about <a href="https://cestlaz.github.io/posts/using-emacs-26-gcal/">syncing
 Google Calendar and org-mode</a>. Right now, I&#39;m just pulling from Google
 rather than also pushing up from org-mode because I&#39;m still getting
 double entry issues. This means that I have my entire schedule in
-Emacs but only part of it in my Google calendar.
-</p>
+Emacs but only part of it in my Google calendar.</p>
 <p>
 To help resolve the problem, I do a few things. First, I sync my
 orgfiles on all my computers. I used to do this with Dropbox but am
 now moving over to <a href="https://syncthing.net/">Syncthing</a>. I also like to set up a <a href="http://digitalocean.com">Digital Ocean</a>
-droplet so that I have a single machine that&#39;s always on.
-</p>
+droplet so that I have a single machine that&#39;s always on.</p>
 <p>
 I&#39;ve set things up to have that droplet send me an email with my
 agenda. It turns out that org has commands to do things with Emacs
-from the command line:
-</p>
+from the command line:</p>
 <ul>
 <li>
-<p>
-org-batch-agenda
-</p>
+<p>org-batch-agenda</p>
 </li>
 <li>
-<p>
-org-batch-store-agenda-views
-</p>
+<p>org-batch-store-agenda-views</p>
 </li>
 <li>
-<p>
-org-batch-agenda-csv 
-</p>
+<p>org-batch-agenda-csv </p>
 </li>
 </ul>
-<p>
-They can be run from the command line to output a formatted agenda as
-a string:
-</p>
+<p>They can be run from the command line to output a formatted agenda as
+a string:</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
 </div>
 <p>
-or as csv:
-</p>
+or as csv:</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda-csv &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
 </div>
@@ -197,29 +183,23 @@ or as csv:
 <p>
 Note that you have to specify the location of the startup file
 (~/emacs.d/init.e;) since when you run emacs in batch mode it won&#39;t
-load your normal config by default
-</p>
+load your normal config by default</p>
 <p>
 In the video you&#39;ll see how I use my DigitalOcean dropplet, set up
 with the Postfix mail server and Syncthing to send me an email with my
-agenda every morning.
-</p>
+agenda every morning.</p>
 <p>
-The command I actually use to send the email is:
-</p>
+The command I actually use to send the email is:</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/bin/emacs --batch -l ~/.emacs  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span> 2&gt;/dev/null | mail -s <span style="color:#e6db74">&#34;Mike&#39;s Agenda for </span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#39;\%A \%D&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> zamansky@gmail.com</code></pre></div>
 </div>
 <p>
-which I put in a crontab entry to get it to run every day.
-</p>
+which I put in a crontab entry to get it to run every day.</p>
 <p>
 If people want, I can make a runthrough of setting up the actual
-dropplet and SyncThing.
-</p>
+dropplet and SyncThing.</p>
 <p>
-Enjoy!
-</p>
+Enjoy!</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/wus8R1TWYZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

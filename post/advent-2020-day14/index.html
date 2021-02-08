@@ -14,12 +14,14 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1610735076" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612744885" />
 
 
 
 <meta property="og:title" content="A teacher looks at Advent of Code day 14" />
-<meta property="og:description" content="Time for Day 14!!!  I didn&#39;t write up day 12 but here&#39;s a Clojure video runthrough. I also didn&#39;t write up day 13 mostly because I hacked together my part 2 in Python and still want to rewrite it in decent clojure. In any event, all my solutions are up on GitHub.  Day 14 had a few interesting things going on. At its core it&#39;s a small machine simulator where you have to deal with binary numbers." />
+<meta property="og:description" content="Time for Day 14!!!
+ I didn&#39;t write up day 12 but here&#39;s a Clojure video runthrough. I also didn&#39;t write up day 13 mostly because I hacked together my part 2 in Python and still want to rewrite it in decent clojure. In any event, all my solutions are up on GitHub.
+ Day 14 had a few interesting things going on. At its core it&#39;s a small machine simulator where you have to deal with binary numbers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day14/" />
 <meta property="article:published_time" content="2020-12-14T14:30:47-04:00" />
@@ -27,7 +29,9 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A teacher looks at Advent of Code day 14"/>
-<meta name="twitter:description" content="Time for Day 14!!!  I didn&#39;t write up day 12 but here&#39;s a Clojure video runthrough. I also didn&#39;t write up day 13 mostly because I hacked together my part 2 in Python and still want to rewrite it in decent clojure. In any event, all my solutions are up on GitHub.  Day 14 had a few interesting things going on. At its core it&#39;s a small machine simulator where you have to deal with binary numbers."/>
+<meta name="twitter:description" content="Time for Day 14!!!
+ I didn&#39;t write up day 12 but here&#39;s a Clojure video runthrough. I also didn&#39;t write up day 13 mostly because I hacked together my part 2 in Python and still want to rewrite it in decent clojure. In any event, all my solutions are up on GitHub.
+ Day 14 had a few interesting things going on. At its core it&#39;s a small machine simulator where you have to deal with binary numbers."/>
 
 
 
@@ -77,44 +81,36 @@
         </header>
         <div class="content">
             <p>
-Time for <a href="https://adventofcode.com/2020/day/14">Day 14</a>!!!
-</p>
+Time for <a href="https://adventofcode.com/2020/day/14">Day 14</a>!!!</p>
 <p>
 I didn&#39;t write up day 12 but here&#39;s a Clojure <a href="https://www.youtube.com/watch?v=k8fvaAZRtts&amp;feature=youtu.be">video</a> runthrough. I also
 didn&#39;t write up day 13 mostly because I hacked together my part 2 in
 Python and still want to rewrite it in decent clojure. In any event,
-all my solutions are up on <a href="https://github.com/zamansky/advent2020">GitHub</a>.
-</p>
+all my solutions are up on <a href="https://github.com/zamansky/advent2020">GitHub</a>.</p>
 <p>
 Day 14 had a few interesting things going on. At its core it&#39;s a small
 machine simulator where you have to deal with binary numbers. One of
 the rubs is that the numbers are 36 digits which could be a problem if
-your language / machine uses 32 bits to represent integers. 
-</p>
+your language / machine uses 32 bits to represent integers. </p>
 <p>
 Right off, assuming you have large enough ints you have an interesting
 choice. Do you work with the data them as numbers or do you just do
-string manipulations. 
-</p>
+string manipulations. </p>
 <p>
 I decided to do part 1 as numbers which leads to a nice little
-exercise of using bitwise logic operations to turn bits on or off. 
-</p>
+exercise of using bitwise logic operations to turn bits on or off. </p>
 <p>
 Part 2 was better solved, at least for me using string
 manipulations. That part had a nice little recursive subproblem -
 mapping wildcard values in the &#34;mask&#34; to all the possible combinations
-of zeros and ones.
-</p>
+of zeros and ones.</p>
 <p>
 Both problems also had a bit of fun parsing and, at least for me, a
-few neat clojure constructs. 
-</p>
+few neat clojure constructs. </p>
 <p>
 I think you could turn this problem into a fun set of class
 exercises. My code can be found <a href="https://github.com/zamansky/advent2020/blob/main/src/day14.clj ">here</a> and even if you don&#39;t do Clojure,
-you might want to check out the video runthrough:
-</p>
+you might want to check out the video runthrough:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oVVHU7PDHyw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
