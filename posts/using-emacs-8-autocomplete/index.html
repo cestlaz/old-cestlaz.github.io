@@ -14,15 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612834437" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1616088857" />
 
 
 
 <meta property="og:title" content="Using Emacs - 8 - Autocomplete" />
-<meta property="og:description" content="Out of the box, Emacs supports various types of completion.
- Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
- I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.
- We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion." />
+<meta property="og:description" content="Out of the box, Emacs supports various types of completion.  Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.  I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.  We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-8-autocomplete/" />
 <meta property="article:published_time" content="2016-06-26T00:00:00+00:00" />
@@ -30,10 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 8 - Autocomplete"/>
-<meta name="twitter:description" content="Out of the box, Emacs supports various types of completion.
- Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.
- I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.
- We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion."/>
+<meta name="twitter:description" content="Out of the box, Emacs supports various types of completion.  Tab completion for filenames and commands basically work right out of the box and Emacs has built in modes like Abbrev, Hippie Expand, and Dabbrev provide a manner of completion for in buffer text.  I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re interested in the others, follow the links.  We saw ow the built in Ido mode and third party packages like Ivy, which I prefer, and Helm make for better completions on functions, filenames, and the like and Emacs also has third party packages for in buffer completion."/>
 
 
 
@@ -83,28 +77,35 @@
         </header>
         <div class="content">
             <p>
-Out of the box, Emacs supports various types of completion.</p>
+Out of the box, Emacs supports various types of completion.
+</p>
 <p>
 Tab completion for filenames and commands basically work right out of
 the box and Emacs has built in modes like <a href="https://www.emacswiki.org/emacs/AbbrevMode">Abbrev</a>, <a href="https://www.emacswiki.org/emacs/HippieExpand">Hippie Expand</a>, and
-<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html">Dabbrev</a> provide a manner of completion for in buffer text.</p>
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html">Dabbrev</a> provide a manner of completion for in buffer text.
+</p>
 <p>
 I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you&#39;re
-interested in the others, follow the links.</p>
+interested in the others, follow the links.
+</p>
 <p>
 We saw ow the built in Ido mode and third party packages like Ivy,
 which I prefer, and Helm make for better completions on functions,
 filenames, and the like and Emacs also has third party packages for in
-buffer completion.</p>
+buffer completion.
+</p>
 <p>
 The two main contenders are <a href="https://github.com/auto-complete/auto-complete">auto-complete Mode</a> and <a href="http://company-mode.github.io/%0A">company Mode</a>. I use
 auto-complete, others swear by company. The video shows the basics of
-auto-complete mode but check both out and decide for yourself.</p>
+auto-complete mode but check both out and decide for yourself.
+</p>
 <p>
 If you feel strongly about one or the other, please share in the
-comments.</p>
+comments.
+</p>
 <p>
-Here&#39;s a basic configuration:</p>
+Here&#39;s a basic configuration:
+</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package auto-complete
 :ensure <span style="color:#66d9ef">t</span>
@@ -115,36 +116,55 @@ Here&#39;s a basic configuration:</p>
 ))</code></pre></div></code></pre></div>
 </div>
 <p>
-We&#39;ll modify this as move along in the series.</p>
+We&#39;ll modify this as move along in the series.
+</p>
 <p>
-Here&#39;s the video:</p>
+Here&#39;s the video:
+</p>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:</p>
+Relevant links:
+</p>
 <ul>
 <li>
-<p>Autocomplete home page: <a href="https://github.com/auto-complete/auto-complete">https://github.com/auto-complete/auto-complete</a></p>
+<p>
+Autocomplete home page: <a href="https://github.com/auto-complete/auto-complete">https://github.com/auto-complete/auto-complete</a>
+</p>
 </li>
 <li>
-<p>Autocomplete manual: <a href="http://auto-complete.org/doc/manual.html">http://auto-complete.org/doc/manual.html</a></p>
+<p>
+Autocomplete manual: <a href="http://auto-complete.org/doc/manual.html">http://auto-complete.org/doc/manual.html</a>
+</p>
 </li>
 <li>
-<p>Video series overview page:</p>
+<p>
+Video series overview page:
+</p>
 </li>
 <li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+<p>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</p>
 </li>
 <li>
-<p>Code for this video</p>
+<p>
+Code for this video
+</p>
 </li>
 <li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete">https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</a></p>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete">https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</a>
+</p>
 </li>
 <li>
-<p>Complete code built up over all videos:</p>
+<p>
+Complete code built up over all videos:
+</p>
 </li>
 <li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+<p>
+<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
+</p>
 </li>
 </ul>
 

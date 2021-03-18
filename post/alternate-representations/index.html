@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612834436" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1616088856" />
 
 
 
@@ -82,13 +82,15 @@ talking about how this type of data structure was a hold over from the
 old days when computer resources were more limited. Nowadays having a
 list of children makes more sense. The comment was of course correct
 but I still think it&#39;s worth teaching representations like the one I
-spoke of in my <a href="https://cestlaz.github.io/post/arbitrary-trees/">last post</a>. </p>
+spoke of in my <a href="https://cestlaz.github.io/post/arbitrary-trees/">last post</a>. 
+</p>
 <p>
 Looking at interesting and different ways of representing data and
 modeling solutions is one of the things that separates programmers or
 coders from computer scientists and software engineers. I&#39;m not
 talking about commonly accepted definitions or advanced classwork or
-theory and mathy stuff. I&#39;m talking about how you approach a problem. </p>
+theory and mathy stuff. I&#39;m talking about how you approach a problem. 
+</p>
 <p>
 To me, the coder or programmer is someone who has learned rudimentary
 coding prowess but learned via rote example. This is typical of a code
@@ -96,21 +98,25 @@ school graduate or many self taught programmers. This is not to say
 that people who learned this way are not computer scientists at heart
 nor that they don&#39;t have the ability to think deeply about problems
 but rather that their training was superficial - usually to get them
-to market quickly. </p>
+to market quickly. 
+</p>
 <p>
 I know many people who started on their own following a book or mooc
 or code school and grew beyond those basics but we&#39;ve also seen many
 &#34;coders&#34; who brute force using the same techniques regardless of
 appropriateness. I can&#39;t tell you how many times I&#39;ve seen an SQL
 database used inappropriately as a flat file store or forcing
-relationships when not optimal in something like MongoDB. </p>
+relationships when not optimal in something like MongoDB. 
+</p>
 <p>
 We don&#39;t want our students to merely parrot the solution that we went
 over in class. We want them to consider the problem at hand and all
-the tools in their tool belt and come up with what makes sense. </p>
+the tools in their tool belt and come up with what makes sense. 
+</p>
 <p>
 I like the arbitrary tree example as it uses the same internal
-structure as a binary tree does: </p>
+structure as a binary tree does: 
+</p>
 <div class="src src-java">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
@@ -119,22 +125,26 @@ For a binary search tree pointer1 is left and pointer 2 is right. For
 an arbitrary tree they represent first child and next sibling. The
 same structure can also be used for a doubly linked list with previous
 and next or a skip list. It&#39;s all about creatively using the tools at
-hand. </p>
+hand. 
+</p>
 <p>
 There are a number of lessons during which we can stretch our students
 thinking in terms of data representations in our early classes. One is
 when we can augment a data structure to avoid special cases. I wrote
-about this when solving a maze or the <a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data/">knight&#39;s tour</a>.</p>
+about this when solving a maze or the <a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data/">knight&#39;s tour</a>.
+</p>
 <p>
 Those problems are also great place to talk about implicit data
 structures. When we do our maze solver we talk about state space
 search. The idea that there&#39;s this huge graph where each node is the
 a potential state of the maze and the edges represent how we can move
-from state to state:#alternate-representations.org#</p>
+from state to state:#alternate-representations.org#
+</p>
 <p>
 <figure>
     <img src="/img/mazestates.png"/> 
 </figure>
+
 </p>
 <p>
 The above graph can be considered an implicit data structure - it
@@ -145,18 +155,21 @@ and return from recursive calls. That recursion creates and destroys
 nodes in our graph. At any point in time, each layer of stack in the
 recursion holds one node in our graph with the top of the stack being
 our current state but we never actually create or internally represent
-the full graph. It&#39;s an ephemeral implicit data structure.</p>
+the full graph. It&#39;s an ephemeral implicit data structure.
+</p>
 <p>
 Finally, one very early opportunity to discuss these types of ideas
 come when you use an array as a set of buckets where the index is the
 value and the entry is the count. It&#39;s pretty simple but a very
 different way of using an array or list when all you&#39;ve seen is using
 it to store actual items. I like doing this in the context of a
-<a href="https://cestlaz.github.io/posts/2013-03-23-who_won_the_election-quadratic_to_linear_time/">frequency</a> lesson.</p>
+<a href="https://cestlaz.github.io/posts/2013-03-23-who_won_the_election-quadratic_to_linear_time/">frequency</a> lesson.
+</p>
 <p>
 In any event, it&#39;s sometimes worthwhile to look at solutions that may
 no longer be optimal - they can be great triggers of both student
-thought and discussion.</p>
+thought and discussion.
+</p>
 
         </div>
         

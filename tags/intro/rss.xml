@@ -17,23 +17,28 @@
       <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/inverted-index/</guid>
-      <description>&lt;p&gt;I haven&amp;#39;t spoken much about the class I&amp;#39;ve been teaching this
+      <description>&lt;p&gt;
+I haven&amp;#39;t spoken much about the class I&amp;#39;ve been teaching this
 semester. It&amp;#39;s an intro CS course - a programming heavy intro. I
 decided to use Python with a transition at the end to C++. The
 transition is to mirror Hunter&amp;#39;s normal first CS course that ends with
 a C++ intro to prepare the students for next semester&amp;#39;s CS course
 which is a more intense OOP class using C++ - the language we use in
-our core courses.&lt;/p&gt;
+our core courses.
+&lt;/p&gt;
 &lt;p&gt;
 Throughout the semester I&amp;#39;ve tried to use a variety of interesting
 application areas so as to try to give the students some idea of the
-possibilities that studying CS will open up for them.&lt;/p&gt;
+possibilities that studying CS will open up for them.
+&lt;/p&gt;
 &lt;p&gt;
 After covering Python dictionaries and lists I thought we&amp;#39;d play by
-building an inverted Index.&lt;/p&gt;
+building an inverted Index.
+&lt;/p&gt;
 &lt;p&gt;
 The basic idea is to map a set of words back to source files. For
-example, given the following four one line files:&lt;/p&gt;
+example, given the following four one line files:
+&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -72,7 +77,8 @@ example, given the following four one line files:&lt;/p&gt;
 &lt;/table&gt;
 &lt;p&gt;
 You could build a data structure mapping each word back to the file(s)
-that contain it (partially shown here),&lt;/p&gt;
+that contain it (partially shown here),
+&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -111,28 +117,33 @@ that contain it (partially shown here),&lt;/p&gt;
 &lt;/table&gt;
 &lt;p&gt;
 You can, of course, store more information - how many times a word
-appears in a file, where it appears, etc.&lt;/p&gt;
+appears in a file, where it appears, etc.
+&lt;/p&gt;
 &lt;p&gt;
 This is a fairly easy structure to build. A dictionary where the keys
 are the words in the file and the values are lists of the documents
-containing the words.&lt;/p&gt;
+containing the words.
+&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 In addition to letting us work with dictionaries and lists, we can
-also review file access and even the python CSV module if we want.&lt;/p&gt;
+also review file access and even the python CSV module if we want.
+&lt;/p&gt;
 &lt;p&gt;
 We can immediately write simple queries – &amp;#34;what document(s) contain
 the word &amp;#39;prick,&amp;#39; but things get more interesting if you write
 functions to perform &lt;strong&gt;&lt;strong&gt;and&lt;/strong&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/strong&gt; queries - &amp;#34;what document(s)
-contain the words &amp;#39;prick&amp;#39; &lt;strong&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/strong&gt; &amp;#39;do&amp;#39;&amp;#34; for instance.&lt;/p&gt;
+contain the words &amp;#39;prick&amp;#39; &lt;strong&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/strong&gt; &amp;#39;do&amp;#39;&amp;#34; for instance.
+&lt;/p&gt;
 &lt;p&gt;
 Why are we building this (besides as a data structure and programming
 exercise)? I&amp;#39;ve seen a number of references to using an inverted index
 when building a web search engine. In fact, I think that&amp;#39;s something
 you do early on in the Udacity Mooc. I just wanted to play with
-information retrieval.&lt;/p&gt;
+information retrieval.
+&lt;/p&gt;
 &lt;p&gt;
 I remembered that there was a collection of information, including
 last statements from &lt;a href=&#34;https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html&#34;&gt;executed offenders in Texas&lt;/a&gt;. Someone conveniently
@@ -140,23 +151,28 @@ converted it into a &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1HAjZ
 different from our simple four file example but then there&amp;#39;s more
 data. It&amp;#39;s straightforward enough to download the spreadsheet as a CSV
 file and then read it with a Python program that builds it into an
-inverted index.&lt;/p&gt;
+inverted index.
+&lt;/p&gt;
 &lt;p&gt;
-Now we have some interesting data to play with.&lt;/p&gt;
+Now we have some interesting data to play with.
+&lt;/p&gt;
 &lt;p&gt;
 How many offenders used words like &amp;#34;sorry&amp;#34; or &amp;#34;apologize?&amp;#34; How about
 references to religion? We can do all sorts of &lt;strong&gt;&lt;strong&gt;and&lt;/strong&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/strong&gt;
-queries.&lt;/p&gt;
+queries.
+&lt;/p&gt;
 &lt;p&gt;
 We just played with this a bit but I could see all sorts of
 explorations. What about taking some great work of literature and
 turning it into an inverted index by chapter. You could query
 characters or certain words and see where and when they appear in the
-book. A new and different way of exploring literature.&lt;/p&gt;
+book. A new and different way of exploring literature.
+&lt;/p&gt;
 &lt;p&gt;
 So, there you have it - an interesting little project we played with
 this past semester. We did it in an intro Python course but I could
-see it as an interesting project in AP CS A using hashmaps and lists.&lt;/p&gt;
+see it as an interesting project in AP CS A using hashmaps and lists.
+&lt;/p&gt;
 </description>
     </item>
     

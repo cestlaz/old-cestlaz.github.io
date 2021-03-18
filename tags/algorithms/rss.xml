@@ -21,7 +21,8 @@
   src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
 &lt;/script&gt;
 &lt;p&gt;
-Natan commenting on work the  other day:&lt;/p&gt;
+Natan commenting on work the  other day:
+&lt;/p&gt;
 &lt;blockquote&gt;
 
 &#34;You have two lists. One is sorted, the other is not. Every item in
@@ -37,30 +38,36 @@ valuable no matter what field you go into. That, or I&#39;m just a
 particular kind of crazy.
 &lt;/blockquote&gt;
 &lt;p&gt;
-There&amp;#39;s clearly an unplugged activity here :-)&lt;/p&gt;
+There&amp;#39;s clearly an unplugged activity here :-)
+&lt;/p&gt;
 &lt;p&gt;
 As a programming exercise, it&amp;#39;s pretty easy to analyze. Since one list
 is sorted, you can use a binary search for each insertion. That&amp;#39;s \( n \)
 searches of \(lgn\) each yields an \( nlogn \)  run time. Of course,
 if the sorted list is an array and you have to shift all the elements
-down in linear time for each insert, that changes things.&lt;/p&gt;
+down in linear time for each insert, that changes things.
+&lt;/p&gt;
 &lt;p&gt;
 Sorting first is also \(nlogn\). Use an \(nlogn\) sort and then merge
 the two lists which is linear. Here though, you will also either have
 to ultimately do the shifting for insertions or use extra space by
-making an new array or list for the two merged sets.&lt;/p&gt;
+making an new array or list for the two merged sets.
+&lt;/p&gt;
 &lt;p&gt;
 The interesting discussion points here are the issues like in place
-vs not and the extra time needed for the shifts.&lt;/p&gt;
+vs not and the extra time needed for the shifts.
+&lt;/p&gt;
 &lt;p&gt;
-Unplugged though allows for even richer discussion.&lt;/p&gt;
+Unplugged though allows for even richer discussion.
+&lt;/p&gt;
 &lt;p&gt;
 Having humans step through computer algorithms can be popular
 activities at times and they can also be very instructive but as
 humans, we&amp;#39;re not optimized the same ways computers are. While we
 might perform some tasks using set algorithms and those algorithms
 might be the same as on a computer, more often than not, they&amp;#39;re
-different - at least at a higher thought level.&lt;/p&gt;
+different - at least at a higher thought level.
+&lt;/p&gt;
 &lt;p&gt;
 Let&amp;#39;s take the insertion solution to our problem. Code wise, we&amp;#39;d use
 a binary search. Humans however don&amp;#39;t use binary search. If we did, it
@@ -68,7 +75,8 @@ would actually be pretty inefficient.  We&amp;#39;d have to locate the exact
 middle which would probably require specific counting and already
 we&amp;#39;ve used linear time. Even if we guessed the first middle correctly,
 each additional split would require we find a new middle and again,
-realistically, each time we&amp;#39;d count - more linear components.&lt;/p&gt;
+realistically, each time we&amp;#39;d count - more linear components.
+&lt;/p&gt;
 &lt;p&gt;
 In reality, we&amp;#39;d probably use a guided type search. The specific
 problem involved inserting letters from an unsorted pile into
@@ -80,22 +88,26 @@ the insertion point. There are similarities to a binary search but
 it&amp;#39;s a very different algorithm. We couldn&amp;#39;t easily code up our guided
 search as we have an intuitive instant ability to decide where to jump
 to and when to jump but on the other hand we&amp;#39;re slower if we use the
-proven \(logn\) binary search.&lt;/p&gt;
+proven \(logn\) binary search.
+&lt;/p&gt;
 &lt;p&gt;
 Sorting is similar. On the computer we&amp;#39;d probably use our langauges
 built in sort which would be \(nlogn\). By hand, we&amp;#39;d probably use
 some sort of bucket sort with merging in the individual piles. Even if
 we were sorting continuous values as opposed to discrete ones like
-names, we&amp;#39;d probably use buckets. &lt;/p&gt;
+names, we&amp;#39;d probably use buckets. 
+&lt;/p&gt;
 &lt;p&gt;
 All of this can lead to very rich discussion - how we do things vs how
 the computer does and even more, how we decide how to do things. Maybe
 with a small data set we don&amp;#39;t even do a bucket sort but more of an
 insertion or selection type sort. How do we decide what our jumps our
-when we&amp;#39;re searching by hand or our bucket demarcations when sorting?&lt;/p&gt;
+when we&amp;#39;re searching by hand or our bucket demarcations when sorting?
+&lt;/p&gt;
 &lt;p&gt;
 Lots of good stuff here, all because somebody at Natan&amp;#39;s job forgot to
-sort the letters before they printed them out.&lt;/p&gt;
+sort the letters before they printed them out.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -108,11 +120,13 @@ sort the letters before they printed them out.&lt;/p&gt;
       <description>&lt;p&gt;
 Someone mentioned &lt;a href=&#34;https://www.manning.com/books/grokking-algorithms&#34;&gt;Grokking Algorithms&lt;/a&gt; by Aditya Y. Bhargava in one of
 the CS educator Facbeook groups. It looked interesting so I thought
-I&amp;#39;d give it a once over.&lt;/p&gt;
+I&amp;#39;d give it a once over.
+&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s certainly an accessible book. Text mixed with cute line drawings,
 &amp;#34;hand written&amp;#34; text, diagrams and picture.s It reminded me of one of
-my favorite, most accessible  Calculus books &lt;a href=&#34;https://www.goodreads.com/book/show/706622.Who_Is_Fourier_a_Mathematical_Adventure&#34;&gt;Who Was Fourier&lt;/a&gt;.&lt;/p&gt;
+my favorite, most accessible  Calculus books &lt;a href=&#34;https://www.goodreads.com/book/show/706622.Who_Is_Fourier_a_Mathematical_Adventure&#34;&gt;Who Was Fourier&lt;/a&gt;.
+&lt;/p&gt;
 &lt;p&gt;
 Overall I enjoyed the book but I&amp;#39;m not sure what its best audience
 is. If you look at the selection of topics, it&amp;#39;s a little
@@ -124,7 +138,8 @@ came back to them later. On the other hand, when the author covers
 QuickSort he at one point compares it to a MergeSort as if that were
 covered as well. On the more advanced side, there are Hash Tables,
 Dijkstra&amp;#39;s Aalgorithm, Dyanmic Programming, and a few teasers at the
-end.&lt;/p&gt;
+end.
+&lt;/p&gt;
 &lt;p&gt;
 The biggest downside of the book, to me, is that some of the topics
 seem to be great explanations of things as long as you already know
@@ -134,7 +149,8 @@ theoretically implemented under the hood. That said, unless you&amp;#39;ve
 already studied linked lists it probably isn&amp;#39;t enough to go
 anywhere. This might be fine if you are to assume that the reader has
 already taken data structures but if that&amp;#39;s the case, the linked list
-section is probably superflous.&lt;/p&gt;
+section is probably superflous.
+&lt;/p&gt;
 &lt;p&gt;
 Another point I noted was that some of the coverage is pretty standard
 but some is great. I wasn&amp;#39;t very impressed by the recursion chapter
@@ -144,16 +160,21 @@ out and discussed Dynamic Programming. To me, that section alone is probably
 worth the book. I don&amp;#39;t think it&amp;#39;s enough for you to build a unit on
 Dyanamic Programming but the author provides a great way of developing
 and talking about the subject and gives some nice examples. I also
-like the way it builds from Greedy Algorithms.&lt;/p&gt;
+like the way it builds from Greedy Algorithms.
+&lt;/p&gt;
 &lt;p&gt;
 To be fair, I read a couple of Amazon Reviews of the book and one
 reviewer loved the coverage of  Dijkstra&amp;#39;s algorithm so there is a lot
-of subjectivity here. &lt;/p&gt;
+of subjectivity here. 
+&lt;/p&gt;
 &lt;p&gt;
 A couple of other minor points worth thinking about are math and
-rigor. One of the quotes on the back of the book states:&lt;/p&gt;
+rigor. One of the quotes on the back of the book states:
+&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This book does the impossible: it makes math fun and easy!&lt;/p&gt;
+&lt;p&gt;
+This book does the impossible: it makes math fun and easy!
+&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 I&amp;#39;ve got to disagree with this. The book doesn&amp;#39;t take any
@@ -165,15 +186,18 @@ what I do &lt;a href=&#34;https://cestlaz.github.io/posts/2014-01-07-rot13-gatew
 that basic math can be amazingly useful and you can do cool and
 powerful things with it. Nothing wrong with that. It&amp;#39;s a great thing
 to do but it&amp;#39;s not making hard math easy. The author also refers the
-reader to external references for more.&lt;/p&gt;
+reader to external references for more.
+&lt;/p&gt;
 &lt;p&gt;
 The other point I want to mention is rigor - this is bound to come up
 whenever a book tries to be accessible. While it&amp;#39;s true that the author
 seems to fudge or simplify a definition here and there I didn&amp;#39;t find
 any major problems and think that his choices in terms of langauge,
-rigor, and fudge factor  are generally appropriate.&lt;/p&gt;
+rigor, and fudge factor  are generally appropriate.
+&lt;/p&gt;
 &lt;p&gt;
-So bottom line - who is this book for and should you get it?&lt;/p&gt;
+So bottom line - who is this book for and should you get it?
+&lt;/p&gt;
 &lt;p&gt;
 This is not a standalone algorithms book. You couldn&amp;#39;t use it for a
 class by that name. The book mentions that it could be useful to a
@@ -181,13 +205,16 @@ code school graduate and given the lack of consistency in what&amp;#39;s
 covered in code schools that&amp;#39;s probably a good recommendation. It
 gives some feel and flavor on a number of subjects, does nothing
 poorly and while it omits things that might be necessary, it does many
-things well.&lt;/p&gt;
+things well.
+&lt;/p&gt;
 &lt;p&gt;
 To me, this is an ideal book as resource for a teacher looking to
 stretch their APCS-A or APCS-AB class or possibly for an advanced
-student.&lt;/p&gt;
+student.
+&lt;/p&gt;
 &lt;p&gt;
-I enjoyed the book. You probably will too.&lt;/p&gt;
+I enjoyed the book. You probably will too.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -199,10 +226,12 @@ I enjoyed the book. You probably will too.&lt;/p&gt;
       <guid>https://cestlaz.github.io/post/seam-carving/</guid>
       <description>&lt;p&gt;
 It&amp;#39;s spring break and for me that&amp;#39;s always been a good time to explore
-some new ideas.&lt;/p&gt;
+some new ideas.
+&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s one that some of you might like, particularly if you&amp;#39;re
-teaching APCS-A or something similar. &lt;/p&gt;
+teaching APCS-A or something similar. 
+&lt;/p&gt;
 &lt;p&gt;
 Many APCS-A teachers do a unit on image processing using the &lt;a href=&#34;https://docs.google.com/viewer?url=http%253A%252F%252Fmedia.collegeboard.com%252FdigitalServices%252Fpdf%252Fap%252Fpicture-lab-studentguide.pdf%0A&#34;&gt;picture
 lab&lt;/a&gt; (&lt;a href=&#34;http://www.apcs.mathorama.com/index.php?n=Main.PictureLab&#34;&gt;alternate resource&lt;/a&gt;). Image processing is a nice platform to
@@ -211,12 +240,14 @@ explore two dimensional arrays. You basically use a 2D array of pixels
 and store 0-255 at each location for a grayscale image and three ints
 per pixel for red, green, blue. For this you can just use a simple
 2D array of some color class - I think there&amp;#39;s even one built into
-Java that you can use.&lt;/p&gt;
+Java that you can use.
+&lt;/p&gt;
 &lt;p&gt;
 I like to use the PPM format to save and later reload the images. PPM
 is a simple text format. It starts with a header, then an optional
 comment (starting with #), the width and height (4x4 in the example
-below), then the maximum color number. Here&amp;#39;s an example:&lt;/p&gt;
+below), then the maximum color number. Here&amp;#39;s an example:
+&lt;/p&gt;
 &lt;pre class=&#34;example&#34;&gt;
 P3
 # feep.ppm
@@ -229,28 +260,34 @@ P3
 &lt;/pre&gt;
 &lt;p&gt;
 You can even cut and paste the above into a file and view it with an
-image viewer. &lt;/p&gt;
+image viewer. 
+&lt;/p&gt;
 &lt;p&gt;
-You can find the full format specification &lt;a href=&#34;http://netpbm.sourceforge.net/doc/ppm.html%0A&#34;&gt;here&lt;/a&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/Netpbm_format&#34;&gt;alternate resource&lt;/a&gt;). &lt;/p&gt;
+You can find the full format specification &lt;a href=&#34;http://netpbm.sourceforge.net/doc/ppm.html%0A&#34;&gt;here&lt;/a&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/Netpbm_format&#34;&gt;alternate resource&lt;/a&gt;). 
+&lt;/p&gt;
 &lt;p&gt;
 The picture lab has a bunch of interesting exercise ideas but if
-you&amp;#39;re looking for something &amp;#34;next level&amp;#34; check this out:&lt;/p&gt;
+you&amp;#39;re looking for something &amp;#34;next level&amp;#34; check this out:
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
 src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/6NcIJXTlugc&#34;&gt;https://www.youtube.com/embed/6NcIJXTlugc&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
 allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 Seam Carving is no longer a new cutting edge
 technique but it still blows me away. It&amp;#39;s also a really cool project
 for more advanced students for two reasons: one, it&amp;#39;s not a toy
 assignment - it&amp;#39;s from real research and two, it contains a very
 approachable example of dynamic programming which I&amp;#39;ll talk about in a
-bit.&lt;/p&gt;
+bit.
+&lt;/p&gt;
 &lt;p&gt;
 If you watch the video, there are two pieces that can sound
 intimidating. One is the &amp;#34;dynamic programming algorithm.&amp;#34; The other is
-when they talk about the &amp;#34;gradient magnitude.&amp;#34; &lt;/p&gt;
+when they talk about the &amp;#34;gradient magnitude.&amp;#34; 
+&lt;/p&gt;
 &lt;p&gt;
 Gradient magnitude. That sounds pretty hard. Actually, it could be
 worse. When I first starting looking at the basics of image processing
@@ -264,23 +301,28 @@ to greyscale by averaging the red green and blue values), if you have
 a vertical row of pixels with all the values of, let&amp;#39;s say 200 and the
 row right next to it is also of values 200, then the two lines are of
 the same color - there is no difference. If one pixel has a value of
-200 and its neighbor has a value of 50, it changes quite a lot.&lt;/p&gt;
+200 and its neighbor has a value of 50, it changes quite a lot.
+&lt;/p&gt;
 &lt;p&gt;
 The APCS-A picture lab describes a simple way to calculate this in
 exercise 9 (linked above). You can also just do a search on &amp;#34;edge
 detection tutorial&amp;#34; or &amp;#34;sobol edge detection tutorial&amp;#34; or something
-similar.&lt;/p&gt;
+similar.
+&lt;/p&gt;
 &lt;p&gt;
 For Seam Carving, you have to find a sequence of pixels from one side
 of the image to the other where the sum off all the differences is the
-lowest. This is where the dynamic programming comes in.&lt;/p&gt;
+lowest. This is where the dynamic programming comes in.
+&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Dynamic_programming&#34;&gt;Dynamic Programming&lt;/a&gt; is a technique that, in basic terms takes a
 problem that decomposes into subproblems and you store the optimal
-subproblem solution rather than recalculating it.&lt;/p&gt;
+subproblem solution rather than recalculating it.
+&lt;/p&gt;
 &lt;p&gt;
 Probably the easiest example is Fibonacci numbers. You can generate
-Fibonacci numbers recursively using something like this:&lt;/p&gt;
+Fibonacci numbers recursively using something like this:
+&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
@@ -290,10 +332,12 @@ Fibonacci numbers recursively using something like this:&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
 It&amp;#39;s very simple but it gets very slow very fast. That&amp;#39;s because it
-keeps recalculating the same subproblems over and over and over.&lt;/p&gt;
+keeps recalculating the same subproblems over and over and over.
+&lt;/p&gt;
 &lt;p&gt;
 You can &amp;#34;fix&amp;#34; this by creating a list of previously found Fibonacci 
-numbers and just return them rather than recalculating:&lt;/p&gt;
+numbers and just return them rather than recalculating:
+&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  fibs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# make room for 1000 fib numbers&lt;/span&gt;
 
@@ -309,65 +353,83 @@ numbers and just return them rather than recalculating:&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
 and that&amp;#39;s a dynamic programming solution for Fibonacci numbers,
-specifically using a technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Memoization&#34;&gt;memoization&lt;/a&gt;.  &lt;/p&gt;
+specifically using a technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Memoization&#34;&gt;memoization&lt;/a&gt;.  
+&lt;/p&gt;
 &lt;p&gt;
 How does this apply to finding the proper seam to remove? The one with
-the lowest total change? &lt;/p&gt;
+the lowest total change? 
+&lt;/p&gt;
 &lt;p&gt;
 First, go through the image array and build a second 2D array where
 each element contains the pixels &amp;#34;gradient magnitude&amp;#34; or change using
 either the method described in task 9 of the picture lab or
-elsewhere. &lt;/p&gt;
+elsewhere. 
+&lt;/p&gt;
 &lt;p&gt;
 For the first row, the sum of each pixels path so far is just the
-array element.&lt;/p&gt;
+array element.
+&lt;/p&gt;
 &lt;p&gt;
 For each successive row, the value of any pixel is going to be it&amp;#39;s
 value plus one of the values abov it, either up left, up center, or up
 right. Specifically, the elements new value will be it&amp;#39;s value + the
-smallest of the above three.&lt;/p&gt;
+smallest of the above three.
+&lt;/p&gt;
 &lt;p&gt;
-For example, given this array representing the color changes:&lt;/p&gt;
+For example, given this array representing the color changes:
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
     &amp;lt;img src=&amp;#34;/img/seam-mat1.png&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;&lt;/p&gt;
+&amp;lt;/figure&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 When calculating the second item in the second row, you&amp;#39;ll consider
-the three values above it:&lt;/p&gt;
+the three values above it:
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
     &amp;lt;img src=&amp;#34;/img/seam-mat2.png&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;&lt;/p&gt;
+&amp;lt;/figure&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 The smallest is 0 so that 2 remains a 2. If we do this for every
-element in the second row we get the following:&lt;/p&gt;
+element in the second row we get the following:
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
     &amp;lt;img src=&amp;#34;/img/seam-mat3.png&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;&lt;/p&gt;
+&amp;lt;/figure&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 The green boxes added a 0 from the line above but the yellow ones
 added the smallest non zero value from the above  row. Note that the
-edges just considered the two values above them and didn&amp;#39;t wrap.&lt;/p&gt;
+edges just considered the two values above them and didn&amp;#39;t wrap.
+&lt;/p&gt;
 &lt;p&gt;
-Working the rest of the way through, you get this final array:&lt;/p&gt;
+Working the rest of the way through, you get this final array:
+&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
     &amp;lt;img src=&amp;#34;/img/seam-mat4.png&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;&lt;/p&gt;
+&amp;lt;/figure&amp;gt;
+&lt;/p&gt;
 &lt;p&gt;
 You can now easily identify the best seam to remove by finding the
-smallest value in the bottom row and working your way up to the top.&lt;/p&gt;
+smallest value in the bottom row and working your way up to the top.
+&lt;/p&gt;
 &lt;p&gt;
 All together this is very doable by an advanced APCS-A student and the
 results are very cool, particularly if you do it in an interactive
-environment like processing.&lt;/p&gt;
+environment like processing.
+&lt;/p&gt;
 &lt;p&gt;
 So, check out seam carving. I&amp;#39;ll leave you with one more link to a
-longer presentation on the topic: &lt;/p&gt;
+longer presentation on the topic: 
+&lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.youtube.com/watch?v=ZBtXl3EuU14&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ZBtXl3EuU14&#34;&gt;https://www.youtube.com/watch?v=ZBtXl3EuU14&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=ZBtXl3EuU14&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ZBtXl3EuU14&#34;&gt;https://www.youtube.com/watch?v=ZBtXl3EuU14&lt;/a&gt;&lt;/a&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -381,31 +443,38 @@ longer presentation on the topic: &lt;/p&gt;
 Earlier today I saw a facebook post asking for thoughts on teaching
 sorting. The question was specifically not  about motivations like
 having the class act out sorts or sort cards but rather about the
-coding. &lt;/p&gt;
+coding. 
+&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve been meaning to write about this since last summer when I
-attended Owen Astrachan&amp;#39;s talk on the same subject.&lt;/p&gt;
+attended Owen Astrachan&amp;#39;s talk on the same subject.
+&lt;/p&gt;
 &lt;p&gt;
 Early in my career when teaching sorting I developed the n^2 sorts as
 standalone routines just as they&amp;#39;re presented in most books but as I
 gained more experience as a teacher, I changed it up to build the
-sorts (at least some of them) from existing concepts. &lt;/p&gt;
+sorts (at least some of them) from existing concepts. 
+&lt;/p&gt;
 &lt;p&gt;
-Let&amp;#39;s look at the selection sort.&lt;/p&gt;
+Let&amp;#39;s look at the selection sort.
+&lt;/p&gt;
 &lt;p&gt;
 We can demonstrate it by arranging an already dealt hand. Find the
 smallest card place it all the way at the left. The next smallest,
-next to it. Repeat until done.&lt;/p&gt;
+next to it. Repeat until done.
+&lt;/p&gt;
 &lt;p&gt;
 This is actually a very easy algorithm to develop using code the kids
-have already written.&lt;/p&gt;
+have already written.
+&lt;/p&gt;
 &lt;p&gt;
 By the time we do sorting, students have already written the code to
 find the smallest or largest in a list time and time again. We&amp;#39;ve also
 used that concept in developing other algorithms like the one I wrote
 about &lt;a href=&#34;https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_election-quadratic_to_linear_time/&#34;&gt;here&lt;/a&gt;. Assuming we&amp;#39;ve covered the ArrayList, We can easily code
 up a sorting type algorithm (excuse any little Java errors, I&amp;#39;ve been
-teaching this in C++ for the past 3 years):&lt;/p&gt;
+teaching this in C++ for the past 3 years):
+&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sort&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
       ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
@@ -422,10 +491,12 @@ teaching this in C++ for the past 3 years):&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This won&amp;#39;t be efficient due to &lt;a href=&#34;https://cestlaz.github.io/posts/2014-11-17-hidden-complexity/&#34;&gt;hidden complexity&lt;/a&gt; but it&amp;#39;s very easy to
-write and understand the algorithm&lt;/p&gt;
+write and understand the algorithm
+&lt;/p&gt;
 &lt;p&gt;
 From here it&amp;#39;s a simple matter to code this algorithm in place -
-swapping the next smallest item each time. This time coded with an array::&lt;/p&gt;
+swapping the next smallest item each time. This time coded with an array::
+&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; min_index&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
@@ -438,19 +509,23 @@ swapping the next smallest item each time. This time coded with an array::&lt;/p
 &lt;p&gt;
 If you want, you can then break out the findMinIndex routine and the
 swap so that kids see all the code in one place but regardless, this
-is an easy, incremental way of teaching selection sort.&lt;/p&gt;
+is an easy, incremental way of teaching selection sort.
+&lt;/p&gt;
 &lt;p&gt;
 You can do something similar with insertion sort. Start with the code
 to insert an item into an already sorted list. Write that as a routine
-and then put a loop around it to complete the sort.&lt;/p&gt;
+and then put a loop around it to complete the sort.
+&lt;/p&gt;
 &lt;p&gt;
 Developing routines like this incrementally has a number of
 advantages. The code is simpler, it reinforces old concepts, and it
 gives students additional practice in composing more complex solutions
-from building blocks.&lt;/p&gt;
+from building blocks.
+&lt;/p&gt;
 &lt;p&gt;
 You can use a similar approach to coding the more advanced sorts but
-I&amp;#39;ll save those ideas for a future post.&lt;/p&gt;
+I&amp;#39;ll save those ideas for a future post.
+&lt;/p&gt;
 </description>
     </item>
     
@@ -463,20 +538,25 @@ I&amp;#39;ll save those ideas for a future post.&lt;/p&gt;
       <description>&lt;p&gt;
 Over on the &lt;a href=&#34;https://cseducators.stackexchange.com/&#34;&gt;CS Educator StachExchange&lt;/a&gt;, which is in private beta for a
 few more days, I saw a post asking about how to introduce the &lt;a href=&#34;https://en.wikipedia.org/wiki/A*_search_algorithm&#34;&gt;A*
-search algorithm&lt;/a&gt;.&lt;/p&gt;
+search algorithm&lt;/a&gt;.
+&lt;/p&gt;
 &lt;p&gt;
 I taught A* as part of the APCS class at Stuy so I thought I&amp;#39;d talk
-about what I did here.&lt;/p&gt;
+about what I did here.
+&lt;/p&gt;
 &lt;p&gt;
 Some time around mid year, we get to intermediate recursion. This is
-about the time, give or take, when we talk about the nlogn sorts.&lt;/p&gt;
+about the time, give or take, when we talk about the nlogn sorts.
+&lt;/p&gt;
 &lt;p&gt;
 We also build a recursive maze solver. It&amp;#39;s a nice algorithm and a
 nice little program. It&amp;#39;s around 15 lines of code to perform a
-recursive depth first search:&lt;/p&gt;
+recursive depth first search:
+&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/astar/dfs.gif&#34; alt=&#34;/img/astar/dfs.gif&#34; title=&#34;/img/astar/dfs.gif&#34; align=&#34;center&#34; height=&#34;200px&#34;/&gt;
 &lt;p&gt;
-The basic algorithm is:&lt;/p&gt;
+The basic algorithm is:
+&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -485,29 +565,34 @@ It&amp;#39;s a nice lesson because in addition to all the recursion stuff, we
 also get to talk about state space, state space search, backtracking,
 efficiency concerns and much more. After we finish the maze solver, we also talk about
 other problems that can be similarly examined using state-space search
-like the knights tour and N-queens problems.&lt;/p&gt;
+like the knights tour and N-queens problems.
+&lt;/p&gt;
 &lt;p&gt;
 A month or so later, when we&amp;#39;re learning about stacks and queues as
 data structures, we revisit the maze solver. This time we solve the
 problem in a more general way. We talk about using a data structure to
 hold the set of nodes that we&amp;#39;re aware of and that we want to visit
-next.&lt;/p&gt;
+next.
+&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 As we write the solution, we see that using a queue for this
-data structure yields a breadth first search:&lt;/p&gt;
+data structure yields a breadth first search:
+&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/astar/bfs.gif&#34; alt=&#34;/img/astar/bfs.gif&#34; title=&#34;/img/astar/bfs.gif&#34; align=&#34;center&#34; height=&#34;200px&#34;/&gt;
 &lt;p&gt;
-while using a stack yields depth first.&lt;/p&gt;
+while using a stack yields depth first.
+&lt;/p&gt;
 &lt;p&gt;
 All of this leads to a discussion as to how deciding on which
 locations to look at next can greatly influence the steps to the
 exit. From here it&amp;#39;s easy to see that you can use a heuristic to order
 the nodes in our data structure so that we explore &amp;#34;better&amp;#34;
 possibilities first. The data structure becomes a priority queue and
-we finally get to both &amp;#34;best first&amp;#34; and A* search:&lt;/p&gt;
+we finally get to both &amp;#34;best first&amp;#34; and A* search:
+&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/astar/astar.gif&#34; alt=&#34;/img/astar/astar.gif&#34; title=&#34;/img/astar/astar.gif&#34; align=&#34;center&#34; height=&#34;200px&#34;/&gt;
 &lt;p&gt;
 It&amp;#39;s a nice sequence of lessons, albeit lessons spread out over
@@ -515,7 +600,8 @@ months. The end result is that the students see both the need and
 motivation for something like A* and they see that it&amp;#39;s not hard to
 implement. One basic routine where you can plug in one of three data
 structures - stack, queue, or priority queue to get very different
-results.&lt;/p&gt;
+results.
+&lt;/p&gt;
 </description>
     </item>
     

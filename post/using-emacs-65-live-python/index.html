@@ -14,13 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1612834437" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1616088856" />
 
 
 
 <meta property="og:title" content="Using Emacs 65 - Live Python" />
-<meta property="og:description" content="The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level.  Normally, when you code Python, if you&#39;re working in a REPL, every time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.
- With this module, your file is continually evaluated as you type and it shows you the results in a side window." />
+<meta property="og:description" content="The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level.  Normally, when you code Python, if you&#39;re working in a REPL, every time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.  With this module, your file is continually evaluated as you type and it shows you the results in a side window." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-65-live-python/" />
 <meta property="article:published_time" content="2020-02-02T13:13:09-04:00" />
@@ -28,8 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 65 - Live Python"/>
-<meta name="twitter:description" content="The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level.  Normally, when you code Python, if you&#39;re working in a REPL, every time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.
- With this module, your file is continually evaluated as you type and it shows you the results in a side window."/>
+<meta name="twitter:description" content="The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level.  Normally, when you code Python, if you&#39;re working in a REPL, every time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.  With this module, your file is continually evaluated as you type and it shows you the results in a side window."/>
 
 
 
@@ -80,46 +78,59 @@
         <div class="content">
             <p>
 The other day I stumbled upon Emacs&#39;s <a href="https://github.com/donkirkby/live-py-plugin">Live Coding</a> plugin. It takes
-interactive coding up to the next level. </p>
+interactive coding up to the next level. 
+</p>
 <p>
 Normally, when you code Python, if you&#39;re working in a REPL, every
 time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re
 working ina source file, you&#39;re just editing until you send the file
-into a Python interpreter.</p>
+into a Python interpreter.
+</p>
 <p>
 With this module, your file is continually evaluated as you type and
-it shows you the results in a side window. </p>
+it shows you the results in a side window. 
+</p>
 <p>
-If you type in:</p>
+If you type in:
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
 b <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
 c <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> b
-<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">+</span>c)</code></pre></div></p>
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">+</span>c)</code></pre></div>
+</p>
 <p>
-The live python window will display something like:</p>
+The live python window will display something like:
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
 b <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
 c <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">100</span>)</code></pre></div></p>
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">100</span>)</code></pre></div>
+</p>
 <p>
-If you change one of the variables, everything updates.</p>
+If you change one of the variables, everything updates.
+</p>
 <p>
-It gets even cooler when you add loops, functions, and even recursion.</p>
+It gets even cooler when you add loops, functions, and even recursion.
+</p>
 <p>
-There&#39;s also support for unit testing.</p>
+There&#39;s also support for unit testing.
+</p>
 <p>
 It works, to varying degrees with Emacs, PyCharmm, Sublime Text and
 there&#39;s even a browser version. Emacs handles the basics and it seems
 that the Sublime Text version adds support for some graphing. PyCharm
-has that plus turtle graphics.</p>
+has that plus turtle graphics.
+</p>
 <p>
 While this is <strong>very</strong> cool, to be honest, I don&#39;t know how useful this
 is going to be but I&#39;m very excited to play with it in the Fall when
-I&#39;ll be teaching Python again.</p>
+I&#39;ll be teaching Python again.
+</p>
 <p>
-Check out this short video to see it in action:</p>
+Check out this short video to see it in action:
+</p>
 
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/bYy90EUAh98" frameborder="0"
