@@ -6,10 +6,86 @@
     <description>C&#39;est la Z (csed)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 06:07:26 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Mar 2021 19:35:57 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/csed/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>New York City has Certified CS Teachers</title>
+      <link>https://cestlaz.github.io/post/certified-teachers/</link>
+      <pubDate>Tue, 23 Mar 2021 19:35:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/certified-teachers/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;m super proud to say that New York City now has state certified
+Computer Science Teachers!!!!!!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/cs-cert.png&#34; width=&#34;500px&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s been a long road - really long if you consider I got started on
+my CS Ed journey decades ago and there&amp;#39;s a long road ahead but we hit
+a major milestone. 
+&lt;/p&gt;
+&lt;p&gt;
+I started at Hunter a little over five years ago and creating teacher
+certification programs was one of the goals. Back then, the state had
+neither CS certification nor CS standards. The certification area was
+created a year or so ago and the standards were just adopted this past
+December. Hunter&amp;#39;s programs were approved December 2019 and we started
+our first advanced certificate cohort last summer. 
+&lt;/p&gt;
+&lt;p&gt;
+Twenty one working teachers, all certified in another subject
+area. They spent a big chunk of their summer with us all day every day
+and continued on with classes and field work in the Fall. Many
+finished last December while a few needed one more course which
+they&amp;#39;re taking now. Earlier today on our Slack, teachers from that
+cohort started sharing that they either received their state
+certificates in the mail or that they looked themselves up on the
+NYSED web site and confirmed that they were now certified to teach
+computer science in the state of NY.
+&lt;/p&gt;
+&lt;p&gt;
+This is big news.
+&lt;/p&gt;
+&lt;p&gt;
+The entire cohort came in as strong teachers and they all grew
+tremendously in terms of CS knowledge and their ability to teach
+it. Now they represent the first of a growing group of certified CS
+teachers - education leaders to provide a core of experts in terms of
+both CS content and how to teach it.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m super proud of the cohort and super proud to be part of this. One
+of the best parts for me have been meeting and working with these
+great teachers and having this new learning network form - hopefully
+we can keep it growing for years to come. Another is being able to get
+the band back together - I was able to bring in my old partners in
+crime JonAlf and Topher to teach and anyone who&amp;#39;s seen them teach know
+that they&amp;#39;re the best. I couldn&amp;#39;t include our other co-conspirator,
+Sam, because he was on sabbatical and couldn&amp;#39;t work but hopefully that
+will change next time around. Not having a team at Hunter has been
+really one of the few downsides so being able to work with my &amp;#34;go to
+guys&amp;#34; again was a blast.
+&lt;/p&gt;
+&lt;p&gt;
+We also have our Masters program well underway so the pipeline of CS
+teachers is starting to form. 
+&lt;/p&gt;
+&lt;p&gt;
+This is exciting news for New York City, Hunter and for me
+personally. Long road ahead but as of today, a bunch of students in
+NYC are being taught by state certified computer science teachers and
+there will be more to come.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Preparing CS Teachers - tools for remote instruction</title>
@@ -4819,63 +4895,6 @@ work.
 &lt;/p&gt;
 &lt;p&gt;
 Hope to see many of you this weekend at CSTA2018.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Talking about CS teacher certification at CSTA 2018</title>
-      <link>https://cestlaz.github.io/posts/csta-2018/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/csta-2018/</guid>
-      <description>&lt;p&gt;
-As I mentioned in my last post, this coming weekend is the Computer
-Science Teachers Association (CSTA) conference. I&amp;#39;ve been a member of
-CSTA since the beginning but this will be only the second time I&amp;#39;ve
-made it to the annual conference.
-&lt;/p&gt;
-&lt;p&gt;
-The CSTA conference might be the largest conference specifically for
-k12 computer science teachers and that makes it different from
-conferences like SIGCSE which is for CS education and education
-research at all levels or ISTE which seems to be more of an Ed Tech
-conference.
-&lt;/p&gt;
-&lt;p&gt;
-I really enjoyed the conference last year but as the sessions seemed
-to be weighted towards beginning CS teachers and towards the CSTA
-standards I found most of the value in the &amp;#34;hallway track&amp;#34; when I got
-to meet and chat with CS teachers from all over the country.
-&lt;/p&gt;
-&lt;p&gt;
-Glancing at the program, there looks to be a bunch of interesting
-sessions and this time more sessions that I think I&amp;#39;ll personally be
-interested in .
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m also giving a talk. New York State just approved and created K12
-Computer Science Teacher Certification and we&amp;#39;re currently making
-plans to roll out our Masters and Certificate programs for CS teachers
-as soon as we get state approval. The Masters program will be largely
-for preservice teacher candidates and the certificate program for in
-service teachers certified in other areas.
-&lt;/p&gt;
-&lt;p&gt;
-The talk will cover a bit of the history of CS Education in New York,
-what the state is doing and mostly what where building at Hunter and
-why. It should be a fun talk. I&amp;#39;m hoping for some people from other
-states attend so we can have a rich discussion during the session.
-&lt;/p&gt;
-&lt;p&gt;
-So, if you&amp;#39;re going to be at the CSTA conference, I&amp;#39;d love to see
-you either at my session or at the conference in general. I&amp;#39;ll be
-spending most of my non session time there with my friends at GitHub
-education.
-&lt;/p&gt;
-&lt;p&gt;
-For those of you can&amp;#39;t make it, I hope to blog about the weekend and I
-hope others do as well.
 &lt;/p&gt;
 </description>
     </item>
