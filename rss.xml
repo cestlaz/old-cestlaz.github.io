@@ -6,10 +6,120 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Apr 2021 08:31:47 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 May 2021 06:53:26 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>If you build programs, teachers will come</title>
+      <link>https://cestlaz.github.io/post/people-will-teach-cs/</link>
+      <pubDate>Thu, 27 May 2021 06:53:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/people-will-teach-cs/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s been a month since my last post. In fact it seems that most of
+the usual CS Ed bloggers are down in frequency this year. For me it&amp;#39;s
+probably been Covid fatigue and the resulting funk but I&amp;#39;m going to
+see if I can force myself to write more frequently.
+&lt;/p&gt;
+&lt;p&gt;
+So, the other day someone was asking about CS certification in NY
+state on Facebook. One comment caught my eye. It was about Michigan
+dropping all requirements to teach CS because, and I&amp;#39;m paraphrasing
+here, nobody who knows enough CS to go into industry will ever become
+a teacher.
+&lt;/p&gt;
+&lt;p&gt;
+I both resent and resemble that remark as do a handful of my
+colleagues.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve heard this argument many times. A particularly disgusting version
+goes &amp;#34;if we teach CS teachers too much CS they&amp;#39;ll leave for industry.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t buy it. That&amp;#39;s just an excuse and it&amp;#39;ll keep our students from
+getting the teachers they both need and deserve. Why don&amp;#39;t I buy it?
+Math and Science. CS is the hot subject these days and, at least in
+theory, with a strong tech background you can &amp;#34;easily&amp;#34; get a high
+paying job but CS wasn&amp;#39;t always the be all and end all. There were and
+are other fields that pay well and can pull from our pool of potential
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s dig a little deeper. Nowadays you can become certified in math
+or science in New York state by completing an &amp;#34;approved program,&amp;#34;
+taking some state exams and jumping through a few hoops. This has led
+programs in &amp;#34;math education.&amp;#34; Some of these  programs provide teachers
+with a solid foundation in math but some, not so much. Back before no
+child left behind, at least in New York City, you had to actually know
+your math. You needed legit math credits as opposed to math-ed (which
+can be legit or lame) and you had to get through the &amp;#34;board of
+examiners&amp;#34; where you had to face a panel of teachers and assistant
+principals who could grill you on all manner of content.
+&lt;/p&gt;
+&lt;p&gt;
+Where am I going with this?
+&lt;/p&gt;
+&lt;p&gt;
+Well, a math teacher who knows their math, at least in NY has plenty
+of alternatives. Accounting has always been a mainstay but for the big
+bucks we have wall street. How is it we have math teachers that know
+math when wall street and those big bonuses beckon? Same thing with
+some of the sciences - we&amp;#39;ve got big pharma right across the river.
+&lt;/p&gt;
+&lt;p&gt;
+The truth is that some people are good in their subject area and
+actually want to become teachers. This might not be the majority of CS
+people, math people etc. but there are some. Math and science might be
+shortage areas in schools over time but somehow schools manage to find
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+The problem with CS is that there was never a career path. If you knew
+CS you couldn&amp;#39;t get certification so you had to go in through math or
+some other subject. Then you had to find a school where you could
+teach CS and of course, for seniority and job retention you were
+always lumped in with another discipline.
+&lt;/p&gt;
+&lt;p&gt;
+Now, a career path is developing. We&amp;#39;ve got programs like mine at
+Hunter through which a prospective teacher can become certified and we
+have schools starting to offer CS and they&amp;#39;ll want to hire those CS
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;ll just take time.
+&lt;/p&gt;
+&lt;p&gt;
+Our first Masters cohort at Hunter has four students in it. Our
+second, which will start in the Fall looks like it will have
+around 6. These are small but from what I&amp;#39;m told, pretty good sizes
+for a new program, particularly when there was zero advertising and
+outreach. I&amp;#39;ve also started to get questions from undergraduate CS
+students.
+&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;re not going to solve K12 CS education over night. We&amp;#39;ve got to play
+the long game. Positions that need certified CS teachers are starting
+to appear as are pathways to certification. There will be people who
+want to teach and want to teach CS. If we give them the pathway they
+will come.
+&lt;/p&gt;
+&lt;p&gt;
+As a final thought though, knowledgeable CS teachers do have a
+choice. So do knowledgable math and science teachers. If they&amp;#39;re
+leaving teaching or not even entering the profession it&amp;#39;s not because
+of CS, math, or science. It&amp;#39;s because we&amp;#39;ve made teaching as a
+profession so undesireable and those teachers have options. That&amp;#39;s why
+I found that version of the argument I mentioned up at the top so
+disgusting. People who don&amp;#39;t want CS teachers to know real CS are
+really saying that the only way they can get and keep teachers is to
+in fact keep them uneducated.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Teaching Styles</title>
@@ -4834,92 +4944,6 @@ window, a document camera or anything else.
 &lt;p&gt;
 If you&amp;#39;re teaching remotely using a conferencing platform I recommend
 you check this out.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Starting the new semester</title>
-      <link>https://cestlaz.github.io/post/new-semester/</link>
-      <pubDate>Fri, 28 Aug 2020 08:56:23 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/new-semester/</guid>
-      <description>&lt;p&gt;
-Thursday was the first day of the new semester. The big change was
-that my classes were done remotely but there were also some other
-differences. Other changes were that I only met one of my two CS
-classes on Thursday. That&amp;#39;s my CS0. I&amp;#39;m also teaching a recitation for
-CS1 which only meets once a week. I&amp;#39;ll see those students as well as
-my CS0 students for a second time on Monday.
-&lt;/p&gt;
-&lt;p&gt;
-I opted to use &lt;a href=&#34;https://codingrooms.com/&#34;&gt;Coding Rooms&lt;/a&gt; instead of Zoom since Coding Rooms has a
-nice built in REPL. We had a couple of students drop a couple of times
-and I had to reload once but even that&amp;#39;s no worse than typical Zoom
-performance. It&amp;#39;s funny how once one product becomes &lt;strong&gt;it&lt;/strong&gt; everything
-that&amp;#39;s different is labeled as harder and whenever there&amp;#39;s a hiccup
-it&amp;#39;s so much worse. The truth is, I&amp;#39;ve now used a bunch of platforms
-and none is harder than the others - you just have to look to
-different places. For example, in Zoom, you &amp;#34;raise your hand&amp;#34; by
-clicking in one place and in Coding Rooms (or Big Blue Button)
-another. Neither is inherently better - just different but people seem
-to think that the non Zoom one is worse just because Zoom got so hot
-so fast. Likewise, other platforms periodically drop people and crash
-but so does Zoom. This is all a digression but it&amp;#39;s something that
-bothers me. Zoom does some things really well but then again so do the
-other platforms I&amp;#39;ve been playing with. So far, there&amp;#39;s no silver
-bullet.
-&lt;/p&gt;
-&lt;p&gt;
-As you might imagine, class had a different feel. I think it went
-pretty well but it&amp;#39;s certainly going to be harder to build a sense of
-community. Since there was a good deal of class logistics to cover we
-didn&amp;#39;t really get to play with the Coding Rooms REPL but I&amp;#39;ll report
-on that soon. I&amp;#39;ll also mention that we&amp;#39;re going to see about using
-&lt;a href=&#34;https://zulip.com/&#34;&gt;Zulip&lt;/a&gt; instead of Slack for chat both in class and out. Like Zoom,
-Slack is the de facto standard but Zulip seems to have a few distinct
-advantages: 
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s open source
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-You can self host it (and it&amp;#39;s free if you self host)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s built around threads so I suspect it will be easier to deal
-with discussions both synchronously and asynchronously more easily.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-The disadvantages are that there aren&amp;#39;t as many integrations, most
-notably there&amp;#39;s no Giphy and it&amp;#39;s not the eponymous chat
-platform. Note that it&amp;#39;s not that I don&amp;#39;t like Slack but was driven to
-look for alternatives because I don&amp;#39;t have a budget and the free tier
-has limited history and I believe integrations.
-&lt;/p&gt;
-&lt;p&gt;
-The other big change this semester involve our K12 CS teacher
-certification program. Our summer cohort kicked off there next two
-classes on Thursday afternoon and evening - Ethics in Computer Science
-and Curriculum Development for CS. I designed both courses but am not
-the official teacher. Topher and JonAlf who worked the summer with me
-are each taking one but I&amp;#39;m going to be very involved. We also had
-four students start in our Masters program. I&amp;#39;ll be writing about all
-of this over the course of the school year.
-&lt;/p&gt;
-&lt;p&gt;
-Spent most of yesterday getting ready for Monday - setting up the
-Zulip server, GitHub repos and GitHub classroom and the like. As
-usual, I&amp;#39;m a slow starter but hopefully by mid next week will feel
-like I&amp;#39;m in the swing of things.
 &lt;/p&gt;
 </description>
     </item>

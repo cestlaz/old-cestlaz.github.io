@@ -6,10 +6,120 @@
     <description>C&#39;est la Z (csed)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Mar 2021 19:35:57 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 May 2021 06:53:26 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/csed/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>If you build programs, teachers will come</title>
+      <link>https://cestlaz.github.io/post/people-will-teach-cs/</link>
+      <pubDate>Thu, 27 May 2021 06:53:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/people-will-teach-cs/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s been a month since my last post. In fact it seems that most of
+the usual CS Ed bloggers are down in frequency this year. For me it&amp;#39;s
+probably been Covid fatigue and the resulting funk but I&amp;#39;m going to
+see if I can force myself to write more frequently.
+&lt;/p&gt;
+&lt;p&gt;
+So, the other day someone was asking about CS certification in NY
+state on Facebook. One comment caught my eye. It was about Michigan
+dropping all requirements to teach CS because, and I&amp;#39;m paraphrasing
+here, nobody who knows enough CS to go into industry will ever become
+a teacher.
+&lt;/p&gt;
+&lt;p&gt;
+I both resent and resemble that remark as do a handful of my
+colleagues.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve heard this argument many times. A particularly disgusting version
+goes &amp;#34;if we teach CS teachers too much CS they&amp;#39;ll leave for industry.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t buy it. That&amp;#39;s just an excuse and it&amp;#39;ll keep our students from
+getting the teachers they both need and deserve. Why don&amp;#39;t I buy it?
+Math and Science. CS is the hot subject these days and, at least in
+theory, with a strong tech background you can &amp;#34;easily&amp;#34; get a high
+paying job but CS wasn&amp;#39;t always the be all and end all. There were and
+are other fields that pay well and can pull from our pool of potential
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s dig a little deeper. Nowadays you can become certified in math
+or science in New York state by completing an &amp;#34;approved program,&amp;#34;
+taking some state exams and jumping through a few hoops. This has led
+programs in &amp;#34;math education.&amp;#34; Some of these  programs provide teachers
+with a solid foundation in math but some, not so much. Back before no
+child left behind, at least in New York City, you had to actually know
+your math. You needed legit math credits as opposed to math-ed (which
+can be legit or lame) and you had to get through the &amp;#34;board of
+examiners&amp;#34; where you had to face a panel of teachers and assistant
+principals who could grill you on all manner of content.
+&lt;/p&gt;
+&lt;p&gt;
+Where am I going with this?
+&lt;/p&gt;
+&lt;p&gt;
+Well, a math teacher who knows their math, at least in NY has plenty
+of alternatives. Accounting has always been a mainstay but for the big
+bucks we have wall street. How is it we have math teachers that know
+math when wall street and those big bonuses beckon? Same thing with
+some of the sciences - we&amp;#39;ve got big pharma right across the river.
+&lt;/p&gt;
+&lt;p&gt;
+The truth is that some people are good in their subject area and
+actually want to become teachers. This might not be the majority of CS
+people, math people etc. but there are some. Math and science might be
+shortage areas in schools over time but somehow schools manage to find
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+The problem with CS is that there was never a career path. If you knew
+CS you couldn&amp;#39;t get certification so you had to go in through math or
+some other subject. Then you had to find a school where you could
+teach CS and of course, for seniority and job retention you were
+always lumped in with another discipline.
+&lt;/p&gt;
+&lt;p&gt;
+Now, a career path is developing. We&amp;#39;ve got programs like mine at
+Hunter through which a prospective teacher can become certified and we
+have schools starting to offer CS and they&amp;#39;ll want to hire those CS
+teachers.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;ll just take time.
+&lt;/p&gt;
+&lt;p&gt;
+Our first Masters cohort at Hunter has four students in it. Our
+second, which will start in the Fall looks like it will have
+around 6. These are small but from what I&amp;#39;m told, pretty good sizes
+for a new program, particularly when there was zero advertising and
+outreach. I&amp;#39;ve also started to get questions from undergraduate CS
+students.
+&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;re not going to solve K12 CS education over night. We&amp;#39;ve got to play
+the long game. Positions that need certified CS teachers are starting
+to appear as are pathways to certification. There will be people who
+want to teach and want to teach CS. If we give them the pathway they
+will come.
+&lt;/p&gt;
+&lt;p&gt;
+As a final thought though, knowledgeable CS teachers do have a
+choice. So do knowledgable math and science teachers. If they&amp;#39;re
+leaving teaching or not even entering the profession it&amp;#39;s not because
+of CS, math, or science. It&amp;#39;s because we&amp;#39;ve made teaching as a
+profession so undesireable and those teachers have options. That&amp;#39;s why
+I found that version of the argument I mentioned up at the top so
+disgusting. People who don&amp;#39;t want CS teachers to know real CS are
+really saying that the only way they can get and keep teachers is to
+in fact keep them uneducated.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>New York City has Certified CS Teachers</title>
@@ -4751,150 +4861,6 @@ CSTA is a great option for teachers that can afford it.
 &lt;p&gt;
 Here in NY, our CSTA chapter is fairly young. I&amp;#39;m excited to see what
 this year brings both on the local and national level.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>I&#39;m not going to congratulate you on your AP results</title>
-      <link>https://cestlaz.github.io/posts/ap-2018/</link>
-      <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/ap-2018/</guid>
-      <description>&lt;p&gt;
-While busy finishing off my sides for my talk at CSTA2018 this weekend
-I noticed a Facebook post about APCS exam grades now or shortly being
-available.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m no longer teaching high school but still fancy myself a teacher
-first and part of the K12CS community. We&amp;#39;re a growing community and
-we&amp;#39;re growing fast.
-&lt;/p&gt;
-&lt;p&gt;
-Usually, at this time of year we see a number of people posting their
-results. &amp;#34;I had 16 test takers, had 5 fives, 6 fours etc.&amp;#34;
-&lt;/p&gt;
-&lt;p&gt;
-I decided that not only won&amp;#39;t I be congratulating anyone on their
-results this year but decided to write this quick post to say no one
-should.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m not saying that hundreds of teachers out there don&amp;#39;t deserve
-congratulations - they do. The problem is, for everyone who&amp;#39;s kids
-got all fours and fives, somewhere out there was a teacher who
-possibly through no fault of their own had students scoring ones, twos
-and threes.
-&lt;/p&gt;
-&lt;p&gt;
-When I was at Stuy, almost all of my kids got fours or fives when the
-exam was the old AB exam. When it went to A only, it was almost
-exclusively fives with a few fours and maybe a single one. That wasn&amp;#39;t
-me. It was the kids. The AP CS teacher before me got similar results
-as did all of my colleagues and the teachers who are still
-there. Again, it was the kids.
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s not to say that I didn&amp;#39;t add value. I know I spent a career at
-Stuy doing right by those kids regardless of test scores.
-&lt;/p&gt;
-&lt;p&gt;
-The fact is that there&amp;#39;s only so much a teacher can do.
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Was APCS (A or principles) their first course?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-What other demands are placed on the students?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-How about the teacher?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-How many kids in a class? How much time?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Is APCS an elective or required??
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Is the teacher getting the support they need?
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-And the list goes on. I know some great teachers who never had classes
-with great AP results and meh teachers that did. Actually, I know some
-APCS and Calc teachers that consistently had classes with good scores
-through drill and kill and building student speed. Of course, at the
-same time these teachers totally turned the kids off from the subjects
-&lt;/p&gt;
-&lt;p&gt;
-Our teachers do deserve praise and congratulations.
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Praise for getting through another year.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Praise for forging a path in this new subject area.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Praise for doing more with less.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Praise for inspiring kids and starting them on a path.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Praise for changing lives for the better.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-And so on
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-If your kids left with more than they came in with you did a great job
-and deserve congratulations. If you set a seed that will later grow
-you&amp;#39;ve done an enormous amount of good.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s like I would always tell my kids when they won an award. I was
-never proud of them actually winning the award. I was proud of how they carried
-themselves, prepared, performed or whatever. The award was just some
-outsider also noticing they&amp;#39;re awesome.
-&lt;/p&gt;
-&lt;p&gt;
-Same thing here so I won&amp;#39;t be congratulating teachers on student test
-results. The results coming in do provide some measure of closure for
-the year though so I will congratulate you all on the year and your
-work.
-&lt;/p&gt;
-&lt;p&gt;
-Hope to see many of you this weekend at CSTA2018.
 &lt;/p&gt;
 </description>
     </item>
