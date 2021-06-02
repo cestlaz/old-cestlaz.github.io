@@ -14,12 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622118319" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
 
 
 
 <meta property="og:title" content="A Teacher Looks at Advent of Code 2020 - 19 through 23" />
-<meta property="og:description" content="A few days have past so it&#39;s time for an update. Two more days to go and while I haven&#39;t completed all the problems, I have accumulated 43 stars which is a personal best. Given the nature of the problems I&#39;m missing, I might even go back and do them at some point. Of course, I may very well also just crash out on the final two days.  As usual, all my code is up here." />
+<meta property="og:description" content="A few days have past so it&#39;s time for an update. Two more days to go and while I haven&#39;t completed all the problems, I have accumulated 43 stars which is a personal best. Given the nature of the problems I&#39;m missing, I might even go back and do them at some point. Of course, I may very well also just crash out on the final two days." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-19-23/" />
 <meta property="article:published_time" content="2020-12-23T15:09:38-04:00" />
@@ -27,7 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher Looks at Advent of Code 2020 - 19 through 23"/>
-<meta name="twitter:description" content="A few days have past so it&#39;s time for an update. Two more days to go and while I haven&#39;t completed all the problems, I have accumulated 43 stars which is a personal best. Given the nature of the problems I&#39;m missing, I might even go back and do them at some point. Of course, I may very well also just crash out on the final two days.  As usual, all my code is up here."/>
+<meta name="twitter:description" content="A few days have past so it&#39;s time for an update. Two more days to go and while I haven&#39;t completed all the problems, I have accumulated 43 stars which is a personal best. Given the nature of the problems I&#39;m missing, I might even go back and do them at some point. Of course, I may very well also just crash out on the final two days."/>
 
 
 
@@ -82,23 +82,21 @@ A few days have past so it&#39;s time for an update. Two more days to go
 and while I haven&#39;t completed all the problems, I have accumulated 43
 stars which is a personal best. Given the nature of the problems I&#39;m
 missing, I might even go back and do them at some point. Of course, I
-may very well also just crash out on the final two days.
-</p>
+may very well also just crash out on the final two days.</p>
 <p>
-As usual, all my code is up <a href="https://github.com/zamansky/advent2020">here</a>. 
-</p>
+As usual, all my code is up <a href="https://github.com/zamansky/advent2020">here</a>. </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Day 19
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-<a href="https://adventofcode.com/2020/day/19">Problem Link</a>
-</p>
+<a href="https://adventofcode.com/2020/day/19">Problem Link</a></p>
 <p>
 Not a whole lot to say about this one. It&#39;s the weekend and AoC has
 traditionally had longer / harder problems over the weekends. I was
 surprised when the first weekend&#39;s problems - 12 and 13 weren&#39;t
-significantly longer than the surrounding days. 
-</p>
+significantly longer than the surrounding days. </p>
 <p>
 I read over this and it screamed <strong>parser</strong> and to be honest, I really
 wasn&#39;t up for writing a parser on a Saturday morning. Instead, I
@@ -106,95 +104,85 @@ cheaped out.  I looked for a Clojure parser generator and found
 <a href="https://github.com/engelberg/instaparse">instaparse</a>. What&#39;s more, instaparse supported input in the form of the
 provided AoC data so I literally just had to read the grammar into
 instaparse and run it on the data for the answer. Part 2 was pretty
-much the same.
-</p>
+much the same.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Day 20
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
-<a href="https://adventofcode.com/2020/day/20">Problem Link</a>
-</p>
+<a href="https://adventofcode.com/2020/day/20">Problem Link</a></p>
 <p>
 This was the big one. Basically taking 144 tiles and figuring out how
-to form them in an image. 
-</p>
+to form them in an image. </p>
 <p>
 I finished part 1. I read in all the tiles and then for each, compared
 it&#39;s edges with the edges of the other tiles (and the reverse of the
 edges to account for transformations). This told me how many other
 tiles each tile connects with. Central tiles each connect to 4 other
 ties, edges, to three but corners only to 2. Part 1 just had you find
-the corners so it wasn&#39;t too big a deal.
-</p>
+the corners so it wasn&#39;t too big a deal.</p>
 <p>
 Part 2 involves assembling the image and then finding sea monsters. I
 haven&#39;t done this yet. Armed with the corner, it should be easy to
-find the top row and then build the image going down. 
-</p>
+find the top row and then build the image going down. </p>
 <p>
 I think it&#39;s going to be a bear to code though since each tile has to
 be transformed via flipping and/or rotating into the correct
-orientation.
-</p>
+orientation.</p>
 <p>
-I&#39;m hoping to get back to it. We&#39;ll see though. 
-</p>
+I&#39;m hoping to get back to it. We&#39;ll see though. </p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 Day 21
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>
-<a href="https://adventofcode.com/2020/day/21">Problem Link</a>
-</p>
+<a href="https://adventofcode.com/2020/day/21">Problem Link</a></p>
 <p>
 Haven&#39;t done this one yet. Just couldn&#39;t get my head around the
-example on an early Monday morning. 
-</p>
+example on an early Monday morning. </p>
 <p>
 I don&#39;t know if I&#39;ll finish question 20 but I do really hope to get
-back to give this one a go.
-</p>
+back to give this one a go.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 Day 22
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <p>
-<a href="https://adventofcode.com/2020/day/22">Problem Link</a>
-</p>
+<a href="https://adventofcode.com/2020/day/22">Problem Link</a></p>
 <p>
-Part 1 here was pretty straightforward - you had a few rules:
-</p>
+Part 1 here was pretty straightforward - you had a few rules:</p>
 <ul>
 <li>
-<p>
-if player 1&#39;s deck is empty, player 2 wins
-</p>
+<p>if player 1&#39;s deck is empty, player 2 wins</p>
 </li>
 <li>
-<p>
-if player 2&#39;s deck is empty, player 1 wins
-</p>
+<p>if player 2&#39;s deck is empty, player 1 wins</p>
 </li>
 <li>
-<p>
-otherwise both players draw a card and whoever drew the higher card gets both, they go on the
-back of the winners deck and you continue play.
-</p>
+<p>otherwise both players draw a card and whoever drew the higher card gets both, they go on the
+back of the winners deck and you continue play.</p>
 </li>
 </ul>
-<p>
-That&#39;s it. Basically just run the simulation.
-</p>
+<p>That&#39;s it. Basically just run the simulation.</p>
 <p>
 Part 2 added a recursive subgame. Under certain circumstances you
 pause the current game and do a little subgame. The catch is that you
 have to save the state of the current game and when the subgame or
-subgames end, you continue the suspended game from where you left off.
-</p>
+subgames end, you continue the suspended game from where you left off.</p>
 <p>
 This means that if you are representing your decks with arrays or some
 other data structure where you can change the elements you have to be
 careful. In Clojure, however, where data is immutable by default you
-don&#39;t have to worry about that. 
-</p>
+don&#39;t have to worry about that. </p>
 <p>
 I was basically able to just rewrite my play routine for the new
 rules and whenever we had to go to a subgame, I just made a
@@ -202,50 +190,40 @@ traditional recursive call. My guess is that if I had coded this up
 originally in Java or C++ I probably would have had a harder time
 going from part 1 to part 2. On the other hand, there were some
 problems with Java or C++ would have made my part 1 to part 2
-transitions easier - depends on the problem. 
-</p>
+transitions easier - depends on the problem. </p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
 <h2 id="headline-5">
 Day 23
 </h2>
+<div id="outline-text-headline-5" class="outline-text-2">
 <p>
-<a href="https://adventofcode.com/2020/day/23">Problem Link</a>
-</p>
+<a href="https://adventofcode.com/2020/day/23">Problem Link</a></p>
 <p>
-This was the fun one - at least from a teacher&#39;s point of view. 
-</p>
+This was the fun one - at least from a teacher&#39;s point of view. </p>
 <p>
 Like day 22 you had to implement a game. You set up a bunch of
-numbered cups in a circle and then: 
-</p>
+numbered cups in a circle and then: </p>
 <ul>
 <li>
-<p>
-remove the three cups right after the current cup
-</p>
+<p>remove the three cups right after the current cup</p>
 </li>
 <li>
-<p>
-find out where they should be reinserted based on the game rules
-(see the problem link for details)
-</p>
+<p>find out where they should be reinserted based on the game rules
+(see the problem link for details)</p>
 </li>
 <li>
-<p>
-reinsert those three cups at that reinsertion point.
-</p>
+<p>reinsert those three cups at that reinsertion point.</p>
 </li>
 <li>
-<p>
-move from the current cup to the next cup.
-</p>
+<p>move from the current cup to the next cup.</p>
 </li>
 </ul>
-<p>
-I did part 1 using a simple list and list manipulations. I used
+<p>I did part 1 using a simple list and list manipulations. I used
 Clojure but the python equivalent would be to have a list representing
 all the cups, move around ti with mod, and remove cups and add them
-using slices.
-</p>
+using slices.</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># given board = [3,8,9,1,2,5,4,6,7</span>
 
@@ -254,38 +232,30 @@ using slices.
   to_remove <span style="color:#f92672">=</span> board[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>]
   remaining <span style="color:#f92672">=</span> board[<span style="color:#ae81ff">4</span>:]
   idx <span style="color:#f92672">=</span> find_target(board,remove)
-  newboard <span style="color:#f92672">=</span> remaining[<span style="color:#ae81ff">0</span>:idx] <span style="color:#f92672">+</span> to_remove <span style="color:#f92672">+</span> remaining[idx:] <span style="color:#f92672">+</span> [current]</code></pre></div>
-</p>
+  newboard <span style="color:#f92672">=</span> remaining[<span style="color:#ae81ff">0</span>:idx] <span style="color:#f92672">+</span> to_remove <span style="color:#f92672">+</span> remaining[idx:] <span style="color:#f92672">+</span> [current]</code></pre></div></p>
 <p>
 I might have the indexing a little off and the <code>find_target</code> routine
 isn&#39;t shown adn might have different parameters. As I&#39;ve said, I wrote
-my solution in Clojure. This should give the general idea though. 
-</p>
+my solution in Clojure. This should give the general idea though. </p>
 <p>
-You basically had to run through 10 turns to find the answer.
-</p>
+You basically had to run through 10 turns to find the answer.</p>
 <p>
 Part 2 added a twist - the game board was now <strong>one million</strong> in size
 and you had to run the simulation through <strong>ten million</strong> turns. No way
-was my part 1 solution going to work. 
-</p>
+was my part 1 solution going to work. </p>
 <p>
 The problem called for something that required fewer list traversals
 and builds and where it would be quick and easy to find a given
-element. 
-</p>
+element. </p>
 <p>
 My first thought was to build a traditional linked list. That would
-help but it would also require a number of linear traversals.
-</p>
+help but it would also require a number of linear traversals.</p>
 <p>
-Next thought? How about a dictionary? 
-</p>
+Next thought? How about a dictionary? </p>
 <p>
 If you set up a dictionary where the keys are the nodes and the values
 represent the pointer to the next node you could really quickly and
-easily both traverse and manipulate the data set. 
-</p>
+easily both traverse and manipulate the data set. </p>
 <p>
 For example, if your board was [3,8,9,1] then you&#39;d use this
 dictionary to represent it - remember the 1 wraps back around to
@@ -293,28 +263,23 @@ the 3.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  nodes <span style="color:#f92672">=</span> {<span style="color:#ae81ff">3</span> : <span style="color:#ae81ff">8</span>,
            <span style="color:#ae81ff">8</span> : <span style="color:#ae81ff">9</span>,
            <span style="color:#ae81ff">9</span> : <span style="color:#ae81ff">1</span>,
-           <span style="color:#ae81ff">1</span> : <span style="color:#ae81ff">3</span>}</code></pre></div>
-</p>
+           <span style="color:#ae81ff">1</span> : <span style="color:#ae81ff">3</span>}</code></pre></div></p>
 <p>
 So if you&#39;re current node was represented in a variable <code>current</code> the
 three nodes you&#39;ll remove would be <code>[nodes[current],
-noeds[nodes[current]], nodes[nodes[nodes[current]]] ]</code>
-</p>
+noeds[nodes[current]], nodes[nodes[nodes[current]]] ]</code></p>
 <p>
 As an added bonus, the question pointed out that your data set would
 have every positive integer represented once. That is, part 1 had a 9
 item list with all the values 1 through 9 and the million item one had
 values 1 through 1 million. This makes finding the insertion point
-both easy and fast.
-</p>
+both easy and fast.</p>
 <p>
 It turns out that I think the dictionary based solution is actually
-cleaner than the list one in addition to being faster.
-</p>
+cleaner than the list one in addition to being faster.</p>
 <p>
 This solution was no speed demon - still took ~40 seconds to get an
-answer but that&#39;s good enough for me. 
-</p>
+answer but that&#39;s good enough for me. </p>
 <p>
 Of the problems I wrote up today, this one was my favorite. Students
 typically think of data structures as what they are - if they have an
@@ -327,8 +292,9 @@ representations. Often you use the implementation directly - use a
 hash table to store data for lookup or use an array to represent a
 list. It can be very empowering though when the student sees that
 the implementations are just tools in the belt and they can be used in
-all sorts of interesting ways.
-</p>
+all sorts of interesting ways.</p>
+</div>
+</div>
 
         </div>
         

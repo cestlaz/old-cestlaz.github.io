@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622118319" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
 
 
 
@@ -80,19 +80,16 @@
 So, yesterday I was chatting with my daughter. She was talking with
 her team and for some reason one of them pulled out an interview
 question from their company&#39;s question bank. Turns out it was today&#39;s
-Advent of Code problem. 
-</p>
+Advent of Code problem. </p>
 <p>
 As with past years, I&#39;m going to try to solve the problems in Clojure
-but if I can will talk Python when I talk about solutions. 
-</p>
+but if I can will talk Python when I talk about solutions. </p>
 <p>
 Part 1 of the problem basically asks for you to find a pair of numbers
 in an array that sum to a specific value. In this case 2020. Figuring
 that this was day 1 I didn&#39;t expect a crazy large data set or any
 other tricks or weirdness - a straightforward solution should
-suffice. Simply a loop within a loop and sum up all the pairs: 
-</p>
+suffice. Simply a loop within a loop and sum up all the pairs: </p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -107,17 +104,14 @@ suffice. Simply a loop within a loop and sum up all the pairs:
     <span style="color:#66d9ef">if</span> x<span style="color:#f92672">+</span>y <span style="color:#f92672">==</span> <span style="color:#ae81ff">2020</span>:
       <span style="color:#66d9ef">print</span>(x<span style="color:#f92672">*</span>y)</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
 Nothing fancy but it gets the job done. It does print out the answer
 twice since x and y both go through all the indices but that&#39;s no big
-deal.
-</p>
+deal.</p>
 <p>
 The part 2 twist was that now you were looking for a set of three
-entries that added up to 220. Once again, not a big deal: 
-</p>
+entries that added up to 220. Once again, not a big deal: </p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -134,27 +128,22 @@ entries that added up to 220. Once again, not a big deal:
             <span style="color:#66d9ef">if</span> x<span style="color:#f92672">+</span>y<span style="color:#f92672">+</span>z <span style="color:#f92672">==</span> <span style="color:#ae81ff">2020</span>:
                 <span style="color:#66d9ef">print</span>(x<span style="color:#f92672">*</span>y<span style="color:#f92672">*</span>z)</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
-As before, you&#39;ll get multiple answers but no big deal.
-</p>
+As before, you&#39;ll get multiple answers but no big deal.</p>
 <p>
 What I like about this one is that you can think about this as a
 looping exercise as above but you can also think about it as a list
 processing exercise, that is, by thinking about it with more of a
-functional programming bent. 
-</p>
+functional programming bent. </p>
 <p>
 The key insight here is that the question was clear in that there will
 only be one pair in part 1 that satisfies the problem and likewise
-only one pair in part 2. 
-</p>
+only one pair in part 2. </p>
 <p>
 If we look at each item in our data set, it&#39;s part of the answer if
 and only if there&#39;s another number in the set equal to 2020 minus that
-item. This leads to a list comprehension
-</p>
+item. This leads to a list comprehension</p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -163,20 +152,17 @@ item. This leads to a list comprehension
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">part1_list <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">2020</span> <span style="color:#f92672">-</span> x <span style="color:#f92672">in</span> data]</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
 Now, part1_list should contain the two items we need. The first value <code>x</code>
 was found when the comprehension saw that <code>2020 - x</code> was in the list
 and <code>2020-x</code> which is the second value was confirmed when the for part
 of the comprehension gets to it and finds that the first item is in
 the list. Then, it&#39;s a simple matter of just multiplying the two
-numbers together for the answer.
-</p>
+numbers together for the answer.</p>
 <p>
 Part 2 is similar but you can use a list comprehension to iterate over
-all pairs of elements and then you calculate the third:
-</p>
+all pairs of elements and then you calculate the third:</p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -185,17 +171,14 @@ all pairs of elements and then you calculate the third:
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">part2_list <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> data <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span>(x<span style="color:#f92672">+</span>y) <span style="color:#f92672">in</span> data]</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
 Of course you could have put <code>y</code> or <code>2020-(x+y)</code> in place of that
-first <code>x</code>. 
-</p>
+first <code>x</code>. </p>
 <p>
 Part 2 has an additional subtlety in that you&#39;ll get the solution
 multiple times which makes sense you&#39;re hitting each triple multiple
-times. To fix that, turn it into a set: 
-</p>
+times. To fix that, turn it into a set: </p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -204,22 +187,18 @@ times. To fix that, turn it into a set:
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">part2_set <span style="color:#f92672">=</span> set(part2_list)</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
-and then calculate the product.
-</p>
+and then calculate the product.</p>
 <p>
 At the core, both of these solutions are really the same but you get
 to them by thinking very differently. The first one is all about the
 loops - thinking about data[i] at a very low discrete level. The
 second approach is thinking about the data as a list and processing
 that list at a much higher level. This could be an ice problem to
-transition between the two approaches.
-</p>
+transition between the two approaches.</p>
 <p>
-Looking forward to what tomorrow&#39;s problem brings.
-</p>
+Looking forward to what tomorrow&#39;s problem brings.</p>
 
         </div>
         

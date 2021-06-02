@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622118319" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
 
 
 
@@ -81,20 +81,17 @@ Today was <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Cellular Au
 that&#39;s usually represented as a grid of cells. Each cell can be in a
 certain state. Given a certain state, the next state is determined by
 simple rules like for a given cell how many of it&#39;s neighbors are the
-same color. 
-</p>
+same color. </p>
 <p>
 The most popular Cellular Automat is probably <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway&#39;s Game of Life</a>
 where each cell can be either alive or dead in a given generation and
 in the next generation the state will be determined by how many of its
-neighbors are currently dead or alive. 
-</p>
+neighbors are currently dead or alive. </p>
 <p>
 I&#39;ve always liked teaching with Celluar Automata and explored it
 deeply in the intro course I designed at Stuy. NetLogo is perfect for
 representing a CA (<a href="https://cestlaz.github.io/posts/2016-01-15-shift-image/">old post</a>) and we even do things like using a CS to
-<a href="https://cestlaz.github.io/posts/2016-01-17-maze-ca/">solve a maze</a>. Good stuff.
-</p>
+<a href="https://cestlaz.github.io/posts/2016-01-17-maze-ca/">solve a maze</a>. Good stuff.</p>
 <p>
 Today&#39;s problem set up a CA where each cell can be one of three
 states - floor, occupied chair, unoccupied chair. The floor never
@@ -103,14 +100,12 @@ based on neighbors. I actually really like teh question. It&#39;s posed as
 passengers prefer to sit in s eats next to other empty seats which is
 true and the overall problem is much more realistic and therefor
 accessible than Conway&#39;s game of life. I think I might lead with it if
-I do CA again with my students. 
-</p>
+I do CA again with my students. </p>
 <p>
 You can find my Clojure solutions <a href="https://github.com/zamansky/advent2020/blob/main/src/day11.clj">here</a>. They were pretty
 straightforward. I spend too much time going down the &#34;learn how to
 write a lazy sequence in Clojure&#34; rabbit hole for part 2 before just
-writing it in a more traditional way.
-</p>
+writing it in a more traditional way.</p>
 <p>
 To me there are a couple of interesting things at play when teaching
 CA. The first is state management and synchronization. When beginners
@@ -118,33 +113,28 @@ work on a CA they frequently look at a cell, figure out it&#39;s next
 generation value and then replace the cell with its new value. Then,
 later they look at a neighboring cell and when that cell looks at its
 neighbors it gets the changed value not the original one. Clearly a
-problem. 
-</p>
+problem. </p>
 <p>
 Writing a CA makes it clear that you have to keep your state clean
 while you build a new state for the next generation. That&#39;s an
-important lesson to learn.
-</p>
+important lesson to learn.</p>
 <p>
 The other interesting teaching point is with data representation. CA
 is frequently taught as a 2D array exercise. This makes sense -
 simulations like Conway&#39;s Game of Life work perfectly in a 2D array
 and if you&#39;re doing graphics with your class you can also get cool
-animations through the generations. 
-</p>
+animations through the generations. </p>
 <p>
 That said, there are other valid representations that could be
 superior at times. You might have a list of living cells or a hash
 tabe of cells if you have more than 2 living states. This can be far
 superior from a space efficiency point of view if you don&#39;t have a lot
 of living cells compared with your world size - say you have a CA with
-a theoretically unlimited size. 
-</p>
+a theoretically unlimited size. </p>
 <p>
 So, there it is - thoughts on today&#39;s problem. As I said, it was
 pretty straightforward but I also really like the setup and will
-probably use it in class at some point in the future.
-</p>
+probably use it in class at some point in the future.</p>
 
         </div>
         

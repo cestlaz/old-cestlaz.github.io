@@ -14,12 +14,13 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622118319" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
 
 
 
 <meta property="og:title" content="Using Emacs 71 Openwith" />
-<meta property="og:description" content="I spend most of my time in Emacs but still use the shell and browser for some things. One of the things I use my shell for is to launch libreoffice to view and edit docx files and spreadsheets, evince for pdf files and imagemagick for image files. Yes, I know I can view all of these in Emacs but there are a few limitations:    Emacs chokes on large files    I can&#39;t edit the docx file or the image    So, I hop to the shell and launch the program I need on the files in question." />
+<meta property="og:description" content="I spend most of my time in Emacs but still use the shell and browser for some things. One of the things I use my shell for is to launch libreoffice to view and edit docx files and spreadsheets, evince for pdf files and imagemagick for image files. Yes, I know I can view all of these in Emacs but there are a few limitations:
+  Emacs chokes on large files" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-71-openwith/" />
 <meta property="article:published_time" content="2020-05-13T11:45:39-04:00" />
@@ -27,7 +28,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 71 Openwith"/>
-<meta name="twitter:description" content="I spend most of my time in Emacs but still use the shell and browser for some things. One of the things I use my shell for is to launch libreoffice to view and edit docx files and spreadsheets, evince for pdf files and imagemagick for image files. Yes, I know I can view all of these in Emacs but there are a few limitations:    Emacs chokes on large files    I can&#39;t edit the docx file or the image    So, I hop to the shell and launch the program I need on the files in question."/>
+<meta name="twitter:description" content="I spend most of my time in Emacs but still use the shell and browser for some things. One of the things I use my shell for is to launch libreoffice to view and edit docx files and spreadsheets, evince for pdf files and imagemagick for image files. Yes, I know I can view all of these in Emacs but there are a few limitations:
+  Emacs chokes on large files"/>
 
 
 
@@ -81,39 +83,30 @@ I spend most of my time in Emacs but still use the shell and browser
 for some things. One of the things I use my shell for is to launch
 libreoffice to view and edit docx files and spreadsheets, evince for
 pdf files and imagemagick for image files. Yes, I know I can view all
-of these in Emacs but there are a few limitations:
-</p>
+of these in Emacs but there are a few limitations:</p>
 <ol>
 <li>
-<p>
-Emacs chokes on large files
-</p>
+<p>Emacs chokes on large files</p>
 </li>
 <li>
-<p>
-I can&#39;t edit the docx file or the image
-</p>
+<p>I can&#39;t edit the docx file or the image</p>
 </li>
 </ol>
-<p>
-So, I hop to the shell and launch the program I need on the files in
+<p>So, I hop to the shell and launch the program I need on the files in
 question. It&#39;s fine but it does mean I end up with two windows for
 each operation - the terminal from which I run, say, libreoffice and
 libreoffice itself. I will also have my browser and one ore more Emacs
-windows open so things can get a bit cluttered.
-</p>
+windows open so things can get a bit cluttered.</p>
 <p>
 Now, on the Emacs side, one tool that I still haven&#39;t gotten myself to
 regularly use is dired. I figured dired could be made to do what I
-want - quickly and easily launch programs to view and edit my files.
-</p>
+want - quickly and easily launch programs to view and edit my files.</p>
 <p>
 By default, dired opens files in a new Emacs buffer. That&#39;s fine for
 text files but not the behavior I want for docx and other files. It
 turns out there are a number of good solutions. The one that I&#39;ll
 likely stick with is <a href="https://github.com/jpkotta/openwith/tree/1dc89670822966fab6e656f6519fdd7f01e8301a">openwith</a> but there are other options as
-well. Check out the video for more:
-</p>
+well. Check out the video for more:</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_qjJ5UzInRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

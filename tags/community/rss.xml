@@ -18,17 +18,14 @@
       
       <guid>https://cestlaz.github.io/post/class-legends/</guid>
       <description>&lt;p&gt;
-Let&amp;#39;s talk about something other than distance learning and COVID-19.
-&lt;/p&gt;
+Let&amp;#39;s talk about something other than distance learning and COVID-19.&lt;/p&gt;
 &lt;p&gt;
 You know you&amp;#39;ve been doing something a long time when you&amp;#39;ve got
-legends.
-&lt;/p&gt;
+legends.&lt;/p&gt;
 &lt;p&gt;
 Over on my alumni mailing list JonAlf shared a web site showing off
 what his current students were doing in their computer graphics
-class. Somewhere in the thread, Con replied:
-&lt;/p&gt;
+class. Somewhere in the thread, Con replied:&lt;/p&gt;
 
 &lt;blockquote&gt;
 Someone should put up a video of the fabulous and fantastically famous
@@ -38,8 +35,7 @@ time, but stories elevated it to legendary status.
 &lt;p&gt;
 Indeed it had reached legendary status. Other projects over the years
 including Larry&amp;#39;s anatomically correct robot had also risen to
-infamy. 
-&lt;/p&gt;
+infamy. &lt;/p&gt;
 &lt;p&gt;
 A little later in the thread the project&amp;#39;s author Josh chimed in and
 shared his original source code. He still had it from May 1995. I&amp;#39;m
@@ -47,32 +43,26 @@ not entirely surprised - I had a copy of the code as well. The trouble
 is it was written in Turbo-C on a DOS machine. Good luck compiling it
 on a modern system. Fortunately, Josh was able to build and run the
 project using an emulator. Check out the  marginally NSFW video at the
-end of the post.
-&lt;/p&gt;
+end of the post.&lt;/p&gt;
 &lt;p&gt;
 So, what&amp;#39;s the legend? Well, in addition to being a pretty terrific
 project - particularly when you remember the horsepower it was running
 on and that it was written by a student who was concurrently finishing
-APCS, there&amp;#39;s a story.
-&lt;/p&gt;
+APCS, there&amp;#39;s a story.&lt;/p&gt;
 &lt;p&gt;
 It starts in one of my APCS classes. Students were working on final
 projects. Tom was working on Tetris - an impressive project for APCS
 done in Turbo Pascal. Tom wanted to add music to the project and had a
 clever way of doing it. Back then you could get basic sounds by
 turning on and off the speaker at certain frequencies. Tom had two
-arrays, one with frequencies and one with durations.
-&lt;/p&gt;
+arrays, one with frequencies and one with durations.&lt;/p&gt;
 &lt;p&gt;
-Something like: 
-&lt;/p&gt;
+Something like: &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
-durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Then for the game loop
-&lt;/p&gt;
+Then for the game loop&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
 
@@ -92,47 +82,38 @@ Then for the game loop
 
     
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Still, he had to figure out all the frequencies and durations for
-&amp;#34;Korobeiniki,&amp;#34; the tetris song. The class was more than happy to help.
-&lt;/p&gt;
+&amp;#34;Korobeiniki,&amp;#34; the tetris song. The class was more than happy to help.&lt;/p&gt;
 &lt;p&gt;
 Everyone&amp;#39;s working to help figure this out for Tom. It&amp;#39;s all pretty
 cool when in walks Jinx Perullo - Stuy&amp;#39;s new principal along with the
 President of the New York City Board of Education. The President&amp;#39;s jaw
 drops as she hears a cacophony of Tetris music and screen after screen
-of Tetris being played!!!!! 
-&lt;/p&gt;
+of Tetris being played!!!!! &lt;/p&gt;
 &lt;p&gt;
 Jinx makes an abrupt about face and drags the dignitary out of the
-room. 
-&lt;/p&gt;
+room. &lt;/p&gt;
 &lt;p&gt;
 Fast forward a week or so. We&amp;#39;re in the graphics class at the end of
 the day - it was held during an non-existent after school period so
 that the students could attend. Josh&amp;#39;s working on his graphics program
-at a computer by the door.
-&lt;/p&gt;
+at a computer by the door.&lt;/p&gt;
 &lt;p&gt;
 Jinx walked in again. This time with the school&amp;#39;s chancelor to be
-greeted by:
-&lt;/p&gt;
+greeted by:&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34;
 src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
-Once again, a quick about face.
-&lt;/p&gt;
+Once again, a quick about face.&lt;/p&gt;
 &lt;p&gt;
 For some reason Jinx never brought important people to my classes
-again.
-&lt;/p&gt;
+again.&lt;/p&gt;
 &lt;p&gt;
-Those were indeed the good old days.
-&lt;/p&gt;
+Those were indeed the good old days.&lt;/p&gt;
 </description>
     </item>
     
@@ -143,8 +124,7 @@ Those were indeed the good old days.
       
       <guid>https://cestlaz.github.io/post/focus-to-feel-normal/</guid>
       <description>&lt;p&gt;
-Austin Cory Bart tweeted this a little while ago.
-&lt;/p&gt;
+Austin Cory Bart tweeted this a little while ago.&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I don&amp;#39;t
 always consider how much power I have as a faculty. Right now, I&amp;#39;d
 really like to expend that power to make my students understand that I
@@ -160,22 +140,19 @@ While Cory&amp;#39;s right about this it&amp;#39;s also good to remember that as
 we&amp;#39;re all going remote, focusing on our courses can be important for
 our students not merely due to content but in this time of uncertainty
 to have something to focus on to remind us of community and remind us
-of normal.
-&lt;/p&gt;
+of normal.&lt;/p&gt;
 &lt;p&gt;
 While all our students are now home or being sent home they&amp;#39;re going
 to be in semi isolation. Most will be with families but many will be
 isolated from friends and classmates and without our courses, in a
 limbo state left to obsess and stress over the current state of
-affairs.
-&lt;/p&gt;
+affairs.&lt;/p&gt;
 &lt;p&gt;
 Focusing on our class  - through synchronous onlinen classes and
 mailing lists, working on assignments, and otherwise engaging in this
 approximation of our students regular weeks we&amp;#39;re providing a valuable
 distraction in addition to whatever actual course material we can
-cover.
-&lt;/p&gt;
+cover.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve seen it before. After 9/11 and to a lesser extent after
 Sandy. After 9/11 we were closed for about a a week. Based on the
@@ -188,24 +165,20 @@ starting in the afteroon. I was teaching CS without any real computer
 access, some classes shared rooms and in general it&amp;#39;s debatable how
 much learning happened. What it did do though, is it gave the kids
 something to focus on other than the 9/11 attacks and their
-aftermath. It wasn&amp;#39;t normal but it was &amp;#34;normaler.&amp;#34; 
-&lt;/p&gt;
+aftermath. It wasn&amp;#39;t normal but it was &amp;#34;normaler.&amp;#34; &lt;/p&gt;
 &lt;p&gt;
 In the years that followed, I&amp;#39;d hear from both parents and students -
 a number of whom I never taught about how important it was giving them
-something to do other than obsess about the events of the day.
-&lt;/p&gt;
+something to do other than obsess about the events of the day.&lt;/p&gt;
 &lt;p&gt;
 Same thing after Sandy. Some students weren&amp;#39;t all that affected but
 others suffered tremendous losses. We set up virtual classes for a
 couple of days while school wasn&amp;#39;t in session. Again, it gave them
-something to focus on that wasn&amp;#39;t the superstorm.
-&lt;/p&gt;
+something to focus on that wasn&amp;#39;t the superstorm.&lt;/p&gt;
 &lt;p&gt;
 Same thing this time around. We all should be aware and alert to
 everything happening but we also need community and things to focus
-on. Our classes can be one of those things.
-&lt;/p&gt;
+on. Our classes can be one of those things.&lt;/p&gt;
 </description>
     </item>
     
@@ -218,19 +191,16 @@ on. Our classes can be one of those things.
       <description>&lt;p&gt;
 A couple of weeks ago, a handful of CS Ed folks got together. One
 issue we discussed was that of finding CS related events both for
-students and teachers. 
-&lt;/p&gt;
+students and teachers. &lt;/p&gt;
 &lt;p&gt;
 One of our conveners, Dan Fenjves of &lt;a href=&#34;https://www.upperlinecode.com/&#34;&gt;UPPERLINE CODE&lt;/a&gt; talked about
 possibly hosting a central site. Today, Dan announced
 &lt;a href=&#34;http://csevents.nyc/.&#34;&gt;http://csevents.nyc/.&lt;/a&gt; A site where organizers can submit and students
 and teachers can find upcoming events. Right now it&amp;#39;s NY centric but
-it does list some events beyond the city.
-&lt;/p&gt;
+it does list some events beyond the city.&lt;/p&gt;
 &lt;p&gt;
 If you&amp;#39;re planning an event or CS Educational opportunity, submit it,
-if you&amp;#39;re looking for one, check it out.
-&lt;/p&gt;
+if you&amp;#39;re looking for one, check it out.&lt;/p&gt;
 </description>
     </item>
     
@@ -241,8 +211,7 @@ if you&amp;#39;re looking for one, check it out.
       
       <guid>https://cestlaz.github.io/post/cseducation-subreddit/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;https://twitter.com/amyjko?ref_src=twsrc%255Etfw%257Ctwcamp%255Etweetembed%257Ctwterm%255E1230982366706860032&amp;amp;ref_url=https%253A%252F%252Fpublish.twitter.com%252F%253Fquery%253Dhttps%25253A%25252F%25252Ftwitter.com%25252Famyjko%25252Fstatus%25252F1230982366706860032%2526widget%253DTweet&#34;&gt;Amy Ko&lt;/a&gt; posted this yesterday:
-&lt;/p&gt;
+&lt;a href=&#34;https://twitter.com/amyjko?ref_src=twsrc%255Etfw%257Ctwcamp%255Etweetembed%257Ctwterm%255E1230982366706860032&amp;amp;ref_url=https%253A%252F%252Fpublish.twitter.com%252F%253Fquery%253Dhttps%25253A%25252F%25252Ftwitter.com%25252Famyjko%25252Fstatus%25252F1230982366706860032%2526widget%253DTweet&#34;&gt;Amy Ko&lt;/a&gt; posted this yesterday:&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;CSEd people:
 many have struggled to use Twitter for discussion. How about Twitter
 for broadcasting, but when replies turn to discussion, we use &lt;a
@@ -260,15 +229,13 @@ charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
 I&amp;#39;d love to see more traffic &lt;a href=&#34;https://reddit.com/r/CSEducation&#34;&gt;there&lt;/a&gt;. For full disclosure, I&amp;#39;m one of
 the moderators but in my defense, I&amp;#39;m not much of a moderator and as
-&lt;a href=&#34;https://twitter.com/AustinCorgiBart/status/1230992957467168768&#34;&gt;Cory&lt;/a&gt; said, I too am happy to either keep moderating or to step aside.
-&lt;/p&gt;
+&lt;a href=&#34;https://twitter.com/AustinCorgiBart/status/1230992957467168768&#34;&gt;Cory&lt;/a&gt; said, I too am happy to either keep moderating or to step aside.&lt;/p&gt;
 &lt;p&gt;
 Twitter is nice for broadcasting but not great for
 meaty discussions. The character limit does make you think out what
 you&amp;#39;re saying but it&amp;#39;s also a headache and tweet storms are an
 inelegant solution at best. Once you start mixing in replies threads
-become hard to follow. 
-&lt;/p&gt;
+become hard to follow. &lt;/p&gt;
 &lt;p&gt;
 An interesting case study of Twitter conversation is over at &lt;a href=&#34;https://twitter.com/home&#34;&gt;Fred
 Wilson&lt;/a&gt;&amp;#39;s blog  &lt;a href=&#34;https://avc.com&#34;&gt;AVC&lt;/a&gt;. Fred recently rebooted his long standing blog and
@@ -276,49 +243,40 @@ is now using Twitter for comments whereas he previously used &lt;a href=&#34;htt
 I haven&amp;#39;t done an in depth analysis but there appears to be far fewer
 comments and less in depth conversation than in his blogs past
 incarnations. This could just be my perceptions but given the large
-readership, it might be an interesting thing to analyze.
-&lt;/p&gt;
+readership, it might be an interesting thing to analyze.&lt;/p&gt;
 &lt;p&gt;
 As to other communication tools, I&amp;#39;ve written about them with respect
 to classroom communications &lt;a href=&#34;https://cestlaz.github.io/posts/class-communications/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://cestlaz.github.io/post/communicating-with_students/&#34;&gt;here&lt;/a&gt;. Many of the same issues
-exist for using these tools as a professional community.
-&lt;/p&gt;
+exist for using these tools as a professional community.&lt;/p&gt;
 &lt;p&gt;
 Facebook groups are private, undiscoverable, hard to search, and
 scattered. They also exist in the Facebook silo. Data goes in but it
 never comes out. I also can&amp;#39;t access those Facebook groups using
-anything other than Facebook.
-&lt;/p&gt;
+anything other than Facebook.&lt;/p&gt;
 &lt;p&gt;
 Email is a great default. Nowhere else to go - things just show up in
 your inbox. I&amp;#39;m on the APCS mailing list as well as SIGCSE. One
 problem is the no quoting policy which makes threads hard to follow
-and discoverability and long term searchability are a problem.
-&lt;/p&gt;
+and discoverability and long term searchability are a problem.&lt;/p&gt;
 &lt;p&gt;
-Slack? Just no.
-&lt;/p&gt;
+Slack? Just no.&lt;/p&gt;
 &lt;p&gt;
-So let&amp;#39;s think about reddit. 
-&lt;/p&gt;
+So let&amp;#39;s think about reddit. &lt;/p&gt;
 &lt;p&gt;
 You can go to the site to read it but you can also subscribe using an
 RSS/Atom reader like Feedly. If you post a comment you get replies via
 email and an alert in reddit. It&amp;#39;s discoverable, public, and
 searchable. It even appears to support chats and a wiki.  Hits all the
-buttons for me.
-&lt;/p&gt;
+buttons for me.&lt;/p&gt;
 &lt;p&gt;
 We could do a better job with the subreddit - add resource links to
-the sidebar for instance - I just started to do that now. 
-&lt;/p&gt;
+the sidebar for instance - I just started to do that now. &lt;/p&gt;
 &lt;p&gt;
 My friend &lt;a href=&#34;https://twitter.com/cscheerleader/status/1231177418708267008&#34;&gt;Ria&lt;/a&gt; commented on how she wasn&amp;#39;t happy that people could post
 anonymously. I tend to agree with her - I&amp;#39;ve always used my real
 identity in forums and would prefer others do the same but that&amp;#39;s not
 a dealbreaker to me. I&amp;#39;d rather an open community with anonymous
-posting allowed than Zuck&amp;#39;s world.
-&lt;/p&gt;
+posting allowed than Zuck&amp;#39;s world.&lt;/p&gt;
 &lt;p&gt;
 Another issue that is sure to be raised is openness. Some teachers
 don&amp;#39;t want their discussions public where students can find
@@ -330,19 +288,16 @@ an old assignment or blog post going over something but so what, maybe
 they&amp;#39;ll learn something. The only time I see this as really being an
 issue is that you don&amp;#39;t want to talk about specific student issues in
 a public forum to protect the students privacy. It&amp;#39;s harder to ask
-your colleagues for help with some specific student related problem.
-&lt;/p&gt;
+your colleagues for help with some specific student related problem.&lt;/p&gt;
 &lt;p&gt;
 Now, much of what I&amp;#39;m guessing Amy was talking about was the CS
 Educator type discourse that doesn&amp;#39;t get into those weeds but I see
 these communities as for all educators (which I&amp;#39;m sure Amy does as
-well, just separating my read on her specific tweet).
-&lt;/p&gt;
+well, just separating my read on her specific tweet).&lt;/p&gt;
 &lt;p&gt;
 So, please do join us over in &lt;a href=&#34;https://www.reddit.com/r/CSEducation/&#34;&gt;CSEducation&lt;/a&gt; over on Reddit. If you want
 to subscribe via an rss or atom reader just use this link:
-&lt;a href=&#34;https://reddit.com/r/CSEducation.rss&#34;&gt;https://reddit.com/r/CSEducation.rss&lt;/a&gt;.
-&lt;/p&gt;
+&lt;a href=&#34;https://reddit.com/r/CSEducation.rss&#34;&gt;https://reddit.com/r/CSEducation.rss&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -353,53 +308,57 @@ to subscribe via an rss or atom reader just use this link:
       
       <guid>https://cestlaz.github.io/post/presenting-at-csta/</guid>
       <description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Presenting at CSTA 2020
 &lt;/h2&gt;
-&lt;p&gt;
-I noticed a few tweets and posts from people announcing that they&amp;#39;d be
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I noticed a few tweets and posts from people announcing that they&amp;#39;d be
 presenting at CSTA2020 - the big computer science teachers conference
-held every July.
-&lt;/p&gt;
+held every July.&lt;/p&gt;
 &lt;p&gt;
 A common thread in a few of these were trepidation&amp;#39;s
-presenters. Excited to be doing this but nervous.
-&lt;/p&gt;
+presenters. Excited to be doing this but nervous.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s interesting that teachers, myself included, sometimes get nervous
 before presentations even though we present every day as part of our
 jobs. I know it&amp;#39;s different as we have the same kids every day but
 even day 1 jitters each semester aren&amp;#39;t the same as the presentation
-anxiety that some of us face.
-&lt;/p&gt;
+anxiety that some of us face.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m certainly not a super master seasoned presenter. I&amp;#39;ve done it a
 few times at CSTA and other venues and this year JonAlf and I will be
 running a GitHub workshop but I thought I&amp;#39;d share some words of
-encouragement anyway.
-&lt;/p&gt;
+encouragement anyway.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 You&amp;#39;re really just talking shop.
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Basically, you&amp;#39;re a teacher talking about teaching and I think we all
-love to do that. 
-&lt;/p&gt;
+love to do that. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 It&amp;#39;s an audience of friends
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 CSTA is a conference primarily of teachers - our colleague.s Everyone
 coming to your session is already interested in your opinion and going
-in as a supportive audience. They &lt;strong&gt;want&lt;/strong&gt; to hear from you.
-&lt;/p&gt;
+in as a supportive audience. They &lt;strong&gt;want&lt;/strong&gt; to hear from you.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ll go back to the previous point - you&amp;#39;re basically talking shop
-with friends. 
-&lt;/p&gt;
+with friends. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 CSTA still feels intimate
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 In spite of its rapid growth, the CSTA conference still feels
 intimate. It&amp;#39;s not a huge conference where you can attend a talk or
@@ -407,43 +366,49 @@ meet someone at breakfast and never find them again. It&amp;#39;s big enough
 so that you &lt;strong&gt;can&lt;/strong&gt; avoid anyone you want to dodge but you can pretty
 much find time to spend with anyone you want to as well. This can turn
 your talk more into a starting point for a longer convesation - how
-cool is that.
-&lt;/p&gt;
+cool is that.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Don&amp;#39;t forget to enjoy it
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 I used  to get really nervous when giving LARGE talks - we&amp;#39;re talking
 to an audience of one or two thousand. I&amp;#39;ve only done that a few
 times. A couple of times at the New York Tech Meetup and once when I
 was the faculty graduation speaker at Stuy when my best friend was the
-guest speaker and my daughter was in the graduating class. 
-&lt;/p&gt;
+guest speaker and my daughter was in the graduating class. &lt;/p&gt;
 &lt;p&gt;
 I was pretty nervous before I hit the stage at Stuy when a colleague
 gave me some great advice - &amp;#34;take the time to enjoy the moment.&amp;#34; I
 remembered that just as I said above - I was about to talk to
 friends. Two thousand of them, but friends nonetheless. I was reminded
 to slow down and take it in. Enjoy the moment. I&amp;#39;ve tried to do that
-with any presentation I&amp;#39;ve given since. 
-&lt;/p&gt;
+with any presentation I&amp;#39;ve given since. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 Final thoughts
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 As  a final thought I&amp;#39;ll leave you by paraphrasing something that I
 think was said by Pinchas Zuckerman - the world class violist and
 violinist (who I think also used to wear a shirt proclaiming &amp;#34;I
-vibrato when I play baroque - Deal with it!!!!!).
-&lt;/p&gt;
+vibrato when I play baroque - Deal with it!!!!!).&lt;/p&gt;
 &lt;p&gt;
 He said that you should always be smiling when you&amp;#39;re
 performing. Either your performance is going well and you&amp;#39;re creating
-beautiful music or it&amp;#39;s going horribly but it will be over soon. :-)
-&lt;/p&gt;
+beautiful music or it&amp;#39;s going horribly but it will be over soon. :-)&lt;/p&gt;
 &lt;p&gt;
-Already looking forward to July.
-&lt;/p&gt;
+Already looking forward to July.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -455,55 +420,39 @@ Already looking forward to July.
       <guid>https://cestlaz.github.io/post/communicating-with_students/</guid>
       <description>&lt;p&gt;
 Out of class student communication is always a challenge. There are
-plenty of options:
-&lt;/p&gt;
+plenty of options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Piazza
-&lt;/p&gt;
+&lt;p&gt;Piazza&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Facebook group
-&lt;/p&gt;
+&lt;p&gt;Facebook group&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Slack, Discord, or other chat system
-&lt;/p&gt;
+&lt;p&gt;Slack, Discord, or other chat system&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Discourse, Vanilla or other discussion forum system
-&lt;/p&gt;
+&lt;p&gt;Discourse, Vanilla or other discussion forum system&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Mailing list
-&lt;/p&gt;
+&lt;p&gt;Mailing list&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-but all have warts. 
-&lt;/p&gt;
+&lt;p&gt;but all have warts. &lt;/p&gt;
 &lt;p&gt;
 I shared my thoughts on a number of these options &lt;a href=&#34;https://cestlaz.github.io/posts/class-communications/&#34;&gt;a while ago&lt;/a&gt; but
-thought I&amp;#39;d update them now.
-&lt;/p&gt;
+thought I&amp;#39;d update them now.&lt;/p&gt;
 &lt;p&gt;
 Most of my opinions hold form my earlier post. I was using and
 continue to use a mailing list as I can be pretty sure that students
 will get the email and they don&amp;#39;t have to go to any outside site or
 application. Now, getting them to respond or just use it for general
-class communication is another story.
-&lt;/p&gt;
+class communication is another story.&lt;/p&gt;
 &lt;p&gt;
 I also tried Slack again but it fared no better than my last attempt
 with it. A couple of students used it but mostly, Slack was left to
 die. I could have forced some engagement by posting assignments on
-Slack but there wasn&amp;#39;t any real upside. 
-&lt;/p&gt;
+Slack but there wasn&amp;#39;t any real upside. &lt;/p&gt;
 &lt;p&gt;
 Earlier this semester some students said we should set up Discord -
 &amp;#34;all the students use it!&amp;#34; was the line. Discord can be used as a chat
@@ -511,22 +460,18 @@ server similar to Slack but was created for gaming and also does voice
 communication and other things. Personally, I prefer Slack. Funny
 thing was that as I discussed this with my students I pointed out &amp;#34;you
 know, we have a Slack channel set up and you all already have accounts
-on it.&amp;#34; Most of them didn&amp;#39;t even remember. 
-&lt;/p&gt;
+on it.&amp;#34; Most of them didn&amp;#39;t even remember. &lt;/p&gt;
 &lt;p&gt;
 So, we tried Discord and there was the usual burst of activity when we
 first set it up but now it&amp;#39;s again, mostly dormant. A few students who
 use Discord for personal use are usually online but I&amp;#39;d chalk it up as
-another failure.
-&lt;/p&gt;
+another failure.&lt;/p&gt;
 &lt;p&gt;
-So, what am I going to try next? GitHub. 
-&lt;/p&gt;
+So, what am I going to try next? GitHub. &lt;/p&gt;
 &lt;p&gt;
 GitHub doesn&amp;#39;t provide a general chat or email solution but it does
 have what they call &amp;#34;issues.&amp;#34;  I got the idea from &lt;a href=&#34;https://twitter.com/ericdrosado&#34;&gt;Eric Rosado&lt;/a&gt; of
-GitHub Education who clued me in on what issues can do.
-&lt;/p&gt;
+GitHub Education who clued me in on what issues can do.&lt;/p&gt;
 &lt;p&gt;
 When you create a GitHub repository - something I do for class web
 pages as well as assignments, you can also open issues. Issues are
@@ -534,48 +479,35 @@ associated with the project but also act as a lightweight forum. You
 can go to a page and see all the issues (topics) and each one can have
 a chain of messages (thread). You can tag them, filter them, and when
 you&amp;#39;re done, close them (and reopen them later if needs be). The big
-plusses are that:
-&lt;/p&gt;
+plusses are that:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-People who are subscribed to the repo (assignment, web page, etc.)
-automatically get email alerts on the issues.
-&lt;/p&gt;
+&lt;p&gt;People who are subscribed to the repo (assignment, web page, etc.)
+automatically get email alerts on the issues.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-You can explicitly tag people to force them to get alerts.
-&lt;/p&gt;
+&lt;p&gt;You can explicitly tag people to force them to get alerts.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-You can directly reply via email so you don&amp;#39;t need to go to
-GitHub.
-&lt;/p&gt;
+&lt;p&gt;You can directly reply via email so you don&amp;#39;t need to go to
+GitHub.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Everything related to a given project or repo is self contained.
-&lt;/p&gt;
+&lt;p&gt;Everything related to a given project or repo is self contained.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
-create a logged communication with your students on specific assignments.
-&lt;/p&gt;
+&lt;p&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
+create a logged communication with your students on specific assignments.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 I haven&amp;#39;t used this class wide yet - just experimented a bit but I
-plan to dive in much more deeply next semester.
-&lt;/p&gt;
+plan to dive in much more deeply next semester.&lt;/p&gt;
 &lt;p&gt;
 This isn&amp;#39;t an overall communication solution. I&amp;#39;m sticking with a
 mailing list for that until I can find a better solution but I think
 using GitHub issues will be a win for project and assignment related
-discussion.
-&lt;/p&gt;
+discussion.&lt;/p&gt;
 </description>
     </item>
     
@@ -587,11 +519,9 @@ discussion.
       <guid>https://cestlaz.github.io/post/alumni-anniversaries/</guid>
       <description>&lt;p&gt;
 Two days ago, a teacher&amp;#39;s comment on a frustrating situation &lt;a href=&#34;https://cestlaz.github.io/post/outside-evaluators/&#34;&gt;made me
-mad&lt;/a&gt;. 
-&lt;/p&gt;
+mad&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
-Yesterday, I got to be part of something that made me very happy. 
-&lt;/p&gt;
+Yesterday, I got to be part of something that made me very happy. &lt;/p&gt;
 &lt;p&gt;
 Last night, Devorah and I ventured out to Coney Island to celebrate
 the twentieth wedding anniversary of two former students. It&amp;#39;s such a
@@ -602,27 +532,23 @@ students than of her own friends. Truth be told, I can say the same. I
 commented that nowadays I&amp;#39;m more in touch with friends that I&amp;#39;ve
 taught than my own high school and college classmates. Our hosts joked that
 it was the right call because my former students are younger and that
-helps keep me young :-).
-&lt;/p&gt;
+helps keep me young :-).&lt;/p&gt;
 &lt;p&gt;
 What was also exciting was seeing the couple&amp;#39;s oldest daughter for the
 first time in a year or so. She&amp;#39;ll be starting at Stuy next year. The
 grow so fast. Almost makes me sad I&amp;#39;m no longer there. Missed my
 chance to teach the offspring of my former students. Still, she&amp;#39;s in
-great hands with the crew that&amp;#39;s still there.
-&lt;/p&gt;
+great hands with the crew that&amp;#39;s still there.&lt;/p&gt;
 &lt;p&gt;
 I also had a chance to catch up with some other friends and their
 families. Loved seeing young Abe, another &amp;#34;grandstudent&amp;#34; who I haven&amp;#39;t
-seen since his bris two year ago.
-&lt;/p&gt;
+seen since his bris two year ago.&lt;/p&gt;
 &lt;p&gt;
 For anyone out there just starting their teaching career - this is the
 payoff. The relationships. I know it&amp;#39;s hokie but I say that as
 teachers in a general sense we should strive to be a force of good in
 our student&amp;#39;s lives. If we&amp;#39;re lucky we see it&amp;#39;s appreciated and we get
-to see the results. 
-&lt;/p&gt;
+to see the results. &lt;/p&gt;
 </description>
     </item>
     
@@ -639,24 +565,20 @@ are not relational and don&amp;#39;t implement Structured Query Language
 (SQL). In a relational database your data is stored in tables with
 columns - think spreadsheet where each row of the table is a record in
 the database. You link tables together via a common field or row
-name. NoSQL databases work differently. 
-&lt;/p&gt;
+name. NoSQL databases work differently. &lt;/p&gt;
 &lt;p&gt;
 MongoDB is a document store. In MongoDB a document is a &lt;a href=&#34;https://json.org/&#34;&gt;JSON&lt;/a&gt;
 object. Essentially a Javascript (or Python) dictionary. As a result
 you do things differently. I plan to write up something more on the
-differences between SQL and NoSQL in the near future.
-&lt;/p&gt;
+differences between SQL and NoSQL in the near future.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve been using MongoDB on and off for a number of years. I use it for
 personal projects and also in the software development course I taught
 at Stuy. The community edition is free and easy to install and it&amp;#39;s
-very easy for a beginner to get started.
-&lt;/p&gt;
+very easy for a beginner to get started.&lt;/p&gt;
 &lt;p&gt;
 Let&amp;#39;s say you wanted to store information about a students. You might
-create this dictionary:
-&lt;/p&gt;
+create this dictionary:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;First&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amanda&amp;#39;&lt;/span&gt;,
@@ -665,102 +587,78 @@ create this dictionary:
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Schedule&amp;#39;&lt;/span&gt; : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Eng&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Math&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Gym&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;CS&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lunch&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Physcis&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Band&amp;#34;&lt;/span&gt;]}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-You add this to your database like this:
-&lt;/p&gt;
+You add this to your database like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-Later, you can query for all the students in Homeroom 5A:
-&lt;/p&gt;
+Later, you can query for all the students in Homeroom 5A:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Super quick and easy. It also comes with a nice REPL - essentially a
-Javascript interpreter -  to play with.
-&lt;/p&gt;
+Javascript interpreter -  to play with.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve spent the last two days at MongoDB World 2019. A great conference
 if you want to get up to speed on MongoDB. I left reminded of a number
 of great MongoDB products that I hadn&amp;#39;t really used and a few new ones
-they&amp;#39;re just launching:
-&lt;/p&gt;
+they&amp;#39;re just launching:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Atlas
+&lt;p&gt;Atlas
 This is their DB as service. Don&amp;#39;t want to administer your own
 installation? Just spin up an Atlas cluster. The free tier is plenty
 generous and you and your students can get up and running in under
-10 minutes.
-&lt;/p&gt;
+10 minutes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Compass
+&lt;p&gt;Compass
 Back in the day you either interacted with MongoDB pragmatically
 using a language driver or used their REPL shell. Compass is a
 complete fully functional GUI. It can connect to your database, a
 remote one, or an Atlas cluster. A game changer for database
-management
-&lt;/p&gt;
+management&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Charts
+&lt;p&gt;Charts
 This is really cool. You link MongoDB charts to an Atlas cluster and
 then can interactively build dashboards and visualizations. You can
-then embed the visualizations into your own web projects. 
-&lt;/p&gt;
+then embed the visualizations into your own web projects. &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Field Level Encryption
-&lt;/p&gt;
+&lt;p&gt;Field Level Encryption&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Encrypting passwords for storage and similar practices are important
+&lt;p&gt;Encrypting passwords for storage and similar practices are important
 but can be aslog. MongoDB now takes care of this for you. You can, for
 instance, tell your database to encrypt the password fields and your
-done. 
-&lt;/p&gt;
+done. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Data Lake
-&lt;/p&gt;
+&lt;p&gt;Data Lake&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-This blew me away. Basically, it can take your AWS storage and let you
+&lt;p&gt;This blew me away. Basically, it can take your AWS storage and let you
 query it as if it were a MongoDB database. It works with a variety of
 file formst - JSON, XML, CSV and more. Basically it transparently
-turns cloud storage into a database. 
-&lt;/p&gt;
+turns cloud storage into a database. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Stitch
+&lt;p&gt;Stitch
 This allows for the building of serverless apps. Similar to Firebase
 but it looks to interact with all the other MongoDB goodness I&amp;#39;ve
-mentioned. .
-&lt;/p&gt;
+mentioned. .&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;There were a few other neat things I learned about MongoDB and related
+products but those were the highlights.&lt;/p&gt;
 &lt;p&gt;
-There were a few other neat things I learned about MongoDB and related
-products but those were the highlights.
-&lt;/p&gt;
-&lt;p&gt;
-As usual, I left the conference energized.
-&lt;/p&gt;
+As usual, I left the conference energized.&lt;/p&gt;
 &lt;p&gt;
 If you don&amp;#39;t use MongoDB check it out for yourself and your
 students. In addition to being a great product, it&amp;#39;s also a great
-company.
-&lt;/p&gt;
+company.&lt;/p&gt;
 </description>
     </item>
     
@@ -776,94 +674,68 @@ going all over the city. This takes me to neighborhoods that I
 normally wouldn&amp;#39;t have reason to visit. For a New York History wonk
 that can be pretty cool even if you just limit yourself to looking at
 the schools. A few of the schools I visited in the last couple of
-weeks before the new year were self contained whole building schools:
-&lt;/p&gt;
+weeks before the new year were self contained whole building schools:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-James Madison
-&lt;/p&gt;
+&lt;p&gt;James Madison&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Goddard High School
-&lt;/p&gt;
+&lt;p&gt;Goddard High School&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-FDR HS
-&lt;/p&gt;
+&lt;p&gt;FDR HS&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Midwood HS
-&lt;/p&gt;
+&lt;p&gt;Midwood HS&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Goddard was interesting because it was founded in 2008 and grew out of
+&lt;p&gt;Goddard was interesting because it was founded in 2008 and grew out of
 the middle school in the same building. FDR was also interesting. It
 was founded in 1965 which makes the building fairly young or at least
 early middle aged for a New York City school building. When you
-approach it, you see this small short modern looking one story structure:
-&lt;/p&gt;
+approach it, you see this small short modern looking one story structure:&lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
     &lt;img src=&#34;https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.nydailynews.com%2Fpolopoly_fs%2F1.1408243.1374717210!%2Fimg%2FhttpImage%2Fimage.jpg_gen%2Fderivatives%2Flandscape_635%2Fteacher25n-1-web.jpg&amp;amp;f=1&#34;/&gt; 
 &lt;/figure&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 Hidden from view is the big rectangular tower that the entrance
 connects to via a tunnel. I had an interesting conversation with the
-school&amp;#39;s principal about how that came to be.
-&lt;/p&gt;
+school&amp;#39;s principal about how that came to be.&lt;/p&gt;
 &lt;p&gt;
 James Madison and Midwood also have their own buildings and they are
 both partially screened - that is, they have selective admissions for
 at least a portion of their student population. FDR is particularly
 interesting becuase it is frankly an &amp;#34;old school&amp;#34; neighborhood
-school that survived the destructive years of Bloomberg/Klein.
-&lt;/p&gt;
+school that survived the destructive years of Bloomberg/Klein.&lt;/p&gt;
 &lt;p&gt;
 The other schools I visited in that span were all housed in schools
 that had been closed during the Bloomberg/Klein years and new small
-schools created in their place. The original buildings were:
-&lt;/p&gt;
+schools created in their place. The original buildings were:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Thomas Jefferson
-&lt;/p&gt;
+&lt;p&gt;Thomas Jefferson&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Franklin K Lane
-&lt;/p&gt;
+&lt;p&gt;Franklin K Lane&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Christopher Columbus
-&lt;/p&gt;
+&lt;p&gt;Christopher Columbus&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Andrew Jackson
-&lt;/p&gt;
+&lt;p&gt;Andrew Jackson&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-One of the coolest parts about visiting the older buildings is that
+&lt;p&gt;One of the coolest parts about visiting the older buildings is that
 they were built in a different time. You have elaborate lobbies of
 marble and polished granite. Beautiful murals and ornate
 auditoriums. Unique architectural features like the ramps on the first
 floor in Thomas Jefferson or the foyer in Brooklyn Tech (a school I
-visited earlier in the year).  
-&lt;/p&gt;
+visited earlier in the year).  &lt;/p&gt;
 &lt;p&gt;
 They also have school history. In many of the buildings the walls are
-still adorned with names of notable alumni.
-&lt;/p&gt;
+still adorned with names of notable alumni.&lt;/p&gt;
 &lt;p&gt;
 Christopher Columbus boasts Sal Mineo,  (Anne Bancroft), and, well,
 David Berkowitz. Andrew Jackson does pretty well for basketball with
@@ -872,8 +744,7 @@ O&amp;#39;Quinn. Woody Allen and Mimi Sheraton among others went to
 Midwood. James Madison has a political bent with Bernie Sander, Ruth
 Bader Ginsburg, and Chuck Schumer. Finally, Thomas Jefferson was home
 to Sylvia Fine, David Daniel Kaminsky (that&amp;#39;s Danny Kaye to you), Paul
-Mazrusky, Al Lewis, and others. 
-&lt;/p&gt;
+Mazrusky, Al Lewis, and others. &lt;/p&gt;
 &lt;p&gt;
 Another tidbit I learned was about the history of Franklin K
 Lane. Lane&amp;#39;s built in the Brooklyn Queens border. You can see the
@@ -883,31 +754,25 @@ paint denoting the border. Lane also saw a good deal of race related
 turmoil throughout it&amp;#39;s history. I was talking to an alum during my
 visit and he was telling me how that in his day, you either left the
 building via the north entrance or the south one depending on your
-crew and woe is he who got caught on the wrong side. 
-&lt;/p&gt;
+crew and woe is he who got caught on the wrong side. &lt;/p&gt;
 &lt;p&gt;
 Finally, many of the older buildings were part of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Works_Progress_Administration&#34;&gt;WPA&lt;/a&gt; from the New
-Deal. 
-&lt;/p&gt;
+Deal. &lt;/p&gt;
 &lt;p&gt;
 If you do get a chance to go into an old school, take some time to
-check out the architecture and the ghosts of the past.
-&lt;/p&gt;
+check out the architecture and the ghosts of the past.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ll leave you with a couple of pictures from Brooklyn Tech - mostly
-because they were easy to find.
-&lt;/p&gt;
+because they were easy to find.&lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
     &lt;img src=&#34;http://www.khomarch.com/wp-content/uploads/2017/01/kevin-hom-architect-university-college-architect-brooklyn-tech-1.jpg&#34;/&gt; 
 &lt;/figure&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
     &lt;img src=&#34;https://static1.squarespace.com/static/59aec48e9f7456bae98b8609/5ad7b923575d1f7d69412830/5ad7b93d88251b1250984d58/1524087471280/mural-image-bths-2.JPG&#34;/&gt; 
 &lt;/figure&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
@@ -917,7 +782,6 @@ because they were easy to find.
 &lt;figure&gt;
     &lt;img src=&#34;#ZgotmplZ&#34;/&gt; 
 &lt;/figure&gt;
-
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -938,8 +802,7 @@ invited to Stuy reunions over the years. Not as often it seems as some
 teachers but more often than others. I always do my best to attend. I
 have very fond memories of many students and many classes over many
 years and think a lot about them so feel very honored whenever I&amp;#39;m
-invited to one of these.
-&lt;/p&gt;
+invited to one of these.&lt;/p&gt;
 &lt;p&gt;
 In the past each class due a reunion did its own thing - some club or
 bar usually in Manhattan. This year, things were a little
@@ -948,32 +811,27 @@ during the day and then multiple reunions were held at the school
 during the evening. They hosted three classes - 2008, 2004, and 1998
 in different parts of the school. The class of 2013 also had a reunion
 off site - that&amp;#39;s my daughter Batya&amp;#39;s graduating class so she got to
-catch up with her class wherever they held their shindig. 
-&lt;/p&gt;
+catch up with her class wherever they held their shindig. &lt;/p&gt;
 &lt;p&gt;
 I think the format worked well. Two classes were in the cafeteria
 separated by a curtain and the third in one of the gyms. There was
 self serve beer, wine, and water along with assorted snacks and finger
 foods. Each area also had a DJ playing music though not too
 loudly. Everyone knew the location, costs were kept low and for the
-most part it wasn&amp;#39;t so loud that you couldn&amp;#39;t talk to each other.
-&lt;/p&gt;
+most part it wasn&amp;#39;t so loud that you couldn&amp;#39;t talk to each other.&lt;/p&gt;
 &lt;p&gt;
 As usual it was great to see some former students that I hadn&amp;#39;t seen
 in years and also chatting with non-cs students that I really didn&amp;#39;t
-know but there were a few highlights.
-&lt;/p&gt;
+know but there were a few highlights.&lt;/p&gt;
 &lt;p&gt;
 I spend a good amount of time with some of my 1998 crew. As I told
 them, I really honestly missed them. We had some really good
 times. Some of them had moved out of the city but talking to the NY
 contingent we all left feeling that we should do a better job of
-seeing each other in person.
-&lt;/p&gt;
+seeing each other in person.&lt;/p&gt;
 &lt;p&gt;
 I also enjoyed my time with the other groups but I&amp;#39;ve manged to see
-more of them more recently. 
-&lt;/p&gt;
+more of them more recently. &lt;/p&gt;
 &lt;p&gt;
 In a couple of weeks, I&amp;#39;m actually going to have a reunion of my own
 alumni community. I&amp;#39;ve put together a loose association of my former
@@ -982,8 +840,7 @@ meetup in early December and right now it looks like around 100 people
 are going to attend. I love those meetups because they bring together
 people across the generations. The downside for me is that it&amp;#39;s
 like a big family event. As the host I never get to really catch up
-with anyone since I&amp;#39;m running from person to person.
-&lt;/p&gt;
+with anyone since I&amp;#39;m running from person to person.&lt;/p&gt;
 &lt;p&gt;
 One final nice takeaway from the evening. After I exited Stuy I
 started to gear up in my &lt;a href=&#34;https://www.cleverhood.com/&#34;&gt;Cleverhood&lt;/a&gt; for the rainy ride home and
@@ -998,11 +855,9 @@ Bruce, a student at the time we &lt;del&gt;stole&lt;/del&gt; requisitioned one o
 RS/6000 machines that were supposed to be used in the cad classes, got
 it onto the net, and set up email accounts for everyone. It&amp;#39;s funny
 that I just always thought of that as something we did but to some of
-the students it was a pretty big deal.
-&lt;/p&gt;
+the students it was a pretty big deal.&lt;/p&gt;
 &lt;p&gt;
-Goes to show that you never know what makes a mark on your students.
-&lt;/p&gt;
+Goes to show that you never know what makes a mark on your students.&lt;/p&gt;
 </description>
     </item>
     
@@ -1017,8 +872,7 @@ One of the bigger challenges faced at commuter schools is building a
 feeling of community. Students aren&amp;#39;t on campus every day and come
 from far afield and even when they are on campus, we really don&amp;#39;t have
 a CS &amp;#34;hang out&amp;#34; space. The space issue should be resolved soon - we&amp;#39;re
-scheduled to get a CS student lounge next semester.
-&lt;/p&gt;
+scheduled to get a CS student lounge next semester.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m finding this to be even more of a challenge this year with my
 honors students. The first two cohorts were a single class in
@@ -1027,112 +881,84 @@ together in my class twice a week. This year, we&amp;#39;ve close to doubled
 in size and about half of my students came in with a good deal of
 prior CS knowledge. The result is that I have two different classes of
 honors students and we are never all together unless it&amp;#39;s for a
-special event.
-&lt;/p&gt;
+special event.&lt;/p&gt;
 &lt;p&gt;
-Fortunately, we&amp;#39;ve got one of my favorites coming up. 
-&lt;/p&gt;
+Fortunately, we&amp;#39;ve got one of my favorites coming up. &lt;/p&gt;
 &lt;p&gt;
 In two weeks, I&amp;#39;ll be taking about half my students up to &lt;a href=&#34;http://catskillsconf.com&#34;&gt;Catskills
 Conf&lt;/a&gt;. An event that I describe as light tech conference with a focus
 on creativity and diversity meets summer camp. I&amp;#39;ve written about the
 event in in each of the past three years (&lt;a href=&#34;https://cestlaz.github.io/posts/2015-10-29-catskills-2015/%0A&#34;&gt;2015&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/posts/catskillsconf-2016/%0A&#34;&gt;2016&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/posts/catskills-2017/%0A&#34;&gt;2017&lt;/a&gt;) and also
 about the  &lt;a href=&#34;https://cestlaz.github.io/posts/knitting-tech-conference/%0A&#34;&gt;knitting for charity&lt;/a&gt; event that Devorah runs during the
-conference weekend.
-&lt;/p&gt;
+conference weekend.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s a great event and if you&amp;#39;re anywhere near the Hudson Valley
-region you should &lt;a href=&#34;http://catskillsconf.com&#34;&gt;check it out&lt;/a&gt;.
-&lt;/p&gt;
+region you should &lt;a href=&#34;http://catskillsconf.com&#34;&gt;check it out&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 To start, it&amp;#39;s a great first conference for the students. It only has
 one track so no choices and the talks look really interesting this
-year. Some of the ones I&amp;#39;m looking forward to are:
-&lt;/p&gt;
+year. Some of the ones I&amp;#39;m looking forward to are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Designing for Access first
-&lt;/p&gt;
+&lt;p&gt;Designing for Access first&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Behind the Tech: Emoji
-&lt;/p&gt;
+&lt;p&gt;Behind the Tech: Emoji&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Leaning into uncertainty
-&lt;/p&gt;
+&lt;p&gt;Leaning into uncertainty&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The full schedule is &lt;a href=&#34;https://catskillsconf.com/schedule/&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
-The full schedule is &lt;a href=&#34;https://catskillsconf.com/schedule/&#34;&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-But also mixed in are activities like blacksmithing
-&lt;/p&gt;
+But also mixed in are activities like blacksmithing&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/blacksmith.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-and a live bird of prey show
-&lt;/p&gt;
+and a live bird of prey show&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/BOP.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 There are also hikes that show off the beauty of Fall in the Hudson
-Valley
-&lt;/p&gt;
+Valley&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/nature1.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/nature2.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/nature3.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Rather than having the kids spread out in random hotel rooms we&amp;#39;re all
-in a camp style bunkhouse.
-&lt;/p&gt;
+in a camp style bunkhouse.&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/bunkhouse.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The weekend is spent  living together along with technologists and
-other creative types from NYC, the Hudson Valley and everywhere else. 
-&lt;/p&gt;
+other creative types from NYC, the Hudson Valley and everywhere else. &lt;/p&gt;
 &lt;p&gt;
 One of my favorite parts is at the end of each evening when we all
 hang out by the campfire. Hunter CS students, company founders,
-software engineers, designers.
-&lt;/p&gt;
+software engineers, designers.&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;#34;/img/commuter-school/campfire.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
-&amp;lt;/figure&amp;gt;
-&lt;/p&gt;
+&amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-It&amp;#39;s a great event overall and a great event to build community.
-&lt;/p&gt;
+It&amp;#39;s a great event overall and a great event to build community.&lt;/p&gt;
 &lt;p&gt;
-As I said before, if you&amp;#39;re in the area, check it out.
-&lt;/p&gt;
+As I said before, if you&amp;#39;re in the area, check it out.&lt;/p&gt;
 </description>
     </item>
     
@@ -1146,13 +972,11 @@ As I said before, if you&amp;#39;re in the area, check it out.
 Thanksgiving is reunion season. Stuyvesant and I&amp;#39;m guessing other high
 schools traditionally hold their reunions, at least the five and ten
 year ones over the holiday weekend. It makes sense since grads who&amp;#39;ve
-moved away might still be coming to town for family celebrations.
-&lt;/p&gt;
+moved away might still be coming to town for family celebrations.&lt;/p&gt;
 &lt;p&gt;
 This year, I was invited to the Stuy07 ten year reunion. I considered
 crashing the Stuy97 20 year but it was at the same time and too far
-away.
-&lt;/p&gt;
+away.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m always really flattered and honored when I get a reunion
 invite. I&amp;#39;ve been to my share but I was never the hip popular teacher
@@ -1163,8 +987,7 @@ graduation speaker a few years ago and I doubted I would be elected
 &amp;#34;hey, you lead the most popular cult in the school&amp;#34; and I guess in
 some way the community is a cult, or as I&amp;#39;d rather say, a family. In
 any event, whenever I&amp;#39;m invited to a reunion I make my best effort to
-attend.
-&lt;/p&gt;
+attend.&lt;/p&gt;
 &lt;p&gt;
 I find the role of faculty at reunions as somewhat amusing – we&amp;#39;re
 something of a prop. The grads are there and should be there to
@@ -1174,8 +997,7 @@ that are now part of my alumni family - now friends who I&amp;#39;m in touch
 with to varying degrees, the ones that never knew me and the ones that
 knew me a bit. For the second and third groups, as a faculty member,
 I&amp;#39;m there to remind them of the glory days as a representative of the
-institution.
-&lt;/p&gt;
+institution.&lt;/p&gt;
 &lt;p&gt;
 As with all reunions I had plenty of &amp;#34;I was never in your class
 but …&amp;#34; conversations. I also a number of &amp;#34;I majored in
@@ -1193,15 +1015,13 @@ me while Devorah looked on confused. Eventually she met and got to
 know Herb and it all made sense. Another grad added &amp;#34;you think we all
 forget about you but you come up more than you know&amp;#34; so I take that as
 a shout out to all of the teachers out there who never get to hear
-back about how much they are remembered and appreciated.
-&lt;/p&gt;
+back about how much they are remembered and appreciated.&lt;/p&gt;
 &lt;p&gt;
 With tools like email and Facebook it&amp;#39;s easier to remain connected to
 former students but it&amp;#39;s always nice to connect in person. For the
 StuyCS family, we have our periodic meetups but for the rest, I love
 being included in class reunions and hope to be invited to more in
-years to come.
-&lt;/p&gt;
+years to come.&lt;/p&gt;
 </description>
     </item>
     
@@ -1218,13 +1038,11 @@ blogged.&amp;#34; It really would be. We&amp;#39;re still a relatively small
 community and while there&amp;#39;s some good conversation going on on
 mailing lists and on Facebook, those aren&amp;#39;t easily discoverable or
 accessible and in the case of Facebook, there&amp;#39;s a question of
-ownership and permanence.
-&lt;/p&gt;
+ownership and permanence.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve been blogging on and off since 2010. Around 300 posts. Not super prolific
 but I&amp;#39;ve been doing it long enough to maybe be able to share a bit of
-perspective.
-&lt;/p&gt;
+perspective.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m not sure exactly why I started. In part I was inspired by my wife
 who at the time was blogging about her &lt;a href=&#34;http://squid-knits.blogspot.com/&#34;&gt;knitting&lt;/a&gt;. I was also inspired
@@ -1236,96 +1054,72 @@ Martin.&lt;/a&gt; Both terrific high school CS teachers at the time who are
 unfortunately no longer in the classroom (unfortunate for the kids, I
 wish Ben and Helene all happiness and success in all their
 endeavors). We all agreed to try to write more and that got me started
-again. I&amp;#39;ve been posting around 50 times a year since.
-&lt;/p&gt;
+again. I&amp;#39;ve been posting around 50 times a year since.&lt;/p&gt;
 &lt;p&gt;
 Looking back to when I used blogger, I had 30 - 50 hits on some early
 posts and that was mostly just me hitting the site. It didn&amp;#39;t matter.
 Writing has let me work through my thoughts. It also creates a record of
-my thoughts and on how my thinking evolves over time.
-&lt;/p&gt;
+my thoughts and on how my thinking evolves over time.&lt;/p&gt;
 &lt;p&gt;
 Over time, people have told me that they&amp;#39;ve found some of the things
 I&amp;#39;ve written useful or helpful and I&amp;#39;d argue that when people disagree
 with something I write, even if they don&amp;#39;t comment and I&amp;#39;ve all I&amp;#39;ve
 evoked is a reaction of &amp;#34;Z&amp;#39;s full of crap,&amp;#34; it&amp;#39;s gotten them to
 re-evaluate their own thoughts on whatever the subject and if it&amp;#39;s
-confirmation of their original beliefs, that&amp;#39;s OK.
-&lt;/p&gt;
+confirmation of their original beliefs, that&amp;#39;s OK.&lt;/p&gt;
 &lt;p&gt;
 The important thing is that by blogging I&amp;#39;m getting my thoughts down
 &amp;#34;on paper&amp;#34; and sharing them for the world to take or leave as they
 please and the more of us who do this, the more we expand the sum
-knowledge of CS teaches.
-&lt;/p&gt;
+knowledge of CS teaches.&lt;/p&gt;
 &lt;p&gt;
 As a dispersed community of CS teachers across the country, we need
-more people blogging on public platforms not in silos like Facebook.
-&lt;/p&gt;
+more people blogging on public platforms not in silos like Facebook.&lt;/p&gt;
 &lt;p&gt;
-I&amp;#39;ve heard reasons why teachers don&amp;#39;t blog:
-&lt;/p&gt;
+I&amp;#39;ve heard reasons why teachers don&amp;#39;t blog:&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;I&amp;#39;m new and have nothing to write about&lt;/strong&gt;&lt;/strong&gt;
-&lt;/p&gt;
+&lt;strong&gt;&lt;strong&gt;I&amp;#39;m new and have nothing to write about&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 Sure you do – write a paragraph about your plans for the days lesson
 or how it went. Vent your frustrations (but be careful not to get
-yourself in trouble). Rave about some students work.
-&lt;/p&gt;
+yourself in trouble). Rave about some students work.&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;I don&amp;#39;t have time&lt;/strong&gt;&lt;/strong&gt;
-&lt;/p&gt;
+&lt;strong&gt;&lt;strong&gt;I don&amp;#39;t have time&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 Yes, this is a tough one. If you have to do PD time, maybe your
 supervisor will let you use it for blogging. To be honest, when I&amp;#39;m
 writing regularly it doesn&amp;#39;t take that long. When I haven&amp;#39;t written in
 a while it takes longer. In any event. It&amp;#39;s important and posts don&amp;#39;t
-have to be long
-&lt;/p&gt;
+have to be long&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;I&amp;#39;m not a great writer&lt;/strong&gt;&lt;/strong&gt;
-&lt;/p&gt;
+&lt;strong&gt;&lt;strong&gt;I&amp;#39;m not a great writer&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 This blog is proof that you don&amp;#39;t have to be. I&amp;#39;m stilted and ramble
 and certainly no Shakespeare. I am the weakest writer in my household
-and it&amp;#39;s not even close. Even so, we all have something to share.
-&lt;/p&gt;
+and it&amp;#39;s not even close. Even so, we all have something to share.&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;&lt;strong&gt;I don&amp;#39;t know how&lt;/strong&gt;&lt;/strong&gt;
-&lt;/p&gt;
+&lt;strong&gt;&lt;strong&gt;I don&amp;#39;t know how&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 I was thinking about proposing a session at next years CSTA conference
 where I&amp;#39;d work the group through creating a github pages based
-blog. In the meantime, there are a lot of easy ways to start out.
-&lt;/p&gt;
+blog. In the meantime, there are a lot of easy ways to start out.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://blogger.com&#34;&gt;http://blogger.com&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blogger.com&#34;&gt;http://blogger.com&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://wordpress.com&#34;&gt;http://wordpress.com&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.com&#34;&gt;http://wordpress.com&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-and for those who want total control
-&lt;/p&gt;
+&lt;p&gt;and for those who want total control&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-So, there&amp;#39;s my plea. If you&amp;#39;re a CS teacher and you&amp;#39;re reading this
+&lt;p&gt;So, there&amp;#39;s my plea. If you&amp;#39;re a CS teacher and you&amp;#39;re reading this
 please consider blogging. I assure you, we will all appreciate it and
-benefit from it.
-&lt;/p&gt;
+benefit from it.&lt;/p&gt;
 </description>
     </item>
     
@@ -1339,14 +1133,12 @@ benefit from it.
 The &lt;a href=&#34;https://cseducators.stackexchange.com/&#34;&gt;CS Educators StackExchange&lt;/a&gt; is now in public beta. For those of you
 who are not in tech, &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_Exchange&#34;&gt;StackExchange&lt;/a&gt; is a network of question answering
 sites. &lt;a href=&#34;http://stackoverflow.com&#34;&gt;StackOverflow&lt;/a&gt; is probably the most famous - many peoples go to
-site for computer science and programming questions and answers.
-&lt;/p&gt;
+site for computer science and programming questions and answers.&lt;/p&gt;
 &lt;p&gt;
 During this period of public beta the site will be working on defining
 itself and also on developing a critical mass of users. I hope the
 site succeeds and I encourage everyone to &lt;a href=&#34;https://cseducators.stackexchange.com/&#34;&gt;check it out&lt;/a&gt;, ask questions,
-answer some and let&amp;#39;s all see where this goes.
-&lt;/p&gt;
+answer some and let&amp;#39;s all see where this goes.&lt;/p&gt;
 &lt;p&gt;
 An interesting difference between StackExchanges and most other
 communities is that it&amp;#39;s a question answering site not a discussion
@@ -1360,13 +1152,11 @@ interesting to see how things develop given that, by and large, K12
 educators know a whole lot more about teaching than those in higher ed
 while the on the flip side, the professors are generally much
 more knowledgeable about the subject matter and then you have the
-education researcher which is another beast altogether.
-&lt;/p&gt;
+education researcher which is another beast altogether.&lt;/p&gt;
 &lt;p&gt;
 Part of me thinks that discussion could be more valuable than answers
 and in fact, I&amp;#39;m finding the comments which are more discussion like
-to be more interesting, but that&amp;#39;s just me.
-&lt;/p&gt;
+to be more interesting, but that&amp;#39;s just me.&lt;/p&gt;
 &lt;p&gt;
 A side thing I noticed was that the moderators have taken to asking
 contributors not to link to other sites but to either write self
@@ -1379,52 +1169,36 @@ but I also had no desire to rewrite my content just to share info that
 was already out there. Likewise there was a question that was posed on
 A* which led to &lt;a href=&#34;http://cestlaz.github.io/posts/a-star-is-born/&#34;&gt;this post&lt;/a&gt;. I wanted to share my thoughts with &amp;#34;my&amp;#34;
 community as well as on the stackexchange and didn&amp;#39;t want to have to
-do the same thing twice.
-&lt;/p&gt;
+do the same thing twice.&lt;/p&gt;
 &lt;p&gt;
 One of the moderators claims is that a link might not be
 permanent. This is true. My blog might not be around in 5 years but
 then the CS Educators StackExchange might not as well. I hope both are
-around and thriving but time will tell.
-&lt;/p&gt;
+around and thriving but time will tell.&lt;/p&gt;
 &lt;p&gt;
 This also got me thinking about the  mish mash of
 CS Educator communities floating around. I&amp;#39;m familiar with and a
-member of:
-&lt;/p&gt;
+member of:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-A few Facebook groups (CS Education, CS Education Discussion, AP
-&lt;/p&gt;
+&lt;p&gt;A few Facebook groups (CS Education, CS Education Discussion, AP&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Comp Sci, APCSP)
-&lt;/p&gt;
+&lt;p&gt;Comp Sci, APCSP)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-The CS Education subreddit
-&lt;/p&gt;
+&lt;p&gt;The CS Education subreddit&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-A couple of mailing lists (the College Board AP Community, SIGCSE)
-&lt;/p&gt;
+&lt;p&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-A few blogs are kind of communities in that there&amp;#39;s a core group of
-&lt;/p&gt;
+&lt;p&gt;A few blogs are kind of communities in that there&amp;#39;s a core group of&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;readers but discussion is pretty sparse.&lt;/p&gt;
 &lt;p&gt;
-readers but discussion is pretty sparse.
-&lt;/p&gt;
-&lt;p&gt;
-Are there others I&amp;#39;m not aware of?
-&lt;/p&gt;
+Are there others I&amp;#39;m not aware of?&lt;/p&gt;
 &lt;p&gt;
 This has led to a lot of duplication and some fragmentation and there
 is a concern about silos. The Facebook groups are very much a silo and
@@ -1434,17 +1208,14 @@ our own personal islands so while I wish more people would both blog
 and comment about CS Ed they&amp;#39;re not necessarily open and permanent
 either. At least with some blogs and with the subreddit and
 stackexchange we can, if we want, download all of the data if we want
-and preserve it for posterity.
-&lt;/p&gt;
+and preserve it for posterity.&lt;/p&gt;
 &lt;p&gt;
 I don&amp;#39;t know if there&amp;#39;s a solution - maybe we should set up a &lt;a href=&#34;https://github.com/discourse/discourse&#34;&gt;discourse&lt;/a&gt;
-instance - something really open and accessible.
-&lt;/p&gt;
+instance - something really open and accessible.&lt;/p&gt;
 &lt;p&gt;
 In any event, please do check out the &lt;a href=&#34;https://cseducators.stackexchange.com/&#34;&gt;CS Educators StackExchange&lt;/a&gt; and
 let&amp;#39;s all help it become the best question answering resource it can
-be for our community.
-&lt;/p&gt;
+be for our community.&lt;/p&gt;
 </description>
     </item>
     
@@ -1457,89 +1228,71 @@ be for our community.
       <description>&lt;img src=&#34;https://cestlaz.github.io/img/knitting-tech-conference/top.jpg&#34; alt=&#34;/img/knitting-tech-conference/top.jpg&#34; title=&#34;/img/knitting-tech-conference/top.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
 This past weekend was &lt;a href=&#34;http://catskillsconf.com&#34;&gt;Catskills Conf&lt;/a&gt;, one of my favorite events of the
-year.
-&lt;/p&gt;
+year.&lt;/p&gt;
 &lt;p&gt;
-Last year, Devorah joined me and also enjoyed the show.
-&lt;/p&gt;
+Last year, Devorah joined me and also enjoyed the show.&lt;/p&gt;
 &lt;p&gt;
 If you know my wife, you know she&amp;#39;s &lt;strong&gt;&lt;strong&gt;always&lt;/strong&gt;&lt;/strong&gt; knitting. Ok, not true,
 she&amp;#39;s always knitting, spinning, weaving or performing some other form
-of fiber craft.
-&lt;/p&gt;
+of fiber craft.&lt;/p&gt;
 &lt;p&gt;
 I can&amp;#39;t complain. That&amp;#39;s how I ended up with my Kandinsky, Dust Puppy
 and Yoda sweaters and my awesome Kang and Kodos socks. It also
-keeps her an my entire family in warm amazingly beautiful knit wear.
-&lt;/p&gt;
+keeps her an my entire family in warm amazingly beautiful knit wear.&lt;/p&gt;
 &lt;p&gt;
 While at the conference, Devorah was her usual self - knitting during
 the talks. That doesn&amp;#39;t mean she wasn&amp;#39;t paying attention, it&amp;#39;s just
 what she does. We also noted a few other attendees knitting throughout
-the weekend.
-&lt;/p&gt;
+the weekend.&lt;/p&gt;
 &lt;p&gt;
 So, this year, Devorah had an idea – let&amp;#39;s focus those idle hands to
 do some good. She asked the conference organizers to send out an email
 to attendees - knit squares during the conference and Devorah will put
 them together at the end and we&amp;#39;ll donate the blanket we make to
-children in need through &lt;a href=&#34;https://projectlinus.org/&#34;&gt;Project Linus&lt;/a&gt;.
-&lt;/p&gt;
+children in need through &lt;a href=&#34;https://projectlinus.org/&#34;&gt;Project Linus&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 The organizers were supportive, if not somewhat skeptical. That was
-ok - we also had no idea if this would be a win or a flop.
-&lt;/p&gt;
+ok - we also had no idea if this would be a win or a flop.&lt;/p&gt;
 &lt;p&gt;
 Conference came and Devorah announced the project. She brought yarn,
 needles, crochet hooks and instructions and also offered to teach
-knitting during the breaks.
-&lt;/p&gt;
+knitting during the breaks.&lt;/p&gt;
 &lt;p&gt;
 It started slowly, but as the conference progressed, people started
-knitting both during the talks and during the breaks.
-&lt;/p&gt;
+knitting both during the talks and during the breaks.&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/DevorahZamansky&#34;&gt;@DevorahZamansky&lt;/a&gt; leading knitting for children in need at &lt;a href=&#34;https://twitter.com/catskillsconf&#34;&gt;@catskillsconf&lt;/a&gt; &lt;a href=&#34;https://t.co/hn0rx633e1&#34;&gt;pic.twitter.com/hn0rx633e1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mike Zamansky (@zamansky) &lt;a href=&#34;https://twitter.com/zamansky/status/789839861813575680&#34;&gt;October 22, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
-Experienced knitters cranked out squares and newbies learned.
-&lt;/p&gt;
+Experienced knitters cranked out squares and newbies learned.&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/knitting-tech-conference/learning.jpg&#34; alt=&#34;/img/knitting-tech-conference/learning.jpg&#34; title=&#34;/img/knitting-tech-conference/learning.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
-&amp;lt;br&amp;gt;
-&lt;/p&gt;
+&amp;lt;br&amp;gt;&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/jcn&#34;&gt;@jcn&lt;/a&gt; knitting for charity with &lt;a href=&#34;https://twitter.com/DevorahZamansky&#34;&gt;@DevorahZamansky&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/catskillsconf?src=hash&#34;&gt;#catskillsconf&lt;/a&gt; &lt;a href=&#34;https://t.co/rvkSnMYDCp&#34;&gt;pic.twitter.com/rvkSnMYDCp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mike Zamansky (@zamansky) &lt;a href=&#34;https://twitter.com/zamansky/status/790164027494326272&#34;&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
-&amp;lt;br&amp;gt;
-&lt;/p&gt;
+&amp;lt;br&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 At the end of the conference, we collected the partials. Devorah&amp;#39;s
-going to finish the blanket up this week and then it gets donated.
-&lt;/p&gt;
+going to finish the blanket up this week and then it gets donated.&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;6 X 5 and growing! &lt;a href=&#34;https://twitter.com/catskillsconf&#34;&gt;@catskillsconf&lt;/a&gt; &lt;a href=&#34;https://t.co/epC9b3ap0t&#34;&gt;pic.twitter.com/epC9b3ap0t&lt;/a&gt;&lt;/p&gt;&amp;mdash; Devorah Zamansky (@DevorahZamansky) &lt;a href=&#34;https://twitter.com/DevorahZamansky/status/790697247965151232&#34;&gt;October 24, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
 So, how much of a win was this? We got a blanket to donate to charity
 and a couple of new knitters. We also heard and overheard some
-interesting comments.
-&lt;/p&gt;
+interesting comments.&lt;/p&gt;
 &lt;p&gt;
 One speaker commented that it as much better to see members of the
-audience knitting for good rather than checking their cell phones.
-&lt;/p&gt;
+audience knitting for good rather than checking their cell phones.&lt;/p&gt;
 &lt;p&gt;
 We also overheard some attendees talking about how the knitting
 project left them feeling more connected to the conference since they
-were able to contribute something.
-&lt;/p&gt;
+were able to contribute something.&lt;/p&gt;
 &lt;p&gt;
-Sounds like a pretty big win to me.
-&lt;/p&gt;
+Sounds like a pretty big win to me.&lt;/p&gt;
 &lt;p&gt;
 So much so that Devorah&amp;#39;s thinking about taking the show on the road -
 maybe other conferences would like their idle hands doing some good
-while listening to talks.
-&lt;/p&gt;
+while listening to talks.&lt;/p&gt;
 </description>
     </item>
     
@@ -1551,39 +1304,32 @@ while listening to talks.
       <guid>https://cestlaz.github.io/posts/catskillsconf-2016/</guid>
       <description>&lt;img src=&#34;https://cestlaz.github.io/img/catskills-conf-2016/cc.jpg&#34; alt=&#34;/img/catskills-conf-2016/cc.jpg&#34; title=&#34;/img/catskills-conf-2016/cc.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
-Waking up to a beautiful brisk morning at the Ashokan Center in the Hudson Valley.
-&lt;/p&gt;
+Waking up to a beautiful brisk morning at the Ashokan Center in the Hudson Valley.&lt;/p&gt;
 &lt;p&gt;
 Last year, Devorah and I attended the first &lt;a href=&#34;http://catskillsconf.com&#34;&gt;Catskillsconf&lt;/a&gt;, a tech
 conference in Olivebridge, NY. It was an amazing and unique
 experience. I can only describe it as Tech Conference meets Summer
 camp. Where else can you hear talks by people like &lt;a href=&#34;https://twitter.com/dens?ref_src=twsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&#34;&gt;Dennis Crowley&lt;/a&gt; and
-an alos hear the music of &lt;a href=&#34;http://www.mikeandruthy.com/&#34;&gt;Mike and ruthy&lt;/a&gt;.
-&lt;/p&gt;
+an alos hear the music of &lt;a href=&#34;http://www.mikeandruthy.com/&#34;&gt;Mike and ruthy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 This year, I gave another educaiton rant and to add to the fun,
 Devorah&amp;#39;s been leading a knitting for Charity project and teaching
-attendees to knit:
-&lt;/p&gt;
+attendees to knit:&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Progress on the charity knitting project led by &lt;a href=&#34;https://twitter.com/DevorahZamansky&#34;&gt;@DevorahZamansky&lt;/a&gt; &lt;a href=&#34;https://twitter.com/catskillsconf&#34;&gt;@catskillsconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/catskillsconf?src=hash&#34;&gt;#catskillsconf&lt;/a&gt; &lt;a href=&#34;https://t.co/yoal7r48wO&#34;&gt;pic.twitter.com/yoal7r48wO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mike Zamansky (@zamansky) &lt;a href=&#34;https://twitter.com/zamansky/status/790155915307737088&#34;&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
-and we brought up my Hunter College students to join in the fun.
-&lt;/p&gt;
+and we brought up my Hunter College students to join in the fun.&lt;/p&gt;
 &lt;p&gt;
-In spite of the fact that we were out late at the bonfiere:
-&lt;/p&gt;
+In spite of the fact that we were out late at the bonfiere:&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Ending a great day by relaxing next to the fire &lt;a href=&#34;https://twitter.com/catskillsconf&#34;&gt;@catskillsconf&lt;/a&gt;. &lt;a href=&#34;https://t.co/LzKbftZamz&#34;&gt;pic.twitter.com/LzKbftZamz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Christopher Short (@Shortoutloud) &lt;a href=&#34;https://twitter.com/Shortoutloud/status/790020785943539712&#34;&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
 and then were kept up by the students bonding and chatting in the
-bunkhouse, Devorah and I are first up, bright and early.
-&lt;/p&gt;
+bunkhouse, Devorah and I are first up, bright and early.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ll write up more about this amazing event some time over the
 week. Right now, I think I&amp;#39;ll just go out and enjoy a cup of coffee
-and the clean brisk Hudson Valley air.
-&lt;/p&gt;
+and the clean brisk Hudson Valley air.&lt;/p&gt;
 </description>
     </item>
     
@@ -1597,22 +1343,18 @@ and the clean brisk Hudson Valley air.
 I only learned about NYCIST last spring. They&amp;#39;re the &amp;#34;New York
 Consortium for Independent School Technologists.&amp;#34; They had something
 of an open house that I attended. I heard about them from friend
-and fellow CS educator &lt;a href=&#34;https://twitter.com/ed_saber&#34;&gt;Saber Khan&lt;/a&gt;.
-&lt;/p&gt;
+and fellow CS educator &lt;a href=&#34;https://twitter.com/ed_saber&#34;&gt;Saber Khan&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 Last Thursday I spent an afternoon and evening with NYCIST members for
 a discussion of the state of K12 Computer Science Education in the
-City.
-&lt;/p&gt;
+City.&lt;/p&gt;
 &lt;p&gt;
 Most of my work has been with public schools and most of the teachers
 I know, public school teachers so it was great to make new friends in
-the Independent school community.
-&lt;/p&gt;
+the Independent school community.&lt;/p&gt;
 &lt;p&gt;
 One thing I realized during the evening was that NYCIST has a real
-opportunity to do something special.
-&lt;/p&gt;
+opportunity to do something special.&lt;/p&gt;
 &lt;p&gt;
 In some ways, the public schools are leading the way in computer
 science education as a result of this administrations CS4All
@@ -1620,46 +1362,37 @@ initiative but at the same time, public schools face some real
 challenges. While some &amp;#34;early adopters&amp;#34; have developed their own take
 on computer science education, by and large, CS4All is being defined
 and driven by few for all and, at least right now, the model seems to
-be the &amp;#34;a little PD and you&amp;#39;re a CS teacher&amp;#34; model.
-&lt;/p&gt;
+be the &amp;#34;a little PD and you&amp;#39;re a CS teacher&amp;#34; model.&lt;/p&gt;
 &lt;p&gt;
 At the same time, standardized testing and teacher evaluations are
 pressuring schools, particularly schools of our most vulnerable
 students to push resources towards test prep in tested subjects rather
-than real education, including CS.
-&lt;/p&gt;
+than real education, including CS.&lt;/p&gt;
 &lt;p&gt;
 In this particular instance, NYCIST and independent schools can be
-what charter schools were supposed to be before they were corrupted.
-&lt;/p&gt;
+what charter schools were supposed to be before they were corrupted.&lt;/p&gt;
 &lt;p&gt;
-Laboratories of innovation.
-&lt;/p&gt;
+Laboratories of innovation.&lt;/p&gt;
 &lt;p&gt;
 NYCIST has already gathered together interested parties and the
 independent schools aren&amp;#39;t burdened by the weight of politically
 driven testing and teacher evaluation. At the same time, small class
-sizes and flexible models allow for innovation.
-&lt;/p&gt;
+sizes and flexible models allow for innovation.&lt;/p&gt;
 &lt;p&gt;
 If they wanted to, they could probably create curricular and
 instructional frameworks for CS education and. dare I say it, share it
-back to the public schools.
-&lt;/p&gt;
+back to the public schools.&lt;/p&gt;
 &lt;p&gt;
 I know I&amp;#39;m ignoring independent school politics and other issues that
 would prevent this from happening, but I just feel that if there&amp;#39;s a
-desire to do so from a group like NYCIST, it could happen.
-&lt;/p&gt;
+desire to do so from a group like NYCIST, it could happen.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m looking forward to continuing to work with my new friends and if
 any of you are interested in finding out more about NYCIST, just tweet
-to &lt;a href=&#34;https://twitter.com/ed_saber&#34;&gt;Saber&lt;/a&gt;.
-&lt;/p&gt;
+to &lt;a href=&#34;https://twitter.com/ed_saber&#34;&gt;Saber&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 I don&amp;#39;t know if my idea here will take root but if it does, I&amp;#39;d love
-to work with NYCIST to make something happen.
-&lt;/p&gt;
+to work with NYCIST to make something happen.&lt;/p&gt;
 </description>
     </item>
     
@@ -1670,15 +1403,13 @@ to work with NYCIST to make something happen.
       
       <guid>https://cestlaz.github.io/posts/imposters/</guid>
       <description>&lt;p&gt;
-I&amp;#39;ve been meaning to comment on these tweets for a while:
-&lt;/p&gt;
+I&amp;#39;ve been meaning to comment on these tweets for a while:&lt;/p&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I went to high school with some scary smart people. Never made math team. Didn&amp;#39;t get into honors math. Thought I wasn&amp;#39;t good at it.&lt;/p&gt;&amp;mdash; Stanislav Nikolov (@snikolov) &lt;a href=&#34;https://twitter.com/snikolov/status/748660381392871424&#34;&gt;June 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
   &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/zamansky&#34;&gt;@zamansky&lt;/a&gt; :D&lt;br&gt;&lt;br&gt;that&amp;#39;s the thing though you can get such an inferiority complex by always comparing yourself to others &lt;a href=&#34;https://t.co/LvaMjp1WVf&#34;&gt;https://t.co/LvaMjp1WVf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Stanislav Nikolov (@snikolov) &lt;a href=&#34;https://twitter.com/snikolov/status/748918417667727360&#34;&gt;July 1, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;
-Stan, of course, is one of the most talented people I know.
-&lt;/p&gt;
+Stan, of course, is one of the most talented people I know.&lt;/p&gt;
 &lt;p&gt;
 It reminded me of a conversation I had with my colleague and friend
 Jim last year. I had just recieved an email from a former student
@@ -1687,21 +1418,18 @@ Jim I had just heard from this young lady and Jim replied &amp;#34;I remember
 her, she&amp;#39;s awesome. Really smart.&amp;#34; I mention this because the
 individual we were talking about, while to us, extremely talented in
 addition to being just a terrific person spent much of her career
-living in self doubt.
-&lt;/p&gt;
+living in self doubt.&lt;/p&gt;
 &lt;p&gt;
 Meantime, I was having a conversation with another friend and the
 topic turned to impostor syndrome and the desire to make it a thing of
-the past.
-&lt;/p&gt;
+the past.&lt;/p&gt;
 &lt;p&gt;
 Problem is, I don&amp;#39;t know if that will ever be the case. I&amp;#39;m
 approaching 50 and have a career of good work behind me but I still
 find myself questioning my credentials, work, and ability. Then I realized I wasn&amp;#39;t alone
 when I read &lt;a href=&#34;https://twitter.com/RobertTalbert&#34;&gt;Robert Talbert&amp;#39;s&lt;/a&gt; recent &lt;a href=&#34;http://rtalbert.org/blog/2016/tenure-second-time&#34;&gt;blog post&lt;/a&gt; about his going through
 the tenure process for a second time and &amp;#34;learning through this process
-that I have not outrun impostor syndrome and probably never will.&amp;#34;
-&lt;/p&gt;
+that I have not outrun impostor syndrome and probably never will.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 Stan&amp;#39;s tweets tell part of the story. When we surround ourselves with
 smart, accomplished people, we sometimes feel we don&amp;#39;t measure
@@ -1710,8 +1438,7 @@ people I&amp;#39;ve worked with are very unassuming and low key. They seem to
 operate assuming that  everyone else is at least as capable and quick as
 they. I recall &lt;a href=&#34;http://paulgraham.com/articles.html&#34;&gt;Paul Graham&lt;/a&gt; talking about this in an essay but
 I don&amp;#39;t remember which one. The problem is, if you don&amp;#39;t understand
-their sincerity, you end up feeling even more inadequate.
-&lt;/p&gt;
+their sincerity, you end up feeling even more inadequate.&lt;/p&gt;
 &lt;p&gt;
 It gets worse when we start comparing ourselves to some unreal
 composite. I remember feeling pretty stupid back when I was younger
@@ -1724,8 +1451,7 @@ wonder I never measured up. Eventually, though, I realized three
 things. First, there&amp;#39;s always someone better at something and always
 someone worse. Second, that&amp;#39;s not the true value of ones worth as a
 person, and three, I bring some good stuff to the table and I should
-be (and am) content with that
-&lt;/p&gt;
+be (and am) content with that&lt;/p&gt;
 &lt;p&gt;
 So, I still struggle with impostor syndrome but at the end of the day,
 it just serves as a reminder to look back on what I&amp;#39;ve done and what
@@ -1733,15 +1459,13 @@ I&amp;#39;ve learned in the process.  I start out in question but in the end,
 leave confident. Maybe the trick isn&amp;#39;t to eliminate impostor syndrome
 but rather to understand and contain it. We don&amp;#39;t want to live in fear
 and anxiety but both are useful emotions when we control them and not
-the reverse.
-&lt;/p&gt;
+the reverse.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s probably good when we question ourselves and re-evaluate our
 positions - we just have to make sure as we&amp;#39;re bringing new people
 into the tech fold that we foster acceptance and confidence  and when
 impostor syndrome sets in that it can be channeled into a positive
-and not scare people away.
-&lt;/p&gt;
+and not scare people away.&lt;/p&gt;
 </description>
     </item>
     
@@ -1756,59 +1480,48 @@ and not scare people away.
 If I look at my leaving Stuyvesant and the NYC Department of
 Education to join Hunter College as the end of Act I of my teaching
 career, then our family&amp;#39;s West Coast swing was a nice way to pull
-down the curtain.
-&lt;/p&gt;
+down the curtain.&lt;/p&gt;
 &lt;p&gt;
 The impetus for the trip was visiting Batya - she&amp;#39;s interning at
-Facebook this summer and having an absolute blast.
-&lt;/p&gt;
+Facebook this summer and having an absolute blast.&lt;/p&gt;
 &lt;p&gt;
 The plan was to spend a few days in San Francisco, then a little south
 to Mountain View, where Batya was staying, and then fly up to Seattle
-for a couple of days.
-&lt;/p&gt;
+for a couple of days.&lt;/p&gt;
 &lt;p&gt;
 Of course, while out there, why not see if some of the StuyCS family
-wanted to get together.
-&lt;/p&gt;
+wanted to get together.&lt;/p&gt;
 &lt;p&gt;
 I knew I had a lot of former students out on the West Coast but still, I was
 overwhelmed and humbled by the number of people who wanted to spend
-time and catch up.
-&lt;/p&gt;
+time and catch up.&lt;/p&gt;
 &lt;p&gt;
 We kicked things off at Bloomberg Beta thanks to &lt;a href=&#34;https://twitter.com/roybahat&#34;&gt;Roy Bahat.&lt;/a&gt; Roy was
 never actually my student but we&amp;#39;ve gotten to know each other over the
 years and I value him as a friend and advisor. Roy provided the food
-and the space and about 60 former students + a few old timers showed.
-&lt;/p&gt;
+and the space and about 60 former students + a few old timers showed.&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/end-act-1/bloomberg.jpg&#34; alt=&#34;/img/end-act-1/bloomberg.jpg&#34; title=&#34;/img/end-act-1/bloomberg.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
-A couple of days later, we had a lunch meetup for the Googlers:
-&lt;/p&gt;
+A couple of days later, we had a lunch meetup for the Googlers:&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/end-act-1/google.jpg&#34; alt=&#34;/img/end-act-1/google.jpg&#34; title=&#34;/img/end-act-1/google.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
 and a happy hour at Facebook (sorry, no picture). Then in Seattle, a
-nice dinner to close things out.
-&lt;/p&gt;
+nice dinner to close things out.&lt;/p&gt;
 &lt;img src=&#34;https://cestlaz.github.io/img/end-act-1/seattle.jpg&#34; alt=&#34;/img/end-act-1/seattle.jpg&#34; title=&#34;/img/end-act-1/seattle.jpg&#34; align=&#34;center&#34;/&gt;
 &lt;p&gt;
 Between these events there were some lunches, a barbecue at Batya&amp;#39;s
 place  and even a drive by visit with a former student at
 Microsoft. Overall, it was easily over 100 students over the course of
-the week or so we were out there.
-&lt;/p&gt;
+the week or so we were out there.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve often said that one of the things I&amp;#39;m proudest of is helping to
 build the StuyCS family. A community of people spanning decades. Over
 the week, we had events mixing students from the mid 90&amp;#39;s to
-youngsters currently in college and on their internships.
-&lt;/p&gt;
+youngsters currently in college and on their internships.&lt;/p&gt;
 &lt;p&gt;
 Seeing all these people meeting and supporting each other gave me a
 &amp;#34;proud pappa&amp;#34; type feeling even though I didn&amp;#39;t do any more than set
-the stage for them getting together.
-&lt;/p&gt;
+the stage for them getting together.&lt;/p&gt;
 &lt;p&gt;
 Over the week, the conversations were also great - not the straight
 tech ones, but the ones that really made me proud of the crew. From
@@ -1816,30 +1529,25 @@ Seth talking about how to better get good CS Ed to more kids, to PJ
 discussing why he feels it&amp;#39;s so important to be an active mentor to
 his young programmers and how to get them to be real thinkers, to
 Mike, Sam, Kathy, and Leo discussing the disconnect between
-privileged families and those struggling to get by.
-&lt;/p&gt;
+privileged families and those struggling to get by.&lt;/p&gt;
 &lt;p&gt;
 What more could a teacher want than their former students being both
 happy in their lives and careers as well as good people seeking to
-make the world better for everyone.
-&lt;/p&gt;
+make the world better for everyone.&lt;/p&gt;
 &lt;p&gt;
 The only thing that made me sad about the trip is that with all the
 big events, I really didn&amp;#39;t get a chance to spend the time I wanted
-with everyone. I hope to do better next time.
-&lt;/p&gt;
+with everyone. I hope to do better next time.&lt;/p&gt;
 &lt;p&gt;
 So, I&amp;#39;ve now been at Hunter for one semester and things will really
 ramp up in the Fall. I&amp;#39;m still a proud part of our StuyCS family and if
 being a part of pulling it together is the legacy I left, I can live
-with that.
-&lt;/p&gt;
+with that.&lt;/p&gt;
 &lt;p&gt;
 The trip was a nice symbolic way to lower the curtain on act 1. I&amp;#39;m
 counting on the StuyCS family and all the other players to help so
 that we can make sure act 2 is a success and we can build something
-similar for more young people throughout the city and perhaps the country.
-&lt;/p&gt;
+similar for more young people throughout the city and perhaps the country.&lt;/p&gt;
 </description>
     </item>
     

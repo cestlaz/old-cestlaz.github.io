@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622118319" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
 
 
 
@@ -77,67 +77,55 @@
         </header>
         <div class="content">
             
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Day 17
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 <a href="https://adventofcode.com/2020/day/17">Day 17</a> brought back Cellular Automata. It was a nice follow up to <a href="https://cestlaz.github.io/post/advent-2020-day11/">day
 11</a>. In my <a href="https://cestlaz.github.io/post/advent-2020-day11/">writeup</a> I talked about data representation - how a Cellular
 Automoton like Conway&#39;s game of life is a nice 2D array project in a
 class like APCS-A but multi dimensional arrays are only one way to
-represent a cellular automaton. Day 17 really drove that home. 
-</p>
+represent a cellular automaton. Day 17 really drove that home. </p>
 <p>
 The actual rules were pretty simple - if a cell is active and has 2 or
 3 active neighbors it stays active. If it&#39;s inactive and has three
-active it becomes active. Otherwise the cell is inactive. 
-</p>
+active it becomes active. Otherwise the cell is inactive. </p>
 <p>
 The catch for part 1 is that this CS is in three dimensions. Each and
 a cell&#39;s neighbors are defined as all coordinates that differ by one
 in any of the three dimensions. So, if a cell is at an (x,y,z) location
 it&#39;s neighbors will be at (x+1,y,z), (x-1,y,z), (x+1,y+1,z),
-(x+1,y-1,z), etc. for 26 neighbors in all. 
-</p>
+(x+1,y-1,z), etc. for 26 neighbors in all. </p>
 <p>
 You could use a list  within a list within a list or a three
 dimensional array to represent your world but that&#39;s tricky and error
-prone. What&#39;s worse, part 2 took the CA into the fourth dimension.
-</p>
+prone. What&#39;s worse, part 2 took the CA into the fourth dimension.</p>
 <p>
 Better is to just keep a list or set of active cells. Then the problem
-becomes pretty easy. You need to be able to:
-</p>
+becomes pretty easy. You need to be able to:</p>
 <ol>
 <li>
-<p>
-Find all of a cell&#39;s neighbors - this is pretty easy because you
+<p>Find all of a cell&#39;s neighbors - this is pretty easy because you
 can iterate over all the +1 and -1 possibilities for each of the x,
-y, and z values.
-</p>
+y, and z values.</p>
 </li>
 <li>
-<p>
-Find all the potential cells for the next state - this is also
+<p>Find all the potential cells for the next state - this is also
 pretty easy because it&#39;s the set of all cells that are currently
-active along with all of their neighbors. 
-</p>
+active along with all of their neighbors. </p>
 </li>
 <li>
-<p>
-Count a given cell&#39;s active neighbors - this is easy once you&#39;ve
-done the find neighbors routine. 
-</p>
+<p>Count a given cell&#39;s active neighbors - this is easy once you&#39;ve
+done the find neighbors routine. </p>
 </li>
 <li>
-<p>
-A way to test if a cell is active which is just checking to see if
-it&#39;s in your active cells list or set.
-</p>
+<p>A way to test if a cell is active which is just checking to see if
+it&#39;s in your active cells list or set.</p>
 </li>
 </ol>
-<p>
-Then, it&#39;s pretty easy to run the CA: 
+<p>Then, it&#39;s pretty easy to run the CA: 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># pythonesque pseudocode </span>
 potential_cells <span style="color:#f92672">=</span> find_all_neighbors(current_active_cells)
 new_cells <span style="color:#f92672">=</span> []
@@ -146,40 +134,37 @@ new_cells <span style="color:#f92672">=</span> []
   <span style="color:#66d9ef">if</span> is_active(cell) <span style="color:#f92672">and</span> (n<span style="color:#f92672">==</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">or</span> n<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>):
     new_cells<span style="color:#f92672">.</span>append(cell)
   <span style="color:#66d9ef">elif</span> (<span style="color:#f92672">not</span> is_active(cell)) <span style="color:#f92672">and</span> n<span style="color:#f92672">==</span><span style="color:#ae81ff">3</span>:
-    new_cells<span style="color:#f92672">.</span>append(cell)</code></pre></div>
-</p>
+    new_cells<span style="color:#f92672">.</span>append(cell)</code></pre></div></p>
 <p>
 Then you just have to run generate new states until you get the
-answer.
-</p>
+answer.</p>
 <p>
 Part 2 extended the CA to 4 dimensions. If you had a multidimensional
 array this would get super message but with a list of active cells,
 the changes are minimal - just add an extra coordinate, update getting
-the neighbors and you&#39;re good to go.
-</p>
+the neighbors and you&#39;re good to go.</p>
 <p>
 This is a case of where thinking through your data representation can
-be a big win.
-</p>
+be a big win.</p>
 <p>
-Clojure code <a href="https://github.com/zamansky/advent2020/blob/main/src/day17.clj">here</a>.
-</p>
+Clojure code <a href="https://github.com/zamansky/advent2020/blob/main/src/day17.clj">here</a>.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Day 18
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 <a href="https://adventofcode.com/2020/day/18">Day 18</a> was all about evaluating math expressions. For part 1 you had
 parenthesized expressions consisting of numbers * and + that you had
 to evaluate but you had to do it by first doing parens then left to
-right - multiplication was not a higher precedence.
-</p>
+right - multiplication was not a higher precedence.</p>
 <p>
 This sounds like a parsing first problem but it turns out I was able
 to exploit some of Clojure&#39;s language features. Looking at the
 subreddit after solving it seems that a bunch of other languages also
-have features that could be exploited.
-</p>
+have features that could be exploited.</p>
 <p>
 Clojure represents data (and programs) as <a href="https://en.wikipedia.org/wiki/S-expression">S-Expressions</a> - basically
 stuff in parens. As a prefix language, instead of writing 10+20, in
@@ -189,59 +174,50 @@ evaluate the inner S-Expression (sexp) before it can add that to +10
 so Clojure can do the parsing for us. We can take an input string and
 convert it to an sexp using <code>read-string</code>  but if we just try to do
 <code>(read-string &#34;1 + 2 + 3&#34;)</code> we&#39;d get an error because &#34;1 + 2 + 3&#34;
-isn&#39;t a valid sexp so we just surround it by parens:
-</p>
+isn&#39;t a valid sexp so we just surround it by parens:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>equation-sexp (<span style="color:#a6e22e">read-string</span> (str <span style="color:#e6db74">&#34;(&#34;</span> <span style="color:#e6db74">&#34;1 + 2 * 3 + (4 * 5 )&#34;</span> <span style="color:#e6db74">&#34;)&#34;</span>)))</code></pre></div>
-</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>equation-sexp (<span style="color:#a6e22e">read-string</span> (str <span style="color:#e6db74">&#34;(&#34;</span> <span style="color:#e6db74">&#34;1 + 2 * 3 + (4 * 5 )&#34;</span> <span style="color:#e6db74">&#34;)&#34;</span>)))</code></pre></div></p>
 <p>
-The above would leave us with the sexp (1 + 2 * 3 + (4 * 5 )).
-</p>
+The above would leave us with the sexp (1 + 2 * 3 + (4 * 5 )).</p>
 <p>
 Next, forgetting the inner parens, we can write a function that will
 evaluate an sexp of the form (1 + 2 * 3 + …) etc. Basically, this can
 be done with a reduce. Start with the first value then take the rest
 of the list two at a time, the first of each pair is an operator and
 the second is an operand so apply the operand to the other number in
-the pair and your overall result so far.
-</p>
+the pair and your overall result so far.</p>
 <p>
-In Clojure it looks like this: 
-</p>
+In Clojure it looks like this: </p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>part1-eval [f <span style="color:#f92672">&amp;</span> r]
   (reduce (<span style="color:#66d9ef">fn </span>[ans [op next]]
-            (apply op [ans next] )) f (<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> r)))</code></pre></div>
-</p>
+            (apply op [ans next] )) f (<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> r)))</code></pre></div></p>
 <p>
 Next, we insert that function name to the start of each sexp so 
 (1 + 2 * 3 + (4 * 5*)) becomes (part1-eval 1 + 2 * 3 + (part1-eval 4 *
 5)). Finally we can do a  Clojure <strong>eval</strong> on this form which will run
 part1-eval on the rest of the sexp which will first run part1-eval on
 the 4 * 5, that will return the 20 and then the first part1-eval will
-finish it&#39;s calculations to give you the answer. 
-</p>
+finish it&#39;s calculations to give you the answer. </p>
 <p>
 Part 2 was similar but there you had to perform addition before
 multiplication. All that was necessary was write a part2-eval function
-that would stand in for the part1-eval.
-</p>
+that would stand in for the part1-eval.</p>
 <p>
 The idea is to take an sexp like (1 + 2 * 3 + 4 * 5) we first split this
 list around the * this gives us (1 + 2) (<strong>) (3 + 4) (</strong>) (5). We then
 filter this to remove the non numbers which gives (1 2) () (3 4) (5)
 (). Then we remove the empty lists: (1 2) (3 4) (5). Add the elements
-of each list: 3 7 5 and then multiply them together.
-</p>
+of each list: 3 7 5 and then multiply them together.</p>
 <p>
-All the code is <a href="https://github.com/zamansky/advent2020/blob/main/src/day18.clj">here</a>. 
-</p>
+All the code is <a href="https://github.com/zamansky/advent2020/blob/main/src/day18.clj">here</a>. </p>
 <p>
 I like day 17 a lot or some variant for students to discuss data
 representations but I think 18 is a little more advanced and probably
 wouldn&#39;t touch it in an early CS class - it was fun to work through
-though :-). 
-</p>
+though :-). </p>
+</div>
+</div>
 
         </div>
         
