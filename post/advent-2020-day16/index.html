@@ -14,13 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1623675452" />
 
 
 
 <meta property="og:title" content="A Teacher Looks at Advent of Code 2020 - day 16" />
-<meta property="og:description" content="Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,
- The basic gist is that you have a plane ticket which is a set of numbers but you don&#39;t know which number maps to which category - row, seat, gate, etc. You also know the number ranges for each category. For example, row might be a number between 6 and 11 or 33 through 44 while a seat might be 13 through 40 or 45 through 50." />
+<meta property="og:description" content="Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,  The basic gist is that you have a plane ticket which is a set of numbers but you don&#39;t know which number maps to which category - row, seat, gate, etc. You also know the number ranges for each category. For example, row might be a number between 6 and 11 or 33 through 44 while a seat might be 13 through 40 or 45 through 50." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day16/" />
 <meta property="article:published_time" content="2020-12-16T17:12:56-04:00" />
@@ -28,8 +27,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher Looks at Advent of Code 2020 - day 16"/>
-<meta name="twitter:description" content="Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,
- The basic gist is that you have a plane ticket which is a set of numbers but you don&#39;t know which number maps to which category - row, seat, gate, etc. You also know the number ranges for each category. For example, row might be a number between 6 and 11 or 33 through 44 while a seat might be 13 through 40 or 45 through 50."/>
+<meta name="twitter:description" content="Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,  The basic gist is that you have a plane ticket which is a set of numbers but you don&#39;t know which number maps to which category - row, seat, gate, etc. You also know the number ranges for each category. For example, row might be a number between 6 and 11 or 33 through 44 while a seat might be 13 through 40 or 45 through 50."/>
 
 
 
@@ -80,53 +78,69 @@
         <div class="content">
             
 <p>
-Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,</p>
+Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,
+</p>
 <p>
 The basic gist is that you have a plane ticket which is a set of
 numbers but you don&#39;t know which number maps to which category - row,
 seat, gate, etc. You also know the number ranges for each
 category. For example, row might be a number between 6 and 11 or 33
-through 44 while a seat might be 13 through 40 or 45 through 50. </p>
+through 44 while a seat might be 13 through 40 or 45 through 50. 
+</p>
 <p>
 Finally, you also can see a number of nearby tickets - each also as
-tring of numbers. </p>
+tring of numbers. 
+</p>
 <p>
 For part 1 you had to determine how many of the nearby tickets are
 valid. A ticket is valid if all the numbers on it fall into at least
-one category range. </p>
+one category range. 
+</p>
 <p>
-See the <a href="https://adventofcode.com/2020/day/16">full description</a> for all the details. </p>
+See the <a href="https://adventofcode.com/2020/day/16">full description</a> for all the details. 
+</p>
 <p>
-First up - parsing - a little cumbersome but not too bad.</p>
+First up - parsing - a little cumbersome but not too bad.
+</p>
 <ol>
 <li>
-<p>Split the input into the three main sections - categories, your
-ticket, nearby tickets</p>
+<p>
+Split the input into the three main sections - categories, your
+ticket, nearby tickets
+</p>
 </li>
 <li>
-<p>Convert the categories into a usable form</p>
+<p>
+Convert the categories into a usable form
+</p>
 </li>
 <li>
-<p>Convert your ticket into a list of numbers</p>
+<p>
+Convert your ticket into a list of numbers
+</p>
 </li>
 <li>
-<p>Convert the nearby tickets into a list of tickets each one being a
-list of numbers.</p>
+<p>
+Convert the nearby tickets into a list of tickets each one being a
+list of numbers.
+</p>
 </li>
 </ol>
-<p>Taking each step in turn and it&#39;s not too bad - particularly if you&#39;re
-comfortable with regular expressions.</p>
-<div id="outline-container-headline-1" class="outline-2">
+<p>
+Taking each step in turn and it&#39;s not too bad - particularly if you&#39;re
+comfortable with regular expressions.
+</p>
 <h2 id="headline-1">
 part 1
 </h2>
-<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 Representing the categories leads us to our first interesting
 decision. How will we test to see if a ticket is valid and based on
-that how will we represent the categories?</p>
+that how will we represent the categories?
+</p>
 <p>
-Each category has two ranges connected with an <strong>or</strong>:</p>
+Each category has two ranges connected with an <strong>or</strong>:
+</p>
 <pre class="example">
 row: 6-11 or 33-44
 seat: 13-40 or 45-50
@@ -134,27 +148,34 @@ seat: 13-40 or 45-50
 <p>
 One could make a construct to hold the bounds, loop through the nearby
 tickets and for each value, run an if statement with the two ranges
-connected by an <strong>or</strong>. </p>
+connected by an <strong>or</strong>. 
+</p>
 <p>
 This is where a class can talk about code vs data - a topic I&#39;m really
-fond of.</p>
+fond of.
+</p>
 <p>
-Instead of taking the above range and having some test like: </p>
+Instead of taking the above range and having some test like: 
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
   <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&gt;=</span> low1 <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> high1) <span style="color:#f92672">or</span> \
      (number <span style="color:#f92672">&gt;=</span> low2 <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> high2):
-       do something</code></pre></div></p>
+       do something</code></pre></div>
+</p>
 <p>
-or specifically for the row example:</p>
+or specifically for the row example:
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
   <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">11</span>) <span style="color:#f92672">or</span> \
      (number <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">33</span> <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">44</span>):
-       do something</code></pre></div></p>
+       do something</code></pre></div>
+</p>
 <p>
 you could make a set with all the possible seats  and then just test
-to see if the seat was in the set: </p>
+to see if the seat was in the set: 
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r1 <span style="color:#f92672">=</span> set( range(low1,high<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
 r2 <span style="color:#f92672">=</span> set( range(low2,hight2<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
@@ -162,77 +183,91 @@ valid_seats <span style="color:#f92672">=</span> r1<span style="color:#f92672">.
 
 <span style="color:#75715e"># then later</span>
 <span style="color:#66d9ef">if</span> seat <span style="color:#f92672">in</span> valid_seats:
-  do something</code></pre></div></p>
+  do something</code></pre></div>
+</p>
 <p>
-I just find this more elegant. </p>
+I just find this more elegant. 
+</p>
 <p>
 For part 1 I just made a big set with all the valid seats and then
 checked each ticket to see if each if its numbers were in the valid
-seats. </p>
-</div>
-</div>
-<div id="outline-container-headline-2" class="outline-2">
+seats. 
+</p>
 <h2 id="headline-2">
 part 2
 </h2>
-<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 For part 2 first you had to remove all the invalid tickets from the
 nearby tickets. Since you figured out how to identify a valid ticket
-in part one this shouldn&#39;t be too ahrd.</p>
+in part one this shouldn&#39;t be too ahrd.
+</p>
 <p>
 Then we have to sleuth out which column from the tickets represented
 which category. This would make a great group activity in a class,
 particularly with an interactive language. This is a great data
-exploration and representation problem.</p>
+exploration and representation problem.
+</p>
 <p>
 To get more data, I thought I&#39;d write a routine to pull all of one
 column from the nearby tickets. Then I could see if all the values in
 that row were valid for a particular category. For example, are all
 the first numbers of all the tickets valid numbers for row. If so,
 that column could represent row. Of course it could also represent
-something else as well.</p>
+something else as well.
+</p>
 <p>
 Now that i could test to see if a column is valid for a category I
 decided to build some data. I built a list of all the possible
-categories for each row.</p>
+categories for each row.
+</p>
 <p>
-Part of it looked sort of like this (but in clojure):</p>
+Part of it looked sort of like this (but in clojure):
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[ [<span style="color:#ae81ff">17</span>, [<span style="color:#e6db74">&#34;wagon&#34;</span>,<span style="color:#e6db74">&#34;arrival-station&#34;</span>] ],
   [<span style="color:#ae81ff">7</span>, [<span style="color:#e6db74">&#34;wagon&#34;</span>,<span style="color:#e6db74">&#34;arrival-station&#34;</span>,<span style="color:#e6db74">&#34;route&#34;</span>,<span style="color:#e6db74">&#34;train&#34;</span>,<span style="color:#e6db74">&#34;row&#34;</span>]]
 <span style="color:#f92672">...</span>
-]</code></pre></div></p>
+]</code></pre></div>
+</p>
 <p>
 Examining this table, I noticed that one row had only one category,
 another had only 2 then one three etc. Great - we can now solve this
-by plugging in the row we know, then the next one, then the next etc.</p>
+by plugging in the row we know, then the next one, then the next etc.
+</p>
 <p>
 The explorations led to an easy answer. I sorted the list and looped
-through. At each iteration I: </p>
+through. At each iteration I: 
+</p>
 <ol>
 <li>
-<p>Added the current category and its associated row to the solution
-set.</p>
+<p>
+Added the current category and its associated row to the solution
+set.
+</p>
 </li>
 <li>
-<p>Removed that category from the rest of the lines</p>
+<p>
+Removed that category from the rest of the lines
+</p>
 </li>
 </ol>
-<p>When done we had a dictionary with a mapping from category to
-row. From there it was pretty simple to find the part 2 answer.</p>
+<p>
+When done we had a dictionary with a mapping from category to
+row. From there it was pretty simple to find the part 2 answer.
+</p>
 <p>
 Lots of good stuff here. I love the data explorations and the way it
-can lead to a pretty straightforward solution.</p>
+can lead to a pretty straightforward solution.
+</p>
 <p>
-Full solution in clojure can be found here: <a href="https://adventofcode.com/2020/day/16">https://adventofcode.com/2020/day/16</a></p>
+Full solution in clojure can be found here: <a href="https://adventofcode.com/2020/day/16">https://adventofcode.com/2020/day/16</a>
+</p>
 <p>
 So far I&#39;ve managed to complete each day - 32 stars. That beats my 31
 from last year adn my top year of 40 back in 2016. Tomorrow I give my
 last exams and grading ca really begin so we&#39;ll see if I can keep
-going but so it&#39;s been a fun Advent of Code year so far.</p>
-</div>
-</div>
+going but so it&#39;s been a fun Advent of Code year so far.
+</p>
 
         </div>
         

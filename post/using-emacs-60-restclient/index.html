@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1623675452" />
 
 
 
@@ -80,50 +80,63 @@
 I started to work on a web application the other day. It&#39;s nothing
 special but if I ever finish it, it will be a pretty complete
 project. The backend will be a <a href="https://restapitutorial.com/">REST</a> API and I&#39;m planning on writing
-the frontend in Clojurescript. </p>
+the frontend in Clojurescript. 
+</p>
 <p>
 The problem with developing a web application like this is that you
 can&#39;t really write the front end until you have enough of the backend
 to provide data. Also, writing the backend would be much easier if you
-already had a front end to test it with. </p>
+already had a front end to test it with. 
+</p>
 <p>
-Pretty annoying.</p>
+Pretty annoying.
+</p>
 <p>
 What you basically have to do is use some system to make all the API
 calls with all the required data. The most fundamental way to do this
 is to use a command line tool like <a href="https://curl.haxx.se/">curl</a>. For example, from a terminal
-I might write something like this to make a login call:</p>
+I might write something like this to make a login call:
+</p>
 <div class="src src-curl">
 <pre><code class="language-curl" data-lang="curl">curl --data &#34;email=myemail&amp;password=mypassword&#34; https://localhost:8080/login</code></pre>
 </div>
 <p>
 It works but is clunky and you end up using the mouse a lot to cut and
-paste data.</p>
+paste data.
+</p>
 <p>
 Web browsers like Firefox and Chrome also have extensions (<a href="https://techbeacon.com/app-dev-testing/5-top-open-source-api-testing-tools-how-choose">link</a>, <a href="https://www.guru99.com/testing-rest-api-manually.html">link</a>)
 but I find them somewhat bulky with their mouse / form based
-interfaces.</p>
+interfaces.
+</p>
 <p>
-Emacs to the rescue!!!!!!!!</p>
+Emacs to the rescue!!!!!!!!
+</p>
 <p>
 I discovered <a href="https://github.com/pashky/restclient.el">restclient</a> for Emacs a couple of years ago but only now
 am reaping the benefits. It&#39;s really amazing. I can easily set up REST
 querries, use all the editing power of Emacs, and even save the
-queries for later.</p>
+queries for later.
+</p>
 <p>
 I didn&#39;t find this until after I made the video but you can even use
-restclient in <a href="https://github.com/alf/ob-restclient.el">org-mode</a>. </p>
+restclient in <a href="https://github.com/alf/ob-restclient.el">org-mode</a>. 
+</p>
 <p>
-It&#39;s all very cool.</p>
+It&#39;s all very cool.
+</p>
 <p>
-Details in the video:</p>
+Details in the video:
+</p>
 <p>
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34;
 src=&#34;<a href="https://www.youtube.com/embed/L7Jcoe3oHTs">https://www.youtube.com/embed/L7Jcoe3oHTs</a>&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</p>
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
 <p>
-Enjoy.</p>
+Enjoy.
+</p>
 
         </div>
         

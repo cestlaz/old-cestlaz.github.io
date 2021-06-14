@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1622645964" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1623675452" />
 
 
 
@@ -77,43 +77,56 @@
         </header>
         <div class="content">
             <p>
-In this video we&#39;ll look at creating a small router. </p>
+In this video we&#39;ll look at creating a small router. 
+</p>
 <p>
 I originally looked at using one of the available libraries to set up
 routing. I considered <a href="https://github.com/metosin/reitit">reitit</a> and <a href="https://github.com/juxt/bidi">bidi</a> but in the end decided to figure
-out how to do it myself. </p>
+out how to do it myself. 
+</p>
 <p>
 It turns out that whenever you change the hash part of a url -
 everything following a # at the end of a url you get a <code>hashchange</code>
-event. You can handle that with</p>
+event. You can handle that with
+</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"> (<span style="color:#a6e22e">.addEventListener</span> js/window <span style="color:#e6db74">&#34;hashchange&#34;</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">handleroutes</span> routes %))</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"> (<span style="color:#a6e22e">.addEventListener</span> js/window <span style="color:#e6db74">&#34;hashchange&#34;</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">handleroutes</span> routes %))</code></pre></div>
+</p>
 <p>
-where <code>handleroutes</code> is your function to actually handle the routes.</p>
+where <code>handleroutes</code> is your function to actually handle the routes.
+</p>
 <p>
 You can then get the actual value of that last hash part of the url
-with:</p>
+with:
+</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">.-location.hash</span> js/window)</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">.-location.hash</span> js/window)</code></pre></div>
+</p>
 <p>
 Once you map that to whatever function you want you update the history
-and mount the new page:</p>
+and mount the new page:
+</p>
 <p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">   (<span style="color:#a6e22e">.history.replaceState</span> js/window {} nil loc)
-   (<span style="color:#a6e22e">mount</span> newpage) </code></pre></div></p>
+   (<span style="color:#a6e22e">mount</span> newpage) </code></pre></div>
+</p>
 <p>
-All the code is up on GitHub: <a href="https://github.com/zamansky/shadow-cljs-demo"><a href="https://github.com/zamansky/shadow-cljs-demo">https://github.com/zamansky/shadow-cljs-demo</a></a></p>
+All the code is up on GitHub: <a href="https://github.com/zamansky/shadow-cljs-demo"><a href="https://github.com/zamansky/shadow-cljs-demo">https://github.com/zamansky/shadow-cljs-demo</a></a>
+</p>
 <p>
 There are still things I need to figure out. Specifically, how can I
 route without the #. That is, I can do it, but the page reloads every
-time rather than just remounting the component I want. </p>
+time rather than just remounting the component I want. 
+</p>
 <p>
-The video goes through the entire process. Enjoy.</p>
+The video goes through the entire process. Enjoy.
+</p>
 <p>
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34;
 src=&#34;<a href="https://www.youtube.com/embed/mbUHkfH6B9g">https://www.youtube.com/embed/mbUHkfH6B9g</a>&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</p>
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</p>
 
         </div>
         

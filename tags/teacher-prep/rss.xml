@@ -1,15 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teacher prep on C&#39;est la Z</title>
+    <title>Teacher Prep on C&#39;est la Z</title>
     <link>https://cestlaz.github.io/tags/teacher-prep/</link>
-    <description>C&#39;est la Z (Teacher prep)</description>
+    <description>C&#39;est la Z (Teacher Prep)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Feb 2021 20:12:43 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 07:55:01 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teacher-prep/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>But we don&#39;t have enough teachers!!</title>
+      <link>https://cestlaz.github.io/post/enough-teachers/</link>
+      <pubDate>Mon, 14 Jun 2021 07:55:01 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/enough-teachers/</guid>
+      <description>&lt;p&gt;
+A common refrain against requiring CS in our K12 schools is that we
+don&amp;#39;t have the teachers and we won&amp;#39;t any time soon. Sure, we don&amp;#39;t
+right now but we won&amp;#39;t if we don&amp;#39;t do something about it.
+&lt;/p&gt;
+&lt;img width=&#34;300&#34; src=&#34;https://s-media-cache-ak0.pinimg.com/736x/16/71/5c/16715cc71bd6c28da0b32f24afec5045--simpsons-quotes-los-simpsons.jpg&#34;&gt;
+&lt;p&gt;
+The question to ask is &amp;#34;how long will it take&amp;#34; and &amp;#34;how do we get
+there?&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s look at New York City. We&amp;#39;ve got approximately 1,000,000
+students in our public schools. Let&amp;#39;s say that&amp;#39;s grades 1
+to 12. That&amp;#39;s 8333 per grade. Let&amp;#39;s take one particular grade and see
+how many classes. At 34 students per class we get 2450 classes. Since
+teachers typically teach five classes that means to cover 1 class for
+every student in one particular grade we&amp;#39;ll need about 500 teachers to
+cover a full year class. 250 if the class is only one semester. 
+&lt;/p&gt;
+&lt;p&gt;
+This if, of course, just back of the envelope calculating and we&amp;#39;d
+need a good deal more to really do justice to teaching CS in K12 but
+500 sounds like a reasonable critical mass to say &amp;#34;we&amp;#39;re teaching CS.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+How long until we can get there?
+&lt;/p&gt;
+&lt;p&gt;
+At Hunter we started our advanced certificate program a year
+ago. The cert program is specifically for teachers licensed in another
+area seeking to add the New York State CS credential. Our first cohort
+graduated 21 and I can proudly say they&amp;#39;re all very well prepared to
+teach CS in K12. They know their content and how to teach it. We&amp;#39;re
+starting another batch in two weeks and a third cohort next summer. By
+June 2023 we should have between 60 and 100 teachers certified. That&amp;#39;s
+not bad. We&amp;#39;ll have a core group of teacher leaders three years from
+our start. 
+&lt;/p&gt;
+&lt;p&gt;
+How are we doing this? What&amp;#39;s the incentive for current teachers to
+get this new certification? It&amp;#39;s an opportunity to really learn some
+CS and how to teach it. All the training and PD based models just
+don&amp;#39;t cut it long term. On the other hand, it costs a pretty penny -
+21 graduate credits. True, those credits can be applied to salary
+differentials but still. Also, while the state could just flat out
+require the certification but they&amp;#39;ve put in a generous ramp up -
+teachers will need the credential but not for a few year.
+&lt;/p&gt;
+&lt;p&gt;
+The biggest reason we&amp;#39;ve been able to get these teachers in is the
+generosity of the New York Tech community. We&amp;#39;ve been able to provide
+financial support to these teachers looking to be our leaders moving
+forward. 
+&lt;/p&gt;
+&lt;p&gt;
+Going with that, we have 4 students currently in our Masters program
+with another 6 or so slated to start in the Fall and that&amp;#39;s with zero
+advertising and outreach. I expect that in a couple of years, the
+demand for the certificate program will wane while it accelerates for
+the masters program. 
+&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;re not going to have all the teachers we need in three years or
+even in five but in three we&amp;#39;ll have a solid core. As other
+certification programs come online the city will increase it&amp;#39;s teacher
+training capacity and as we close in on 2026 when CS4All will expect
+all schools to offer CS, we&amp;#39;ll have a good number of qualified
+teachers to fill the need.
+&lt;/p&gt;
+&lt;p&gt;
+Sure, it&amp;#39;ll take a decade or longer to finish the job but you&amp;#39;ve got
+to start with a plan and a vision and lots of support. At least in NYC
+we&amp;#39;ve got all three.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Teaching and Pedagogy - words and music</title>
@@ -18,27 +101,31 @@
       
       <guid>https://cestlaz.github.io/post/teach-pedagogy/</guid>
       <description>&lt;p&gt;
-I wanted to give a little more context on &lt;a href=&#34;https://cestlaz.github.io/post/teacher-creds/&#34;&gt;yesterday&amp;#39;s post&lt;/a&gt;. &lt;/p&gt;
+I wanted to give a little more context on &lt;a href=&#34;https://cestlaz.github.io/post/teacher-creds/&#34;&gt;yesterday&amp;#39;s post&lt;/a&gt;. 
+&lt;/p&gt;
 &lt;p&gt;
 In reading over the various comments on social media related to the
 topic of required and desired CS teacher knowledge there are those
 that fall on the content is king and pedagogy not so important and
 others who think you don&amp;#39;t really need a deep knowledge of CS. I think
 you need both and think current teachers need to be given a
-reasonable but finite amount of time to get there.&lt;/p&gt;
+reasonable but finite amount of time to get there.
+&lt;/p&gt;
 &lt;p&gt;
 Whenever the topic comes up I think of &lt;a href=&#34;https://en.wikipedia.org/wiki/Eddie_and_the_Cruisers&#34;&gt;Eddie and the Cruisers&lt;/a&gt;. Tom
 Berringer is playing a song - &amp;#34;On the Dark Side&amp;#34; for the band as the
 band ridicules him. Eddie (Michael Pare) says &amp;#34;Not bad&amp;#34; to which a
 band mate says - &amp;#34;he can&amp;#39;t sing, he can&amp;#39;t play and he can&amp;#39;t
 write. What&amp;#39;s not bad?&amp;#34; to which Eddie replies &amp;#34;he&amp;#39;s got something we
-need, words and music.&amp;#34; &lt;/p&gt;
+need, words and music.&amp;#34; 
+&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Ds-MR9OPiNU&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
 Words and music - teaching and pedagogy. One isn&amp;#39;t enough - you need
 both. You need the content but you also have to do something to bring
 value to the kids beyond just dumping the content on the desk - it&amp;#39;s
-why I&amp;#39;m so against scripted curricula.&lt;/p&gt;
+why I&amp;#39;m so against scripted curricula.
+&lt;/p&gt;
 &lt;p&gt;
 Why do I think both sides are so important? I probably got here from
 teaching at Stuyvesant for over 20 years. On top of that, I&amp;#39;m a Stuy
@@ -49,36 +136,43 @@ areas and teachers who didn&amp;#39;t know how to teach. The rub is that at a
 school like Stuy the kids will figure out what they need on their
 own. You can put an unripe avocado on the teachers desk and the kids
 will still pass all the exams. Sure, the kids pass but every kid
-deserves a teacher that adds value to their lives. &lt;/p&gt;
+deserves a teacher that adds value to their lives. 
+&lt;/p&gt;
 &lt;p&gt;
 Some of the worst at Stuy were teachers for whom Stuy was their first
 (and only) gig - they never really had to learn how to teach but for a
 variety of reasons - all the kids pass the AP or in the case of
 teachers that know content but not teaching, the &amp;#34;smart kids&amp;#34; like the
-teacher because they &amp;#34;know stuff&amp;#34; - they think they&amp;#39;re good teachers. &lt;/p&gt;
+teacher because they &amp;#34;know stuff&amp;#34; - they think they&amp;#39;re good teachers. 
+&lt;/p&gt;
 &lt;p&gt;
-Sorry, you have to add value.&lt;/p&gt;
+Sorry, you have to add value.
+&lt;/p&gt;
 &lt;p&gt;
 The best thing that happened to me when I started was when Stuy&amp;#39;s
 chairman didn&amp;#39;t hire me. I ended up at Seward Park and that&amp;#39;s where I
 started to learn my craft. Once at Stuy, I had to be careful not to
 fall into the trap - you can become a good or even a great teacher at
 a specialized school but, just like anywhere else, you have to work
-for it. You have to really look at what and how you&amp;#39;re doing. &lt;/p&gt;
+for it. You have to really look at what and how you&amp;#39;re doing. 
+&lt;/p&gt;
 &lt;p&gt;
 All of this is to say that to add value to your students you really
 have to know both the content and you have to know how to teach - you
 have to add value. If you can be replaced by an avocado, you&amp;#39;re not
-earning your paycheck.&lt;/p&gt;
+earning your paycheck.
+&lt;/p&gt;
 &lt;p&gt;
 Now, I&amp;#39;m not saying that the teachers who don&amp;#39;t know CS and are taking
 on this new challenge shouldn&amp;#39;t be given time to learn the subject or
 that raw teachers who know their subject shouldn&amp;#39;t be given time to
-learn how to teach but you eventually have to get there.&lt;/p&gt;
+learn how to teach but you eventually have to get there.
+&lt;/p&gt;
 &lt;p&gt;
 If we&amp;#39;re okay with teachers who have to follow scripts for either
 content or pedagogy for the long term then we&amp;#39;re devaluing our
-profession. I&amp;#39;d like to think we add more.&lt;/p&gt;
+profession. I&amp;#39;d like to think we add more.
+&lt;/p&gt;
 </description>
     </item>
     
