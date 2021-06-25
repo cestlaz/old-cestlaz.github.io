@@ -6,10 +6,115 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jun 2021 07:55:01 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 10:06:36 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>They&#39;re all good first programming languages ;-)</title>
+      <link>https://cestlaz.github.io/post/first-language/</link>
+      <pubDate>Fri, 25 Jun 2021 10:06:36 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/first-language/</guid>
+      <description>&lt;p&gt;
+There&amp;#39;s been a lot of chatter recently about the first programming
+language to teach. First, I read a Facebook thread focussing on Java,
+C and C++ and then, presumably unrelated, Mark Guzdial posted &lt;a href=&#34;https://cacm.acm.org/blogs/blog-cacm/253393-why-did-we-ever-think-the-first-programming-language-didnt-matter/fulltext&#34;&gt;this&lt;/a&gt;
+which lead to another Facebook discussing and then yesterday I noticed
+a Twitter thread started by someone in the Bootcamp world asking
+people what their first language was which resulted in answers ranging
+from JS to PHP to Perl to a bunch of others.
+&lt;/p&gt;
+&lt;p&gt;
+A question Mark said he was thinking about recently was &amp;#34;Why did
+anyone ever think that the first programming language didn’t matter?&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t think people were thinking it didn&amp;#39;t matter but it was rather
+like Anton Ego&amp;#39;s commenting on Gusteu&amp;#39;s &amp;#34;Anyone can cook.&amp;#34;
+&lt;/p&gt;
+&lt;img width=&#34;300&#34; src=&#34;https://1.bp.blogspot.com/-lS9ekZSoIxw/XRkKDhIOO5I/AAAAAAAAd9M/H-Bjekcvh4IH_86RZlFcAikZvbqBY7uuwCLcBGAs/s1600/anyone-can-cook-book.jpg&#34;&gt;
+&lt;p&gt;
+It&amp;#39;s not that anyone can cook but rather great cooking can come from
+anywhere. It&amp;#39;s not that the language doesn&amp;#39;t matter but rather any
+language (or maybe most any language) &lt;strong&gt;can&lt;/strong&gt; be used as a first
+language under the right set of circumstances.
+&lt;/p&gt;
+&lt;p&gt;
+All to often the argument goes like:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;#34;I start my kids with C&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;But that&amp;#39;s no good - pointers - that&amp;#39;s why I use Javascript - it&amp;#39;s practical&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;But the development tools are lousy for beginners, not to mention the tool chain&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;Yeah but it&amp;#39;s ubiquitous, anyway how about Java&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;Too much overhead. Maybe scratch&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;No way, the kids will think it&amp;#39;s inauthentic.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;I know, apl!!!!!!!!&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;DEAL!!!!&amp;#34;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Most of the discussion focuses on the language. Maybe on the related
+toolset and ecosystem. A few of us though, have been pushing the fact
+that there&amp;#39;s more to the equation. Teacher knowledge, comfort, and
+passion is a HUGE part of the equation. So is the student level and
+background. Mark raised an important factor in his post:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The first programming language is particularly important when we think
+about programming for other-than-CS majors. Students want to learn
+what’s valued in their desired community of practice. If a student
+wants to become a data scientist, R or Python makes a lot more sense
+than learning C.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This is probably more relevant at the college level than K12 but still
+important to consider for the earlier grades as well. I say consider
+though because, as always, the real answer is &amp;#34;it depends.&amp;#34; Back when
+Bioinformatics started to get hot in the &amp;#39;90s I seem to recall Perl
+being the flavor of choice. Those of you who like me battled with Perl
+and its &amp;#34;write once read never&amp;#34; approach to programming would agree
+that even if it was the Lingua Franca of bioinformatics, I don&amp;#39;t know
+if I would take beginners down a path so fraught with peril.
+&lt;/p&gt;
+&lt;p&gt;
+The truth is that the language does matter but there&amp;#39;s a lot of
+latitude. Probably more for a general purpose programming intro
+rather than for a specific discipline but even then. All things being
+equal, I&amp;#39;d probably say that teacher comfort might be the most
+important one to start with but that only holds when a teacher starts
+teaching a class. I think it&amp;#39;s beholden on the teacher to then explore
+alternatives and if another language makes more sense, become familiar
+with it.
+&lt;/p&gt;
+&lt;p&gt;
+In any event, that&amp;#39;s my two cents. This conversation comes around a
+couple of times a year. A couple of rounds ago I think it revolved
+around Javascript so, we&amp;#39;re talking language. Last time, I and others
+brought up teachers, their backgrounds and comfort levels. Now Mark&amp;#39;s
+bringing another dimension. It&amp;#39;s nice to see the dialog evolving.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>But we don&#39;t have enough teachers!!</title>
@@ -4867,84 +4972,6 @@ The video has a run through and demo. Check it out.
 &lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ROnceqt3kpE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
 &lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multiple Cameras For Remote Teaching</title>
-      <link>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</link>
-      <pubDate>Sun, 30 Aug 2020 11:05:49 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/multiple-cameras-for-remote-teaching/</guid>
-      <description>&lt;p&gt;
-We used Zoom for remote classes over the summer but at this point,
-I&amp;#39;ve also used &lt;a href=&#34;https://codingrooms.com&#34;&gt;Coding Rooms&lt;/a&gt;, &lt;a href=&#34;https://bigbluebutton.org&#34;&gt;Big Blue Button&lt;/a&gt;, and Google meet as
-well. They each have their own strong points and failings but all are
-limited in terms of sharing multiple cameras and screen
-components. All will let you share your camera or share your screen
-and when you share you screen you can either share it all or a single
-window. Zoom is the only one that seems to allow for easy camera
-switching but it&amp;#39;s still pretty clunky.
-&lt;/p&gt;
-&lt;p&gt;
-Why do I want to switch cameras? Because I can&amp;#39;t draw us ing a mouse or
-touchpad. I&amp;#39;ve gotten myself a Wacom tablet but am still not
-particularly proficient at it. 
-&lt;/p&gt;
-&lt;p&gt;
-So, I got myself one of &lt;a href=&#34;https://www.amazon.com/gp/product/B000TTIP40/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;these&lt;/a&gt; to use as a document camera. It worked
-but as I said, switching between the webcam and document camera was
-clunky at best.
-&lt;/p&gt;
-&lt;p&gt;
-OBS to the rescue!!!!!
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://obsproject.com/&#34;&gt;OBS&lt;/a&gt; Studio is the &lt;a href=&#34;https://obsproject.com/&#34;&gt;Open Broadcaster Software&lt;/a&gt;. It&amp;#39;s a cross platform
-streaming studio. You can set up any number of devices and then
-compose them into scenes. I use it for recording my &lt;a href=&#34;https://cestlaz.github.io/stories/emacs&#34;&gt;Emacs&lt;/a&gt; videos. It&amp;#39;s
-easy to set up devices for every camera you own plus monitors and
-individual windows. It only took a minute or so to set up a scene with
-me in the corner and my desktop: 
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/obs/desktop.png&#34;&gt;
-&lt;p&gt;
-One for my document camera: 
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/obs/doccam.png&#34;&gt;
-&lt;p&gt;
-And one for my desktop with the doccam overlayed.
-&lt;/p&gt;
-&lt;img src=&#34;https://cestlaz.github.io/img/obs/mixed.png&#34;&gt;
-&lt;p&gt;
-I can switch between them by clicking on which I want. I can also
-select a transition like fade. 
-&lt;/p&gt;
-&lt;p&gt;
-This is all great for recording or streaming to a service like Twitch
-but what about using with meeting software? It turns out that you can
-set up OBS to act as a virtual camera. There are plugins for Mac and
-Windows. You can find them by searching for them but for Linux, I
-followed this video and it worked perfectly: 
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Eca509IDLdM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-I also found this video if the above one doesn&amp;#39;t work: &lt;a href=&#34;https://www.youtube.com/watch?v=zaJSkj-dLoI&#34;&gt;https://www.youtube.com/watch?v=zaJSkj-dLoI&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I set up the virtual camera as per the video and then selected it as
-the camera on both Zoom and Coding Rooms and it worked perfectly. It
-should work on the other platforms as well. 
-&lt;/p&gt;
-&lt;p&gt;
-This is HUGE. Now, instead of explicitly sharing my screen I can hacve
-my screen as my image and quickly and easily switch over to another
-window, a document camera or anything else. 
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re teaching remotely using a conferencing platform I recommend
-you check this out.
-&lt;/p&gt;
 </description>
     </item>
     

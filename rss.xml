@@ -6,10 +6,115 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jun 2021 07:55:01 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 10:06:36 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>They&#39;re all good first programming languages ;-)</title>
+      <link>https://cestlaz.github.io/post/first-language/</link>
+      <pubDate>Fri, 25 Jun 2021 10:06:36 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/first-language/</guid>
+      <description>&lt;p&gt;
+There&amp;#39;s been a lot of chatter recently about the first programming
+language to teach. First, I read a Facebook thread focussing on Java,
+C and C++ and then, presumably unrelated, Mark Guzdial posted &lt;a href=&#34;https://cacm.acm.org/blogs/blog-cacm/253393-why-did-we-ever-think-the-first-programming-language-didnt-matter/fulltext&#34;&gt;this&lt;/a&gt;
+which lead to another Facebook discussing and then yesterday I noticed
+a Twitter thread started by someone in the Bootcamp world asking
+people what their first language was which resulted in answers ranging
+from JS to PHP to Perl to a bunch of others.
+&lt;/p&gt;
+&lt;p&gt;
+A question Mark said he was thinking about recently was &amp;#34;Why did
+anyone ever think that the first programming language didn’t matter?&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t think people were thinking it didn&amp;#39;t matter but it was rather
+like Anton Ego&amp;#39;s commenting on Gusteu&amp;#39;s &amp;#34;Anyone can cook.&amp;#34;
+&lt;/p&gt;
+&lt;img width=&#34;300&#34; src=&#34;https://1.bp.blogspot.com/-lS9ekZSoIxw/XRkKDhIOO5I/AAAAAAAAd9M/H-Bjekcvh4IH_86RZlFcAikZvbqBY7uuwCLcBGAs/s1600/anyone-can-cook-book.jpg&#34;&gt;
+&lt;p&gt;
+It&amp;#39;s not that anyone can cook but rather great cooking can come from
+anywhere. It&amp;#39;s not that the language doesn&amp;#39;t matter but rather any
+language (or maybe most any language) &lt;strong&gt;can&lt;/strong&gt; be used as a first
+language under the right set of circumstances.
+&lt;/p&gt;
+&lt;p&gt;
+All to often the argument goes like:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;#34;I start my kids with C&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;But that&amp;#39;s no good - pointers - that&amp;#39;s why I use Javascript - it&amp;#39;s practical&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;But the development tools are lousy for beginners, not to mention the tool chain&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;Yeah but it&amp;#39;s ubiquitous, anyway how about Java&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;Too much overhead. Maybe scratch&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;No way, the kids will think it&amp;#39;s inauthentic.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;I know, apl!!!!!!!!&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;#34;DEAL!!!!&amp;#34;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Most of the discussion focuses on the language. Maybe on the related
+toolset and ecosystem. A few of us though, have been pushing the fact
+that there&amp;#39;s more to the equation. Teacher knowledge, comfort, and
+passion is a HUGE part of the equation. So is the student level and
+background. Mark raised an important factor in his post:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The first programming language is particularly important when we think
+about programming for other-than-CS majors. Students want to learn
+what’s valued in their desired community of practice. If a student
+wants to become a data scientist, R or Python makes a lot more sense
+than learning C.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This is probably more relevant at the college level than K12 but still
+important to consider for the earlier grades as well. I say consider
+though because, as always, the real answer is &amp;#34;it depends.&amp;#34; Back when
+Bioinformatics started to get hot in the &amp;#39;90s I seem to recall Perl
+being the flavor of choice. Those of you who like me battled with Perl
+and its &amp;#34;write once read never&amp;#34; approach to programming would agree
+that even if it was the Lingua Franca of bioinformatics, I don&amp;#39;t know
+if I would take beginners down a path so fraught with peril.
+&lt;/p&gt;
+&lt;p&gt;
+The truth is that the language does matter but there&amp;#39;s a lot of
+latitude. Probably more for a general purpose programming intro
+rather than for a specific discipline but even then. All things being
+equal, I&amp;#39;d probably say that teacher comfort might be the most
+important one to start with but that only holds when a teacher starts
+teaching a class. I think it&amp;#39;s beholden on the teacher to then explore
+alternatives and if another language makes more sense, become familiar
+with it.
+&lt;/p&gt;
+&lt;p&gt;
+In any event, that&amp;#39;s my two cents. This conversation comes around a
+couple of times a year. A couple of rounds ago I think it revolved
+around Javascript so, we&amp;#39;re talking language. Last time, I and others
+brought up teachers, their backgrounds and comfort levels. Now Mark&amp;#39;s
+bringing another dimension. It&amp;#39;s nice to see the dialog evolving.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>But we don&#39;t have enough teachers!!</title>
@@ -4788,141 +4893,6 @@ different kettle of fish.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quarter Century Courses</title>
-      <link>https://cestlaz.github.io/post/quarter-century-courses/</link>
-      <pubDate>Tue, 15 Sep 2020 07:09:25 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/quarter-century-courses/</guid>
-      <description>&lt;p&gt;
-I was talking in our Curriculum Development class last week about the
-courses I&amp;#39;ve created over the years. From the first computer graphics
-course to the current teacher education courses. JonAlf pointed out
-that we missed an &amp;#34;important&amp;#34; occasion last spring - the twenty fifth
-offering of my computer graphics class at Stuy. I haven&amp;#39;t taught it in
-almost 10 years but it&amp;#39;s been running continuously for a quarter
-century since it first ran back in the mid 90s. Systems will hit that
-mark this year and the intro course I designed a couple of years from
-now.
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s pretty cool.
-&lt;/p&gt;
-&lt;p&gt;
-Looking back at all the courses I&amp;#39;ve designed and taught it&amp;#39;s
-interesting to see what I got right, what I got wrong, and why. Some
-courses evolved slowly over time. The intro course fits that bill. On
-the other hand, Systems had a complete reboot a few years in and has
-been reasonably stable since. Interestingly enough Graphics has
-probably been the most stable over the years. That&amp;#39;s not to say that
-it hasn&amp;#39;t been tweaked here and there but overall, it&amp;#39;s largely the
-same now as it was a quarter century ago. It&amp;#39;s been re-evaluated many
-times but it just turns out that when I was teaching it I felt that it
-was still hitting the right notes and my successor seems to feel
-similarly. 
-&lt;/p&gt;
-&lt;p&gt;
-Funny because graphics was designed with the least thought of all of
-my courses. I probably didn&amp;#39;t feel that way at the time, but it&amp;#39;s
-true. I had only been teaching around 5 year - a beginner at best and
-didn&amp;#39;t really know what I was doing. Even 10 years in you&amp;#39;re still an
-advanced beginner in terms of teaching. Most teachers, if they don&amp;#39;t
-burn out, hit there stride at 15 - 20 and after that become truly
-experienced. 
-&lt;/p&gt;
-&lt;p&gt;
-I basically created graphics because I was teaching 4 APCS/AB classes
-and one geometry and &lt;strong&gt;hated&lt;/strong&gt; grading proofs!!!! I needed to create one
-more CS class. I decided on graphics because I knew I could teach it
-and thought the students might enjoy it. Systems was created using
-similarly deep contemplations. I got better and spent much more time
-and effort designing future courses.
-&lt;/p&gt;
-&lt;p&gt;
-For the graphics class I had a few choices to make but not many. The
-students mostly only knew Pascal from APCS so the language wasn&amp;#39;t an
-issue like it would become later on and since we were working on DOS
-machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
-library like OpenGL. The course basically started with the ability to
-draw a point and then went though: 
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-lines
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-lines in 3D and 3D transformations
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-polygons (triangles)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-A motion description language interpreter (stack and tree based
-shape hierarchies)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-lighting and shading
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-ray tracing
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-The motion description language piece had an entire unit that was
-really an intro to compilers / interpreters. 
-&lt;/p&gt;
-&lt;p&gt;
-In retrospect, the course really did make sense. It was taught to
-second term seniors so it was a terminal course. It combined the
-programming, algorithms and data structures from APCS, math they
-did in trig, precalc (and baby calc), and a bit of physics. It as also
-project based and they wrote programs that made pretty pictures so
-that helped stave off senioritis. 
-&lt;/p&gt;
-&lt;p&gt;
-While the course has remained largely the same, there has been some
-evolution. When Systems students started learning C we ended up
-supporting that as well in graphics and now the course is more
-language agnostic. We also played with topics and unit length. We
-spend less time on the compiler piece now and treat that more like a
-black box and have at times looked at additional topics like texture
-mapping. There&amp;#39;s also been a good deal of work put in to safety nets
-and scaffolding. When you have a course where the main assessment is
-one BIG semester long project you&amp;#39;ve got to make sure students don&amp;#39;t
-end up falling into a hole they can&amp;#39;t climb out of.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s not a surprise that the first couple of courses I designed -
-graphics and systems were somewhat arbitrary. Graphics turned out to
-be a solid design and just needed some fine tuning but Systems got a
-complete reboot. Over the years, I learned more about curriculum
-design and feel pretty comfortable designing new experiences now. Of
-course, this is thirty years into my career as a teacher. 
-&lt;/p&gt;
-&lt;p&gt;
-Maybe I&amp;#39;ll talk about the design of other classes here in the future
-but for now, you can look at one of my first student&amp;#39;s graphics
-project and read about it &lt;a href=&#34;https://cestlaz.github.io/post/class-legends/&#34;&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
-src=&#34;https://www.youtube.com/embed/Ca_8q3ct6J4&#34; frameborder=&#34;0&#34;
-allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
