@@ -6,10 +6,96 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jun 2021 10:06:36 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jul 2021 09:56:06 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Computer Science is not (inherently) fun</title>
+      <link>https://cestlaz.github.io/post/no-fun/</link>
+      <pubDate>Thu, 01 Jul 2021 09:56:06 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/no-fun/</guid>
+      <description>&lt;p&gt;
+I saw a tweet the other day by a CS teacher. They were talking about
+how much easier it is to teach CS because it&amp;#39;s fun.
+&lt;/p&gt;
+&lt;p&gt;
+They went on about how they get to create cool problems which makes it
+so much easier to teach than other subjects.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve heard this a lot over the years particularly from teachers who
+are into gaming - &amp;#34;CS is fun because you can create games.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+Sorry but I have to disagree.
+&lt;/p&gt;
+&lt;img width=&#34;300&#34; src=&#34;https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F2394618fcb9a02e206f313155848d2d3%2Ftenor.gif%3Fitemid%3D5765989&amp;f=1&amp;nofb=1&#34;&gt;
+&lt;p&gt;
+Don&amp;#39;t get me wrong. I think CS is fun (and I&amp;#39;m not a game person) but
+just because I find it fun doesn&amp;#39;t mean it&amp;#39;s inherently fun.
+&lt;/p&gt;
+&lt;p&gt;
+I used to think like those teachers posting but one day, early in my
+career I was observed by my principal. She liked the lesson but
+focused in on one thing. At one point I mentioned that we could use a
+specific new technique and that it was &amp;#34;cool.&amp;#34; She asked me &amp;#34;why is it
+cool?&amp;#34; and more importantly &amp;#34;why should it be cool for them?&amp;#34; That got
+me thinking. It was cool to me for a variety of reasons but the truth
+was that in a class of 30 high school students, what&amp;#39;s cool for one
+person is probably not cool for everyone.
+&lt;/p&gt;
+&lt;p&gt;
+That observation stuck with me. Something that&amp;#39;s cool for some of us
+isn&amp;#39;t for others. A teacher and some students might love making games
+but it does nothing for me and for many students. Same thing for the
+general building stuff or solving problems. The set of things that will and won&amp;#39;t
+motivate students in a CS class is a large one indeed. Now, this
+doesn&amp;#39;t mean don&amp;#39;t do, for instance, games but rather understand that your students
+will have a wide range of interests so if you do a unit that focuses
+on games, maybe do other things in your other units.
+&lt;/p&gt;
+&lt;p&gt;
+A second issue I have with the &amp;#34;CS is fun&amp;#34; thing is that it implies
+that it&amp;#39;s all fun and games and not work. This is particularly a
+problem transitioning from a CS0 to a CS1 class. If you don&amp;#39;t set up
+the transition correctly students will find CS1 much more challenging
+and harder and if it&amp;#39;s too hard or too challenging that&amp;#39;s not
+fun. Besides, even if the class is fun, which should include being
+challenging at the right level there will be times where things are
+just not fun and that&amp;#39;s even with the best teacher. 
+&lt;/p&gt;
+&lt;p&gt;
+The final thing that I find off putting about all the &amp;#34;computer
+science is fun&amp;#34; posts. I think it&amp;#39;s unfair to other teachers and other
+subjects. History can be tremendous fun - stories, adventures,
+mysteries, predictions and more. It can be taught through traditional
+lessons, role play, art music and the list goes on. English? That&amp;#39;s
+also stories, adventures, mysteries etc.. Physics? How about show and
+tell how the world works? To say we have the monopoly on fun is not
+true and unfair. We currently don&amp;#39;t have the burden history which
+strictly dictates what, how, and when we teach but we&amp;#39;re getting there
+quickly.
+&lt;/p&gt;
+&lt;p&gt;
+The truth is that CS will be inherently fun for some just like any
+other subject and the specifics of what and how a class is taught and
+to whom can greatly influence the level of fun. A strong teacher who&amp;#39;s
+passionate about games teaching a game development elective will
+probably be fun for most or all participants but if it were a required
+course, not so much.
+&lt;/p&gt;
+&lt;p&gt;
+CS is our field, we find it fun and interesting and we want to bring
+our passion to our students. That&amp;#39;s all good but let&amp;#39;s remember that
+it&amp;#39;s not special and we&amp;#39;re not special. The same can be said for other
+subjects and other teachers and we have to remember that it&amp;#39;s not
+about our passions but rather those of our students.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>They&#39;re all good first programming languages ;-)</title>
@@ -4775,124 +4861,6 @@ I know Slack&amp;#39;s the big name and I do like Slack as well but if you&amp;#
 a teacher and looking for an in and out of class chat/communication
 platform check Zulip out.
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>School leadership and COVID, or not</title>
-      <link>https://cestlaz.github.io/post/covid-leadership/</link>
-      <pubDate>Wed, 16 Sep 2020 09:48:51 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/covid-leadership/</guid>
-      <description>
-&lt;p&gt;
-Teachers are back and students will soon follow either in person or
-remote. In person means in person one or two days a week with the
-rest of the time from home.
-&lt;/p&gt;
-&lt;p&gt;
-This of course shows horrible leadership. It fails in terms of
-education, safety and even freeing up parents to get back to
-work. After all, if your kid is only in school one or two days a week
-it hardly allows you to get back to your own full time job. 
-&lt;/p&gt;
-&lt;p&gt;
-Of course the plan gets worse. It&amp;#39;s optimized to provide the worst
-possible educational experience. I won&amp;#39;t rehash the plans here but
-it&amp;#39;s looking to increase the teachers workload tremendously while at
-the same time killing continuity for the students (unless of course
-the DOE can hire thousands of extra teachers and somehow arrange for
-them to mind meld with the  main teacher). I&amp;#39;m not going to hash out
-the details here but they&amp;#39;re easy enough to find on the interwebs.
-&lt;/p&gt;
-&lt;p&gt;
-Now in terms of leadership I&amp;#39;m not writing about De Blasio or
-Carranza. We all know they&amp;#39;re absolutely horrible. It&amp;#39;s hard to
-believe Carranza was actually a classroom teacher at one point and
-while I&amp;#39;m no fan of Bloomberg on education at least you could say that
-he had a vision, albeit an incorrect one of applying business sense to
-schools and followed it while De Blasio is tone deaf, arrogant and
-clueless which could make him more dangerous. I&amp;#39;m talking about in
-school leadership.
-&lt;/p&gt;
-&lt;p&gt;
-What did schools do? Well some tried to make the best of a bad
-situation. They recognized that the Mayor&amp;#39;s hybrid model was bunk and
-while safe full time in person is clearly the best choice, fully
-remote, even with its difficulties and limitations  would be more
-sound than hybrid. Add to that the fact that if a school had to go
-remote midstream you&amp;#39;d be set even further back &lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. These schools
-decided to basically set up remote from in school. Students who wanted
-to or had to go to school would be sent to specific parts of the
-school where they would receive the same remote instruction as their
-classmates. This would accommodate students who couldn&amp;#39;t work from
-home while allowing for a sensible overall schedule.
-&lt;/p&gt;
-&lt;p&gt;
-Sounds like good leadership to me and in some cases it is. On the
-other hand, in some cases you have to  dig deeper.
-&lt;/p&gt;
-&lt;p&gt;
-The first question has to do with the student pods. Can they be set up
-safely. What about entering and leaving? Bathrooms? Lunch? I&amp;#39;m
-guessing some schools have a good plan in place but I&amp;#39;ve also heard
-teachers refer to their upcoming student learning pods as &amp;#34;deathpods.&amp;#34;
-&lt;/p&gt;
-&lt;p&gt;
-The next question has to do with teachers working from the building or
-from home. The DOE decreed that unless you get a medical excemption
-you &lt;strong&gt;have&lt;/strong&gt; to work from school. Who cares if you&amp;#39;re meeting students
-in person or not, you &lt;strong&gt;have&lt;/strong&gt; to be there. This was ridiculous. I&amp;#39;ve
-already written about it - &lt;a href=&#34;https://cestlaz.github.io/post/scared-teachers-scared-students/&#34;&gt;scared teachers can&amp;#39;t teach&lt;/a&gt;. This is where
-leadership kicks in. I&amp;#39;ve heard through the grapevine that some
-schools had teachers working from home without DOE permission. Sounds
-like good leadership to me - trust your people to do the job and do
-the right thing.
-&lt;/p&gt;
-&lt;p&gt;
-Recently, the DOE backpedaled and gave schools the ability to allow
-teachers to work from home without medical excemptions so long as it
-worked within their COVID plans. Looks like some schools are jumping
-on this.
-&lt;/p&gt;
-&lt;p&gt;
-Unfortunately, others aren&amp;#39;t. I&amp;#39;ve heard of principals that are
-setting up their schools to be &amp;#34;remote from school&amp;#34; but requiring all
-teachers show up in person even though they clearly don&amp;#39;t need all of
-them on site. This is the type of &amp;#34;leadership&amp;#34; I&amp;#39;ve come to expect
-from many of the Bloomberg era principals I&amp;#39;ve met - you know, the
-ones that barely taught for a cup of coffee. Insisting that teachers
-brave the subways and share facilities like bathrooms only to spend
-the day teaching in isolation serves no purpose other than to exert
-power over them. If a teacher is teaching all remote and isn&amp;#39;t needed
-for the pods, let them teach from home. They&amp;#39;ll be more comfortable
-and thus more effective. 
-&lt;/p&gt;
-&lt;p&gt;
-It sounds like some principals are being true educators and leaders in
-these times but many are not and in these times when we can&amp;#39;t count on
-our elected officials or his appointees to do the right thing, we need
-all our principals to step up.
-&lt;/p&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Footnotes
-&lt;/h2&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr class=&#34;footnotes-separatator&#34;&gt;
-&lt;div class=&#34;footnote-definitions&#34;&gt;
-&lt;div class=&#34;footnote-definition&#34;&gt;
-&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-Note that I&amp;#39;m only talking here about the general population at
-the high school level. I don&amp;#39;t claim to know the best format for the
-younger grades and accomodating special needs students are a whole
-different kettle of fish.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
