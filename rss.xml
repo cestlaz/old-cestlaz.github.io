@@ -6,10 +6,58 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 09:56:06 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jul 2021 17:08:54 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>No CSTA conference for me this year</title>
+      <link>https://cestlaz.github.io/post/no-csta2021/</link>
+      <pubDate>Wed, 14 Jul 2021 17:08:54 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/no-csta2021/</guid>
+      <description>&lt;p&gt;
+Today is the start of CSTA&amp;#39;s annual conference. Like last year, it&amp;#39;s
+virtual. Unlike the past few years, this year I won&amp;#39;t be attending.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m a big fan of the CSTA conference. &lt;a href=&#34;https://twitter.com/jakebask&#34;&gt;Jake&lt;/a&gt; and team have done an
+amazing job growing the conference and it&amp;#39;s been a highlight of my
+year every time I&amp;#39;ve attended.
+&lt;/p&gt;
+&lt;p&gt;
+I could say that I&amp;#39;m not attending due to my schedule - I&amp;#39;m pretty
+much spending all day every day during July teaching in my CS Teacher
+Certification program and at the end of the day I&amp;#39;m wiped. This is
+true but it&amp;#39;s not the only reason. The truth is, I&amp;#39;m pretty burned
+out. Part of it is doing too many things. At this point, the
+teacher education part of my portfolio is a full time job as is my
+work with the undergraduate CS students and that&amp;#39;s not counting the
+extras that have worked their way onto my plate. The other part of it
+I&amp;#39;m sure is Covid. I&amp;#39;m writing this because  many teachers are
+overworked and add in this past year of Covid and I&amp;#39;m sure many are
+feeling the same as I am.
+&lt;/p&gt;
+&lt;p&gt;
+I love the CSTA conference but I&amp;#39;m just not feeling it. Same with a
+lot of professional stuff - just not feeling the joy these days.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m hoping that come August I can turn everything off for a few weeks
+and recharge a bit for next year and going back in person (safely)
+will provide a boost.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m betting teachers around the country are feeling rather burned out
+so wanted to share publicly saying you&amp;#39;re not alone, it&amp;#39;s okay and
+it&amp;#39;s okay to dial it back for our own mental and physical well being. 
+&lt;/p&gt;
+&lt;p&gt;
+Already looking forward to a better next year and  CSTA2022, hopefully in person.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Computer Science is not (inherently) fun</title>
@@ -4782,85 +4830,6 @@ a way built in so ended up writing a small function:
 Check out the video for more details.
 &lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zulip - maybe the answer for class communication</title>
-      <link>https://cestlaz.github.io/post/zulip/</link>
-      <pubDate>Wed, 16 Sep 2020 14:01:23 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/zulip/</guid>
-      <description>&lt;p&gt;
-It&amp;#39;s always been a challenge to get students to buy in to an out of
-class communication tool. Over the years I&amp;#39;ve tried many including
-mailing lists, Piazza, Discourse, Vanilla and other discussion forums,
-Slack and probably a few other things.
-&lt;/p&gt;
-&lt;p&gt;
-I guess it&amp;#39;s not surprising that it&amp;#39;s a hard sell - prior to the
-internet once school was out kids there as no teacher student
-interaction until the next school day and kids would only interact
-with their direct friends. 
-&lt;/p&gt;
-&lt;p&gt;
-Still, we have technology and even without great buy in, if nothing
-else there&amp;#39;s an advantage to having an electronic means of
-distributing things to students.
-&lt;/p&gt;
-&lt;p&gt;
-Ultimately I fell back on a plain old mailing list. Discussion/forum
-platforms didn&amp;#39;t work for me because it was yet another location that
-you had to remember to check. Slack didn&amp;#39;t work because at its core
-it&amp;#39;s for live chat and while workers are at their desks all day and
-can have a chat open, that doesn&amp;#39;t work with students and catching up
-on a complex Slack with threads after the fact is, well, just no. 
-&lt;/p&gt;
-&lt;p&gt;
-With us going remote in Coronatime needs changed. Slack looked like it
-might be more viable. It still had the problem of limited threads but
-in addition to students being more &amp;#34;always on,&amp;#34; for better or worse,
-live remote teaching benefits form a chat. Why Slack over the built in
-Zoom chat? Well, one thing is that the Zoom chat disappears after the
-session whereas Slack lives on and can form the base for ongoing
-discussion. Second, dedicated chat platforms like Slack are more
-robust and featureful.  
-&lt;/p&gt;
-&lt;p&gt;
-Over the summer and into this semester, Slack seems to be working very
-well for my teacher certification candidates but I ended up using
-something else - &lt;a href=&#34;https://zulip.com&#34;&gt;Zulip&lt;/a&gt; for my undergraduate classes and plan to move
-my teachers over to it for the next cohort.
-&lt;/p&gt;
-&lt;p&gt;
-Why the change? Both Zulip and Slack have free tiers but Zulip can
-also be self hosted and is open source. Slack is slicker when it comes
-to integrations but Zulip is the clear winner for combined sync and
-async conversations due to its threading model combined with flexible
-alerts. 
-&lt;/p&gt;
-&lt;p&gt;
-I put together this short video showing  the basics - check it out:
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xWa56KdgYZM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-You can use Zulip free on their site with similar limits as for
-Slack&amp;#39;s free tier or you can self host. I&amp;#39;m running our Zulip
-instances on a Digital Ocean droplet. DO has a &amp;#34;one click&amp;#34; Zulip setup
-that was fairly straightforward. You might want to check that out if
-you&amp;#39;re comfortable as a Linux admin.
-&lt;/p&gt;
-&lt;p&gt;
-So far, I&amp;#39;m liking Zulip very much and thing I&amp;#39;ll be using it as my
-primary in and out of class communication tool. I&amp;#39;d like a better
-selection of emoji and wish it was easier to both use integrations and
-write bots but the thread based interface is really great. 
-&lt;/p&gt;
-&lt;p&gt;
-I know Slack&amp;#39;s the big name and I do like Slack as well but if you&amp;#39;re
-a teacher and looking for an in and out of class chat/communication
-platform check Zulip out.
-&lt;/p&gt;
 </description>
     </item>
     
