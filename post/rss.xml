@@ -6,10 +6,79 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jul 2021 12:42:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Aug 2021 08:58:21 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Hunter College CS Teacher Certification Summer 2021</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-cohort-2/</link>
+      <pubDate>Mon, 02 Aug 2021 08:58:21 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-cohort-2/</guid>
+      <description>&lt;p&gt;
+Last Friday concluded the summer portion of Hunter&amp;#39;s CS Teacher
+Certification program. It was an intense month. All day every day from
+June 28th through July 30. On the one hand between &lt;a href=&#34;https://cestlaz.github.io/post/no-csta2021/&#34;&gt;burnout and covid
+fatigue&lt;/a&gt; it was a tough month and I&amp;#39;m dealing with some much needed
+recovery this week. On the other hand, working with JonAlf, Topher,
+new team member Genady along with around 25 amazing teachers and
+teacher candidates made it a highlight of the year.
+&lt;/p&gt;
+&lt;p&gt;
+last year, the cohort was entirely in service teachers. This year we
+added three Masters students into the mix. I know we had the states
+first certified CS teachers with last years cohort but I&amp;#39;m also
+wondering if we&amp;#39;ll have the state&amp;#39;s first newly minted teachers with a
+Masters in CS Ed when they finish come May.
+&lt;/p&gt;
+&lt;p&gt;
+Hopefully, this years cohort members are all getting some rest and
+relaxation through August and then we&amp;#39;ll kick off again with the
+school year when they&amp;#39;ll complete the program in Fall and Spring.
+&lt;/p&gt;
+&lt;p&gt;
+There were some changes from last time around. This time, we were only
+able to run 3 classes during the summer - Programming, Data
+Structures, and Methods 1. Last year we ran four - these three plus
+topics in CS. It was nice getting 12 credits done all at once but the
+switch to 3 classes was probably a good thing. A less good thing
+though was that on the state&amp;#39;s insistence we had to teach the courses
+independently as opposed to in an integrated fashion. The idea was
+that this way, people wouldn&amp;#39;t have to take all three but the reality
+was that we had a cohort moving through the program as one.
+&lt;/p&gt;
+&lt;p&gt;
+While for the most part, the programming and data structures should be
+independent we lost a good deal of value not being able to integrate
+methods in at the same time. Still overall, based on our perceptions
+and student ratings, things worked well.
+&lt;/p&gt;
+&lt;p&gt;
+In the fall the cohort will continue with Ethics and Computer Science
+along with Curriculum Development and then two final classes in the
+Spring.
+&lt;/p&gt;
+&lt;p&gt;
+This will give us close to 50 certified teachers in NY state which,
+while not close to enough is a good start. We&amp;#39;re hoping to more than
+double that with next years cohort.
+&lt;/p&gt;
+&lt;p&gt;
+The biggest obstacle we have is that our program requires some
+fundamental knowledge in a text based programming language and as it
+turns out, very few teachers currently teaching CS in NYC have
+that. To help address this, we&amp;#39;ll start offering free workshops in the
+Fall to get current teachers up to speed so they&amp;#39;ll be more than ready
+for our program come cohort three.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re a CS teacher in NYC, keep an eye out for those when the
+school year starts.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Designated Slacker</title>
@@ -4704,85 +4773,6 @@ a way built in so ended up writing a small function:
 Check out the video for more details.
 &lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zulip - maybe the answer for class communication</title>
-      <link>https://cestlaz.github.io/post/zulip/</link>
-      <pubDate>Wed, 16 Sep 2020 14:01:23 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/zulip/</guid>
-      <description>&lt;p&gt;
-It&amp;#39;s always been a challenge to get students to buy in to an out of
-class communication tool. Over the years I&amp;#39;ve tried many including
-mailing lists, Piazza, Discourse, Vanilla and other discussion forums,
-Slack and probably a few other things.
-&lt;/p&gt;
-&lt;p&gt;
-I guess it&amp;#39;s not surprising that it&amp;#39;s a hard sell - prior to the
-internet once school was out kids there as no teacher student
-interaction until the next school day and kids would only interact
-with their direct friends. 
-&lt;/p&gt;
-&lt;p&gt;
-Still, we have technology and even without great buy in, if nothing
-else there&amp;#39;s an advantage to having an electronic means of
-distributing things to students.
-&lt;/p&gt;
-&lt;p&gt;
-Ultimately I fell back on a plain old mailing list. Discussion/forum
-platforms didn&amp;#39;t work for me because it was yet another location that
-you had to remember to check. Slack didn&amp;#39;t work because at its core
-it&amp;#39;s for live chat and while workers are at their desks all day and
-can have a chat open, that doesn&amp;#39;t work with students and catching up
-on a complex Slack with threads after the fact is, well, just no. 
-&lt;/p&gt;
-&lt;p&gt;
-With us going remote in Coronatime needs changed. Slack looked like it
-might be more viable. It still had the problem of limited threads but
-in addition to students being more &amp;#34;always on,&amp;#34; for better or worse,
-live remote teaching benefits form a chat. Why Slack over the built in
-Zoom chat? Well, one thing is that the Zoom chat disappears after the
-session whereas Slack lives on and can form the base for ongoing
-discussion. Second, dedicated chat platforms like Slack are more
-robust and featureful.  
-&lt;/p&gt;
-&lt;p&gt;
-Over the summer and into this semester, Slack seems to be working very
-well for my teacher certification candidates but I ended up using
-something else - &lt;a href=&#34;https://zulip.com&#34;&gt;Zulip&lt;/a&gt; for my undergraduate classes and plan to move
-my teachers over to it for the next cohort.
-&lt;/p&gt;
-&lt;p&gt;
-Why the change? Both Zulip and Slack have free tiers but Zulip can
-also be self hosted and is open source. Slack is slicker when it comes
-to integrations but Zulip is the clear winner for combined sync and
-async conversations due to its threading model combined with flexible
-alerts. 
-&lt;/p&gt;
-&lt;p&gt;
-I put together this short video showing  the basics - check it out:
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xWa56KdgYZM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-You can use Zulip free on their site with similar limits as for
-Slack&amp;#39;s free tier or you can self host. I&amp;#39;m running our Zulip
-instances on a Digital Ocean droplet. DO has a &amp;#34;one click&amp;#34; Zulip setup
-that was fairly straightforward. You might want to check that out if
-you&amp;#39;re comfortable as a Linux admin.
-&lt;/p&gt;
-&lt;p&gt;
-So far, I&amp;#39;m liking Zulip very much and thing I&amp;#39;ll be using it as my
-primary in and out of class communication tool. I&amp;#39;d like a better
-selection of emoji and wish it was easier to both use integrations and
-write bots but the thread based interface is really great. 
-&lt;/p&gt;
-&lt;p&gt;
-I know Slack&amp;#39;s the big name and I do like Slack as well but if you&amp;#39;re
-a teacher and looking for an in and out of class chat/communication
-platform check Zulip out.
-&lt;/p&gt;
 </description>
     </item>
     

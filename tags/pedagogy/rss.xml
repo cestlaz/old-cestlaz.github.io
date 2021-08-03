@@ -6,10 +6,79 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jul 2021 12:42:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Aug 2021 08:58:21 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Hunter College CS Teacher Certification Summer 2021</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-cohort-2/</link>
+      <pubDate>Mon, 02 Aug 2021 08:58:21 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-cohort-2/</guid>
+      <description>&lt;p&gt;
+Last Friday concluded the summer portion of Hunter&amp;#39;s CS Teacher
+Certification program. It was an intense month. All day every day from
+June 28th through July 30. On the one hand between &lt;a href=&#34;https://cestlaz.github.io/post/no-csta2021/&#34;&gt;burnout and covid
+fatigue&lt;/a&gt; it was a tough month and I&amp;#39;m dealing with some much needed
+recovery this week. On the other hand, working with JonAlf, Topher,
+new team member Genady along with around 25 amazing teachers and
+teacher candidates made it a highlight of the year.
+&lt;/p&gt;
+&lt;p&gt;
+last year, the cohort was entirely in service teachers. This year we
+added three Masters students into the mix. I know we had the states
+first certified CS teachers with last years cohort but I&amp;#39;m also
+wondering if we&amp;#39;ll have the state&amp;#39;s first newly minted teachers with a
+Masters in CS Ed when they finish come May.
+&lt;/p&gt;
+&lt;p&gt;
+Hopefully, this years cohort members are all getting some rest and
+relaxation through August and then we&amp;#39;ll kick off again with the
+school year when they&amp;#39;ll complete the program in Fall and Spring.
+&lt;/p&gt;
+&lt;p&gt;
+There were some changes from last time around. This time, we were only
+able to run 3 classes during the summer - Programming, Data
+Structures, and Methods 1. Last year we ran four - these three plus
+topics in CS. It was nice getting 12 credits done all at once but the
+switch to 3 classes was probably a good thing. A less good thing
+though was that on the state&amp;#39;s insistence we had to teach the courses
+independently as opposed to in an integrated fashion. The idea was
+that this way, people wouldn&amp;#39;t have to take all three but the reality
+was that we had a cohort moving through the program as one.
+&lt;/p&gt;
+&lt;p&gt;
+While for the most part, the programming and data structures should be
+independent we lost a good deal of value not being able to integrate
+methods in at the same time. Still overall, based on our perceptions
+and student ratings, things worked well.
+&lt;/p&gt;
+&lt;p&gt;
+In the fall the cohort will continue with Ethics and Computer Science
+along with Curriculum Development and then two final classes in the
+Spring.
+&lt;/p&gt;
+&lt;p&gt;
+This will give us close to 50 certified teachers in NY state which,
+while not close to enough is a good start. We&amp;#39;re hoping to more than
+double that with next years cohort.
+&lt;/p&gt;
+&lt;p&gt;
+The biggest obstacle we have is that our program requires some
+fundamental knowledge in a text based programming language and as it
+turns out, very few teachers currently teaching CS in NYC have
+that. To help address this, we&amp;#39;ll start offering free workshops in the
+Fall to get current teachers up to speed so they&amp;#39;ll be more than ready
+for our program come cohort three.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re a CS teacher in NYC, keep an eye out for those when the
+school year starts.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Designated Slacker</title>
@@ -4305,139 +4374,6 @@ but I think you get the idea.
 &lt;/p&gt;
 &lt;p&gt;
 The best solution is one that works and Sometimes the &amp;#34;dumb&amp;#34; approach is the best approach.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Refactoring</title>
-      <link>https://cestlaz.github.io/posts/refactoring/</link>
-      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/refactoring/</guid>
-      <description>&lt;p&gt;
-One of my laments on teaching computer science is that students are
-rarely taught and given the chance to develop  good programming
-practices. There&amp;#39;s usually not enough time. Beginners work on small
-&amp;#34;toys&amp;#34; which don&amp;#39;t lend themselves to good software development
-practices and later on, there&amp;#39;s so much other material like
-algorithms, data structures etc. to teach and
-learn that programming practices usually amount to lines like:
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-&amp;#34;Make sure to comment your code..&amp;#34;
-&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;Indent properly…&amp;#34;
-&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;Use functions…&amp;#34;
-&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;It&amp;#39;s important to test your code…&amp;#34;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-so when I see an opportunity to use a simple example to drive home a
-good practice,  I try to jump on it.
-&lt;/p&gt;
-&lt;p&gt;
-Drawing shapes with text is a typical early project. I&amp;#39;ve seen it in
-text books and online and have been doing it for years. I recall doing
-it back in the 80s in Fortran IV when the programs we wrote were on &lt;a href=&#34;https://en.wikipedia.org/wiki/Punched_card&#34;&gt;punch cards&lt;/a&gt;, run
-overnight on an &lt;a href=&#34;https://en.wikipedia.org/wiki/IBM_1130&#34;&gt;IBM 1130&lt;/a&gt;, and printouts picked up the next day.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s a nice use of nested loops. The students will write functions to
-create assorted shapes out of asterisks  like rectangles and
-triangles. Typical solutions look like this:
-&lt;/p&gt;
-&lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Which results in shapes like these:
-&lt;/p&gt;
-&lt;pre class=&#34;example&#34;&gt;
-
-| ****            |    | *               |
-| ****            |    | **              |
-| ****            |    | ***             |
-| ****            |    | ****            |
-| ****            |    |                 |
-|                 |    |                 |
-|                 |    |                 |
-| *************** |    | *               |
-| *************** |    | **              |
-| *************** |    | ***             |
-| *************** |    | ****            |
-| *************** |    | *****           |
-| *************** |    | ******          |
-| *************** |    | *******         |
-&lt;/pre&gt;
-&lt;p&gt;
-Then there will be more interesting shapes including things like:
-&lt;/p&gt;
-&lt;pre class=&#34;example&#34;&gt;
-
-*       *            *****
-**      ***           *   *            and more
-***     *****          *   *
-****      ***           *****
-&lt;/pre&gt;
-&lt;p&gt;
-This is a great time to talk about refactoring.  All of the shape
-drawing functions follow the same pattern - there&amp;#39;s an outer loop for
-the height and then one or more inner loops to draw each line. We can
-factor out the inner loops in to a separate &lt;code&gt;line()&lt;/code&gt; function.
-&lt;/p&gt;
-&lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-It&amp;#39;s just like factoring in algebra:
-&lt;/p&gt;
-&lt;div class=&#34;latex-block&#34;&gt;
-&lt;p&gt;
-(RectangleOuterLoop × Line) + (TriangleOuterLoop × Line) ⇒ Line  (Rectangleouterloop × TriangleOuterloop)
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-We end up with:
-&lt;/p&gt;
-&lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-It&amp;#39;s simpler, cleaner, and also can lead us to thinking about the
-&amp;#34;harder&amp;#34; shapes in an interesting way. Instead of looking at the right
-justified triangle as a triangle, we can think of each level as two
-lines - one of spaces (shown here as dashes) followed by a line of
-stars:
-&lt;/p&gt;
-&lt;pre class=&#34;example&#34;&gt;
-----*       *
----**      **
---***     ***
--****    ****
-*****   *****
-&lt;/pre&gt;
-&lt;p&gt;
-Noticing that  for a height of 5, the dashed lines count down in
-length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
-&lt;/p&gt;
-&lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Here we have typical early CS assignment that really lends itself to
-talking about structuring programs and refactoring. Where else can we
-inject good programming practices in ways that make sense early on?
 &lt;/p&gt;
 </description>
     </item>
