@@ -6,10 +6,74 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 09:56:06 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 06 Aug 2021 06:54:15 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Why it takes so long to become a better teacher</title>
+      <link>https://cestlaz.github.io/post/feedback-loop/</link>
+      <pubDate>Fri, 06 Aug 2021 06:54:15 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/feedback-loop/</guid>
+      <description>&lt;script type=&#34;text/javascript&#34;
+  src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
+&lt;/script&gt;
+&lt;p&gt;
+I&amp;#39;ve written about how long it takes to become a &lt;a href=&#34;https://cestlaz.github.io/post/five-year-class/&#34;&gt;master teacher&lt;/a&gt; and
+that even after 9 or 10 years most teachers are really just advanced
+beginners. A big reason for that is our long feedback loop. You do
+something and you can&amp;#39;t do it again for a year.
+&lt;/p&gt;
+&lt;p&gt;
+I was listening to a podcast on my morning run by the Hudson River and
+something came up about differences between quantities of items. The difference
+between having n versus n+1 of something changes based on the value of n. If, for example, you have 1 versus 2 shoes - that&amp;#39;s a BIG
+difference. On the other hand, if you have 100 vs 101 shoes, not so
+much.
+&lt;/p&gt;
+&lt;p&gt;
+This got me thinking about how I framed things when teaching
+big-O notation. In big-O you generally just look at the dominant
+term. If you have an algorithm that runs in \(O(n^2+n)\) time you
+usually just say \(O(n^2)\) because \(n^2\) is the dominant term. If you n
+is small, let&amp;#39;s say 2, the difference between 2 and 4 is big so the n
+part of \(n^2+n\) seems important but as n gets large, say 10,000, then
+the difference between 100,000,000 and 100,010,000 is negligible for
+our purposes.
+&lt;/p&gt;
+&lt;p&gt;
+I try to introduce this concept when teaching big-O but listening to
+the podcast and reflecting gave me some thoughts as to how I can do it
+better.
+&lt;/p&gt;
+&lt;p&gt;
+The trouble is, I won&amp;#39;t be able to for a while. I introduced big-O to
+our teachers in our summer intensive. My next opportunity to cover the
+topic will be sometime this Spring with my first year undergrads. Same
+topic, but different audience so it won&amp;#39;t be quite the same. The next
+time I get to do this with teachers is next summer. All this supposes
+that I remember the changes I&amp;#39;m thinking about making and work them
+in. I&amp;#39;m writing myself a few notes but even then, who&amp;#39;s to say if I&amp;#39;m
+going to remember the nuance that I&amp;#39;m thinking now?
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s the teaching feedback loop - get an idea, try it, and then
+can&amp;#39;t iterate for a year. Get a new idea and you can&amp;#39;t try it until
+the topics comes up which could be a long time from now.  True, some
+things like a new pedagogical trick can be tried out more quickly but
+even then you can&amp;#39;t just do it. You&amp;#39;ve got to find where it works
+within your current classes and still have to account for the
+countless differences that make up your classes when you&amp;#39;re ready for
+the next iteration.
+&lt;/p&gt;
+&lt;p&gt;
+None of this is good or bad, just the nature of our profession. Just
+something that I was thinking about this morning.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Computer Science is not (inherently) fun</title>
@@ -3759,113 +3823,6 @@ If you&amp;#39;re just delivering scripted lessons it&amp;#39;s certainly not yo
 If you know your stuff and you  take someone elses material, make it
 your own and add it to your bag of tricks, I think it&amp;#39;s now yours as
 well.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Teaching APCS-A for the first time</title>
-      <link>https://cestlaz.github.io/posts/teaching-ap-first-time/</link>
-      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/teaching-ap-first-time/</guid>
-      <description>&lt;p&gt;
-I got  an email from a friend the other day. Among other things, he
-mentioned that he would be teaching APCS-A for the first time this
-year. He&amp;#39;s a little trepidatious. He knows his stuff but he hasn&amp;#39;t
-really done much using Java.
-&lt;/p&gt;
-&lt;p&gt;
-I was going to respond in an email but thought I might share here
-instead.
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-TL;DR - for all you APCS teachers who are new or new to Java - learn
-your core CS, lean on your resources and support and it&amp;#39;s OK to tell
-your kids &amp;#34;I don&amp;#39;t know, I&amp;#39;ll get back to you.&amp;#34;. Don&amp;#39;t worry, you&amp;#39;ll be great.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-The first time I taught APCS was some time around 1991 or 1992. It was at
-&lt;a href=&#34;http://www.sewardparkhs.com/Famous-Alumni/&#34;&gt;Seward Park&lt;/a&gt; &lt;a href=&#34;http://www.sewardparkhs.com/History/&#34;&gt;High School&lt;/a&gt;. It was the AB curriculum - that is one
-semester of programming in Pascal and one semester of Data Structures
-and Algorithms.  Being a computer science major the core material was
-never a concern. I had taken APCS the first time it was offered in May
-1984 in Pascal and while most of my college and pre-teaching professional work
-was in C, my college started it&amp;#39;s CS sequence with Pascal. I was more
-concerned with the actual teaching part. I had taught math for a year
-and a half at that point but never CS and by any measure I was still
-wet behind the ears. I never finished that first experience because I
-was excessed to Stuy mid semester. I wasn&amp;#39;t particularly happy with my
-performance but looking back, I think I did a pretty good job given
-the situation and my experience.
-&lt;/p&gt;
-&lt;p&gt;
-After teaching math for a year and a half I was back in APCS at
-Stuy. Still in Pascal. I spent the next few years figuring out how to
-teach CS and APCS in particular along with starting a couple of new
-classes. When the College Board decided to move the AP class to C++ I
-was happy, sad and a little worried. Pascal had a bunch of limitations
-but I had never used C++. True, I was a C programmer at heart but I
-had never really done the OOP thing. I did, as it turned out, design a
-number of my C systems in an Object Typed design: I would use a single
-file per &amp;#34;class&amp;#34; where local variables were de facto instance
-variables and functions in the file were methods and each file was a
-singleton class. I read &lt;a href=&#34;https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_1?ie=UTF8&amp;amp;qid=1503519770&amp;amp;sr=8-1&amp;amp;keywords=Grady+Booch&#34;&gt;Booch&lt;/a&gt; and &lt;a href=&#34;https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554/ref=asap_bc?ie=UTF8&#34;&gt;Meyer&lt;/a&gt; on my own but I had no
-schooling in OOP and no professional experience.
-&lt;/p&gt;
-&lt;p&gt;
-As it turned out, I didn&amp;#39;t have to worry. I knew my CS and while it
-took me a while to become comfortable with OOP, the class, and of
-course I knew this from the get go, started from nothing and built
-up complexity a step at a time. The worst that might have happened is
-that some of my solutions might have been more C-esque than C++.
-&lt;/p&gt;
-&lt;p&gt;
-The move to Java was a little more jarring. Now we had a totally new
-language. I couldn&amp;#39;t fall back on C. It removed memory management and
-explicit pointers and it had to be used in an Object Oriented
-manner. I remember asking Mike Schidlowsky, a former student turned
-friend who was the Java consultant on the Java edition of Sedgewick&amp;#39;s
-&lt;a href=&#34;https://www.amazon.com/Robert-Sedgewick-Algorithms-Fundamentals-Structures/dp/B008VR3ZH4/ref=sr_1_4?ie=UTF8&amp;amp;qid=1503520269&amp;amp;sr=8-4&amp;amp;keywords=schidlowsky&#34;&gt;Algorithms&lt;/a&gt; book how to do something. It had to do with passing and
-modifying arrays. In C there were a number of ways to accomplish what
-I wanted to do. In Java, I couldn&amp;#39;t figure out how to do it the way I
-wanted. My friend Mike told me &amp;#34;you just don&amp;#39;t do it that way in
-Java.&amp;#34; Again, it turned out that I didn&amp;#39;t have to worry. The basic
-coding was still the same as were the data structures and
-algorithms. The only challenge was that I had to get into a Java OOP
-mindset which it turned out wasn&amp;#39;t that hard.
-&lt;/p&gt;
-&lt;p&gt;
-While I never really warmed up to OOP - I find other paradigms more
-natural for me, I knew my CS and got more and more comfortable with
-the Java (or C++) way of doing things as time wore on. Sometimes I
-would say &amp;#34;I don&amp;#39;t know&amp;#34; or &amp;#34;let&amp;#39;s figure it out&amp;#34; but that&amp;#39;s OK.
-&lt;/p&gt;
-&lt;p&gt;
-Nowadays, there are many more resources available for CS teachers. If
-you&amp;#39;re new, lean on them. Use the mailing lists, stackexchange,
-facebook groups. Online resources like repl.it, codehs.com etc. Yes,
-it&amp;#39;s true that you&amp;#39;ll be better next time around and even better years
-down the road but right now, you&amp;#39;re probably better than you think.
-&lt;/p&gt;
-&lt;p&gt;
-A number of my former students volunteer for &lt;a href=&#34;https://www.tealsk12.org/&#34;&gt;TEALS&lt;/a&gt; - a really great
-program that brings software engineers into the classroom to work with
-non-CS teachers to deliver instruction. A number of my kids have
-shared the following sentiment:
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-I don&amp;#39;t know if I&amp;#39;m really helping
-the teacher to become self sufficient or if I&amp;#39;m a great teacher but I
-do know one thing - while I&amp;#39;m there, the kids are getting a hell of a
-lot more than if I wasn&amp;#39;t there.&amp;#34;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-– Remember that as well.
 &lt;/p&gt;
 </description>
     </item>
