@@ -6,10 +6,69 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 06:54:15 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 13:02:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>\(2^5\) Years Teaching</title>
+      <link>https://cestlaz.github.io/post/32-years/</link>
+      <pubDate>Sat, 21 Aug 2021 13:02:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/32-years/</guid>
+      <description>&lt;script type=&#34;text/javascript&#34;
+  src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
+&lt;/script&gt;
+&lt;p&gt;
+I was looking over my TRS statement the other day - that&amp;#39;s Teacher&amp;#39;s
+Retirement System and noticed that next week I&amp;#39;ll be starting my 32nd
+year teaching. That&amp;#39;s \(2^5\) or 10000 - 5 bits so I guess you can&amp;#39;t
+call me a two bit teacher.
+&lt;/p&gt;
+&lt;p&gt;
+Two and a half years at Seward, over 20 at Stuy, and the rest at
+Hunter College. I&amp;#39;ve had a lot of last days before school starts but
+this year is different. I&amp;#39;m betting that&amp;#39;s the case for a lot of us.
+&lt;/p&gt;
+&lt;p&gt;
+I mentioned about burnout and not feeling any joy when I wrote about the
+&lt;a href=&#34;https://cestlaz.github.io/post/no-csta2021/&#34;&gt;CSTA conference&lt;/a&gt; but we&amp;#39;re also starting a new year in a strange place
+due to the pandemic. On the one hand we have vaccines but on the
+other, we&amp;#39;ve got Delta. I&amp;#39;m scheduled to teach my undergraduate
+classes in person and to be honest, I&amp;#39;m not 100% comfortable. Will
+that affect my teaching? I guess we&amp;#39;ll see.
+&lt;/p&gt;
+&lt;p&gt;
+Then we have practical concerns. My students should all be distancing
+so how will that affect group work?
+&lt;/p&gt;
+&lt;p&gt;
+As I&amp;#39;m writing this I just got an email from Hunter saying that
+students will have 45 days post FDA approval to get vaccinated. The
+wording seems to contradict the previous policy that in order for
+students to enter campus they had to be vaccinated. This is concerning
+to say the least.
+&lt;/p&gt;
+&lt;p&gt;
+When I started teaching I was always nervous before the first day back
+and then again for the first day teaching. Mid career it was more of
+an excited nervousness. Ultimately the nerves went away and while I
+sorely needed vacation in June by September I was looking forward to
+seeing my students again. This year it&amp;#39;s mostly nervousness, discomfort and
+uncertainty. 
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t write this merely to complain but rather to share. I figure if
+I&amp;#39;m feeling this way so probably are others. We&amp;#39;re not alone.  
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve got some CS and teaching content posts lined up and plan to start
+with them next week as things get back in the swing but for now, good
+luck to everyone starting back up.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Why it takes so long to become a better teacher</title>
@@ -4657,130 +4716,6 @@ So, any ideas out there?
 &lt;/p&gt;
 &lt;p&gt;
 What&amp;#39;s the best way for me to connect with good fits for Hunter CS?
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Deadlines And Commitments</title>
-      <link>https://cestlaz.github.io/post/deadlines-and-commitments/</link>
-      <pubDate>Thu, 01 Oct 2020 13:50:38 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/deadlines-and-commitments/</guid>
-      <description>&lt;p&gt;
-A few days ago I was part of a Twitter discussion on assignment
-deadlines. I noticed a tweet:
-&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Not sure who needs to hear this, but stop taking off points for late assignments. It’s not helping students learn responsibility, and it’s not making your job easier. It’s only making your class inequitable. 💯&lt;/p&gt;&amp;mdash; Sydney Jensen (@sydneycjensen) &lt;a href=&#34;https://twitter.com/sydneycjensen/status/1309946435056611335?ref_src=twsrc%5Etfw&#34;&gt;September 26, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-I disagreed. I wasn&amp;#39;t necessarily against floating or open deadlines
-without deductions but rather, they made my life more difficult and
-weren&amp;#39;t in the best interest of my students. That said, they could
-very well be appropriate for Sydney and her&amp;#39;s.
-&lt;/p&gt;
-&lt;p&gt;
-Today I saw some emails on the SIGCSE list on the same topic. One
-caught my eye - the poster talked about giving extra credit for early
-submissions. These were likely unrelated discussions since the twitter
-participants were not CS educators and I think the SIGCSE discussion
-was mostly of college level CS instructors.
-&lt;/p&gt;
-&lt;p&gt;
-In any event, it was a sign. I was meant to write a blog post on it.
-&lt;/p&gt;
-&lt;p&gt;
-To start, what&amp;#39;s my policy?
-&lt;/p&gt;
-&lt;p&gt;
-For homework or small every day assignments I grade for attempt, not
-correctness. You either made an honest effort or you didn&amp;#39;t. I
-encourage students to help each other but ask they cite where and when
-they got help. When all is said and done, if you&amp;#39;ve done most of the
-homework you get the full homework percent of the grade. If you miss
-one here or there, no big deal. If you miss a whole bunch, you&amp;#39;ve got
-a problem. 
-&lt;/p&gt;
-&lt;p&gt;
-For projects, I have hard deadlines with a deduction for lateness. If
-time and circumstance permits, I&amp;#39;ll give a project and we&amp;#39;ll have a
-discussion and set the due date together. Also, if a student talks to
-me ahead of time about some issue, I&amp;#39;ll almost always give a penalty
-free extension. On the other hand, if they come to me last minute, I
-usually won&amp;#39;t.
-&lt;/p&gt;
-&lt;p&gt;
-When I grade, and I &lt;strong&gt;hate&lt;/strong&gt; grading, I get into a groove so grading a
-project later does inconvenience me and it&amp;#39;s also not doing the
-student any favors - we&amp;#39;ve moved on to the next set of topics but I
-don&amp;#39;t have the project which is an assessment of how the student was
-doing up to that point.
-&lt;/p&gt;
-&lt;p&gt;
-Is this bad? I don&amp;#39;t think so. While many deadlines are arbitrary,
-students do have to learn to get things done and as long as the
-deadline is reasonable there shouldn&amp;#39;t be a problem. Since I&amp;#39;m
-flexible if a student has a particular issue even more so. One
-tweet on the thread said that since some students aren&amp;#39;t comfortable
-asking a teacher for an extension it was unfair but I think you have
-to draw the line somewhere. One students might not ask for an
-extension and just be late and another might not ask and kill
-themselves to meet the deadline but in either case, I don&amp;#39;t think it&amp;#39;s
-unreasonable to expect the student to advocate for themselves
-particularly when they can start the conversation either in person or
-via email and in private. 
-&lt;/p&gt;
-&lt;p&gt;
-On the other hand, is having open deadlines all good? Probably
-not. Some students will game and abuse the system. Not all, but
-certainly some and those students will gain an advantage in terms of
-grades. Now, in an ideal world. we wouldn&amp;#39;t care about grades but in
-the current reality if student one gets a fair B+ while student two
-exploits loose deadlines nad gets an A-, guess who&amp;#39;s more likely to
-get into that selective college? There&amp;#39;s also the problem of
-snowballing and falling behind. If a student is a week late on
-something that reinforces or clarifies the next topic that student is
-now falling behind on that next topic.
-&lt;/p&gt;
-&lt;p&gt;
-We also have the final looming deadline of end of semester or end of
-year which further complicates matters. 
-&lt;/p&gt;
-&lt;p&gt;
-So, who&amp;#39;s right? Who knows. Overall, I think what I do works for me
-and my classes. It&amp;#39;s a system that&amp;#39;s evolved over three decades and
-will continue to evolve. Every year is a potential tweak and every new
-situation, like when I came over to Hunter was cause for
-re-evaluation. On the other hand, I know teachers who have open
-deadlines and it seems to work for them and their students so they
-should keep on keeping on. 
-&lt;/p&gt;
-&lt;p&gt;
-What about that extra credit for early projects? This is one that
-sounds good but I don&amp;#39;t like it. I think this one is potentially
-really inequitable. It sounds good until you remember that students
-all have different schedules and different obligations. If you give
-students one week to complete an assignment starting monday, even if
-they all have roughly the same workload, it will be distributed in
-different ways.
-&lt;/p&gt;
-&lt;p&gt;
-One kid might front load their courses into Mon-Wed so they don&amp;#39;t have
-to commute Thursday and Friday. That student will never be able to
-finish an assignment early because they&amp;#39;ve left there homework time
-for later in the week. Same thing for a kid who works evenings rather
-than weekends. There will be other kids where their schedule favors
-finishing early. This sounds like a great idea but it will really only
-favor a select few and not necessarily because they&amp;#39;re doing things
-&amp;#34;the right way.&amp;#34; 
-&lt;/p&gt;
-&lt;p&gt;
-So, what&amp;#39;s the answer on due dates? As usual we get a resouding &amp;#34;it
-depends.&amp;#34; I just gave an assignment last Monday and over Zulip we
-collectively decided that a fair deadline would be a week from
-today. I don&amp;#39;t expect any extensions will be needed but if I&amp;#39;m
-approached I&amp;#39;ll probably be flexible as I&amp;#39;ve always been. My policy
-seems to be working well so I&amp;#39;m sticking to it for now. If yours works
-for you, do the same.
 &lt;/p&gt;
 </description>
     </item>
