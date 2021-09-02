@@ -6,10 +6,93 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 06:46:11 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 02 Sep 2021 13:48:09 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Calling an audible</title>
+      <link>https://cestlaz.github.io/post/audible/</link>
+      <pubDate>Thu, 02 Sep 2021 13:48:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/audible/</guid>
+      <description>&lt;p&gt;
+Be ready to call an audible.
+&lt;/p&gt;
+&lt;p&gt;
+This was advice I got during my third year teaching. I had just
+transferred from Seward Park to Stuy and was being observed for the
+first time by my former teacher and now supervisor Richie
+Rothenberg. I forget exactly what the lesson was on - something with
+coordinate geometry I think. The lesson was okay but it wasn&amp;#39;t going
+over well with the class. I was teaching at too low a level for my
+audience. I could feel it as I was teaching but as I was pretty
+inexperienced I wasn&amp;#39;t confident in changing things up on the fly.
+&lt;/p&gt;
+&lt;p&gt;
+Afterwards, Richie and I debriefed. He said the lesson was
+satisfactory - the magic word you need on any observation but that it
+could have been much better. I had only been teaching at Stuy for a
+few weeks and even though I was a Stuy grad I hadn&amp;#39;t had time to get
+my head around where the students were at. Richie said that sometimes
+you just have to call an audible. For a young teacher, easier said
+than done. In addition to not having a great handle on my students yet
+I also wasn&amp;#39;t confident in flying without a net. 
+&lt;/p&gt;
+&lt;p&gt;
+This is why it&amp;#39;s so important for teachers to really know their
+stuff - both the content and how to teach it. It&amp;#39;s why I&amp;#39;m concerned
+when I see so many leaders in CS education pushing scripted curricula
+and PD based training to fully &amp;#34;prepare&amp;#34; CS teachers in just a few PD
+sessions.
+&lt;/p&gt;
+&lt;p&gt;
+First time through, particularly when you&amp;#39;re voluntold to teach a new
+class you just want to survive. Follow that script, learn with your
+kids and get through. You&amp;#39;ll grow and the kids will be richer than had
+you not gone through the fire with them.
+&lt;/p&gt;
+&lt;p&gt;
+Two or three years down the road, however, if you&amp;#39;re still just
+following the script you&amp;#39;re doing your students a disservice.
+&lt;/p&gt;
+&lt;p&gt;
+Of course, having subject knowledge doesn&amp;#39;t mean you have all the
+answers but it lets you call that audible when a class needs something
+that is not in the lesson plan or lets you talk about multiple
+positions on subjects with no single best answer like coding style.
+&lt;/p&gt;
+&lt;p&gt;
+And then calling an audible isn&amp;#39;t always about making a lesson more
+advanced. It can also be about sensing what a class needs at that
+time. This is something I learned from Bruce Baskind at Seward
+Park. I&amp;#39;ve lost touch with Bruce but he was a mentor and a friend when
+I started this teaching thing and without the support I got from Bruce
+and a handful of others back at Seward, I wouldn&amp;#39;t have made it.
+&lt;/p&gt;
+&lt;p&gt;
+Sometimes, you&amp;#39;ve got to turn off the academics. A class might need a
+team building exercise or maybe just something fun. They might just
+need to turn off school for part or all of the period. Sure, you burn
+a lesson but sometimes that&amp;#39;s what the kids need and at the end of the
+semester, they&amp;#39;ll be further along for it. I&amp;#39;d sometimes take a block
+of class time and do Story Time - literally right out of grade
+school - usually something from &lt;a href=&#34;https://www.personal.psu.edu/faculty/k/u/kuc14/sunny/Children%20Literature/The%20stinky%20cheese%20man/stinky%20cheese%20man.pdf&#34;&gt;The Stinky Cheese Man&lt;/a&gt; like &amp;#34;The Really
+Ugly Duckling.&amp;#34; In some ways it&amp;#39;s related to the &lt;a href=&#34;https://www.youtube.com/playlist?list=PL9KxKa8NpFxJYgovyJhF4HZRsAqYKBLiG&#34;&gt;Halloween Stuff&lt;/a&gt; I
+used to do at Stuy. Those were preplanned but that was all about
+relationship building with the class - the non academic stuff that
+supports the academics the rest of the year.
+&lt;/p&gt;
+&lt;p&gt;
+As this post is beginning to wander I think I&amp;#39;ll stop.
+&lt;/p&gt;
+&lt;p&gt;
+Next up - a specific audible I called that, at least for one student,
+turned into a very memorable lesson.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Day one back in person</title>
@@ -3726,83 +3809,6 @@ I love problems like these.
 I just wish there was an easy way to find all contest problems of a
 certain level like &amp;#34;easy&amp;#34; or &amp;#34;medium.&amp;#34; If anybody knows please share
 in the comments.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Programming Idioms</title>
-      <link>https://cestlaz.github.io/posts/programming-idioms/</link>
-      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/programming-idioms/</guid>
-      <description>&lt;p&gt;
-I just read Jeff Yearout&amp;#39;s recent post titled &lt;a href=&#34;http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html&#34;&gt;The Beginner&amp;#39;s Garden of
-Concepts&lt;/a&gt;. Not directly related but it got me thinking about
-programming idioms.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve been using the phrase &amp;#34;programming idiom&amp;#34; for years to describe a
-short useful recurring code construct. I didn&amp;#39;t realize that it was
-officially &amp;#34;a thing&amp;#34; until doing a web search on the phrase years
-later.
-&lt;/p&gt;
-&lt;p&gt;
-As our students grow from newbies on I think it&amp;#39;s helpful for them to
-see recurring and related patterns and programming idioms gives us a
-name to apply to many beginner patterns. An early idiom might be
-&amp;#34;finding the smallest in a list:&amp;#34;
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Another is the very similar and more general &amp;#34;do something on every
-item in a list:&amp;#34;
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-By talking about constructs like these as idioms it helps students see
-and develop coding patterns. It also helps them to build mental
-abstractions. Each of the above idioms are a few lines of code but
-each are also a single concept. Students learn to think of them as the
-concept.
-&lt;/p&gt;
-&lt;p&gt;
-When students learn about list comprehensions in python they&amp;#39;ll
-rewrite the &amp;#34;do something…&amp;#34; more like this:
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-but the pattern or idea is the same.
-&lt;/p&gt;
-&lt;p&gt;
-Other early idioms might include swapping variables:
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-and loops until an exit condition are met:
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Even more difficult concepts like recursion can be described in an
-idiomatic way:
-&lt;/p&gt;
-&lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Patterns like these, or idioms, come up over and over again. We don&amp;#39;t
-have to explicitly mention them in our teaching but I think it&amp;#39;s
-helpful to our students if we do.
 &lt;/p&gt;
 </description>
     </item>
