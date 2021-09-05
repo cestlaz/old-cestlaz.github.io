@@ -6,10 +6,141 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Sep 2021 13:48:09 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 Sep 2021 06:43:53 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Should every assignment be open ended?</title>
+      <link>https://cestlaz.github.io/post/creative-projects/</link>
+      <pubDate>Sun, 05 Sep 2021 06:43:53 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/creative-projects/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://blog.acthompson.net/2021/09/are-you-assigning-projects-or-recipes.html&#34;&gt;This post&lt;/a&gt; by my friend &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred&lt;/a&gt; caught my eye yesterday. It&amp;#39;s a good
+post - some good examples of inserting student creativity even into small
+intro level assignments. While I like the post and agree with the
+sentiment of open ended, student driven projects, I had to take issue
+with the lead quote Alfred used: 
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+“If you assign a project and get back 30 of the same thing, that’s not
+a project, that is a recipe.”
+&lt;/p&gt;
+&lt;p&gt;
+– Chris Lehmann
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Open ended projects and student driven assignments are great and
+important but so are ones with similar or identical solutions and
+they&amp;#39;re also not recipes.
+&lt;/p&gt;
+&lt;p&gt;
+First, there&amp;#39;s a certain level of utility in a uniform assignment. If
+the assignment is &amp;#34;write a program to convert Fahrenheit to Celsius&amp;#34;
+you know that all the students know the conversion as you can provide
+it and it also allows them to easily check their work, either through
+an autograder or with each other. Yes, I know, some students students
+could be tempted to cut corners and copy solutions but usually
+attempts to control cheating do more to constrain students doing
+things the right way than to prevent the cheaters from cheating.
+&lt;/p&gt;
+&lt;p&gt;
+Also, some student, particularly early on need the structure of a set
+assignment and don&amp;#39;t do as well with a &amp;#34;do anything assignment.&amp;#34;
+Saying &amp;#34;just make a converter&amp;#34; can be much more stressful and
+difficult than convert from pounds to kilograms.
+&lt;/p&gt;
+&lt;p&gt;
+As to recipes? Not necessarily. Let&amp;#39;s take this small assignment:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Given two variables &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;, write a code fragment that will swap
+the values represented by &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;. That is, if at the start, &lt;strong&gt;a&lt;/strong&gt;
+represented &lt;strong&gt;5&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; represented &lt;strong&gt;10&lt;/strong&gt;, after your code, &lt;strong&gt;a&lt;/strong&gt; would
+represent &lt;strong&gt;10&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; would represent &lt;strong&gt;5&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+You could even add a hint:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;strong&gt;HINT:&lt;/strong&gt; Consider using an extra third variable in your solution.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This isn&amp;#39;t a recipe, it&amp;#39;s an assignment. Even with the hint it doesn&amp;#39;t
+tell the students exactly what to do, just the desired outcome. It&amp;#39;s
+not a recipe but most or all of the solutions will look remarkably
+similar.
+&lt;/p&gt;
+&lt;p&gt;
+By contrast, a swap &amp;#34;recipe&amp;#34; might read:
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+This is a recipe. A student would literally just rewrite the steps
+into the solution but even this might have it&amp;#39;s place in a class.
+&lt;/p&gt;
+&lt;p&gt;
+A more advanced assignment that leads students through building and
+understanding something like a merge or quicksort could be set up
+similarly. Not in any way a recipe but rather a valuable exercise
+where all the students end up with very similar solutions. This is not
+necessarily a bad thing, in fact it was all the rage a few years ago
+as it could be set up as a discovery or experiential learning
+experience. I also poo pooed that as being the silver bullet but as
+with most teaching techniques, it has its place. 
+&lt;/p&gt;
+&lt;p&gt;
+Then there are opportunities to introduce student creativity even when
+the assignments are, at their core, all the same. I recall a session
+at either SIGCSE or CSTA by &lt;a href=&#34;https://www.bootstrapworld.org/&#34;&gt;Bootstrapworld&lt;/a&gt;. They were describing one
+of their classes major projects. It was a game. I forget the details
+but at the core, all the student projects were the same. They differed
+only in the graphics they used and the story around the game. That&amp;#39;s
+where Boostrapworld interjected student creativity but the core CS and
+math of the student projects were all the same. Did the fact that all
+the assignments were essentially the same make this bad or a recipe?
+Certainly not. Students go to express themselves uniquely but at the
+same time the assignment was constrained and focused on what the
+Bootstrapworld designers wanted.
+&lt;/p&gt;
+&lt;p&gt;
+So, there you have it. There&amp;#39;s nothing wrong with assignments where
+the student results are largely the same. There&amp;#39;s also nothing wrong
+with student projects that are 100% open ended. It&amp;#39;s all about the
+teacher having multiple tools and using them as appropriate for their
+students. 
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Calling an audible</title>
@@ -4672,47 +4803,6 @@ about our future but for the first time in a while I&amp;#39;m also hopeful.
 &lt;p&gt;
 Just remember though, hope without action won&amp;#39;t take us from hope to
 reality.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>53 trips around the sun</title>
-      <link>https://cestlaz.github.io/post/birthday/</link>
-      <pubDate>Sun, 18 Oct 2020 20:36:01 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/birthday/</guid>
-      <description>&lt;p&gt;
-In the 10 plus years of this blog I&amp;#39;ve never done a post on my
-birthday. Okay, maybe I&amp;#39;ve written one &lt;strong&gt;on&lt;/strong&gt; my birthday but never
-talked about it.
-&lt;/p&gt;
-&lt;p&gt;
-Why this year?
-&lt;/p&gt;
-&lt;p&gt;
-No particular reason. Maybe because I&amp;#39;m getting older. I&amp;#39;m 53
-today. Devorah will turn 54 in a month - from there one year until she
-can retire. I can follow a year later. I&amp;#39;m pretty happy with what I&amp;#39;m
-doing but it&amp;#39;s nice to know that in two years I&amp;#39;ll have a lot of
-options on the table. I can stay the course or maybe look for new
-challenges. By then, should things continue apace, my undergraduate
-program will have been running and growing for seven years, I&amp;#39;ll have had
-three cohorts of teachers go through my advanced certificate program
-and I should even have my first Masters in CS Education graduates. 
-&lt;/p&gt;
-&lt;p&gt;
-For today, it&amp;#39;s mostly business as usual. Plan is to head out for my
-morning run, come back and teach class. 
-&lt;/p&gt;
-&lt;p&gt;
-After that, I&amp;#39;ll head down to Varick Street to drop off my ballot. 
-&lt;/p&gt;
-&lt;p&gt;
-As to the rest of the day, we&amp;#39;ll see. I&amp;#39;ll probably spend most of it
-trying to set up virtual school visits.  Looking forward to the family
-dinner - Natan&amp;#39;s cooking tonight as he does often so I know it&amp;#39;ll be
-tasty.
 &lt;/p&gt;
 </description>
     </item>

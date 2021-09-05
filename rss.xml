@@ -6,10 +6,141 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Sep 2021 13:48:09 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 Sep 2021 06:43:53 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Should every assignment be open ended?</title>
+      <link>https://cestlaz.github.io/post/creative-projects/</link>
+      <pubDate>Sun, 05 Sep 2021 06:43:53 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/creative-projects/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://blog.acthompson.net/2021/09/are-you-assigning-projects-or-recipes.html&#34;&gt;This post&lt;/a&gt; by my friend &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred&lt;/a&gt; caught my eye yesterday. It&amp;#39;s a good
+post - some good examples of inserting student creativity even into small
+intro level assignments. While I like the post and agree with the
+sentiment of open ended, student driven projects, I had to take issue
+with the lead quote Alfred used: 
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+“If you assign a project and get back 30 of the same thing, that’s not
+a project, that is a recipe.”
+&lt;/p&gt;
+&lt;p&gt;
+– Chris Lehmann
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Open ended projects and student driven assignments are great and
+important but so are ones with similar or identical solutions and
+they&amp;#39;re also not recipes.
+&lt;/p&gt;
+&lt;p&gt;
+First, there&amp;#39;s a certain level of utility in a uniform assignment. If
+the assignment is &amp;#34;write a program to convert Fahrenheit to Celsius&amp;#34;
+you know that all the students know the conversion as you can provide
+it and it also allows them to easily check their work, either through
+an autograder or with each other. Yes, I know, some students students
+could be tempted to cut corners and copy solutions but usually
+attempts to control cheating do more to constrain students doing
+things the right way than to prevent the cheaters from cheating.
+&lt;/p&gt;
+&lt;p&gt;
+Also, some student, particularly early on need the structure of a set
+assignment and don&amp;#39;t do as well with a &amp;#34;do anything assignment.&amp;#34;
+Saying &amp;#34;just make a converter&amp;#34; can be much more stressful and
+difficult than convert from pounds to kilograms.
+&lt;/p&gt;
+&lt;p&gt;
+As to recipes? Not necessarily. Let&amp;#39;s take this small assignment:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Given two variables &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;, write a code fragment that will swap
+the values represented by &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;. That is, if at the start, &lt;strong&gt;a&lt;/strong&gt;
+represented &lt;strong&gt;5&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; represented &lt;strong&gt;10&lt;/strong&gt;, after your code, &lt;strong&gt;a&lt;/strong&gt; would
+represent &lt;strong&gt;10&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; would represent &lt;strong&gt;5&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+You could even add a hint:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;strong&gt;HINT:&lt;/strong&gt; Consider using an extra third variable in your solution.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This isn&amp;#39;t a recipe, it&amp;#39;s an assignment. Even with the hint it doesn&amp;#39;t
+tell the students exactly what to do, just the desired outcome. It&amp;#39;s
+not a recipe but most or all of the solutions will look remarkably
+similar.
+&lt;/p&gt;
+&lt;p&gt;
+By contrast, a swap &amp;#34;recipe&amp;#34; might read:
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+This is a recipe. A student would literally just rewrite the steps
+into the solution but even this might have it&amp;#39;s place in a class.
+&lt;/p&gt;
+&lt;p&gt;
+A more advanced assignment that leads students through building and
+understanding something like a merge or quicksort could be set up
+similarly. Not in any way a recipe but rather a valuable exercise
+where all the students end up with very similar solutions. This is not
+necessarily a bad thing, in fact it was all the rage a few years ago
+as it could be set up as a discovery or experiential learning
+experience. I also poo pooed that as being the silver bullet but as
+with most teaching techniques, it has its place. 
+&lt;/p&gt;
+&lt;p&gt;
+Then there are opportunities to introduce student creativity even when
+the assignments are, at their core, all the same. I recall a session
+at either SIGCSE or CSTA by &lt;a href=&#34;https://www.bootstrapworld.org/&#34;&gt;Bootstrapworld&lt;/a&gt;. They were describing one
+of their classes major projects. It was a game. I forget the details
+but at the core, all the student projects were the same. They differed
+only in the graphics they used and the story around the game. That&amp;#39;s
+where Boostrapworld interjected student creativity but the core CS and
+math of the student projects were all the same. Did the fact that all
+the assignments were essentially the same make this bad or a recipe?
+Certainly not. Students go to express themselves uniquely but at the
+same time the assignment was constrained and focused on what the
+Bootstrapworld designers wanted.
+&lt;/p&gt;
+&lt;p&gt;
+So, there you have it. There&amp;#39;s nothing wrong with assignments where
+the student results are largely the same. There&amp;#39;s also nothing wrong
+with student projects that are 100% open ended. It&amp;#39;s all about the
+teacher having multiple tools and using them as appropriate for their
+students. 
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Calling an audible</title>
@@ -4500,119 +4631,6 @@ is a much simpler language.
 &lt;p&gt;
 Now, as I said, I have no idea what was discussed internally at the
 college board but I think it&amp;#39;s interesting to think about the history.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Painting Setup</title>
-      <link>https://cestlaz.github.io/stories/painting/setup/</link>
-      <pubDate>Mon, 09 Nov 2020 20:24:10 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/stories/painting/setup/</guid>
-      <description>&lt;p&gt;
-Living in Manhattan doesn&amp;#39;t allow for a lot of space. I live in a
-reasonably sized (for Manhattan standards) apartment with  my wife and
-son. My daughter doesn&amp;#39;t live with us but she comes down most every
-day and works out of her old room as a change of pace rather than
-staying in her apartment and working alone. That leaves us with 4
-people sharing space. 
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s no room for a real studio as space is at a premium but if you
-want to paint regularly you don&amp;#39;t want to spend 30 minutes doing set
-up and tear down. I had a french style easel from when I was Bob Ross
-for Halloween 
-&lt;/p&gt;
-&lt;img width=&#34;20%&#34; 
-src=&#34;https://media.jacksonsart.com/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/e/j/ej014.jpg&#34;&gt;
-&lt;p&gt;
-and it worked well for that with the storage drawer and extending legs
-but at home, not so much. The telescoping legs that set to a triangle
-made for a much larger footprint than was necessary. After deciding I
-was going to stick with this a while, I ended up getting this:
-&lt;/p&gt;
-&lt;img width=&#34;35%&#34; src=&#34;https://cestlaz.github.io/painting/easel.jpg&#34;&gt;
-&lt;p&gt;
-It seems bigger but the footprint is smaller. 
-&lt;/p&gt;
-&lt;p&gt;
-I got this branded as a DaVinci easel but there are a bunch out
-there. I like the shelf on the bottom and I got a couple of hanging
-baskets to attach to the back to hold paintbrushes which a keep in
-used tomato cans that I&amp;#39;ve washed out. : 
-&lt;/p&gt;
-&lt;img width=&#34;35%&#34; src=&#34;https://cestlaz.github.io/painting/easel-back.jpg&#34;&gt;
-&lt;p&gt;
-I throw a cheap plastic tablecloth over the dining table behind the
-easel and that&amp;#39;s where I put my equipment when I work.
-&lt;/p&gt;
-&lt;img width=&#34;35%&#34; src=&#34;https://cestlaz.github.io/painting/easel-table.jpg&#34;&gt;
-&lt;p&gt;
-I also needed a place to store paintings while they dried. For that I
-got this rack: 
-&lt;/p&gt;
-&lt;img width=&#34;35%&#34; src=&#34;https://cestlaz.github.io/painting/rack.jpg&#34;&gt; It seems bigger but the footprint is smaller
-&lt;p&gt;
-I got my easel and rack at Jerry&amp;#39;s Artorama. I&amp;#39;ll write about them in
-the supplies post. I also got a couple of &lt;a href=&#34;https://www.amazon.com/AmazonBasics-Vinyl-Hard-Floor-Chair/dp/B07PGN63W5/ref=pd_rhf_ee_s_rp_c_2_0_1/134-3759504-0733668?_encoding=UTF8&amp;amp;pd_rd_i=B07PGN63W5&amp;amp;pd_rd_r=4c9e6ee5-bea1-4ebb-a592-c11211d857c6&amp;amp;pd_rd_w=TzX8g&amp;amp;pd_rd_wg=fSfwy&amp;amp;pf_rd_p=78d6a3dc-d4af-46b9-998e-003981a80dbb&amp;amp;pf_rd_r=G7TQDYGSZYJKX4A453HH&amp;amp;psc=1&amp;amp;refRID=G7TQDYGSZYJKX4A453HH&#34;&gt;floor mats&lt;/a&gt; and that&amp;#39;s pretty
-much it. 
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s it for the setup. 
-&lt;/p&gt;
-&lt;p&gt;
-The easel&amp;#39;s always out and I try to keep a prepped canvas either on
-the easel or on my rack so setup is a breeze.
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-Put the tablecloth over the table
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Grab a disposable pallet pad and add paints
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Fill my brush cleaning bucket with water (since I&amp;#39;m using water
-mixable paints) and pull out the trash can / beater rack
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-and I&amp;#39;m ready to go. Just takes a minute or two.
-&lt;/p&gt;
-&lt;p&gt;
-Cleanup is also pretty quick: 
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-Throw out the paper pallete
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Wash the brushes
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Remove the tablecloth and throw behind the easel. 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-Takes about 3 or 4 minutes plus the brush cleaning time. 
-&lt;/p&gt;
-&lt;p&gt;
-So that&amp;#39;s my setup. Let me know if I should continue this series when
-I&amp;#39;ll talk about my experience with water mixable paints, brushes adn
-the rest.
 &lt;/p&gt;
 </description>
     </item>
