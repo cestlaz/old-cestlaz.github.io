@@ -6,10 +6,155 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Sep 2021 06:43:53 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Sep 2021 13:31:22 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Memorable Lesson (at least for one student)</title>
+      <link>https://cestlaz.github.io/post/a-memorable-lesson/</link>
+      <pubDate>Fri, 10 Sep 2021 13:31:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/a-memorable-lesson/</guid>
+      <description>&lt;p&gt;
+Back to calling an audible.
+&lt;/p&gt;
+&lt;p&gt;
+Around seven years ago I was visiting with some former students at
+Google in Mountain View. One of them from way back in the late 90s,
+Pawel, out of the blue said there was one lesson I taught that was
+particularly memorable. Not memorable in the &amp;#34;that was fun&amp;#34; way like
+maybe my Halloween adventures but memorable in that he felt he got a
+lot more out of it than a normal lesson. Pawel mentioned a few of the
+things he still remembered about a lesson he saw over two decades
+earlier. 
+&lt;/p&gt;
+&lt;p&gt;
+It was, in fact, one of the first big CS audibles that I can
+remember calling. 
+&lt;/p&gt;
+&lt;p&gt;
+It was second semester APCS - probably right after the AB exam. I
+guess I&amp;#39;d been teaching around seven years so I&amp;#39;d classify myself as
+an advanced beginner. I also hadn&amp;#39;t done any serious programming and
+problem solving since I started teaching.
+&lt;/p&gt;
+&lt;p&gt;
+Was I a fraud?
+&lt;/p&gt;
+&lt;p&gt;
+Impostor syndrome was creeping in.
+&lt;/p&gt;
+&lt;p&gt;
+Back then I had a bunch of students who participated in the &lt;a href=&#34;http://usaco.org/&#34;&gt;USACO&lt;/a&gt; and
+would discuss the programming from their competitions. While I talked
+a good game, I started to wonder if I could back it up. Should I
+really be telling these kids about best practices for problem solving
+ad programming if I just talked the talk and couldn&amp;#39;t walk the walk?
+&lt;/p&gt;
+&lt;p&gt;
+To test myself, I decided to work through some of the competition problems. I figured
+that I didn&amp;#39;t have to be able to solve the hardest of the hard ones
+since only the best of the best solved in that stratosphere but if I
+should be able to solve or at least approach most of the advanced
+problems.
+&lt;/p&gt;
+&lt;p&gt;
+After some problem solving and coding I felt much better about
+myself. I wasn&amp;#39;t living a lie.
+&lt;/p&gt;
+&lt;p&gt;
+I particularly liked the Digit Pals problem. Question 4 from the
+1996-1997 &lt;a href=&#34;https://www.angelfire.com/ca2/lorddave/usa974.html&#34;&gt;National Championship&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Fast forward to class a few days later. Early in the period, for some
+reason, I wasn&amp;#39;t happy with where things were going so I decided to
+totally change directions. I decided I&amp;#39;d do a lesson that was
+basically a walkthrough of my problem solving and coding process for
+Digit Pals.
+&lt;/p&gt;
+&lt;p&gt;
+I started by looking at the problem, working through example and then
+some of the things we discussed included:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+data representation (2D array)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+the high level logic of removing a digit pal (recursive flood fill)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+the high level logic of sliding down and over
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+how to solve the whole thing.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For the overall solver, I decided to go with a straightforward, blind,
+recursive search. I figured it would be fast enough for two
+reasons. First, I figured that since, if you remove the digit pal at
+any location, it&amp;#39;s the same as removing that pal from any of it&amp;#39;s
+locations so that there would likely be many many solutions and
+second, there was a line in the problem statement saying that your
+solution might not work on large cases. In any event, when all was
+said and done and they released the test data, my solution worked
+within time constraints.
+&lt;/p&gt;
+&lt;p&gt;
+After the design phase, I went to the live coding with a focus on:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+compiling and testing every concept. That is, a single loop, a
+single if, a function etc.. This may sound excessive but I&amp;#39;ve been
+doing this forever and it&amp;#39;s served me well as a hobbyist and as a
+professional.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+incremental development - first remove a pal, then slide down, then
+over, then the solver.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When it was all over the problem was solved. I&amp;#39;d like to think that
+the students got something out of the audible. I learned years later
+that at least one student did. As a teacher, I also got a lot out of
+it. That day might not have been my first live coding lesson but it&amp;#39;s
+the earliest one I remember. It was all impromptu but it got me
+thinking more deeply about how I approach problem solving and
+programming as well as how to teach both. Even all the little things
+like my compulsive compiling and testing.
+&lt;/p&gt;
+&lt;p&gt;
+Funny - I have no idea what I was originally going to teach that day
+but that audible turned into both a lesson I&amp;#39;ve repeated many times
+as well as concrete techniques that I&amp;#39;ve used over and over through
+the years.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Should every assignment be open ended?</title>
@@ -4130,117 +4275,6 @@ great teacher. He&amp;#39;s basically Mr. PBL and he does it right.  If you&amp;
 and if you&amp;#39;re new to teaching, you&amp;#39;ll be developing your chops for
 your entire career but it&amp;#39;s a great resource to get you and then your
 kids started on the journey.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PD for people who know CS</title>
-      <link>https://cestlaz.github.io/posts/pd-for-cs/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/pd-for-cs/</guid>
-      <description>&lt;p&gt;
-I saw a couple of tweets from Sarah Judd this morning:
-&lt;/p&gt;
-  &lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?&lt;/p&gt;&amp;mdash; Sarah Judd (@SarahEJudd) &lt;a href=&#34;https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw&#34;&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-  &lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don&amp;#39;t get PD that starts with &amp;quot;and this is how you add and subtract!&amp;quot; and I&amp;#39;d love more CS PD that assumes the content is there, and can focus on the pedagogy.&lt;/p&gt;&amp;mdash; Sarah Judd (@SarahEJudd) &lt;a href=&#34;https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw&#34;&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-It wasn&amp;#39;t the first time I&amp;#39;ve heard this refrain. Last year I attended
-my first CSTA conference. I had numerous conversations with CS
-teachers on the fact that everything was on an intro level in terms of
-both content and teaching. Further conversations with local teachers
-with stronger CS backgrounds led me to run a professional development
-session at Hunter this past election day for more experienced CS
-teachers at schools that offered more than the basics.
-&lt;/p&gt;
-&lt;p&gt;
-While it&amp;#39;s not surprising that most of the PD opportunities for CS teachers are
-rather rudimentary given that nationally most programs are new and
-most teachers are new to the subject but there are a few deeper
-reasons.
-&lt;/p&gt;
-&lt;p&gt;
-To start, there are big players in the CS Ed movement that are pushing
-curricula and specific programs and that leads to scripted PD for
-their products and not depth of knowledge nor deep pedagogical content
-knowledge let alone basic pedagogy. Add to this the fact that many of
-the &amp;#34;thought leaders&amp;#34; in the space don&amp;#39;t have experience teaching CS
-at the K12 level and in many cases don&amp;#39;t have a background either in
-teaching nor tech and you can see where the problem comes from. On top
-of this we have the erosion of respect for teaching as a profession
-where reformers are trying to take the teacher out of teaching and are
-trying to reduce pedagogy to following scripts. This problem goes well
-beyond CS Ed but as the new kid on the block it probably hits us
-hardest.
-&lt;/p&gt;
-&lt;p&gt;
-In any case, preparing beginners is both necessary and appropriate for
-the time being but we can and must do a better job than what&amp;#39;s
-currently &amp;#34;state of the art.&amp;#34; At the same time we have to do something
-with the CS teachers who indeed do have strong content knowledge but
-don&amp;#39;t feel comfortable with imparting that knowledge.
-&lt;/p&gt;
-&lt;p&gt;
-So, what should we do?
-&lt;/p&gt;
-&lt;p&gt;
-For new teachers the solution will ultimately have to come
-from pre-service programs but what we end up getting is going to
-largely be dictated on what&amp;#39;s required by individual states. If states
-merely require passing an exam like the Praxis CS exam which, from
-what I can gather isn&amp;#39;t a horrible content exam then we&amp;#39;re going to
-see CS teachers bumble through their early to mid careers while trying
-to figure out how to teach CS much like I did way back when. If they
-end up endorsing pre-service programs that are focused on specific
-curricula - APCS-A for teachers, APCS-P for teachers, &lt;a href=&#34;https://cestlaz.github.io/posts/math-for-math-teachers/&#34;&gt;Math for Math
-teachers&lt;/a&gt; if you will but for CS, we&amp;#39;re also not going to get strong
-well prepared pedagogues. On the other hand if you can design a
-program that has a strong pedagogical component to go along with the
-content, you have a chance. Even with a well designed program
-implementation will still be a challenge. Who will teach it? Education
-professors who don&amp;#39;t have CS backgrounds? CS professors with little
-pedagogical training? Neither of those groups necessarily have any
-real experience as actual K12 teachers. If you can find honest to
-goodness experienced, strong K12 CS teachers to teach your pedagogy
-courses that&amp;#39;s a big win but that&amp;#39;s going to be hard in most cases.
-&lt;/p&gt;
-&lt;p&gt;
-I think we designed a great program at Hunter and have a practical and
-strong implementation plan. If you&amp;#39;re going to be
-at CSTA2018 you can hear all about it and why we designed it as we did
-in the talk I&amp;#39;m giving.
-&lt;/p&gt;
-&lt;p&gt;
-For the more experienced I don&amp;#39;t have a universal answer but I can say
-what I&amp;#39;m planning. Teachers in NY have to complete 100 CTLE hours
-every five years. For beginners, there are plenty of options, at least
-content wise. For teachers who know CS, not so much. I was at a meetup
-talking to a few friends a couple of weeks ago and one mentioned that
-they get most of their hours in Math for America CS
-workshops. Unfortunately more than a few of my CS teacher friends who
-are in MFA tell me that the CS content in these workshops, while they
-do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
-side.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s what I&amp;#39;m planning - we (Hunter) will host a once a month
-dinner/session for CS teachers who are a little farther along CS
-wise. I haven&amp;#39;t worked out all the details yet but I&amp;#39;ve got a few tech
-companies that are already interested in sponsoring and helping out
-should we need anything and we&amp;#39;ll probably set most of our agenda for
-the year at the first session where I&amp;#39;ll make my best guess at a
-useful agenda. This is something I&amp;#39;m pretty excited about. It should
-help create a network of more experienced CS teachers which will both
-help bolster that segment of the community and provide a long term
-resource to newcomers and it should be a lot of fun.
-&lt;/p&gt;
-&lt;p&gt;
-In some ways, this is why I ended up joining Hunter. Regardless of
-what the city and state do, we&amp;#39;re going to prepare the teachers and if
-you have a well prepared teacher, you&amp;#39;ve got a shot.
 &lt;/p&gt;
 </description>
     </item>

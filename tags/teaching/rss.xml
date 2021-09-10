@@ -6,10 +6,155 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Sep 2021 06:43:53 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Sep 2021 13:31:22 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Memorable Lesson (at least for one student)</title>
+      <link>https://cestlaz.github.io/post/a-memorable-lesson/</link>
+      <pubDate>Fri, 10 Sep 2021 13:31:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/a-memorable-lesson/</guid>
+      <description>&lt;p&gt;
+Back to calling an audible.
+&lt;/p&gt;
+&lt;p&gt;
+Around seven years ago I was visiting with some former students at
+Google in Mountain View. One of them from way back in the late 90s,
+Pawel, out of the blue said there was one lesson I taught that was
+particularly memorable. Not memorable in the &amp;#34;that was fun&amp;#34; way like
+maybe my Halloween adventures but memorable in that he felt he got a
+lot more out of it than a normal lesson. Pawel mentioned a few of the
+things he still remembered about a lesson he saw over two decades
+earlier. 
+&lt;/p&gt;
+&lt;p&gt;
+It was, in fact, one of the first big CS audibles that I can
+remember calling. 
+&lt;/p&gt;
+&lt;p&gt;
+It was second semester APCS - probably right after the AB exam. I
+guess I&amp;#39;d been teaching around seven years so I&amp;#39;d classify myself as
+an advanced beginner. I also hadn&amp;#39;t done any serious programming and
+problem solving since I started teaching.
+&lt;/p&gt;
+&lt;p&gt;
+Was I a fraud?
+&lt;/p&gt;
+&lt;p&gt;
+Impostor syndrome was creeping in.
+&lt;/p&gt;
+&lt;p&gt;
+Back then I had a bunch of students who participated in the &lt;a href=&#34;http://usaco.org/&#34;&gt;USACO&lt;/a&gt; and
+would discuss the programming from their competitions. While I talked
+a good game, I started to wonder if I could back it up. Should I
+really be telling these kids about best practices for problem solving
+ad programming if I just talked the talk and couldn&amp;#39;t walk the walk?
+&lt;/p&gt;
+&lt;p&gt;
+To test myself, I decided to work through some of the competition problems. I figured
+that I didn&amp;#39;t have to be able to solve the hardest of the hard ones
+since only the best of the best solved in that stratosphere but if I
+should be able to solve or at least approach most of the advanced
+problems.
+&lt;/p&gt;
+&lt;p&gt;
+After some problem solving and coding I felt much better about
+myself. I wasn&amp;#39;t living a lie.
+&lt;/p&gt;
+&lt;p&gt;
+I particularly liked the Digit Pals problem. Question 4 from the
+1996-1997 &lt;a href=&#34;https://www.angelfire.com/ca2/lorddave/usa974.html&#34;&gt;National Championship&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Fast forward to class a few days later. Early in the period, for some
+reason, I wasn&amp;#39;t happy with where things were going so I decided to
+totally change directions. I decided I&amp;#39;d do a lesson that was
+basically a walkthrough of my problem solving and coding process for
+Digit Pals.
+&lt;/p&gt;
+&lt;p&gt;
+I started by looking at the problem, working through example and then
+some of the things we discussed included:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+data representation (2D array)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+the high level logic of removing a digit pal (recursive flood fill)
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+the high level logic of sliding down and over
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+how to solve the whole thing.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For the overall solver, I decided to go with a straightforward, blind,
+recursive search. I figured it would be fast enough for two
+reasons. First, I figured that since, if you remove the digit pal at
+any location, it&amp;#39;s the same as removing that pal from any of it&amp;#39;s
+locations so that there would likely be many many solutions and
+second, there was a line in the problem statement saying that your
+solution might not work on large cases. In any event, when all was
+said and done and they released the test data, my solution worked
+within time constraints.
+&lt;/p&gt;
+&lt;p&gt;
+After the design phase, I went to the live coding with a focus on:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+compiling and testing every concept. That is, a single loop, a
+single if, a function etc.. This may sound excessive but I&amp;#39;ve been
+doing this forever and it&amp;#39;s served me well as a hobbyist and as a
+professional.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+incremental development - first remove a pal, then slide down, then
+over, then the solver.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When it was all over the problem was solved. I&amp;#39;d like to think that
+the students got something out of the audible. I learned years later
+that at least one student did. As a teacher, I also got a lot out of
+it. That day might not have been my first live coding lesson but it&amp;#39;s
+the earliest one I remember. It was all impromptu but it got me
+thinking more deeply about how I approach problem solving and
+programming as well as how to teach both. Even all the little things
+like my compulsive compiling and testing.
+&lt;/p&gt;
+&lt;p&gt;
+Funny - I have no idea what I was originally going to teach that day
+but that audible turned into both a lesson I&amp;#39;ve repeated many times
+as well as concrete techniques that I&amp;#39;ve used over and over through
+the years.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Should every assignment be open ended?</title>
@@ -3684,146 +3829,6 @@ advantage in both future classes and work and life endeavors.
 I decided to do this rant as a video. I hope you enjoy it:
 &lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/x8cZgEogWNw&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Thoughts On A Hackathon</title>
-      <link>https://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid>
-      <description>&lt;p&gt;
-Yesterday I was one of the judges at &lt;a href=&#34;http://stuyhacks.com/&#34;&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
-Stuyvesant run by and organized by the students. I don&amp;#39;t have attendee
-stats but there were kids from all over the city and at least one team
-from New Jersey. The youngest student that I met was in sixth grade
-and the oldest were high school seniors. The judging was at the end
-but I decided to stop by earlier to see how the hackers were doing.
-&lt;/p&gt;
-&lt;p&gt;
-There was an incredible variety of projects using a wide array of
-tools. There were projects built with:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Java
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Processing
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-C#
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Scratch
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-A-Frame
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Python / Flask
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-HTML/CSS/JS
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-and more
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-A personal highlight for me was running into Sophie - the daughter of
-two of my students from #Stuy95. Well, both a highlight and a reminder
-that I&amp;#39;m getting old.
-&lt;/p&gt;
-&lt;p&gt;
-The StuyHacks team did a terrific job running things and at the end I
-told them I&amp;#39;d love to help with future events.
-&lt;/p&gt;
-&lt;p&gt;
-I did notice a couple of things at the hackathon that echo things I&amp;#39;ve
-learned as a teacher over the years and I thought they were worth
-sharing.
-&lt;/p&gt;
-&lt;p&gt;
-The first was the a number of the beginner groups needed more
-direction. This didn&amp;#39;t seem to be related to grade level or age as
-much as CS experience. This isn&amp;#39;t a hackathon only issue. It exists in
-all learning environments. If as teachers we&amp;#39;re too prescriptive
-students end up with a single formula to follow. Sure, that&amp;#39;ll get
-them through a standardized exam like APCS-A but too much of it can
-hinder them in becoming creative problem solvers.
-&lt;/p&gt;
-&lt;p&gt;
-On the other hand, not enough structure will leave many kids staring
-at a blank page. I remember I gave a quiz years ago. It had one
-problem: &amp;#34;You have 20 minutes to prove to me that you learned
-something about the past unit on Cellular Autmata&amp;#34; or something like
-that. Some kids absolutely loved it but many hated it. Stuy kids are
-trained test takers. They&amp;#39;re prepared for structure. This threw many
-for a loop.
-&lt;/p&gt;
-&lt;p&gt;
-I noticed this issue with some of the hackers at StuyHacks. Some
-beginners really had a hard time figuring out what they could do and
-what they should do.
-&lt;/p&gt;
-&lt;p&gt;
-A hackathon isn&amp;#39;t a classroom so I think the problem is pretty easily
-remedied. Groups that were able to latch on to a good mentor seemed to
-get the guidance they needed. A beginners hackathon should make sure
-they have not only plenty of mentors but they should make sure that
-the mentors are prepped with a number of project ideas in a number of
-the standard beginner platforms. A hackathon could also provide an
-assortment of ideas in a list.
-&lt;/p&gt;
-&lt;p&gt;
-The second thing I noticed was at the end of the day as I was
-judging. It started with one particular group. They were pretty
-apologetic about their project. Basically because it wasn&amp;#39;t
-finished. Personally, I thought what they accomplished in essentially
-7 hours was pretty impressive. What became clear as we talked is that
-this group was deathly afraid of failure. Their deepest fear at that
-moment was that I was going to give them high marks and they might
-have to show off their incomplete (yet rather impressive) project to a
-room full of strangers.
-&lt;/p&gt;
-&lt;p&gt;
-This fear of failure was prevalent in groups that ultimately didn&amp;#39;t
-submit their projects for judging and it seemed to be common among
-students from high performing, high expectation schools where
-frequently one associates a test score or grade with ones value. I&amp;#39;m
-not happy to say that Stuy has always had this problem.
-&lt;/p&gt;
-&lt;p&gt;
-This isn&amp;#39;t really a problem that a hackathon can or should be able to
-address. It&amp;#39;s just something I noticed. It&amp;#39;s a problem for schools and
-also for a society that&amp;#39;s test obsessed.
-&lt;/p&gt;
-&lt;p&gt;
-I hope nobody reads too much into these observations. The day was a
-tremendous success. A whole bunch of kids had a great day working
-together to build cool things with technology. Congratulations to the
-StuyHacks team. They did a terrific job putting it all together. If
-you&amp;#39;re a middle or high school student or know one, keep an eye on the
-StuyHacks &lt;a href=&#34;http://stuyhacks.com/&#34;&gt;web page&lt;/a&gt; and make sure to attend their next event.
-&lt;/p&gt;
 </description>
     </item>
     
