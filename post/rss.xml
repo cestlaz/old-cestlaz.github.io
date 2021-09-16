@@ -6,10 +6,202 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Sep 2021 13:31:22 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Sep 2021 10:42:05 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>What They Used To Know</title>
+      <link>https://cestlaz.github.io/post/what-they-used-to-know/</link>
+      <pubDate>Thu, 16 Sep 2021 10:42:05 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/what-they-used-to-know/</guid>
+      <description>&lt;p&gt;
+I saw this tweet by Julia Evans the other day.
+&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;if you&amp;#39;ve
+been working in computing for &amp;gt; 15 years -- are there fundamentals
+that you learned &amp;quot;on the job&amp;quot; 15 years ago that you think
+most people aren&amp;#39;t learning on the job today?&lt;br&gt;&lt;br&gt;(I&amp;#39;m
+thinking about how for example nobody has ever paid me to write C
+code)&lt;/p&gt;&amp;mdash; 🔎Julia Evans🔍 (@b0rk) &lt;a
+href=&#34;https://twitter.com/b0rk/status/1435965181847343108?ref_src=twsrc%5Etfw&#34;&gt;September
+9, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async
+src=&#34;https://platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;
+I&amp;#39;ve never met Julia but have been following her on Twitter and
+reading her &lt;a href=&#34;https://jvns.ca/&#34;&gt;blog&lt;/a&gt; for some time now.
+&lt;/p&gt;
+&lt;p&gt;
+The tweet got me thinking. Not so much about learning on the job but
+rather on how colleges prepare their students. Recent boutique majors
+and concentrations notwithstanding, a degree in CS seems to have
+largely stayed the same from the early/mid 1980s when I got my BA to
+today. There are variations but it was and still is largely
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+programming–&amp;gt;data structures–&amp;gt;algorithms
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+some systems or OS stuff
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+some theory 
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+math: calc 1, calc 2, discrete, linear, maybe stats
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+another requirement or two which might differ based on institution
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+electives
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Sure, programs have changed over the years. At one point, computer
+graphics was hot. Now, not so much. Courses like compilers also used
+to be required more frequently but overall things look much the
+same. That said, there have been some major changes - at least from my
+perspective and those changes really affected how students were
+prepared for professional careers. Now of course this is only my
+perspective so who knows how accurate it is. Regardless, it should be
+good food for thought.
+&lt;/p&gt;
+&lt;p&gt;
+I got my BA back in the mid 80s. That was the start of the PC
+generation. Colleges were starting to get computer labs full of
+IBM-PCs and then  later clones. MS-DOS ruled the day. 
+&lt;/p&gt;
+&lt;p&gt;
+What did that mean?
+&lt;/p&gt;
+&lt;p&gt;
+It meant that while a few years prior, students used a time sharing
+system for their programming classes now they were using  an
+IBM-PC with Turbo Pascal. I can&amp;#39;t say for sure but looking back, it
+seemed that people educated in PC heavy programs had a weaker sense of
+all those issues that come with multiple people and multiple processes
+happening on a machine at the same time.
+&lt;/p&gt;
+&lt;p&gt;
+On the other hand, having a relatively simple computer - one that you
+had full control over may have led to an easier time in understanding
+the low level ins and outs. You could learn about low level issues on
+a PC and really understand everything. That doesn&amp;#39;t seem to happen as
+much nowadays when even our personal computers and computing devices
+run more like those multi user computers of old than the single
+process no threads IBM-PC.
+&lt;/p&gt;
+&lt;p&gt;
+There was an opportunity to recapture this right before the Arduino
+got big. The Arduino was based on an Atmel processer with a small
+instruction set - a platform where a student could understand
+everything from wire to application. For all the good that the Arduion
+and related projects have led to, they&amp;#39;ve abstracted that low level
+away.
+&lt;/p&gt;
+&lt;p&gt;
+A few years later Java became a popular college CS language followed
+by Python. Both of these took memory management out of the core
+programming-&amp;gt;data structures-&amp;gt;algorithms sequence. Sure, you probably got to
+learn a bit about memory management and related issues in your systems
+classes but I have to believe you didn&amp;#39;t really own that knowledge
+like you would have had you had to manage memory throughout the core
+courses.
+&lt;/p&gt;
+&lt;p&gt;
+Now, I&amp;#39;m not knocking the change. Moving to Java brought some
+improvements and so does moving to Python. It&amp;#39;s just that as a
+language or platform giveth it also taketh away.
+&lt;/p&gt;
+&lt;p&gt;
+The interesting things here is that the changes I noticed were not
+directly intended but rather byproducts of changes made for other
+reasons.
+&lt;/p&gt;
+&lt;p&gt;
+A final unintended consequence I noticed also seems to be a byproduct
+of the Java revolution. Years ago after many programs had adopted
+Java I was talking to a friend who was a high level SE at a big NY
+bank. At the time finance was NY&amp;#39;s biggest tech employer. I think
+Google might have recently moved to NY but wasn&amp;#39;t yet the player
+they&amp;#39;d become - this was pre-IPO days and NY tech hadn&amp;#39;t yet
+exploded. My friend was lamenting after a long day of interviews. None
+of his interviewees - all from top rated CS colleges could handle what
+he viewed as easy algorithm questions. Questions a that were
+considered close to trivial by his interviewees from a few years
+back.
+&lt;/p&gt;
+&lt;p&gt;
+After some discussion, we developed a theory. It might not be true but
+looking around the landscape in the months and years following that
+discussion, it might hold some water. With the acceptance of Java
+students were now, more frequently using library calls. The .sort
+method, the built in List, Tree, Map, and Set classes and more. This
+is not to say that the students hadn&amp;#39;t learned about, say, the
+mergesort in their data structures or algorithms classes but rather
+they didn&amp;#39;t live it. Maybe  they did a quick implementation but then
+it was gone from their memories.  Back in the day, most people in my
+peer group started in Pascal and frequently moved to C. Even though C
+had it&amp;#39;s built in sort, we coded our own more frequently. We also
+didn&amp;#39;t have easy access to all the data structure and algorithm
+libraries that Java had so we rolled our own and continued to use
+them. When kids who did that interviewed, they could more easily see
+how an interview problem related to an algorithm they coded and
+tweaked half a dozen times. On the other hand, those that saw it once
+and moved to a library didn&amp;#39;t have that in depth understanding.
+&lt;/p&gt;
+&lt;p&gt;
+Now, this is not to say that it was better in the old days. When they
+removed memory management, they were able to add other
+topics. Likewise when students didn&amp;#39;t need to implement their own
+version of everything for their class projects, instructors could
+steer students towards learning other new things.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m not making a judgement call on better or worse but rather that
+even without formal curricular changes the strengths and weaknesses of
+our CS graduates have changed over the years quite possibly as a
+result of unintended consequences of a variety of decisions.
+&lt;/p&gt;
+&lt;p&gt;
+I also don&amp;#39;t this only happens in CS. Take a look at math - the big
+one would probably be bringing the calculator to the classroom. The in
+your face change was the idea that on the one hand, students would
+become weaker in arithmetic and manual calculation. On the other hand,
+time could be spent on what might be considered richer topics due to
+time saved. Lost in the shuffle were topics like linear
+interpolation - a useful skill taught to navigate log and trig
+tables. Those skills would be forever lost.
+&lt;/p&gt;
+&lt;p&gt;
+So, there&amp;#39;s my rant and ramble inspired by Julia&amp;#39;s post.
+&lt;/p&gt;
+&lt;p&gt;
+A day after I saw the tweet I saw &lt;a href=&#34;https://jvns.ca/blog/2021/09/10/hashmaps-make-things-fast/&#34;&gt;this post&lt;/a&gt; by Julia. Unless some
+shiny object distracts me I think I want to look at how the unintended
+consequences from some of the changes I mentioned directly relates to
+it.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A Memorable Lesson (at least for one student)</title>
@@ -4608,114 +4800,6 @@ the more good programs launch the more good teachers we&amp;#39;ll produce.
 &lt;/p&gt;
 &lt;p&gt;
 If we build them, they will come.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Language choices for APCS</title>
-      <link>https://cestlaz.github.io/post/apcs-languages/</link>
-      <pubDate>Wed, 11 Nov 2020 13:31:21 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/apcs-languages/</guid>
-      <description>&lt;p&gt;
-Over on Facebook the semi-regular &amp;#34;is APCS-A going to Python&amp;#34; once
-again appeared. I&amp;#39;m not going to get into Python vs Java. Each language giveth and
-each language taketh away but it got me thinking about the history of
-language changes.
-&lt;/p&gt;
-&lt;p&gt;
-I titled this &amp;#34;Language choices for APCS&amp;#34; not APCS-A because back in
-the day it was just APCS. At some point that split with APCS-A being similar
-to what we have today and APCS-A being that plus a CS2 (data
-structures) class. Finally after 2009, APCS-AB was dropped due to low
-participation, I mean, my school represented 10% of the total test
-takers - that&amp;#39;s nuts - 10% from one school.
-&lt;/p&gt;
-&lt;p&gt;
-I took the exam during the first administration in 1984 and taught
-APCS-AB from 1991 I think up until I left Stuy.
-&lt;/p&gt;
-&lt;p&gt;
-Originally, APCS was in Pascal. Back then, the course guide said that
-they intended for the exam to become language agnostic but that never
-happened. Instead we went to C++ in 2000 and then to Java in 2004.
-&lt;/p&gt;
-&lt;p&gt;
-Now, I don&amp;#39;t have any inside information here. I&amp;#39;ve never been in on
-any internal meetings so this is all just conjecture but I think it&amp;#39;s
-interesting food for thought. 
-&lt;/p&gt;
-&lt;p&gt;
-Back in 1984, schools were transitioning from either no
-computers or Commodore PETS to Apple IIs. At Stuy, where I was a
-student, the teacher had a single copy of a Pascal compiler on a
-floppy disk and he made copies - one for each computer in the lab. Not
-too much concern about piracy here. 
-&lt;/p&gt;
-&lt;p&gt;
-As we approached 2000 when APCS switched to C++ the knocks on Pascal
-were: 
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-It&amp;#39;s a teaching language 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-You can&amp;#39;t have programs that were more than one file. 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-It wasn&amp;#39;t Object Oriented which gained a lot of steam over the
-decade. 
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-The first item was also mentioned as a strength and item 2 really
-wasn&amp;#39;t an issue in terms of what most people taught. In any event, the
-College Board decided on a change. 
-&lt;/p&gt;
-&lt;p&gt;
-I started thinking about why C++ over Pascal? I know that C++ was the
-hot industry language at the time and to be honest, I don&amp;#39;t remember
-what other languages might have also been viable. I did think though
-about one big factor in C++&amp;#39;s favor. By this time schools were moving
-to IBM PCs and C++ had a really big hidden value - the existence of
-Turbo C++. A C++ compiler and IDE that ran on the IBM PC and was
-cheap. Prior to Turbo Pascal and Turbo C/C++ schools didn&amp;#39;t have the
-ability to cheaply compile programs and certainly students who were
-fortunate enough to have computers certainly couldn&amp;#39;t afford a
-compiler. 
-&lt;/p&gt;
-&lt;p&gt;
-I have no idea if this factored into the decision but I think the
-economics and the fact that compilers and development environments
-were just not that available back then are an interesting bit of
-history.
-&lt;/p&gt;
-&lt;p&gt;
-What about the next change? C++ to Java in 2004. By then I had moved
-Stuy over to Linux but most schools were still on Windows. By this
-time there were more affordable and even free compiler choices so I&amp;#39;m
-guessing school economics didn&amp;#39;t have to enter the decision. What
-probably did was the fact that APCS-A participants were stagnant and
-APCS-AB were declining. One might conjecture that the complexity of
-C++ had something to do with this. While Pascal also had memory
-management C++ memory management is more complicated and less
-forgiving. Also, since C++ is really a multimodal with &amp;#34;many ways to
-do it&amp;#34; it was probably much harder for both students and teachers,
-many of whom didn&amp;#39;t have a CS background. Java was the hot up and
-comer, was not multi-modal but was indeed object oriented, and really
-is a much simpler language. 
-&lt;/p&gt;
-&lt;p&gt;
-Now, as I said, I have no idea what was discussed internally at the
-college board but I think it&amp;#39;s interesting to think about the history.
 &lt;/p&gt;
 </description>
     </item>
