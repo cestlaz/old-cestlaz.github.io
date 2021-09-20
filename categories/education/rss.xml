@@ -6,10 +6,103 @@
     <description>C&#39;est la Z (education)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Sep 2021 10:42:05 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Sep 2021 17:08:19 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/education/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>How The Hash Is Made</title>
+      <link>https://cestlaz.github.io/post/how-the-hash-is-made/</link>
+      <pubDate>Thu, 16 Sep 2021 17:08:19 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/how-the-hash-is-made/</guid>
+      <description>&lt;p&gt;
+Following up on my &lt;a href=&#34;https://cestlaz.github.io/post/what-they-used-to-know/&#34;&gt;last post&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Soon after I read that tweet, I read Julia&amp;#39;s post on &lt;a href=&#34;https://jvns.ca/blog/2021/09/10/hashmaps-make-things-fast/&#34;&gt;hash tables&lt;/a&gt;. This
+got me thinking more about what is and isn&amp;#39;t taught in school. Hash
+tables were always taught in CS programs but back in the day you might
+not have used them much after your data structures or algorithms
+classes. Nowadays you&amp;#39;re much more likely to use them as they&amp;#39;re built
+in to so many platforms.
+&lt;/p&gt;
+&lt;p&gt;
+Hash tables and related structures are great - I use them all the time
+but they can also become a go to without thinking it through. This
+actually came up in conversation with the same my high level SE friend
+at that big bank from the last post. He also noticed that many interviewees would always
+go right to the hash table even when there were red flags in the
+question to warn away fro them.
+&lt;/p&gt;
+&lt;p&gt;
+For a hash table to get you that nice fast expected constant time
+performance, it has to be sparse - few collisions. If you implement a
+closed hash table (all the data is in a single array) and there&amp;#39;s not
+a lot of spare space, it will fill up and all of a sudden that O(1)
+insertion and retrieval time will go linear. I can&amp;#39;t say for certain
+but I&amp;#39;m guessing the vast majority of Python programmers who use hash
+tables (dictionaries) all the time don&amp;#39;t really know this or if they
+do never think about it.
+&lt;/p&gt;
+&lt;p&gt;
+Is this a byproduct of using the built in implementations in college
+combined with self taught programmers never seeing this at all? Maybe
+but this was probably a deficiency even in my day.
+&lt;/p&gt;
+&lt;p&gt;
+This also came up when I accidentally interviewed for a position at
+Google. There was a question about storing and accessing a bunch of
+data. I don&amp;#39;t remember the question but there was a key line - &amp;#34;you
+have unlimited storage&amp;#34; which is the trigger phrase for &amp;#34;use a hash
+table.&amp;#34; I got a kick out of it but felt this was a you know it or you
+don&amp;#39;t. I think I mentioned it to the interviewer.
+&lt;/p&gt;
+&lt;p&gt;
+This also brought to mind another example. Not mine - I read this in
+John Bentley&amp;#39;s terrific book &lt;a href=&#34;https://tfetimes.com/wp-content/uploads/2015/04/ProgrammingPearls2nd.pdf&#34;&gt;&amp;#34;Programming Pearls.&amp;#34;&lt;/a&gt; The gist was that a
+room full of very smart people were implementing a binary search. The
+idea is that you have an array of data that is sorted and instead of
+looking through every item one at a time, you calculate the middle of
+the array, look there and then, if you haven&amp;#39;t found the item, you
+throw away half the data and repeat the process with the remaining
+half.
+&lt;/p&gt;
+&lt;p&gt;
+Every now and then, the implementations had a problem and nobody could
+figure out why. As it turns out, in calculating the midpoint, they&amp;#39;d
+add the lower value and the higher value and then divide the sum by
+two.
+&lt;/p&gt;
+&lt;p&gt;
+Sounds reasonable.
+&lt;/p&gt;
+&lt;p&gt;
+The problem was that when low and high were at the upper end of the
+data set the addition would go past the largest integer wrapping
+around and causing wonky results.
+&lt;/p&gt;
+&lt;p&gt;
+Pretty subtle error but at least you&amp;#39;ve got a shot at figuring it out
+if you understand integer sizes and how they work on your machine. 
+&lt;/p&gt;
+&lt;p&gt;
+Having some solid low level knowledge won&amp;#39;t prevent this bug from
+cropping up but it will give you a fighting chance at fixing it if it
+does. 
+&lt;/p&gt;
+&lt;p&gt;
+This particular problem probably won&amp;#39;t come up these days as integers
+are MUCH larger than back in the day but I think it illustrates the
+point.
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, just more food for thought on how CS Education has changed
+over the years, what we leave in, and what we leave out.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What They Used To Know</title>

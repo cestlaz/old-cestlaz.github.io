@@ -6,10 +6,103 @@
     <description>C&#39;est la Z (education)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Sep 2021 10:42:05 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Sep 2021 17:08:19 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/education/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>How The Hash Is Made</title>
+      <link>https://cestlaz.github.io/post/how-the-hash-is-made/</link>
+      <pubDate>Thu, 16 Sep 2021 17:08:19 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/how-the-hash-is-made/</guid>
+      <description>&lt;p&gt;
+Following up on my &lt;a href=&#34;https://cestlaz.github.io/post/what-they-used-to-know/&#34;&gt;last post&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Soon after I read that tweet, I read Julia&amp;#39;s post on &lt;a href=&#34;https://jvns.ca/blog/2021/09/10/hashmaps-make-things-fast/&#34;&gt;hash tables&lt;/a&gt;. This
+got me thinking more about what is and isn&amp;#39;t taught in school. Hash
+tables were always taught in CS programs but back in the day you might
+not have used them much after your data structures or algorithms
+classes. Nowadays you&amp;#39;re much more likely to use them as they&amp;#39;re built
+in to so many platforms.
+&lt;/p&gt;
+&lt;p&gt;
+Hash tables and related structures are great - I use them all the time
+but they can also become a go to without thinking it through. This
+actually came up in conversation with the same my high level SE friend
+at that big bank from the last post. He also noticed that many interviewees would always
+go right to the hash table even when there were red flags in the
+question to warn away fro them.
+&lt;/p&gt;
+&lt;p&gt;
+For a hash table to get you that nice fast expected constant time
+performance, it has to be sparse - few collisions. If you implement a
+closed hash table (all the data is in a single array) and there&amp;#39;s not
+a lot of spare space, it will fill up and all of a sudden that O(1)
+insertion and retrieval time will go linear. I can&amp;#39;t say for certain
+but I&amp;#39;m guessing the vast majority of Python programmers who use hash
+tables (dictionaries) all the time don&amp;#39;t really know this or if they
+do never think about it.
+&lt;/p&gt;
+&lt;p&gt;
+Is this a byproduct of using the built in implementations in college
+combined with self taught programmers never seeing this at all? Maybe
+but this was probably a deficiency even in my day.
+&lt;/p&gt;
+&lt;p&gt;
+This also came up when I accidentally interviewed for a position at
+Google. There was a question about storing and accessing a bunch of
+data. I don&amp;#39;t remember the question but there was a key line - &amp;#34;you
+have unlimited storage&amp;#34; which is the trigger phrase for &amp;#34;use a hash
+table.&amp;#34; I got a kick out of it but felt this was a you know it or you
+don&amp;#39;t. I think I mentioned it to the interviewer.
+&lt;/p&gt;
+&lt;p&gt;
+This also brought to mind another example. Not mine - I read this in
+John Bentley&amp;#39;s terrific book &lt;a href=&#34;https://tfetimes.com/wp-content/uploads/2015/04/ProgrammingPearls2nd.pdf&#34;&gt;&amp;#34;Programming Pearls.&amp;#34;&lt;/a&gt; The gist was that a
+room full of very smart people were implementing a binary search. The
+idea is that you have an array of data that is sorted and instead of
+looking through every item one at a time, you calculate the middle of
+the array, look there and then, if you haven&amp;#39;t found the item, you
+throw away half the data and repeat the process with the remaining
+half.
+&lt;/p&gt;
+&lt;p&gt;
+Every now and then, the implementations had a problem and nobody could
+figure out why. As it turns out, in calculating the midpoint, they&amp;#39;d
+add the lower value and the higher value and then divide the sum by
+two.
+&lt;/p&gt;
+&lt;p&gt;
+Sounds reasonable.
+&lt;/p&gt;
+&lt;p&gt;
+The problem was that when low and high were at the upper end of the
+data set the addition would go past the largest integer wrapping
+around and causing wonky results.
+&lt;/p&gt;
+&lt;p&gt;
+Pretty subtle error but at least you&amp;#39;ve got a shot at figuring it out
+if you understand integer sizes and how they work on your machine. 
+&lt;/p&gt;
+&lt;p&gt;
+Having some solid low level knowledge won&amp;#39;t prevent this bug from
+cropping up but it will give you a fighting chance at fixing it if it
+does. 
+&lt;/p&gt;
+&lt;p&gt;
+This particular problem probably won&amp;#39;t come up these days as integers
+are MUCH larger than back in the day but I think it illustrates the
+point.
+&lt;/p&gt;
+&lt;p&gt;
+Anyway, just more food for thought on how CS Education has changed
+over the years, what we leave in, and what we leave out.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What They Used To Know</title>
@@ -4670,135 +4763,6 @@ both?
 We have to give our new CS teachers the time and support to learn to
 teach and to learn the subject area but at the same time, I think it&amp;#39;s
 reasonable to require that they do so given the resources.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CS Ed advocates should pay attention to greater ed issues</title>
-      <link>https://cestlaz.github.io/posts/cs-ed-and-all-ed/</link>
-      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/cs-ed-and-all-ed/</guid>
-      <description>&lt;p&gt;
-For anyone involved in K12 CS education, the past few years have been
-a wild ride. When I first tried to make inroads in the DOE decades ago
-I couldn&amp;#39;t get through the door. Now, CS Education is everyone&amp;#39;s
-darling. It&amp;#39;s really amazing. It&amp;#39;s been a combination of grass roots
-efforts by teachers, non profit education efforts such as &lt;a href=&#34;http://teals12k.org&#34;&gt;TEALS&lt;/a&gt;, advocacy of
-groups like &lt;a href=&#34;http://code.org&#34;&gt;Code.org&lt;/a&gt; and amazing individuals like &lt;a href=&#34;http://avc.com/2017/06/bearing-witness/&#34;&gt;Fred Wilson&lt;/a&gt; who has
-probably done more to move the needle of CS Ed in NY than any other 10
-people combined.
-&lt;/p&gt;
-&lt;p&gt;
-While everyone agrees that to do CS education right at the K12 level
-we need great teachers and lots of them, everyone also knows that
-teachers voices are often unheard. The voices with the greatest weight
-belong to the large non-profits, principals, superintendents and
-local politicians.
-&lt;/p&gt;
-&lt;p&gt;
-Today&amp;#39;s post is a plea to those with voices to think about the effects
-of their advocacy for CS Ed to the greater education landscape.
-&lt;/p&gt;
-&lt;p&gt;
-I started thinking about this recently as I&amp;#39;ve been developing the
-CS teacher certification programs for Hunter College. As I spoke to
-people across the nation I found that many of the efforts to
-developing teacher certification are what I call the &amp;#34;you take it you
-teach it&amp;#34; model. You take an abbreviated version of APCS-A and APCS-P
-and you&amp;#39;re a certified CS teacher. Just about every real educator feels
-that this is ludicrous. Some feel that this can be a first step - get
-these credentials to get in the door and then you have three to five
-years to really learn your subject and craft. I&amp;#39;m good with that but I
-have a problem with anyone who says &amp;#34;you take it you teach it&amp;#34; is good
-enough and I&amp;#39;ve heard of a number of regions that are seriously
-considering it.
-&lt;/p&gt;
-&lt;p&gt;
-Why is this so bad and, I&amp;#39;d argue, dangerous? Not merely because we&amp;#39;ll
-end up with substandard CS teachers for the foreseeable future but
-also because it undermines the teaching profession as a whole.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s no secret that public education is under attack. A number of
-states including Wisconsin, Arizona, Oklahoma, New York and Michigan
-have considered relaxing the standards to become a teacher to address
-a teacher shortage. In their twisted logic, the politicians and
-&amp;#34;reformers&amp;#34; say that we can&amp;#39;t find enough qualified teachers because
-we&amp;#39;ve made it an untenable career so let&amp;#39;s lower standards. You can
-argue that any current state&amp;#39;s requirements are overly cumbersome but
-that&amp;#39;s another conversation.
-&lt;/p&gt;
-&lt;p&gt;
-When CS Educators say that all that&amp;#39;s needed to teach CS is to sit in
-on a two week APCS institute is saying that to teach any subject you
-don&amp;#39;t need content expertise. This is dangerous to education as a
-whole and when power players in the CS Ed movement don&amp;#39;t speak up
-otherwise or even worse that the stance that &amp;#34;you take it you teach
-it&amp;#34; is OK, we&amp;#39;re undermining teaching as a profession.
-&lt;/p&gt;
-&lt;p&gt;
-We need our heavy hitters to publicly and privately say that we need a
-short term entry into the profession but we absolutely need plans and
-pathways so that at the end of the day we have the best prepared
-teachers in our schools for CS and for all subjects.
-&lt;/p&gt;
-&lt;p&gt;
-Another issue is when as CS Educators we don&amp;#39;t pay attention to the
-whole child. I was at a meeting of CSTA people  from about thirty
-states a few years ago. Someone asked &amp;#34;how can we advocate for CS when
-the school might use it as an excuse to get rid of music?&amp;#34; Cameron
-Wilson, at the time a lobbyist for the ACM said something to the
-effect of &amp;#34;I&amp;#39;m not concerned with other subjects, my concern is
-getting CS into the schools.&amp;#34; I get it, he was employed to stump CS
-but we have to remember that we&amp;#39;re only a piece of the puzzle. We want
-a seat at the table but we have to make sure that the table is
-populated with everyone needed to provide a great education for our
-kids.
-&lt;/p&gt;
-&lt;p&gt;
-A final issue I&amp;#39;ll mention here is how so many CS educators are so
-close to the College Board. It was very disturbing that so many CS Ed
-players were pushing for more students to take the APCS exam. Not the
-class, not some other CS class but the APCS exam. AP is an extremely
-controversial subject among teachers and many of us feel that too many
-kids take too many AP classes and certainly too many exams. Remember,
-the College Board is the organization that pushes things like the
-PSAT8/9 another meaningless but high stakes exam inflicted upon our
-kids at taxpayer expense. I understand that AP makes things easy -
-they have courses, curricula, etc. but we&amp;#39;ve given the college board
-an outsized influence on CS education and we&amp;#39;re not paying attention
-to their outsized influence on education in general.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m just a small time teacher. I don&amp;#39;t have a national voice. I&amp;#39;m
-urging those that do:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Look into what&amp;#39;s going on in greater education. Look at the way
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-public education has been under attack and why.
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Look at the side affects of our choices - who we partner with and
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-what policies we push.
-&lt;/p&gt;
-&lt;p&gt;
-We might not agree on the right path but everyone with a voice in CS
-Education should be having hard conversations about this and then
-strongly advocating for the positions they feel correct.
 &lt;/p&gt;
 </description>
     </item>
