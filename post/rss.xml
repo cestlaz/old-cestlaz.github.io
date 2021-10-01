@@ -6,10 +6,107 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Sep 2021 08:11:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 01 Oct 2021 10:17:01 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Coding For Problem Solving</title>
+      <link>https://cestlaz.github.io/post/coding-for-problem-solving/</link>
+      <pubDate>Fri, 01 Oct 2021 10:17:01 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/coding-for-problem-solving/</guid>
+      <description>&lt;p&gt;
+Like most CS educators I&amp;#39;m a regular reader of Alfred Thompson&amp;#39;s
+blog. Alfred&amp;#39;s &lt;a href=&#34;https://blog.acthompson.net/2021/09/define-learn-to-code.html&#34;&gt;latest post&lt;/a&gt; is spot on but there was a line in it and a
+particular Twitter response that reminded me that we so often forget
+a big reason why people learn to code.
+&lt;/p&gt;
+&lt;p&gt;
+Alfred mentions, as did that Tweet about coding to solve
+problems. What problem are you trying to solve. This is the mainstream
+push - programming helps you solve problems. I&amp;#39;ve noticed a doubling
+down on this with all the efforts (including mine) to integrate CS
+into other subjects. While where and how much CS should be
+integrated vs standalone is a topic for another day, integrating CS
+into other fields is very much a &amp;#34;help solve the problems of that
+field&amp;#34; approach.
+&lt;/p&gt;
+&lt;p&gt;
+Nothing wrong with all of this. It&amp;#39;s all good stuff but there&amp;#39;s
+another side to the coin. It&amp;#39;s a side that I sometimes forget about
+from in the trenches. In fact, a few years ago I was rambling on and
+on about programming as problem solving and my friend and fellow CS
+teacher Peter Brooks reminded me - the question doesn&amp;#39;t have to be
+&amp;#34;what problem do you want to solve?&amp;#34; The question can be &amp;#34;what do you
+want to create?&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+Sometimes we forget that programming can be an amazingly creative
+endeavor. You can use it to make something brand new and there doesn&amp;#39;t
+necessarily have to be a problem to be solved.
+&lt;/p&gt;
+&lt;p&gt;
+Fred Brooks puts it nicely at the start of his classic work &amp;#34;The
+Mythical Man Month:&amp;#34;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The programmer, like the poet, works only slightly removed from pure
+thought-stuff. He builds his castles in the air, from air, creating by
+exertion of the imagination. Few media of creation are so flexible, so
+easy to polish and rework, so readily capable of realizing grand
+conceptual structures….
+&lt;/p&gt;
+&lt;p&gt;
+– Fred Brooks, The Mythical Man Month 
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+I also saw elsewhere, maybe by Fred Brooks, maybe someone else talking
+of a programmer being like a painter but whereas a painter has oils,
+brushes, and pigments to create on a canvas, the programmer has
+programming languages to create on the computer. 
+&lt;/p&gt;
+&lt;p&gt;
+Maybe it&amp;#39;s the push for &amp;#34;practical&amp;#34; education, maybe the integration,
+maybe the focus on testing. I have no idea but it seems that we
+frequently forget about the creative side of the equation.
+&lt;/p&gt;
+&lt;p&gt;
+I mean, yes, the APCS-P specification does mention creativity in the
+interestingly enough named &amp;#34;Create Task:&amp;#34;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Programming is a collaborative and creative process that brings ideas
+to life through the development of software. In the Create performance
+task, you will design and implement a program that might solve a
+problem, enable innovation, explore personal interests, or express
+creativity.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+but it&amp;#39;s after &amp;#34;solve a problem&amp;#34; and &amp;#34;enable innovation.&amp;#34;
+&lt;/p&gt;
+&lt;p&gt;
+That creative side though shouldn&amp;#39;t be forgotten. Some of my students
+most memorable projects didn&amp;#39;t solve a problem. I remember the
+&amp;#34;Cheerleader Simulator&amp;#34; in NetLogo. No problem solved there but it was
+a fun project. Another was Tamika&amp;#39;s stupid mouse dexterity game. A
+simple game of her own design. I say stupid not becuase it was really
+stupid - it was great. Rather, I say stupid becuase that game caused
+me to waste so much time that end of year when I should have been
+grading!!!!!!!!!
+&lt;/p&gt;
+&lt;p&gt;
+As we seek to engage a wider audience in CS we shouldn&amp;#39;t merely focus
+on the problem solving nor the making money. The creative side is
+really important as well.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Turning a good class into a bad lecture</title>
@@ -4556,159 +4653,6 @@ transition between the two approaches.
 &lt;/p&gt;
 &lt;p&gt;
 Looking forward to what tomorrow&amp;#39;s problem brings.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Advent of Code 2020</title>
-      <link>https://cestlaz.github.io/post/advent-2020-leadin/</link>
-      <pubDate>Mon, 30 Nov 2020 14:21:17 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2020-leadin/</guid>
-      <description>&lt;p&gt;
-Tomorrow, or more practically, tonight at Midnight,  &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt; will
-once again launch the &lt;a href=&#34;https://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt;. As I&amp;#39;ve written before, it&amp;#39;s a
-month long event where each day a new programming problem is
-released. The problems range in difficulty and complexity. Some are
-very approachable to beginners and some are crazy challenging. I&amp;#39;ve
-written a bunch about AOC in past years:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve A to Solve B&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape- how we think&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day1/&#34;&gt;2019 day 1&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day2/&#34;&gt;2019 day 2&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day3/&#34;&gt;2019 day 3&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day4/&#34;&gt;2019 day 4&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8/&#34;&gt;2019 day 8&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://cestlaz.github.io/post/advent-2019-day8-part2/&#34;&gt;2019 day 8 addendum&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-and a few more not listed.
-&lt;/p&gt;
-&lt;p&gt;
-If you haven&amp;#39;t heard of AOC, at the stroke of midnight (Eastern), a
-new problem is released. From there you can read the problem, get the
-input and figure out a solution, usually by writing a program. You
-then type in your answer and if it&amp;#39;s correct you get part 2 - usually
-a creative spin on part one. Usually you&amp;#39;ll write a program to solve
-the problems but sometimes you&amp;#39;ll write code just to explore and come
-up with an answer. 
-&lt;/p&gt;
-&lt;p&gt;
-Even though there&amp;#39;s a leader board and people can set up their own
-private leader boards, I describe AOC as an event not as a
-competition. I&amp;#39;ve had former students up near the top but a getting
-there requires a lot more than just problem solving. First, you have
-to be up when the problem is released, then you have to shortcut scan
-what the question is asking. Having a library of pre-written utility
-routines is a big help as is using a language that has a lot of
-interactive scripty functionality like Python. It also assumes that
-even if you do all that is needed, that life doesn&amp;#39;t get in the
-way. This means that to get to the top of the leader board, like in
-most competitions you have to train and prepare to do just that and
-training for that doesn&amp;#39;t really translate to the rest of life&amp;#39;s
-challenges.
-&lt;/p&gt;
-&lt;p&gt;
-Solving the problems, though, can translate to other challenges you
-might face so I look at AOC as an opportunity to explore some
-interesting problems. 
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve never finished all of them and that&amp;#39;s okay. Here&amp;#39;s my star count
-for each of the years. You get one star for each part of each question
-so that&amp;#39;s 50 total.
-&lt;/p&gt;
-&lt;table&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Year:&lt;/strong&gt;&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;2015&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;2016&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;2017&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;2018&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;2019&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Stars:&lt;/strong&gt;&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;26&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;40&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;11&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;23&lt;/td&gt;
-&lt;td class=&#34;align-right&#34;&gt;31&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-I&amp;#39;ve never gotten more than 40. I typically wake up and read the
-question and see if I can solve it either then or over the course of
-the day. Sometimes I&amp;#39;ll come back to a problem but usually not. Last
-year, many problems were based on earlier ones. I had an issue in one
-of those earlier solutions so never completed the later ones. 
-&lt;/p&gt;
-&lt;p&gt;
-Maybe I&amp;#39;ll go back and finish more, maybe I won&amp;#39;t.
-&lt;/p&gt;
-&lt;p&gt;
-None of this matters. 
-&lt;/p&gt;
-&lt;p&gt;
-I had fun, learned a lot and as an added bonus, each problem gives me
-an opportunity to reflect on how I might teach it or teach concepts
-related to it.
-&lt;/p&gt;
-&lt;p&gt;
-It all starts in a few hours so if you&amp;#39;re already planning on
-participating, have a blast. If you haven&amp;#39;t, check it out.
-&lt;/p&gt;
-&lt;p&gt;
-Advent of code can be found here: &lt;a href=&#34;https://adventofcode.com&#34;&gt;https://adventofcode.com&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-And, the AOC subreddit, which is great for problem discussions can be
-found here: &lt;a href=&#34;https://www.reddit.com/r/adventofcode/&#34;&gt;https://www.reddit.com/r/adventofcode/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Enjoy. 
 &lt;/p&gt;
 </description>
     </item>
