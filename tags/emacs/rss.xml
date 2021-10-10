@@ -6,10 +6,51 @@
     <description>C&#39;est la Z (emacs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 15:57:22 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 10 Oct 2021 10:44:41 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/emacs/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>My project grading workflow</title>
+      <link>https://cestlaz.github.io/post/using-emacs-79-grading/</link>
+      <pubDate>Sun, 10 Oct 2021 10:44:41 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-79-grading/</guid>
+      <description>&lt;p&gt;
+Grading sucks. Even for a well crafted assignment it takes time and
+rarely does it give you the same insights into your students as you
+can get from just observing them and working with them, at least when
+the environment supports you doing so. 
+&lt;/p&gt;
+&lt;p&gt;
+This leads lots of teachers to go to auto graders. I can&amp;#39;t bring
+myself going along with that. While assignments are imperfect and
+tedious to grade, they do provide some insight to your students and
+that&amp;#39;s an important part about being a teacher.
+&lt;/p&gt;
+&lt;p&gt;
+So, I always keep my eye out for ways to improve my project gradiing
+workflow.
+&lt;/p&gt;
+&lt;p&gt;
+In the video below, I step through my process. It&amp;#39;s mostly Emacs but I
+also use GitHub classroom and the terminal along the way.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re here as for the Emacs, I&amp;#39;d any thoughts on alternatives or
+improvements.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re here as a teacher, I&amp;#39;d love to hear what your flow is like
+and what tools you use.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7HLVcQi8GGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Final thoughts on Advent of Code 2020</title>
@@ -3791,62 +3832,6 @@ pretty typical one for students these days.
 &lt;p&gt;
 Any others?
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Emacs Episode 50 - presentations</title>
-      <link>https://cestlaz.github.io/posts/using-emacs-50-presentations/</link>
-      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/using-emacs-50-presentations/</guid>
-      <description>&lt;p&gt;
-Next weekend I&amp;#39;ll be attending the Computer Science Teachers
-Association&amp;#39;s &lt;a href=&#34;https://www.csteachers.org/general/custom.asp?page=2018Conference&#34;&gt;annual conference.&lt;/a&gt; It&amp;#39;s probably the biggest conference
-focussed on K12 Computer Science education. This year, in addition to
-attending, I&amp;#39;ll be giving a talk on preservice and inservice CS
-teacher preparation programs. I&amp;#39;ll be talking about the new New York
-State certification requirements along with what we&amp;#39;re rolling out at
-Hunter College.
-&lt;/p&gt;
-&lt;p&gt;
-This means putting together a slide deck for the session. When I have
-to work collaboratively with non-Emacs users, I will usually go to
-Google Docs for presentations. It works and the collaborative aspects
-are nice but tools like Google Docs and Powerpoint are designed around
-composing slides manually. I much prefer to use a tool where I can
-focus on writing my presentation and have the tool turn it into a
-presentation.
-&lt;/p&gt;
-&lt;p&gt;
-Org-mode is of course the ideal tool. As an outliner, it lends itself
-to organizing a talk:
-&lt;/p&gt;
-&lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;,* topic 1
-the content for slide one
-,* topic 2
-the content for slide two
-,* topic 3
-etc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-I can embed code, tables, images, and more. I can also cycle
-visibility so I can focus on individual sections. Org-mode also has a
-number of export options to take a plain org file which is just ascii
-with markup and export it as a presentation. In the video, I&amp;#39;ll take a
-quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
-&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
-creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
-use &lt;code&gt;ox-reveal&lt;/code&gt; as it&amp;#39;s pretty simple and flexible and I can also directly serve
-the final presentation from my own laptop, a usb drive, or directly
-from GitHub.
-&lt;/p&gt;
-&lt;p&gt;
-Check out the video to see how. If you want more information on using
-&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href=&#34;http://cestlaz.github.io/posts/using-emacs-11-reveal&#34;&gt;Using Emacs post and video&lt;/a&gt;.
-&lt;/p&gt;
-  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/bRoSpJ23Kzk&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
