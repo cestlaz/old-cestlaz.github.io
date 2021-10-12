@@ -6,10 +6,117 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 10:44:41 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Oct 2021 11:24:36 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Using Emacs 79 Project</title>
+      <link>https://cestlaz.github.io/post/using-emacs-79-project/</link>
+      <pubDate>Mon, 11 Oct 2021 11:24:36 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/using-emacs-79-project/</guid>
+      <description>&lt;p&gt;
+One of the comments on my last video talked about the new project
+management support Emacs includes in it&amp;#39;s latest version -
+project.el. I remembered reading about it when it rolled around but
+then forgot and never checked it out.
+&lt;/p&gt;
+&lt;p&gt;
+Up until recently when working in projects I used &lt;a href=&#34;https://github.com/bbatsov/projectile&#34;&gt;Projectile&lt;/a&gt;, a great
+package by &lt;a href=&#34;https://twitter.com/bbatsov&#34;&gt;Bozhidar Batsov&lt;/a&gt;, also known as Bug. I only used it when
+doing development work - that&amp;#39;s when I find myself jumping around
+within a group of related files. At other times, I&amp;#39;m pretty much in
+one file, do my thing, then move on.
+&lt;/p&gt;
+&lt;p&gt;
+I wrote a post and did a video on Projectile a while ago - you can
+check it out [[&lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/&#34;&gt;https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/&lt;/a&gt;
+][here]].
+&lt;/p&gt;
+&lt;p&gt;
+As I mentioned in the last video, I decided to rebuild my Emacs config
+from scratch and I&amp;#39;m trying to be a bit more minimalist so with that
+reminder I got, I figure it&amp;#39;s time to check out the now built in
+project.el. If it&amp;#39;s as good as projectile, or even, good enough, it
+could be a nice alternative.
+&lt;/p&gt;
+&lt;p&gt;
+At it&amp;#39;s core, project.el works similarly to projectile. There&amp;#39;s a
+prefix key an then an action which is restricted to your project. For
+projectile, it was &lt;code&gt;C-c p&lt;/code&gt; and the default for project.el is &lt;code&gt;C-x
+p&lt;/code&gt;. No big difference there. Projectile seems to have many many more
+options but in general, I find that all I need is
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Switch to a project - &lt;code&gt;C-x p p&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Find or open a file in a project - &lt;code&gt;C-x p f&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Switch buffers in a project - &lt;code&gt;C-x p b&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Delete all the project buffers - &lt;code&gt;C-x p k&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+List the project buffers
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Project.el has all except listing all the buffers. It also supports a
+few other features that I think I&amp;#39;ll find useful:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+project dired - &lt;code&gt;C-x p d&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+project shell (or eshell) &lt;code&gt;C-x p s&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+project regex search and variants &lt;code&gt;C-x p g&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+I&amp;#39;m not sure if projectile has these. It probably does and I could see
+them being useful. I probable won&amp;#39;t use the regex searches much
+because I&amp;#39;ll likely use other tools for those like consult-ripgrep.
+&lt;/p&gt;
+&lt;p&gt;
+So, it certainly seems like project.el has enough coverage for my
+purposes. Another difference between the two projects is that
+project.el only supports a couple of project definitions - things that
+are supported by Emacs&amp;#39; VC system ad things supported by Emacs EDE
+thing (which I&amp;#39;ve never really played with). I seem to recall
+Projectile being more flexible.
+&lt;/p&gt;
+&lt;p&gt;
+In any event, project.el looks like it&amp;#39;s a nice simple alternative at
+least for me. Check out the video for the runthrough:
+&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/UagDCTjcifY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>My project grading workflow</title>
@@ -4410,36 +4517,6 @@ trying to limit my own screen time over the weekends but we&amp;#39;ll see.
 If you want to check out all the Clojure goodness here it is: Enjoy!
 &lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/QzdCrJgXsww&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Teacher Looks at Advent of Code 2020 - Day 3</title>
-      <link>https://cestlaz.github.io/post/advent-2020-day03/</link>
-      <pubDate>Thu, 03 Dec 2020 14:27:02 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2020-day03/</guid>
-      <description>&lt;p&gt;
-I thought I&amp;#39;d do a video for today. No particular reason. Mostly why
-not.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ll talk about day 3&amp;#39;s problem and code up a solution in Clojure. If
-you haven&amp;#39;t ever used Clojure, hopefully this will give a bit of the
-flavor. This video also serves double duty as being my next Using
-Emacs video since it demos Emacs&amp;#39;s Clojure tools. Mostly Cider which
-even with a few quirks is the best development environment I&amp;#39;ve ever
-used. 
-&lt;/p&gt;
-&lt;p&gt;
-I don&amp;#39;t know if I&amp;#39;ll do any more videos or blog posts on AOC this
-year. I hope to but I&amp;#39;m going to have to get to end of semester
-obligations soon so you never know.
-&lt;/p&gt;
-&lt;p&gt;
-Enjoy!
-&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ecJ1TJGWrfs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
