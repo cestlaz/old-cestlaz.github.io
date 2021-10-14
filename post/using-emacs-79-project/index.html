@@ -14,20 +14,23 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="Using Emacs 79 Project" />
-<meta property="og:description" content="One of the comments on my last video talked about the new project management support Emacs includes in it&#39;s latest version - project.el. I remembered reading about it when it rolled around but then forgot and never checked it out.  Up until recently when working in projects I used Projectile, a great package by Bozhidar Batsov, also known as Bug. I only used it when doing development work - that&#39;s when I find myself jumping around within a group of related files." />
+<meta property="og:description" content="One of the comments on my last video talked about the new project management support Emacs includes in it&#39;s latest version - project.el. I remembered reading about it when it rolled around but then forgot and never checked it out.
+ Up until recently when working in projects I used Projectile, a great package by Bozhidar Batsov, also known as Bug. I only used it when doing development work - that&#39;s when I find myself jumping around within a group of related files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-79-project/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-79-project/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-10-11T11:24:36-04:00" />
 <meta property="article:modified_time" content="2021-10-11T11:24:36-04:00" />
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 79 Project"/>
-<meta name="twitter:description" content="One of the comments on my last video talked about the new project management support Emacs includes in it&#39;s latest version - project.el. I remembered reading about it when it rolled around but then forgot and never checked it out.  Up until recently when working in projects I used Projectile, a great package by Bozhidar Batsov, also known as Bug. I only used it when doing development work - that&#39;s when I find myself jumping around within a group of related files."/>
+<meta name="twitter:description" content="One of the comments on my last video talked about the new project management support Emacs includes in it&#39;s latest version - project.el. I remembered reading about it when it rolled around but then forgot and never checked it out.
+ Up until recently when working in projects I used Projectile, a great package by Bozhidar Batsov, also known as Bug. I only used it when doing development work - that&#39;s when I find myself jumping around within a group of related files."/>
 
 
 
@@ -80,99 +83,72 @@
 One of the comments on my last video talked about the new project
 management support Emacs includes in it&#39;s latest version -
 project.el. I remembered reading about it when it rolled around but
-then forgot and never checked it out.
-</p>
+then forgot and never checked it out.</p>
 <p>
 Up until recently when working in projects I used <a href="https://github.com/bbatsov/projectile">Projectile</a>, a great
 package by <a href="https://twitter.com/bbatsov">Bozhidar Batsov</a>, also known as Bug. I only used it when
 doing development work - that&#39;s when I find myself jumping around
 within a group of related files. At other times, I&#39;m pretty much in
-one file, do my thing, then move on.
-</p>
+one file, do my thing, then move on.</p>
 <p>
 I wrote a post and did a video on Projectile a while ago - you can
 check it out [[<a href="https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/">https://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</a>
-][here]].
-</p>
+][here]].</p>
 <p>
 As I mentioned in the last video, I decided to rebuild my Emacs config
 from scratch and I&#39;m trying to be a bit more minimalist so with that
 reminder I got, I figure it&#39;s time to check out the now built in
 project.el. If it&#39;s as good as projectile, or even, good enough, it
-could be a nice alternative.
-</p>
+could be a nice alternative.</p>
 <p>
 At it&#39;s core, project.el works similarly to projectile. There&#39;s a
 prefix key an then an action which is restricted to your project. For
 projectile, it was <code>C-c p</code> and the default for project.el is <code>C-x
 p</code>. No big difference there. Projectile seems to have many many more
-options but in general, I find that all I need is
-</p>
+options but in general, I find that all I need is</p>
 <ul>
 <li>
-<p>
-Switch to a project - <code>C-x p p</code>
-</p>
+<p>Switch to a project - <code>C-x p p</code></p>
 </li>
 <li>
-<p>
-Find or open a file in a project - <code>C-x p f</code>
-</p>
+<p>Find or open a file in a project - <code>C-x p f</code></p>
 </li>
 <li>
-<p>
-Switch buffers in a project - <code>C-x p b</code>
-</p>
+<p>Switch buffers in a project - <code>C-x p b</code></p>
 </li>
 <li>
-<p>
-Delete all the project buffers - <code>C-x p k</code>
-</p>
+<p>Delete all the project buffers - <code>C-x p k</code></p>
 </li>
 <li>
-<p>
-List the project buffers
-</p>
+<p>List the project buffers</p>
 </li>
 </ul>
-<p>
-Project.el has all except listing all the buffers. It also supports a
-few other features that I think I&#39;ll find useful:
-</p>
+<p>Project.el has all except listing all the buffers. It also supports a
+few other features that I think I&#39;ll find useful:</p>
 <ul>
 <li>
-<p>
-project dired - <code>C-x p d</code>
-</p>
+<p>project dired - <code>C-x p d</code></p>
 </li>
 <li>
-<p>
-project shell (or eshell) <code>C-x p s</code>
-</p>
+<p>project shell (or eshell) <code>C-x p s</code></p>
 </li>
 <li>
-<p>
-project regex search and variants <code>C-x p g</code>
-</p>
+<p>project regex search and variants <code>C-x p g</code></p>
 </li>
 </ul>
-<p>
-I&#39;m not sure if projectile has these. It probably does and I could see
+<p>I&#39;m not sure if projectile has these. It probably does and I could see
 them being useful. I probable won&#39;t use the regex searches much
-because I&#39;ll likely use other tools for those like consult-ripgrep.
-</p>
+because I&#39;ll likely use other tools for those like consult-ripgrep.</p>
 <p>
 So, it certainly seems like project.el has enough coverage for my
 purposes. Another difference between the two projects is that
 project.el only supports a couple of project definitions - things that
 are supported by Emacs&#39; VC system ad things supported by Emacs EDE
 thing (which I&#39;ve never really played with). I seem to recall
-Projectile being more flexible.
-</p>
+Projectile being more flexible.</p>
 <p>
 In any event, project.el looks like it&#39;s a nice simple alternative at
-least for me. Check out the video for the runthrough:
-</p>
+least for me. Check out the video for the runthrough:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UagDCTjcifY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

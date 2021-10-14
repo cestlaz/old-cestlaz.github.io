@@ -14,20 +14,25 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="A Teacher Looks at Advent of Code 2020 - Day 2" />
-<meta property="og:description" content="Day two introduced some staples of staples of not only Advent of Code but also of programming problems in general. The first is input parsing. For this problem you get lines of input like this: 1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc   or in general  number_1-number_2 Letter: String  There are a few ways to handle this. One is to brute force it. In Python maybe something like:  sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line." />
+<meta property="og:description" content="Day two introduced some staples of staples of not only Advent of Code but also of programming problems in general. The first is input parsing. For this problem you get lines of input like this:
+1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc   or in general
+ number_1-number_2 Letter: String  There are a few ways to handle this. One is to brute force it. In Python maybe something like:  sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day02/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day02/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-12-02T12:27:27-04:00" />
 <meta property="article:modified_time" content="2020-12-02T12:27:27-04:00" />
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher Looks at Advent of Code 2020 - Day 2"/>
-<meta name="twitter:description" content="Day two introduced some staples of staples of not only Advent of Code but also of programming problems in general. The first is input parsing. For this problem you get lines of input like this: 1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc   or in general  number_1-number_2 Letter: String  There are a few ways to handle this. One is to brute force it. In Python maybe something like:  sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line."/>
+<meta name="twitter:description" content="Day two introduced some staples of staples of not only Advent of Code but also of programming problems in general. The first is input parsing. For this problem you get lines of input like this:
+1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc   or in general
+ number_1-number_2 Letter: String  There are a few ways to handle this. One is to brute force it. In Python maybe something like:  sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line."/>
 
 
 
@@ -79,25 +84,21 @@
             <p>
 Day two introduced some staples of staples of not only Advent of Code but
 also of programming problems in general. The first is input
-parsing. For this problem you get lines of input like this:
-</p>
+parsing. For this problem you get lines of input like this:</p>
 <pre class="example">
 1-3 a: abcde
 1-3 b: cdefg
 2-9 c: cccccccc
 </pre>
 <p>
-or in general
-</p>
+or in general</p>
 <p>
-<strong>number_1</strong>-<strong>number_2</strong> <strong>Letter</strong>: <strong>String</strong> 
-</p>
+<strong>number_1</strong>-<strong>number_2</strong> <strong>Letter</strong>: <strong>String</strong> </p>
 <p>
 There are a few ways to handle this. One is to brute force it. In
-Python maybe something like: 
-</p>
+Python maybe something like: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sample_line<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4-15 f: abcdefg&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sample_line<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4-15 f: abcdefg&#34;</span>
 sample_list <span style="color:#f92672">=</span> sample_line<span style="color:#f92672">.</span>split()
 numbers<span style="color:#f92672">=</span>sample_list[<span style="color:#ae81ff">0</span>]
 letter<span style="color:#f92672">=</span>sample_list[<span style="color:#ae81ff">1</span>]
@@ -109,13 +110,11 @@ num2 <span style="color:#f92672">=</span> int(number_list[<span style="color:#ae
 
 letter <span style="color:#f92672">=</span> letter[<span style="color:#ae81ff">0</span>]
 
-<span style="color:#66d9ef">print</span>(num1, num2, letter, string)</code></pre></div>
-</p>
+print(num1, num2, letter, string)</code></pre></div></p>
 <p>
-or more concisely: 
-</p>
+or more concisely: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sample_line<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4-15 f: abcdefg&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sample_line<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4-15 f: abcdefg&#34;</span>
 
 (numbers,letter,string) <span style="color:#f92672">=</span> sample_line<span style="color:#f92672">.</span>split()
 
@@ -123,23 +122,20 @@ or more concisely:
 
 letter <span style="color:#f92672">=</span> letter[<span style="color:#ae81ff">0</span>]
 
-<span style="color:#66d9ef">print</span>(num1, num2, letter, string)</code></pre></div>
-</p>
+print(num1, num2, letter, string)</code></pre></div></p>
 <p>
 If you&#39;re working in a language like C, tools like <code>scanf</code> can make
 things easier. I generally turn to <a href="https://blog.usejournal.com/regular-expressions-a-complete-beginners-tutorial-c7327b9fd8eb">Regular Expressions</a> and if you&#39;re
 doing some AOC with your classes this is a great time to introduce
 regex. Basically, you set up a pattern with special symbols to
 represent things like sequences of digits and then the regex matcher
-does the hard work.
-</p>
+does the hard work.</p>
 <p>
-Here&#39;s the code to 
-</p>
+Here&#39;s the code to </p>
 <p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
@@ -149,7 +145,7 @@ Here&#39;s the code to
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">parser_expression<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(\d+)-(\d+) ([a-z]): ([a-z]*)&#34;</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">parser_expression<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(\d+)-(\d+) ([a-z]): ([a-z]*)&#34;</span>
 data <span style="color:#f92672">=</span> []
 <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;../data/day02.dat&#34;</span>)<span style="color:#f92672">.</span>readlines():
     x <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>search(parser_expression,line)
@@ -158,8 +154,7 @@ data <span style="color:#f92672">=</span> []
     maxi <span style="color:#f92672">=</span> int(maxi)
     data<span style="color:#f92672">.</span>append([mini,maxi,letter,password])</code></pre></td></tr></table>
 </div>
-</div>
-</p>
+</div></p>
 <p>
 The <code>parser_expression</code> in line 1 is the regular expression. Each
 section in parentheses is a &#34;group&#34; or a pattern that will be
@@ -170,8 +165,7 @@ final character match means zero or more of them. Once you know
 regular expressions, parsing lines like this becomes very easy. The
 only thing that made the above code messy at all was that I wanted to
 convert the two numbers into integers rather than leave them as
-strings. 
-</p>
+strings. </p>
 <p>
 There are a couple of things worth thinking about here. First is know
 your libraries. If you know regex the parsing is basically all
@@ -185,70 +179,58 @@ of routines that can be reused. Maybe something to parse dates in a
 standard format would be an example. On the other hand, it&#39;s also
 worth knowing when you probably won&#39;t be able to reuse things or when
 generalizing to a library or set of functions you have to spend too
-much time on a hundred options to make in general purpose.
-</p>
+much time on a hundred options to make in general purpose.</p>
 <p>
 Now, part 1 of the problem itself is nice because there are a lot of
 ways to do it. You could loop through the password and count the
-number of times a letter occurs: 
-</p>
+number of times a letter occurs: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 subpassword <span style="color:#f92672">=</span> password[mini<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,maxi]
 <span style="color:#66d9ef">for</span> letter <span style="color:#f92672">in</span> subpassword:
     <span style="color:#66d9ef">if</span> letter <span style="color:#f92672">==</span> what_im_looking_for:
-        count <span style="color:#f92672">=</span> count <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span></code></pre></div>
-</p>
+        count <span style="color:#f92672">=</span> count <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span></code></pre></div></p>
 <p>
 or with a list comprehension <code>count = [x for x in password if x ==
-waht_im_looking_for ]</code>.
-</p>
+waht_im_looking_for ]</code>.</p>
 <p>
 You could be more general and build a hash table of counts and then
-pull what you want: 
-</p>
+pull what you want: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">frequencies</span>(word):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">frequencies</span>(word):
     d<span style="color:#f92672">=</span>{}
     <span style="color:#66d9ef">for</span> letter <span style="color:#f92672">in</span> word:
         d<span style="color:#f92672">.</span>setdefault(letter,<span style="color:#ae81ff">0</span>)
         d[letter]<span style="color:#f92672">=</span>d[letter]<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> d</code></pre></div>
-</p>
+    <span style="color:#66d9ef">return</span> d</code></pre></div></p>
 <p>
 This is admittedly overkill for the problem but one might need this
 for part 2. I coded my original solution in Clojure and Clojure has a
 function that does this in one shot: <code>frequencies</code> so I just used that
-and pulled the letter I needed.
-</p>
+and pulled the letter I needed.</p>
 <p>
 Once you have the count, it&#39;s simple enough to see if it&#39;s in the
-range.
-</p>
+range.</p>
 <p>
 Part 2 should have been easy but for me it was a lesson in
 reading. You had to pull characters from the password at two specific
 indices and see if one or the other, but not both were the letter in
 question. Basically an xor. The first mistake one could make has to do
 with the indexing and the second in using a regular or which students
-will be more familiar with. 
-</p>
+will be more familiar with. </p>
 <p>
 My mistake is that I misread the question as requiring that you have
 one instance of the letter within the <strong>range</strong> from the low index to
 the high index not one instance at either of those two points Needless
-to say, lots of wasted time and feeling silly. 
-</p>
+to say, lots of wasted time and feeling silly. </p>
 <p>
 So that&#39;s day 2. The question is very approachable for APCS-A  and I&#39;d
 say even CS0 students. The interesting part to teach would be dealing
 with the input, regular expressions, and how much to generalize into
-utility functions when writing code over time.
-</p>
+utility functions when writing code over time.</p>
 <p>
 Hope to have time to solve and write up more of these but getting to
-crunch time in the semester.
-</p>
+crunch time in the semester.</p>
 
         </div>
         

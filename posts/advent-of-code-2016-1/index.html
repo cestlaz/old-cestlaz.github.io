@@ -14,20 +14,25 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="A Teacher looks at Advent of Code 2016 #1" />
-<meta property="og:description" content="I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.  I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.  Take a minute to read it over." />
+<meta property="og:description" content="I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
+ I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
+ Take a minute to read it over." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/advent-of-code-2016-1/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/advent-of-code-2016-1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-12-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-12-06T00:00:00+00:00" />
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher looks at Advent of Code 2016 #1"/>
-<meta name="twitter:description" content="I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.  I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.  Take a minute to read it over."/>
+<meta name="twitter:description" content="I recently posted about Advent of Code - a series of programming problems relseased one a day. While they vary in terms of level of difficulty, a number of them make nice problems for introductory to mid level programming classes.
+ I thought I&#39;d share some of my thoughts on a few of them starting with the first problem from this years competition.
+ Take a minute to read it over."/>
 
 
 
@@ -80,62 +85,48 @@
 I recently <a href="http://cestlaz.github.io/posts/advent-of-code-2016/">posted</a> about <a href="http://adventofcode.com">Advent of Code</a> - a series of programming
 problems relseased one a day. While they vary in terms of level of
 difficulty, a number of them make nice problems for introductory to
-mid level programming classes.
-</p>
+mid level programming classes.</p>
 <p>
 I thought I&#39;d share some of my thoughts on a few of them starting with
-the first problem from this years competition.
-</p>
+the first problem from this years competition.</p>
 <p>
-<a href="http://adventofcode.com/2016/day/1">Take a minute to read it over.</a>
-</p>
+<a href="http://adventofcode.com/2016/day/1">Take a minute to read it over.</a></p>
 <p>
 At first glance, it might seem to a young programmer that this problem
 requires a two dimensional array - all about (x,y) coordinates but
 then there&#39;s a problem - there are no limits on coordinates and we
-can&#39;t make an unlimited size array.
-</p>
+can&#39;t make an unlimited size array.</p>
 <p>
 After thinking a bit, hopefully the programmer realizes that all they
 need to do is keep track of the how the <strong><strong>(x,y)</strong></strong> location changes over
 time. In the solution below, we start at <strong><strong>(0,0)</strong></strong> and count the steps as
-we update two variables <strong><strong>x</strong></strong> and <strong><strong>y</strong></strong>.
-</p>
+we update two variables <strong><strong>x</strong></strong> and <strong><strong>y</strong></strong>.</p>
 <p>
 When we finish processing the moves, we have our current location in
-<strong><strong>(x,y)</strong></strong> and we have the number of steps taken to get there.
-</p>
+<strong><strong>(x,y)</strong></strong> and we have the number of steps taken to get there.</p>
 <p>
 The solution below hsa a couple of niceties that a beginning
 programmer might not know or use (and I&#39;m not arguing that what&#39;s written is
-superior in any way, it&#39;s just what I ended up writing).
-</p>
+superior in any way, it&#39;s just what I ended up writing).</p>
 <p>
-I make use of tuple destructuring:
-</p>
+I make use of tuple destructuring:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)</code></pre></div>
-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)</code></pre></div></p>
 <p>
 which assigns <strong><strong>x</strong></strong> to the first item in the tuple and <strong><strong>y</strong></strong> the
-second. I used that a number of times
-</p>
+second. I used that a number of times</p>
 <p>
 I also use a list  I call <strong><strong>dirs</strong></strong> to hold dx and dy values for the
-four direcitons:
-</p>
+four direcitons:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dirs<span style="color:#f92672">=</span>[(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>),(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>),(<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>),(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)]</code></pre></div>
-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dirs<span style="color:#f92672">=</span>[(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>),(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>),(<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>),(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)]</code></pre></div></p>
 <p>
 This made it easier to to update the location based on the 4
-directions. I could also have just used if statements.
-</p>
+directions. I could also have just used if statements.</p>
 <p>
-Here&#39;s all the code:
-</p>
+Here&#39;s all the code:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>) <span style="color:#75715e"># assume our starting location is 0,0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>) <span style="color:#75715e"># assume our starting location is 0,0</span>
 
 <span style="color:#75715e"># we start with d=0 -&gt; facing north</span>
 <span style="color:#75715e"># as we turn left or right, we can just increment or decrement d</span>
@@ -181,13 +172,11 @@ totalsteps<span style="color:#f92672">=</span>totalsteps<span style="color:#f926
 <span style="color:#75715e">#    break</span>
 
 
-<span style="color:#66d9ef">print</span>(x,y)
-<span style="color:#66d9ef">print</span>(abs(x)<span style="color:#f92672">+</span>abs(y)) <span style="color:#75715e"># the answer</span></code></pre></div>
-</p>
+print(x,y)
+print(abs(x)<span style="color:#f92672">+</span>abs(y)) <span style="color:#75715e"># the answer</span></code></pre></div></p>
 <p>
 Overall, a nice little problem for beginning and intermediate
-students.
-</p>
+students.</p>
 
         </div>
         

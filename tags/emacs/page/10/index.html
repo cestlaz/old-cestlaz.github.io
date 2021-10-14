@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045311" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239487" />
 
 
 
@@ -23,7 +23,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/tags/emacs/" />
-<meta property="og:updated_time" content="2021-10-11T11:24:36-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="emacs"/>
@@ -81,7 +81,9 @@
     </header>
 
     <div class="content post-summary">
-        Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.   This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.
+        Sorry for the delay in getting this next video / post up. I spent the last part of last week at The Personal Democracy Forum 2016 which is really an exceptional conference.
+ I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
+  This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs.
     </div>
 
             <a href="/posts/using-emacs-5-windows/#disqus_thread"># COMMENTS</a>
@@ -115,7 +117,10 @@
     </header>
 
     <div class="content post-summary">
-        Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.  In some ways, it&#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.  In this video, I try to explain the way I think about Emacs and why it&#39;s so cool.  The only change we made to our configuration was adding: (tool-bar-mode -1)   Which gets rid of the tool bar at the top.
+        Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+ In some ways, it&#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.
+ In this video, I try to explain the way I think about Emacs and why it&#39;s so cool.
+ The only change we made to our configuration was adding:
     </div>
 
             <a href="/posts/using-emacs-3-elisp/#disqus_thread"># COMMENTS</a>
@@ -149,7 +154,9 @@
     </header>
 
     <div class="content post-summary">
-        Now that we&#39;re past the intro material, we&#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&#39;re covering, fit it into your work flow, and really get comfortable with it.  This time we&#39;ll dive into using Emacs effectively with buffers.  Watch the video and then make a real effort to use buffers over the next few emacs sessions.
+        Now that we&#39;re past the intro material, we&#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&#39;re covering, fit it into your work flow, and really get comfortable with it.
+ This time we&#39;ll dive into using Emacs effectively with buffers.
+ Watch the video and then make a real effort to use buffers over the next few emacs sessions.
     </div>
 
             <a href="/posts/using-emacs-4-buffers/#disqus_thread"># COMMENTS</a>
@@ -183,7 +190,10 @@
     </header>
 
     <div class="content post-summary">
-        This video is a brief introduction to org-mode, a mode I use for all sorts of things.  We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.  Actually, all my blog posts are written in org-mode.  Here are the important lines to add to your Emacs init.
+        This video is a brief introduction to org-mode, a mode I use for all sorts of things.
+ We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
+ Actually, all my blog posts are written in org-mode.
+ Here are the important lines to add to your Emacs init.
     </div>
 
             <a href="/posts/using-emacs-2-org/#disqus_thread"># COMMENTS</a>
@@ -217,7 +227,8 @@
     </header>
 
     <div class="content post-summary">
-        I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.  I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it.
+        I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.
+ I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it.
     </div>
 
             <a href="/posts/using-emacs-introduction/#disqus_thread"># COMMENTS</a>
@@ -251,7 +262,10 @@
     </header>
 
     <div class="content post-summary">
-        This video will step you through setting up Emacs to use MELPA for packages.   We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.  Here&#39;s the contents of that file: (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:    try: let&#39;s you try packages without installing them.
+        This video will step you through setting up Emacs to use MELPA for packages.
+  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
+ Here&#39;s the contents of that file:
+(setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:
     </div>
 
             <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>

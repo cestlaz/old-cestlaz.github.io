@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="Advent 2019 Day 2" />
 <meta property="og:description" content="Day 2 of Advent of Code 2019 was also pretty straightforward and once again I wrote my solution in Clojure but in order to talk about this from a teacher&#39;s point of view, we&#39;ll look at a Python solution.  At its core, this is a simulation problem - read the data into an array or list and write a program to run through the steps. At first I was hoping that the solution would consume the data - that is, once you read past an instruction you don&#39;t go back to it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day2/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day2/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-12-02T17:11:43-04:00" />
 <meta property="article:modified_time" content="2019-12-02T17:11:43-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advent 2019 Day 2"/>
@@ -79,8 +80,7 @@
             <p>
 <a href="https://adventofcode.com/2019/day/2">Day 2</a> of Advent of Code 2019 was also pretty straightforward and once
 again I wrote <a href="https://github.com/zamansky/advent2019/blob/master/day02.clj">my solution</a> in Clojure but in order to talk about this
-from a teacher&#39;s point of view, we&#39;ll look at a <a href="https://github.com/zamansky/advent2019/blob/master/day02.py">Python solution</a>. 
-</p>
+from a teacher&#39;s point of view, we&#39;ll look at a <a href="https://github.com/zamansky/advent2019/blob/master/day02.py">Python solution</a>. </p>
 <p>
 At its core, this is a simulation problem - read the data into an
 array or list and write a program to run through the steps. At first I
@@ -89,25 +89,20 @@ you read past an instruction you don&#39;t go back to it. If it was, I was
 going to try to write some clever reduce. It wasn&#39;t. In this problem,
 any instruction could affect any part of the data set. This means you
 have to keep the entire data set in memory and preferably in a random
-access structure like an array. 
-</p>
+access structure like an array. </p>
 <p>
 Step 1 is to read in the data and convert it into a list of integers.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]</code></pre></div>
-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]</code></pre></div></p>
 <p>
-If you don&#39;t know comprehensions you can just do something like this:
-</p>
+If you don&#39;t know comprehensions you can just do something like this:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> []
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> []
   <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>):
-      data<span style="color:#f92672">.</span>append(int(item))</code></pre></div>
-</p>
+      data<span style="color:#f92672">.</span>append(int(item))</code></pre></div></p>
 <p>
-Now we just have to run the simulation:
-</p>
+Now we just have to run the simulation:</p>
 <p>
-<pre><code class="language-pythonf" data-lang="pythonf">def run_program(program):
+<pre tabindex="0"><code class="language-pythonf" data-lang="pythonf">def run_program(program):
     ip = 0
     while True:
         op = program[ip]
@@ -126,8 +121,7 @@ Now we just have to run the simulation:
 def part1(program):
     program[1]=12
     program[2]=2
-    return run_program((program))</code></pre>
-</p>
+    return run_program((program))</code></pre></p>
 <p>
 The most likely source of error here is forgetting to change the
 values in <code>program[1]</code> and <code>program[2]</code> in lines 18 and 19 as
@@ -135,14 +129,12 @@ specified in the question. The other likely error is forgetting to do
 the two level indirection in lines 7 and 8. That is writing
 <code>program[ip+1]</code> and <code>program[ip+2]</code> by mistake. Truth be told, I made
 both of these mistakes but I didn&#39;t find them to be &#34;interesting&#34;
-mistakes. 
-</p>
+mistakes. </p>
 <p>
 The interesting part of this program is part 2 where instead of
 setting <code>program[1]</code> to <code>12</code> and <code>program[2]</code> to <code>2</code> you have to try
 values between 0 and 99 inclusive for each entry until you find a
-specific answer. 
-</p>
+specific answer. </p>
 <p>
 This is a great platform to talk about memory. The problem refers to
 the values you put into <code>program[1]</code> as <strong>nouns</strong> and <code>program[2]</code> as
@@ -150,32 +142,28 @@ the values you put into <code>program[1]</code> as <strong>nouns</strong> and <c
 specific <strong>noun verb</strong> combination you change the array (list)
 representing your program. If you don&#39;t reset the array to its
 original contents before the next run, the next run will be working
-off of new values and therefore give you incorrect results. 
-</p>
+off of new values and therefore give you incorrect results. </p>
 <p>
 This is a great platform for discussion. Students usually start with
 <strong>pass by value</strong> semantics so passing a list to a function and then
 having the list change can seem weird even though it can still be pass
-by value:
-</p>
+by value:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># bad example to follow</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># bad example to follow</span>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">change_list</span>(l):
       l[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">9999</span>
 
   l<span style="color:#f92672">=</span>[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>]
   change_list(l)
-  <span style="color:#75715e"># changes l[3] to 9999</span></code></pre></div>
-</p>
+  <span style="color:#75715e"># changes l[3] to 9999</span></code></pre></div></p>
 <p>
-Here&#39;s a finished solution:
-</p>
+Here&#39;s a finished solution:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>data  <span style="color:#f92672">=</span> [ int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> open(<span style="color:#e6db74">&#34;day02.dat&#34;</span>)<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)]
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_program</span>(program):
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    ip <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>    <span style="color:#66d9ef">while</span> True:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>        op <span style="color:#f92672">=</span> program[ip]
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        <span style="color:#66d9ef">if</span> op <span style="color:#f92672">==</span> <span style="color:#ae81ff">99</span>:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>            <span style="color:#66d9ef">break</span>
@@ -208,30 +196,25 @@ Here&#39;s a finished solution:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>    ans <span style="color:#f92672">=</span> [ x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> results <span style="color:#66d9ef">if</span> x[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">==</span><span style="color:#ae81ff">19690720</span>]
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>    <span style="color:#66d9ef">return</span> ans
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>    
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span style="color:#66d9ef">print</span>(part1(data))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span style="color:#66d9ef">print</span>(part2(data))</code></pre></div>
-</p>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span>print(part1(data))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span>print(part2(data))</code></pre></div></p>
 <p>
 Note that in line 30 we copy over the original data for each noun,verb
 combo. also note the list comprehension in line 35 to find the final
-answer. 
-</p>
+answer. </p>
 <p>
 One last potential error point is notice that we had to add the array
 copy in line 20. Otherwise part1 will change the data and if we run it
-before part2 we won&#39;t get the correct result.
-</p>
+before part2 we won&#39;t get the correct result.</p>
 <p>
 So there it is. Another nice problem and even though it&#39;s a
 straightforward problem, there&#39;s still some interesting meat to
-discuss with your students.
-</p>
+discuss with your students.</p>
 <p>
 Tomorrow, snowstorm notwithstanding, I&#39;ll be heading up to Albany for
 the remainder of the week so might not be able to get to day 3 and
 beyond until Friday so who knows if I&#39;ll post any more of these
-write ups.
-</p>
+write ups.</p>
 
         </div>
         

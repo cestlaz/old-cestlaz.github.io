@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="A Teacher looks at Advent of Code 2020 - Days 7 and 8" />
 <meta property="og:description" content="Today we&#39;ll talk about days seven and eight.  Let&#39;s start with 7. I teach all morning on Mondays. I woke up and worked out and then took a look at the problem in the few minutes before class. It was certainly harder than days one through six but I felt it was something I knew I could do based on past experience so I quickly started to throw something together." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day0708/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day0708/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-12-08T14:47:17-04:00" />
 <meta property="article:modified_time" content="2020-12-08T14:47:17-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher looks at Advent of Code 2020 - Days 7 and 8"/>
@@ -77,8 +78,7 @@
         </header>
         <div class="content">
             <p>
-Today we&#39;ll talk about days <a href="https://adventofcode.com/2020/day/7">seven</a> and <a href="https://adventofcode.com/2020/day/8">eight</a>. 
-</p>
+Today we&#39;ll talk about days <a href="https://adventofcode.com/2020/day/7">seven</a> and <a href="https://adventofcode.com/2020/day/8">eight</a>. </p>
 <p>
 Let&#39;s start with 7. I teach all morning on Mondays. I woke up and
 worked out and then took a look at the problem in the few minutes
@@ -88,78 +88,64 @@ quickly started to throw something together. I tried to finish it in
 the between classes but couldn&#39;t get the right answer to part
 one. After class I spent more time debugging. I was pretty certain my
 algorithm was right and it turns out it was. The problem was in my
-parsing.
-</p>
+parsing.</p>
 <p>
-Anyway, to the problem. Read it over if you haven&#39;t yet.
-</p>
+Anyway, to the problem. Read it over if you haven&#39;t yet.</p>
 <p>
 If you&#39;ve studied data structures and algorithms you&#39;ll recognize that
 this problem can be viewed as a graph problem. Bags are nodes in the
-graph and edges tell you what bags each bag can contain.
-</p>
+graph and edges tell you what bags each bag can contain.</p>
 <p>
-The data is set up to represent a graph like this: 
-</p>
+The data is set up to represent a graph like this: </p>
 <img width="50%" src="/img/advent2020-0708/g1.png">
 <p>
 I left out the weights (numbers of bags). This can be represented in
 an adjacency list. The video does this in Clojure but in Python, you&#39;d
-get something that starts like this:
-</p>
+get something that starts like this:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="color:#e6db74">&#39;lightred&#39;</span>     : [<span style="color:#e6db74">&#39;brightwhite&#39;</span>, <span style="color:#e6db74">&#39;mutedyellow&#39;</span>],
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="color:#e6db74">&#39;lightred&#39;</span>     : [<span style="color:#e6db74">&#39;brightwhite&#39;</span>, <span style="color:#e6db74">&#39;mutedyellow&#39;</span>],
  <span style="color:#e6db74">&#39;darkorange&#39;</span>   : [<span style="color:#e6db74">&#39;brightwhite&#39;</span>,<span style="color:#e6db74">&#39;mutedyellow&#39;</span>],
  <span style="color:#e6db74">&#39;brightwhite&#39;</span>  : [<span style="color:#e6db74">&#39;shinygold&#39;</span>],
  <span style="color:#e6db74">&#39;mutedyellow&#39;</span>  : [<span style="color:#e6db74">&#39;shinygold&#39;</span>,<span style="color:#e6db74">&#39;fadedblue&#39;</span>],
  <span style="color:#e6db74">&#39;shinygold&#39;</span>    :[<span style="color:#e6db74">&#39;darkolive&#39;</span>,<span style="color:#e6db74">&#39;vibrantplum&#39;</span>],
  <span style="color:#e6db74">&#39;darkolive&#39;</span>    :[<span style="color:#e6db74">&#39;fadedblue&#39;</span>,<span style="color:#e6db74">&#39;dottedblack&#39;</span>],
- <span style="color:#e6db74">&#39;vibtrantplum&#39;</span> :[<span style="color:#e6db74">&#39;fadedblue&#39;</span>,<span style="color:#e6db74">&#39;dottedblack&#39;</span>]}</code></pre></div>
-</p>
+ <span style="color:#e6db74">&#39;vibtrantplum&#39;</span> :[<span style="color:#e6db74">&#39;fadedblue&#39;</span>,<span style="color:#e6db74">&#39;dottedblack&#39;</span>]}</code></pre></div></p>
 <p>
 The challenge comes when you see that many starting points can lead to
-the goal of the shiny gold bag. 
-</p>
+the goal of the shiny gold bag. </p>
 <p>
 The insight comes when you notice that you can &#34;reverse the edges.&#34;
 For example, when we saw the line that led to the lightred contains
 brightwhite and mutedyellow, instead we represent it the other way
 making two entries - brightwhite is contained by lightred and also
-mutedyellow is contained by lightred. 
-</p>
+mutedyellow is contained by lightred. </p>
 <p>
-Once we set this up the solution is a breadth or depth first search. 
-</p>
+Once we set this up the solution is a breadth or depth first search. </p>
 <p>
 The video doesn&#39;t do a complet walk through but goes into more
-details. 
-</p>
+details. </p>
 <p>
 I like this type of problem for classes because students can see that
 sometimes changing the data can make the problem much easier. If you
 implement the adjacency list as it&#39;s presented the problem seems
 hard. Once you see you can go from shinygold out instead of from  all
-the bags to shinygold the porblem becomes much easier.
-</p>
+the bags to shinygold the porblem becomes much easier.</p>
 <p>
 The other interesting point is that without fundamental data
 structures and algorithms this is a hard problem. With them, it&#39;s
 pretty straightforward. Remind your students of this when they ask why
 they need data structures and algorithms. This problem might be made
 up but graphs represent a lot of things in the real world and graph
-traversals and algorithms can solve a lot of real world problems
-</p>
+traversals and algorithms can solve a lot of real world problems</p>
 <p>
-Now to day 8. 
-</p>
+Now to day 8. </p>
 <p>
 Day 8 involved a simple machine simulator and leads to a very
 straightforward solution - write a program that simulates the computer
 stated in the problem. My solution tries to approach the problem in a
 functional way and also makes use of a function lookup table to avoid
 multiple ifs. The solution and complete walk through is in the video
-and in Clojure but a similar solution can be written in Python.
-</p>
+and in Clojure but a similar solution can be written in Python.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IEjnnRhUAxg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

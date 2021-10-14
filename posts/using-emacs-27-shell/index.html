@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="Using Emacs - 27 - shell and eshell" />
 <meta property="og:description" content="While I use emacs for all all sorts of things, one of the things I haven&#39;t done much is run shells from within emacs. I&#39;m not sure why. I&#39;m a command line wonk and adding command line goodness and emacs together seems like a natural. Maybe it&#39;s because back in the day I spent a lot of time on MS-DOS systems. You could get a reasonable Unixy facsimile using tools like the MKS toolkit and I like so many other young computer scientists wrote our own small shells when we learned C so I used that insted of command." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-27-shell/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-27-shell/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-01-27T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-01-27T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 27 - shell and eshell"/>
@@ -84,76 +85,57 @@ emacs together seems like a natural. Maybe it&#39;s because back in the
 day I spent a lot of time on MS-DOS systems. You could get a
 reasonable Unixy facsimile using tools like the <a href="https://en.wikipedia.org/wiki/MKS_Toolkit">MKS toolkit</a> and I like
 so many other young computer scientists wrote our own small shells
-when we learned C so I used that insted of command.com.
-</p>
+when we learned C so I used that insted of command.com.</p>
 <p>
-In any event, I&#39;m trying to use the shell within emacs more.
-</p>
+In any event, I&#39;m trying to use the shell within emacs more.</p>
 <p>
 Here&#39;s a quick video showing both <strong><strong>shell</strong></strong>, which runs whatever your
 default shell is in an emacs buffer and <strong><strong>eshell</strong></strong> which is emacs own
-shell.
-</p>
+shell.</p>
 <p>
-I use a couple of packages to smooth over a couple of things.
-</p>
+I use a couple of packages to smooth over a couple of things.</p>
 <p>
 <a href="https://github.com/porterjamesj/virtualenvwrapper.el">Virtuelenvwrapper</a> smooths things voer with the python virtaulenv and
-virtualenvwrapper linux packages:
-</p>
+virtualenvwrapper linux packages:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package virtualenvwrapper
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package virtualenvwrapper
 :ensure <span style="color:#66d9ef">t</span>
 :config
 (venv-initialize-interactive-shells)
 (venv-initialize-eshell))</code></pre></div></code></pre></div>
 </div>
 <p>
-Only relevant if you use Python and virtualenvs.
-</p>
+Only relevant if you use Python and virtualenvs.</p>
 <p>
-and more importantly, <a href="https://github.com/killdash9/better-shell">better shell</a>:
-</p>
+and more importantly, <a href="https://github.com/killdash9/better-shell">better shell</a>:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package better-shell
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package better-shell
 :ensure <span style="color:#66d9ef">t</span>
 :bind ((<span style="color:#e6db74">&#34;C-&#39;&#34;</span> <span style="color:#f92672">.</span> better-shell-shell)
 (<span style="color:#e6db74">&#34;C-;&#34;</span> <span style="color:#f92672">.</span> better-shell-remote-open)))</code></pre></div></code></pre></div>
 </div>
 <p>
-cleans things up when using a termianl to connect to a remote machine.
-</p>
+cleans things up when using a termianl to connect to a remote machine.</p>
 <p>
 If you use a shell from within emacs as part of your workflow, please
-post how, or better, make a video!!!!
-</p>
+post how, or better, make a video!!!!</p>
 <p>
-Enjoy
-</p>
+Enjoy</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen></iframe>
 <p>
-Relevant links:
-</p>
+Relevant links:</p>
 <ul>
 <li>
-<p>
-Video series overview page:
-</p>
+<p>Video series overview page:</p>
 </li>
 <li>
-<p>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</p>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
 </li>
 <li>
-<p>
-Code:
-</p>
+<p>Code:</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a>
-</p>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
 </li>
 </ul>
 

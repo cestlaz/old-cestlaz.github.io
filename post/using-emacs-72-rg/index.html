@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="Using Emacs 73 - Ripgrep and updating the blog" />
 <meta property="og:description" content="As I said in my last post, I&#39;m moving to a new Hugo theme. I decided on Anubis. It&#39;s simple and clean. Unfortunately, in this change over, many things broke. Specifically, all my embedded html. Using earlier version of Hugo I could directly embed HTML and it would render. Now I have to bracket the HTML with special org markup - #&#43;begin_export html and #&#43;end_export html. #&#43;begin_export html &lt;h1&gt;html stuff to render goes in here &lt;/h1&gt; #&#43;end_export   Minimally I had to find all my embedded videos and all my embedded Tweets." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-72-rg/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-72-rg/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-06-14T11:58:11-04:00" />
 <meta property="article:modified_time" content="2020-06-14T11:58:11-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 73 - Ripgrep and updating the blog"/>
@@ -81,8 +82,7 @@ As I said in my <a href="As I mentioned in my ">last post</a>, I&#39;m moving to
 on <a href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>. It&#39;s simple and clean. Unfortunately, in this change over,
 many things broke. Specifically, all my embedded html. Using earlier
 version of Hugo I could directly embed HTML and it would render. Now I
-have to bracket the HTML with special org markup - <strong>#+begin_export html</strong> and <strong>#+end_export html</strong>. 
-</p>
+have to bracket the HTML with special org markup - <strong>#+begin_export html</strong> and <strong>#+end_export html</strong>. </p>
 <pre class="example">
 #+begin_export html
 &lt;h1&gt;html stuff to render goes in here &lt;/h1&gt;
@@ -93,22 +93,18 @@ Minimally I had to find all my embedded videos and all my embedded
 Tweets. There&#39;s probably a lot more. Fortunately with Emacs this is
 pretty easy. I used <a href="https://github.com/dajva/rg.el">rg.el</a> which is an Emacs front end to <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>. If
 you don&#39;t know ripgrep, it&#39;s kind of like a super fast, super enhanced grep on
-steroids. 
-</p>
+steroids. </p>
 <p>
 In Emacs, I was able to do a ripgrep search which created a buffer
 containing all the embedded html fragments from all my blog posts
 across all the directories. I then used Emacs&#39; <a href="https://github.com/mhayashi1120/Emacs-wgrep">wgrep</a> feature which
 allowed me to edit that combined buffer and save all the results back
-to the original files. 
-</p>
+to the original files. </p>
 <p>
 All in all it just took a few minutes. There are still some things I
-have to clean up from older posts but at least the site is workable now.
-</p>
+have to clean up from older posts but at least the site is workable now.</p>
 <p>
-Check out the video for a walkthrough:
-</p>
+Check out the video for a walkthrough:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OcR-Ke2CiPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>

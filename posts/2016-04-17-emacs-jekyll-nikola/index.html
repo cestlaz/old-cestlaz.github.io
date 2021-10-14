@@ -14,19 +14,33 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:    mathjax    emacs    tools    draft: false —  Switched over from Jekyll to Nikola yesterday.  One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby." />
+<meta property="og:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:
+  mathjax
+  emacs
+  tools
+  draft: false —
+ Switched over from Jekyll to Nikola yesterday.
+ One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/" /><meta property="article:section" content="posts" />
+
+
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:    mathjax    emacs    tools    draft: false —  Switched over from Jekyll to Nikola yesterday.  One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby."/>
+<meta name="twitter:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:
+  mathjax
+  emacs
+  tools
+  draft: false —
+ Switched over from Jekyll to Nikola yesterday.
+ One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby."/>
 
 
 
@@ -75,188 +89,130 @@
             <h1 class="post-title"></h1>
         </header>
         <div class="content">
-            <p>
-—
+            <p>—
 title: &#34;Blogging with Emacs, Jekyll and Nikola&#34;
 date: 2016-04-17
-tags:
-</p>
+tags:</p>
 <ul>
 <li>
-<p>
-mathjax
-</p>
+<p>mathjax</p>
 </li>
 <li>
-<p>
-emacs
-</p>
+<p>emacs</p>
 </li>
 <li>
-<p>
-tools
-</p>
+<p>tools</p>
 </li>
 </ul>
+<p>draft: false
+—</p>
 <p>
-draft: false
-—
-</p>
-<p>
-Switched over from <a href="https://jekyllrb.com/">Jekyll</a> to <a href="https://getnikola.com/">Nikola</a> yesterday.
-</p>
+Switched over from <a href="https://jekyllrb.com/">Jekyll</a> to <a href="https://getnikola.com/">Nikola</a> yesterday.</p>
 <p>
 One of the primary reasons was that I got fed up with managing a Ruby
 development environment across all my machines. In spite of my
 rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just
 something that I&#39;d have to deal with on a recurring basis for one
-specific task - other than for Jekyll blogging, I don&#39;t use Ruby.
-</p>
+specific task - other than for Jekyll blogging, I don&#39;t use Ruby.</p>
 <p>
 So while a platform based on Python - generally my go to language,
 made sense, the other driving force for the switch was the fact that
 <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="http://orgmode.org/">org-mode</a> have become such major parts of my workflow and
-productivity.
-</p>
+productivity.</p>
 <p>
-What do I use org-mode for?
-</p>
+What do I use org-mode for?</p>
 <ul>
 <li>
-<p>
-lesson planning
-</p>
+<p>lesson planning</p>
 </li>
 <li>
-<p>
-document preparation (instead of LaTeX)
-</p>
+<p>document preparation (instead of LaTeX)</p>
 </li>
 <li>
-<p>
-note taking
-</p>
+<p>note taking</p>
 </li>
 <li>
-<p>
-blogging
-</p>
+<p>blogging</p>
 </li>
 <li>
-<p>
-email (with mu4e)
-</p>
+<p>email (with mu4e)</p>
 </li>
 <li>
-<p>
-managing my schedule
-</p>
+<p>managing my schedule</p>
 </li>
 <li>
-<p>
-tracking bookmarks
-</p>
+<p>tracking bookmarks</p>
 </li>
 </ul>
-<p>
-and probably a lot more.
-</p>
+<p>and probably a lot more.</p>
 <p>
 Jekyll is actually a really nice tool. It&#39;s simple. You put together a
 simple directory structure: Templates in _layouts, blog posts in
 _posts, drafts in _drafts. Other directories that start with an
-underscore are ignored and everything else is copied up to your site.
-</p>
+underscore are ignored and everything else is copied up to your site.</p>
 <p>
 I love that it&#39;s &#34;close to the metal&#34; You can put in html files with
-some meta information up top or markdown.
-</p>
+some meta information up top or markdown.</p>
 <p>
 You can take a look at my old site at
 <a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"><a href="https://github.com/cestlaz/cestlaz.github.io-jekyll">https://github.com/cestlaz/cestlaz.github.io-jekyll</a></a> if you want to
-take a look.
-</p>
+take a look.</p>
 <p>
 The beauty is that you just push your files up to GitHub and it
-automatically runs Jekyll and builds your site (<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">more info here</a>).
-</p>
+automatically runs Jekyll and builds your site (<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">more info here</a>).</p>
 <p>
 The problem is that Jekyll doesn&#39;t play well with org-mode and
-org-markup so my workflow became something like this
-</p>
+org-markup so my workflow became something like this</p>
 <ol>
 <li>
-<p>
-Create a post <strong><strong>something.org</strong></strong> in the _org directory.
-</p>
+<p>Create a post <strong><strong>something.org</strong></strong> in the _org directory.</p>
 </li>
 <li>
-<p>
-From within emacs, publish it. I&#39;ve configured org-mode to publish
-</p>
+<p>From within emacs, publish it. I&#39;ve configured org-mode to publish</p>
 </li>
 </ol>
-<p>
-by exporting the org-mode markup file to html and saving it in the
-_drafts directory.
-</p>
+<p>by exporting the org-mode markup file to html and saving it in the
+_drafts directory.</p>
 <ol>
 <li>
-<p>
-If it looks good, copy and rename the file from _drafts to the
-</p>
+<p>If it looks good, copy and rename the file from _drafts to the</p>
 </li>
 </ol>
-<p>
-_posts directory and push it up to GitHub.
-</p>
+<p>_posts directory and push it up to GitHub.</p>
 <p>
 A little clunky, but it works. The bigger problem was the amount of
 time I&#39;d spend putting html blocks into my org formatted posts to get
-them to look the way I wanted (or at least close enough).
-</p>
+them to look the way I wanted (or at least close enough).</p>
 <p>
-Enter Nikola.
-</p>
+Enter Nikola.</p>
 <p>
 Nikola&#39;s a much more powerful tool. It does much more but as a result
 is much more complex. Normally, that&#39;s not my style but in this case
-since It&#39;s Python, things balance out.
-</p>
+since It&#39;s Python, things balance out.</p>
 <p>
 I still have to figure out the entire templating system and all the
-plugins but getting started was pretty quick.
-</p>
+plugins but getting started was pretty quick.</p>
 <p>
 The big win is that Nikola supports a ton of formats for your posts
 and pages. Native org-mode support for me was what did it for me. On top of
 that, although I haven&#39;t tested it yet, is that there&#39;s also an
-org-mode plugin to export to Nikola restructure text.
-</p>
+org-mode plugin to export to Nikola restructure text.</p>
 <p>
-My new workflow:
-</p>
+My new workflow:</p>
 <ol>
 <li>
-<p>
-Write the post as an org-mode file.
-</p>
+<p>Write the post as an org-mode file.</p>
 </li>
 <li>
-<p>
-run <strong><strong>nikola github_{}deploy</strong></strong>.
-</p>
+<p>run <strong><strong>nikola github_{}deploy</strong></strong>.</p>
 </li>
 </ol>
-<p>
-And that&#39;s it. You can look at my Nikola site here:
+<p>And that&#39;s it. You can look at my Nikola site here:
 <a href="https://github.com/cestlaz/cestlaz.github.io"><a href="https://github.com/cestlaz/cestlaz.github.io">https://github.com/cestlaz/cestlaz.github.io</a></a>.
 The source code is in the <strong><strong>src</strong></strong> branch, the actual rendered blog in
-the <strong><strong>master</strong></strong> branch.
-</p>
+the <strong><strong>master</strong></strong> branch.</p>
 <p>
-So far, I&#39;m pretty happy with the setup.
-</p>
+So far, I&#39;m pretty happy with the setup.</p>
 
         </div>
         

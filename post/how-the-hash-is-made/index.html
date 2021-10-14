@@ -14,20 +14,23 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634045310" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1634239486" />
 
 
 
 <meta property="og:title" content="How The Hash Is Made" />
-<meta property="og:description" content="Following up on my last post.  Soon after I read that tweet, I read Julia&#39;s post on hash tables. This got me thinking more about what is and isn&#39;t taught in school. Hash tables were always taught in CS programs but back in the day you might not have used them much after your data structures or algorithms classes. Nowadays you&#39;re much more likely to use them as they&#39;re built in to so many platforms." />
+<meta property="og:description" content="Following up on my last post.
+ Soon after I read that tweet, I read Julia&#39;s post on hash tables. This got me thinking more about what is and isn&#39;t taught in school. Hash tables were always taught in CS programs but back in the day you might not have used them much after your data structures or algorithms classes. Nowadays you&#39;re much more likely to use them as they&#39;re built in to so many platforms." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/how-the-hash-is-made/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/how-the-hash-is-made/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-09-16T17:08:19-04:00" />
 <meta property="article:modified_time" content="2021-09-16T17:08:19-04:00" />
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How The Hash Is Made"/>
-<meta name="twitter:description" content="Following up on my last post.  Soon after I read that tweet, I read Julia&#39;s post on hash tables. This got me thinking more about what is and isn&#39;t taught in school. Hash tables were always taught in CS programs but back in the day you might not have used them much after your data structures or algorithms classes. Nowadays you&#39;re much more likely to use them as they&#39;re built in to so many platforms."/>
+<meta name="twitter:description" content="Following up on my last post.
+ Soon after I read that tweet, I read Julia&#39;s post on hash tables. This got me thinking more about what is and isn&#39;t taught in school. Hash tables were always taught in CS programs but back in the day you might not have used them much after your data structures or algorithms classes. Nowadays you&#39;re much more likely to use them as they&#39;re built in to so many platforms."/>
 
 
 
@@ -77,24 +80,21 @@
         </header>
         <div class="content">
             <p>
-Following up on my <a href="/post/what-they-used-to-know/">last post</a>.
-</p>
+Following up on my <a href="/post/what-they-used-to-know/">last post</a>.</p>
 <p>
 Soon after I read that tweet, I read Julia&#39;s post on <a href="https://jvns.ca/blog/2021/09/10/hashmaps-make-things-fast/">hash tables</a>. This
 got me thinking more about what is and isn&#39;t taught in school. Hash
 tables were always taught in CS programs but back in the day you might
 not have used them much after your data structures or algorithms
 classes. Nowadays you&#39;re much more likely to use them as they&#39;re built
-in to so many platforms.
-</p>
+in to so many platforms.</p>
 <p>
 Hash tables and related structures are great - I use them all the time
 but they can also become a go to without thinking it through. This
 actually came up in conversation with the same my high level SE friend
 at that big bank from the last post. He also noticed that many interviewees would always
 go right to the hash table even when there were red flags in the
-question to warn away fro them.
-</p>
+question to warn away fro them.</p>
 <p>
 For a hash table to get you that nice fast expected constant time
 performance, it has to be sparse - few collisions. If you implement a
@@ -103,21 +103,18 @@ a lot of spare space, it will fill up and all of a sudden that O(1)
 insertion and retrieval time will go linear. I can&#39;t say for certain
 but I&#39;m guessing the vast majority of Python programmers who use hash
 tables (dictionaries) all the time don&#39;t really know this or if they
-do never think about it.
-</p>
+do never think about it.</p>
 <p>
 Is this a byproduct of using the built in implementations in college
 combined with self taught programmers never seeing this at all? Maybe
-but this was probably a deficiency even in my day.
-</p>
+but this was probably a deficiency even in my day.</p>
 <p>
 This also came up when I accidentally interviewed for a position at
 Google. There was a question about storing and accessing a bunch of
 data. I don&#39;t remember the question but there was a key line - &#34;you
 have unlimited storage&#34; which is the trigger phrase for &#34;use a hash
 table.&#34; I got a kick out of it but felt this was a you know it or you
-don&#39;t. I think I mentioned it to the interviewer.
-</p>
+don&#39;t. I think I mentioned it to the interviewer.</p>
 <p>
 This also brought to mind another example. Not mine - I read this in
 John Bentley&#39;s terrific book <a href="https://tfetimes.com/wp-content/uploads/2015/04/ProgrammingPearls2nd.pdf">&#34;Programming Pearls.&#34;</a> The gist was that a
@@ -126,40 +123,32 @@ idea is that you have an array of data that is sorted and instead of
 looking through every item one at a time, you calculate the middle of
 the array, look there and then, if you haven&#39;t found the item, you
 throw away half the data and repeat the process with the remaining
-half.
-</p>
+half.</p>
 <p>
 Every now and then, the implementations had a problem and nobody could
 figure out why. As it turns out, in calculating the midpoint, they&#39;d
 add the lower value and the higher value and then divide the sum by
-two.
-</p>
+two.</p>
 <p>
-Sounds reasonable.
-</p>
+Sounds reasonable.</p>
 <p>
 The problem was that when low and high were at the upper end of the
 data set the addition would go past the largest integer wrapping
-around and causing wonky results.
-</p>
+around and causing wonky results.</p>
 <p>
 Pretty subtle error but at least you&#39;ve got a shot at figuring it out
-if you understand integer sizes and how they work on your machine. 
-</p>
+if you understand integer sizes and how they work on your machine. </p>
 <p>
 Having some solid low level knowledge won&#39;t prevent this bug from
 cropping up but it will give you a fighting chance at fixing it if it
-does. 
-</p>
+does. </p>
 <p>
 This particular problem probably won&#39;t come up these days as integers
 are MUCH larger than back in the day but I think it illustrates the
-point.
-</p>
+point.</p>
 <p>
 Anyway, just more food for thought on how CS Education has changed
-over the years, what we leave in, and what we leave out.
-</p>
+over the years, what we leave in, and what we leave out.</p>
 
         </div>
         

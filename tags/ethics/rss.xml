@@ -6,10 +6,69 @@
     <description>C&#39;est la Z (ethics)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Oct 2021 14:40:35 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/ethics/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Feeling like an English teacher</title>
+      <link>https://cestlaz.github.io/post/english-teacher/</link>
+      <pubDate>Thu, 14 Oct 2021 14:40:35 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/english-teacher/</guid>
+      <description>&lt;p&gt;
+So I&amp;#39;m teaching my Ethics and CS class for the first time. I
+originally designed the course but didn&amp;#39;t teach it the first time
+around. That honor went to my friend, Master Teacher Topher
+Mykolyk. He of course did an amazing job - impossible to
+follow. Fortunately, this is a different cohort so they don&amp;#39;t know how
+great Topher was for the course :-).&lt;/p&gt;
+&lt;p&gt;
+Even though I have the syllabus and Topher&amp;#39;s notes from last time
+around, first time through is very week to week but I think I&amp;#39;m
+starting to get my legs under me. &lt;/p&gt;
+&lt;p&gt;
+This course is very different from what I&amp;#39;ve taught in the past. It&amp;#39;s
+also  different from the ethics courses I&amp;#39;ve seen currently out
+there. Specifically, I wanted a programming component in the
+course. Still, there&amp;#39;s a lot more open ended discussion and opinion
+based stuff going on.&lt;/p&gt;
+&lt;p&gt;
+I mean, when you do a class on an algorithm like mergesort or a
+construct like a loop, it is what it is. You can motivate it in
+different ways and engage the class but there&amp;#39;s only one punch line
+and it&amp;#39;s set in advance. Here things are a lot looser. Most issues
+have two sides and even when most of the class is on one like when we
+talked about predictive policing, we can still
+effectively play devil&amp;#39;s advocate for the other side. &lt;/p&gt;
+&lt;p&gt;
+It can also lead to the class going sideways. Yesterday we were
+talking about basic web privacy. Tracking, cookies and the like. In my
+mind I had the lesson mapped out. First, our &amp;#34;weekly ethicacy&amp;#34; student
+presentation and then a short breakout, discussion on the info we
+share, and then curated questions and resources  that we&amp;#39;d use in a
+sequence of breakout room and whole class discussions. The trouble is,
+after the first short breakout, the student conversation went directly
+to what I had intended for our async work over the course of the
+week. Oh well, time to &lt;a href=&#34;https://cestlaz.github.io/post/audible/&#34;&gt;call an audible&lt;/a&gt;. It wasn&amp;#39;t really a big deal,
+the conversation moved in a different direction but it was still very
+much in the wheelhouse of the day&amp;#39;s topic.&lt;/p&gt;
+&lt;p&gt;
+Must be what an English class can be like.&lt;/p&gt;
+&lt;p&gt;
+It was fun.&lt;/p&gt;
+&lt;p&gt;
+Overall I think the course is doing well but I won&amp;#39;t know for sure
+until afterwards when I can debrief with the students. After all,
+they&amp;#39;re the ones that ultimately determine if the class is successful. &lt;/p&gt;
+&lt;p&gt;
+Over the next few weeks I&amp;#39;ll share some specifics about the class. The
+programming stuff in particular. Can&amp;#39;t do that now because we&amp;#39;re in
+the middle and I don&amp;#39;t want any members of the class who might be
+reading this to see the reveal before it&amp;#39;s time.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Time To Create An Ethics Course</title>
@@ -18,26 +77,22 @@
       
       <guid>https://cestlaz.github.io/posts/time-to-create-an-ethics-course/</guid>
       <description>&lt;p&gt;
-I think it&amp;#39;s time for me to start developing a CS Ethics class.
-&lt;/p&gt;
+I think it&amp;#39;s time for me to start developing a CS Ethics class.&lt;/p&gt;
 &lt;p&gt;
 An ethics course isn&amp;#39;t a replacement for having teachers that live and
 model good behavior and weave ethical issues throughout the curriculum
-but still, adding a separate course on top of that has its merits.
-&lt;/p&gt;
+but still, adding a separate course on top of that has its merits.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m not in a rush to create this course. I might be done in a month or
 it might take a couple of years. When I&amp;#39;m done, I&amp;#39;ll add it as an
 option in my CS Teacher education programs but hopefully it will be an
-attractive course for undergrad CS majors as well.
-&lt;/p&gt;
+attractive course for undergrad CS majors as well.&lt;/p&gt;
 &lt;p&gt;
 While it&amp;#39;s easy enough to come up with possible topics - privacy,
 moral responsibilities, biased algorithms, net neutrality and on and
 on I&amp;#39;m looking for this course to have a serious coding component. I
 want the students to build things to really understand the
-implications of what they&amp;#39;re studying.
-&lt;/p&gt;
+implications of what they&amp;#39;re studying.&lt;/p&gt;
 &lt;p&gt;
 One topic I definitely want to cover is &lt;a href=&#34;https://news.harvard.edu/gazette/story/2011/10/youre-not-so-anonymous/&#34;&gt;anonimity&lt;/a&gt;. I&amp;#39;d love to find
 the right combination of data sets and have the class discover that
@@ -47,24 +102,20 @@ having the kids give me permission to use their class schedules since
 even with names removed we could probably identify many kids by
 electives and overlapping classes. I have no idea what I&amp;#39;ll be able to
 do at Hunter. If I can come up with something good I think this will
-form the basis of a pretty amazing part of the class.
-&lt;/p&gt;
+form the basis of a pretty amazing part of the class.&lt;/p&gt;
 &lt;p&gt;
 Another project I&amp;#39;d love to put together is something dealing with a
 biased algorithm. Again, I don&amp;#39;t know where this will go, maybe
 something where I can seed the class so that different groups
 implement some project differently and we can then analyze each groups
-biases, hidden or otherwise.
-&lt;/p&gt;
+biases, hidden or otherwise.&lt;/p&gt;
 &lt;p&gt;
-Beyond these two, I&amp;#39;m not sure.
-&lt;/p&gt;
+Beyond these two, I&amp;#39;m not sure.&lt;/p&gt;
 &lt;p&gt;
 How about you? Anyone out there have any good ideas for programming
 projects for an ethical CS course? If so, please share. It might be a
 while but when I do finish putting this together I&amp;#39;ll be sure to
-publish whatever the end result is.
-&lt;/p&gt;
+publish whatever the end result is.&lt;/p&gt;
 </description>
     </item>
     

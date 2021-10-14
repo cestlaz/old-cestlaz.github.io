@@ -21,146 +21,125 @@
 So, yesterday I was chatting with my daughter. She was talking with
 her team and for some reason one of them pulled out an interview
 question from their company&amp;#39;s question bank. Turns out it was today&amp;#39;s
-Advent of Code problem. 
-&lt;/p&gt;
+Advent of Code problem. &lt;/p&gt;
 &lt;p&gt;
 As with past years, I&amp;#39;m going to try to solve the problems in Clojure
-but if I can will talk Python when I talk about solutions. 
-&lt;/p&gt;
+but if I can will talk Python when I talk about solutions. &lt;/p&gt;
 &lt;p&gt;
 Part 1 of the problem basically asks for you to find a pair of numbers
 in an array that sum to a specific value. In this case 2020. Figuring
 that this was day 1 I didn&amp;#39;t expect a crazy large data set or any
 other tricks or weirdness - a straightforward solution should
-suffice. Simply a loop within a loop and sum up all the pairs: 
-&lt;/p&gt;
+suffice. Simply a loop within a loop and sum up all the pairs: &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;:
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      print(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Nothing fancy but it gets the job done. It does print out the answer
 twice since x and y both go through all the indices but that&amp;#39;s no big
-deal.
-&lt;/p&gt;
+deal.&lt;/p&gt;
 &lt;p&gt;
 The part 2 twist was that now you were looking for a set of three
-entries that added up to 220. Once again, not a big deal: 
-&lt;/p&gt;
+entries that added up to 220. Once again, not a big deal: &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; z &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;z &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;:
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;z)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+                print(x&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;z)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-As before, you&amp;#39;ll get multiple answers but no big deal.
-&lt;/p&gt;
+As before, you&amp;#39;ll get multiple answers but no big deal.&lt;/p&gt;
 &lt;p&gt;
 What I like about this one is that you can think about this as a
 looping exercise as above but you can also think about it as a list
 processing exercise, that is, by thinking about it with more of a
-functional programming bent. 
-&lt;/p&gt;
+functional programming bent. &lt;/p&gt;
 &lt;p&gt;
 The key insight here is that the question was clear in that there will
 only be one pair in part 1 that satisfies the problem and likewise
-only one pair in part 2. 
-&lt;/p&gt;
+only one pair in part 2. &lt;/p&gt;
 &lt;p&gt;
 If we look at each item in our data set, it&amp;#39;s part of the answer if
 and only if there&amp;#39;s another number in the set equal to 2020 minus that
-item. This leads to a list comprehension
-&lt;/p&gt;
+item. This leads to a list comprehension&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part1_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part1_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Now, part1_list should contain the two items we need. The first value &lt;code&gt;x&lt;/code&gt;
 was found when the comprehension saw that &lt;code&gt;2020 - x&lt;/code&gt; was in the list
 and &lt;code&gt;2020-x&lt;/code&gt; which is the second value was confirmed when the for part
 of the comprehension gets to it and finds that the first item is in
 the list. Then, it&amp;#39;s a simple matter of just multiplying the two
-numbers together for the answer.
-&lt;/p&gt;
+numbers together for the answer.&lt;/p&gt;
 &lt;p&gt;
 Part 2 is similar but you can use a list comprehension to iterate over
-all pairs of elements and then you calculate the third:
-&lt;/p&gt;
+all pairs of elements and then you calculate the third:&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y) &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y) &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data]&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Of course you could have put &lt;code&gt;y&lt;/code&gt; or &lt;code&gt;2020-(x+y)&lt;/code&gt; in place of that
-first &lt;code&gt;x&lt;/code&gt;. 
-&lt;/p&gt;
+first &lt;code&gt;x&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;
 Part 2 has an additional subtlety in that you&amp;#39;ll get the solution
 multiple times which makes sense you&amp;#39;re hitting each triple multiple
-times. To fix that, turn it into a set: 
-&lt;/p&gt;
+times. To fix that, turn it into a set: &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_set &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(part2_list)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;part2_set &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(part2_list)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-and then calculate the product.
-&lt;/p&gt;
+and then calculate the product.&lt;/p&gt;
 &lt;p&gt;
 At the core, both of these solutions are really the same but you get
 to them by thinking very differently. The first one is all about the
 loops - thinking about data[i] at a very low discrete level. The
 second approach is thinking about the data as a list and processing
 that list at a much higher level. This could be an ice problem to
-transition between the two approaches.
-&lt;/p&gt;
+transition between the two approaches.&lt;/p&gt;
 &lt;p&gt;
-Looking forward to what tomorrow&amp;#39;s problem brings.
-&lt;/p&gt;
+Looking forward to what tomorrow&amp;#39;s problem brings.&lt;/p&gt;
 </description>
     </item>
     
@@ -173,29 +152,25 @@ Looking forward to what tomorrow&amp;#39;s problem brings.
       <description>&lt;p&gt;
 In the real world you&amp;#39;re usually not building your own projects from
 scratch. Much more frequently you&amp;#39;re working on a team and you and
-other players come and go over time. 
-&lt;/p&gt;
+other players come and go over time. &lt;/p&gt;
 &lt;p&gt;
 This is in stark contrast to most CS educational experiences where
 students typically complete relatively small assignments from
 beginning to end. One of my biggest fears way back when as I was about
 to graduate college was when I woke up one night in a cold sweath &amp;#34;oh
 crap - in a couple of weeks I&amp;#39;m going to have to actually produce good
-code. Not just code good enough to get by the grader.&amp;#34;
-&lt;/p&gt;
+code. Not just code good enough to get by the grader.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 So, as a general rule,  having students build a project and then later
 extend it or, even better, having them extend another student&amp;#39;s project
 can be a very good experience. On the other hand, it can also be a
-very bad one.
-&lt;/p&gt;
+very bad one.&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s a great feeling when you leverage a previous project to create
 something new. On the other hand, there can be tremendous frustration
 if the original project forms a faulty foundation and you have to go
 back and rebuild and even then you&amp;#39;re never 100% sure that you&amp;#39;re
-building on a solid base.
-&lt;/p&gt;
+building on a solid base.&lt;/p&gt;
 &lt;p&gt;
 Building on a previous project has been big in this years &lt;a href=&#34;http://adventofcode.com&#34;&gt;Advent of
 Code&lt;/a&gt;. It started with &lt;a href=&#34;https://adventofcode.com/2019/day/2&#34;&gt;day 2&lt;/a&gt; when we were asked to write a simple
@@ -204,8 +179,7 @@ then returned in &lt;a href=&#34;https://adventofcode.com/2019/day/5&#34;&gt;day
 intcode machines. This too was a nice assignment. It had to be built
 on a correct and complete day 2 solution but as far as I could tell,
 regardless of how you completed day 2 there was a straightforward way
-to extend it to integrate the requirements for day 5.
-&lt;/p&gt;
+to extend it to integrate the requirements for day 5.&lt;/p&gt;
 &lt;p&gt;
 Things got interesting in &lt;a href=&#34;https://adventofcode.com/2019/day/7&#34;&gt;day 7&lt;/a&gt; and this is where a teacher, or
 competition designer for that matter has to start being careful. Day 5
@@ -219,24 +193,21 @@ assumptions you made in building your intcode machine you would either
 have an easy time with day 7 or you&amp;#39;d have to go back and redo day 2
 and/or 5 - much less fun. As part 2 of day 7 had us running multiple
 intcode machines &amp;#34;simultaneously,&amp;#34; my set up didn&amp;#39;t work. I still have
-to go back and finish that problem.
-&lt;/p&gt;
+to go back and finish that problem.&lt;/p&gt;
 &lt;p&gt;
 Herein lies a big problem with multi part assignments. Unless you
 really lay out the parameters of the early assignment students can,
 and frequently will make assumptions you never dreamed of. Those
 assumptions can make their lives easier in parts 2 and beyond but it
 can also leave them with an impossible task. This on top of any
-student that doesn&amp;#39;t finish the early version to begin with.
-&lt;/p&gt;
+student that doesn&amp;#39;t finish the early version to begin with.&lt;/p&gt;
 &lt;p&gt;
 Moving on, &lt;a href=&#34;https://adventofcode.com/2019/day/9&#34;&gt;day 9&lt;/a&gt; added some more features to the intcode machine and
 since then, days &lt;a href=&#34;https://adventofcode.com/2019/day/11&#34;&gt;11&lt;/a&gt;, &lt;a href=&#34;https://adventofcode.com/2019/day/13&#34;&gt;13&lt;/a&gt;, &lt;a href=&#34;https://adventofcode.com/2019/day/15&#34;&gt;15&lt;/a&gt;, &lt;a href=&#34;https://adventofcode.com/2019/day/17&#34;&gt;17&lt;/a&gt;, and &lt;a href=&#34;https://adventofcode.com/2019/day/19&#34;&gt;19&lt;/a&gt; have all used our intcode
 machine. I&amp;#39;ve had issues with my machine for days 11 and 13 and have
 to fix my intcode machine&amp;#39;s input/output handling to finish those
 challenges but my machine worked well enough to complete days 15, 17,
-and 19.
-&lt;/p&gt;
+and 19.&lt;/p&gt;
 &lt;p&gt;
 So, at the end of the day building on a previous project can be very
 cool and for a student very rewarding but it can also be really
@@ -247,8 +218,7 @@ fully correctly or just enough to get by the early test cases? It can
 be very unsettling to work on an uncertain foundation. What&amp;#39;s more,
 while a teacher can even provide base code, this might only be useful
 to help check results as now having a student use provided code adds
-yet another challenge (albeit one that provides many useful lesosns).
-&lt;/p&gt;
+yet another challenge (albeit one that provides many useful lesosns).&lt;/p&gt;
 &lt;p&gt;
 As to doing this in Advent of Code? I doubt &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt; and the other
 organizers will read this but in case they do, this isn&amp;#39;t a complaint
@@ -256,18 +226,15 @@ about Advent of Code. I love the event and we can all quibble about
 details we like or don&amp;#39;t like. Advent of Code also isn&amp;#39;t a class with
 a grade and if I never finish, let&amp;#39;s say, day 11, there are no
 consequences - unlike if a student doesn&amp;#39;t finish part 2 of a graded
-project. 
-&lt;/p&gt;
+project. &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m writing this because I think there are some interesting parallels
 between creating an event like Advent of Code and designing projects
 and lessons for students and more interestingly , where those //s
-diverge.
-&lt;/p&gt;
+diverge.&lt;/p&gt;
 &lt;p&gt;
 Now to get to grading. Hoping to get done to spend at least a few
-minutes on &lt;a href=&#34;https://adventofcode.com/2019/day/20&#34;&gt;day 20&lt;/a&gt;. 
-&lt;/p&gt;
+minutes on &lt;a href=&#34;https://adventofcode.com/2019/day/20&#34;&gt;day 20&lt;/a&gt;. &lt;/p&gt;
 </description>
     </item>
     
@@ -283,75 +250,59 @@ an APCS-A or college CS1 class. Another nice problem would be to
 write a program to generate an image in the format required by the
 question. Alternatively, a teacher doing day 8 with their classes
 might want to generate a bunch of images for the students to test
-their decoders on. 
-&lt;/p&gt;
+their decoders on. &lt;/p&gt;
 &lt;p&gt;
 I thought I&amp;#39;d write one to see how appropriate it would be for the
-students. I tried to do it without anything fancy or advanced.
-&lt;/p&gt;
+students. I tried to do it without anything fancy or advanced.&lt;/p&gt;
 &lt;p&gt;
 To start, you&amp;#39;ll need a way to generate the block text for the
 images. I found &lt;a href=&#34;http://www.patorjk.com/software/taag/#p=display&amp;amp;f=Banner3&amp;amp;t=Hello&#34;&gt;this&lt;/a&gt; site and used the &lt;strong&gt;Banner3&lt;/strong&gt; font. I generated
 some text and saved it in a file. The important thing for our purposes
-is that any space will count as white and any character as black.
-&lt;/p&gt;
+is that any space will count as white and any character as black.&lt;/p&gt;
 &lt;p&gt;
 The encoded image is a N * Width * Height sequence of digits  where
 each Width * Height sequence of digits represents one layer. See the
-&lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;problem text&lt;/a&gt; for details.
-&lt;/p&gt;
+&lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;problem text&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;
-You can follow along with the code &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day08-generator.py&#34;&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
+You can follow along with the code &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day08-generator.py&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
-So, here&amp;#39;s how the program works:
-&lt;/p&gt;
+So, here&amp;#39;s how the program works:&lt;/p&gt;
 &lt;p&gt;
 The top 51 lines of the program consist of a routine which I&amp;#39;ll
 describe later and code to handle command line argument (to set the
-number of layers).
-&lt;/p&gt;
+number of layers).&lt;/p&gt;
 &lt;p&gt;
-Then, on line 55 I erad  in the file with the source image (from stdin). 
-&lt;/p&gt;
+Then, on line 55 I erad  in the file with the source image (from stdin). &lt;/p&gt;
 &lt;p&gt;
 In line 57 through 63, I loop over the data and changed each non space
 or newline to a star character. I really don&amp;#39;t have to do this but I
-wanted to see what the image looked like in just &amp;#34;black and white.&amp;#34;
-&lt;/p&gt;
+wanted to see what the image looked like in just &amp;#34;black and white.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 Line 65 through 67 is where I split on the newlines. Now I could take
 the length of any line to get the image width and the number of lines
-the height.
-&lt;/p&gt;
+the height.&lt;/p&gt;
 &lt;p&gt;
 70 through 79 creates a long list for the image. At each location, I
 generate a list of values. Each list has one entry per layer. The
 actual pixel value (1 or 0) is stored at a random location. Everything
 before that is a random choice between the real color and transparent
 and everything after is just random. Details for that step are in the
-&lt;code&gt;genpixel&lt;/code&gt; routine.
-&lt;/p&gt;
+&lt;code&gt;genpixel&lt;/code&gt; routine.&lt;/p&gt;
 &lt;p&gt;
 Finally, in 83 through 89 I loop over each layer and for each layer
-the image and and output all the values into a single string. 
-&lt;/p&gt;
+the image and and output all the values into a single string. &lt;/p&gt;
 &lt;p&gt;
-This is then output to stdout while the dimensions go to stderr.
-&lt;/p&gt;
+This is then output to stdout while the dimensions go to stderr.&lt;/p&gt;
 &lt;p&gt;
 If I had a source image in a file named &amp;#34;hello.dat&amp;#34; I&amp;#39;d convert it to
 source input for day 8 by typing &lt;code&gt;cat hello.dat | python3 day08-generator.py
--l 10 &amp;gt; day08-input.dat&lt;/code&gt;. This would create a 10 layer input.
-&lt;/p&gt;
+-l 10 &amp;gt; day08-input.dat&lt;/code&gt;. This would create a 10 layer input.&lt;/p&gt;
 &lt;p&gt;
 That&amp;#39;s it. Once again, the code is all &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day08-generator.py&#34;&gt;here&lt;/a&gt;. It would make for another
 nice student assignment or for a teacher to prepare inputs for the
-class.
-&lt;/p&gt;
+class.&lt;/p&gt;
 &lt;p&gt;
-Enjoy.
-&lt;/p&gt;
+Enjoy.&lt;/p&gt;
 </description>
     </item>
     
@@ -368,92 +319,74 @@ still haven&amp;#39;t finished &lt;a href=&#34;https://adventofcode.com/2019/day
 builds on &lt;a href=&#34;https://adventofcode.com/2019/day/2&#34;&gt;day 2&lt;/a&gt;. I might not get to finishing 7 for a while but it
 looks like a good chance to play with &lt;a href=&#34;https://www.braveclojure.com/core-async/&#34;&gt;core.async&lt;/a&gt; - Clojure&amp;#39;s
 facilities for concurrency. I also want to write up &lt;a href=&#34;https://adventofcode.com/2019/day/6&#34;&gt;day 6&lt;/a&gt; but today
-let&amp;#39;s look at &lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;day 8&lt;/a&gt;.
-&lt;/p&gt;
+let&amp;#39;s look at &lt;a href=&#34;https://adventofcode.com/2019/day/8&#34;&gt;day 8&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 Day 8 is image processing problem so it fits nicely into an APCS-A
 type class. You&amp;#39;re given the height and width of the image and you&amp;#39;re
 told that the image comes in layers. The input is a long string of
 digits. So, if you&amp;#39;re told that the width is 5 and height is 3 you
-might get this as your input representing an image with 3 layers:
-&lt;/p&gt;
+might get this as your input representing an image with 3 layers:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;100210120100120001102020112100000121002110102&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;100210120100120001102020112100000121002110102&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Adding commas and spaces:
-&lt;/p&gt;
+Adding commas and spaces:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;10021,01201,00120   00110,20201,12100   00012,10021,10102&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;10021,01201,00120   00110,20201,12100   00012,10021,10102&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The first part of the task is to find the layer with the most 0s and
-return the number of 1s multiplied with the number of 2s.
-&lt;/p&gt;
+return the number of 1s multiplied with the number of 2s.&lt;/p&gt;
 &lt;p&gt;
 This is just a nice little data parsing problem. You have to break the
 input into &lt;code&gt;width*height&lt;/code&gt; chunks, see which has the most zeros, count
-the ones and the twos and return the result. 
-&lt;/p&gt;
+the ones and the twos and return the result. &lt;/p&gt;
 &lt;p&gt;
 Part 2 is where the image stuff comes in. We&amp;#39;re told that a color
 value of 0 is black, 1 is white, and 2 is transparent. We&amp;#39;re also told
 that the image&amp;#39;s actual color is the first color it sees (black or
 white) when going through the layers. Depending on how you read in
 your data, this could be easy or hard. You have to scan down the
-layers and keep the first non-transparent color. 
-&lt;/p&gt;
+layers and keep the first non-transparent color. &lt;/p&gt;
 &lt;p&gt;
 For part 1, I read my data into a list of lists where each item was a
 layer. I did this in Clojure, but the Python representation of the
-sample image above might look something like this:
-&lt;/p&gt;
+sample image above might look something like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;[ [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;],
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;[ [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;],
   [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;],
-  [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-There was no reason to subdivide each layer into rows and columns.
-&lt;/p&gt;
+There was no reason to subdivide each layer into rows and columns.&lt;/p&gt;
 &lt;p&gt;
 For part 1, I wanted to have lists where each list was all the values
 of each pixel across the layers. This meant &lt;a href=&#34;https://en.wikipedia.org/wiki/Transpose&#34;&gt;transposing&lt;/a&gt; the matrix -
 tat is, if you look at the above list of lists as a matrix, switching
 the rows and columns. This was pretty easy to do in Clojure using
 &lt;code&gt;(apply mapv vector matrix)&lt;/code&gt; but it shouldn&amp;#39;t be too hard in other
-languages.
-&lt;/p&gt;
+languages.&lt;/p&gt;
 &lt;p&gt;
 Next, we have to keep the first non-transparent color we see in each
-list.
-&lt;/p&gt;
+list.&lt;/p&gt;
 &lt;p&gt;
 The final fun part is then taking the colors and printing out the
-final image.
-&lt;/p&gt;
+final image.&lt;/p&gt;
 &lt;p&gt;
-Here&amp;#39;s what I got:
-&lt;/p&gt;
+Here&amp;#39;s what I got:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;XXX  XXXX  XX   XX  X  X 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;XXX  XXXX  XX   XX  X  X 
 X  X X    X  X X  X X X  
 X  X XXX  X    X  X XX   
 XXX  X    X    XXXX X X  
 X    X    X  X X  X X X  
-X    X     XX  X  X X  X &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+X    X     XX  X  X X  X &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 What&amp;#39;s nice about this problem from a teacher&amp;#39;s point of view? First,
 it&amp;#39;s the puzzle aspect of finding the hidden text. Second, it&amp;#39;s an
 image problem which in APCS-A usually means 2D arrays but you can also
 solve it without any 2D matrices. My solution involved a bunch of
 filtering of data and the matrix transpose. Both interesting concepts
-to bring to your classes.
-&lt;/p&gt;
+to bring to your classes.&lt;/p&gt;
 &lt;p&gt;
-If you want to see my Clojure solution, you can find it &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day08.clj&#34;&gt;here&lt;/a&gt;.
-&lt;/p&gt;
+If you want to see my Clojure solution, you can find it &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day08.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -468,50 +401,38 @@ If you want to see my Clojure solution, you can find it &lt;a href=&#34;https://
 to I didn&amp;#39;t figure to have much time to work on the
 problem. Fortunately, I was able to knock out part 1 before work
 started and part 2 was a quick adjustment when I got back to it at the
-start of lunch.
-&lt;/p&gt;
+start of lunch.&lt;/p&gt;
 &lt;p&gt;
 Once again, it was a problem with a few interesting teacher side
-aspects.
-&lt;/p&gt;
+aspects.&lt;/p&gt;
 &lt;p&gt;
 I only wrote a &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day04.clj&#34;&gt;Clojure solution&lt;/a&gt; today so that&amp;#39;s what I&amp;#39;ll use for my
-code examples.
-&lt;/p&gt;
+code examples.&lt;/p&gt;
 &lt;p&gt;
 The gist was that you were going to use a 6 digit integer as a
 password but only  subset of the numbers between a start and end
-point. Only numbers in that range for which these two properties held:
-&lt;/p&gt;
+point. Only numbers in that range for which these two properties held:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-There were at least one repeated digit, that is 123445 is o since
-we have two consecutive 4s but 124354 isn&amp;#39;t
-&lt;/p&gt;
+&lt;p&gt;There were at least one repeated digit, that is 123445 is o since
+we have two consecutive 4s but 124354 isn&amp;#39;t&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-The digits are increasing. That is, given any digit, the digit to
-its right has either the same or a greater value.
-&lt;/p&gt;
+&lt;p&gt;The digits are increasing. That is, given any digit, the digit to
+its right has either the same or a greater value.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-You had to find the number of &amp;#34;valid passwords.&amp;#34;
-&lt;/p&gt;
+&lt;p&gt;You had to find the number of &amp;#34;valid passwords.&amp;#34;&lt;/p&gt;
 &lt;p&gt;
 At first read this sounds like a math problem but it really
 isn&amp;#39;t. Looking at the first constraint, if you convert the number to a
 string, looking to see that at least two consecutive characters are
-the same is pretty easy - it&amp;#39;s just a simple loop. 
-&lt;/p&gt;
+the same is pretty easy - it&amp;#39;s just a simple loop. &lt;/p&gt;
 &lt;p&gt;
 It turns out that it&amp;#39;s even easier using &lt;a href=&#34;https://www.regular-expressions.info/&#34;&gt;Regular Expressions&lt;/a&gt;. Regular
 expressions (regex) aren&amp;#39;t usually an explicit part of a CS sequence
 but man are they useful. Basically they allow you to set up a pattern
-that will match text. Some examples:
-&lt;/p&gt;
+that will match text. Some examples:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -538,150 +459,113 @@ that will match text. Some examples:
 &lt;/table&gt;
 &lt;p&gt;
 You can use parentheses to form a &amp;#34;match group&amp;#34; and then use &amp;#34;\1&amp;#34; to
-match the group, so this regular expression:
-&lt;/p&gt;
+match the group, so this regular expression:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-regex&#34; data-lang=&#34;regex&#34;&gt;([0-9])\1&lt;/code&gt;&lt;/pre&gt;
-&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-regex&#34; data-lang=&#34;regex&#34;&gt;([0-9])\1&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;
 will match two any substring with two of digits, adjacent. Many regex
 engines allow you to use &lt;strong&gt;\d&lt;/strong&gt; instead of &lt;strong&gt;[0-9]&lt;/strong&gt; as a shorthand for
-match a single digit.
-&lt;/p&gt;
+match a single digit.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the line that will take a list of potential passwords in a
 variable &lt;strong&gt;passwords&lt;/strong&gt; and return a list that only containsn the
-passwords that meet the two consecutive of the same digit rule.
-&lt;/p&gt;
+passwords that meet the two consecutive of the same digit rule.&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-seq &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(\d)\1&amp;#34;&lt;/span&gt; %) passwords)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-seq &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(\d)\1&amp;#34;&lt;/span&gt; %) passwords)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I knew that Python has a &lt;strong&gt;partition&lt;/strong&gt; function that would take a string
 with a potential password (I convert the number to a string before
 doing the regex test above). It would take a string &amp;#34;1245&amp;#34; and convert
-it into something like this &lt;strong&gt;(1,2), (2,3), (3,4), (4,5)&lt;/strong&gt;. Here&amp;#39;s the instruction:
-&lt;/p&gt;
+it into something like this &lt;strong&gt;(1,2), (2,3), (3,4), (4,5)&lt;/strong&gt;. Here&amp;#39;s the instruction:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; %) passwords)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; %) passwords)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Next we test each pair in the partition to see that the first value in
-the pair is less than or equal to the second one:
-&lt;/p&gt;
+the pair is less than or equal to the second one:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(every? (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[ [a b]] (&amp;lt;= (int a) (int b))) %) passwrods)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(every? (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[ [a b]] (&amp;lt;= (int a) (int b))) %) passwrods)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Pull out the ones where the above is true and count them:
-&lt;/p&gt;
+Pull out the ones where the above is true and count them:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(count (filter true?))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(count (filter true?))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-And that&amp;#39;s part one.
-&lt;/p&gt;
+And that&amp;#39;s part one.&lt;/p&gt;
 &lt;p&gt;
 The Python equivalent would be easier to read for the non-lisper but
-the idea is the same and pretty straightforward. 
-&lt;/p&gt;
+the idea is the same and pretty straightforward. &lt;/p&gt;
 &lt;p&gt;
 What I like is that we just solved a number problem without math, just
-text processing.
-&lt;/p&gt;
+text processing.&lt;/p&gt;
 &lt;p&gt;
 Part 2 is more of the same. This time we still need a pair of adjacent
 same digits but runs of 3 or more didn&amp;#39;t count. Now, 122234 wouldn&amp;#39;t
 be a valid password because the run is of 3 while 1222344 would
-because while the repeated 2s don&amp;#39;t count the 4s would.
-&lt;/p&gt;
+because while the repeated 2s don&amp;#39;t count the 4s would.&lt;/p&gt;
 &lt;p&gt;
-Fortunately, this is just more text processing:
-&lt;/p&gt;
+Fortunately, this is just more text processing:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-Check to make sure the sequence is increasing (as above)
-&lt;/p&gt;
+&lt;p&gt;Check to make sure the sequence is increasing (as above)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Remove all the sequences of 3 or more repeats. This can also be
+&lt;p&gt;Remove all the sequences of 3 or more repeats. This can also be
 xdone using a regular expression search and replace. In Clojure
 it&amp;#39;s:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;     cleaned (&lt;span style=&#34;color:#a6e22e&#34;&gt;string/replace&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;([0-9])\1\1+&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;) 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;     cleaned (&lt;span style=&#34;color:#a6e22e&#34;&gt;string/replace&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;([0-9])\1\1+&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;) 
      &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 The [0-9]\1\1+ says match any sequence of 3 or more of the same
-digit and we replace it with an empty string.
-&lt;/p&gt;
+digit and we replace it with an empty string.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-If the remaining string has a pair of adjacent same digits (as
-above) its a valid password.
-&lt;/p&gt;
+&lt;p&gt;If the remaining string has a pair of adjacent same digits (as
+above) its a valid password.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 And that&amp;#39;s it. Both parts solved as a text processing problem. What
 I love here is that it seems to be a numeric problem but it has a text
-based solution. Certainly something worth talking about.
-&lt;/p&gt;
+based solution. Certainly something worth talking about.&lt;/p&gt;
 &lt;p&gt;
 Another thing I thought about as a teacher but didn&amp;#39;t pay attention to
 in my solution was efficiency. My range consisted of about 500,000
 values to check. Not huge enough to make a time difference but it&amp;#39;s
 worth noting that there are only about 500 that fulfill the
 &amp;#34;increasing&amp;#34; requirement but almost 200,000 that have a double digit
-subsequence. 
-&lt;/p&gt;
+subsequence. &lt;/p&gt;
 &lt;p&gt;
 This means it could be more efficient to look for increasing first and
 throw away most of the data and then do the digit test. This type of
 ordering can be a big deal for other problems so could be worth
-discussing. 
-&lt;/p&gt;
+discussing. &lt;/p&gt;
 &lt;p&gt;
 Another issue is pipelining. Are you looping over the entire (or even
 culled) data set over and over or can you take each number and put it
 through a sequence of tests and/or transformations - the pipeline
-could also lead to a more efficient solution.
-&lt;/p&gt;
+could also lead to a more efficient solution.&lt;/p&gt;
 &lt;p&gt;
-Lots of good teacher fodder.
-&lt;/p&gt;
+Lots of good teacher fodder.&lt;/p&gt;
 &lt;p&gt;
 In closing I&amp;#39;ll mention one last thought - not mine but rather a
 suggestion I found while perusing the Advent of Code subreddit after I
-had submitted my solutions 
-&lt;/p&gt;
+had submitted my solutions &lt;/p&gt;
 &lt;p&gt;
 Someone noted that since a valid number has increasing digits, if
 digits appear more than once they &lt;strong&gt;have&lt;/strong&gt; to be adjacent to each
 other. If they weren&amp;#39;t they&amp;#39;d violate the increasing restriction. This
-means that you could solve this problem more numerically by:
-&lt;/p&gt;
+means that you could solve this problem more numerically by:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-do the &amp;#34;increasing&amp;#34; test
-&lt;/p&gt;
+&lt;p&gt;do the &amp;#34;increasing&amp;#34; test&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Find the sum of the counts of each digit value (0 through 9)
-&lt;/p&gt;
+&lt;p&gt;Find the sum of the counts of each digit value (0 through 9)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Test to see if at least one digit appears twice.
-&lt;/p&gt;
+&lt;p&gt;Test to see if at least one digit appears twice.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-Based on tomorrows schedule I doubt I&amp;#39;ll get to AoC day 5 but we&amp;#39;ll
-see.
-&lt;/p&gt;
+&lt;p&gt;Based on tomorrows schedule I doubt I&amp;#39;ll get to AoC day 5 but we&amp;#39;ll
+see.&lt;/p&gt;
 </description>
     </item>
     
@@ -694,8 +578,7 @@ see.
       <description>&lt;p&gt;
 Today&amp;#39;s &lt;a href=&#34;https://adventofcode.com/2019/day/3&#34;&gt;problem&lt;/a&gt; dealt with intersecting paths. You start with two
 inputs, figure out the paths they represent and where they intersect
-and then find the intersection that correctly answers the question.
-&lt;/p&gt;
+and then find the intersection that correctly answers the question.&lt;/p&gt;
 &lt;p&gt;
 For part 1 you have to find the intersection closest to the
 origin. From a teacher&amp;#39;s point of view, the interesting part here is
@@ -706,30 +589,25 @@ representation - a 2D array. For many problems this makes a lot of
 sense. For this one, however, it probably doesn&amp;#39;t. We start at a
 specific point but can travel in any direction for any distance. This
 means we might need a crazy large array and what&amp;#39;s more, it&amp;#39;s probably
-going to be sparsely filled.
-&lt;/p&gt;
+going to be sparsely filled.&lt;/p&gt;
 &lt;p&gt;
 A more practical solution involves maintaining a data structure with
-just the individual points of interest - the points on the path. 
-&lt;/p&gt;
+just the individual points of interest - the points on the path. &lt;/p&gt;
 &lt;p&gt;
 I chose a dictionary (or hash-map or hash-table depending on language)
 The key would be a tuple representing a point and the value would hold
 whatever data was needed. For part one that would be a set of the
-paths that went through the point. 
-&lt;/p&gt;
+paths that went through the point. &lt;/p&gt;
 &lt;p&gt;
-So, if we had a path made up of 2 intersecting lines:
-&lt;/p&gt;
+So, if we had a path made up of 2 intersecting lines:&lt;/p&gt;
 &lt;div class=&#34;src src-ditaa&#34;&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ditaa&#34; data-lang=&#34;ditaa&#34;&gt; |
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ditaa&#34; data-lang=&#34;ditaa&#34;&gt; |
 -+-----
  |&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We could use a 2D array to represent it (assume the lines have ID&amp;#39;s 1
-and 2):
-&lt;/p&gt;
+and 2):&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -754,6 +632,8 @@ and 2):
 &lt;td&gt;nil&lt;/td&gt;
 &lt;td&gt;nil&lt;/td&gt;
 &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
 &lt;tr&gt;
 &lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
 &lt;td&gt;#{1}&lt;/td&gt;
@@ -764,6 +644,8 @@ and 2):
 &lt;td&gt;#{1}&lt;/td&gt;
 &lt;td&gt;#{1}&lt;/td&gt;
 &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
 &lt;tr&gt;
 &lt;td class=&#34;align-right&#34;&gt;2&lt;/td&gt;
 &lt;td&gt;nil&lt;/td&gt;
@@ -778,8 +660,7 @@ and 2):
 &lt;/table&gt;
 &lt;p&gt;
 That&amp;#39;s already a good deal of wasted space. using a dictionarey we&amp;#39;d
-have:
-&lt;/p&gt;
+have:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -828,56 +709,46 @@ have:
 &lt;/table&gt;
 &lt;p&gt;
 Which becomes much more space efficient once we go beyond the smallest
-test cases.
-&lt;/p&gt;
+test cases.&lt;/p&gt;
 &lt;p&gt;
 Once we have the representation, the problem becomes one of stepping
 through the paths and adding them to the dictionary. After that we can
 pull out the small number of entries in our dictionary that were
-visited by both paths and then we can find the final answer.
-&lt;/p&gt;
+visited by both paths and then we can find the final answer.&lt;/p&gt;
 &lt;p&gt;
 I coded this up in Clojure &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day03.clj&#34;&gt;(solution here)&lt;/a&gt; but forgot to account for the fact that
 when a path repeats itself it shouldn&amp;#39;t count as an intersection for
 the purpose of the problem. Oops. I fudged things to get the right
-answer but then had to head off to Albany.
-&lt;/p&gt;
+answer but then had to head off to Albany.&lt;/p&gt;
 &lt;p&gt;
 When I arrived I fixed the code but was pretty zonked so decide to
 code the second part in Python &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day03.py&#34;&gt;(solution here)&lt;/a&gt;. Both solutions are pretty similar but
 as I&amp;#39;m more comfortable with Python it didn&amp;#39;t require too much focus
-to get it right.
-&lt;/p&gt;
+to get it right.&lt;/p&gt;
 &lt;p&gt;
 Given the wording of this problem, I think that most people will steer
 towards the type of dictionary representation I used rather than a 2D
 array but this way of storing data is worth discussing with classes
-when you might otherwise use a 2D array.
-&lt;/p&gt;
+when you might otherwise use a 2D array.&lt;/p&gt;
 &lt;p&gt;
-When might you ask?
-&lt;/p&gt;
+When might you ask?&lt;/p&gt;
 &lt;p&gt;
 How about something like Conway&amp;#39;s Game of Life. When this is done in a
 CS1 class the world is usually represented as a 2D array. It&amp;#39;s simple
  and direct. Another approach would be to only store the live cells in
 a list. You can check out a Clojurescript implementation that does
-just that &lt;a href=&#34;https://github.com/zamansky/clojure-life/tree/master/src&#34;&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
+just that &lt;a href=&#34;https://github.com/zamansky/clojure-life/tree/master/src&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
 Another would be the N-Queens problem. Insead of a board, just store
-the queens locations. 
-&lt;/p&gt;
+the queens locations. &lt;/p&gt;
 &lt;p&gt;
 Image processing? Well, there probably not. When doing image work,
-you actually use all the cells in the 2D array.
-&lt;/p&gt;
+you actually use all the cells in the 2D array.&lt;/p&gt;
 &lt;p&gt;
 That&amp;#39;s pretty much all I have to say about today&amp;#39;s problem. It got me
 thinking about alternate ways of representing our data. That&amp;#39;s
 something we usually don&amp;#39;t have too much of an opportunity to discuss
-with our students. That&amp;#39;s unfortunate.
-&lt;/p&gt;
+with our students. That&amp;#39;s unfortunate.&lt;/p&gt;
 </description>
     </item>
     
@@ -890,8 +761,7 @@ with our students. That&amp;#39;s unfortunate.
       <description>&lt;p&gt;
 &lt;a href=&#34;https://adventofcode.com/2019/day/2&#34;&gt;Day 2&lt;/a&gt; of Advent of Code 2019 was also pretty straightforward and once
 again I wrote &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day02.clj&#34;&gt;my solution&lt;/a&gt; in Clojure but in order to talk about this
-from a teacher&amp;#39;s point of view, we&amp;#39;ll look at a &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day02.py&#34;&gt;Python solution&lt;/a&gt;. 
-&lt;/p&gt;
+from a teacher&amp;#39;s point of view, we&amp;#39;ll look at a &lt;a href=&#34;https://github.com/zamansky/advent2019/blob/master/day02.py&#34;&gt;Python solution&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
 At its core, this is a simulation problem - read the data into an
 array or list and write a program to run through the steps. At first I
@@ -900,25 +770,20 @@ you read past an instruction you don&amp;#39;t go back to it. If it was, I was
 going to try to write some clever reduce. It wasn&amp;#39;t. In this problem,
 any instruction could affect any part of the data set. This means you
 have to keep the entire data set in memory and preferably in a random
-access structure like an array. 
-&lt;/p&gt;
+access structure like an array. &lt;/p&gt;
 &lt;p&gt;
 Step 1 is to read in the data and convert it into a list of integers.
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-If you don&amp;#39;t know comprehensions you can just do something like this:
-&lt;/p&gt;
+If you don&amp;#39;t know comprehensions you can just do something like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;):
-      data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(int(item))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+      data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(int(item))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Now we just have to run the simulation:
-&lt;/p&gt;
+Now we just have to run the simulation:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-pythonf&#34; data-lang=&#34;pythonf&#34;&gt;def run_program(program):
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-pythonf&#34; data-lang=&#34;pythonf&#34;&gt;def run_program(program):
     ip = 0
     while True:
         op = program[ip]
@@ -937,8 +802,7 @@ Now we just have to run the simulation:
 def part1(program):
     program[1]=12
     program[2]=2
-    return run_program((program))&lt;/code&gt;&lt;/pre&gt;
-&lt;/p&gt;
+    return run_program((program))&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;
 The most likely source of error here is forgetting to change the
 values in &lt;code&gt;program[1]&lt;/code&gt; and &lt;code&gt;program[2]&lt;/code&gt; in lines 18 and 19 as
@@ -946,14 +810,12 @@ specified in the question. The other likely error is forgetting to do
 the two level indirection in lines 7 and 8. That is writing
 &lt;code&gt;program[ip+1]&lt;/code&gt; and &lt;code&gt;program[ip+2]&lt;/code&gt; by mistake. Truth be told, I made
 both of these mistakes but I didn&amp;#39;t find them to be &amp;#34;interesting&amp;#34;
-mistakes. 
-&lt;/p&gt;
+mistakes. &lt;/p&gt;
 &lt;p&gt;
 The interesting part of this program is part 2 where instead of
 setting &lt;code&gt;program[1]&lt;/code&gt; to &lt;code&gt;12&lt;/code&gt; and &lt;code&gt;program[2]&lt;/code&gt; to &lt;code&gt;2&lt;/code&gt; you have to try
 values between 0 and 99 inclusive for each entry until you find a
-specific answer. 
-&lt;/p&gt;
+specific answer. &lt;/p&gt;
 &lt;p&gt;
 This is a great platform to talk about memory. The problem refers to
 the values you put into &lt;code&gt;program[1]&lt;/code&gt; as &lt;strong&gt;nouns&lt;/strong&gt; and &lt;code&gt;program[2]&lt;/code&gt; as
@@ -961,32 +823,28 @@ the values you put into &lt;code&gt;program[1]&lt;/code&gt; as &lt;strong&gt;nou
 specific &lt;strong&gt;noun verb&lt;/strong&gt; combination you change the array (list)
 representing your program. If you don&amp;#39;t reset the array to its
 original contents before the next run, the next run will be working
-off of new values and therefore give you incorrect results. 
-&lt;/p&gt;
+off of new values and therefore give you incorrect results. &lt;/p&gt;
 &lt;p&gt;
 This is a great platform for discussion. Students usually start with
 &lt;strong&gt;pass by value&lt;/strong&gt; semantics so passing a list to a function and then
 having the list change can seem weird even though it can still be pass
-by value:
-&lt;/p&gt;
+by value:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# bad example to follow&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# bad example to follow&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;change_list&lt;/span&gt;(l):
       l[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9999&lt;/span&gt;
 
   l&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;]
   change_list(l)
-  &lt;span style=&#34;color:#75715e&#34;&gt;# changes l[3] to 9999&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# changes l[3] to 9999&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Here&amp;#39;s a finished solution:
-&lt;/p&gt;
+Here&amp;#39;s a finished solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;data  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day02.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run_program&lt;/span&gt;(program):
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;    ip &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; True:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;        op &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; program[ip]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; op &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
@@ -1019,30 +877,25 @@ Here&amp;#39;s a finished solution:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35&lt;/span&gt;    ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; results &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;19690720&lt;/span&gt;]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37&lt;/span&gt;    
-&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;38&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(part1(data))
-&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;39&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(part2(data))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;38&lt;/span&gt;print(part1(data))
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;39&lt;/span&gt;print(part2(data))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Note that in line 30 we copy over the original data for each noun,verb
 combo. also note the list comprehension in line 35 to find the final
-answer. 
-&lt;/p&gt;
+answer. &lt;/p&gt;
 &lt;p&gt;
 One last potential error point is notice that we had to add the array
 copy in line 20. Otherwise part1 will change the data and if we run it
-before part2 we won&amp;#39;t get the correct result.
-&lt;/p&gt;
+before part2 we won&amp;#39;t get the correct result.&lt;/p&gt;
 &lt;p&gt;
 So there it is. Another nice problem and even though it&amp;#39;s a
 straightforward problem, there&amp;#39;s still some interesting meat to
-discuss with your students.
-&lt;/p&gt;
+discuss with your students.&lt;/p&gt;
 &lt;p&gt;
 Tomorrow, snowstorm notwithstanding, I&amp;#39;ll be heading up to Albany for
 the remainder of the week so might not be able to get to day 3 and
 beyond until Friday so who knows if I&amp;#39;ll post any more of these
-write ups.
-&lt;/p&gt;
+write ups.&lt;/p&gt;
 </description>
     </item>
     
@@ -1056,51 +909,42 @@ write ups.
 Like most programming challenges, &lt;a href=&#34;http://adventofcode.com&#34;&gt;Advent of Code&lt;/a&gt; ramps out from
 easier, more accessible problems to harder, more complex ones. As
 such, a number of the early challenges are great problems for early CS
-students. 
-&lt;/p&gt;
+students. &lt;/p&gt;
 &lt;p&gt;
 I thought that while I watched my NY Giants play valiantly in their
 attempt to get a high draft pick I&amp;#39;d talk about today&amp;#39;s &lt;a href=&#34;https://adventofcode.com/2019/day/1&#34;&gt;challenge&lt;/a&gt;
-from a teacher&amp;#39;s point of view.
-&lt;/p&gt;
+from a teacher&amp;#39;s point of view.&lt;/p&gt;
 &lt;p&gt;
 The summary of part one is that you have a list of inputs (masses of
 components) and for each one you have to perform a calculation (how
-much fuel is needed). The answer will be the sum of the fuels.
-&lt;/p&gt;
+much fuel is needed). The answer will be the sum of the fuels.&lt;/p&gt;
 &lt;p&gt;
 The most challenging part of this for a beginner might be reading in
-the data but that&amp;#39;s not too much of a challenge:
-&lt;/p&gt;
+the data but that&amp;#39;s not too much of a challenge:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Now we can calculate part1:
-&lt;/p&gt;
+Now we can calculate part1:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
 
   sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mass &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
       sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  print(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Part 2 adds a twist. Now, you have to also consider the fuel needed
 for the fuel you&amp;#39;ve added. Basically, you have to calculate how much
 fuel you&amp;#39;ll need for a given item and then how much fuel you&amp;#39;ll need
 for that fuel. You repeat this until the amount of fuel you need is
-either 0 or negative. See &lt;a href=&#34;https://adventofcode.com/2019/day/1&#34;&gt;the challenge&lt;/a&gt; for more info on this. 
-&lt;/p&gt;
+either 0 or negative. See &lt;a href=&#34;https://adventofcode.com/2019/day/1&#34;&gt;the challenge&lt;/a&gt; for more info on this. &lt;/p&gt;
 &lt;p&gt;
 This is our first &amp;#34;teaching moment.&amp;#34; This is going to be messy to work
 into our part1 solution but if we had factored out the original fuel
 calculation we could probably reused it and maybe more of our
-solution:
-&lt;/p&gt;
+solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
 
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
@@ -1108,13 +952,11 @@ solution:
   sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; mass &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
       sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; calc_fuel(mass)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  print(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-Now we can just add an inner loop that repeatedly adds the fuel costs.
-&lt;/p&gt;
+Now we can just add an inner loop that repeatedly adds the fuel costs.&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
 
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(mass)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
@@ -1125,36 +967,30 @@ Now we can just add an inner loop that repeatedly adds the fuel costs.
       &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; fuel &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
           sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; fuel
           fuel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  calc_fuel(fuel)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  print(sum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 More &amp;#34;teachable moments.&amp;#34; We have to change up variables in our fuel
 calculations (lines 8 and 11) and for a beginner, the loop within a
 loop can be somewhat muddled. It&amp;#39;s more complex but it&amp;#39;s doing
-something that &lt;strong&gt;is&lt;/strong&gt; more complex. It&amp;#39;s also good nested loop practice.
-&lt;/p&gt;
+something that &lt;strong&gt;is&lt;/strong&gt; more complex. It&amp;#39;s also good nested loop practice.&lt;/p&gt;
 &lt;p&gt;
 For more advanced students, if they&amp;#39;re familiar with list
-comprehensions you can really clean up part 1:
-&lt;/p&gt;
+comprehensions you can really clean up part 1:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;day01.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()
   data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data] &lt;span style=&#34;color:#75715e&#34;&gt;# convert to ints before starting&lt;/span&gt;
 
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;calc_fuel&lt;/span&gt;(mass):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; mass&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
 
   &lt;span style=&#34;color:#75715e&#34;&gt;# part 1&lt;/span&gt;
-  part1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum([calc_fuel(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+  part1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum([calc_fuel(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
-but I think part 2 either stay&amp;#39;s more or less as is.
-&lt;/p&gt;
+but I think part 2 either stay&amp;#39;s more or less as is.&lt;/p&gt;
 &lt;p&gt;
-Personally, I wrote my solutions in Clojure:
-&lt;/p&gt;
+Personally, I wrote my solutions in Clojure:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;ns &lt;/span&gt;day01
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;ns &lt;/span&gt;day01
   (&lt;span style=&#34;color:#e6db74&#34;&gt;:require&lt;/span&gt; [clojure.string &lt;span style=&#34;color:#e6db74&#34;&gt;:as&lt;/span&gt; string]
             [utils &lt;span style=&#34;color:#e6db74&#34;&gt;:as&lt;/span&gt; u]))
 
@@ -1200,12 +1036,10 @@ Personally, I wrote my solutions in Clojure:
 &lt;p&gt;
 So that&amp;#39;s day 1. I don&amp;#39;t know if I&amp;#39;ll write up any more or, given my
 travel and work schedule for the week,if I&amp;#39;ll even be able  to work
-on more problems until next weekend. 
-&lt;/p&gt;
+on more problems until next weekend. &lt;/p&gt;
 &lt;p&gt;
 In any event. If you&amp;#39;re teaching CS0 or CS1 students, you should
-really check out Advent of Code.
-&lt;/p&gt;
+really check out Advent of Code.&lt;/p&gt;
 </description>
     </item>
     
