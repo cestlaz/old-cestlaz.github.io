@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Airline Seats - An Ethics Lesson - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1635276638" />
+
+
+
+<meta property="og:title" content="Airline Seats - An Ethics Lesson" />
+<meta property="og:description" content="I&#39;ve held off on sharing any details on my Ethics in CS class because I wanted to wait until some of it ran. I didn&#39;t want to talk about a topic and then find out that after we covered it I was all wrong.
+ Now that we&#39;re well into the semester, I think it&#39;s time to share a few things.
+ One of my premises when I designed the course was that most ethics courses are taken by either people who already have religion or people who see it as the &#34;easy course&#34; without programming." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/airline-seats/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-26T14:43:28-04:00" />
+<meta property="article:modified_time" content="2021-10-26T14:43:28-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Airline Seats - An Ethics Lesson"/>
+<meta name="twitter:description" content="I&#39;ve held off on sharing any details on my Ethics in CS class because I wanted to wait until some of it ran. I didn&#39;t want to talk about a topic and then find out that after we covered it I was all wrong.
+ Now that we&#39;re well into the semester, I think it&#39;s time to share a few things.
+ One of my premises when I designed the course was that most ethics courses are taken by either people who already have religion or people who see it as the &#34;easy course&#34; without programming."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Airline Seats - An Ethics Lesson</h1>
+        </header>
+        <div class="content">
+            <p>
+I&#39;ve held off on sharing any details on my Ethics in CS class because
+I wanted to wait until some of it ran. I didn&#39;t want to talk about a
+topic and then find out that after we covered it I was all wrong.</p>
+<p>
+Now that we&#39;re well into the semester, I think it&#39;s time to share a
+few things.</p>
+<p>
+One of my premises when I designed the course was that most ethics
+courses are taken by either people who already have religion or people
+who see it as the &#34;easy course&#34; without programming. The few courses I
+saw out there were largely based on case studies and
+discussion. Nothing wrong with that - we&#39;ve got that as well but I
+wanted to try something a little different.</p>
+<p>
+I wanted to have the class play with some technical situation,
+preferably with code, and then hopefully discover an ethical issue
+after which we can discuss.</p>
+<p>
+Here was my first attempt.</p>
+<p>
+Overall I think the lesson has great potential but I also know it
+needs tweaks. Most notably with teh level of comfort some of the
+class had with Python. Next time around I want to address that issue
+but I&#39;ll talk about the specifics in the end.</p>
+<p>
+I started by giving the class some code that provided a barebones
+airline seating system.</p>
+<p>
+Here&#39;s an empty plane. I just made windows and interior seats figuring
+that windows were more desirable and didn&#39;t have to differentiate them
+from aisles.</p>
+<pre class="example">
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+</pre>
+<p>
+The code I provided also allowed for the purchase of an &#34;economy plus&#34;
+ticket. An economy plus passenger could select their seat on
+purchase. I had a function that with a 70% probability tried to select
+a window seat and then it would just select a random seat.</p>
+<p>
+You could also select a regular economy seat. For those, the airline
+would assign a seat at some later point.</p>
+<p>
+Here&#39;s a plane where the economy plus seats have been sold and the
+remaining seats are sold to economy but unassigned.</p>
+<pre class="example">
+ep-4          avail          avail          ep-2           ep-5
+ep-8          avail          ep-19          avail          ep-11
+ep-3          avail          avail          avail          ep-6
+ep-1          avail          avail          avail          ep-9
+ep-14         avail          avail          avail          ep-16
+ep-15         avail          ep-20          avail          ep-18
+ep-10         avail          ep-17          ep-24          ep-21
+ep-13         ep-22          avail          avail          win
+ep-23         avail          avail          avail          win
+ep-7          avail          avail          avail          ep-12
+</pre>
+<p>
+I asked the class to finish the routine that assigned the regular
+economy seats. I also wrote a version that just assigned them
+randomly. Here&#39;s a sample result. Note that u-# represents a block of
+purchased seats so you&#39;ll notice u-1 appears multiple times
+below. That passenger purchased multiple seats but they were assigned
+all over the plane at the end.</p>
+<pre class="example">
+
+ep-13         u-6           u-1       ep-16      ep-24
+ep-8          ep-15         u-9       u-3        ep-11
+ep-22         ep-12         u-2       u-4        u-10
+ep-9          ep-5          u-1       u-5        ep-25
+ep-2          ep-21         ep-3      u-7        ep-17
+ep-1          ep-23         u-8       u-8        ep-6
+ep-14         u-12          ep-4      u-4        ep-26
+ep-10         u-1           u-11      avail      ep-18
+ep-20         u-6           u-11      u-9        u-2
+ep-7          u-13          u-2       u-8        ep-19
+</pre>
+<p>
+The class was quick to notice that this could lead to families being
+split apart and small children being seated away from parents. They
+also noticed that this would affect poorer passengers more frequently
+and to a greater extent than richer ones.</p>
+<p>
+Great. Part 1 mission accomplished.</p>
+<p>
+Now, the question became, should we do something about it and if so what.</p>
+<p>
+That was the assignment.</p>
+<p>
+The class noted that this was an unintended consequence of being
+motivated purely by profit and airline convenience and that airlines
+should do better. We also  noted that it&#39;s not always so simple,
+particularly if an airline is running on thin margins. Finally, we
+discussed that this situation was real and in fact did result in
+changes in regulations.</p>
+<p>
+The following week, we discussed possible alternatives. How they might
+work better and how they might affect an airlines bottom lines and if
+that should really matter. We also discussed how similar ethical
+scenarios might play out in other industries.</p>
+<p>
+As a final piece, students had a long term assignment to code up an
+updated algorithm that did better.</p>
+<p>
+That&#39;s the long and short of it.</p>
+<p>
+I&#39;d like to think that by playing with the code, discovering the
+dilemma and then trying to fix it led to a deeper appreciation of the
+ethical issue and to be honest, the one big thing I want my teachers
+to walk away with is more awareness of potential issues and that many
+of them are not as obvious or simple as &#34;stop doing that&#34; even though
+we&#39;d like them to be.</p>
+<p>
+That said, I&#39;ve got to work on some things.</p>
+<p>
+First and foremost my teachers came in with varying programming
+backgrounds. They all completed a data structures in Java course over
+the summer but a good number were not that comfortable with Python. I
+covered Python over the first couple of weeks but I think I have to be
+more structured with that in the future. More specific assignments
+rather than giving them as much freedom as I did. I also think I&#39;d
+move this unit down in the syllabus - later after some smaller
+programming assignments and then finally, I&#39;d scaffold it
+more.</p>
+<p>
+Even so, I think it was worthwhile and a keeper. I think it could also
+be a nice ethics assignment in any programming class that covers 2D
+arrays or something similar.</p>
+<p>
+There are a couple of other units that follow this do it and discover
+theme. Once those happen I&#39;ll report back on them as well.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-10-26</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/CS">CS</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/ethics">#ethics</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/ethical-cs">#Ethical CS</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

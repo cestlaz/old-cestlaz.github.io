@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethical CS on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/ethical-cs/</link>
+    <description>C&#39;est la Z (Ethical CS)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Oct 2021 14:43:28 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/tags/ethical-cs/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Airline Seats - An Ethics Lesson</title>
+      <link>https://cestlaz.github.io/post/airline-seats/</link>
+      <pubDate>Tue, 26 Oct 2021 14:43:28 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/airline-seats/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve held off on sharing any details on my Ethics in CS class because
+I wanted to wait until some of it ran. I didn&amp;#39;t want to talk about a
+topic and then find out that after we covered it I was all wrong.&lt;/p&gt;
+&lt;p&gt;
+Now that we&amp;#39;re well into the semester, I think it&amp;#39;s time to share a
+few things.&lt;/p&gt;
+&lt;p&gt;
+One of my premises when I designed the course was that most ethics
+courses are taken by either people who already have religion or people
+who see it as the &amp;#34;easy course&amp;#34; without programming. The few courses I
+saw out there were largely based on case studies and
+discussion. Nothing wrong with that - we&amp;#39;ve got that as well but I
+wanted to try something a little different.&lt;/p&gt;
+&lt;p&gt;
+I wanted to have the class play with some technical situation,
+preferably with code, and then hopefully discover an ethical issue
+after which we can discuss.&lt;/p&gt;
+&lt;p&gt;
+Here was my first attempt.&lt;/p&gt;
+&lt;p&gt;
+Overall I think the lesson has great potential but I also know it
+needs tweaks. Most notably with teh level of comfort some of the
+class had with Python. Next time around I want to address that issue
+but I&amp;#39;ll talk about the specifics in the end.&lt;/p&gt;
+&lt;p&gt;
+I started by giving the class some code that provided a barebones
+airline seating system.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s an empty plane. I just made windows and interior seats figuring
+that windows were more desirable and didn&amp;#39;t have to differentiate them
+from aisles.&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+  win          avail          avail          avail            win
+&lt;/pre&gt;
+&lt;p&gt;
+The code I provided also allowed for the purchase of an &amp;#34;economy plus&amp;#34;
+ticket. An economy plus passenger could select their seat on
+purchase. I had a function that with a 70% probability tried to select
+a window seat and then it would just select a random seat.&lt;/p&gt;
+&lt;p&gt;
+You could also select a regular economy seat. For those, the airline
+would assign a seat at some later point.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s a plane where the economy plus seats have been sold and the
+remaining seats are sold to economy but unassigned.&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+ep-4          avail          avail          ep-2           ep-5
+ep-8          avail          ep-19          avail          ep-11
+ep-3          avail          avail          avail          ep-6
+ep-1          avail          avail          avail          ep-9
+ep-14         avail          avail          avail          ep-16
+ep-15         avail          ep-20          avail          ep-18
+ep-10         avail          ep-17          ep-24          ep-21
+ep-13         ep-22          avail          avail          win
+ep-23         avail          avail          avail          win
+ep-7          avail          avail          avail          ep-12
+&lt;/pre&gt;
+&lt;p&gt;
+I asked the class to finish the routine that assigned the regular
+economy seats. I also wrote a version that just assigned them
+randomly. Here&amp;#39;s a sample result. Note that u-# represents a block of
+purchased seats so you&amp;#39;ll notice u-1 appears multiple times
+below. That passenger purchased multiple seats but they were assigned
+all over the plane at the end.&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+
+ep-13         u-6           u-1       ep-16      ep-24
+ep-8          ep-15         u-9       u-3        ep-11
+ep-22         ep-12         u-2       u-4        u-10
+ep-9          ep-5          u-1       u-5        ep-25
+ep-2          ep-21         ep-3      u-7        ep-17
+ep-1          ep-23         u-8       u-8        ep-6
+ep-14         u-12          ep-4      u-4        ep-26
+ep-10         u-1           u-11      avail      ep-18
+ep-20         u-6           u-11      u-9        u-2
+ep-7          u-13          u-2       u-8        ep-19
+&lt;/pre&gt;
+&lt;p&gt;
+The class was quick to notice that this could lead to families being
+split apart and small children being seated away from parents. They
+also noticed that this would affect poorer passengers more frequently
+and to a greater extent than richer ones.&lt;/p&gt;
+&lt;p&gt;
+Great. Part 1 mission accomplished.&lt;/p&gt;
+&lt;p&gt;
+Now, the question became, should we do something about it and if so what.&lt;/p&gt;
+&lt;p&gt;
+That was the assignment.&lt;/p&gt;
+&lt;p&gt;
+The class noted that this was an unintended consequence of being
+motivated purely by profit and airline convenience and that airlines
+should do better. We also  noted that it&amp;#39;s not always so simple,
+particularly if an airline is running on thin margins. Finally, we
+discussed that this situation was real and in fact did result in
+changes in regulations.&lt;/p&gt;
+&lt;p&gt;
+The following week, we discussed possible alternatives. How they might
+work better and how they might affect an airlines bottom lines and if
+that should really matter. We also discussed how similar ethical
+scenarios might play out in other industries.&lt;/p&gt;
+&lt;p&gt;
+As a final piece, students had a long term assignment to code up an
+updated algorithm that did better.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s the long and short of it.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;d like to think that by playing with the code, discovering the
+dilemma and then trying to fix it led to a deeper appreciation of the
+ethical issue and to be honest, the one big thing I want my teachers
+to walk away with is more awareness of potential issues and that many
+of them are not as obvious or simple as &amp;#34;stop doing that&amp;#34; even though
+we&amp;#39;d like them to be.&lt;/p&gt;
+&lt;p&gt;
+That said, I&amp;#39;ve got to work on some things.&lt;/p&gt;
+&lt;p&gt;
+First and foremost my teachers came in with varying programming
+backgrounds. They all completed a data structures in Java course over
+the summer but a good number were not that comfortable with Python. I
+covered Python over the first couple of weeks but I think I have to be
+more structured with that in the future. More specific assignments
+rather than giving them as much freedom as I did. I also think I&amp;#39;d
+move this unit down in the syllabus - later after some smaller
+programming assignments and then finally, I&amp;#39;d scaffold it
+more.&lt;/p&gt;
+&lt;p&gt;
+Even so, I think it was worthwhile and a keeper. I think it could also
+be a nice ethics assignment in any programming class that covers 2D
+arrays or something similar.&lt;/p&gt;
+&lt;p&gt;
+There are a couple of other units that follow this do it and discover
+theme. Once those happen I&amp;#39;ll report back on them as well.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
