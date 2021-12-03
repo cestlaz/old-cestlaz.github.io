@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cestlaz.github.io/tags/advent-of-code/</loc>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
+  </url><url>
     <loc>https://cestlaz.github.io/</loc>
-    <lastmod>2021-11-02T07:15:47-04:00</lastmod>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/categories/</loc>
-    <lastmod>2021-11-02T07:15:47-04:00</lastmod>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
+  </url><url>
+    <loc>https://cestlaz.github.io/post/</loc>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
+  </url><url>
+    <loc>https://cestlaz.github.io/categories/programming/</loc>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
+  </url><url>
+    <loc>https://cestlaz.github.io/tags/</loc>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
+  </url><url>
+    <loc>https://cestlaz.github.io/post/advent-2021-day03/</loc>
+    <lastmod>2021-12-03T17:10:50-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/categories/cs/</loc>
     <lastmod>2021-11-02T07:15:47-04:00</lastmod>
@@ -17,13 +32,7 @@
     <loc>https://cestlaz.github.io/tags/ethics/</loc>
     <lastmod>2021-11-02T07:15:47-04:00</lastmod>
   </url><url>
-    <loc>https://cestlaz.github.io/post/</loc>
-    <lastmod>2021-11-02T07:15:47-04:00</lastmod>
-  </url><url>
     <loc>https://cestlaz.github.io/post/airline-seats-2/</loc>
-    <lastmod>2021-11-02T07:15:47-04:00</lastmod>
-  </url><url>
-    <loc>https://cestlaz.github.io/tags/</loc>
     <lastmod>2021-11-02T07:15:47-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/post/airline-seats/</loc>
@@ -78,9 +87,6 @@
     <lastmod>2021-10-01T10:17:01-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/tags/programming/</loc>
-    <lastmod>2021-10-01T10:17:01-04:00</lastmod>
-  </url><url>
-    <loc>https://cestlaz.github.io/categories/programming/</loc>
     <lastmod>2021-10-01T10:17:01-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/tags/education/</loc>
@@ -217,9 +223,6 @@
   </url><url>
     <loc>https://cestlaz.github.io/tags/recursion/</loc>
     <lastmod>2021-01-03T13:49:00-04:00</lastmod>
-  </url><url>
-    <loc>https://cestlaz.github.io/tags/advent-of-code/</loc>
-    <lastmod>2020-12-27T15:57:22-04:00</lastmod>
   </url><url>
     <loc>https://cestlaz.github.io/tags/aoc/</loc>
     <lastmod>2020-12-27T15:57:22-04:00</lastmod>

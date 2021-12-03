@@ -6,10 +6,93 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 15:57:22 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Dec 2021 17:10:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Work through the example!!!!!</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day03/</link>
+      <pubDate>Fri, 03 Dec 2021 17:10:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day03/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s that time of year again. Yep, you got it. Time for &lt;a href=&#34;https://adventofcode.com/&#34;&gt;Advent of
+Code&lt;/a&gt;. I&amp;#39;m not feeling nearly as motivated as in past years but so far
+so good. Finished the first three days.&lt;/p&gt;
+&lt;p&gt;
+Today I got a good reminder - work through your examples. You can find
+today&amp;#39;s problem &lt;a href=&#34;https://adventofcode.com/2021/day/3&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+For part 1 you got a list of binary numbers and had to figure out how
+many ones and zeros there were in any given digit.&lt;/p&gt;
+&lt;p&gt;
+For example, if we had these numbers:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+0010
+0111 
+1001
+1010
+1111
+&lt;/pre&gt;
+&lt;p&gt;
+The ones digit has 3 total ones and 2 zeros. The  2s digit has 4
+ones and 1 zero. You then had to do some calculations based on if
+there were more ones in a given column or more zeros.&lt;/p&gt;
+&lt;p&gt;
+Pretty straight forward. As usual, I&amp;#39;m working in Clojure so I used
+map and reduce to figure out the number of ones in each column and
+then did the required calculation. If you want to see the code, you
+can find it &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day03.clj&#34;&gt;here&lt;/a&gt;. Later in the day I looked at other people&amp;#39;s
+solutions and it was interesting in that a lot of people approached it
+differently - they basically looked at the list of numbers and rotated
+it so that columns became rows and rows became columns which then make
+counting ones and zeros easier,  but I digress.&lt;/p&gt;
+&lt;p&gt;
+I then had to rush through part 2 because I had to leave for the
+ophthalmologist. I didn&amp;#39;t know if my eyes were going to be dilated and
+if they were, I wasn&amp;#39;t going to be able to come back to the problem
+until late in the evening.&lt;/p&gt;
+&lt;p&gt;
+I got something done but unfortunately, didn&amp;#39;t quite
+finish. Fortunately, my eyes weren&amp;#39;t dilated so after getting home I
+set to finish the problem.&lt;/p&gt;
+&lt;p&gt;
+Part 2 involved taking your list of numbers, calculating some values
+using the part 1 code and then using those values to eliminate some of
+the numbers. You then repeated this process until you were left with a
+single number. See the problem statement and if you want my solution
+for details.&lt;/p&gt;
+&lt;p&gt;
+I got something working but my answer was incorrect. I spent, well,
+frankly, too much time trying to figure out why. I was
+stumped. Finally I went back to the example in the question and
+actually worked through it (as opposed to glancing over it). I quickly
+saw my error. I had calculated the part 1 values based on the original
+data then kept applying those to the data list until it reduced to a
+single number. I was supposed to recalculate the part 1 values on the
+reduced data set each time instead. Once I realized this, it was a
+pretty quick solution.&lt;/p&gt;
+&lt;p&gt;
+This isn&amp;#39;t the first time my carelessness cost me time. Back in 2016 I
+spent way too long trying to fix an Advent of Code problem where the
+problem was that I had the wrong parameters in a function (&lt;a href=&#34;https://cestlaz.github.io/posts/2015-12-17-im-an-idiot/&#34;&gt;link&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;
+In this case, the moral of the story is &lt;strong&gt;work through the provided
+examples!!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+So, that&amp;#39;s it for today. If you haven&amp;#39;t checked out Advent of Code, I
+highly recommend it and if you want to see my solutions, however far I
+get, you can find them &lt;a href=&#34;https://github.com/zamansky/advent2021&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+Finally, in the spirit of the season, Natan composed a new Chanukah
+song.&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re so inclined, you can check it out below:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/fatTWGfXO_o&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Final thoughts on Advent of Code 2020</title>

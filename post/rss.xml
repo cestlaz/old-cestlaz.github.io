@@ -6,10 +6,93 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Nov 2021 07:15:47 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Dec 2021 17:10:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Work through the example!!!!!</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day03/</link>
+      <pubDate>Fri, 03 Dec 2021 17:10:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day03/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s that time of year again. Yep, you got it. Time for &lt;a href=&#34;https://adventofcode.com/&#34;&gt;Advent of
+Code&lt;/a&gt;. I&amp;#39;m not feeling nearly as motivated as in past years but so far
+so good. Finished the first three days.&lt;/p&gt;
+&lt;p&gt;
+Today I got a good reminder - work through your examples. You can find
+today&amp;#39;s problem &lt;a href=&#34;https://adventofcode.com/2021/day/3&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+For part 1 you got a list of binary numbers and had to figure out how
+many ones and zeros there were in any given digit.&lt;/p&gt;
+&lt;p&gt;
+For example, if we had these numbers:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+0010
+0111 
+1001
+1010
+1111
+&lt;/pre&gt;
+&lt;p&gt;
+The ones digit has 3 total ones and 2 zeros. The  2s digit has 4
+ones and 1 zero. You then had to do some calculations based on if
+there were more ones in a given column or more zeros.&lt;/p&gt;
+&lt;p&gt;
+Pretty straight forward. As usual, I&amp;#39;m working in Clojure so I used
+map and reduce to figure out the number of ones in each column and
+then did the required calculation. If you want to see the code, you
+can find it &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day03.clj&#34;&gt;here&lt;/a&gt;. Later in the day I looked at other people&amp;#39;s
+solutions and it was interesting in that a lot of people approached it
+differently - they basically looked at the list of numbers and rotated
+it so that columns became rows and rows became columns which then make
+counting ones and zeros easier,  but I digress.&lt;/p&gt;
+&lt;p&gt;
+I then had to rush through part 2 because I had to leave for the
+ophthalmologist. I didn&amp;#39;t know if my eyes were going to be dilated and
+if they were, I wasn&amp;#39;t going to be able to come back to the problem
+until late in the evening.&lt;/p&gt;
+&lt;p&gt;
+I got something done but unfortunately, didn&amp;#39;t quite
+finish. Fortunately, my eyes weren&amp;#39;t dilated so after getting home I
+set to finish the problem.&lt;/p&gt;
+&lt;p&gt;
+Part 2 involved taking your list of numbers, calculating some values
+using the part 1 code and then using those values to eliminate some of
+the numbers. You then repeated this process until you were left with a
+single number. See the problem statement and if you want my solution
+for details.&lt;/p&gt;
+&lt;p&gt;
+I got something working but my answer was incorrect. I spent, well,
+frankly, too much time trying to figure out why. I was
+stumped. Finally I went back to the example in the question and
+actually worked through it (as opposed to glancing over it). I quickly
+saw my error. I had calculated the part 1 values based on the original
+data then kept applying those to the data list until it reduced to a
+single number. I was supposed to recalculate the part 1 values on the
+reduced data set each time instead. Once I realized this, it was a
+pretty quick solution.&lt;/p&gt;
+&lt;p&gt;
+This isn&amp;#39;t the first time my carelessness cost me time. Back in 2016 I
+spent way too long trying to fix an Advent of Code problem where the
+problem was that I had the wrong parameters in a function (&lt;a href=&#34;https://cestlaz.github.io/posts/2015-12-17-im-an-idiot/&#34;&gt;link&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;
+In this case, the moral of the story is &lt;strong&gt;work through the provided
+examples!!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+So, that&amp;#39;s it for today. If you haven&amp;#39;t checked out Advent of Code, I
+highly recommend it and if you want to see my solutions, however far I
+get, you can find them &lt;a href=&#34;https://github.com/zamansky/advent2021&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+Finally, in the spirit of the season, Natan composed a new Chanukah
+song.&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re so inclined, you can check it out below:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/fatTWGfXO_o&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Seats on a plane - addendum</title>
@@ -3659,74 +3742,6 @@ I think you could turn this problem into a fun set of class
 exercises. My code can be found &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day14.clj &#34;&gt;here&lt;/a&gt; and even if you don&amp;#39;t do Clojure,
 you might want to check out the video runthrough:&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/oVVHU7PDHyw&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A teacher looks at Advent of Code 2020 - Day 11</title>
-      <link>https://cestlaz.github.io/post/advent-2020-day11/</link>
-      <pubDate>Fri, 11 Dec 2020 15:00:43 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2020-day11/</guid>
-      <description>&lt;p&gt;
-Today was &lt;a href=&#34;https://en.wikipedia.org/wiki/Cellular_automaton&#34;&gt;Cellular Automaton&lt;/a&gt; Day at Advent of Code. You have a world
-that&amp;#39;s usually represented as a grid of cells. Each cell can be in a
-certain state. Given a certain state, the next state is determined by
-simple rules like for a given cell how many of it&amp;#39;s neighbors are the
-same color. &lt;/p&gt;
-&lt;p&gt;
-The most popular Cellular Automat is probably &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34;&gt;Conway&amp;#39;s Game of Life&lt;/a&gt;
-where each cell can be either alive or dead in a given generation and
-in the next generation the state will be determined by how many of its
-neighbors are currently dead or alive. &lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve always liked teaching with Celluar Automata and explored it
-deeply in the intro course I designed at Stuy. NetLogo is perfect for
-representing a CA (&lt;a href=&#34;https://cestlaz.github.io/posts/2016-01-15-shift-image/&#34;&gt;old post&lt;/a&gt;) and we even do things like using a CS to
-&lt;a href=&#34;https://cestlaz.github.io/posts/2016-01-17-maze-ca/&#34;&gt;solve a maze&lt;/a&gt;. Good stuff.&lt;/p&gt;
-&lt;p&gt;
-Today&amp;#39;s problem set up a CA where each cell can be one of three
-states - floor, occupied chair, unoccupied chair. The floor never
-changed but the chairs can change from occupied to unoccupied and back
-based on neighbors. I actually really like teh question. It&amp;#39;s posed as
-passengers prefer to sit in s eats next to other empty seats which is
-true and the overall problem is much more realistic and therefor
-accessible than Conway&amp;#39;s game of life. I think I might lead with it if
-I do CA again with my students. &lt;/p&gt;
-&lt;p&gt;
-You can find my Clojure solutions &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day11.clj&#34;&gt;here&lt;/a&gt;. They were pretty
-straightforward. I spend too much time going down the &amp;#34;learn how to
-write a lazy sequence in Clojure&amp;#34; rabbit hole for part 2 before just
-writing it in a more traditional way.&lt;/p&gt;
-&lt;p&gt;
-To me there are a couple of interesting things at play when teaching
-CA. The first is state management and synchronization. When beginners
-work on a CA they frequently look at a cell, figure out it&amp;#39;s next
-generation value and then replace the cell with its new value. Then,
-later they look at a neighboring cell and when that cell looks at its
-neighbors it gets the changed value not the original one. Clearly a
-problem. &lt;/p&gt;
-&lt;p&gt;
-Writing a CA makes it clear that you have to keep your state clean
-while you build a new state for the next generation. That&amp;#39;s an
-important lesson to learn.&lt;/p&gt;
-&lt;p&gt;
-The other interesting teaching point is with data representation. CA
-is frequently taught as a 2D array exercise. This makes sense -
-simulations like Conway&amp;#39;s Game of Life work perfectly in a 2D array
-and if you&amp;#39;re doing graphics with your class you can also get cool
-animations through the generations. &lt;/p&gt;
-&lt;p&gt;
-That said, there are other valid representations that could be
-superior at times. You might have a list of living cells or a hash
-tabe of cells if you have more than 2 living states. This can be far
-superior from a space efficiency point of view if you don&amp;#39;t have a lot
-of living cells compared with your world size - say you have a CA with
-a theoretically unlimited size. &lt;/p&gt;
-&lt;p&gt;
-So, there it is - thoughts on today&amp;#39;s problem. As I said, it was
-pretty straightforward but I also really like the setup and will
-probably use it in class at some point in the future.&lt;/p&gt;
 </description>
     </item>
     

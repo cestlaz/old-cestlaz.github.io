@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Work through the example!!!!! - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1638570835" />
+
+
+
+<meta property="og:title" content="Work through the example!!!!!" />
+<meta property="og:description" content="It&#39;s that time of year again. Yep, you got it. Time for Advent of Code. I&#39;m not feeling nearly as motivated as in past years but so far so good. Finished the first three days.
+ Today I got a good reminder - work through your examples. You can find today&#39;s problem here.
+ For part 1 you got a list of binary numbers and had to figure out how many ones and zeros there were in any given digit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day03/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-03T17:10:50-04:00" />
+<meta property="article:modified_time" content="2021-12-03T17:10:50-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Work through the example!!!!!"/>
+<meta name="twitter:description" content="It&#39;s that time of year again. Yep, you got it. Time for Advent of Code. I&#39;m not feeling nearly as motivated as in past years but so far so good. Finished the first three days.
+ Today I got a good reminder - work through your examples. You can find today&#39;s problem here.
+ For part 1 you got a list of binary numbers and had to figure out how many ones and zeros there were in any given digit."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Work through the example!!!!!</h1>
+        </header>
+        <div class="content">
+            <p>
+It&#39;s that time of year again. Yep, you got it. Time for <a href="https://adventofcode.com/">Advent of
+Code</a>. I&#39;m not feeling nearly as motivated as in past years but so far
+so good. Finished the first three days.</p>
+<p>
+Today I got a good reminder - work through your examples. You can find
+today&#39;s problem <a href="https://adventofcode.com/2021/day/3">here</a>.</p>
+<p>
+For part 1 you got a list of binary numbers and had to figure out how
+many ones and zeros there were in any given digit.</p>
+<p>
+For example, if we had these numbers:</p>
+<pre class="example">
+0010
+0111 
+1001
+1010
+1111
+</pre>
+<p>
+The ones digit has 3 total ones and 2 zeros. The  2s digit has 4
+ones and 1 zero. You then had to do some calculations based on if
+there were more ones in a given column or more zeros.</p>
+<p>
+Pretty straight forward. As usual, I&#39;m working in Clojure so I used
+map and reduce to figure out the number of ones in each column and
+then did the required calculation. If you want to see the code, you
+can find it <a href="https://github.com/zamansky/advent2021/blob/main/src/day03.clj">here</a>. Later in the day I looked at other people&#39;s
+solutions and it was interesting in that a lot of people approached it
+differently - they basically looked at the list of numbers and rotated
+it so that columns became rows and rows became columns which then make
+counting ones and zeros easier,  but I digress.</p>
+<p>
+I then had to rush through part 2 because I had to leave for the
+ophthalmologist. I didn&#39;t know if my eyes were going to be dilated and
+if they were, I wasn&#39;t going to be able to come back to the problem
+until late in the evening.</p>
+<p>
+I got something done but unfortunately, didn&#39;t quite
+finish. Fortunately, my eyes weren&#39;t dilated so after getting home I
+set to finish the problem.</p>
+<p>
+Part 2 involved taking your list of numbers, calculating some values
+using the part 1 code and then using those values to eliminate some of
+the numbers. You then repeated this process until you were left with a
+single number. See the problem statement and if you want my solution
+for details.</p>
+<p>
+I got something working but my answer was incorrect. I spent, well,
+frankly, too much time trying to figure out why. I was
+stumped. Finally I went back to the example in the question and
+actually worked through it (as opposed to glancing over it). I quickly
+saw my error. I had calculated the part 1 values based on the original
+data then kept applying those to the data list until it reduced to a
+single number. I was supposed to recalculate the part 1 values on the
+reduced data set each time instead. Once I realized this, it was a
+pretty quick solution.</p>
+<p>
+This isn&#39;t the first time my carelessness cost me time. Back in 2016 I
+spent way too long trying to fix an Advent of Code problem where the
+problem was that I had the wrong parameters in a function (<a href="https://cestlaz.github.io/posts/2015-12-17-im-an-idiot/">link</a>).</p>
+<p>
+In this case, the moral of the story is <strong>work through the provided
+examples!!!!</strong></p>
+<p>
+So, that&#39;s it for today. If you haven&#39;t checked out Advent of Code, I
+highly recommend it and if you want to see my solutions, however far I
+get, you can find them <a href="https://github.com/zamansky/advent2021">here</a>.</p>
+<p>
+Finally, in the spirit of the season, Natan composed a new Chanukah
+song.</p>
+<p>
+If you&#39;re so inclined, you can check it out below:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fatTWGfXO_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-12-03</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/Programming">Programming</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
