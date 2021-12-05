@@ -6,10 +6,132 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Dec 2021 12:17:30 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 Dec 2021 10:40:21 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>One man&#39;s complex is another man&#39;s simple (AOC 2021 Day 5)</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day05/</link>
+      <pubDate>Sun, 05 Dec 2021 10:40:21 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day05/</guid>
+      <description>&lt;p&gt;
+Yesterday I wrote about the virtues of a simple straightforward
+solution as opposed to a super &amp;#34;clever&amp;#34; one. Today reminded me that
+what seems simple to one person might be clever to another.&lt;/p&gt;
+&lt;p&gt;
+Having successfully survived bingo with a giant squid, Today&amp;#39;s
+&lt;a href=&#34;https://adventofcode.com/2021/day/5&#34;&gt;challenge&lt;/a&gt; had us navigating our sub so as to avoid dangerous parts of
+the ocean. We were given a bunch of lines represented by endpoints as
+input. If we graphed all the lines, some of them would overlap. The
+more the overlap, the more dangerous. Given all the points on the
+graph that are covered by a line, we had to determine how many points
+were covered by two or more lines.&lt;/p&gt;
+&lt;p&gt;
+For example, if we have the following 10x10 grid with 1,1 being the
+upper left adn 10,10 the lower right and the following lines:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+1,2 --&amp;gt; 8,2
+3,1 --&amp;gt; 3,7
+2,4 --&amp;gt; 7,4
+6,1 --&amp;gt; 6,8
+&lt;/pre&gt;
+&lt;p&gt;
+we&amp;#39;d have the following lines:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+..X..X....
+XXXXXXXX..
+..X..X....
+.XXXXXX...
+..X..X....
+..X..X....
+.....X....
+.....X....
+..........
+..........
+&lt;/pre&gt;
+&lt;p&gt;
+If instead of X we marked each square with the number of times it was
+drawn on we&amp;#39;d have&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+..1..1....
+11211211..
+..1..1....
+.121121...
+..1..1....
+..1..1....
+.....1....
+.....1....
+..........
+..........
+&lt;/pre&gt;
+&lt;p&gt;
+In the above example, the answer to part 1 would be 4 since 4 squares
+have more than one line on them&lt;/p&gt;
+&lt;p&gt;
+Here our lines are all vertical and horizontal. For part 1 we only had
+ton consider horizontal and vertical even though the input might
+specify diagonals.&lt;/p&gt;
+&lt;p&gt;
+Part 2 required we also deal with diagonals but only the ones with a
+45 degree angle.&lt;/p&gt;
+&lt;p&gt;
+For a relatively new programmer the obvious solution would be to
+create a 2D array. Then you just have to scan through the data and
+fill the array. Finally, go over the array and count the cells that
+were hit more than once.&lt;/p&gt;
+&lt;p&gt;
+This approach presents three problems. The first, which is minor is
+that you&amp;#39;d first have to scan the input to determine the required
+array size. The second problem is that you could have negative values
+in your input so you&amp;#39;d have to somehow compensate for that
+possibility. Finally, you could have spares input. What if there were
+only two lines but one was from -1000000,-1000000 –&amp;gt; -999999,999999
+and the other from 1000000,1000000 –&amp;gt; 1000001,1000001. You have two
+tiny lines but you&amp;#39;d need a HUGE array.&lt;/p&gt;
+&lt;p&gt;
+For me, an easier, simpler solution was to use a dictionary (also
+called hash table, or map depending on language). My grid would start
+as an empty map and then I&amp;#39;d add points by walking the line segments. For
+example if I had a line from 0,0 –&amp;gt; 2,0, I&amp;#39;d add three entries to the
+map. The keys would be (0,0), (1,0), and (2,0), and the values would
+be all 1 since each location was hit once.&lt;/p&gt;
+&lt;p&gt;
+If I then added the line (1,0) –&amp;gt; (1,2), I&amp;#39;d end up with this final
+map:&lt;/p&gt;
+&lt;div class=&#34;src src-python&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  {(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+   (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
+   (&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+   (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+   (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Note that the (1,0) entry now has a two since it was hit twice.&lt;/p&gt;
+&lt;p&gt;
+Once we added all the lines, pull out the values and count how many
+are greater or equal to two.&lt;/p&gt;
+&lt;p&gt;
+Once armed with this approach it was easy enough to solve the
+problem. You can check out the code &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day05.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll maintain that I used a simple, clear, and maintainable approach
+but it&amp;#39;s also worth noting that if I presented this problem to
+relative beginners, depending on what tools they&amp;#39;ve used, they might
+very well lean heavily on an array representation. This would
+certainly be true when I was a beginner - we never saw maps or
+dictionaries until we built them in our data structures courses. Now,
+with students cutting their teeth in languages like Python where
+dictionaries come up much earlier, perhaps today&amp;#39;s beginners would
+also opt for the map / dictionary solution.&lt;/p&gt;
+&lt;p&gt;
+In any event, I always like problems like this where there are
+multiple ways of representing the data in the solution which leads to
+some nice food for thought.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Working code is better than clever code (AOC 2021 day 4)</title>
