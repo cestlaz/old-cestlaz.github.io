@@ -6,10 +6,127 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Dec 2021 10:40:21 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 06 Dec 2021 16:25:24 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Lanternfish and lots of data (AOC 2021 Day 6)</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day06/</link>
+      <pubDate>Mon, 06 Dec 2021 16:25:24 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day06/</guid>
+      <description>&lt;p&gt;
+Today we had to model the growth of the lanternfish population
+(&lt;a href=&#34;https://adventofcode.com/2021/day/6&#34;&gt;problem here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;
+Lanternfish spawn new lanternfish every seven days. The trick is that
+the original starting population consists of fish at different points
+in the cycle. For instance, if your input data was 3,2,4 then each fish
+would spawn a new fish in three, two, and four days respectively. The
+new fish would set their timers to 8 and start counting down to their
+spawn date on the next day and the original fish would reset it&amp;#39;s
+timer to 6.&lt;/p&gt;
+&lt;p&gt;
+Of course, lanternfish never die so the population is going to get
+quite large.&lt;/p&gt;
+&lt;p&gt;
+At first glance this seems to be an easy problem to model. Read the
+fish into a list or array and start processing them a day at a
+time. Add fish to the end as needed.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m guessing this would work for part 1 but doubt it would work for
+part 2. Even before I started solving this just seemed like a problem
+where part 2 would blow away our data set getting much to large much
+too fast.&lt;/p&gt;
+&lt;p&gt;
+So, what to do? It turns out the problem is cyclical. Instead of
+looking at fish, we can look at days. We have an 8 day cycle. Instead
+of storing the fish, store the number of fish that will spawn on any
+given day.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s the insight.&lt;/p&gt;
+&lt;p&gt;
+I started by playing around with mod and trying to figure out how to
+walk around the list while summing up fish but after a while my brain
+started to hurt. Instead, I just did things in the most
+straightforward way I could.&lt;/p&gt;
+&lt;p&gt;
+Fist, I made a list with my initial state. The example problem had a
+data set of &lt;code&gt;&amp;#34;3,4,3,1 2&amp;#34;&lt;/code&gt; which led to this list:&lt;/p&gt;
+&lt;div class=&#34;src src-clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Notice that I have 9  not 8 slots (indexed 0 - 8). That extra one at
+the end is where I move the fish that are spawning today (day 0) so
+they can start the cycle again.&lt;/p&gt;
+&lt;p&gt;
+From there, it&amp;#39;s just following the rules:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Grab the number of fish to spawn today.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move all the fish down a day - that is, the fish in day 1 go to day
+0, day 2 to day 1 etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the new fish to slot 6 (as per the specification).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the number that spawned today to the end.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Repeat this for the requisite number of days and then add them all up.&lt;/p&gt;
+&lt;p&gt;
+The Clojure code for the complete solution is:&lt;/p&gt;
+&lt;div class=&#34;src src-clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
+        (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[start-state (&lt;span style=&#34;color:#a6e22e&#34;&gt;reduce&lt;/span&gt;
+                           (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[sofar next]
+                             (&lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt; sofar next inc))
+                           [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ] data )]
+          (apply + (&lt;span style=&#34;color:#66d9ef&#34;&gt;loop &lt;/span&gt;[i &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+                          gens start-state]
+                     (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt; i days)
+                       (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[last (first gens)
+                             gens  (into []  ( drop &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; gens))
+                             gens  (assoc gens &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; (+ (nth gens &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;) last))
+                             gens  (conj gens last)
+                             ]
+                         (&lt;span style=&#34;color:#a6e22e&#34;&gt;recur&lt;/span&gt; (inc i) gens)
+                         )
+                       gens)))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+For those of you not familiar with Clojure, that &lt;code&gt;reduce&lt;/code&gt; in the let on the second line is how we take the data
+and build our starting state. For those of you who DO know clojure, I
+could probably have made it cleaner with a threading macro instead of
+the three step assignment to gens in the bottom let.&lt;/p&gt;
+&lt;p&gt;
+In any event, we walk away with a memory efficient time efficient
+solution.&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s probably some recurrence that could be set up and solved to do
+this all with math but since the mod stuff made my head hurt working
+on a recurrence equation would probably make it explode.&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s usually at least one problem like this in advent of code each
+year. Something where it looks like you&amp;#39;ll have to calculate forever
+but it turns out you can set up a short repeating cycle to get the job
+done. Unfortunately, they&amp;#39;re all too advanced for my average intro CS
+students. Sure, I could go over the problem and they&amp;#39;d kindof get it
+but I don&amp;#39;t think the majority would really grok it. Alternatively
+they could just follow the rules given and led in class to setting up
+the cycle but I&amp;#39;d love to come up wiht one where they can really
+discover the magic.&lt;/p&gt;
+&lt;p&gt;
+I should spend some time thinking about this.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>One man&#39;s complex is another man&#39;s simple (AOC 2021 Day 5)</title>
@@ -3695,157 +3812,6 @@ hash table to store data for lookup or use an array to represent a
 list. It can be very empowering though when the student sees that
 the implementations are just tools in the belt and they can be used in
 all sorts of interesting ways.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Teacher Looks at Advent of Code 2020 - Days 17 and 18</title>
-      <link>https://cestlaz.github.io/post/advent-2020-1718/</link>
-      <pubDate>Fri, 18 Dec 2020 12:35:57 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2020-1718/</guid>
-      <description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Day 17
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://adventofcode.com/2020/day/17&#34;&gt;Day 17&lt;/a&gt; brought back Cellular Automata. It was a nice follow up to &lt;a href=&#34;https://cestlaz.github.io/post/advent-2020-day11/&#34;&gt;day
-11&lt;/a&gt;. In my &lt;a href=&#34;https://cestlaz.github.io/post/advent-2020-day11/&#34;&gt;writeup&lt;/a&gt; I talked about data representation - how a Cellular
-Automoton like Conway&amp;#39;s game of life is a nice 2D array project in a
-class like APCS-A but multi dimensional arrays are only one way to
-represent a cellular automaton. Day 17 really drove that home. &lt;/p&gt;
-&lt;p&gt;
-The actual rules were pretty simple - if a cell is active and has 2 or
-3 active neighbors it stays active. If it&amp;#39;s inactive and has three
-active it becomes active. Otherwise the cell is inactive. &lt;/p&gt;
-&lt;p&gt;
-The catch for part 1 is that this CS is in three dimensions. Each and
-a cell&amp;#39;s neighbors are defined as all coordinates that differ by one
-in any of the three dimensions. So, if a cell is at an (x,y,z) location
-it&amp;#39;s neighbors will be at (x+1,y,z), (x-1,y,z), (x+1,y+1,z),
-(x+1,y-1,z), etc. for 26 neighbors in all. &lt;/p&gt;
-&lt;p&gt;
-You could use a list  within a list within a list or a three
-dimensional array to represent your world but that&amp;#39;s tricky and error
-prone. What&amp;#39;s worse, part 2 took the CA into the fourth dimension.&lt;/p&gt;
-&lt;p&gt;
-Better is to just keep a list or set of active cells. Then the problem
-becomes pretty easy. You need to be able to:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Find all of a cell&amp;#39;s neighbors - this is pretty easy because you
-can iterate over all the +1 and -1 possibilities for each of the x,
-y, and z values.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Find all the potential cells for the next state - this is also
-pretty easy because it&amp;#39;s the set of all cells that are currently
-active along with all of their neighbors. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Count a given cell&amp;#39;s active neighbors - this is easy once you&amp;#39;ve
-done the find neighbors routine. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A way to test if a cell is active which is just checking to see if
-it&amp;#39;s in your active cells list or set.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Then, it&amp;#39;s pretty easy to run the CA: 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pythonesque pseudocode &lt;/span&gt;
-potential_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; find_all_neighbors(current_active_cells)
-new_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; cell &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; potential_cells: 
-  n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; count_neighbors(cell)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; is_active(cell) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; (n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
-    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; is_active(cell)) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;:
-    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-Then you just have to run generate new states until you get the
-answer.&lt;/p&gt;
-&lt;p&gt;
-Part 2 extended the CA to 4 dimensions. If you had a multidimensional
-array this would get super message but with a list of active cells,
-the changes are minimal - just add an extra coordinate, update getting
-the neighbors and you&amp;#39;re good to go.&lt;/p&gt;
-&lt;p&gt;
-This is a case of where thinking through your data representation can
-be a big win.&lt;/p&gt;
-&lt;p&gt;
-Clojure code &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day17.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Day 18
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://adventofcode.com/2020/day/18&#34;&gt;Day 18&lt;/a&gt; was all about evaluating math expressions. For part 1 you had
-parenthesized expressions consisting of numbers * and + that you had
-to evaluate but you had to do it by first doing parens then left to
-right - multiplication was not a higher precedence.&lt;/p&gt;
-&lt;p&gt;
-This sounds like a parsing first problem but it turns out I was able
-to exploit some of Clojure&amp;#39;s language features. Looking at the
-subreddit after solving it seems that a bunch of other languages also
-have features that could be exploited.&lt;/p&gt;
-&lt;p&gt;
-Clojure represents data (and programs) as &lt;a href=&#34;https://en.wikipedia.org/wiki/S-expression&#34;&gt;S-Expressions&lt;/a&gt; - basically
-stuff in parens. As a prefix language, instead of writing 10+20, in
-Clojure you&amp;#39;d write &lt;code&gt;(+ 10 20)&lt;/code&gt;, that is  run the plus function on 10
-and 20. If you have something lie &lt;code&gt;(+ 10 (* 20 3))&lt;/code&gt;, Clojure has to
-evaluate the inner S-Expression (sexp) before it can add that to +10
-so Clojure can do the parsing for us. We can take an input string and
-convert it to an sexp using &lt;code&gt;read-string&lt;/code&gt;  but if we just try to do
-&lt;code&gt;(read-string &amp;#34;1 + 2 + 3&amp;#34;)&lt;/code&gt; we&amp;#39;d get an error because &amp;#34;1 + 2 + 3&amp;#34;
-isn&amp;#39;t a valid sexp so we just surround it by parens:&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;def &lt;/span&gt;equation-sexp (&lt;span style=&#34;color:#a6e22e&#34;&gt;read-string&lt;/span&gt; (str &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1 + 2 * 3 + (4 * 5 )&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-The above would leave us with the sexp (1 + 2 * 3 + (4 * 5 )).&lt;/p&gt;
-&lt;p&gt;
-Next, forgetting the inner parens, we can write a function that will
-evaluate an sexp of the form (1 + 2 * 3 + …) etc. Basically, this can
-be done with a reduce. Start with the first value then take the rest
-of the list two at a time, the first of each pair is an operator and
-the second is an operand so apply the operand to the other number in
-the pair and your overall result so far.&lt;/p&gt;
-&lt;p&gt;
-In Clojure it looks like this: &lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1-eval [f &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; r]
-  (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[ans [op next]]
-            (apply op [ans next] )) f (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; r)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-Next, we insert that function name to the start of each sexp so 
-(1 + 2 * 3 + (4 * 5*)) becomes (part1-eval 1 + 2 * 3 + (part1-eval 4 *
-5)). Finally we can do a  Clojure &lt;strong&gt;eval&lt;/strong&gt; on this form which will run
-part1-eval on the rest of the sexp which will first run part1-eval on
-the 4 * 5, that will return the 20 and then the first part1-eval will
-finish it&amp;#39;s calculations to give you the answer. &lt;/p&gt;
-&lt;p&gt;
-Part 2 was similar but there you had to perform addition before
-multiplication. All that was necessary was write a part2-eval function
-that would stand in for the part1-eval.&lt;/p&gt;
-&lt;p&gt;
-The idea is to take an sexp like (1 + 2 * 3 + 4 * 5) we first split this
-list around the * this gives us (1 + 2) (&lt;strong&gt;) (3 + 4) (&lt;/strong&gt;) (5). We then
-filter this to remove the non numbers which gives (1 2) () (3 4) (5)
-(). Then we remove the empty lists: (1 2) (3 4) (5). Add the elements
-of each list: 3 7 5 and then multiply them together.&lt;/p&gt;
-&lt;p&gt;
-All the code is &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day18.clj&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;
-I like day 17 a lot or some variant for students to discuss data
-representations but I think 18 is a little more advanced and probably
-wouldn&amp;#39;t touch it in an early CS class - it was fun to work through
-though :-). &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
