@@ -6,10 +6,161 @@
     <description>C&#39;est la Z (Programming)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Dec 2021 09:04:53 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 08 Dec 2021 13:20:49 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Seven Segment Silliness - Advent 2021 Day08</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day08/</link>
+      <pubDate>Wed, 08 Dec 2021 13:20:49 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day08/</guid>
+      <description>&lt;p&gt;
+Day 8 took a lot longer than the other days. Not all that much code
+and not too complex, at least after getting through a scary sounding
+lead up but going from problem statement to solution took both time
+and thought.&lt;/p&gt;
+&lt;p&gt;
+As I started to read the problem, I wasn&amp;#39;t sure I&amp;#39;d finish it let
+alone have time to write it up.&lt;/p&gt;
+&lt;p&gt;
+Take a minute to read over the problem. You can find it [[&lt;a href=&#34;https://adventofcode.com/2021/day/8&#34;&gt;https://adventofcode.com/2021/day/8&lt;/a&gt;
+][here.]]&lt;/p&gt;
+&lt;p&gt;
+A pretty intimidating wall of text. &lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;ve got a bunch of lines, each looking like this:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
+&lt;/pre&gt;
+&lt;p&gt;
+Each &amp;#34;word&amp;#34; represents a seven segment display. The side to the left
+of the | is the input for that line and the stuff on the right, the
+output.&lt;/p&gt;
+&lt;p&gt;
+The problem is that each line has the inputs scrambled. We jave to
+figure out which letter maps to the top segment, which the bottom,
+etc.&lt;/p&gt;
+&lt;p&gt;
+Oh boy.&lt;/p&gt;
+&lt;p&gt;
+It turns out that part one really wasn&amp;#39;t hard at all. In fact, it
+could make a nice early CS assignment. If you look at the display for
+a &lt;strong&gt;1&lt;/strong&gt;, it has two segment on the right hand side. It&amp;#39;s the only number
+that uses 2 and only 2 of the seven segments. Likewise a &lt;strong&gt;4&lt;/strong&gt; is the
+only four segment letter, &lt;strong&gt;7&lt;/strong&gt; is the only one that uses 3 segments,
+and &lt;strong&gt;8&lt;/strong&gt; is the only one that uses all seven segments.&lt;/p&gt;
+&lt;p&gt;
+For part 1 you just had to look at all the outputs  - that is, the
+stuff on each line after the | and add up the number of items that
+are either a 1, 4, 7, or 8. That&amp;#39;s easily accomplished by going over
+each of those items and checking if they have the correct number of
+characters and then figuring out the total number of these items.&lt;/p&gt;
+&lt;p&gt;
+I had already parsed my data into the a two item list where the left
+item is a list of inputs and the right a list of outputs:&lt;/p&gt;
+&lt;div class=&#34;src src-clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+So all I had to do go through all the output sides, count the characters in
+each item and then add up the number of them.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the code:&lt;/p&gt;
+&lt;div class=&#34;src src-clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;takes a list of numbers and returns only those that are 2,4,3, or 7&amp;#34;&lt;/span&gt;
+    (filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(contains? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;{&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;} %) x))
+
+
+  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1 [  data]
+    (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[results (map second data) &lt;span style=&#34;color:#75715e&#34;&gt;;; pull out all the outputs&lt;/span&gt;
+          counted (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(map count %) results) &lt;span style=&#34;color:#75715e&#34;&gt;;; turn the &amp;#34;words&amp;#34; into counts of their lengths&lt;/span&gt;
+          f (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;myfilter&lt;/span&gt; %) counted) &lt;span style=&#34;color:#75715e&#34;&gt;;; only keep the ones that are the right lengths&lt;/span&gt;
+          total (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(count %) f) &lt;span style=&#34;color:#75715e&#34;&gt;;; count how many are in each line&lt;/span&gt;
+          ]
+      (apply +  total))) &lt;span style=&#34;color:#75715e&#34;&gt;;; add them all up &lt;/span&gt;
+
+  (&lt;span style=&#34;color:#a6e22e&#34;&gt;part1&lt;/span&gt; data)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+For part 2 we had to decode all the output lines and then turn them
+into numbers and add them up.&lt;/p&gt;
+&lt;p&gt;
+Sounded really daunting. It required some thought but it wasn&amp;#39;t that
+bad.&lt;/p&gt;
+&lt;p&gt;
+I wanted to build a dictionary where the keys were the digits and the
+values would be the segments for that particular input line that
+represent  that digit.&lt;/p&gt;
+&lt;p&gt;
+For a given line, we can do it pretty easily for the unique numbers 2,
+4,3, and 7 so we just loop through all the items in a line  and when
+we see an item with the appropriate length, we store the number in our
+dictionary.&lt;/p&gt;
+&lt;p&gt;
+We might have something like this:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;align-right&#34;&gt;key&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;b e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;4&lt;/td&gt;
+&lt;td&gt;b c e g&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;7&lt;/td&gt;
+&lt;td&gt;b d e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;a b c d e f g&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+These were the values from the first line of the example data. Also, I
+used a Clojure set  to store the values since that makes the rest of
+the solution easier.&lt;/p&gt;
+&lt;p&gt;
+I then took this dictionary and tried to add to it by figuring out the
+5 segment numbers - specifically, 2, 3 and 5. It turns out that of the
+5 segment numbers, the &lt;strong&gt;3&lt;/strong&gt; is the only one that ovelaps with the two
+segments from the &lt;strong&gt;1&lt;/strong&gt; so we can find that one pretty easily. If the
+five segment number wasn&amp;#39;t a 3, I looked to see if it was a 5. For
+this, I looked to see if it had the left and middle segments that the
+4 had. Finally, if it wasn&amp;#39;t a &lt;strong&gt;3&lt;/strong&gt; or a &lt;strong&gt;5&lt;/strong&gt; then it had to be a &lt;strong&gt;2&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;
+Next, I did the same for the remaining segments which were all 6
+segments. You can look at my full code (linked below) for specifics.&lt;/p&gt;
+&lt;p&gt;
+Once we had the complet dictionary I flipped it - keys became values
+and values became keys so we could look up the output numbers. From
+there, it was easy to convert them to numbers and find the final
+answer.&lt;/p&gt;
+&lt;p&gt;
+The part of this problem that was both fun and challenging was trying
+to figure out how to decode a given letter given what you already
+figured out. That took some time but getting the final answers for
+problems like this are somehow more satisfying than just a straight up
+&amp;#34;code it&amp;#34; problem.&lt;/p&gt;
+&lt;p&gt;
+You can find my full solution &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day08.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+I was worried I wasn&amp;#39;t going to finished this one when I first read it
+but I think it&amp;#39;s my favorite of the year so far.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How you look at a problem can make it easier - AOC 2021 Day 7</title>

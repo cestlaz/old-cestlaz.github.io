@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Seven Segment Silliness - Advent 2021 Day08 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1638992826" />
+
+
+
+<meta property="og:title" content="Seven Segment Silliness - Advent 2021 Day08" />
+<meta property="og:description" content="Day 8 took a lot longer than the other days. Not all that much code and not too complex, at least after getting through a scary sounding lead up but going from problem statement to solution took both time and thought.
+ As I started to read the problem, I wasn&#39;t sure I&#39;d finish it let alone have time to write it up.
+ Take a minute to read over the problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day08/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-08T13:20:49-04:00" />
+<meta property="article:modified_time" content="2021-12-08T13:20:49-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Seven Segment Silliness - Advent 2021 Day08"/>
+<meta name="twitter:description" content="Day 8 took a lot longer than the other days. Not all that much code and not too complex, at least after getting through a scary sounding lead up but going from problem statement to solution took both time and thought.
+ As I started to read the problem, I wasn&#39;t sure I&#39;d finish it let alone have time to write it up.
+ Take a minute to read over the problem."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Seven Segment Silliness - Advent 2021 Day08</h1>
+        </header>
+        <div class="content">
+            <p>
+Day 8 took a lot longer than the other days. Not all that much code
+and not too complex, at least after getting through a scary sounding
+lead up but going from problem statement to solution took both time
+and thought.</p>
+<p>
+As I started to read the problem, I wasn&#39;t sure I&#39;d finish it let
+alone have time to write it up.</p>
+<p>
+Take a minute to read over the problem. You can find it [[<a href="https://adventofcode.com/2021/day/8">https://adventofcode.com/2021/day/8</a>
+][here.]]</p>
+<p>
+A pretty intimidating wall of text. </p>
+<p>
+You&#39;ve got a bunch of lines, each looking like this:</p>
+<pre class="example">
+be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
+</pre>
+<p>
+Each &#34;word&#34; represents a seven segment display. The side to the left
+of the | is the input for that line and the stuff on the right, the
+output.</p>
+<p>
+The problem is that each line has the inputs scrambled. We jave to
+figure out which letter maps to the top segment, which the bottom,
+etc.</p>
+<p>
+Oh boy.</p>
+<p>
+It turns out that part one really wasn&#39;t hard at all. In fact, it
+could make a nice early CS assignment. If you look at the display for
+a <strong>1</strong>, it has two segment on the right hand side. It&#39;s the only number
+that uses 2 and only 2 of the seven segments. Likewise a <strong>4</strong> is the
+only four segment letter, <strong>7</strong> is the only one that uses 3 segments,
+and <strong>8</strong> is the only one that uses all seven segments.</p>
+<p>
+For part 1 you just had to look at all the outputs  - that is, the
+stuff on each line after the | and add up the number of items that
+are either a 1, 4, 7, or 8. That&#39;s easily accomplished by going over
+each of those items and checking if they have the correct number of
+characters and then figuring out the total number of these items.</p>
+<p>
+I had already parsed my data into the a two item list where the left
+item is a list of inputs and the right a list of outputs:</p>
+<div class="src src-clojure">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[ [<span style="color:#e6db74">&#34;cg&#34;</span> <span style="color:#e6db74">&#34;cdbga&#34;</span> <span style="color:#e6db74">&#34;bcg&#34;</span> ...] [<span style="color:#e6db74">&#34;geac&#34;</span> <span style="color:#e6db74">&#34;ceag&#34;</span> <span style="color:#e6db74">&#34;faedcb&#34;</span> <span style="color:#e6db74">&#34;cg&#34;</span>]]</code></pre></div>
+</div>
+<p>
+So all I had to do go through all the output sides, count the characters in
+each item and then add up the number of them.</p>
+<p>
+Here&#39;s the code:</p>
+<div class="src src-clojure">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">  (<span style="color:#66d9ef">defn </span>myfilter [x]
+  <span style="color:#e6db74">&#34;takes a list of numbers and returns only those that are 2,4,3, or 7&#34;</span>
+    (filter <span style="color:#f92672">#</span>(contains? <span style="color:#f92672">#</span>{<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">7</span>} %) x))
+
+
+  (<span style="color:#66d9ef">defn </span>part1 [  data]
+    (<span style="color:#66d9ef">let </span>[results (map second data) <span style="color:#75715e">;; pull out all the outputs</span>
+          counted (map <span style="color:#f92672">#</span>(map count %) results) <span style="color:#75715e">;; turn the &#34;words&#34; into counts of their lengths</span>
+          f (map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">myfilter</span> %) counted) <span style="color:#75715e">;; only keep the ones that are the right lengths</span>
+          total (map <span style="color:#f92672">#</span>(count %) f) <span style="color:#75715e">;; count how many are in each line</span>
+          ]
+      (apply +  total))) <span style="color:#75715e">;; add them all up </span>
+
+  (<span style="color:#a6e22e">part1</span> data)</code></pre></div>
+</div>
+<p>
+For part 2 we had to decode all the output lines and then turn them
+into numbers and add them up.</p>
+<p>
+Sounded really daunting. It required some thought but it wasn&#39;t that
+bad.</p>
+<p>
+I wanted to build a dictionary where the keys were the digits and the
+values would be the segments for that particular input line that
+represent  that digit.</p>
+<p>
+For a given line, we can do it pretty easily for the unique numbers 2,
+4,3, and 7 so we just loop through all the items in a line  and when
+we see an item with the appropriate length, we store the number in our
+dictionary.</p>
+<p>
+We might have something like this:</p>
+<table>
+<thead>
+<tr>
+<th class="align-right">key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="align-right">1</td>
+<td>b e</td>
+</tr>
+<tr>
+<td class="align-right">4</td>
+<td>b c e g</td>
+</tr>
+<tr>
+<td class="align-right">7</td>
+<td>b d e</td>
+</tr>
+<tr>
+<td class="align-right">8</td>
+<td>a b c d e f g</td>
+</tr>
+</tbody>
+</table>
+<p>
+These were the values from the first line of the example data. Also, I
+used a Clojure set  to store the values since that makes the rest of
+the solution easier.</p>
+<p>
+I then took this dictionary and tried to add to it by figuring out the
+5 segment numbers - specifically, 2, 3 and 5. It turns out that of the
+5 segment numbers, the <strong>3</strong> is the only one that ovelaps with the two
+segments from the <strong>1</strong> so we can find that one pretty easily. If the
+five segment number wasn&#39;t a 3, I looked to see if it was a 5. For
+this, I looked to see if it had the left and middle segments that the
+4 had. Finally, if it wasn&#39;t a <strong>3</strong> or a <strong>5</strong> then it had to be a <strong>2</strong>.</p>
+<p>
+Next, I did the same for the remaining segments which were all 6
+segments. You can look at my full code (linked below) for specifics.</p>
+<p>
+Once we had the complet dictionary I flipped it - keys became values
+and values became keys so we could look up the output numbers. From
+there, it was easy to convert them to numbers and find the final
+answer.</p>
+<p>
+The part of this problem that was both fun and challenging was trying
+to figure out how to decode a given letter given what you already
+figured out. That took some time but getting the final answers for
+problems like this are somehow more satisfying than just a straight up
+&#34;code it&#34; problem.</p>
+<p>
+You can find my full solution <a href="https://github.com/zamansky/advent2021/blob/main/src/day08.clj">here</a>.</p>
+<p>
+I was worried I wasn&#39;t going to finished this one when I first read it
+but I think it&#39;s my favorite of the year so far.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-12-08</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/Programming">Programming</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
