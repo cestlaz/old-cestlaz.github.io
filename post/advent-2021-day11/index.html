@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Advent 2021 Day11 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1639243211" />
+
+
+
+<meta property="og:title" content="Advent 2021 Day11" />
+<meta property="og:description" content="I wasn&#39;t particularly motivated to start day 11 but took a look over coffee. A grid of points where on each turn or step the points are modified by some rule. Hey, this sounds familiar - cellular automata like Conway&#39;s Game of Life.
+ You set up your grid and then on each turn just follow the rules. In a traditional Cellular Automaton like Conway&#39;s Game of Life, on each turn each cell looks at its six neighbors and makes a decision as to its next state based on the neighbors and a rule." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day11/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-11T11:31:32-04:00" />
+<meta property="article:modified_time" content="2021-12-11T11:31:32-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent 2021 Day11"/>
+<meta name="twitter:description" content="I wasn&#39;t particularly motivated to start day 11 but took a look over coffee. A grid of points where on each turn or step the points are modified by some rule. Hey, this sounds familiar - cellular automata like Conway&#39;s Game of Life.
+ You set up your grid and then on each turn just follow the rules. In a traditional Cellular Automaton like Conway&#39;s Game of Life, on each turn each cell looks at its six neighbors and makes a decision as to its next state based on the neighbors and a rule."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Advent 2021 Day11</h1>
+        </header>
+        <div class="content">
+            <p>
+I wasn&#39;t particularly motivated to start <a href="https://adventofcode.com/2021/day/11 ">day 11</a> but took a look over
+coffee. A grid of points where on each turn or step the points are
+modified by some rule. Hey, this sounds familiar - cellular automata
+like Conway&#39;s Game of Life.</p>
+<p>
+You set up your grid and then on each turn just follow the rules. In a
+traditional Cellular Automaton like <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway&#39;s Game of Life</a>, on each
+turn each cell looks at its six neighbors and makes a decision as to
+its next state based on the neighbors and a rule.</p>
+<p>
+For <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway&#39;s Game of Life</a>, a cell is either alive or dead. On each
+turn, it counts all it&#39;s neighbors and then decides if it will be
+alive or dead next turn based on its current state and how many
+neithbors are currently alive.</p>
+<p>
+I love talking about Cellular Automata in class although I haven&#39;t
+done it since my Stuy days. One of my favorite topics is using CS to
+solve a maze in NetLogo. I wrote about that <a href="https://cestlaz.github.io/posts/2016-01-17-maze-ca/">here</a>.</p>
+<p>
+Cellular Automata is also not a stranger to Advent of Code with three
+problems being CS problems in 2020 and I think there were more in
+earlier years.</p>
+<p>
+This year the twist was that the rule for each step had two stages and
+the second stage could repeat over and over again.</p>
+<p>
+The first stage was just to increment the value of each cell. The
+second involved &#34;flashing.&#34; This would happen if a cell&#39;s value
+exceeded nine. If a cell flashed, it would increment the value of each
+of its neighbors. This could cause a cascade by having a neighbor&#39;s
+value exceed nine. This kept going until the board stabalized. You
+also had to account for the fact that a cell should only flip at most
+once per step.</p>
+<p>
+Part one had you calculate the number of flashes over the course of
+100 steps.</p>
+<p>
+When I do CA in a class like APCS-A we usually use a 2D array to
+represent our world. In NetLogo, the world is already a grid. Since
+I&#39;m using Clojure, I though a hash table would be easier. The keys are
+x,y coordinates and the values are the state of the cell (the integer
+value). To set things up I stole the code from my code from last year,
+also coincidentally <a href="https://github.com/zamansky/advent2020/blob/main/src/day11.clj">day 11</a>. My <a href="https://cestlaz.github.io/post/advent-2020-day11/">write up</a> also talke about using a hash
+table or dictionary instead of a 2D array.</p>
+<p>
+The first stage of each step was easy. Just map the increment function
+across the entire board.</p>
+<p>
+The second step took more thought. First, I went through the board and
+for any cell that was greater than 9 I incremented all its
+neighbors. Then to make sure I don&#39;t flash a cell more than once a
+turn, I marked the current cell as being flashed. I did this by making
+it a large negative number.</p>
+<p>
+I repeated that second step over and over until it stabilized. That
+is, you went through an iteration where the board didn&#39;t change - no
+new flashes.</p>
+<p>
+Finally, I set all the negative cells, which indicated they flashed to
+zero in preparation for the next step.</p>
+<p>
+In the loop I counted and added up how many flashes we had and that
+was part 1.</p>
+<p>
+For part 2 you were looking for a step where every cell flashed at the
+same time. This was pretty easy because we were able to essentially
+use the same engine. The only difference was that instead of doing 100
+steps, you kept going until every cell flashed in one turn. That
+turned out to be easy to check. You know that happened when all of the
+cells at the start of a turn are 0.</p>
+<p>
+As usual, the full solution can be found on <a href="https://github.com/zamansky/advent2021/blob/main/src/day11.clj">GitHub.</a></p>
+<p>
+Wasn&#39;t motivated to start today but it turned out to be a fun little
+challenge.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-12-11</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/Programming">Programming</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

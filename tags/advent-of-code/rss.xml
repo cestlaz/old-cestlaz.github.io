@@ -6,10 +6,95 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Dec 2021 12:15:34 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 11 Dec 2021 11:31:32 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent 2021 Day11</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day11/</link>
+      <pubDate>Sat, 11 Dec 2021 11:31:32 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day11/</guid>
+      <description>&lt;p&gt;
+I wasn&amp;#39;t particularly motivated to start &lt;a href=&#34;https://adventofcode.com/2021/day/11 &#34;&gt;day 11&lt;/a&gt; but took a look over
+coffee. A grid of points where on each turn or step the points are
+modified by some rule. Hey, this sounds familiar - cellular automata
+like Conway&amp;#39;s Game of Life.&lt;/p&gt;
+&lt;p&gt;
+You set up your grid and then on each turn just follow the rules. In a
+traditional Cellular Automaton like &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34;&gt;Conway&amp;#39;s Game of Life&lt;/a&gt;, on each
+turn each cell looks at its six neighbors and makes a decision as to
+its next state based on the neighbors and a rule.&lt;/p&gt;
+&lt;p&gt;
+For &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34;&gt;Conway&amp;#39;s Game of Life&lt;/a&gt;, a cell is either alive or dead. On each
+turn, it counts all it&amp;#39;s neighbors and then decides if it will be
+alive or dead next turn based on its current state and how many
+neithbors are currently alive.&lt;/p&gt;
+&lt;p&gt;
+I love talking about Cellular Automata in class although I haven&amp;#39;t
+done it since my Stuy days. One of my favorite topics is using CS to
+solve a maze in NetLogo. I wrote about that &lt;a href=&#34;https://cestlaz.github.io/posts/2016-01-17-maze-ca/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+Cellular Automata is also not a stranger to Advent of Code with three
+problems being CS problems in 2020 and I think there were more in
+earlier years.&lt;/p&gt;
+&lt;p&gt;
+This year the twist was that the rule for each step had two stages and
+the second stage could repeat over and over again.&lt;/p&gt;
+&lt;p&gt;
+The first stage was just to increment the value of each cell. The
+second involved &amp;#34;flashing.&amp;#34; This would happen if a cell&amp;#39;s value
+exceeded nine. If a cell flashed, it would increment the value of each
+of its neighbors. This could cause a cascade by having a neighbor&amp;#39;s
+value exceed nine. This kept going until the board stabalized. You
+also had to account for the fact that a cell should only flip at most
+once per step.&lt;/p&gt;
+&lt;p&gt;
+Part one had you calculate the number of flashes over the course of
+100 steps.&lt;/p&gt;
+&lt;p&gt;
+When I do CA in a class like APCS-A we usually use a 2D array to
+represent our world. In NetLogo, the world is already a grid. Since
+I&amp;#39;m using Clojure, I though a hash table would be easier. The keys are
+x,y coordinates and the values are the state of the cell (the integer
+value). To set things up I stole the code from my code from last year,
+also coincidentally &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day11.clj&#34;&gt;day 11&lt;/a&gt;. My &lt;a href=&#34;https://cestlaz.github.io/post/advent-2020-day11/&#34;&gt;write up&lt;/a&gt; also talke about using a hash
+table or dictionary instead of a 2D array.&lt;/p&gt;
+&lt;p&gt;
+The first stage of each step was easy. Just map the increment function
+across the entire board.&lt;/p&gt;
+&lt;p&gt;
+The second step took more thought. First, I went through the board and
+for any cell that was greater than 9 I incremented all its
+neighbors. Then to make sure I don&amp;#39;t flash a cell more than once a
+turn, I marked the current cell as being flashed. I did this by making
+it a large negative number.&lt;/p&gt;
+&lt;p&gt;
+I repeated that second step over and over until it stabilized. That
+is, you went through an iteration where the board didn&amp;#39;t change - no
+new flashes.&lt;/p&gt;
+&lt;p&gt;
+Finally, I set all the negative cells, which indicated they flashed to
+zero in preparation for the next step.&lt;/p&gt;
+&lt;p&gt;
+In the loop I counted and added up how many flashes we had and that
+was part 1.&lt;/p&gt;
+&lt;p&gt;
+For part 2 you were looking for a step where every cell flashed at the
+same time. This was pretty easy because we were able to essentially
+use the same engine. The only difference was that instead of doing 100
+steps, you kept going until every cell flashed in one turn. That
+turned out to be easy to check. You know that happened when all of the
+cells at the start of a turn are 0.&lt;/p&gt;
+&lt;p&gt;
+As usual, the full solution can be found on &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day11.clj&#34;&gt;GitHub.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+Wasn&amp;#39;t motivated to start today but it turned out to be a fun little
+challenge.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Bracket Bonanza (AOC 2021 day 10)</title>
