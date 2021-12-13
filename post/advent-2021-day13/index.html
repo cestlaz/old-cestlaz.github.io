@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Transparent Origami - Advent 2021 Day 13 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1639424496" />
+
+
+
+<meta property="og:title" content="Transparent Origami - Advent 2021 Day 13" />
+<meta property="og:description" content="No post so far on day 12. I finished part 1 but my code was pretty messy which turned part 2 into a mess. I still have to go back to get that second star so just like day 10, my day 12 write up is on hold.
+ That said, I really enjoyed [[https://adventofcode.com/2021/day/13 ][today&#39;s]] challenge. Paper foldind. You&#39;re given transparent paper with a bunch of marks on it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day13/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-13T13:28:28-04:00" />
+<meta property="article:modified_time" content="2021-12-13T13:28:28-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Transparent Origami - Advent 2021 Day 13"/>
+<meta name="twitter:description" content="No post so far on day 12. I finished part 1 but my code was pretty messy which turned part 2 into a mess. I still have to go back to get that second star so just like day 10, my day 12 write up is on hold.
+ That said, I really enjoyed [[https://adventofcode.com/2021/day/13 ][today&#39;s]] challenge. Paper foldind. You&#39;re given transparent paper with a bunch of marks on it."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Transparent Origami - Advent 2021 Day 13</h1>
+        </header>
+        <div class="content">
+            <p>
+No post so far on <a href="https://adventofcode.com/2021/day/12">day 12</a>. I finished part 1 but my code was pretty
+messy which turned part 2 into a mess. I still have to go back to get
+that second star so just like day 10, my day 12 write up is on hold.</p>
+<p>
+That said, I really enjoyed [[<a href="https://adventofcode.com/2021/day/13">https://adventofcode.com/2021/day/13</a>
+][today&#39;s]] challenge. Paper foldind. You&#39;re given transparent paper with
+a bunch of marks on it. You have to fold the paper over horizontal or
+vertical lines and examine the results.</p>
+<p>
+Input was in the form of lines x,y pairs followed by lines specifying
+the folds.</p>
+<p>
+First decision - data representation. Since we&#39;ve got a grid,
+temptation would be to use a 2D structure like a 2D array but there
+are two problems. One is that each fold will make the paper smaller
+and smaller which makes a 2D array wasteful if not clumsy. The other
+issue is that we don&#39;t know the ranges for our coordiates. We know
+that all the values will be positive but we have no idea where they
+start and end.</p>
+<p>
+Just like with the cellular automaton, I decided to use a dictionary
+where the key was  the x,y pair and the entry was the mark. I could
+have used a plain list for the points but the dictionary gave me quick
+lookup. Also, if part 2 had us change the marks based on if they
+overlap after a fold, I&#39;d be prepared.</p>
+<p>
+For convenience (and as I learned later, part 2) I also wanted a
+routine that could print the board. Here&#39;s that routine in case you
+want to see some clojure.</p>
+<div class="src src-clojure">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">
+  (<span style="color:#66d9ef">defn </span>board-&gt;string [board]
+    (<span style="color:#66d9ef">let </span>[maxx (apply max (map first (keys board))) <span style="color:#75715e">;; find the largest x</span>
+          maxy (apply max (map second (keys board))) <span style="color:#75715e">;; find the largest y</span>
+          k (keys board)
+
+          <span style="color:#75715e">;; The next line makes a vector of maxy vectors</span>
+          <span style="color:#75715e">;; each of which has maxx spaces</span>
+          <span style="color:#75715e">;; basically a vector of vectors or 2D matrix if you would</span>
+          grid (into [] (repeat (inc maxy) (into [] (repeat (inc maxx) <span style="color:#e6db74">\ </span>))))
+
+          <span style="color:#75715e">;; go through the keys to our board (which is a hash table</span>
+          <span style="color:#75715e">;; and mark those squares with a #</span>
+          filled-grid (reduce (<span style="color:#66d9ef">fn </span>[b [y x]] (<span style="color:#a6e22e">assoc-in</span> b [x y] <span style="color:#e6db74">\#</span>)) grid k)
+
+          <span style="color:#75715e">;; change each line from a vector to a string</span>
+          <span style="color:#75715e">;; but leave the overall thing a vector since</span>
+          <span style="color:#75715e">;; it looks fine when I print it.</span>
+          string-grid (map <span style="color:#f92672">#</span>(apply str %) filled-grid)
+          ]
+      string-grid
+      ))</code></pre></div>
+</div>
+<p>
+Once we have our &#34;board&#34; we can then deal with folding. Folds had to
+be over a horizontal (ex: y=7) or vertical (ex: x=5).</p>
+<p>
+It was important to note that since we&#39;re folding we only want to take
+the points with coordinates greater than the folding line and
+transform those and not just transform all the points.</p>
+<p>
+The actual transformation is pretty straightforward. Given the line&#39;s
+coordinate L the new point value can be calculated using:</p>
+<pre class="example">
+newcoord = oldcoord - 2 * abs(oldcoord-L)
+</pre>
+<p>
+We just go through the points and if they have to be transformed,
+update them.</p>
+<p>
+Part 1 solved.</p>
+<p>
+Part 2 turned out to be far easier than I expected. Part 1 had us just
+do the first fold. Part 2 had us do all of them at which point, if we
+printed our board it would show us the 8 secret letters that formed
+our anwer. Since the example on the problem page was a y fold and the
+first fold of my data was an x fold I knew both my folds worked. I
+just ran through all the folds and voila.</p>
+<p>
+Now, I&#39;m not complaining about an easy problem. If it were harder I
+might not finish and then no write up but I was expecting something
+more.</p>
+<p>
+There were ways to make part two a bit more complex. I could see maybe
+placing the data so far off the end so that you had to translate them
+down closer to the origin so that your result would print or maybe do
+something with overlapping marks when you fold as I mentioned up top.</p>
+<p>
+Still, nothing wrong with an easy day mixed in and I still think it&#39;s
+a great problem. This could be done by a CS0 or CS1 class. What I
+particularly love about problems like this is that when you
+ultimately solve it you &#34;decode&#34; a secret message. Much cooler than
+just getting some number.</p>
+<p>
+So, over half way done. I still have that part 2 of day 12 to finish
+but still captured half the total stars for the event. That&#39;s my
+starting goal each year.</p>
+<p>
+If you want to see my full solution, you can check it out <a href="https://github.com/zamansky/advent2021/blob/main/src/day13.clj">here</a>.</p>
+<p>
+Enjoy.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2021-12-13</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/Programming">Programming</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2021<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

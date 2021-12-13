@@ -6,10 +6,121 @@
     <description>C&#39;est la Z (Programming)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 11:31:32 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 13:28:28 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Transparent Origami - Advent 2021 Day 13</title>
+      <link>https://cestlaz.github.io/post/advent-2021-day13/</link>
+      <pubDate>Mon, 13 Dec 2021 13:28:28 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2021-day13/</guid>
+      <description>&lt;p&gt;
+No post so far on &lt;a href=&#34;https://adventofcode.com/2021/day/12&#34;&gt;day 12&lt;/a&gt;. I finished part 1 but my code was pretty
+messy which turned part 2 into a mess. I still have to go back to get
+that second star so just like day 10, my day 12 write up is on hold.&lt;/p&gt;
+&lt;p&gt;
+That said, I really enjoyed [[&lt;a href=&#34;https://adventofcode.com/2021/day/13&#34;&gt;https://adventofcode.com/2021/day/13&lt;/a&gt;
+][today&amp;#39;s]] challenge. Paper foldind. You&amp;#39;re given transparent paper with
+a bunch of marks on it. You have to fold the paper over horizontal or
+vertical lines and examine the results.&lt;/p&gt;
+&lt;p&gt;
+Input was in the form of lines x,y pairs followed by lines specifying
+the folds.&lt;/p&gt;
+&lt;p&gt;
+First decision - data representation. Since we&amp;#39;ve got a grid,
+temptation would be to use a 2D structure like a 2D array but there
+are two problems. One is that each fold will make the paper smaller
+and smaller which makes a 2D array wasteful if not clumsy. The other
+issue is that we don&amp;#39;t know the ranges for our coordiates. We know
+that all the values will be positive but we have no idea where they
+start and end.&lt;/p&gt;
+&lt;p&gt;
+Just like with the cellular automaton, I decided to use a dictionary
+where the key was  the x,y pair and the entry was the mark. I could
+have used a plain list for the points but the dictionary gave me quick
+lookup. Also, if part 2 had us change the marks based on if they
+overlap after a fold, I&amp;#39;d be prepared.&lt;/p&gt;
+&lt;p&gt;
+For convenience (and as I learned later, part 2) I also wanted a
+routine that could print the board. Here&amp;#39;s that routine in case you
+want to see some clojure.&lt;/p&gt;
+&lt;div class=&#34;src src-clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;
+  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;board-&amp;gt;string [board]
+    (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[maxx (apply max (map first (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest x&lt;/span&gt;
+          maxy (apply max (map second (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest y&lt;/span&gt;
+          k (keys board)
+
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; The next line makes a vector of maxy vectors&lt;/span&gt;
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; each of which has maxx spaces&lt;/span&gt;
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; basically a vector of vectors or 2D matrix if you would&lt;/span&gt;
+          grid (into [] (repeat (inc maxy) (into [] (repeat (inc maxx) &lt;span style=&#34;color:#e6db74&#34;&gt;\ &lt;/span&gt;))))
+
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; go through the keys to our board (which is a hash table&lt;/span&gt;
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; and mark those squares with a #&lt;/span&gt;
+          filled-grid (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[b [y x]] (&lt;span style=&#34;color:#a6e22e&#34;&gt;assoc-in&lt;/span&gt; b [x y] &lt;span style=&#34;color:#e6db74&#34;&gt;\#&lt;/span&gt;)) grid k)
+
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; change each line from a vector to a string&lt;/span&gt;
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; but leave the overall thing a vector since&lt;/span&gt;
+          &lt;span style=&#34;color:#75715e&#34;&gt;;; it looks fine when I print it.&lt;/span&gt;
+          string-grid (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(apply str %) filled-grid)
+          ]
+      string-grid
+      ))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Once we have our &amp;#34;board&amp;#34; we can then deal with folding. Folds had to
+be over a horizontal (ex: y=7) or vertical (ex: x=5).&lt;/p&gt;
+&lt;p&gt;
+It was important to note that since we&amp;#39;re folding we only want to take
+the points with coordinates greater than the folding line and
+transform those and not just transform all the points.&lt;/p&gt;
+&lt;p&gt;
+The actual transformation is pretty straightforward. Given the line&amp;#39;s
+coordinate L the new point value can be calculated using:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+newcoord = oldcoord - 2 * abs(oldcoord-L)
+&lt;/pre&gt;
+&lt;p&gt;
+We just go through the points and if they have to be transformed,
+update them.&lt;/p&gt;
+&lt;p&gt;
+Part 1 solved.&lt;/p&gt;
+&lt;p&gt;
+Part 2 turned out to be far easier than I expected. Part 1 had us just
+do the first fold. Part 2 had us do all of them at which point, if we
+printed our board it would show us the 8 secret letters that formed
+our anwer. Since the example on the problem page was a y fold and the
+first fold of my data was an x fold I knew both my folds worked. I
+just ran through all the folds and voila.&lt;/p&gt;
+&lt;p&gt;
+Now, I&amp;#39;m not complaining about an easy problem. If it were harder I
+might not finish and then no write up but I was expecting something
+more.&lt;/p&gt;
+&lt;p&gt;
+There were ways to make part two a bit more complex. I could see maybe
+placing the data so far off the end so that you had to translate them
+down closer to the origin so that your result would print or maybe do
+something with overlapping marks when you fold as I mentioned up top.&lt;/p&gt;
+&lt;p&gt;
+Still, nothing wrong with an easy day mixed in and I still think it&amp;#39;s
+a great problem. This could be done by a CS0 or CS1 class. What I
+particularly love about problems like this is that when you
+ultimately solve it you &amp;#34;decode&amp;#34; a secret message. Much cooler than
+just getting some number.&lt;/p&gt;
+&lt;p&gt;
+So, over half way done. I still have that part 2 of day 12 to finish
+but still captured half the total stars for the event. That&amp;#39;s my
+starting goal each year.&lt;/p&gt;
+&lt;p&gt;
+If you want to see my full solution, you can check it out &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day13.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+Enjoy.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Dumbo Octopus and the Game of Life - AOC 2011 Day 11</title>
