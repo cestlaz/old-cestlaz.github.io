@@ -464,7 +464,7 @@ familiar with Lex you should be able to figure out most of the rules.&lt;/p&gt;
 Some of the translators rely mostly on simple letter
 substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;l&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;qu&amp;#34;        gtf_printf(&amp;#34;qw&amp;#34;);
 &amp;#34;th &amp;#34;       gtf_printf(&amp;#34;f &amp;#34;);
@@ -477,7 +477,7 @@ substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
 Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
 [Oo]sama		|
 [Bb]in(-|{WB})[Ll]ad(e|i)n	{ switch(gtf_random(3))
 				  {
@@ -503,7 +503,7 @@ Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
 Some, like chef, pirate, and aust do some of both:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
 w		gtf_puts(&amp;#34;v&amp;#34;);
 ou		gtf_puts(&amp;#34;u&amp;#34;);
 &amp;#34;de &amp;#34;		gtf_puts(&amp;#34;d &amp;#34;);
@@ -783,7 +783,7 @@ add &amp;#34;ay&amp;#34;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Students usually start with something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 as students realize it&amp;#39;s much easier to check for vowels rather than
@@ -792,7 +792,7 @@ consonants. &lt;/p&gt;
 Some students discover that you can do any of the following instead of
 the big compound &lt;strong&gt;or&lt;/strong&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This allows us to talk a little about lists (and tuples if you like)
@@ -805,7 +805,7 @@ then talk about using python&amp;#39;s &lt;code&gt;split()&lt;/code&gt; method t
 on whitespace. We also talk about the &lt;code&gt;for&lt;/code&gt; loop. Ultimately this
 leads us to writing a function to convert a sentence into Pig Latin:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 But this doesn&amp;#39;t work with real sentences. Let&amp;#39;s focus on two
@@ -820,7 +820,7 @@ This is where things get fun. &lt;/p&gt;
 To handle the period, students frequently jump to modifying the &lt;strong&gt;if&lt;/strong&gt; 
 conditions in &lt;code&gt;piglatinify&lt;/code&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or something similar.&lt;/p&gt;
@@ -832,13 +832,13 @@ posts &lt;a href=&#34;https://cestlaz.github.io/posts/2014-02-26-change-the-data
 If we take out the period we can do our regular piglatinify and then
 add it back in. This leads us to a solution like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We can do something similar to deal with words that start with upper
 case letters:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You can approach other special cases similarly.&lt;/p&gt;

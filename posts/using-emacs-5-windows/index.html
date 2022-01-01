@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1639424496" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641050067" />
 
 
 
@@ -23,10 +23,9 @@
  I posted a bit about it in my last post and plan to write some more on it, but for now, more Emacs.
   This video concerns using windows. By using buffers and windows and the basics you got from the tutorial, you shouldn&#39;t have to ever leave emacs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-5-windows/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-5-windows/" />
 <meta property="article:published_time" content="2016-06-14T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-06-14T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 5 - Windows"/>
@@ -137,12 +136,12 @@ to describe a key and <strong><strong>C-x f</strong></strong> to describe a func
 key and with the arrows. To set that up, you can add this to your
 <strong><strong>init.el</strong></strong></p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(windmove<span style="color:#f92672">-</span>default<span style="color:#f92672">-</span>keybindings)</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(windmove<span style="color:#f92672">-</span>default<span style="color:#f92672">-</span>keybindings)</code></pre></div></code></pre></div>
 </div>
 <p>
 I prefer using <strong><strong>ace-window</strong></strong> mode which still uses <strong><strong>C-x o</strong></strong>:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">; add this to init<span style="color:#f92672">.</span>el
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">; add this to init<span style="color:#f92672">.</span>el
 (use<span style="color:#f92672">-</span>package ace<span style="color:#f92672">-</span>window
 :ensure t
 :init
@@ -156,7 +155,7 @@ I prefer using <strong><strong>ace-window</strong></strong> mode which still use
 <p>
 The other mode I mention in the video is winner mode:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(winner<span style="color:#f92672">-</span>mode <span style="color:#ae81ff">1</span>)</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(winner<span style="color:#f92672">-</span>mode <span style="color:#ae81ff">1</span>)</code></pre></div></code></pre></div>
 </div>
 <p>
 Which will allow you to use <strong><strong>C-c left or right</strong></strong> to move through past
@@ -243,7 +242,7 @@ Relevant links:</p>
                 
                 
 
-                <p>© 2021<br>
+                <p>© 2022<br>
 Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
 </p>
             

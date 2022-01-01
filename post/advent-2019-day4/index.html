@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1639424496" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641050066" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="Day 4. Most of the day was spent working on the NY State CS standards to I didn&#39;t figure to have much time to work on the problem. Fortunately, I was able to knock out part 1 before work started and part 2 was a quick adjustment when I got back to it at the start of lunch.
  Once again, it was a problem with a few interesting teacher side aspects." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day4/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day4/" />
 <meta property="article:published_time" content="2019-12-04T19:32:34-04:00" />
 <meta property="article:modified_time" content="2019-12-04T19:32:34-04:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advent 2019 Day 4"/>
@@ -144,7 +143,7 @@ that will match text. Some examples:</p>
 You can use parentheses to form a &#34;match group&#34; and then use &#34;\1&#34; to
 match the group, so this regular expression:</p>
 <p>
-<pre tabindex="0"><code class="language-regex" data-lang="regex">([0-9])\1</code></pre></p>
+<pre><code class="language-regex" data-lang="regex">([0-9])\1</code></pre></p>
 <p>
 will match two any substring with two of digits, adjacent. Many regex
 engines allow you to use <strong>\d</strong> instead of <strong>[0-9]</strong> as a shorthand for
@@ -154,23 +153,23 @@ Here&#39;s the line that will take a list of potential passwords in a
 variable <strong>passwords</strong> and return a list that only containsn the
 passwords that meet the two consecutive of the same digit rule.</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(filter <span style="color:#f92672">#</span>(re-seq <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;(\d)\1&#34;</span> %) passwords)</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(filter <span style="color:#f92672">#</span>(re-seq <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;(\d)\1&#34;</span> %) passwords)</code></pre></div></p>
 <p>
 I knew that Python has a <strong>partition</strong> function that would take a string
 with a potential password (I convert the number to a string before
 doing the regex test above). It would take a string &#34;1245&#34; and convert
 it into something like this <strong>(1,2), (2,3), (3,4), (4,5)</strong>. Here&#39;s the instruction:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">1</span> %) passwords)</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">1</span> %) passwords)</code></pre></div></p>
 <p>
 Next we test each pair in the partition to see that the first value in
 the pair is less than or equal to the second one:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(map <span style="color:#f92672">#</span>(every? (<span style="color:#66d9ef">fn </span>[ [a b]] (&lt;= (int a) (int b))) %) passwrods)</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(map <span style="color:#f92672">#</span>(every? (<span style="color:#66d9ef">fn </span>[ [a b]] (&lt;= (int a) (int b))) %) passwrods)</code></pre></div></p>
 <p>
 Pull out the ones where the above is true and count them:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(count (filter true?))</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(count (filter true?))</code></pre></div></p>
 <p>
 And that&#39;s part one.</p>
 <p>
@@ -194,7 +193,7 @@ Fortunately, this is just more text processing:</p>
 <p>Remove all the sequences of 3 or more repeats. This can also be
 xdone using a regular expression search and replace. In Clojure
 it&#39;s:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">     cleaned (<span style="color:#a6e22e">string/replace</span> s <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;([0-9])\1\1+&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>) 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">     cleaned (<span style="color:#a6e22e">string/replace</span> s <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;([0-9])\1\1+&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>) 
      </code></pre></div>
 The [0-9]\1\1+ says match any sequence of 3 or more of the same
 digit and we replace it with an empty string.</p>
@@ -314,7 +313,7 @@ see.</p>
                 
                 
 
-                <p>© 2021<br>
+                <p>© 2022<br>
 Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
 </p>
             

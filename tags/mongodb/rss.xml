@@ -39,7 +39,7 @@ very easy for a beginner to get started.&lt;/p&gt;
 Let&amp;#39;s say you wanted to store information about a students. You might
 create this dictionary:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;First&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amanda&amp;#39;&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ID&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1245&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;,
@@ -48,12 +48,12 @@ create this dictionary:&lt;/p&gt;
 &lt;p&gt;
 You add this to your database like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Later, you can query for all the students in Homeroom 5A:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Super quick and easy. It also comes with a nice REPL - essentially a
