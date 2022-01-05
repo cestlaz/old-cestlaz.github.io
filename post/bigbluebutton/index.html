@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641237171" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641389813" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="As we scrambled to move online in March we used what we knew, what we heard of and what we were allowed. This usually meant Zoom, Google Meet, or Microsoft Teams.
  I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/bigbluebutton/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/bigbluebutton/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-05-25T16:33:17-04:00" />
 <meta property="article:modified_time" content="2020-05-25T16:33:17-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Zoom alternatives that aren&#39;t from MicroGoogle"/>
@@ -99,48 +100,22 @@ maintenance is a pain but so far, it&#39;s been carefree.</p>
 Next, it has some nice features. It supports pretty much everything
 that Zoom supports including: </p>
 <ul>
-<li>
-<p>join passwords</p>
-</li>
-<li>
-<p>waiting room</p>
-</li>
-<li>
-<p>Brady Bunch view </p>
-</li>
-<li>
-<p>chat</p>
-</li>
-<li>
-<p>reactions (raise hand etc.)</p>
-</li>
-<li>
-<p>a shared whiteboard</p>
-</li>
-<li>
-<p>screen sharing</p>
-</li>
-<li>
-<p>breakout rooms</p>
-</li>
-<li>
-<p>optional session recording. </p>
-</li>
-<li>
-<p>polling </p>
-</li>
+<li>join passwords</li>
+<li>waiting room</li>
+<li>Brady Bunch view </li>
+<li>chat</li>
+<li>reactions (raise hand etc.)</li>
+<li>a shared whiteboard</li>
+<li>screen sharing</li>
+<li>breakout rooms</li>
+<li>optional session recording. </li>
+<li>polling </li>
 </ul>
 <p>and adds a few:</p>
 <ul>
-<li>
-<p>a shared note space</p>
-</li>
-<li>
-<p>shared whiteboard is really a presentation that you can upload</p>
-</li>
-<li>
-<p>A simple html5 client </p>
-</li>
+<li>a shared note space</li>
+<li>shared whiteboard is really a presentation that you can upload</li>
+<li>A simple html5 client </li>
 </ul>
 <p>BBB is also based on &#34;classrooms&#34; rather than meetings which as
 a teacher seems cleaner and makes more sense.</p>
@@ -159,30 +134,22 @@ was easier to follow <a href="https://github.com/bigbluebutton/bbb-install">thes
 (culled from the longer explanations on the bbb-install site I just
 linked):</p>
 <ol>
-<li>
-<p>Create the DO droplet or install an Ubuntu 16.04 mathine.</p>
-</li>
-<li>
-<p>Log in and run <code>apt-get update</code>, <code>apt-get dist-upgrade</code> and
-<code>apt-get upgrade</code>.</p>
-</li>
-<li>
-<p>Set up DNS for the box so you can get to it by name. To do this I
+<li>Create the DO droplet or install an Ubuntu 16.04 mathine.</li>
+<li>Log in and run <code>apt-get update</code>, <code>apt-get dist-upgrade</code> and
+<code>apt-get upgrade</code>.</li>
+<li>Set up DNS for the box so you can get to it by name. To do this I
 went to Google domains and added an entry for
-bigbluebutton.huntercs.org.</p>
-</li>
-<li>
-<p>I ran (all one line):</p>
-</li>
+bigbluebutton.huntercs.org.</li>
+<li>I ran (all one line):</li>
 </ol>
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g</code></pre></div>&gt;}}</p>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g</code></pre></div>&gt;}}</p>
 <p>
     This downloads and installs BBB and also uses <strong>certbot</strong> to set up
     ssl for secure connections.</p>
 <p>
 After this was done, I created an admin account:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd greenlight/
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd greenlight/
 docker exec greenlight-v2 bundle exec rake admin:create</code></pre></div>&gt;}}</p>
 <p>
 At this point I was up and running so I went to the host and logged in

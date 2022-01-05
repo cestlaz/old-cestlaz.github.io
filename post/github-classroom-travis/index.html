@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641237171" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641389813" />
 
 
 
 <meta property="og:title" content="Github Classroom and Travis CI" />
 <meta property="og:description" content="I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my workflows down. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well.  A few years ago, the GitHub Education team started GitHub Classroom. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/github-classroom-travis/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/github-classroom-travis/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-02-02T09:44:29-04:00" />
 <meta property="article:modified_time" content="2019-02-02T09:44:29-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Github Classroom and Travis CI"/>
@@ -93,12 +94,8 @@ combination of my changing my workflow and part due to the GitHub
 education tools and community. At it&#39;s core, GitHub classroom does two
 things well:</p>
 <ol>
-<li>
-<p>Assignment creation and distribution</p>
-</li>
-<li>
-<p>Repo management and organization.</p>
-</li>
+<li>Assignment creation and distribution</li>
+<li>Repo management and organization.</li>
 </ol>
 <p>I thought I&#39;d do a couple of posts and videos to show how I&#39;m using
 everything. </p>
@@ -129,7 +126,7 @@ for educational purposes for free. </p>
 The only other thing you have to do is create a <a href="https://yaml.org/">YAML</a> file named
  <code>.travis.yml</code> in your repo. Here&#39;s one I&#39;m using to test C++ projecs:</p>
 <div class="src src-yaml">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">language</span>: <span style="color:#ae81ff">cpp</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">language</span>: <span style="color:#ae81ff">cpp</span>
 <span style="color:#f92672">compiler</span>: <span style="color:#ae81ff">clang</span>
 <span style="color:#f92672">script</span>:
   - <span style="color:#ae81ff">make test</span>

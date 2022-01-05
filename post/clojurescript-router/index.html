@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641237171" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641389813" />
 
 
 
 <meta property="og:title" content="Clojurescript - building a simple router" />
 <meta property="og:description" content="In this video we&#39;ll look at creating a small router.  I originally looked at using one of the available libraries to set up routing. I considered reitit and bidi but in the end decided to figure out how to do it myself.  It turns out that whenever you change the hash part of a url - everything following a # at the end of a url you get a hashchange event." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/clojurescript-router/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/clojurescript-router/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-01-15T09:37:17-04:00" />
 <meta property="article:modified_time" content="2020-01-15T09:37:17-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Clojurescript - building a simple router"/>
@@ -87,19 +88,19 @@ It turns out that whenever you change the hash part of a url -
 everything following a # at the end of a url you get a <code>hashchange</code>
 event. You can handle that with</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"> (<span style="color:#a6e22e">.addEventListener</span> js/window <span style="color:#e6db74">&#34;hashchange&#34;</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">handleroutes</span> routes %))</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"> (<span style="color:#a6e22e">.addEventListener</span> js/window <span style="color:#e6db74">&#34;hashchange&#34;</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">handleroutes</span> routes %))</code></pre></div></p>
 <p>
 where <code>handleroutes</code> is your function to actually handle the routes.</p>
 <p>
 You can then get the actual value of that last hash part of the url
 with:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">.-location.hash</span> js/window)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">.-location.hash</span> js/window)</code></pre></div></p>
 <p>
 Once you map that to whatever function you want you update the history
 and mount the new page:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">   (<span style="color:#a6e22e">.history.replaceState</span> js/window {} nil loc)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">   (<span style="color:#a6e22e">.history.replaceState</span> js/window {} nil loc)
    (<span style="color:#a6e22e">mount</span> newpage) </code></pre></div></p>
 <p>
 All the code is up on GitHub: <a href="https://github.com/zamansky/shadow-cljs-demo"><a href="https://github.com/zamansky/shadow-cljs-demo">https://github.com/zamansky/shadow-cljs-demo</a></a></p>

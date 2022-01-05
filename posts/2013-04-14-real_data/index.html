@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641237171" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641389813" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="When looking for assignments for our classes, in addition to trying to craft assignments that develop and reinforce key ideas, we also strive to come up with ideas that &ldquo;speak&rdquo; to the students and keep their interest. We write small games, use problems within the student&rsquo;s experiences, and in general try to find problems that are appealing.
 This is much easier to do when the kids can read data from a file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2013-04-14-real_data/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/2013-04-14-real_data/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-04-14T00:00:00+00:00" />
 <meta property="article:modified_time" content="2013-04-14T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Real Data"/>
@@ -88,7 +89,7 @@ tool we&rsquo;re using with our sophomores right now is Python and Python
 makes reading files very easy. Combining file input with basic string
 functions and all of a sudden, we can read and parse comma separated
 values.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">l<span style="color:#f92672">=</span>[]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">l<span style="color:#f92672">=</span>[]
 <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> open(filename)<span style="color:#f92672">.</span>readlines():
 l<span style="color:#f92672">.</span>append(line<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)</code></pre></div>
 <p>True, this doesn&rsquo;t handle quotes and embedded commas, but that just

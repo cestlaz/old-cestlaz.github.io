@@ -89,15 +89,9 @@ platform check Zulip out.&lt;/p&gt;
 Beyond the CS specifics We&amp;#39;ve been primarily using three tools in our
 summer certification program.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Zoom for video conferencing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slack for text based communicaiton&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GitHub for just about everything else&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Zoom for video conferencing&lt;/li&gt;
+&lt;li&gt;Slack for text based communicaiton&lt;/li&gt;
+&lt;li&gt;GitHub for just about everything else&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We use GitHub as a CMS - a place to share code and assignments as well
 as collect them. We&amp;#39;re also playing with GitHub discussions although
@@ -112,23 +106,14 @@ receive an email alert whenever a students submits anything.&lt;/p&gt;
 Whenever a student updates an assignment or in Git parlance commits
 and pushes up a change, I get an email alert. The email includes: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The repo where the change was made &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A brief message describing the most recent change&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A link the the students GitHub account&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A link to the actual change.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;The repo where the change was made &lt;/li&gt;
+&lt;li&gt;A brief message describing the most recent change&lt;/li&gt;
+&lt;li&gt;A link the the students GitHub account&lt;/li&gt;
+&lt;li&gt;A link to the actual change.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Clicking on the change and I get to a screen like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/githubdiff.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/githubdiff.png&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -314,48 +299,22 @@ maintenance is a pain but so far, it&amp;#39;s been carefree.&lt;/p&gt;
 Next, it has some nice features. It supports pretty much everything
 that Zoom supports including: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;join passwords&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;waiting room&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Brady Bunch view &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;chat&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;reactions (raise hand etc.)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;a shared whiteboard&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;screen sharing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;breakout rooms&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;optional session recording. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;polling &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;join passwords&lt;/li&gt;
+&lt;li&gt;waiting room&lt;/li&gt;
+&lt;li&gt;Brady Bunch view &lt;/li&gt;
+&lt;li&gt;chat&lt;/li&gt;
+&lt;li&gt;reactions (raise hand etc.)&lt;/li&gt;
+&lt;li&gt;a shared whiteboard&lt;/li&gt;
+&lt;li&gt;screen sharing&lt;/li&gt;
+&lt;li&gt;breakout rooms&lt;/li&gt;
+&lt;li&gt;optional session recording. &lt;/li&gt;
+&lt;li&gt;polling &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and adds a few:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;a shared note space&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;shared whiteboard is really a presentation that you can upload&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A simple html5 client &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;a shared note space&lt;/li&gt;
+&lt;li&gt;shared whiteboard is really a presentation that you can upload&lt;/li&gt;
+&lt;li&gt;A simple html5 client &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;BBB is also based on &amp;#34;classrooms&amp;#34; rather than meetings which as
 a teacher seems cleaner and makes more sense.&lt;/p&gt;
@@ -374,30 +333,22 @@ was easier to follow &lt;a href=&#34;https://github.com/bigbluebutton/bbb-instal
 (culled from the longer explanations on the bbb-install site I just
 linked):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Create the DO droplet or install an Ubuntu 16.04 mathine.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Log in and run &lt;code&gt;apt-get update&lt;/code&gt;, &lt;code&gt;apt-get dist-upgrade&lt;/code&gt; and
-&lt;code&gt;apt-get upgrade&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Set up DNS for the box so you can get to it by name. To do this I
+&lt;li&gt;Create the DO droplet or install an Ubuntu 16.04 mathine.&lt;/li&gt;
+&lt;li&gt;Log in and run &lt;code&gt;apt-get update&lt;/code&gt;, &lt;code&gt;apt-get dist-upgrade&lt;/code&gt; and
+&lt;code&gt;apt-get upgrade&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Set up DNS for the box so you can get to it by name. To do this I
 went to Google domains and added an entry for
-bigbluebutton.huntercs.org.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I ran (all one line):&lt;/p&gt;
-&lt;/li&gt;
+bigbluebutton.huntercs.org.&lt;/li&gt;
+&lt;li&gt;I ran (all one line):&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
     This downloads and installs BBB and also uses &lt;strong&gt;certbot&lt;/strong&gt; to set up
     ssl for secure connections.&lt;/p&gt;
 &lt;p&gt;
 After this was done, I created an admin account:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd greenlight/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd greenlight/
 docker exec greenlight-v2 bundle exec rake admin:create&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
 At this point I was up and running so I went to the host and logged in
@@ -472,15 +423,9 @@ assignments. It&amp;#39;s great for organizing, distributing, and collecting
 assignments and gets the kids used to using real world tools at the
 same time. I&amp;#39;ve written a bunch of posts on how I use it:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/github-classroom/&#34;&gt;How I use GitHub Classroom&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/communicating-with_students/&#34;&gt;Communicating with Students - meybe GitHub to the rescue&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4/&#34;&gt;GitHub as a tool for education&lt;/a&gt; (part of a 4 part series)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/github-classroom/&#34;&gt;How I use GitHub Classroom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/communicating-with_students/&#34;&gt;Communicating with Students - meybe GitHub to the rescue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4/&#34;&gt;GitHub as a tool for education&lt;/a&gt; (part of a 4 part series)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As well as a couple of others.&lt;/p&gt;
 &lt;p&gt;
@@ -597,24 +542,12 @@ Editors
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Emacs&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Gedit&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Vim&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sublime Text&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Atom&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Jedit&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Emacs&lt;/li&gt;
+&lt;li&gt;Gedit&lt;/li&gt;
+&lt;li&gt;Vim&lt;/li&gt;
+&lt;li&gt;Sublime Text&lt;/li&gt;
+&lt;li&gt;Atom&lt;/li&gt;
+&lt;li&gt;Jedit&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -624,27 +557,13 @@ IDES
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Eclipse&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;DrJava&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Geany&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;BlueJ&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;IntelliJ&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;VSCode&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JGrasp&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Eclipse&lt;/li&gt;
+&lt;li&gt;DrJava&lt;/li&gt;
+&lt;li&gt;Geany&lt;/li&gt;
+&lt;li&gt;BlueJ&lt;/li&gt;
+&lt;li&gt;IntelliJ&lt;/li&gt;
+&lt;li&gt;VSCode&lt;/li&gt;
+&lt;li&gt;JGrasp&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -874,8 +793,7 @@ I hadn&amp;#39;t heard of this one before but it looks like a contender. It
 has a  pretty clean interface and it worked out of the box. I
 installed it using the package manager.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Class browser on the right, files on the left and console (terminal),
@@ -920,8 +838,7 @@ VSCode
 This one shocked me - I actually found myself liking a Microsoft
 product. I guess this really isn&amp;#39;t your father&amp;#39;s Microsoft.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Much like Geany it has a clean interface and like Geany you don&amp;#39;t need
@@ -942,8 +859,7 @@ JGrasp
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
+&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 JGrasp feels much the same as the other contenders - Geany and VSCode
@@ -1043,19 +959,11 @@ assignments.&lt;/p&gt;
 &lt;p&gt;
 Here are the important links you&amp;#39;ll need to set things up yourself:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;To register an organization (so that you can use private repos for
-free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;To register an organization (so that you can use private repos for
+free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 The video goes through the entire process but doesn&amp;#39;t really much into
@@ -1064,13 +972,13 @@ grading. For grading I usually do something like the following:&lt;/p&gt;
 First I make a file named &lt;strong&gt;repos&lt;/strong&gt; with the names of all the submitted
 repos:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
 ls &amp;gt; repos&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Then I&amp;#39;ll use a script that looks something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
       cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
       NAME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Name: &amp;#34;&lt;/span&gt; Readme.org | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/** Name: //g&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
@@ -1167,12 +1075,8 @@ combination of my changing my workflow and part due to the GitHub
 education tools and community. At it&amp;#39;s core, GitHub classroom does two
 things well:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Assignment creation and distribution&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Repo management and organization.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Assignment creation and distribution&lt;/li&gt;
+&lt;li&gt;Repo management and organization.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I thought I&amp;#39;d do a couple of posts and videos to show how I&amp;#39;m using
 everything. &lt;/p&gt;
@@ -1203,7 +1107,7 @@ for educational purposes for free. &lt;/p&gt;
 The only other thing you have to do is create a &lt;a href=&#34;https://yaml.org/&#34;&gt;YAML&lt;/a&gt; file named
  &lt;code&gt;.travis.yml&lt;/code&gt; in your repo. Here&amp;#39;s one I&amp;#39;m using to test C++ projecs:&lt;/p&gt;
 &lt;div class=&#34;src src-yaml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
   - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;

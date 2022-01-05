@@ -49,15 +49,9 @@ can be done in linear time.&lt;/p&gt;
 Once we&amp;#39;ve done this arrangement, we can discuss what we can infer
 from this new arrangement. We can now tell that:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;everyone to the left of the &amp;#34;pivot&amp;#34; is less than the pivot&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;everyone to the right is greater&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The pivot element is at its true location if the list were&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;everyone to the left of the &amp;#34;pivot&amp;#34; is less than the pivot&lt;/li&gt;
+&lt;li&gt;everyone to the right is greater&lt;/li&gt;
+&lt;li&gt;The pivot element is at its true location if the list were&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;sorted. That is, if we started arranging around item k, then we&amp;#39;ve
 moved item k to the kth location in the dataset.&lt;/p&gt;

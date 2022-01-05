@@ -102,7 +102,7 @@ subproblem solution rather than recalculating it.&lt;/p&gt;
 Probably the easiest example is Fibonacci numbers. You can generate
 Fibonacci numbers recursively using something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
           &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
@@ -115,7 +115,7 @@ keeps recalculating the same subproblems over and over and over.&lt;/p&gt;
 You can &amp;#34;fix&amp;#34; this by creating a list of previously found Fibonacci 
 numbers and just return them rather than recalculating:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  fibs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# make room for 1000 fib numbers&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  fibs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# make room for 1000 fib numbers&lt;/span&gt;
 
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; fibs[n] &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
@@ -149,22 +149,19 @@ smallest of the above three.&lt;/p&gt;
 &lt;p&gt;
 For example, given this array representing the color changes:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/seam-mat1.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat1.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 When calculating the second item in the second row, you&amp;#39;ll consider
 the three values above it:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/seam-mat2.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat2.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The smallest is 0 so that 2 remains a 2. If we do this for every
 element in the second row we get the following:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/seam-mat3.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat3.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The green boxes added a 0 from the line above but the yellow ones
@@ -173,8 +170,7 @@ edges just considered the two values above them and didn&amp;#39;t wrap.&lt;/p&g
 &lt;p&gt;
 Working the rest of the way through, you get this final array:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/seam-mat4.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat4.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 You can now easily identify the best seam to remove by finding the

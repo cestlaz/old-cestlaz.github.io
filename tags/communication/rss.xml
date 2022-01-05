@@ -21,21 +21,11 @@
 Out of class student communication is always a challenge. There are
 plenty of options:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Piazza&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Facebook group&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slack, Discord, or other chat system&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Discourse, Vanilla or other discussion forum system&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mailing list&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Piazza&lt;/li&gt;
+&lt;li&gt;Facebook group&lt;/li&gt;
+&lt;li&gt;Slack, Discord, or other chat system&lt;/li&gt;
+&lt;li&gt;Discourse, Vanilla or other discussion forum system&lt;/li&gt;
+&lt;li&gt;Mailing list&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;but all have warts. &lt;/p&gt;
 &lt;p&gt;
@@ -80,24 +70,14 @@ a chain of messages (thread). You can tag them, filter them, and when
 you&amp;#39;re done, close them (and reopen them later if needs be). The big
 plusses are that:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;People who are subscribed to the repo (assignment, web page, etc.)
-automatically get email alerts on the issues.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can explicitly tag people to force them to get alerts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can directly reply via email so you don&amp;#39;t need to go to
-GitHub.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Everything related to a given project or repo is self contained.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
-create a logged communication with your students on specific assignments.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;People who are subscribed to the repo (assignment, web page, etc.)
+automatically get email alerts on the issues.&lt;/li&gt;
+&lt;li&gt;You can explicitly tag people to force them to get alerts.&lt;/li&gt;
+&lt;li&gt;You can directly reply via email so you don&amp;#39;t need to go to
+GitHub.&lt;/li&gt;
+&lt;li&gt;Everything related to a given project or repo is self contained.&lt;/li&gt;
+&lt;li&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
+create a logged communication with your students on specific assignments.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 I haven&amp;#39;t used this class wide yet - just experimented a bit but I

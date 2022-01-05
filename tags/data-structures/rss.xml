@@ -45,16 +45,14 @@ unwieldy with additional parent pointers. &lt;/p&gt;
 &lt;p&gt;
 Instead consider the following tree:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1.png&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve numbered each of the nodes with the root - node 0 holding a key
 value of 10. We can easily store this tree in an array:#heaps.org#&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1-array.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1-array.png&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -73,12 +71,10 @@ to relate nodes.&lt;/p&gt;
 &lt;p&gt;
 We could of course do this for any binary tree:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2.png&#34;/&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2-array.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2-array.png&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -142,7 +138,7 @@ the tools in their tool belt and come up with what makes sense. &lt;/p&gt;
 I like the arbitrary tree example as it uses the same internal
 structure as a binary tree does: &lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 For a binary search tree pointer1 is left and pointer 2 is right. For
@@ -162,8 +158,7 @@ search. The idea that there&amp;#39;s this huge graph where each node is the
 a potential state of the maze and the edges represent how we can move
 from state to state:#alternate-representations.org#&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/mazestates.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/mazestates.png&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -230,8 +225,7 @@ search tree where you also have two pointers in each node a left and a
 right. Same &amp;#34;physical&amp;#34; representation but two very different
 variations.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The image on the left is the actual arbitrary tree and the one on the
@@ -275,14 +269,14 @@ until you get a good result. &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the start of the Book of Psalms:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the man that walketh not in the counsel of the
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the man that walketh not in the counsel of the
 ungodly, nor standeth in the way of sinners, nor sitteth in
 the seat of the scornful.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 and here&amp;#39;s some generated text:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the people that delight in war. Princes shall come out of
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the people that delight in war. Princes shall come out of
 Zion,  the perfection of beauty god hath shined our god shall come and
 shall declare thy mighty acts. I will speak of the glory of the lord
 surely i will not lie unto David.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -384,7 +378,7 @@ can build a dictionary where the keys are the words and the values are
 all the words that follow the key. We can build this with a variation
 on our bag of words builder:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Note that we need a counting loop rather than just iterating over the
@@ -393,35 +387,23 @@ iteration.&lt;/p&gt;
 &lt;p&gt;
 The (partial) value for the wordlists for the Book of Psalms would be:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 At this point, generating text is easy. &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Start with a word&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add the word to yoru story.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Look  it up in your wordlists dictionary.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;select a random word from that words dictionary entry (it&amp;#39;s list).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;That becomes the word for the next iteration&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Repeat until you have enough words.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Start with a word&lt;/li&gt;
+&lt;li&gt;Add the word to yoru story.&lt;/li&gt;
+&lt;li&gt;Look  it up in your wordlists dictionary.&lt;/li&gt;
+&lt;li&gt;select a random word from that words dictionary entry (it&amp;#39;s list).&lt;/li&gt;
+&lt;li&gt;That becomes the word for the next iteration&lt;/li&gt;
+&lt;li&gt;Repeat until you have enough words.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This won&amp;#39;t add any punctuation and it will crash when it gets to the
 last word in the original text (as it can&amp;#39;t find any &amp;#34;next words&amp;#34; but
 basically it will work. Here&amp;#39;s the code:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The &lt;code&gt;random.choice()&lt;/code&gt; randomly selects a word from a list. This is
@@ -440,7 +422,7 @@ the value.&lt;/p&gt;
 For example, a partial dictionary based on this idea from Macbeth Act
 1 Scene 1 could be:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This takes a bit more work to build and also a bit more work to
@@ -517,26 +499,16 @@ following bag:&lt;/p&gt;
 Not too interesting but it gets more interesting on a larger text. We
 used:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Act 1 Scene 1 from Macbeth (for testing - it&amp;#39;s only 13 lines)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Cyrano de Bergerac (because it&amp;#39;s my favorite play)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Moby Dick (chapter 1)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Moby Dick (full text)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The Book of Psalms&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Act 1 Scene 1 from Macbeth (for testing - it&amp;#39;s only 13 lines)&lt;/li&gt;
+&lt;li&gt;Cyrano de Bergerac (because it&amp;#39;s my favorite play)&lt;/li&gt;
+&lt;li&gt;Moby Dick (chapter 1)&lt;/li&gt;
+&lt;li&gt;Moby Dick (full text)&lt;/li&gt;
+&lt;li&gt;The Book of Psalms&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Assuming a cleaned string with all the text, building the bag is
 pretty easy:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;cleaned_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a string with all the cleaned text&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;cleaned_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a string with all the cleaned text&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;bag&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; cleaned_text&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split():
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;  bag&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setdefault(word,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
@@ -547,7 +519,7 @@ dictionary then insert it with a value of 0, otherwise, if &lt;code&gt;word&lt;/
 already a key in the dictionary do nothing. This saves us from
 constructs like:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;      bag[word]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;      bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
@@ -570,7 +542,7 @@ words much cleaner. Say, for instance you want to find all the words
 that occur between 50 and 100 times. Without list comprehensions you
 might write:&lt;/p&gt;
 &lt;p&gt;
-  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;          result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(word) &lt;span style=&#34;color:#75715e&#34;&gt;# or (word,count) or whatever&lt;/span&gt;
@@ -578,7 +550,7 @@ might write:&lt;/p&gt;
 &lt;p&gt;
 While with the comprehension it&amp;#39;s:&lt;/p&gt;
 &lt;p&gt;
-  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ word &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;]
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ word &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;]
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Besides basic exploring, what else can you do? You can make word
@@ -603,18 +575,10 @@ build a lesson or unit out of this bag of words idea. I&amp;#39;ll leave you
 all with some web sites that use these ideas in what I think are
 interesting ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://davidamackenzie.com/tmbg_lyrics/&#34;&gt;They Might Be Giants Lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/&#34;&gt;Word use in rap lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated&#34;&gt;Another analysis of rap lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5&#34;&gt;Analysis of succesful song lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidamackenzie.com/tmbg_lyrics/&#34;&gt;They Might Be Giants Lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/&#34;&gt;Word use in rap lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated&#34;&gt;Another analysis of rap lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5&#34;&gt;Analysis of succesful song lyrics&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Enjoy!&lt;/p&gt;
@@ -645,7 +609,7 @@ recursive depth first search:&lt;/p&gt;
 &lt;p&gt;
 The basic algorithm is:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 It&amp;#39;s a nice lesson because in addition to all the recursion stuff, we
@@ -660,7 +624,7 @@ problem in a more general way. We talk about using a data structure to
 hold the set of nodes that we&amp;#39;re aware of and that we want to visit
 next.&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 As we write the solution, we see that using a queue for this

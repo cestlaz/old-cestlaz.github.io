@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641237172" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1641389813" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
  I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-26-gcal/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-26-gcal/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 26 - Google Calendar, Org Agenda"/>
@@ -97,7 +98,7 @@ setting up things on the Google side. You&#39;ll have to replace the
 <strong><strong>client ID</strong></strong> and <strong><strong>client secrets</strong></strong> in the code below as well as use
 your calendar name and whatever org file you want to sync with.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq package-check-signature <span style="color:#66d9ef">nil</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq package-check-signature <span style="color:#66d9ef">nil</span>)
 
 
 (use-package org-gcal
@@ -115,31 +116,25 @@ reload the agenda by hitting <strong><strong>r</strong></strong> in the agenda v
 <p>
 The second hook syncs with my Google calendar when I capture.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(add-hook <span style="color:#e6db74">&#39;org-agenda-mode-hook</span> (lambda () (org-gcal-sync) ))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(add-hook <span style="color:#e6db74">&#39;org-agenda-mode-hook</span> (lambda () (org-gcal-sync) ))
 (add-hook <span style="color:#e6db74">&#39;org-capture-after-finalize-hook</span> (lambda () (org-gcal-sync) ))</code></pre></div></code></pre></div>
 </div>
 <p>
 Here are the rest of my settings. The org files I want to include in
 my agenda views:</p>
 <ul>
-<li>
-<p>gcal.org – the one I&#39;m syncing</p>
-</li>
-<li>
-<p>i.org – my main org file for todo items (the todo capture places</p>
-</li>
+<li>gcal.org – the one I&#39;m syncing</li>
+<li>i.org – my main org file for todo items (the todo capture places</li>
 </ul>
 <p>things in here)</p>
 <ul>
-<li>
-<p>schedule.org – my old schedule before I was syncing with</p>
-</li>
+<li>schedule.org – my old schedule before I was syncing with</li>
 </ul>
 <p>Google. Not active anymore. I should probably remove it.</p>
 <p>
 Also, my capture settings:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-files (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-files (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>
 <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span>
 <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/schedule.org&#34;</span>))
 
@@ -171,7 +166,7 @@ it up to Google.</p>
 Now, I can use bring up a regular agenda <strong><strong>C-a a</strong></strong>, my todo list <strong><strong>C-a
 t</strong></strong> or by adding a custom agenda command:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-custom-commands
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-custom-commands
 <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;Simple agenda view&#34;</span>
 ((agenda <span style="color:#e6db74">&#34;&#34;</span>)
 (alltodo <span style="color:#e6db74">&#34;&#34;</span>)))))</code></pre></div></code></pre></div>
@@ -182,7 +177,7 @@ a combined agenda and todo view using <strong><strong>C-a n</strong></strong></p
 Finally, there&#39;s <a href="https://github.com/kiwanami/emacs-calfw">calfw</a>. It&#39;s a nice tool to view calendars in
 Google. I don&#39;t use it much anymore but it is nice:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package calfw
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package calfw
 :ensure <span style="color:#75715e">;TODO:</span>
 :config
 (require <span style="color:#e6db74">&#39;calfw</span>)
@@ -217,18 +212,10 @@ Old, bad version:</p>
 <p>
 Relevant links:</p>
 <ul>
-<li>
-<p>Video series overview page:</p>
-</li>
-<li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
-</li>
-<li>
-<p>Code:</p>
-</li>
-<li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
-</li>
+<li>Video series overview page:</li>
+<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
+<li>Code:</li>
+<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
 </ul>
 
         </div>
