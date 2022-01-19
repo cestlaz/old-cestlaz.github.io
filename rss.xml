@@ -6,10 +6,110 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jan 2022 17:41:42 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jan 2022 06:47:18 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Do you need to know assembly to be a computer scientist?</title>
+      <link>https://cestlaz.github.io/post/assembly/</link>
+      <pubDate>Wed, 19 Jan 2022 06:47:18 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/assembly/</guid>
+      <description>&lt;p&gt;
+Another recent discussion online asked &amp;#34;do you need to know assembly
+language to be a computer scientist?&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Sides quickly formed. On one side, it was a strict requirement. Some
+going so far as saying you &lt;strong&gt;had&lt;/strong&gt; to start with it or at worst a
+language like C. On the other side you had people claiming that it&amp;#39;s
+wholly unnecessary for most CS graduates like many of the classes we
+require of a CS major (I&amp;#39;m looking at you Calc II and beyond).&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t dispute that many people with CS degrees have great tech
+careers and never program in assembly. Further, the idea that a low
+level assembly programmer describes what a &amp;#34;computer scientist looks
+like&amp;#34; or &amp;#34;should look like&amp;#34; is pretty off base.&lt;/p&gt;
+&lt;p&gt;
+On the other hand, I&amp;#39;d argue that a well educated computer scientist
+should have some knowledge of low level concepts which can probably
+best be explored through some exposure to assembly language.&lt;/p&gt;
+&lt;p&gt;
+To start, what is a computer scientist? As a field we still haven&amp;#39;t
+worked that one out. Certainly, people employed as professors in
+computer science departments are pretty much, by definition, computer
+scientists but that&amp;#39;s the minority of CS majors.&lt;/p&gt;
+&lt;p&gt;
+To me, and this isn&amp;#39;t really a great formal definition, a person who
+employs the creative and problem solving techniques associated with
+computer science in their day to day can certainly call themselves a
+computer scientist.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s a wishy washy definition, I know but to me, it works. Someone
+employed as a software engineer &lt;strong&gt;can&lt;/strong&gt; be a computer scientist or they
+might not be. It depends on their job and how they approach it. Say
+said SE is given screen descriptions, layouts and what to do when
+events happen and they write code to implement this, they&amp;#39;re not being
+a computer scientist. Likewise, if they implement an algorithm
+specifically given to them for a task. On the other hand, if the same
+person designs the interface making creative decisions involving
+accessibility and usability or solves a problem using or designing an
+algorithm then implementing one, then they would be, in my view acting
+as a computer scientist.&lt;/p&gt;
+&lt;p&gt;
+Of course, in the general sense a SE could be a real software
+engineer, software architect, or many more things as well.&lt;/p&gt;
+&lt;p&gt;
+So, does a computer scientist &lt;strong&gt;need&lt;/strong&gt; to actively know assembly?
+No. That said, do they benefit from knowing something about it? I&amp;#39;d
+say yes.&lt;/p&gt;
+&lt;p&gt;
+Years ago, I was watching a special with Itzhak Perlman, arguably the
+greatest violinist of a generation and one of my favorites. He was
+talking to and playing with a bunch of &lt;a href=&#34;https://en.wikipedia.org/wiki/Klezmer&#34;&gt;klezmer&lt;/a&gt; musucians. Or rather, I
+should say trying to play with. Klezmer is something of a Jewish jazz
+with a lot of improvisation. Perlman understood this, could
+meaningfully converse about it with the other musucians but he had the
+hardest time trying to keep up with them. Nobody could seriously say
+that Izhak Perlman wasn&amp;#39;t and isn&amp;#39;t a brilliant musician and artist
+but he really couldn&amp;#39;t play improvisational jazz. His training and art
+are just in a different corner of the music world. That said, he was
+certainly well versed in it. He knew jazz even though he didn&amp;#39;t
+perform it.&lt;/p&gt;
+&lt;p&gt;
+I also saw this at a Bobby Mcferrin concert. He was performing with a
+small string orchestra. I think maybe it was Gidon Kremer&amp;#39;s Kremerate
+Baltica but I don&amp;#39;t remember. At one point he was calling out the
+individual orchestra members to do some improv. It did not go
+well. Again, these were all clearly master artists and they certainly
+knew and were comfortable with Jazz, just not performing it on the
+fly.&lt;/p&gt;
+&lt;p&gt;
+In case you really want to see what I&amp;#39;m talking about, I&amp;#39;ll give one
+more example:&lt;/p&gt;
+
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6mRT61rRSGc?t=37&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/iframe&gt;
+&lt;p&gt;
+Having some knowledge of assembly, or more specifically, how low level
+things work is what I call a &amp;#34;latin&amp;#34; of CS. Understanding things like
+memory or how a processor works help an individual understand buffer
+overflows or why data types matter, why floating point calculations
+are innacurate or why a hash table has to be sparse. They may never
+program in assembly but some knowledge will make them a stronger
+computer scientist. I would say the same for my other CS latin -
+theory. They might not use it day to day but it will help shape their
+decisions and make them a stronger software engineer or whatever.&lt;/p&gt;
+&lt;p&gt;
+So, can you be a gainfully employed tech person and never have seen
+anything low level? Of course. Can you do computer science stuff and
+say the same? Sure. But a well educated, well rounded computer
+scientist will have had some exposure to low level concepts and have
+some base level understanding.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Pension Consultations</title>
@@ -3392,100 +3492,6 @@ I found that version of the argument I mentioned up at the top so
 disgusting. People who don&amp;#39;t want CS teachers to know real CS are
 really saying that the only way they can get and keep teachers is to
 in fact keep them uneducated.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Teaching Styles</title>
-      <link>https://cestlaz.github.io/post/teaching-styles/</link>
-      <pubDate>Tue, 20 Apr 2021 08:31:47 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/teaching-styles/</guid>
-      <description>&lt;p&gt;
-My friend Emmanuel lamented over on Facebook on &amp;#34;Learning Styles,&amp;#34; or
-more specifically on how it&amp;#39;s still given credence. We all chimed in
-in agreement but not an hour later I saw a Twitter thread where
-education thought leaders extolled the virtues of Learning Styles all
-over again. I pointed out that it&amp;#39;s a great example as to why so many
-teachers scoff at &amp;#34;the research&amp;#34; and &amp;#34;research backed practices.&amp;#34;
-We&amp;#39;ve seen it all before. We&amp;#39;re told we have to teach one way or we&amp;#39;re
-failures only to be told a few years later that we have to do
-something else. It&amp;#39;s not necessarily the research (although I question
-a good deal of what I&amp;#39;ve read) but also the interpretations and
-implementations. There are just too many factors that are never
-considered.&lt;/p&gt;
-&lt;p&gt;
-One factor that I&amp;#39;ve rarely seen mentioned but one I think about
-frequently, particularly as I work with teachers is &amp;#34;teaching styles.&amp;#34;
-I&amp;#39;m not talking about any deep science here but we know that teachers
-are people and people have tendencies, strengths, weaknesses, and
-preferences. These are factors that are so important to teaching but
-rarely considered. It&amp;#39;s always &amp;#34;teach this way&amp;#34; and never what works
-for you.&lt;/p&gt;
-&lt;p&gt;
-Think about how ridiculous that is. In what other field do we ignore
-the individual strengths, tendencies and even comfort level of the
-professional. In sports, we know that there are &amp;#34;player&amp;#39;s coaches&amp;#34; and
-&amp;#34;disciplinarians&amp;#34; and players and teams might take better to one or
-the other. Likewise, a coaches act can grow stale over time as the
-team evolves. Similarly a great coach works their system to the
-strengths of the players and doesn&amp;#39;t rigidly try to make players
-conform to a system where they just don&amp;#39;t fit. Now that doesn&amp;#39;t mean
-that a coach won&amp;#39;t try to develop a players weaknesses or try to move
-towards their favored system but the greats look at the skills and
-personalities of all involved. It also doesn&amp;#39;t mean that you can&amp;#39;t
-evolve. Former NY Giants coach Tom Coughlin was a rigid
-disciplinarian and almost lost the team and his job prior to their Super Bowl run
-in 2007. He evolved - became more of a players coach. He didn&amp;#39;t change
-his stripes. He was still a stickler for rules and details but he
-brought in a new human dimension to his coaching game. &lt;/p&gt;
-&lt;p&gt;
-Back to teaching. &lt;/p&gt;
-&lt;p&gt;
-While you want teachers to have a large set of tools in the box they
-are going to be better with some than with others. Of course you can&amp;#39;t
-ignore the students and how they respond but it&amp;#39;s not a one way
-street. Take my friend Jim. He&amp;#39;s one of the best two or three natural
-teachers I know. I describe him as &amp;#34;the teacher I aspire to be.&amp;#34; He&amp;#39;s
-amazing. Stylistically though he&amp;#39;s what I call traditional teacher
-dominant. He presents, there are questions comments and answer, seat
-work. Pretty old school stuff. He doesn&amp;#39;t fit the constructivist mold
-nor the cooperative one but he&amp;#39;s the best. I remember talking to our
-principal a number of years ago. They said &amp;#34;I can&amp;#39;t bring
-superintendents and DOE officials to Jim&amp;#39;s class when they visit and
-want to see what we&amp;#39;re doing. He&amp;#39;s great but they just wouldn&amp;#39;t
-understand and we&amp;#39;d get a lower school rating.&amp;#34; He&amp;#39;s the best but he
-doesn&amp;#39;t fit Danielson. Now before you give me the &amp;#34;but it doesn&amp;#39;t
-count, he teaches at Stuy&amp;#34; I&amp;#39;ll share that prior to teaching at Stuy
-he taught at an overall low performing neighborhood school and
-experience notwithstanding, he was the best then too.&lt;/p&gt;
-&lt;p&gt;
-What makes Jim the best? He has his preferred style and he adjusts to
-what his students need. He&amp;#39;ll take an assortment of tools out of his
-belt - some discovery stuff here, some group work there but he&amp;#39;ll work
-it in to augment his strengths rather than being something he&amp;#39;s not
-and as a result being inauthentic.&lt;/p&gt;
-&lt;p&gt;
-For my part I too am traditional teacher dominant. I&amp;#39;m not anywhere
-close to Jim&amp;#39;s level. I consider myself an above average in class
-teacher who brings other things to the table and makes up for it with
-honesty, sincerity, and loyalty. I&amp;#39;m 100% &lt;strong&gt;not&lt;/strong&gt; a Danielson teacher
-nor am I a cooperative learning one which was all the rage when I
-started my career. I&amp;#39;ll try to get new ideas and learn new techniques
-and pick and choose and overall it&amp;#39;s worked pretty well.&lt;/p&gt;
-&lt;p&gt;
-All of this is to say that when teaching teachers or coaching them,
-don&amp;#39;t try to turn them into you or into John Keating, Jaime Escalante,
-or what have you (note to self, write up teacher movie rant some
-day). Help them to look at who they are and what they bring to the
-table. Mix that with the needs of their students and the cosntraints
-of their teaching situation and help them to be the best they cab be.&lt;/p&gt;
-&lt;p&gt;
-Teaching styles, for lack of a better name is too frequently missing
-from the education equation. It&amp;#39;s totally removed by those who want
-scripted curricula and cookie cutter instruction and barely mentioned
-anywhere else but teaching styles are an important component of great
-teaching and I wish more people acknowledged this.&lt;/p&gt;
 </description>
     </item>
     

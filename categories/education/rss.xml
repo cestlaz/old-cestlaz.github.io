@@ -6,10 +6,110 @@
     <description>C&#39;est la Z (education)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jan 2022 08:53:28 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jan 2022 06:47:18 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/education/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Do you need to know assembly to be a computer scientist?</title>
+      <link>https://cestlaz.github.io/post/assembly/</link>
+      <pubDate>Wed, 19 Jan 2022 06:47:18 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/assembly/</guid>
+      <description>&lt;p&gt;
+Another recent discussion online asked &amp;#34;do you need to know assembly
+language to be a computer scientist?&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Sides quickly formed. On one side, it was a strict requirement. Some
+going so far as saying you &lt;strong&gt;had&lt;/strong&gt; to start with it or at worst a
+language like C. On the other side you had people claiming that it&amp;#39;s
+wholly unnecessary for most CS graduates like many of the classes we
+require of a CS major (I&amp;#39;m looking at you Calc II and beyond).&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t dispute that many people with CS degrees have great tech
+careers and never program in assembly. Further, the idea that a low
+level assembly programmer describes what a &amp;#34;computer scientist looks
+like&amp;#34; or &amp;#34;should look like&amp;#34; is pretty off base.&lt;/p&gt;
+&lt;p&gt;
+On the other hand, I&amp;#39;d argue that a well educated computer scientist
+should have some knowledge of low level concepts which can probably
+best be explored through some exposure to assembly language.&lt;/p&gt;
+&lt;p&gt;
+To start, what is a computer scientist? As a field we still haven&amp;#39;t
+worked that one out. Certainly, people employed as professors in
+computer science departments are pretty much, by definition, computer
+scientists but that&amp;#39;s the minority of CS majors.&lt;/p&gt;
+&lt;p&gt;
+To me, and this isn&amp;#39;t really a great formal definition, a person who
+employs the creative and problem solving techniques associated with
+computer science in their day to day can certainly call themselves a
+computer scientist.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s a wishy washy definition, I know but to me, it works. Someone
+employed as a software engineer &lt;strong&gt;can&lt;/strong&gt; be a computer scientist or they
+might not be. It depends on their job and how they approach it. Say
+said SE is given screen descriptions, layouts and what to do when
+events happen and they write code to implement this, they&amp;#39;re not being
+a computer scientist. Likewise, if they implement an algorithm
+specifically given to them for a task. On the other hand, if the same
+person designs the interface making creative decisions involving
+accessibility and usability or solves a problem using or designing an
+algorithm then implementing one, then they would be, in my view acting
+as a computer scientist.&lt;/p&gt;
+&lt;p&gt;
+Of course, in the general sense a SE could be a real software
+engineer, software architect, or many more things as well.&lt;/p&gt;
+&lt;p&gt;
+So, does a computer scientist &lt;strong&gt;need&lt;/strong&gt; to actively know assembly?
+No. That said, do they benefit from knowing something about it? I&amp;#39;d
+say yes.&lt;/p&gt;
+&lt;p&gt;
+Years ago, I was watching a special with Itzhak Perlman, arguably the
+greatest violinist of a generation and one of my favorites. He was
+talking to and playing with a bunch of &lt;a href=&#34;https://en.wikipedia.org/wiki/Klezmer&#34;&gt;klezmer&lt;/a&gt; musucians. Or rather, I
+should say trying to play with. Klezmer is something of a Jewish jazz
+with a lot of improvisation. Perlman understood this, could
+meaningfully converse about it with the other musucians but he had the
+hardest time trying to keep up with them. Nobody could seriously say
+that Izhak Perlman wasn&amp;#39;t and isn&amp;#39;t a brilliant musician and artist
+but he really couldn&amp;#39;t play improvisational jazz. His training and art
+are just in a different corner of the music world. That said, he was
+certainly well versed in it. He knew jazz even though he didn&amp;#39;t
+perform it.&lt;/p&gt;
+&lt;p&gt;
+I also saw this at a Bobby Mcferrin concert. He was performing with a
+small string orchestra. I think maybe it was Gidon Kremer&amp;#39;s Kremerate
+Baltica but I don&amp;#39;t remember. At one point he was calling out the
+individual orchestra members to do some improv. It did not go
+well. Again, these were all clearly master artists and they certainly
+knew and were comfortable with Jazz, just not performing it on the
+fly.&lt;/p&gt;
+&lt;p&gt;
+In case you really want to see what I&amp;#39;m talking about, I&amp;#39;ll give one
+more example:&lt;/p&gt;
+
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6mRT61rRSGc?t=37&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/iframe&gt;
+&lt;p&gt;
+Having some knowledge of assembly, or more specifically, how low level
+things work is what I call a &amp;#34;latin&amp;#34; of CS. Understanding things like
+memory or how a processor works help an individual understand buffer
+overflows or why data types matter, why floating point calculations
+are innacurate or why a hash table has to be sparse. They may never
+program in assembly but some knowledge will make them a stronger
+computer scientist. I would say the same for my other CS latin -
+theory. They might not use it day to day but it will help shape their
+decisions and make them a stronger software engineer or whatever.&lt;/p&gt;
+&lt;p&gt;
+So, can you be a gainfully employed tech person and never have seen
+anything low level? Of course. Can you do computer science stuff and
+say the same? Sure. But a well educated, well rounded computer
+scientist will have had some exposure to low level concepts and have
+some base level understanding.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How Will Online Influence Teaching</title>
