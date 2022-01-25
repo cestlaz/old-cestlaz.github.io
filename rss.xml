@@ -6,10 +6,118 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jan 2022 06:47:18 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jan 2022 17:46:43 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Trends In Professional Development in CS - it&#39;s not all good</title>
+      <link>https://cestlaz.github.io/post/trends-in-pd/</link>
+      <pubDate>Tue, 25 Jan 2022 17:46:43 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/trends-in-pd/</guid>
+      <description>&lt;p&gt;
+My friend &lt;a href=&#34;https://twitter.com/mrtomocon/status/1486012499304587269&#34;&gt;Tom&lt;/a&gt; tweeted earlier which led me to &lt;a href=&#34;https://csforall.medium.com/virtual-professional-development-is-here-to-stay-d2a3888f2d1a &#34;&gt;this piece&lt;/a&gt; on trends in
+CS professional development (PD). Tom&amp;#39;s tweet was talking about virtual vs
+in person PD so I initially thought I&amp;#39;d write about that and PD in
+general but the article actually led to some deeper issues with PD.&lt;/p&gt;
+&lt;p&gt;
+The article talks about PD being focussed on specific units or
+modules, narrowing to more popular offerings and also becoming less
+localized. This led me to think about a real issue with CS PD that a
+few of us have been harping on for years. The &lt;strong&gt;VAST&lt;/strong&gt; majority of CS PD
+is provided for by &amp;#34;content providers&amp;#34; - people with a product to
+sell. That might be a curriculum, a technical platform, or both but
+something to sell. It&amp;#39;s not just CS knowledge and how to teach
+it. I include organizations like code.org in this bucket because while
+they&amp;#39;re not selling in the same sense as a textbook publish, they are
+selling or pitching their curriculum and platform.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s easy to see how we got here. There are so few people out there
+that actually know both the CS content and how to teach it that there
+was a void so EdTech and a few others stepped in. The truth is, most
+of the big PD providers also don&amp;#39;t have both deep CS and deep CS
+pedagogical knowledge. What they do have is influence. This isn&amp;#39;t to
+say that they&amp;#39;re all bad. There are some providers whom I like very
+much and I think are doing a great job but that&amp;#39;s not the point here.&lt;/p&gt;
+&lt;p&gt;
+So, we&amp;#39;re left with a system where the majority of CS teachers have
+very little CS or CS teaching experience and the providers are pushing
+very specific training tied closely with their product, course, or
+curriculum. I know I&amp;#39;ll get some hate for this but it&amp;#39;s just where we
+are right now.&lt;/p&gt;
+&lt;p&gt;
+This might change over time as preservice teaching programs start to
+emerge but I fear that many of them will just continue the trend of
+pushing canned curricula. I&amp;#39;ve already seen proposed and existing
+programs that essentially have a teacher candidate go through a
+version of APCS-A, APCS-P, a computers in society class and something else
+similar and voila, CS teacher.&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s contrast all of this with math PD or at least the math PD that I
+was subject to for most of my high school teaching career. Most
+department meetings I attended always had a PD piece and that was
+usually something interesting, or at least supposed to be interesting
+presented by a colleague. It might be one of their practices or it
+might be something they got from a conference or an outside PD. We&amp;#39;d
+also have larger PD sessions a couple of times a year. Topics would be
+things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to use the graphing calculator to explore functions&lt;/li&gt;
+&lt;li&gt;History and math&lt;/li&gt;
+&lt;li&gt;Math in your student&amp;#39;s worlds&lt;/li&gt;
+&lt;li&gt;Exploring math competition problems&lt;/li&gt;
+&lt;li&gt;An introduction to some advanced or new math topic&lt;/li&gt;
+&lt;li&gt;Motivating a lesson on something or other&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Few of these were tied to a specific course and none were tied to a
+specific implementation or curriculum. There might be a special
+section on something like Geometers Sketchpad or a vendor might run a
+session but those were in the minority.&lt;/p&gt;
+&lt;p&gt;
+It was mostly about math and how to teach math and most offerings were
+by teachers not content providers.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t know what math education PD is like now but what a word of
+difference.&lt;/p&gt;
+&lt;p&gt;
+Will CS PD get better, and I do think locally, teacher  generated PD
+is better? I don&amp;#39;t know. I&amp;#39;ve been told that the sessions I ran
+pre-covid were worthwhile but I don&amp;#39;t see those happening again until
+we can do in person events and in any event that&amp;#39;s small scale.&lt;/p&gt;
+&lt;p&gt;
+All this said and I haven&amp;#39;t touched on what led me to the article to
+begin with - the point that PD is going much more virtual. Is this a
+good thing? Sometimes but it&amp;#39;s also, in my opinion a confirmation on
+the sad state of PD in general.&lt;/p&gt;
+&lt;p&gt;
+The idea behind PD is ongoing professional growth but the truth is,
+teachers don&amp;#39;t really have time for PD during the school year so what
+they do is mostly mandated. In my own experience and in talking to
+many teachers in many subject areas the majority of PD forced upon
+teachers is garbage. Even if it is good, too often it&amp;#39;s not relevant
+to the teachers day to day and by the time it matters, if it ever
+does, it&amp;#39;s long forgotten. Unfortunately, many teachers are required
+to accumulate PD hours. In NY they&amp;#39;re called CTLE hours (Continuing
+Teacher and Leader Education).&lt;/p&gt;
+&lt;p&gt;
+Since teachers are being forced to accumulate these hours and they
+don&amp;#39;t find them valuable they&amp;#39;re taking the path of least
+resistance. That frequently means online offerings.&lt;/p&gt;
+&lt;p&gt;
+None of this is to say that online PD is bad or always bad. It can be
+very effective for some things. Others really should be done in
+person. I&amp;#39;m just saying that it&amp;#39;s not a surprise that we&amp;#39;re here and
+that we have to look deeper to figure out how we got here and why.&lt;/p&gt;
+&lt;p&gt;
+Where do we go from here? I have no idea. I&amp;#39;ve long resigned myself to
+try to just worry about my corner of the world. I&amp;#39;ll make the best
+offerings I can be they in my pre/in service courses or in PD wether
+they&amp;#39;re in person or online. I think that those that come will find
+value so those are the ones I&amp;#39;ll worry about.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Do you need to know assembly to be a computer scientist?</title>
@@ -3397,101 +3505,6 @@ iteration but I think I&amp;#39;m getting there.&lt;/p&gt;
 &lt;p&gt;
 So, all this is to say that improvement in teaching and improvement in
 classes doesn&amp;#39;t happen overnight. Education is the long game.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>If you build programs, teachers will come</title>
-      <link>https://cestlaz.github.io/post/people-will-teach-cs/</link>
-      <pubDate>Thu, 27 May 2021 06:53:26 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/people-will-teach-cs/</guid>
-      <description>&lt;p&gt;
-It&amp;#39;s been a month since my last post. In fact it seems that most of
-the usual CS Ed bloggers are down in frequency this year. For me it&amp;#39;s
-probably been Covid fatigue and the resulting funk but I&amp;#39;m going to
-see if I can force myself to write more frequently.&lt;/p&gt;
-&lt;p&gt;
-So, the other day someone was asking about CS certification in NY
-state on Facebook. One comment caught my eye. It was about Michigan
-dropping all requirements to teach CS because, and I&amp;#39;m paraphrasing
-here, nobody who knows enough CS to go into industry will ever become
-a teacher.&lt;/p&gt;
-&lt;p&gt;
-I both resent and resemble that remark as do a handful of my
-colleagues.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve heard this argument many times. A particularly disgusting version
-goes &amp;#34;if we teach CS teachers too much CS they&amp;#39;ll leave for industry.&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-I don&amp;#39;t buy it. That&amp;#39;s just an excuse and it&amp;#39;ll keep our students from
-getting the teachers they both need and deserve. Why don&amp;#39;t I buy it?
-Math and Science. CS is the hot subject these days and, at least in
-theory, with a strong tech background you can &amp;#34;easily&amp;#34; get a high
-paying job but CS wasn&amp;#39;t always the be all and end all. There were and
-are other fields that pay well and can pull from our pool of potential
-teachers.&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s dig a little deeper. Nowadays you can become certified in math
-or science in New York state by completing an &amp;#34;approved program,&amp;#34;
-taking some state exams and jumping through a few hoops. This has led
-programs in &amp;#34;math education.&amp;#34; Some of these  programs provide teachers
-with a solid foundation in math but some, not so much. Back before no
-child left behind, at least in New York City, you had to actually know
-your math. You needed legit math credits as opposed to math-ed (which
-can be legit or lame) and you had to get through the &amp;#34;board of
-examiners&amp;#34; where you had to face a panel of teachers and assistant
-principals who could grill you on all manner of content.&lt;/p&gt;
-&lt;p&gt;
-Where am I going with this?&lt;/p&gt;
-&lt;p&gt;
-Well, a math teacher who knows their math, at least in NY has plenty
-of alternatives. Accounting has always been a mainstay but for the big
-bucks we have wall street. How is it we have math teachers that know
-math when wall street and those big bonuses beckon? Same thing with
-some of the sciences - we&amp;#39;ve got big pharma right across the river.&lt;/p&gt;
-&lt;p&gt;
-The truth is that some people are good in their subject area and
-actually want to become teachers. This might not be the majority of CS
-people, math people etc. but there are some. Math and science might be
-shortage areas in schools over time but somehow schools manage to find
-teachers.&lt;/p&gt;
-&lt;p&gt;
-The problem with CS is that there was never a career path. If you knew
-CS you couldn&amp;#39;t get certification so you had to go in through math or
-some other subject. Then you had to find a school where you could
-teach CS and of course, for seniority and job retention you were
-always lumped in with another discipline.&lt;/p&gt;
-&lt;p&gt;
-Now, a career path is developing. We&amp;#39;ve got programs like mine at
-Hunter through which a prospective teacher can become certified and we
-have schools starting to offer CS and they&amp;#39;ll want to hire those CS
-teachers.&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;ll just take time.&lt;/p&gt;
-&lt;p&gt;
-Our first Masters cohort at Hunter has four students in it. Our
-second, which will start in the Fall looks like it will have
-around 6. These are small but from what I&amp;#39;m told, pretty good sizes
-for a new program, particularly when there was zero advertising and
-outreach. I&amp;#39;ve also started to get questions from undergraduate CS
-students.&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;re not going to solve K12 CS education over night. We&amp;#39;ve got to play
-the long game. Positions that need certified CS teachers are starting
-to appear as are pathways to certification. There will be people who
-want to teach and want to teach CS. If we give them the pathway they
-will come.&lt;/p&gt;
-&lt;p&gt;
-As a final thought though, knowledgeable CS teachers do have a
-choice. So do knowledgable math and science teachers. If they&amp;#39;re
-leaving teaching or not even entering the profession it&amp;#39;s not because
-of CS, math, or science. It&amp;#39;s because we&amp;#39;ve made teaching as a
-profession so undesireable and those teachers have options. That&amp;#39;s why
-I found that version of the argument I mentioned up at the top so
-disgusting. People who don&amp;#39;t want CS teachers to know real CS are
-really saying that the only way they can get and keep teachers is to
-in fact keep them uneducated.&lt;/p&gt;
 </description>
     </item>
     
