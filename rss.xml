@@ -6,10 +6,167 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jan 2022 17:46:43 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jan 2022 08:13:17 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>When is remote better</title>
+      <link>https://cestlaz.github.io/post/whats-better-remote/</link>
+      <pubDate>Fri, 28 Jan 2022 08:13:17 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/whats-better-remote/</guid>
+      <description>
+&lt;p&gt;
+With my first classes of the semester coming up on Monday I thought
+I&amp;#39;d write a bit about what worked better remote than in person. When I
+say better I mean specifically, worked better for me given my
+situation. I think they worked better for the class but I can&amp;#39;t say
+with any certainty given the length of the educational feedback loop
+and other factors.&lt;/p&gt;
+&lt;p&gt;
+My in person teaching situation is as follows. Last semester I taught
+2 in person classes (plus one remote). Both were in computer
+labs. Minimal distance between the kids. Everyone had to have set
+assigned seats and masks had to be on at all times. As the instructor,
+I was allowed to remove my mask but I never would.&lt;/p&gt;
+&lt;p&gt;
+So, here we go.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+feeling safe
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Big one. Remote felt safer. It doesn&amp;#39;t really matter if it was safer
+or not. This is a case of perception being reality. Since I felt less
+safe - particularly at the start of the year before the students were
+vaccinated, I can say for sure that I wasn&amp;#39;t as effective. If the
+students didn&amp;#39;t feel safe I&amp;#39;m sure their learning also took a hit.&lt;/p&gt;
+&lt;p&gt;
+For all the dings on remote teaching, we all felt safe.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+participation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+In my personal opinion, my classes last semester went from what I hope
+were good classes to not so good lectures. Since students wore masks
+and don&amp;#39;t project their voices in any case, student participation was
+really tough. It would turn into asking students to repeat their
+answers multiple times and to project louder and louder. It didn&amp;#39;t
+help that windows had to be open and we&amp;#39;re in the heard of NYC with
+all the associated street noise.&lt;/p&gt;
+&lt;p&gt;
+Now, remote participation is no great shakes. It&amp;#39;s really easy for a
+student to just tune out but at least it was possible. Students could
+be called on or could volunteer and between the Zoom and our Zulip
+chat, there were far more opportunities for students to be involved.&lt;/p&gt;
+&lt;p&gt;
+Now, once we&amp;#39;re safe and mask free, in class will probably be better
+than remote for this but for now, I can&amp;#39;t say that it is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Group work
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Group work in person was pretty much impossible. Even though there was
+little distancing between the students, they had to stay in their
+assigned locations. On Zoom we had breakout rooms and on our Zulip,
+group chats. In normal times, in person would blow away remote but
+something reasonable on zoom and zulip was far better than nothing in
+person.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Working with individuals / small groups
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I also couldn&amp;#39;t really work well with individual students (or small
+groups if we were able to set them up). Online I could do a breakout
+visit or an individual or group chat. Again, something being better
+than nothing. The one place where in person was better is that, while
+it was limited, I could eaves drop on the kids - look over while they
+worked. It was limited because I didn&amp;#39;t want to get too close and also
+for the reasons cited above but it was something. Can&amp;#39;t do that with
+Zoom. Interestingly enough, Big Blue Button - an opensource Zoomalike
+does have an eavesdrop on breakout rooms feature as it&amp;#39;s made for
+teachers but last I checked the overall platform was not quite ready
+for prime time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Polls
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Another big win for remote was the use of the Zulip chat. Emoji polls
+replicate the use of a clicker but with more power and flexibility and
+less overhead.&lt;/p&gt;
+&lt;p&gt;
+You can also give a question and have them all type a response but
+not hit  the &lt;strong&gt;enter&lt;/strong&gt; key. The can then all post at once. You can do
+similar things with hand signals in class but this is much more
+flexible and robust. Big win.
+.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Discussion of student work
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Finally, the chat platform gave us the ability to discuss more
+student&amp;#39;s work. Typically, in class you can only look at one or two
+student solutions for a given problem but using the chat, you can
+stretch out the discussion. A typical strategy is to have  everyone
+post their initial answer/response/whatever and then over the course
+of time have each student comment on at least two other student
+posts. Yes, this has it&amp;#39;s kinks but it&amp;#39;s a nice way to get more
+students to look at more other student&amp;#39;s work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
+Takeaways
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+At the beginning of last semester, I felt that we should have at least
+started online - particularly with the students potentially
+unvaccinated. Looking back, I think it would have been better
+overall.&lt;/p&gt;
+&lt;p&gt;
+Truthfully, the ideal would have been to do remote until students were
+vaccinated then allow professors to mix and match as best suits their
+classes.&lt;/p&gt;
+&lt;p&gt;
+If we ever get past this and back to regular old school in person
+classes, sure, that beats remote for instruction overall but remote
+does have it&amp;#39;s moments. On top of that, good remote can beat crippled
+in person and sometimes there are other good reasons for a remote
+option such as why I want my teacher prep program to remain online.&lt;/p&gt;
+&lt;p&gt;
+So, there it is. Where I think remote teaching outshone in person for
+me over the last year. As a college istructor I have more flexibility
+than a K12 teacher so can mix in remote practices that I feel work
+better. I&amp;#39;m hoping that over time those that set the K12 structure
+would make it similarly possible at that level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Trends In Professional Development in CS - it&#39;s not all good</title>
@@ -3425,86 +3582,6 @@ teachers to fill the need.&lt;/p&gt;
 Sure, it&amp;#39;ll take a decade or longer to finish the job but you&amp;#39;ve got
 to start with a plan and a vision and lots of support. At least in NYC
 we&amp;#39;ve got all three.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Finally got the class working - only took five years</title>
-      <link>https://cestlaz.github.io/post/five-year-class/</link>
-      <pubDate>Wed, 02 Jun 2021 08:36:53 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/five-year-class/</guid>
-      <description>&lt;p&gt;
-You don&amp;#39;t become a master teacher overnight. It takes years, perhaps
-decades. Year one, you&amp;#39;re just trying to survive. Year two is
-frequently a small step back. Year three on is slow improvement
-provide the teacher works to improve. To me and eight to ten year
-teacher is usually an advanced beginner, fifteen years?
-Seasoned. Master teacher? You&amp;#39;re probably pushing close to 20 years or
-more. Of course, there are exceptions but this is the pattern I&amp;#39;ve
-most often observed (burnout notwithstanding).&lt;/p&gt;
-&lt;p&gt;
-Why such a long developmental timeline? Part of it is the feedback
-loop. At best your cycle is one semester but more often than not it&amp;#39;s
-a year. You do something once and then you don&amp;#39;t really know if it
-worked until way later if ever. You also can&amp;#39;t try it again until
-next year and even then, it&amp;#39;ll be with different students and possibly
-with all sorts of different variables. &lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s why I was happy when this semester ended and I felt that I
-finally got one of my classes to where I wanted it. It only took five
-years. Actually five years but having taught it 8 times over those
-five years.&lt;/p&gt;
-&lt;p&gt;
-The class in question is the lab/recitation for Hunter&amp;#39;s CSCI13500 -
-essentially CS1. For the non-Daedalus sections, they basically do a
-programming lab per week. For me, my students do those labs albeit
-usually outside of class time and we do enrichment. One of the
-challenges is that I have to follow the lead of the main course
-instructor who designs the labs and controls the class sequence. I
-have some leway but I can&amp;#39;t for instance decide to teach classes way
-earlier.&lt;/p&gt;
-&lt;p&gt;
-Over the eight iterations I&amp;#39;ve tried different different things but I
-think I&amp;#39;ve finally settled on what and how things happen in the
-class.&lt;/p&gt;
-&lt;p&gt;
-While I still follow the thirteen labs given by the mane instructor in
-sequence, they use Gradescope and I use GitHub Classroom. I also use
-unit tests to grade the labs which gives me a platform to develop the
-idea of testing both in general and as an industry practice. We go
-from nothing to discussing testing and me providing test cases to them
-designing their tests for later labs. Since we&amp;#39;re using GitHub
-Classroom that allows us to leverage that as well. We&amp;#39;ll talk about SE
-practices like using version control, build tools (make), code review,
-etc.. This is all part of the enrichment which also includes students
-working on projects started by other students.&lt;/p&gt;
-&lt;p&gt;
-We also do some direct CS enrichment by extending some of the
-labs. Two labs that have been used recently have particularly lent
-themselves to extensions. One was a lab based on rotational ciphers
-which I extend by covering a decoder and there&amp;#39;s a 2D image lab based
-on arrays that lends itself to all sorts of extensions - I like seam
-carving.&lt;/p&gt;
-&lt;p&gt;
-This is what I landed on but I also tried other things that didn&amp;#39;t
-work and some of this will change in the future. The point is that it
-took years. I couldn&amp;#39;t do something one week and then immediately try
-something else. Sure, you can do that with specific teaching
-techniques but not with a class overall.&lt;/p&gt;
-&lt;p&gt;
-One of the other classes I&amp;#39;m still tweaking is CSC23500 - essentially
-data structures. I taught it for decades as part of APCS-AB but
-Hunter&amp;#39;s a new audience - different circumstances, different
-constraints, and differnet advantages. First time through I wasn&amp;#39;t
-super happy with my performance. Second year I made some positive
-adjustments and was happier - Covid mid semester notwithstanding. This
-year, I think I got the structure down. It was remote and during Covid
-so there were other challenges so I won&amp;#39;t really know until the fourth
-iteration but I think I&amp;#39;m getting there.&lt;/p&gt;
-&lt;p&gt;
-So, all this is to say that improvement in teaching and improvement in
-classes doesn&amp;#39;t happen overnight. Education is the long game.&lt;/p&gt;
 </description>
     </item>
     

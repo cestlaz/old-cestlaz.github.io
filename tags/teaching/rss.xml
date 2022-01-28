@@ -6,10 +6,167 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Sep 2021 08:11:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jan 2022 08:13:17 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>When is remote better</title>
+      <link>https://cestlaz.github.io/post/whats-better-remote/</link>
+      <pubDate>Fri, 28 Jan 2022 08:13:17 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/whats-better-remote/</guid>
+      <description>
+&lt;p&gt;
+With my first classes of the semester coming up on Monday I thought
+I&amp;#39;d write a bit about what worked better remote than in person. When I
+say better I mean specifically, worked better for me given my
+situation. I think they worked better for the class but I can&amp;#39;t say
+with any certainty given the length of the educational feedback loop
+and other factors.&lt;/p&gt;
+&lt;p&gt;
+My in person teaching situation is as follows. Last semester I taught
+2 in person classes (plus one remote). Both were in computer
+labs. Minimal distance between the kids. Everyone had to have set
+assigned seats and masks had to be on at all times. As the instructor,
+I was allowed to remove my mask but I never would.&lt;/p&gt;
+&lt;p&gt;
+So, here we go.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+feeling safe
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Big one. Remote felt safer. It doesn&amp;#39;t really matter if it was safer
+or not. This is a case of perception being reality. Since I felt less
+safe - particularly at the start of the year before the students were
+vaccinated, I can say for sure that I wasn&amp;#39;t as effective. If the
+students didn&amp;#39;t feel safe I&amp;#39;m sure their learning also took a hit.&lt;/p&gt;
+&lt;p&gt;
+For all the dings on remote teaching, we all felt safe.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+participation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+In my personal opinion, my classes last semester went from what I hope
+were good classes to not so good lectures. Since students wore masks
+and don&amp;#39;t project their voices in any case, student participation was
+really tough. It would turn into asking students to repeat their
+answers multiple times and to project louder and louder. It didn&amp;#39;t
+help that windows had to be open and we&amp;#39;re in the heard of NYC with
+all the associated street noise.&lt;/p&gt;
+&lt;p&gt;
+Now, remote participation is no great shakes. It&amp;#39;s really easy for a
+student to just tune out but at least it was possible. Students could
+be called on or could volunteer and between the Zoom and our Zulip
+chat, there were far more opportunities for students to be involved.&lt;/p&gt;
+&lt;p&gt;
+Now, once we&amp;#39;re safe and mask free, in class will probably be better
+than remote for this but for now, I can&amp;#39;t say that it is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Group work
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Group work in person was pretty much impossible. Even though there was
+little distancing between the students, they had to stay in their
+assigned locations. On Zoom we had breakout rooms and on our Zulip,
+group chats. In normal times, in person would blow away remote but
+something reasonable on zoom and zulip was far better than nothing in
+person.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Working with individuals / small groups
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I also couldn&amp;#39;t really work well with individual students (or small
+groups if we were able to set them up). Online I could do a breakout
+visit or an individual or group chat. Again, something being better
+than nothing. The one place where in person was better is that, while
+it was limited, I could eaves drop on the kids - look over while they
+worked. It was limited because I didn&amp;#39;t want to get too close and also
+for the reasons cited above but it was something. Can&amp;#39;t do that with
+Zoom. Interestingly enough, Big Blue Button - an opensource Zoomalike
+does have an eavesdrop on breakout rooms feature as it&amp;#39;s made for
+teachers but last I checked the overall platform was not quite ready
+for prime time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Polls
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Another big win for remote was the use of the Zulip chat. Emoji polls
+replicate the use of a clicker but with more power and flexibility and
+less overhead.&lt;/p&gt;
+&lt;p&gt;
+You can also give a question and have them all type a response but
+not hit  the &lt;strong&gt;enter&lt;/strong&gt; key. The can then all post at once. You can do
+similar things with hand signals in class but this is much more
+flexible and robust. Big win.
+.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Discussion of student work
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Finally, the chat platform gave us the ability to discuss more
+student&amp;#39;s work. Typically, in class you can only look at one or two
+student solutions for a given problem but using the chat, you can
+stretch out the discussion. A typical strategy is to have  everyone
+post their initial answer/response/whatever and then over the course
+of time have each student comment on at least two other student
+posts. Yes, this has it&amp;#39;s kinks but it&amp;#39;s a nice way to get more
+students to look at more other student&amp;#39;s work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
+Takeaways
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+At the beginning of last semester, I felt that we should have at least
+started online - particularly with the students potentially
+unvaccinated. Looking back, I think it would have been better
+overall.&lt;/p&gt;
+&lt;p&gt;
+Truthfully, the ideal would have been to do remote until students were
+vaccinated then allow professors to mix and match as best suits their
+classes.&lt;/p&gt;
+&lt;p&gt;
+If we ever get past this and back to regular old school in person
+classes, sure, that beats remote for instruction overall but remote
+does have it&amp;#39;s moments. On top of that, good remote can beat crippled
+in person and sometimes there are other good reasons for a remote
+option such as why I want my teacher prep program to remain online.&lt;/p&gt;
+&lt;p&gt;
+So, there it is. Where I think remote teaching outshone in person for
+me over the last year. As a college istructor I have more flexibility
+than a K12 teacher so can mix in remote practices that I feel work
+better. I&amp;#39;m hoping that over time those that set the K12 structure
+would make it similarly possible at that level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Turning a good class into a bad lecture</title>
@@ -3019,111 +3176,6 @@ length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:&lt;/p&gt;
 Here we have typical early CS assignment that really lends itself to
 talking about structuring programs and refactoring. Where else can we
 inject good programming practices in ways that make sense early on?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title>
-      <link>https://cestlaz.github.io/posts/sigcse2018-bootstrap/</link>
-      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid>
-      <description>&lt;p&gt;
-I really didn&amp;#39;t know what to expect at the &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3159471&#34;&gt;Creativity, Customization,
-and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I&amp;#39;ve been a
-big fan of &lt;a href=&#34;http://www.bootstrapworld.org/&#34;&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href=&#34;http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html&#34;&gt;Emmanuel
-Schanzer&lt;/a&gt;&amp;#39;s been a freind forever. I&amp;#39;ve never met &lt;a href=&#34;https://twitter.com/ShriramKMurthi&#34;&gt;Shriram Krishnamurthi&lt;/a&gt;
-in person but am looking forward to it. We&amp;#39;ve traded emails and blog
-comments. I&amp;#39;d like to consider him a friend and I certainly respect
-him and his work even though we frequently disagree around the
-edges. The third author and presenter, Kathi Fisler was new to me.&lt;/p&gt;
-&lt;p&gt;
-The Bootstrap program is embedded in algebra classes. In it, students
-use Racket (nee scheme) to reinforce math skills while building
-computer science skills. The big student project is a graphical game.&lt;/p&gt;
-&lt;p&gt;
-When designing the project, students are asked to decide on and find
-four resources:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The background image&lt;/li&gt;
-&lt;li&gt;The player image&lt;/li&gt;
-&lt;li&gt;The target image&lt;/li&gt;
-&lt;li&gt;The enemy image&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Students are given a short amount of time to decide on and find these
-four images. I think it was about ten minutes and that&amp;#39;s it. That&amp;#39;s
-all the &amp;#34;creativity&amp;#34; in the assignment. After that, all the students
-are essentially creating the same game with different skins.&lt;/p&gt;
-&lt;p&gt;
-This design makes sense. You can&amp;#39;t have students going all over the
-place. Constraining the assignment in this way allows teachers who
-might now be strong in computer science to guide the kids through the
-program to completion.&lt;/p&gt;
-&lt;p&gt;
-At the time I was thinking: I really like all of this but is it really
-open ended creativity and discovery with respect to math or computer
-science? As it turned out, Fisler addressed this point at the end of
-the talk in a way that made me vary happy.&lt;/p&gt;
-&lt;p&gt;
-Fisler went on to describe the rest of the student experience and then
-went on to talk about the statistics they gathered.&lt;/p&gt;
-&lt;p&gt;
-One big takeaway was that while all the students were essentially
-writing the same game varying only the graphical elements, this
-encouraged students to create very different themes. They also created
-rich stories around their games. The project might not have been
-&amp;#34;creative&amp;#34; with respect to the CS or Math directions but it was certainly
-creative in other important areas. The other takeaway was that
-survey&amp;#39;s indicated all sorts of positives from the program as a whole
-so the project didn&amp;#39;t seem to have suffered by having the students
-essentially write the same program. Participants were proud of their
-work, they felt their games were different from their peers and in
-general the experience was good.&lt;/p&gt;
-&lt;p&gt;
-During questions, someone asked about adding a fifth element - a
-projectile or missile. It turns out that at one point the program had a
-projectile component but that led to the vast majority of projects to
-be themed in very similar ways. Even though not the same, it reminded me to something Randy
-Pausch said in his &lt;a href=&#34;https://www.youtube.com/watch?v=ji5_MqicxSo&#34;&gt;Last Lecture&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You make whatever you want. Two rules: no shooting violence and no
-pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
-VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
-when you take those off the table.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-At the very end, Fisler addressed my questions about creativity and
-discovery. She posed these questions of her own: &amp;#34;Do we overstate the
-case for creativity?&amp;#34; and &amp;#34;Is pure constructivism a win?&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve ranted on contructivism before. It can be great but a
-constructivist lesson takes a knowledgeable educator and a lot of time,
-preparation, and effort. It&amp;#39;s a big ask for, say, a high school
-teacher who&amp;#39;s already taking home hours of work every evening. Too
-often I&amp;#39;ve seen the following &amp;#34;contructivist&amp;#34; model instead:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Take an isntructor that doesn&amp;#39;t know their craft, the content, or&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;niether.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
-&lt;li&gt;Show off the couple of autodidacts that figure it out as success&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;stories.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ll rant more about this &amp;#34;model&amp;#34; with respect to the new buzz word
-&amp;#34;lead learner&amp;#34; at some point in the future.&lt;/p&gt;
-&lt;p&gt;
-On the creativity side, it&amp;#39;s important but there are also times for
-the instructor to lead and for guidelines to be followed.
-We want to foster creativity but that doesn&amp;#39;t mean that it&amp;#39;s 100%
-creativity 100% of the time. Education is like life, a balance. The
-Bootstrap program had to constrain the CS and math learning but
-allowed for creativity in other areas. It&amp;#39;s smart and it&amp;#39;s a win.&lt;/p&gt;
-&lt;p&gt;
-I still want to meet Shriram in person one day and now also Kathi
-Fisler. I didn&amp;#39;t know what to expect walking in but I left the talk
-reminded of why I&amp;#39;m such a fan of Emmanuel, his team, and their work.&lt;/p&gt;
 </description>
     </item>
     
