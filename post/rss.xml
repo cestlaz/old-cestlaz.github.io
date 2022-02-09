@@ -6,10 +6,113 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jan 2022 08:13:17 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 09 Feb 2022 12:12:26 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Rubrics for teacher observations are garbage</title>
+      <link>https://cestlaz.github.io/post/observation-rubrics/</link>
+      <pubDate>Wed, 09 Feb 2022 12:12:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/observation-rubrics/</guid>
+      <description>&lt;p&gt;
+There have been a lot of bad ideas foisted onto educators over the
+course of my career. One of the ones that always pissed me off was the
+use of a rubric for teacher observation. Specifically, using the
+Danielson Framework. &lt;/p&gt;
+&lt;p&gt;
+The Danielson Framework is a LONG laundry list of topics and concepts
+and for each a teacher could be rated ineffective, developing,
+effective, or highly effective.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s garbage.&lt;/p&gt;
+&lt;p&gt;
+Sure, there are some good things in the framework but using a
+restrictive rubric to judge a teacher is just a bad idea. Even the
+frameworks creator, Charlotte Danielson publicly stated when this
+nonsense got started that the framework should not be used to evaluate
+teachers. Of course departments of education would give a nod nod
+wink wink and say &amp;#34;no, it&amp;#39;s not for evaluation, it&amp;#39;s for teacher
+improvement.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+I remember talking to a colleague at Stuy. She hated the Danielson
+Framework that was being forced on teachers for observations. She was
+known to be a strong teacher but according to Danielson, she was off
+the charts good. She reason she hated it was because she recognized
+that her teaching style just happened to map well to the framework du
+jour and eventually it would be a different rubric and she would no
+longer be good.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve actually seen this happen - teachers going from good to bad or
+the reverse based on an observation rubric. The teacher didn&amp;#39;t change,
+nor the students but change the rubric and you can get the results you
+want. Good, or more frequently bad, I mean it was then Governor Cuomo
+who said that his teacher evaluation metric was clearly no good
+because too many teachers were scoring well.&lt;/p&gt;
+&lt;p&gt;
+Why am I bringing this up? Because student teachers. My CS Education
+Masters program is about to have it&amp;#39;s first graduates and New York
+State will have it&amp;#39;s first two newly certified CS teachers with said
+degrees. They&amp;#39;re both finishing up our program with a last course (CS
+Topics) and student teaching. Both of our student teachers will have
+to be officially observed three times and ultimately I&amp;#39;ll have to rate
+them and enter those ratings into Hunter&amp;#39;s system.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m ranting on Danielson because Hunter uses said framework to
+evaluate its student teachers. Like an institution, Hunter&amp;#39;s a complex
+beast and there&amp;#39;s both good and bad but seeing what is essentially the
+Danielson framework being used to evaluate student teachers knocked
+them (us) down a peg in my book.&lt;/p&gt;
+&lt;p&gt;
+Now, from a top down approach, using something like Danielson makes
+sense. It gives a series of check boxes making things easy to measure
+even if they&amp;#39;re the wrong things. It also made sense back when it came
+to be because of the leadership model espoused by people like Michael
+Bloomberg where he would take young teachers with a year or two of
+experience and make them principals. A horrible idea which persists to
+this day. Traditionally, an AP or P would have decades of teaching
+under their belt. They knew what a good lesson looked like. Not
+Bloomberg era principals. I mean, it takes a dozen years before you&amp;#39;re
+really an intermediate stage teacher. A two year principal doesn&amp;#39;t
+have a chance nor a clue.&lt;/p&gt;
+&lt;p&gt;
+The bottom line is that good (and bad) teaching is so varied and
+nuanced that you can&amp;#39;t boil it down to a rubric. All you can say are
+things like look for questioning, engagement etc..&lt;/p&gt;
+&lt;p&gt;
+My approach to observations was set by my first supervisor at Seward
+Park High School. He was a master teacher. Just ask him. Unlike many
+APs who just teach honors or the top level class, he would rotate
+classes among his entire department. He would teach everything from
+calculus to remedial math. He&amp;#39;d say &amp;#34;those kids deserve me too.&amp;#34; Yeah,
+he was arrogant, but he really was a master teacher. He was also great
+if he liked you but a horror if he didn&amp;#39;t. Fortunately, he liked me.&lt;/p&gt;
+&lt;p&gt;
+He said that the one thing you have to keep asking yourself when you
+observe a class is &amp;#34;is learning happening.&amp;#34; It&amp;#39;s that simple. Then,
+it&amp;#39;s up to you as the observer to figure out where, how and why and
+what you can suggest to make it better (while observing the cardinal
+rule of not fixing the lesson). This makes all the sense in the world
+to an experienced educator and it allows them to hone in on an
+observee&amp;#39;s strenghts and weaknesses while also adjusting for the class
+and circumstances.&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;ve got good observers and trust them, it works and works very
+well.&lt;/p&gt;
+&lt;p&gt;
+What don&amp;#39;t work? Detailed rubrics by non teachers.&lt;/p&gt;
+&lt;p&gt;
+Unfortunately, right now, this is just another idiotic idea that
+teachers are forced to deal with and just another thing driving
+teachers away from the profession.&lt;/p&gt;
+&lt;p&gt;
+Will the powers that be ever learn? Probably not so for now it&amp;#39;s up to
+good supervisors to shield their teachers from the nonsense and I
+hope, in my capacity, when I&amp;#39;m able I can do the same.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>When is remote better</title>
@@ -3510,78 +3613,6 @@ couple of times a year. A couple of rounds ago I think it revolved
 around Javascript so, we&amp;#39;re talking language. Last time, I and others
 brought up teachers, their backgrounds and comfort levels. Now Mark&amp;#39;s
 bringing another dimension. It&amp;#39;s nice to see the dialog evolving.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>But we don&#39;t have enough teachers!!</title>
-      <link>https://cestlaz.github.io/post/enough-teachers/</link>
-      <pubDate>Mon, 14 Jun 2021 07:55:01 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/enough-teachers/</guid>
-      <description>&lt;p&gt;
-A common refrain against requiring CS in our K12 schools is that we
-don&amp;#39;t have the teachers and we won&amp;#39;t any time soon. Sure, we don&amp;#39;t
-right now but we won&amp;#39;t if we don&amp;#39;t do something about it.&lt;/p&gt;
-&lt;img width=&#34;300&#34; src=&#34;https://s-media-cache-ak0.pinimg.com/736x/16/71/5c/16715cc71bd6c28da0b32f24afec5045--simpsons-quotes-los-simpsons.jpg&#34;&gt;
-&lt;p&gt;
-The question to ask is &amp;#34;how long will it take&amp;#34; and &amp;#34;how do we get
-there?&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s look at New York City. We&amp;#39;ve got approximately 1,000,000
-students in our public schools. Let&amp;#39;s say that&amp;#39;s grades 1
-to 12. That&amp;#39;s 83333 per grade. Let&amp;#39;s take one particular grade and see
-how many classes. At 34 students per class we get 2450 classes. Since
-teachers typically teach five classes that means to cover 1 class for
-every student in one particular grade we&amp;#39;ll need about 500 teachers to
-cover a full year class. 250 if the class is only one semester. &lt;/p&gt;
-&lt;p&gt;
-This if, of course, just back of the envelope calculating and we&amp;#39;d
-need a good deal more to really do justice to teaching CS in K12 but
-500 sounds like a reasonable critical mass to say &amp;#34;we&amp;#39;re teaching CS.&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-How long until we can get there?&lt;/p&gt;
-&lt;p&gt;
-At Hunter we started our advanced certificate program a year
-ago. The cert program is specifically for teachers licensed in another
-area seeking to add the New York State CS credential. Our first cohort
-graduated 21 and I can proudly say they&amp;#39;re all very well prepared to
-teach CS in K12. They know their content and how to teach it. We&amp;#39;re
-starting another batch in two weeks and a third cohort next summer. By
-June 2023 we should have between 60 and 100 teachers certified. That&amp;#39;s
-not bad. We&amp;#39;ll have a core group of teacher leaders three years from
-our start. &lt;/p&gt;
-&lt;p&gt;
-How are we doing this? What&amp;#39;s the incentive for current teachers to
-get this new certification? It&amp;#39;s an opportunity to really learn some
-CS and how to teach it. All the training and PD based models just
-don&amp;#39;t cut it long term. On the other hand, it costs a pretty penny -
-21 graduate credits. True, those credits can be applied to salary
-differentials but still. Also, while the state could just flat out
-require the certification but they&amp;#39;ve put in a generous ramp up -
-teachers will need the credential but not for a few year.&lt;/p&gt;
-&lt;p&gt;
-The biggest reason we&amp;#39;ve been able to get these teachers in is the
-generosity of the New York Tech community. We&amp;#39;ve been able to provide
-financial support to these teachers looking to be our leaders moving
-forward. &lt;/p&gt;
-&lt;p&gt;
-Going with that, we have 4 students currently in our Masters program
-with another 6 or so slated to start in the Fall and that&amp;#39;s with zero
-advertising and outreach. I expect that in a couple of years, the
-demand for the certificate program will wane while it accelerates for
-the masters program. &lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;re not going to have all the teachers we need in three years or
-even in five but in three we&amp;#39;ll have a solid core. As other
-certification programs come online the city will increase it&amp;#39;s teacher
-training capacity and as we close in on 2026 when CS4All will expect
-all schools to offer CS, we&amp;#39;ll have a good number of qualified
-teachers to fill the need.&lt;/p&gt;
-&lt;p&gt;
-Sure, it&amp;#39;ll take a decade or longer to finish the job but you&amp;#39;ve got
-to start with a plan and a vision and lots of support. At least in NYC
-we&amp;#39;ve got all three.&lt;/p&gt;
 </description>
     </item>
     
