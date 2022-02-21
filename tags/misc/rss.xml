@@ -6,10 +6,75 @@
     <description>C&#39;est la Z (misc)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jan 2022 17:41:42 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Feb 2022 17:37:46 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/misc/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Programming Problem Solving And Crosswords</title>
+      <link>https://cestlaz.github.io/post/programming-problem-solving-and-crosswords/</link>
+      <pubDate>Mon, 21 Feb 2022 17:37:46 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/programming-problem-solving-and-crosswords/</guid>
+      <description>&lt;p&gt;
+I used to do the New York Times Crossword puzzle. I don&amp;#39;t remember
+when I started - some time late in Eugene Maleska&amp;#39;s tenure as the
+editor. I continued on a few years into Will Shortz&amp;#39;s puzzles. I
+stopped when the Times wanted to charge me for both print and
+online. I preferred reading the physical paper but liked printing the
+puzzle from their online site. I was also pissed at the Times coverage
+of a number of issues at the time.&lt;/p&gt;
+&lt;p&gt;
+I picked up the puzzle again when Covid started and have only missed a
+few days since. I&amp;#39;m pretty sure the puzzle is easier these days. Way
+back when, I&amp;#39;d sometimes complete or almost complete a Saturday puzzle
+but more frequently I&amp;#39;d just fill in a smattering of words. On this
+run, I&amp;#39;ve completed every puzzle I started except one. I say the
+puzzle must be getting easier because if anything, I&amp;#39;m getting dumber.&lt;/p&gt;
+&lt;p&gt;
+I was doing the puzzle the other day and it got me thinking about the
+advice I give my students when I first meet them. I tell them it&amp;#39;s one
+of the true secrets of success. Of course, I know it&amp;#39;s my job as teacher to tell
+them these critical secrets and it&amp;#39;s their job as student to ignore
+it.&lt;/p&gt;
+&lt;p&gt;
+I tell my students that regardless of when they do an assignment they
+should read over it the day they get it. It doesn&amp;#39;t matter if the
+assignment isn&amp;#39;t due for two weeks -  read it and give it a bit of
+thought the day you get it. Even if you don&amp;#39;t work on the assignment
+right then and there, your brain will start working on it in the
+background.&lt;/p&gt;
+&lt;p&gt;
+When I do the crossword, particularly Friday and Saturday, but
+sometimes other days as well, I start the puzzle with my first cup of
+coffee. Sometimes I&amp;#39;ll get a good amount done but on those Saturday
+puzzles, I&amp;#39;ll sometimes get stuck with the fewest of words. I&amp;#39;ll look
+at clues and, well, have no clue and think &amp;#34;guess I won&amp;#39;t be finishing
+this one.&amp;#34; At some point I stop - do something else. I check my email,
+read some blogs in my feeds and a little later go back to the
+puzzle. Invariably, I&amp;#39;ll read some clues that while opaque just a few
+minutes earlier are trivial now. Hitting another wall I take another
+break. I&amp;#39;ll come back after breakfast and fill in some more. So far,
+this has just about always resulted in a solved puzzle.&lt;/p&gt;
+&lt;p&gt;
+This got me thinking of a few things. One, the break is giving my
+brain time to work in the background while focusing on something
+else. It also lets me look at the puzzle with fresh eyes when I pick
+it up again. A last little point that&amp;#39;s neither here nor there is that
+it is a manner of perseverance (no, I won&amp;#39;t use that term grit which
+I hate).&lt;/p&gt;
+&lt;p&gt;
+To me this was a really clear and concise example of exactly what I&amp;#39;ve
+been preaching to my kids for decades. Not only read the assignment
+early but also when you hit a roadblock, take a break - clear your
+head. Come back with fresh eyes. Work smarter not harder. &lt;/p&gt;
+&lt;p&gt;
+Unfortunately, I don&amp;#39;t think this example is more relatable to my kids
+than the other ways I try to share this wisdom with them but I still
+think it&amp;#39;s a great example.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Pension Consultations</title>
@@ -3290,172 +3355,6 @@ people like Kamila are few and far between.
 So, when you&#39;re around City Center or midtown in general, please treat
 yourself. You won&#39;t be disappointed.
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CS Ed Predictions 2015</title>
-      <link>https://cestlaz.github.io/posts/2015-01-04-predictions-2015/</link>
-      <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2015-01-04-predictions-2015/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-
-
-&lt;style&gt;
-div.center {text-align:center;}
-&lt;/style&gt;
-
-&lt;p&gt;
-I just read &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred Thompson&#39;s&lt;/a&gt; predictions for next year. I was going
-to leave a comment but since it would have gotten somewhat long
-winded, I thought I&#39;d comment in a post of my own.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you haven&#39;t read Alfred&#39;s post yet, check it out:
-&lt;a href=&#34;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&#34;&gt;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;div id=&#34;outline-container-unnumbered-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;unnumbered-1&#34;&gt;On more states allowing CS to count for a graduation requirement:&lt;/h2&gt;
-&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-1&#34;&gt;
-&lt;p&gt;
-Alfred&#39;s probably right but I&#39;m leery. Sure, it could end up terrific
-but I could see a number of ways this could play out badly.
-&lt;/p&gt;
-
-&lt;p&gt;
-We could end up with non-cs classes to count as CS or we could see
-schools allowing real CS to count but there would be no incentive for
-a school to actually create any meaningful CS classes
-much less for kids to take them.
-&lt;/p&gt;
-
-&lt;p&gt;
-I guess the root of my concern probably relates two of my concerns
-about education in general:
-&lt;/p&gt;
-
-&lt;ul class=&#34;org-ul&#34;&gt;
-&lt;li&gt;Real, experienced teachers aren&#39;t driving policy in education in
-general and CS is and will  be no different. We&#39;re going to be left
-with something forced down from above and I fear it will be bad.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-and
-&lt;/p&gt;
-
-&lt;ul class=&#34;org-ul&#34;&gt;
-&lt;li&gt;I&#39;m not a big fan of education education. As schools of education
-get involved they will have more of a voice. I think one of the
-worst things to happen to math education over the course of my
-career has been &#34;Math Ed.&#34; I fear CS Ed will have the same effect
-on K12 CS education.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Maybe I&#39;m a pessimist or maybe I&#39;ve just been burned one to many times
-or maybe it&#39;s that as a public school teacher I see the negative
-effect of politics and money on public education but at least in NYC I
-see where the decision making is coming from and I&#39;m not encouraged.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the other hand, even if I&#39;m right and the powers that be really
-screw things up,there should always be at least a few people who see
-through they hype and that&#39;s where I can continue to do positive work.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;outline-container-unnumbered-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;unnumbered-2&#34;&gt;On Python continuing to grow&lt;/h2&gt;
-&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-2&#34;&gt;
-&lt;p&gt;
-It&#39;s been one of my go to languages for a while now. I&#39;ve been using
-it in and out of classes since some time in the mid 90s.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don&#39;t see it replacing Java in AP CS and it looks like Scratch has
-the inside track CS Principles but it&#39;s good for so many things and
-has such a low cost of entry, I again feel that Alfred&#39;s right.
-&lt;/p&gt;
-
-&lt;p&gt;
-The fact that it&#39;s easy for a non-cs teacher to pick up, at least to a
-limited degree, will certainly help the charge. I&#39;m not sure if long
-term, this is a good thing, but it will help to push python&#39;s growth in education.
-&lt;/p&gt;
-
-&lt;p&gt;
-As a side note on Java &amp;#x2013; I&#39;m not personally a fan, but there good things in there that would be lost
-with a total shift to languages like Python.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;outline-container-unnumbered-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;unnumbered-3&#34;&gt;On CS Principles&lt;/h2&gt;
-&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-3&#34;&gt;
-&lt;p&gt;
-I do see a time where the course is forced on Stuy but I&#39;m
-not worrying about it for the moment. I think we already teach a
-stronger course and by the time CS Principles becomes an issue at
-Stuy, I&#39;ll probably be gone.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id=&#34;outline-container-unnumbered-4&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;unnumbered-4&#34;&gt;Chromebooks&lt;/h2&gt;
-&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-4&#34;&gt;
-&lt;p&gt;
-I could see chromebooks working out for CS but only if schools don&#39;t
-lock them down. Out of the box, you can only use cloud based
-development environments. This is surely limiting but if you have the bandwidth, between
-&lt;a href=&#34;http://codesters.com/&#34;&gt;codesters.com&lt;/a&gt;, &lt;a href=&#34;http://koding.com/&#34;&gt;koding.com&lt;/a&gt;, cloud9, Dr.Racket and assorted other tools
-you can certainly do some good CS.
-&lt;/p&gt;
-
-&lt;p&gt;
-The upside comes when you can drop into the Linux shell. I&#39;ve been
-playing with a C720 Intel chromebook recently. It&#39;s small and
-lightweight and once I set it up, it was running Dr. Racket, NetLogo,
-Python, Java, Processing (all with a fairly hefty Emacs install).
-&lt;/p&gt;
-
-&lt;p&gt;
-Will it run everything? I don&#39;t know, but if I can get a new lab of
-computers and have the freedom to custom install the machines, I&#39;m
-seriously considering chromebooks.
-&lt;/p&gt;
-
-&lt;p&gt;
-I&#39;m also recommending them to my kids looking for a cheap portable
-development environment.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id=&#34;outline-container-unnumbered-5&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;unnumbered-5&#34;&gt;Closing thoughts&lt;/h2&gt;
-&lt;div class=&#34;outline-text-2&#34; id=&#34;text-unnumbered-5&#34;&gt;
-&lt;p&gt;
-I&#39;ve never been one for my own predictions - maybe because I&#39;m more of
-a continuous journey rather than destination type of guy so I&#39;ll hold
-off on my own predictions for now, but I&#39;ll close with a direct
-shoutout &amp;#x2013; Hey Alfred - thanks for posting your predictions - good food for thought
-as is your blog in general.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     

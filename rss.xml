@@ -6,10 +6,75 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Feb 2022 12:12:26 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Feb 2022 17:37:46 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Programming Problem Solving And Crosswords</title>
+      <link>https://cestlaz.github.io/post/programming-problem-solving-and-crosswords/</link>
+      <pubDate>Mon, 21 Feb 2022 17:37:46 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/programming-problem-solving-and-crosswords/</guid>
+      <description>&lt;p&gt;
+I used to do the New York Times Crossword puzzle. I don&amp;#39;t remember
+when I started - some time late in Eugene Maleska&amp;#39;s tenure as the
+editor. I continued on a few years into Will Shortz&amp;#39;s puzzles. I
+stopped when the Times wanted to charge me for both print and
+online. I preferred reading the physical paper but liked printing the
+puzzle from their online site. I was also pissed at the Times coverage
+of a number of issues at the time.&lt;/p&gt;
+&lt;p&gt;
+I picked up the puzzle again when Covid started and have only missed a
+few days since. I&amp;#39;m pretty sure the puzzle is easier these days. Way
+back when, I&amp;#39;d sometimes complete or almost complete a Saturday puzzle
+but more frequently I&amp;#39;d just fill in a smattering of words. On this
+run, I&amp;#39;ve completed every puzzle I started except one. I say the
+puzzle must be getting easier because if anything, I&amp;#39;m getting dumber.&lt;/p&gt;
+&lt;p&gt;
+I was doing the puzzle the other day and it got me thinking about the
+advice I give my students when I first meet them. I tell them it&amp;#39;s one
+of the true secrets of success. Of course, I know it&amp;#39;s my job as teacher to tell
+them these critical secrets and it&amp;#39;s their job as student to ignore
+it.&lt;/p&gt;
+&lt;p&gt;
+I tell my students that regardless of when they do an assignment they
+should read over it the day they get it. It doesn&amp;#39;t matter if the
+assignment isn&amp;#39;t due for two weeks -  read it and give it a bit of
+thought the day you get it. Even if you don&amp;#39;t work on the assignment
+right then and there, your brain will start working on it in the
+background.&lt;/p&gt;
+&lt;p&gt;
+When I do the crossword, particularly Friday and Saturday, but
+sometimes other days as well, I start the puzzle with my first cup of
+coffee. Sometimes I&amp;#39;ll get a good amount done but on those Saturday
+puzzles, I&amp;#39;ll sometimes get stuck with the fewest of words. I&amp;#39;ll look
+at clues and, well, have no clue and think &amp;#34;guess I won&amp;#39;t be finishing
+this one.&amp;#34; At some point I stop - do something else. I check my email,
+read some blogs in my feeds and a little later go back to the
+puzzle. Invariably, I&amp;#39;ll read some clues that while opaque just a few
+minutes earlier are trivial now. Hitting another wall I take another
+break. I&amp;#39;ll come back after breakfast and fill in some more. So far,
+this has just about always resulted in a solved puzzle.&lt;/p&gt;
+&lt;p&gt;
+This got me thinking of a few things. One, the break is giving my
+brain time to work in the background while focusing on something
+else. It also lets me look at the puzzle with fresh eyes when I pick
+it up again. A last little point that&amp;#39;s neither here nor there is that
+it is a manner of perseverance (no, I won&amp;#39;t use that term grit which
+I hate).&lt;/p&gt;
+&lt;p&gt;
+To me this was a really clear and concise example of exactly what I&amp;#39;ve
+been preaching to my kids for decades. Not only read the assignment
+early but also when you hit a roadblock, take a break - clear your
+head. Come back with fresh eyes. Work smarter not harder. &lt;/p&gt;
+&lt;p&gt;
+Unfortunately, I don&amp;#39;t think this example is more relatable to my kids
+than the other ways I try to share this wisdom with them but I still
+think it&amp;#39;s a great example.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Rubrics for teacher observations are garbage</title>
@@ -3527,92 +3592,6 @@ our passion to our students. That&amp;#39;s all good but let&amp;#39;s remember 
 it&amp;#39;s not special and we&amp;#39;re not special. The same can be said for other
 subjects and other teachers and we have to remember that it&amp;#39;s not
 about our passions but rather those of our students.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>They&#39;re all good first programming languages ;-)</title>
-      <link>https://cestlaz.github.io/post/first-language/</link>
-      <pubDate>Fri, 25 Jun 2021 10:06:36 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/first-language/</guid>
-      <description>&lt;p&gt;
-There&amp;#39;s been a lot of chatter recently about the first programming
-language to teach. First, I read a Facebook thread focussing on Java,
-C and C++ and then, presumably unrelated, Mark Guzdial posted &lt;a href=&#34;https://cacm.acm.org/blogs/blog-cacm/253393-why-did-we-ever-think-the-first-programming-language-didnt-matter/fulltext&#34;&gt;this&lt;/a&gt;
-which lead to another Facebook discussing and then yesterday I noticed
-a Twitter thread started by someone in the Bootcamp world asking
-people what their first language was which resulted in answers ranging
-from JS to PHP to Perl to a bunch of others.&lt;/p&gt;
-&lt;p&gt;
-A question Mark said he was thinking about recently was &amp;#34;Why did
-anyone ever think that the first programming language didn’t matter?&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-I don&amp;#39;t think people were thinking it didn&amp;#39;t matter but it was rather
-like Anton Ego&amp;#39;s commenting on Gusteu&amp;#39;s &amp;#34;Anyone can cook.&amp;#34;&lt;/p&gt;
-&lt;img width=&#34;300&#34; src=&#34;https://1.bp.blogspot.com/-lS9ekZSoIxw/XRkKDhIOO5I/AAAAAAAAd9M/H-Bjekcvh4IH_86RZlFcAikZvbqBY7uuwCLcBGAs/s1600/anyone-can-cook-book.jpg&#34;&gt;
-&lt;p&gt;
-It&amp;#39;s not that anyone can cook but rather great cooking can come from
-anywhere. It&amp;#39;s not that the language doesn&amp;#39;t matter but rather any
-language (or maybe most any language) &lt;strong&gt;can&lt;/strong&gt; be used as a first
-language under the right set of circumstances.&lt;/p&gt;
-&lt;p&gt;
-All to often the argument goes like:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-&amp;#34;I start my kids with C&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;But that&amp;#39;s no good - pointers - that&amp;#39;s why I use Javascript - it&amp;#39;s practical&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;But the development tools are lousy for beginners, not to mention the tool chain&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;Yeah but it&amp;#39;s ubiquitous, anyway how about Java&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;Too much overhead. Maybe scratch&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;No way, the kids will think it&amp;#39;s inauthentic.&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;I know, apl!!!!!!!!&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-&amp;#34;DEAL!!!!&amp;#34;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Most of the discussion focuses on the language. Maybe on the related
-toolset and ecosystem. A few of us though, have been pushing the fact
-that there&amp;#39;s more to the equation. Teacher knowledge, comfort, and
-passion is a HUGE part of the equation. So is the student level and
-background. Mark raised an important factor in his post:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The first programming language is particularly important when we think
-about programming for other-than-CS majors. Students want to learn
-what’s valued in their desired community of practice. If a student
-wants to become a data scientist, R or Python makes a lot more sense
-than learning C.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-This is probably more relevant at the college level than K12 but still
-important to consider for the earlier grades as well. I say consider
-though because, as always, the real answer is &amp;#34;it depends.&amp;#34; Back when
-Bioinformatics started to get hot in the &amp;#39;90s I seem to recall Perl
-being the flavor of choice. Those of you who like me battled with Perl
-and its &amp;#34;write once read never&amp;#34; approach to programming would agree
-that even if it was the Lingua Franca of bioinformatics, I don&amp;#39;t know
-if I would take beginners down a path so fraught with peril.&lt;/p&gt;
-&lt;p&gt;
-The truth is that the language does matter but there&amp;#39;s a lot of
-latitude. Probably more for a general purpose programming intro
-rather than for a specific discipline but even then. All things being
-equal, I&amp;#39;d probably say that teacher comfort might be the most
-important one to start with but that only holds when a teacher starts
-teaching a class. I think it&amp;#39;s beholden on the teacher to then explore
-alternatives and if another language makes more sense, become familiar
-with it.&lt;/p&gt;
-&lt;p&gt;
-In any event, that&amp;#39;s my two cents. This conversation comes around a
-couple of times a year. A couple of rounds ago I think it revolved
-around Javascript so, we&amp;#39;re talking language. Last time, I and others
-brought up teachers, their backgrounds and comfort levels. Now Mark&amp;#39;s
-bringing another dimension. It&amp;#39;s nice to see the dialog evolving.&lt;/p&gt;
 </description>
     </item>
     
