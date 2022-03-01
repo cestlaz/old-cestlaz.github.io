@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1645486518" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646142106" />
 
 
 
@@ -23,10 +23,9 @@
  As I started to read the problem, I wasn&#39;t sure I&#39;d finish it let alone have time to write it up.
  Take a minute to read over the problem." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day08/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2021-day08/" />
 <meta property="article:published_time" content="2021-12-08T13:20:49-04:00" />
 <meta property="article:modified_time" content="2021-12-08T13:20:49-04:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Seven Segment Silliness - Advent 2021 Day08"/>
@@ -126,7 +125,7 @@ characters and then figuring out the total number of these items.</p>
 I had already parsed my data into the a two item list where the left
 item is a list of inputs and the right a list of outputs:</p>
 <div class="src src-clojure">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[ [<span style="color:#e6db74">&#34;cg&#34;</span> <span style="color:#e6db74">&#34;cdbga&#34;</span> <span style="color:#e6db74">&#34;bcg&#34;</span> ...] [<span style="color:#e6db74">&#34;geac&#34;</span> <span style="color:#e6db74">&#34;ceag&#34;</span> <span style="color:#e6db74">&#34;faedcb&#34;</span> <span style="color:#e6db74">&#34;cg&#34;</span>]]</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[ [<span style="color:#e6db74">&#34;cg&#34;</span> <span style="color:#e6db74">&#34;cdbga&#34;</span> <span style="color:#e6db74">&#34;bcg&#34;</span> ...] [<span style="color:#e6db74">&#34;geac&#34;</span> <span style="color:#e6db74">&#34;ceag&#34;</span> <span style="color:#e6db74">&#34;faedcb&#34;</span> <span style="color:#e6db74">&#34;cg&#34;</span>]]</code></pre></div>
 </div>
 <p>
 So all I had to do go through all the output sides, count the characters in
@@ -134,7 +133,7 @@ each item and then add up the number of them.</p>
 <p>
 Here&#39;s the code:</p>
 <div class="src src-clojure">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">  (<span style="color:#66d9ef">defn </span>myfilter [x]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">  (<span style="color:#66d9ef">defn </span>myfilter [x]
   <span style="color:#e6db74">&#34;takes a list of numbers and returns only those that are 2,4,3, or 7&#34;</span>
     (filter <span style="color:#f92672">#</span>(contains? <span style="color:#f92672">#</span>{<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">7</span>} %) x))
 

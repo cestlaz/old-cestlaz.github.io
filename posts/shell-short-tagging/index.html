@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1645486518" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646142107" />
 
 
 
@@ -23,10 +23,9 @@
  Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
  Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/shell-short-tagging/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/shell-short-tagging/" />
 <meta property="article:published_time" content="2016-05-15T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-05-15T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shell short - tagging old posts in Nikola"/>
@@ -96,7 +95,7 @@ page of all the <a href="http://cestlaz.github.io/categories/netlogo">links</a>.
 Nikola has a plugin <strong><strong>tags</strong></strong> which lets you manage tags from the
 command line. For instance:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo posts/somepost.org</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo posts/somepost.org</code></pre></div></code></pre></div>
 </div>
 <p>
 Would add the tag <strong><strong>netlogo</strong></strong> to the specified post.</p>
@@ -111,7 +110,7 @@ files and <strong><strong>.html</strong></strong> html files.</p>
 <p>
 Here&#39;s what a typical top block looks like:</p>
 <div class="src src-html">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--
 </span><span style="color:#75715e">title: &#34;Looking for interesting questions&#34;
 </span><span style="color:#75715e">date: 2010-01-03
 </span><span style="color:#75715e">--&gt;</span></code></pre></div></code></pre></div>
@@ -121,7 +120,7 @@ Sed to the rescue. Here&#39;s the what I ended up typing (from within the
 posts directory) to add the
 <strong><strong>tags</strong></strong> slug to the top comments right above the <strong><strong>.. type: text:</strong></strong> line:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls *md *html | <span style="color:#66d9ef">while</span> read filename
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls *md *html | <span style="color:#66d9ef">while</span> read filename
 <span style="color:#66d9ef">do</span>
 sed <span style="color:#e6db74">&#34;/type: text/ i .. tags: &#34;</span> $filename
 <span style="color:#66d9ef">done</span></code></pre></div></code></pre></div>
@@ -162,7 +161,7 @@ loop.</p>
 Now all of my files have blank <strong><strong>tag</strong></strong> slugs so I can find my netlogo
 posts and tag them:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo <span style="color:#e6db74">`</span>grep -i -l netlogo posts/*<span style="color:#e6db74">`</span></code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nikola tags -a netlogo <span style="color:#e6db74">`</span>grep -i -l netlogo posts/*<span style="color:#e6db74">`</span></code></pre></div></code></pre></div>
 </div>
 <p>
 Any command in backticks expands to the result of the commmand. The
@@ -174,8 +173,12 @@ all of them.</p>
 <p>
 So, just a bit of quick shell scripting and I&#39;ve:</p>
 <ul>
-<li>modified all old posts to accept tags.</li>
-<li>added the netlogo tag to all my netlogo posts.</li>
+<li>
+<p>modified all old posts to accept tags.</p>
+</li>
+<li>
+<p>added the netlogo tag to all my netlogo posts.</p>
+</li>
 </ul>
 <p>You can find all those posts <a href="http://cestlaz.github.io/categories/netlogo">here</a>.</p>
 </div>

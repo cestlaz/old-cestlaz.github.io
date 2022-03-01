@@ -571,9 +571,15 @@ and know how to manipulate data on a bit level.&lt;/p&gt;
 Those were three biggies but there are other places where knowing
 binary makes tons of sense:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;flag type parameters&lt;/li&gt;
-&lt;li&gt;understanding floating point numbers&lt;/li&gt;
-&lt;li&gt;using shifts for quick doubling and halving of data&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;flag type parameters&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;understanding floating point numbers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;using shifts for quick doubling and halving of data&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Does this mean that binary has to be or should be in a first course?
 No. Should it be somewhere? Certainly and rather than doing binary
@@ -1079,19 +1085,19 @@ functions for the parts of the robot - the head, body, and legs.&lt;/p&gt;
 &lt;p&gt;
 Students end up with routines like this:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 and then can generate their robot:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Now for the fun part. Students can make a variety of heads, legs, and
 bodies. Going further, introduce if statements and random numbers and
 they can generate random robots:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Not the most elegant code but this can be done VERY early when the
@@ -1151,11 +1157,21 @@ code - pretty much anything involving code or student work. That
 leaves all of the basic communication platforms. The popular ones
 include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The schools CMS – Moodle, Blackboard etc.&lt;/li&gt;
-&lt;li&gt;Piazza or other forum platforms&lt;/li&gt;
-&lt;li&gt;Slack and other chat platforms&lt;/li&gt;
-&lt;li&gt;Facebook groups&lt;/li&gt;
-&lt;li&gt;old school mail lists&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The schools CMS – Moodle, Blackboard etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Piazza or other forum platforms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack and other chat platforms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Facebook groups&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;old school mail lists&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -1181,10 +1197,18 @@ Piazza and forum software
 &lt;a href=&#34;https://piazza.com/&#34;&gt;Piazza&lt;/a&gt; is a free to use discussion platform. Many schools use
 it. Personally, I don&amp;#39;t like Piazza but it does have some good points:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The Q&amp;amp;A format works pretty well.&lt;/li&gt;
-&lt;li&gt;It allows anonymous posting which is sometimes desirable.&lt;/li&gt;
-&lt;li&gt;You can look at participation reports&lt;/li&gt;
-&lt;li&gt;TAs or instructors can approve questions and answers&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Q&amp;amp;A format works pretty well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It allows anonymous posting which is sometimes desirable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can look at participation reports&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TAs or instructors can approve questions and answers&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There really is a lot to like about it but it doesn&amp;#39;t work for
 me. Personally, I don&amp;#39;t like the interface but that wouldn&amp;#39;t be the
@@ -1253,15 +1277,21 @@ teacher&amp;#39;s eyes. I mean, how can they plan that surprise party for me
 on the class chatroom that I have access to :-). On the other hand,
 Facebook groups have some downsides:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Not searchable or discoverable. I&amp;#39;ve seen kids only find out about&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Not searchable or discoverable. I&amp;#39;ve seen kids only find out about&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;them at the end of semesters.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In some cases, each year a new group is created so no institutional&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In some cases, each year a new group is created so no institutional&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;memory develops.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;All the info stays in Facebook&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All the info stays in Facebook&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1372,15 +1402,27 @@ I&amp;#39;m also planning a number of new things for our Hunter CS students
 and I&amp;#39;d love to jump on the planning now but these things really have
 to wait until the term starts. Here&amp;#39;s some of what&amp;#39;s on tap:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A monthly CTLE session for CS teachers.&lt;/li&gt;
-&lt;li&gt;A monthly tech talk / meetup at Hunter for CS students.&lt;/li&gt;
-&lt;li&gt;Finding more and more internship opportunities for the kids.&lt;/li&gt;
-&lt;li&gt;A series of open source workshops I&amp;#39;m coordinating with MongoDB.&lt;/li&gt;
-&lt;li&gt;I&amp;#39;m hoping to work out some workshops for the kids with [[&lt;a href=&#34;https://www.redballoonsecurity.com/][Red&#34;&gt;https://www.redballoonsecurity.com/][Red&lt;/a&gt; Balloon&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A monthly CTLE session for CS teachers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A monthly tech talk / meetup at Hunter for CS students.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finding more and more internship opportunities for the kids.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A series of open source workshops I&amp;#39;m coordinating with MongoDB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;#39;m hoping to work out some workshops for the kids with [[&lt;a href=&#34;https://www.redballoonsecurity.com/][Red&#34;&gt;https://www.redballoonsecurity.com/][Red&lt;/a&gt; Balloon&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Security]]&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;And a new tech mentoring program I&amp;#39;m hoping to get off the ground.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And a new tech mentoring program I&amp;#39;m hoping to get off the ground.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 I&amp;#39;m sure some of these plans will change. I think I&amp;#39;m pretty ready to
@@ -1633,10 +1675,18 @@ if the Unix book is still probably one of the best written
 introductions to compilers out there. I&amp;#39;d also add a few more books he
 co-authored to the &amp;#34;must read&amp;#34; list:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style&#34;&gt;The Elements of Programmign Style&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Software-Tools-Brian-W-Kernighan/dp/020103669X/ref=sr_1_2?ie=UTF8&amp;amp;qid=1532118607&amp;amp;sr=8-2&amp;amp;keywords=software+tools&#34;&gt;Software Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Practice_of_Programming&#34;&gt;The Practice of Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;and I&amp;#39;d even say &lt;a href=&#34;https://en.wikipedia.org/wiki/The_AWK_Programming_Language&#34;&gt;The AWK Programming Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style&#34;&gt;The Elements of Programmign Style&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Software-Tools-Brian-W-Kernighan/dp/020103669X/ref=sr_1_2?ie=UTF8&amp;amp;qid=1532118607&amp;amp;sr=8-2&amp;amp;keywords=software+tools&#34;&gt;Software Tools&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Practice_of_Programming&#34;&gt;The Practice of Programming&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;and I&amp;#39;d even say &lt;a href=&#34;https://en.wikipedia.org/wiki/The_AWK_Programming_Language&#34;&gt;The AWK Programming Language&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I read these books in the 80s, 90s and post 2000 so even when reading
 examples using ancient Fortran, the concepts still hold up and the
@@ -2091,12 +2141,24 @@ Stuy doing right by those kids regardless of test scores.&lt;/p&gt;
 &lt;p&gt;
 The fact is that there&amp;#39;s only so much a teacher can do.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Was APCS (A or principles) their first course?&lt;/li&gt;
-&lt;li&gt;What other demands are placed on the students?&lt;/li&gt;
-&lt;li&gt;How about the teacher?&lt;/li&gt;
-&lt;li&gt;How many kids in a class? How much time?&lt;/li&gt;
-&lt;li&gt;Is APCS an elective or required??&lt;/li&gt;
-&lt;li&gt;Is the teacher getting the support they need?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Was APCS (A or principles) their first course?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What other demands are placed on the students?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How about the teacher?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How many kids in a class? How much time?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is APCS an elective or required??&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is the teacher getting the support they need?&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And the list goes on. I know some great teachers who never had classes
 with great AP results and meh teachers that did. Actually, I know some
@@ -2106,12 +2168,24 @@ same time these teachers totally turned the kids off from the subjects&lt;/p&gt;
 &lt;p&gt;
 Our teachers do deserve praise and congratulations.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Praise for getting through another year.&lt;/li&gt;
-&lt;li&gt;Praise for forging a path in this new subject area.&lt;/li&gt;
-&lt;li&gt;Praise for doing more with less.&lt;/li&gt;
-&lt;li&gt;Praise for inspiring kids and starting them on a path.&lt;/li&gt;
-&lt;li&gt;Praise for changing lives for the better.&lt;/li&gt;
-&lt;li&gt;And so on&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Praise for getting through another year.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Praise for forging a path in this new subject area.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Praise for doing more with less.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Praise for inspiring kids and starting them on a path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Praise for changing lives for the better.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And so on&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If your kids left with more than they came in with you did a great job
 and deserve congratulations. If you set a seed that will later grow
@@ -2220,20 +2294,32 @@ anything they wanted.&lt;/p&gt;
 &lt;p&gt;
 They could ask you general teaching questions (usually cached in a scenario):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;how do yo u handle a mixed level class,&lt;/li&gt;
-&lt;li&gt;how do you handle a disruptive student&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how do yo u handle a mixed level class,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how do you handle a disruptive student&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Preparation questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;how would you motivate a  class on the Pythagorean Theorem?&lt;/li&gt;
-&lt;li&gt;How would you turn a lesson on solving quadratics in to a hands on&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how would you motivate a  class on the Pythagorean Theorem?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How would you turn a lesson on solving quadratics in to a hands on&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;lab experience?&lt;/p&gt;
 &lt;p&gt;
 or content questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;solve this calculus problem…&lt;/li&gt;
-&lt;li&gt;Derive this theorem…&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;solve this calculus problem…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Derive this theorem…&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I don&amp;#39;t remember how long the session lasted but afterwards I left and
 a couple of weeks later, I had my PPT and was appointed.&lt;/p&gt;
@@ -2341,7 +2427,7 @@ presentation.&lt;/p&gt;
 Org-mode is of course the ideal tool. As an outliner, it lends itself
 to organizing a talk:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;,* topic 1
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;,* topic 1
 the content for slide one
 ,* topic 2
 the content for slide two
@@ -2640,17 +2726,25 @@ what it was supposed to do.&lt;/p&gt;
 &lt;p&gt;
 I decided to create a single file for each concept -&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;cell.c / cell.h for cells&lt;/li&gt;
-&lt;li&gt;row.c / row.h for rows&lt;/li&gt;
-&lt;li&gt;sheet.c / sheet.h for&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cell.c / cell.h for cells&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;row.c / row.h for rows&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sheet.c / sheet.h for&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In each, I would do something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The idea is that everything about a sheet is in &lt;code&gt;sheet.c&lt;/code&gt; and only a
@@ -2666,7 +2760,9 @@ and the first edition of Booch:&lt;/p&gt;
 &lt;p&gt;
 I realized that in a way I was implementing singleton objects in&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The file declared the object. The functions I exposed via the&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The file declared the object. The functions I exposed via the&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;header files were public, the other functions private and the &amp;#34;global&amp;#34;
 variables that were local to the file, private class variables.&lt;/p&gt;
@@ -2733,20 +2829,30 @@ they want.&lt;/p&gt;
 &lt;p&gt;
 Here are some of the key points:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Seats would ultimately go to the top 5 to 7 percent of each middle school&amp;#39;s&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Seats would ultimately go to the top 5 to 7 percent of each middle school&amp;#39;s&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;class.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;These students would have to also be classified in the top 25% city wide.&lt;/li&gt;
-&lt;li&gt;Top is defined by a composite score of multiple measures as&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;These students would have to also be classified in the top 25% city wide.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Top is defined by a composite score of multiple measures as&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;determined by the chancellor which means anything goes.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Remaining seats will be filled by&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remaining seats will be filled by&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;lottery of all students with a 3.7 GPA or greater.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It&amp;#39;s not clear how the students would be allocated to each of the&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s not clear how the students would be allocated to each of the&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;specialized schools.&lt;/p&gt;
 &lt;p&gt;
@@ -3046,16 +3152,24 @@ Twenty one middle schools produce over half the students that
 ultimately are accepted to the specialized schools. For the rest,
 there are a few reasons&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Many students don&amp;#39;t take the SHSAT.&lt;/li&gt;
-&lt;li&gt;There have been stories of schools steering kids away from the&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many students don&amp;#39;t take the SHSAT.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There have been stories of schools steering kids away from the&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;specialized schools.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;There&amp;#39;s no culture in those schools of striving for specialized&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There&amp;#39;s no culture in those schools of striving for specialized&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;school acceptance or attendance.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The academic programs at those schools don&amp;#39;t prepare students for&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The academic programs at those schools don&amp;#39;t prepare students for&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;the SHSAT exam for reasons that we&amp;#39;re not going to delve into here.&lt;/p&gt;
 &lt;p&gt;
@@ -3344,7 +3458,9 @@ them.&lt;/p&gt;
 &lt;p&gt;
 Some reasons to like (or for some, to dislike) Scheme early:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It&amp;#39;s functional – everything is a function. While this is&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s functional – everything is a function. While this is&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;technically not true, we can fudge it a bit at this level. You put
 things in parens so instead of add(a,b) you write (add a b) or
@@ -3353,13 +3469,21 @@ statements are also functions: (if Booelean TruePart FalsePart) is the &lt;stron
 statement. For example &lt;code&gt;(if (&amp;gt;= a b) a b)&lt;/code&gt; returns the larger of a
 and b.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;for assignment rather than comparison.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It has great support for list processing.&lt;/li&gt;
-&lt;li&gt;Recursion is much more natural.&lt;/li&gt;
-&lt;li&gt;It&amp;#39;s a super simple language with simple rules and a simple, small  syntax&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It has great support for list processing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recursion is much more natural.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s a super simple language with simple rules and a simple, small  syntax&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Of course, Scheme isn&amp;#39;t perfect and some people dislike the above
 reasons. It&amp;#39;s also easy to come up with a number of other good reasons
@@ -3368,7 +3492,7 @@ not to use a language like Scheme.&lt;/p&gt;
 On the recursion front, it makes things much easier. There are no
 loops so recursion develops as a natural form for repetition:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (* x  (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -3376,7 +3500,7 @@ This defines a function that takes one parameter and returns
 &lt;code&gt;x*(x-1)*(x-2)...&lt;/code&gt;. It repeats, but never ends. This leads to adding
 a base case:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt; x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
 &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 (* x (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -3397,17 +3521,33 @@ Scheme and most other functional programming languages also have
 strong support for lists and list recursion. This means you don&amp;#39;t have
 to limit yourself to mathy problems. Think about a todo list:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the market&lt;/li&gt;
-&lt;li&gt;Buy a gallon of milk&lt;/li&gt;
-&lt;li&gt;If they have eggs, get a dozen (heh heh)&lt;/li&gt;
-&lt;li&gt;Go home&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the market&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Buy a gallon of milk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If they have eggs, get a dozen (heh heh)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go home&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Processing a todo list is really a recursive problem:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;If the list is empty you&amp;#39;re done&lt;/li&gt;
-&lt;li&gt;Take the first item off  the list&lt;/li&gt;
-&lt;li&gt;Do it&lt;/li&gt;
-&lt;li&gt;Recurse&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the list is empty you&amp;#39;re done&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take the first item off  the list&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recurse&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Once you start working with lists, you can play with all sorts of
 recursive examples.&lt;/p&gt;
@@ -3697,11 +3837,21 @@ includes 7 elective slots.&lt;/p&gt;
 &lt;p&gt;
 In terms of exit exams, students have to pass the following Regents:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;English&lt;/li&gt;
-&lt;li&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/li&gt;
-&lt;li&gt;Any single Social Studies (US History or Global History&lt;/li&gt;
-&lt;li&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/li&gt;
-&lt;li&gt;Any additional Regents exam&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;English&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single Social Studies (US History or Global History&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any additional Regents exam&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The requirement of passing a single Math regents is what leads to the
 extra time allocated to Algebra that I mentioned when discussing
@@ -3813,8 +3963,12 @@ subject areas. What this means is that there&amp;#39;s more likely extra time
 to embed another subject, cs, into the Algebra class. Long term,
 embedding CS into another subject area requires:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;a teacher that really knows both subjects&lt;/li&gt;
-&lt;li&gt;enough time so you can add all the cool CS content while still&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a teacher that really knows both subjects&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enough time so you can add all the cool CS content while still&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;preparing the students for both the next level of whatever subject
 you&amp;#39;re embedded in  as well as for whatever standardized
@@ -3945,29 +4099,45 @@ knowledge and thought process.&lt;/p&gt;
 &lt;p&gt;
 Some things that I consider when putting together a test:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Does it ramp up in difficulty - that is, are there some &amp;#34;gimme&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Does it ramp up in difficulty - that is, are there some &amp;#34;gimme&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;questions&amp;#34; and some challenges.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Are questions all or nothing - if a kid doesn&amp;#39;t see things my way&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Are questions all or nothing - if a kid doesn&amp;#39;t see things my way&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;are they dead in the water.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Will the test repeatedly penalize or reward the same concept over&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Will the test repeatedly penalize or reward the same concept over&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and over again on the test.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Do I cover all the concepts I want to assess.&lt;/li&gt;
-&lt;li&gt;Do you make kids waste time with boilerplate code.&lt;/li&gt;
-&lt;li&gt;Do the questions take so long to read and digest that there&amp;#39;s little&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do I cover all the concepts I want to assess.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do you make kids waste time with boilerplate code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do the questions take so long to read and digest that there&amp;#39;s little&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;time to form and write down answers.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Do the answers convey anything about the students thought process or&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do the answers convey anything about the students thought process or&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;just correctness.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Is it easy or impossible to grade and grade fairly.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is it easy or impossible to grade and grade fairly.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;What about length? To me a well crafted test should be completed by
 the average student with a few minutes to spare - enough time to check
@@ -4042,10 +4212,18 @@ into why the got them wrong.&lt;/p&gt;
 &lt;p&gt;
 In an early class you might notice things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;kids printing rather than returning answers&lt;/li&gt;
-&lt;li&gt;kids not understanding scope&lt;/li&gt;
-&lt;li&gt;kids having difficulty with idioms like &lt;code&gt;i=i+1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;kids needing more scaffolding to approach a problem&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kids printing rather than returning answers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kids not understanding scope&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kids having difficulty with idioms like &lt;code&gt;i=i+1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kids needing more scaffolding to approach a problem&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This can drive instruction moving forward.&lt;/p&gt;
 &lt;p&gt;
@@ -4189,7 +4367,7 @@ homeworks, labs and small projects. They&amp;#39;ll make additional repos for
 larger and group projects. They fill out a Google form to give me the
 repo link. I download the form and end up with a CSV file something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-csv&#34;&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-csv&#34; data-lang=&#34;csv&#34;&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-csv&#34; data-lang=&#34;csv&#34;&gt;Doe, John, git@github.com:johndoe/mymoework.git
+&lt;pre&gt;&lt;code class=&#34;language-csv&#34; data-lang=&#34;csv&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-csv&#34; data-lang=&#34;csv&#34;&gt;Doe, John, git@github.com:johndoe/mymoework.git
 Doe, Jane, git@github.com:janedoe/labs.git
 etc.&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -4213,7 +4391,7 @@ hw
 &lt;p&gt;
 To get there, I have to change the csv file to a small shell script:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:johndoe/mymoework.git doe_john
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:johndoe/mymoework.git doe_john
 git clone git@github.com:janedoe/labs.git doe_jane
 etc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -4226,7 +4404,7 @@ Whenever there&amp;#39;s a new assignment, I just have to update all the
 repos. I go into the root hw directory and loop through all the
 subdirectoryes:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cs /path/to/hw_root
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cs /path/to/hw_root
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;ls&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
 cd /path/to/hw_root/$i
@@ -4240,7 +4418,7 @@ build an executable named &lt;code&gt;main&lt;/code&gt; and also a target named 
 will build an executable to run the unit tests named &lt;code&gt;tests&lt;/code&gt; I do this
 instead of a straight pull:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cs /path/to/hw_root
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cs /path/to/hw_root
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;ls&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
 cd /path/to/hw_root/$i
@@ -4255,7 +4433,7 @@ Now, if I want, I can go into each directory, run the tests by typing
 &lt;code&gt;./tests&lt;/code&gt;  and the hw or project with &lt;code&gt;./main&lt;/code&gt;. I can also add a
 couple of lines to the for loop above like:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt; Test Report\n----------------\n&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /path/to/hw_root/test_report
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt; Test Report\n----------------\n&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /path/to/hw_root/test_report
 ./tests &amp;gt;&amp;gt; /path/to/hw_root/test_rport
 echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;----------------------\n\n&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;

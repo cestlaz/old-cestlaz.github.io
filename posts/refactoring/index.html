@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1645486518" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646142107" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="One of my laments on teaching computer science is that students are rarely taught and given the chance to develop good programming practices. There&#39;s usually not enough time. Beginners work on small &#34;toys&#34; which don&#39;t lend themselves to good software development practices and later on, there&#39;s so much other material like algorithms, data structures etc. to teach and learn that programming practices usually amount to lines like:
  &#34;Make sure to comment your code." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/refactoring/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/refactoring/" />
 <meta property="article:published_time" content="2018-03-21T00:00:00+00:00" />
 <meta property="article:modified_time" content="2018-03-21T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Refactoring"/>
@@ -109,7 +108,8 @@ It&#39;s a nice use of nested loops. The students will write functions to
 create assorted shapes out of asterisks  like rectangles and
 triangles. Typical solutions look like this:</p>
 <div class="src src-c++">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
 </div>
 <p>
 Which results in shapes like these:</p>
@@ -145,7 +145,8 @@ drawing functions follow the same pattern - there&#39;s an outer loop for
 the height and then one or more inner loops to draw each line. We can
 factor out the inner loops in to a separate <code>line()</code> function.</p>
 <div class="src src-c++">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
 </div>
 <p>
 It&#39;s just like factoring in algebra:</p>
@@ -156,7 +157,8 @@ It&#39;s just like factoring in algebra:</p>
 <p>
 We end up with:</p>
 <div class="src src-c++">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
 </div>
 <p>
 It&#39;s simpler, cleaner, and also can lead us to thinking about the
@@ -175,7 +177,8 @@ stars:</p>
 Noticing that  for a height of 5, the dashed lines count down in
 length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:</p>
 <div class="src src-c++">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
 </div>
 <p>
 Here we have typical early CS assignment that really lends itself to

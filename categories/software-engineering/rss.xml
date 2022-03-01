@@ -111,9 +111,15 @@ above explorations a bit easier. Here are a few of my favorites.&lt;/p&gt;
 For the examples, we&amp;#39;ll work in small three file project I set up. A
 small linked list in Java. It has three files:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Node.java&lt;/li&gt;
-&lt;li&gt;myLinkedList.java&lt;/li&gt;
-&lt;li&gt;Driver.java&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Node.java&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;myLinkedList.java&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Driver.java&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;but it could have any number of files in any number of directories.&lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
@@ -132,7 +138,8 @@ engine. Here&amp;#39;s an example of dumb-jump in Emacs which performs tag
 like searching without the indexing. We move our cursor to the add
 method, hit the magic key and we&amp;#39;re taken to the definition:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/dumb-jump.gif&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/dumb-jump.gif&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -173,7 +180,8 @@ I wanted to find the code I used in my blog to embed an code sample
 but couldn&amp;#39;t remember exactly how to do it. Here&amp;#39;s how I used ripgrep
 to help:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/rg.gif&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/rg.gif&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -188,7 +196,8 @@ other cool thing is that most editors integrate in ripgrep/silver
 searcher/ack functionality so you can do the search right in your
 editor and jump right over to the code in question.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/rg-emacs.gif&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/rg-emacs.gif&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
@@ -241,7 +250,7 @@ Compile and test one concept at a time.&lt;/p&gt;
 It might seem silly, but if I&amp;#39;m writing a a program, my first compile
 might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;
@@ -254,7 +263,7 @@ might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
 or &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
       &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
 	
@@ -274,21 +283,27 @@ Going further, I compile and test every time I code up what I call a
 concept. What&amp;#39;s a concept? Let&amp;#39;s look at some code. A student might
 write something like this to find prime number up to n:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 There&amp;#39;s a lot going on there. To me, a concept is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A loop&lt;/li&gt;
-&lt;li&gt;A complex calculation&lt;/li&gt;
-&lt;li&gt;a conditional&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A loop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A complex calculation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a conditional&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;All of these can have other concepts within.&lt;/p&gt;
 &lt;p&gt;
@@ -299,9 +314,9 @@ and print statements throughout the process:&lt;/p&gt;
 Step 1:
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
@@ -309,10 +324,10 @@ Step 1:
 Step 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
-            print(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
@@ -320,14 +335,14 @@ Step 2
 Step 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                print(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
@@ -335,14 +350,14 @@ Step 3
 Step 4 
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
-        print(i,i_isPrime)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,i_isPrime)
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -351,15 +366,15 @@ Step 4
 Step 5
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
 It might not play out exactly this way but if not it would be something
 similar. The idea is that if you test every time you add one concept

@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1645486518" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646142107" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="One of our teacher certification cohort members asked for some help on our Slack the other day. It was about a side project - he was learning him so Javascript. It&#39;s always very cool to see teachers exploring things that can help with their craft on their own.
  The whole situation reminded me about how important good tooling is and why, in spite of its popularity, javascript has some severe issues as a learning language and I&#39;m a guy that actually likes javascript." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/tools-matter/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/tools-matter/" />
 <meta property="article:published_time" content="2020-07-22T07:52:24-04:00" />
 <meta property="article:modified_time" content="2020-07-22T07:52:24-04:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tools matter when teaching (and learning)"/>
@@ -99,7 +98,7 @@ worked except the clear button which did nothing. Weird.</p>
 <p>
 Exploring the code, here were some of the key sections:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// there were sections like this
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// there were sections like this
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filterOption</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.filter-todo&#34;</span>);
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">clearButton</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.clear-button&#34;</span>);
 
@@ -142,12 +141,14 @@ element in the web page. If that element doesn&#39;t exist, it returns
 was no element on the page identified by the class <strong>filter-todo</strong>. The
 result was that after executing</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filterOption</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.filter-todo&#34;</span>);</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filterOption</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.filter-todo&#34;</span>);
+</code></pre></div></p>
 <p>
 <code>filterOption</code> is set to refer to null.</p>
 <p>
 Then later, this code: 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">filterOption</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#a6e22e">filterTodo</span>);</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">filterOption</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#a6e22e">filterTodo</span>);
+</code></pre></div></p>
 <p>
 crashes the program because you can&#39;t call the <code>addEventListener</code>
 method on <code>null</code> which is what <code>filterOption</code> is set to.</p>

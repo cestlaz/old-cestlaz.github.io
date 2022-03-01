@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1645486518" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646142107" />
 
 
 
@@ -23,10 +23,9 @@
  It&#39;s emacs so there has to be a solution.
  Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-30-elfeed-2/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-30-elfeed-2/" />
 <meta property="article:published_time" content="2017-02-25T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-02-25T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 30 - elfeed part 2 - Hydras"/>
@@ -103,7 +102,7 @@ here.</p>
 Here&#39;s the code to install hydra along with a some of sample Hydra&#39;s
 I use:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package hydra
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package hydra
 :ensure <span style="color:#66d9ef">t</span>)
 
 <span style="color:#75715e">;; Hydra for modes that toggle on and off</span>
@@ -157,7 +156,7 @@ Take a look at the <a href="https://github.com/abo-abo/hydra">Hydra</a> home pag
 <p>
 With Hydra installed, I can creat one for navigating in elfeed:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">`</span>(defhydra mz/hydra-elfeed ()
 <span style="color:#e6db74">&#34;filter&#34;</span>
 (<span style="color:#e6db74">&#34;c&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@6-months-ago +cs&#34;</span>) <span style="color:#e6db74">&#34;cs&#34;</span>)
 (<span style="color:#e6db74">&#34;e&#34;</span> (elfeed-search-set-filter <span style="color:#e6db74">&#34;@6-months-ago +emacs&#34;</span>) <span style="color:#e6db74">&#34;emacs&#34;</span>)
@@ -173,7 +172,7 @@ With Hydra installed, I can creat one for navigating in elfeed:</p>
 <p>
 and add a binding to the elfeed key map:</p>
 <p>#+BEGIN_SRC emacs-lisp
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elfeed
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elfeed
 :ensure <span style="color:#66d9ef">t</span>
 :bind (:map elfeed-search-mode-map
 (<span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#f92672">.</span> bjm/elfeed-save-db-and-bury)
