@@ -6,10 +6,81 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Mar 2022 08:13:17 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Mar 2022 20:07:45 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE2022 - Things I plan to blog about</title>
+      <link>https://cestlaz.github.io/post/sigcse2022-intro/</link>
+      <pubDate>Fri, 04 Mar 2022 20:07:45 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse2022-intro/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve been up in Providence RI since this past Wednesday for
+SIGCSE2022. The big Computer Science Educators conference. Also, my
+first in person conference since pre-covid.&lt;/p&gt;
+&lt;p&gt;
+I wasn&amp;#39;t sure how I was going to feel about this big in person
+gathering but as it&amp;#39;s turned out, it&amp;#39;s been pretty comfortable.&lt;/p&gt;
+&lt;p&gt;
+So far, I&amp;#39;ve attended two terrific keynotes. One by Barbara
+Liskov and the other Barbara Ericson, some really interesting sessions
+and some less interesting ones and have had a great time discussing CS
+education.&lt;/p&gt;
+&lt;p&gt;
+The big highlight has been seeing friends in person and being able to
+talk. Sitting down for coffee with a friend or having a rount table
+discussion around a well, round table.&lt;/p&gt;
+&lt;p&gt;
+One of those friends I was delighted to see was Alfred
+Thompson. Alfred&amp;#39;s already sumarized his &lt;a href=&#34;https://blog.acthompson.net/2022/03/sigcse-2022-day-1.html&#34;&gt;first&lt;/a&gt; and &lt;a href=&#34;https://blog.acthompson.net/2022/03/sigcse-2022-day-2.html&#34;&gt;second&lt;/a&gt; day
+experiences so there&amp;#39;s not reason for me to write much the same so I
+figured I&amp;#39;d just quickly list out a few of my highlights and in
+particular things I plan to write more about when I get back to NYC.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Language choice for APCS. There was a panel that considered why
+change to Python or why stick with Java. I didn&amp;#39;t attend this
+session but talked at length about it with a number of people. It
+had me reconsidering my opinions and I&amp;#39;ll certainly write about this
+in the near future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I saw an interesting talk by Sam Lau in which he discussed how
+statisticians and computer scientists differed in their views as to
+how and what should be taught in a data science course. This got me
+thinking about developing CS offerings at the high school level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
+the first time where teachers discussed their failures. This was a
+&lt;strong&gt;great&lt;/strong&gt; session hosted by two more friends I haven&amp;#39;t seen since
+pre-covid - Dan Garcia and Jim Huggins. One topic brought up there
+was dealing with late assignments as well as alternative
+grading. This too is something I plan to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PD For CS Teachers and teacher prep programs. This is clearly
+something I care deeply about and there were some sessions on this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I also spent a good amount of time catching up with my friends Jim
+and Robin from Siena College. They&amp;#39;re doing some cool thing up there
+so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My thoughts on the hybrid format of this conference&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&amp;#39;s a big list - a lot of things to write about. I hope to get on
+this when I get back to NYC on Sunday.&lt;/p&gt;
+&lt;p&gt;
+In the meantime, if you&amp;#39;re in providence for tomorrow&amp;#39;s last day of
+SIGCSE, please find me and say hello!!!!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>First live conference in 2 years</title>
@@ -3664,47 +3735,6 @@ Topher suggested that we call said person the &amp;#34;designated slacker.&amp;#
 Who doesn&amp;#39;t want to be that????&lt;/p&gt;
 &lt;p&gt;
 That is all.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>No CSTA conference for me this year</title>
-      <link>https://cestlaz.github.io/post/no-csta2021/</link>
-      <pubDate>Wed, 14 Jul 2021 17:08:54 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/no-csta2021/</guid>
-      <description>&lt;p&gt;
-Today is the start of CSTA&amp;#39;s annual conference. Like last year, it&amp;#39;s
-virtual. Unlike the past few years, this year I won&amp;#39;t be attending.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m a big fan of the CSTA conference. &lt;a href=&#34;https://twitter.com/jakebask&#34;&gt;Jake&lt;/a&gt; and team have done an
-amazing job growing the conference and it&amp;#39;s been a highlight of my
-year every time I&amp;#39;ve attended.&lt;/p&gt;
-&lt;p&gt;
-I could say that I&amp;#39;m not attending due to my schedule - I&amp;#39;m pretty
-much spending all day every day during July teaching in my CS Teacher
-Certification program and at the end of the day I&amp;#39;m wiped. This is
-true but it&amp;#39;s not the only reason. The truth is, I&amp;#39;m pretty burned
-out. Part of it is doing too many things. At this point, the
-teacher education part of my portfolio is a full time job as is my
-work with the undergraduate CS students and that&amp;#39;s not counting the
-extras that have worked their way onto my plate. The other part of it
-I&amp;#39;m sure is Covid. I&amp;#39;m writing this because  many teachers are
-overworked and add in this past year of Covid and I&amp;#39;m sure many are
-feeling the same as I am.&lt;/p&gt;
-&lt;p&gt;
-I love the CSTA conference but I&amp;#39;m just not feeling it. Same with a
-lot of professional stuff - just not feeling the joy these days.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m hoping that come August I can turn everything off for a few weeks
-and recharge a bit for next year and going back in person (safely)
-will provide a boost.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m betting teachers around the country are feeling rather burned out
-so wanted to share publicly saying you&amp;#39;re not alone, it&amp;#39;s okay and
-it&amp;#39;s okay to dial it back for our own mental and physical well being. &lt;/p&gt;
-&lt;p&gt;
-Already looking forward to a better next year and  CSTA2022, hopefully in person.&lt;/p&gt;
 </description>
     </item>
     
