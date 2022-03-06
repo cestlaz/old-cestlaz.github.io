@@ -268,14 +268,10 @@ choice. &lt;/p&gt;
 &lt;p&gt;
 We then talk about what we now know - &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;We now know the exact location of 0515 with respect to all the
-dates&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The data set is now partially ordered (everything less than 0515 to
-the left, greater to the right).&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;We now know the exact location of 0515 with respect to all the
+dates&lt;/li&gt;
+&lt;li&gt;The data set is now partially ordered (everything less than 0515 to
+the left, greater to the right).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I also drew out some diagrams showing what was happening &lt;/p&gt;
 &lt;p&gt;
@@ -425,18 +421,10 @@ also be fun and by being a new and different problem students can try
 to use any strategies that might lead to a solution, recursive or
 otherwise:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;try some small examples&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;see if examples relate to each other&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;base case?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;etc.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;try some small examples&lt;/li&gt;
+&lt;li&gt;see if examples relate to each other&lt;/li&gt;
+&lt;li&gt;base case?&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The big deal though is that Towers of Hanoi isn&amp;#39;t really about Towers
 of Hanoi - it&amp;#39;s really a platform to talk about all sorts of good
@@ -483,14 +471,14 @@ until you get a good result. &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the start of the Book of Psalms:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the man that walketh not in the counsel of the
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the man that walketh not in the counsel of the
 ungodly, nor standeth in the way of sinners, nor sitteth in
 the seat of the scornful.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 and here&amp;#39;s some generated text:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the people that delight in war. Princes shall come out of
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Blessed is the people that delight in war. Princes shall come out of
 Zion,  the perfection of beauty god hath shined our god shall come and
 shall declare thy mighty acts. I will speak of the glory of the lord
 surely i will not lie unto David.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -592,7 +580,7 @@ can build a dictionary where the keys are the words and the values are
 all the words that follow the key. We can build this with a variation
 on our bag of words builder:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Note that we need a counting loop rather than just iterating over the
@@ -601,35 +589,23 @@ iteration.&lt;/p&gt;
 &lt;p&gt;
 The (partial) value for the wordlists for the Book of Psalms would be:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 At this point, generating text is easy. &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Start with a word&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add the word to yoru story.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Look  it up in your wordlists dictionary.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;select a random word from that words dictionary entry (it&amp;#39;s list).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;That becomes the word for the next iteration&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Repeat until you have enough words.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Start with a word&lt;/li&gt;
+&lt;li&gt;Add the word to yoru story.&lt;/li&gt;
+&lt;li&gt;Look  it up in your wordlists dictionary.&lt;/li&gt;
+&lt;li&gt;select a random word from that words dictionary entry (it&amp;#39;s list).&lt;/li&gt;
+&lt;li&gt;That becomes the word for the next iteration&lt;/li&gt;
+&lt;li&gt;Repeat until you have enough words.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This won&amp;#39;t add any punctuation and it will crash when it gets to the
 last word in the original text (as it can&amp;#39;t find any &amp;#34;next words&amp;#34; but
 basically it will work. Here&amp;#39;s the code:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The &lt;code&gt;random.choice()&lt;/code&gt; randomly selects a word from a list. This is
@@ -648,7 +624,7 @@ the value.&lt;/p&gt;
 For example, a partial dictionary based on this idea from Macbeth Act
 1 Scene 1 could be:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This takes a bit more work to build and also a bit more work to
@@ -725,26 +701,16 @@ following bag:&lt;/p&gt;
 Not too interesting but it gets more interesting on a larger text. We
 used:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Act 1 Scene 1 from Macbeth (for testing - it&amp;#39;s only 13 lines)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Cyrano de Bergerac (because it&amp;#39;s my favorite play)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Moby Dick (chapter 1)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Moby Dick (full text)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The Book of Psalms&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Act 1 Scene 1 from Macbeth (for testing - it&amp;#39;s only 13 lines)&lt;/li&gt;
+&lt;li&gt;Cyrano de Bergerac (because it&amp;#39;s my favorite play)&lt;/li&gt;
+&lt;li&gt;Moby Dick (chapter 1)&lt;/li&gt;
+&lt;li&gt;Moby Dick (full text)&lt;/li&gt;
+&lt;li&gt;The Book of Psalms&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Assuming a cleaned string with all the text, building the bag is
 pretty easy:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;cleaned_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a string with all the cleaned text&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;cleaned_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a string with all the cleaned text&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;bag&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; cleaned_text&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split():
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;  bag&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setdefault(word,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
@@ -755,7 +721,7 @@ dictionary then insert it with a value of 0, otherwise, if &lt;code&gt;word&lt;/
 already a key in the dictionary do nothing. This saves us from
 constructs like:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;      bag[word]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;      bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
@@ -778,7 +744,7 @@ words much cleaner. Say, for instance you want to find all the words
 that occur between 50 and 100 times. Without list comprehensions you
 might write:&lt;/p&gt;
 &lt;p&gt;
-  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;:
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;          result&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(word) &lt;span style=&#34;color:#75715e&#34;&gt;# or (word,count) or whatever&lt;/span&gt;
@@ -786,7 +752,7 @@ might write:&lt;/p&gt;
 &lt;p&gt;
 While with the comprehension it&amp;#39;s:&lt;/p&gt;
 &lt;p&gt;
-  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ word &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;]
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ word &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; bag &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; bag[word] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;]
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Besides basic exploring, what else can you do? You can make word
@@ -811,18 +777,10 @@ build a lesson or unit out of this bag of words idea. I&amp;#39;ll leave you
 all with some web sites that use these ideas in what I think are
 interesting ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://davidamackenzie.com/tmbg_lyrics/&#34;&gt;They Might Be Giants Lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/&#34;&gt;Word use in rap lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated&#34;&gt;Another analysis of rap lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5&#34;&gt;Analysis of succesful song lyrics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidamackenzie.com/tmbg_lyrics/&#34;&gt;They Might Be Giants Lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/&#34;&gt;Word use in rap lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated&#34;&gt;Another analysis of rap lyrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5&#34;&gt;Analysis of succesful song lyrics&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Enjoy!&lt;/p&gt;
@@ -849,21 +807,13 @@ turned out to be a hassle.&lt;/p&gt;
 &lt;p&gt;
 If you didn&amp;#39;t read the previous post the short version was:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;group the kids in two&amp;#39;s&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Each does a written (no talking) code review on the others previous
+&lt;li&gt;group the kids in two&amp;#39;s&lt;/li&gt;
+&lt;li&gt;Each does a written (no talking) code review on the others previous
 lab. Very little guidance was given as to what the review should
-look like.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We then did two parings where one person talked through a live code
-review with the other.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Finally, we did one more written session. &lt;/p&gt;
-&lt;/li&gt;
+look like.&lt;/li&gt;
+&lt;li&gt;We then did two parings where one person talked through a live code
+review with the other.&lt;/li&gt;
+&lt;li&gt;Finally, we did one more written session. &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This left person with three reviews. &lt;/p&gt;
 &lt;p&gt;
@@ -1055,7 +1005,7 @@ diagonals of a bounding rectangle and then compare areas of these
 rectangles. They should decrease at first and then eventually
 increase. &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
       new_pts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transform(pts,time) 
       bbox &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bounding_box(new_pts)
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (area(bbox) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; area(previous_bbox)):
@@ -1078,47 +1028,36 @@ When I first solved the problem, I just dumped the coordinates into a
 2 dimentional array and printed it but afterwards I wrote a little
 clojurescript html5 canvas visualization:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 So there it is. It&amp;#39;s not a trivial problem for beginners but it is doable. There&amp;#39;s a
 lot to deal with:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;parse the data&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;parse the data&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 This isn&amp;#39;t too bad. You could cover regular expressions but even
 without it isn&amp;#39;t too big of a deal. You could also just use an editor
 to extract the important data or preprocess this for the kids.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Figure out how to transform the points.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Figure out how to transform the points.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This also isn&amp;#39;t too bad. Just loop over all the points with &lt;code&gt;newpoint
 = oldpoint + t * velocity&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Figure out the bounding boxes&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Figure out the bounding boxes&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Also not too bad. Loop over all the points to find the smallest and
 largest x and y coordinates&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Set up a loop to find the smallest bounding box and hence the time
-that the message will appear.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Set up a loop to find the smallest bounding box and hence the time
+that the message will appear.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;and then finally:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;draw the points to visually inspect the answer.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;draw the points to visually inspect the answer.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This might be the most persnickety part. When I first coded it my
 output was upside down and backwards but good enough.&lt;/p&gt;
@@ -1227,12 +1166,8 @@ Parts 1 and 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1271,27 +1206,15 @@ mention the query terms. Then you look for dates. Dates can be even
 easier to search for than names. Particularly if your students know
 regular expressions. Dates could be things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;two digits / two digits / two digits&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Month name number, number&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;etc.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;two digits / two digits / two digits&lt;/li&gt;
+&lt;li&gt;Month name number, number&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;or in regular expressions, something like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[0-9]{2}/[0-9]{2}/[0-9]{2}/&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(Jan|Feb|Mar…)[0-9]{2}, {0-9]{4}}&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;etc.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;[0-9]{2}/[0-9]{2}/[0-9]{2}/&lt;/li&gt;
+&lt;li&gt;(Jan|Feb|Mar…)[0-9]{2}, {0-9]{4}}&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Just as with &amp;#34;who&amp;#34; queries there are issues to deal with - searching
 for &amp;#34;when did Elvis die&amp;#34; might give you when Elvis was born instead
@@ -1321,12 +1244,8 @@ Parts 1 and 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1346,12 +1265,8 @@ Parts 1 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1371,16 +1286,10 @@ Since we&amp;#39;re doing a &amp;#34;who&amp;#34; query  we want to find all the
 the documents. This leads to a class discussion on how to find names
 in a large string. They&amp;#39;ll come up with rules like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;two adjacent words each with a capital first letter.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;an honorific (Mr, Ms, etc.) followed by a capitalized word&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A word that matches a name from a &amp;#34;popular name&amp;#34; list followed by a
-capitalized word.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;two adjacent words each with a capital first letter.&lt;/li&gt;
+&lt;li&gt;an honorific (Mr, Ms, etc.) followed by a capitalized word&lt;/li&gt;
+&lt;li&gt;A word that matches a name from a &amp;#34;popular name&amp;#34; list followed by a
+capitalized word.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The class might come up with different or additional rules. Actually
 writing the code to pull out the names is an nice little assignment
@@ -1410,12 +1319,8 @@ Parts 1 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1435,12 +1340,8 @@ Parts 2 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I wasn&amp;#39;t going to teach this lesson today. I was planning on starting
 a multi day project starting with an exercise in specification writing
@@ -1538,12 +1439,8 @@ Parts 2 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1582,7 +1479,7 @@ Compile and test one concept at a time.&lt;/p&gt;
 It might seem silly, but if I&amp;#39;m writing a a program, my first compile
 might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;
@@ -1595,7 +1492,7 @@ might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
 or &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
       &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
 	
@@ -1615,27 +1512,21 @@ Going further, I compile and test every time I code up what I call a
 concept. What&amp;#39;s a concept? Let&amp;#39;s look at some code. A student might
 write something like this to find prime number up to n:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 There&amp;#39;s a lot going on there. To me, a concept is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A loop&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A complex calculation&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;a conditional&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;A loop&lt;/li&gt;
+&lt;li&gt;A complex calculation&lt;/li&gt;
+&lt;li&gt;a conditional&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;All of these can have other concepts within.&lt;/p&gt;
 &lt;p&gt;
@@ -1646,9 +1537,9 @@ and print statements throughout the process:&lt;/p&gt;
 Step 1:
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
@@ -1656,10 +1547,10 @@ Step 1:
 Step 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            print(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
@@ -1667,14 +1558,14 @@ Step 2
 Step 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
+                print(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
@@ -1682,14 +1573,14 @@ Step 3
 Step 4 
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,i_isPrime)
+        print(i,i_isPrime)
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1698,15 +1589,15 @@ Step 4
 Step 5
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
 It might not play out exactly this way but if not it would be something
 similar. The idea is that if you test every time you add one concept

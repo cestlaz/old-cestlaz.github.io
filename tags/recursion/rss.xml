@@ -133,18 +133,10 @@ also be fun and by being a new and different problem students can try
 to use any strategies that might lead to a solution, recursive or
 otherwise:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;try some small examples&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;see if examples relate to each other&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;base case?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;etc.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;try some small examples&lt;/li&gt;
+&lt;li&gt;see if examples relate to each other&lt;/li&gt;
+&lt;li&gt;base case?&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The big deal though is that Towers of Hanoi isn&amp;#39;t really about Towers
 of Hanoi - it&amp;#39;s really a platform to talk about all sorts of good
@@ -215,9 +207,7 @@ them.&lt;/p&gt;
 &lt;p&gt;
 Some reasons to like (or for some, to dislike) Scheme early:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;It&amp;#39;s functional – everything is a function. While this is&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;It&amp;#39;s functional – everything is a function. While this is&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;technically not true, we can fudge it a bit at this level. You put
 things in parens so instead of add(a,b) you write (add a b) or
@@ -226,21 +216,13 @@ statements are also functions: (if Booelean TruePart FalsePart) is the &lt;stron
 statement. For example &lt;code&gt;(if (&amp;gt;= a b) a b)&lt;/code&gt; returns the larger of a
 and b.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Because it&amp;#39;s functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;for assignment rather than comparison.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;It has great support for list processing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Recursion is much more natural.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It&amp;#39;s a super simple language with simple rules and a simple, small  syntax&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;It has great support for list processing.&lt;/li&gt;
+&lt;li&gt;Recursion is much more natural.&lt;/li&gt;
+&lt;li&gt;It&amp;#39;s a super simple language with simple rules and a simple, small  syntax&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Of course, Scheme isn&amp;#39;t perfect and some people dislike the above
 reasons. It&amp;#39;s also easy to come up with a number of other good reasons
@@ -249,7 +231,7 @@ not to use a language like Scheme.&lt;/p&gt;
 On the recursion front, it makes things much easier. There are no
 loops so recursion develops as a natural form for repetition:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (* x  (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -257,7 +239,7 @@ This defines a function that takes one parameter and returns
 &lt;code&gt;x*(x-1)*(x-2)...&lt;/code&gt;. It repeats, but never ends. This leads to adding
 a base case:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;f (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;)
 (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt; x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
 &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 (* x (&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; (- x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -278,33 +260,17 @@ Scheme and most other functional programming languages also have
 strong support for lists and list recursion. This means you don&amp;#39;t have
 to limit yourself to mathy problems. Think about a todo list:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Go to the market&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Buy a gallon of milk&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If they have eggs, get a dozen (heh heh)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Go home&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Go to the market&lt;/li&gt;
+&lt;li&gt;Buy a gallon of milk&lt;/li&gt;
+&lt;li&gt;If they have eggs, get a dozen (heh heh)&lt;/li&gt;
+&lt;li&gt;Go home&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Processing a todo list is really a recursive problem:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;If the list is empty you&amp;#39;re done&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Take the first item off  the list&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do it&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Recurse&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;If the list is empty you&amp;#39;re done&lt;/li&gt;
+&lt;li&gt;Take the first item off  the list&lt;/li&gt;
+&lt;li&gt;Do it&lt;/li&gt;
+&lt;li&gt;Recurse&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Once you start working with lists, you can play with all sorts of
 recursive examples.&lt;/p&gt;

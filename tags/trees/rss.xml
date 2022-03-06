@@ -51,8 +51,7 @@ search tree where you also have two pointers in each node a left and a
 right. Same &amp;#34;physical&amp;#34; representation but two very different
 variations.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
-    &amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt; 
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt;
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The image on the left is the actual arbitrary tree and the one on the

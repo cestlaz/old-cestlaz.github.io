@@ -14,29 +14,25 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646496831" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646603857" />
 
 
 
 <meta property="og:title" content="" />
 <meta property="og:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:
-  mathjax
-  emacs
-  tools
-  draft: false —
+ mathjax emacs tools  draft: false —
  Switched over from Jekyll to Nikola yesterday.
  One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/" /><meta property="article:section" content="posts" />
+
+
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="— title: &#34;Blogging with Emacs, Jekyll and Nikola&#34; date: 2016-04-17 tags:
-  mathjax
-  emacs
-  tools
-  draft: false —
+ mathjax emacs tools  draft: false —
  Switched over from Jekyll to Nikola yesterday.
  One of the primary reasons was that I got fed up with managing a Ruby development environment across all my machines. In spite of my rantings, I&#39;m sure Ruby and Ruby installs are fine - it&#39;s just something that I&#39;d have to deal with on a recurring basis for one specific task - other than for Jekyll blogging, I don&#39;t use Ruby."/>
 
@@ -92,15 +88,9 @@ title: &#34;Blogging with Emacs, Jekyll and Nikola&#34;
 date: 2016-04-17
 tags:</p>
 <ul>
-<li>
-<p>mathjax</p>
-</li>
-<li>
-<p>emacs</p>
-</li>
-<li>
-<p>tools</p>
-</li>
+<li>mathjax</li>
+<li>emacs</li>
+<li>tools</li>
 </ul>
 <p>draft: false
 —</p>
@@ -120,27 +110,13 @@ productivity.</p>
 <p>
 What do I use org-mode for?</p>
 <ul>
-<li>
-<p>lesson planning</p>
-</li>
-<li>
-<p>document preparation (instead of LaTeX)</p>
-</li>
-<li>
-<p>note taking</p>
-</li>
-<li>
-<p>blogging</p>
-</li>
-<li>
-<p>email (with mu4e)</p>
-</li>
-<li>
-<p>managing my schedule</p>
-</li>
-<li>
-<p>tracking bookmarks</p>
-</li>
+<li>lesson planning</li>
+<li>document preparation (instead of LaTeX)</li>
+<li>note taking</li>
+<li>blogging</li>
+<li>email (with mu4e)</li>
+<li>managing my schedule</li>
+<li>tracking bookmarks</li>
 </ul>
 <p>and probably a lot more.</p>
 <p>
@@ -162,19 +138,13 @@ automatically runs Jekyll and builds your site (<a href="https://help.github.com
 The problem is that Jekyll doesn&#39;t play well with org-mode and
 org-markup so my workflow became something like this</p>
 <ol>
-<li>
-<p>Create a post <strong><strong>something.org</strong></strong> in the _org directory.</p>
-</li>
-<li>
-<p>From within emacs, publish it. I&#39;ve configured org-mode to publish</p>
-</li>
+<li>Create a post <strong><strong>something.org</strong></strong> in the _org directory.</li>
+<li>From within emacs, publish it. I&#39;ve configured org-mode to publish</li>
 </ol>
 <p>by exporting the org-mode markup file to html and saving it in the
 _drafts directory.</p>
 <ol>
-<li>
-<p>If it looks good, copy and rename the file from _drafts to the</p>
-</li>
+<li>If it looks good, copy and rename the file from _drafts to the</li>
 </ol>
 <p>_posts directory and push it up to GitHub.</p>
 <p>
@@ -198,12 +168,8 @@ org-mode plugin to export to Nikola restructure text.</p>
 <p>
 My new workflow:</p>
 <ol>
-<li>
-<p>Write the post as an org-mode file.</p>
-</li>
-<li>
-<p>run <strong><strong>nikola github_{}deploy</strong></strong>.</p>
-</li>
+<li>Write the post as an org-mode file.</li>
+<li>run <strong><strong>nikola github_{}deploy</strong></strong>.</li>
 </ol>
 <p>And that&#39;s it. You can look at my Nikola site here:
 <a href="https://github.com/cestlaz/cestlaz.github.io"><a href="https://github.com/cestlaz/cestlaz.github.io">https://github.com/cestlaz/cestlaz.github.io</a></a>.

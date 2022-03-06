@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646496831" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646603857" />
 
 
 
@@ -23,9 +23,10 @@
  As usual, all my code is up here. Day 21   Problem Link
  It took me a while to get my head around this example. You have a set of recipes. Each recipe has a list of ingredients and a list of allergens. Your job for part 1 was basically to determine which ingredients don&#39;t contain any allergens." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-21-24/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-21-24/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-12-24T11:43:14-04:00" />
 <meta property="article:modified_time" content="2020-12-24T11:43:14-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher Looks at Advent of Code 2020 - Days 21 and 24"/>
@@ -199,7 +200,7 @@ this would map to an actual screen.</p>
 Now, finding the coordinate of a tile was pretty easy. In Clojure
 it&#39;s: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#75715e">;; assume deltas is a lookup dictionary of the above mapping</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#75715e">;; assume deltas is a lookup dictionary of the above mapping</span>
 
   (<span style="color:#66d9ef">defn </span>get-tile-location [steps]
     (reduce (<span style="color:#66d9ef">fn </span>[loc step]
@@ -208,7 +209,7 @@ it&#39;s: </p>
 <p>
 In Python it would look more like this: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># assume deltas is a dictionary with the above mapping</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#75715e"># assume deltas is a dictionary with the above mapping</span>
   <span style="color:#75715e"># and steps is a list of instructions [&#34;e&#34;,&#34;w&#34;,&#34;se&#34;, etc]</span>
   <span style="color:#66d9ef">for</span> step <span style="color:#f92672">in</span> steps:
       loc <span style="color:#f92672">=</span> [sum(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> zip(loc, deltas[step])]</code></pre></div></p>

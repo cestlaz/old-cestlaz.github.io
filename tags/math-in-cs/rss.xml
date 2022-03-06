@@ -112,16 +112,10 @@ turns out that the easiet is probably the ray/sphere intersection. It
 might seem that intersecting a box might be easier but intersecting a
 box is actually a lot of work. You have to:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Note that a box is really 6 sides each being on an independent plane&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Figure out which plane the ray hit first&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Figure out if that intersection point is bounded by the four sides
-of that face of the box.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Note that a box is really 6 sides each being on an independent plane&lt;/li&gt;
+&lt;li&gt;Figure out which plane the ray hit first&lt;/li&gt;
+&lt;li&gt;Figure out if that intersection point is bounded by the four sides
+of that face of the box.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;For a sphere, you have to go through a bunch of substitutions and
 simplifications but you end up with a single simple equation to solve.
