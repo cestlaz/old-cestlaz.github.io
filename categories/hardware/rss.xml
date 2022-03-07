@@ -23,25 +23,13 @@ it pertains to teaching CS so I thought I&amp;#39;d give a quick update.&lt;/p&g
 &lt;p&gt;
 In terms of software here&amp;#39;s what I&amp;#39;ve actually gotten working: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;libreoffice (comes preinstalled)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;C/C++ toolchain (manjaro package install)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Java (manjaro package install)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Emacs (built from scratch and manjaro install)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NetLogo (had to customize the startup script as per the NetLogo
-FAQ)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Racket (had to compile from source)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;libreoffice (comes preinstalled)&lt;/li&gt;
+&lt;li&gt;C/C++ toolchain (manjaro package install)&lt;/li&gt;
+&lt;li&gt;Java (manjaro package install)&lt;/li&gt;
+&lt;li&gt;Emacs (built from scratch and manjaro install)&lt;/li&gt;
+&lt;li&gt;NetLogo (had to customize the startup script as per the NetLogo
+FAQ)&lt;/li&gt;
+&lt;li&gt;Racket (had to compile from source)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;#39;ve also heard the VSCode works with no issues.&lt;/p&gt;
 &lt;p&gt;

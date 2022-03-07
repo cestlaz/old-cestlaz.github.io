@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
 <meta property="og:title" content="Working with texts part 2 - bag of words" />
 <meta property="og:description" content="Following up on a previous post, we&#39;re going to continue to talk about playing with text. This time, building and working with a bag of words from a text.  A bag of words is a simple language processing model where you just consider individual words in a text. What they are and how many times they occur. This is a pretty simple model but you can still have a good bit of fun with your students with it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/bag-of-words/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/bag-of-words/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-11-20T08:15:41-04:00" />
 <meta property="article:modified_time" content="2019-11-20T08:15:41-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Working with texts part 2 - bag of words"/>
@@ -128,26 +129,16 @@ following bag:</p>
 Not too interesting but it gets more interesting on a larger text. We
 used:</p>
 <ul>
-<li>
-<p>Act 1 Scene 1 from Macbeth (for testing - it&#39;s only 13 lines)</p>
-</li>
-<li>
-<p>Cyrano de Bergerac (because it&#39;s my favorite play)</p>
-</li>
-<li>
-<p>Moby Dick (chapter 1)</p>
-</li>
-<li>
-<p>Moby Dick (full text)</p>
-</li>
-<li>
-<p>The Book of Psalms</p>
-</li>
+<li>Act 1 Scene 1 from Macbeth (for testing - it&#39;s only 13 lines)</li>
+<li>Cyrano de Bergerac (because it&#39;s my favorite play)</li>
+<li>Moby Dick (chapter 1)</li>
+<li>Moby Dick (full text)</li>
+<li>The Book of Psalms</li>
 </ul>
 <p>Assuming a cleaned string with all the text, building the bag is
 pretty easy:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>cleaned_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a string with all the cleaned text&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>cleaned_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a string with all the cleaned text&#34;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>bag<span style="color:#f92672">=</span>{}
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> cleaned_text<span style="color:#f92672">.</span>split():
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>  bag<span style="color:#f92672">.</span>setdefault(word,<span style="color:#ae81ff">0</span>)
@@ -158,7 +149,7 @@ dictionary then insert it with a value of 0, otherwise, if <code>word</code> <st
 already a key in the dictionary do nothing. This saves us from
 constructs like:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>  <span style="color:#66d9ef">if</span> word <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> bag:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>  <span style="color:#66d9ef">if</span> word <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> bag:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>      bag[word]<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>  <span style="color:#66d9ef">else</span>:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>      bag[word] <span style="color:#f92672">=</span> bag[word] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span></code></pre></div></p>
@@ -181,7 +172,7 @@ words much cleaner. Say, for instance you want to find all the words
 that occur between 50 and 100 times. Without list comprehensions you
 might write:</p>
 <p>
-  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>  result <span style="color:#f92672">=</span> []
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>  result <span style="color:#f92672">=</span> []
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>  <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> bag:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>      <span style="color:#66d9ef">if</span> bag[word] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">and</span> bag[word] <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span>:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>          result<span style="color:#f92672">.</span>append(word) <span style="color:#75715e"># or (word,count) or whatever</span>
@@ -189,7 +180,7 @@ might write:</p>
 <p>
 While with the comprehension it&#39;s:</p>
 <p>
-  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  result <span style="color:#f92672">=</span> [ word <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> bag <span style="color:#66d9ef">if</span> bag[word] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">and</span> bag[word] <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span>]
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  result <span style="color:#f92672">=</span> [ word <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> bag <span style="color:#66d9ef">if</span> bag[word] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">and</span> bag[word] <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span>]
   </code></pre></div></p>
 <p>
 Besides basic exploring, what else can you do? You can make word
@@ -214,18 +205,10 @@ build a lesson or unit out of this bag of words idea. I&#39;ll leave you
 all with some web sites that use these ideas in what I think are
 interesting ways:</p>
 <ul>
-<li>
-<p><a href="http://davidamackenzie.com/tmbg_lyrics/">They Might Be Giants Lyrics</a></p>
-</li>
-<li>
-<p><a href="https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/">Word use in rap lyrics</a></p>
-</li>
-<li>
-<p><a href="https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated">Another analysis of rap lyrics</a></p>
-</li>
-<li>
-<p><a href="https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5">Analysis of succesful song lyrics</a></p>
-</li>
+<li><a href="http://davidamackenzie.com/tmbg_lyrics/">They Might Be Giants Lyrics</a></li>
+<li><a href="https://blogs.sap.com/2014/01/07/measuring-word-use-frequency-in-rap-song-lyrics/">Word use in rap lyrics</a></li>
+<li><a href="https://genius.com/Sameoldshawn-rap-stats-breaking-down-the-words-in-rap-lyrics-over-time-annotated">Another analysis of rap lyrics</a></li>
+<li><a href="https://towardsdatascience.com/text-analysis-of-successful-song-lyrics-e41a4ccb26f5">Analysis of succesful song lyrics</a></li>
 </ul>
 <p>
 Enjoy!</p>

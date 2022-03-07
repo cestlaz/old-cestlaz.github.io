@@ -14,16 +14,17 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
 <meta property="og:title" content="MongoDB World 2019" />
 <meta property="og:description" content="For those of you who don&#39;t know, MongoDB is a very popular NoSQL database. NoSQL is an overarching term describing databases that are not relational and don&#39;t implement Structured Query Language (SQL). In a relational database your data is stored in tables with columns - think spreadsheet where each row of the table is a record in the database. You link tables together via a common field or row name." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/mongodb-world/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/mongodb-world/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-06-18T19:35:17-04:00" />
 <meta property="article:modified_time" content="2019-06-18T19:35:17-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB World 2019"/>
@@ -98,7 +99,7 @@ very easy for a beginner to get started.</p>
 Let&#39;s say you wanted to store information about a students. You might
 create this dictionary:</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  student <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;Last&#39;</span> : <span style="color:#e6db74">&#39;Hugginkis&#39;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  student <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;Last&#39;</span> : <span style="color:#e6db74">&#39;Hugginkis&#39;</span>,
               <span style="color:#e6db74">&#39;First&#39;</span> : <span style="color:#e6db74">&#39;Amanda&#39;</span>,
               <span style="color:#e6db74">&#39;ID&#39;</span> : <span style="color:#ae81ff">1245</span>,
               <span style="color:#e6db74">&#39;Homeroom&#39;</span> : <span style="color:#e6db74">&#39;5A&#39;</span>,
@@ -107,12 +108,12 @@ create this dictionary:</p>
 <p>
 You add this to your database like this:</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db<span style="color:#f92672">.</span>students<span style="color:#f92672">.</span>insert(students)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db<span style="color:#f92672">.</span>students<span style="color:#f92672">.</span>insert(students)</code></pre></div>
 </div>
 <p>
 Later, you can query for all the students in Homeroom 5A:</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db<span style="color:#f92672">.</span>students<span style="color:#f92672">.</span>find({<span style="color:#e6db74">&#39;Homeroom&#39;</span>:<span style="color:#e6db74">&#39;5A&#39;</span>})</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db<span style="color:#f92672">.</span>students<span style="color:#f92672">.</span>find({<span style="color:#e6db74">&#39;Homeroom&#39;</span>:<span style="color:#e6db74">&#39;5A&#39;</span>})</code></pre></div>
 </div>
 <p>
 Super quick and easy. It also comes with a nice REPL - essentially a
@@ -123,51 +124,39 @@ if you want to get up to speed on MongoDB. I left reminded of a number
 of great MongoDB products that I hadn&#39;t really used and a few new ones
 they&#39;re just launching:</p>
 <ul>
-<li>
-<p>Atlas
+<li>Atlas
 This is their DB as service. Don&#39;t want to administer your own
 installation? Just spin up an Atlas cluster. The free tier is plenty
 generous and you and your students can get up and running in under
-10 minutes.</p>
-</li>
-<li>
-<p>Compass
+10 minutes.</li>
+<li>Compass
 Back in the day you either interacted with MongoDB pragmatically
 using a language driver or used their REPL shell. Compass is a
 complete fully functional GUI. It can connect to your database, a
 remote one, or an Atlas cluster. A game changer for database
-management</p>
-</li>
-<li>
-<p>Charts
+management</li>
+<li>Charts
 This is really cool. You link MongoDB charts to an Atlas cluster and
 then can interactively build dashboards and visualizations. You can
-then embed the visualizations into your own web projects. </p>
-</li>
-<li>
-<p>Field Level Encryption</p>
-</li>
+then embed the visualizations into your own web projects. </li>
+<li>Field Level Encryption</li>
 </ul>
 <p>Encrypting passwords for storage and similar practices are important
 but can be aslog. MongoDB now takes care of this for you. You can, for
 instance, tell your database to encrypt the password fields and your
 done. </p>
 <ul>
-<li>
-<p>Data Lake</p>
-</li>
+<li>Data Lake</li>
 </ul>
 <p>This blew me away. Basically, it can take your AWS storage and let you
 query it as if it were a MongoDB database. It works with a variety of
 file formst - JSON, XML, CSV and more. Basically it transparently
 turns cloud storage into a database. </p>
 <ul>
-<li>
-<p>Stitch
+<li>Stitch
 This allows for the building of serverless apps. Similar to Firebase
 but it looks to interact with all the other MongoDB goodness I&#39;ve
-mentioned. .</p>
-</li>
+mentioned. .</li>
 </ul>
 <p>There were a few other neat things I learned about MongoDB and related
 products but those were the highlights.</p>

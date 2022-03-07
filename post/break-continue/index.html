@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="What can I do to discourage my students from using the &#34;break&#34; statement?
   That was more or less the gist of the comment and it elicited some good responses. This time the conversation was on Facebook but I&#39;ve seen this one and participated in it many times before. I never liked the question when presented as a &#34;how can I stop them&#34; one. I equally dislike when the offered advice is basically &#34;never use break no matter what&#34; or something similar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/break-continue/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/break-continue/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-05-01T08:39:41-04:00" />
 <meta property="article:modified_time" content="2019-05-01T08:39:41-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Give me a break (and a continue)"/>
@@ -104,7 +105,7 @@ used correctly it can create clearer code. Let&#39;s look at a related
 situation. Suppose you write a function to find and return some item
 from  a data set (in pseudocode):</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
 </div>
 <p>
 You could tighten it up a bit but there are two things that I don&#39;t
@@ -112,12 +113,12 @@ like about the above solution. First, it goes through the entire data
 set even if the item you&#39;re searching for is near the beginning. You
 could fix that by putting in a more complex loop boolean:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> numitems <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>found <span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">...</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> numitems <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>found <span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">...</span></code></pre></div></p>
 <p>
 Second. you&#39;ve got the conditional after the loop. I find the
 following much clearer:</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
 </div>
 <p>
 To me this is perfectly clear. Look for an item, if and when we find
@@ -128,12 +129,12 @@ understand, and potentially a little faster.</p>
 You have a similar situation with <code>break</code>. Without it you might have
 code like this:</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
 </div>
 <p>
 And with:</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  </code></pre></div>
 </div>
 <p>
 Not significantly different. </p>
@@ -149,12 +150,12 @@ more dangerous way than break and continue can.</p>
 <p>
 Here&#39;s an example with continue:</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
 </div>
 <p>
 as opposed to:</p>
 <div class="src src-java">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    </code></pre></div>
 </div>
 <p>
 Which is better? It&#39;s purely subjective. Nothing wrong with either.</p>
@@ -164,8 +165,7 @@ I&#39;ll share a final example. This one lifted from an <a href="https://cestlaz
 the exit event in the loop boolean but I find including it
 as a case using a <code>break</code> to be cleaner:</p>
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"></code></pre></div>
 </div>
 <p>
 At the end of the day, <code>break</code> and <code>continue</code>, like most langauge

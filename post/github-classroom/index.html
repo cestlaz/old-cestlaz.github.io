@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
@@ -23,9 +23,10 @@
  I did manage to stage my next couple of classes and figured that writing this post wouldn&#39;t take too much energy since it&#39;s mostly a video.
  Earlier, I talked about using GitHub and TravicCI and this time around I show how I use GitHub classroom to set up, disseminate, and collect assignments." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/github-classroom/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/github-classroom/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-02-17T16:42:48-04:00" />
 <meta property="article:modified_time" content="2019-02-17T16:42:48-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How I use Github Classroom"/>
@@ -95,19 +96,11 @@ assignments.</p>
 <p>
 Here are the important links you&#39;ll need to set things up yourself:</p>
 <ul>
-<li>
-<p>To register an organization (so that you can use private repos for
-free): <a href="https://education.github.com/discount_requests/new">https://education.github.com/discount_requests/new</a></p>
-</li>
-<li>
-<p>The main GitHub education page with lots of good stuff and links: <a href="https://education.github.com/">https://education.github.com/</a></p>
-</li>
-<li>
-<p>GitHub Classroom: <a href="https://classroom.github.com/">https://classroom.github.com/</a></p>
-</li>
-<li>
-<p>GitHub Classroom Assistant: <a href="https://classroom.github.com/assistant">https://classroom.github.com/assistant</a></p>
-</li>
+<li>To register an organization (so that you can use private repos for
+free): <a href="https://education.github.com/discount_requests/new">https://education.github.com/discount_requests/new</a></li>
+<li>The main GitHub education page with lots of good stuff and links: <a href="https://education.github.com/">https://education.github.com/</a></li>
+<li>GitHub Classroom: <a href="https://classroom.github.com/">https://classroom.github.com/</a></li>
+<li>GitHub Classroom Assistant: <a href="https://classroom.github.com/assistant">https://classroom.github.com/assistant</a></li>
 </ul>
 <p>
 The video goes through the entire process but doesn&#39;t really much into
@@ -116,13 +109,13 @@ grading. For grading I usually do something like the following:</p>
 First I make a file named <strong>repos</strong> with the names of all the submitted
 repos:</p>
 <div class="src src-sh">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd THEDIRECTORYWITHALLTHEREPOS
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd THEDIRECTORYWITHALLTHEREPOS
 ls &gt; repos</code></pre></div></code></pre></div>
 </div>
 <p>
 Then I&#39;ll use a script that looks something like this:</p>
 <div class="src src-sh">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">`</span>cat repos<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">`</span>cat repos<span style="color:#e6db74">`</span>
   <span style="color:#66d9ef">do</span>
       cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
       NAME<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>grep <span style="color:#e6db74">&#34;** Name: &#34;</span> Readme.org | sed <span style="color:#e6db74">&#34;s/** Name: //g&#34;</span><span style="color:#e6db74">`</span>

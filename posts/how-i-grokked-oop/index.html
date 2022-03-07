@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="Time to get back to CS and CS Ed related blogging.
  Last week, in Garth Flint&#39;s post about his summer plans, Garth mentioned wanting to get his head around Object Oriented Programming and possibly taking a course to help him get there. I thought I&#39;d talk a little about how I got my head around OOP here and some of the difficulties I faced then and what people might face now." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/how-i-grokked-oop/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/how-i-grokked-oop/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-06-14T00:00:00+00:00" />
 <meta property="article:modified_time" content="2018-06-14T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How I Grokked OOP"/>
@@ -142,25 +143,17 @@ what it was supposed to do.</p>
 <p>
 I decided to create a single file for each concept -</p>
 <ul>
-<li>
-<p>cell.c / cell.h for cells</p>
-</li>
-<li>
-<p>row.c / row.h for rows</p>
-</li>
-<li>
-<p>sheet.c / sheet.h for</p>
-</li>
-<li>
-<p>etc.</p>
-</li>
+<li>cell.c / cell.h for cells</li>
+<li>row.c / row.h for rows</li>
+<li>sheet.c / sheet.h for</li>
+<li>etc.</li>
 </ul>
 <p>In each, I would do something like this:</p>
 <div class="src src-c">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
 </div>
 <div class="src src-c">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"></code></pre></div>
 </div>
 <p>
 The idea is that everything about a sheet is in <code>sheet.c</code> and only a
@@ -176,9 +169,7 @@ and the first edition of Booch:</p>
 <p>
 I realized that in a way I was implementing singleton objects in</p>
 <ol>
-<li>
-<p>The file declared the object. The functions I exposed via the</p>
-</li>
+<li>The file declared the object. The functions I exposed via the</li>
 </ol>
 <p>header files were public, the other functions private and the &#34;global&#34;
 variables that were local to the file, private class variables.</p>

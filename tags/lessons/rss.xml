@@ -96,7 +96,7 @@ familiar with Lex you should be able to figure out most of the rules.&lt;/p&gt;
 Some of the translators rely mostly on simple letter
 substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;l&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;qu&amp;#34;        gtf_printf(&amp;#34;qw&amp;#34;);
 &amp;#34;th &amp;#34;       gtf_printf(&amp;#34;f &amp;#34;);
@@ -109,7 +109,7 @@ substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
 Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
 [Oo]sama		|
 [Bb]in(-|{WB})[Ll]ad(e|i)n	{ switch(gtf_random(3))
 				  {
@@ -135,7 +135,7 @@ Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
 Some, like chef, pirate, and aust do some of both:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
 w		gtf_puts(&amp;#34;v&amp;#34;);
 ou		gtf_puts(&amp;#34;u&amp;#34;);
 &amp;#34;de &amp;#34;		gtf_puts(&amp;#34;d &amp;#34;);
@@ -246,30 +246,22 @@ As with the last time, the students  had already written code to find
 the largest value in a list and also to find the frequency of an item
 in a list.&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 They had to write mode prior to the class. In the past, students would
 generally come up with something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 They&amp;#39;d use their existing knowledge and the &amp;#39;find the largest&amp;#39; idiom
 to find the mode by:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;find the frequency of the first item and assume it&amp;#39;s the mode so far&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;for each item in the list&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;find the frequency of that idem&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;if it occurs more than the mode so far then it becomes the new&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;find the frequency of the first item and assume it&amp;#39;s the mode so far&lt;/li&gt;
+&lt;li&gt;for each item in the list&lt;/li&gt;
+&lt;li&gt;find the frequency of that idem&lt;/li&gt;
+&lt;li&gt;if it occurs more than the mode so far then it becomes the new&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;mode so far&lt;/p&gt;
 &lt;p&gt;
@@ -290,7 +282,7 @@ buckets. You can read more about that in the &lt;a href=&#34;https://cestlaz.git
 What was interesting this time around was that most of the kids came
 up with a solution more like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Instead of calculating the frequency inside the loop they made a list

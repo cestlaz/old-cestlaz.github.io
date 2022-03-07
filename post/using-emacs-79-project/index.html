@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646697441" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="One of the comments on my last video talked about the new project management support Emacs includes in it&#39;s latest version - project.el. I remembered reading about it when it rolled around but then forgot and never checked it out.
  Up until recently when working in projects I used Projectile, a great package by Bozhidar Batsov, also known as Bug. I only used it when doing development work - that&#39;s when I find myself jumping around within a group of related files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-79-project/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-79-project/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-10-11T11:24:36-04:00" />
 <meta property="article:modified_time" content="2021-10-11T11:24:36-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 79 Project"/>
@@ -106,34 +107,18 @@ projectile, it was <code>C-c p</code> and the default for project.el is <code>C-
 p</code>. No big difference there. Projectile seems to have many many more
 options but in general, I find that all I need is</p>
 <ul>
-<li>
-<p>Switch to a project - <code>C-x p p</code></p>
-</li>
-<li>
-<p>Find or open a file in a project - <code>C-x p f</code></p>
-</li>
-<li>
-<p>Switch buffers in a project - <code>C-x p b</code></p>
-</li>
-<li>
-<p>Delete all the project buffers - <code>C-x p k</code></p>
-</li>
-<li>
-<p>List the project buffers</p>
-</li>
+<li>Switch to a project - <code>C-x p p</code></li>
+<li>Find or open a file in a project - <code>C-x p f</code></li>
+<li>Switch buffers in a project - <code>C-x p b</code></li>
+<li>Delete all the project buffers - <code>C-x p k</code></li>
+<li>List the project buffers</li>
 </ul>
 <p>Project.el has all except listing all the buffers. It also supports a
 few other features that I think I&#39;ll find useful:</p>
 <ul>
-<li>
-<p>project dired - <code>C-x p d</code></p>
-</li>
-<li>
-<p>project shell (or eshell) <code>C-x p s</code></p>
-</li>
-<li>
-<p>project regex search and variants <code>C-x p g</code></p>
-</li>
+<li>project dired - <code>C-x p d</code></li>
+<li>project shell (or eshell) <code>C-x p s</code></li>
+<li>project regex search and variants <code>C-x p g</code></li>
 </ul>
 <p>I&#39;m not sure if projectile has these. It probably does and I could see
 them being useful. I probable won&#39;t use the regex searches much

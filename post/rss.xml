@@ -6,10 +6,138 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Mar 2022 16:00:07 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 13:54:58 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE 2022 - APCS-A Language strengths and weaknesses</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-languages/</link>
+      <pubDate>Mon, 07 Mar 2022 13:54:58 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-languages/</guid>
+      <description>&lt;p&gt;
+Last time we talked about the &lt;a href=&#34;https://cestlaz.github.io/post/sigcse-2022-apcs-intent/&#34;&gt;intent of APCS-A&lt;/a&gt; and without deciding on
+that we can&amp;#39;t really chose a language. Still, we can talk about
+strengths and weaknesses of languages. Let&amp;#39;s do that by taking a walk
+down history.&lt;/p&gt;
+&lt;p&gt;
+APCS started in Pascal. Back then it was a one year course that
+included CS1 (programming) and CS2 (data structures). Later  they
+offered two exams A (programming) and AB (programming plus data
+structures). The AB exam was last administered in May 2009. In it&amp;#39;s
+last year, only 3,881 students took the AB exam - about 10% of those
+students were from Stuy.&lt;/p&gt;
+&lt;p&gt;
+The exam started in Pascal but switched to C++ in 1999. Why switch? I
+can&amp;#39;t say for sure. I was a young teacher back then. Under 10 years in
+and wasn&amp;#39;t involved in the greater AP scene. Pascal was a nice
+learning language but it had a number of deficiencies. Pascal was
+pretty straight forward, encouraged structured programming, required
+memory management which I say as a plus since it allowed one to study
+it and overall was a strong learning language. On the other hand, programs were
+limited to a single file, there was no standard for graphics or I
+think even file access, and it couldn&amp;#39;t do OOP which was becoming all
+the rage. It also was rarely used in industry even though I did have a
+nice job offer back then from Brown Brothers Harriman &amp;amp; Co. working in
+Turbo Pascal.&lt;/p&gt;
+&lt;p&gt;
+C++ was a hot language, it supported OOP as well as multiple files. It
+had much greater complexity but I guess that wasn&amp;#39;t a deal breaker for
+the College Board. I also have no idea if the conversation was
+switching from Pascal to C++ or if it was switching from Pascal to
+something else and then C++ was chosen.&lt;/p&gt;
+&lt;p&gt;
+In 2004 the exam moved to Java. Again, something gained something
+lost.&lt;/p&gt;
+&lt;p&gt;
+Java was the new hotness so no problem there. What about other
+changes? Java was &lt;strong&gt;much&lt;/strong&gt; simpler. C++ had many ways to do things while
+Java nudged you into the Java way. Java also forced Object Oriented
+Programming which, at the time, I guess people felt was a good
+thing. C++ was more multi-modal and at the time, heck even today, was
+taught more like C with objects. Java also had a standard way to do
+I/O and graphics which, I guess was also a plus.&lt;/p&gt;
+&lt;p&gt;
+What about the downside?&lt;/p&gt;
+&lt;p&gt;
+Personally, I found the forced OOP to be a problem Even though the
+language forced all objects all the time, the nature of problems
+attacked in a CS1 don&amp;#39;t necessarily lend themselves towards Object
+Oriented solutions. This made OOP forced and this is a problem.&lt;/p&gt;
+&lt;p&gt;
+Java also required a lot of &amp;#34;magic:&amp;#34; - ignore the &lt;strong&gt;public static void
+main&lt;/strong&gt; behind the curtain. You&amp;#39;ll understand it later.&lt;/p&gt;
+&lt;p&gt;
+The big loss to me and others pointed to this as a gain was that Java
+took out memory management. I liked that you still had to allocate
+memory using &lt;strong&gt;new&lt;/strong&gt; to create things like nodes for trees and linked
+lists but you didn&amp;#39;t have to manage them yourself.&lt;/p&gt;
+&lt;p&gt;
+True, this is generally a good thing but the problem was that APCS-A/B
+was a class, not the real world. If you were going to take out memory
+management from CS1/CS2 in APCS-A/B then it had to go back in
+somewhere or kids would never get it. This is where looking at a
+course and not the full sequence can be a problem. If you take
+something important out of APCS and then it&amp;#39;s not in the college
+classes later on you&amp;#39;ve taken it out of the students overall
+preparation.&lt;/p&gt;
+&lt;p&gt;
+Based on talking to my tech friends hiring after the switch, this was
+a real problem.&lt;/p&gt;
+&lt;p&gt;
+In any event, the class chugged along, dropping the B part up through
+today.&lt;/p&gt;
+&lt;p&gt;
+So, why consider Python?&lt;/p&gt;
+&lt;p&gt;
+Python goes back to multi-modal and takes away the magic. Hello World
+is just one line. No classes necessary. Python is also, by most
+measures simpler. Python also has tons of libraries. You can use Flask
+to build a web server, NLTK to explore language, Pygame for games and
+on and on. Python is also used by many other fields besides direct CS.&lt;/p&gt;
+&lt;p&gt;
+But there&amp;#39;s always a cost.&lt;/p&gt;
+&lt;p&gt;
+Python&amp;#39;s object model is, to put it kindly, ugly and ackward. Not as
+bad a Perl but having to use self and no real private kind of kills it
+from a teaching point of view. The libraries and use in other fields
+are also less important if the intent is to mirror college CS1 content
+as opposed to rolling a new non major, more general course.&lt;/p&gt;
+&lt;p&gt;
+Another cost is the use of lists rather than arrays. Lists give much
+more power much more quickly but at the cost of teaching array style
+indexed data structures. This isn&amp;#39;t a cost for everyone but it&amp;#39;s
+something to consider. Related to this is that Python doesn&amp;#39;t really
+have a counting loop. It has a &lt;strong&gt;while&lt;/strong&gt; and a &lt;strong&gt;for each&lt;/strong&gt; but not a
+counting &lt;strong&gt;for&lt;/strong&gt;. This may or may not be an issue depending on how you
+feel about traversing data.&lt;/p&gt;
+&lt;p&gt;
+The potential big cost comes down to typing. Sure, writing &lt;code&gt;int a&lt;/code&gt; is
+a pain in statically typed Java vs Python&amp;#39;s dynamic typing but while
+dyanmic is quicker and easier and makes sense given Python&amp;#39;s scripting
+roots, static is safer and makes it easier to write larger more robust
+systems.&lt;/p&gt;
+&lt;p&gt;
+Memory management, is of course still long gone :-(.&lt;/p&gt;
+&lt;p&gt;
+So, what to do? &lt;/p&gt;
+&lt;p&gt;
+Python is used in many fields and is a startup darling but Java is
+still one of the kings, along with C++ in the industrial strength and
+enterprise world. I have mixed feelings and might take a strong stance
+but not yet.&lt;/p&gt;
+&lt;p&gt;
+We still have to look at more aspects of this question. Specifically
+what about the costs of switching from one language to any other
+language and also does the choice of language in CS1 matter with
+respect to CS2.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll do at least one more post maybe more to address those but I think
+that&amp;#39;s it for today.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE 2022 - What language APCS-A part 1 - the intent</title>
@@ -231,43 +359,29 @@ experiences so there&amp;#39;s not reason for me to write much the same so I
 figured I&amp;#39;d just quickly list out a few of my highlights and in
 particular things I plan to write more about when I get back to NYC.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Language choice for APCS. There was a panel that considered why
+&lt;li&gt;Language choice for APCS. There was a panel that considered why
 change to Python or why stick with Java. I didn&amp;#39;t attend this
 session but talked at length about it with a number of people. It
 had me reconsidering my opinions and I&amp;#39;ll certainly write about this
-in the near future.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I saw an interesting talk by Sam Lau in which he discussed how
+in the near future.&lt;/li&gt;
+&lt;li&gt;I saw an interesting talk by Sam Lau in which he discussed how
 statisticians and computer scientists differed in their views as to
 how and what should be taught in a data science course. This got me
-thinking about developing CS offerings at the high school level.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
+thinking about developing CS offerings at the high school level.&lt;/li&gt;
+&lt;li&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
 the first time where teachers discussed their failures. This was a
 &lt;strong&gt;great&lt;/strong&gt; session hosted by two more friends I haven&amp;#39;t seen since
 pre-covid - Dan Garcia and Jim Huggins. One topic brought up there
 was dealing with late assignments as well as alternative
-grading. This too is something I plan to write about.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;PD For CS Teachers and teacher prep programs. This is clearly
-something I care deeply about and there were some sessions on this.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I also spent a good amount of time catching up with my friends Jim
+grading. This too is something I plan to write about.&lt;/li&gt;
+&lt;li&gt;PD For CS Teachers and teacher prep programs. This is clearly
+something I care deeply about and there were some sessions on this.&lt;/li&gt;
+&lt;li&gt;I also spent a good amount of time catching up with my friends Jim
 and Robin from Siena College. They&amp;#39;re doing some cool thing up there
-so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I also had some good discussions with vendors in the exhibit hall as
-well as some great hallway tract talks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;My thoughts on the hybrid format of this conference&lt;/p&gt;
-&lt;/li&gt;
+so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/li&gt;
+&lt;li&gt;I also had some good discussions with vendors in the exhibit hall as
+well as some great hallway tract talks.&lt;/li&gt;
+&lt;li&gt;My thoughts on the hybrid format of this conference&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&amp;#39;s a big list - a lot of things to write about. I hope to get on
 this when I get back to NYC on Sunday.&lt;/p&gt;
@@ -727,24 +841,12 @@ might be something they got from a conference or an outside PD. We&amp;#39;d
 also have larger PD sessions a couple of times a year. Topics would be
 things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;How to use the graphing calculator to explore functions&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;History and math&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Math in your student&amp;#39;s worlds&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Exploring math competition problems&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;An introduction to some advanced or new math topic&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Motivating a lesson on something or other&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;How to use the graphing calculator to explore functions&lt;/li&gt;
+&lt;li&gt;History and math&lt;/li&gt;
+&lt;li&gt;Math in your student&amp;#39;s worlds&lt;/li&gt;
+&lt;li&gt;Exploring math competition problems&lt;/li&gt;
+&lt;li&gt;An introduction to some advanced or new math topic&lt;/li&gt;
+&lt;li&gt;Motivating a lesson on something or other&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Few of these were tied to a specific course and none were tied to a
 specific implementation or curriculum. There might be a special
@@ -1045,36 +1147,28 @@ underrepresented racial and ethnic groups and young women while
 teaching the technical building blocks and preparing students for the
 AP® exam. Code.org’s CSA curriculum:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Incorporates culturally responsive and equitable teaching strategies
+&lt;li&gt;Incorporates culturally responsive and equitable teaching strategies
 and frameworks by considering cultural references and learning styles
 throughout the curriculum — from the vocabulary, to the visuals, to
-the sequence of concepts taught.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Acknowledges diversity of experiences and interests. Students
+the sequence of concepts taught.&lt;/li&gt;
+&lt;li&gt;Acknowledges diversity of experiences and interests. Students
 investigate real-world problems during class activities and make
 connections to their own work. Projects are carefully designed to be
 instructive yet open-ended, enabling students to demonstrate mastery
 of concepts and engage in their passions without making assumptions
-about their cultural background or life experiences.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Brings to life a “Software Engineering for All” narrative. This
+about their cultural background or life experiences.&lt;/li&gt;
+&lt;li&gt;Brings to life a “Software Engineering for All” narrative. This
 narrative helps students envision themselves as software engineers,
 and the curriculum uses videos featuring presenters from different
 backgrounds who work in technology to help students visualize
-opportunities for their own futures.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Helps students develop and model valuable, real-world career
+opportunities for their own futures.&lt;/li&gt;
+&lt;li&gt;Helps students develop and model valuable, real-world career
 skills. In addition to skills like tracing code segments and
 documenting code, Code.org’s approach to CSA incorporates
 collaboration and career skills that go beyond the AP® CSA course
 requirements. For example, our curriculum includes a student-friendly
 code review tool, which is a common quality assurance practice in the
-technology industry.&lt;/p&gt;
-&lt;/li&gt;
+technology industry.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -1420,7 +1514,7 @@ For convenience (and as I learned later, part 2) I also wanted a
 routine that could print the board. Here&amp;#39;s that routine in case you
 want to see some clojure.&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;
   (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;board-&amp;gt;string [board]
     (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[maxx (apply max (map first (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest x&lt;/span&gt;
           maxy (apply max (map second (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest y&lt;/span&gt;
@@ -1626,7 +1720,7 @@ last item you put in is the first item you take out.&lt;/p&gt;
 &lt;p&gt;
 So, the algorithm is pretty simple.&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;make an empty stack
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;make an empty stack
 For each character in the input:
   1. If it&amp;#39;s an open bracket put it on the stack
   2. If it&amp;#39;s a close bracket, check the top of the stack.
@@ -1705,7 +1799,7 @@ characters and then figuring out the total number of these items.&lt;/p&gt;
 I had already parsed my data into the a two item list where the left
 item is a list of inputs and the right a list of outputs:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 So all I had to do go through all the output sides, count the characters in
@@ -1713,7 +1807,7 @@ each item and then add up the number of them.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the code:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;takes a list of numbers and returns only those that are 2,4,3, or 7&amp;#34;&lt;/span&gt;
     (filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(contains? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;{&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;} %) x))
 
@@ -1848,12 +1942,8 @@ This turns out to be rather simple.&lt;/p&gt;
 For each possible location (looping from smallest crab location to
 larges):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;calculate the distance from each crab to this location.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add up all those distances.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;calculate the distance from each crab to this location.&lt;/li&gt;
+&lt;li&gt;Add up all those distances.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We then just need to take the smallest distance and we&amp;#39;re done.&lt;/p&gt;
 &lt;p&gt;
@@ -1931,7 +2021,7 @@ straightforward way I could.&lt;/p&gt;
 Fist, I made a list with my initial state. The example problem had a
 data set of &lt;code&gt;&amp;#34;3,4,3,1 2&amp;#34;&lt;/code&gt; which led to this list:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Notice that I have 9  not 8 slots (indexed 0 - 8). That extra one at
@@ -1940,26 +2030,18 @@ they can start the cycle again.&lt;/p&gt;
 &lt;p&gt;
 From there, it&amp;#39;s just following the rules:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Grab the number of fish to spawn today.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Move all the fish down a day - that is, the fish in day 1 go to day
-0, day 2 to day 1 etc.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add the new fish to slot 6 (as per the specification).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add the number that spawned today to the end.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Grab the number of fish to spawn today.&lt;/li&gt;
+&lt;li&gt;Move all the fish down a day - that is, the fish in day 1 go to day
+0, day 2 to day 1 etc.&lt;/li&gt;
+&lt;li&gt;Add the new fish to slot 6 (as per the specification).&lt;/li&gt;
+&lt;li&gt;Add the number that spawned today to the end.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 Repeat this for the requisite number of days and then add them all up.&lt;/p&gt;
 &lt;p&gt;
 The Clojure code for the complete solution is:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
         (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[start-state (&lt;span style=&#34;color:#a6e22e&#34;&gt;reduce&lt;/span&gt;
                            (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[sofar next]
                              (&lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt; sofar next inc))
@@ -2094,7 +2176,7 @@ be all 1 since each location was hit once.&lt;/p&gt;
 If I then added the line (1,0) –&amp;gt; (1,2), I&amp;#39;d end up with this final
 map:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  {(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  {(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
@@ -2140,12 +2222,12 @@ the fanciest solutions.&lt;/p&gt;
 &lt;p&gt;
 They&amp;#39;re the ones that write&lt;/p&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!*&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;(l(&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!*&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;(l(&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 instead of something like:&lt;/p&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string_length&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string_length&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){
   &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (s[i] &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;){
     i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
@@ -2212,7 +2294,7 @@ board for winners a little onerous but marking squares with an X
 becomes trivial - just replace all occurrences of the number in
 question with an X. This can be done in Clojure using map:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;add-mark [board mark]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;add-mark [board mark]
   (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(= % mark) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X&amp;#34;&lt;/span&gt; %) board))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -2220,7 +2302,7 @@ Thinking about it, it was really easy to switch from the list of 25
 items to the list of list representations. We can do this with the
 Clojure partition function.&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;    (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;))
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;    (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;))
 
     &lt;span style=&#34;color:#75715e&#34;&gt;;; results in:&lt;/span&gt;
     &lt;span style=&#34;color:#75715e&#34;&gt;;;((0 1 2 3 4)&lt;/span&gt;
@@ -2237,7 +2319,7 @@ and columns so as to make the vertical check into a horizontal one.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s my code to do all the checking:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;has-five? [board]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;has-five? [board]
   (&amp;gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;-&amp;gt;&amp;gt;&lt;/span&gt; board
            (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(filter (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[x] (= x &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X&amp;#34;&lt;/span&gt;))%)  ) &lt;span style=&#34;color:#75715e&#34;&gt;;; keep only the Xs&lt;/span&gt;
            (map count) &lt;span style=&#34;color:#75715e&#34;&gt;;; how many are there in each row&lt;/span&gt;
@@ -2255,18 +2337,10 @@ Here&amp;#39;s my code to do all the checking:&lt;/p&gt;
 &lt;p&gt;
 Now, solving part 1 was easy:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;take the next ball&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;mark all the locations with the ball&amp;#39;s number&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;see if there&amp;#39;s a winner&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If not, go back to step 1.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;take the next ball&lt;/li&gt;
+&lt;li&gt;mark all the locations with the ball&amp;#39;s number&lt;/li&gt;
+&lt;li&gt;see if there&amp;#39;s a winner&lt;/li&gt;
+&lt;li&gt;If not, go back to step 1.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 Sure, we&amp;#39;re doing more transformations on the data than needed but
@@ -2281,21 +2355,11 @@ first winning board we had to find the last winning board.&lt;/p&gt;
 Pretty easy. We just had to modify the above procedure to the
 following:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;take the next ball&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;mark all the locations wiht the ball&amp;#39;s number&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;remove any board that&amp;#39;s a winner&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If we&amp;#39;re down to one board remaining we&amp;#39;ve found the board&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If not, back to step 1&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;take the next ball&lt;/li&gt;
+&lt;li&gt;mark all the locations wiht the ball&amp;#39;s number&lt;/li&gt;
+&lt;li&gt;remove any board that&amp;#39;s a winner&lt;/li&gt;
+&lt;li&gt;If we&amp;#39;re down to one board remaining we&amp;#39;ve found the board&lt;/li&gt;
+&lt;li&gt;If not, back to step 1&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I did this but first got a wrong answer. After looking at my results I
 realized that I stopped when I got down to 1 board but it hadn&amp;#39;t
@@ -2653,30 +2717,14 @@ Finally, and this is the show stopper, the video shows Embark. &lt;/p&gt;
 &lt;p&gt;
 Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-6-swiper/&#34;&gt;My post/video on Ivy/Swiper&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/raxod502/prescient.el&#34;&gt;Prescient&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/oantolin/orderless&#34;&gt;Orderless&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/raxod502/selectrum&#34;&gt;Selectrum&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/minad/marginalia/&#34;&gt;Marginalia&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/minad/consult&#34;&gt;Consult&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/oantolin/embark/&#34;&gt;Embark&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-6-swiper/&#34;&gt;My post/video on Ivy/Swiper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/raxod502/prescient.el&#34;&gt;Prescient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/oantolin/orderless&#34;&gt;Orderless&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/raxod502/selectrum&#34;&gt;Selectrum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/minad/marginalia/&#34;&gt;Marginalia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/minad/consult&#34;&gt;Consult&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/oantolin/embark/&#34;&gt;Embark&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 and of course, the video:&lt;/p&gt;
@@ -2822,34 +2870,18 @@ projectile, it was &lt;code&gt;C-c p&lt;/code&gt; and the default for project.el
 p&lt;/code&gt;. No big difference there. Projectile seems to have many many more
 options but in general, I find that all I need is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Switch to a project - &lt;code&gt;C-x p p&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Find or open a file in a project - &lt;code&gt;C-x p f&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Switch buffers in a project - &lt;code&gt;C-x p b&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Delete all the project buffers - &lt;code&gt;C-x p k&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;List the project buffers&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Switch to a project - &lt;code&gt;C-x p p&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Find or open a file in a project - &lt;code&gt;C-x p f&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Switch buffers in a project - &lt;code&gt;C-x p b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Delete all the project buffers - &lt;code&gt;C-x p k&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;List the project buffers&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Project.el has all except listing all the buffers. It also supports a
 few other features that I think I&amp;#39;ll find useful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;project dired - &lt;code&gt;C-x p d&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;project shell (or eshell) &lt;code&gt;C-x p s&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;project regex search and variants &lt;code&gt;C-x p g&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;project dired - &lt;code&gt;C-x p d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;project shell (or eshell) &lt;code&gt;C-x p s&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;project regex search and variants &lt;code&gt;C-x p g&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;#39;m not sure if projectile has these. It probably does and I could see
 them being useful. I probable won&amp;#39;t use the regex searches much
@@ -3243,24 +3275,12 @@ and concentrations notwithstanding, a degree in CS seems to have
 largely stayed the same from the early/mid 1980s when I got my BA to
 today. There are variations but it was and still is largely&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;programming–&amp;gt;data structures–&amp;gt;algorithms&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;some systems or OS stuff&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;some theory &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;math: calc 1, calc 2, discrete, linear, maybe stats&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;another requirement or two which might differ based on institution&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;electives&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;programming–&amp;gt;data structures–&amp;gt;algorithms&lt;/li&gt;
+&lt;li&gt;some systems or OS stuff&lt;/li&gt;
+&lt;li&gt;some theory &lt;/li&gt;
+&lt;li&gt;math: calc 1, calc 2, discrete, linear, maybe stats&lt;/li&gt;
+&lt;li&gt;another requirement or two which might differ based on institution&lt;/li&gt;
+&lt;li&gt;electives&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Sure, programs have changed over the years. At one point, computer
 graphics was hot. Now, not so much. Courses like compilers also used
@@ -3431,18 +3451,10 @@ Digit Pals.&lt;/p&gt;
 I started by looking at the problem, working through example and then
 some of the things we discussed included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;data representation (2D array)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the high level logic of sliding down and over&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;how to solve the whole thing.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;data representation (2D array)&lt;/li&gt;
+&lt;li&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/li&gt;
+&lt;li&gt;the high level logic of sliding down and over&lt;/li&gt;
+&lt;li&gt;how to solve the whole thing.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the overall solver, I decided to go with a straightforward, blind,
 recursive search. I figured it would be fast enough for two
@@ -3456,20 +3468,14 @@ within time constraints.&lt;/p&gt;
 &lt;p&gt;
 After the design phase, I went to the live coding with a focus on:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;compiling and testing every concept. That is, a single loop, a
+&lt;li&gt;compiling and testing every concept. That is, a single loop, a
 single if, a function etc.. This may sound excessive but I&amp;#39;ve been
 doing this forever and it&amp;#39;s served me well as a hobbyist and as a
-professional.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Implementing the data structure first - a 2D array and then a way
-to print it so that I could always tell the state of my program.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;incremental development - first remove a pal, then slide down, then
-over, then the solver.&lt;/p&gt;
-&lt;/li&gt;
+professional.&lt;/li&gt;
+&lt;li&gt;Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.&lt;/li&gt;
+&lt;li&gt;incremental development - first remove a pal, then slide down, then
+over, then the solver.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When it was all over the problem was solved. I&amp;#39;d like to think that
 the students got something out of the audible. I learned years later
@@ -3544,18 +3550,10 @@ similar.&lt;/p&gt;
 &lt;p&gt;
 By contrast, a swap &amp;#34;recipe&amp;#34; might read:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This is a recipe. A student would literally just rewrite the steps
 into the solution but even this might have it&amp;#39;s place in a class.&lt;/p&gt;
@@ -3773,63 +3771,6 @@ I&amp;#39;m feeling this way so probably are others. We&amp;#39;re not alone.  &
 I&amp;#39;ve got some CS and teaching content posts lined up and plan to start
 with them next week as things get back in the swing but for now, good
 luck to everyone starting back up.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why it takes so long to become a better teacher</title>
-      <link>https://cestlaz.github.io/post/feedback-loop/</link>
-      <pubDate>Fri, 06 Aug 2021 06:54:15 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/feedback-loop/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34;
-  src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
-&lt;/script&gt;
-&lt;p&gt;
-I&amp;#39;ve written about how long it takes to become a &lt;a href=&#34;https://cestlaz.github.io/post/five-year-class/&#34;&gt;master teacher&lt;/a&gt; and
-that even after 9 or 10 years most teachers are really just advanced
-beginners. A big reason for that is our long feedback loop. You do
-something and you can&amp;#39;t do it again for a year.&lt;/p&gt;
-&lt;p&gt;
-I was listening to a podcast on my morning run by the Hudson River and
-something came up about differences between quantities of items. The difference
-between having n versus n+1 of something changes based on the value of n. If, for example, you have 1 versus 2 shoes - that&amp;#39;s a BIG
-difference. On the other hand, if you have 100 vs 101 shoes, not so
-much.&lt;/p&gt;
-&lt;p&gt;
-This got me thinking about how I framed things when teaching
-big-O notation. In big-O you generally just look at the dominant
-term. If you have an algorithm that runs in \(O(n^2+n)\) time you
-usually just say \(O(n^2)\) because \(n^2\) is the dominant term. If you n
-is small, let&amp;#39;s say 2, the difference between 2 and 4 is big so the n
-part of \(n^2+n\) seems important but as n gets large, say 10,000, then
-the difference between 100,000,000 and 100,010,000 is negligible for
-our purposes.&lt;/p&gt;
-&lt;p&gt;
-I try to introduce this concept when teaching big-O but listening to
-the podcast and reflecting gave me some thoughts as to how I can do it
-better.&lt;/p&gt;
-&lt;p&gt;
-The trouble is, I won&amp;#39;t be able to for a while. I introduced big-O to
-our teachers in our summer intensive. My next opportunity to cover the
-topic will be sometime this Spring with my first year undergrads. Same
-topic, but different audience so it won&amp;#39;t be quite the same. The next
-time I get to do this with teachers is next summer. All this supposes
-that I remember the changes I&amp;#39;m thinking about making and work them
-in. I&amp;#39;m writing myself a few notes but even then, who&amp;#39;s to say if I&amp;#39;m
-going to remember the nuance that I&amp;#39;m thinking now?&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s the teaching feedback loop - get an idea, try it, and then
-can&amp;#39;t iterate for a year. Get a new idea and you can&amp;#39;t try it until
-the topics comes up which could be a long time from now.  True, some
-things like a new pedagogical trick can be tried out more quickly but
-even then you can&amp;#39;t just do it. You&amp;#39;ve got to find where it works
-within your current classes and still have to account for the
-countless differences that make up your classes when you&amp;#39;re ready for
-the next iteration.&lt;/p&gt;
-&lt;p&gt;
-None of this is good or bad, just the nature of our profession. Just
-something that I was thinking about this morning.&lt;/p&gt;
 </description>
     </item>
     
