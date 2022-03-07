@@ -63,16 +63,24 @@ something different a week later? Write it up. Rinse and repeat.&lt;/p&gt;
 &lt;p&gt;
 Why have I found writing a blog to be good self-PD?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Writing the experience or the lesson makes me think through it
-again. What worked, what didn&amp;#39;t.&lt;/li&gt;
-&lt;li&gt;When I do a similar lesson in the future, I can look back on what I
-did. It helps in iterating towards becoming a better teacher.&lt;/li&gt;
-&lt;li&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
+&lt;li&gt;
+&lt;p&gt;Writing the experience or the lesson makes me think through it
+again. What worked, what didn&amp;#39;t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When I do a similar lesson in the future, I can look back on what I
+did. It helps in iterating towards becoming a better teacher.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
 this immediately but blog for a few years and then reread some early
-posts. &lt;/li&gt;
-&lt;li&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
+posts. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
 have left have proven useful to me. Some of the ones from people who
-disagree have been the most useful.&lt;/li&gt;
+disagree have been the most useful.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;On top of this, some other new teacher might discover something you
 wrote up and find inspiration from it. &lt;/p&gt;
@@ -95,11 +103,21 @@ One of the requirements is that we have 12 graduate CS
 credits in our program and that in those courses these five major
 areas:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Algorithms and programming&lt;/li&gt;
-&lt;li&gt;Computing systems&lt;/li&gt;
-&lt;li&gt;Data and analysis&lt;/li&gt;
-&lt;li&gt;Impacts of computing&lt;/li&gt;
-&lt;li&gt;Networks and the internet&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithms and programming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computing systems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data and analysis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Impacts of computing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Networks and the internet&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;as described in the &lt;a href=&#34;https://k12cs.org/&#34;&gt;K12 CS Framework&lt;/a&gt;. Even though many of the items
 described in the framework fit better in an education side course NY
@@ -132,11 +150,21 @@ on the one hand, it&amp;#39;s a lesson about a recursive solution to a problem
 but on the other hand there&amp;#39;s all sorts of other richness to the
 lesson. We talk about&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Proof&lt;/li&gt;
-&lt;li&gt;Run time&lt;/li&gt;
-&lt;li&gt;Hard problems&lt;/li&gt;
-&lt;li&gt;Moores law and the limits f computing power&lt;/li&gt;
-&lt;li&gt;Alternate approaches to problems&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Proof&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hard problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moores law and the limits f computing power&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternate approaches to problems&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;None of which is in a typical Towers of Hanoi lesson plan nor in most
 text books yet to me they&amp;#39;re the most important, interesting parts of
@@ -211,7 +239,9 @@ a specific language such as Lisp for AI you&amp;#39;d probably use
 Pascal. I learned C early on in my college career and also took
 classes that used Ada, and 8088 Assembly. I mostly tried to stick with&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;It was the hot language at the time and all the cool kids were&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was the hot language at the time and all the cool kids were&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;using it. Some kids continued to use Pascal but it was universally
 derided. It wasn&amp;#39;t a &amp;#34;real language.&amp;#34; Nobody used it for anything
@@ -251,7 +281,8 @@ ticket printing system for them. It was in BASIC and ran on a little
 PC running CP/M with a big line printer. Best I could figure they were
 still using the same system in 2012.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/ticket.jpg&#34; width=&#34;250&#34; height=&#34;250px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/ticket.jpg&#34; width=&#34;250&#34; height=&#34;250px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -273,10 +304,14 @@ does it mean? &lt;/p&gt;
 To me it means giving all students some fundamental exposure to
 computer science so that they can:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Make use of those thinking skills, problem solving approaches, and
-practical tools regardless of their future paths. &lt;/li&gt;
-&lt;li&gt;Provide a path for the subset of &amp;#34;all&amp;#34; that desire to further pursue
-computer science.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make use of those thinking skills, problem solving approaches, and
+practical tools regardless of their future paths. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provide a path for the subset of &amp;#34;all&amp;#34; that desire to further pursue
+computer science.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;But even with this, how do you do it?&lt;/p&gt;
 &lt;p&gt;

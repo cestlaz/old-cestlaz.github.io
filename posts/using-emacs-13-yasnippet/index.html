@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646603857" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
 (use-package elpy :ensure t :config (elpy-enable))   The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-13-yasnippet/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-13-yasnippet/" />
 <meta property="article:published_time" content="2016-08-04T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-08-04T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 13 - Yasnippet"/>
@@ -84,7 +83,7 @@ It turns out that <a href="https://github.com/jorgenschaefer/elpy">Elpy</a>, a p
 is much easier to set up than I remember. It turns out all you need
 is:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elpy
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elpy
 :ensure <span style="color:#66d9ef">t</span>
 :config
 (elpy-enable))</code></pre></div></code></pre></div>
@@ -97,7 +96,7 @@ things but it&#39;s worth checking out.</p>
 The main event this week is <a href="https://github.com/joaotavora/yasnippet">yasnippet</a>, a package that lets you expand
 text aliases. Let&#39;s say you want to put the fairly standard:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 in my file. I can just type <strong><strong>ifm</strong></strong> and then hit the <strong><strong>TAB</strong></strong> key and
@@ -111,7 +110,7 @@ application with the <strong><strong>Flask</strong></strong> python microframewo
 <p>
 Setting up yasnippet is as easy as:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package yasnippet
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package yasnippet
 :ensure <span style="color:#66d9ef">t</span>
 :init
 (yas-global-mode <span style="color:#ae81ff">1</span>))</code></pre></div></code></pre></div>
@@ -128,18 +127,42 @@ to check that out.</p>
 <p>
 Relevant links:</p>
 <ul>
-<li>Yasnippet:</li>
-<li><a href="https://github.com/joaotavora/yasnippet">Home Page</a></li>
-<li><a href="http://joaotavora.github.io/yasnippet/">Docs</a></li>
-<li><a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d">Included snippets</a></li>
-<li>Elpy:</li>
-<li><a href="https://github.com/jorgenschaefer/elpy">Home Page</a></li>
-<li>Flask:</li>
-<li><a href="http://flask.pocoo.org">Flask Home Page</a></li>
-<li>Video series overview page:</li>
-<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
-<li>Code:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
+<li>
+<p>Yasnippet:</p>
+</li>
+<li>
+<p><a href="https://github.com/joaotavora/yasnippet">Home Page</a></p>
+</li>
+<li>
+<p><a href="http://joaotavora.github.io/yasnippet/">Docs</a></p>
+</li>
+<li>
+<p><a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d">Included snippets</a></p>
+</li>
+<li>
+<p>Elpy:</p>
+</li>
+<li>
+<p><a href="https://github.com/jorgenschaefer/elpy">Home Page</a></p>
+</li>
+<li>
+<p>Flask:</p>
+</li>
+<li>
+<p><a href="http://flask.pocoo.org">Flask Home Page</a></p>
+</li>
+<li>
+<p>Video series overview page:</p>
+</li>
+<li>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+</li>
+<li>
+<p>Code:</p>
+</li>
+<li>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+</li>
 </ul>
 
         </div>

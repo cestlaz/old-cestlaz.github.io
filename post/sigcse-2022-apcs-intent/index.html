@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>SIGCSE 2022 - What language APCS-A part 1 - the intent - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
+
+
+
+<meta property="og:title" content="SIGCSE 2022 - What language APCS-A part 1 - the intent" />
+<meta property="og:description" content="One of the first sessions of SIGCSE2022 was a panel on the choice of language for APCS-A. Should it continue to use Java or should it shift to Python. This topic comes up from time to time. I didn&#39;t attend this particular session but discussed it at length with a few people who did.
+ Truth be told, I wasn&#39;t going to start writing about SIGCSE and APCS-A until I finished a few other SIGCSE posts but my friend Alfred Thompson said he was writing one and was planning on posting it soon." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/sigcse-2022-apcs-intent/" />
+<meta property="article:published_time" content="2022-03-06T16:00:07-04:00" />
+<meta property="article:modified_time" content="2022-03-06T16:00:07-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SIGCSE 2022 - What language APCS-A part 1 - the intent"/>
+<meta name="twitter:description" content="One of the first sessions of SIGCSE2022 was a panel on the choice of language for APCS-A. Should it continue to use Java or should it shift to Python. This topic comes up from time to time. I didn&#39;t attend this particular session but discussed it at length with a few people who did.
+ Truth be told, I wasn&#39;t going to start writing about SIGCSE and APCS-A until I finished a few other SIGCSE posts but my friend Alfred Thompson said he was writing one and was planning on posting it soon."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">SIGCSE 2022 - What language APCS-A part 1 - the intent</h1>
+        </header>
+        <div class="content">
+            <p>
+One of the first sessions of SIGCSE2022 was a panel on the choice of
+language for APCS-A. Should it continue to use Java or should it shift
+to Python. This topic comes up from time to time. I didn&#39;t attend this
+particular session but discussed it at length with a few people who
+did.</p>
+<p>
+Truth be told, I wasn&#39;t going to start writing about SIGCSE and APCS-A
+until I finished a few other SIGCSE posts but my friend <a href="https://twitter.com/alfredtwo">Alfred
+Thompson</a> said he was writing one and was planning on posting it
+soon. I think it&#39;s better when us CS Ed bloggers write about similar
+things at similar times - fosters better discussion so I&#39;m writing
+this today (Sunday) and will post it as soon as I see Alfred&#39;s post.</p>
+<p>
+There&#39;s a lot to unpack when it comes to language choice for
+APCS-A. Language strengths and weaknesses, ease of learning, tooling
+and training costs and more. I&#39;ll share my feelings on all of these
+and maybe more but before we dig into those I think it&#39;s worth
+thinking about the intent of the course.</p>
+<p>
+The AP program was originally created to allow advanced high school
+students to get started on college work in their field of interest. An
+AP class would either be the first course in a major or it would be a
+requirement like calculus is for CS majors. There were fewer exams and
+FAR fewer students taking them.</p>
+<p>
+Over time, things evolved and today that&#39;s not necessarily the
+case. APCS-A, Calc and many others still fit the bill but then you
+have classes like AP Euro - sometimes offered to HS sophomores and is
+really a regurgitation course. Sorry but a class appropriate for HS
+sophomores is not college level. Same for APCS-Principles. Might be
+good, might be bad but it&#39;s not college level.</p>
+<p>
+So, before deciding on the language you really have to decide on
+intent. If APCS-A is to be the first class in the CS major then the
+college board has to really follow what colleges are doing. Some
+people think that APCS-A should be a course for everybody or for non
+CS majors but if the class is supposed to be a first in major course,
+it <strong>has</strong> to follow the college lead.</p>
+<p>
+If colleges decide to make their CS1 a more general course, more about
+APIs, less about either programming or, to it&#39;s already limited extent
+algorithms and data structures, then it&#39;s fine to change but as long as the
+college board is pushing CS1 as a first course in the CS major then
+APCS-A has to follow the general CS1 outline.</p>
+<p>
+So, assuming this stays the same, you might still argue a change to
+Python. I&#39;ll look at the pros and cons of doing this at a later post but one
+argument against the change is that students having taken CS1 in
+Python have a harder time transitioning to Java (or C++) in CS2.</p>
+<p>
+Some people say this isn&#39;t an issue but I think it is. APCS-A is
+already frequently a watered down CS1 and students sometimes struggle
+in CS2 even when it&#39;s in the same language. Switching languages will
+result in kids hitting a brick wall. This is an example of a problem
+I&#39;ve seen over and over again - people changing a class because they
+feel there&#39;s a need but not paying attention to the next class let
+alone the full pipeline.</p>
+<p>
+This happened at Hunter recently - I warned the department that it
+would but nobody listened. Our CS0 course up until my first
+year at Hunter was a pretty bad course It was a random assortment
+of topics with a lot of cruft and it just didn&#39;t serve anybody. In my
+second semester the class was slated to change to a new course. The
+new course was going to have more programming - all in Python - lots
+of small programs. It was a much broader class and we all agreed that
+it would be much better. It was except for one thing. Nobody was
+paying attention to how well it prepared students for our CS1 and that
+first CS1 class after the new CS0 was full of complaints, student
+struggles, and student failures. On the one hand, the new course had
+more programming than the earlier one but since it was only tiny
+programs, students weren&#39;t prepared for CS1 right out of the gate but
+students thought they were prepared. Things have gotten better since then
+but the problem was easily to predict.</p>
+<p>
+If High Schools move to a less rigorous class with an &#34;easier&#34;
+language like Python great care should be taken to make sure that it
+prepares students to jump into a college CS2 which won&#39;t have nearly
+the supports that are present in high school.</p>
+<p>
+So that&#39;s it for this installment. Before you can even think about
+language you have to think about class intent. Now that we&#39;ve done
+that we can start looking at language choice. That&#39;s for next time.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2022-03-06</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/sigcse">sigcse</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/sigcse">#sigcse</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2022<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

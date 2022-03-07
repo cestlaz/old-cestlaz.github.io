@@ -14,23 +14,26 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646603857" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646657009" />
 
 
 
 <meta property="og:title" content="Globals Breaks And Returns, oh my" />
-<meta property="og:description" content="Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
+<meta property="og:description" content="Never use global variables
+  Never break out of a loop
+  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
  They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
  Alfred post was topically on global variables. Actually it was deeper than just global variables." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/globals-breaks-and-returns/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/globals-breaks-and-returns/" />
 <meta property="article:published_time" content="2018-10-06T15:48:55-04:00" />
 <meta property="article:modified_time" content="2018-10-06T15:48:55-04:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Globals Breaks And Returns, oh my"/>
-<meta name="twitter:description" content="Never use global variables Never break out of a loop  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
+<meta name="twitter:description" content="Never use global variables
+  Never break out of a loop
+  These are two &#34;best practices&#34; that are frequently touted in early CS classes both at the high school and college level.
  They came up a couple of times yesterday. Once in the Facebook APCS-A teachers group and once on Alfred Thompson&#39;s blog.
  Alfred post was topically on global variables. Actually it was deeper than just global variables."/>
 
@@ -83,8 +86,12 @@
         <div class="content">
             
 <ul>
-<li>Never use global variables</li>
-<li>Never break out of a loop</li>
+<li>
+<p>Never use global variables</p>
+</li>
+<li>
+<p>Never break out of a loop</p>
+</li>
 </ul>
 <p>These are two &#34;best practices&#34; that are frequently touted in early CS
 classes both at the high school and college level.</p>
@@ -101,7 +108,7 @@ The discussion on the APCS-A group started with a discussion of this
 code and its <code>break</code> statement as opposed to having the loop&#39;s exit
 condition in the boolean up top:</p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span>
       <span style="color:#f92672">{</span>
           <span style="color:#75715e">// do stuff
 </span><span style="color:#75715e"></span>          <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>condition<span style="color:#f92672">)</span> <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
@@ -117,7 +124,7 @@ Actually, these aren&#39;t even universally best practices.</p>
 Looking at the while loop, You might have event driven code with a
 while loop acting as a dispatcher:</p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">){</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">){</span>
       <span style="color:#75715e">// do stuff
 </span><span style="color:#75715e"></span>
       <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>some event<span style="color:#f92672">)</span>

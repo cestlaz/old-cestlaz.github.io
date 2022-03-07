@@ -64,12 +64,24 @@ might be something they got from a conference or an outside PD. We&amp;#39;d
 also have larger PD sessions a couple of times a year. Topics would be
 things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to use the graphing calculator to explore functions&lt;/li&gt;
-&lt;li&gt;History and math&lt;/li&gt;
-&lt;li&gt;Math in your student&amp;#39;s worlds&lt;/li&gt;
-&lt;li&gt;Exploring math competition problems&lt;/li&gt;
-&lt;li&gt;An introduction to some advanced or new math topic&lt;/li&gt;
-&lt;li&gt;Motivating a lesson on something or other&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to use the graphing calculator to explore functions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;History and math&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Math in your student&amp;#39;s worlds&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exploring math competition problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An introduction to some advanced or new math topic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Motivating a lesson on something or other&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Few of these were tied to a specific course and none were tied to a
 specific implementation or curriculum. There might be a special
@@ -398,11 +410,21 @@ Already looking forward to July.&lt;/p&gt;
 Out of class student communication is always a challenge. There are
 plenty of options:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Piazza&lt;/li&gt;
-&lt;li&gt;Facebook group&lt;/li&gt;
-&lt;li&gt;Slack, Discord, or other chat system&lt;/li&gt;
-&lt;li&gt;Discourse, Vanilla or other discussion forum system&lt;/li&gt;
-&lt;li&gt;Mailing list&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Piazza&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Facebook group&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack, Discord, or other chat system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discourse, Vanilla or other discussion forum system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mailing list&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;but all have warts. &lt;/p&gt;
 &lt;p&gt;
@@ -447,14 +469,24 @@ a chain of messages (thread). You can tag them, filter them, and when
 you&amp;#39;re done, close them (and reopen them later if needs be). The big
 plusses are that:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;People who are subscribed to the repo (assignment, web page, etc.)
-automatically get email alerts on the issues.&lt;/li&gt;
-&lt;li&gt;You can explicitly tag people to force them to get alerts.&lt;/li&gt;
-&lt;li&gt;You can directly reply via email so you don&amp;#39;t need to go to
-GitHub.&lt;/li&gt;
-&lt;li&gt;Everything related to a given project or repo is self contained.&lt;/li&gt;
-&lt;li&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
-create a logged communication with your students on specific assignments.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People who are subscribed to the repo (assignment, web page, etc.)
+automatically get email alerts on the issues.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can explicitly tag people to force them to get alerts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can directly reply via email so you don&amp;#39;t need to go to
+GitHub.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Everything related to a given project or repo is self contained.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
+create a logged communication with your students on specific assignments.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 I haven&amp;#39;t used this class wide yet - just experimented a bit but I
@@ -552,7 +584,7 @@ familiar with Lex you should be able to figure out most of the rules.&lt;/p&gt;
 Some of the translators rely mostly on simple letter
 substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;&amp;#34;r&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;l&amp;#34;         gtf_printf(&amp;#34;w&amp;#34;);
 &amp;#34;qu&amp;#34;        gtf_printf(&amp;#34;qw&amp;#34;);
 &amp;#34;th &amp;#34;       gtf_printf(&amp;#34;f &amp;#34;);
@@ -565,7 +597,7 @@ substitutions. Fudd is such a filter:&lt;/p&gt;
 &lt;p&gt;
 Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]errorist		|
 [Oo]sama		|
 [Bb]in(-|{WB})[Ll]ad(e|i)n	{ switch(gtf_random(3))
 				  {
@@ -591,7 +623,7 @@ Dubya, on the other hand goes more with word substitutions:&lt;/p&gt;
 &lt;p&gt;
 Some, like chef, pirate, and aust do some of both:&lt;/p&gt;
 &lt;p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
+&lt;pre&gt;&lt;code class=&#34;language-lex&#34; data-lang=&#34;lex&#34;&gt;[Tt]h		gtf_puts_case(&amp;#34;z&amp;#34;);
 w		gtf_puts(&amp;#34;v&amp;#34;);
 ou		gtf_puts(&amp;#34;u&amp;#34;);
 &amp;#34;de &amp;#34;		gtf_puts(&amp;#34;d &amp;#34;);
@@ -703,32 +735,40 @@ enough to believe there isn&amp;#39;t any cheating in my classes.&lt;/p&gt;
 I don&amp;#39;t go nuts looking out for cheating but there are a number of
 things I do to try to help keep the students honest.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Class time. More often than not students have some time in class to
+&lt;li&gt;
+&lt;p&gt;Class time. More often than not students have some time in class to
 work on any given project. This lets me get a handle on what they
 actually know since I can interact with the student or team and
 observe them interacting with each other. Even if a particular
 project is all done out of class, over the course of the semester
 you can get a pretty good idea as to what a student will produce on
-their own.&lt;/li&gt;
-&lt;li&gt;Project quizzes. For a big project, I&amp;#39;ll sometimes give a quiz on
+their own.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Project quizzes. For a big project, I&amp;#39;ll sometimes give a quiz on
 the day it&amp;#39;s due. The quiz will be tied to the project - describe
 a data structure or algorithm you used. If the student wrote the
 project it&amp;#39;s free points, if not they&amp;#39;ll have problems. Of course,
 this only requires that a student understands their project not
-that they actually wrote it but at least that&amp;#39;s something.&lt;/li&gt;
-&lt;li&gt;Git logs. I get my students on GitHub early and that lets me look
+that they actually wrote it but at least that&amp;#39;s something.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git logs. I get my students on GitHub early and that lets me look
 at the commit logs for any given project. This usually can&amp;#39;t be
-used to find cheating but it lets me see what was committed when. &lt;/li&gt;
-&lt;li&gt;Be reasonable in terms of workload and expectations. &lt;strong&gt;This is a
+used to find cheating but it lets me see what was committed when. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Be reasonable in terms of workload and expectations. &lt;strong&gt;This is a
 really important one&lt;/strong&gt;. Back at Stuy, it was made clear to me many
 times that many students feel forced to cheat due to teachers
 expecting far too much from them. If you&amp;#39;re take 6 classes a day
-and each gives you two hours of homework somethings got to give.
-
+and each gives you two hours of homework somethings got to give.&lt;/p&gt;
+&lt;p&gt;
 I always try to give a fair amount of work and only if I think it&amp;#39;s
 necessary and makes sense and as long a a student is up front about
 any issues that arise I&amp;#39;ll try to work with them on deadlines and
-requirements.&lt;/li&gt;
+requirements.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 I could use a code plagiarism tester like &lt;a href=&#34;https://theory.stanford.edu/~aiken/moss/&#34;&gt;Moss&lt;/a&gt; but I usually don&amp;#39;t
@@ -850,14 +890,20 @@ functions and if statements but there is some depth to the unit.&lt;/p&gt;
 &lt;p&gt;
 We start with simplified rules:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;If the word starts with a vowel, add &amp;#34;ay&amp;#34; to the end of the word&lt;/li&gt;
-&lt;li&gt;If it starts with a consonant move the first latter to the end and
-add &amp;#34;ay&amp;#34;&lt;/li&gt;
-&lt;li&gt;don&amp;#39;t worry about anything else&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the word starts with a vowel, add &amp;#34;ay&amp;#34; to the end of the word&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it starts with a consonant move the first latter to the end and
+add &amp;#34;ay&amp;#34;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;don&amp;#39;t worry about anything else&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Students usually start with something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 as students realize it&amp;#39;s much easier to check for vowels rather than
@@ -866,7 +912,7 @@ consonants. &lt;/p&gt;
 Some students discover that you can do any of the following instead of
 the big compound &lt;strong&gt;or&lt;/strong&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This allows us to talk a little about lists (and tuples if you like)
@@ -879,7 +925,7 @@ then talk about using python&amp;#39;s &lt;code&gt;split()&lt;/code&gt; method t
 on whitespace. We also talk about the &lt;code&gt;for&lt;/code&gt; loop. Ultimately this
 leads us to writing a function to convert a sentence into Pig Latin:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 But this doesn&amp;#39;t work with real sentences. Let&amp;#39;s focus on two
@@ -894,7 +940,7 @@ This is where things get fun. &lt;/p&gt;
 To handle the period, students frequently jump to modifying the &lt;strong&gt;if&lt;/strong&gt; 
 conditions in &lt;code&gt;piglatinify&lt;/code&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or something similar.&lt;/p&gt;
@@ -906,13 +952,13 @@ posts &lt;a href=&#34;https://cestlaz.github.io/posts/2014-02-26-change-the-data
 If we take out the period we can do our regular piglatinify and then
 add it back in. This leads us to a solution like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We can do something similar to deal with words that start with upper
 case letters:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You can approach other special cases similarly.&lt;/p&gt;
@@ -1670,10 +1716,18 @@ sort or doing a unit on inheritance you probably should have your
 ownb written solutions but there are a whole bunch of topics which
 lend themselves to doing things on the fly:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;debugging&lt;/li&gt;
-&lt;li&gt;software engineering practices&lt;/li&gt;
-&lt;li&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/li&gt;
-&lt;li&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;debugging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;software engineering practices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;can all benefit from an on the fly lesson. &lt;/p&gt;
 &lt;p&gt;
@@ -1853,16 +1907,24 @@ something different a week later? Write it up. Rinse and repeat.&lt;/p&gt;
 &lt;p&gt;
 Why have I found writing a blog to be good self-PD?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Writing the experience or the lesson makes me think through it
-again. What worked, what didn&amp;#39;t.&lt;/li&gt;
-&lt;li&gt;When I do a similar lesson in the future, I can look back on what I
-did. It helps in iterating towards becoming a better teacher.&lt;/li&gt;
-&lt;li&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
+&lt;li&gt;
+&lt;p&gt;Writing the experience or the lesson makes me think through it
+again. What worked, what didn&amp;#39;t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When I do a similar lesson in the future, I can look back on what I
+did. It helps in iterating towards becoming a better teacher.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
 this immediately but blog for a few years and then reread some early
-posts. &lt;/li&gt;
-&lt;li&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
+posts. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
 have left have proven useful to me. Some of the ones from people who
-disagree have been the most useful.&lt;/li&gt;
+disagree have been the most useful.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;On top of this, some other new teacher might discover something you
 wrote up and find inspiration from it. &lt;/p&gt;
@@ -2109,13 +2171,21 @@ This also got me thinking about the  mish mash of
 CS Educator communities floating around. I&amp;#39;m familiar with and a
 member of:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A few Facebook groups (CS Education, CS Education Discussion, AP&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A few Facebook groups (CS Education, CS Education Discussion, AP&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Comp Sci, APCSP)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The CS Education subreddit&lt;/li&gt;
-&lt;li&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/li&gt;
-&lt;li&gt;A few blogs are kind of communities in that there&amp;#39;s a core group of&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The CS Education subreddit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A few blogs are kind of communities in that there&amp;#39;s a core group of&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;readers but discussion is pretty sparse.&lt;/p&gt;
 &lt;p&gt;

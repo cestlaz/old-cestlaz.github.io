@@ -6,10 +6,102 @@
     <description>C&#39;est la Z (SIGCSE)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Mar 2022 08:05:15 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Mar 2022 16:00:07 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/sigcse/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE 2022 - What language APCS-A part 1 - the intent</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-intent/</link>
+      <pubDate>Sun, 06 Mar 2022 16:00:07 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-intent/</guid>
+      <description>&lt;p&gt;
+One of the first sessions of SIGCSE2022 was a panel on the choice of
+language for APCS-A. Should it continue to use Java or should it shift
+to Python. This topic comes up from time to time. I didn&amp;#39;t attend this
+particular session but discussed it at length with a few people who
+did.&lt;/p&gt;
+&lt;p&gt;
+Truth be told, I wasn&amp;#39;t going to start writing about SIGCSE and APCS-A
+until I finished a few other SIGCSE posts but my friend &lt;a href=&#34;https://twitter.com/alfredtwo&#34;&gt;Alfred
+Thompson&lt;/a&gt; said he was writing one and was planning on posting it
+soon. I think it&amp;#39;s better when us CS Ed bloggers write about similar
+things at similar times - fosters better discussion so I&amp;#39;m writing
+this today (Sunday) and will post it as soon as I see Alfred&amp;#39;s post.&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s a lot to unpack when it comes to language choice for
+APCS-A. Language strengths and weaknesses, ease of learning, tooling
+and training costs and more. I&amp;#39;ll share my feelings on all of these
+and maybe more but before we dig into those I think it&amp;#39;s worth
+thinking about the intent of the course.&lt;/p&gt;
+&lt;p&gt;
+The AP program was originally created to allow advanced high school
+students to get started on college work in their field of interest. An
+AP class would either be the first course in a major or it would be a
+requirement like calculus is for CS majors. There were fewer exams and
+FAR fewer students taking them.&lt;/p&gt;
+&lt;p&gt;
+Over time, things evolved and today that&amp;#39;s not necessarily the
+case. APCS-A, Calc and many others still fit the bill but then you
+have classes like AP Euro - sometimes offered to HS sophomores and is
+really a regurgitation course. Sorry but a class appropriate for HS
+sophomores is not college level. Same for APCS-Principles. Might be
+good, might be bad but it&amp;#39;s not college level.&lt;/p&gt;
+&lt;p&gt;
+So, before deciding on the language you really have to decide on
+intent. If APCS-A is to be the first class in the CS major then the
+college board has to really follow what colleges are doing. Some
+people think that APCS-A should be a course for everybody or for non
+CS majors but if the class is supposed to be a first in major course,
+it &lt;strong&gt;has&lt;/strong&gt; to follow the college lead.&lt;/p&gt;
+&lt;p&gt;
+If colleges decide to make their CS1 a more general course, more about
+APIs, less about either programming or, to it&amp;#39;s already limited extent
+algorithms and data structures, then it&amp;#39;s fine to change but as long as the
+college board is pushing CS1 as a first course in the CS major then
+APCS-A has to follow the general CS1 outline.&lt;/p&gt;
+&lt;p&gt;
+So, assuming this stays the same, you might still argue a change to
+Python. I&amp;#39;ll look at the pros and cons of doing this at a later post but one
+argument against the change is that students having taken CS1 in
+Python have a harder time transitioning to Java (or C++) in CS2.&lt;/p&gt;
+&lt;p&gt;
+Some people say this isn&amp;#39;t an issue but I think it is. APCS-A is
+already frequently a watered down CS1 and students sometimes struggle
+in CS2 even when it&amp;#39;s in the same language. Switching languages will
+result in kids hitting a brick wall. This is an example of a problem
+I&amp;#39;ve seen over and over again - people changing a class because they
+feel there&amp;#39;s a need but not paying attention to the next class let
+alone the full pipeline.&lt;/p&gt;
+&lt;p&gt;
+This happened at Hunter recently - I warned the department that it
+would but nobody listened. Our CS0 course up until my first
+year at Hunter was a pretty bad course It was a random assortment
+of topics with a lot of cruft and it just didn&amp;#39;t serve anybody. In my
+second semester the class was slated to change to a new course. The
+new course was going to have more programming - all in Python - lots
+of small programs. It was a much broader class and we all agreed that
+it would be much better. It was except for one thing. Nobody was
+paying attention to how well it prepared students for our CS1 and that
+first CS1 class after the new CS0 was full of complaints, student
+struggles, and student failures. On the one hand, the new course had
+more programming than the earlier one but since it was only tiny
+programs, students weren&amp;#39;t prepared for CS1 right out of the gate but
+students thought they were prepared. Things have gotten better since then
+but the problem was easily to predict.&lt;/p&gt;
+&lt;p&gt;
+If High Schools move to a less rigorous class with an &amp;#34;easier&amp;#34;
+language like Python great care should be taken to make sure that it
+prepares students to jump into a college CS2 which won&amp;#39;t have nearly
+the supports that are present in high school.&lt;/p&gt;
+&lt;p&gt;
+So that&amp;#39;s it for this installment. Before you can even think about
+language you have to think about class intent. Now that we&amp;#39;ve done
+that we can start looking at language choice. That&amp;#39;s for next time.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE 2022 - Conference format</title>
@@ -117,7 +209,8 @@ Content related posts to come.&lt;/p&gt;
       
       <guid>https://cestlaz.github.io/post/adapting-a-nifty-assignment/</guid>
       <description>&lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; alt=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; title=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; alt=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; title=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The &lt;a href=&#34;http://nifty.stanford.edu/&#34;&gt;Nifty Assignments&lt;/a&gt; session at SGICSE is always a popular one.&lt;/p&gt;
