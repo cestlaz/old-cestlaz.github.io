@@ -6,10 +6,138 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Mar 2022 16:00:07 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 13:54:58 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE 2022 - APCS-A Language strengths and weaknesses</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-languages/</link>
+      <pubDate>Mon, 07 Mar 2022 13:54:58 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-languages/</guid>
+      <description>&lt;p&gt;
+Last time we talked about the &lt;a href=&#34;https://cestlaz.github.io/post/sigcse-2022-apcs-intent/&#34;&gt;intent of APCS-A&lt;/a&gt; and without deciding on
+that we can&amp;#39;t really chose a language. Still, we can talk about
+strengths and weaknesses of languages. Let&amp;#39;s do that by taking a walk
+down history.&lt;/p&gt;
+&lt;p&gt;
+APCS started in Pascal. Back then it was a one year course that
+included CS1 (programming) and CS2 (data structures). Later  they
+offered two exams A (programming) and AB (programming plus data
+structures). The AB exam was last administered in May 2009. In it&amp;#39;s
+last year, only 3,881 students took the AB exam - about 10% of those
+students were from Stuy.&lt;/p&gt;
+&lt;p&gt;
+The exam started in Pascal but switched to C++ in 1999. Why switch? I
+can&amp;#39;t say for sure. I was a young teacher back then. Under 10 years in
+and wasn&amp;#39;t involved in the greater AP scene. Pascal was a nice
+learning language but it had a number of deficiencies. Pascal was
+pretty straight forward, encouraged structured programming, required
+memory management which I say as a plus since it allowed one to study
+it and overall was a strong learning language. On the other hand, programs were
+limited to a single file, there was no standard for graphics or I
+think even file access, and it couldn&amp;#39;t do OOP which was becoming all
+the rage. It also was rarely used in industry even though I did have a
+nice job offer back then from Brown Brothers Harriman &amp;amp; Co. working in
+Turbo Pascal.&lt;/p&gt;
+&lt;p&gt;
+C++ was a hot language, it supported OOP as well as multiple files. It
+had much greater complexity but I guess that wasn&amp;#39;t a deal breaker for
+the College Board. I also have no idea if the conversation was
+switching from Pascal to C++ or if it was switching from Pascal to
+something else and then C++ was chosen.&lt;/p&gt;
+&lt;p&gt;
+In 2004 the exam moved to Java. Again, something gained something
+lost.&lt;/p&gt;
+&lt;p&gt;
+Java was the new hotness so no problem there. What about other
+changes? Java was &lt;strong&gt;much&lt;/strong&gt; simpler. C++ had many ways to do things while
+Java nudged you into the Java way. Java also forced Object Oriented
+Programming which, at the time, I guess people felt was a good
+thing. C++ was more multi-modal and at the time, heck even today, was
+taught more like C with objects. Java also had a standard way to do
+I/O and graphics which, I guess was also a plus.&lt;/p&gt;
+&lt;p&gt;
+What about the downside?&lt;/p&gt;
+&lt;p&gt;
+Personally, I found the forced OOP to be a problem Even though the
+language forced all objects all the time, the nature of problems
+attacked in a CS1 don&amp;#39;t necessarily lend themselves towards Object
+Oriented solutions. This made OOP forced and this is a problem.&lt;/p&gt;
+&lt;p&gt;
+Java also required a lot of &amp;#34;magic:&amp;#34; - ignore the &lt;strong&gt;public static void
+main&lt;/strong&gt; behind the curtain. You&amp;#39;ll understand it later.&lt;/p&gt;
+&lt;p&gt;
+The big loss to me and others pointed to this as a gain was that Java
+took out memory management. I liked that you still had to allocate
+memory using &lt;strong&gt;new&lt;/strong&gt; to create things like nodes for trees and linked
+lists but you didn&amp;#39;t have to manage them yourself.&lt;/p&gt;
+&lt;p&gt;
+True, this is generally a good thing but the problem was that APCS-A/B
+was a class, not the real world. If you were going to take out memory
+management from CS1/CS2 in APCS-A/B then it had to go back in
+somewhere or kids would never get it. This is where looking at a
+course and not the full sequence can be a problem. If you take
+something important out of APCS and then it&amp;#39;s not in the college
+classes later on you&amp;#39;ve taken it out of the students overall
+preparation.&lt;/p&gt;
+&lt;p&gt;
+Based on talking to my tech friends hiring after the switch, this was
+a real problem.&lt;/p&gt;
+&lt;p&gt;
+In any event, the class chugged along, dropping the B part up through
+today.&lt;/p&gt;
+&lt;p&gt;
+So, why consider Python?&lt;/p&gt;
+&lt;p&gt;
+Python goes back to multi-modal and takes away the magic. Hello World
+is just one line. No classes necessary. Python is also, by most
+measures simpler. Python also has tons of libraries. You can use Flask
+to build a web server, NLTK to explore language, Pygame for games and
+on and on. Python is also used by many other fields besides direct CS.&lt;/p&gt;
+&lt;p&gt;
+But there&amp;#39;s always a cost.&lt;/p&gt;
+&lt;p&gt;
+Python&amp;#39;s object model is, to put it kindly, ugly and ackward. Not as
+bad a Perl but having to use self and no real private kind of kills it
+from a teaching point of view. The libraries and use in other fields
+are also less important if the intent is to mirror college CS1 content
+as opposed to rolling a new non major, more general course.&lt;/p&gt;
+&lt;p&gt;
+Another cost is the use of lists rather than arrays. Lists give much
+more power much more quickly but at the cost of teaching array style
+indexed data structures. This isn&amp;#39;t a cost for everyone but it&amp;#39;s
+something to consider. Related to this is that Python doesn&amp;#39;t really
+have a counting loop. It has a &lt;strong&gt;while&lt;/strong&gt; and a &lt;strong&gt;for each&lt;/strong&gt; but not a
+counting &lt;strong&gt;for&lt;/strong&gt;. This may or may not be an issue depending on how you
+feel about traversing data.&lt;/p&gt;
+&lt;p&gt;
+The potential big cost comes down to typing. Sure, writing &lt;code&gt;int a&lt;/code&gt; is
+a pain in statically typed Java vs Python&amp;#39;s dynamic typing but while
+dyanmic is quicker and easier and makes sense given Python&amp;#39;s scripting
+roots, static is safer and makes it easier to write larger more robust
+systems.&lt;/p&gt;
+&lt;p&gt;
+Memory management, is of course still long gone :-(.&lt;/p&gt;
+&lt;p&gt;
+So, what to do? &lt;/p&gt;
+&lt;p&gt;
+Python is used in many fields and is a startup darling but Java is
+still one of the kings, along with C++ in the industrial strength and
+enterprise world. I have mixed feelings and might take a strong stance
+but not yet.&lt;/p&gt;
+&lt;p&gt;
+We still have to look at more aspects of this question. Specifically
+what about the costs of switching from one language to any other
+language and also does the choice of language in CS1 matter with
+respect to CS2.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll do at least one more post maybe more to address those but I think
+that&amp;#39;s it for today.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE 2022 - What language APCS-A part 1 - the intent</title>
@@ -3643,63 +3771,6 @@ I&amp;#39;m feeling this way so probably are others. We&amp;#39;re not alone.  &
 I&amp;#39;ve got some CS and teaching content posts lined up and plan to start
 with them next week as things get back in the swing but for now, good
 luck to everyone starting back up.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why it takes so long to become a better teacher</title>
-      <link>https://cestlaz.github.io/post/feedback-loop/</link>
-      <pubDate>Fri, 06 Aug 2021 06:54:15 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/feedback-loop/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34;
-  src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
-&lt;/script&gt;
-&lt;p&gt;
-I&amp;#39;ve written about how long it takes to become a &lt;a href=&#34;https://cestlaz.github.io/post/five-year-class/&#34;&gt;master teacher&lt;/a&gt; and
-that even after 9 or 10 years most teachers are really just advanced
-beginners. A big reason for that is our long feedback loop. You do
-something and you can&amp;#39;t do it again for a year.&lt;/p&gt;
-&lt;p&gt;
-I was listening to a podcast on my morning run by the Hudson River and
-something came up about differences between quantities of items. The difference
-between having n versus n+1 of something changes based on the value of n. If, for example, you have 1 versus 2 shoes - that&amp;#39;s a BIG
-difference. On the other hand, if you have 100 vs 101 shoes, not so
-much.&lt;/p&gt;
-&lt;p&gt;
-This got me thinking about how I framed things when teaching
-big-O notation. In big-O you generally just look at the dominant
-term. If you have an algorithm that runs in \(O(n^2+n)\) time you
-usually just say \(O(n^2)\) because \(n^2\) is the dominant term. If you n
-is small, let&amp;#39;s say 2, the difference between 2 and 4 is big so the n
-part of \(n^2+n\) seems important but as n gets large, say 10,000, then
-the difference between 100,000,000 and 100,010,000 is negligible for
-our purposes.&lt;/p&gt;
-&lt;p&gt;
-I try to introduce this concept when teaching big-O but listening to
-the podcast and reflecting gave me some thoughts as to how I can do it
-better.&lt;/p&gt;
-&lt;p&gt;
-The trouble is, I won&amp;#39;t be able to for a while. I introduced big-O to
-our teachers in our summer intensive. My next opportunity to cover the
-topic will be sometime this Spring with my first year undergrads. Same
-topic, but different audience so it won&amp;#39;t be quite the same. The next
-time I get to do this with teachers is next summer. All this supposes
-that I remember the changes I&amp;#39;m thinking about making and work them
-in. I&amp;#39;m writing myself a few notes but even then, who&amp;#39;s to say if I&amp;#39;m
-going to remember the nuance that I&amp;#39;m thinking now?&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s the teaching feedback loop - get an idea, try it, and then
-can&amp;#39;t iterate for a year. Get a new idea and you can&amp;#39;t try it until
-the topics comes up which could be a long time from now.  True, some
-things like a new pedagogical trick can be tried out more quickly but
-even then you can&amp;#39;t just do it. You&amp;#39;ve got to find where it works
-within your current classes and still have to account for the
-countless differences that make up your classes when you&amp;#39;re ready for
-the next iteration.&lt;/p&gt;
-&lt;p&gt;
-None of this is good or bad, just the nature of our profession. Just
-something that I was thinking about this morning.&lt;/p&gt;
 </description>
     </item>
     
