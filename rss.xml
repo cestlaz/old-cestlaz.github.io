@@ -6,10 +6,129 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Mar 2022 13:54:58 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2022 07:28:46 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE 2022 APCS-A Costs of changing the language</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-costs/</link>
+      <pubDate>Tue, 08 Mar 2022 07:28:46 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-costs/</guid>
+      <description>&lt;p&gt;
+One of the arguments for keeping APCS-A as is are the costs to
+change. There are of course, many kinds of costs.&lt;/p&gt;
+&lt;p&gt;
+The first are the monetary costs. New text book, curricular materials
+and possibly equipment. The College Board has their development costs
+but I don&amp;#39;t care about those - they&amp;#39;re raking in money hand over fist
+anyway. I don&amp;#39;t think these costs amount to much. Companies that sell
+materials for classes are always trying to make sales and even when
+subjects don&amp;#39;t change there are always new books and other
+resources. So, these costs shouldn&amp;#39;t really figure into switching
+languages.&lt;/p&gt;
+&lt;p&gt;
+Another cost relates to ancillary effects. Does changing the language
+or changing the course have an effect on how well or how poorly
+students are prepared for what&amp;#39;s to come. The argument here for
+keeping Java is that CS2, data structures in most colleges is taught
+in Java or C++ so switching APCS-A to Python wouldn&amp;#39;t prepare students
+as effectively. This may or may not be the case. Students already have
+to deal with the switch from Java to C++ if they go to a C++ school
+adn get placement out of CS1 and some colleges do indeed teach CS1 in
+Python and then switch.&lt;/p&gt;
+&lt;p&gt;
+So, changing languages won&amp;#39;t necessarily hamper students that take
+data structures in a different language in college.&lt;/p&gt;
+&lt;p&gt;
+On the other hand, if the course content changes significantly -
+changing from the A in APCS-A meaning Algorithm to API as Owen
+Astrachan suggested at SIGCSE then that&amp;#39;s a different kettle of fish. &lt;/p&gt;
+&lt;p&gt;
+Digging a little deeper on this front is that when a college designs
+their CS0, CS1, and CS2 classes they should look at the full
+sequence - all three of these classes and beyond. If you change a
+course, you really have to think about how it changes the future
+ones. Hopefully colleges do this when changing curriculum but I did
+talk about how Hunter didn&amp;#39;t when it rebooted their CS0 class. Now,
+this really isn&amp;#39;t a reason to change or not to change since a high
+school can&amp;#39;t really track and pay attention to every colleges CS0,
+CS1, CS2 sequence so I guess it&amp;#39;s neither here nor there.&lt;/p&gt;
+&lt;p&gt;
+I guess the bottom line for this cost is that as long as APCS-A
+remains fundamentally the same content wise it may not matter what the
+language is and if the College Board clearly states that APCS-A is
+&lt;strong&gt;not&lt;/strong&gt; going to be a college CS1 then any language is fair game.&lt;/p&gt;
+&lt;p&gt;
+The biggest cost that people bring up is teacher training. All the
+teachers will have to learn the new language and possibly a new
+paradigm. This one is &lt;strong&gt;huge&lt;/strong&gt;. I work with a lot of teachers who are
+relatively new to CS and some of them are struggling their way through
+APCS-A. These teachers are basically students in CS0 or maybe CS1 and
+just finding there way to and through CS. Switching languages for them
+is no easy feat and concepts in one language don&amp;#39;t necessarily
+translate to another. I&amp;#39;ve seen teachers who claim proficiency with
+Python or JS struggle to write the simplest of Java programs or after
+spending a significant amount of time in Java they have similar
+struggles switching to Python.&lt;/p&gt;
+&lt;p&gt;
+In spite of so many people saying CS is easy and anyone can do it,
+learning new things is in fact hard and takes both time and effort.&lt;/p&gt;
+&lt;p&gt;
+As a side note, this cost flies in the face of every PD provider (I&amp;#39;m
+looking at you code.org) that claims &amp;#34;we&amp;#39;ve trained XXX teachers to be
+CS teachers in just YYY sessions!&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+This is the state we&amp;#39;re in today but this is also a warning. We &lt;strong&gt;have&lt;/strong&gt;
+to do better with respect to teacher training so as to make this cost
+meaningless.&lt;/p&gt;
+&lt;p&gt;
+When I entered teaching, I had been doing C programming professionally
+but knew Pascal along with other languages from college. Teaching APCS-A/B
+in Pascal was easy. Well, the language was easy. I was a new teacher
+so teaching overall was hard but teaching APCS-A/B wasn&amp;#39;t any harder
+than say teaching Trig or Linear Algebra. Actually, maybe it was a
+little easier since I was a CS guy at heart and not a math
+person.&lt;/p&gt;
+&lt;p&gt;
+When the class switched to C++, I figured out C++. I had never done
+OOP before but I figured it out. Switching to Java? Same deal. I also
+taught myself Python, NetLogo and other languages that I had to or wanted
+to teach with.&lt;/p&gt;
+&lt;p&gt;
+The point is, I had a strong CS background so picking up a new
+language wasn&amp;#39;t really a major cost. It wasn&amp;#39;t free - I had to spend
+some time and at times figure out new tooling but it wasn&amp;#39;t this
+insurmountable thing.&lt;/p&gt;
+&lt;p&gt;
+Right now, we&amp;#39;re at a point where we can&amp;#39;t really ask this of our CS
+teachers. Too many are too new but we have to make sure that our
+pre-service training programs and state requirements are such that in
+the future we will have CS teachers that know enough CS so that a
+language switch in a course isn&amp;#39;t a big deal. Rather, a teacher will
+be able to do an analysis of the new tool solely based on asking if
+it&amp;#39;s right for their students.&lt;/p&gt;
+&lt;p&gt;
+So, those are the costs. Are they enough of a reason to keep Java? I
+don&amp;#39;t think so. If you give enough lead time, as pre-service programs
+are getting up to speed you can minimize the training costs. Just
+give it 10 years instead of 5. Of course, you have to be confident
+that Python will be the language that far into the future.&lt;/p&gt;
+&lt;p&gt;
+That said, I&amp;#39;m not advocating for a switch to Python. We still have to
+go back to my first post on this - The College Board has to decide if
+this will be a college CS1 class or something else and only then can
+we do the language vs language analysis.&lt;/p&gt;
+&lt;p&gt;
+Are we done with this thread? Almost but I think it&amp;#39;s worth spending
+some time looking at some possible alternatives to both Java and
+Python.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s next time.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE 2022 - APCS-A Language strengths and weaknesses</title>
@@ -3720,57 +3839,6 @@ regardless of policy if I think that the remote tools make more sense
 for a particular session.&lt;/p&gt;
 &lt;p&gt;
 Gonna take it one class at a time.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>\(2^5\) Years Teaching</title>
-      <link>https://cestlaz.github.io/post/32-years/</link>
-      <pubDate>Sat, 21 Aug 2021 13:02:56 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/32-years/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34;
-  src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
-&lt;/script&gt;
-&lt;p&gt;
-I was looking over my TRS statement the other day - that&amp;#39;s Teacher&amp;#39;s
-Retirement System and noticed that next week I&amp;#39;ll be starting my 32nd
-year teaching. That&amp;#39;s \(2^5\) or 10000 - 5 bits so I guess you can&amp;#39;t
-call me a two bit teacher.&lt;/p&gt;
-&lt;p&gt;
-Two and a half years at Seward, over 20 at Stuy, and the rest at
-Hunter College. I&amp;#39;ve had a lot of last days before school starts but
-this year is different. I&amp;#39;m betting that&amp;#39;s the case for a lot of us.&lt;/p&gt;
-&lt;p&gt;
-I mentioned about burnout and not feeling any joy when I wrote about the
-&lt;a href=&#34;https://cestlaz.github.io/post/no-csta2021/&#34;&gt;CSTA conference&lt;/a&gt; but we&amp;#39;re also starting a new year in a strange place
-due to the pandemic. On the one hand we have vaccines but on the
-other, we&amp;#39;ve got Delta. I&amp;#39;m scheduled to teach my undergraduate
-classes in person and to be honest, I&amp;#39;m not 100% comfortable. Will
-that affect my teaching? I guess we&amp;#39;ll see.&lt;/p&gt;
-&lt;p&gt;
-Then we have practical concerns. My students should all be distancing
-so how will that affect group work?&lt;/p&gt;
-&lt;p&gt;
-As I&amp;#39;m writing this I just got an email from Hunter saying that
-students will have 45 days post FDA approval to get vaccinated. The
-wording seems to contradict the previous policy that in order for
-students to enter campus they had to be vaccinated. This is concerning
-to say the least.&lt;/p&gt;
-&lt;p&gt;
-When I started teaching I was always nervous before the first day back
-and then again for the first day teaching. Mid career it was more of
-an excited nervousness. Ultimately the nerves went away and while I
-sorely needed vacation in June by September I was looking forward to
-seeing my students again. This year it&amp;#39;s mostly nervousness, discomfort and
-uncertainty. &lt;/p&gt;
-&lt;p&gt;
-I don&amp;#39;t write this merely to complain but rather to share. I figure if
-I&amp;#39;m feeling this way so probably are others. We&amp;#39;re not alone.  &lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got some CS and teaching content posts lined up and plan to start
-with them next week as things get back in the swing but for now, good
-luck to everyone starting back up.&lt;/p&gt;
 </description>
     </item>
     
