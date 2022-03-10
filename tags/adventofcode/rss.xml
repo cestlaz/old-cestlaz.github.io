@@ -50,11 +50,21 @@ solutions up on &lt;a href=&#34;https://github.com/zamansky?utf8=%25E2%259C%2593
 Finally, you can get to the challenges from previous years by just
 adding the year to the url, that is:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode/2019&#34;&gt;&lt;a href=&#34;http://adventofcode.com/2019&#34;&gt;http://adventofcode.com/2019&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2018&#34;&gt;http://adventofcode.com/2018&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2017&#34;&gt;http://adventofcode.com/2017&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2016&#34;&gt;http://adventofcode.com/2016&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2015&#34;&gt;http://adventofcode.com/2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode/2019&#34;&gt;&lt;a href=&#34;http://adventofcode.com/2019&#34;&gt;http://adventofcode.com/2019&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2018&#34;&gt;http://adventofcode.com/2018&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2017&#34;&gt;http://adventofcode.com/2017&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2016&#34;&gt;http://adventofcode.com/2016&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2015&#34;&gt;http://adventofcode.com/2015&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Finally, here&amp;#39;s a really interesting video by Eric on the whole AoC
@@ -168,7 +178,7 @@ diagonals of a bounding rectangle and then compare areas of these
 rectangles. They should decrease at first and then eventually
 increase. &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
       new_pts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transform(pts,time) 
       bbox &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bounding_box(new_pts)
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (area(bbox) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; area(previous_bbox)):
@@ -191,36 +201,47 @@ When I first solved the problem, I just dumped the coordinates into a
 2 dimentional array and printed it but afterwards I wrote a little
 clojurescript html5 canvas visualization:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 So there it is. It&amp;#39;s not a trivial problem for beginners but it is doable. There&amp;#39;s a
 lot to deal with:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;parse the data&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;parse the data&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 This isn&amp;#39;t too bad. You could cover regular expressions but even
 without it isn&amp;#39;t too big of a deal. You could also just use an editor
 to extract the important data or preprocess this for the kids.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Figure out how to transform the points.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Figure out how to transform the points.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This also isn&amp;#39;t too bad. Just loop over all the points with &lt;code&gt;newpoint
 = oldpoint + t * velocity&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Figure out the bounding boxes&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Figure out the bounding boxes&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Also not too bad. Loop over all the points to find the smallest and
 largest x and y coordinates&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Set up a loop to find the smallest bounding box and hence the time
-that the message will appear.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up a loop to find the smallest bounding box and hence the time
+that the message will appear.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;and then finally:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;draw the points to visually inspect the answer.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;draw the points to visually inspect the answer.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This might be the most persnickety part. When I first coded it my
 output was upside down and backwards but good enough.&lt;/p&gt;
@@ -256,7 +277,7 @@ At the core of the problem you have to maintain a list of items
 inserting and deleting items at assorted locations. I threw together
 this solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;num_players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;431&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 9&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;num_players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;431&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 9&lt;/span&gt;
 last_score &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;70950&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 255&lt;/span&gt;
 players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(num_players&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)]
 
@@ -278,7 +299,7 @@ index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34
         &lt;span style=&#34;color:#66d9ef&#34;&gt;del&lt;/span&gt; board[index]
     player&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(player&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;num_players
     next_marble &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; next_marble &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-print(max(players))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(max(players))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 It worked and I got my first star. This unlocked part 2 which changed
 the number of marbles in the game from 70950 to 70950&amp;lt;b&amp;gt;00&amp;lt;/b&amp;gt;. This
@@ -379,7 +400,7 @@ one at the front.&lt;/p&gt;
 &lt;p&gt;
 We first read in the data and strip off the trailing newline&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
 origdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline()
 
 origdata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; origdata&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()
@@ -388,7 +409,7 @@ data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; origdata&lt;/code&
 Then, since we can access the elements of the string as a list (or
 array) it&amp;#39;s a simple loop to calculate the sum:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
 l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(data)
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(l&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
 &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data[i]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]:
@@ -397,7 +418,7 @@ s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34
 &lt;span style=&#34;color:#75715e&#34;&gt;# data[-1] is the python way of getting the last element - here we check the wraparound&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; data[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]:
 s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; int(data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;])
-print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checksum: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checksum: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Pretty straightforward but I don&amp;#39;t like the special case of checking
 the last element for the wraparound. Sometimes it&amp;#39;s possible to get
@@ -407,14 +428,14 @@ list.&lt;/p&gt;
 &lt;p&gt;
 This leads to a slightly cleaner solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
 
 s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
 l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(data)
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(l&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
 &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data[i]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]:
 s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; int(data[i]) &lt;span style=&#34;color:#75715e&#34;&gt;#don&amp;#39;t forget to turn the string into an int&lt;/span&gt;
-print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checksum: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checksum: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 This is pretty much what I&amp;#39;d expect from a Python programmer that&amp;#39;s
 just starting out. We can use a couple of more advanced Python
@@ -433,13 +454,13 @@ element with an identical neighbor and also converts it to an int:
 Finally, we can just calculate the sum. This leads to the following
 complete solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
 
 checksum&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum([ int(a) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a,b &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; zip(data,data[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]) &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;b])
 
-print(checksum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(checksum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 List comprehensions for the win!!!!&lt;/p&gt;
 &lt;p&gt;
@@ -451,7 +472,7 @@ that&amp;#39;s halfway around the list.&lt;/p&gt;
 With loops, the solution is just a quick modification of part 1. We
 just add half the length and use mod to find the digit to compare with:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
 
@@ -460,18 +481,18 @@ l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(data)
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(l&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
 &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; data[i]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;data[(i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;l]: &lt;span style=&#34;color:#75715e&#34;&gt;# check halfway around instead of adjacent&lt;/span&gt;
 s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; int(data[i])
-print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;part 2loop version: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;part 2loop version: &amp;#34;&lt;/span&gt;,s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I wanted to see if I could do this with a list comprehension
 though. The trick was to figure out how to make two lists to zip
 together to get the pairs to check then add. Here&amp;#39;s the solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input.txt&amp;#34;&lt;/span&gt;)
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()
 l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(data)
 d2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[l&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;data
 checksum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum([ int(a) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a,b &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; zip(data,d2)&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;b])
-print(checksum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(checksum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The insight was that we could just make a second list that starts
 halfway through and then wraps around. I did this by adding
@@ -508,7 +529,7 @@ the &lt;a href=&#34;http://adventofcode.com/2016/day/19&#34;&gt;problem descript
 &lt;p&gt;
 For both solutions I coded up a circular doubly linked list:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;make_ring&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; size){
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;make_ring&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; size){
 &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;n;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; node &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;current,&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;first;
@@ -688,7 +709,7 @@ superior in any way, it&amp;#39;s just what I ended up writing).&lt;/p&gt;
 &lt;p&gt;
 I make use of tuple destructuring:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;x,y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;x,y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 which assigns &lt;strong&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/strong&gt; to the first item in the tuple and &lt;strong&gt;&lt;strong&gt;y&lt;/strong&gt;&lt;/strong&gt; the
 second. I used that a number of times&lt;/p&gt;
@@ -696,14 +717,14 @@ second. I used that a number of times&lt;/p&gt;
 I also use a list  I call &lt;strong&gt;&lt;strong&gt;dirs&lt;/strong&gt;&lt;/strong&gt; to hold dx and dy values for the
 four direcitons:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;dirs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;),(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;dirs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;),(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 This made it easier to to update the location based on the 4
 directions. I could also have just used if statements.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s all the code:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;x,y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;# assume our starting location is 0,0&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;x,y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;# assume our starting location is 0,0&lt;/span&gt;
 
 &lt;span style=&#34;color:#75715e&#34;&gt;# we start with d=0 -&amp;gt; facing north&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# as we turn left or right, we can just increment or decrement d&lt;/span&gt;
@@ -749,8 +770,8 @@ totalsteps&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;totalsteps&lt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#    break&lt;/span&gt;
 
 
-print(x,y)
-print(abs(x)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;abs(y)) &lt;span style=&#34;color:#75715e&#34;&gt;# the answer&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(x,y)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(abs(x)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;abs(y)) &lt;span style=&#34;color:#75715e&#34;&gt;# the answer&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.&lt;/p&gt;

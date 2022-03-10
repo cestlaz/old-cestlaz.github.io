@@ -216,7 +216,8 @@ in fact keep them uneducated.&lt;/p&gt;
 I&amp;#39;m super proud to say that New York City now has state certified
 Computer Science Teachers!!!!!!&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/cs-cert.png&#34; width=&#34;500px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/cs-cert.png&#34; width=&#34;500px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -284,23 +285,37 @@ were going to run things.&lt;/p&gt;
 &lt;p&gt;
 We decided to go with the following:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Zoom for live meetings &lt;/li&gt;
-&lt;li&gt;Slack for chat&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zoom for live meetings &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack for chat&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Git and GitHub&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GitHub classroom for assignments &lt;/li&gt;
-&lt;li&gt;GitHub repos for code distribution, class website and resource
-sharing. &lt;/li&gt;
-&lt;li&gt;GitHub discussions for off hour and long form discussion&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub classroom for assignments &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub repos for code distribution, class website and resource
+sharing. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub discussions for off hour and long form discussion&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;While Zoom is a great platform it was lacking in a few areas so we
 also ended up using: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/li&gt;
-&lt;li&gt;Assorted whiteboarding tools.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assorted whiteboarding tools.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here&amp;#39;s the breakdown.&lt;/p&gt;
 &lt;p&gt;
@@ -525,12 +540,20 @@ exposed to the idea. Still, we, or more accurately, Topher, who&amp;#39;s had
 great success getting student buy in did do a brief talk on the
 subject. Some of the things we covered were: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to motivate pair programming in a collaborative way&lt;/li&gt;
-&lt;li&gt;What activities can you give the navigator while the driver&amp;#39;s
-setting up the environment to involve them.&lt;/li&gt;
-&lt;li&gt;How in the &amp;#34;real world&amp;#34; some developers love PP and some hate it
-and that there are many variations on the theme.&lt;/li&gt;
-&lt;li&gt;You&amp;#39;d not always going to get student buy in.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to motivate pair programming in a collaborative way&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What activities can you give the navigator while the driver&amp;#39;s
+setting up the environment to involve them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How in the &amp;#34;real world&amp;#34; some developers love PP and some hate it
+and that there are many variations on the theme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You&amp;#39;d not always going to get student buy in.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That last point is &lt;strong&gt;very&lt;/strong&gt; important. Teachers are going to try things
 that don&amp;#39;t always work and unfortunately, the system of evaluation
@@ -592,16 +615,36 @@ work.&lt;/p&gt;
 &lt;p&gt;
 The topics they selected were:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Data Mining&lt;/li&gt;
-&lt;li&gt;Public Key Encryption&lt;/li&gt;
-&lt;li&gt;Blockchain&lt;/li&gt;
-&lt;li&gt;Natural Language Processing&lt;/li&gt;
-&lt;li&gt;Classic AI - Decision Trees&lt;/li&gt;
-&lt;li&gt;SQL / Cyber Security&lt;/li&gt;
-&lt;li&gt;Visualization&lt;/li&gt;
-&lt;li&gt;Machine Learning / Cipher Decryption&lt;/li&gt;
-&lt;li&gt;Genetic Algorithms&lt;/li&gt;
-&lt;li&gt;Classic AI - Search&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Mining&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public Key Encryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blockchain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Natural Language Processing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Decision Trees&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQL / Cyber Security&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visualization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Machine Learning / Cipher Decryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Genetic Algorithms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Search&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We weren&amp;#39;t sure exactly what to expect but we were blown away both in
 terms of the CS content as well as what they prepared in terms of
@@ -631,10 +674,18 @@ these, check them out.&lt;/p&gt;
 Our summer intensive was, well, pretty intensive. We met all day every
 day for a month and knocked out four classes. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Programming (CS1)&lt;/li&gt;
-&lt;li&gt;Data Structures&lt;/li&gt;
-&lt;li&gt;Topics&lt;/li&gt;
-&lt;li&gt;Methods&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programming (CS1)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Structures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you ever took or taught a summer session class, you know that time
 is tight and generally you cover a little less than in a fall or
@@ -678,19 +729,45 @@ populations. &lt;/p&gt;
 &lt;p&gt;
 Some of the methods we discussed included: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Live Coding &lt;/li&gt;
-&lt;li&gt;Subgoal labeling&lt;/li&gt;
-&lt;li&gt;Make predictions&lt;/li&gt;
-&lt;li&gt;Modifying existing code&lt;/li&gt;
-&lt;li&gt;code tracing&lt;/li&gt;
-&lt;li&gt;diagramming&lt;/li&gt;
-&lt;li&gt;scaffolded assignments (code skeletons)&lt;/li&gt;
-&lt;li&gt;Rubber Duck Debugging&lt;/li&gt;
-&lt;li&gt;Code sharing (presenting)&lt;/li&gt;
-&lt;li&gt;writing implementations of library code&lt;/li&gt;
-&lt;li&gt;slack techniques (reacts polls, channels, ) &lt;/li&gt;
-&lt;li&gt;thought-grooming/sparking warm-up Qs/tasks&lt;/li&gt;
-&lt;li&gt;relevant quotes at warm-up&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Live Coding &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Subgoal labeling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make predictions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modifying existing code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;code tracing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;diagramming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scaffolded assignments (code skeletons)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rubber Duck Debugging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code sharing (presenting)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;writing implementations of library code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;slack techniques (reacts polls, channels, ) &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;thought-grooming/sparking warm-up Qs/tasks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;relevant quotes at warm-up&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and more but the list doesn&amp;#39;t really do the discussion justice. Take
 &amp;#34;live coding&amp;#34; for example - that&amp;#39;s not just writing code in front of
@@ -741,12 +818,20 @@ The certificate program consists of a bunch of graduate classes plus
 field work which is required by the state. Over the summer we covered
 four of the classes. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Programming - essentially a CS1 type course.&lt;/li&gt;
-&lt;li&gt;Data Structures - since K12 teachers should go deeper than the last
-HS course which is typically APCS-A.&lt;/li&gt;
-&lt;li&gt;Topcs in Compute rScience - since K12 teachers need a wide breadth
-of CS knowledge.&lt;/li&gt;
-&lt;li&gt;Methods - since teachers need to know how to teach CS.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programming - essentially a CS1 type course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Structures - since K12 teachers should go deeper than the last
+HS course which is typically APCS-A.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topcs in Compute rScience - since K12 teachers need a wide breadth
+of CS knowledge.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods - since teachers need to know how to teach CS.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the fall, we&amp;#39;ll continue with Ethics in Computer Science and
 Curriculum Development which also includes the field work.&lt;/p&gt;
@@ -779,11 +864,21 @@ structure classes except possibly through the methods eye because both
 of those courses are pretty well established and cut and dry but I do
 plan to write at least the following: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The methods course &lt;/li&gt;
-&lt;li&gt;More on the methods course &lt;/li&gt;
-&lt;li&gt;The topics course &lt;/li&gt;
-&lt;li&gt;Use of tools for remote teaching &lt;/li&gt;
-&lt;li&gt;Our overall philosophy in designing and running the program.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The methods course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More on the methods course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The topics course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use of tools for remote teaching &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our overall philosophy in designing and running the program.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, stay tuned for more.&lt;/p&gt;
 </description>
@@ -858,10 +953,18 @@ sort or doing a unit on inheritance you probably should have your
 ownb written solutions but there are a whole bunch of topics which
 lend themselves to doing things on the fly:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;debugging&lt;/li&gt;
-&lt;li&gt;software engineering practices&lt;/li&gt;
-&lt;li&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/li&gt;
-&lt;li&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;debugging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;software engineering practices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;can all benefit from an on the fly lesson. &lt;/p&gt;
 &lt;p&gt;
@@ -941,16 +1044,24 @@ something different a week later? Write it up. Rinse and repeat.&lt;/p&gt;
 &lt;p&gt;
 Why have I found writing a blog to be good self-PD?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Writing the experience or the lesson makes me think through it
-again. What worked, what didn&amp;#39;t.&lt;/li&gt;
-&lt;li&gt;When I do a similar lesson in the future, I can look back on what I
-did. It helps in iterating towards becoming a better teacher.&lt;/li&gt;
-&lt;li&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
+&lt;li&gt;
+&lt;p&gt;Writing the experience or the lesson makes me think through it
+again. What worked, what didn&amp;#39;t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When I do a similar lesson in the future, I can look back on what I
+did. It helps in iterating towards becoming a better teacher.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
 this immediately but blog for a few years and then reread some early
-posts. &lt;/li&gt;
-&lt;li&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
+posts. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
 have left have proven useful to me. Some of the ones from people who
-disagree have been the most useful.&lt;/li&gt;
+disagree have been the most useful.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;On top of this, some other new teacher might discover something you
 wrote up and find inspiration from it. &lt;/p&gt;
@@ -991,7 +1102,7 @@ used correctly it can create clearer code. Let&amp;#39;s look at a related
 situation. Suppose you write a function to find and return some item
 from  a data set (in pseudocode):&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You could tighten it up a bit but there are two things that I don&amp;#39;t
@@ -999,12 +1110,12 @@ like about the above solution. First, it goes through the entire data
 set even if the item you&amp;#39;re searching for is near the beginning. You
 could fix that by putting in a more complex loop boolean:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; numitems &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;found &lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; numitems &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;found &lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Second. you&amp;#39;ve got the conditional after the loop. I find the
 following much clearer:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 To me this is perfectly clear. Look for an item, if and when we find
@@ -1015,12 +1126,12 @@ understand, and potentially a little faster.&lt;/p&gt;
 You have a similar situation with &lt;code&gt;break&lt;/code&gt;. Without it you might have
 code like this:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 And with:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Not significantly different. &lt;/p&gt;
@@ -1036,12 +1147,12 @@ more dangerous way than break and continue can.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s an example with continue:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 as opposed to:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Which is better? It&amp;#39;s purely subjective. Nothing wrong with either.&lt;/p&gt;
@@ -1051,7 +1162,8 @@ I&amp;#39;ll share a final example. This one lifted from an &lt;a href=&#34;http
 the exit event in the loop boolean but I find including it
 as a case using a &lt;code&gt;break&lt;/code&gt; to be cleaner:&lt;/p&gt;
 &lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 At the end of the day, &lt;code&gt;break&lt;/code&gt; and &lt;code&gt;continue&lt;/code&gt;, like most langauge
@@ -1166,7 +1278,7 @@ subproblem solution rather than recalculating it.&lt;/p&gt;
 Probably the easiest example is Fibonacci numbers. You can generate
 Fibonacci numbers recursively using something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
           &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
@@ -1179,7 +1291,7 @@ keeps recalculating the same subproblems over and over and over.&lt;/p&gt;
 You can &amp;#34;fix&amp;#34; this by creating a list of previously found Fibonacci 
 numbers and just return them rather than recalculating:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  fibs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# make room for 1000 fib numbers&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  fibs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# make room for 1000 fib numbers&lt;/span&gt;
 
   &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib&lt;/span&gt;(n):
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; fibs[n] &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
@@ -1213,19 +1325,22 @@ smallest of the above three.&lt;/p&gt;
 &lt;p&gt;
 For example, given this array representing the color changes:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat1.png&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/seam-mat1.png&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 When calculating the second item in the second row, you&amp;#39;ll consider
 the three values above it:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat2.png&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/seam-mat2.png&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The smallest is 0 so that 2 remains a 2. If we do this for every
 element in the second row we get the following:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat3.png&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/seam-mat3.png&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The green boxes added a 0 from the line above but the yellow ones
@@ -1234,7 +1349,8 @@ edges just considered the two values above them and didn&amp;#39;t wrap.&lt;/p&g
 &lt;p&gt;
 Working the rest of the way through, you get this final array:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/seam-mat4.png&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/seam-mat4.png&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 You can now easily identify the best seam to remove by finding the
@@ -1282,7 +1398,8 @@ session as well as a nice dinner to keep the teachers fueled.&lt;/p&gt;
 As usual, we had two major themes for our PD. First the pedagogy. My
 former colleage Topher started with a pair programming workshop. &lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/gwg-topher.jpg&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/gwg-topher.jpg&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Pair programming is a pretty common technique but it&amp;#39;s deceptively
@@ -1302,7 +1419,8 @@ lessons at a future session.&lt;/p&gt;
 &lt;p&gt;
 Then we had dinner after which I did the content piece.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/gwg-z.jpg&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/gwg-z.jpg&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 We first look at a bit of &lt;a href=&#34;https://ccl.northwestern.edu/netlogo/&#34;&gt;NetLogo&lt;/a&gt; for image procesing mostly so I
@@ -1359,7 +1477,8 @@ as the enrollment had just shot up. There weren&amp;#39;t many books that
 covered both the programming and the data structures but I found one
 nad it was a good one:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; alt=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; title=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; alt=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; title=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 It was both accessible and was thorough. It wasn&amp;#39;t a great source of
@@ -1368,17 +1487,20 @@ exercises but it was no worse than the other options.&lt;/p&gt;
 When we moved to C++ it was pretty easy as the same book was still
 available, albeit now in two parts:
 &amp;lt;div&amp;gt;
-&amp;lt;figure class=&amp;#34;z_image_right&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_right&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; /&gt;&amp;#34; width=&amp;#34;150px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; /&gt;&amp;#34; width=&amp;#34;150px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;/div&amp;gt;
 When we went to Java we couldn&amp;#39;t find a book that covered both the
 programming and the data structures but settled on this one: &lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; alt=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; title=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; alt=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; title=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Nowadays, particularly with data structures no longer being in issue
@@ -1439,7 +1561,8 @@ just &amp;#34;I like the book.&amp;#34;
       
       <guid>https://cestlaz.github.io/post/adapting-a-nifty-assignment/</guid>
       <description>&lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; alt=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; title=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; alt=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; title=&#34;http://nifty.stanford.edu/2019/popyack-nifty-post-it/samples/animation/Animated_325.gif&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The &lt;a href=&#34;http://nifty.stanford.edu/&#34;&gt;Nifty Assignments&lt;/a&gt; session at SGICSE is always a popular one.&lt;/p&gt;
@@ -1580,12 +1703,24 @@ Editors
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Emacs&lt;/li&gt;
-&lt;li&gt;Gedit&lt;/li&gt;
-&lt;li&gt;Vim&lt;/li&gt;
-&lt;li&gt;Sublime Text&lt;/li&gt;
-&lt;li&gt;Atom&lt;/li&gt;
-&lt;li&gt;Jedit&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emacs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gedit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sublime Text&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atom&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jedit&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1595,13 +1730,27 @@ IDES
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Eclipse&lt;/li&gt;
-&lt;li&gt;DrJava&lt;/li&gt;
-&lt;li&gt;Geany&lt;/li&gt;
-&lt;li&gt;BlueJ&lt;/li&gt;
-&lt;li&gt;IntelliJ&lt;/li&gt;
-&lt;li&gt;VSCode&lt;/li&gt;
-&lt;li&gt;JGrasp&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eclipse&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DrJava&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geany&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BlueJ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IntelliJ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VSCode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JGrasp&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1831,7 +1980,8 @@ I hadn&amp;#39;t heard of this one before but it looks like a contender. It
 has a  pretty clean interface and it worked out of the box. I
 installed it using the package manager.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Class browser on the right, files on the left and console (terminal),
@@ -1876,7 +2026,8 @@ VSCode
 This one shocked me - I actually found myself liking a Microsoft
 product. I guess this really isn&amp;#39;t your father&amp;#39;s Microsoft.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Much like Geany it has a clean interface and like Geany you don&amp;#39;t need
@@ -1897,7 +2048,8 @@ JGrasp
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 JGrasp feels much the same as the other contenders - Geany and VSCode
@@ -2299,7 +2451,9 @@ a specific language such as Lisp for AI you&amp;#39;d probably use
 Pascal. I learned C early on in my college career and also took
 classes that used Ada, and 8088 Assembly. I mostly tried to stick with&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;It was the hot language at the time and all the cool kids were&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was the hot language at the time and all the cool kids were&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;using it. Some kids continued to use Pascal but it was universally
 derided. It wasn&amp;#39;t a &amp;#34;real language.&amp;#34; Nobody used it for anything
@@ -2339,7 +2493,8 @@ ticket printing system for them. It was in BASIC and ran on a little
 PC running CP/M with a big line printer. Best I could figure they were
 still using the same system in 2012.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/ticket.jpg&#34; width=&#34;250&#34; height=&#34;250px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/ticket.jpg&#34; width=&#34;250&#34; height=&#34;250px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -2575,7 +2730,7 @@ At the core of the problem you have to maintain a list of items
 inserting and deleting items at assorted locations. I threw together
 this solution:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;num_players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;431&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 9&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;num_players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;431&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 9&lt;/span&gt;
 last_score &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;70950&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 255&lt;/span&gt;
 players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(num_players&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)]
 
@@ -2597,7 +2752,7 @@ index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34
         &lt;span style=&#34;color:#66d9ef&#34;&gt;del&lt;/span&gt; board[index]
     player&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(player&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;num_players
     next_marble &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; next_marble &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-print(max(players))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(max(players))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 It worked and I got my first star. This unlocked part 2 which changed
 the number of marbles in the game from 70950 to 70950&amp;lt;b&amp;gt;00&amp;lt;/b&amp;gt;. This
@@ -2765,17 +2920,24 @@ dinner the teachers talked shop. In addition to getting to know each
 other, their programs, and their classes we also asked them to
 consider these three items:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;What are things that cause you difficulty that you&amp;#39;d like us to
-cover?&lt;/li&gt;
-&lt;li&gt;What are things you wish you knew about that you&amp;#39;d like us to
-cover?&lt;/li&gt;
-&lt;li&gt;What are things you&amp;#39;re comfortable with that you&amp;#39;d be willing to
-share with the group?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things that cause you difficulty that you&amp;#39;d like us to
+cover?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things you wish you knew about that you&amp;#39;d like us to
+cover?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things you&amp;#39;re comfortable with that you&amp;#39;d be willing to
+share with the group?&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;After dinner we circled up and JonAlf presented the way he set up
 student note taking in his class.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/pd-apcs-a.jpg&#34; width=&#34;500&#34; height=&#34;500px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/pd-apcs-a.jpg&#34; width=&#34;500&#34; height=&#34;500px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -2842,7 +3004,7 @@ about &lt;a href=&#34;https://cestlaz.github.io/oldblog/2013-03-23-who_won_the_e
 up a sorting type algorithm (excuse any little Java errors, I&amp;#39;ve been
 teaching this in C++ for the past 3 years):&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sort&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sort&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
       ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; min_index&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
@@ -2862,7 +3024,7 @@ write and understand the algorithm&lt;/p&gt;
 From here it&amp;#39;s a simple matter to code this algorithm in place -
 swapping the next smallest item each time. This time coded with an array::&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; min_index&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; min_index&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
       min_index &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; findMinIndex&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;a&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// find min excluding what&amp;#39;s sorted so far
@@ -2936,15 +3098,31 @@ lesson but more often than not I&amp;#39;ll just go in with a bullet list.&lt;/p
 &lt;p&gt;
 Here&amp;#39;s my plan for a recent lesson:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Go over cipher soution&lt;/li&gt;
-&lt;li&gt;How to we solve if already ciphered?&lt;/li&gt;
-&lt;li&gt;Rotate 26 times.&lt;/li&gt;
-&lt;li&gt;What about using stats&lt;/li&gt;
-&lt;li&gt;Frequency of letters - look up&lt;/li&gt;
-&lt;li&gt;Find freq of letter in string then use distance formula against
-model&lt;/li&gt;
-&lt;li&gt;Get frequencies from a book&lt;/li&gt;
-&lt;li&gt;try it in another language&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go over cipher soution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to we solve if already ciphered?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rotate 26 times.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What about using stats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frequency of letters - look up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find freq of letter in string then use distance formula against
+model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get frequencies from a book&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;try it in another language&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We didn&amp;#39;t get to the last two bullet items so that&amp;#39;s where we&amp;#39;ll start
 off on Monday. This plan was all I needed but it in no way tells the
@@ -3028,8 +3206,12 @@ Parts 1 and 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3068,15 +3250,27 @@ mention the query terms. Then you look for dates. Dates can be even
 easier to search for than names. Particularly if your students know
 regular expressions. Dates could be things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;two digits / two digits / two digits&lt;/li&gt;
-&lt;li&gt;Month name number, number&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;two digits / two digits / two digits&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Month name number, number&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;or in regular expressions, something like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[0-9]{2}/[0-9]{2}/[0-9]{2}/&lt;/li&gt;
-&lt;li&gt;(Jan|Feb|Mar…)[0-9]{2}, {0-9]{4}}&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[0-9]{2}/[0-9]{2}/[0-9]{2}/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Jan|Feb|Mar…)[0-9]{2}, {0-9]{4}}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Just as with &amp;#34;who&amp;#34; queries there are issues to deal with - searching
 for &amp;#34;when did Elvis die&amp;#34; might give you when Elvis was born instead
@@ -3106,8 +3300,12 @@ Parts 1 and 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3127,8 +3325,12 @@ Parts 1 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3148,10 +3350,16 @@ Since we&amp;#39;re doing a &amp;#34;who&amp;#34; query  we want to find all the
 the documents. This leads to a class discussion on how to find names
 in a large string. They&amp;#39;ll come up with rules like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;two adjacent words each with a capital first letter.&lt;/li&gt;
-&lt;li&gt;an honorific (Mr, Ms, etc.) followed by a capitalized word&lt;/li&gt;
-&lt;li&gt;A word that matches a name from a &amp;#34;popular name&amp;#34; list followed by a
-capitalized word.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;two adjacent words each with a capital first letter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;an honorific (Mr, Ms, etc.) followed by a capitalized word&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A word that matches a name from a &amp;#34;popular name&amp;#34; list followed by a
+capitalized word.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The class might come up with different or additional rules. Actually
 writing the code to pull out the names is an nice little assignment
@@ -3181,8 +3389,12 @@ Parts 1 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-3/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3202,8 +3414,12 @@ Parts 2 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I wasn&amp;#39;t going to teach this lesson today. I was planning on starting
 a multi day project starting with an exercise in specification writing
@@ -3301,8 +3517,12 @@ Parts 2 and 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[[/post/who-played-spiderman-2/][Part 2]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman-2/&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3317,8 +3537,12 @@ Parts 2 and 3
       <guid>https://cestlaz.github.io/post/globals-breaks-and-returns/</guid>
       <description>
 &lt;ul&gt;
-&lt;li&gt;Never use global variables&lt;/li&gt;
-&lt;li&gt;Never break out of a loop&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Never use global variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Never break out of a loop&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are two &amp;#34;best practices&amp;#34; that are frequently touted in early CS
 classes both at the high school and college level.&lt;/p&gt;
@@ -3335,7 +3559,7 @@ The discussion on the APCS-A group started with a discussion of this
 code and its &lt;code&gt;break&lt;/code&gt; statement as opposed to having the loop&amp;#39;s exit
 condition in the boolean up top:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
       &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
           &lt;span style=&#34;color:#75715e&#34;&gt;// do stuff
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;condition&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
@@ -3351,7 +3575,7 @@ Actually, these aren&amp;#39;t even universally best practices.&lt;/p&gt;
 Looking at the while loop, You might have event driven code with a
 while loop acting as a dispatcher:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
       &lt;span style=&#34;color:#75715e&#34;&gt;// do stuff
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;some event&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
@@ -3584,9 +3808,15 @@ interwebs.&lt;/p&gt;
 &lt;p&gt;
 Some of the questions and concerns that I&amp;#39;ve seen recently include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;What is CT??&lt;/li&gt;
-&lt;li&gt;Will rich schools get CS and poor only CT?&lt;/li&gt;
-&lt;li&gt;Will rich schools get CS and poor on coding?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is CT??&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Will rich schools get CS and poor only CT?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Will rich schools get CS and poor on coding?&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The first question is a big one and as a community we haven&amp;#39;t answered
 it yet. I think about it as including things like algorithmic

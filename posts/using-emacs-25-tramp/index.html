@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646822879" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646915201" />
 
 
 
@@ -24,10 +24,9 @@
  To edit a file on a machine www.cstuy.org I would first find-file using C-c C-f and then for the file name to open:
 /ssh:www.cstuy.org:/home/zamansky/sc/testfile   this would open the file testfile in the absolute directory /home/zamansky/sc. If my username on the remote machine is different:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-25-tramp/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-25-tramp/" />
 <meta property="article:published_time" content="2016-12-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-12-26T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 25 - Tramp"/>
@@ -91,24 +90,24 @@ Tramp mode allows you to edit remote files using your local emacs. I usually do 
 To edit a file on a machine <strong><strong>www.cstuy.org</strong></strong> I would first
 <strong><strong>find-file</strong></strong> using <strong><strong>C-c C-f</strong></strong> and then for the file name to open:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:www.cstuy.org:/home/zamansky/sc/testfile</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:www.cstuy.org:/home/zamansky/sc/testfile</code></pre></div></code></pre></div>
 </div>
 <p>
 this would open the file <strong><strong>testfile</strong></strong> in the absolute directory
 <strong><strong>/home/zamansky/sc</strong></strong>. If my username on the remote machine is
 different:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:/home/zamansky/sc/testfile</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:/home/zamansky/sc/testfile</code></pre></div></code></pre></div>
 </div>
 <p>
 And I can also work relative to my home directory:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:sc/testfile</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:sc/testfile</code></pre></div></code></pre></div>
 </div>
 <p>
 If I just hit enter after the machine name and <strong><strong>:</strong></strong> -</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">/ssh:username@www.cstuy.org:</code></pre></div></code></pre></div>
 </div>
 <p>
 I end up in a dired buffer on the remote machine.</p>
@@ -123,14 +122,14 @@ configuration to edit a file on a remote machine.</p>
 <p>
 You can also use tramp to edit local files as root using sudo:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">sudo::/tmp/sc/rootfile</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">sudo::/tmp/sc/rootfile</code></pre></div></code></pre></div>
 </div>
 <p>
 Note the double colon.</p>
 <p>
 Finally, you can do the double-whammy - remote root editing:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile</code></pre></div></code></pre></div>
 </div>
 <p>If you use zsh and any of this freezes, just do a search on &#34;zsh
 tramp&#34; and the top couple of hits will tell you what to add to your
@@ -148,10 +147,18 @@ a directory tree from a remote machine and use it on my local machine.</p>
 <p>
 Relevant links:</p>
 <ul>
-<li>Video series overview page:</li>
-<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
-<li>Code:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
+<li>
+<p>Video series overview page:</p>
+</li>
+<li>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+</li>
+<li>
+<p>Code:</p>
+</li>
+<li>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+</li>
 </ul>
 
         </div>

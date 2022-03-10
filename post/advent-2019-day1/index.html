@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646822879" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1646915200" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="Like most programming challenges, Advent of Code ramps out from easier, more accessible problems to harder, more complex ones. As such, a number of the early challenges are great problems for early CS students.  I thought that while I watched my NY Giants play valiantly in their attempt to get a high draft pick I&#39;d talk about today&#39;s challenge from a teacher&#39;s point of view.
  The summary of part one is that you have a list of inputs (masses of components) and for each one you have to perform a calculation (how much fuel is needed)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day1/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2019-day1/" />
 <meta property="article:published_time" content="2019-12-01T14:23:35-04:00" />
 <meta property="article:modified_time" content="2019-12-01T14:23:35-04:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advent of Code 2019 Day 1"/>
@@ -96,16 +95,16 @@ much fuel is needed). The answer will be the sum of the fuels.</p>
 The most challenging part of this for a beginner might be reading in
 the data but that&#39;s not too much of a challenge:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()</code></pre></div></p>
 <p>
 Now we can calculate part1:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
 
   sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
   <span style="color:#66d9ef">for</span> mass <span style="color:#f92672">in</span> data:
       sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-  print(sum)</code></pre></div></p>
+  <span style="color:#66d9ef">print</span>(sum)</code></pre></div></p>
 <p>
 Part 2 adds a twist. Now, you have to also consider the fuel needed
 for the fuel you&#39;ve added. Basically, you have to calculate how much
@@ -118,7 +117,7 @@ into our part1 solution but if we had factored out the original fuel
 calculation we could probably reused it and maybe more of our
 solution:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
       <span style="color:#66d9ef">return</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
@@ -126,11 +125,11 @@ solution:</p>
   sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
   <span style="color:#66d9ef">for</span> mass <span style="color:#f92672">in</span> data:
       sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> calc_fuel(mass)
-  print(sum)</code></pre></div></p>
+  <span style="color:#66d9ef">print</span>(sum)</code></pre></div></p>
 <p>
 Now we can just add an inner loop that repeatedly adds the fuel costs.</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
       <span style="color:#66d9ef">return</span> int(mass)<span style="color:#f92672">//</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
@@ -141,7 +140,7 @@ Now we can just add an inner loop that repeatedly adds the fuel costs.</p>
       <span style="color:#66d9ef">while</span> fuel <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
           sum <span style="color:#f92672">=</span> sum <span style="color:#f92672">+</span> fuel
           fuel <span style="color:#f92672">=</span>  calc_fuel(fuel)
-  print(sum)</code></pre></div></p>
+  <span style="color:#66d9ef">print</span>(sum)</code></pre></div></p>
 <p>
 More &#34;teachable moments.&#34; We have to change up variables in our fuel
 calculations (lines 8 and 11) and for a beginner, the loop within a
@@ -151,7 +150,7 @@ something that <strong>is</strong> more complex. It&#39;s also good nested loop 
 For more advanced students, if they&#39;re familiar with list
 comprehensions you can really clean up part 1:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  data <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;day01.dat&#34;</span>)<span style="color:#f92672">.</span>readlines()
   data <span style="color:#f92672">=</span> [int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data] <span style="color:#75715e"># convert to ints before starting</span>
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_fuel</span>(mass):
@@ -164,7 +163,7 @@ but I think part 2 either stay&#39;s more or less as is.</p>
 <p>
 Personally, I wrote my solutions in Clojure:</p>
 <div class="src src-clojure">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">ns </span>day01
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">ns </span>day01
   (<span style="color:#e6db74">:require</span> [clojure.string <span style="color:#e6db74">:as</span> string]
             [utils <span style="color:#e6db74">:as</span> u]))
 

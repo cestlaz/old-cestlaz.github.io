@@ -175,28 +175,36 @@ underrepresented racial and ethnic groups and young women while
 teaching the technical building blocks and preparing students for the
 AP® exam. Code.org’s CSA curriculum:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Incorporates culturally responsive and equitable teaching strategies
+&lt;li&gt;
+&lt;p&gt;Incorporates culturally responsive and equitable teaching strategies
 and frameworks by considering cultural references and learning styles
 throughout the curriculum — from the vocabulary, to the visuals, to
-the sequence of concepts taught.&lt;/li&gt;
-&lt;li&gt;Acknowledges diversity of experiences and interests. Students
+the sequence of concepts taught.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Acknowledges diversity of experiences and interests. Students
 investigate real-world problems during class activities and make
 connections to their own work. Projects are carefully designed to be
 instructive yet open-ended, enabling students to demonstrate mastery
 of concepts and engage in their passions without making assumptions
-about their cultural background or life experiences.&lt;/li&gt;
-&lt;li&gt;Brings to life a “Software Engineering for All” narrative. This
+about their cultural background or life experiences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brings to life a “Software Engineering for All” narrative. This
 narrative helps students envision themselves as software engineers,
 and the curriculum uses videos featuring presenters from different
 backgrounds who work in technology to help students visualize
-opportunities for their own futures.&lt;/li&gt;
-&lt;li&gt;Helps students develop and model valuable, real-world career
+opportunities for their own futures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Helps students develop and model valuable, real-world career
 skills. In addition to skills like tracing code segments and
 documenting code, Code.org’s approach to CSA incorporates
 collaboration and career skills that go beyond the AP® CSA course
 requirements. For example, our curriculum includes a student-friendly
 code review tool, which is a common quality assurance practice in the
-technology industry.&lt;/li&gt;
+technology industry.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -401,13 +409,25 @@ machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
 library like OpenGL. The course basically started with the ability to
 draw a point and then went though: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;lines&lt;/li&gt;
-&lt;li&gt;lines in 3D and 3D transformations&lt;/li&gt;
-&lt;li&gt;polygons (triangles)&lt;/li&gt;
-&lt;li&gt;A motion description language interpreter (stack and tree based
-shape hierarchies)&lt;/li&gt;
-&lt;li&gt;lighting and shading&lt;/li&gt;
-&lt;li&gt;ray tracing&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines in 3D and 3D transformations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polygons (triangles)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A motion description language interpreter (stack and tree based
+shape hierarchies)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lighting and shading&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ray tracing&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The motion description language piece had an entire unit that was
 really an intro to compilers / interpreters. &lt;/p&gt;
@@ -680,11 +700,21 @@ One of the requirements is that we have 12 graduate CS
 credits in our program and that in those courses these five major
 areas:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Algorithms and programming&lt;/li&gt;
-&lt;li&gt;Computing systems&lt;/li&gt;
-&lt;li&gt;Data and analysis&lt;/li&gt;
-&lt;li&gt;Impacts of computing&lt;/li&gt;
-&lt;li&gt;Networks and the internet&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithms and programming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computing systems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data and analysis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Impacts of computing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Networks and the internet&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;as described in the &lt;a href=&#34;https://k12cs.org/&#34;&gt;K12 CS Framework&lt;/a&gt;. Even though many of the items
 described in the framework fit better in an education side course NY
@@ -717,11 +747,21 @@ on the one hand, it&amp;#39;s a lesson about a recursive solution to a problem
 but on the other hand there&amp;#39;s all sorts of other richness to the
 lesson. We talk about&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Proof&lt;/li&gt;
-&lt;li&gt;Run time&lt;/li&gt;
-&lt;li&gt;Hard problems&lt;/li&gt;
-&lt;li&gt;Moores law and the limits f computing power&lt;/li&gt;
-&lt;li&gt;Alternate approaches to problems&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Proof&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hard problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moores law and the limits f computing power&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternate approaches to problems&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;None of which is in a typical Towers of Hanoi lesson plan nor in most
 text books yet to me they&amp;#39;re the most important, interesting parts of
@@ -839,11 +879,19 @@ framework and the first few lessons in detail.&lt;/p&gt;
 &lt;p&gt;
 Developing the framework means:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;understanding enough of the content to teach the course. &lt;/li&gt;
-&lt;li&gt;deciding on how you will teach or run the course&lt;/li&gt;
-&lt;li&gt;developing rough outlines for units, possible assignments etc.&lt;/li&gt;
-&lt;li&gt;finding and understanding resources like possible texts and tools
-and also things like data sources mentioned in my previous post.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;understanding enough of the content to teach the course. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;deciding on how you will teach or run the course&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;developing rough outlines for units, possible assignments etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;finding and understanding resources like possible texts and tools
+and also things like data sources mentioned in my previous post.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And of course there&amp;#39;s more. I&amp;#39;ll also work out the first unit in day
 by day detail. &lt;/p&gt;
@@ -1146,17 +1194,33 @@ really a CS activity.&lt;/p&gt;
 Then there was &lt;a href=&#34;http://blueprint.cs4all.nyc/resources/15/&#34;&gt;this one&lt;/a&gt;. No video here but how we structure a CS
 lesson. We have this outline:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Warm-up&lt;/li&gt;
-&lt;li&gt;Mini lesson&lt;/li&gt;
-&lt;li&gt;Independent work time&lt;/li&gt;
-&lt;li&gt;Share session&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Warm-up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mini lesson&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Independent work time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Share session&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Or, as we used to say back in the stone age:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Do Now&lt;/li&gt;
-&lt;li&gt;Instructional activity&lt;/li&gt;
-&lt;li&gt;practice&lt;/li&gt;
-&lt;li&gt;summary&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do Now&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instructional activity&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;practice&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;summary&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nothing new and nothing CS here. I used that model when I taught math
 but deviated from it more and more as I developed my CS teaching
@@ -1221,12 +1285,18 @@ I&amp;#39;ve observed and been involved in cybersecurity discussions  with CS
 teachers. The discussion goes something like this:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Well, we do memory allocation in course XYZ so we can give a
-homework assignment there.&lt;/li&gt;
-&lt;li&gt;We can rewrite the story (theme) for the assignment in our data
-structures class.&lt;/li&gt;
-&lt;li&gt;We already do a crypto assignment in algorithms so we&amp;#39;re already
-doing it.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Well, we do memory allocation in course XYZ so we can give a
+homework assignment there.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We can rewrite the story (theme) for the assignment in our data
+structures class.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We already do a crypto assignment in algorithms so we&amp;#39;re already
+doing it.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -1403,7 +1473,7 @@ We can tell kids &amp;#34;everything&amp;#39;s a function.&amp;#34; While techni
 true, and I tell my students that it isn&amp;#39;t, it&amp;#39;s close enough for our
 purposes. Everything&amp;#39;s a function and the way we write a function is:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; a b &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt; a b &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Apply function &lt;strong&gt;&lt;strong&gt;f&lt;/strong&gt;&lt;/strong&gt; on arguments &lt;strong&gt;&lt;strong&gt;b c …&lt;/strong&gt;&lt;/strong&gt;. So we have &lt;code&gt;(+ 2 3)&lt;/code&gt; to
@@ -1411,12 +1481,12 @@ add 2 and 3, &lt;code&gt;(and a b)&lt;/code&gt; for logical and &lt;code&gt;(= 3
 is equal to 4, etc. We also have the same basic notation for things
 like conditionals. In java, we might write:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 In scheme, it would be:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;gt; a &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;gt; a &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
 &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
 &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1425,7 +1495,7 @@ Even though we&amp;#39;re fudging the rules, we can lay out a handful of rules
 for the kids such as lambda and define follow a similar form to create and
 name functions:&lt;/p&gt;
 &lt;div class=&#34;src src-scheme&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;add2 (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; b) (+ a b)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;add2 (&lt;span style=&#34;color:#66d9ef&#34;&gt;lambda &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; b) (+ a b)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 where &lt;code&gt;(lambda (a b) (+ a b))&lt;/code&gt; returns a function that adds &lt;strong&gt;&lt;strong&gt;a&lt;/strong&gt;&lt;/strong&gt; and
@@ -1505,18 +1575,26 @@ Let&amp;#39;s dive in.&lt;/p&gt;
 &lt;p&gt;
 Why are some of the pluses for Javascript as an intro language.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Ubiquity and availability:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubiquity and availability:&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you have a browser, you have Javascript - it&amp;#39;s also available
 through online IDEs and online lightweight sites like &lt;a href=&#34;https://jsfiddle.net/&#34;&gt;JSFiddle&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Interactivity:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interactivity:&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can tweak websites almost live, use the HTML5 canvas pretty
 interactively and mode&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It&amp;#39;s mainstream&lt;/li&gt;
-&lt;li&gt;It&amp;#39;s quick to get up and running&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s mainstream&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s quick to get up and running&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This is all true, but there are also downsides.&lt;/p&gt;
 &lt;p&gt;
@@ -1543,7 +1621,8 @@ which is pretty conventional, but then there&amp;#39;s also &lt;code&gt;===&lt;/
 potentially confusing scoping issues and also some other real
 weirdness:&lt;/p&gt;
 &lt;div class=&#34;src src-js&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 For more, check out the this &lt;a href=&#34;https://www.destroyallsoftware.com/talks/wat&#34;&gt;video&lt;/a&gt;. Start watching at about 1:20 -
@@ -1675,11 +1754,21 @@ make curricular decisions.&lt;/p&gt;
 &lt;p&gt;
 The lesson plan form was pretty traditional and pretty formulaic:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;warm up&lt;/li&gt;
-&lt;li&gt;hook&lt;/li&gt;
-&lt;li&gt;instruction&lt;/li&gt;
-&lt;li&gt;practice&lt;/li&gt;
-&lt;li&gt;Assessment&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;warm up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;instruction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;practice&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assessment&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Very similar to what I was shown back in the day during my two day
 &amp;#34;teaching boot camp&amp;#34; that kicked off my career [fn:: full disclosure: I
