@@ -6,10 +6,86 @@
     <description>C&#39;est la Z (SIGCSE)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 07:28:46 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 09 Mar 2022 14:26:26 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/sigcse/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>SIGCSE 2022 AP or not AP</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-or-not-ap/</link>
+      <pubDate>Wed, 09 Mar 2022 14:26:26 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-or-not-ap/</guid>
+      <description>&lt;p&gt;
+While my series on APCS-A language choice is done, I wanted to write
+this brief addendum.&lt;/p&gt;
+&lt;p&gt;
+While reading comments over on Facebook under my APCS posts one caught
+my eye. There was a comment saying they wished the College Board would
+create a data science course. I responded, why not create one
+yourself. The response, shared I&amp;#39;m sure by many is that if a course
+doesn&amp;#39;t have an AP designation students won&amp;#39;t sign up for it.&lt;/p&gt;
+&lt;p&gt;
+This bothered me.&lt;/p&gt;
+&lt;p&gt;
+Now, there are two basic reasons why one can&amp;#39;t create their own
+course. The first is that they don&amp;#39;t have the background to do
+so. Unfortunately, this is frequently the current state of affairs in
+K12 CS. We&amp;#39;re so new and as I mentioned in the earlier post, so many
+of our teachers have been thrown in the deep end and are just learning
+the CS that they need to teach. We can&amp;#39;t expect these teachers to also
+generate new curriculum. This is understandable but unfortunately it also
+led us to where we are today with curriculum being driven largely by
+private parties, most notably the College Board but also other
+independent providers.&lt;/p&gt;
+&lt;p&gt;
+As I said, this is understandable and doesn&amp;#39;t really bother me. It&amp;#39;s
+the other reason that bothers me. It&amp;#39;s that students won&amp;#39;t take a
+class without AP designation or the related, my school won&amp;#39;t let me
+give a class more weight unless it&amp;#39;s AP (even though it may very well
+be more rigorous).&lt;/p&gt;
+&lt;p&gt;
+Over the past decade or so, the College Board has managed to bamboozle
+the public so that they unthinkingly equate AP for good. The truth is,
+some AP classes are good, some are bad and usually it&amp;#39;s the teacher
+that makes it so. The College Board curriculum can nudge the class
+towards better or worse but it&amp;#39;s the teacher that ultimately makes the
+grade. What&amp;#39;s more, in cases like APCS-P the class isn&amp;#39;t even college
+level. I&amp;#39;ve seen APCS-P implementations that were good High School
+courses but I&amp;#39;ve also seen students come out of APCS-P implementations
+which were worse than nothing at all. Then you some of the AP History
+classes which can be passed with drill and kill. At Stuy, for one of
+them at one point you had two possible teachers. One that would
+stretch you and make you think but wouldn&amp;#39;t prepare you for the exam
+at all, that was on you. The other that would set you up for a 5 but
+you wouldn&amp;#39;t really learn that much, mostly memorization. Side note,
+those two teachers are likely long gone so I don&amp;#39;t mean to imply this
+dichotomy exists today.&lt;/p&gt;
+&lt;p&gt;
+Basically, we&amp;#39;ve given the College Board far too much influence and
+control over our High School curricula.&lt;/p&gt;
+&lt;p&gt;
+On the one hand we keep hearing that students should take more and
+more AP classes and on the other, colleges seem to be giving less and
+less credit.&lt;/p&gt;
+&lt;p&gt;
+The truth is, if a student is merely taking a class because it&amp;#39;s AP
+then maybe they shouldn&amp;#39;t be taking it. I know that a student might
+take a class for the wrong reasons and end up loving it and I also get
+it that at the K12 level we have a number of required classes but the
+bar for &amp;#34;good, rigorous course&amp;#34; shouldn&amp;#39;t be AP.&lt;/p&gt;
+&lt;p&gt;
+Over the past couple of years I&amp;#39;ve noticed a bit of a pushback against
+the College Board. The SAT is being questioned so maybe AP is next. We
+can have great classes taught by great teachers developed either in
+house or by engaging a variety of resources. Nothing wrong with the
+College board being one of them but right now their the gorilla in the
+room. Maybe one day we&amp;#39;ll get back to actually trusting teachers and
+letting them drive curriculum  and instruction but I&amp;#39;m not holding my
+breath. &lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE 2022 APCS-A Costs of changing the language</title>
