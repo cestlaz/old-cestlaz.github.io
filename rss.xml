@@ -88,6 +88,245 @@ breath. &lt;/p&gt;
     </item>
     
     <item>
+      <title>SIGCSE 2022 APCS - Alternate Languages</title>
+      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-alt-langs/</link>
+      <pubDate>Wed, 09 Mar 2022 11:12:13 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-alt-langs/</guid>
+      <description>
+&lt;p&gt;
+I think I&amp;#39;ve hit on the big points on APCS-A language but a couple
+more remain. This time, let&amp;#39;s look at alternative languages.&lt;/p&gt;
+&lt;p&gt;
+When APCS started in 1984, Pascal probably made sense - it was the
+primary learning language at the time. It wasn&amp;#39;t really used in
+industry but it was the language you cut your teeth on. A few years
+later when I went from college to Goldman Sacks I found very few
+companies using Pascal. C was big and there were more than a few
+opportunities using PL/I and of course, lots of COBOL in the business
+world but no Pascal to be found.&lt;/p&gt;
+&lt;p&gt;
+Of course there&amp;#39;s nothing wrong with that. A lot of people claim that
+the language for APCS-A or college CS1 &lt;strong&gt;has&lt;/strong&gt; to be a mainstream
+language used in industry. It really doesn&amp;#39;t. If someone is going to
+continue through a multi-year sequence of classes for CS or a related
+field it&amp;#39;s safe to say they will be exposed to many languages and
+tools and the one you start with isn&amp;#39;t necessarily the one you end
+with. Even if you insist on using an industry language, there are many
+to choose from. Python is big in a number of areas but it isn&amp;#39;t the
+only game in town. Java and C++ are still heavy hitters and will be
+for a long time and many other languages have enough traction to be
+considered commonly used in industry.&lt;/p&gt;
+&lt;p&gt;
+I thought here we could do some quick hits on some possible alternate
+languages.&lt;/p&gt;
+&lt;p&gt;
+For all of these, I&amp;#39;ll be talking about the language as of the last
+time I used it so in some cases, I could be &lt;strong&gt;years&lt;/strong&gt; out of date but I
+think you&amp;#39;ll get the idea as to what I&amp;#39;m driving at.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Racket (nee Scheme).
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Really quick here. I designed Scheme into my CS0 course at Stuy. I
+think it works very well in that context. That said, it would be a
+tough sell today. Racket/Scheme are not widely used in industry even
+though you will find LISP variants here and there.&lt;/p&gt;
+&lt;p&gt;
+I like it because the syntax is super simple. Just a handful of rules
+and that&amp;#39;s it. I also liked that it&amp;#39;s syntax was different and new -
+it leveled the playing field between people who thought they knew
+something coming in and the rest. On the other hand it is esoteric and
+some find it scary. Back when I created the course with it, MIT was
+still using Scheme for their CS1 so that made it an easier sell as did
+my reputation in the school.&lt;/p&gt;
+&lt;p&gt;
+That said, I don&amp;#39;t think I could start a new program easily with
+Racket and the only place that I know that uses it big time is
+Bootstrap World, a program that I&amp;#39;ve mentioned many times before and
+like very much. It&amp;#39;s not that it&amp;#39;s bad - you can develop wonderful
+courses that use it but rather, there are alternatives that would be
+easier to sell to students, parents, and communities.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Javascript
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+There&amp;#39;s a vocal contingent for JS as a language in both CS1 and CS0. I
+like JS a lot. In fact I was using it as much as any other language
+until I discovered Clojure and Clojurescript which are now my primary
+personal languages.&lt;/p&gt;
+&lt;p&gt;
+JS fans point out that it&amp;#39;s ubiquitous. If you have a browser, you
+have a JS interpreter. It&amp;#39;s also the front end language of the web
+(although you can transpile other languages like Clojurescript to JS)
+and via Node you can run it server side as well.&lt;/p&gt;
+&lt;p&gt;
+Although I love JS, I disagree with this contingent. First and
+foremost, JS has a number of, well, let&amp;#39;s say, issues. If you haven&amp;#39;t
+seen this video, take a few minutes:
+&lt;a href=&#34;https://www.destroyallsoftware.com/talks/wat&#34;&gt;&lt;a href=&#34;https://www.destroyallsoftware.com/talks/wat&#34;&gt;https://www.destroyallsoftware.com/talks/wat&lt;/a&gt;&lt;/a&gt;.  The JS part starts at
+about 1:20 in. JS has also had issues with types. Now admitedly some
+of these things have been at least partly addressed like using &lt;code&gt;val&lt;/code&gt;
+and &lt;code&gt;var&lt;/code&gt; but I don&amp;#39;t think this is strictly enforced which is
+problematic in a learning language.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve also found the tooling lacking. If you&amp;#39;re doing front end work
+and there&amp;#39;s a problem with your code, if you&amp;#39;re lucky you&amp;#39;ll get some
+feedback but sometimes things just won&amp;#39;t run and won&amp;#39;t get a clue.&lt;/p&gt;
+&lt;p&gt;
+Languages like Typescript could address some of these issues but I&amp;#39;m
+not familiar enough with Typescript to say.&lt;/p&gt;
+&lt;p&gt;
+A final issue wiht JS is the tooling. Sure, you can just inject some
+code in a web page but doing the real deal requires diving into a
+crazy complex ecosystem. Grunt, Gulp, Webpack, Parcel, Rollup, Yeoman and
+these are just the ones I can come up with off the top of my head and
+none of them are trivial to know or to use. Yes, you can kindof just
+take a template and use it but to really understand what&amp;#39;s going on?
+Not so much.&lt;/p&gt;
+&lt;p&gt;
+So, I&amp;#39;ll take a pass on JS as a CS0 or CS1 language. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Ada
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+This is the language that got me thinking about this post. Adacore has
+been at SIGCSE every time I&amp;#39;ve attended and they push Ada as a
+language. I stopped by to chat with them. Mostly because one of the
+Adacore founders, Robert Dewar, who passed away a few years ago, was a
+big time mentor to me. I just wanted to chat with the people in the
+booth just really to say hi.&lt;/p&gt;
+&lt;p&gt;
+I hadn&amp;#39;t used Ada in decades and probably won&amp;#39;t in the near future but
+the Ada I remember could be a very nice language for a CS1 class. &lt;/p&gt;
+&lt;p&gt;
+Ada&amp;#39;s industrial strength but I seem to recall required less magic to
+get started than Java. It had all the typing you could want for people
+who think that&amp;#39;s important. I also like how it did objects back when I
+used it. Ada back then didn&amp;#39;t have inheritence but was what was called
+Object Typed as opposed to Object Oriented (I think). You could
+essentially use class type constructs for abstraction and to
+encapsulate state but it didn&amp;#39;t have inheritance. To me this is
+perfect. Inheritance is forced in CS1/CS2 and from what I&amp;#39;ve seen is
+really something for tool and library builders and not nearly as  much
+for most people doing day to day programming.&lt;/p&gt;
+&lt;p&gt;
+Ada&amp;#39;s also the first, and maybe only language that I was able to
+consistently write large complex programs and have them work the first
+time. Even with tons of dynamic memory management. This was due to the
+language specification and the compiler. &lt;/p&gt;
+&lt;p&gt;
+Are students going to use Ada in the real world? Perhaps though it&amp;#39;s
+far more likely that they&amp;#39;ll work in Java, C++, Python or JS but that
+doesn&amp;#39;t mean that Ada can&amp;#39;t be a great starting point in CS1 to learn
+important concepts and to develop good habits&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Go
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Next up, Go. One of the downsides of Go is it&amp;#39;s hard to search for
+unless you specify golang. Other than that, Ada got me thinking of Go
+since I think it shares some traits.&lt;/p&gt;
+&lt;p&gt;
+Go was created to address some of the perceived deficiencies in
+C/C++. A small language with a clean design that could still be used
+for low level tasks. I haven&amp;#39;t used it much, just some fiddling but I
+could see the appeal.&lt;/p&gt;
+&lt;p&gt;
+The language is small and relatively simple so it should be easy to
+learn. It also supports objects but no inheritance which is fine by
+me. Actually, the object model is pretty different from Java or C++
+and I like it a lot. Instead of declaring a Class with variables and
+methods you define a struct with variables and associate methods
+with it via interfaces.&lt;/p&gt;
+&lt;p&gt;
+Go also encourages consistent code. Python does this with
+indentation. Go does it with &lt;code&gt;gofmt&lt;/code&gt; a program that takes Go source
+code and formats it to the Go standard. Editors can hook into gofmt so
+as to call it whenever your program is  saved.&lt;/p&gt;
+&lt;p&gt;
+Go also has a nice model for concurrency but that probably won&amp;#39;t come
+up in a CS1 but then again, it&amp;#39;s so clean in Go, it might.&lt;/p&gt;
+&lt;p&gt;
+Two other features are a super fast compiler - yes this can make a
+difference and a great set of libraries. A friend of mine once
+described Go as a small, clean language with libraries designed by &amp;#34;a
+bunch of really smart programmers with good taste.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+I could think of far worse choices for a CS1 class.&lt;/p&gt;
+&lt;p&gt;
+Interestingly enough, Go was created to replace C/C++ but most of the
+adoption has come from the Python world. I personally know a number of
+software engineers who ported their products from Python to Go. Maybe
+Go could be a sensible alternative to Python as a Java replacement.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Misc Languages 
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+There are few more languages that I want to briefly mention.&lt;/p&gt;
+&lt;p&gt;
+Java not only provides the language but also the Java Virtual Machine
+and many languages run on the JVM. These include Scala, Kotlin,
+Clojure (my favorite), Groovy and others. I don&amp;#39;t see Clojure as a
+great CS1 choice in most cases and don&amp;#39;t know enough about the others
+to comment other than they all have some level of interoperability.&lt;/p&gt;
+&lt;p&gt;
+Then, you have languages like Haskel or OCAML but I&amp;#39;m just not going
+there.&lt;/p&gt;
+&lt;p&gt;
+Rust is another one to look at. It seems to have all the features but
+is a little more imposing to the beginner - at least that&amp;#39;s what I&amp;#39;m
+thinking from first glance but I want to dive in more sometime in the
+future. &lt;/p&gt;
+&lt;p&gt;
+Finally, a word on Ruby - the other language mentioned in the Wat
+video I linked above. Ruby came around a little after Python. Looking
+at both I decided I was a Python guy and never really pursued Ruby. It
+didn&amp;#39;t talk to me. Years later, Ruby on Rails hit and Ruby
+exploded. Ruby and Rails were HUGE and everywhere in the startup
+world. Bootcamps in fact started to appear left and right and all
+focused on Ruby on Rails.&lt;/p&gt;
+&lt;p&gt;
+A few years later, I started to hear left and right &amp;#34;why don&amp;#39;t you
+teach Ruby in high schools.&amp;#34; The answer was, of course &amp;#34;because in a
+few years, you&amp;#39;ll be asking why we don&amp;#39;t teach some new thing.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Now, a decade later, Ruby has fallen to the wayside and nobody&amp;#39;s
+demanding that we teach it in high schools.&lt;/p&gt;
+&lt;p&gt;
+Maybe that&amp;#39;s a cautionary tale. We shouldn&amp;#39;t be teaching something,
+particularly in high schol because it&amp;#39;s the hot language or it&amp;#39;s big
+in industry. We come back once again to what&amp;#39;s the goal of the
+course. What do the students need and what&amp;#39;s the best tool to
+accomplish that.&lt;/p&gt;
+&lt;p&gt;
+So, that&amp;#39;s it for this series. I&amp;#39;ll do one more adendum on AP vs non
+Ap but it&amp;#39;s been six posts in six days - that&amp;#39;s a lot for me. I
+hope it spurs some thought and good discussion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>SIGCSE 2022 APCS-A Costs of changing the language</title>
       <link>https://cestlaz.github.io/post/sigcse-2022-apcs-costs/</link>
       <pubDate>Tue, 08 Mar 2022 07:28:46 -0400</pubDate>
@@ -3780,78 +4019,6 @@ the student results are largely the same. There&amp;#39;s also nothing wrong
 with student projects that are 100% open ended. It&amp;#39;s all about the
 teacher having multiple tools and using them as appropriate for their
 students. &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Calling an audible</title>
-      <link>https://cestlaz.github.io/post/audible/</link>
-      <pubDate>Thu, 02 Sep 2021 13:48:09 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/audible/</guid>
-      <description>&lt;p&gt;
-Be ready to call an audible.&lt;/p&gt;
-&lt;p&gt;
-This was advice I got during my third year teaching. I had just
-transferred from Seward Park to Stuy and was being observed for the
-first time by my former teacher and now supervisor Richie
-Rothenberg. I forget exactly what the lesson was on - something with
-coordinate geometry I think. The lesson was okay but it wasn&amp;#39;t going
-over well with the class. I was teaching at too low a level for my
-audience. I could feel it as I was teaching but as I was pretty
-inexperienced I wasn&amp;#39;t confident in changing things up on the fly.&lt;/p&gt;
-&lt;p&gt;
-Afterwards, Richie and I debriefed. He said the lesson was
-satisfactory - the magic word you need on any observation but that it
-could have been much better. I had only been teaching at Stuy for a
-few weeks and even though I was a Stuy grad I hadn&amp;#39;t had time to get
-my head around where the students were at. Richie said that sometimes
-you just have to call an audible. For a young teacher, easier said
-than done. In addition to not having a great handle on my students yet
-I also wasn&amp;#39;t confident in flying without a net. &lt;/p&gt;
-&lt;p&gt;
-This is why it&amp;#39;s so important for teachers to really know their
-stuff - both the content and how to teach it. It&amp;#39;s why I&amp;#39;m concerned
-when I see so many leaders in CS education pushing scripted curricula
-and PD based training to fully &amp;#34;prepare&amp;#34; CS teachers in just a few PD
-sessions.&lt;/p&gt;
-&lt;p&gt;
-First time through, particularly when you&amp;#39;re voluntold to teach a new
-class you just want to survive. Follow that script, learn with your
-kids and get through. You&amp;#39;ll grow and the kids will be richer than had
-you not gone through the fire with them.&lt;/p&gt;
-&lt;p&gt;
-Two or three years down the road, however, if you&amp;#39;re still just
-following the script you&amp;#39;re doing your students a disservice.&lt;/p&gt;
-&lt;p&gt;
-Of course, having subject knowledge doesn&amp;#39;t mean you have all the
-answers but it lets you call that audible when a class needs something
-that is not in the lesson plan or lets you talk about multiple
-positions on subjects with no single best answer like coding style.&lt;/p&gt;
-&lt;p&gt;
-And then calling an audible isn&amp;#39;t always about making a lesson more
-advanced. It can also be about sensing what a class needs at that
-time. This is something I learned from Bruce Baskind at Seward
-Park. I&amp;#39;ve lost touch with Bruce but he was a mentor and a friend when
-I started this teaching thing and without the support I got from Bruce
-and a handful of others back at Seward, I wouldn&amp;#39;t have made it.&lt;/p&gt;
-&lt;p&gt;
-Sometimes, you&amp;#39;ve got to turn off the academics. A class might need a
-team building exercise or maybe just something fun. They might just
-need to turn off school for part or all of the period. Sure, you burn
-a lesson but sometimes that&amp;#39;s what the kids need and at the end of the
-semester, they&amp;#39;ll be further along for it. I&amp;#39;d sometimes take a block
-of class time and do Story Time - literally right out of grade
-school - usually something from &lt;a href=&#34;https://www.personal.psu.edu/faculty/k/u/kuc14/sunny/Children%20Literature/The%20stinky%20cheese%20man/stinky%20cheese%20man.pdf&#34;&gt;The Stinky Cheese Man&lt;/a&gt; like &amp;#34;The Really
-Ugly Duckling.&amp;#34; In some ways it&amp;#39;s related to the &lt;a href=&#34;https://www.youtube.com/playlist?list=PL9KxKa8NpFxJYgovyJhF4HZRsAqYKBLiG&#34;&gt;Halloween Stuff&lt;/a&gt; I
-used to do at Stuy. Those were preplanned but that was all about
-relationship building with the class - the non academic stuff that
-supports the academics the rest of the year.&lt;/p&gt;
-&lt;p&gt;
-As this post is beginning to wander I think I&amp;#39;ll stop.&lt;/p&gt;
-&lt;p&gt;
-Next up - a specific audible I called that, at least for one student,
-turned into a very memorable lesson.&lt;/p&gt;
 </description>
     </item>
     
