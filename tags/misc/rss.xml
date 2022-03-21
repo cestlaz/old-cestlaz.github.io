@@ -6,10 +6,137 @@
     <description>C&#39;est la Z (misc)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Mar 2022 20:07:45 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Mar 2022 13:38:49 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/misc/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>A Critical Mass Of CS Teachers</title>
+      <link>https://cestlaz.github.io/post/a-critical-mass-of-cs-teachers/</link>
+      <pubDate>Mon, 21 Mar 2022 13:38:49 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/a-critical-mass-of-cs-teachers/</guid>
+      <description>&lt;p&gt;
+A big difficulty with creating CS opportunities for all our students
+is the lack of CS teachers. New York City addressed this problem with
+their CS4All program - quick form PD to get teachers into CS
+classrooms in a hurry. One can debate if that was the best way to go
+but it enabled NYC to create a whole lot of CS classes in a very short
+period of time.&lt;/p&gt;
+&lt;p&gt;
+Of course, these teachers, by and large, only have that short form PD
+so I&amp;#39;d argue that this isn&amp;#39;t a long term solution. I mean, you
+wouldn&amp;#39;t want your entire language program taught by people who
+barely knew Spanish 1  or Math taught by teachers how don&amp;#39;t know
+beyond the basics of Algebra.&lt;/p&gt;
+&lt;p&gt;
+A number of institutions, including Hunter are working on rectifying
+this via our CS Education programs. Some programs are legit, and some
+practically as superficial as the short form PD but the legit ones are
+trying to address the challenge.&lt;/p&gt;
+&lt;p&gt;
+I want to talk about why Hunter&amp;#39;s Advanced Certificate program, a
+program, that I might add, is currently accepting applicants for this
+summer, is critical to the process.&lt;/p&gt;
+&lt;p&gt;
+Right now, you could place K12 CS teachers into one of the following
+buckets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;People with strong CS backgrounds. CS Majors or people with
+industry experience.&lt;/li&gt;
+&lt;li&gt;Hobbyists who learned some CS on their own and developed an
+interest or passion for the subject.&lt;/li&gt;
+&lt;li&gt;Volunteers who are game for the challenge who heard about CS4All
+and answered the call.&lt;/li&gt;
+&lt;li&gt;Teachers who were voluntold who are taking one for the team.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Most of the home-brew CS programs in the city started with teachers
+from the first two categories but currently the vast majority of
+teachers teaching CS are in the last two. Eventually, CS classes in
+NYC will all or mostly all be taught by qualified, certified CS teachers
+but how we get there will make a difference in terms of the community
+and culture we create.&lt;/p&gt;
+&lt;p&gt;
+Most of the approved certification programs in NY state award either a
+Bachelors degree or a Masters. That is, they&amp;#39;re designed for new
+teachers just entering the profession. At Hunter we run a Masters
+program. Our first cohort had 3 students, our second 6 and right now
+there are 3 applicants for our third cohort. I haven&amp;#39;t done any
+advertising or outreach but over time we&amp;#39;ll get more and more
+applicants. It will be a slow process but eventually we&amp;#39;ll have
+comparable numbers as for our math and science ed programs. I&amp;#39;d
+imagine that other programs across the state will have a similar
+growth curve. As these programs graduate teachers, the voluntolds and
+volunteers that aren&amp;#39;t up to speed will return to their other
+subjects. Some will continue to teach a section or two of CS which
+is fine provided that by then their base of knowledge of CS and CS
+pedagogy is well beyond the canned training that DOE currently
+provides.&lt;/p&gt;
+&lt;p&gt;
+While eventually this will normalize, there is a problem. We&amp;#39;re
+basically asking our new CS teachers to also be our master CS
+teachers, our CS teacher leaders. They&amp;#39;ll have deep CS knowledge and
+they&amp;#39;ll have studied the CS pedagogy so it&amp;#39;ll all be on them.&lt;/p&gt;
+&lt;p&gt;
+The trouble is that it&amp;#39;s hard enough surviving as a new
+teacher. Asking them to be the master teachers and the leaders at the
+same time is just not right.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s where my Advanced Certificate program at Hunter comes in. Right
+now, we&amp;#39;re the only such program in New York state. The program&amp;#39;s an
+18 credit masters level program that teaches the CS and the CS
+pedagogy but understands that the participants are already experienced
+teachers in some other subject area. It&amp;#39;s a program that takes an
+teacher who&amp;#39;s already experienced, albeit in another subject area and
+fills in the CS content and CS pedagogy gaps. &lt;/p&gt;
+&lt;p&gt;
+I mentioned earlier that I&amp;#39;ve done zero outreach for our masters
+program and that&amp;#39;s because all my outreach has been for the Advanced
+Cert. I think it&amp;#39;s vitally important that we  build a critical mass of
+highly qualified CS teachers as soon as possible. Taking current,
+experienced teachers and bringing them up to speed in CS and teaching
+CS is the way to do this. &lt;/p&gt;
+&lt;p&gt;
+Other subjects already have their teacher leaders. In most schools, at
+least in larger schools, there will be one or two &amp;#34;go to&amp;#34;
+teachers. The ones that know the subject matter more deeply and how to
+teach it, the ones who are up on the latest and greatest in the field
+and in teaching, the ones who attend the conferences and bring back
+best practices. I&amp;#39;m working to jump start that for New York City.&lt;/p&gt;
+&lt;p&gt;
+Fortunately, I&amp;#39;m not alone and our friends at &lt;a href=&#34;https://gothamgives.org/&#34;&gt;Gotham Gives&lt;/a&gt; and Google
+are supporting our program by providing scholarships to pay the
+tuition for qualified applicants.&lt;/p&gt;
+&lt;p&gt;
+Our first cohort graduated in May of 2021 and with that, New York City
+(and state) had it&amp;#39;s first 21 certified computer science
+teacher. They&amp;#39;ll be joined by 23 more two months from now. That&amp;#39;s 44
+teachers that have both the subject knowledge and the pedagogical
+knowledge to match in the system. Part of their scholarship agreement
+is for them to give back. Take part in CS education efforts in the
+city so they&amp;#39;re already helping to shape the community and culture of
+K12 CS Education in New York.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m hoping for an even larger cohort this year. Imagine if we could
+get 60 or more into our program this summer. That would mean in three
+short years we&amp;#39;ll have gone from zero to 100 qualified certified
+teachers and we&amp;#39;ll be well on the way to that critical mass of teacher
+leaders.&lt;/p&gt;
+&lt;p&gt;
+As we get closer to that critical mass of qualified teachers, interest
+in programs like my certificate program will wane but at the same
+time, there will be more demand from teaching newcomers for our
+Masters program as there will be a career path for young CS minded
+teachers.&lt;/p&gt;
+&lt;p&gt;
+Once again it&amp;#39;s the long game but that&amp;#39;s what it takes. &lt;/p&gt;
+&lt;p&gt;
+So, if you&amp;#39;re a New York City CS teacher and are looking for state
+certification, come join us. All the information can be found &lt;a href=&#34;http://info.huntercs.org/teacher_ed/summer-2022.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SIGCSE2022 - Things I plan to blog about</title>
@@ -3249,50 +3376,6 @@ both got a chuckle out of the turn of phrase.
 &lt;p&gt;
 I&#39;ve already said that teachers aren&#39;t &lt;a href=&#34;http://cestlaz.github.io/2014/12/14/rockstar-godfather.html#.Vg264t8Sr0o&#34;&gt;rock stars, we&#39;re blues men&lt;/a&gt; so
 I guess this shows that some folks still like the blues.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Suspension if disbelief and the Mikado</title>
-      <link>https://cestlaz.github.io/posts/2015-09-21-mikado/</link>
-      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/2015-09-21-mikado/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-
-
-&lt;style&gt;
-div.center {text-align:center;}
-&lt;/style&gt;
-
-&lt;p&gt;
-I was brought up on Gilberg and Sullvan. My father, who always wanted
-to be an opera singer sang with &lt;a href=&#34;https://en.wikipedia.org/wiki/Light_Opera_of_Manhattan&#34;&gt;LOOM&lt;/a&gt; back in the day and there was
-always classical music playing. Either from the Hi Fi or my father
-singing.
-&lt;/p&gt;
-
-&lt;p&gt;
-Recently, there&#39;s been a kerfufle over what was to be &lt;a href=&#34;http://nygasp.org&#34;&gt;NYGASP&#39;s&lt;/a&gt;
-production of Mikado.
-&lt;/p&gt;
-
-&lt;p&gt;
-My son, Natan wrote a terrific blog post on it and the suspension of
-belief in opera. It&#39;s long but well worth a read.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you like G&amp;amp;S or opera in general, take a look.
-&lt;/p&gt;
-
-&lt;p&gt;
-It can be found &lt;a href=&#34;http://seccorecit.blogspot.com/2015/09/imagine-if-you-will.html&#34;&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Enjoy.
 &lt;/p&gt;
 </description>
     </item>
