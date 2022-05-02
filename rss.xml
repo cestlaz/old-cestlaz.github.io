@@ -6,10 +6,135 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Apr 2022 14:41:05 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 May 2022 14:23:44 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>When will I need to know this, Data Structures edition</title>
+      <link>https://cestlaz.github.io/post/when-need-ds/</link>
+      <pubDate>Mon, 02 May 2022 14:23:44 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/when-need-ds/</guid>
+      <description>&lt;p&gt;
+One of the things we&amp;#39;re frequently faced with as computer science
+teachers is the questiosn of &amp;#34;when will I need to know this.&amp;#34; This
+comes up when you teach an non-mainstream language like Racket or a
+language kids sometimes see as inauthentic like Scratch. It also comes
+up a lot when learning data structures and algorithms.&lt;/p&gt;
+&lt;p&gt;
+Do I really need to know all of these sorts when I&amp;#39;m just going to use
+the built in sort routine? Do I really have to implement that hash
+table or linked list when I&amp;#39;ll just use the standard library&amp;#39;s
+implementation? You know, once I get past the technical interview for
+fill-in-the-company I&amp;#39;ll never need it again so why are we wasting all
+this time and energy?&lt;/p&gt;
+&lt;p&gt;
+For the most part, these are valid questions to ask.&lt;/p&gt;
+&lt;p&gt;
+On the one hand it&amp;#39;s hard to  really say that a student &lt;strong&gt;needs&lt;/strong&gt; to
+know all these things, I mean, we all know people with successful
+careers in tech who know few or one of the these &amp;#34;questionable&amp;#34;
+topics. On the other hand, it&amp;#39;s much easier to explain why one might
+want to know or even benefit from knowing these &amp;#34;less relevant and
+directly useful&amp;#34; topics.&lt;/p&gt;
+&lt;p&gt;
+Personally, I&amp;#39;m believe that you shouldn&amp;#39;t use a tool that you
+couldn&amp;#39;t build yourself or rather, more realistically, you should
+understand something of the topics underpinnings. For a hash table for
+instance, one should understand that the internal storage structure
+has to be sparse or be otherwise cleverly set up to avoid
+collisions. Likewise if one understands the differences between an
+array based structure and dynamically allocated one they can make
+sensible decisions when they choose between a Java ArrayList and a
+Java LinkedList.&lt;/p&gt;
+&lt;p&gt;
+The other biggie is that if they understand the data structures and
+algorithms then they have a shot at creating derivative algorithms or
+building solutions on top of data structures rather than just using
+standard library implementations.&lt;/p&gt;
+&lt;p&gt;
+Of course it&amp;#39;s much easier to convince students they might build or
+use solutions that employ standard data structures and algorithms with
+real world examples and fortunately we have them.&lt;/p&gt;
+&lt;p&gt;
+In my data structures class, we&amp;#39;re currently covering Binary Search
+Trees. At the end I talk a little about next steps - 2-3 trees,
+red-black trees, B-trees etc. but to be honest students are probably
+never going to write any of these. On the other hand we have a tree
+implementation that students interact with on a daily basis and could
+very well have to work with and manipulate.&lt;/p&gt;
+&lt;p&gt;
+The DOM.&lt;/p&gt;
+&lt;p&gt;
+For those of you who don&amp;#39;t do web development, DOM stands for Document
+Object Model and is the structure that your web browser uses to store
+a web page. Web pages are written in HTML - Hyper Text Markup Language
+which is a specific instance of XML - eXtensible Markup Language.
+HTML is a hierarchical format and in fact is a textual way of
+representing a tree.&lt;/p&gt;
+&lt;p&gt;
+For example, this HTML example:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+  &amp;lt;div id=&amp;#34;anchor&amp;#34;&amp;gt;
+    &amp;lt;h1&amp;gt; this is a heading &amp;lt;/h1&amp;gt;
+    &amp;lt;ol&amp;gt;
+      &amp;lt;li&amp;gt;item 1&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;item 2&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;item 3&amp;lt;/li&amp;gt;
+    &amp;lt;/ol&amp;gt;
+  &amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+has a &lt;strong&gt;div&lt;/strong&gt; as the root node with two children. the first child is the
+&lt;strong&gt;h1&lt;/strong&gt; component (header 1) and the other is the ordered list -
+&lt;strong&gt;ol&lt;/strong&gt;. the ordered list the has three children, those three &lt;strong&gt;li&lt;/strong&gt;
+list item elements. &lt;/p&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+In fact, you can explore this tree through your web browser. You can
+right click and explore the page or you can bring up the javascript
+console and show that once you get an element with something like &lt;code&gt;d =
+document.getElementById(&amp;#34;anchor&amp;#34;)&lt;/code&gt; you explore the tree with things
+like &lt;code&gt;d.children&lt;/code&gt; or &lt;code&gt;d.firstChild&lt;/code&gt; and the like.&lt;/p&gt;
+&lt;p&gt;
+This is a pretty concrete example of a tree that CS students could
+very well be working with and manipulating particularly given how many
+front end opportunities exist out there.&lt;/p&gt;
+&lt;p&gt;
+It turns out there&amp;#39;s also a great example out there these days for the
+linked list. Usually students can see the utility of the linked list
+and it&amp;#39;s ability to insert and delete with a much lower cost than an
+array but they also see the limitations that result from linear access
+but where might they need to implement a linked type structure as
+opposed to just using the built in LinkedList.&lt;/p&gt;
+&lt;p&gt;
+Nowadays we don&amp;#39;t have to look any further than &lt;strong&gt;blockchain&lt;/strong&gt;. A
+blockchain literally is a linked list - each node has a reference to
+it&amp;#39;s neighbor. It&amp;#39;s a perfect real world example. Of course once you
+look at this example it&amp;#39;s easy to show others since linked constructs
+are everywhere. The difficulty from the student point of view is they
+frequently just think of them as &amp;#34;pointer&amp;#34; based structures where the
+&amp;#34;pointer&amp;#34; is the language construct but it&amp;#39;s really just any reference
+to the &amp;#34;next&amp;#34; item. That reference can be an index into an array for
+instance and it would still build a linked list.&lt;/p&gt;
+&lt;p&gt;
+I think examples like these show students that they may indeed build
+and or manipulate the data structures and algorithms they study as
+budding computer scientists and in fact, they might not even realize
+it. I was talking blockchain a while ago with a number of students and
+it took quite a while before one said - &amp;#34;hey, this is really just a
+linked list.&amp;#34; I think making that connection explicit and early can be
+a big help.&lt;/p&gt;
+&lt;p&gt;
+So, do you have some real world examples like these that we can use to
+help motivate our students to really learn some of these subjects that
+at first glance are only useful to and through the technical
+interview? If so, please share.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Should CSforAll focus on entrepreneurship and jobs?</title>
@@ -4123,89 +4248,6 @@ grading!!!!!!!!!&lt;/p&gt;
 As we seek to engage a wider audience in CS we shouldn&amp;#39;t merely focus
 on the problem solving nor the making money. The creative side is
 really important as well.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Turning a good class into a bad lecture</title>
-      <link>https://cestlaz.github.io/post/inperson-update/</link>
-      <pubDate>Tue, 28 Sep 2021 08:11:34 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/inperson-update/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve been teaching in person for about a month now so I thought I&amp;#39;d
-give a quick update on how it&amp;#39;s going. I&amp;#39;ve written before about my
-feelings on how Hunter started the semester (TL;DR - I was very
-displeased) but that&amp;#39;s not the point of this post. As of today, I
-believe every student has been required to be stabbed at least once
-and on October 11, all students must be fully vaccinated to be on
-campus.&lt;/p&gt;
-&lt;p&gt;
-So, off to the report. Going in person sounds great but now that I&amp;#39;m
-doing it, I&amp;#39;m having second thoughts. Let&amp;#39;s leave safety precausions
-out of it, I&amp;#39;m having second thoughts just in terms of how the current
-situation and related restrictions have affected my teaching.&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the low down. Students are supposed to wear masks at all
-times and I wear mine as well. We&amp;#39;re supposed to socially distance but
-that&amp;#39;s not possible given class and classroom sizes. Students are also
-supposed to keep the same seed all the time, ostensibly for contact
-tracing should anyone test positive.&lt;/p&gt;
-&lt;p&gt;
-To start, day one in person was important - I still haven&amp;#39;t met my
-students from last year in person and I&amp;#39;d really like to. This years
-students, at least I&amp;#39;ve seen all their foreheads.&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s actually an issue. At least for me, the masks make it MUCH
-harder to know my students. Can&amp;#39;t get to know a face when you can&amp;#39;t
-see two thirds of it and names are going to be even harder for me.&lt;/p&gt;
-&lt;p&gt;
-Online, at least for those who put on cameras, we could at least see
-each others full faces and expressions. Zoom doesn&amp;#39;t carry the same
-nuance as in person but neither does a masked face.&lt;/p&gt;
-&lt;p&gt;
-The masks have another negative. You can&amp;#39;t hear anyone. I do my best
-to actively project but students rarely do. This leads to me having
-students repeat themselves multiple times and I also have to adopt a
-conference speaker approach of repeating and projecting what the
-student said so everyone can hear. This absolutely kills interactive
-discussion and even question answer chains. It really pushes a lesson
-more towards a lecture which, well, sucks.&lt;/p&gt;
-&lt;p&gt;
-The social distancing and keeping seats also negatively impact the
-environment. I can&amp;#39;t get in with my students like I usually do. Even
-when in lecture mode, I&amp;#39;ll move to different locations of the room for
-a variety of reasons - that&amp;#39;s pretty much out. I also can&amp;#39;t just get
-in close to support students. Likewise, group work can&amp;#39;t happen in the
-same way. They can kind of sort of work with their direct neighbor but
-I can&amp;#39;t have them work with each other as I&amp;#39;d do under normal
-circumstances. &lt;/p&gt;
-&lt;p&gt;
-Don&amp;#39;t get me wrong. I won&amp;#39;t compromise safety for convenience but the
-safety protocols do a good job in turning a good class into a bad
-lecture. &lt;/p&gt;
-&lt;p&gt;
-Online is also lousy in many ways but as long as the students are
-willing you can all see each others faces and you can do all sorts of
-interesting groupings and group work. I think my code review lesson
-worked pretty much as well and maybe even better online last year than
-it did in person the year before but I&amp;#39;m really at a loss on how to do
-it as effectively in person in a few weeks with the safety
-precautions.&lt;/p&gt;
-&lt;p&gt;
-Ideally, I&amp;#39;d like the freedom to mix and match. We were in person week
-one, but let me decide when we&amp;#39;ll be in person and when we&amp;#39;ll be
-remote. Let me use the best platform for any given lesson. This would
-be a bit of a drag on the students depending on how their instructors
-scheduled things but if students could use the rooms that they&amp;#39;d be in
-person for as locations to work remote from it wouldn&amp;#39;t be too bad.&lt;/p&gt;
-&lt;p&gt;
-As usual, the ideal would be to trust the teacher and let them do
-what&amp;#39;s best for their students but as we all know, that&amp;#39;s never the
-way. Regardless, the interesting thing to me is that while I was
-clamoring for a safe in person return, the truth is, given sensible
-safety precautions, in person might just not be the best way to go. At
-least not all the time.&lt;/p&gt;
 </description>
     </item>
     
