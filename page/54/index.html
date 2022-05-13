@@ -16,7 +16,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1651536697" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1652468421" />
 
 
 
@@ -103,6 +103,43 @@
 
     
     
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/better-comments/">Better Comments or tooling as a time sink</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        The other day my friend and fellow CS Ed Blogger Alfred Thompson wrote about Better Comments, an extension for visual studio that displays comments that are marked up with special characters in order to highlight them. Here&#39;s a screenshot:
+ https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png
+ So, the first thing I though was &#34;I bet emacs could do that pretty easily&#34; and down the rabbit hole I went.
+ I had to figure out something about how emacs themes and font-locking (emacs for syntax highlighting) works and of course spent far too much time learning about Emacs, my favored tool, rather than getting actual work done, but I came up with this:
+    </div>
+
+            <a href="/posts/better-comments/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2016-06-22</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
     
         <article class="post-list">
     <header>
@@ -415,43 +452,6 @@
     </div>
 
             <a href="/posts/using-emacs-introduction/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-23</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-1-setup/">Using Emacs - Setting up the Package Manager</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        This video will step you through setting up Emacs to use MELPA for packages.
-  We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
- Here&#39;s the contents of that file:
-(setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:
-    </div>
-
-            <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>
     
 
 

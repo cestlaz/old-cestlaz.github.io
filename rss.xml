@@ -6,10 +6,117 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2022 14:23:44 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 13 May 2022 14:22:57 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>When Your Program Crashes</title>
+      <link>https://cestlaz.github.io/post/when-your-program-crashes/</link>
+      <pubDate>Fri, 13 May 2022 14:22:57 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/when-your-program-crashes/</guid>
+      <description>&lt;p&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt;
+&lt;/figure&gt;
+ &lt;/p&gt;
+&lt;p&gt;
+We all have to deal with bugs - students, teachers, hobbyists,
+professionals. It&amp;#39;s rare that we&amp;#39;ll take a concept to working program
+without some bumps along the way. Well, once or twice I did but that&amp;#39;s
+once or twice over the course of a lifetime, those cases are the
+exceptions.&lt;/p&gt;
+&lt;p&gt;
+The errors and the bugs are inevitable so what can we do to help
+students deal with the invariable frustration?&lt;/p&gt;
+&lt;p&gt;
+Why am I thinking about this now?&lt;/p&gt;
+&lt;p&gt;
+For two reasons.&lt;/p&gt;
+&lt;p&gt;
+One is that I was recently observed - it was the usual peer
+observation. At Hunter, everyone except tenured full (research)
+professors get peer reviews and those faculty members along with other
+full time instructors do the reviews. I can&amp;#39;t take it too seriously
+since in my experience, of all those teaching at the college leve,
+research professors are the least qualified to productively comment on
+teaching.&lt;/p&gt;
+&lt;p&gt;
+Anyway, I was observed in a remote lesson that included a video and in
+the video I was doing some live coding and got hung up on a bug. I
+worked my way through it, got stymied, paused the video and resumed it
+but when I resumed, I made sure to show what I found, how I found it
+and how I fixed it.&lt;/p&gt;
+&lt;p&gt;
+The observer commented that this was very bad - I should have edited
+the video so that I coded the program perfectly since making an error
+shows that I don&amp;#39;t know what I&amp;#39;m doing. Nope, my observer was 100%
+wrong. I made  the error and left it in and that was the correct
+choice. Model mistakes for the students. Show them that we &lt;strong&gt;don&amp;#39;t&lt;/strong&gt; get
+it right the first or even the second time and that we can struggle
+finding errors losing huge chunks of time over a a missing semicolon.&lt;/p&gt;
+&lt;p&gt;
+The other reason was that a student recently submitted a program that
+didn&amp;#39;t work. First, I was upset that the student hadn&amp;#39;t asked for
+help. I know it&amp;#39;s hard for many for many of them but it&amp;#39;s always been
+frustrating for me when they don&amp;#39;t use their human resources - me,
+classmates, and mentors. Second, when I did start working with the
+student to find and fix the error I saw they were looking in the wrong
+place.&lt;/p&gt;
+&lt;p&gt;
+The assignment was a recursive search - knights tour or something
+similar. The crash was a segmentation fault and the student was
+looking at the recursive logic struggling to see where they went wrong
+and was making no headway.&lt;/p&gt;
+&lt;p&gt;
+I suggested we use the debugger. Not to trace through the code but to
+get a stack trace. We&amp;#39;re using C++ and if you run a program under the
+gdb debugger you can use the &lt;strong&gt;bt&lt;/strong&gt; command to get a backtrace which is
+a stacktrace - where the program crashed and the sequence of function
+calls made to get there. You can also easily see what all the
+variables were all the way down.&lt;/p&gt;
+&lt;p&gt;
+The students had been exposed to gdb last semester but too few of them
+use it when appropriate.&lt;/p&gt;
+&lt;p&gt;
+Looking at the stack trace we quickly saw that there wasn&amp;#39;t anything
+wrong with any program logic and in fact the problem was that the data
+file had an extra blank line at the end. We deleted that line and
+everything worked.&lt;/p&gt;
+&lt;p&gt;
+So, even getting by the asking for help how do we get students to use
+the tools they have available to help them?&lt;/p&gt;
+&lt;p&gt;
+This even goes for the compiler itself - the error messages. True many
+error messages are cryptic, particularly for beginners and it&amp;#39;s hard
+when you get that wall of text but how do we get them to learn to read
+those messages.&lt;/p&gt;
+&lt;p&gt;
+I try two things. Read the first message since that&amp;#39;s usually the root
+cause and then, even if the message doesn&amp;#39;t make sense, when you do
+figure out the error you&amp;#39;ll start to develop a mapping from weir error
+messages to actual problems&lt;/p&gt;
+&lt;p&gt;
+Of course when debugging, I, like many others fall back to, if I may
+quote Brian Kernighan &amp;#34;..careful thought, couple widh judiciously
+placed pring statements&amp;#34; but even educating students on doing this
+effectively takes work.&lt;/p&gt;
+&lt;p&gt;
+I think the biggest challenge is getting them to see that it&amp;#39;s not
+them - we all make errors and all struggle fixing them.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve just mentioned a couple of things here and of course there are
+many other debugging and development strategies that we use as
+teachers and as professionals. Rubber Duck debugging, code reading,
+incremental development etc.. What else? I&amp;#39;d love to hear any strategies others have used to help students along when
+dealing with errors. &lt;/p&gt;
+&lt;p&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt;
+&lt;/figure&gt;
+ &lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>When will I need to know this, Data Structures edition</title>
@@ -4167,87 +4274,6 @@ of my students. In the end, I don&amp;#39;t really care if any of them
 ultimately become hardcore CLI users but I really do want all of them
 to gain enough exposure so that they can make an informed decision as
 to its value and then make up their own minds.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Coding For Problem Solving</title>
-      <link>https://cestlaz.github.io/post/coding-for-problem-solving/</link>
-      <pubDate>Fri, 01 Oct 2021 10:17:01 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/coding-for-problem-solving/</guid>
-      <description>&lt;p&gt;
-Like most CS educators I&amp;#39;m a regular reader of Alfred Thompson&amp;#39;s
-blog. Alfred&amp;#39;s &lt;a href=&#34;https://blog.acthompson.net/2021/09/define-learn-to-code.html&#34;&gt;latest post&lt;/a&gt; is spot on but there was a line in it and a
-particular Twitter response that reminded me that we so often forget
-a big reason why people learn to code.&lt;/p&gt;
-&lt;p&gt;
-Alfred mentions, as did that Tweet about coding to solve
-problems. What problem are you trying to solve. This is the mainstream
-push - programming helps you solve problems. I&amp;#39;ve noticed a doubling
-down on this with all the efforts (including mine) to integrate CS
-into other subjects. While where and how much CS should be
-integrated vs standalone is a topic for another day, integrating CS
-into other fields is very much a &amp;#34;help solve the problems of that
-field&amp;#34; approach.&lt;/p&gt;
-&lt;p&gt;
-Nothing wrong with all of this. It&amp;#39;s all good stuff but there&amp;#39;s
-another side to the coin. It&amp;#39;s a side that I sometimes forget about
-from in the trenches. In fact, a few years ago I was rambling on and
-on about programming as problem solving and my friend and fellow CS
-teacher Peter Brooks reminded me - the question doesn&amp;#39;t have to be
-&amp;#34;what problem do you want to solve?&amp;#34; The question can be &amp;#34;what do you
-want to create?&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-Sometimes we forget that programming can be an amazingly creative
-endeavor. You can use it to make something brand new and there doesn&amp;#39;t
-necessarily have to be a problem to be solved.&lt;/p&gt;
-&lt;p&gt;
-Fred Brooks puts it nicely at the start of his classic work &amp;#34;The
-Mythical Man Month:&amp;#34;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The programmer, like the poet, works only slightly removed from pure
-thought-stuff. He builds his castles in the air, from air, creating by
-exertion of the imagination. Few media of creation are so flexible, so
-easy to polish and rework, so readily capable of realizing grand
-conceptual structures….&lt;/p&gt;
-&lt;p&gt;
-– Fred Brooks, The Mythical Man Month &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-I also saw elsewhere, maybe by Fred Brooks, maybe someone else talking
-of a programmer being like a painter but whereas a painter has oils,
-brushes, and pigments to create on a canvas, the programmer has
-programming languages to create on the computer. &lt;/p&gt;
-&lt;p&gt;
-Maybe it&amp;#39;s the push for &amp;#34;practical&amp;#34; education, maybe the integration,
-maybe the focus on testing. I have no idea but it seems that we
-frequently forget about the creative side of the equation.&lt;/p&gt;
-&lt;p&gt;
-I mean, yes, the APCS-P specification does mention creativity in the
-interestingly enough named &amp;#34;Create Task:&amp;#34;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Programming is a collaborative and creative process that brings ideas
-to life through the development of software. In the Create performance
-task, you will design and implement a program that might solve a
-problem, enable innovation, explore personal interests, or express
-creativity.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-but it&amp;#39;s after &amp;#34;solve a problem&amp;#34; and &amp;#34;enable innovation.&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-That creative side though shouldn&amp;#39;t be forgotten. Some of my students
-most memorable projects didn&amp;#39;t solve a problem. I remember the
-&amp;#34;Cheerleader Simulator&amp;#34; in NetLogo. No problem solved there but it was
-a fun project. Another was Tamika&amp;#39;s stupid mouse dexterity game. A
-simple game of her own design. I say stupid not becuase it was really
-stupid - it was great. Rather, I say stupid becuase that game caused
-me to waste so much time that end of year when I should have been
-grading!!!!!!!!!&lt;/p&gt;
-&lt;p&gt;
-As we seek to engage a wider audience in CS we shouldn&amp;#39;t merely focus
-on the problem solving nor the making money. The creative side is
-really important as well.&lt;/p&gt;
 </description>
     </item>
     
