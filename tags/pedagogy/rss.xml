@@ -6,10 +6,184 @@
     <description>C&#39;est la Z (pedagogy)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Sep 2021 13:31:22 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 17 May 2022 08:28:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/pedagogy/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Yes, deadlines do matter</title>
+      <link>https://cestlaz.github.io/post/late-assignments/</link>
+      <pubDate>Tue, 17 May 2022 08:28:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/late-assignments/</guid>
+      <description>
+&lt;p&gt;
+I&amp;#39;ve been seeing a few threads lately talking about the virtues of
+allowing students to hand in assignments late. Not just late but
+pretty much whenever they want. This attitude seems to be related with
+things like mastery or specification grading, which I believe in but
+it&amp;#39;s not the same thing.&lt;/p&gt;
+&lt;p&gt;
+The threads start with someone saying that assignments shouldn&amp;#39;t have
+deadlines or some variant and the thread proceeds with a bunch of
+people chiming in as to why a teacher who actually enforces deadlines
+is an inhuman monster.&lt;/p&gt;
+&lt;p&gt;
+Nonsense.&lt;/p&gt;
+&lt;p&gt;
+Now, before I dive in, I do think that a teacher should have some
+flexibility with deadlines but allowing students to hand in anything
+at any time is probably not a good idea in most cases and any teacher
+or self styled educator who proudly proclaims that deadlines in all
+cases are evil should just step off their soap box and maybe look more
+into their own teaching practice. Of course, the teacher that likewise
+says strict to the minute deadlines with no flexibility should do the same.&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s look at both sides.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Advantages of no deadlines
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+The push here is that students have things going on outside of school
+and an arbitrary deadline doesn&amp;#39;t account for this. Particularly over
+the past couple of years students have had to contend with all sorts
+of difficulties that could be unique or semi-unique to them or at
+least they hit at different times.&lt;/p&gt;
+&lt;p&gt;
+The other push is that students might get certain concepts at
+different times so a student might not be able to finish something
+when originally assigned but could very well have mastered the concept
+by the end of the term.&lt;/p&gt;
+&lt;p&gt;
+Finally, there&amp;#39;s the thought that those most susceptible to missing
+deadlines are the most in need of support. &lt;/p&gt;
+&lt;p&gt;
+I agree with these issues and do feel that some deadline flexibility
+is warranted or at least some mechanism to mitigate a missed deadline
+or two or a bad grade and I certainly agree with the idea that the
+important thing is that the student gets it at the end and not
+necessarily that they get it when first introduced.&lt;/p&gt;
+&lt;p&gt;
+That said, the idea of largely or wholly eliminating deadlines just
+doesn&amp;#39;t fly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Why deadlines matter
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+The usual first response is that having no deadlines rewards bad
+behavior. This can be true but it really depends on circumstances. On
+the other hand there are some legit reasons for deadlines.&lt;/p&gt;
+&lt;p&gt;
+A big one is snowballing - some courses are compartmentalized. The CS
+topics course I just taught was. Each unit was independent so in
+theory any could be completed at any time. Here the snowballing is
+just the overall amount of work. If completing one assignment say,
+every two weeks is a challenge for a particular student, imagine when
+they let the deadlines slip and then have to complete 6 at once.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s worse though in courses that do build. I taught data structures
+last semester. You can&amp;#39;t build your linked lists without understanding
+your pointers and you can&amp;#39;t build an open hash table without those
+linked lists. If you can&amp;#39;t do the pointers you&amp;#39;re going to really be
+at a loss for those other topics. This means making sure a student
+&lt;strong&gt;can&lt;/strong&gt; successfully master what&amp;#39;s needed by the dealine &lt;strong&gt;is&lt;/strong&gt; important
+and not arbitarary.&lt;/p&gt;
+&lt;p&gt;
+Another reason is that, in spite of the no-deadline crowds
+contentions, deadlines &lt;strong&gt;do matter&lt;/strong&gt; in the real world. You&amp;#39;re not
+getting on that plane once the door at the gate closes. Likewise, I&amp;#39;m
+sure you&amp;#39;d be pretty unhappy if your house burned down because the
+fire department had to finish their dinner before heading over to put
+out the blaze. Also, try getting into college if you miss the
+application deadline. &lt;/p&gt;
+&lt;p&gt;
+Usually, deadlines are more flexible and the penalties for missing
+them are less severe but they do indeed exist. If you miss a client
+deadline you might lose the client, if you don&amp;#39;t pay your bills,
+eventually the collectors will come for you. &lt;/p&gt;
+&lt;p&gt;
+Even without the penalties there&amp;#39;s also a matter of respect - not just
+for the teacher but also for your classmates. Putting aside the legit
+reasons for missing deadlines, some students will indeed either be
+lazy on not focused or might just be taking advantage of a more
+lenient teacher. This student is then given more attention from the
+teacher - since teacher time is limited, that&amp;#39;s going to be at the
+expense of the other students - not fair and not cool. If the reason
+for missing a deadline is legit, then no problem but as we all know
+there are plenty of people who&amp;#39;ll take advantage of any system that
+lets them.&lt;/p&gt;
+&lt;p&gt;
+Another big reason for deadlines that&amp;#39;s never talked about is that
+many students want and/or need them. Over my 30+ years as a teacher,
+I&amp;#39;ve tried strict deadlines, no deadlines and everything in between. I
+can&amp;#39;t tell you how many students have told me that they needed
+deadlines to keep them on task and in fact, deadlines with internal
+targets to meet helped even more. &lt;/p&gt;
+&lt;p&gt;
+Finally, one has to consider the teachers workload and schedule. It&amp;#39;s
+time to drop the &amp;#34;hero teacher&amp;#34; bit. Teachers &lt;strong&gt;should&lt;/strong&gt; have a work
+life balance and that means not being available to handle student
+issues 24/7. I hate grading and it takes me a lot of time and
+effort. When I grade, I set up my systems to be efficient and I get
+into a grading groove. If a student hands in something late, even with
+a good reason, it breaks my flow and takes me much longer and also
+ties me up in other ways. Sure, if I taught at an &amp;#34;elite&amp;#34; private
+school and only had a dozen kids in a class I could make all sorts of
+accommodations but when you teach 5 of 34 every day somethings got to
+give. The teacher also has their own deadlines - students must know
+this or that before the AP or standardized test and of course the big
+deadline - getting those grades in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+What do I do?
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So, where do I ultimately fall on this? I do believe in deadlines but
+I believe in some flexibility. I also like to have enough information
+on my students so that by the end of the term I can assess them even
+if one or two things are missing.&lt;/p&gt;
+&lt;p&gt;
+Are my deadlines hard? Not really - anyone can ask for an extension
+but my two requirements are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+make some headway on the project. This is easy since I use Git and
+GitHub so I can just log at their logs.&lt;/li&gt;
+&lt;li&gt;They speak to me about the extension before the deadline and by
+this I mean as soon as there might be an issue, not the evening
+before the project is due. I encourage them to speak to me even if
+they think there might be an issue to get my okay and then, more
+often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
+actually talk to me about an extension and that they do it in what I
+consider a timely manner but I think at some point the students must
+advocate for themselves.&lt;/p&gt;
+&lt;p&gt;
+So, how does it work for my classes? I think pretty well. I&amp;#39;ll take
+almost any reason - sickness, family event, lots of other things due,
+something&amp;#39;s unclear or almost anything else. We discuss it and come up
+with a fair extension. I usually ask &amp;#34;what do you need&amp;#34; in terms of
+time, resources, and in some cases help and then I try to give that
+plus a cushion.&lt;/p&gt;
+&lt;p&gt;
+So, what do you think? Are you part of the no deadline crowd? What am
+I missing? Got other strategies and techniques? Let&amp;#39;s hear them as
+well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>A Memorable Lesson (at least for one student)</title>
@@ -3298,88 +3472,6 @@ world. Just remember when you&amp;#39;re struggling to come up with a good
 lesson or you&amp;#39;ve just taught a bad one that tomorrow&amp;#39;s will be
 better. Judge yourself by your students long term development, not one
 day at a time.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Two Faces of Project Based Learning</title>
-      <link>https://cestlaz.github.io/posts/two-faces-of-pbl/</link>
-      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/two-faces-of-pbl/</guid>
-      <description>&lt;p&gt;
-If one looks at my twitter feed they&amp;#39;ll notice that in addition to CS
-Ed, another issue I&amp;#39;m passionate about is school reform or rather
-resistance to what is popularly known as and mislabeled as school reform. I&amp;#39;m anti
-vouchers, charter schools, high stakes testing and more. One of the
-heroes of this resistance is education historian Diane Ravitch. I&amp;#39;m a
-big fan of Diane&amp;#39;s and she&amp;#39;s one of the true great champions of public
-schools, kids, and teachers. She blogged today about how a superintendent on Long Island &lt;a href=&#34;https://dianeravitch.net/2018/07/27/new-york-district-on-long-island-shows-that-problem-based-curriculum-produces-better-results-than-test-prep/&#34;&gt;replaced test
-prep with project based learning&lt;/a&gt;. The post which talks about how this
-superintendent improved test results  is worth a read. My only
-quibble was that we shouldn&amp;#39;t read anything into the results for a
-variety of reasons including the fact that the group of students who
-did the project based learning (PBL) units instead of test prep were
-self selecting volunteers.&lt;/p&gt;
-&lt;p&gt;
-One of the comments caught my eye:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;PBL is just another “student-centered” fad…&lt;/p&gt;
-&lt;p&gt;
-PBL operates on the myth of “transference” perpetuated by non-educators.&lt;/p&gt;
-&lt;p&gt;
-…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-The comment continues on with a number of good points.&lt;/p&gt;
-&lt;p&gt;
-Why am I writing about it here? Because PBL is a big CS Ed buzzword
-and like most buzzwords there&amp;#39;s both truth at the root of the hype and
-hype that distorts the truth.&lt;/p&gt;
-&lt;p&gt;
-When done right with the right group of kids, project based learning
-can be wonderful but it takes a lot of time and effort. You can&amp;#39;t just
-set the kids loose to learn. You&amp;#39;ve got to train them to work
-together, set up the project, as the teacher, you&amp;#39;ve got to know the
-subject so as to know when to guide, when to tell, when to prod, and when to leave
-them alone. Doing it right, at least for most students, is certainly
-not giving them the instruction sheet and going off the check your
-email.&lt;/p&gt;
-&lt;p&gt;
-On the other hand, it&amp;#39;s easy to do it wrong. If you&amp;#39;ve got high
-performing kids, they&amp;#39;ll figure things out. If you&amp;#39;ve got a few high
-performing kids, they can mask the fact that the majority of a group
-isn&amp;#39;t getting things. You might have an assignment where a kid figures
-out a formula from discovered data and might be able to then use it to
-make predictions but there&amp;#39;s a good chance they won&amp;#39;t understand why
-it works or it&amp;#39;s root derivation. That&amp;#39;s where we need the teacher.&lt;/p&gt;
-&lt;p&gt;
-One of the dangers of bad PBL is that it&amp;#39;s sexy. Kids are engaged and
-it appears to work - particularly when the teacher doesn&amp;#39;t know the
-subject area. This is my great fear whenever I hear things about
-teachers being &amp;#34;Lead Learners.&amp;#34; Sure, when you&amp;#39;re a converted
-something else teacher moving into CS you won&amp;#39;t know the subject
-matter but that has to change over time. I&amp;#39;ve seen enough instances of
-cases where teachers never develop their chops and just throw projects
-at the kids augmented by scripted curricula or computer driver
-content. The kids get through the class or program but are not
-prepared for the next class or next level. I&amp;#39;ve seen this with the old
-Cisco curriculum, any number of after school and summer programs -
-some VERY highly regarded ones and I think we&amp;#39;ll see more and more of
-this in states that are pushing CSforAll without developing the
-necessary pre and in service programs for their teachers.&lt;/p&gt;
-&lt;p&gt;
-Don&amp;#39;t let my last two paragraphs leave you feeling that I&amp;#39;m anti
-PBL. I&amp;#39;m not. It&amp;#39;s great when done right and if you have thee time and
-resources in your school and classes you should be using it when
-appropriate.&lt;/p&gt;
-&lt;p&gt;
-If you want some pointers on how to get going in the right direction with PBL in CS  check out &lt;a href=&#34;https://www.amazon.com/Computer-Science-K-12-Imagining-possibilities-ebook/dp/B07DYDXBSH/ref=sr_1_1?ie=UTF8&amp;amp;qid=1532808363&amp;amp;sr=8-1&amp;amp;keywords=doug+bergman&#34;&gt;this
-book&lt;/a&gt; by my buddy Doug Bergman. It&amp;#39;s a great getting started guide by a
-great teacher. He&amp;#39;s basically Mr. PBL and he does it right.  If you&amp;#39;re new to CS you&amp;#39;ll still need to learn content
-and if you&amp;#39;re new to teaching, you&amp;#39;ll be developing your chops for
-your entire career but it&amp;#39;s a great resource to get you and then your
-kids started on the journey.&lt;/p&gt;
 </description>
     </item>
     

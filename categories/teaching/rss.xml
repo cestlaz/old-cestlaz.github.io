@@ -6,10 +6,184 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jan 2022 08:13:17 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 17 May 2022 08:28:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Yes, deadlines do matter</title>
+      <link>https://cestlaz.github.io/post/late-assignments/</link>
+      <pubDate>Tue, 17 May 2022 08:28:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/late-assignments/</guid>
+      <description>
+&lt;p&gt;
+I&amp;#39;ve been seeing a few threads lately talking about the virtues of
+allowing students to hand in assignments late. Not just late but
+pretty much whenever they want. This attitude seems to be related with
+things like mastery or specification grading, which I believe in but
+it&amp;#39;s not the same thing.&lt;/p&gt;
+&lt;p&gt;
+The threads start with someone saying that assignments shouldn&amp;#39;t have
+deadlines or some variant and the thread proceeds with a bunch of
+people chiming in as to why a teacher who actually enforces deadlines
+is an inhuman monster.&lt;/p&gt;
+&lt;p&gt;
+Nonsense.&lt;/p&gt;
+&lt;p&gt;
+Now, before I dive in, I do think that a teacher should have some
+flexibility with deadlines but allowing students to hand in anything
+at any time is probably not a good idea in most cases and any teacher
+or self styled educator who proudly proclaims that deadlines in all
+cases are evil should just step off their soap box and maybe look more
+into their own teaching practice. Of course, the teacher that likewise
+says strict to the minute deadlines with no flexibility should do the same.&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s look at both sides.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Advantages of no deadlines
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+The push here is that students have things going on outside of school
+and an arbitrary deadline doesn&amp;#39;t account for this. Particularly over
+the past couple of years students have had to contend with all sorts
+of difficulties that could be unique or semi-unique to them or at
+least they hit at different times.&lt;/p&gt;
+&lt;p&gt;
+The other push is that students might get certain concepts at
+different times so a student might not be able to finish something
+when originally assigned but could very well have mastered the concept
+by the end of the term.&lt;/p&gt;
+&lt;p&gt;
+Finally, there&amp;#39;s the thought that those most susceptible to missing
+deadlines are the most in need of support. &lt;/p&gt;
+&lt;p&gt;
+I agree with these issues and do feel that some deadline flexibility
+is warranted or at least some mechanism to mitigate a missed deadline
+or two or a bad grade and I certainly agree with the idea that the
+important thing is that the student gets it at the end and not
+necessarily that they get it when first introduced.&lt;/p&gt;
+&lt;p&gt;
+That said, the idea of largely or wholly eliminating deadlines just
+doesn&amp;#39;t fly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Why deadlines matter
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+The usual first response is that having no deadlines rewards bad
+behavior. This can be true but it really depends on circumstances. On
+the other hand there are some legit reasons for deadlines.&lt;/p&gt;
+&lt;p&gt;
+A big one is snowballing - some courses are compartmentalized. The CS
+topics course I just taught was. Each unit was independent so in
+theory any could be completed at any time. Here the snowballing is
+just the overall amount of work. If completing one assignment say,
+every two weeks is a challenge for a particular student, imagine when
+they let the deadlines slip and then have to complete 6 at once.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s worse though in courses that do build. I taught data structures
+last semester. You can&amp;#39;t build your linked lists without understanding
+your pointers and you can&amp;#39;t build an open hash table without those
+linked lists. If you can&amp;#39;t do the pointers you&amp;#39;re going to really be
+at a loss for those other topics. This means making sure a student
+&lt;strong&gt;can&lt;/strong&gt; successfully master what&amp;#39;s needed by the dealine &lt;strong&gt;is&lt;/strong&gt; important
+and not arbitarary.&lt;/p&gt;
+&lt;p&gt;
+Another reason is that, in spite of the no-deadline crowds
+contentions, deadlines &lt;strong&gt;do matter&lt;/strong&gt; in the real world. You&amp;#39;re not
+getting on that plane once the door at the gate closes. Likewise, I&amp;#39;m
+sure you&amp;#39;d be pretty unhappy if your house burned down because the
+fire department had to finish their dinner before heading over to put
+out the blaze. Also, try getting into college if you miss the
+application deadline. &lt;/p&gt;
+&lt;p&gt;
+Usually, deadlines are more flexible and the penalties for missing
+them are less severe but they do indeed exist. If you miss a client
+deadline you might lose the client, if you don&amp;#39;t pay your bills,
+eventually the collectors will come for you. &lt;/p&gt;
+&lt;p&gt;
+Even without the penalties there&amp;#39;s also a matter of respect - not just
+for the teacher but also for your classmates. Putting aside the legit
+reasons for missing deadlines, some students will indeed either be
+lazy on not focused or might just be taking advantage of a more
+lenient teacher. This student is then given more attention from the
+teacher - since teacher time is limited, that&amp;#39;s going to be at the
+expense of the other students - not fair and not cool. If the reason
+for missing a deadline is legit, then no problem but as we all know
+there are plenty of people who&amp;#39;ll take advantage of any system that
+lets them.&lt;/p&gt;
+&lt;p&gt;
+Another big reason for deadlines that&amp;#39;s never talked about is that
+many students want and/or need them. Over my 30+ years as a teacher,
+I&amp;#39;ve tried strict deadlines, no deadlines and everything in between. I
+can&amp;#39;t tell you how many students have told me that they needed
+deadlines to keep them on task and in fact, deadlines with internal
+targets to meet helped even more. &lt;/p&gt;
+&lt;p&gt;
+Finally, one has to consider the teachers workload and schedule. It&amp;#39;s
+time to drop the &amp;#34;hero teacher&amp;#34; bit. Teachers &lt;strong&gt;should&lt;/strong&gt; have a work
+life balance and that means not being available to handle student
+issues 24/7. I hate grading and it takes me a lot of time and
+effort. When I grade, I set up my systems to be efficient and I get
+into a grading groove. If a student hands in something late, even with
+a good reason, it breaks my flow and takes me much longer and also
+ties me up in other ways. Sure, if I taught at an &amp;#34;elite&amp;#34; private
+school and only had a dozen kids in a class I could make all sorts of
+accommodations but when you teach 5 of 34 every day somethings got to
+give. The teacher also has their own deadlines - students must know
+this or that before the AP or standardized test and of course the big
+deadline - getting those grades in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+What do I do?
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So, where do I ultimately fall on this? I do believe in deadlines but
+I believe in some flexibility. I also like to have enough information
+on my students so that by the end of the term I can assess them even
+if one or two things are missing.&lt;/p&gt;
+&lt;p&gt;
+Are my deadlines hard? Not really - anyone can ask for an extension
+but my two requirements are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+make some headway on the project. This is easy since I use Git and
+GitHub so I can just log at their logs.&lt;/li&gt;
+&lt;li&gt;They speak to me about the extension before the deadline and by
+this I mean as soon as there might be an issue, not the evening
+before the project is due. I encourage them to speak to me even if
+they think there might be an issue to get my okay and then, more
+often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
+actually talk to me about an extension and that they do it in what I
+consider a timely manner but I think at some point the students must
+advocate for themselves.&lt;/p&gt;
+&lt;p&gt;
+So, how does it work for my classes? I think pretty well. I&amp;#39;ll take
+almost any reason - sickness, family event, lots of other things due,
+something&amp;#39;s unclear or almost anything else. We discuss it and come up
+with a fair extension. I usually ask &amp;#34;what do you need&amp;#34; in terms of
+time, resources, and in some cases help and then I try to give that
+plus a cushion.&lt;/p&gt;
+&lt;p&gt;
+So, what do you think? Are you part of the no deadline crowd? What am
+I missing? Got other strategies and techniques? Let&amp;#39;s hear them as
+well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>When is remote better</title>
