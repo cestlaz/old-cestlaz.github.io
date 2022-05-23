@@ -50,11 +50,21 @@ solutions up on &lt;a href=&#34;https://github.com/zamansky?utf8=%25E2%259C%2593
 Finally, you can get to the challenges from previous years by just
 adding the year to the url, that is:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode/2019&#34;&gt;&lt;a href=&#34;http://adventofcode.com/2019&#34;&gt;http://adventofcode.com/2019&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2018&#34;&gt;http://adventofcode.com/2018&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2017&#34;&gt;http://adventofcode.com/2017&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2016&#34;&gt;http://adventofcode.com/2016&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2015&#34;&gt;http://adventofcode.com/2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode/2019&#34;&gt;&lt;a href=&#34;http://adventofcode.com/2019&#34;&gt;http://adventofcode.com/2019&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2018&#34;&gt;http://adventofcode.com/2018&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2017&#34;&gt;http://adventofcode.com/2017&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2016&#34;&gt;http://adventofcode.com/2016&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://adventofcode.com/2015&#34;&gt;http://adventofcode.com/2015&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Finally, here&amp;#39;s a really interesting video by Eric on the whole AoC
@@ -88,8 +98,9 @@ enjoying it so much we keep coming back. They&amp;#39;ve got a big maze - over
 5 acres. Each year it&amp;#39;s a different theme. This year was in honor of
 the moon landing. &lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/d/de/dde02460-7aa5-11e6-a29b-2360b2195be3/57d991b552906.image.jpg&#34;
-         alt=&#34;An older maze&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt;&lt;figcaption&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/d/de/dde02460-7aa5-11e6-a29b-2360b2195be3/57d991b552906.image.jpg&#34;
+         alt=&#34;An older maze&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;An older maze&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -105,10 +116,12 @@ instance the moon might be surrounded by yellow tape and the astronaut
 in black. In the image above, the wheels of the tractor might be taped
 in one color and the cabin another.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_left&#34;&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/57LXNOhdME_k1K03HpCtIi2MnyF3WEhEY84kuX9RO1fKwJ67j2o6xFRCsO_TpUfI7t91Jcy7f56xAU6eNtR_9kDQesz8yZhoKFvAJCj-MuwDXgrhGQYACDiyfIKhO3gWNEDy2_uMZL-0zvkTlW_t6S8QidBcf8cceulKXvX6Ix3rXkHyxIcC7O6u7fLGQgb6f4Bd1iymy7APyLjqDGf6TC6ejqmDQ8ThFTfyO6kABcA8NXH6P_XO82X65lmGwVEXFVZiuzYYGO_zfOT3B0QZW3giBexk7lSJgVpdRF9OnbYQrC0nEva_pFT_79uEAbdXFSEdH8uCAAuyse6gnyunpDI0xWSffdyAPtGZZ5V_7JJmN61PFUvckWuVJC8FzCnsK_sLmi015ZxwY4M9dhhXrCmAWzhzCj4tyFcNfiot22luXnrRiWXek5Rxa0F-7UBQVZYX-I-SY2Si1ZpQrTBW8Nzi2Fo16U4HFW1yK-zd1sBhxwwZtLkQS3PxbsoUL61M5dsCWSsbjNB9gjjYA9K7MaJUSFaRN4HAXuyiUuwpa4lMXYtAmnF6mZxWpL2QPYFD5qWiZq1XUrgpwWmL6HQ3kUI5zcd87YbHPpEtbjAOte8_NQAM0jTk3rwwyEsN6n59RvUm3hA2lwIeoP2hB8QQVeFctYpsPzlF=w1752-h1314-no&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt;
+&lt;figure class=&#34;z_image_left&#34;&gt;
+    &lt;img src=&#34;https://lh3.googleusercontent.com/57LXNOhdME_k1K03HpCtIi2MnyF3WEhEY84kuX9RO1fKwJ67j2o6xFRCsO_TpUfI7t91Jcy7f56xAU6eNtR_9kDQesz8yZhoKFvAJCj-MuwDXgrhGQYACDiyfIKhO3gWNEDy2_uMZL-0zvkTlW_t6S8QidBcf8cceulKXvX6Ix3rXkHyxIcC7O6u7fLGQgb6f4Bd1iymy7APyLjqDGf6TC6ejqmDQ8ThFTfyO6kABcA8NXH6P_XO82X65lmGwVEXFVZiuzYYGO_zfOT3B0QZW3giBexk7lSJgVpdRF9OnbYQrC0nEva_pFT_79uEAbdXFSEdH8uCAAuyse6gnyunpDI0xWSffdyAPtGZZ5V_7JJmN61PFUvckWuVJC8FzCnsK_sLmi015ZxwY4M9dhhXrCmAWzhzCj4tyFcNfiot22luXnrRiWXek5Rxa0F-7UBQVZYX-I-SY2Si1ZpQrTBW8Nzi2Fo16U4HFW1yK-zd1sBhxwwZtLkQS3PxbsoUL61M5dsCWSsbjNB9gjjYA9K7MaJUSFaRN4HAXuyiUuwpa4lMXYtAmnF6mZxWpL2QPYFD5qWiZq1XUrgpwWmL6HQ3kUI5zcd87YbHPpEtbjAOte8_NQAM0jTk3rwwyEsN6n59RvUm3hA2lwIeoP2hB8QQVeFctYpsPzlF=w1752-h1314-no&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt; 
 &lt;/figure&gt;
  
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/MUujLBf7vV4Pr4FiLMS8mpAL0JKmyrpRRCz3uJdB61MSC0y43FADSJL-qbd92iVUEDTlQmDh1urIjySMAomjZa2gM4nQIHpLDipV84YsKYIr4pnt2SGN1INsYSHoNULPomSG-d3C1M-gbNxnD1WB6fOjAM-2E_xqu8OObeLt5UtVxtYRsQ0AEWTH5YNk2O5RZ3O085SlTeQV5xFqIUblvEGTA700wCksy4ohH9kqmRBhXiuOKhwYPn_wCQhp1_lgM4wnrvt0DUCqMX8j8hQw7bGbOnE6P-itprrwrFRhwlnQ4XuQWfmQLPadCUcT7fQC_hy6xIvmB9HGoNBDTKsHyCr_-Vuh7FPdZ6FjL_Ks59LADO9D9hgyhKzH6lkBAuBjiXgTyVIu-oHeyEqTTV2lFhvZRbq3zGEkq8Lo64dSibNO2NzdNwLJyQlNQseBKlfTCIOx2m2Z3haoeXcYY9sqjbmOzdfL_1qL1yVqNNnkl9U_8SvYXO9yQFAmZrptfYVmlEtDBnpNkFnbPGKopdc3pksgK2mzgTn7rnLM-VsQbi2mSPsjmGevsMQt1-ERL5OOcrEb2v8hu2WeGZ5Dhe5oG7GFXBBx3Xzi6p478evz0YB2ZuIfvbc6K2sMFlEltJCZvgnjn3GeevI-yolHKlHDMPktG8kvLAk_=w1752-h1314-no&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://lh3.googleusercontent.com/MUujLBf7vV4Pr4FiLMS8mpAL0JKmyrpRRCz3uJdB61MSC0y43FADSJL-qbd92iVUEDTlQmDh1urIjySMAomjZa2gM4nQIHpLDipV84YsKYIr4pnt2SGN1INsYSHoNULPomSG-d3C1M-gbNxnD1WB6fOjAM-2E_xqu8OObeLt5UtVxtYRsQ0AEWTH5YNk2O5RZ3O085SlTeQV5xFqIUblvEGTA700wCksy4ohH9kqmRBhXiuOKhwYPn_wCQhp1_lgM4wnrvt0DUCqMX8j8hQw7bGbOnE6P-itprrwrFRhwlnQ4XuQWfmQLPadCUcT7fQC_hy6xIvmB9HGoNBDTKsHyCr_-Vuh7FPdZ6FjL_Ks59LADO9D9hgyhKzH6lkBAuBjiXgTyVIu-oHeyEqTTV2lFhvZRbq3zGEkq8Lo64dSibNO2NzdNwLJyQlNQseBKlfTCIOx2m2Z3haoeXcYY9sqjbmOzdfL_1qL1yVqNNnkl9U_8SvYXO9yQFAmZrptfYVmlEtDBnpNkFnbPGKopdc3pksgK2mzgTn7rnLM-VsQbi2mSPsjmGevsMQt1-ERL5OOcrEb2v8hu2WeGZ5Dhe5oG7GFXBBx3Xzi6p478evz0YB2ZuIfvbc6K2sMFlEltJCZvgnjn3GeevI-yolHKlHDMPktG8kvLAk_=w1752-h1314-no&#34; width=&#34;200&#34; height=&#34;200&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -276,7 +289,7 @@ diagonals of a bounding rectangle and then compare areas of these
 rectangles. They should decrease at first and then eventually
 increase. &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
       new_pts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transform(pts,time) 
       bbox &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bounding_box(new_pts)
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (area(bbox) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; area(previous_bbox)):
@@ -299,36 +312,47 @@ When I first solved the problem, I just dumped the coordinates into a
 2 dimentional array and printed it but afterwards I wrote a little
 clojurescript html5 canvas visualization:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 So there it is. It&amp;#39;s not a trivial problem for beginners but it is doable. There&amp;#39;s a
 lot to deal with:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;parse the data&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;parse the data&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 This isn&amp;#39;t too bad. You could cover regular expressions but even
 without it isn&amp;#39;t too big of a deal. You could also just use an editor
 to extract the important data or preprocess this for the kids.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Figure out how to transform the points.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Figure out how to transform the points.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This also isn&amp;#39;t too bad. Just loop over all the points with &lt;code&gt;newpoint
 = oldpoint + t * velocity&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Figure out the bounding boxes&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Figure out the bounding boxes&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Also not too bad. Loop over all the points to find the smallest and
 largest x and y coordinates&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Set up a loop to find the smallest bounding box and hence the time
-that the message will appear.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up a loop to find the smallest bounding box and hence the time
+that the message will appear.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;and then finally:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;draw the points to visually inspect the answer.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;draw the points to visually inspect the answer.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This might be the most persnickety part. When I first coded it my
 output was upside down and backwards but good enough.&lt;/p&gt;
@@ -346,58 +370,61 @@ Advent of Code problems I finished this year you can find them &lt;a href=&#34;h
       <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://cestlaz.github.io/posts/whats-next/</guid>
-      <description>&lt;p&gt;
-This question appeared on Facebook a few days ago:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Does anyone have an effective way to teach students how to break down
+      <description>
+This question appeared on Facebook a few days ago:
+
+#+BEGIN_QUOTE
+Does anyone have an effective way to teach students how to break down
 a problem into steps and then solve each step one by one? I think my
 students are struggling with a large question and breaking it in
-subsequent parts.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-There were some good suggestions. I wanted to add something but didn&amp;#39;t
-have time then so I thought I&amp;#39;d write it up now.&lt;/p&gt;
-&lt;p&gt;
+subsequent parts.
+#+END_QUOTE
+
+There were some good suggestions. I wanted to add something but didn&#39;t
+have time then so I thought I&#39;d write it up now.
+
 As an aside, it took me forever to find the post again over on
-Facebook. If there&amp;#39;s a way to mark posts or save a direct link I&amp;#39;d
+Facebook. If there&#39;s a way to mark posts or save a direct link I&#39;d
 love to hear it. I had to look through all the CS Ed groups I belong
-to manually until I found it again.&lt;/p&gt;
-&lt;p&gt;
+to manually until I found it again.
+
 When I read the program I was reminded of a PD session we had to
-attend back at Stuyvesant. Back then the fad was &lt;a href=&#34;https://en.wikipedia.org/wiki/Writing_across_the_curriculum&#34;&gt;Writing Across the
-Curriculum&lt;/a&gt;. Every teacher in every class was to give some significant
-writing assignment, evaluate it and provide feedback. Let&amp;#39;s forget the
-fact that most of us never had any training or preparation to do so.&lt;/p&gt;
-&lt;p&gt;
-On that PD day the guest speaker was &lt;a href=&#34;https://en.wikipedia.org/wiki/William_Zinsser&#34;&gt;William Zinsser&lt;/a&gt;. The first thing
+attend back at Stuyvesant. Back then the fad was [[https://en.wikipedia.org/wiki/Writing_across_the_curriculum][Writing Across the
+Curriculum]]. Every teacher in every class was to give some significant
+writing assignment, evaluate it and provide feedback. Let&#39;s forget the
+fact that most of us never had any training or preparation to do so.
+
+On that PD day the guest speaker was [[https://en.wikipedia.org/wiki/William_Zinsser][William Zinsser]]. The first thing
 he said was that what we were being asked to do by our principal was
-bunk. He then proceeded to give advice on  simple good writing.&lt;/p&gt;
-&lt;p&gt;
+bunk. He then proceeded to give advice on  simple good writing.
+
 The procedure he recommended following was to ask yourself (or have
-the student ask themselves) &amp;#34;what does my audience need to know next?&amp;#34;
-That&amp;#39;s your next sentence. Then ask the question again. Rinse and
-repeat until done.&lt;/p&gt;
-&lt;p&gt;
+the student ask themselves) &#34;what does my audience need to know next?&#34;
+That&#39;s your next sentence. Then ask the question again. Rinse and
+repeat until done.
+
 It was simple and it made sense. It also applied to introductory CS
 problems. When starting out, students have a limited CS / programming
 tool box so a good question for them to ask when trying to solve a
-problem is not only &amp;#34;what do I need to do next? but also &amp;#34;what can I
-do next?&amp;#34;&lt;/p&gt;
-&lt;p&gt;
+problem is not only &#34;what do I need to do next? but also &#34;what can I
+do next?&#34;
+
 When students have a limited CS vocabulary and set of idioms - loops,
 conditionals, functions, whatever, there will only be so many things
 they can do to move a problem along. If they go through the things the
-&lt;strong&gt;&lt;strong&gt;can&lt;/strong&gt;&lt;/strong&gt; do they will likely fall on to what they &lt;strong&gt;&lt;strong&gt;should&lt;/strong&gt;&lt;/strong&gt; do.&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s similar to doing a proof in geometry. Students have a set of
+**can** do they will likely fall on to what they **should** do.
+
+It&#39;s similar to doing a proof in geometry. Students have a set of
 givens. Given that set, what can they do? They only know so many
-theorems at the beginning.&lt;/p&gt;
-&lt;p&gt;
-Over time, they&amp;#39;ll recognize patterns and develop as problem solvers.&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re part of the AP CS A teachers facebook group you probably saw
+theorems at the beginning.
+
+Over time, they&#39;ll recognize patterns and develop as problem solvers.
+
+If you&#39;re part of the AP CS A teachers facebook group you probably saw
 the question. Many good answers were posted. I just wanted to add this
-thought to the collection.&lt;/p&gt;
+thought to the collection.
+
+
 </description>
     </item>
     

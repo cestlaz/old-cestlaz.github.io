@@ -48,7 +48,7 @@ dead).&lt;/p&gt;
 In a Java type language, given a 2D array &lt;code&gt;this_turn&lt;/code&gt; with the current
 world and you might get something like:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 It&amp;#39;s a really nice application of 2D arrays and I&amp;#39;ve done it with my
@@ -59,7 +59,7 @@ a world represented by an x,y grid with each cell in the grid known as
 a patch. You write a program and all the patches run it
 independently. A life solution might look like this:&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-netlogo&#34; data-lang=&#34;netlogo&#34;&gt;ask patches [ 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-netlogo&#34; data-lang=&#34;netlogo&#34;&gt;ask patches [ 
   set n count nieghbors with [color =  red] ;; red cells will be alive
   ifelse color = red 
     [ ifelse n=2 or n = 3
@@ -77,9 +77,13 @@ ask patches [set color nextcolor]&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&
 My NetLogo is a little rusty so my syntax might be off but the idea is
 to:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;have each patch count it&amp;#39;s living neighbors and figure out it&amp;#39;s
-next state - alive (red) or dead (black)&lt;/li&gt;
-&lt;li&gt;have each patch set its color to the new state&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have each patch count it&amp;#39;s living neighbors and figure out it&amp;#39;s
+next state - alive (red) or dead (black)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have each patch set its color to the new state&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 This is a very different solution. In NetLogo you never think about
@@ -106,14 +110,20 @@ each element contained the location of a living cell. This is
 certainly more space efficient. It also let me operate on the world as
 a sequence of transformations to the data:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Calculate all the possible next cells (the cells in the list plus
-all their neighbors&lt;/li&gt;
-&lt;li&gt;For each possible next cell, count it&amp;#39;s living neighbors and
-determine if the cell is alive in the next iteration&lt;/li&gt;
-&lt;li&gt;Replace the list of cells with these new cells. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calculate all the possible next cells (the cells in the list plus
+all their neighbors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For each possible next cell, count it&amp;#39;s living neighbors and
+determine if the cell is alive in the next iteration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace the list of cells with these new cells. &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;generate [state]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;generate [state]
   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Generate and return the next state&amp;#34;&lt;/span&gt;
   (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[potential-cells (for [[x y] state [dx dy] cell-bloc-3x3]
                           [(+ x dx) (+ y dy)])

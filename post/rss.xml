@@ -6,10 +6,63 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 May 2022 08:28:56 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 20 May 2022 17:20:10 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Put It In The Books</title>
+      <link>https://cestlaz.github.io/post/put-it-in-the-books/</link>
+      <pubDate>Fri, 20 May 2022 17:20:10 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/put-it-in-the-books/</guid>
+      <description>&lt;p&gt;
+Just finished entering grades closing out my 32nd year teaching.&lt;/p&gt;
+&lt;p&gt;
+Whew!&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s been a hard year for me and I&amp;#39;m sure even harder for the K12
+teachers out there. Still this year I&amp;#39;m really missing what I was oh
+so many years ago - a regular teacher.&lt;/p&gt;
+&lt;p&gt;
+Teaching from September through June is a beast and from my first day
+on the job I had to work ten times harder than I ever had to as a
+software engineer and was commensurately exhausted. In spite of what
+the &amp;#34;real world&amp;#34; says teachers need their summers to recharge the
+batteries. This isn&amp;#39;t to say that teachers don&amp;#39;t work over the
+summer - they lesson plan, attend PD and in fact a bunch of them will
+be with me, working towards their NY State CS teaching certification.&lt;/p&gt;
+&lt;p&gt;
+Now, I&amp;#39;m also technically on a school year contract so why do I wish I
+was a regular teacher? Because once you enter those final grades, you
+put the past to bed. Once I clicked on &amp;#34;post grades&amp;#34; in CUNYFirst I
+thought about that. Early in my career, before I had to deal with
+building Stuy&amp;#39;s CS program and otherwise getting involved in the
+movement, once those grades were entered I was done. I could mentally
+turn off. My responsibilities to student and school were done and I&amp;#39;d
+have a couple of months before the next go around. &lt;/p&gt;
+&lt;p&gt;
+I noted that I should have been feeling that but wasn&amp;#39;t. Why not?
+Because I&amp;#39;m still immersed in dealing with issues for my advanced
+certificate program - working on scholarship issues, getting the
+teachers, making sure they&amp;#39;re up to speed, finding instructors under
+some draconian restrictions placed on me by both Hunter and the staet,
+andto be honest, the self imposed stress of feeling responsible for
+making everything work.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s been a while since I&amp;#39;ve &amp;#34;just taught&amp;#34; and maybe would like to get
+back to that but even then, all this is making me seriously think
+about that possible (probable?) retirement in a year to scale things
+back or change things up.&lt;/p&gt;
+&lt;p&gt;
+In any event, ploughing ahead with the teacher certification program
+this month to get things in order and then teaching through
+July. Should get a week or two of downtime in August so that&amp;#39;ll be the
+time to reflect on the year in depth. Until then it&amp;#39;s nose to the
+grindstone.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Yes, deadlines do matter</title>
@@ -156,14 +209,18 @@ if one or two things are missing.&lt;/p&gt;
 Are my deadlines hard? Not really - anyone can ask for an extension
 but my two requirements are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+&lt;li&gt;
+&lt;p&gt;They have to have shown that up to the request they&amp;#39;ve tried to
 make some headway on the project. This is easy since I use Git and
-GitHub so I can just log at their logs.&lt;/li&gt;
-&lt;li&gt;They speak to me about the extension before the deadline and by
+GitHub so I can just log at their logs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They speak to me about the extension before the deadline and by
 this I mean as soon as there might be an issue, not the evening
 before the project is due. I encourage them to speak to me even if
 they think there might be an issue to get my okay and then, more
-often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+often than not, they don&amp;#39;t use the extension.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
 actually talk to me about an extension and that they do it in what I
@@ -192,7 +249,8 @@ well.&lt;/p&gt;
       
       <guid>https://cestlaz.github.io/post/when-your-program-crashes/</guid>
       <description>&lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt; 
 &lt;/figure&gt;
  &lt;/p&gt;
 &lt;p&gt;
@@ -286,7 +344,8 @@ teachers and as professionals. Rubber Duck debugging, code reading,
 incremental development etc.. What else? I&amp;#39;d love to hear any strategies others have used to help students along when
 dealing with errors. &lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt; 
 &lt;/figure&gt;
  &lt;/p&gt;
 </description>
@@ -372,7 +431,8 @@ has a &lt;strong&gt;div&lt;/strong&gt; as the root node with two children. the f
 &lt;strong&gt;h1&lt;/strong&gt; component (header 1) and the other is the ordered list -
 &lt;strong&gt;ol&lt;/strong&gt;. the ordered list the has three children, those three &lt;strong&gt;li&lt;/strong&gt;
 list item elements. &lt;/p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;p&gt;
 In fact, you can explore this tree through your web browser. You can
@@ -763,13 +823,21 @@ summer, is critical to the process.&lt;/p&gt;
 Right now, you could place K12 CS teachers into one of the following
 buckets:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;People with strong CS backgrounds. CS Majors or people with
-industry experience.&lt;/li&gt;
-&lt;li&gt;Hobbyists who learned some CS on their own and developed an
-interest or passion for the subject.&lt;/li&gt;
-&lt;li&gt;Volunteers who are game for the challenge who heard about CS4All
-and answered the call.&lt;/li&gt;
-&lt;li&gt;Teachers who were voluntold who are taking one for the team.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People with strong CS backgrounds. CS Majors or people with
+industry experience.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hobbyists who learned some CS on their own and developed an
+interest or passion for the subject.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Volunteers who are game for the challenge who heard about CS4All
+and answered the call.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Teachers who were voluntold who are taking one for the team.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Most of the home-brew CS programs in the city started with teachers
@@ -877,9 +945,15 @@ This came up for me when I started at Hunter. One of my classes was
 and is a CS0. It was mostly an intro to programming in Python with a
 touch of C++ at the end but it also included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;binary/hex/ASCII&lt;/li&gt;
-&lt;li&gt;an intro to assembly&lt;/li&gt;
-&lt;li&gt;Truth tables and logic gates&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;binary/hex/ASCII&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;an intro to assembly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Truth tables and logic gates&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These topics were put in the class to prepare students for Hunters
 Systems/Architecture classes in the CS sequence. Classes they wouldn&amp;#39;t
@@ -1807,29 +1881,43 @@ experiences so there&amp;#39;s not reason for me to write much the same so I
 figured I&amp;#39;d just quickly list out a few of my highlights and in
 particular things I plan to write more about when I get back to NYC.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Language choice for APCS. There was a panel that considered why
+&lt;li&gt;
+&lt;p&gt;Language choice for APCS. There was a panel that considered why
 change to Python or why stick with Java. I didn&amp;#39;t attend this
 session but talked at length about it with a number of people. It
 had me reconsidering my opinions and I&amp;#39;ll certainly write about this
-in the near future.&lt;/li&gt;
-&lt;li&gt;I saw an interesting talk by Sam Lau in which he discussed how
+in the near future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I saw an interesting talk by Sam Lau in which he discussed how
 statisticians and computer scientists differed in their views as to
 how and what should be taught in a data science course. This got me
-thinking about developing CS offerings at the high school level.&lt;/li&gt;
-&lt;li&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
+thinking about developing CS offerings at the high school level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
 the first time where teachers discussed their failures. This was a
 &lt;strong&gt;great&lt;/strong&gt; session hosted by two more friends I haven&amp;#39;t seen since
 pre-covid - Dan Garcia and Jim Huggins. One topic brought up there
 was dealing with late assignments as well as alternative
-grading. This too is something I plan to write about.&lt;/li&gt;
-&lt;li&gt;PD For CS Teachers and teacher prep programs. This is clearly
-something I care deeply about and there were some sessions on this.&lt;/li&gt;
-&lt;li&gt;I also spent a good amount of time catching up with my friends Jim
+grading. This too is something I plan to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PD For CS Teachers and teacher prep programs. This is clearly
+something I care deeply about and there were some sessions on this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I also spent a good amount of time catching up with my friends Jim
 and Robin from Siena College. They&amp;#39;re doing some cool thing up there
-so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/li&gt;
-&lt;li&gt;I also had some good discussions with vendors in the exhibit hall as
-well as some great hallway tract talks.&lt;/li&gt;
-&lt;li&gt;My thoughts on the hybrid format of this conference&lt;/li&gt;
+so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I also had some good discussions with vendors in the exhibit hall as
+well as some great hallway tract talks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My thoughts on the hybrid format of this conference&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&amp;#39;s a big list - a lot of things to write about. I hope to get on
 this when I get back to NYC on Sunday.&lt;/p&gt;
@@ -2289,12 +2377,24 @@ might be something they got from a conference or an outside PD. We&amp;#39;d
 also have larger PD sessions a couple of times a year. Topics would be
 things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to use the graphing calculator to explore functions&lt;/li&gt;
-&lt;li&gt;History and math&lt;/li&gt;
-&lt;li&gt;Math in your student&amp;#39;s worlds&lt;/li&gt;
-&lt;li&gt;Exploring math competition problems&lt;/li&gt;
-&lt;li&gt;An introduction to some advanced or new math topic&lt;/li&gt;
-&lt;li&gt;Motivating a lesson on something or other&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to use the graphing calculator to explore functions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;History and math&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Math in your student&amp;#39;s worlds&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exploring math competition problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An introduction to some advanced or new math topic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Motivating a lesson on something or other&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Few of these were tied to a specific course and none were tied to a
 specific implementation or curriculum. There might be a special
@@ -2595,28 +2695,36 @@ underrepresented racial and ethnic groups and young women while
 teaching the technical building blocks and preparing students for the
 AP® exam. Code.org’s CSA curriculum:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Incorporates culturally responsive and equitable teaching strategies
+&lt;li&gt;
+&lt;p&gt;Incorporates culturally responsive and equitable teaching strategies
 and frameworks by considering cultural references and learning styles
 throughout the curriculum — from the vocabulary, to the visuals, to
-the sequence of concepts taught.&lt;/li&gt;
-&lt;li&gt;Acknowledges diversity of experiences and interests. Students
+the sequence of concepts taught.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Acknowledges diversity of experiences and interests. Students
 investigate real-world problems during class activities and make
 connections to their own work. Projects are carefully designed to be
 instructive yet open-ended, enabling students to demonstrate mastery
 of concepts and engage in their passions without making assumptions
-about their cultural background or life experiences.&lt;/li&gt;
-&lt;li&gt;Brings to life a “Software Engineering for All” narrative. This
+about their cultural background or life experiences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brings to life a “Software Engineering for All” narrative. This
 narrative helps students envision themselves as software engineers,
 and the curriculum uses videos featuring presenters from different
 backgrounds who work in technology to help students visualize
-opportunities for their own futures.&lt;/li&gt;
-&lt;li&gt;Helps students develop and model valuable, real-world career
+opportunities for their own futures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Helps students develop and model valuable, real-world career
 skills. In addition to skills like tracing code segments and
 documenting code, Code.org’s approach to CSA incorporates
 collaboration and career skills that go beyond the AP® CSA course
 requirements. For example, our curriculum includes a student-friendly
 code review tool, which is a common quality assurance practice in the
-technology industry.&lt;/li&gt;
+technology industry.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -2962,7 +3070,7 @@ For convenience (and as I learned later, part 2) I also wanted a
 routine that could print the board. Here&amp;#39;s that routine in case you
 want to see some clojure.&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;
   (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;board-&amp;gt;string [board]
     (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[maxx (apply max (map first (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest x&lt;/span&gt;
           maxy (apply max (map second (keys board))) &lt;span style=&#34;color:#75715e&#34;&gt;;; find the largest y&lt;/span&gt;
@@ -3168,7 +3276,7 @@ last item you put in is the first item you take out.&lt;/p&gt;
 &lt;p&gt;
 So, the algorithm is pretty simple.&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;make an empty stack
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;make an empty stack
 For each character in the input:
   1. If it&amp;#39;s an open bracket put it on the stack
   2. If it&amp;#39;s a close bracket, check the top of the stack.
@@ -3247,7 +3355,7 @@ characters and then figuring out the total number of these items.&lt;/p&gt;
 I had already parsed my data into the a two item list where the left
 item is a list of inputs and the right a list of outputs:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 So all I had to do go through all the output sides, count the characters in
@@ -3255,7 +3363,7 @@ each item and then add up the number of them.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the code:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;takes a list of numbers and returns only those that are 2,4,3, or 7&amp;#34;&lt;/span&gt;
     (filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(contains? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;{&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;} %) x))
 
@@ -3390,8 +3498,12 @@ This turns out to be rather simple.&lt;/p&gt;
 For each possible location (looping from smallest crab location to
 larges):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;calculate the distance from each crab to this location.&lt;/li&gt;
-&lt;li&gt;Add up all those distances.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;calculate the distance from each crab to this location.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add up all those distances.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We then just need to take the smallest distance and we&amp;#39;re done.&lt;/p&gt;
 &lt;p&gt;
@@ -3469,7 +3581,7 @@ straightforward way I could.&lt;/p&gt;
 Fist, I made a list with my initial state. The example problem had a
 data set of &lt;code&gt;&amp;#34;3,4,3,1 2&amp;#34;&lt;/code&gt; which led to this list:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Notice that I have 9  not 8 slots (indexed 0 - 8). That extra one at
@@ -3478,18 +3590,26 @@ they can start the cycle again.&lt;/p&gt;
 &lt;p&gt;
 From there, it&amp;#39;s just following the rules:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Grab the number of fish to spawn today.&lt;/li&gt;
-&lt;li&gt;Move all the fish down a day - that is, the fish in day 1 go to day
-0, day 2 to day 1 etc.&lt;/li&gt;
-&lt;li&gt;Add the new fish to slot 6 (as per the specification).&lt;/li&gt;
-&lt;li&gt;Add the number that spawned today to the end.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grab the number of fish to spawn today.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move all the fish down a day - that is, the fish in day 1 go to day
+0, day 2 to day 1 etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the new fish to slot 6 (as per the specification).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the number that spawned today to the end.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 Repeat this for the requisite number of days and then add them all up.&lt;/p&gt;
 &lt;p&gt;
 The Clojure code for the complete solution is:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
         (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[start-state (&lt;span style=&#34;color:#a6e22e&#34;&gt;reduce&lt;/span&gt;
                            (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[sofar next]
                              (&lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt; sofar next inc))
@@ -3624,7 +3744,7 @@ be all 1 since each location was hit once.&lt;/p&gt;
 If I then added the line (1,0) –&amp;gt; (1,2), I&amp;#39;d end up with this final
 map:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  {(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  {(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
    (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
@@ -3670,12 +3790,12 @@ the fanciest solutions.&lt;/p&gt;
 &lt;p&gt;
 They&amp;#39;re the ones that write&lt;/p&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!*&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;(l(&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!*&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;(l(&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 instead of something like:&lt;/p&gt;
 &lt;div class=&#34;src src-c&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string_length&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string_length&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s){
   &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (s[i] &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;){
     i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
@@ -3742,7 +3862,7 @@ board for winners a little onerous but marking squares with an X
 becomes trivial - just replace all occurrences of the number in
 question with an X. This can be done in Clojure using map:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;add-mark [board mark]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;add-mark [board mark]
   (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(= % mark) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X&amp;#34;&lt;/span&gt; %) board))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -3750,7 +3870,7 @@ Thinking about it, it was really easy to switch from the list of 25
 items to the list of list representations. We can do this with the
 Clojure partition function.&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;    (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;))
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;    (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;))
 
     &lt;span style=&#34;color:#75715e&#34;&gt;;; results in:&lt;/span&gt;
     &lt;span style=&#34;color:#75715e&#34;&gt;;;((0 1 2 3 4)&lt;/span&gt;
@@ -3767,7 +3887,7 @@ and columns so as to make the vertical check into a horizontal one.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s my code to do all the checking:&lt;/p&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;has-five? [board]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;has-five? [board]
   (&amp;gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;-&amp;gt;&amp;gt;&lt;/span&gt; board
            (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(filter (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[x] (= x &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X&amp;#34;&lt;/span&gt;))%)  ) &lt;span style=&#34;color:#75715e&#34;&gt;;; keep only the Xs&lt;/span&gt;
            (map count) &lt;span style=&#34;color:#75715e&#34;&gt;;; how many are there in each row&lt;/span&gt;
@@ -3785,10 +3905,18 @@ Here&amp;#39;s my code to do all the checking:&lt;/p&gt;
 &lt;p&gt;
 Now, solving part 1 was easy:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;take the next ball&lt;/li&gt;
-&lt;li&gt;mark all the locations with the ball&amp;#39;s number&lt;/li&gt;
-&lt;li&gt;see if there&amp;#39;s a winner&lt;/li&gt;
-&lt;li&gt;If not, go back to step 1.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;take the next ball&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mark all the locations with the ball&amp;#39;s number&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;see if there&amp;#39;s a winner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If not, go back to step 1.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 Sure, we&amp;#39;re doing more transformations on the data than needed but
@@ -3803,11 +3931,21 @@ first winning board we had to find the last winning board.&lt;/p&gt;
 Pretty easy. We just had to modify the above procedure to the
 following:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;take the next ball&lt;/li&gt;
-&lt;li&gt;mark all the locations wiht the ball&amp;#39;s number&lt;/li&gt;
-&lt;li&gt;remove any board that&amp;#39;s a winner&lt;/li&gt;
-&lt;li&gt;If we&amp;#39;re down to one board remaining we&amp;#39;ve found the board&lt;/li&gt;
-&lt;li&gt;If not, back to step 1&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;take the next ball&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mark all the locations wiht the ball&amp;#39;s number&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;remove any board that&amp;#39;s a winner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If we&amp;#39;re down to one board remaining we&amp;#39;ve found the board&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If not, back to step 1&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I did this but first got a wrong answer. After looking at my results I
 realized that I stopped when I got down to 1 board but it hadn&amp;#39;t
@@ -4165,14 +4303,30 @@ Finally, and this is the show stopper, the video shows Embark. &lt;/p&gt;
 &lt;p&gt;
 Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-6-swiper/&#34;&gt;My post/video on Ivy/Swiper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/raxod502/prescient.el&#34;&gt;Prescient&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/oantolin/orderless&#34;&gt;Orderless&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/raxod502/selectrum&#34;&gt;Selectrum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/minad/marginalia/&#34;&gt;Marginalia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/minad/consult&#34;&gt;Consult&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/oantolin/embark/&#34;&gt;Embark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-6-swiper/&#34;&gt;My post/video on Ivy/Swiper&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/raxod502/prescient.el&#34;&gt;Prescient&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/oantolin/orderless&#34;&gt;Orderless&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/raxod502/selectrum&#34;&gt;Selectrum&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/minad/marginalia/&#34;&gt;Marginalia&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/minad/consult&#34;&gt;Consult&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/oantolin/embark/&#34;&gt;Embark&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 and of course, the video:&lt;/p&gt;
@@ -4318,18 +4472,34 @@ projectile, it was &lt;code&gt;C-c p&lt;/code&gt; and the default for project.el
 p&lt;/code&gt;. No big difference there. Projectile seems to have many many more
 options but in general, I find that all I need is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Switch to a project - &lt;code&gt;C-x p p&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Find or open a file in a project - &lt;code&gt;C-x p f&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Switch buffers in a project - &lt;code&gt;C-x p b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Delete all the project buffers - &lt;code&gt;C-x p k&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;List the project buffers&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Switch to a project - &lt;code&gt;C-x p p&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find or open a file in a project - &lt;code&gt;C-x p f&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Switch buffers in a project - &lt;code&gt;C-x p b&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Delete all the project buffers - &lt;code&gt;C-x p k&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List the project buffers&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Project.el has all except listing all the buffers. It also supports a
 few other features that I think I&amp;#39;ll find useful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;project dired - &lt;code&gt;C-x p d&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;project shell (or eshell) &lt;code&gt;C-x p s&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;project regex search and variants &lt;code&gt;C-x p g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;project dired - &lt;code&gt;C-x p d&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;project shell (or eshell) &lt;code&gt;C-x p s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;project regex search and variants &lt;code&gt;C-x p g&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;#39;m not sure if projectile has these. It probably does and I could see
 them being useful. I probable won&amp;#39;t use the regex searches much
@@ -4345,40 +4515,6 @@ Projectile being more flexible.&lt;/p&gt;
 In any event, project.el looks like it&amp;#39;s a nice simple alternative at
 least for me. Check out the video for the runthrough:&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/UagDCTjcifY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My project grading workflow</title>
-      <link>https://cestlaz.github.io/post/using-emacs-78-grading/</link>
-      <pubDate>Sun, 10 Oct 2021 10:44:41 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-78-grading/</guid>
-      <description>&lt;p&gt;
-Grading sucks. Even for a well crafted assignment it takes time and
-rarely does it give you the same insights into your students as you
-can get from just observing them and working with them, at least when
-the environment supports you doing so. &lt;/p&gt;
-&lt;p&gt;
-This leads lots of teachers to go to auto graders. I can&amp;#39;t bring
-myself going along with that. While assignments are imperfect and
-tedious to grade, they do provide some insight to your students and
-that&amp;#39;s an important part about being a teacher.&lt;/p&gt;
-&lt;p&gt;
-So, I always keep my eye out for ways to improve my project gradiing
-workflow.&lt;/p&gt;
-&lt;p&gt;
-In the video below, I step through my process. It&amp;#39;s mostly Emacs but I
-also use GitHub classroom and the terminal along the way.&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re here as for the Emacs, I&amp;#39;d any thoughts on alternatives or
-improvements.&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re here as a teacher, I&amp;#39;d love to hear what your flow is like
-and what tools you use.&lt;/p&gt;
-&lt;p&gt;
-Enjoy&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7HLVcQi8GGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     

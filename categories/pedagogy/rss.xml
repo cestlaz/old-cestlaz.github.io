@@ -68,10 +68,18 @@ Digit Pals.&lt;/p&gt;
 I started by looking at the problem, working through example and then
 some of the things we discussed included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;data representation (2D array)&lt;/li&gt;
-&lt;li&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/li&gt;
-&lt;li&gt;the high level logic of sliding down and over&lt;/li&gt;
-&lt;li&gt;how to solve the whole thing.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;data representation (2D array)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of sliding down and over&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to solve the whole thing.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the overall solver, I decided to go with a straightforward, blind,
 recursive search. I figured it would be fast enough for two
@@ -85,14 +93,20 @@ within time constraints.&lt;/p&gt;
 &lt;p&gt;
 After the design phase, I went to the live coding with a focus on:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;compiling and testing every concept. That is, a single loop, a
+&lt;li&gt;
+&lt;p&gt;compiling and testing every concept. That is, a single loop, a
 single if, a function etc.. This may sound excessive but I&amp;#39;ve been
 doing this forever and it&amp;#39;s served me well as a hobbyist and as a
-professional.&lt;/li&gt;
-&lt;li&gt;Implementing the data structure first - a 2D array and then a way
-to print it so that I could always tell the state of my program.&lt;/li&gt;
-&lt;li&gt;incremental development - first remove a pal, then slide down, then
-over, then the solver.&lt;/li&gt;
+professional.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;incremental development - first remove a pal, then slide down, then
+over, then the solver.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When it was all over the problem was solved. I&amp;#39;d like to think that
 the students got something out of the audible. I learned years later
@@ -167,10 +181,18 @@ similar.&lt;/p&gt;
 &lt;p&gt;
 By contrast, a swap &amp;#34;recipe&amp;#34; might read:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This is a recipe. A student would literally just rewrite the steps
 into the solution but even this might have it&amp;#39;s place in a class.&lt;/p&gt;

@@ -50,10 +50,16 @@ too much concern about piracy here. &lt;/p&gt;
 As we approached 2000 when APCS switched to C++ the knocks on Pascal
 were: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;It&amp;#39;s a teaching language &lt;/li&gt;
-&lt;li&gt;You can&amp;#39;t have programs that were more than one file. &lt;/li&gt;
-&lt;li&gt;It wasn&amp;#39;t Object Oriented which gained a lot of steam over the
-decade. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s a teaching language &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can&amp;#39;t have programs that were more than one file. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It wasn&amp;#39;t Object Oriented which gained a lot of steam over the
+decade. &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The first item was also mentioned as a strength and item 2 really
 wasn&amp;#39;t an issue in terms of what most people taught. In any event, the
@@ -116,12 +122,22 @@ points. &lt;/p&gt;
 &lt;p&gt;
 The TL;DR summary takeaways from the talk were:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;There has been some progress.&lt;/li&gt;
-&lt;li&gt;We can do better.&lt;/li&gt;
-&lt;li&gt;We have to do better.&lt;/li&gt;
-&lt;li&gt;The numbers are sometimes so low that it wouldn&amp;#39;t take much to do
- better.&lt;/li&gt;
-&lt;li&gt;That isn&amp;#39;t enough.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There has been some progress.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We can do better.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We have to do better.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The numbers are sometimes so low that it wouldn&amp;#39;t take much to do
+ better.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;That isn&amp;#39;t enough.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;One point of comparison that came up was that while the number of APCS
 exams is growing they still pale in comparison to the AP English and
@@ -931,7 +947,7 @@ ended, though, on a great note.&lt;/p&gt;
 &lt;p&gt;Wow. I&amp;rsquo;ve been teaching 23 years and that&amp;rsquo;s never happened before!!!!&lt;/p&gt;
 &lt;p&gt;So, what was the hubbub about?&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_max&lt;/span&gt;(L):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_max&lt;/span&gt;(L):
   maxval &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; L[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
   i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;len(L):
@@ -945,7 +961,7 @@ ended, though, on a great note.&lt;/p&gt;
 first item is the mode and find it&amp;rsquo;s frequency, then proceed through
 the list each time seeing if the current node occurs more fequently
 than the &amp;ldquo;mode so far.&amp;rdquo; Pretty much the same idea as find_max (but in this case, returning a list of all the modes).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mode&lt;/span&gt;(L):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mode&lt;/span&gt;(L):
   modecount &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; L&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;count( L[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] )
   modes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [ L[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] ]
   i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
@@ -978,7 +994,7 @@ finding - elections. The winner is &amp;ldquo;the mode of the ballots.&amp;rdquo
 &lt;p&gt;From here, it&amp;rsquo;s a short step to see that we can use a list. It&amp;rsquo;s
 indices represent the grade values and the data in the list the counts
 or tallies:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fastmode&lt;/span&gt;(L):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fastmode&lt;/span&gt;(L):
   i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   counts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
   &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;max(L)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:

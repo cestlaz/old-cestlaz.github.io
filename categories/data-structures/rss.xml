@@ -91,7 +91,8 @@ has a &lt;strong&gt;div&lt;/strong&gt; as the root node with two children. the f
 &lt;strong&gt;h1&lt;/strong&gt; component (header 1) and the other is the ordered list -
 &lt;strong&gt;ol&lt;/strong&gt;. the ordered list the has three children, those three &lt;strong&gt;li&lt;/strong&gt;
 list item elements. &lt;/p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;p&gt;
 In fact, you can explore this tree through your web browser. You can
@@ -170,14 +171,16 @@ unwieldy with additional parent pointers. &lt;/p&gt;
 &lt;p&gt;
 Instead consider the following tree:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ve numbered each of the nodes with the root - node 0 holding a key
 value of 10. We can easily store this tree in an array:#heaps.org#&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1-array.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap1-array.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -196,10 +199,12 @@ to relate nodes.&lt;/p&gt;
 &lt;p&gt;
 We could of course do this for any binary tree:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2.png&#34;/&gt; 
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2-array.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/heap/heap2-array.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -263,7 +268,7 @@ the tools in their tool belt and come up with what makes sense. &lt;/p&gt;
 I like the arbitrary tree example as it uses the same internal
 structure as a binary tree does: &lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 For a binary search tree pointer1 is left and pointer 2 is right. For
@@ -283,7 +288,8 @@ search. The idea that there&amp;#39;s this huge graph where each node is the
 a potential state of the maze and the edges represent how we can move
 from state to state:#alternate-representations.org#&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/mazestates.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/mazestates.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -350,7 +356,8 @@ search tree where you also have two pointers in each node a left and a
 right. Same &amp;#34;physical&amp;#34; representation but two very different
 variations.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/arbtree.png&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The image on the left is the actual arbitrary tree and the one on the

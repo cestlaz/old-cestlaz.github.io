@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1652810203" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1653309485" />
 
 
 
@@ -23,10 +23,9 @@
  It&#39;s pretty cool and lets you quickly navigate to any spot on the screen.
  After triggering avy, or more specifically the avy-goto-char function, emacs prompts you for a single character. When you type it, all instances of the character that start out words change to a highlighted letter." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-7-avy/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-7-avy/" />
 <meta property="article:published_time" content="2016-06-24T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-06-24T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 7- Navigation with Avy"/>
@@ -103,7 +102,7 @@ The Avy home page has all the details.</p>
 <p>
 Here&#39;s the configuration I&#39;m using:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package avy
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package avy
 :ensure <span style="color:#66d9ef">t</span>
 :bind (<span style="color:#e6db74">&#34;M-s&#34;</span> <span style="color:#f92672">.</span> avy-goto-char))</code></pre></div></code></pre></div>
 </div>
@@ -111,7 +110,7 @@ Here&#39;s the configuration I&#39;m using:</p>
 You can check the <a href="https://github.com/abo-abo/avy">avy home page</a> for their recommended configuration
 which you get by configuring this way instead:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package avy
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package avy
 :ensure <span style="color:#66d9ef">t</span>
 :config
 (avy-setup-default))</code></pre></div></code></pre></div>
@@ -119,13 +118,27 @@ which you get by configuring this way instead:</p>
 <p>
 Relevant links:</p>
 <ul>
-<li>Avy: <a href="https://github.com/abo-abo/avy">https://github.com/abo-abo/avy</a></li>
-<li>Video series overview page:</li>
-<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
-<li>Code for this video</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/lesson-7-avy">https://github.com/zamansky/using-emacs/tree/lesson-7-avy</a></li>
-<li>Complete code built up over all videos:</li>
-<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
+<li>
+<p>Avy: <a href="https://github.com/abo-abo/avy">https://github.com/abo-abo/avy</a></p>
+</li>
+<li>
+<p>Video series overview page:</p>
+</li>
+<li>
+<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
+</li>
+<li>
+<p>Code for this video</p>
+</li>
+<li>
+<p><a href="https://github.com/zamansky/using-emacs/tree/lesson-7-avy">https://github.com/zamansky/using-emacs/tree/lesson-7-avy</a></p>
+</li>
+<li>
+<p>Complete code built up over all videos:</p>
+</li>
+<li>
+<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
+</li>
 </ul>
 
         </div>

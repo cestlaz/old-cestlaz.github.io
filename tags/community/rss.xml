@@ -59,12 +59,12 @@ arrays, one with frequencies and one with durations.&lt;/p&gt;
 &lt;p&gt;
 Something like: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
 durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Then for the game loop&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
 
   current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
@@ -422,11 +422,21 @@ Already looking forward to July.&lt;/p&gt;
 Out of class student communication is always a challenge. There are
 plenty of options:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Piazza&lt;/li&gt;
-&lt;li&gt;Facebook group&lt;/li&gt;
-&lt;li&gt;Slack, Discord, or other chat system&lt;/li&gt;
-&lt;li&gt;Discourse, Vanilla or other discussion forum system&lt;/li&gt;
-&lt;li&gt;Mailing list&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Piazza&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Facebook group&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack, Discord, or other chat system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discourse, Vanilla or other discussion forum system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mailing list&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;but all have warts. &lt;/p&gt;
 &lt;p&gt;
@@ -471,14 +481,24 @@ a chain of messages (thread). You can tag them, filter them, and when
 you&amp;#39;re done, close them (and reopen them later if needs be). The big
 plusses are that:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;People who are subscribed to the repo (assignment, web page, etc.)
-automatically get email alerts on the issues.&lt;/li&gt;
-&lt;li&gt;You can explicitly tag people to force them to get alerts.&lt;/li&gt;
-&lt;li&gt;You can directly reply via email so you don&amp;#39;t need to go to
-GitHub.&lt;/li&gt;
-&lt;li&gt;Everything related to a given project or repo is self contained.&lt;/li&gt;
-&lt;li&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
-create a logged communication with your students on specific assignments.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People who are subscribed to the repo (assignment, web page, etc.)
+automatically get email alerts on the issues.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can explicitly tag people to force them to get alerts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can directly reply via email so you don&amp;#39;t need to go to
+GitHub.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Everything related to a given project or repo is self contained.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
+create a logged communication with your students on specific assignments.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 I haven&amp;#39;t used this class wide yet - just experimented a bit but I
@@ -560,7 +580,7 @@ very easy for a beginner to get started.&lt;/p&gt;
 Let&amp;#39;s say you wanted to store information about a students. You might
 create this dictionary:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;First&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amanda&amp;#39;&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ID&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1245&lt;/span&gt;,
               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;,
@@ -569,12 +589,12 @@ create this dictionary:&lt;/p&gt;
 &lt;p&gt;
 You add this to your database like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Later, you can query for all the students in Homeroom 5A:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Super quick and easy. It also comes with a nice REPL - essentially a
@@ -585,39 +605,51 @@ if you want to get up to speed on MongoDB. I left reminded of a number
 of great MongoDB products that I hadn&amp;#39;t really used and a few new ones
 they&amp;#39;re just launching:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Atlas
+&lt;li&gt;
+&lt;p&gt;Atlas
 This is their DB as service. Don&amp;#39;t want to administer your own
 installation? Just spin up an Atlas cluster. The free tier is plenty
 generous and you and your students can get up and running in under
-10 minutes.&lt;/li&gt;
-&lt;li&gt;Compass
+10 minutes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compass
 Back in the day you either interacted with MongoDB pragmatically
 using a language driver or used their REPL shell. Compass is a
 complete fully functional GUI. It can connect to your database, a
 remote one, or an Atlas cluster. A game changer for database
-management&lt;/li&gt;
-&lt;li&gt;Charts
+management&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Charts
 This is really cool. You link MongoDB charts to an Atlas cluster and
 then can interactively build dashboards and visualizations. You can
-then embed the visualizations into your own web projects. &lt;/li&gt;
-&lt;li&gt;Field Level Encryption&lt;/li&gt;
+then embed the visualizations into your own web projects. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Field Level Encryption&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Encrypting passwords for storage and similar practices are important
 but can be aslog. MongoDB now takes care of this for you. You can, for
 instance, tell your database to encrypt the password fields and your
 done. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Data Lake&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Lake&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This blew me away. Basically, it can take your AWS storage and let you
 query it as if it were a MongoDB database. It works with a variety of
 file formst - JSON, XML, CSV and more. Basically it transparently
 turns cloud storage into a database. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Stitch
+&lt;li&gt;
+&lt;p&gt;Stitch
 This allows for the building of serverless apps. Similar to Firebase
 but it looks to interact with all the other MongoDB goodness I&amp;#39;ve
-mentioned. .&lt;/li&gt;
+mentioned. .&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There were a few other neat things I learned about MongoDB and related
 products but those were the highlights.&lt;/p&gt;
@@ -644,10 +676,18 @@ that can be pretty cool even if you just limit yourself to looking at
 the schools. A few of the schools I visited in the last couple of
 weeks before the new year were self contained whole building schools:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;James Madison&lt;/li&gt;
-&lt;li&gt;Goddard High School&lt;/li&gt;
-&lt;li&gt;FDR HS&lt;/li&gt;
-&lt;li&gt;Midwood HS&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;James Madison&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goddard High School&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FDR HS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Midwood HS&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Goddard was interesting because it was founded in 2008 and grew out of
 the middle school in the same building. FDR was also interesting. It
@@ -655,7 +695,8 @@ was founded in 1965 which makes the building fairly young or at least
 early middle aged for a New York City school building. When you
 approach it, you see this small short modern looking one story structure:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.nydailynews.com%2Fpolopoly_fs%2F1.1408243.1374717210!%2Fimg%2FhttpImage%2Fimage.jpg_gen%2Fderivatives%2Flandscape_635%2Fteacher25n-1-web.jpg&amp;amp;f=1&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.nydailynews.com%2Fpolopoly_fs%2F1.1408243.1374717210!%2Fimg%2FhttpImage%2Fimage.jpg_gen%2Fderivatives%2Flandscape_635%2Fteacher25n-1-web.jpg&amp;amp;f=1&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -673,10 +714,18 @@ The other schools I visited in that span were all housed in schools
 that had been closed during the Bloomberg/Klein years and new small
 schools created in their place. The original buildings were:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Thomas Jefferson&lt;/li&gt;
-&lt;li&gt;Franklin K Lane&lt;/li&gt;
-&lt;li&gt;Christopher Columbus&lt;/li&gt;
-&lt;li&gt;Andrew Jackson&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thomas Jefferson&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Franklin K Lane&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Christopher Columbus&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Andrew Jackson&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;One of the coolest parts about visiting the older buildings is that
 they were built in a different time. You have elaborate lobbies of
@@ -716,22 +765,27 @@ check out the architecture and the ghosts of the past.&lt;/p&gt;
 I&amp;#39;ll leave you with a couple of pictures from Brooklyn Tech - mostly
 because they were easy to find.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://www.khomarch.com/wp-content/uploads/2017/01/kevin-hom-architect-university-college-architect-brooklyn-tech-1.jpg&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;http://www.khomarch.com/wp-content/uploads/2017/01/kevin-hom-architect-university-college-architect-brooklyn-tech-1.jpg&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://static1.squarespace.com/static/59aec48e9f7456bae98b8609/5ad7b923575d1f7d69412830/5ad7b93d88251b1250984d58/1524087471280/mural-image-bths-2.JPG&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://static1.squarespace.com/static/59aec48e9f7456bae98b8609/5ad7b923575d1f7d69412830/5ad7b93d88251b1250984d58/1524087471280/mural-image-bths-2.JPG&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://www.bthsalumni.org/view.image?Id=812&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://www.bthsalumni.org/view.image?Id=812&#34;/&gt; 
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src=&#34;#ZgotmplZ&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;#ZgotmplZ&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -845,38 +899,50 @@ To start, it&amp;#39;s a great first conference for the students. It only has
 one track so no choices and the talks look really interesting this
 year. Some of the ones I&amp;#39;m looking forward to are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Designing for Access first&lt;/li&gt;
-&lt;li&gt;Behind the Tech: Emoji&lt;/li&gt;
-&lt;li&gt;Leaning into uncertainty&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Designing for Access first&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Behind the Tech: Emoji&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leaning into uncertainty&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The full schedule is &lt;a href=&#34;https://catskillsconf.com/schedule/&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;
 But also mixed in are activities like blacksmithing&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/blacksmith.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/blacksmith.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 and a live bird of prey show&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/BOP.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/BOP.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 There are also hikes that show off the beauty of Fall in the Hudson
 Valley&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/nature1.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/nature1.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/nature2.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/nature2.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/nature3.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/nature3.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Rather than having the kids spread out in random hotel rooms we&amp;#39;re all
 in a camp style bunkhouse.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/bunkhouse.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/bunkhouse.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 The weekend is spent  living together along with technologists and
@@ -886,7 +952,8 @@ One of my favorite parts is at the end of each evening when we all
 hang out by the campfire. Hunter CS students, company founders,
 software engineers, designers.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/commuter-school/campfire.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/commuter-school/campfire.jpg&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 It&amp;#39;s a great event overall and a great event to build community.&lt;/p&gt;
@@ -1037,12 +1104,18 @@ I was thinking about proposing a session at next years CSTA conference
 where I&amp;#39;d work the group through creating a github pages based
 blog. In the meantime, there are a lot of easy ways to start out.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blogger.com&#34;&gt;http://blogger.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wordpress.com&#34;&gt;http://wordpress.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://blogger.com&#34;&gt;http://blogger.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.com&#34;&gt;http://wordpress.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and for those who want total control&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So, there&amp;#39;s my plea. If you&amp;#39;re a CS teacher and you&amp;#39;re reading this
 please consider blogging. I assure you, we will all appreciate it and
@@ -1107,13 +1180,21 @@ This also got me thinking about the  mish mash of
 CS Educator communities floating around. I&amp;#39;m familiar with and a
 member of:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A few Facebook groups (CS Education, CS Education Discussion, AP&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A few Facebook groups (CS Education, CS Education Discussion, AP&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Comp Sci, APCSP)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The CS Education subreddit&lt;/li&gt;
-&lt;li&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/li&gt;
-&lt;li&gt;A few blogs are kind of communities in that there&amp;#39;s a core group of&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The CS Education subreddit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A few blogs are kind of communities in that there&amp;#39;s a core group of&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;readers but discussion is pretty sparse.&lt;/p&gt;
 &lt;p&gt;

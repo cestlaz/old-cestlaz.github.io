@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1652810203" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1653309485" />
 
 
 
@@ -23,10 +23,9 @@
  The other day, I taught a lesson I&#39;ve taught many times. Find the mode of a data set. That&#39;s the problem that they solve but the lesson is really about run time complexity, hidden complexity and using data structures in alternate ways.
  I blogged about this before so you can get an earlier take there although the code isn&#39;t formatted correctly due to blog conversions." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/when-they-change-the-script/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/when-they-change-the-script/" />
 <meta property="article:published_time" content="2017-10-18T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-10-18T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="There&#39;s always something to learn (from your students)"/>
@@ -98,22 +97,30 @@ As with the last time, the students  had already written code to find
 the largest value in a list and also to find the frequency of an item
 in a list.</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 They had to write mode prior to the class. In the past, students would
 generally come up with something like this:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 They&#39;d use their existing knowledge and the &#39;find the largest&#39; idiom
 to find the mode by:</p>
 <ul>
-<li>find the frequency of the first item and assume it&#39;s the mode so far</li>
-<li>for each item in the list</li>
-<li>find the frequency of that idem</li>
-<li>if it occurs more than the mode so far then it becomes the new</li>
+<li>
+<p>find the frequency of the first item and assume it&#39;s the mode so far</p>
+</li>
+<li>
+<p>for each item in the list</p>
+</li>
+<li>
+<p>find the frequency of that idem</p>
+</li>
+<li>
+<p>if it occurs more than the mode so far then it becomes the new</p>
+</li>
 </ul>
 <p>mode so far</p>
 <p>
@@ -134,7 +141,7 @@ buckets. You can read more about that in the <a href="https://cestlaz.github.io/
 What was interesting this time around was that most of the kids came
 up with a solution more like this:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
 </div>
 <p>
 Instead of calculating the frequency inside the loop they made a list

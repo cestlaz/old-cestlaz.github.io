@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1652810203" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1653309485" />
 
 
 
@@ -22,10 +22,9 @@
 <meta property="og:description" content="I thought it was time to give eshell in Emacs another try. It has some pretty cool features but for whatever reason, I&#39;ve never really been able to adopt Emacs as my go to shell.
  Eshell out of the box is pretty cool but could use some enhancements. When launching at login it doesn&#39;t know about the path you set in your .bashrc or .zshrc in my case files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-66-eshell-elisp/" />
 <meta property="article:published_time" content="2020-02-08T08:12:22-04:00" />
 <meta property="article:modified_time" content="2020-02-08T08:12:22-04:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 66 - an eshell switcher in elisp"/>
@@ -101,7 +100,7 @@ write my own.</p>
 <p>
 Here&#39;s my current complete eshell config:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(use-package exec-path-from-shell
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(use-package exec-path-from-shell
   :ensure <span style="color:#66d9ef">t</span>
   :config
   (exec-path-from-shell-initialize))
@@ -125,7 +124,7 @@ Here&#39;s my current complete eshell config:</p>
 <p>
 And here&#39;s the code I ended up with for my shell switcher:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"><span style="color:#960050;background-color:#1e0010">#</span>+BEGIN_SRC emacs-lisp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"><span style="color:#960050;background-color:#1e0010">#</span>+BEGIN_SRC emacs-lisp
   (require <span style="color:#e6db74">&#39;cl-lib</span>)
   (defun select-or-create (arg)
     <span style="color:#e6db74">&#34;Commentary ARG.&#34;</span>
