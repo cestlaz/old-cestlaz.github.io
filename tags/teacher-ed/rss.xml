@@ -6,10 +6,98 @@
     <description>C&#39;est la Z (Teacher Ed)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Feb 2021 20:12:43 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jun 2022 10:25:35 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teacher-ed/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CS Teacher Certification - starting Cohort 3</title>
+      <link>https://cestlaz.github.io/post/teacher-cert-cohort-3/</link>
+      <pubDate>Tue, 28 Jun 2022 10:25:35 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teacher-cert-cohort-3/</guid>
+      <description>&lt;p&gt;
+Tomorrow we&amp;#39;ll kick off cohort 3 of Hunter&amp;#39;s Computer Science teacher
+Advanced Certificate program. That is, New York State&amp;#39;s only currently
+approved program for working, certified teachers that leads to New
+York&amp;#39;s new Certificate to teach Computer Science.&lt;/p&gt;
+&lt;p&gt;
+This is not our first rodeo, having gone through this twice already
+but there are a few differences this time out.&lt;/p&gt;
+&lt;p&gt;
+First off, we&amp;#39;re going big. Cohorts one and two had about 20
+candidates each. This time, we&amp;#39;ll have around 55 teachers who will be
+joined by around 5 masters students. That&amp;#39;s exciting but a little
+scary. I&amp;#39;m sure I&amp;#39;ve also mentioned before that a handful of our
+teachers are from the Dryden school district up around the finger
+lakes. I&amp;#39;m super excited that we&amp;#39;re able to not only work with NYC
+teachers but also to help build the community beyond the five
+boroughs. &lt;/p&gt;
+&lt;p&gt;
+Bigger cohort means more instructors. Adding to the team this
+year is my long time partner in crime Sam. I wanted to include Sam
+from the start but unfortunately he was on sabbatical the year prior
+to cohort 1 and according to DOE rules (he&amp;#39;s a K12 teacher) you can&amp;#39;t
+work in any capacity during your sabbatical year. Sam&amp;#39;s been involved
+in almost all of my teaching side projects along with JonAlf and
+Topher so it&amp;#39;s great that we can get the band back together.&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;re also adding on my friend and colleague on the Hunter CS side,
+William and I&amp;#39;ve been looking to be able to actually work with him for
+years.&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;ll also have  4 TAs per class. That is going to be interesting. The
+TAs are undergrads - they&amp;#39;re all terrific but it&amp;#39;s possible that some
+of the candidates teach in the schools that the TAs attended. It&amp;#39;ll
+all be good but it will be interesting.&lt;/p&gt;
+&lt;p&gt;
+As to running the show, we&amp;#39;ll still use Zoom - one big Zoom when
+appropriate but breaking into groups of assorted sizes as appropriate
+from small breakout rooms to midsize &amp;#34;sections&amp;#34; for sharing. This will
+be a bit of an experiment but we&amp;#39;ll get it right. One nice thing about
+teaching teachers is that they know when you&amp;#39;re trying something new
+and if you&amp;#39;re open and honest they&amp;#39;ll help you to get it right. I
+think that&amp;#39;s also probably something unique about our program. Since
+it&amp;#39;s designed by and for K12 teachers and many of the instructors are
+K12 teachers we&amp;#39;re all part of the same community. It&amp;#39;s not a bunch of
+K12 teachers taking some classes taught by college people who have
+theories of how to teach K12. I mean, yes, we do have college profs
+involved as well but we also have K12 teachers, including myself
+who&amp;#39;ve walked the walk. The teachers in the program get this and know
+we&amp;#39;re a family and our goal is to make the program as strong as
+possible, not only for them but for future participants.&lt;/p&gt;
+&lt;p&gt;
+Now, that might sound a little hokey but I really believe it.&lt;/p&gt;
+&lt;p&gt;
+Beyond Zoom we&amp;#39;ll be using Slack for all discussion - much better than
+using Zoom chat. Besides the extra Slack features, Zoom chat goes away
+when the Zoom closes. Our Slack from even cohort 1 lives on and is
+still active. Truth be told, I prefer Zulip to Slack but we had
+already committed to Zoom which is fine.&lt;/p&gt;
+&lt;p&gt;
+The final piece for tooling is repl.it and that&amp;#39;s been a game
+changer. During our first year, repl.it wasn&amp;#39;t quite up to speed so
+teachers had to install environments on their own computers. This was
+at the start of the pandemic so it was 100% remote. Woof. All sorts of
+issues including some nice ones like a teacher with a DOE laptop that
+used to have Java on it but not any more (but the registry still had
+some hidden settings). Repl.it allows us to have one single consistent
+interface that everyone can use plus it integrates with GitHub. Of
+course, if a student comes in with a stronger background they can do
+their own thing but using repl.it has made things so much easier.&lt;/p&gt;
+&lt;p&gt;
+So, tomorrow at 9:00am we&amp;#39;re off to the races. An 8 day all day
+programming class followed by 16 half days of more advanced
+programming along with 16 half days of CS teaching methods. In the
+Fall we&amp;#39;ll do our ethics class and curriculum development and then
+finally topics in the Spring.&lt;/p&gt;
+&lt;p&gt;
+That will bring us to around 100 certified teachers.&lt;/p&gt;
+&lt;p&gt;
+Probably won&amp;#39;t sleep tonight but looking forward to tomorrow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Teaching and Pedagogy - words and music</title>
