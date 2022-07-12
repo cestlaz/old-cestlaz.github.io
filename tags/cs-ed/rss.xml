@@ -6,10 +6,104 @@
     <description>C&#39;est la Z (CS Ed)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 14:40:35 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jul 2022 11:52:31 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/cs-ed/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Teacher Preparation - know what&#39;s under the hood</title>
+      <link>https://cestlaz.github.io/post/arraylists-under-the-hood/</link>
+      <pubDate>Tue, 12 Jul 2022 11:52:31 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/arraylists-under-the-hood/</guid>
+      <description>&lt;p&gt;
+Yesterday was the last day on our first course for teacher
+certification. A programming course similar to a college CS1 - think
+APCS-A. We&amp;#39;re now moving to a data structures course.&lt;/p&gt;
+&lt;p&gt;
+There are a few reasons for this. First, it&amp;#39;s depth of knowledge. The
+most advanced class a high school student will normally take would be
+APCS-A. Data structures is the next course. A teacher should have
+studied a topic to a greater depth than the students. We fill in the
+breadth in our topics course. Now, this means that our elementary
+school candidates need data structures and I&amp;#39;m the first one who&amp;#39;ll
+agree that elementary school teachers don&amp;#39;t need the same depth of
+knowledge as a high school teacher but New York State in it&amp;#39;s infinite
+wisdom decreed that their CS Certification would be K12 - same thing
+for all teachers from Kindergarten through the end of high school.&lt;/p&gt;
+&lt;p&gt;
+A second reason, and this is a big one, is that studying data
+structures is a computer scientist or programmers first opportunity to
+understand what&amp;#39;s going on under the hood. Why is this important?
+Well, to me, it&amp;#39;s one of the differences between what, for lack of a
+better word I&amp;#39;ll call a coder or programmer with a computer scientist.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m not talking about a computer scientist as a college employed
+researcher, I&amp;#39;m using the term as someone who problem solves and
+creates solutions using the tools and techniques of computer
+science. For a coder / programmer, I mean someone who creates working
+programs but doesn&amp;#39;t think deeply about the solution but rather uses
+built in constructs, libraries and packages blindly.&lt;/p&gt;
+&lt;p&gt;
+This is not to say that someone employed as a coder can&amp;#39;t be or isn&amp;#39;t by my
+definition, a computer scientist, they certainly can. &lt;/p&gt;
+&lt;p&gt;
+Back to the point. We closed out the programming class learning about
+classes and implementing something that we called a SuperArray,
+basically a cut down Java Arraylist.&lt;/p&gt;
+&lt;p&gt;
+On day one of data structures we went over the ArrayList. This is our
+usual strategy - implement something and then you learn about and can
+use the built in one.&lt;/p&gt;
+&lt;p&gt;
+A poorly trained programmer will just learn about the ArrayList and
+then use it blindly. But by first exploring something
+like the SuperArray, the computer scientist has deeper knowledge.&lt;/p&gt;
+&lt;p&gt;
+An ArrayList has a number of nice features. You can keep adding to
+them paying little attention to size, you can delete from the middle,
+insert anywhere and more. All these operations take time. If you try
+to remove an element from an ArrayList, the ArrayList has to shift all
+the elements past the element in question down. If you want to insert
+at the front, you&amp;#39;ve got to shift everything down to make room. Adding
+something to the end, however, takes no time at all unless the
+underlying array is full, in which case, more work is to be done.&lt;/p&gt;
+&lt;p&gt;
+When writing the SuperArray, students had to write the code necessary to
+do all of these operations so we can discuss the good, the bad, and
+the ugly.&lt;/p&gt;
+&lt;p&gt;
+If you are using an ArrayList and you blindly do all your insertions
+at the front, you&amp;#39;re going to have horrible performance but if you
+always add to the end, things will be much faster. The coder doesn&amp;#39;t
+understand this but the computer scientist does.&lt;/p&gt;
+&lt;p&gt;
+When we do LinkedLists next week we can dig deeper on these ideas and
+even more when we get to sorting and searching.&lt;/p&gt;
+&lt;p&gt;
+The bottom line is that even if one doesn&amp;#39;t write an entire ArrayList,
+exploring under the hood can arm a coder (or teacher) so that they
+make wise choices instead of treating every problem like a nail.&lt;/p&gt;
+&lt;p&gt;
+A side added bonus on this specific SuperArary / ArrayList
+project is that when you&amp;#39;re done you can actually look at the Java
+ArrayList code. The class won&amp;#39;t understand all of it but they should
+be able to get the gist and they&amp;#39;ll see that the Java code is very
+similar to what the students wrote. This can be very empowering.&lt;/p&gt;
+&lt;p&gt;
+After this data structures course, the teachers may never again write
+the code for a linked list, implement a hash table or tree or manually
+sort a data set but the underlying knowledge will help them understand
+and teach all sorts of computer science concepts. A web page is
+represented in a a tree, a network is a graph. Understanding hash
+tables and search trees are a gateway to databases.&lt;/p&gt;
+&lt;p&gt;
+Sometimes the specific implementations one studies are never used
+again but for teachers, the underlying concepts can be game changes
+for their students.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Feeling like an English teacher</title>
