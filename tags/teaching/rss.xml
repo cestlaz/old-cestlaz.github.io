@@ -6,10 +6,77 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 May 2022 08:28:56 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jul 2022 12:49:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>CoTeaching - learning from colleagues</title>
+      <link>https://cestlaz.github.io/post/co-teach/</link>
+      <pubDate>Thu, 28 Jul 2022 12:49:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/co-teach/</guid>
+      <description>&lt;p&gt;
+A few weeks ago I wrote on how &lt;a href=&#34;https://cestlaz.github.io/post/workshop-a-lesson/&#34;&gt;you can&amp;#39;t workshop a lesson&lt;/a&gt;. Besides
+the slow feedback loop, teachers largely work alone. Between classes,
+teachers might have a small bit of time to collaborate and bounce
+around ideas but with a HS teacher typically having 5 classes a day +
+professional assignment there&amp;#39;s not a lot of time.&lt;/p&gt;
+&lt;p&gt;
+CS teachers typically have it worse as they might be the only CS
+teacher in their building. My hope is that this current cohort of
+Hunter CS Ed students, like earlier cohorts form their own support
+network but that&amp;#39;s not what I&amp;#39;m writing about today.&lt;/p&gt;
+&lt;p&gt;
+As you know, for the past month I&amp;#39;ve been working my CS Teacher
+certification program. We&amp;#39;ve got close to 60 participants. This means
+we were able to engage 2 teachers per class. Truth be told, I&amp;#39;ve got a
+great team and the whole crew is supporting each other in all of the
+classes, not just the one they&amp;#39;re teaching.&lt;/p&gt;
+&lt;p&gt;
+The end result is that we&amp;#39;re all working harder but we also get to
+teach together and, in fact, at least partially workshop our lessons.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m loving it because the one thing I really miss teaching at Hunter
+is my teaching team. I&amp;#39;m the only person doing what I do at Hunter so,
+just like so many other CS teachers, I&amp;#39;m on an island.&lt;/p&gt;
+&lt;p&gt;
+When Sam was talking about run time analysis, he had a really nice way
+of exploring the run time of the n^2 sorts. I think I do a pretty good
+job when teaching this but I loved the way Sam developed and
+communicated the topic. Likewise, he did a unit on Expression Trees
+which was very different from my approach to trees. We had plenty of
+time before he did these units to discuss them and afterwards to
+debrief. I&amp;#39;m 100% stealing some of this when they come up in my
+classes.&lt;/p&gt;
+&lt;p&gt;
+Not to just be a taker, Sam really liked the way I introduced and
+developed linked list and will be stealing that from me on his next
+iteration.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s being able to work with other teachers like this that makes
+running the summer program special. On the other hand, the workload is
+far to great to be sustainable. This is also the kind of thing that
+teachers should be given the time to do. Giving teachers time to work
+together in their schools is worth so much more than the professional
+developments that schools usually offer and require.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m hoping that the program participants, in addition to the core
+material in our classes are also reflecting on how each of the
+instructors are running parts of the classes. Not saying that we&amp;#39;re
+hitting everything out of the park but a fair and careful analysis of
+how we teach a subject and comparing it with what they do can provide
+an extra layer of development beyond what&amp;#39;s formally in the classes.&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;d actually highlight this more had the state not decided, in their
+infinite wisdom that we couldn&amp;#39;t merge our CS and CS Ed classes. We
+did that for cohort 1 and it was extremely effective.&lt;/p&gt;
+&lt;p&gt;
+In any event, it&amp;#39;s been a very full month with a couple more days to
+go but thought this was something worth shareing about now.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Yes, deadlines do matter</title>
@@ -3193,84 +3260,6 @@ teacher and a piece of chalk than all the tech in the world.&lt;/p&gt;
 &lt;p&gt;
 As a computer science guy and a computer science teacher I think it&amp;#39;s
 good to remind myself that tech is cool but a good teacher is way cooler.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>No Magic Bullets - Discovery Learning</title>
-      <link>https://cestlaz.github.io/posts/no-magic-bullets-constructivism/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/no-magic-bullets-constructivism/</guid>
-      <description>&lt;p&gt;
-The most recent NYC CSTA chapter meeting was &amp;#34;How do I assess CS?&amp;#34; I
-wanted to go but it&amp;#39;s been such a crazy month I was just too wiped
-out. Fortunately, the meetup was &lt;a href=&#34;https://www.youtube.com/watch?v=XIMKAZbHAiA&amp;amp;index=83&amp;amp;list=WL&amp;amp;t=1796s&#34;&gt;recorded&lt;/a&gt;. I was able to watch the
-first half this morning while working out on my &lt;a href=&#34;https://www.staczero.com/hero&#34;&gt;stationary trainer&lt;/a&gt;
-which leads me to today&amp;#39;s rare Saturday morning blog
-post. The meetup consisted of two panels. The first was made up of K12
-teachers who taught CS. I can&amp;#39;t talk about the second panel yet since I&amp;#39;m
-only halfway through but there were a couple of points made by my
-friend &lt;a href=&#34;https://twitter.com/KatieJergens&#34;&gt;Katie Jergens&lt;/a&gt; who teaches at Dalton that I thought were worth
-talking about.&lt;/p&gt;
-&lt;p&gt;
-The first was when Katie noted that through working with the panel,
-one of her takeaways was that:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Giving students an explicit strategy for solving a problem - &amp;#34;this is
-how I would do it….,&amp;#34; - giving them an explicit strategy first and then giving them a
-problem for which that strategy would apply is much more effective than
-having them discover it on their own.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-This was refreshing to hear after being beaten over the head on
-discovery learning and constructivism for the past five or so
-years as being the magic bullet for teachers. I shared more thoughts
-on this a few weeks ago when I wrote about a SIGCSE paper presented by
-&lt;a href=&#34;https://cestlaz.github.io/posts/sigcse2018-bootstrap/&#34;&gt;Bootstrap World&lt;/a&gt; that I very much liked.&lt;/p&gt;
-&lt;p&gt;
-Katie went on to talk about how the group found that while &amp;#34;discovery
-learning&amp;#34; can be effective it can also be frustrating and lose kids
-along the way. It also takes a lot of time and preparation, something
-that&amp;#39;s short on supply in most public schools.&lt;/p&gt;
-&lt;p&gt;
-This made me think about the recent flurry
-of discussion around the debunking of learning styles which had
-previously been the magic bullet. When I started, the secret sauce was cooperative
-learning.&lt;/p&gt;
-&lt;p&gt;
-Of course any good teacher knows there&amp;#39;s no magic bullet. You fill
-your tool belt and chest with as much as you can and use what&amp;#39;s
-best based on your strengths as a teacher combined with what will work
-best with your students.&lt;/p&gt;
-&lt;p&gt;
-Another point that Katie made that I found refreshing had to do with
-something she does with her classes. A good portion of a student&amp;#39;s grade is
-based on what she calls a &amp;#34;booster.&amp;#34; Each student has to work one on
-one with her on some project. The student either scores a 0 or a 100 -
-the student keeps working with the direct support of the teacher until
-it&amp;#39;s perfect.&lt;/p&gt;
-&lt;p&gt;
-The important thing that Katie said with respect to this is &amp;#34;I can
-do this because my largest class is sixteen students.&amp;#34; No way could
-this ever scale to a public school where a teacher can meet with over
-150 students a day and barely has time eat lunch let alone
-work one on one with a student in a suitably quiet place like an
-office. The refreshing thing to hear was the acknowledgment of the
-fact that what works in a rich private school won&amp;#39;t work in a public
-school.&lt;/p&gt;
-&lt;p&gt;
-All to often education and yes, CS Ed is driven by people who
-really have no clue. They&amp;#39;re anointed as thought leaders but they
-don&amp;#39;t walk the walk. Some have some knowledge and experience but many
-don&amp;#39;t. Until you&amp;#39;ve gotten a few years under your belt in a strap
-cashed public school that takes all comers, don&amp;#39;t tell them how they
-should do it. Katie didn&amp;#39;t - she acknowledged the problem - too bad so
-many others don&amp;#39;t.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m looking forward to watching the rest of the video during a future
-workout and might have more to share then. For now, take a look for
-yourself.&lt;/p&gt;
 </description>
     </item>
     
