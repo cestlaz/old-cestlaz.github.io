@@ -380,34 +380,45 @@ some very cool features for CS Teachers.&lt;/p&gt;
       <pubDate>Sun, 16 Feb 2020 12:53:59 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/github-org-explorer-oauth/</guid>
-      <description>&lt;p&gt;
-A while ago I wrote about a small side project - &lt;a href=&#34;https://cestlaz.github.io/post/github-org-explorer/&#34;&gt;GitHub Org Explorer&lt;/a&gt; -
+      <description> 
+
+A while ago I wrote about a small side project - [[https://cestlaz.github.io/post/github-org-explorer/][GitHub Org Explorer]] -
 a small tool to make it easier to manager GitHub repositories based on
-organization. I&amp;#39;m using it as a replacement for the GitHub provided
+organization. I&#39;m using it as a replacement for the GitHub provided
 Classroom Assistant. I find it more flexible in terms of exporting
 assignments to my own machine and it allows me to delete repos en
-masse which is critical after the semester is over.&lt;/p&gt;
-&lt;p&gt;
+masse which is critical after the semester is over.
+
 Shortly after I released it I found that GitHub was going to sunset
 the basic authentication I was using so I had to convert the
-application to support oauth.&lt;/p&gt;
-&lt;p&gt;
-So, here it is. &lt;/p&gt;
-&lt;p&gt;
-Along the way I had a few headaches. I wrote about them &lt;a href=&#34;https://cestlaz.github.io/post/my-code-works/&#34;&gt;here&lt;/a&gt;. Mostly
-versioning issues surrounding the node ecosystem. I still haven&amp;#39;t
-figured it all out but I think I&amp;#39;ve gotten everything working
-alright. &lt;/p&gt;
-&lt;p&gt;
-If you want to check it out, you can grab it off GitHub. Here&amp;#39;s the
-repo: &lt;a href=&#34;https://github.com/zamansky/github-org-explorer&#34;&gt;&lt;a href=&#34;https://github.com/zamansky/github-org-explorer&#34;&gt;https://github.com/zamansky/github-org-explorer&lt;/a&gt;&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the short runthrough video I made. Logging in looks different
-but everything operates the same way:&lt;/p&gt;
+application to support oauth.
+
+So, here it is. 
+
+Along the way I had a few headaches. I wrote about them [[https://cestlaz.github.io/post/my-code-works/][here]]. Mostly
+versioning issues surrounding the node ecosystem. I still haven&#39;t
+figured it all out but I think I&#39;ve gotten everything working
+alright. 
+
+
+If you want to check it out, you can grab it off GitHub. Here&#39;s the
+repo: [[https://github.com/zamansky/github-org-explorer][https://github.com/zamansky/github-org-explorer]]. 
+
+Here&#39;s the short runthrough video I made. Logging in looks different
+but everything operates the same way:
+#+begin_export html
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34;
 src=&#34;https://www.youtube.com/embed/e-gNzuBG3mU&#34; frameborder=&#34;0&#34;
 allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+#+end_export
+
+
+
+
+
+
 </description>
     </item>
     
@@ -1058,82 +1069,95 @@ that once again has proven to be great at supporting education.&lt;/p&gt;
       <pubDate>Sat, 02 Feb 2019 09:44:29 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/github-classroom-travis/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve been using GitHub with my classes since GitHub&amp;#39;s early days. Over
-time I&amp;#39;ve gotten my &lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4/&#34;&gt;workflows down&lt;/a&gt;. I use a combination of shell
+      <description> 
+
+I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over
+time I&#39;ve gotten my [[https://cestlaz.github.io/posts/sigcse-2017-github-4/][workflows down]]. I use a combination of shell
 scripts - many just written on the fly, GitHub organizations, and some
-naming conventions and protocols that have served me well. &lt;/p&gt;
-&lt;p&gt;
-A few years ago, the &lt;a href=&#34;https://education.github.com/&#34;&gt;GitHub Education team&lt;/a&gt; started &lt;a href=&#34;https://classroom.github.com/&#34;&gt;GitHub
-Classroom&lt;/a&gt;. I looked at it at the time. It was pretty cool but I had my
-workflow so I didn&amp;#39;t adopt it. I still very much liked GitHub, the
+naming conventions and protocols that have served me well. 
+
+A few years ago, the [[https://education.github.com/][GitHub Education team]] started [[https://classroom.github.com/][GitHub
+Classroom]]. I looked at it at the time. It was pretty cool but I had my
+workflow so I didn&#39;t adopt it. I still very much liked GitHub, the
 education team, and the product so I kept tabs on the project as time
-passed. &lt;/p&gt;
-&lt;p&gt;
+passed. 
+
 This semester I decided to go all in on GitHub Classroom. Why? A
 combination of my changing my workflow and part due to the GitHub
-education tools and community. At it&amp;#39;s core, GitHub classroom does two
-things well:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Assignment creation and distribution&lt;/li&gt;
-&lt;li&gt;Repo management and organization.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I thought I&amp;#39;d do a couple of posts and videos to show how I&amp;#39;m using
-everything. &lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the first one.&lt;/p&gt;
-&lt;p&gt;
-Interestingly enough I&amp;#39;m not going to talk at all about GitHub
-classroom for the remainder of this post. Instead I&amp;#39;m going to talk
-about TravisCI (&lt;a href=&#34;https://travis-ci.com/&#34;&gt;&lt;a href=&#34;https://travis-ci.com/&#34;&gt;https://travis-ci.com/&lt;/a&gt;&lt;/a&gt;,
-&lt;a href=&#34;https://travis-ci.org/&#34;&gt;https://travis-ci.org/&lt;/a&gt;). Travis is a platform for continuous
+education tools and community. At it&#39;s core, GitHub classroom does two
+things well:
+
+ 1. Assignment creation and distribution
+ 2. Repo management and organization.
+
+I thought I&#39;d do a couple of posts and videos to show how I&#39;m using
+everything. 
+
+Here&#39;s the first one.
+
+Interestingly enough I&#39;m not going to talk at all about GitHub
+classroom for the remainder of this post. Instead I&#39;m going to talk
+about TravisCI ([[https://travis-ci.com/][https://travis-ci.com/]],
+[[https://travis-ci.org/]]). Travis is a platform for continuous
 intergration. The idea is pretty simple. After setting things up,
 whenever you push code to a repo that Travis is watching, Travis
 starts a container for your repo and runs one or more scripts against
 the repo. This usually means tests. It turns out that this can be a
-useful sanity check for students. It&amp;#39;s true that they can run tests on
-their assignments before submitting them but this way it&amp;#39;s done
+useful sanity check for students. It&#39;s true that they can run tests on
+their assignments before submitting them but this way it&#39;s done
 automatically and after they submit. They can be sure that what
-they&amp;#39;ve submitted actually works.&lt;/p&gt;
-&lt;p&gt;
+they&#39;ve submitted actually works.
+
 First you have to link your GitHub accoutn with Travis. To do this,
 just go to travis-ci.org and log in using GitHub. You can then set a
 bunch of options including which repos to run Travis on. The interface
 at travis-ci.com looks similar but a bit nicer. The .org site is free
 for open source or public repos  (as is the .com site, I think) but
 the good people at Travis will give you rights to use private repos
-for educational purposes for free. &lt;/p&gt;
-&lt;p&gt;
-The only other thing you have to do is create a &lt;a href=&#34;https://yaml.org/&#34;&gt;YAML&lt;/a&gt; file named
- &lt;code&gt;.travis.yml&lt;/code&gt; in your repo. Here&amp;#39;s one I&amp;#39;m using to test C++ projecs:&lt;/p&gt;
-&lt;div class=&#34;src src-yaml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
-  - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;
-  - &lt;span style=&#34;color:#ae81ff&#34;&gt;./test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
+for educational purposes for free. 
+
+The only other thing you have to do is create a [[https://yaml.org/][YAML]] file named
+ ~.travis.yml~ in your repo. Here&#39;s one I&#39;m using to test C++ projecs:
+
+#+BEGIN_SRC yaml
+language: cpp
+compiler: clang
+script:
+  - make test
+  - ./test
+#+END_SRC
+
 This tells Travis to use the clang compiler (as opposed to, say g++)
-and then run &lt;code&gt;make test&lt;/code&gt; and then &lt;code&gt;./test&lt;/code&gt;. If all the tests pass you
-get a green check and an email and you&amp;#39;re good to go. If they don&amp;#39;t
+and then run ~make test~ and then ~./test~. If all the tests pass you
+get a green check and an email and you&#39;re good to go. If they don&#39;t
 you get a red X and also an email. Of course for this particular
-configuration to work you need &lt;code&gt;Makefile&lt;/code&gt; and everything else needed
-to build the tests in the repo. In my case, I&amp;#39;m using &lt;a href=&#34;https://github.com/onqtam/doctest&#34;&gt;doctest&lt;/a&gt; for tests.&lt;/p&gt;
-&lt;p&gt;
+configuration to work you need ~Makefile~ and everything else needed
+to build the tests in the repo. In my case, I&#39;m using [[https://github.com/onqtam/doctest][doctest]] for tests.
+
 Travis has support for a whole bunch of languages including Java,
 Python, and JavaScript and all of those have nice testing frameworks
-so regardless of what you&amp;#39;re teaching with, Travis could be easily
-integrated. &lt;/p&gt;
-&lt;p&gt;
-In this video I show how I&amp;#39;m using TravisCI and also a simple Python
-setup. In the next post I&amp;#39;ll get back to GitHub classroom and how
-TravisCI integrates into it.&lt;/p&gt;
-&lt;p&gt;
-&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
-src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/-J8A5oWazvE&#34;&gt;https://www.youtube.com/embed/-J8A5oWazvE&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
-allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+so regardless of what you&#39;re teaching with, Travis could be easily
+integrated. 
+
+In this video I show how I&#39;m using TravisCI and also a simple Python
+setup. In the next post I&#39;ll get back to GitHub classroom and how
+TravisCI integrates into it.
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/-J8A5oWazvE&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+ 
+ 
+
+
+
+
+
+
+
 </description>
     </item>
     
