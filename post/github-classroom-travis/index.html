@@ -14,12 +14,12 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1660680371" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1660680427" />
 
 
 
 <meta property="og:title" content="Github Classroom and Travis CI" />
-<meta property="og:description" content="I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my [[https://cestlaz.github.io/posts/sigcse-2017-github-4/][workflows down]]. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well. A few years ago, the [[https://education.github.com/][GitHub Education team]] started [[https://classroom.github.com/][GitHub Classroom]]. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it." />
+<meta property="og:description" content="I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my workflows down. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well.  A few years ago, the GitHub Education team started GitHub Classroom. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/github-classroom-travis/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-02-02T09:44:29-04:00" />
@@ -28,7 +28,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Github Classroom and Travis CI"/>
-<meta name="twitter:description" content="I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my [[https://cestlaz.github.io/posts/sigcse-2017-github-4/][workflows down]]. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well. A few years ago, the [[https://education.github.com/][GitHub Education team]] started [[https://classroom.github.com/][GitHub Classroom]]. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it."/>
+<meta name="twitter:description" content="I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over time I&#39;ve gotten my workflows down. I use a combination of shell scripts - many just written on the fly, GitHub organizations, and some naming conventions and protocols that have served me well.  A few years ago, the GitHub Education team started GitHub Classroom. I looked at it at the time. It was pretty cool but I had my workflow so I didn&#39;t adopt it."/>
 
 
 
@@ -77,95 +77,82 @@
             <h1 class="post-title">Github Classroom and Travis CI</h1>
         </header>
         <div class="content">
-             
-
-I've been using GitHub with my classes since GitHub's early days. Over
-time I've gotten my [[https://cestlaz.github.io/posts/sigcse-2017-github-4/][workflows down]]. I use a combination of shell
+            <p>
+I&#39;ve been using GitHub with my classes since GitHub&#39;s early days. Over
+time I&#39;ve gotten my <a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/">workflows down</a>. I use a combination of shell
 scripts - many just written on the fly, GitHub organizations, and some
-naming conventions and protocols that have served me well. 
-
-A few years ago, the [[https://education.github.com/][GitHub Education team]] started [[https://classroom.github.com/][GitHub
-Classroom]]. I looked at it at the time. It was pretty cool but I had my
-workflow so I didn't adopt it. I still very much liked GitHub, the
+naming conventions and protocols that have served me well. </p>
+<p>
+A few years ago, the <a href="https://education.github.com/">GitHub Education team</a> started <a href="https://classroom.github.com/">GitHub
+Classroom</a>. I looked at it at the time. It was pretty cool but I had my
+workflow so I didn&#39;t adopt it. I still very much liked GitHub, the
 education team, and the product so I kept tabs on the project as time
-passed. 
-
+passed. </p>
+<p>
 This semester I decided to go all in on GitHub Classroom. Why? A
 combination of my changing my workflow and part due to the GitHub
-education tools and community. At it's core, GitHub classroom does two
-things well:
-
- 1. Assignment creation and distribution
- 2. Repo management and organization.
-
-I thought I'd do a couple of posts and videos to show how I'm using
-everything. 
-
-Here's the first one.
-
-Interestingly enough I'm not going to talk at all about GitHub
-classroom for the remainder of this post. Instead I'm going to talk
-about TravisCI ([[https://travis-ci.com/][https://travis-ci.com/]],
-[[https://travis-ci.org/]]). Travis is a platform for continuous
+education tools and community. At it&#39;s core, GitHub classroom does two
+things well:</p>
+<ol>
+<li>Assignment creation and distribution</li>
+<li>Repo management and organization.</li>
+</ol>
+<p>I thought I&#39;d do a couple of posts and videos to show how I&#39;m using
+everything. </p>
+<p>
+Here&#39;s the first one.</p>
+<p>
+Interestingly enough I&#39;m not going to talk at all about GitHub
+classroom for the remainder of this post. Instead I&#39;m going to talk
+about TravisCI (<a href="https://travis-ci.com/"><a href="https://travis-ci.com/">https://travis-ci.com/</a></a>,
+<a href="https://travis-ci.org/">https://travis-ci.org/</a>). Travis is a platform for continuous
 intergration. The idea is pretty simple. After setting things up,
 whenever you push code to a repo that Travis is watching, Travis
 starts a container for your repo and runs one or more scripts against
 the repo. This usually means tests. It turns out that this can be a
-useful sanity check for students. It's true that they can run tests on
-their assignments before submitting them but this way it's done
+useful sanity check for students. It&#39;s true that they can run tests on
+their assignments before submitting them but this way it&#39;s done
 automatically and after they submit. They can be sure that what
-they've submitted actually works.
-
+they&#39;ve submitted actually works.</p>
+<p>
 First you have to link your GitHub accoutn with Travis. To do this,
 just go to travis-ci.org and log in using GitHub. You can then set a
 bunch of options including which repos to run Travis on. The interface
 at travis-ci.com looks similar but a bit nicer. The .org site is free
 for open source or public repos  (as is the .com site, I think) but
 the good people at Travis will give you rights to use private repos
-for educational purposes for free. 
-
-The only other thing you have to do is create a [[https://yaml.org/][YAML]] file named
- ~.travis.yml~ in your repo. Here's one I'm using to test C++ projecs:
-
-#+BEGIN_SRC yaml
-language: cpp
-compiler: clang
-script:
-  - make test
-  - ./test
-#+END_SRC
-
+for educational purposes for free. </p>
+<p>
+The only other thing you have to do is create a <a href="https://yaml.org/">YAML</a> file named
+ <code>.travis.yml</code> in your repo. Here&#39;s one I&#39;m using to test C++ projecs:</p>
+<div class="src src-yaml">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">language</span>: <span style="color:#ae81ff">cpp</span>
+<span style="color:#f92672">compiler</span>: <span style="color:#ae81ff">clang</span>
+<span style="color:#f92672">script</span>:
+  - <span style="color:#ae81ff">make test</span>
+  - <span style="color:#ae81ff">./test</span></code></pre></div>
+</div>
+<p>
 This tells Travis to use the clang compiler (as opposed to, say g++)
-and then run ~make test~ and then ~./test~. If all the tests pass you
-get a green check and an email and you're good to go. If they don't
+and then run <code>make test</code> and then <code>./test</code>. If all the tests pass you
+get a green check and an email and you&#39;re good to go. If they don&#39;t
 you get a red X and also an email. Of course for this particular
-configuration to work you need ~Makefile~ and everything else needed
-to build the tests in the repo. In my case, I'm using [[https://github.com/onqtam/doctest][doctest]] for tests.
-
+configuration to work you need <code>Makefile</code> and everything else needed
+to build the tests in the repo. In my case, I&#39;m using <a href="https://github.com/onqtam/doctest">doctest</a> for tests.</p>
+<p>
 Travis has support for a whole bunch of languages including Java,
 Python, and JavaScript and all of those have nice testing frameworks
-so regardless of what you're teaching with, Travis could be easily
-integrated. 
-
-In this video I show how I'm using TravisCI and also a simple Python
-setup. In the next post I'll get back to GitHub classroom and how
-TravisCI integrates into it.
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/-J8A5oWazvE" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe>
-
-
- 
- 
-
-
-
-
-
-
-
+so regardless of what you&#39;re teaching with, Travis could be easily
+integrated. </p>
+<p>
+In this video I show how I&#39;m using TravisCI and also a simple Python
+setup. In the next post I&#39;ll get back to GitHub classroom and how
+TravisCI integrates into it.</p>
+<p>
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;<a href="https://www.youtube.com/embed/-J8A5oWazvE">https://www.youtube.com/embed/-J8A5oWazvE</a>&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</p>
 
         </div>
         
