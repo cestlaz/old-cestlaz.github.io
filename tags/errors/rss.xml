@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>errors on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/errors/</link>
+    <description>C&#39;est la Z (errors)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Sep 2022 15:05:19 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/tags/errors/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Subtle Errors</title>
+      <link>https://cestlaz.github.io/post/subtle-errors/</link>
+      <pubDate>Fri, 02 Sep 2022 15:05:19 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/subtle-errors/</guid>
+      <description>&lt;p&gt;
+The semesters back up in full swing again - teaching 2 undergrad
+classes in person - CS0 in Python and CS1 in C++ along with my teacher
+certification class - Ethics via Zoom. Grand total of about 125
+students. An error came up in the CS0 class the other day that
+reminded me how tough it is not only to prepare students to deal with
+all the things that can go wrong when learning to program but even for
+a teacher to realize what&amp;#39;s going on.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the code. It looks pretty straightforward and should work to
+draw a square.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; turtle
+
+wn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; turtle&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Screen()
+
+crush &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; turtle&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Turtle()
+
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;left(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+
+wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exitonclick()
+wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mainloop()&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+Problem is, it didn&amp;#39;t. Now, algorithmicaly this is correct and in fact
+the actual code looks correct as well but the student couldn&amp;#39;t get it
+to run.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s an actual screenshot that resulted in the error. Can you spot
+the problem?&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/thonny-error.png&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I spotted it pretty quickly. Not because I&amp;#39;m any good at this but
+because I&amp;#39;ve seen the error before. It turns out the student had named
+their program file &lt;strong&gt;turtle.py&lt;/strong&gt; and so when line 1 tried to &lt;strong&gt;import
+turtle&lt;/strong&gt; we ended up with a circular reference. Instead of loading the
+turtle graphics module, it would try to load itself. Had the actual
+error message remained on the screen it would have said something
+about &amp;#34;circular reference&amp;#34; but that wouldn&amp;#39;t help a student and truth
+be told it probably wouldn&amp;#39;t help most CS teachers in diagnosing the
+problem. Now, the student wasn&amp;#39;t faultless here - I had explicitly
+stated that they should name their program file &lt;strong&gt;t1.py&lt;/strong&gt; but we all
+know how well students follow directions ;-).&lt;/p&gt;
+&lt;p&gt;
+This is just one example of the myriad issues that arise when teaching
+programming. One could try to minimize these issue by working in
+sandboxed environments but then when students leave class and the
+sandbox. The sandbox makes life easier for the teacher but it&amp;#39;s really
+only kicking the can down to someone else.&lt;/p&gt;
+&lt;p&gt;
+I remember this being a big deal when codecademy wa the big thing
+around a decade ago. Everyone went to their site and &amp;#34;learned&amp;#34; how to
+program. So many of them realized after finishing the course that they
+couldn&amp;#39;t do anything outside of the little codecademy programming
+window. This isn&amp;#39;t to say that Codecadmey wasn&amp;#39;t a good product or
+service but students learning about how to deal with platform and
+implementation issues is a real one.&lt;/p&gt;
+&lt;p&gt;
+This particular issue left some hints - the error mentioned the import
+and said that it was circular but there are plenty of weird errors
+like this - dealing with versions, file and module locations, build
+systems and even things like disk quotas and file permissions that can
+make learning to program much more of a minefield than it should be. &lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t have any real answer as to how and when these issues should be
+dealt with - how much we should shield our students at first and how
+we should expose them to real world issues but it&amp;#39;s probably something
+teachers should be talking about more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

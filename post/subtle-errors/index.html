@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Subtle Errors - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1662147331" />
+
+
+
+<meta property="og:title" content="Subtle Errors" />
+<meta property="og:description" content="The semesters back up in full swing again - teaching 2 undergrad classes in person - CS0 in Python and CS1 in C&#43;&#43; along with my teacher certification class - Ethics via Zoom. Grand total of about 125 students. An error came up in the CS0 class the other day that reminded me how tough it is not only to prepare students to deal with all the things that can go wrong when learning to program but even for a teacher to realize what&#39;s going on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/subtle-errors/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-02T15:05:19-04:00" />
+<meta property="article:modified_time" content="2022-09-02T15:05:19-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Subtle Errors"/>
+<meta name="twitter:description" content="The semesters back up in full swing again - teaching 2 undergrad classes in person - CS0 in Python and CS1 in C&#43;&#43; along with my teacher certification class - Ethics via Zoom. Grand total of about 125 students. An error came up in the CS0 class the other day that reminded me how tough it is not only to prepare students to deal with all the things that can go wrong when learning to program but even for a teacher to realize what&#39;s going on."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Subtle Errors</h1>
+        </header>
+        <div class="content">
+            <p>
+The semesters back up in full swing again - teaching 2 undergrad
+classes in person - CS0 in Python and CS1 in C++ along with my teacher
+certification class - Ethics via Zoom. Grand total of about 125
+students. An error came up in the CS0 class the other day that
+reminded me how tough it is not only to prepare students to deal with
+all the things that can go wrong when learning to program but even for
+a teacher to realize what&#39;s going on.</p>
+<p>
+Here&#39;s the code. It looks pretty straightforward and should work to
+draw a square.</p>
+<p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()
+
+crush <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
+
+crush<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)
+crush<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+crush<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)
+crush<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+crush<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)
+crush<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+crush<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)
+crush<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+
+wn<span style="color:#f92672">.</span>exitonclick()
+wn<span style="color:#f92672">.</span>mainloop()</code></pre></td></tr></table>
+</div>
+</div></p>
+<p>
+Problem is, it didn&#39;t. Now, algorithmicaly this is correct and in fact
+the actual code looks correct as well but the student couldn&#39;t get it
+to run.</p>
+<p>
+Here&#39;s an actual screenshot that resulted in the error. Can you spot
+the problem?</p>
+<p>
+<figure><img src="/img/thonny-error.png"/>
+</figure>
+</p>
+<p>
+I spotted it pretty quickly. Not because I&#39;m any good at this but
+because I&#39;ve seen the error before. It turns out the student had named
+their program file <strong>turtle.py</strong> and so when line 1 tried to <strong>import
+turtle</strong> we ended up with a circular reference. Instead of loading the
+turtle graphics module, it would try to load itself. Had the actual
+error message remained on the screen it would have said something
+about &#34;circular reference&#34; but that wouldn&#39;t help a student and truth
+be told it probably wouldn&#39;t help most CS teachers in diagnosing the
+problem. Now, the student wasn&#39;t faultless here - I had explicitly
+stated that they should name their program file <strong>t1.py</strong> but we all
+know how well students follow directions ;-).</p>
+<p>
+This is just one example of the myriad issues that arise when teaching
+programming. One could try to minimize these issue by working in
+sandboxed environments but then when students leave class and the
+sandbox. The sandbox makes life easier for the teacher but it&#39;s really
+only kicking the can down to someone else.</p>
+<p>
+I remember this being a big deal when codecademy wa the big thing
+around a decade ago. Everyone went to their site and &#34;learned&#34; how to
+program. So many of them realized after finishing the course that they
+couldn&#39;t do anything outside of the little codecademy programming
+window. This isn&#39;t to say that Codecadmey wasn&#39;t a good product or
+service but students learning about how to deal with platform and
+implementation issues is a real one.</p>
+<p>
+This particular issue left some hints - the error mentioned the import
+and said that it was circular but there are plenty of weird errors
+like this - dealing with versions, file and module locations, build
+systems and even things like disk quotas and file permissions that can
+make learning to program much more of a minefield than it should be. </p>
+<p>
+I don&#39;t have any real answer as to how and when these issues should be
+dealt with - how much we should shield our students at first and how
+we should expose them to real world issues but it&#39;s probably something
+teachers should be talking about more.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2022-09-02</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/programming">programming</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/errors">#errors</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming">#programming</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2022<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

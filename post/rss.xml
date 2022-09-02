@@ -6,10 +6,119 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 15:38:55 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 02 Sep 2022 15:05:19 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Subtle Errors</title>
+      <link>https://cestlaz.github.io/post/subtle-errors/</link>
+      <pubDate>Fri, 02 Sep 2022 15:05:19 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/subtle-errors/</guid>
+      <description>&lt;p&gt;
+The semesters back up in full swing again - teaching 2 undergrad
+classes in person - CS0 in Python and CS1 in C++ along with my teacher
+certification class - Ethics via Zoom. Grand total of about 125
+students. An error came up in the CS0 class the other day that
+reminded me how tough it is not only to prepare students to deal with
+all the things that can go wrong when learning to program but even for
+a teacher to realize what&amp;#39;s going on.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the code. It looks pretty straightforward and should work to
+draw a square.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; turtle
+
+wn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; turtle&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Screen()
+
+crush &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; turtle&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Turtle()
+
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;left(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;forward(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+crush&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;right(&lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;)
+
+wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exitonclick()
+wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mainloop()&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+Problem is, it didn&amp;#39;t. Now, algorithmicaly this is correct and in fact
+the actual code looks correct as well but the student couldn&amp;#39;t get it
+to run.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s an actual screenshot that resulted in the error. Can you spot
+the problem?&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/thonny-error.png&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I spotted it pretty quickly. Not because I&amp;#39;m any good at this but
+because I&amp;#39;ve seen the error before. It turns out the student had named
+their program file &lt;strong&gt;turtle.py&lt;/strong&gt; and so when line 1 tried to &lt;strong&gt;import
+turtle&lt;/strong&gt; we ended up with a circular reference. Instead of loading the
+turtle graphics module, it would try to load itself. Had the actual
+error message remained on the screen it would have said something
+about &amp;#34;circular reference&amp;#34; but that wouldn&amp;#39;t help a student and truth
+be told it probably wouldn&amp;#39;t help most CS teachers in diagnosing the
+problem. Now, the student wasn&amp;#39;t faultless here - I had explicitly
+stated that they should name their program file &lt;strong&gt;t1.py&lt;/strong&gt; but we all
+know how well students follow directions ;-).&lt;/p&gt;
+&lt;p&gt;
+This is just one example of the myriad issues that arise when teaching
+programming. One could try to minimize these issue by working in
+sandboxed environments but then when students leave class and the
+sandbox. The sandbox makes life easier for the teacher but it&amp;#39;s really
+only kicking the can down to someone else.&lt;/p&gt;
+&lt;p&gt;
+I remember this being a big deal when codecademy wa the big thing
+around a decade ago. Everyone went to their site and &amp;#34;learned&amp;#34; how to
+program. So many of them realized after finishing the course that they
+couldn&amp;#39;t do anything outside of the little codecademy programming
+window. This isn&amp;#39;t to say that Codecadmey wasn&amp;#39;t a good product or
+service but students learning about how to deal with platform and
+implementation issues is a real one.&lt;/p&gt;
+&lt;p&gt;
+This particular issue left some hints - the error mentioned the import
+and said that it was circular but there are plenty of weird errors
+like this - dealing with versions, file and module locations, build
+systems and even things like disk quotas and file permissions that can
+make learning to program much more of a minefield than it should be. &lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t have any real answer as to how and when these issues should be
+dealt with - how much we should shield our students at first and how
+we should expose them to real world issues but it&amp;#39;s probably something
+teachers should be talking about more.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Teaching CS - How early and how often?</title>
@@ -4391,115 +4500,6 @@ good enough for me.&lt;/p&gt;
 As always, the clojure code can be found &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day07.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 Enjoy.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lanternfish and lots of data (AOC 2021 Day 6)</title>
-      <link>https://cestlaz.github.io/post/advent-2021-day06/</link>
-      <pubDate>Mon, 06 Dec 2021 16:25:24 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2021-day06/</guid>
-      <description>&lt;p&gt;
-Today we had to model the growth of the lanternfish population
-(&lt;a href=&#34;https://adventofcode.com/2021/day/6&#34;&gt;problem here&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;
-Lanternfish spawn new lanternfish every seven days. The trick is that
-the original starting population consists of fish at different points
-in the cycle. For instance, if your input data was 3,2,4 then each fish
-would spawn a new fish in three, two, and four days respectively. The
-new fish would set their timers to 8 and start counting down to their
-spawn date on the next day and the original fish would reset it&amp;#39;s
-timer to 6.&lt;/p&gt;
-&lt;p&gt;
-Of course, lanternfish never die so the population is going to get
-quite large.&lt;/p&gt;
-&lt;p&gt;
-At first glance this seems to be an easy problem to model. Read the
-fish into a list or array and start processing them a day at a
-time. Add fish to the end as needed.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m guessing this would work for part 1 but doubt it would work for
-part 2. Even before I started solving this just seemed like a problem
-where part 2 would blow away our data set getting much to large much
-too fast.&lt;/p&gt;
-&lt;p&gt;
-So, what to do? It turns out the problem is cyclical. Instead of
-looking at fish, we can look at days. We have an 8 day cycle. Instead
-of storing the fish, store the number of fish that will spawn on any
-given day.&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s the insight.&lt;/p&gt;
-&lt;p&gt;
-I started by playing around with mod and trying to figure out how to
-walk around the list while summing up fish but after a while my brain
-started to hurt. Instead, I just did things in the most
-straightforward way I could.&lt;/p&gt;
-&lt;p&gt;
-Fist, I made a list with my initial state. The example problem had a
-data set of &lt;code&gt;&amp;#34;3,4,3,1 2&amp;#34;&lt;/code&gt; which led to this list:&lt;/p&gt;
-&lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Notice that I have 9  not 8 slots (indexed 0 - 8). That extra one at
-the end is where I move the fish that are spawning today (day 0) so
-they can start the cycle again.&lt;/p&gt;
-&lt;p&gt;
-From there, it&amp;#39;s just following the rules:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Grab the number of fish to spawn today.&lt;/li&gt;
-&lt;li&gt;Move all the fish down a day - that is, the fish in day 1 go to day
-0, day 2 to day 1 etc.&lt;/li&gt;
-&lt;li&gt;Add the new fish to slot 6 (as per the specification).&lt;/li&gt;
-&lt;li&gt;Add the number that spawned today to the end.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-Repeat this for the requisite number of days and then add them all up.&lt;/p&gt;
-&lt;p&gt;
-The Clojure code for the complete solution is:&lt;/p&gt;
-&lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;      (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;solve [data days]
-        (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[start-state (&lt;span style=&#34;color:#a6e22e&#34;&gt;reduce&lt;/span&gt;
-                           (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[sofar next]
-                             (&lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt; sofar next inc))
-                           [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ] data )]
-          (apply + (&lt;span style=&#34;color:#66d9ef&#34;&gt;loop &lt;/span&gt;[i &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-                          gens start-state]
-                     (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt; i days)
-                       (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[last (first gens)
-                             gens  (into []  ( drop &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; gens))
-                             gens  (assoc gens &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; (+ (nth gens &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;) last))
-                             gens  (conj gens last)
-                             ]
-                         (&lt;span style=&#34;color:#a6e22e&#34;&gt;recur&lt;/span&gt; (inc i) gens)
-                         )
-                       gens)))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-For those of you not familiar with Clojure, that &lt;code&gt;reduce&lt;/code&gt; in the let on the second line is how we take the data
-and build our starting state. For those of you who DO know clojure, I
-could probably have made it cleaner with a threading macro instead of
-the three step assignment to gens in the bottom let.&lt;/p&gt;
-&lt;p&gt;
-In any event, we walk away with a memory efficient time efficient
-solution.&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s probably some recurrence that could be set up and solved to do
-this all with math but since the mod stuff made my head hurt working
-on a recurrence equation would probably make it explode.&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s usually at least one problem like this in advent of code each
-year. Something where it looks like you&amp;#39;ll have to calculate forever
-but it turns out you can set up a short repeating cycle to get the job
-done. Unfortunately, they&amp;#39;re all too advanced for my average intro CS
-students. Sure, I could go over the problem and they&amp;#39;d kindof get it
-but I don&amp;#39;t think the majority would really grok it. Alternatively
-they could just follow the rules given and led in class to setting up
-the cycle but I&amp;#39;d love to come up with one where they can really
-discover the magic.&lt;/p&gt;
-&lt;p&gt;
-I should spend some time thinking about this.&lt;/p&gt;
 </description>
     </item>
     
