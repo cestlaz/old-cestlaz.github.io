@@ -6,10 +6,113 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Sep 2022 15:05:19 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 Sep 2022 12:33:02 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Research Vs Practice</title>
+      <link>https://cestlaz.github.io/post/research-vs-practice/</link>
+      <pubDate>Sun, 11 Sep 2022 12:33:02 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/research-vs-practice/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve been seeing a lot of tweets recently about &amp;#34;the research&amp;#34; - how
+PD should present how to teach and cite &amp;#34;the research,&amp;#34; how research
+defines the best practices teachers should use, and on and on.&lt;/p&gt;
+&lt;p&gt;
+As readers know, this is not something I subscribe to.&lt;/p&gt;
+&lt;p&gt;
+What got me this time was a specific tweet on the PD thing and how
+it&amp;#39;s critically important to show the research to &amp;#34;prove&amp;#34; the
+effectiveness of whatever is being pitched. Sorry, no. &lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s look at two scenarios.&lt;/p&gt;
+&lt;p&gt;
+Scenario 1:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You get a PD either from a researcher telling you how to teach based
+on their research or, as would be more common, from an administrator
+or private consultant or contractor who read some researcher&amp;#39;s work.&lt;/p&gt;
+&lt;p&gt;
+The presenter tells you about the practice and how the research said
+it was the one true way.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Scenario 2:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You get a PD from an actual teacher. They tell you what they tried,
+how it went, and a robust discussion ensues between the presenter and
+audience on how the practice might or might not work with the
+audience&amp;#39;s students.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+I&amp;#39;m taking scenario 2 any day of the week. &lt;/p&gt;
+&lt;p&gt;
+There is and can be good education research and it can have tremendous
+value but the truth is, education research has pretty poor overall reputation
+and as far as I can tell, it&amp;#39;s largely deserved. Over my career, I&amp;#39;ve
+been told how to teach multiple times based on the research only to
+hear a few years later that it was wrong and there&amp;#39;s another one true way.&lt;/p&gt;
+&lt;p&gt;
+Ed research, as far as I can tell is rarely if ever reproduced and
+hardly ever accounts for the many, MANY variables that can change
+outcomes.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll talk about the good side of Ed Research down below but first an
+example.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve spoken to ed researchers over the years and told them a story
+of my classes and how my first period CS class always under-performed
+as compared to my later classes. Not by a lot but it was
+consistent. The response was always the same - &amp;#34;that class starts at
+8:00am, right? That&amp;#39;s way too early - that&amp;#39;s the difference.&amp;#34; Sounds
+good and truth be told, I agree that 8:00am is too early but that
+wasn&amp;#39;t the factor. My first period was weaker because math team ran
+at the same time. My other CS classes always had a math team ace or
+two pulling up the average. Once I took them out of the mix, the
+variance was gone.&lt;/p&gt;
+&lt;p&gt;
+There are so many subtle and not so subtle factors that can affect a
+class that it&amp;#39;s impossible for &amp;#34;the research&amp;#34; to cover it all. Sure,
+you can account for a few, particularly big and obvious ones but there
+are so many more. Was the class before or after lunch or gym? What
+about on the sunny side of the building getting the greenhouse affect
+in the mid afternoon? What about just certain mixes of students. The
+variables are endless.&lt;/p&gt;
+&lt;p&gt;
+Rather than telling us teachers how to teach based on &amp;#34;the research&amp;#34;
+I&amp;#39;d much rather hear from, and/or talk to teachers about things
+they&amp;#39;ve tried. What worked for them and what didn&amp;#39;t. Why, at least
+from their perspective. Then I can pick and chose and try for
+myself. While I&amp;#39;ve gotten some good ideas from research papers, the
+amount is pretty meager compared to what I&amp;#39;ve learned from other
+teachers.&lt;/p&gt;
+&lt;p&gt;
+All this said, I do think that there can be good and great research
+and that good research is important.&lt;/p&gt;
+&lt;p&gt;
+Even if you don&amp;#39;t account for all the variables, researchers are
+documenting practices and this is importance. I&amp;#39;ve learned much more
+from teachers than from ed researchers about teaching but what I&amp;#39;ve
+learned from teachers is ephemeral. It&amp;#39;s not recorded for all
+time. The research can document these practices. We just have to take
+a stronger line as a community in saying that &amp;#34;this is what we tried,
+here are some of the variables, and here is what happened. It might
+work for you or it might not, it&amp;#39;s not the one true way.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Another side where ed research can have a major positive impact is
+that when researchers work with teachers they can develop practices
+and tools together that directly help teachers. A great example of
+this is what Mark Guzdial is doing with his teaspoon languages.&lt;/p&gt;
+&lt;p&gt;
+So anyway, after seeing all those tweets I felt I had to vent. I know
+this is not a popular view in some of my circles but that&amp;#39;s okay,
+contrary voices are important as well and as the designated old CS Ed
+Curmudgeon I&amp;#39;m always happy to take that role :-).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Subtle Errors</title>
@@ -4423,83 +4526,6 @@ You can find my full solution &lt;a href=&#34;https://github.com/zamansky/advent
 &lt;p&gt;
 I was worried I wasn&amp;#39;t going to finished this one when I first read it
 but I think it&amp;#39;s my favorite of the year so far.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How you look at a problem can make it easier - AOC 2021 Day 7</title>
-      <link>https://cestlaz.github.io/post/advent-2021-day07/</link>
-      <pubDate>Tue, 07 Dec 2021 09:04:53 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2021-day07/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;https://adventofcode.com/2021/day/7&#34;&gt;Today&amp;#39;s problem&lt;/a&gt; was similar to &lt;a href=&#34;https://cestlaz.github.io/post/advent-2021-day06/&#34;&gt;yesterday&amp;#39;s&lt;/a&gt; in that it&amp;#39;s ease or
-difficulty really depended on how you looked at the question.&lt;/p&gt;
-&lt;p&gt;
-For yesterday, the problem was hard if you approached it by modeling
-each and every lanternfish but it was much easier if you modeled the 8
-days of the reproduction cycle. Sure, there was still work to be done
-but looking at the problem the right way made things much easier.&lt;/p&gt;
-&lt;p&gt;
-Same thing for today, at least for me.&lt;/p&gt;
-&lt;p&gt;
-We were given a list of crabs and their locations and the challenge
-was getting them all to the same spot. Fortunately, crabs in their
-submarines can only move in one dimension - they can only move
-horizontally. This gives us an input that&amp;#39;s just a list of integers,
-each representing a crab location.&lt;/p&gt;
-&lt;p&gt;
-We want to move all the crabs to the same location and we want to do
-it as efficiently as possible. The crab submarines use one unit of
-fuel for each step taken so we want to minimize the overall amount of
-fuel used.&lt;/p&gt;
-&lt;p&gt;
-If we look at this from the crab point of view this could seem
-daunting - do we move the crabs one at a time? Do we have them
-converge? Will we have to do some crazy recursive movement thing?&lt;/p&gt;
-&lt;p&gt;
-It turns out, none of the above. As soon as we realize that we don&amp;#39;t
-have to figure out actual moves or actually move the crabs the problem
-becomes much easier. It isn&amp;#39;t about the crabs but rather about the
-locations. We want to figure out the minimal cost of moving all the
-crabs to each location and then we can pick the lowest overall cost.&lt;/p&gt;
-&lt;p&gt;
-This turns out to be rather simple.&lt;/p&gt;
-&lt;p&gt;
-For each possible location (looping from smallest crab location to
-larges):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;calculate the distance from each crab to this location.&lt;/li&gt;
-&lt;li&gt;Add up all those distances.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We then just need to take the smallest distance and we&amp;#39;re done.&lt;/p&gt;
-&lt;p&gt;
-On to part two.&lt;/p&gt;
-&lt;p&gt;
-For part two, there was a change to the fuel cost. Instead of just
-being the distance between the two locations, the cost of the fuel
-increased by one for each step. So, for moving 1 step the cost would
-be one. Two steps, 1+2, three 1+2+3 etc..&lt;/p&gt;
-&lt;p&gt;
-This was easy enough to model. I just changed the function that
-calculated the old cost with one that calculated the new cost. To do
-that, I took the difference between the two endpoints and calculated
-the sum from 1 up to and including that number.&lt;/p&gt;
-&lt;p&gt;
-This added an additional loop but I figured might as well try it. It
-was noticeably slower than part 1 - about 11 seconds as opposed to
-around 90 msec but fast enough to get an answer and finish the problem
-for the day. That said, it was easy enough to improve the solution if
-you know that you can calculate the sum from 1 to n using the formula
-(n*(n+1))/2. This got the speed back to just over 100 msec.&lt;/p&gt;
-&lt;p&gt;
-Looking over the adventofcode subreddit people were talking about
-using the median to more quickly solve the problem but what I did was
-good enough for me.&lt;/p&gt;
-&lt;p&gt;
-As always, the clojure code can be found &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day07.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-Enjoy.&lt;/p&gt;
 </description>
     </item>
     
