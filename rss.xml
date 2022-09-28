@@ -6,10 +6,116 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Sep 2022 12:33:02 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 28 Sep 2022 16:39:37 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Certified CS teachers - 2 flags in NY</title>
+      <link>https://cestlaz.github.io/post/certified-teacher-in-ny/</link>
+      <pubDate>Wed, 28 Sep 2022 16:39:37 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/certified-teacher-in-ny/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve been running Hunter&amp;#39;s teacher certification program now for three
+years. We started with our Advanced Certificate which allows currently
+working teachers to earn an additional cert in CS and soon a few
+masters students joined the pipeline.&lt;/p&gt;
+&lt;p&gt;
+In three years we&amp;#39;ve made great progress. Approximately 45 New York
+City teachers are either state certified to teach CS or are qualified
+to recieve the certification once they file with the state. We&amp;#39;ve got
+close to 60 more joining them this spring. That&amp;#39;s really exciting as
+it gets us to the critical mass I think the city needs moving
+forward.&lt;/p&gt;
+&lt;p&gt;
+A core of knowledgeable teachers to provide an existing
+community of professionals as new young CS teachers join the
+profession over the next few years.&lt;/p&gt;
+&lt;p&gt;
+This work something I&amp;#39;m both proud and excited about but there are two
+major concerns.&lt;/p&gt;
+&lt;p&gt;
+First, there are many teachers teaching CS in NY that have no
+intention of earning the new certification and also don&amp;#39;t really know
+the subject. &lt;/p&gt;
+&lt;p&gt;
+Second, this is only New York City and NY is a big state and not
+enough is happening in other parts of the state.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll talk about the first issue in my next post but for now, let&amp;#39;s
+talk about the state.&lt;/p&gt;
+&lt;p&gt;
+A big thing I&amp;#39;m excited about with my current cohort of teachers is
+that five of them are from the Finger Lakes region of NY. About a year
+ago, I was essentially cold called by educators from the Dryden school
+district. They wanted to make sure they had knowledgeable CS teachers
+and saw that we had an advanced certificate program. They wanted to
+send their teachers to us for certification. There were issues - for
+funding, they ended up applying and receiving an NSF grant and on my
+end, I had to make sure that our program would remain remote - that
+commute from the Finger Lakes would&amp;#39;ve been brutal. When all was said and
+done, we started this past summer with over 50 teachers and teacher
+candidates from New York City and 5 from Dryden and neighboring
+Groton. Those five teachers have been a terrific addition to the
+cohort and I think it&amp;#39;s also worked for them - they immediately become
+a local network of CS teachers as opposed to being the only one in
+town and they&amp;#39;ve also tapped into the New York City network we&amp;#39;ve been
+building.&lt;/p&gt;
+&lt;p&gt;
+This means we&amp;#39;ve planted 2 flags in NY State - two locations that have
+or will soon have certified CS teachers. The ones that have finished
+my program in NYC along with the five from Dryden and Groton.&lt;/p&gt;
+&lt;p&gt;
+The trouble is, we need more.&lt;/p&gt;
+&lt;p&gt;
+Right now, there are 5 institutions with register masters program in
+New York State and 3 wither registered bachelors programs. I can&amp;#39;t
+vouch for the quality of any programs other than mine and I don&amp;#39;t know
+how many are active.&lt;/p&gt;
+&lt;p&gt;
+Regardless, the issue here is that these are all programs that provide
+initial certification - they&amp;#39;re for new people entering the
+profession. These programs are needed but will ramp up slowly across
+the state. At Hunter we&amp;#39;ve had registrations of 2, 4, and now most
+recently 5.&lt;/p&gt;
+&lt;p&gt;
+We need more Advanced Certificate programs across the
+state. Programs that allow current CS teachers to learn this new field
+so they can teach it legally and teach it well. Right now, Hunter&amp;#39;s
+the only game in town. This is one of the reasons why I&amp;#39;ve fought
+to keep us online - you can&amp;#39;t expect teachers from way out in queens
+to come into the heart of Manhattan after a school day for classes and
+then back out LI or wherever they live let alone teachers from 4 hours
+north of the city.&lt;/p&gt;
+&lt;p&gt;
+We need more Advanced Certification programs and we need ways to fund
+the teachers who need these programs. I&amp;#39;ve been extremely fortunate
+that organizations like Gotham Gives and Google support our work in
+New York City but I&amp;#39;m thinking we need the equivalent up the Hudson
+Valley, across the Erie Canal and all the way to Buffalo.&lt;/p&gt;
+&lt;p&gt;
+These programs and the related funding also wouldn&amp;#39;t have to last
+forever. After there years of intense work, NYC will have its core of
+certified teachers and I expect the demand for my advanced cert
+program to go way down while we slowly see an uptick in interest in
+our Masters program.&lt;/p&gt;
+&lt;p&gt;
+Next time, I&amp;#39;ll talk about that other issue - the fact that we&amp;#39;re
+going to have a lot of teachers that don&amp;#39;t really know CS and how to
+teach it for a long time but this is enough for now.&lt;/p&gt;
+&lt;p&gt;
+We need more programs across the state that will recertify current
+teachers and really set them up as CS teachers. I&amp;#39;ve done what I could
+in that regard at Hunter and am very proud of our partnership with
+Dryden and Groton but it&amp;#39;s got to be more than Hunter college.&lt;/p&gt;
+&lt;p&gt;
+So, hey, if you&amp;#39;re somewhere outside of the city and this is important
+to you - drop me a line, I&amp;#39;d love to work together to make things
+happen across the state.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Research Vs Practice</title>
@@ -4375,157 +4481,6 @@ was fun. This could be directly assigned to any data structures class.&lt;/p&gt;
 &lt;p&gt;
 As usual, my code can be found here:
 &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day10.clj&#34;&gt;&lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day10.clj&#34;&gt;https://github.com/zamansky/advent2021/blob/main/src/day10.clj&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Seven Segment Silliness - Advent 2021 Day08</title>
-      <link>https://cestlaz.github.io/post/advent-2021-day08/</link>
-      <pubDate>Wed, 08 Dec 2021 13:20:49 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/advent-2021-day08/</guid>
-      <description>&lt;p&gt;
-Day 8 took a lot longer than the other days. Not all that much code
-and not too complex, at least after getting through a scary sounding
-lead up but going from problem statement to solution took both time
-and thought.&lt;/p&gt;
-&lt;p&gt;
-As I started to read the problem, I wasn&amp;#39;t sure I&amp;#39;d finish it let
-alone have time to write it up.&lt;/p&gt;
-&lt;p&gt;
-Take a minute to read over the problem. You can find it [[&lt;a href=&#34;https://adventofcode.com/2021/day/8&#34;&gt;https://adventofcode.com/2021/day/8&lt;/a&gt;
-][here.]]&lt;/p&gt;
-&lt;p&gt;
-A pretty intimidating wall of text. &lt;/p&gt;
-&lt;p&gt;
-You&amp;#39;ve got a bunch of lines, each looking like this:&lt;/p&gt;
-&lt;pre class=&#34;example&#34;&gt;
-be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
-&lt;/pre&gt;
-&lt;p&gt;
-Each &amp;#34;word&amp;#34; represents a seven segment display. The side to the left
-of the | is the input for that line and the stuff on the right, the
-output.&lt;/p&gt;
-&lt;p&gt;
-The problem is that each line has the inputs scrambled. We jave to
-figure out which letter maps to the top segment, which the bottom,
-etc.&lt;/p&gt;
-&lt;p&gt;
-Oh boy.&lt;/p&gt;
-&lt;p&gt;
-It turns out that part one really wasn&amp;#39;t hard at all. In fact, it
-could make a nice early CS assignment. If you look at the display for
-a &lt;strong&gt;1&lt;/strong&gt;, it has two segment on the right hand side. It&amp;#39;s the only number
-that uses 2 and only 2 of the seven segments. Likewise a &lt;strong&gt;4&lt;/strong&gt; is the
-only four segment letter, &lt;strong&gt;7&lt;/strong&gt; is the only one that uses 3 segments,
-and &lt;strong&gt;8&lt;/strong&gt; is the only one that uses all seven segments.&lt;/p&gt;
-&lt;p&gt;
-For part 1 you just had to look at all the outputs  - that is, the
-stuff on each line after the | and add up the number of items that
-are either a 1, 4, 7, or 8. That&amp;#39;s easily accomplished by going over
-each of those items and checking if they have the correct number of
-characters and then figuring out the total number of these items.&lt;/p&gt;
-&lt;p&gt;
-I had already parsed my data into the a two item list where the left
-item is a list of inputs and the right a list of outputs:&lt;/p&gt;
-&lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;[ [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cdbga&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bcg&amp;#34;&lt;/span&gt; ...] [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geac&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ceag&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;faedcb&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cg&amp;#34;&lt;/span&gt;]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-So all I had to do go through all the output sides, count the characters in
-each item and then add up the number of them.&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the code:&lt;/p&gt;
-&lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;myfilter [x]
-  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;takes a list of numbers and returns only those that are 2,4,3, or 7&amp;#34;&lt;/span&gt;
-    (filter &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(contains? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;{&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;} %) x))
-
-
-  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1 [  data]
-    (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[results (map second data) &lt;span style=&#34;color:#75715e&#34;&gt;;; pull out all the outputs&lt;/span&gt;
-          counted (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(map count %) results) &lt;span style=&#34;color:#75715e&#34;&gt;;; turn the &amp;#34;words&amp;#34; into counts of their lengths&lt;/span&gt;
-          f (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;myfilter&lt;/span&gt; %) counted) &lt;span style=&#34;color:#75715e&#34;&gt;;; only keep the ones that are the right lengths&lt;/span&gt;
-          total (map &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(count %) f) &lt;span style=&#34;color:#75715e&#34;&gt;;; count how many are in each line&lt;/span&gt;
-          ]
-      (apply +  total))) &lt;span style=&#34;color:#75715e&#34;&gt;;; add them all up &lt;/span&gt;
-
-  (&lt;span style=&#34;color:#a6e22e&#34;&gt;part1&lt;/span&gt; data)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-For part 2 we had to decode all the output lines and then turn them
-into numbers and add them up.&lt;/p&gt;
-&lt;p&gt;
-Sounded really daunting. It required some thought but it wasn&amp;#39;t that
-bad.&lt;/p&gt;
-&lt;p&gt;
-I wanted to build a dictionary where the keys were the digits and the
-values would be the segments for that particular input line that
-represent  that digit.&lt;/p&gt;
-&lt;p&gt;
-For a given line, we can do it pretty easily for the unique numbers 2,
-4,3, and 7 so we just loop through all the items in a line  and when
-we see an item with the appropriate length, we store the number in our
-dictionary.&lt;/p&gt;
-&lt;p&gt;
-We might have something like this:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th class=&#34;align-right&#34;&gt;key&lt;/th&gt;
-&lt;th&gt;value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
-&lt;td&gt;b e&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class=&#34;align-right&#34;&gt;4&lt;/td&gt;
-&lt;td&gt;b c e g&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class=&#34;align-right&#34;&gt;7&lt;/td&gt;
-&lt;td&gt;b d e&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class=&#34;align-right&#34;&gt;8&lt;/td&gt;
-&lt;td&gt;a b c d e f g&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-These were the values from the first line of the example data. Also, I
-used a Clojure set  to store the values since that makes the rest of
-the solution easier.&lt;/p&gt;
-&lt;p&gt;
-I then took this dictionary and tried to add to it by figuring out the
-5 segment numbers - specifically, 2, 3 and 5. It turns out that of the
-5 segment numbers, the &lt;strong&gt;3&lt;/strong&gt; is the only one that ovelaps with the two
-segments from the &lt;strong&gt;1&lt;/strong&gt; so we can find that one pretty easily. If the
-five segment number wasn&amp;#39;t a 3, I looked to see if it was a 5. For
-this, I looked to see if it had the left and middle segments that the
-4 had. Finally, if it wasn&amp;#39;t a &lt;strong&gt;3&lt;/strong&gt; or a &lt;strong&gt;5&lt;/strong&gt; then it had to be a &lt;strong&gt;2&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;
-Next, I did the same for the remaining segments which were all 6
-segments. You can look at my full code (linked below) for specifics.&lt;/p&gt;
-&lt;p&gt;
-Once we had the complet dictionary I flipped it - keys became values
-and values became keys so we could look up the output numbers. From
-there, it was easy to convert them to numbers and find the final
-answer.&lt;/p&gt;
-&lt;p&gt;
-The part of this problem that was both fun and challenging was trying
-to figure out how to decode a given letter given what you already
-figured out. That took some time but getting the final answers for
-problems like this are somehow more satisfying than just a straight up
-&amp;#34;code it&amp;#34; problem.&lt;/p&gt;
-&lt;p&gt;
-You can find my full solution &lt;a href=&#34;https://github.com/zamansky/advent2021/blob/main/src/day08.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-I was worried I wasn&amp;#39;t going to finished this one when I first read it
-but I think it&amp;#39;s my favorite of the year so far.&lt;/p&gt;
 </description>
     </item>
     
