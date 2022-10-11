@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS Topics on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/tags/cs-topics/</link>
+    <description>C&#39;est la Z (CS Topics)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Oct 2022 14:40:55 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/tags/cs-topics/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Same Old Topics</title>
+      <link>https://cestlaz.github.io/post/same-old-topics/</link>
+      <pubDate>Sat, 08 Oct 2022 14:40:55 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/same-old-topics/</guid>
+      <description>&lt;p&gt;
+I haven&amp;#39;t been posting about specific CS teaching techniques and
+lesson content recently. Probably because I&amp;#39;ve been teaching the same classes
+at Hunter now for the past six years.&lt;/p&gt;
+&lt;p&gt;
+Twice a year, Fall and Spring, I teach a recitation for Hunter&amp;#39;s CS1
+in C++. In the Fall I also teach a version of their CS0 in Python. My
+second undergrad CS class in the Spring is Data Structures.&lt;/p&gt;
+&lt;p&gt;
+I have some freedom in the CS0 class but that&amp;#39;s more with applications
+and assignments since the basics are the basics. Data Structures is
+even more constrained. I&amp;#39;ve got to cover the same data structures and
+algorithms as the other, non honors section. I can do more and I can
+cover things the way I want but the list of data structures and
+algorithms is pretty set.&lt;/p&gt;
+&lt;p&gt;
+For my CS1 recitation, I probably have the most freedom. For the
+regular sections, they cover a number of labs in the recitation. Since
+I have an honors class, I push the labs to homework assignments and
+can do what I want with the recitation time. This gives me some
+freedom but I still have to match the pace and content with what
+they&amp;#39;re learning in the CS1 lectures. That means I can&amp;#39;t arbitrarily
+cover a topic until it&amp;#39;s prerequisites are covered in the main lecture
+and likewise, I can&amp;#39;t cover anything that&amp;#39;s covered in a future
+lecture.&lt;/p&gt;
+&lt;p&gt;
+Now, this doesn&amp;#39;t mean I have no freedom at all. For all three
+courses, I developed my lessons and I&amp;#39;ve continually tweaked how I&amp;#39;ve
+taught but it&amp;#39;s been largely the same.&lt;/p&gt;
+&lt;p&gt;
+I bet this is similar to a math teacher teaching algebra or geometry
+for the billionth time.&lt;/p&gt;
+&lt;p&gt;
+For the CS1 lab I initially added in a bunch of software engineering
+and a couple of straight CS topics. The software engineering included
+things like coding standards, testing, code reviews, working on other
+peoples code and the like. It&amp;#39;s worked well but last couple of times
+I&amp;#39;ve felt the course was a little stagnant and wanted to mix in some
+new things.&lt;/p&gt;
+&lt;p&gt;
+What to add? I looked at the class calendar and lecture syllabus and
+as luck will have it, I&amp;#39;ll be able to add three more topics this
+semester. First up will be code coverage. We&amp;#39;ve been talking about
+testing and TDD since I started teaching at Hunter but code coverage
+as it relates to tests has been an afterthought. This time, I&amp;#39;m going
+to bring it to the forefront. I think it&amp;#39;ll be interesting and
+fun. The second will be Continuous Integration (CI). I was holding off
+on this because of tooling but now that I&amp;#39;ve had a chance to look, it
+seems that GitHub actions will make it really easy. Finally, I want to
+more formally talk about code profiling.&lt;/p&gt;
+&lt;p&gt;
+None of these topics is particularly large or complex (at least at the
+introductory level) so it&amp;#39;ll all fit nicely and it&amp;#39;s giving me
+something new to get excited about as opposed to the same lessons
+merely tweaked. In fact, I&amp;#39;m finding myself thinking &amp;#34;Oh man, I&amp;#39;m
+going to have to cover those three lessons on decryption before I get
+to that cool new lesson on code coverage, ugh.&amp;#34; Four years ago, the
+decryption lesson was the cool and fun new lesson that I was super
+excited about.&lt;/p&gt;
+&lt;p&gt;
+So, we&amp;#39;ll see how it all goes. Planning to report back after all the
+lessons are delivered.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
