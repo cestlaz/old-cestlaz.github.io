@@ -6,10 +6,86 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Oct 2022 14:59:22 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 21 Oct 2022 15:42:24 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Don&#39;t give away the punchline</title>
+      <link>https://cestlaz.github.io/post/punchline/</link>
+      <pubDate>Fri, 21 Oct 2022 15:42:24 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/punchline/</guid>
+      <description>&lt;p&gt;
+Commenting on my post on teaching some &lt;a href=&#34;https://cestlaz.github.io/post/same-old-topics/&#34;&gt;Software Engineering&lt;/a&gt; concepts,
+there was a comment on code review and that code.org now included it
+in their CS-A curriculum. I found &lt;a href=&#34;https://www.youtube.com/watch?v=dWddHWU3_YM&#34;&gt;this video&lt;/a&gt; but no other materials. I
+was thinking that I certainly hoped that the video was not being used to
+introduce code review to students. I mean the video is fine and
+probably great to show to teachers so that they&amp;#39;ll have some idea on
+what code review is and why it&amp;#39;s important. For students, it would be
+giving away the punchline too early.&lt;/p&gt;
+&lt;p&gt;
+There are times when you, as a teacher, have to directly instruct
+students and there are times when just seeing a good practice is
+sufficient but code review isn&amp;#39;t one of them. Why do I feel that way?
+Because I&amp;#39;ve seen code review in the wild. Sure, some, and I&amp;#39;d hope
+many professionals take it to heart but I know too many cases where
+testing and code reviews are afterthoughts. People click okay based on
+reputations or cursory glances or often based on deadlines and don&amp;#39;t
+take the time to really review code.&lt;/p&gt;
+&lt;p&gt;
+For students to buy into code review, they have to really see why it&amp;#39;s
+important and useful.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s somewhat like teaching version control, which I do with Git and
+GitHub. I teach it early because I use it as a means of distributing
+and collecting software but truth be told, students don&amp;#39;t really buy
+into the program. They only &amp;#34;get&amp;#34; version control later on when it
+saves their bacon. I haven&amp;#39;t cracked the nut of making version
+control meaningful early on but I think I have done a pretty good job
+with code review (&lt;a href=&#34;https://cestlaz.github.io/post/code-review-2/&#34;&gt;old post&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/post/code-review/&#34;&gt;other old post&lt;/a&gt;) and it involves having
+them do some activities before revealing what we&amp;#39;re really doing or
+giving them the punchline.&lt;/p&gt;
+&lt;p&gt;
+Sometimes you&amp;#39;ve got to give the info up front but sometimes you want
+to set up exploration, discussion, and discovery. Most teachers know
+this but not all. I remember three years ago, we had our first CS
+teacher cohort. We started with 22 teachers but one dropped after the
+first week. That one teacher insisted that we tell them everything
+that was coming up in detail. I explained that we could share some
+things in advance but giving away the punchline would lessen their
+experience and how much they got out of the program. A couple of days
+later they were gone. The other 21 bought in and together we had a
+great program.&lt;/p&gt;
+&lt;p&gt;
+So, most teachers get it, but not all. On the other hand I&amp;#39;m not
+convinced that most content providers get it. Yes, they&amp;#39;ve heard all
+the buzzwords but I&amp;#39;m not convinced that most of them have really
+experienced educators (let alone CS educators) driving their ships, I
+mean, it is a profession where it takes decades to become a master
+teacher and to me, 5 to 10 years is really advanced beginner to
+intermediate and I don&amp;#39;t think you really master your craft util
+around 20 and that&amp;#39;s only if you continue to work at it.&lt;/p&gt;
+&lt;p&gt;
+Some people might push back on that last paragraph but if you&amp;#39;re a
+5-10 year teacher, as yourself this - do you expect to stay the same
+and not get any better for the rest of your career or do you expect to
+continue to grow and get better. If you do expect to grow than what
+you will become will be the master teacher version of yourself. If you don&amp;#39;t expect to grow,
+you&amp;#39;re probably in the wrong business.&lt;/p&gt;
+&lt;p&gt;
+Anyway, I digress.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t know what materials code.org put together for their whole code
+review unit. If the video is intended to show at the start or if
+they&amp;#39;ve got something more developmental but it got me thinking about
+our craft, how it&amp;#39;s important to give the right information at the
+right time, to guide but not to give away the punchline until the time
+is right.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Good class day today</title>
@@ -3157,106 +3233,6 @@ world. Just remember when you&amp;#39;re struggling to come up with a good
 lesson or you&amp;#39;ve just taught a bad one that tomorrow&amp;#39;s will be
 better. Judge yourself by your students long term development, not one
 day at a time.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PD for people who know CS</title>
-      <link>https://cestlaz.github.io/posts/pd-for-cs/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cestlaz.github.io/posts/pd-for-cs/</guid>
-      <description>&lt;p&gt;
-I saw a couple of tweets from Sarah Judd this morning:&lt;/p&gt;
-  &lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?&lt;/p&gt;&amp;mdash; Sarah Judd (@SarahEJudd) &lt;a href=&#34;https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw&#34;&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-  &lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don&amp;#39;t get PD that starts with &amp;quot;and this is how you add and subtract!&amp;quot; and I&amp;#39;d love more CS PD that assumes the content is there, and can focus on the pedagogy.&lt;/p&gt;&amp;mdash; Sarah Judd (@SarahEJudd) &lt;a href=&#34;https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw&#34;&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-It wasn&amp;#39;t the first time I&amp;#39;ve heard this refrain. Last year I attended
-my first CSTA conference. I had numerous conversations with CS
-teachers on the fact that everything was on an intro level in terms of
-both content and teaching. Further conversations with local teachers
-with stronger CS backgrounds led me to run a professional development
-session at Hunter this past election day for more experienced CS
-teachers at schools that offered more than the basics.&lt;/p&gt;
-&lt;p&gt;
-While it&amp;#39;s not surprising that most of the PD opportunities for CS teachers are
-rather rudimentary given that nationally most programs are new and
-most teachers are new to the subject but there are a few deeper
-reasons.&lt;/p&gt;
-&lt;p&gt;
-To start, there are big players in the CS Ed movement that are pushing
-curricula and specific programs and that leads to scripted PD for
-their products and not depth of knowledge nor deep pedagogical content
-knowledge let alone basic pedagogy. Add to this the fact that many of
-the &amp;#34;thought leaders&amp;#34; in the space don&amp;#39;t have experience teaching CS
-at the K12 level and in many cases don&amp;#39;t have a background either in
-teaching nor tech and you can see where the problem comes from. On top
-of this we have the erosion of respect for teaching as a profession
-where reformers are trying to take the teacher out of teaching and are
-trying to reduce pedagogy to following scripts. This problem goes well
-beyond CS Ed but as the new kid on the block it probably hits us
-hardest.&lt;/p&gt;
-&lt;p&gt;
-In any case, preparing beginners is both necessary and appropriate for
-the time being but we can and must do a better job than what&amp;#39;s
-currently &amp;#34;state of the art.&amp;#34; At the same time we have to do something
-with the CS teachers who indeed do have strong content knowledge but
-don&amp;#39;t feel comfortable with imparting that knowledge.&lt;/p&gt;
-&lt;p&gt;
-So, what should we do?&lt;/p&gt;
-&lt;p&gt;
-For new teachers the solution will ultimately have to come
-from pre-service programs but what we end up getting is going to
-largely be dictated on what&amp;#39;s required by individual states. If states
-merely require passing an exam like the Praxis CS exam which, from
-what I can gather isn&amp;#39;t a horrible content exam then we&amp;#39;re going to
-see CS teachers bumble through their early to mid careers while trying
-to figure out how to teach CS much like I did way back when. If they
-end up endorsing pre-service programs that are focused on specific
-curricula - APCS-A for teachers, APCS-P for teachers, &lt;a href=&#34;https://cestlaz.github.io/posts/math-for-math-teachers/&#34;&gt;Math for Math
-teachers&lt;/a&gt; if you will but for CS, we&amp;#39;re also not going to get strong
-well prepared pedagogues. On the other hand if you can design a
-program that has a strong pedagogical component to go along with the
-content, you have a chance. Even with a well designed program
-implementation will still be a challenge. Who will teach it? Education
-professors who don&amp;#39;t have CS backgrounds? CS professors with little
-pedagogical training? Neither of those groups necessarily have any
-real experience as actual K12 teachers. If you can find honest to
-goodness experienced, strong K12 CS teachers to teach your pedagogy
-courses that&amp;#39;s a big win but that&amp;#39;s going to be hard in most cases.&lt;/p&gt;
-&lt;p&gt;
-I think we designed a great program at Hunter and have a practical and
-strong implementation plan. If you&amp;#39;re going to be
-at CSTA2018 you can hear all about it and why we designed it as we did
-in the talk I&amp;#39;m giving.&lt;/p&gt;
-&lt;p&gt;
-For the more experienced I don&amp;#39;t have a universal answer but I can say
-what I&amp;#39;m planning. Teachers in NY have to complete 100 CTLE hours
-every five years. For beginners, there are plenty of options, at least
-content wise. For teachers who know CS, not so much. I was at a meetup
-talking to a few friends a couple of weeks ago and one mentioned that
-they get most of their hours in Math for America CS
-workshops. Unfortunately more than a few of my CS teacher friends who
-are in MFA tell me that the CS content in these workshops, while they
-do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
-side.&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s what I&amp;#39;m planning - we (Hunter) will host a once a month
-dinner/session for CS teachers who are a little farther along CS
-wise. I haven&amp;#39;t worked out all the details yet but I&amp;#39;ve got a few tech
-companies that are already interested in sponsoring and helping out
-should we need anything and we&amp;#39;ll probably set most of our agenda for
-the year at the first session where I&amp;#39;ll make my best guess at a
-useful agenda. This is something I&amp;#39;m pretty excited about. It should
-help create a network of more experienced CS teachers which will both
-help bolster that segment of the community and provide a long term
-resource to newcomers and it should be a lot of fun.&lt;/p&gt;
-&lt;p&gt;
-In some ways, this is why I ended up joining Hunter. Regardless of
-what the city and state do, we&amp;#39;re going to prepare the teachers and if
-you have a well prepared teacher, you&amp;#39;ve got a shot.&lt;/p&gt;
 </description>
     </item>
     
