@@ -6,10 +6,82 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Oct 2022 15:42:24 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 26 Oct 2022 16:29:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Some Professional Development Is Worthwhile</title>
+      <link>https://cestlaz.github.io/post/some-pd-is-worthwhile/</link>
+      <pubDate>Wed, 26 Oct 2022 16:29:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/some-pd-is-worthwhile/</guid>
+      <description>&lt;p&gt;
+No, I&amp;#39;m not walking back anything from &lt;a href=&#34;https://cestlaz.github.io/post/why-pd-wont-do/#disqus_thread&#34;&gt;my last post&lt;/a&gt;. I still think
+we have to stop using professional development as the primary means
+for preparing CS teachers but I wanted to take a minute to make it
+clear that while there&amp;#39;s plenty of lousy PD out there, there&amp;#39;s also
+plenty of good stuff.&lt;/p&gt;
+&lt;p&gt;
+For bad PD, it&amp;#39;s frequently mandated and frequently neither useful or
+relevant or even if its potentially relevant, but the time it becomes
+useful you don&amp;#39;t remember it.&lt;/p&gt;
+&lt;p&gt;
+For good, first we look to our fellow teachers. A couple of years ago
+at SIGCSE, they released the results of a survey of CS educators - I
+think it was limited to colleges but the results were both expected
+and interesting. It turned out that the majority of respondents
+considered the best resource to improve their teaching practice to be
+techniques learned from other teachers. I believe first it was in
+department and then in external meetings but I could be wrong. &amp;#34;The
+research,&amp;#34; on the other hand, was way down the list.&lt;/p&gt;
+&lt;p&gt;
+PD delivered by colleages is the best and can happen at all levels. A
+teacher might not be a CS ace nor may they be very experienced but
+they can run a session on something they tried and how it worked (or
+didnt&amp;#39;) and I&amp;#39;ll take that any day over something from a &amp;#34;thought
+leader.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Of course, back to yesterday&amp;#39;s post, you can&amp;#39;t prepare a CS teacher
+that way - you can take a teacher and add trick, a technique, a
+practice, or a topic.&lt;/p&gt;
+&lt;p&gt;
+Great stuff for what it is when used appropriately.&lt;/p&gt;
+&lt;p&gt;
+Every time we would have those school wide required PDs, we&amp;#39;d all look
+at the offerings and seek out the good stuff being delivered by our
+fellow teachers.&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s another class of PD that can also be excellent although,
+again, it&amp;#39;s not a replacement for full teacher preparation. That&amp;#39;s
+when some group goes in and isn&amp;#39;t trying to &amp;#34;train the teachers from
+scratch to proficient&amp;#34; but rather understands that they&amp;#39;re delivering
+a limited experience. This might be to expose a new audience to CS on
+an introductory level or a non specialist on how they can deliver a
+starter set of CS experiences or it could be something deeper but
+it&amp;#39;ll be focussed on growing the teachers tool set and knowledge base,
+not on delivering some set scripted experience.&lt;/p&gt;
+&lt;p&gt;
+This type of PD seems to frequently be delivered by researchers and
+can be excellent stuff. It can also be delivered by content providers.&lt;/p&gt;
+&lt;p&gt;
+Finally, content providers can and do deliver worthwhile PD as long as
+its taken in the right context. If you&amp;#39;re a knowledgeable CS teacher
+you might love some provider&amp;#39;s curriculum and their training can be
+the best way to go. Nothing inherently wrong here as long as the
+training is not the actual teacher prep.&lt;/p&gt;
+&lt;p&gt;
+One of the best places for all of these types of PDs are at
+conferences like the CSTA conference and that conference has
+historically had the best of all versions of PD.&lt;/p&gt;
+&lt;p&gt;
+So, there it is, I&amp;#39;m not down on PD but I recognize that there&amp;#39;s a lot
+of garbage PD to go with a lot of good stuff. The problem and the
+danger is that it&amp;#39;s too often used as a replacement for real teacher
+prep.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Don&#39;t give away the punchline</title>
@@ -3171,68 +3243,6 @@ state the names of commenters without asking]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Not every lesson has to be magic</title>
-      <link>https://cestlaz.github.io/post/not-always-exciting/</link>
-      <pubDate>Tue, 25 Sep 2018 18:08:35 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/not-always-exciting/</guid>
-      <description>&lt;p&gt;
-If you check out Twitter, Facebook, Medium  and other blog sites you
-might get the idea that you&amp;#39;re the worst teacher in the world. The
-internet abounds with people sharing tweets and posts about wonderful
-lessons they&amp;#39;ve just taught, witnessed or learned about in
-professional development. Sure, the teacher forums rife with requests
-for lesson ideas and resources but the shared material is always aces.&lt;/p&gt;
-&lt;p&gt;
-It makes sense, people in the community want to share things that
-worked for them or things they think will work. &lt;/p&gt;
-&lt;p&gt;
-Still, for new teachers it can create an unhealthy illusion of what
-really goes on in the classroom.&lt;/p&gt;
-&lt;p&gt;
-This is not to say that sharing of the good stuff is a bad thing but
-the truth is that not every lesson is a masterpiece, not every teacher
-is a super charismatic showman, and not all topics lend themselves to
-creative teaching.&lt;/p&gt;
-&lt;p&gt;
-Why am I writing this now? Because I was planning lessons earlier
-today and I&amp;#39;m at one of those places where I&amp;#39;m not going to be able to
-deliver a whiz-bang lesson in my next class. One of my classes this
-semester is for beginners so we&amp;#39;re building up language skills from
-the ground up. Right now I want to do some loop applications but
-there&amp;#39;s only so much we can do given what the students know. There are
-reasons why I don&amp;#39;t want to do graphics with them right now. I also
-haven&amp;#39;t introduced lists yet and don&amp;#39;t want to loop over strings yet
-so I&amp;#39;m left with doing mathy stuff.&lt;/p&gt;
-&lt;p&gt;
-I think I&amp;#39;ll look at Newton&amp;#39;s method for square roots. It&amp;#39;s
-interesting for the math inclined and does let us explore issues with
-floating point and accuracy. &lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s not going to be super exciting for everyone though and that&amp;#39;s okay. &lt;/p&gt;
-&lt;p&gt;
-I could do lists first but I don&amp;#39;t want the kids to have to handle so
-much new material so quickly. I&amp;#39;d rather keep the pace slower and work
-with what they&amp;#39;ve just learned for a bit. &lt;/p&gt;
-&lt;p&gt;
-I could also do graphics but that adds a level of overhead I don&amp;#39;t
-want to get into now.&lt;/p&gt;
-&lt;p&gt;
-The idea is to look at the long game. A class runs a whole semester or
-possibly a year. You&amp;#39;re going to have some special memorable lessons
-and some mundane ones and that&amp;#39;s nothing to be ashamed of. &lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;re still mostly going to see best practices shared online with only
-a few brave souls sharing disaster classes and asking for help. That&amp;#39;s
-just how the internet works. It&amp;#39;s not the worst thing in the
-world. Just remember when you&amp;#39;re struggling to come up with a good
-lesson or you&amp;#39;ve just taught a bad one that tomorrow&amp;#39;s will be
-better. Judge yourself by your students long term development, not one
-day at a time.&lt;/p&gt;
 </description>
     </item>
     

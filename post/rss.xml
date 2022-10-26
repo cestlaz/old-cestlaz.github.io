@@ -6,10 +6,82 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Oct 2022 08:01:48 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 26 Oct 2022 16:29:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Some Professional Development Is Worthwhile</title>
+      <link>https://cestlaz.github.io/post/some-pd-is-worthwhile/</link>
+      <pubDate>Wed, 26 Oct 2022 16:29:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/some-pd-is-worthwhile/</guid>
+      <description>&lt;p&gt;
+No, I&amp;#39;m not walking back anything from &lt;a href=&#34;https://cestlaz.github.io/post/why-pd-wont-do/#disqus_thread&#34;&gt;my last post&lt;/a&gt;. I still think
+we have to stop using professional development as the primary means
+for preparing CS teachers but I wanted to take a minute to make it
+clear that while there&amp;#39;s plenty of lousy PD out there, there&amp;#39;s also
+plenty of good stuff.&lt;/p&gt;
+&lt;p&gt;
+For bad PD, it&amp;#39;s frequently mandated and frequently neither useful or
+relevant or even if its potentially relevant, but the time it becomes
+useful you don&amp;#39;t remember it.&lt;/p&gt;
+&lt;p&gt;
+For good, first we look to our fellow teachers. A couple of years ago
+at SIGCSE, they released the results of a survey of CS educators - I
+think it was limited to colleges but the results were both expected
+and interesting. It turned out that the majority of respondents
+considered the best resource to improve their teaching practice to be
+techniques learned from other teachers. I believe first it was in
+department and then in external meetings but I could be wrong. &amp;#34;The
+research,&amp;#34; on the other hand, was way down the list.&lt;/p&gt;
+&lt;p&gt;
+PD delivered by colleages is the best and can happen at all levels. A
+teacher might not be a CS ace nor may they be very experienced but
+they can run a session on something they tried and how it worked (or
+didnt&amp;#39;) and I&amp;#39;ll take that any day over something from a &amp;#34;thought
+leader.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Of course, back to yesterday&amp;#39;s post, you can&amp;#39;t prepare a CS teacher
+that way - you can take a teacher and add trick, a technique, a
+practice, or a topic.&lt;/p&gt;
+&lt;p&gt;
+Great stuff for what it is when used appropriately.&lt;/p&gt;
+&lt;p&gt;
+Every time we would have those school wide required PDs, we&amp;#39;d all look
+at the offerings and seek out the good stuff being delivered by our
+fellow teachers.&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s another class of PD that can also be excellent although,
+again, it&amp;#39;s not a replacement for full teacher preparation. That&amp;#39;s
+when some group goes in and isn&amp;#39;t trying to &amp;#34;train the teachers from
+scratch to proficient&amp;#34; but rather understands that they&amp;#39;re delivering
+a limited experience. This might be to expose a new audience to CS on
+an introductory level or a non specialist on how they can deliver a
+starter set of CS experiences or it could be something deeper but
+it&amp;#39;ll be focussed on growing the teachers tool set and knowledge base,
+not on delivering some set scripted experience.&lt;/p&gt;
+&lt;p&gt;
+This type of PD seems to frequently be delivered by researchers and
+can be excellent stuff. It can also be delivered by content providers.&lt;/p&gt;
+&lt;p&gt;
+Finally, content providers can and do deliver worthwhile PD as long as
+its taken in the right context. If you&amp;#39;re a knowledgeable CS teacher
+you might love some provider&amp;#39;s curriculum and their training can be
+the best way to go. Nothing inherently wrong here as long as the
+training is not the actual teacher prep.&lt;/p&gt;
+&lt;p&gt;
+One of the best places for all of these types of PDs are at
+conferences like the CSTA conference and that conference has
+historically had the best of all versions of PD.&lt;/p&gt;
+&lt;p&gt;
+So, there it is, I&amp;#39;m not down on PD but I recognize that there&amp;#39;s a lot
+of garbage PD to go with a lot of good stuff. The problem and the
+danger is that it&amp;#39;s too often used as a replacement for real teacher
+prep.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Why PD doesn&#39;t work for CS</title>
@@ -4176,93 +4248,6 @@ anything low level? Of course. Can you do computer science stuff and
 say the same? Sure. But a well educated, well rounded computer
 scientist will have had some exposure to low level concepts and have
 some base level understanding.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pension Consultations</title>
-      <link>https://cestlaz.github.io/post/pension/</link>
-      <pubDate>Mon, 17 Jan 2022 17:41:42 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/pension/</guid>
-      <description>&lt;p&gt;
-Devorah and I just got off a Zoom pension consultation. Very
-enlightening.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m 54 so regardless, can&amp;#39;t retire for another year but Devorah hit 55
-last November and the DOE can really kill ones spirit and grind you down.&lt;/p&gt;
-&lt;p&gt;
-Overall I&amp;#39;ve been pretty happy at Hunter but I&amp;#39;ve written before about
-the fact that I&amp;#39;ve been feeling some burn out and have been basically
-doing 2+ full time jobs myself at Hunter for the past few years and
-that&amp;#39;s just not sustainable.&lt;/p&gt;
-&lt;p&gt;
-Not saying I know what I&amp;#39;m going to do  but it&amp;#39;s important to know
-your options.&lt;/p&gt;
-&lt;p&gt;
-I wasn&amp;#39;t sure what our retirement benefits would look like but when I
-came in to teaching, looking at the older tier 1 teachers, I felt that
-back then there was something of a societal pact, at least in NYC. As
-a teacher back then, you weren&amp;#39;t going to get rich. In good times,
-you&amp;#39;d do okay - not great but okay. On the other hand, in bad times,
-you wouldn&amp;#39;t do terrible. You&amp;#39;d be able to have a decent home and
-while you couldn&amp;#39;t jet set you&amp;#39;d be able to vacation reasonably and at
-the end of it all, you&amp;#39;d have a comfortable retirement. Again, you
-wouldn&amp;#39;t be rich, but you wouldn&amp;#39;t have to worry about making ends
-meet either.&lt;/p&gt;
-&lt;p&gt;
-Over the course of my career, I saw that pact erode, even in NY. Young
-teachers don&amp;#39;t earn enough for the housing market and the workload and
-work pressures have just exploded. For the newest teachers, the
-retirement end of the deal has also gotten worse.&lt;/p&gt;
-&lt;p&gt;
-So, what does it look like for us after putting in and paying in for
-30 years?&lt;/p&gt;
-&lt;p&gt;
-With 30 years in, it turns out that pension will net me just a few
-hundred dollars less than my current net. It&amp;#39;s much closer than I
-thought it would be. Devorah doesn&amp;#39;t do quite as well. Her difference
-is greater but that&amp;#39;s because she hasn&amp;#39;t crossed the 30 year barrier
-yet. If she stays one more year, she will.&lt;/p&gt;
-&lt;p&gt;
-Add to that a substantial TDA and we&amp;#39;re actually in really good
-retirement shape.&lt;/p&gt;
-&lt;p&gt;
-A lot of older teachers say they finally &amp;#34;had&amp;#34; to retire because based
-on tax benefits and other factors, they were actually losing money by
-not retiring.&lt;/p&gt;
-&lt;p&gt;
-Based on the differences I mentioned above we&amp;#39;re not there yet but
-when you factor our housing, we might be, or if not it&amp;#39;s really
-close. We currently live in what&amp;#39;s known as a &amp;#34;limited equity coop.&amp;#34;
-It&amp;#39;s a coop but it receives local and state tax benefits. In return,
-there are earning caps on the residents. We currently earn well over
-the cap so pay a significant surcharge on our monthly maintenance.&lt;/p&gt;
-&lt;p&gt;
-When we retire, our lower incomes will result in a much lower
-surcharge or maybe it will remove the surcharge entirely - we&amp;#39;re
-working on figuring that out.&lt;/p&gt;
-&lt;p&gt;
-Depending on how that plays out we might actually be losing money if
-we don&amp;#39;t retire.&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;ll have to see.&lt;/p&gt;
-&lt;p&gt;
-As I said at the top. I&amp;#39;m basically happy at Hunter and I think I&amp;#39;ve
-accomplished a lot so I&amp;#39;m not saying I&amp;#39;m out the door as soon as I can
-walk. We&amp;#39;ve got to lower my workload but they&amp;#39;ve known that for a
-while so hopefully are working to solve the problem. Devorah and I
-also have to figure out what we want to do in our next phase. I do
-know that regardless, I think I&amp;#39;ve still got something to give in the
-CS Ed space.&lt;/p&gt;
-&lt;p&gt;
-For any young teachers out there - make sure to max out on that
-TDA. It seems like nothing at first but when you look back after 20 or
-30 years it&amp;#39;ll surprise you - that + the defined pension are what
-allow you to have a few years of leisure at the end of a life of
-service. And don&amp;#39;t let anyone tell you that you don&amp;#39;t deserve it or
-that it&amp;#39;s an entitlement. You&amp;#39;ve paid into it for your whole career
-and are just getting back what you&amp;#39;ve earned.&lt;/p&gt;
 </description>
     </item>
     
