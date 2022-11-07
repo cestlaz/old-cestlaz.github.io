@@ -432,14 +432,18 @@ if one or two things are missing.&lt;/p&gt;
 Are my deadlines hard? Not really - anyone can ask for an extension
 but my two requirements are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+&lt;li&gt;
+&lt;p&gt;They have to have shown that up to the request they&amp;#39;ve tried to
 make some headway on the project. This is easy since I use Git and
-GitHub so I can just log at their logs.&lt;/li&gt;
-&lt;li&gt;They speak to me about the extension before the deadline and by
+GitHub so I can just log at their logs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They speak to me about the extension before the deadline and by
 this I mean as soon as there might be an issue, not the evening
 before the project is due. I encourage them to speak to me even if
 they think there might be an issue to get my okay and then, more
-often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+often than not, they don&amp;#39;t use the extension.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
 actually talk to me about an extension and that they do it in what I
@@ -861,10 +865,18 @@ Digit Pals.&lt;/p&gt;
 I started by looking at the problem, working through example and then
 some of the things we discussed included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;data representation (2D array)&lt;/li&gt;
-&lt;li&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/li&gt;
-&lt;li&gt;the high level logic of sliding down and over&lt;/li&gt;
-&lt;li&gt;how to solve the whole thing.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;data representation (2D array)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of sliding down and over&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to solve the whole thing.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the overall solver, I decided to go with a straightforward, blind,
 recursive search. I figured it would be fast enough for two
@@ -878,14 +890,20 @@ within time constraints.&lt;/p&gt;
 &lt;p&gt;
 After the design phase, I went to the live coding with a focus on:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;compiling and testing every concept. That is, a single loop, a
+&lt;li&gt;
+&lt;p&gt;compiling and testing every concept. That is, a single loop, a
 single if, a function etc.. This may sound excessive but I&amp;#39;ve been
 doing this forever and it&amp;#39;s served me well as a hobbyist and as a
-professional.&lt;/li&gt;
-&lt;li&gt;Implementing the data structure first - a 2D array and then a way
-to print it so that I could always tell the state of my program.&lt;/li&gt;
-&lt;li&gt;incremental development - first remove a pal, then slide down, then
-over, then the solver.&lt;/li&gt;
+professional.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;incremental development - first remove a pal, then slide down, then
+over, then the solver.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When it was all over the problem was solved. I&amp;#39;d like to think that
 the students got something out of the audible. I learned years later
@@ -960,10 +978,18 @@ similar.&lt;/p&gt;
 &lt;p&gt;
 By contrast, a swap &amp;#34;recipe&amp;#34; might read:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This is a recipe. A student would literally just rewrite the steps
 into the solution but even this might have it&amp;#39;s place in a class.&lt;/p&gt;
@@ -1572,13 +1598,25 @@ machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
 library like OpenGL. The course basically started with the ability to
 draw a point and then went though: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;lines&lt;/li&gt;
-&lt;li&gt;lines in 3D and 3D transformations&lt;/li&gt;
-&lt;li&gt;polygons (triangles)&lt;/li&gt;
-&lt;li&gt;A motion description language interpreter (stack and tree based
-shape hierarchies)&lt;/li&gt;
-&lt;li&gt;lighting and shading&lt;/li&gt;
-&lt;li&gt;ray tracing&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines in 3D and 3D transformations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polygons (triangles)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A motion description language interpreter (stack and tree based
+shape hierarchies)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lighting and shading&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ray tracing&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The motion description language piece had an entire unit that was
 really an intro to compilers / interpreters. &lt;/p&gt;
@@ -1723,10 +1761,16 @@ on that soon. I&amp;#39;ll also mention that we&amp;#39;re going to see about us
 Slack is the de facto standard but Zulip seems to have a few distinct
 advantages: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;It&amp;#39;s open source&lt;/li&gt;
-&lt;li&gt;You can self host it (and it&amp;#39;s free if you self host)&lt;/li&gt;
-&lt;li&gt;It&amp;#39;s built around threads so I suspect it will be easier to deal
-with discussions both synchronously and asynchronously more easily.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s open source&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can self host it (and it&amp;#39;s free if you self host)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s built around threads so I suspect it will be easier to deal
+with discussions both synchronously and asynchronously more easily.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The disadvantages are that there aren&amp;#39;t as many integrations, most
 notably there&amp;#39;s no Giphy and it&amp;#39;s not the eponymous chat
@@ -1762,20 +1806,42 @@ Certificate summer intensive I thought I&amp;#39;d add add an index page. &lt;/p
 &lt;p&gt;
 Here are links to each post: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-recap-intro/&#34;&gt;Introduction - program overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-methods/&#34;&gt;On pedagogy - CS teaching methods&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-topics/&#34;&gt;Topics in Computer Science&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-methods-choosing/&#34;&gt;Deciding on which methods to teach&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-topics-curriculum/&#34;&gt;Commentary on selected CS topics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-tools/&#34;&gt;Tools for remote instruction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-community/&#34;&gt;Building a community of CS teachers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-successes-and-failures/&#34;&gt;The good, the bad, and what&amp;#39;s next&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-recap-intro/&#34;&gt;Introduction - program overview&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-methods/&#34;&gt;On pedagogy - CS teaching methods&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-topics/&#34;&gt;Topics in Computer Science&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-methods-choosing/&#34;&gt;Deciding on which methods to teach&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-topics-curriculum/&#34;&gt;Commentary on selected CS topics&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-tools/&#34;&gt;Tools for remote instruction&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-community/&#34;&gt;Building a community of CS teachers&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-successes-and-failures/&#34;&gt;The good, the bad, and what&amp;#39;s next&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also wrote a few posts as the summer intensive was running:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-week-1/&#34;&gt;Week 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-week-2/&#34;&gt;Week 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/merge-over-zoom/&#34;&gt;An unplugged activity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-week-1/&#34;&gt;Week 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/teacher-cert-week-2/&#34;&gt;Week 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/merge-over-zoom/&#34;&gt;An unplugged activity&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 We start up again in a couple of weeks so look for more updates on the
@@ -2039,16 +2105,36 @@ work.&lt;/p&gt;
 &lt;p&gt;
 The topics they selected were:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Data Mining&lt;/li&gt;
-&lt;li&gt;Public Key Encryption&lt;/li&gt;
-&lt;li&gt;Blockchain&lt;/li&gt;
-&lt;li&gt;Natural Language Processing&lt;/li&gt;
-&lt;li&gt;Classic AI - Decision Trees&lt;/li&gt;
-&lt;li&gt;SQL / Cyber Security&lt;/li&gt;
-&lt;li&gt;Visualization&lt;/li&gt;
-&lt;li&gt;Machine Learning / Cipher Decryption&lt;/li&gt;
-&lt;li&gt;Genetic Algorithms&lt;/li&gt;
-&lt;li&gt;Classic AI - Search&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Mining&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public Key Encryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blockchain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Natural Language Processing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Decision Trees&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQL / Cyber Security&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visualization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Machine Learning / Cipher Decryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Genetic Algorithms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Search&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We weren&amp;#39;t sure exactly what to expect but we were blown away both in
 terms of the CS content as well as what they prepared in terms of
@@ -2094,12 +2180,20 @@ The certificate program consists of a bunch of graduate classes plus
 field work which is required by the state. Over the summer we covered
 four of the classes. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Programming - essentially a CS1 type course.&lt;/li&gt;
-&lt;li&gt;Data Structures - since K12 teachers should go deeper than the last
-HS course which is typically APCS-A.&lt;/li&gt;
-&lt;li&gt;Topcs in Compute rScience - since K12 teachers need a wide breadth
-of CS knowledge.&lt;/li&gt;
-&lt;li&gt;Methods - since teachers need to know how to teach CS.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programming - essentially a CS1 type course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Structures - since K12 teachers should go deeper than the last
+HS course which is typically APCS-A.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topcs in Compute rScience - since K12 teachers need a wide breadth
+of CS knowledge.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods - since teachers need to know how to teach CS.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the fall, we&amp;#39;ll continue with Ethics in Computer Science and
 Curriculum Development which also includes the field work.&lt;/p&gt;
@@ -2132,11 +2226,21 @@ structure classes except possibly through the methods eye because both
 of those courses are pretty well established and cut and dry but I do
 plan to write at least the following: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The methods course &lt;/li&gt;
-&lt;li&gt;More on the methods course &lt;/li&gt;
-&lt;li&gt;The topics course &lt;/li&gt;
-&lt;li&gt;Use of tools for remote teaching &lt;/li&gt;
-&lt;li&gt;Our overall philosophy in designing and running the program.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The methods course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More on the methods course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The topics course &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use of tools for remote teaching &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our overall philosophy in designing and running the program.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, stay tuned for more.&lt;/p&gt;
 </description>
@@ -2373,12 +2477,22 @@ Today was &lt;a href=&#34;https://cestlaz.github.io/post/code-review-2/&#34;&gt;
 teaching and I think my students get a lot out of it. Today we had to
 do it remote. The mechanics were largely the same:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Pair off the kids.&lt;/li&gt;
-&lt;li&gt;Have them write out a commentary on their partners code without discussion&lt;/li&gt;
-&lt;li&gt;pair off again&lt;/li&gt;
-&lt;li&gt;Have one review the others code but this time via discussion and
-note taking.&lt;/li&gt;
-&lt;li&gt;Get everyone together and discuss&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pair off the kids.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have them write out a commentary on their partners code without discussion&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pair off again&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have one review the others code but this time via discussion and
+note taking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get everyone together and discuss&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Zoom supported all the basics. Splitting the class was pretty easy via
 the breakout room interface and students were able to flag me when
@@ -2466,12 +2580,12 @@ arrays, one with frequencies and one with durations.&lt;/p&gt;
 &lt;p&gt;
 Something like: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
 durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Then for the game loop&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
 
   current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
   note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
@@ -3040,15 +3154,31 @@ lesson but more often than not I&amp;#39;ll just go in with a bullet list.&lt;/p
 &lt;p&gt;
 Here&amp;#39;s my plan for a recent lesson:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Go over cipher soution&lt;/li&gt;
-&lt;li&gt;How to we solve if already ciphered?&lt;/li&gt;
-&lt;li&gt;Rotate 26 times.&lt;/li&gt;
-&lt;li&gt;What about using stats&lt;/li&gt;
-&lt;li&gt;Frequency of letters - look up&lt;/li&gt;
-&lt;li&gt;Find freq of letter in string then use distance formula against
-model&lt;/li&gt;
-&lt;li&gt;Get frequencies from a book&lt;/li&gt;
-&lt;li&gt;try it in another language&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go over cipher soution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to we solve if already ciphered?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rotate 26 times.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What about using stats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frequency of letters - look up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find freq of letter in string then use distance formula against
+model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get frequencies from a book&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;try it in another language&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We didn&amp;#39;t get to the last two bullet items so that&amp;#39;s where we&amp;#39;ll start
 off on Monday. This plan was all I needed but it in no way tells the
@@ -3127,8 +3257,12 @@ free style and working back to a script.&lt;/p&gt;
       <guid>https://cestlaz.github.io/post/globals-breaks-and-returns/</guid>
       <description>
 &lt;ul&gt;
-&lt;li&gt;Never use global variables&lt;/li&gt;
-&lt;li&gt;Never break out of a loop&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Never use global variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Never break out of a loop&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are two &amp;#34;best practices&amp;#34; that are frequently touted in early CS
 classes both at the high school and college level.&lt;/p&gt;
@@ -3145,7 +3279,7 @@ The discussion on the APCS-A group started with a discussion of this
 code and its &lt;code&gt;break&lt;/code&gt; statement as opposed to having the loop&amp;#39;s exit
 condition in the boolean up top:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
       &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
           &lt;span style=&#34;color:#75715e&#34;&gt;// do stuff
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;condition&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
@@ -3161,7 +3295,7 @@ Actually, these aren&amp;#39;t even universally best practices.&lt;/p&gt;
 Looking at the while loop, You might have event driven code with a
 while loop acting as a dispatcher:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
       &lt;span style=&#34;color:#75715e&#34;&gt;// do stuff
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
       &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;some event&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;

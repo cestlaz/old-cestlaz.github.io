@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667661405" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667842004" />
 
 
 
@@ -23,10 +23,9 @@
  When we left off, we had students pulling code and submitting homework via github.
  Form here, it&#39;s an easy step to have them working on a small project in their own repo. In fact, sometimes, I&#39;ll jump right to a two person project where one person creates the repo and invites the other (and me) as a collaborator." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse-2017-github-3/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/sigcse-2017-github-3/" />
 <meta property="article:published_time" content="2017-03-30T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-03-30T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SIGCSE 2017 - a path to github part 3"/>
@@ -95,10 +94,18 @@ me) as a collaborator.</p>
 <p>
 Once here, it&#39;s important to emphasize the normal workflow:</p>
 <ol>
-<li><code>git pull</code></li>
-<li>edit stuff with an occasional <code>git add</code>, <code>git rm</code>,  or <code>got mv</code></li>
-<li>commit</li>
-<li>and an occasional <code>git push</code></li>
+<li>
+<p><code>git pull</code></p>
+</li>
+<li>
+<p>edit stuff with an occasional <code>git add</code>, <code>git rm</code>,  or <code>got mv</code></p>
+</li>
+<li>
+<p>commit</p>
+</li>
+<li>
+<p>and an occasional <code>git push</code></p>
+</li>
 </ol>
 <p>Regardless of how much you emphasize the workflow you&#39;re now going to
 have to cover merges as well how to recover from problems by going to
@@ -112,7 +119,7 @@ searching for answers.</p>
 First, given some repo, I have them clone a version under another
 name:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@github.com:hunterdaedalus/classcode.git newdirname</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@github.com:hunterdaedalus/classcode.git newdirname</code></pre></div></code></pre></div>
 </div>
 <p>
 Now, they have the original repo and a clone under the directory
@@ -150,7 +157,7 @@ Find the hash that they want to get back to and <strong><strong>checkout</strong
 version (you normally only have to use the first few characters of
 the hash):</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git checkout 7efed10</code></pre></div></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git checkout 7efed10</code></pre></div></code></pre></div>
 </div>
 <p>
 Now they can grab what they want, copy it into the working copy of the

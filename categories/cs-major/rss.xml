@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cs major on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/categories/cs-major/</link>
+    <description>C&#39;est la Z (cs major)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Nov 2022 11:47:50 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/categories/cs-major/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Should college be career prep</title>
+      <link>https://cestlaz.github.io/post/should-cs-be-practical/</link>
+      <pubDate>Mon, 07 Nov 2022 11:47:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/should-cs-be-practical/</guid>
+      <description>&lt;p&gt;
+So, in some of the social platform discussion on my &lt;a href=&#34;https://cestlaz.github.io/post/new-major/&#34;&gt;last post&lt;/a&gt;, the
+issue of the practicality of a college education came up. Should
+college teach practical job skills or should it be for some more
+abstract purpose - learning for learning sake or if one would be a bit
+presumptions learning how to think.&lt;/p&gt;
+&lt;p&gt;
+Way back when going to college was not the norm. Most went from HS to
+workforce and even in HS you might have the &amp;#34;academic&amp;#34; track that
+prepared you for college, &amp;#34;vocational&amp;#34; that was job prep like
+automotive or regular which was neither extreme. Sure, that system had
+a host of problems but since the end goal wasn&amp;#39;t college for most, it
+freed college from the need for being practical. College could just be
+about learning non-useful stuff.&lt;/p&gt;
+&lt;p&gt;
+Nowadays kids don&amp;#39;t have the luxury of not going to college. It&amp;#39;s
+expected in our society. Spend 4 years and oodles of dollars to get
+the piece of paper and you can get a job that years ago only required
+the HS version of the paper.&lt;/p&gt;
+&lt;p&gt;
+This, of course, leads to many rather large and hairy questions none
+of which I will address here.&lt;/p&gt;
+&lt;p&gt;
+What I will address concerns my little CS corner of the world.&lt;/p&gt;
+&lt;p&gt;
+In commenting on my post, some people talked about college faculty
+they know and how those faculty members refuse to teach or use
+anything that might remotely be useful to kids in terms of
+career. They feel it&amp;#39;s beneath them and that they serve a higher
+academic purpose. I don&amp;#39;t doubt those comments - I know plenty of
+college faculty who feel this very way.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll agree that college shouldn&amp;#39;t strictly be a jobs program but the
+nice thing about CS is that you &lt;strong&gt;can&lt;/strong&gt; teach practical skills and job
+skills within the context of a traditional academic CS degree. Add in
+the reality that most CS majors don&amp;#39;t want to go to grad school and
+you can redesign the major to do even more for the majority of
+students.&lt;/p&gt;
+&lt;p&gt;
+How about programming languages and tools. Why not use a couple of
+practical ones. This is not to say that the first language has to be
+C++, Java, Python or similar but there&amp;#39;s no reason why a couple practical
+languages shouldn&amp;#39;t be used. Sure, feel free  to use an esoteric
+language or some professors pet project in a particular class and by
+all means use the intro language that makes the most sense for your
+situation but for a 4 year major, there&amp;#39;s no reason why students
+shouldn&amp;#39;t walk away with a couple of languages that are widely used in
+industry. Same for build tools and things like testing frameworks. I
+use git and &lt;a href=&#34;https://github.com/doctest/doctest&#34;&gt;doctest&lt;/a&gt;. I&amp;#39;m not teaching a class in git or doctest, I&amp;#39;m
+teaching software engineering techniques and testing as part of my CS1
+classes. I have to use some tool as the platform on which to teach
+these things so why not tools that they can also use outside of
+school. It just makes sense. Sure, in terms of language, most colleges
+seem to cover at least one of C++, Python, and Java but lag in terms
+of the support concepts and tooling.&lt;/p&gt;
+&lt;p&gt;
+It reminds me about what I said in my earlier post about Intel
+Assembly. At Stuy back in the 90s I taught a systems elective. It
+wasn&amp;#39;t a programming course about Intel assembly. If it was, I&amp;#39;d just
+do a bunch of random programming assignments in it. It was rather a
+course about how the computer worked at a low level and we &lt;strong&gt;used&lt;/strong&gt;
+Intel assembly as the tool.&lt;/p&gt;
+&lt;p&gt;
+You can&amp;#39;t do this everywhere in a CS curriculum but there are plenty
+of places where you can. Do this, make sure there are some required
+large project courses where students can learn to work in a group and
+integrate technologies, introduce a couple of new electives, and all
+of a sudden you can have a strong academic CS program that also does a
+great job preparing students for the tech world beyond academia.&lt;/p&gt;
+&lt;p&gt;
+Some places are already doing this and others are trying but too many
+are still caught in the past.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

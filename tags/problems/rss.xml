@@ -23,12 +23,18 @@ find suitably interesting problems for students when they&amp;#39;re just
 learning the basics. In the very beginning the problems practically
 dictate the solution:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;loop over a list and add all the elements or calculate the sum of a&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;loop over a list and add all the elements or calculate the sum of a&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;list of integers.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Determine if  number is prime&lt;/li&gt;
-&lt;li&gt;Convert a word into pig-Latin&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Determine if  number is prime&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Convert a word into pig-Latin&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It&amp;#39;s not that there&amp;#39;s no thought involved in solving these but the
 students already know the mechanics of solving these by hand so it&amp;#39;s a
@@ -73,7 +79,7 @@ The next insight, and the big one is that if you have at least one
 space you can arbitrarily re-order the string. You can show this is
 possible  by using a single space to swap any two elements.&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The final insight is that since you can arbitrarily re-order the
@@ -85,7 +91,7 @@ solved this with lists and then transitioned to dictionaries.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s a dictionary based solution:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 I love problems like these.&lt;/p&gt;

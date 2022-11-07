@@ -44,7 +44,7 @@ ibuffer I want it to use the whole Emacs frame. Otherwise I just use
 ivy-switch-buffer (or now bufler-switch-buffer). I couldn&amp;#39;t figure out
 a way built in so ended up writing a small function: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
   (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
   (bufler-list)
   (delete-other-windows)
@@ -135,10 +135,18 @@ platform check Zulip out.&lt;/p&gt;
       <description>&lt;p&gt;
 I primarily program in four languages these days -&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Clojure &lt;/li&gt;
-&lt;li&gt;C++&lt;/li&gt;
-&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clojure &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C++&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And most of the time, my Emacs configuration has handled each one
 differently. Cider for Clojure, Irony for C++, Elpy and Jedi for
@@ -173,7 +181,7 @@ the experience I was looking for.&lt;/p&gt;
 &lt;p&gt;
 To start, I set it up for C++ using&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(use-package eglot :ensure t)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(use-package eglot :ensure t)
 (add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
 (add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
 (add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -192,7 +200,7 @@ Finally, Java was more of an issue I had to get &lt;a href=&#34;https://github.c
 system. It turns out that lsp-mode installed it for me already so I
 just had to point to it:&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
 (defun my-eglot-eclipse-jdt-contact (interactive)
   &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
   (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
@@ -226,23 +234,37 @@ were going to run things.&lt;/p&gt;
 &lt;p&gt;
 We decided to go with the following:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Zoom for live meetings &lt;/li&gt;
-&lt;li&gt;Slack for chat&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zoom for live meetings &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack for chat&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Git and GitHub&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GitHub classroom for assignments &lt;/li&gt;
-&lt;li&gt;GitHub repos for code distribution, class website and resource
-sharing. &lt;/li&gt;
-&lt;li&gt;GitHub discussions for off hour and long form discussion&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub classroom for assignments &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub repos for code distribution, class website and resource
+sharing. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub discussions for off hour and long form discussion&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;While Zoom is a great platform it was lacking in a few areas so we
 also ended up using: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/li&gt;
-&lt;li&gt;Assorted whiteboarding tools.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assorted whiteboarding tools.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here&amp;#39;s the breakdown.&lt;/p&gt;
 &lt;p&gt;
@@ -367,7 +389,7 @@ worked except the clear button which did nothing. Weird.&lt;/p&gt;
 &lt;p&gt;
 Exploring the code, here were some of the key sections:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
 &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.clear-button&amp;#34;&lt;/span&gt;);
 
@@ -410,12 +432,14 @@ element in the web page. If that element doesn&amp;#39;t exist, it returns
 was no element on the page identified by the class &lt;strong&gt;filter-todo&lt;/strong&gt;. The
 result was that after executing&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;code&gt;filterOption&lt;/code&gt; is set to refer to null.&lt;/p&gt;
 &lt;p&gt;
 Then later, this code: 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 crashes the program because you can&amp;#39;t call the &lt;code&gt;addEventListener&lt;/code&gt;
 method on &lt;code&gt;null&lt;/code&gt; which is what &lt;code&gt;filterOption&lt;/code&gt; is set to.&lt;/p&gt;
@@ -458,9 +482,15 @@ that there&amp;#39;s no magic bullet and the answer is as usual, &amp;#34;it dep
 Beyond the CS specifics We&amp;#39;ve been primarily using three tools in our
 summer certification program.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Zoom for video conferencing&lt;/li&gt;
-&lt;li&gt;Slack for text based communicaiton&lt;/li&gt;
-&lt;li&gt;GitHub for just about everything else&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zoom for video conferencing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack for text based communicaiton&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub for just about everything else&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We use GitHub as a CMS - a place to share code and assignments as well
 as collect them. We&amp;#39;re also playing with GitHub discussions although
@@ -475,14 +505,23 @@ receive an email alert whenever a students submits anything.&lt;/p&gt;
 Whenever a student updates an assignment or in Git parlance commits
 and pushes up a change, I get an email alert. The email includes: &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The repo where the change was made &lt;/li&gt;
-&lt;li&gt;A brief message describing the most recent change&lt;/li&gt;
-&lt;li&gt;A link the the students GitHub account&lt;/li&gt;
-&lt;li&gt;A link to the actual change.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The repo where the change was made &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A brief message describing the most recent change&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A link the the students GitHub account&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A link to the actual change.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Clicking on the change and I get to a screen like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/githubdiff.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/githubdiff.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -706,22 +745,48 @@ maintenance is a pain but so far, it&amp;#39;s been carefree.&lt;/p&gt;
 Next, it has some nice features. It supports pretty much everything
 that Zoom supports including: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;join passwords&lt;/li&gt;
-&lt;li&gt;waiting room&lt;/li&gt;
-&lt;li&gt;Brady Bunch view &lt;/li&gt;
-&lt;li&gt;chat&lt;/li&gt;
-&lt;li&gt;reactions (raise hand etc.)&lt;/li&gt;
-&lt;li&gt;a shared whiteboard&lt;/li&gt;
-&lt;li&gt;screen sharing&lt;/li&gt;
-&lt;li&gt;breakout rooms&lt;/li&gt;
-&lt;li&gt;optional session recording. &lt;/li&gt;
-&lt;li&gt;polling &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;join passwords&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;waiting room&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brady Bunch view &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;chat&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reactions (raise hand etc.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a shared whiteboard&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;screen sharing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;breakout rooms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;optional session recording. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polling &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and adds a few:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;a shared note space&lt;/li&gt;
-&lt;li&gt;shared whiteboard is really a presentation that you can upload&lt;/li&gt;
-&lt;li&gt;A simple html5 client &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a shared note space&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shared whiteboard is really a presentation that you can upload&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A simple html5 client &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;BBB is also based on &amp;#34;classrooms&amp;#34; rather than meetings which as
 a teacher seems cleaner and makes more sense.&lt;/p&gt;
@@ -740,22 +805,30 @@ was easier to follow &lt;a href=&#34;https://github.com/bigbluebutton/bbb-instal
 (culled from the longer explanations on the bbb-install site I just
 linked):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create the DO droplet or install an Ubuntu 16.04 mathine.&lt;/li&gt;
-&lt;li&gt;Log in and run &lt;code&gt;apt-get update&lt;/code&gt;, &lt;code&gt;apt-get dist-upgrade&lt;/code&gt; and
-&lt;code&gt;apt-get upgrade&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Set up DNS for the box so you can get to it by name. To do this I
+&lt;li&gt;
+&lt;p&gt;Create the DO droplet or install an Ubuntu 16.04 mathine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Log in and run &lt;code&gt;apt-get update&lt;/code&gt;, &lt;code&gt;apt-get dist-upgrade&lt;/code&gt; and
+&lt;code&gt;apt-get upgrade&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up DNS for the box so you can get to it by name. To do this I
 went to Google domains and added an entry for
-bigbluebutton.huntercs.org.&lt;/li&gt;
-&lt;li&gt;I ran (all one line):&lt;/li&gt;
+bigbluebutton.huntercs.org.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I ran (all one line):&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
     This downloads and installs BBB and also uses &lt;strong&gt;certbot&lt;/strong&gt; to set up
     ssl for secure connections.&lt;/p&gt;
 &lt;p&gt;
 After this was done, I created an admin account:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd greenlight/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd greenlight/
 docker exec greenlight-v2 bundle exec rake admin:create&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
 At this point I was up and running so I went to the host and logged in
@@ -855,8 +928,12 @@ libreoffice to view and edit docx files and spreadsheets, evince for
 pdf files and imagemagick for image files. Yes, I know I can view all
 of these in Emacs but there are a few limitations:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Emacs chokes on large files&lt;/li&gt;
-&lt;li&gt;I can&amp;#39;t edit the docx file or the image&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emacs chokes on large files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I can&amp;#39;t edit the docx file or the image&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, I hop to the shell and launch the program I need on the files in
 question. It&amp;#39;s fine but it does mean I end up with two windows for
@@ -1024,7 +1101,7 @@ to my Emacs config file.&lt;/p&gt;
 I followed the instructions in the documentation by typing in these
 lines:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
 
 gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -1033,7 +1110,7 @@ but that didn&amp;#39;t seem to work.&lt;/p&gt;
 I ended up following the instructions I found in &lt;a href=&#34;https://stackoverflow.com/questions/7464951/how-to-make-org-protocol-work&#34;&gt;this post&lt;/a&gt; creating a
 file named &lt;code&gt;org-protocol.desktop&lt;/code&gt; in the folder
  &lt;code&gt;~/.local/share/applications&lt;/code&gt; containing:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 Name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;org-protocol
 Exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacsclient %u
 Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Application
@@ -1048,7 +1125,7 @@ This seemed to do the trick. &lt;/p&gt;
 &lt;p&gt;
 I also modified my link capture template: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
                     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* %a %^g\n %?\n %T\n %i&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Finally, to get things basically to work, I installed &lt;a href=&#34;https://github.com/sprig/org-capture-extension&#34;&gt;this&lt;/a&gt;
@@ -1071,16 +1148,17 @@ found that I could just create a bookmark.&lt;/p&gt;
 Copied mostly from the docs, I made a bookmark with this as the link
 (all in one line):&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
       encodeURIComponent(&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
       encodeURIComponent(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 It worked perfectly. &lt;/p&gt;
 &lt;p&gt;
 This time I used this as the template:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* TODO %a\n %?&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;:prepend&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 That&amp;#39;s it. Now I can store emails in Emacs or Gmail as well as
@@ -1159,12 +1237,12 @@ not hard.&lt;/p&gt;
 We can turn off the default CSS used by org-mode
 using:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Or if we want add custom CSS using one or more of these:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD_EXTRA&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;alternate stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style2.css&amp;#34; /&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -1521,12 +1599,18 @@ Finally, I once gave a semi-gag test. The instructions on the front
 said that you had to proceed in order. You WERE NOT TO look ahead. It
 was a mix of real CS questions and goof questions like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;sprint up to the blackboard, draw a smiley on the board, then return
-to your seat and go on to the next question.&lt;/li&gt;
-&lt;li&gt;Stand up, do 10 jumping jacks, sit and proceed to the next question&lt;/li&gt;
-&lt;li&gt;Stand up and raise your right hand. When you see someone else with
+&lt;li&gt;
+&lt;p&gt;sprint up to the blackboard, draw a smiley on the board, then return
+to your seat and go on to the next question.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stand up, do 10 jumping jacks, sit and proceed to the next question&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stand up and raise your right hand. When you see someone else with
 their hand raised, walk to them and give them a high five. Then
-return to your seat nad proceed to the next question.&lt;/li&gt;
+return to your seat nad proceed to the next question.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The last page had an answer key and instructed the students to grade
 themselves before handing it in.&lt;/p&gt;
@@ -1585,7 +1669,7 @@ write my own.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s my current complete eshell config:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(use-package exec-path-from-shell
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(use-package exec-path-from-shell
   :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
   :config
   (exec-path-from-shell-initialize))
@@ -1609,7 +1693,7 @@ Here&amp;#39;s my current complete eshell config:&lt;/p&gt;
 &lt;p&gt;
 And here&amp;#39;s the code I ended up with for my shell switcher:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
   (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cl-lib&lt;/span&gt;)
   (defun select-or-create (arg)
     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
@@ -1652,10 +1736,18 @@ I saw a couple of posts the other day about the &lt;a href=&#34;https://sites.du
 Kristin Stephens-Martinez of Duke interviewed (or will interview) six
 CS educators on a variety of topics. There are four posted so far:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;David Malan&lt;/li&gt;
-&lt;li&gt;Dan Garcia&lt;/li&gt;
-&lt;li&gt;Amy Ko&lt;/li&gt;
-&lt;li&gt;Mark Guzdial&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;David Malan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dan Garcia&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amy Ko&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mark Guzdial&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Before I started I thought I&amp;#39;d listen to a few and then share some
 thoughts but I found so much to unpack  in the second episode where
@@ -1689,12 +1781,18 @@ Summary stats
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Did I enjoy the podcast? Yes - I&amp;#39;d give it 4/5 on the making running
+&lt;li&gt;
+&lt;p&gt;Did I enjoy the podcast? Yes - I&amp;#39;d give it 4/5 on the making running
 bearable scale. The interview flowed well and a lot of information
-was shared. &lt;/li&gt;
-&lt;li&gt;Did I learn anything? Honestly, no. This was probably due to the
-topic but more on that below.&lt;/li&gt;
-&lt;li&gt;Should you listen? Yes. Again, more below.&lt;/li&gt;
+was shared. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Did I learn anything? Honestly, no. This was probably due to the
+topic but more on that below.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Should you listen? Yes. Again, more below.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1796,17 +1894,17 @@ it shows you the results in a side window. &lt;/p&gt;
 &lt;p&gt;
 If you type in:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
 b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
 c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
-print(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The live python window will display something like:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
 b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
 c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;
-print(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 If you change one of the variables, everything updates.&lt;/p&gt;
 &lt;p&gt;
@@ -1871,11 +1969,21 @@ Mu4e
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Folder based&lt;/li&gt;
-&lt;li&gt;Easier to handle separate email accounts (and keep them separate)&lt;/li&gt;
-&lt;li&gt;Better org-mode integration&lt;/li&gt;
-&lt;li&gt;Automatically calls your IMAP sync program&lt;/li&gt;
-&lt;li&gt;Changes things on the server (moves, deletes etc.)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Folder based&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easier to handle separate email accounts (and keep them separate)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Better org-mode integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automatically calls your IMAP sync program&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changes things on the server (moves, deletes etc.)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1885,10 +1993,16 @@ Notmuch
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Tags based&lt;/li&gt;
-&lt;li&gt;Doesn&amp;#39;t touch or change anything on the serer (doesn&amp;#39;t delete or
-move things there, just tags locally)&lt;/li&gt;
-&lt;li&gt;Combines multiple accounts to appear as one&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tags based&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Doesn&amp;#39;t touch or change anything on the serer (doesn&amp;#39;t delete or
+move things there, just tags locally)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Combines multiple accounts to appear as one&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Both have a nice search based interface.&lt;/p&gt;
@@ -1946,10 +2060,18 @@ you can find my full config at &lt;a href=&#34;https://github.com/zamansky/dot-e
 I was thinking about also making the following ClojureScript videos if
 the communities find value in them and I have time:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;How to create reusable components like an input field with label.&lt;/li&gt;
-&lt;li&gt;Creating a simple Electron app using shadow-cljs.&lt;/li&gt;
-&lt;li&gt;Creating something with both  server side and client side.&lt;/li&gt;
-&lt;li&gt;Also open to suggestions&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to create reusable components like an input field with label.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creating a simple Electron app using shadow-cljs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creating something with both  server side and client side.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Also open to suggestions&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I don&amp;#39;t pretend to be a cljs or webdev master so please let me know if
 I&amp;#39;m doing anything horribly wrong and let me know if you want more.&lt;/p&gt;
@@ -1975,9 +2097,15 @@ assignments. It&amp;#39;s great for organizing, distributing, and collecting
 assignments and gets the kids used to using real world tools at the
 same time. I&amp;#39;ve written a bunch of posts on how I use it:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/github-classroom/&#34;&gt;How I use GitHub Classroom&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/post/communicating-with_students/&#34;&gt;Communicating with Students - meybe GitHub to the rescue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4/&#34;&gt;GitHub as a tool for education&lt;/a&gt; (part of a 4 part series)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/github-classroom/&#34;&gt;How I use GitHub Classroom&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/post/communicating-with_students/&#34;&gt;Communicating with Students - meybe GitHub to the rescue&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cestlaz.github.io/posts/sigcse-2017-github-4/&#34;&gt;GitHub as a tool for education&lt;/a&gt; (part of a 4 part series)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As well as a couple of others.&lt;/p&gt;
 &lt;p&gt;
@@ -2068,10 +2196,18 @@ and Gmail for personal. I&amp;#39;ve been thinking of going whole hog to mu4e
 and possibly migrating from Gmail to a new email provider for the
 personal stuff but there are still a few pain points with Emacs email:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;rich text emails (embedded links, images, etc)&lt;/li&gt;
-&lt;li&gt;calendar integration&lt;/li&gt;
-&lt;li&gt;contacts &lt;/li&gt;
-&lt;li&gt;periodic Maildir sync problems with mbsync&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rich text emails (embedded links, images, etc)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;calendar integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;contacts &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;periodic Maildir sync problems with mbsync&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Calendar integration isn&amp;#39;t a make or break issue and contacts with
 mu4e is good enough so that leaves two pain points. Formatted emails
@@ -2153,7 +2289,7 @@ calls with all the required data. The most fundamental way to do this
 is to use a command line tool like &lt;a href=&#34;https://curl.haxx.se/&#34;&gt;curl&lt;/a&gt;. For example, from a terminal
 I might write something like this to make a login call:&lt;/p&gt;
 &lt;div class=&#34;src src-curl&#34;&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-curl&#34; data-lang=&#34;curl&#34;&gt;curl --data &amp;#34;email=myemail&amp;amp;password=mypassword&amp;#34; https://localhost:8080/login&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-curl&#34; data-lang=&#34;curl&#34;&gt;curl --data &amp;#34;email=myemail&amp;amp;password=mypassword&amp;#34; https://localhost:8080/login&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
 It works but is clunky and you end up using the mouse a lot to cut and
@@ -2239,16 +2375,36 @@ work in. At times I&amp;#39;m working or dabbling in a whole bunch of
 languages. At times, my Emacs configuration has had separate sections
 for each of the following languages:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Emacs Lisp&lt;/li&gt;
-&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;Java&lt;/li&gt;
-&lt;li&gt;C and C++&lt;/li&gt;
-&lt;li&gt;Clojure&lt;/li&gt;
-&lt;li&gt;Processing&lt;/li&gt;
-&lt;li&gt;Scheme&lt;/li&gt;
-&lt;li&gt;Haskell&lt;/li&gt;
-&lt;li&gt;Rust&lt;/li&gt;
-&lt;li&gt;OCaml&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emacs Lisp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C and C++&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clojure&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Processing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scheme&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Haskell&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rust&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OCaml&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and more. &lt;/p&gt;
 &lt;p&gt;
@@ -2428,12 +2584,24 @@ Editors
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Emacs&lt;/li&gt;
-&lt;li&gt;Gedit&lt;/li&gt;
-&lt;li&gt;Vim&lt;/li&gt;
-&lt;li&gt;Sublime Text&lt;/li&gt;
-&lt;li&gt;Atom&lt;/li&gt;
-&lt;li&gt;Jedit&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emacs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gedit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sublime Text&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atom&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jedit&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2443,13 +2611,27 @@ IDES
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Eclipse&lt;/li&gt;
-&lt;li&gt;DrJava&lt;/li&gt;
-&lt;li&gt;Geany&lt;/li&gt;
-&lt;li&gt;BlueJ&lt;/li&gt;
-&lt;li&gt;IntelliJ&lt;/li&gt;
-&lt;li&gt;VSCode&lt;/li&gt;
-&lt;li&gt;JGrasp&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eclipse&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DrJava&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geany&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BlueJ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IntelliJ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VSCode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JGrasp&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2679,7 +2861,8 @@ I hadn&amp;#39;t heard of this one before but it looks like a contender. It
 has a  pretty clean interface and it worked out of the box. I
 installed it using the package manager.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/geany.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Class browser on the right, files on the left and console (terminal),
@@ -2724,7 +2907,8 @@ VSCode
 This one shocked me - I actually found myself liking a Microsoft
 product. I guess this really isn&amp;#39;t your father&amp;#39;s Microsoft.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Much like Geany it has a clean interface and like Geany you don&amp;#39;t need
@@ -2745,7 +2929,8 @@ JGrasp
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/vscode.png&amp;#34; width=&amp;#34;250px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 JGrasp feels much the same as the other contenders - Geany and VSCode
@@ -2845,11 +3030,19 @@ assignments.&lt;/p&gt;
 &lt;p&gt;
 Here are the important links you&amp;#39;ll need to set things up yourself:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;To register an organization (so that you can use private repos for
-free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To register an organization (so that you can use private repos for
+free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 The video goes through the entire process but doesn&amp;#39;t really much into
@@ -2858,13 +3051,13 @@ grading. For grading I usually do something like the following:&lt;/p&gt;
 First I make a file named &lt;strong&gt;repos&lt;/strong&gt; with the names of all the submitted
 repos:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
 ls &amp;gt; repos&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Then I&amp;#39;ll use a script that looks something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
       cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
       NAME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Name: &amp;#34;&lt;/span&gt; Readme.org | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/** Name: //g&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
@@ -2961,8 +3154,12 @@ combination of my changing my workflow and part due to the GitHub
 education tools and community. At it&amp;#39;s core, GitHub classroom does two
 things well:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Assignment creation and distribution&lt;/li&gt;
-&lt;li&gt;Repo management and organization.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assignment creation and distribution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repo management and organization.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I thought I&amp;#39;d do a couple of posts and videos to show how I&amp;#39;m using
 everything. &lt;/p&gt;
@@ -2993,7 +3190,7 @@ for educational purposes for free. &lt;/p&gt;
 The only other thing you have to do is create a &lt;a href=&#34;https://yaml.org/&#34;&gt;YAML&lt;/a&gt; file named
  &lt;code&gt;.travis.yml&lt;/code&gt; in your repo. Here&amp;#39;s one I&amp;#39;m using to test C++ projecs:&lt;/p&gt;
 &lt;div class=&#34;src src-yaml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
   - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;
@@ -3108,14 +3305,24 @@ Enjoy!&lt;/p&gt;
 I use both org-mode and Google Calendar for scheduling. I like Google
 Calendar because:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It&amp;#39;s pretty universal so I can issue and accept calendar invites.&lt;/li&gt;
-&lt;li&gt;It works well with my phone and other mobile devices.&lt;/li&gt;
-&lt;li&gt;The rest of my family doesn&amp;#39;t live in Emacs :-(.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;#39;s pretty universal so I can issue and accept calendar invites.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It works well with my phone and other mobile devices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The rest of my family doesn&amp;#39;t live in Emacs :-(.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I prefer using org-mode beacuse:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Emacs&lt;/li&gt;
-&lt;li&gt;I prefer, for the most part, to control my data.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emacs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I prefer, for the most part, to control my data.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I partially sync the two platforms. I&amp;#39;ve already talked about &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;syncing
 Google Calendar and org-mode&lt;/a&gt;. Right now, I&amp;#39;m just pulling from Google
@@ -3132,19 +3339,25 @@ I&amp;#39;ve set things up to have that droplet send me an email with my
 agenda. It turns out that org has commands to do things with Emacs
 from the command line:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;org-batch-agenda&lt;/li&gt;
-&lt;li&gt;org-batch-store-agenda-views&lt;/li&gt;
-&lt;li&gt;org-batch-agenda-csv &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;org-batch-agenda&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;org-batch-store-agenda-views&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;org-batch-agenda-csv &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;They can be run from the command line to output a formatted agenda as
 a string:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or as csv:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -3191,7 +3404,7 @@ agenda every morning.&lt;/p&gt;
 &lt;p&gt;
 The command I actually use to send the email is:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 which I put in a crontab entry to get it to run every day.&lt;/p&gt;

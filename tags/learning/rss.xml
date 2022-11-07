@@ -35,9 +35,15 @@ clicking on the icon. This makes things much smoother.&lt;/p&gt;
 &lt;p&gt;
 All you have to do is:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to &lt;strong&gt;&lt;strong&gt;chrome://extensions&lt;/strong&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;On the bottom of the page you&amp;#39;ll see a button to set &lt;strong&gt;&lt;strong&gt;keyboard shortcuts&lt;/strong&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Set the shortcut for Atomic Chrome&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;strong&gt;&lt;strong&gt;chrome://extensions&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the bottom of the page you&amp;#39;ll see a button to set &lt;strong&gt;&lt;strong&gt;keyboard shortcuts&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the shortcut for Atomic Chrome&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Enjoy:&lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wyPZws66Sic&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -62,11 +68,15 @@ for my personal account.&lt;/p&gt;
 I&amp;#39;ve had lots of requests for a video on what I do but I&amp;#39;ve been
 hesitant for two reasons:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;There are parts of my configuration that are copied from others and&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are parts of my configuration that are copied from others and&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I really don&amp;#39;t understand.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;I wasn&amp;#39;t happy with the complexity and some of the tooling.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I wasn&amp;#39;t happy with the complexity and some of the tooling.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;While there are still parts of my configuration that I&amp;#39;m not 100%
 clear on I&amp;#39;ve cleaned up the tooling and complexity by using mu4e only
@@ -77,9 +87,15 @@ Here&amp;#39;s a writeup on configuring things with video at the end.&lt;/p&gt;
 Unless you run an email server on your local machine using mu4e can be
 thought of as three parts.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Get the email from the server to the local machine using IMAP.&lt;/li&gt;
-&lt;li&gt;Setting up mu.&lt;/li&gt;
-&lt;li&gt;Access the email locally from Emacs.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get the email from the server to the local machine using IMAP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setting up mu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access the email locally from Emacs.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
@@ -91,7 +107,7 @@ I found his terrific blog post by &lt;a href=&#34;https://twitter.com/robstewart
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
 &lt;a href=&#34;https://sourceforge.net/p/isync/isync/ci/master/tree/&#34;&gt;mbsync&lt;/a&gt;. To build from source under Linux, I used the sequence:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./autogen.sh
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./autogen.sh
 ./configure
 make
 sudo make install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -117,7 +133,7 @@ used to build mbsync listed above.&lt;/p&gt;
 Since I store my local email under a folder &lt;code&gt;Maildir&lt;/code&gt;  which is what
 mu defaults to I can start using it by indexing my emails:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mu index&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mu index&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The video shows some examples of using mu from the command line and
@@ -165,7 +181,7 @@ use suggestions from people who use it regularly.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the configuration I use:&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package dired+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package dired+
 :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
 :config (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dired+&lt;/span&gt;)
 )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -178,7 +194,7 @@ usual regex syntax in place of Emacs regex syntax in both dired and
 other places. This is a big win for me since I never remember all the
 escaping rules for Emacs regex.&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package pcre2el
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package pcre2el
 :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
 :config
 (pcre-mode)
@@ -191,7 +207,7 @@ into a dired buffer (&lt;a href=&#34;http://irreal.org/blog/?p=6760&#34;&gt;link
 install &lt;a href=&#34;https://github.com/mhayashi1120/Emacs-wgrep&#34;&gt;wgrep&lt;/a&gt; and also had to install and setup &lt;a href=&#34;https://github.com/junegunn/fzf&#34;&gt;fzf&lt;/a&gt; which looks to be
 useful.&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package wgrep
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(use-package wgrep
 :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
 )
 
@@ -200,8 +216,12 @@ useful.&lt;/p&gt;
 &lt;p&gt;
 To help get started here are links to a couple of cheat sheets:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf&#34;&gt;dired reference card&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf&#34;&gt;another dired cheat sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf&#34;&gt;dired reference card&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf&#34;&gt;another dired cheat sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;#39;ll probably use dired more frequently but again, would love to hear
 how other people are using it.&lt;/p&gt;
@@ -275,7 +295,7 @@ window you swap to not the one you started in. Ace-window also has
 With a little elisp, we get the behavior I was looking for which I
 then bound to &lt;code&gt;C-1 z&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(defun z/swap-windowsn ()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(defun z/swap-windowsn ()
 &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 (interactive)
 (ace-swap-window)

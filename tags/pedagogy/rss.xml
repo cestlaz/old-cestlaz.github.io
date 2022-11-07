@@ -156,14 +156,18 @@ if one or two things are missing.&lt;/p&gt;
 Are my deadlines hard? Not really - anyone can ask for an extension
 but my two requirements are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+&lt;li&gt;
+&lt;p&gt;They have to have shown that up to the request they&amp;#39;ve tried to
 make some headway on the project. This is easy since I use Git and
-GitHub so I can just log at their logs.&lt;/li&gt;
-&lt;li&gt;They speak to me about the extension before the deadline and by
+GitHub so I can just log at their logs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They speak to me about the extension before the deadline and by
 this I mean as soon as there might be an issue, not the evening
 before the project is due. I encourage them to speak to me even if
 they think there might be an issue to get my okay and then, more
-often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+often than not, they don&amp;#39;t use the extension.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
 actually talk to me about an extension and that they do it in what I
@@ -242,10 +246,18 @@ Digit Pals.&lt;/p&gt;
 I started by looking at the problem, working through example and then
 some of the things we discussed included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;data representation (2D array)&lt;/li&gt;
-&lt;li&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/li&gt;
-&lt;li&gt;the high level logic of sliding down and over&lt;/li&gt;
-&lt;li&gt;how to solve the whole thing.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;data representation (2D array)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of removing a digit pal (recursive flood fill)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the high level logic of sliding down and over&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to solve the whole thing.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the overall solver, I decided to go with a straightforward, blind,
 recursive search. I figured it would be fast enough for two
@@ -259,14 +271,20 @@ within time constraints.&lt;/p&gt;
 &lt;p&gt;
 After the design phase, I went to the live coding with a focus on:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;compiling and testing every concept. That is, a single loop, a
+&lt;li&gt;
+&lt;p&gt;compiling and testing every concept. That is, a single loop, a
 single if, a function etc.. This may sound excessive but I&amp;#39;ve been
 doing this forever and it&amp;#39;s served me well as a hobbyist and as a
-professional.&lt;/li&gt;
-&lt;li&gt;Implementing the data structure first - a 2D array and then a way
-to print it so that I could always tell the state of my program.&lt;/li&gt;
-&lt;li&gt;incremental development - first remove a pal, then slide down, then
-over, then the solver.&lt;/li&gt;
+professional.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implementing the data structure first - a 2D array and then a way
+to print it so that I could always tell the state of my program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;incremental development - first remove a pal, then slide down, then
+over, then the solver.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When it was all over the problem was solved. I&amp;#39;d like to think that
 the students got something out of the audible. I learned years later
@@ -341,10 +359,18 @@ similar.&lt;/p&gt;
 &lt;p&gt;
 By contrast, a swap &amp;#34;recipe&amp;#34; might read:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new variable named &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;b&lt;/strong&gt; to &lt;strong&gt;extraBucket&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;a&lt;/strong&gt; to &lt;strong&gt;b&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assign the value currently in &lt;strong&gt;extraBucket&lt;/strong&gt; to &lt;strong&gt;a&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This is a recipe. A student would literally just rewrite the steps
 into the solution but even this might have it&amp;#39;s place in a class.&lt;/p&gt;
@@ -678,10 +704,14 @@ choice. &lt;/p&gt;
 &lt;p&gt;
 We then talk about what we now know - &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;We now know the exact location of 0515 with respect to all the
-dates&lt;/li&gt;
-&lt;li&gt;The data set is now partially ordered (everything less than 0515 to
-the left, greater to the right).&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We now know the exact location of 0515 with respect to all the
+dates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The data set is now partially ordered (everything less than 0515 to
+the left, greater to the right).&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I also drew out some diagrams showing what was happening &lt;/p&gt;
 &lt;p&gt;
@@ -833,13 +863,25 @@ machines running Turbo Pascal there wasn&amp;#39;t any option to use any fancy
 library like OpenGL. The course basically started with the ability to
 draw a point and then went though: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;lines&lt;/li&gt;
-&lt;li&gt;lines in 3D and 3D transformations&lt;/li&gt;
-&lt;li&gt;polygons (triangles)&lt;/li&gt;
-&lt;li&gt;A motion description language interpreter (stack and tree based
-shape hierarchies)&lt;/li&gt;
-&lt;li&gt;lighting and shading&lt;/li&gt;
-&lt;li&gt;ray tracing&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lines in 3D and 3D transformations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polygons (triangles)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A motion description language interpreter (stack and tree based
+shape hierarchies)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lighting and shading&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ray tracing&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The motion description language piece had an entire unit that was
 really an intro to compilers / interpreters. &lt;/p&gt;
@@ -892,23 +934,37 @@ were going to run things.&lt;/p&gt;
 &lt;p&gt;
 We decided to go with the following:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Zoom for live meetings &lt;/li&gt;
-&lt;li&gt;Slack for chat&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zoom for live meetings &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slack for chat&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Git and GitHub&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GitHub classroom for assignments &lt;/li&gt;
-&lt;li&gt;GitHub repos for code distribution, class website and resource
-sharing. &lt;/li&gt;
-&lt;li&gt;GitHub discussions for off hour and long form discussion&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub classroom for assignments &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub repos for code distribution, class website and resource
+sharing. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub discussions for off hour and long form discussion&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;While Zoom is a great platform it was lacking in a few areas so we
 also ended up using: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/li&gt;
-&lt;li&gt;Assorted whiteboarding tools.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://padlet.com&#34;&gt;Padlet&lt;/a&gt; as a collaborative writing space for groups&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assorted whiteboarding tools.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here&amp;#39;s the breakdown.&lt;/p&gt;
 &lt;p&gt;
@@ -1133,12 +1189,20 @@ exposed to the idea. Still, we, or more accurately, Topher, who&amp;#39;s had
 great success getting student buy in did do a brief talk on the
 subject. Some of the things we covered were: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to motivate pair programming in a collaborative way&lt;/li&gt;
-&lt;li&gt;What activities can you give the navigator while the driver&amp;#39;s
-setting up the environment to involve them.&lt;/li&gt;
-&lt;li&gt;How in the &amp;#34;real world&amp;#34; some developers love PP and some hate it
-and that there are many variations on the theme.&lt;/li&gt;
-&lt;li&gt;You&amp;#39;d not always going to get student buy in.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to motivate pair programming in a collaborative way&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What activities can you give the navigator while the driver&amp;#39;s
+setting up the environment to involve them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How in the &amp;#34;real world&amp;#34; some developers love PP and some hate it
+and that there are many variations on the theme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You&amp;#39;d not always going to get student buy in.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That last point is &lt;strong&gt;very&lt;/strong&gt; important. Teachers are going to try things
 that don&amp;#39;t always work and unfortunately, the system of evaluation
@@ -1200,16 +1264,36 @@ work.&lt;/p&gt;
 &lt;p&gt;
 The topics they selected were:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Data Mining&lt;/li&gt;
-&lt;li&gt;Public Key Encryption&lt;/li&gt;
-&lt;li&gt;Blockchain&lt;/li&gt;
-&lt;li&gt;Natural Language Processing&lt;/li&gt;
-&lt;li&gt;Classic AI - Decision Trees&lt;/li&gt;
-&lt;li&gt;SQL / Cyber Security&lt;/li&gt;
-&lt;li&gt;Visualization&lt;/li&gt;
-&lt;li&gt;Machine Learning / Cipher Decryption&lt;/li&gt;
-&lt;li&gt;Genetic Algorithms&lt;/li&gt;
-&lt;li&gt;Classic AI - Search&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Mining&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public Key Encryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blockchain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Natural Language Processing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Decision Trees&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQL / Cyber Security&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visualization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Machine Learning / Cipher Decryption&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Genetic Algorithms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classic AI - Search&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We weren&amp;#39;t sure exactly what to expect but we were blown away both in
 terms of the CS content as well as what they prepared in terms of
@@ -1239,10 +1323,18 @@ these, check them out.&lt;/p&gt;
 Our summer intensive was, well, pretty intensive. We met all day every
 day for a month and knocked out four classes. &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Programming (CS1)&lt;/li&gt;
-&lt;li&gt;Data Structures&lt;/li&gt;
-&lt;li&gt;Topics&lt;/li&gt;
-&lt;li&gt;Methods&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programming (CS1)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Structures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you ever took or taught a summer session class, you know that time
 is tight and generally you cover a little less than in a fall or
@@ -1286,19 +1378,45 @@ populations. &lt;/p&gt;
 &lt;p&gt;
 Some of the methods we discussed included: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Live Coding &lt;/li&gt;
-&lt;li&gt;Subgoal labeling&lt;/li&gt;
-&lt;li&gt;Make predictions&lt;/li&gt;
-&lt;li&gt;Modifying existing code&lt;/li&gt;
-&lt;li&gt;code tracing&lt;/li&gt;
-&lt;li&gt;diagramming&lt;/li&gt;
-&lt;li&gt;scaffolded assignments (code skeletons)&lt;/li&gt;
-&lt;li&gt;Rubber Duck Debugging&lt;/li&gt;
-&lt;li&gt;Code sharing (presenting)&lt;/li&gt;
-&lt;li&gt;writing implementations of library code&lt;/li&gt;
-&lt;li&gt;slack techniques (reacts polls, channels, ) &lt;/li&gt;
-&lt;li&gt;thought-grooming/sparking warm-up Qs/tasks&lt;/li&gt;
-&lt;li&gt;relevant quotes at warm-up&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Live Coding &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Subgoal labeling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make predictions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modifying existing code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;code tracing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;diagramming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scaffolded assignments (code skeletons)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rubber Duck Debugging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code sharing (presenting)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;writing implementations of library code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;slack techniques (reacts polls, channels, ) &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;thought-grooming/sparking warm-up Qs/tasks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;relevant quotes at warm-up&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and more but the list doesn&amp;#39;t really do the discussion justice. Take
 &amp;#34;live coding&amp;#34; for example - that&amp;#39;s not just writing code in front of
@@ -1349,7 +1467,7 @@ worked except the clear button which did nothing. Weird.&lt;/p&gt;
 &lt;p&gt;
 Exploring the code, here were some of the key sections:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
 &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.clear-button&amp;#34;&lt;/span&gt;);
 
@@ -1392,12 +1510,14 @@ element in the web page. If that element doesn&amp;#39;t exist, it returns
 was no element on the page identified by the class &lt;strong&gt;filter-todo&lt;/strong&gt;. The
 result was that after executing&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;code&gt;filterOption&lt;/code&gt; is set to refer to null.&lt;/p&gt;
 &lt;p&gt;
 Then later, this code: 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 crashes the program because you can&amp;#39;t call the &lt;code&gt;addEventListener&lt;/code&gt;
 method on &lt;code&gt;null&lt;/code&gt; which is what &lt;code&gt;filterOption&lt;/code&gt; is set to.&lt;/p&gt;
@@ -1555,12 +1675,22 @@ Today was &lt;a href=&#34;https://cestlaz.github.io/post/code-review-2/&#34;&gt;
 teaching and I think my students get a lot out of it. Today we had to
 do it remote. The mechanics were largely the same:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Pair off the kids.&lt;/li&gt;
-&lt;li&gt;Have them write out a commentary on their partners code without discussion&lt;/li&gt;
-&lt;li&gt;pair off again&lt;/li&gt;
-&lt;li&gt;Have one review the others code but this time via discussion and
-note taking.&lt;/li&gt;
-&lt;li&gt;Get everyone together and discuss&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pair off the kids.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have them write out a commentary on their partners code without discussion&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pair off again&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have one review the others code but this time via discussion and
+note taking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get everyone together and discuss&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Zoom supported all the basics. Splitting the class was pretty easy via
 the breakout room interface and students were able to flag me when
@@ -1863,7 +1993,7 @@ the first scene of &amp;#34;Macbeth&amp;#34; - all thirteen lines of it.&lt;/p&g
 &lt;p&gt;
 It&amp;#39;s easy enough to read in the data in a language like Python:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cyrano.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cyrano.txt&amp;#34;&lt;/span&gt;)
 raw_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 but if you&amp;#39;re using a bag of words you&amp;#39;ve got to do some cleaning.&lt;/p&gt;
@@ -1880,12 +2010,12 @@ and the fun begins.&lt;/p&gt;
 &lt;p&gt;
 First we had to turn everything into lower case;&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;lower_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; raw_data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;lower_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; raw_data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 and then the big part - we want to get rid of all the punctuation. We
 first tried something like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.:;&amp;#39;0123456789&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.:;&amp;#39;0123456789&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;cleaned_letters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; lower_data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; stuff_to_remove]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;cleaned_string &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(cleaned_letters)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -1905,7 +2035,7 @@ removal string.&lt;/p&gt;
 This led to take 2. Instead of deciding what to throw away, let&amp;#39;s
 decide what to keep;&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_keep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abcdefghijklmnopqrstuvwxyz &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\t\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_keep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abcdefghijklmnopqrstuvwxyz &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\t\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;cleaned_letters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; lower_data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; stuff_to_remove]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;cleaned_string &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(cleaned_letters)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -1927,7 +2057,7 @@ that can make them think.&lt;/p&gt;
 Once we made our final cleaning decisions it&amp;#39;s a simple matter to
 convert the long string of text into a list of words:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;wordlist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cleaned_string&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;wordlist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cleaned_string&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Now we&amp;#39;re ready to start building our bag of words but that&amp;#39;s a post
 for another day.&lt;/p&gt;
@@ -2091,14 +2221,20 @@ functions and if statements but there is some depth to the unit.&lt;/p&gt;
 &lt;p&gt;
 We start with simplified rules:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;If the word starts with a vowel, add &amp;#34;ay&amp;#34; to the end of the word&lt;/li&gt;
-&lt;li&gt;If it starts with a consonant move the first latter to the end and
-add &amp;#34;ay&amp;#34;&lt;/li&gt;
-&lt;li&gt;don&amp;#39;t worry about anything else&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the word starts with a vowel, add &amp;#34;ay&amp;#34; to the end of the word&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If it starts with a consonant move the first latter to the end and
+add &amp;#34;ay&amp;#34;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;don&amp;#39;t worry about anything else&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Students usually start with something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 as students realize it&amp;#39;s much easier to check for vowels rather than
@@ -2107,7 +2243,7 @@ consonants. &lt;/p&gt;
 Some students discover that you can do any of the following instead of
 the big compound &lt;strong&gt;or&lt;/strong&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This allows us to talk a little about lists (and tuples if you like)
@@ -2120,7 +2256,7 @@ then talk about using python&amp;#39;s &lt;code&gt;split()&lt;/code&gt; method t
 on whitespace. We also talk about the &lt;code&gt;for&lt;/code&gt; loop. Ultimately this
 leads us to writing a function to convert a sentence into Pig Latin:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 But this doesn&amp;#39;t work with real sentences. Let&amp;#39;s focus on two
@@ -2135,7 +2271,7 @@ This is where things get fun. &lt;/p&gt;
 To handle the period, students frequently jump to modifying the &lt;strong&gt;if&lt;/strong&gt; 
 conditions in &lt;code&gt;piglatinify&lt;/code&gt; :&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or something similar.&lt;/p&gt;
@@ -2147,13 +2283,13 @@ posts &lt;a href=&#34;https://cestlaz.github.io/posts/2014-02-26-change-the-data
 If we take out the period we can do our regular piglatinify and then
 add it back in. This leads us to a solution like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We can do something similar to deal with words that start with upper
 case letters:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You can approach other special cases similarly.&lt;/p&gt;
@@ -2268,7 +2404,7 @@ dead).&lt;/p&gt;
 In a Java type language, given a 2D array &lt;code&gt;this_turn&lt;/code&gt; with the current
 world and you might get something like:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 It&amp;#39;s a really nice application of 2D arrays and I&amp;#39;ve done it with my
@@ -2279,7 +2415,7 @@ a world represented by an x,y grid with each cell in the grid known as
 a patch. You write a program and all the patches run it
 independently. A life solution might look like this:&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-netlogo&#34; data-lang=&#34;netlogo&#34;&gt;ask patches [ 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-netlogo&#34; data-lang=&#34;netlogo&#34;&gt;ask patches [ 
   set n count nieghbors with [color =  red] ;; red cells will be alive
   ifelse color = red 
     [ ifelse n=2 or n = 3
@@ -2297,9 +2433,13 @@ ask patches [set color nextcolor]&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&
 My NetLogo is a little rusty so my syntax might be off but the idea is
 to:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;have each patch count it&amp;#39;s living neighbors and figure out it&amp;#39;s
-next state - alive (red) or dead (black)&lt;/li&gt;
-&lt;li&gt;have each patch set its color to the new state&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have each patch count it&amp;#39;s living neighbors and figure out it&amp;#39;s
+next state - alive (red) or dead (black)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;have each patch set its color to the new state&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 This is a very different solution. In NetLogo you never think about
@@ -2326,14 +2466,20 @@ each element contained the location of a living cell. This is
 certainly more space efficient. It also let me operate on the world as
 a sequence of transformations to the data:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Calculate all the possible next cells (the cells in the list plus
-all their neighbors&lt;/li&gt;
-&lt;li&gt;For each possible next cell, count it&amp;#39;s living neighbors and
-determine if the cell is alive in the next iteration&lt;/li&gt;
-&lt;li&gt;Replace the list of cells with these new cells. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calculate all the possible next cells (the cells in the list plus
+all their neighbors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For each possible next cell, count it&amp;#39;s living neighbors and
+determine if the cell is alive in the next iteration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace the list of cells with these new cells. &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;src src-clojure&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;generate [state]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;generate [state]
   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Generate and return the next state&amp;#34;&lt;/span&gt;
   (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[potential-cells (for [[x y] state [dx dy] cell-bloc-3x3]
                           [(+ x dx) (+ y dy)])
@@ -2439,10 +2585,18 @@ sort or doing a unit on inheritance you probably should have your
 ownb written solutions but there are a whole bunch of topics which
 lend themselves to doing things on the fly:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;debugging&lt;/li&gt;
-&lt;li&gt;software engineering practices&lt;/li&gt;
-&lt;li&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/li&gt;
-&lt;li&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;debugging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;software engineering practices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to approach &amp;#34;random&amp;#34; problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;practical &amp;#34;programming&amp;#34; techniques&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;can all benefit from an on the fly lesson. &lt;/p&gt;
 &lt;p&gt;
@@ -2503,7 +2657,8 @@ as the enrollment had just shot up. There weren&amp;#39;t many books that
 covered both the programming and the data structures but I found one
 nad it was a good one:&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; alt=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; title=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; alt=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; title=&#34;https://pictures.abebooks.com/isbn/9780314933072-uk.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 It was both accessible and was thorough. It wasn&amp;#39;t a great source of
@@ -2512,17 +2667,20 @@ exercises but it was no worse than the other options.&lt;/p&gt;
 When we moved to C++ it was pretty easy as the same book was still
 available, albeit now in two parts:
 &amp;lt;div&amp;gt;
-&amp;lt;figure class=&amp;#34;z_image_right&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_right&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/31pkP2rZj5L._BO1,204,203,200_.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; /&gt;&amp;#34; width=&amp;#34;150px&amp;#34;/&amp;gt;
+&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; alt=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; title=&#34;https://images-na.ssl-images-amazon.com/images/I/51BS6W1XRRL._SX394_BO1,204,203,200_.jpg&#34; /&gt;&amp;#34; width=&amp;#34;150px&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 &amp;lt;/div&amp;gt;
 When we went to Java we couldn&amp;#39;t find a book that covered both the
 programming and the data structures but settled on this one: &lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;&lt;img src=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; alt=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; title=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; /&gt;&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;&lt;img src=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; alt=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; title=&#34;https://i.ebayimg.com/images/g/N4oAAOSw4bVTmzOV/s-l1600.jpg&#34; /&gt;&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Nowadays, particularly with data structures no longer being in issue
@@ -2626,11 +2784,19 @@ assignments.&lt;/p&gt;
 &lt;p&gt;
 Here are the important links you&amp;#39;ll need to set things up yourself:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;To register an organization (so that you can use private repos for
-free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To register an organization (so that you can use private repos for
+free): &lt;a href=&#34;https://education.github.com/discount_requests/new&#34;&gt;https://education.github.com/discount_requests/new&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The main GitHub education page with lots of good stuff and links: &lt;a href=&#34;https://education.github.com/&#34;&gt;https://education.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub Classroom: &lt;a href=&#34;https://classroom.github.com/&#34;&gt;https://classroom.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub Classroom Assistant: &lt;a href=&#34;https://classroom.github.com/assistant&#34;&gt;https://classroom.github.com/assistant&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 The video goes through the entire process but doesn&amp;#39;t really much into
@@ -2639,13 +2805,13 @@ grading. For grading I usually do something like the following:&lt;/p&gt;
 First I make a file named &lt;strong&gt;repos&lt;/strong&gt; with the names of all the submitted
 repos:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
 ls &amp;gt; repos&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Then I&amp;#39;ll use a script that looks something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
   &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
       cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
       NAME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Name: &amp;#34;&lt;/span&gt; Readme.org | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/** Name: //g&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
@@ -2717,7 +2883,7 @@ functionality. Clearly not a good idea.&lt;/p&gt;
 &lt;p&gt;
 The first useful example is probably &lt;code&gt;Comparable&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 At first blush it might not seem all that useful. &lt;/p&gt;
@@ -2725,7 +2891,7 @@ At first blush it might not seem all that useful. &lt;/p&gt;
 Let&amp;#39;s suppose you are doing something like finding the first String
 (alphabetically) from an array:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 That&amp;#39;s easy enough but what if you had another class, &lt;code&gt;Shape&lt;/code&gt; where
@@ -2737,7 +2903,7 @@ come from the same parent. Instead, by having your two new classes
 implement the &lt;code&gt;Comparable&lt;/code&gt; interface all three can use the same
 search:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This is not entirely true. The above solution will give you compiler
@@ -2765,7 +2931,7 @@ game where time passes a turn at a time.&lt;/p&gt;
 For example, you might have a simulation with various resources that
 implement an interface with an &lt;code&gt;update&lt;/code&gt; routine:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Maybe a food resource updates by raising or lowering the amount of
@@ -2808,8 +2974,12 @@ combination of my changing my workflow and part due to the GitHub
 education tools and community. At it&amp;#39;s core, GitHub classroom does two
 things well:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Assignment creation and distribution&lt;/li&gt;
-&lt;li&gt;Repo management and organization.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assignment creation and distribution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repo management and organization.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I thought I&amp;#39;d do a couple of posts and videos to show how I&amp;#39;m using
 everything. &lt;/p&gt;
@@ -2840,7 +3010,7 @@ for educational purposes for free. &lt;/p&gt;
 The only other thing you have to do is create a &lt;a href=&#34;https://yaml.org/&#34;&gt;YAML&lt;/a&gt; file named
  &lt;code&gt;.travis.yml&lt;/code&gt; in your repo. Here&amp;#39;s one I&amp;#39;m using to test C++ projecs:&lt;/p&gt;
 &lt;div class=&#34;src src-yaml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
   - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;
@@ -2971,17 +3141,24 @@ dinner the teachers talked shop. In addition to getting to know each
 other, their programs, and their classes we also asked them to
 consider these three items:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;What are things that cause you difficulty that you&amp;#39;d like us to
-cover?&lt;/li&gt;
-&lt;li&gt;What are things you wish you knew about that you&amp;#39;d like us to
-cover?&lt;/li&gt;
-&lt;li&gt;What are things you&amp;#39;re comfortable with that you&amp;#39;d be willing to
-share with the group?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things that cause you difficulty that you&amp;#39;d like us to
+cover?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things you wish you knew about that you&amp;#39;d like us to
+cover?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What are things you&amp;#39;re comfortable with that you&amp;#39;d be willing to
+share with the group?&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;After dinner we circled up and JonAlf presented the way he set up
 student note taking in his class.&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/pd-apcs-a.jpg&#34; width=&#34;500&#34; height=&#34;500px&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/pd-apcs-a.jpg&#34; width=&#34;500&#34; height=&#34;500px&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -3138,7 +3315,7 @@ Compile and test one concept at a time.&lt;/p&gt;
 It might seem silly, but if I&amp;#39;m writing a a program, my first compile
 might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout;
   using std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;
@@ -3151,7 +3328,7 @@ might be code that looks like this:&lt;/p&gt;
 &lt;p&gt;
 or &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
       &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
 	
@@ -3171,21 +3348,27 @@ Going further, I compile and test every time I code up what I call a
 concept. What&amp;#39;s a concept? Let&amp;#39;s look at some code. A student might
 write something like this to find prime number up to n:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 There&amp;#39;s a lot going on there. To me, a concept is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A loop&lt;/li&gt;
-&lt;li&gt;A complex calculation&lt;/li&gt;
-&lt;li&gt;a conditional&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A loop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A complex calculation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a conditional&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;All of these can have other concepts within.&lt;/p&gt;
 &lt;p&gt;
@@ -3196,9 +3379,9 @@ and print statements throughout the process:&lt;/p&gt;
 Step 1:
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
@@ -3206,10 +3389,10 @@ Step 1:
 Step 2
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
-            print(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
@@ -3217,14 +3400,14 @@ Step 2
 Step 3
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                print(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;is not prime&amp;#34;&lt;/span&gt;)
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
@@ -3232,14 +3415,14 @@ Step 3
 Step 4 
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
-        print(i,i_isPrime)
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i,i_isPrime)
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3248,15 +3431,15 @@ Step 4
 Step 5
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prime_list&lt;/span&gt;(n):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,n):
-        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+        i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; True
         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; :
-                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+                i_isPrime &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; False
                 &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;
         &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i_isPrime:
-            print(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(i)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
 It might not play out exactly this way but if not it would be something
 similar. The idea is that if you test every time you add one concept
@@ -3294,9 +3477,15 @@ interwebs.&lt;/p&gt;
 &lt;p&gt;
 Some of the questions and concerns that I&amp;#39;ve seen recently include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;What is CT??&lt;/li&gt;
-&lt;li&gt;Will rich schools get CS and poor only CT?&lt;/li&gt;
-&lt;li&gt;Will rich schools get CS and poor on coding?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is CT??&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Will rich schools get CS and poor only CT?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Will rich schools get CS and poor on coding?&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The first question is a big one and as a community we haven&amp;#39;t answered
 it yet. I think about it as including things like algorithmic

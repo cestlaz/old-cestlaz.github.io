@@ -42,7 +42,8 @@ session as well as a nice dinner to keep the teachers fueled.&lt;/p&gt;
 As usual, we had two major themes for our PD. First the pedagogy. My
 former colleage Topher started with a pair programming workshop. &lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/gwg-topher.jpg&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/gwg-topher.jpg&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 Pair programming is a pretty common technique but it&amp;#39;s deceptively
@@ -62,7 +63,8 @@ lessons at a future session.&lt;/p&gt;
 &lt;p&gt;
 Then we had dinner after which I did the content piece.&lt;/p&gt;
 &lt;p&gt;
-&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34;/img/gwg-z.jpg&amp;#34;/&amp;gt;
+&amp;lt;figure class=&amp;#34;z_image_center&amp;#34;&amp;gt;
+    &amp;lt;img src=&amp;#34;/img/gwg-z.jpg&amp;#34;/&amp;gt; 
 &amp;lt;/figure&amp;gt;&lt;/p&gt;
 &lt;p&gt;
 We first look at a bit of &lt;a href=&#34;https://ccl.northwestern.edu/netlogo/&#34;&gt;NetLogo&lt;/a&gt; for image procesing mostly so I
@@ -250,10 +252,14 @@ does it mean? &lt;/p&gt;
 To me it means giving all students some fundamental exposure to
 computer science so that they can:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Make use of those thinking skills, problem solving approaches, and
-practical tools regardless of their future paths. &lt;/li&gt;
-&lt;li&gt;Provide a path for the subset of &amp;#34;all&amp;#34; that desire to further pursue
-computer science.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make use of those thinking skills, problem solving approaches, and
+practical tools regardless of their future paths. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provide a path for the subset of &amp;#34;all&amp;#34; that desire to further pursue
+computer science.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;But even with this, how do you do it?&lt;/p&gt;
 &lt;p&gt;
@@ -724,11 +730,21 @@ includes 7 elective slots.&lt;/p&gt;
 &lt;p&gt;
 In terms of exit exams, students have to pass the following Regents:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;English&lt;/li&gt;
-&lt;li&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/li&gt;
-&lt;li&gt;Any single Social Studies (US History or Global History&lt;/li&gt;
-&lt;li&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/li&gt;
-&lt;li&gt;Any additional Regents exam&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;English&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single Social Studies (US History or Global History&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any additional Regents exam&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The requirement of passing a single Math regents is what leads to the
 extra time allocated to Algebra that I mentioned when discussing
@@ -840,8 +856,12 @@ subject areas. What this means is that there&amp;#39;s more likely extra time
 to embed another subject, cs, into the Algebra class. Long term,
 embedding CS into another subject area requires:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;a teacher that really knows both subjects&lt;/li&gt;
-&lt;li&gt;enough time so you can add all the cool CS content while still&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a teacher that really knows both subjects&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enough time so you can add all the cool CS content while still&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;preparing the students for both the next level of whatever subject
 you&amp;#39;re embedded in  as well as for whatever standardized

@@ -6,10 +6,91 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Nov 2022 09:42:40 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Nov 2022 11:47:50 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Should college be career prep</title>
+      <link>https://cestlaz.github.io/post/should-cs-be-practical/</link>
+      <pubDate>Mon, 07 Nov 2022 11:47:50 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/should-cs-be-practical/</guid>
+      <description>&lt;p&gt;
+So, in some of the social platform discussion on my &lt;a href=&#34;https://cestlaz.github.io/post/new-major/&#34;&gt;last post&lt;/a&gt;, the
+issue of the practicality of a college education came up. Should
+college teach practical job skills or should it be for some more
+abstract purpose - learning for learning sake or if one would be a bit
+presumptions learning how to think.&lt;/p&gt;
+&lt;p&gt;
+Way back when going to college was not the norm. Most went from HS to
+workforce and even in HS you might have the &amp;#34;academic&amp;#34; track that
+prepared you for college, &amp;#34;vocational&amp;#34; that was job prep like
+automotive or regular which was neither extreme. Sure, that system had
+a host of problems but since the end goal wasn&amp;#39;t college for most, it
+freed college from the need for being practical. College could just be
+about learning non-useful stuff.&lt;/p&gt;
+&lt;p&gt;
+Nowadays kids don&amp;#39;t have the luxury of not going to college. It&amp;#39;s
+expected in our society. Spend 4 years and oodles of dollars to get
+the piece of paper and you can get a job that years ago only required
+the HS version of the paper.&lt;/p&gt;
+&lt;p&gt;
+This, of course, leads to many rather large and hairy questions none
+of which I will address here.&lt;/p&gt;
+&lt;p&gt;
+What I will address concerns my little CS corner of the world.&lt;/p&gt;
+&lt;p&gt;
+In commenting on my post, some people talked about college faculty
+they know and how those faculty members refuse to teach or use
+anything that might remotely be useful to kids in terms of
+career. They feel it&amp;#39;s beneath them and that they serve a higher
+academic purpose. I don&amp;#39;t doubt those comments - I know plenty of
+college faculty who feel this very way.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll agree that college shouldn&amp;#39;t strictly be a jobs program but the
+nice thing about CS is that you &lt;strong&gt;can&lt;/strong&gt; teach practical skills and job
+skills within the context of a traditional academic CS degree. Add in
+the reality that most CS majors don&amp;#39;t want to go to grad school and
+you can redesign the major to do even more for the majority of
+students.&lt;/p&gt;
+&lt;p&gt;
+How about programming languages and tools. Why not use a couple of
+practical ones. This is not to say that the first language has to be
+C++, Java, Python or similar but there&amp;#39;s no reason why a couple practical
+languages shouldn&amp;#39;t be used. Sure, feel free  to use an esoteric
+language or some professors pet project in a particular class and by
+all means use the intro language that makes the most sense for your
+situation but for a 4 year major, there&amp;#39;s no reason why students
+shouldn&amp;#39;t walk away with a couple of languages that are widely used in
+industry. Same for build tools and things like testing frameworks. I
+use git and &lt;a href=&#34;https://github.com/doctest/doctest&#34;&gt;doctest&lt;/a&gt;. I&amp;#39;m not teaching a class in git or doctest, I&amp;#39;m
+teaching software engineering techniques and testing as part of my CS1
+classes. I have to use some tool as the platform on which to teach
+these things so why not tools that they can also use outside of
+school. It just makes sense. Sure, in terms of language, most colleges
+seem to cover at least one of C++, Python, and Java but lag in terms
+of the support concepts and tooling.&lt;/p&gt;
+&lt;p&gt;
+It reminds me about what I said in my earlier post about Intel
+Assembly. At Stuy back in the 90s I taught a systems elective. It
+wasn&amp;#39;t a programming course about Intel assembly. If it was, I&amp;#39;d just
+do a bunch of random programming assignments in it. It was rather a
+course about how the computer worked at a low level and we &lt;strong&gt;used&lt;/strong&gt;
+Intel assembly as the tool.&lt;/p&gt;
+&lt;p&gt;
+You can&amp;#39;t do this everywhere in a CS curriculum but there are plenty
+of places where you can. Do this, make sure there are some required
+large project courses where students can learn to work in a group and
+integrate technologies, introduce a couple of new electives, and all
+of a sudden you can have a strong academic CS program that also does a
+great job preparing students for the tech world beyond academia.&lt;/p&gt;
+&lt;p&gt;
+Some places are already doing this and others are trying but too many
+are still caught in the past.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Crafting a new major for tech</title>
@@ -363,10 +444,18 @@ doing fine and that&amp;#39;s a problem.&lt;/p&gt;
 Before getting to the specifics of CS PD let&amp;#39;s think about PD in
 general. There are different types of PDs.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Teachers sharing practices&lt;/li&gt;
-&lt;li&gt;conferences and meetings that teachers choose to attend&lt;/li&gt;
-&lt;li&gt;PD run by content providers, that is, people selling something&lt;/li&gt;
-&lt;li&gt;PD required by schools and districts&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Teachers sharing practices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;conferences and meetings that teachers choose to attend&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PD run by content providers, that is, people selling something&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PD required by schools and districts&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The first two types are usually considered good, the third, sometimes
 but not as often. The fourth, fuggedaboudit.&lt;/p&gt;
@@ -984,7 +1073,7 @@ draw a square.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -1003,7 +1092,7 @@ draw a square.&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; turtle
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; turtle
 
 wn &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; turtle&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Screen()
 
@@ -1030,7 +1119,8 @@ to run.&lt;/p&gt;
 Here&amp;#39;s an actual screenshot that resulted in the error. Can you spot
 the problem?&lt;/p&gt;
 &lt;p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/thonny-error.png&#34;/&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/thonny-error.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -1117,10 +1207,14 @@ I know that we can accomplish these goals with a single class
 requirement and two years of offerings overall . How do I know this?
 Because we did this at Stuy. Doing this requires two basic things:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;A well taught, well designed intro course that exposes students to
-the subject.&lt;/li&gt;
-&lt;li&gt;Covering enough material deeply enough so that students are well
-prepared for the next steps in college should a student take them.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A well taught, well designed intro course that exposes students to
+the subject.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Covering enough material deeply enough so that students are well
+prepared for the next steps in college should a student take them.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The required intro gives the base level that everyone should have and
 a more advanced follow up elective sets students up for success if
@@ -1555,11 +1649,21 @@ has been part these conversations so many times.&lt;/p&gt;
 Lots of good stuff but there were a few things that always come up in
 these conversations that I think are worth calling out.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;CS is creativity&lt;/li&gt;
-&lt;li&gt;CS is problem solving&lt;/li&gt;
-&lt;li&gt;CS is making mistakes&lt;/li&gt;
-&lt;li&gt;CS is building projects.&lt;/li&gt;
-&lt;li&gt;Students like CS, it&amp;#39;s fun.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CS is creativity&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CS is problem solving&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CS is making mistakes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CS is building projects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Students like CS, it&amp;#39;s fun.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These aren&amp;#39;t bad things and in fact are almost always good
 things. What I want to call out is that they&amp;#39;re not CS and certainly
@@ -2188,14 +2292,18 @@ if one or two things are missing.&lt;/p&gt;
 Are my deadlines hard? Not really - anyone can ask for an extension
 but my two requirements are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;They have to have shown that up to the request they&amp;#39;ve tried to
+&lt;li&gt;
+&lt;p&gt;They have to have shown that up to the request they&amp;#39;ve tried to
 make some headway on the project. This is easy since I use Git and
-GitHub so I can just log at their logs.&lt;/li&gt;
-&lt;li&gt;They speak to me about the extension before the deadline and by
+GitHub so I can just log at their logs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They speak to me about the extension before the deadline and by
 this I mean as soon as there might be an issue, not the evening
 before the project is due. I encourage them to speak to me even if
 they think there might be an issue to get my okay and then, more
-often than not, they don&amp;#39;t use the extension.&lt;/li&gt;
+often than not, they don&amp;#39;t use the extension.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Some teachers don&amp;#39;t like the fact that I require that the student
 actually talk to me about an extension and that they do it in what I
@@ -2224,7 +2332,8 @@ well.&lt;/p&gt;
       
       <guid>https://cestlaz.github.io/post/when-your-program-crashes/</guid>
       <description>&lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt; 
 &lt;/figure&gt;
  &lt;/p&gt;
 &lt;p&gt;
@@ -2318,7 +2427,8 @@ teachers and as professionals. Rubber Duck debugging, code reading,
 incremental development etc.. What else? I&amp;#39;d love to hear any strategies others have used to help students along when
 dealing with errors. &lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt; 
 &lt;/figure&gt;
  &lt;/p&gt;
 </description>
@@ -2404,7 +2514,8 @@ has a &lt;strong&gt;div&lt;/strong&gt; as the root node with two children. the f
 &lt;strong&gt;h1&lt;/strong&gt; component (header 1) and the other is the ordered list -
 &lt;strong&gt;ol&lt;/strong&gt;. the ordered list the has three children, those three &lt;strong&gt;li&lt;/strong&gt;
 list item elements. &lt;/p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt;
+&lt;figure class=&#34;z_image_center&#34;&gt;
+    &lt;img src=&#34;https://cestlaz.github.io/img/html-tree.png&#34;/&gt; 
 &lt;/figure&gt;
 &lt;p&gt;
 In fact, you can explore this tree through your web browser. You can
@@ -2795,13 +2906,21 @@ summer, is critical to the process.&lt;/p&gt;
 Right now, you could place K12 CS teachers into one of the following
 buckets:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;People with strong CS backgrounds. CS Majors or people with
-industry experience.&lt;/li&gt;
-&lt;li&gt;Hobbyists who learned some CS on their own and developed an
-interest or passion for the subject.&lt;/li&gt;
-&lt;li&gt;Volunteers who are game for the challenge who heard about CS4All
-and answered the call.&lt;/li&gt;
-&lt;li&gt;Teachers who were voluntold who are taking one for the team.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People with strong CS backgrounds. CS Majors or people with
+industry experience.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hobbyists who learned some CS on their own and developed an
+interest or passion for the subject.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Volunteers who are game for the challenge who heard about CS4All
+and answered the call.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Teachers who were voluntold who are taking one for the team.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Most of the home-brew CS programs in the city started with teachers
@@ -2909,9 +3028,15 @@ This came up for me when I started at Hunter. One of my classes was
 and is a CS0. It was mostly an intro to programming in Python with a
 touch of C++ at the end but it also included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;binary/hex/ASCII&lt;/li&gt;
-&lt;li&gt;an intro to assembly&lt;/li&gt;
-&lt;li&gt;Truth tables and logic gates&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;binary/hex/ASCII&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;an intro to assembly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Truth tables and logic gates&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These topics were put in the class to prepare students for Hunters
 Systems/Architecture classes in the CS sequence. Classes they wouldn&amp;#39;t
@@ -3839,29 +3964,43 @@ experiences so there&amp;#39;s not reason for me to write much the same so I
 figured I&amp;#39;d just quickly list out a few of my highlights and in
 particular things I plan to write more about when I get back to NYC.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Language choice for APCS. There was a panel that considered why
+&lt;li&gt;
+&lt;p&gt;Language choice for APCS. There was a panel that considered why
 change to Python or why stick with Java. I didn&amp;#39;t attend this
 session but talked at length about it with a number of people. It
 had me reconsidering my opinions and I&amp;#39;ll certainly write about this
-in the near future.&lt;/li&gt;
-&lt;li&gt;I saw an interesting talk by Sam Lau in which he discussed how
+in the near future.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I saw an interesting talk by Sam Lau in which he discussed how
 statisticians and computer scientists differed in their views as to
 how and what should be taught in a data science course. This got me
-thinking about developing CS offerings at the high school level.&lt;/li&gt;
-&lt;li&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
+thinking about developing CS offerings at the high school level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I attended the &amp;#34;It seemed like a good idea at the time&amp;#34; session for
 the first time where teachers discussed their failures. This was a
 &lt;strong&gt;great&lt;/strong&gt; session hosted by two more friends I haven&amp;#39;t seen since
 pre-covid - Dan Garcia and Jim Huggins. One topic brought up there
 was dealing with late assignments as well as alternative
-grading. This too is something I plan to write about.&lt;/li&gt;
-&lt;li&gt;PD For CS Teachers and teacher prep programs. This is clearly
-something I care deeply about and there were some sessions on this.&lt;/li&gt;
-&lt;li&gt;I also spent a good amount of time catching up with my friends Jim
+grading. This too is something I plan to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PD For CS Teachers and teacher prep programs. This is clearly
+something I care deeply about and there were some sessions on this.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I also spent a good amount of time catching up with my friends Jim
 and Robin from Siena College. They&amp;#39;re doing some cool thing up there
-so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/li&gt;
-&lt;li&gt;I also had some good discussions with vendors in the exhibit hall as
-well as some great hallway tract talks.&lt;/li&gt;
-&lt;li&gt;My thoughts on the hybrid format of this conference&lt;/li&gt;
+so that&amp;#39;s another thing I&amp;#39;d like to write about.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I also had some good discussions with vendors in the exhibit hall as
+well as some great hallway tract talks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My thoughts on the hybrid format of this conference&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&amp;#39;s a big list - a lot of things to write about. I hope to get on
 this when I get back to NYC on Sunday.&lt;/p&gt;
@@ -4108,163 +4247,6 @@ teachers away from the profession.&lt;/p&gt;
 Will the powers that be ever learn? Probably not so for now it&amp;#39;s up to
 good supervisors to shield their teachers from the nonsense and I
 hope, in my capacity, when I&amp;#39;m able I can do the same.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>When is remote better</title>
-      <link>https://cestlaz.github.io/post/whats-better-remote/</link>
-      <pubDate>Fri, 28 Jan 2022 08:13:17 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/whats-better-remote/</guid>
-      <description>
-&lt;p&gt;
-With my first classes of the semester coming up on Monday I thought
-I&amp;#39;d write a bit about what worked better remote than in person. When I
-say better I mean specifically, worked better for me given my
-situation. I think they worked better for the class but I can&amp;#39;t say
-with any certainty given the length of the educational feedback loop
-and other factors.&lt;/p&gt;
-&lt;p&gt;
-My in person teaching situation is as follows. Last semester I taught
-2 in person classes (plus one remote). Both were in computer
-labs. Minimal distance between the kids. Everyone had to have set
-assigned seats and masks had to be on at all times. As the instructor,
-I was allowed to remove my mask but I never would.&lt;/p&gt;
-&lt;p&gt;
-So, here we go.&lt;/p&gt;
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-feeling safe
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-Big one. Remote felt safer. It doesn&amp;#39;t really matter if it was safer
-or not. This is a case of perception being reality. Since I felt less
-safe - particularly at the start of the year before the students were
-vaccinated, I can say for sure that I wasn&amp;#39;t as effective. If the
-students didn&amp;#39;t feel safe I&amp;#39;m sure their learning also took a hit.&lt;/p&gt;
-&lt;p&gt;
-For all the dings on remote teaching, we all felt safe.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-participation
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-In my personal opinion, my classes last semester went from what I hope
-were good classes to not so good lectures. Since students wore masks
-and don&amp;#39;t project their voices in any case, student participation was
-really tough. It would turn into asking students to repeat their
-answers multiple times and to project louder and louder. It didn&amp;#39;t
-help that windows had to be open and we&amp;#39;re in the heard of NYC with
-all the associated street noise.&lt;/p&gt;
-&lt;p&gt;
-Now, remote participation is no great shakes. It&amp;#39;s really easy for a
-student to just tune out but at least it was possible. Students could
-be called on or could volunteer and between the Zoom and our Zulip
-chat, there were far more opportunities for students to be involved.&lt;/p&gt;
-&lt;p&gt;
-Now, once we&amp;#39;re safe and mask free, in class will probably be better
-than remote for this but for now, I can&amp;#39;t say that it is.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-Group work
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-Group work in person was pretty much impossible. Even though there was
-little distancing between the students, they had to stay in their
-assigned locations. On Zoom we had breakout rooms and on our Zulip,
-group chats. In normal times, in person would blow away remote but
-something reasonable on zoom and zulip was far better than nothing in
-person.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
-Working with individuals / small groups
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-I also couldn&amp;#39;t really work well with individual students (or small
-groups if we were able to set them up). Online I could do a breakout
-visit or an individual or group chat. Again, something being better
-than nothing. The one place where in person was better is that, while
-it was limited, I could eaves drop on the kids - look over while they
-worked. It was limited because I didn&amp;#39;t want to get too close and also
-for the reasons cited above but it was something. Can&amp;#39;t do that with
-Zoom. Interestingly enough, Big Blue Button - an opensource Zoomalike
-does have an eavesdrop on breakout rooms feature as it&amp;#39;s made for
-teachers but last I checked the overall platform was not quite ready
-for prime time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-5&#34;&gt;
-Polls
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-Another big win for remote was the use of the Zulip chat. Emoji polls
-replicate the use of a clicker but with more power and flexibility and
-less overhead.&lt;/p&gt;
-&lt;p&gt;
-You can also give a question and have them all type a response but
-not hit  the &lt;strong&gt;enter&lt;/strong&gt; key. The can then all post at once. You can do
-similar things with hand signals in class but this is much more
-flexible and robust. Big win.
-.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-6&#34;&gt;
-Discussion of student work
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-Finally, the chat platform gave us the ability to discuss more
-student&amp;#39;s work. Typically, in class you can only look at one or two
-student solutions for a given problem but using the chat, you can
-stretch out the discussion. A typical strategy is to have  everyone
-post their initial answer/response/whatever and then over the course
-of time have each student comment on at least two other student
-posts. Yes, this has it&amp;#39;s kinks but it&amp;#39;s a nice way to get more
-students to look at more other student&amp;#39;s work.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-7&#34;&gt;
-Takeaways
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-At the beginning of last semester, I felt that we should have at least
-started online - particularly with the students potentially
-unvaccinated. Looking back, I think it would have been better
-overall.&lt;/p&gt;
-&lt;p&gt;
-Truthfully, the ideal would have been to do remote until students were
-vaccinated then allow professors to mix and match as best suits their
-classes.&lt;/p&gt;
-&lt;p&gt;
-If we ever get past this and back to regular old school in person
-classes, sure, that beats remote for instruction overall but remote
-does have it&amp;#39;s moments. On top of that, good remote can beat crippled
-in person and sometimes there are other good reasons for a remote
-option such as why I want my teacher prep program to remain online.&lt;/p&gt;
-&lt;p&gt;
-So, there it is. Where I think remote teaching outshone in person for
-me over the last year. As a college istructor I have more flexibility
-than a K12 teacher so can mix in remote practices that I feel work
-better. I&amp;#39;m hoping that over time those that set the K12 structure
-would make it similarly possible at that level.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
