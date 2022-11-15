@@ -18,8 +18,7 @@
       
       <guid>https://cestlaz.github.io/post/when-your-program-crashes/</guid>
       <description>&lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;
-    &lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt; 
+&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://neoteric.eu/wp-content/uploads/2017/06/It-doesnt-work-I-dont-know-why-1024x512.png&#34;/&gt;
 &lt;/figure&gt;
  &lt;/p&gt;
 &lt;p&gt;
@@ -113,8 +112,7 @@ teachers and as professionals. Rubber Duck debugging, code reading,
 incremental development etc.. What else? I&amp;#39;d love to hear any strategies others have used to help students along when
 dealing with errors. &lt;/p&gt;
 &lt;p&gt;
-&lt;figure class=&#34;z_image_center&#34;&gt;
-    &lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt; 
+&lt;figure class=&#34;z_image_center&#34;&gt;&lt;img src=&#34;https://i.pinimg.com/564x/7c/9c/c8/7c9cc8769af215e0b2ca689ac9408d1a.jpg&#34;/&gt;
 &lt;/figure&gt;
  &lt;/p&gt;
 </description>
@@ -155,15 +153,9 @@ craft.&lt;/p&gt;
 Whether one uses a debugger or print statements the questions are
 really: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;what problem is the student trying to solve - do they understand it?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;How are they solving it?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What specifically are they telling their program to do? &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;what problem is the student trying to solve - do they understand it?&lt;/li&gt;
+&lt;li&gt;How are they solving it?&lt;/li&gt;
+&lt;li&gt;What specifically are they telling their program to do? &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That last one is important. I always tell my students that &amp;#34;Computers
 are really bad at doing what you want them to do but they&amp;#39;re really
@@ -185,7 +177,7 @@ f(n-1) + f(n-2) &amp;amp; otherwise
 &lt;p&gt;
 This translates directly to code&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -206,7 +198,7 @@ arrays. I&amp;#39;ve seen all sorts of variations on the error so will only
 share one. Suppose the students are looking for the largest in a data
 set. I might see code like this:&lt;/p&gt;
 &lt;div class=&#34;src src-java&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;
   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -223,8 +215,7 @@ requirement is careful code tracing be it via tool, print statements
 or by hand. Here&amp;#39;s an example where a debugger can really shed some
 light for a beginner. This time in C++:&lt;/p&gt;
 &lt;div class=&#34;src src-c++&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 What causes the error isn&amp;#39;t important. What happens is that students
@@ -279,27 +270,13 @@ I&amp;#39;m going to be teaching a CS topics course as part of our teacher
 certification program this summer. I already have a lot of possible
 topics to choose form:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;WebDev via Flask&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;3D Graphics / transformations&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ray Tracing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Data mining&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Machine Learning&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NLP&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;and more&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;WebDev via Flask&lt;/li&gt;
+&lt;li&gt;3D Graphics / transformations&lt;/li&gt;
+&lt;li&gt;Ray Tracing&lt;/li&gt;
+&lt;li&gt;Data mining&lt;/li&gt;
+&lt;li&gt;Machine Learning&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;and more&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I had never quite grokked &lt;strong&gt;Blockchain&lt;/strong&gt; - specifically its use as a
 platform so I thought I&amp;#39;d see about that as a topic. I started
@@ -310,12 +287,8 @@ Traditional encryption requires a key to be used by both parties. This
 means that both parties can both encrypt and decrypt so they must
 trust each other. This leads to some issues:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Both parties have to share the key securely.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;All parties with the key can encrypt and decrypt. &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Both parties have to share the key securely.&lt;/li&gt;
+&lt;li&gt;All parties with the key can encrypt and decrypt. &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;On the other hand, public key encryption uses two keys. A public one
 that everyone has access to is used to encrypt data and a private one

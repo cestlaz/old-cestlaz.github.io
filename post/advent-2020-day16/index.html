@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667842004" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1668539590" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="Today&#39;s problem was a fun one to solve. Why was it fun? Stay tuned,
  The basic gist is that you have a plane ticket which is a set of numbers but you don&#39;t know which number maps to which category - row, seat, gate, etc. You also know the number ranges for each category. For example, row might be a number between 6 and 11 or 33 through 44 while a seat might be 13 through 40 or 45 through 50." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day16/" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2020-day16/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-12-16T17:12:56-04:00" />
 <meta property="article:modified_time" content="2020-12-16T17:12:56-04:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Teacher Looks at Advent of Code 2020 - day 16"/>
@@ -99,20 +100,12 @@ See the <a href="https://adventofcode.com/2020/day/16">full description</a> for 
 <p>
 First up - parsing - a little cumbersome but not too bad.</p>
 <ol>
-<li>
-<p>Split the input into the three main sections - categories, your
-ticket, nearby tickets</p>
-</li>
-<li>
-<p>Convert the categories into a usable form</p>
-</li>
-<li>
-<p>Convert your ticket into a list of numbers</p>
-</li>
-<li>
-<p>Convert the nearby tickets into a list of tickets each one being a
-list of numbers.</p>
-</li>
+<li>Split the input into the three main sections - categories, your
+ticket, nearby tickets</li>
+<li>Convert the categories into a usable form</li>
+<li>Convert your ticket into a list of numbers</li>
+<li>Convert the nearby tickets into a list of tickets each one being a
+list of numbers.</li>
 </ol>
 <p>Taking each step in turn and it&#39;s not too bad - particularly if you&#39;re
 comfortable with regular expressions.</p>
@@ -141,14 +134,14 @@ fond of.</p>
 <p>
 Instead of taking the above range and having some test like: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
   <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&gt;=</span> low1 <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> high1) <span style="color:#f92672">or</span> \
      (number <span style="color:#f92672">&gt;=</span> low2 <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> high2):
        do something</code></pre></div></p>
 <p>
 or specifically for the row example:</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> ticket:
   <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">11</span>) <span style="color:#f92672">or</span> \
      (number <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">33</span> <span style="color:#f92672">and</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">44</span>):
        do something</code></pre></div></p>
@@ -156,7 +149,7 @@ or specifically for the row example:</p>
 you could make a set with all the possible seats  and then just test
 to see if the seat was in the set: </p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r1 <span style="color:#f92672">=</span> set( range(low1,high<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r1 <span style="color:#f92672">=</span> set( range(low1,high<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
 r2 <span style="color:#f92672">=</span> set( range(low2,hight2<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
 valid_seats <span style="color:#f92672">=</span> r1<span style="color:#f92672">.</span>union(r2)
 
@@ -199,7 +192,7 @@ categories for each row.</p>
 <p>
 Part of it looked sort of like this (but in clojure):</p>
 <p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[ [<span style="color:#ae81ff">17</span>, [<span style="color:#e6db74">&#34;wagon&#34;</span>,<span style="color:#e6db74">&#34;arrival-station&#34;</span>] ],
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[ [<span style="color:#ae81ff">17</span>, [<span style="color:#e6db74">&#34;wagon&#34;</span>,<span style="color:#e6db74">&#34;arrival-station&#34;</span>] ],
   [<span style="color:#ae81ff">7</span>, [<span style="color:#e6db74">&#34;wagon&#34;</span>,<span style="color:#e6db74">&#34;arrival-station&#34;</span>,<span style="color:#e6db74">&#34;route&#34;</span>,<span style="color:#e6db74">&#34;train&#34;</span>,<span style="color:#e6db74">&#34;row&#34;</span>]]
 <span style="color:#f92672">...</span>
 ]</code></pre></div></p>
@@ -211,13 +204,9 @@ by plugging in the row we know, then the next one, then the next etc.</p>
 The explorations led to an easy answer. I sorted the list and looped
 through. At each iteration I: </p>
 <ol>
-<li>
-<p>Added the current category and its associated row to the solution
-set.</p>
-</li>
-<li>
-<p>Removed that category from the rest of the lines</p>
-</li>
+<li>Added the current category and its associated row to the solution
+set.</li>
+<li>Removed that category from the rest of the lines</li>
 </ol>
 <p>When done we had a dictionary with a mapping from category to
 row. From there it was pretty simple to find the part 2 answer.</p>

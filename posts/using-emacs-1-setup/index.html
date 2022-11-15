@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667842004" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1668539591" />
 
 
 
@@ -24,9 +24,10 @@
  Here&#39;s the contents of that file:
 (setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode))   The last two inituse-package clauses install two helpful packages:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-1-setup/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-1-setup/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-05-23T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-05-23T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - Setting up the Package Manager"/>
@@ -91,7 +92,7 @@ file within it named <strong>init.el</strong>.</p>
 <p>
 Here&#39;s the contents of that file:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(setq inhibit<span style="color:#f92672">-</span>startup<span style="color:#f92672">-</span>message t)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(setq inhibit<span style="color:#f92672">-</span>startup<span style="color:#f92672">-</span>message t)
 
 
 (require <span style="color:#e6db74">&#39;package)</span>
@@ -117,45 +118,21 @@ Here&#39;s the contents of that file:</p>
 <p>
 The last two <strong>inituse-package</strong> clauses install two helpful packages:</p>
 <ul>
-<li>
-<p><strong>try</strong>: let&#39;s you try packages without installing them.</p>
-</li>
-<li>
-<p><strong>which-key</strong>: brings up help on key combinations.</p>
-</li>
+<li><strong>try</strong>: let&#39;s you try packages without installing them.</li>
+<li><strong>which-key</strong>: brings up help on key combinations.</li>
 </ul>
 <p>Relavent links:</p>
 <ul>
-<li>
-<p>Video series overview page:</p>
-</li>
-<li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
-</li>
-<li>
-<p>Code for this video:</p>
-</li>
-<li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup">https://github.com/zamansky/using-emacs/tree/lesson-1-setup</a></a></p>
-</li>
-<li>
-<p>Complete code built up over all videos:</p>
-</li>
-<li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
-</li>
-<li>
-<p>Melpa and packages</p>
-</li>
-<li>
-<p><a href="http://melpa.org"><a href="http://melpa.org">http://melpa.org</a></a></p>
-</li>
-<li>
-<p><a href="https://github.com/justbur/emacs-which-key">which-key</a></p>
-</li>
-<li>
-<p><a href="https://github.com/larstvei/Try">try</a></p>
-</li>
+<li>Video series overview page:</li>
+<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
+<li>Code for this video:</li>
+<li><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup">https://github.com/zamansky/using-emacs/tree/lesson-1-setup</a></a></li>
+<li>Complete code built up over all videos:</li>
+<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
+<li>Melpa and packages</li>
+<li><a href="http://melpa.org"><a href="http://melpa.org">http://melpa.org</a></a></li>
+<li><a href="https://github.com/justbur/emacs-which-key">which-key</a></li>
+<li><a href="https://github.com/larstvei/Try">try</a></li>
 </ul>
 
         </div>

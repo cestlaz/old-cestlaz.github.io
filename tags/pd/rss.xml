@@ -136,24 +136,12 @@ might be something they got from a conference or an outside PD. We&amp;#39;d
 also have larger PD sessions a couple of times a year. Topics would be
 things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;How to use the graphing calculator to explore functions&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;History and math&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Math in your student&amp;#39;s worlds&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Exploring math competition problems&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;An introduction to some advanced or new math topic&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Motivating a lesson on something or other&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;How to use the graphing calculator to explore functions&lt;/li&gt;
+&lt;li&gt;History and math&lt;/li&gt;
+&lt;li&gt;Math in your student&amp;#39;s worlds&lt;/li&gt;
+&lt;li&gt;Exploring math competition problems&lt;/li&gt;
+&lt;li&gt;An introduction to some advanced or new math topic&lt;/li&gt;
+&lt;li&gt;Motivating a lesson on something or other&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Few of these were tied to a specific course and none were tied to a
 specific implementation or curriculum. There might be a special
@@ -373,7 +361,7 @@ the first scene of &amp;#34;Macbeth&amp;#34; - all thirteen lines of it.&lt;/p&g
 &lt;p&gt;
 It&amp;#39;s easy enough to read in the data in a language like Python:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cyrano.txt&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cyrano.txt&amp;#34;&lt;/span&gt;)
 raw_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 but if you&amp;#39;re using a bag of words you&amp;#39;ve got to do some cleaning.&lt;/p&gt;
@@ -390,12 +378,12 @@ and the fun begins.&lt;/p&gt;
 &lt;p&gt;
 First we had to turn everything into lower case;&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;lower_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; raw_data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;lower_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; raw_data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lower()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 and then the big part - we want to get rid of all the punctuation. We
 first tried something like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.:;&amp;#39;0123456789&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.:;&amp;#39;0123456789&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;cleaned_letters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; lower_data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; stuff_to_remove]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;cleaned_string &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(cleaned_letters)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -415,7 +403,7 @@ removal string.&lt;/p&gt;
 This led to take 2. Instead of deciding what to throw away, let&amp;#39;s
 decide what to keep;&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_keep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abcdefghijklmnopqrstuvwxyz &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\t\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;stuff_to_keep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abcdefghijklmnopqrstuvwxyz &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\t\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;cleaned_letters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; lower_data &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; stuff_to_remove]
 &lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;cleaned_string &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(cleaned_letters)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -437,7 +425,7 @@ that can make them think.&lt;/p&gt;
 Once we made our final cleaning decisions it&amp;#39;s a simple matter to
 convert the long string of text into a list of words:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;wordlist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cleaned_string&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;wordlist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cleaned_string&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Now we&amp;#39;re ready to start building our bag of words but that&amp;#39;s a post
 for another day.&lt;/p&gt;
@@ -640,24 +628,16 @@ something different a week later? Write it up. Rinse and repeat.&lt;/p&gt;
 &lt;p&gt;
 Why have I found writing a blog to be good self-PD?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Writing the experience or the lesson makes me think through it
-again. What worked, what didn&amp;#39;t.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;When I do a similar lesson in the future, I can look back on what I
-did. It helps in iterating towards becoming a better teacher.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
+&lt;li&gt;Writing the experience or the lesson makes me think through it
+again. What worked, what didn&amp;#39;t.&lt;/li&gt;
+&lt;li&gt;When I do a similar lesson in the future, I can look back on what I
+did. It helps in iterating towards becoming a better teacher.&lt;/li&gt;
+&lt;li&gt;I get to see how I&amp;#39;ve evolved as a teacher over time. You don&amp;#39;t get
 this immediately but blog for a few years and then reread some early
-posts. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
+posts. &lt;/li&gt;
+&lt;li&gt;You could get some comments. I don&amp;#39;t get a lot but the ones people
 have left have proven useful to me. Some of the ones from people who
-disagree have been the most useful.&lt;/p&gt;
-&lt;/li&gt;
+disagree have been the most useful.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;On top of this, some other new teacher might discover something you
 wrote up and find inspiration from it. &lt;/p&gt;
@@ -774,24 +754,12 @@ seventeen teachers.&lt;/p&gt;
 &lt;p&gt;
 The original agenda was:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;09:00 - 10:00 : Each school describes it&amp;#39;s program and courses&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10:00 - 11:45 : Sharing neat lessons&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;11:45 - 12:00 : Presentation by &lt;a href=&#34;http://chicktech.org&#34;&gt;ChickTech&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;12:00 - 01:00 : Lunch&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;01:00 - End   : Small group lesson and curriculum work&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;09:00 - 10:00 : Each school describes it&amp;#39;s program and courses&lt;/li&gt;
+&lt;li&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/li&gt;
+&lt;li&gt;10:00 - 11:45 : Sharing neat lessons&lt;/li&gt;
+&lt;li&gt;11:45 - 12:00 : Presentation by &lt;a href=&#34;http://chicktech.org&#34;&gt;ChickTech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;12:00 - 01:00 : Lunch&lt;/li&gt;
+&lt;li&gt;01:00 - End   : Small group lesson and curriculum work&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Oh boy did I mess up on the timing. The description and
 discussion of school programs took all morning. It was interesting to
@@ -856,24 +824,14 @@ I put up a starter &lt;a href=&#34;https://github.com/zamansky/awesome-cs-educat
 to get more people involved. Awesome lists have a number of advantages
 over other repositories.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Unlike blog posts, the site is easy to find.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unlike private mailing lists or Facebook, anyone can see the content.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Anyone can suggest additions (although you need to create a Github&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Unlike blog posts, the site is easy to find.&lt;/li&gt;
+&lt;li&gt;Unlike private mailing lists or Facebook, anyone can see the content.&lt;/li&gt;
+&lt;li&gt;Anyone can suggest additions (although you need to create a Github&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;account).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Anyone can download or fork the site.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It&amp;#39;s essentially plain text and is easy to edit (just read the&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Anyone can download or fork the site.&lt;/li&gt;
+&lt;li&gt;It&amp;#39;s essentially plain text and is easy to edit (just read the&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&#34;&gt;contribution guide&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;

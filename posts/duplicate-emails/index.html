@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667842004" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1668539591" />
 
 
 
@@ -24,9 +24,10 @@
  We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.
  The kids signed up on a Google doc but we all know the story – when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/duplicate-emails/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/duplicate-emails/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-05-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-05-12T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="REPOST - Shell games - who confirmed attendance"/>
@@ -179,19 +180,19 @@ If we put these lists together, any email that appears twice would
 indicate that it&#39;s the email of someone that confirmed entry. Here we
 use cat to catenate e1 and e2 and pipe them through sort.</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | sort</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | sort</code></pre></div>
 </div>
 <p>
 First problem –the upper case F – let&#39;s use <strong><strong>tr</strong></strong> to make
 everything lower case:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 |  tr A-Z a-z | sort</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 |  tr A-Z a-z | sort</code></pre></div>
 </div>
 <p>
 Now we can see the duplicates next to each other. Next, <strong><strong>uniq
 -c</strong></strong> tells us how many times each line appears:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-Z a-z | sort | uniq -c | sort</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-Z a-z | sort | uniq -c | sort</code></pre></div>
 </div>
 <p>
 I added the sort at the end, but we didn&#39;t need it.</p>
@@ -213,13 +214,13 @@ To pull out the ones that haven&#39;t replied I used egrep with a regex
 that means &#34;any line that starts with 1 or more spaces followed by the
 number 1&#34;:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep <span style="color:#e6db74">&#34;^ +1&#34;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep <span style="color:#e6db74">&#34;^ +1&#34;</span></code></pre></div>
 </div>
 <p>
 and finally to isolate the emails using sed which removes the spaces
 and number 1 from the beginning of the line:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep <span style="color:#e6db74">&#34;^ +1&#34;</span> | sed <span style="color:#e6db74">&#34;s/\ \+1 //g&#34;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep <span style="color:#e6db74">&#34;^ +1&#34;</span> | sed <span style="color:#e6db74">&#34;s/\ \+1 //g&#34;</span></code></pre></div>
 </div>
 <p>
 Each of the little utilities aren&#39;t all too useful by themselves but

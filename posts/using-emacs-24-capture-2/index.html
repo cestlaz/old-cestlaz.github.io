@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1667842004" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1668539591" />
 
 
 
@@ -22,9 +22,10 @@
 <meta property="og:description" content="Not much in today&#39;s actual post. The video is a continuation of the last one on org-capture.
  The video goes over how I set things up to pop up a new frame to do a capture even if emacs isn&#39;t on screen (as long as it&#39;s running) by hitting F1. I would have preferred to bind to C-c c - the same as within emacs but I havn&#39;t figured out how to do that in Ubuntu or Mint Linux yet." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-24-capture-2/" />
+<meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-24-capture-2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-12-03T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-12-03T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 24 - Org Capture 2"/>
@@ -92,7 +93,7 @@ lifting. I can&#39;t for th elife of me remember who&#39;s blog I found it
 on. If anyone knows, please leave a comment - I&#39;d like to give credit
 where credit&#39;s due:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defadvice org-capture-finalize
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(defadvice org-capture-finalize
 (after delete-capture-frame activate)
 <span style="color:#e6db74">&#34;Advise capture-finalize to close the frame&#34;</span>
 (if (<span style="color:#a6e22e">equal</span> <span style="color:#e6db74">&#34;capture&#34;</span> (<span style="color:#a6e22e">frame-parameter</span> <span style="color:#66d9ef">nil</span> <span style="color:#e6db74">&#39;name</span>))
@@ -118,7 +119,7 @@ where credit&#39;s due:</p>
 <p>
 The command I bind to the keyboard shortcut in my window manager:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">emacsclient -ne <span style="color:#e6db74">&#34;(make-capture-frame)&#34;</span></code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">emacsclient -ne <span style="color:#e6db74">&#34;(make-capture-frame)&#34;</span></code></pre></div></code></pre></div>
 </div>
 <p>
 There will be a third capture video in a few weeks where I&#39;ll talk
@@ -129,18 +130,10 @@ with before making that video.</p>
 <p>
 Relevant links:</p>
 <ul>
-<li>
-<p>Video series overview page:</p>
-</li>
-<li>
-<p><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></p>
-</li>
-<li>
-<p>Code:</p>
-</li>
-<li>
-<p><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></p>
-</li>
+<li>Video series overview page:</li>
+<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
+<li>Code:</li>
+<li><a href="https://github.com/zamansky/using-emacs/tree/master"><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a></a></li>
 </ul>
 
         </div>
