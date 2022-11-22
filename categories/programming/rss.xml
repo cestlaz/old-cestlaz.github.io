@@ -6,10 +6,110 @@
     <description>C&#39;est la Z (Programming)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Sep 2022 15:05:19 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Nov 2022 17:34:28 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Learning a new language - part 1 - functional</title>
+      <link>https://cestlaz.github.io/post/learn-new-language/</link>
+      <pubDate>Mon, 21 Nov 2022 17:34:28 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/learn-new-language/</guid>
+      <description>&lt;p&gt;
+Now that I&amp;#39;ve done posting about &lt;a href=&#34;https://cestlaz.github.io/post/retiring-1-why/&#34;&gt;why I&amp;#39;m retiring&lt;/a&gt; we can get back to
+our usual blogging.&lt;/p&gt;
+&lt;p&gt;
+I haven&amp;#39;t really done anything technical over the past couple of
+year. The most programming I did in the past 18 months was a
+halfhearted effort at the Advent of Code 2021 event last December. I
+thought I&amp;#39;d see about picking up a new language to change that. In
+doing so, I was reminded of some of my resistances to learning a new
+language and how I&amp;#39;ve seen similar from self taught students coming
+into my classes.&lt;/p&gt;
+&lt;p&gt;
+Of course my situation is different - I&amp;#39;m doing this wholly by choice
+and once a student is in a class they&amp;#39;ve got to use the prescribed
+tool.&lt;/p&gt;
+&lt;p&gt;
+The contenders on the functional side were Haskell and OCaml and on the
+other side, mostly Rust.&lt;/p&gt;
+&lt;p&gt;
+Today, we&amp;#39;ll talk about the functional side. I decided to look at
+OCaml. I had briefly looked at it well over a decade ago but barely
+scratched the surface. Haskell I played with a little more deeply but
+not much. I decided on OCaml because it was supposed to be more real
+world and, to be honest, I get turned off by some of the holier than
+though purely functional talk that sometimes occurs.&lt;/p&gt;
+&lt;p&gt;
+Funny thing is that I&amp;#39;ve had a really hard time getting going - so
+much so that I decided that for now I&amp;#39;d explore Rust.&lt;/p&gt;
+&lt;p&gt;
+So, what&amp;#39;s going on?&lt;/p&gt;
+&lt;p&gt;
+OCaml looks to have some nice features. It&amp;#39;s functional and I&amp;#39;m a fan
+there and it&amp;#39;s also supposed to be pragmatic - you can get real world
+stuff done with it. It&amp;#39;s also statically typed which overall I think
+is a good thing and it has cool features like pattern matching.&lt;/p&gt;
+&lt;p&gt;
+For pattern matching, I&amp;#39;m not talking about things like regex or
+matching characters in a string but rather something like a really
+cool and powerful case or switch statement. Even that description,
+though is not doing it justice.&lt;/p&gt;
+&lt;p&gt;
+I think my problem is that I already am comfortable and enjoy
+programming in Clojure. Clojure is functional and pragmatic but while
+Clojure doesn&amp;#39;t have pattern matching built in but there is a library
+that basically accomplishes the same thing. As to the type system,
+Clojure is dynamically typed and while that would be an issue if I
+were working on large real projects and/or on a team, I&amp;#39;m just writing
+little toys by myself. If I want stronger typing, there are ways of
+doing that in Clojure. True, it&amp;#39;s not required but working by myself,
+I have that option, should I choose. It&amp;#39;s not the same - I know but as
+I said, I&amp;#39;m not doing anything big, important or with other people
+right now.&lt;/p&gt;
+&lt;p&gt;
+So, basically, every time I try to dive in to OCaml, I end up feeling
+that &amp;#34;I can already do that and do it better in Clojure.&amp;#34; I&amp;#39;m guessing
+I&amp;#39;d feel the reverse had I started on the OCaml side. &lt;/p&gt;
+&lt;p&gt;
+This has happened to me before. I was an early Python adopter feeling
+that it was a huge improvement over Perl. A while later, Ruby came out
+and shortly after that, Ruby on Rails became a thing. Every time I
+looked into Ruby I had to stop - I could already do and do better in
+Python. By then, there were enough tools to compete with Rails even
+though they weren&amp;#39;t as mainstream and overall I preferred Python. I
+never did end up learning Ruby.&lt;/p&gt;
+&lt;p&gt;
+I felt a similar sluggishness when I went from C++ to Java - something
+I had to do because of the AP Exam change but I pushed through since I
+had to teach it and ultimately, I&amp;#39;ve learned to appreciate the good
+and curse the bad of both languages.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve seen similar blocks or resistance from who&amp;#39;ve had prior
+programming experiences over the years. From students who seemed
+to be taught more &amp;#34;the language&amp;#34; rather than CS using the language. I
+know that&amp;#39;s a nebulous thing to say but I think some of you will catch
+my drift. It&amp;#39;s subtleties like saying &amp;#34;okay, we&amp;#39;re repeating this
+process, here&amp;#39;s how we do it in language such and such&amp;#34; vs &amp;#34;here&amp;#39;s how
+we repeat this process period&amp;#34; and show the language construct.&lt;/p&gt;
+&lt;p&gt;
+My former math chairman at Stuy said he once, back in the 80s asked Marvin
+Minsky what they should be teaching for CS in High School. Minsky
+said, and I paraphrase, &amp;#34;nothing, you&amp;#39;ll only mess them up. At most
+teach them to type.&amp;#34; Of course that was a different time and I
+&lt;strong&gt;strongly&lt;/strong&gt; disagree with that statement but I do think we have to look
+at how students entering our classes are or are not prepared and
+adjust accordingly. &lt;/p&gt;
+&lt;p&gt;
+So, in the end, it&amp;#39;s back to Clojure for me on the functional side and
+I&amp;#39;ll try to do an OCaml dive sometime in the future.&lt;/p&gt;
+&lt;p&gt;
+Fortunately, I&amp;#39;m having an easier time getting in to Rust. More about
+that next time.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Subtle Errors</title>
