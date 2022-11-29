@@ -55,7 +55,7 @@ than like C++ or Java so that&amp;#39;s a plus.&lt;/p&gt;
 &lt;p&gt;
 Another big potential positive is Rust&amp;#39;s concept of ownership. An
 informal way of thinking about it is that it&amp;#39;s how Rust deifnes what
-can access memory. In Rust,  if you have code like this (lifted frmo
+can access memory. In Rust,  if you have code like this (lifted from
 the Rust Book):&lt;/p&gt;
 &lt;div class=&#34;src src-rust&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; String::from(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;);
@@ -81,7 +81,7 @@ A strong alternative at least in terms of using. For teaching, that&amp;#39;s
 another story. For me, learning hasn&amp;#39;t been a problem since I&amp;#39;ve been
 around the block a few times but I could see the language being a
 challenge for beginners. Lot&amp;#39;s of cognitive overhead for the ownership
-ting as well as general scope rules and the way mutability works. I
+thing as well as general scope rules and the way mutability works. I
 think all these features are great for the language but I suspect that
 it wouldn&amp;#39;t fly very well in a CS0 course.&lt;/p&gt;
 &lt;p&gt;
