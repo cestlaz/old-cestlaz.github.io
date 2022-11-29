@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Learning a new language - part 2 - Rust - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1669735247" />
+
+
+
+<meta property="og:title" content="Learning a new language - part 2 - Rust" />
+<meta property="og:description" content="Last time, I wrote about frustrations in trying to motivate myself to learn ocaml. I could see the strong points but given that I&#39;ve been using Clojure now for a while, it didn&#39;t really hold any value added for me in my current situation.
+ Next, I thought I&#39;d explore Rust. On the non-functional style, my go to languages have always been Python for scripting and small things and C professionally." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/learn-new-language-2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-29T08:59:11-04:00" />
+<meta property="article:modified_time" content="2022-11-29T08:59:11-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learning a new language - part 2 - Rust"/>
+<meta name="twitter:description" content="Last time, I wrote about frustrations in trying to motivate myself to learn ocaml. I could see the strong points but given that I&#39;ve been using Clojure now for a while, it didn&#39;t really hold any value added for me in my current situation.
+ Next, I thought I&#39;d explore Rust. On the non-functional style, my go to languages have always been Python for scripting and small things and C professionally."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Learning a new language - part 2 - Rust</h1>
+        </header>
+        <div class="content">
+            <p>
+Last time, I wrote about frustrations in trying to <a href="/post/learn-new-language/">motivate myself to
+learn ocaml</a>. I could see the strong points but given that I&#39;ve been
+using Clojure now for a while, it didn&#39;t really hold any value added
+for me in my current situation.</p>
+<p>
+Next, I thought I&#39;d explore Rust. On the non-functional style, my go to
+languages have always been Python for scripting and small things and C
+professionally. I also used and taught C++ and Java. I always loved
+C&#39;s minimalism but it was pretty bare bones and Java and C++ while
+more modern both also have their warts so it made sense to see if
+there was a language I&#39;d like to use instead of any of those three.</p>
+<p>
+A number of years ago, I decided to explore Go for this. Go had some
+nice features. It didn&#39;t do a full blown object oriented thing but
+rather a more lightweight way of defining structures and binding
+functionality to structures. I guess like interfaces. Since I&#39;m not a
+big OOP person but did like the occasional object abstraction this was
+great. I also loved goroutines for concurrency. On the other hand, I
+didn&#39;t like the lack of functional goodness so ultimately I stopped
+pursuing Go.</p>
+<p>
+This time, it was Rust&#39;s turn. Here&#39;s a list of a few of the things
+that drew me to Rust:</p>
+<ul>
+<li>Good learning resources</li>
+<li>Good dev experience under Emacs</li>
+<li>Static typing</li>
+<li>immutable by default</li>
+<li>Supports the other functional goodness that I like</li>
+</ul>
+<p>I just started playing and so far I like it. In addition to the above
+I&#39;m also seeing some other positives. It has pattern matching which I
+mentioned in my previous post and the object model looks more like Go
+than like C++ or Java so that&#39;s a plus.</p>
+<p>
+Another big potential positive is Rust&#39;s concept of ownership. An
+informal way of thinking about it is that it&#39;s how Rust deifnes what
+can access memory. In Rust,  if you have code like this (lifted frmo
+the Rust Book):</p>
+<div class="src src-rust">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> s1 <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;hello&#34;</span>);
+    <span style="color:#66d9ef">let</span> s2 <span style="color:#f92672">=</span> s1;
+
+    println!(<span style="color:#e6db74">&#34;{}, world!&#34;</span>, s1);</code></pre></div>
+</div>
+<p>
+you&#39;ll get an error. Once you assign s1 to s2 then s2 owns the memory
+with the string &#34;hello&#34; so when you try to access it, you get an
+error. Of course, Rust has ways of dealing with this including 
+explicitly declared mutability and references and maybe other things I
+haven&#39;t gotten to yet so it isn&#39;t really a problem. I can also see it
+as being a really strong way of encouraging the writing of safe
+programs.</p>
+<p>
+I&#39;m pretty early on in the journey - I though I might try Advent of
+code this year in Rust but I don&#39;t think I&#39;ll be sufficiently up to
+speed on it yet but we&#39;ll see. In any event, it seems to be a very
+cool language and a strong C++ or Java alternative.</p>
+<p>
+A strong alternative at least in terms of using. For teaching, that&#39;s
+another story. For me, learning hasn&#39;t been a problem since I&#39;ve been
+around the block a few times but I could see the language being a
+challenge for beginners. Lot&#39;s of cognitive overhead for the ownership
+ting as well as general scope rules and the way mutability works. I
+think all these features are great for the language but I suspect that
+it wouldn&#39;t fly very well in a CS0 course.</p>
+<p>
+So, I&#39;m feeling that Rust&#39;s a go and I look forward to continuing to
+explore the language. If you want to check it out, start here:
+<a href="https://www.rust-lang.org/"><a href="https://www.rust-lang.org/">https://www.rust-lang.org/</a></a>.</p>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2022-11-29</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/programming%20languages">programming languages</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming-languages">#programming languages</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming">#programming</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2022<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

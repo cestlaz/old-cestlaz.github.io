@@ -6,10 +6,90 @@
     <description>C&#39;est la Z (programming)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Sep 2022 15:05:19 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2022 08:59:11 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/programming/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Learning a new language - part 2 - Rust</title>
+      <link>https://cestlaz.github.io/post/learn-new-language-2/</link>
+      <pubDate>Tue, 29 Nov 2022 08:59:11 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/learn-new-language-2/</guid>
+      <description>&lt;p&gt;
+Last time, I wrote about frustrations in trying to &lt;a href=&#34;https://cestlaz.github.io/post/learn-new-language/&#34;&gt;motivate myself to
+learn ocaml&lt;/a&gt;. I could see the strong points but given that I&amp;#39;ve been
+using Clojure now for a while, it didn&amp;#39;t really hold any value added
+for me in my current situation.&lt;/p&gt;
+&lt;p&gt;
+Next, I thought I&amp;#39;d explore Rust. On the non-functional style, my go to
+languages have always been Python for scripting and small things and C
+professionally. I also used and taught C++ and Java. I always loved
+C&amp;#39;s minimalism but it was pretty bare bones and Java and C++ while
+more modern both also have their warts so it made sense to see if
+there was a language I&amp;#39;d like to use instead of any of those three.&lt;/p&gt;
+&lt;p&gt;
+A number of years ago, I decided to explore Go for this. Go had some
+nice features. It didn&amp;#39;t do a full blown object oriented thing but
+rather a more lightweight way of defining structures and binding
+functionality to structures. I guess like interfaces. Since I&amp;#39;m not a
+big OOP person but did like the occasional object abstraction this was
+great. I also loved goroutines for concurrency. On the other hand, I
+didn&amp;#39;t like the lack of functional goodness so ultimately I stopped
+pursuing Go.&lt;/p&gt;
+&lt;p&gt;
+This time, it was Rust&amp;#39;s turn. Here&amp;#39;s a list of a few of the things
+that drew me to Rust:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Good learning resources&lt;/li&gt;
+&lt;li&gt;Good dev experience under Emacs&lt;/li&gt;
+&lt;li&gt;Static typing&lt;/li&gt;
+&lt;li&gt;immutable by default&lt;/li&gt;
+&lt;li&gt;Supports the other functional goodness that I like&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I just started playing and so far I like it. In addition to the above
+I&amp;#39;m also seeing some other positives. It has pattern matching which I
+mentioned in my previous post and the object model looks more like Go
+than like C++ or Java so that&amp;#39;s a plus.&lt;/p&gt;
+&lt;p&gt;
+Another big potential positive is Rust&amp;#39;s concept of ownership. An
+informal way of thinking about it is that it&amp;#39;s how Rust deifnes what
+can access memory. In Rust,  if you have code like this (lifted frmo
+the Rust Book):&lt;/p&gt;
+&lt;div class=&#34;src src-rust&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; String::from(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;);
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; s2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s1;
+
+    println!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{}, world!&amp;#34;&lt;/span&gt;, s1);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+you&amp;#39;ll get an error. Once you assign s1 to s2 then s2 owns the memory
+with the string &amp;#34;hello&amp;#34; so when you try to access it, you get an
+error. Of course, Rust has ways of dealing with this including 
+explicitly declared mutability and references and maybe other things I
+haven&amp;#39;t gotten to yet so it isn&amp;#39;t really a problem. I can also see it
+as being a really strong way of encouraging the writing of safe
+programs.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m pretty early on in the journey - I though I might try Advent of
+code this year in Rust but I don&amp;#39;t think I&amp;#39;ll be sufficiently up to
+speed on it yet but we&amp;#39;ll see. In any event, it seems to be a very
+cool language and a strong C++ or Java alternative.&lt;/p&gt;
+&lt;p&gt;
+A strong alternative at least in terms of using. For teaching, that&amp;#39;s
+another story. For me, learning hasn&amp;#39;t been a problem since I&amp;#39;ve been
+around the block a few times but I could see the language being a
+challenge for beginners. Lot&amp;#39;s of cognitive overhead for the ownership
+ting as well as general scope rules and the way mutability works. I
+think all these features are great for the language but I suspect that
+it wouldn&amp;#39;t fly very well in a CS0 course.&lt;/p&gt;
+&lt;p&gt;
+So, I&amp;#39;m feeling that Rust&amp;#39;s a go and I look forward to continuing to
+explore the language. If you want to check it out, start here:
+&lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;&lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;https://www.rust-lang.org/&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Subtle Errors</title>
