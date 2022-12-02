@@ -6,10 +6,307 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Dec 2021 13:28:28 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 02 Dec 2022 13:59:06 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent of Code 2022</title>
+      <link>https://cestlaz.github.io/post/advent-2022-day01-01/</link>
+      <pubDate>Fri, 02 Dec 2022 13:59:06 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2022-day01-01/</guid>
+      <description>
+&lt;p&gt;
+It&amp;#39;s &lt;a href=&#34;https://adventofcode.com/&#34;&gt;Advent of Code&lt;/a&gt; season again. Every day a new two part programming
+challenge and once again I&amp;#39;m taking part. At least until grading and
+other end of term obligations end up eating my lunch.&lt;/p&gt;
+&lt;p&gt;
+I wasn&amp;#39;t planning on writing anything up but the first two days looked
+like nice problems for CS1 or even CS0 students and since my friend
+Steve was &lt;a href=&#34;https://github.com/scerruti/AoC2022&#34;&gt;writing up&lt;/a&gt; his take, I thought I&amp;#39;d at least comment on the
+first two.&lt;/p&gt;
+&lt;p&gt;
+I also recorded a code through in Clojure which you can find at the
+bottom of this post.&lt;/p&gt;
+&lt;p&gt;
+Even though I&amp;#39;m using Clojure, a similar approach can be taken in
+languages like Python or Javascript. If you enjoy this type of
+analysis please read Steve&amp;#39;s &lt;a href=&#34;https://github.com/scerruti/AoC2022&#34;&gt;posts&lt;/a&gt;. His approach is usually different
+from mine as he&amp;#39;s working in Java and so is more OOP centric. I love
+it when you can think about problems in different ways.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Day 1 - Calorie Counting
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Problem link: &lt;a href=&#34;https://adventofcode.com/2022/day/1&#34;&gt;&lt;a href=&#34;https://adventofcode.com/2022/day/1&#34;&gt;https://adventofcode.com/2022/day/1&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+Here the input was lines of numbers with an extra blank linke
+separating sets of inputs:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000
+&lt;/pre&gt;
+&lt;p&gt;
+Here, the first three numbers (1000,2000,3000) represent what the
+first elf is carrying, 4000 the second elf, 5000, and 6000 the third,
+etc..&lt;/p&gt;
+&lt;p&gt;
+The challenge was to figure out which elf carried the most.&lt;/p&gt;
+&lt;p&gt;
+A first year student might read a line at a time building a
+sum. Whenever you see a blank line, see if that&amp;#39;s your largest sum so farand
+if so, make a not of it.&lt;/p&gt;
+&lt;p&gt;
+In Python:&lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;sum = 0
+bigsum  = 0
+for line in open(&amp;#34;../data/day01.dat&amp;#34;).readlines():
+    if line == &amp;#34;\n&amp;#34;:
+        if sum &amp;gt; bigsum:
+            bigsum = sum
+        sum = 0
+        continue
+    sum = sum + int(line)
+
+print(bigsum)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Another approach, the one I used, was to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Convert the input lines into a list by splitting on double newlines&lt;/li&gt;
+&lt;li&gt;Convert each list item into a list of numbers&lt;/li&gt;
+&lt;li&gt;Sum each list&lt;/li&gt;
+&lt;li&gt;Find the largest&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The video below shows this in Clojure, but in Python it might look
+like this:   &lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;input = open(&amp;#34;../data/day01.dat&amp;#34;).read().strip().split(&amp;#34;\n\n&amp;#34;)
+input = [x.split(&amp;#34;\n&amp;#34;) for x in input]
+int_input = [ [int(x) for x in sublist] for sublist in input]
+sums = [ sum(x) for x in int_input]
+max(sums)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The nice thing here from the teaching point of view is that these
+represent two very different approaches and there are probably more.&lt;/p&gt;
+&lt;p&gt;
+For part 2 you just had to add up the three largest elf loads. If you
+used the second approach, instead of finding the largest number, you
+can just sort the list and add up the biggest three.&lt;/p&gt;
+&lt;p&gt;
+The code for all of this in Clojure can be found &lt;a href=&#34;https://github.com/zamansky/advent2022/blob/main/src/day01.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Day 2 - Rock Paper Scissors
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Day 2 was a rock paper scissors problem. Input was a list of &amp;#34;moves:&amp;#34;&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+A Y
+B X
+C Z
+&lt;/pre&gt;
+&lt;p&gt;
+The above says that in move 1, your opponent played &amp;#34;A&amp;#34; and you played
+&amp;#34;Y,&amp;#34; in move two, your opponent &amp;#34;B&amp;#34; and you &amp;#34;X,&amp;#34; etc.&lt;/p&gt;
+&lt;p&gt;
+The moves meant:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Opponent Letter&lt;/th&gt;
+&lt;th&gt;Your letter&lt;/th&gt;
+&lt;th&gt;Means&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;Rock&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Paper&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;Scissors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+Each turned was scored as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;Points&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;You win&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;You tie&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;You lose&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+Your score for a turn was the results points plus a 1 if you played
+Rock, 2 if you played Paper, and 3 if you played Scissors.&lt;/p&gt;
+&lt;p&gt;
+The part 1 solution had you tracing through a game and figuring out
+the score.&lt;/p&gt;
+&lt;p&gt;
+What&amp;#39;s nice about this problem is that it can be solved by a very raw
+beginner with a not too long set of if statements.&lt;/p&gt;
+&lt;p&gt;
+You can also, however, look at more interesting approaches. &lt;/p&gt;
+&lt;p&gt;
+First, a student might notice that the moves are &amp;#34;in order&amp;#34; in that
+each letter, or move, loses to the one after it. That is, Rock loses
+to Paper, Paper loses to scissors, and wrapping around, scissors loses
+to rock.&lt;/p&gt;
+&lt;p&gt;
+Then, they might see that they can assign a numeric value to each
+move:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Opponent Letter&lt;/th&gt;
+&lt;th&gt;Your letter&lt;/th&gt;
+&lt;th&gt;Means&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;Rock&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Paper&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;Scissors&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+Finally, they might notice that if they find the difference between
+your move and your opponent&amp;#39;s move, you&amp;#39;ll get:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;align-right&#34;&gt;Difference&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;tie - same move&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;You win - you&amp;#39;re the &amp;#34;next&amp;#34; move&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;2&lt;/td&gt;
+&lt;td&gt;You lose&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+You can also either deal with mod to wrap around or you can put in a
+couple of negative values for the difference on your chart.&lt;/p&gt;
+&lt;p&gt;
+For part 1, my solution basically did what I just described. Make a
+look up table to map the letters to values, find the difference, then
+look up the points awarded from another look up table.&lt;/p&gt;
+&lt;p&gt;
+The Clojure code can be found &lt;a href=&#34;https://github.com/zamansky/advent2022/blob/main/src/day02.clj&#34;&gt;here&lt;/a&gt; and the video is embedded below.&lt;/p&gt;
+&lt;p&gt;
+For part 2, things were a bit tricker but also more interesting. Now,
+your &amp;#34;move&amp;#34; of X,Y, or Z didn&amp;#39;t mean Rock, Paper or Scissors. The
+letters now said that depending on your letter you had to select a
+move so that you would either win, lose or draw based on this table:&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Your letter&lt;/td&gt;
+&lt;td&gt;Choose a move that results in&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;You losing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;A tie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;You win&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+This part was a reduction - look at your letter and figure out what to
+replace it with - A, B, or C based on the above chart and then just do
+what you did in part 1.&lt;/p&gt;
+&lt;p&gt;
+Here, we notice that we tie if we choose the same move as our
+opponent, we win if we choose the &amp;#34;next&amp;#34; move and we loose if we
+choose the move that&amp;#39;s two away (mod 3 to deal with the wraparound.&lt;/p&gt;
+&lt;p&gt;
+The clojure code also &lt;a href=&#34;https://github.com/zamansky/advent2022/blob/main/src/day02.clj&#34;&gt;here&lt;/a&gt; and the walkthrough below.&lt;/p&gt;
+&lt;p&gt;
+Hope you all enjoyed this.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/80so4H3mSCM&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Transparent Origami - Advent 2021 Day 13</title>

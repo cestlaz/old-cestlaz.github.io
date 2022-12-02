@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Advent of Code 2022 - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1670014134" />
+
+
+
+<meta property="og:title" content="Advent of Code 2022" />
+<meta property="og:description" content="It&#39;s Advent of Code season again. Every day a new two part programming challenge and once again I&#39;m taking part. At least until grading and other end of term obligations end up eating my lunch.
+ I wasn&#39;t planning on writing anything up but the first two days looked like nice problems for CS1 or even CS0 students and since my friend Steve was writing up his take, I thought I&#39;d at least comment on the first two." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2022-day01-01/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-02T13:59:06-04:00" />
+<meta property="article:modified_time" content="2022-12-02T13:59:06-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent of Code 2022"/>
+<meta name="twitter:description" content="It&#39;s Advent of Code season again. Every day a new two part programming challenge and once again I&#39;m taking part. At least until grading and other end of term obligations end up eating my lunch.
+ I wasn&#39;t planning on writing anything up but the first two days looked like nice problems for CS1 or even CS0 students and since my friend Steve was writing up his take, I thought I&#39;d at least comment on the first two."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Advent of Code 2022</h1>
+        </header>
+        <div class="content">
+            
+<p>
+It&#39;s <a href="https://adventofcode.com/">Advent of Code</a> season again. Every day a new two part programming
+challenge and once again I&#39;m taking part. At least until grading and
+other end of term obligations end up eating my lunch.</p>
+<p>
+I wasn&#39;t planning on writing anything up but the first two days looked
+like nice problems for CS1 or even CS0 students and since my friend
+Steve was <a href="https://github.com/scerruti/AoC2022">writing up</a> his take, I thought I&#39;d at least comment on the
+first two.</p>
+<p>
+I also recorded a code through in Clojure which you can find at the
+bottom of this post.</p>
+<p>
+Even though I&#39;m using Clojure, a similar approach can be taken in
+languages like Python or Javascript. If you enjoy this type of
+analysis please read Steve&#39;s <a href="https://github.com/scerruti/AoC2022">posts</a>. His approach is usually different
+from mine as he&#39;s working in Java and so is more OOP centric. I love
+it when you can think about problems in different ways.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Day 1 - Calorie Counting
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+Problem link: <a href="https://adventofcode.com/2022/day/1"><a href="https://adventofcode.com/2022/day/1">https://adventofcode.com/2022/day/1</a></a></p>
+<p>
+Here the input was lines of numbers with an extra blank linke
+separating sets of inputs:</p>
+<pre class="example">
+1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000
+</pre>
+<p>
+Here, the first three numbers (1000,2000,3000) represent what the
+first elf is carrying, 4000 the second elf, 5000, and 6000 the third,
+etc..</p>
+<p>
+The challenge was to figure out which elf carried the most.</p>
+<p>
+A first year student might read a line at a time building a
+sum. Whenever you see a blank line, see if that&#39;s your largest sum so farand
+if so, make a not of it.</p>
+<p>
+In Python:</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">sum = 0
+bigsum  = 0
+for line in open(&#34;../data/day01.dat&#34;).readlines():
+    if line == &#34;\n&#34;:
+        if sum &gt; bigsum:
+            bigsum = sum
+        sum = 0
+        continue
+    sum = sum + int(line)
+
+print(bigsum)</code></pre></div>
+</div>
+<p>
+Another approach, the one I used, was to:</p>
+<ol>
+<li>Convert the input lines into a list by splitting on double newlines</li>
+<li>Convert each list item into a list of numbers</li>
+<li>Sum each list</li>
+<li>Find the largest</li>
+</ol>
+<p>The video below shows this in Clojure, but in Python it might look
+like this:   </p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">input = open(&#34;../data/day01.dat&#34;).read().strip().split(&#34;\n\n&#34;)
+input = [x.split(&#34;\n&#34;) for x in input]
+int_input = [ [int(x) for x in sublist] for sublist in input]
+sums = [ sum(x) for x in int_input]
+max(sums)</code></pre></div>
+</div>
+<p>
+The nice thing here from the teaching point of view is that these
+represent two very different approaches and there are probably more.</p>
+<p>
+For part 2 you just had to add up the three largest elf loads. If you
+used the second approach, instead of finding the largest number, you
+can just sort the list and add up the biggest three.</p>
+<p>
+The code for all of this in Clojure can be found <a href="https://github.com/zamansky/advent2022/blob/main/src/day01.clj">here</a>.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Day 2 - Rock Paper Scissors
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+Day 2 was a rock paper scissors problem. Input was a list of &#34;moves:&#34;</p>
+<pre class="example">
+A Y
+B X
+C Z
+</pre>
+<p>
+The above says that in move 1, your opponent played &#34;A&#34; and you played
+&#34;Y,&#34; in move two, your opponent &#34;B&#34; and you &#34;X,&#34; etc.</p>
+<p>
+The moves meant:</p>
+<table>
+<thead>
+<tr>
+<th>Opponent Letter</th>
+<th>Your letter</th>
+<th>Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>X</td>
+<td>Rock</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Y</td>
+<td>Paper</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Z</td>
+<td>Scissors</td>
+</tr>
+</tbody>
+</table>
+<p>
+Each turned was scored as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th class="align-right">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>You win</td>
+<td class="align-right">6</td>
+</tr>
+<tr>
+<td>You tie</td>
+<td class="align-right">3</td>
+</tr>
+<tr>
+<td>You lose</td>
+<td class="align-right">0</td>
+</tr>
+</tbody>
+</table>
+<p>
+Your score for a turn was the results points plus a 1 if you played
+Rock, 2 if you played Paper, and 3 if you played Scissors.</p>
+<p>
+The part 1 solution had you tracing through a game and figuring out
+the score.</p>
+<p>
+What&#39;s nice about this problem is that it can be solved by a very raw
+beginner with a not too long set of if statements.</p>
+<p>
+You can also, however, look at more interesting approaches. </p>
+<p>
+First, a student might notice that the moves are &#34;in order&#34; in that
+each letter, or move, loses to the one after it. That is, Rock loses
+to Paper, Paper loses to scissors, and wrapping around, scissors loses
+to rock.</p>
+<p>
+Then, they might see that they can assign a numeric value to each
+move:</p>
+<table>
+<thead>
+<tr>
+<th>Opponent Letter</th>
+<th>Your letter</th>
+<th>Means</th>
+<th class="align-right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>X</td>
+<td>Rock</td>
+<td class="align-right">0</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Y</td>
+<td>Paper</td>
+<td class="align-right">1</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Z</td>
+<td>Scissors</td>
+<td class="align-right">2</td>
+</tr>
+</tbody>
+</table>
+<p>
+Finally, they might notice that if they find the difference between
+your move and your opponent&#39;s move, you&#39;ll get:</p>
+<table>
+<thead>
+<tr>
+<th class="align-right">Difference</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="align-right">0</td>
+<td>tie - same move</td>
+</tr>
+<tr>
+<td class="align-right">1</td>
+<td>You win - you&#39;re the &#34;next&#34; move</td>
+</tr>
+<tr>
+<td class="align-right">2</td>
+<td>You lose</td>
+</tr>
+</tbody>
+</table>
+<p>
+You can also either deal with mod to wrap around or you can put in a
+couple of negative values for the difference on your chart.</p>
+<p>
+For part 1, my solution basically did what I just described. Make a
+look up table to map the letters to values, find the difference, then
+look up the points awarded from another look up table.</p>
+<p>
+The Clojure code can be found <a href="https://github.com/zamansky/advent2022/blob/main/src/day02.clj">here</a> and the video is embedded below.</p>
+<p>
+For part 2, things were a bit tricker but also more interesting. Now,
+your &#34;move&#34; of X,Y, or Z didn&#39;t mean Rock, Paper or Scissors. The
+letters now said that depending on your letter you had to select a
+move so that you would either win, lose or draw based on this table:</p>
+<table>
+<tbody>
+<tr>
+<td>Your letter</td>
+<td>Choose a move that results in</td>
+</tr>
+<tr>
+<td>X</td>
+<td>You losing</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>A tie</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>You win</td>
+</tr>
+</tbody>
+</table>
+<p>
+This part was a reduction - look at your letter and figure out what to
+replace it with - A, B, or C based on the above chart and then just do
+what you did in part 1.</p>
+<p>
+Here, we notice that we tie if we choose the same move as our
+opponent, we win if we choose the &#34;next&#34; move and we loose if we
+choose the move that&#39;s two away (mod 3 to deal with the wraparound.</p>
+<p>
+The clojure code also <a href="https://github.com/zamansky/advent2022/blob/main/src/day02.clj">here</a> and the walkthrough below.</p>
+<p>
+Hope you all enjoyed this.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/80so4H3mSCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2022-12-02</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/advent%20of%20code">advent of code</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/clojure">#clojure</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#advent of code</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming">#programming</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2022<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>
