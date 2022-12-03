@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Advent 2022 - day 3 - sets - C&#39;est la Z</title>
+<meta name="description" content="">
+
+<link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
+
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1670082401" />
+
+
+
+<meta property="og:title" content="Advent 2022 - day 3 - sets" />
+<meta property="og:description" content="Day 3 ended up being a quick one. That is, as long as your language supports set operations. You can do it without set operations but it&#39;s easier if you&#39;ve got them.
+Part 1   Input is a file of text where each line is an input.
+ You have to read each line, split it in half and then find the common letter between the left and right halves and then apply their scoring rules on that letter." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cestlaz.github.io/post/advent-2022-day03/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-03T10:13:56-04:00" />
+<meta property="article:modified_time" content="2022-12-03T10:13:56-04:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent 2022 - day 3 - sets"/>
+<meta name="twitter:description" content="Day 3 ended up being a quick one. That is, as long as your language supports set operations. You can do it without set operations but it&#39;s easier if you&#39;ve got them.
+Part 1   Input is a file of text where each line is an input.
+ You have to read each line, split it in half and then find the common letter between the left and right halves and then apply their scoring rules on that letter."/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<script id="dsq-count-scr" src="//cestlaz.disqus.com/count.js" async></script>
+
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">C&#39;est la Z</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="https://cestlaz.github.io/" title="">Home</a>
+    
+    <a class="" href="https://cestlaz.github.io/stories/emacs" title="">Emacs</a>
+    
+    <a class="" href="https://cestlaz.github.io/archive" title="">Archive</a>
+    
+    <a class="" href="https://cestlaz-nikola.github.io/" title="">Old Blog</a>
+    
+    <a class="" href="https://cestlaz.github.io/about" title="">About</a>
+    
+    <a class="" href="https://cestlaz.github.io/rss.xml" title="">RSS</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">Advent 2022 - day 3 - sets</h1>
+        </header>
+        <div class="content">
+            
+<p>
+<a href="https://adventofcode.com/2022/day/3">Day 3</a> ended up being a quick one. That is, as long as your language
+supports set operations. You can do it without set operations but it&#39;s
+easier if you&#39;ve got them.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Part 1
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+Input is a file of text where each line is an input.</p>
+<p>
+You have to read each line, split it in half  and then find the common
+letter between the left and right halves and then apply their scoring
+rules on that letter.</p>
+<p>
+For scoring, lower case letters are valued a=1, b=2 etc. and for upper
+case, A=27, B=28 and so on.</p>
+<p>
+For scoring, this is a nice opportunity to talk about ASCII values and
+the relationship between characters and integers. For lower case
+letters you can use the formula <strong>int(letter) - 97 + 1</strong> where int(x)
+returns the ASCII code for letter <code>x</code>. The 97 is the value for &#39;a&#39; so
+that will map the lower case letter to a value of  0 for &#39;a,&#39; 1 for &#39;b,&#39;
+etc.. We add one becuase the question says to start with 1 for &#39;a.&#39;</p>
+<p>
+For the upper case letters, we can use <strong>int(letter)-65 + 27</strong> where 65
+is the value for &#39;A.&#39; In this case, we add an offset of 27 since
+that&#39;s are lowest upper case score.</p>
+<p>
+Here&#39;s the clojure code but it would be similar in Python or other
+languages:</p>
+<p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>score [letter]
+  (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">Character/isUpperCase</span> letter)
+    (+ <span style="color:#ae81ff">27</span> (-  (int letter) (int <span style="color:#e6db74">\A</span>)))
+    (inc (-  (int letter) (int <span style="color:#e6db74">\a</span>)))
+    ))</code></pre></td></tr></table>
+</div>
+</div></p>
+<p>
+The processing of the data is also pretty straight forward. Here&#39;s a
+Clojure solution:</p>
+<p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">  (<span style="color:#66d9ef">defn </span>parse-part1 [line]
+    (<span style="color:#66d9ef">let </span>[size (/  (count line) <span style="color:#ae81ff">2</span>)
+          left (take size line)
+          right (drop size line)
+          common (<span style="color:#a6e22e">set/intersection</span> (set left) (set right))]
+      (<span style="color:#a6e22e">score</span> (first common))))</code></pre></td></tr></table>
+</div>
+</div></p>
+<p>
+Line 2&#39;s Python equivalent would be <code>size = len(line)/2</code>.</p>
+<p>
+Line 3 takes the first half and stores it in left and line 4 drops the
+first half and keeps the right hand side.</p>
+<p>
+Line 5 uses Clojure&#39;s set operations to find the letter in common.</p>
+<p>
+To solve part 1 we just split the data, which starts as a long
+string, split on newlines and then run the parse-part1 function
+defined above on each line. We then use reduce to add up all the results.</p>
+<p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>part1 [data]
+  (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">str/split</span> data <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;\n&#34;</span>)
+       (map  parse-part1)
+       (reduce +)))</code></pre></td></tr></table>
+</div>
+</div></p>
+<p>
+Full code can be found <a href="https://github.com/zamansky/advent2022/blob/main/src/day03.clj">here</a>.</p>
+<p>
+A Python solution would look pretty similar. Java would be tricker for
+beginners because they wouldn&#39;t know about sets and using them
+requires more overhead than either Clojure or Python. The problem can
+still be solved by beginners. An easy, if inefficient way of finding
+the intersection would be looping over all the characters in one
+string and looking for it in the other.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Part two
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+Part two was very similar. Instead of splitting each line in half, we
+had to group entire lines by three.</p>
+<p>
+Here&#39;s the clojure code:</p>
+<p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>part2 [data]
+  (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">str/split</span> data <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;\n&#34;</span>)
+       (map set)
+       (<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">3</span>)
+       (map  <span style="color:#f92672">#</span>(reduce set/intersection %))
+       (map first)
+       (map score)
+       (reduce +)))</code></pre></td></tr></table>
+</div>
+</div></p>
+<p>
+Instead of munging the data and then turning strings into sets, we
+first use line 2 to transform the list of strings into a list of sets.</p>
+<p>
+Then, we use (partition 3) in line 4. This groups the list 3 at a
+time. Then, going through the rest of the lines</p>
+<ul>
+<li>line 5 - find the intersection within the group fo 3</li>
+<li>line 6 - there will be one letter in the result, but we have to use
+<strong>first</strong> to extract the value since the result is a set.</li>
+<li>line 7 - score all the letters</li>
+<li>line 8 - add them up</li>
+</ul>
+<p>
+A nice little problem. With beginners, you get to talk about the ASCII
+character relationship and if your language supports it, you can play
+with sets.</p>
+</div>
+</div>
+
+        </div>
+        
+
+
+<div class="post-info">
+    
+        <div class="post-date">2022-12-03</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/advent%20of%20code">advent of code</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/clojure">#clojure</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#advent of code</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/programming">#programming</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cestlaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+        </main>
+        <footer>
+            
+                
+                
+
+                <p>© 2022<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

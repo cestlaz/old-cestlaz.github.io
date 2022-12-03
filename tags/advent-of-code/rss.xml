@@ -6,10 +6,180 @@
     <description>C&#39;est la Z (Advent of Code)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Dec 2022 13:59:06 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Dec 2022 10:13:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/advent-of-code/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent 2022 - day 3 - sets</title>
+      <link>https://cestlaz.github.io/post/advent-2022-day03/</link>
+      <pubDate>Sat, 03 Dec 2022 10:13:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-2022-day03/</guid>
+      <description>
+&lt;p&gt;
+&lt;a href=&#34;https://adventofcode.com/2022/day/3&#34;&gt;Day 3&lt;/a&gt; ended up being a quick one. That is, as long as your language
+supports set operations. You can do it without set operations but it&amp;#39;s
+easier if you&amp;#39;ve got them.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Part 1
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Input is a file of text where each line is an input.&lt;/p&gt;
+&lt;p&gt;
+You have to read each line, split it in half  and then find the common
+letter between the left and right halves and then apply their scoring
+rules on that letter.&lt;/p&gt;
+&lt;p&gt;
+For scoring, lower case letters are valued a=1, b=2 etc. and for upper
+case, A=27, B=28 and so on.&lt;/p&gt;
+&lt;p&gt;
+For scoring, this is a nice opportunity to talk about ASCII values and
+the relationship between characters and integers. For lower case
+letters you can use the formula &lt;strong&gt;int(letter) - 97 + 1&lt;/strong&gt; where int(x)
+returns the ASCII code for letter &lt;code&gt;x&lt;/code&gt;. The 97 is the value for &amp;#39;a&amp;#39; so
+that will map the lower case letter to a value of  0 for &amp;#39;a,&amp;#39; 1 for &amp;#39;b,&amp;#39;
+etc.. We add one becuase the question says to start with 1 for &amp;#39;a.&amp;#39;&lt;/p&gt;
+&lt;p&gt;
+For the upper case letters, we can use &lt;strong&gt;int(letter)-65 + 27&lt;/strong&gt; where 65
+is the value for &amp;#39;A.&amp;#39; In this case, we add an offset of 27 since
+that&amp;#39;s are lowest upper case score.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the clojure code but it would be similar in Python or other
+languages:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;score [letter]
+  (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Character/isUpperCase&lt;/span&gt; letter)
+    (+ &lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt; (-  (int letter) (int &lt;span style=&#34;color:#e6db74&#34;&gt;\A&lt;/span&gt;)))
+    (inc (-  (int letter) (int &lt;span style=&#34;color:#e6db74&#34;&gt;\a&lt;/span&gt;)))
+    ))&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+The processing of the data is also pretty straight forward. Here&amp;#39;s a
+Clojure solution:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;parse-part1 [line]
+    (&lt;span style=&#34;color:#66d9ef&#34;&gt;let &lt;/span&gt;[size (/  (count line) &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+          left (take size line)
+          right (drop size line)
+          common (&lt;span style=&#34;color:#a6e22e&#34;&gt;set/intersection&lt;/span&gt; (set left) (set right))]
+      (&lt;span style=&#34;color:#a6e22e&#34;&gt;score&lt;/span&gt; (first common))))&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+Line 2&amp;#39;s Python equivalent would be &lt;code&gt;size = len(line)/2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+Line 3 takes the first half and stores it in left and line 4 drops the
+first half and keeps the right hand side.&lt;/p&gt;
+&lt;p&gt;
+Line 5 uses Clojure&amp;#39;s set operations to find the letter in common.&lt;/p&gt;
+&lt;p&gt;
+To solve part 1 we just split the data, which starts as a long
+string, split on newlines and then run the parse-part1 function
+defined above on each line. We then use reduce to add up all the results.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1 [data]
+  (&lt;span style=&#34;color:#a6e22e&#34;&gt;-&amp;gt;&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str/split&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;)
+       (map  parse-part1)
+       (reduce +)))&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+Full code can be found &lt;a href=&#34;https://github.com/zamansky/advent2022/blob/main/src/day03.clj&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+A Python solution would look pretty similar. Java would be tricker for
+beginners because they wouldn&amp;#39;t know about sets and using them
+requires more overhead than either Clojure or Python. The problem can
+still be solved by beginners. An easy, if inefficient way of finding
+the intersection would be looping over all the characters in one
+string and looking for it in the other.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Part two
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+Part two was very similar. Instead of splitting each line in half, we
+had to group entire lines by three.&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the clojure code:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part2 [data]
+  (&lt;span style=&#34;color:#a6e22e&#34;&gt;-&amp;gt;&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str/split&lt;/span&gt; data &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;)
+       (map set)
+       (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
+       (map  &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(reduce set/intersection %))
+       (map first)
+       (map score)
+       (reduce +)))&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+Instead of munging the data and then turning strings into sets, we
+first use line 2 to transform the list of strings into a list of sets.&lt;/p&gt;
+&lt;p&gt;
+Then, we use (partition 3) in line 4. This groups the list 3 at a
+time. Then, going through the rest of the lines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;line 5 - find the intersection within the group fo 3&lt;/li&gt;
+&lt;li&gt;line 6 - there will be one letter in the result, but we have to use
+&lt;strong&gt;first&lt;/strong&gt; to extract the value since the result is a set.&lt;/li&gt;
+&lt;li&gt;line 7 - score all the letters&lt;/li&gt;
+&lt;li&gt;line 8 - add them up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+A nice little problem. With beginners, you get to talk about the ASCII
+character relationship and if your language supports it, you can play
+with sets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Advent of Code 2022 - Days 1 and 2</title>
