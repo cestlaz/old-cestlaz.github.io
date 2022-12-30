@@ -6,10 +6,90 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Dec 2022 06:43:31 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2022 11:56:52 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Finally some down time</title>
+      <link>https://cestlaz.github.io/post/down-time/</link>
+      <pubDate>Fri, 30 Dec 2022 11:56:52 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/down-time/</guid>
+      <description>&lt;p&gt;
+Since entering end of term grades I&amp;#39;ve finally had a few days of legit
+down time. It&amp;#39;s been a long time. In the past few years, I went right
+from Fall finals int dealing with whatever issues arose around
+planning the next teacher ed cohort.&lt;/p&gt;
+&lt;p&gt;
+Not so this year. The three classes I&amp;#39;m teaching are the same as last
+year so while I&amp;#39;ll be doing a lot of tweaking, planning, and updating
+once we get started, there&amp;#39;s not much to do now. For the teacher ed
+cohort, I&amp;#39;m advocating starting our next one in the Fall so again,
+nothing to do for a while.&lt;/p&gt;
+&lt;p&gt;
+So, what have I been doing with this newly freed time? One thing I&amp;#39;ve
+gotten to do is a bit more painting - something I decided to pick up
+during the pandemic - something to get me off computer screens for a
+while. I&amp;#39;m just a beginner but I&amp;#39;m enjoying it and making progress.&lt;/p&gt;
+
+&lt;img  width=&#34;200&#34; height=&#34;200&#34; src=&#34;https://cestlaz.github.io/img/down-time/one.jpg&#34;/&gt;
+&lt;img  width=&#34;400 height=&#34;400&#34; src=&#34;https://cestlaz.github.io/img/down-time/two.jpg&#34;/&gt;
+&lt;img  width=&#34;200 height=&#34;200&#34; src=&#34;https://cestlaz.github.io/img/down-time/three.jpg&#34;/&gt;
+&lt;p&gt;
+Another thing I&amp;#39;ve been doing is getting back to some
+programming. Nothing huge but it&amp;#39;s something I haven&amp;#39;t done in a
+while. Last December (2021) I did a few &lt;a href=&#34;http://adventofode.com&#34;&gt;Advent of Code&lt;/a&gt; problems -
+basically the easier ones at the start of the month that I could knock
+out quickly. I stopped when the end of semester crush got bad. Same
+thing this year. In between, I didn&amp;#39;t write a line of code. That&amp;#39;s not
+entirely true - I wrote some small snippets for my classes but I don&amp;#39;t
+really count that sinces it was all variations on things I&amp;#39;ve written
+a hundred times already.&lt;/p&gt;
+&lt;p&gt;
+Since the semester ended, I&amp;#39;ve been able to go back and finish off a
+couple of &amp;#34;harder&amp;#34; problems and also dive in to a couple of of other
+small projects. One, a tool to automate some GitHub work and another a
+Slack bot to make emoji polls. This got me back to dealing with web
+code, working through OAuth and a few more little things. I did all of
+that in Clojure but also got back to playing a bit with Rust.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t think it&amp;#39;s absolutely necessary for CS teachers to write
+programs in their spare time but for many CS teachers, and certainly
+for me, there are a lot of benefits. On the practical side, it helps
+me keep up with current technologies. When I started teaching, there
+was no web. Then HTML. Soon after Perl was king along with CGI. Later,
+Javascript brought us Ajax. Fast forward and we&amp;#39;re using things like
+React. All very different technologies and all require different
+approaches. Even if I&amp;#39;m not teaching web development, keeping current
+also keeps me current in good development practices, architecting
+projects and other aspects of coding through which I can help my
+students.&lt;/p&gt;
+&lt;p&gt;
+If I&amp;#39;m exploring with contest problems like Advent of Code, I&amp;#39;ll learn
+new algorithms and experiment with data structures - also something
+that helps me as a teacher.&lt;/p&gt;
+&lt;p&gt;
+Of course these are pretty obvious and on the surface. Another HUGE
+benefit is it helps place me in to the students mindset. When working
+on new projects, one has to find resources and information on the
+web. Learn new libraries, tools, and techniques, and of course
+DEBUGGING!!!!!!!&lt;/p&gt;
+&lt;p&gt;
+Since I&amp;#39;m retiring from Hunter at the end of the Spring, I fully
+expect to continue to be able to dedicate some time to
+programming. After all, even though I plan to work to help transition
+Hunter to the next guy I expect that to be less taxing than if I were
+to continue to be the guy.&lt;/p&gt;
+&lt;p&gt;
+Programming, reading, and other personal professional development is
+really important to teachers. I lost that time over the past couple of
+years, but prior, at Hunter I had it. The real shame is that K12
+teachers are rarely given the time and I think their students are worse
+off as a result.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Things they remember that we forgot</title>
@@ -4433,82 +4513,6 @@ education as a whole. Neither as a whole in our subject area or, even
 more importantly as w real whole - a whole student and whole person.&lt;/p&gt;
 &lt;p&gt;
 We really should.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SIGCSE 2022 AP or not AP</title>
-      <link>https://cestlaz.github.io/post/sigcse-2022-apcs-or-not-ap/</link>
-      <pubDate>Wed, 09 Mar 2022 14:26:26 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/sigcse-2022-apcs-or-not-ap/</guid>
-      <description>&lt;p&gt;
-While my series on APCS-A language choice is done, I wanted to write
-this brief addendum.&lt;/p&gt;
-&lt;p&gt;
-While reading comments over on Facebook under my APCS posts one caught
-my eye. There was a comment saying they wished the College Board would
-create a data science course. I responded, why not create one
-yourself. The response, shared I&amp;#39;m sure by many is that if a course
-doesn&amp;#39;t have an AP designation students won&amp;#39;t sign up for it.&lt;/p&gt;
-&lt;p&gt;
-This bothered me.&lt;/p&gt;
-&lt;p&gt;
-Now, there are two basic reasons why one can&amp;#39;t create their own
-course. The first is that they don&amp;#39;t have the background to do
-so. Unfortunately, this is frequently the current state of affairs in
-K12 CS. We&amp;#39;re so new and as I mentioned in the earlier post, so many
-of our teachers have been thrown in the deep end and are just learning
-the CS that they need to teach. We can&amp;#39;t expect these teachers to also
-generate new curriculum. This is understandable but unfortunately it also
-led us to where we are today with curriculum being driven largely by
-private parties, most notably the College Board but also other
-independent providers.&lt;/p&gt;
-&lt;p&gt;
-As I said, this is understandable and doesn&amp;#39;t really bother me. It&amp;#39;s
-the other reason that bothers me. It&amp;#39;s that students won&amp;#39;t take a
-class without AP designation or the related, my school won&amp;#39;t let me
-give a class more weight unless it&amp;#39;s AP (even though it may very well
-be more rigorous).&lt;/p&gt;
-&lt;p&gt;
-Over the past decade or so, the College Board has managed to bamboozle
-the public so that they unthinkingly equate AP for good. The truth is,
-some AP classes are good, some are bad and usually it&amp;#39;s the teacher
-that makes it so. The College Board curriculum can nudge the class
-towards better or worse but it&amp;#39;s the teacher that ultimately makes the
-grade. What&amp;#39;s more, in cases like APCS-P the class isn&amp;#39;t even college
-level. I&amp;#39;ve seen APCS-P implementations that were good High School
-courses but I&amp;#39;ve also seen students come out of APCS-P implementations
-which were worse than nothing at all. Then you some of the AP History
-classes which can be passed with drill and kill. At Stuy, for one of
-them at one point you had two possible teachers. One that would
-stretch you and make you think but wouldn&amp;#39;t prepare you for the exam
-at all, that was on you. The other that would set you up for a 5 but
-you wouldn&amp;#39;t really learn that much, mostly memorization. Side note,
-those two teachers are likely long gone so I don&amp;#39;t mean to imply this
-dichotomy exists today.&lt;/p&gt;
-&lt;p&gt;
-Basically, we&amp;#39;ve given the College Board far too much influence and
-control over our High School curricula.&lt;/p&gt;
-&lt;p&gt;
-On the one hand we keep hearing that students should take more and
-more AP classes and on the other, colleges seem to be giving less and
-less credit.&lt;/p&gt;
-&lt;p&gt;
-The truth is, if a student is merely taking a class because it&amp;#39;s AP
-then maybe they shouldn&amp;#39;t be taking it. I know that a student might
-take a class for the wrong reasons and end up loving it and I also get
-it that at the K12 level we have a number of required classes but the
-bar for &amp;#34;good, rigorous course&amp;#34; shouldn&amp;#39;t be AP.&lt;/p&gt;
-&lt;p&gt;
-Over the past couple of years I&amp;#39;ve noticed a bit of a pushback against
-the College Board. The SAT is being questioned so maybe AP is next. We
-can have great classes taught by great teachers developed either in
-house or by engaging a variety of resources. Nothing wrong with the
-College board being one of them but right now their the gorilla in the
-room. Maybe one day we&amp;#39;ll get back to actually trusting teachers and
-letting them drive curriculum  and instruction but I&amp;#39;m not holding my
-breath. &lt;/p&gt;
 </description>
     </item>
     
