@@ -6,10 +6,139 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2022 11:56:52 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2023 10:47:39 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Kicking off 2023</title>
+      <link>https://cestlaz.github.io/post/2023/</link>
+      <pubDate>Sun, 01 Jan 2023 10:47:39 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/2023/</guid>
+      <description>&lt;p&gt;
+I never do much on New Years Eve. I can&amp;#39;t remember the last time I
+stayed up until Midnight. It&amp;#39;s just not really a big deal with
+me. Yesterday, thanks to Natan rushing tickets, I did close out the
+year seeing the Metropolitan Opera&amp;#39;s new production of Fedora which
+was very enjoyable.&lt;/p&gt;
+&lt;p&gt;
+Woke up late today - around 5:00, went for my first run of the year
+and did the puzzle over coffee. My usual routine.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m still on a school calendar so my year goes from September to
+September but since so much of the world uses January first, I thought
+I&amp;#39;d share a couple of thoughts on education and tech in 2022 and 2023.&lt;/p&gt;
+&lt;p&gt;
+On the tech side, 2022 brought a rocky road. We had the cryptocurrency crash
+and NFTs came and (hopefully) went and all the big players had massive
+layoffs. The Crypto stuff is interesting and I&amp;#39;m curious where it
+goes. I haven&amp;#39;t had the time to really get my head around all of it. I
+read the &lt;a href=&#34;https://www.bitcoin.com/satoshi-archive/whitepaper/&#34;&gt;original whitepaper&lt;/a&gt;, and played with some code but haven&amp;#39;t
+delved into web3 yet. I&amp;#39;ve always felt that NFTs were a scam and I
+think that this whole web3 thing is still a technology looking for an
+application but it does provide smart contracts and distributed
+identity and authentication and that should eventually lead to
+something. One of my post retirement side projects is to try to create
+something on/for web3 to really see what it&amp;#39;s all about.&lt;/p&gt;
+&lt;p&gt;
+One thing I do wonder about with web3 looking forward is that a big
+deal about it is that it&amp;#39;s distributed. That sounds great, but we&amp;#39;ve
+been there before. Whenever we&amp;#39;ve built a distributed platform, the
+next thing we do is centralize it. Thin about it:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Distributed&lt;/th&gt;
+&lt;th&gt;Centralized&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;IRC&lt;/td&gt;
+&lt;td&gt;Slack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Usenet News&lt;/td&gt;
+&lt;td&gt;Reddit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Napster&lt;/td&gt;
+&lt;td&gt;Spotify&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Git&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+So, even if Web3 finds its legs and presents us with an amazing
+distributed platform, will it be fated to be a distributed platform
+controlled by one centralized player.&lt;/p&gt;
+&lt;p&gt;
+On the tech downturn, it was bound to happen. Interesting enough is
+that I&amp;#39;m hearing from friends desperately trying to hire while others
+were recently laid off. Messy and unfortunate but I think things will
+get better on the company side.&lt;/p&gt;
+&lt;p&gt;
+On the candidate size, I think we&amp;#39;re going to need a correction
+there. CS enrollments have and continue to explode and while hopefully
+this will help bring along underrepresented groups, I&amp;#39;m guessing that
+there are many new CS majors who are along for the ride and are really
+meant for other things. Just like the law school boom and MBA booms
+in the late 80s, the hot major becomes oversubscribed frequently for
+the wrong reasons.&lt;/p&gt;
+&lt;p&gt;
+Moving forward both K12 CS and college CS has to do a better job in
+communicating what CS and tech majors are for and preparing students
+for all careers with the correct amount of CS. I don&amp;#39;t think that&amp;#39;ll
+happen much though in 2023.&lt;/p&gt;
+&lt;p&gt;
+On the CS Ed front, for the most part, things have been chugging
+along. At least in NY people are starting to recognize that while the
+PD based model was essential to start CS4All things have to pivot to
+pre-service programs. In general there also seems to be movement in
+understanding that not every CS major wants to be a software engineer
+(or a PhD candidate, which has long been the focus of most CS
+programs) and we&amp;#39;re starting to see people waking to the fact that the
+CS that&amp;#39;s appropriate and needed by the CS major is not the same as
+that for the software engineer, other tech sector roles and possibly
+most importantly everyone else. &lt;/p&gt;
+&lt;p&gt;
+The big negative in NY for CS Ed is that the state came out saying
+that if you taught at least 1 CS class you can get grandfathered in
+and won&amp;#39;t need CS certification for 10 years. This means we&amp;#39;re going
+to have a lot of under-prepared CS teachers in the state for a long
+time.&lt;/p&gt;
+&lt;p&gt;
+Looking forward in CS Education, I hope to see more preservice
+programs come online in New York state and I hope that discussion of
+CS for non-CS majors, non PhD candidates, and non software engineers
+continues to expand.&lt;/p&gt;
+&lt;p&gt;
+It looks like web3 will take a bit of a back seat though and the big
+topic in the next few months will be chatGPT and other AI systems.&lt;/p&gt;
+&lt;p&gt;
+I say AI systems, but as far as I can tell, chatGPT is really just
+pattern matching on a more massive scale. Pretty impressive but not
+closer to &amp;#34;intelligence.&amp;#34; There&amp;#39;s been talk about using it to solve
+programming problems and write essays and this morning, I saw
+something about asking it to lesson plan.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve played with it a bit and it is impressive but I&amp;#39;m predicting that
+hype will fade as teachers will adjust. ChatGPT and related projects
+also bring into question the rights on the training materials and that
+it might threaten companies like Google. I&amp;#39;m not betting on that last
+one as I&amp;#39;m guessing that Google&amp;#39;s got plenty of people working on
+similar technologies internally.&lt;/p&gt;
+&lt;p&gt;
+So, we&amp;#39;ll see what 2023 brings in tech and education. I do plan to
+write more on chatGPT in the coming months but we&amp;#39;ll see what other
+themes emerge.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Finally some down time</title>
@@ -4346,173 +4475,6 @@ Once again it&amp;#39;s the long game but that&amp;#39;s what it takes. &lt;/p&g
 &lt;p&gt;
 So, if you&amp;#39;re a New York City CS teacher and are looking for state
 certification, come join us. All the information can be found &lt;a href=&#34;http://info.huntercs.org/teacher_ed/summer-2022.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Truth Tables and Logic Gates - where to teach them.</title>
-      <link>https://cestlaz.github.io/post/truth-tables/</link>
-      <pubDate>Mon, 14 Mar 2022 12:17:11 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/truth-tables/</guid>
-      <description>&lt;p&gt;
-A question was raised on Facebook last week asking about teaching
-truth tables and logic gates in an intro class in programming
-Python. The teacher who posed the question certainly appreciates the
-value  of these topics but was wondering both how best to motivate the
-topics and if they were really appropriate in an intro programming
-course as opposed to, say, and intro computer architecture or
-electronics course or even a more general intro CS survey course.&lt;/p&gt;
-&lt;p&gt;
-This came up for me when I started at Hunter. One of my classes was
-and is a CS0. It was mostly an intro to programming in Python with a
-touch of C++ at the end but it also included:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;binary/hex/ASCII&lt;/li&gt;
-&lt;li&gt;an intro to assembly&lt;/li&gt;
-&lt;li&gt;Truth tables and logic gates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These topics were put in the class to prepare students for Hunters
-Systems/Architecture classes in the CS sequence. Classes they wouldn&amp;#39;t
-see for a year or more.&lt;/p&gt;
-&lt;p&gt;
-I worked the binary and hex into a small project and ASCII was already
-covered in CS1 and I had my CS0 kids in CS1 so I left it for
-then. Assembly? I also left that for CS1 and talked a bit about it
-when we looked at the debugger and C++. I felt that was a much more
-appropriate platform rather than a random couple of lessons out of
-nowhere on assembly. In CS1, we were able to look at the assembly code
-generated by a simple C++ program  and it actually meant
-something.&lt;/p&gt;
-&lt;p&gt;
-Truth tables and logic? I just left them out.&lt;/p&gt;
-&lt;p&gt;
-I was in a similar situation as my friend who asked the question and
-even though I couldn&amp;#39;t make an official change in the syllabus, I made
-the decision to leave things out anyway.&lt;/p&gt;
-&lt;p&gt;
-Why did I do this?&lt;/p&gt;
-&lt;p&gt;
-Because you have to pay attention to the entire sequence when deciding
-what topics to put in which course.&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s talk about truth tables. Truth tables aren&amp;#39;t really a topic but
-rather a table to keep track of truth values from boolean
-expressions. It&amp;#39;s a useful tool and pretty much the same idea as
-charting variables for tracing code and charting values for graphs -
-something they&amp;#39;ve likely done in math, science, and even history
-classes in high school. They&amp;#39;ve also seen truth tables in high
-school. I can&amp;#39;t speak for localities out side of New York State but
-basic logic and truth tables are covered and just about all my
-students went to high school in New York state.&lt;/p&gt;
-&lt;p&gt;
-My kids need basic logic - &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;, and &lt;code&gt;not&lt;/code&gt; mostly for use in
-conditionals. They already know it and we review as needed but truth
-tables just aren&amp;#39;t necessary for my kids. There&amp;#39;s another argument
-that I&amp;#39;ve been given by my department for teaching truth tables again
-anyway but I&amp;#39;ll get to that and refute it later.&lt;/p&gt;
-&lt;p&gt;
-Logic gates, the other topic I just blow off. Logic gates make sense
-to teach in a computer architecture course, a systems course, any
-couse where you&amp;#39;re doing low level stuff and even a general CS course
-where you want to demystify what&amp;#39;s going on under the hood. In those
-contexts you can do some interesting and I&amp;#39;d say exciting things. You
-can show a half adder or full adder circuit to show the basics of how
-computers can do math. You can also show a flip-flip - rudimentary
-memory and other rudimentary circuits. This can be great in a
-&amp;#34;demystify&amp;#34; course and certainly in a course that&amp;#39;s going to do a deep
-dive into the low level but in an intro programming course? Not so
-much.&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s just something out of place. You cover it for a couple of lessons
-and then the kids forget it. One could make the case that early
-exposure, even if it&amp;#39;s cursory, helps students understand harder
-things later on but I don&amp;#39;t buy that in this case. I buy that in the
-case of recursion. There, I think early exposure is helpful. That&amp;#39;s
-because recursion involves some deep thinking. In this case, the logic
-gates material covered isn&amp;#39;t really deep. It&amp;#39;s basically just
-present. It is what it is - there&amp;#39;s nothing deep to think about, at
-least on in the intro class.&lt;/p&gt;
-&lt;p&gt;
-In a way, it reminded me of something I noticed years ago in Algebra 2
-and Trigonometry.  Towards the end, apropos of nothing, there&amp;#39;s a unit
-on the circle. It doesn&amp;#39;t really fit in the course and it doesn&amp;#39;t
-really introduce anything new that&amp;#39;s meaningful but it&amp;#39;s there
-nonetheless. Kids have to know it because they have to know it. Most
-of the course, right or wrong you can reasonably justify - the
-identities and algebra will help in calculus, for instance, but the
-circle unit is just there.&lt;/p&gt;
-&lt;p&gt;
-Why?&lt;/p&gt;
-&lt;p&gt;
-The best I could figure is that it was placed in back in the day. Back
-then, Alg2/Trig was a terminal course - it was the last math class
-that most students would take. This was before the precalc let alone
-calculus craze. Someone or some people felt that since this was the
-last chance, students should at least see some circle stuff so it got
-added in. Then, it just stayed there. Later, when Alg2 was no longer
-the last math course, the topic made less sense. It also became more
-clear that the circle unit didn&amp;#39;t really prepare students for anything
-to come yet it remained.&lt;/p&gt;
-&lt;p&gt;
-This is why you have to look at the big picture. Not just an individual
-class but what came before and what comes after. &lt;/p&gt;
-&lt;p&gt;
-Back to logic gates.&lt;/p&gt;
-&lt;p&gt;
-The big argument I heard from the CS department was that they needed
-that for the Systems/Architecture sequence which is a 2 class, 6
-credit part of the CS major.&lt;/p&gt;
-&lt;p&gt;
-The conversation would go like this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-Me: Should we really be teaching logic gates in CS0?&lt;/p&gt;
-&lt;p&gt;
-Them: Yes, it&amp;#39;s essential.&lt;/p&gt;
-&lt;p&gt;
-Me: Why?&lt;/p&gt;
-&lt;p&gt;
-Them: They need to know it in CS160 (the first of the sys classes).&lt;/p&gt;
-&lt;p&gt;
-Me: So do they?&lt;/p&gt;
-&lt;p&gt;
-Them: No, we always have to reteach it.&lt;/p&gt;
-&lt;p&gt;
-Me: So if you&amp;#39;re reteaching it anyway, what&amp;#39;s the point?&lt;/p&gt;
-&lt;p&gt;
-Them: …&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-I teach around 20 to 30 students each year in my CS0. Given that we
-have over 1,000 CS majors overall, I teach a tiny fraction. My class
-is also an honors section.&lt;/p&gt;
-&lt;p&gt;
-All the other CS0 students &lt;strong&gt;are&lt;/strong&gt; taught logic gates and truth tables
-yet the CS160 professors still have to reteach the material in
-CS160. What&amp;#39;s the point? Time could be much better spent in CS0 diving
-more deeply into material more relevant to the CS0 experience.&lt;/p&gt;
-&lt;p&gt;
-So, I just didn&amp;#39;t teach those topics.&lt;/p&gt;
-&lt;p&gt;
-I felt this was the right move but it could also have been really bad
-so i tracked my students. Each year, I surveyed them as to their CS160
-experience. How&amp;#39;d they do in the class? Were logic gates taught
-assuming zero background? Was it hard or harder for them? Etc.&lt;/p&gt;
-&lt;p&gt;
-Turns out, I made the right call. Every year my kids did fine (actually, much
-better than fine). Every year the teachers retaught logic gates in
-CS160 from scratch and every year my students felt they missed nothing
-by not covering it in CS0.&lt;/p&gt;
-&lt;p&gt;
-I started writing this post because a friend asked about motivating
-logic gates in an intro programming class. Sorry to say, I didn&amp;#39;t
-answer that question at all but it got me further thinking about
-pipeline and sequence and how we frequently don&amp;#39;t look at our students
-education as a whole. Neither as a whole in our subject area or, even
-more importantly as w real whole - a whole student and whole person.&lt;/p&gt;
-&lt;p&gt;
-We really should.&lt;/p&gt;
 </description>
     </item>
     

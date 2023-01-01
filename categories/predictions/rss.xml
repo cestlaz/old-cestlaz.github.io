@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>predictions on C&#39;est la Z</title>
+    <link>https://cestlaz.github.io/categories/predictions/</link>
+    <description>C&#39;est la Z (predictions)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 10:47:39 -0400</lastBuildDate>
+    
+    <atom:link href="https://cestlaz.github.io/categories/predictions/rss.xml" rel="self" type="application/rss" />
+    
+    
+    <item>
+      <title>Kicking off 2023</title>
+      <link>https://cestlaz.github.io/post/2023/</link>
+      <pubDate>Sun, 01 Jan 2023 10:47:39 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/2023/</guid>
+      <description>&lt;p&gt;
+I never do much on New Years Eve. I can&amp;#39;t remember the last time I
+stayed up until Midnight. It&amp;#39;s just not really a big deal with
+me. Yesterday, thanks to Natan rushing tickets, I did close out the
+year seeing the Metropolitan Opera&amp;#39;s new production of Fedora which
+was very enjoyable.&lt;/p&gt;
+&lt;p&gt;
+Woke up late today - around 5:00, went for my first run of the year
+and did the puzzle over coffee. My usual routine.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m still on a school calendar so my year goes from September to
+September but since so much of the world uses January first, I thought
+I&amp;#39;d share a couple of thoughts on education and tech in 2022 and 2023.&lt;/p&gt;
+&lt;p&gt;
+On the tech side, 2022 brought a rocky road. We had the cryptocurrency crash
+and NFTs came and (hopefully) went and all the big players had massive
+layoffs. The Crypto stuff is interesting and I&amp;#39;m curious where it
+goes. I haven&amp;#39;t had the time to really get my head around all of it. I
+read the &lt;a href=&#34;https://www.bitcoin.com/satoshi-archive/whitepaper/&#34;&gt;original whitepaper&lt;/a&gt;, and played with some code but haven&amp;#39;t
+delved into web3 yet. I&amp;#39;ve always felt that NFTs were a scam and I
+think that this whole web3 thing is still a technology looking for an
+application but it does provide smart contracts and distributed
+identity and authentication and that should eventually lead to
+something. One of my post retirement side projects is to try to create
+something on/for web3 to really see what it&amp;#39;s all about.&lt;/p&gt;
+&lt;p&gt;
+One thing I do wonder about with web3 looking forward is that a big
+deal about it is that it&amp;#39;s distributed. That sounds great, but we&amp;#39;ve
+been there before. Whenever we&amp;#39;ve built a distributed platform, the
+next thing we do is centralize it. Thin about it:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Distributed&lt;/th&gt;
+&lt;th&gt;Centralized&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;IRC&lt;/td&gt;
+&lt;td&gt;Slack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Usenet News&lt;/td&gt;
+&lt;td&gt;Reddit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Napster&lt;/td&gt;
+&lt;td&gt;Spotify&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Git&lt;/td&gt;
+&lt;td&gt;GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+So, even if Web3 finds its legs and presents us with an amazing
+distributed platform, will it be fated to be a distributed platform
+controlled by one centralized player.&lt;/p&gt;
+&lt;p&gt;
+On the tech downturn, it was bound to happen. Interesting enough is
+that I&amp;#39;m hearing from friends desperately trying to hire while others
+were recently laid off. Messy and unfortunate but I think things will
+get better on the company side.&lt;/p&gt;
+&lt;p&gt;
+On the candidate size, I think we&amp;#39;re going to need a correction
+there. CS enrollments have and continue to explode and while hopefully
+this will help bring along underrepresented groups, I&amp;#39;m guessing that
+there are many new CS majors who are along for the ride and are really
+meant for other things. Just like the law school boom and MBA booms
+in the late 80s, the hot major becomes oversubscribed frequently for
+the wrong reasons.&lt;/p&gt;
+&lt;p&gt;
+Moving forward both K12 CS and college CS has to do a better job in
+communicating what CS and tech majors are for and preparing students
+for all careers with the correct amount of CS. I don&amp;#39;t think that&amp;#39;ll
+happen much though in 2023.&lt;/p&gt;
+&lt;p&gt;
+On the CS Ed front, for the most part, things have been chugging
+along. At least in NY people are starting to recognize that while the
+PD based model was essential to start CS4All things have to pivot to
+pre-service programs. In general there also seems to be movement in
+understanding that not every CS major wants to be a software engineer
+(or a PhD candidate, which has long been the focus of most CS
+programs) and we&amp;#39;re starting to see people waking to the fact that the
+CS that&amp;#39;s appropriate and needed by the CS major is not the same as
+that for the software engineer, other tech sector roles and possibly
+most importantly everyone else. &lt;/p&gt;
+&lt;p&gt;
+The big negative in NY for CS Ed is that the state came out saying
+that if you taught at least 1 CS class you can get grandfathered in
+and won&amp;#39;t need CS certification for 10 years. This means we&amp;#39;re going
+to have a lot of under-prepared CS teachers in the state for a long
+time.&lt;/p&gt;
+&lt;p&gt;
+Looking forward in CS Education, I hope to see more preservice
+programs come online in New York state and I hope that discussion of
+CS for non-CS majors, non PhD candidates, and non software engineers
+continues to expand.&lt;/p&gt;
+&lt;p&gt;
+It looks like web3 will take a bit of a back seat though and the big
+topic in the next few months will be chatGPT and other AI systems.&lt;/p&gt;
+&lt;p&gt;
+I say AI systems, but as far as I can tell, chatGPT is really just
+pattern matching on a more massive scale. Pretty impressive but not
+closer to &amp;#34;intelligence.&amp;#34; There&amp;#39;s been talk about using it to solve
+programming problems and write essays and this morning, I saw
+something about asking it to lesson plan.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve played with it a bit and it is impressive but I&amp;#39;m predicting that
+hype will fade as teachers will adjust. ChatGPT and related projects
+also bring into question the rights on the training materials and that
+it might threaten companies like Google. I&amp;#39;m not betting on that last
+one as I&amp;#39;m guessing that Google&amp;#39;s got plenty of people working on
+similar technologies internally.&lt;/p&gt;
+&lt;p&gt;
+So, we&amp;#39;ll see what 2023 brings in tech and education. I do plan to
+write more on chatGPT in the coming months but we&amp;#39;ll see what other
+themes emerge.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
