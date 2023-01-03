@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
@@ -24,7 +24,6 @@
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-27-shell/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-01-27T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-01-27T00:00:00+00:00" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 27 - shell and eshell"/>
@@ -98,21 +97,21 @@ I use a couple of packages to smooth over a couple of things.</p>
 <a href="https://github.com/porterjamesj/virtualenvwrapper.el">Virtuelenvwrapper</a> smooths things voer with the python virtaulenv and
 virtualenvwrapper linux packages:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package virtualenvwrapper
-:ensure <span style="color:#66d9ef">t</span>
-:config
-(venv-initialize-interactive-shells)
-(venv-initialize-eshell))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package virtualenvwrapper
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(venv-initialize-interactive-shells)
+</span></span><span style="display:flex;"><span>(venv-initialize-eshell))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Only relevant if you use Python and virtualenvs.</p>
 <p>
 and more importantly, <a href="https://github.com/killdash9/better-shell">better shell</a>:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package better-shell
-:ensure <span style="color:#66d9ef">t</span>
-:bind ((<span style="color:#e6db74">&#34;C-&#39;&#34;</span> <span style="color:#f92672">.</span> better-shell-shell)
-(<span style="color:#e6db74">&#34;C-;&#34;</span> <span style="color:#f92672">.</span> better-shell-remote-open)))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package better-shell
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:bind ((<span style="color:#e6db74">&#34;C-&#39;&#34;</span> <span style="color:#f92672">.</span> better-shell-shell)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;C-;&#34;</span> <span style="color:#f92672">.</span> better-shell-remote-open)))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 cleans things up when using a termianl to connect to a remote machine.</p>
@@ -160,7 +159,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

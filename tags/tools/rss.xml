@@ -44,14 +44,14 @@ ibuffer I want it to use the whole Emacs frame. Otherwise I just use
 ivy-switch-buffer (or now bufler-switch-buffer). I couldn&amp;#39;t figure out
 a way built in so ended up writing a small function: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
-  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
-  (bufler-list)
-  (delete-other-windows)
-
-)
-
-(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (bufler-list)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (delete-other-windows)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Check out the video for more details.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -173,10 +173,10 @@ the experience I was looking for.&lt;/p&gt;
 &lt;p&gt;
 To start, I set it up for C++ using&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(use-package eglot :ensure t)
-(add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
-(add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
-(add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(use-package eglot :ensure t)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Eglot defaults to &lt;a href=&#34;https://github.com/MaskRay/ccls&#34;&gt;ccls&lt;/a&gt; as a C++ language server. I didn&amp;#39;t want to have
@@ -192,15 +192,15 @@ Finally, Java was more of an issue I had to get &lt;a href=&#34;https://github.c
 system. It turns out that lsp-mode installed it for me already so I
 just had to point to it:&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
-(defun my-eglot-eclipse-jdt-contact (interactive)
-  &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
-  (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
-    (setenv &amp;#34;CLASSPATH&amp;#34; (concat cp &amp;#34;:&amp;#34; my-eclipse-jdt-home))
-    (unwind-protect (eglot--eclipse-jdt-contact nil)
-      (setenv &amp;#34;CLASSPATH&amp;#34; cp))))
-(setcdr (assq &amp;#39;java-mode eglot-server-programs) #&amp;#39;my-eglot-eclipse-jdt-contact)
-(add-hook &amp;#39;java-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun my-eglot-eclipse-jdt-contact (interactive)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (setenv &amp;#34;CLASSPATH&amp;#34; (concat cp &amp;#34;:&amp;#34; my-eclipse-jdt-home))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (unwind-protect (eglot--eclipse-jdt-contact nil)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (setenv &amp;#34;CLASSPATH&amp;#34; cp))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(setcdr (assq &amp;#39;java-mode eglot-server-programs) #&amp;#39;my-eglot-eclipse-jdt-contact)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;java-mode-hook &amp;#39;eglot-ensure)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 So far, I&amp;#39;m liking eglot very much. I&amp;#39;ll probably check lsp-mode out
@@ -367,18 +367,18 @@ worked except the clear button which did nothing. Weird.&lt;/p&gt;
 &lt;p&gt;
 Exploring the code, here were some of the key sections:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
-&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.clear-button&amp;#34;&lt;/span&gt;);
-
-&lt;span style=&#34;color:#75715e&#34;&gt;// then more code 
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;// then some of this
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);
-&lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;clearTodos&lt;/span&gt;);
-
-&lt;span style=&#34;color:#75715e&#34;&gt;// and more code
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// there were sections like this
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.clear-button&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// then more code 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// then some of this
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;clearButton&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;clearTodos&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// and more code
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I just pulled out the lines relevant to what he was doing and to the
 error so be aware that it&amp;#39;s all out of context. &lt;/p&gt;
@@ -410,12 +410,12 @@ element in the web page. If that element doesn&amp;#39;t exist, it returns
 was no element on the page identified by the class &lt;strong&gt;filter-todo&lt;/strong&gt;. The
 result was that after executing&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.filter-todo&amp;#34;&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;code&gt;filterOption&lt;/code&gt; is set to refer to null.&lt;/p&gt;
 &lt;p&gt;
 Then later, this code: 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;filterOption&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;filterTodo&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 crashes the program because you can&amp;#39;t call the &lt;code&gt;addEventListener&lt;/code&gt;
 method on &lt;code&gt;null&lt;/code&gt; which is what &lt;code&gt;filterOption&lt;/code&gt; is set to.&lt;/p&gt;
@@ -748,15 +748,15 @@ went to Google domains and added an entry for
 bigbluebutton.huntercs.org.&lt;/li&gt;
 &lt;li&gt;I ran (all one line):&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
     This downloads and installs BBB and also uses &lt;strong&gt;certbot&lt;/strong&gt; to set up
     ssl for secure connections.&lt;/p&gt;
 &lt;p&gt;
 After this was done, I created an admin account:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd greenlight/
-docker exec greenlight-v2 bundle exec rake admin:create&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd greenlight/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker exec greenlight-v2 bundle exec rake admin:create&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&amp;gt;}}&lt;/p&gt;
 &lt;p&gt;
 At this point I was up and running so I went to the host and logged in
 using the admin credentials that the above command gave me.&lt;/p&gt;
@@ -1024,22 +1024,22 @@ to my Emacs config file.&lt;/p&gt;
 I followed the instructions in the documentation by typing in these
 lines:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
-
-gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean true&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 but that didn&amp;#39;t seem to work.&lt;/p&gt;
 &lt;p&gt;
 I ended up following the instructions I found in &lt;a href=&#34;https://stackoverflow.com/questions/7464951/how-to-make-org-protocol-work&#34;&gt;this post&lt;/a&gt; creating a
 file named &lt;code&gt;org-protocol.desktop&lt;/code&gt; in the folder
  &lt;code&gt;~/.local/share/applications&lt;/code&gt; containing:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-Name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;org-protocol
-Exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacsclient %u
-Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Application
-Terminal&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false
-Categories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;System;
-MimeType&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x-scheme-handler/org-protocol;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;org-protocol
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacsclient %u
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Application
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Terminal&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Categories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;System;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MimeType&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x-scheme-handler/org-protocol;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 and then running &lt;code&gt;update-desktop-database
 ~/.local/share/applications/&lt;/code&gt;.&lt;/p&gt;
@@ -1048,8 +1048,8 @@ This seemed to do the trick. &lt;/p&gt;
 &lt;p&gt;
 I also modified my link capture template: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
-                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* %a %^g\n %?\n %T\n %i&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* %a %^g\n %?\n %T\n %i&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Finally, to get things basically to work, I installed &lt;a href=&#34;https://github.com/sprig/org-capture-extension&#34;&gt;this&lt;/a&gt;
 extension. I configured it to use my &amp;#34;l&amp;#34; or link capture
@@ -1071,17 +1071,17 @@ found that I could just create a bookmark.&lt;/p&gt;
 Copied mostly from the docs, I made a bookmark with this as the link
 (all in one line):&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 It worked perfectly. &lt;/p&gt;
 &lt;p&gt;
 This time I used this as the template:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
-  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* TODO %a\n %?&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;:prepend&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* TODO %a\n %?&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;:prepend&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 That&amp;#39;s it. Now I can store emails in Emacs or Gmail as well as
 bookmarks without any cut and paste. &lt;/p&gt;
@@ -1159,13 +1159,13 @@ not hard.&lt;/p&gt;
 We can turn off the default CSS used by org-mode
 using:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Or if we want add custom CSS using one or more of these:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD_EXTRA&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;alternate stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style2.css&amp;#34; /&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD_EXTRA&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;alternate stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style2.css&amp;#34; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We can also embed html and custom CSS in our org-files.&lt;/p&gt;
@@ -1585,48 +1585,48 @@ write my own.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s my current complete eshell config:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(use-package exec-path-from-shell
-  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-  :config
-  (exec-path-from-shell-initialize))
-
-
-    (use-package fish-completion
-    :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-    :config
-    (global-fish-completion-mode))
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; (use-package eshell-prompt-extras &lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; :ensure t&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; :config&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; (setq epe-show-python-info nil)&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; )&lt;/span&gt;
-
-  (use-package eshell-git-prompt
-  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-  :config
-  (eshell-git-prompt-use-theme &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;git-radar&lt;/span&gt;)
-  )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(use-package exec-path-from-shell
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (exec-path-from-shell-initialize))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (use-package fish-completion
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (global-fish-completion-mode))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; (use-package eshell-prompt-extras &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; :ensure t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; :config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; (setq epe-show-python-info nil)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; )&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (use-package eshell-git-prompt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (eshell-git-prompt-use-theme &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;git-radar&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 And here&amp;#39;s the code I ended up with for my shell switcher:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
-  (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cl-lib&lt;/span&gt;)
-  (defun select-or-create (arg)
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
-    (if (string= arg &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt;)
-        (eshell &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)
-      (switch-to-buffer arg)))
-  (defun eshell-switcher (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; arg)
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
-    (interactive)
-    (let* (
-           (buffers (cl-remove-if-not (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-local-value&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;major-mode&lt;/span&gt; n) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-list&lt;/span&gt;)) )
-           (names (&lt;span style=&#34;color:#a6e22e&#34;&gt;mapcar&lt;/span&gt; (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-name&lt;/span&gt; n)) buffers))
-           (num-buffers (&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; buffers) )
-           (in-eshellp (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; major-mode &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)))
-      (cond ((&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; num-buffers &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) (eshell (or arg &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)))
-            ((not in-eshellp) (switch-to-buffer (&lt;span style=&#34;color:#a6e22e&#34;&gt;car&lt;/span&gt; buffers)))
-            (&lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt; (select-or-create (&lt;span style=&#34;color:#a6e22e&#34;&gt;completing-read&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Select Shell:&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt; names)))))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cl-lib&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (defun select-or-create (arg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (if (string= arg &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (eshell &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (switch-to-buffer arg)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (defun eshell-switcher (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; arg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (interactive)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (let* (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (buffers (cl-remove-if-not (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-local-value&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;major-mode&lt;/span&gt; n) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-list&lt;/span&gt;)) )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (names (&lt;span style=&#34;color:#a6e22e&#34;&gt;mapcar&lt;/span&gt; (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-name&lt;/span&gt; n)) buffers))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (num-buffers (&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; buffers) )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (in-eshellp (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; major-mode &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (cond ((&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; num-buffers &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) (eshell (or arg &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ((not in-eshellp) (switch-to-buffer (&lt;span style=&#34;color:#a6e22e&#34;&gt;car&lt;/span&gt; buffers)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt; (select-or-create (&lt;span style=&#34;color:#a6e22e&#34;&gt;completing-read&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Select Shell:&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt; names)))))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I currently bound eshell-switcher to &lt;code&gt;CTRL-z e&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;
@@ -1796,17 +1796,17 @@ it shows you the results in a side window. &lt;/p&gt;
 &lt;p&gt;
 If you type in:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
-b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
-c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
-print(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The live python window will display something like:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
-b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
-c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;
-print(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 If you change one of the variables, everything updates.&lt;/p&gt;
 &lt;p&gt;
@@ -2858,21 +2858,21 @@ grading. For grading I usually do something like the following:&lt;/p&gt;
 First I make a file named &lt;strong&gt;repos&lt;/strong&gt; with the names of all the submitted
 repos:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cd THEDIRECTORYWITHALLTHEREPOS
-ls &amp;gt; repos&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd THEDIRECTORYWITHALLTHEREPOS
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls &amp;gt; repos&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Then I&amp;#39;ll use a script that looks something like this:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-      cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
-      NAME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Name: &amp;#34;&lt;/span&gt; Readme.org | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/** Name: //g&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;================= &lt;/span&gt;$NAME&lt;span style=&#34;color:#e6db74&#34;&gt; ====================&amp;#34;&lt;/span&gt;
-      make test
-      ./test -s
-      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n------------------------------------\n\n&amp;#34;&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt; &amp;gt; report&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;cat repos&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      cd /tmp/235-assignment-02-02-16-2019-07-25-00/$i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      NAME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Name: &amp;#34;&lt;/span&gt; Readme.org | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/** Name: //g&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;================= &lt;/span&gt;$NAME&lt;span style=&#34;color:#e6db74&#34;&gt; ====================&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      make test
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ./test -s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n------------------------------------\n\n&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt; &amp;gt; report&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 First I &lt;code&gt;cd&lt;/code&gt; into the repo. Each repo has a file named &lt;strong&gt;Readme.org&lt;/strong&gt; 
@@ -2993,11 +2993,11 @@ for educational purposes for free. &lt;/p&gt;
 The only other thing you have to do is create a &lt;a href=&#34;https://yaml.org/&#34;&gt;YAML&lt;/a&gt; file named
  &lt;code&gt;.travis.yml&lt;/code&gt; in your repo. Here&amp;#39;s one I&amp;#39;m using to test C++ projecs:&lt;/p&gt;
 &lt;div class=&#34;src src-yaml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
-  - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;
-  - &lt;span style=&#34;color:#ae81ff&#34;&gt;./test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;language&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cpp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;compiler&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;clang&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;make test&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;./test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 This tells Travis to use the clang compiler (as opposed to, say g++)
@@ -3139,12 +3139,12 @@ from the command line:&lt;/p&gt;
 &lt;p&gt;They can be run from the command line to output a formatted agenda as
 a string:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or as csv:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -3191,7 +3191,7 @@ agenda every morning.&lt;/p&gt;
 &lt;p&gt;
 The command I actually use to send the email is:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 which I put in a crontab entry to get it to run every day.&lt;/p&gt;

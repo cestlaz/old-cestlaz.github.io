@@ -14,23 +14,22 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs - 13 - Yasnippet" />
 <meta property="og:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
-(use-package elpy :ensure t :config (elpy-enable))   The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out." />
+(use-package elpy :ensure t :config (elpy-enable)) The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-13-yasnippet/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-08-04T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-08-04T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 13 - Yasnippet"/>
 <meta name="twitter:description" content="It turns out that Elpy, a popular emacs package for python development is much easier to set up than I remember. It turns out all you need is:
-(use-package elpy :ensure t :config (elpy-enable))   The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out."/>
+(use-package elpy :ensure t :config (elpy-enable)) The video shows how to install and a bit of use. I don&#39;t think it&#39;s a package I&#39;m going to use much since I use other tools to do similar things but it&#39;s worth checking out."/>
 
 
 
@@ -84,10 +83,10 @@ It turns out that <a href="https://github.com/jorgenschaefer/elpy">Elpy</a>, a p
 is much easier to set up than I remember. It turns out all you need
 is:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package elpy
-:ensure <span style="color:#66d9ef">t</span>
-:config
-(elpy-enable))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package elpy
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(elpy-enable))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 The video shows how to install and a bit of use. I don&#39;t think it&#39;s a
@@ -97,7 +96,7 @@ things but it&#39;s worth checking out.</p>
 The main event this week is <a href="https://github.com/joaotavora/yasnippet">yasnippet</a>, a package that lets you expand
 text aliases. Let&#39;s say you want to put the fairly standard:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
 </div>
 <p>
 in my file. I can just type <strong><strong>ifm</strong></strong> and then hit the <strong><strong>TAB</strong></strong> key and
@@ -111,10 +110,10 @@ application with the <strong><strong>Flask</strong></strong> python microframewo
 <p>
 Setting up yasnippet is as easy as:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package yasnippet
-:ensure <span style="color:#66d9ef">t</span>
-:init
-(yas-global-mode <span style="color:#ae81ff">1</span>))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package yasnippet
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:init
+</span></span><span style="display:flex;"><span>(yas-global-mode <span style="color:#ae81ff">1</span>))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 and it has built in support for <a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d">tons of langauges</a>. You can also easily
@@ -171,7 +170,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

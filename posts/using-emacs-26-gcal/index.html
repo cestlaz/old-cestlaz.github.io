@@ -14,23 +14,22 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs - 26 - Google Calendar, Org Agenda" />
 <meta property="og:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
- I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list." />
+I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-26-gcal/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 26 - Google Calendar, Org Agenda"/>
 <meta name="twitter:description" content="A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
- I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list."/>
+I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list."/>
 
 
 
@@ -98,15 +97,15 @@ setting up things on the Google side. You&#39;ll have to replace the
 <strong><strong>client ID</strong></strong> and <strong><strong>client secrets</strong></strong> in the code below as well as use
 your calendar name and whatever org file you want to sync with.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq package-check-signature <span style="color:#66d9ef">nil</span>)
-
-
-(use-package org-gcal
-:ensure <span style="color:#66d9ef">t</span>
-:config
-(setq org-gcal-client-id <span style="color:#e6db74">&#34;oauth 2.0 client ID&#34;</span>
-org-gcal-client-secret <span style="color:#e6db74">&#34;client secret&#34;</span>
-org-gcal-file-alist <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;zamansky@gmail.com&#34;</span> <span style="color:#f92672">.</span>  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>))))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq package-check-signature <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(use-package org-gcal
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(setq org-gcal-client-id <span style="color:#e6db74">&#34;oauth 2.0 client ID&#34;</span>
+</span></span><span style="display:flex;"><span>org-gcal-client-secret <span style="color:#e6db74">&#34;client secret&#34;</span>
+</span></span><span style="display:flex;"><span>org-gcal-file-alist <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;zamansky@gmail.com&#34;</span> <span style="color:#f92672">.</span>  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>))))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 I use these two hooks to sync things semi-automatically. The first
@@ -116,8 +115,8 @@ reload the agenda by hitting <strong><strong>r</strong></strong> in the agenda v
 <p>
 The second hook syncs with my Google calendar when I capture.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(add-hook <span style="color:#e6db74">&#39;org-agenda-mode-hook</span> (lambda () (org-gcal-sync) ))
-(add-hook <span style="color:#e6db74">&#39;org-capture-after-finalize-hook</span> (lambda () (org-gcal-sync) ))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;org-agenda-mode-hook</span> (lambda () (org-gcal-sync) ))
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;org-capture-after-finalize-hook</span> (lambda () (org-gcal-sync) ))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Here are the rest of my settings. The org files I want to include in
@@ -134,26 +133,26 @@ my agenda views:</p>
 <p>
 Also, my capture settings:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-files (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>
-<span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span>
-<span style="color:#e6db74">&#34;~/Dropbox/orgfiles/schedule.org&#34;</span>))
-
-
-(setq org-capture-templates
-<span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Appointment&#34;</span> entry (file  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span> )
-<span style="color:#e6db74">&#34;* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n&#34;</span>)
-(<span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#e6db74">&#34;Link&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/links.org&#34;</span> <span style="color:#e6db74">&#34;Links&#34;</span>)
-<span style="color:#e6db74">&#34;* %? %^L %^g \n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;To Do Item&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;To Do&#34;</span>)
-<span style="color:#e6db74">&#34;* TODO %?\n%u&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;Note&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Note space&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%u&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/Dropbox/journal.org&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\nEntered on %U\n  %i\n  %a&#34;</span>)
-(<span style="color:#e6db74">&#34;s&#34;</span> <span style="color:#e6db74">&#34;Screencast&#34;</span> entry (file <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/screencastnotes.org&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%i\n&#34;</span>)))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-agenda-files (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;~/Dropbox/orgfiles/schedule.org&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(setq org-capture-templates
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Appointment&#34;</span> entry (file  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span> )
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#e6db74">&#34;Link&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/links.org&#34;</span> <span style="color:#e6db74">&#34;Links&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %? %^L %^g \n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;To Do Item&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;To Do&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* TODO %?\n%u&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;Note&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Note space&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%u&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/Dropbox/journal.org&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\nEntered on %U\n  %i\n  %a&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;s&#34;</span> <span style="color:#e6db74">&#34;Screencast&#34;</span> entry (file <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/screencastnotes.org&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%i\n&#34;</span>)))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 The end result is that I can add an event in my Google calendar (or
@@ -166,10 +165,10 @@ it up to Google.</p>
 Now, I can use bring up a regular agenda <strong><strong>C-a a</strong></strong>, my todo list <strong><strong>C-a
 t</strong></strong> or by adding a custom agenda command:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-custom-commands
-<span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;Simple agenda view&#34;</span>
-((agenda <span style="color:#e6db74">&#34;&#34;</span>)
-(alltodo <span style="color:#e6db74">&#34;&#34;</span>)))))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-agenda-custom-commands
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;Simple agenda view&#34;</span>
+</span></span><span style="display:flex;"><span>((agenda <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>(alltodo <span style="color:#e6db74">&#34;&#34;</span>)))))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 a combined agenda and todo view using <strong><strong>C-a n</strong></strong></p>
@@ -177,29 +176,29 @@ a combined agenda and todo view using <strong><strong>C-a n</strong></strong></p
 Finally, there&#39;s <a href="https://github.com/kiwanami/emacs-calfw">calfw</a>. It&#39;s a nice tool to view calendars in
 Google. I don&#39;t use it much anymore but it is nice:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package calfw
-:ensure <span style="color:#75715e">;TODO:</span>
-:config
-(require <span style="color:#e6db74">&#39;calfw</span>)
-(require <span style="color:#e6db74">&#39;calfw-org</span>)
-(setq cfw:org-overwrite-default-keybinding <span style="color:#66d9ef">t</span>)
-(require <span style="color:#e6db74">&#39;calfw-ical</span>)
-
-(defun mycalendar ()
-(interactive)
-(cfw:open-calendar-buffer
-:contents-sources
-(<span style="color:#a6e22e">list</span>
-<span style="color:#75715e">;; (cfw:org-create-source &#34;Green&#34;)  ; orgmode source</span>
-(cfw:ical-create-source <span style="color:#e6db74">&#34;gcal&#34;</span> <span style="color:#e6db74">&#34;https://somecalnedaraddress&#34;</span> <span style="color:#e6db74">&#34;IndianRed&#34;</span>) <span style="color:#75715e">; devorah calender</span>
-(cfw:ical-create-source <span style="color:#e6db74">&#34;gcal&#34;</span> <span style="color:#e6db74">&#34;https://anothercalendaraddress&#34;</span> <span style="color:#e6db74">&#34;IndianRed&#34;</span>) <span style="color:#75715e">; google calendar ICS</span>
-)))
-(setq cfw:org-overwrite-default-keybinding <span style="color:#66d9ef">t</span>))
-
-(use-package calfw-gcal
-:ensure <span style="color:#66d9ef">t</span>
-:config
-(require <span style="color:#e6db74">&#39;calfw-gcal</span>))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package calfw
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#75715e">;TODO:</span>
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;calfw</span>)
+</span></span><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;calfw-org</span>)
+</span></span><span style="display:flex;"><span>(setq cfw:org-overwrite-default-keybinding <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;calfw-ical</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(defun mycalendar ()
+</span></span><span style="display:flex;"><span>(interactive)
+</span></span><span style="display:flex;"><span>(cfw:open-calendar-buffer
+</span></span><span style="display:flex;"><span>:contents-sources
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">list</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (cfw:org-create-source &#34;Green&#34;)  ; orgmode source</span>
+</span></span><span style="display:flex;"><span>(cfw:ical-create-source <span style="color:#e6db74">&#34;gcal&#34;</span> <span style="color:#e6db74">&#34;https://somecalnedaraddress&#34;</span> <span style="color:#e6db74">&#34;IndianRed&#34;</span>) <span style="color:#75715e">; devorah calender</span>
+</span></span><span style="display:flex;"><span>(cfw:ical-create-source <span style="color:#e6db74">&#34;gcal&#34;</span> <span style="color:#e6db74">&#34;https://anothercalendaraddress&#34;</span> <span style="color:#e6db74">&#34;IndianRed&#34;</span>) <span style="color:#75715e">; google calendar ICS</span>
+</span></span><span style="display:flex;"><span>)))
+</span></span><span style="display:flex;"><span>(setq cfw:org-overwrite-default-keybinding <span style="color:#66d9ef">t</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(use-package calfw-gcal
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;calfw-gcal</span>))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Enjoy.</p>
@@ -247,7 +246,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

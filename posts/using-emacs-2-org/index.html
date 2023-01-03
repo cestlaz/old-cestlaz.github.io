@@ -14,27 +14,26 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs - Intro to Org Mode" />
 <meta property="og:description" content="This video is a brief introduction to org-mode, a mode I use for all sorts of things.
- We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
- Actually, all my blog posts are written in org-mode.
- Here are the important lines to add to your Emacs init." />
+We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
+Actually, all my blog posts are written in org-mode.
+Here are the important lines to add to your Emacs init." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-2-org/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-05-23T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-05-23T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - Intro to Org Mode"/>
 <meta name="twitter:description" content="This video is a brief introduction to org-mode, a mode I use for all sorts of things.
- We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
- Actually, all my blog posts are written in org-mode.
- Here are the important lines to add to your Emacs init."/>
+We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
+Actually, all my blog posts are written in org-mode.
+Here are the important lines to add to your Emacs init."/>
 
 
 
@@ -97,10 +96,10 @@ Actually, all my blog posts are written in org-mode.</p>
 Here are the important lines to add to your Emacs <strong>init.el</strong> file  to
 get the nice looking bullets when in org-mode:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(use<span style="color:#f92672">-</span>package org<span style="color:#f92672">-</span>bullets
-:ensure t
-:config
-(add<span style="color:#f92672">-</span>hook <span style="color:#e6db74">&#39;org-mode-hook (lambda () (org-bullets-mode 1))))</span></code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(use<span style="color:#f92672">-</span>package org<span style="color:#f92672">-</span>bullets
+</span></span><span style="display:flex;"><span>:ensure t
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(add<span style="color:#f92672">-</span>hook <span style="color:#e6db74">&#39;org-mode-hook (lambda () (org-bullets-mode 1))))</span></span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 About a month ago, Emacs user Harry Schwartz gave a nice overview talk
@@ -151,7 +150,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

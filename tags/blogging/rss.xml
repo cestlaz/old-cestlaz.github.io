@@ -84,7 +84,7 @@ patterns in them. It has loads of options and is really fast.&lt;/p&gt;
 If I wanted to find out how many posts I wrote in Oct, 2017 I would do
 this:&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rg -t org &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*2017-10&amp;#34;&lt;/span&gt; | wc -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rg -t org &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*2017-10&amp;#34;&lt;/span&gt; | wc -l&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 The &lt;code&gt;-t org&lt;/code&gt; says to look at all the &lt;strong&gt;.org&lt;/strong&gt; files in the directory
@@ -94,16 +94,16 @@ files.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s what I used to get monthly totals &lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; YEAR in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;2010,2011,2012,2013,2014,2015,2016,2017,2018,2019&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; MONTH in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;01,02,03,04,05,06,07,08,09,10,11,12&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-	t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;rg -t org -t md  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*&lt;/span&gt;$YEAR&lt;span style=&#34;color:#e6db74&#34;&gt;-&lt;/span&gt;$MONTH&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; | wc -l&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-	emacs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;rg -t org &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*&lt;/span&gt;$YEAR&lt;span style=&#34;color:#e6db74&#34;&gt;-&lt;/span&gt;$MONTH&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; | grep emacs  | wc -l&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-	echo $YEAR , $MONTH, $t, $emacs
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; YEAR in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;2010,2011,2012,2013,2014,2015,2016,2017,2018,2019&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; MONTH in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;01,02,03,04,05,06,07,08,09,10,11,12&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;rg -t org -t md  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*&lt;/span&gt;$YEAR&lt;span style=&#34;color:#e6db74&#34;&gt;-&lt;/span&gt;$MONTH&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; | wc -l&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	emacs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;rg -t org &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date:.*&lt;/span&gt;$YEAR&lt;span style=&#34;color:#e6db74&#34;&gt;-&lt;/span&gt;$MONTH&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; | grep emacs  | wc -l&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	echo $YEAR , $MONTH, $t, $emacs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Note that I specified &lt;code&gt;-t org -t md&lt;/code&gt; since my older blog posts are

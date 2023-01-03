@@ -14,25 +14,24 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs 53 Emailing Org Agenda" />
 <meta property="og:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:
- It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(.  I prefer using org-mode beacuse:
- Emacs I prefer, for the most part, to control my data.  I partially sync the two platforms." />
+It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(. I prefer using org-mode beacuse:
+Emacs I prefer, for the most part, to control my data. I partially sync the two platforms. I&#39;ve already talked about syncing Google Calendar and org-mode." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-11-03T08:55:23-04:00" />
 <meta property="article:modified_time" content="2018-11-03T08:55:23-04:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 53 Emailing Org Agenda"/>
 <meta name="twitter:description" content="I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:
- It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(.  I prefer using org-mode beacuse:
- Emacs I prefer, for the most part, to control my data.  I partially sync the two platforms."/>
+It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(. I prefer using org-mode beacuse:
+Emacs I prefer, for the most part, to control my data. I partially sync the two platforms. I&#39;ve already talked about syncing Google Calendar and org-mode."/>
 
 
 
@@ -116,12 +115,12 @@ from the command line:</p>
 <p>They can be run from the command line to output a formatted agenda as
 a string:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span></span></span></code></pre></div>
 </div>
 <p>
 or as csv:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda-csv &#34;a&#34; org-agenda-span 14)&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>emacs --batch -l ~/.emacs.d/init.el  -eval <span style="color:#e6db74">&#39;(org-batch-agenda-csv &#34;a&#34; org-agenda-span 14)&#39;</span></span></span></code></pre></div>
 </div>
 <table>
 <tbody>
@@ -168,7 +167,7 @@ agenda every morning.</p>
 <p>
 The command I actually use to send the email is:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/usr/bin/emacs --batch -l ~/.emacs  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span> 2&gt;/dev/null | mail -s <span style="color:#e6db74">&#34;Mike&#39;s Agenda for </span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#39;\%A \%D&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> zamansky@gmail.com</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>/usr/bin/emacs --batch -l ~/.emacs  -eval <span style="color:#e6db74">&#39;(org-batch-agenda &#34;a&#34; org-agenda-span 14)&#39;</span> 2&gt;/dev/null | mail -s <span style="color:#e6db74">&#34;Mike&#39;s Agenda for </span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#39;\%A \%D&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> zamansky@gmail.com</span></span></code></pre></div>
 </div>
 <p>
 which I put in a crontab entry to get it to run every day.</p>
@@ -216,7 +215,7 @@ Enjoy!</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

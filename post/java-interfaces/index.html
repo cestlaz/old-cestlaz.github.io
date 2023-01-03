@@ -14,21 +14,20 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Java Interfaces" />
-<meta property="og:description" content="Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.  Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary." />
+<meta property="og:description" content="Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments. Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/java-interfaces/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-02-08T09:40:44-04:00" />
 <meta property="article:modified_time" content="2019-02-08T09:40:44-04:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Java Interfaces"/>
-<meta name="twitter:description" content="Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments.  Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary."/>
+<meta name="twitter:description" content="Two of the hardest topics to make meaningful to students in APCS-A are inheritance and interfaces. It&#39;s not that they&#39;re super difficult topics but rather that they&#39;re not often needed, useful, or superior to not using them on beginner assignments. More often than not the motivation is a bit forced as are the assignments. Inheritance is its own can of worms and to be honest, something I&#39;ve not found to be all that useful or necessary."/>
 
 
 
@@ -104,7 +103,7 @@ functionality. Clearly not a good idea.</p>
 <p>
 The first useful example is probably <code>Comparable</code></p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span></span></span></code></pre></div>
 </div>
 <p>
 At first blush it might not seem all that useful. </p>
@@ -112,7 +111,7 @@ At first blush it might not seem all that useful. </p>
 Let&#39;s suppose you are doing something like finding the first String
 (alphabetically) from an array:</p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span></span></span></code></pre></div>
 </div>
 <p>
 That&#39;s easy enough but what if you had another class, <code>Shape</code> where
@@ -124,7 +123,7 @@ come from the same parent. Instead, by having your two new classes
 implement the <code>Comparable</code> interface all three can use the same
 search:</p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span></span></span></code></pre></div>
 </div>
 <p>
 This is not entirely true. The above solution will give you compiler
@@ -152,7 +151,7 @@ game where time passes a turn at a time.</p>
 For example, you might have a simulation with various resources that
 implement an interface with an <code>update</code> routine:</p>
 <div class="src src-java">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span></span></span></code></pre></div>
 </div>
 <p>
 Maybe a food resource updates by raising or lowering the amount of
@@ -209,7 +208,7 @@ you out there.</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

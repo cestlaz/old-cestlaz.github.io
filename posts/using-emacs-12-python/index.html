@@ -14,23 +14,22 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs - 12 - Flycheck, Jedi, Python" />
 <meta property="og:description" content="This week, we&#39;re going to look at my setup for Python programming.
- I&#39;m an educator, not a professional developer so I&#39;m not working in huge code bases with dozens or more files at a time. I do periodically work in medium size code bases and will talk about cross file navigation and project management later on. There are also more powerful emacs Python packages. One being elpy. Elpy looks pretty cool but for me, it&#39;s overkill." />
+I&#39;m an educator, not a professional developer so I&#39;m not working in huge code bases with dozens or more files at a time. I do periodically work in medium size code bases and will talk about cross file navigation and project management later on. There are also more powerful emacs Python packages. One being elpy. Elpy looks pretty cool but for me, it&#39;s overkill." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-12-python/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-07-27T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-07-27T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 12 - Flycheck, Jedi, Python"/>
 <meta name="twitter:description" content="This week, we&#39;re going to look at my setup for Python programming.
- I&#39;m an educator, not a professional developer so I&#39;m not working in huge code bases with dozens or more files at a time. I do periodically work in medium size code bases and will talk about cross file navigation and project management later on. There are also more powerful emacs Python packages. One being elpy. Elpy looks pretty cool but for me, it&#39;s overkill."/>
+I&#39;m an educator, not a professional developer so I&#39;m not working in huge code bases with dozens or more files at a time. I do periodically work in medium size code bases and will talk about cross file navigation and project management later on. There are also more powerful emacs Python packages. One being elpy. Elpy looks pretty cool but for me, it&#39;s overkill."/>
 
 
 
@@ -96,15 +95,15 @@ and supports <a href="http://www.flycheck.org/en/latest/languages.html#flycheck-
 external checkers though. For instance, I installed <strong><strong>pylint</strong></strong> for
 python syntax checking with:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip install pylint</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pip install pylint</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Cofiguring flycheck is as easy as:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package flycheck
-:ensure <span style="color:#66d9ef">t</span>
-:init
-(global-flycheck-mode <span style="color:#66d9ef">t</span>))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package flycheck
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:init
+</span></span><span style="display:flex;"><span>(global-flycheck-mode <span style="color:#66d9ef">t</span>))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 The video all shows how I like to run Python from within emacs.</p>
@@ -114,11 +113,11 @@ for Python.</p>
 <p>
 Here&#39;s the setup:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package jedi
-:ensure <span style="color:#66d9ef">t</span>
-:init
-(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#e6db74">&#39;jedi:setup</span>)
-(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#e6db74">&#39;jedi:ac-setup</span>))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package jedi
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:init
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#e6db74">&#39;jedi:setup</span>)
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#e6db74">&#39;jedi:ac-setup</span>))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 The last hook sets up the autocomplete.</p>
@@ -130,7 +129,7 @@ with:</p>
 <p>
 <strong><strong>EDIT:</strong></strong> I just got a report that you might need to also install epc (<strong><strong>sudo pip install epc</strong></strong>).</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip install virtualenv</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pip install virtualenv</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Here&#39;s the video:</p>
@@ -180,7 +179,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -482,19 +482,19 @@ this would map to an actual screen.&lt;/p&gt;
 Now, finding the coordinate of a tile was pretty easy. In Clojure
 it&amp;#39;s: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; assume deltas is a lookup dictionary of the above mapping&lt;/span&gt;
-
-  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;get-tile-location [steps]
-    (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[loc step]
-              (map + loc (&lt;span style=&#34;color:#a6e22e&#34;&gt;deltas&lt;/span&gt;  step))
-              ) [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] steps))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; assume deltas is a lookup dictionary of the above mapping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;get-tile-location [steps]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[loc step]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              (map + loc (&lt;span style=&#34;color:#a6e22e&#34;&gt;deltas&lt;/span&gt;  step))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              ) [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] steps))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 In Python it would look more like this: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# assume deltas is a dictionary with the above mapping&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;# and steps is a list of instructions [&amp;#34;e&amp;#34;,&amp;#34;w&amp;#34;,&amp;#34;se&amp;#34;, etc]&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; step &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; steps:
-      loc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [sum(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; zip(loc, deltas[step])]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# assume deltas is a dictionary with the above mapping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# and steps is a list of instructions [&amp;#34;e&amp;#34;,&amp;#34;w&amp;#34;,&amp;#34;se&amp;#34;, etc]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; step &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; steps:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      loc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [sum(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; zip(loc, deltas[step])]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 We can now convert any input line of instructions to a coordinate. If
 we write a routine to flip a tile we can now set up our world and
@@ -658,14 +658,14 @@ Clojure but the python equivalent would be to have a list representing
 all the cups, move around ti with mod, and remove cups and add them
 using slices.&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# given board = [3,8,9,1,2,5,4,6,7&lt;/span&gt;
-
-  &lt;span style=&#34;color:#75715e&#34;&gt;# to get the next board state&lt;/span&gt;
-  current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
-  to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]
-  remaining &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;:]
-  idx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; find_target(board,remove)
-  newboard &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; remaining[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:idx] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; to_remove &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; remaining[idx:] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; [current]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# given board = [3,8,9,1,2,5,4,6,7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# to get the next board state&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  to_remove &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  remaining &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; board[&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;:]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  idx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; find_target(board,remove)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  newboard &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; remaining[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:idx] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; to_remove &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; remaining[idx:] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; [current]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I might have the indexing a little off and the &lt;code&gt;find_target&lt;/code&gt; routine
 isn&amp;#39;t shown adn might have different parameters. As I&amp;#39;ve said, I wrote
@@ -693,10 +693,10 @@ easily both traverse and manipulate the data set. &lt;/p&gt;
 For example, if your board was [3,8,9,1] then you&amp;#39;d use this
 dictionary to represent it - remember the 1 wraps back around to
 the 3.
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  nodes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,
-           &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;,
-           &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
-           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  nodes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 So if you&amp;#39;re current node was represented in a variable &lt;code&gt;current&lt;/code&gt; the
 three nodes you&amp;#39;ll remove would be &lt;code&gt;[nodes[current],
@@ -779,15 +779,15 @@ done the find neighbors routine. &lt;/li&gt;
 it&amp;#39;s in your active cells list or set.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, it&amp;#39;s pretty easy to run the CA: 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pythonesque pseudocode &lt;/span&gt;
-potential_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; find_all_neighbors(current_active_cells)
-new_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; cell &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; potential_cells: 
-  n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; count_neighbors(cell)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; is_active(cell) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; (n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
-    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; is_active(cell)) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;:
-    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pythonesque pseudocode &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;potential_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; find_all_neighbors(current_active_cells)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;new_cells &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; cell &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; potential_cells: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; count_neighbors(cell)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; is_active(cell) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; (n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; is_active(cell)) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    new_cells&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(cell)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Then you just have to run generate new states until you get the
 answer.&lt;/p&gt;
@@ -829,7 +829,7 @@ convert it to an sexp using &lt;code&gt;read-string&lt;/code&gt;  but if we just
 &lt;code&gt;(read-string &amp;#34;1 + 2 + 3&amp;#34;)&lt;/code&gt; we&amp;#39;d get an error because &amp;#34;1 + 2 + 3&amp;#34;
 isn&amp;#39;t a valid sexp so we just surround it by parens:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;def &lt;/span&gt;equation-sexp (&lt;span style=&#34;color:#a6e22e&#34;&gt;read-string&lt;/span&gt; (str &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1 + 2 * 3 + (4 * 5 )&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;def &lt;/span&gt;equation-sexp (&lt;span style=&#34;color:#a6e22e&#34;&gt;read-string&lt;/span&gt; (str &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1 + 2 * 3 + (4 * 5 )&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The above would leave us with the sexp (1 + 2 * 3 + (4 * 5 )).&lt;/p&gt;
 &lt;p&gt;
@@ -842,9 +842,9 @@ the pair and your overall result so far.&lt;/p&gt;
 &lt;p&gt;
 In Clojure it looks like this: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1-eval [f &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; r]
-  (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[ans [op next]]
-            (apply op [ans next] )) f (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; r)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;part1-eval [f &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; r]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (reduce (&lt;span style=&#34;color:#66d9ef&#34;&gt;fn &lt;/span&gt;[ans [op next]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (apply op [ans next] )) f (&lt;span style=&#34;color:#a6e22e&#34;&gt;partition&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; r)))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Next, we insert that function name to the start of each sexp so 
 (1 + 2 * 3 + (4 * 5*)) becomes (part1-eval 1 + 2 * 3 + (part1-eval 4 *
@@ -935,28 +935,28 @@ fond of.&lt;/p&gt;
 &lt;p&gt;
 Instead of taking the above range and having some test like: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; ticket:
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; low1 &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; high1) &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; \
-     (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; low2 &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; high2):
-       do something&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; ticket:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; low1 &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; high1) &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; low2 &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; high2):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       do something&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 or specifically for the row example:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; ticket:
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; \
-     (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;33&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;):
-       do something&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; ticket:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;33&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; number &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       do something&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 you could make a set with all the possible seats  and then just test
 to see if the seat was in the set: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;r1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set( range(low1,high&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
-r2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set( range(low2,hight2&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
-valid_seats &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;union(r2)
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# then later&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; seat &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; valid_seats:
-  do something&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set( range(low1,high&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set( range(low2,hight2&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;valid_seats &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;union(r2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# then later&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; seat &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; valid_seats:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  do something&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I just find this more elegant. &lt;/p&gt;
 &lt;p&gt;
@@ -993,10 +993,10 @@ categories for each row.&lt;/p&gt;
 &lt;p&gt;
 Part of it looked sort of like this (but in clojure):&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;[ [&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;, [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wagon&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arrival-station&amp;#34;&lt;/span&gt;] ],
-  [&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;, [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wagon&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arrival-station&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;train&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;row&amp;#34;&lt;/span&gt;]]
-&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[ [&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;, [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wagon&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arrival-station&amp;#34;&lt;/span&gt;] ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;, [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wagon&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arrival-station&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;train&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;row&amp;#34;&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Examining this table, I noticed that one row had only one category,
 another had only 2 then one three etc. Great - we can now solve this
@@ -1097,17 +1097,17 @@ I misread part 1 but ultimately, my solution was to: &lt;/p&gt;
 &lt;p&gt;Then loop through comparing adjacent values and keep track of the
 differences which can be 1, 2, or 3. &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample10-1.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()]
-data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sort()
-data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
-data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(max(data)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
-
-j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
-    diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;data[i]
-    j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-
-print(j)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[ int(x) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample10-1.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines()]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sort()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(max(data)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;data[i]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j[diff&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(j)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Part 2 was where the fun starts - how many combinations of adapters
 will take you from the start to the end.&lt;/p&gt;
@@ -1139,34 +1139,34 @@ To do this, we can look at the adapters as a graph. We can build a
 dictionary where the keys are the adapter joltages and the entries are
 the lower joltage adapters it can connect with:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
-&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build_reverse_map&lt;/span&gt;(data):
-    graph&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
-    data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)):
-        current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[i]
-        j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (j&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;len(data) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; data[i] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; data[j] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
-            j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-        graph[current]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:j]
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; graph
-
-rmap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; build_reverse_map(data)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build_reverse_map&lt;/span&gt;(data):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    graph&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(len(data)):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[i]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (j&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;len(data) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; data[i] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; data[j] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        graph[current]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:j]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; graph
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rmap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; build_reverse_map(data)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;
@@ -1193,30 +1193,30 @@ ways to get to each of it&amp;#39;s neighbors). Store that in ways[6]&lt;/p&gt;
 Go through all the nodes and then ways[the last node] will have your
 answer:  &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
-&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
-&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;ways&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
-    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
-    neighbors &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rmap[d]
-    sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; neighbors:
-        sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; ways[n]
-    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sum&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ways&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    neighbors &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rmap[d]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; neighbors:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; ways[n]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ways[d]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sum&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;
@@ -1262,13 +1262,13 @@ I left out the weights (numbers of bags). This can be represented in
 an adjacency list. The video does this in Clojure but in Python, you&amp;#39;d
 get something that starts like this:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lightred&amp;#39;&lt;/span&gt;     : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkorange&amp;#39;&lt;/span&gt;   : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibrantplum&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;],
- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibtrantplum&amp;#39;&lt;/span&gt; :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;]}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lightred&amp;#39;&lt;/span&gt;     : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkorange&amp;#39;&lt;/span&gt;   : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brightwhite&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mutedyellow&amp;#39;&lt;/span&gt;  : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;shinygold&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibrantplum&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darkolive&amp;#39;&lt;/span&gt;    :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vibtrantplum&amp;#39;&lt;/span&gt; :[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fadedblue&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dottedblack&amp;#39;&lt;/span&gt;]}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The challenge comes when you see that many starting points can lead to
 the goal of the shiny gold bag. &lt;/p&gt;
@@ -1341,10 +1341,10 @@ the newlines and then count the unique characters. &lt;/p&gt;
 &lt;p&gt;
 In Python, something like this (Clojure in the video and on &lt;a href=&#34;https://github.com/zamansky/advent2020/blob/main/src/day06.clj&#34;&gt;GitHub&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;d&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
-d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
-s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d)
-ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(s)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 So, you just have to do that for each group and add them all up.&lt;/p&gt;
 &lt;p&gt;
@@ -1357,13 +1357,13 @@ union.&lt;/p&gt;
 &lt;p&gt;
 Again in Python: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
-d_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()
-result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;])
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
-    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; set(item)
-print(result)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;abd&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ab&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set(d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d_list[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; set(item)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(result)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Again,  do it for all the groups and add it up.&lt;/p&gt;
 &lt;p&gt;
@@ -1485,17 +1485,17 @@ the idea is the same as the Python I&amp;#39;ll talk about here.&lt;/p&gt;
 Splitting the data into a list of potential passports is easy because
 you can split the string on two newlines: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample04.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()
-data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;../data/sample04.dat&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Now we have a list of string. &lt;/p&gt;
 &lt;p&gt;
 Next, we can split each string on whitespace so that each string in
 each sublist is a string in the form &lt;strong&gt;k:v&lt;/strong&gt;: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
-    data_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append([item &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    data_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append([item &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split()])&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 So, for example, data_list[0] might look like this: &lt;/p&gt;
 &lt;pre class=&#34;example&#34;&gt;
@@ -1504,19 +1504,19 @@ So, for example, data_list[0] might look like this: &lt;/p&gt;
 &lt;p&gt;
 Finally, we can convert each passport into a dictionary: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[]
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_list:
-    temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]:item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d} 
-    temp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cid&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;)
-    data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(temp)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_list:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]:item&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; d} 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    temp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cid&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    data_dicts&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(temp)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The easiest way I came up with to check if a passport was valid was to
 make a set out of a list of required field names, make a set out of
 each potential passports field names (they&amp;#39;re dictionary keys) and see
 if they&amp;#39;re equal: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;fields &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;byr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hgt&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hcl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ecl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;])
-valid_passports &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  [set(x&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keys()) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; fields &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_dicts]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fields &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; set([&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;byr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eyr&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hgt&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hcl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ecl&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;valid_passports &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  [set(x&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keys()) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; fields &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; data_dicts]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I think the Clojure code is cleaner but it&amp;#39;s much the same.&lt;/p&gt;
 &lt;p&gt;
@@ -1536,19 +1536,19 @@ It turns out that Clojure has a really cool library - Clojure Spec
 that does just that. You set up validators for each field type and
 then one for an entire passport. Here&amp;#39;s the code: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;1920&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2002&lt;/span&gt;)))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2010&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;)))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2030&lt;/span&gt;)))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? hgt-test))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#[0-9a-f]{6}&amp;#34;&lt;/span&gt; %)))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amb|blu|brn|gry|grn|hzl|oth&amp;#34;&lt;/span&gt; %)))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^[0-9]{9}$&amp;#34;&lt;/span&gt; % )))
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt; string?)
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/keys&lt;/span&gt;
-                   &lt;span style=&#34;color:#e6db74&#34;&gt;:req&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt;]
-                   &lt;span style=&#34;color:#e6db74&#34;&gt;:opt&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt;]))
-
-(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/valid?&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; test-passport)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;1920&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2002&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2010&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;gt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2020&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&amp;lt;= (&lt;span style=&#34;color:#a6e22e&#34;&gt;u/parse-int&lt;/span&gt; %) &lt;span style=&#34;color:#ae81ff&#34;&gt;2030&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? hgt-test))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#[0-9a-f]{6}&amp;#34;&lt;/span&gt; %)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amb|blu|brn|gry|grn|hzl|oth&amp;#34;&lt;/span&gt; %)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/and&lt;/span&gt; string? &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(re-find &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^[0-9]{9}$&amp;#34;&lt;/span&gt; % )))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt; string?)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/def&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;s/keys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                   &lt;span style=&#34;color:#e6db74&#34;&gt;:req&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::byr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::iyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::eyr&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hgt&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::hcl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::ecl&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::pid&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                   &lt;span style=&#34;color:#e6db74&#34;&gt;:opt&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;::cid&lt;/span&gt;]))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;s/valid?&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;::passport&lt;/span&gt; test-passport)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The last line would test to see if &lt;strong&gt;test-passport&lt;/strong&gt; was valid. It&amp;#39;s all
 covered in detail in the video.&lt;/p&gt;
@@ -1624,14 +1624,14 @@ ibuffer I want it to use the whole Emacs frame. Otherwise I just use
 ivy-switch-buffer (or now bufler-switch-buffer). I couldn&amp;#39;t figure out
 a way built in so ended up writing a small function: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
-  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
-  (bufler-list)
-  (delete-other-windows)
-
-)
-
-(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun mz/bufler-one-window (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; force-refresh)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (interactive &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;P&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (bufler-list)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (delete-other-windows)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(global-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-x C-b&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mz/bufler-one-window&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Check out the video for more details.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KqvjeRf84do&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -1685,10 +1685,10 @@ the experience I was looking for.&lt;/p&gt;
 &lt;p&gt;
 To start, I set it up for C++ using&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(use-package eglot :ensure t)
-(add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
-(add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
-(add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(use-package eglot :ensure t)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-to-list &amp;#39;eglot-server-programs &amp;#39;((c++-mode c-mode) &amp;#34;clangd-10&amp;#34;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;c-mode-hook &amp;#39;eglot-ensure)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;c++-mode-hook &amp;#39;eglot-ensure)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Eglot defaults to &lt;a href=&#34;https://github.com/MaskRay/ccls&#34;&gt;ccls&lt;/a&gt; as a C++ language server. I didn&amp;#39;t want to have
@@ -1704,15 +1704,15 @@ Finally, Java was more of an issue I had to get &lt;a href=&#34;https://github.c
 system. It turns out that lsp-mode installed it for me already so I
 just had to point to it:&lt;/p&gt;
 &lt;div class=&#34;src src-text&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
-(defun my-eglot-eclipse-jdt-contact (interactive)
-  &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
-  (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
-    (setenv &amp;#34;CLASSPATH&amp;#34; (concat cp &amp;#34;:&amp;#34; my-eclipse-jdt-home))
-    (unwind-protect (eglot--eclipse-jdt-contact nil)
-      (setenv &amp;#34;CLASSPATH&amp;#34; cp))))
-(setcdr (assq &amp;#39;java-mode eglot-server-programs) #&amp;#39;my-eglot-eclipse-jdt-contact)
-(add-hook &amp;#39;java-mode-hook &amp;#39;eglot-ensure)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defconst my-eclipse-jdt-home &amp;#34;/home/zamansky/.emacs.d/.cache/lsp/eclipse.jdt.ls/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun my-eglot-eclipse-jdt-contact (interactive)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;#34;Contact with the jdt server input INTERACTIVE.&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (let ((cp (getenv &amp;#34;CLASSPATH&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (setenv &amp;#34;CLASSPATH&amp;#34; (concat cp &amp;#34;:&amp;#34; my-eclipse-jdt-home))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (unwind-protect (eglot--eclipse-jdt-contact nil)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (setenv &amp;#34;CLASSPATH&amp;#34; cp))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(setcdr (assq &amp;#39;java-mode eglot-server-programs) #&amp;#39;my-eglot-eclipse-jdt-contact)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(add-hook &amp;#39;java-mode-hook &amp;#39;eglot-ensure)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 So far, I&amp;#39;m liking eglot very much. I&amp;#39;ll probably check lsp-mode out
@@ -1890,22 +1890,22 @@ to my Emacs config file.&lt;/p&gt;
 I followed the instructions in the documentation by typing in these
 lines:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
-
-gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/command &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/usr/local/bin/emacsclient %s&amp;#39;&lt;/span&gt; --type String
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gconftool-2 -s /desktop/gnome/url-handlers/org-protocol/enabled --type Boolean true&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 but that didn&amp;#39;t seem to work.&lt;/p&gt;
 &lt;p&gt;
 I ended up following the instructions I found in &lt;a href=&#34;https://stackoverflow.com/questions/7464951/how-to-make-org-protocol-work&#34;&gt;this post&lt;/a&gt; creating a
 file named &lt;code&gt;org-protocol.desktop&lt;/code&gt; in the folder
  &lt;code&gt;~/.local/share/applications&lt;/code&gt; containing:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-Name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;org-protocol
-Exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacsclient %u
-Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Application
-Terminal&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false
-Categories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;System;
-MimeType&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x-scheme-handler/org-protocol;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Desktop Entry&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;org-protocol
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;emacsclient %u
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Application
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Terminal&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Categories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;System;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MimeType&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x-scheme-handler/org-protocol;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 and then running &lt;code&gt;update-desktop-database
 ~/.local/share/applications/&lt;/code&gt;.&lt;/p&gt;
@@ -1914,8 +1914,8 @@ This seemed to do the trick. &lt;/p&gt;
 &lt;p&gt;
 I also modified my link capture template: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
-                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* %a %^g\n %?\n %T\n %i&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Link&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/links.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Links&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* %a %^g\n %?\n %T\n %i&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Finally, to get things basically to work, I installed &lt;a href=&#34;https://github.com/sprig/org-capture-extension&#34;&gt;this&lt;/a&gt;
 extension. I configured it to use my &amp;#34;l&amp;#34; or link capture
@@ -1937,17 +1937,17 @@ found that I could just create a bookmark.&lt;/p&gt;
 Copied mostly from the docs, I made a bookmark with this as the link
 (all in one line):&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
-      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;javascript&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-protocol://capture://m/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(&lt;span style=&#34;color:#a6e22e&#34;&gt;location&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      encodeURIComponent(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;getSelection&lt;/span&gt;())&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 It worked perfectly. &lt;/p&gt;
 &lt;p&gt;
 This time I used this as the template:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
-  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* TODO %a\n %?&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;:prepend&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mail To Do&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Sync/orgfiles/i.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;To Do and Notes&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;* TODO %a\n %?&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;:prepend&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 That&amp;#39;s it. Now I can store emails in Emacs or Gmail as well as
 bookmarks without any cut and paste. &lt;/p&gt;
@@ -2025,13 +2025,13 @@ not hard.&lt;/p&gt;
 We can turn off the default CSS used by org-mode
 using:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+OPTIONS&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: html-style:nil&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Or if we want add custom CSS using one or more of these:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD_EXTRA&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;alternate stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style2.css&amp;#34; /&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style1.css&amp;#34; /&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+HTML_HEAD_EXTRA&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;lt;link rel=&amp;#34;alternate stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;style2.css&amp;#34; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We can also embed html and custom CSS in our org-files.&lt;/p&gt;
@@ -2118,48 +2118,48 @@ write my own.&lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s my current complete eshell config:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(use-package exec-path-from-shell
-  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-  :config
-  (exec-path-from-shell-initialize))
-
-
-    (use-package fish-completion
-    :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-    :config
-    (global-fish-completion-mode))
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; (use-package eshell-prompt-extras &lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; :ensure t&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; :config&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; (setq epe-show-python-info nil)&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;;; )&lt;/span&gt;
-
-  (use-package eshell-git-prompt
-  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-  :config
-  (eshell-git-prompt-use-theme &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;git-radar&lt;/span&gt;)
-  )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(use-package exec-path-from-shell
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (exec-path-from-shell-initialize))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (use-package fish-completion
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (global-fish-completion-mode))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; (use-package eshell-prompt-extras &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; :ensure t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; :config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; (setq epe-show-python-info nil)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;;; )&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (use-package eshell-git-prompt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :ensure &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  :config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (eshell-git-prompt-use-theme &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;git-radar&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 And here&amp;#39;s the code I ended up with for my shell switcher:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
-  (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cl-lib&lt;/span&gt;)
-  (defun select-or-create (arg)
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
-    (if (string= arg &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt;)
-        (eshell &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)
-      (switch-to-buffer arg)))
-  (defun eshell-switcher (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; arg)
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
-    (interactive)
-    (let* (
-           (buffers (cl-remove-if-not (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-local-value&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;major-mode&lt;/span&gt; n) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-list&lt;/span&gt;)) )
-           (names (&lt;span style=&#34;color:#a6e22e&#34;&gt;mapcar&lt;/span&gt; (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-name&lt;/span&gt; n)) buffers))
-           (num-buffers (&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; buffers) )
-           (in-eshellp (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; major-mode &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)))
-      (cond ((&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; num-buffers &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) (eshell (or arg &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)))
-            ((not in-eshellp) (switch-to-buffer (&lt;span style=&#34;color:#a6e22e&#34;&gt;car&lt;/span&gt; buffers)))
-            (&lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt; (select-or-create (&lt;span style=&#34;color:#a6e22e&#34;&gt;completing-read&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Select Shell:&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt; names)))))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;+BEGIN_SRC emacs-lisp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cl-lib&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (defun select-or-create (arg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (if (string= arg &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (eshell &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (switch-to-buffer arg)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (defun eshell-switcher (&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;optional&lt;/span&gt; arg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Commentary ARG.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (interactive)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (let* (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (buffers (cl-remove-if-not (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-local-value&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;major-mode&lt;/span&gt; n) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-list&lt;/span&gt;)) )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (names (&lt;span style=&#34;color:#a6e22e&#34;&gt;mapcar&lt;/span&gt; (lambda (n) (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-name&lt;/span&gt; n)) buffers))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (num-buffers (&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; buffers) )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (in-eshellp (&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; major-mode &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eshell-mode&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (cond ((&lt;span style=&#34;color:#a6e22e&#34;&gt;eq&lt;/span&gt; num-buffers &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) (eshell (or arg &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ((not in-eshellp) (switch-to-buffer (&lt;span style=&#34;color:#a6e22e&#34;&gt;car&lt;/span&gt; buffers)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt; (select-or-create (&lt;span style=&#34;color:#a6e22e&#34;&gt;completing-read&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Select Shell:&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;New eshell&amp;#34;&lt;/span&gt; names)))))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 I currently bound eshell-switcher to &lt;code&gt;CTRL-z e&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;
@@ -2192,17 +2192,17 @@ it shows you the results in a side window. &lt;/p&gt;
 &lt;p&gt;
 If you type in:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
-b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
-c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
-print(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(c&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 The live python window will display something like:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
-b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
-c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;
-print(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 If you change one of the variables, everything updates.&lt;/p&gt;
 &lt;p&gt;
@@ -2753,12 +2753,12 @@ from the command line:&lt;/p&gt;
 &lt;p&gt;They can be run from the command line to output a formatted agenda as
 a string:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 or as csv:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -2805,7 +2805,7 @@ agenda every morning.&lt;/p&gt;
 &lt;p&gt;
 The command I actually use to send the email is:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 which I put in a crontab entry to get it to run every day.&lt;/p&gt;

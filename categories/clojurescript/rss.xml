@@ -28,20 +28,20 @@ It turns out that whenever you change the hash part of a url -
 everything following a # at the end of a url you get a &lt;code&gt;hashchange&lt;/code&gt;
 event. You can handle that with&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;.addEventListener&lt;/span&gt; js/window &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hashchange&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;handleroutes&lt;/span&gt; routes %))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;.addEventListener&lt;/span&gt; js/window &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hashchange&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;handleroutes&lt;/span&gt; routes %))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 where &lt;code&gt;handleroutes&lt;/code&gt; is your function to actually handle the routes.&lt;/p&gt;
 &lt;p&gt;
 You can then get the actual value of that last hash part of the url
 with:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;.-location.hash&lt;/span&gt; js/window)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;.-location.hash&lt;/span&gt; js/window)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Once you map that to whatever function you want you update the history
 and mount the new page:&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;   (&lt;span style=&#34;color:#a6e22e&#34;&gt;.history.replaceState&lt;/span&gt; js/window {} nil loc)
-   (&lt;span style=&#34;color:#a6e22e&#34;&gt;mount&lt;/span&gt; newpage) &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   (&lt;span style=&#34;color:#a6e22e&#34;&gt;.history.replaceState&lt;/span&gt; js/window {} nil loc)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   (&lt;span style=&#34;color:#a6e22e&#34;&gt;mount&lt;/span&gt; newpage) &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 All the code is up on GitHub: &lt;a href=&#34;https://github.com/zamansky/shadow-cljs-demo&#34;&gt;&lt;a href=&#34;https://github.com/zamansky/shadow-cljs-demo&#34;&gt;https://github.com/zamansky/shadow-cljs-demo&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;

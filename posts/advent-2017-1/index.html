@@ -14,23 +14,22 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Advent of Code 2017 - Day 1" />
 <meta property="og:description" content="It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
- Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right." />
+Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/advent-2017-1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-12-02T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advent of Code 2017 - Day 1"/>
 <meta name="twitter:description" content="It&#39;s once again time for Advent of Code. That one a day programming competition that&#39;s been running now for three years.
- Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right."/>
+Here are some thoughts on day 1. The core of the problem is that you have a large string of digits and you have to calculate a checksum. This is done by adding the sum of a subset of the digits. Only the ones that are identical to the digit to their right."/>
 
 
 
@@ -98,25 +97,25 @@ one at the front.</p>
 <p>
 We first read in the data and strip off the trailing newline</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
-origdata <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()
-
-origdata <span style="color:#f92672">=</span> origdata<span style="color:#f92672">.</span>strip()
-data <span style="color:#f92672">=</span> origdata</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>origdata <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>origdata <span style="color:#f92672">=</span> origdata<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> origdata</span></span></code></pre></div></p>
 <p>
 Then, since we can access the elements of the string as a list (or
 array) it&#39;s a simple loop to calculate the sum:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-l <span style="color:#f92672">=</span> len(data)
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-<span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
-s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i]) <span style="color:#75715e"># Don&#39;t forget to turn the string into an int</span>
-
-<span style="color:#75715e"># data[-1] is the python way of getting the last element - here we check the wraparound</span>
-<span style="color:#66d9ef">if</span> data[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> data[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
-s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[<span style="color:#ae81ff">0</span>])
-print(<span style="color:#e6db74">&#34;Checksum: &#34;</span>,s)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>l <span style="color:#f92672">=</span> len(data)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i]) <span style="color:#75715e"># Don&#39;t forget to turn the string into an int</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># data[-1] is the python way of getting the last element - here we check the wraparound</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> data[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> data[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Checksum: &#34;</span>,s)</span></span></code></pre></div></p>
 <p>
 Pretty straightforward but I don&#39;t like the special case of checking
 the last element for the wraparound. Sometimes it&#39;s possible to get
@@ -126,14 +125,14 @@ list.</p>
 <p>
 This leads to a slightly cleaner solution:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
-
-s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-l <span style="color:#f92672">=</span> len(data)
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-<span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
-s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i]) <span style="color:#75715e">#don&#39;t forget to turn the string into an int</span>
-print(<span style="color:#e6db74">&#34;Checksum: &#34;</span>,s)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>l <span style="color:#f92672">=</span> len(data)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i]) <span style="color:#75715e">#don&#39;t forget to turn the string into an int</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Checksum: &#34;</span>,s)</span></span></code></pre></div></p>
 <p>
 This is pretty much what I&#39;d expect from a Python programmer that&#39;s
 just starting out. We can use a couple of more advanced Python
@@ -152,13 +151,13 @@ element with an identical neighbor and also converts it to an int:
 Finally, we can just calculate the sum. This leads to the following
 complete solution:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
-data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
-data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
-
-checksum<span style="color:#f92672">=</span> sum([ int(a) <span style="color:#66d9ef">for</span> a,b <span style="color:#f92672">in</span> zip(data,data[<span style="color:#ae81ff">1</span>:]) <span style="color:#66d9ef">if</span> a<span style="color:#f92672">==</span>b])
-
-print(checksum)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>checksum<span style="color:#f92672">=</span> sum([ int(a) <span style="color:#66d9ef">for</span> a,b <span style="color:#f92672">in</span> zip(data,data[<span style="color:#ae81ff">1</span>:]) <span style="color:#66d9ef">if</span> a<span style="color:#f92672">==</span>b])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(checksum)</span></span></code></pre></div></p>
 <p>
 List comprehensions for the win!!!!</p>
 <p>
@@ -170,27 +169,27 @@ that&#39;s halfway around the list.</p>
 With loops, the solution is just a quick modification of part 1. We
 just add half the length and use mod to find the digit to compare with:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
-data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
-data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
-
-s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-l <span style="color:#f92672">=</span> len(data)
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-<span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[(i<span style="color:#f92672">+</span>l<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">%</span>l]: <span style="color:#75715e"># check halfway around instead of adjacent</span>
-s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i])
-print(<span style="color:#e6db74">&#34;part 2loop version: &#34;</span>,s)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> data <span style="color:#f92672">+</span> data[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>l <span style="color:#f92672">=</span> len(data)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(l<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> data[i]<span style="color:#f92672">==</span>data[(i<span style="color:#f92672">+</span>l<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">%</span>l]: <span style="color:#75715e"># check halfway around instead of adjacent</span>
+</span></span><span style="display:flex;"><span>s <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> int(data[i])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;part 2loop version: &#34;</span>,s)</span></span></code></pre></div></p>
 <p>
 I wanted to see if I could do this with a list comprehension
 though. The trick was to figure out how to make two lists to zip
 together to get the pairs to check then add. Here&#39;s the solution:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
-data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
-l <span style="color:#f92672">=</span> len(data)
-d2 <span style="color:#f92672">=</span> data[l<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>:]<span style="color:#f92672">+</span>data
-checksum <span style="color:#f92672">=</span> sum([ int(a) <span style="color:#66d9ef">for</span> a,b <span style="color:#f92672">in</span> zip(data,d2)<span style="color:#66d9ef">if</span> a<span style="color:#f92672">==</span>b])
-print(checksum)</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>l <span style="color:#f92672">=</span> len(data)
+</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">=</span> data[l<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>:]<span style="color:#f92672">+</span>data
+</span></span><span style="display:flex;"><span>checksum <span style="color:#f92672">=</span> sum([ int(a) <span style="color:#66d9ef">for</span> a,b <span style="color:#f92672">in</span> zip(data,d2)<span style="color:#66d9ef">if</span> a<span style="color:#f92672">==</span>b])
+</span></span><span style="display:flex;"><span>print(checksum)</span></span></code></pre></div></p>
 <p>
 The insight was that we could just make a second list that starts
 halfway through and then wraps around. I did this by adding
@@ -237,7 +236,7 @@ write that up later.</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

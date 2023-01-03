@@ -6,10 +6,113 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2022 11:56:52 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jan 2023 14:30:36 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Cheating</title>
+      <link>https://cestlaz.github.io/post/cheating/</link>
+      <pubDate>Tue, 03 Jan 2023 14:30:36 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/cheating/</guid>
+      <description>&lt;p&gt;
+I said in my last post that I wanted to write about chatGPT. The way I
+see it, chatGPT is affecting teachers in four areas. First, students
+using it to cheat, second the possibility of students using it as a
+constructive tool. Third, teachers using it as a resource for lesson
+planning or similar, and fourth, down the road, another tool to
+replace teachers.&lt;/p&gt;
+&lt;p&gt;
+Before I dive into any of those, I thought I&amp;#39;d spend a post talking
+about cheating in general. I&amp;#39;ve written about cheating &lt;a href=&#34;https://cestlaz.github.io/post/cheating-on-projects/&#34;&gt;before&lt;/a&gt; but
+that was a few years ago so I thought I&amp;#39;d revisit things in light of
+chatGPT and other resources students can use to cut corners.&lt;/p&gt;
+&lt;p&gt;
+Cheating has always been a big topic in education. Some teachers let
+it slide, some are hardliners but it&amp;#39;s a front and center topic. It&amp;#39;s
+also a topic that&amp;#39;s difficult to address. One reason is that our
+society tolerates and even celebrates cheating at many levels. Time
+and again we see that the rules are only for the little people. Not a
+great basis if you want to encourage rule following in the classroom.&lt;/p&gt;
+&lt;p&gt;
+In my opinion, cheating is going to happen and usually it&amp;#39;s not worth
+stressing about but more on that later.&lt;/p&gt;
+&lt;p&gt;
+Why do student cheat?&lt;/p&gt;
+&lt;p&gt;
+Some cheat because they don&amp;#39;t care about the class and find it as an
+easy way out but I&amp;#39;d like to think that most students don&amp;#39;t follow
+this path. Many cheaters do it out of desperation - they &lt;strong&gt;need&lt;/strong&gt; to get
+a good grade because of their parents, college applications,
+expectations or otherwise. The system they&amp;#39;re in dictates that it is
+unacceptable to get a low grade and so they&amp;#39;re backed into a
+corner. Similarly, students are at times so overburdened that they
+can&amp;#39;t complete all the work or adequately prepare for assessments -
+this can also lead to cheating.&lt;/p&gt;
+&lt;p&gt;
+Another case is that students in some cultures view what some would
+call cheating as collaboration and this one can be tricky as to a many
+people it&amp;#39;s a matter of degree and in my opinion, collaboration should
+be encouraged.&lt;/p&gt;
+&lt;p&gt;
+I do have to admit that there is another category that I played a part
+in back in high school - in my group, if we respected a teacher, we
+never cheated - we&amp;#39;d just take our lumps. If we didn&amp;#39;t we might cheat,
+usually to see how far we could go and what we could get away with -
+in all cases, to be honest, we worked hard to learn the material and
+the cheating part was just a game - not so much trying to get answers
+we needed on tests but more, can we communicate information undetected
+during an exam.&lt;/p&gt;
+&lt;p&gt;
+So, what do we do?&lt;/p&gt;
+&lt;p&gt;
+Some teachers take a hard line but I&amp;#39;m not comfortable with
+this. Repercussions for cheating are harsh and can range from a slap
+on the wrist which isn&amp;#39;t worth it to failing a course or even
+expulsion. Those last two are pretty big and I&amp;#39;ve known in my life a
+number of people who were falsely accused of academic dishonesty. I&amp;#39;d
+rather miss a few of the cheats rather than punish the innocent.&lt;/p&gt;
+&lt;p&gt;
+I usually will let it slide unless I know 100%. I&amp;#39;ll take certain
+measures to limit cheating as outlined in my earlier linked post but
+more of my efforts are to create a positive environment - encourage
+collaboration with attribution - try not to overburden students with
+gratuitous work - make it okay to &amp;#34;fail&amp;#34; so long as you eventually get
+to where you need to go and so on. Of course, it&amp;#39;s not perfect. I&amp;#39;m
+still in a system that gives letter or number grades and everything
+has to settle down to a grade by end of term. I&amp;#39;d like to think that
+the culture I push minimizes cheating but you can&amp;#39;t really know.&lt;/p&gt;
+&lt;p&gt;
+In any event, there really is some truth the old line &amp;#34;you&amp;#39;re only
+cheating yourself.&amp;#34; At least in CS. If a student cheats through a
+class, they&amp;#39;ll likely not take the next one. So what, they got one
+undeserved A grade. In the greater scheme of things it&amp;#39;s not going to
+make a difference. If they don&amp;#39;t learn the material, they&amp;#39;re not going
+to get the job and even if they do, they won&amp;#39;t be able to do the job
+and, well, if they can do the job, then maybe what they cheated on
+wasn&amp;#39;t so important after all.&lt;/p&gt;
+&lt;p&gt;
+Now, it&amp;#39;s true that we do have to try to minimize cheating - hopefully
+by creating a positive culture because the majority of students DO
+have to learn the basics and we can&amp;#39;t have everyone cheating through
+everything but I really don&amp;#39;t think that&amp;#39;s an issue. For me, it&amp;#39;s try
+to make the environment conducive to not cheating and then not worry
+about it too much.&lt;/p&gt;
+&lt;p&gt;
+One last note is that while I try to do this, I do get irked when a
+student cheats and I really get irked when students try to &amp;#34;work the
+system&amp;#34; to get grades they don&amp;#39;t deserve. I try to remind myself that,
+as the saying goes &amp;#34;it&amp;#39;s not personal, it&amp;#39;s just business&amp;#34; and I think
+that&amp;#39;s a good thing for all of us to remember. To fix this, we have to
+fix root causes and while movements like ungrading, if not taken to
+far, can really help, I&amp;#39;m not sure that things will improve much in
+the short term.&lt;/p&gt;
+&lt;p&gt;
+With all this said, stay tuned for related thoughts on chatGPT.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Finally some down time</title>
@@ -2546,30 +2649,30 @@ arrays, one with frequencies and one with durations.&lt;/p&gt;
 &lt;p&gt;
 Something like: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
-durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Then for the game loop&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
-
-  current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-  note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
-  duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
-  play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; game_not_over:
-      duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
-          current_note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (current_note&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;length(notes)
-          note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
-          duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
-          play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
-      &lt;span style=&#34;color:#75715e&#34;&gt;# the rest of the game loop&lt;/span&gt;
-  stop_playing() &lt;span style=&#34;color:#75715e&#34;&gt;# stop the speaker&lt;/span&gt;
-
-    
-
-&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; game_not_over:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          current_note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (current_note&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;length(notes)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;# the rest of the game loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  stop_playing() &lt;span style=&#34;color:#75715e&#34;&gt;# stop the speaker&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Still, he had to figure out all the frequencies and durations for
 &amp;#34;Korobeiniki,&amp;#34; the tetris song. The class was more than happy to help.&lt;/p&gt;
@@ -3070,132 +3173,6 @@ they can given the limited resources they have. &lt;/p&gt;
 I&amp;#39;m obviously not excusing teachers who do one side lectures or who
 just phone it in but the majority of teachers work hard to do it right
 and should be given the freedom to do just that.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>From Scripts To Freestyle</title>
-      <link>https://cestlaz.github.io/post/from-scripts-to-freestyle/</link>
-      <pubDate>Fri, 26 Oct 2018 17:35:56 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/from-scripts-to-freestyle/</guid>
-      <description>&lt;p&gt;
-I just read &lt;a href=&#34;https://medium.com/@bethanymarz/going-off-script-b69345fc5904&#34;&gt;this post&lt;/a&gt; by  &lt;a href=&#34;https://twitter.com/bethanymarz&#34;&gt;Bethany Crystal&lt;/a&gt; - &lt;a href=&#34;https://medium.com/@bethanymarz/going-off-script-b69345fc5904&#34;&gt;Going off script&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-Bethany writes that while she normally essentially scripts important
-presentations, this time she went more off the cuff.&lt;/p&gt;
-&lt;p&gt;
-It made me think about how I teach and a disturbing trend I&amp;#39;ve
-seen in CS education and education in general.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve never strictly used a script for teaching. When I started I did
-use &lt;strong&gt;very&lt;/strong&gt; detailed lesson plans. Back then I was teaching math. It
-was also pre internet or at least pre internet as we now know
-it. I had an account on &lt;a href=&#34;https://www.panix.com/&#34;&gt;Panix&lt;/a&gt; and the internet did indeed exist but
-you couldn&amp;#39;t just look for teaching materials. I actually remember
-bringing a modem in to Seward Park one day and showing a bunch of kids
-this up and coming thing called the internet. I showed them usernet
-news, a gopher server and a couple of other things.&lt;/p&gt;
-&lt;p&gt;
-In terms of teaching materials, you could buy sample lesson plans from
-the teacher store near the Board of Ed in Brooklyn. These were books
-that were compilations of mostly handwritten lessons. &lt;/p&gt;
-&lt;p&gt;
-I basically copied and modified them. I had an &lt;strong&gt;aim&lt;/strong&gt;, a &lt;strong&gt;do now&lt;/strong&gt; key
-questions were written as were definitions and summary
-statements. Of course there were numerous sample problems and
-exercises, all worked out
-in advance. It wasn&amp;#39;t quite a script but it was a very well fleshed
-out guide &lt;/p&gt;
-&lt;p&gt;
-As I gained experience and also shifted from math which wasn&amp;#39;t my
-passion to CS, my plans become sparser. I&amp;#39;d still write down
-definitions, maybe some solutions and a list of key points but a lot
-of the particulars were gone. I didn&amp;#39;t write out key questions or
-solutions to all the problems in advance. &lt;/p&gt;
-&lt;p&gt;
-As time went by the plans got sparser still. I&amp;#39;d still list the key
-points I&amp;#39;d want to cover as well as notes on tricky parts of the
-lesson but more often than not I&amp;#39;ll just go in with a bullet list.&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s my plan for a recent lesson:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Go over cipher soution&lt;/li&gt;
-&lt;li&gt;How to we solve if already ciphered?&lt;/li&gt;
-&lt;li&gt;Rotate 26 times.&lt;/li&gt;
-&lt;li&gt;What about using stats&lt;/li&gt;
-&lt;li&gt;Frequency of letters - look up&lt;/li&gt;
-&lt;li&gt;Find freq of letter in string then use distance formula against
-model&lt;/li&gt;
-&lt;li&gt;Get frequencies from a book&lt;/li&gt;
-&lt;li&gt;try it in another language&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We didn&amp;#39;t get to the last two bullet items so that&amp;#39;s where we&amp;#39;ll start
-off on Monday. This plan was all I needed but it in no way tells the
-full story of the lesson to anyone but me. It doesn&amp;#39;t include the
-motivation, ancillary stories and materials nor how the lesson was
-developed or delivered. I knew how it would play out because I was
-teaching it and for me these notes were more than sufficient. &lt;/p&gt;
-&lt;p&gt;
-All this is not to say that I don&amp;#39;t spend a lot of time planning my
-lessons. I do. I just don&amp;#39;t create detailed scripts. I know what I
-want to cover and how I want to cover it. Then it&amp;#39;s just got to the
-class and go.&lt;/p&gt;
-&lt;p&gt;
-A big advantage of this is something that Bethany mentioned in her
-piece - the ability to &amp;#34;read the room.&amp;#34; This is a big part of
-teaching. If you&amp;#39;re following a script, you&amp;#39;re not reading the room
-and you&amp;#39;re probably not really teaching the class. You might be
-following a script but your students certainly aren&amp;#39;t and once they
-veer off program you&amp;#39;ve got to abandon your script or you&amp;#39;re not doing
-right by the class. &lt;/p&gt;
-&lt;p&gt;
-Having a direction but not a script makes it easier to &amp;#34;call and
-audible.&amp;#34; That&amp;#39;s what led me to teach the &lt;a href=&#34;https://cestlaz.github.io/post/who-played-spiderman/&#34;&gt;question answering system&lt;/a&gt;
-lesson the other day. It was unplanned but as a class we were having a
-discussion and that&amp;#39;s where it led.&lt;/p&gt;
-&lt;p&gt;
-As I mentioned, when I started out I couldn&amp;#39;t do this. I needed much
-more detailed plans. That said, as a teacher gains more experience
-they can better connect to their classes and do more for their
-students by not sticking to the script, reading the room and adapting.&lt;/p&gt;
-&lt;p&gt;
-This brings me to that trend that disturbing trend. I&amp;#39;m talking about
-pushing &lt;a href=&#34;https://www.washingtonpost.com/news/answer-sheet/wp/2013/11/30/teacher-slams-scripted-common-core-lessons-that-must-be-taught-word-for-word/?utm_term=.6afd6d64f1c6&#34;&gt;scripted lessons&lt;/a&gt;. These crop up in charter schools and no
-excuse environments and are typically used as ways of &amp;#34;compensating&amp;#34;
-for teachers that don&amp;#39;t really know the subject area or how to teach
-and to standardize teaching. To me it&amp;#39;s an attack on the teaching
-profession. A script is great for a play. It&amp;#39;s great for a speech and
-for some presentations but not for teaching. &lt;/p&gt;
-&lt;p&gt;
-I understand having something that&amp;#39;s more scripted to use when you&amp;#39;re
-faced with novice teachers or teachers that are new to a subject area
-but I fear that at times the scripted lessons are the end game.&lt;/p&gt;
-&lt;p&gt;
-I was talking to a friend a few years ago. He&amp;#39;s doing great work in the
-CS Ed space and among other things, he develops curricula. I mentioned
-to him that I loved his work (still do) but I was concerned that his
-materials were becoming much more scripted. His reply was something
-like &amp;#34;I agree with you in theory but the truth is most teachers aren&amp;#39;t
-you.&amp;#34; I understood his point as most of the teachers that used his
-materials were novices but I disagreed that they were &amp;#34;not me.&amp;#34; I&amp;#39;m
-nothing special. I&amp;#39;m just a reasonably bright guy who works hard at
-his craft. If I can teach script free so can anyone. Maybe not at
-first, but certainly after time and we subvert our profession by
-settling for less. &lt;/p&gt;
-&lt;p&gt;
-As a final note, at this point in my career I actually find it very
-hard to use a script - even for a presentation. Over the last couple
-of years, I&amp;#39;ve been spending my Falls visiting high schools to talk
-about Hunter&amp;#39;s &lt;a href=&#34;http://info.huntercs.org&#34;&gt;Honors CS&lt;/a&gt; program. As much as I tried, I couldn&amp;#39;t
-script a presentation. No matter what I did, when I got in front of
-the students I just ended up doing my thing and talking to them. At
-the end of the day I ended up working things backwards. Over my first
-few school visits, I developed a set of key points that I kept coming
-back to and finally ended up with a list of bullet points that I can
-pretty much follow when I do the &amp;#34;navigating from high school to
-college in tech&amp;#34; talk. I guess I&amp;#39;m now working in reverse. Starting
-free style and working back to a script.&lt;/p&gt;
 </description>
     </item>
     

@@ -59,30 +59,30 @@ arrays, one with frequencies and one with durations.&lt;/p&gt;
 &lt;p&gt;
 Something like: &lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
-durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;notes&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;523&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;440&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;659&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;durations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Then for the game loop&lt;/p&gt;
 &lt;p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
-
-  current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-  note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
-  duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
-  play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; game_not_over:
-      duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
-          current_note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (current_note&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;length(notes)
-          note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
-          duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
-          play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
-      &lt;span style=&#34;color:#75715e&#34;&gt;# the rest of the game loop&lt;/span&gt;
-  stop_playing() &lt;span style=&#34;color:#75715e&#34;&gt;# stop the speaker&lt;/span&gt;
-
-    
-
-&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+begin_src python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  current_note&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; game_not_over:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; duration &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          current_note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (current_note&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;length(notes)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          note &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; notes[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          duration &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; durations[current_note]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          play(note) &lt;span style=&#34;color:#75715e&#34;&gt;# starts the note playing until you change or stop it&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;# the rest of the game loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  stop_playing() &lt;span style=&#34;color:#75715e&#34;&gt;# stop the speaker&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+end_src&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;
 Still, he had to figure out all the frequencies and durations for
 &amp;#34;Korobeiniki,&amp;#34; the tetris song. The class was more than happy to help.&lt;/p&gt;
@@ -418,76 +418,78 @@ Already looking forward to July.&lt;/p&gt;
       <pubDate>Wed, 13 Nov 2019 10:17:18 -0400</pubDate>
       
       <guid>https://cestlaz.github.io/post/communicating-with_students/</guid>
-      <description>&lt;p&gt;
+      <description>
 Out of class student communication is always a challenge. There are
-plenty of options:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Piazza&lt;/li&gt;
-&lt;li&gt;Facebook group&lt;/li&gt;
-&lt;li&gt;Slack, Discord, or other chat system&lt;/li&gt;
-&lt;li&gt;Discourse, Vanilla or other discussion forum system&lt;/li&gt;
-&lt;li&gt;Mailing list&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;but all have warts. &lt;/p&gt;
-&lt;p&gt;
-I shared my thoughts on a number of these options &lt;a href=&#34;https://cestlaz.github.io/posts/class-communications/&#34;&gt;a while ago&lt;/a&gt; but
-thought I&amp;#39;d update them now.&lt;/p&gt;
-&lt;p&gt;
+plenty of options:
+
+ - Piazza
+ - Facebook group
+ - Slack, Discord, or other chat system
+ - Discourse, Vanilla or other discussion forum system
+ - Mailing list
+
+but all have warts. 
+
+I shared my thoughts on a number of these options [[https://cestlaz.github.io/posts/class-communications/][a while ago]] but
+thought I&#39;d update them now.
+
 Most of my opinions hold form my earlier post. I was using and
 continue to use a mailing list as I can be pretty sure that students
-will get the email and they don&amp;#39;t have to go to any outside site or
+will get the email and they don&#39;t have to go to any outside site or
 application. Now, getting them to respond or just use it for general
-class communication is another story.&lt;/p&gt;
-&lt;p&gt;
+class communication is another story.
+
 I also tried Slack again but it fared no better than my last attempt
 with it. A couple of students used it but mostly, Slack was left to
 die. I could have forced some engagement by posting assignments on
-Slack but there wasn&amp;#39;t any real upside. &lt;/p&gt;
-&lt;p&gt;
+Slack but there wasn&#39;t any real upside. 
+
 Earlier this semester some students said we should set up Discord -
-&amp;#34;all the students use it!&amp;#34; was the line. Discord can be used as a chat
+&#34;all the students use it!&#34; was the line. Discord can be used as a chat
 server similar to Slack but was created for gaming and also does voice
 communication and other things. Personally, I prefer Slack. Funny
-thing was that as I discussed this with my students I pointed out &amp;#34;you
+thing was that as I discussed this with my students I pointed out &#34;you
 know, we have a Slack channel set up and you all already have accounts
-on it.&amp;#34; Most of them didn&amp;#39;t even remember. &lt;/p&gt;
-&lt;p&gt;
+on it.&#34; Most of them didn&#39;t even remember. 
+
 So, we tried Discord and there was the usual burst of activity when we
-first set it up but now it&amp;#39;s again, mostly dormant. A few students who
-use Discord for personal use are usually online but I&amp;#39;d chalk it up as
-another failure.&lt;/p&gt;
-&lt;p&gt;
-So, what am I going to try next? GitHub. &lt;/p&gt;
-&lt;p&gt;
-GitHub doesn&amp;#39;t provide a general chat or email solution but it does
-have what they call &amp;#34;issues.&amp;#34;  I got the idea from &lt;a href=&#34;https://twitter.com/ericdrosado&#34;&gt;Eric Rosado&lt;/a&gt; of
-GitHub Education who clued me in on what issues can do.&lt;/p&gt;
-&lt;p&gt;
+first set it up but now it&#39;s again, mostly dormant. A few students who
+use Discord for personal use are usually online but I&#39;d chalk it up as
+another failure.
+
+So, what am I going to try next? GitHub. 
+
+GitHub doesn&#39;t provide a general chat or email solution but it does
+have what they call &#34;issues.&#34;  I got the idea from [[https://twitter.com/ericdrosado][Eric Rosado]] of
+GitHub Education who clued me in on what issues can do.
+
 When you create a GitHub repository - something I do for class web
 pages as well as assignments, you can also open issues. Issues are
 associated with the project but also act as a lightweight forum. You
 can go to a page and see all the issues (topics) and each one can have
 a chain of messages (thread). You can tag them, filter them, and when
-you&amp;#39;re done, close them (and reopen them later if needs be). The big
-plusses are that:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;People who are subscribed to the repo (assignment, web page, etc.)
-automatically get email alerts on the issues.&lt;/li&gt;
-&lt;li&gt;You can explicitly tag people to force them to get alerts.&lt;/li&gt;
-&lt;li&gt;You can directly reply via email so you don&amp;#39;t need to go to
-GitHub.&lt;/li&gt;
-&lt;li&gt;Everything related to a given project or repo is self contained.&lt;/li&gt;
-&lt;li&gt;If you&amp;#39;re using GitHub / GitHub classroom you can use issues to
-create a logged communication with your students on specific assignments.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-I haven&amp;#39;t used this class wide yet - just experimented a bit but I
-plan to dive in much more deeply next semester.&lt;/p&gt;
-&lt;p&gt;
-This isn&amp;#39;t an overall communication solution. I&amp;#39;m sticking with a
+you&#39;re done, close them (and reopen them later if needs be). The big
+plusses are that:
+ 1. People who are subscribed to the repo (assignment, web page, etc.)
+    automatically get email alerts on the issues.
+ 2. You can explicitly tag people to force them to get alerts.
+ 3. You can directly reply via email so you don&#39;t need to go to
+    GitHub.
+ 4. Everything related to a given project or repo is self contained.
+ 5. If you&#39;re using GitHub / GitHub classroom you can use issues to
+    create a logged communication with your students on specific assignments.
+
+
+I haven&#39;t used this class wide yet - just experimented a bit but I
+plan to dive in much more deeply next semester.
+
+This isn&#39;t an overall communication solution. I&#39;m sticking with a
 mailing list for that until I can find a better solution but I think
 using GitHub issues will be a win for project and assignment related
-discussion.&lt;/p&gt;
+discussion.
+
+
+
 </description>
     </item>
     
@@ -560,21 +562,21 @@ very easy for a beginner to get started.&lt;/p&gt;
 Let&amp;#39;s say you wanted to store information about a students. You might
 create this dictionary:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
-              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;First&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amanda&amp;#39;&lt;/span&gt;,
-              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ID&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1245&lt;/span&gt;,
-              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;,
-              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Schedule&amp;#39;&lt;/span&gt; : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Eng&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Math&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Gym&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;CS&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lunch&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Physcis&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Band&amp;#34;&lt;/span&gt;]}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  student &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Last&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hugginkis&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;First&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amanda&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ID&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;1245&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Schedule&amp;#39;&lt;/span&gt; : [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Eng&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Math&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Gym&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;CS&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lunch&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Physcis&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Band&amp;#34;&lt;/span&gt;]}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You add this to your database like this:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(students)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Later, you can query for all the students in Homeroom 5A:&lt;/p&gt;
 &lt;div class=&#34;src src-python&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;students&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Homeroom&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;5A&amp;#39;&lt;/span&gt;})&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Super quick and easy. It also comes with a nice REPL - essentially a

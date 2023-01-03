@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.92.0-DEV" />
+	<meta name="generator" content="Hugo 0.109.0">
     
         
 <meta charset="utf-8">
@@ -16,7 +16,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592937" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
@@ -24,7 +24,6 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cestlaz.github.io/" />
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="C&#39;est la Z"/>
@@ -106,11 +105,53 @@
     
         <article class="post-list">
     <header>
+        <h1 class="post-title"><a href="/post/advent-2020-day06/">A Teacher looks at Advent of Code 2020 - Day 06</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Day 6 turned out to be pretty straightforward. Like day 4 you had to deal with two consecutive newlines when parsing the data but assuming you did day 4 that&#39;s no problem. The gist is that a group is formed by consecutive lines and groups are separated by a blank line. Each line in each group is a string of letters representing answers to questions. For instance, for this group: abc abd ab you have three people.
+    </div>
+
+            <a href="/post/advent-2020-day06/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2020-12-06</div>
+    
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/AOC">AOC</a></li>
+                
+            </ul>
+            
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/aoc">#AOC</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/advent-of-code">#Advent of Code</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
         <h1 class="post-title"><a href="/post/advent-2020-day05/">A teacher looks at Advent of Code 2020 - Day 5</a></h1>
     </header>
 
     <div class="content post-summary">
-        Day five&#39;s problem is a nice one for an early CS class. It can be very much brute forced but it also touches on some nice concepts and can be solved pretty elegantly. I&#39;ve embedded a walk through in Clojure at the end but a Python solution would be pretty similar.  Read the problem over if you haven&#39;t. At it&#39;s core you are taking a boarding pass representing a coded airplane seat number and you&#39;re converting it to a known seat (row and column).
+        Day five&#39;s problem is a nice one for an early CS class. It can be very much brute forced but it also touches on some nice concepts and can be solved pretty elegantly. I&#39;ve embedded a walk through in Clojure at the end but a Python solution would be pretty similar. Read the problem over if you haven&#39;t. At it&#39;s core you are taking a boarding pass representing a coded airplane seat number and you&#39;re converting it to a known seat (row and column).
     </div>
 
             <a href="/post/advent-2020-day05/#disqus_thread"># COMMENTS</a>
@@ -152,7 +193,7 @@
     </header>
 
     <div class="content post-summary">
-        One of the nice things about Advent of Code is that it gets me to explore language features I haven&#39;t used yet. Today&#39;s problem got me to explore Clojure Spec which is a very cool validation library. There&#39;s a complete run through of the solution in Clojure in the video but here I&#39;ll talk about the problem in Python (mostly).  Today&#39;s problem is about validating passports. You start with a text file consisting of passport information.
+        One of the nice things about Advent of Code is that it gets me to explore language features I haven&#39;t used yet. Today&#39;s problem got me to explore Clojure Spec which is a very cool validation library. There&#39;s a complete run through of the solution in Clojure in the video but here I&#39;ll talk about the problem in Python (mostly). Today&#39;s problem is about validating passports. You start with a text file consisting of passport information.
     </div>
 
             <a href="/post/advent-2020-day04/#disqus_thread"># COMMENTS</a>
@@ -195,7 +236,7 @@
 
     <div class="content post-summary">
         I thought I&#39;d do a video for today. No particular reason. Mostly why not.
- I&#39;ll talk about day 3&#39;s problem and code up a solution in Clojure. If you haven&#39;t ever used Clojure, hopefully this will give a bit of the flavor. This video also serves double duty as being my next Using Emacs video since it demos Emacs&#39;s Clojure tools. Mostly Cider which even with a few quirks is the best development environment I&#39;ve ever used.
+I&#39;ll talk about day 3&#39;s problem and code up a solution in Clojure. If you haven&#39;t ever used Clojure, hopefully this will give a bit of the flavor. This video also serves double duty as being my next Using Emacs video since it demos Emacs&#39;s Clojure tools. Mostly Cider which even with a few quirks is the best development environment I&#39;ve ever used.
     </div>
 
             <a href="/post/advent-2020-day03/#disqus_thread"># COMMENTS</a>
@@ -238,8 +279,8 @@
 
     <div class="content post-summary">
         Day two introduced some staples of staples of not only Advent of Code but also of programming problems in general. The first is input parsing. For this problem you get lines of input like this:
-1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc   or in general
- number_1-number_2 Letter: String  There are a few ways to handle this. One is to brute force it. In Python maybe something like:  sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line.
+1-3 a: abcde 1-3 b: cdefg 2-9 c: cccccccc or in general
+number_1-number_2 Letter: String There are a few ways to handle this. One is to brute force it. In Python maybe something like: sample_line=&#34;4-15 f: abcdefg&#34; sample_list = sample_line.
     </div>
 
             <a href="/post/advent-2020-day02/#disqus_thread"># COMMENTS</a>
@@ -279,7 +320,7 @@
     </header>
 
     <div class="content post-summary">
-        So, yesterday I was chatting with my daughter. She was talking with her team and for some reason one of them pulled out an interview question from their company&#39;s question bank. Turns out it was today&#39;s Advent of Code problem.  As with past years, I&#39;m going to try to solve the problems in Clojure but if I can will talk Python when I talk about solutions.  Part 1 of the problem basically asks for you to find a pair of numbers in an array that sum to a specific value.
+        So, yesterday I was chatting with my daughter. She was talking with her team and for some reason one of them pulled out an interview question from their company&#39;s question bank. Turns out it was today&#39;s Advent of Code problem. As with past years, I&#39;m going to try to solve the problems in Clojure but if I can will talk Python when I talk about solutions. Part 1 of the problem basically asks for you to find a pair of numbers in an array that sum to a specific value.
     </div>
 
             <a href="/post/advent-2020-day-01/#disqus_thread"># COMMENTS</a>
@@ -320,7 +361,7 @@
 
     <div class="content post-summary">
         Tomorrow, or more practically, tonight at Midnight, Eric Wastl will once again launch the Advent of Code. As I&#39;ve written before, it&#39;s a month long event where each day a new programming problem is released. The problems range in difficulty and complexity. Some are very approachable to beginners and some are crazy challenging. I&#39;ve written a bunch about AOC in past years:
- Solve A to Solve B Data structures and Hidden Complexity Tools can shape- how we think 2019 day 1 2019 day 2 2019 day 3 2019 day 4 2019 day 8 2019 day 8 addendum   and a few more not listed.
+Solve A to Solve B Data structures and Hidden Complexity Tools can shape- how we think 2019 day 1 2019 day 2 2019 day 3 2019 day 4 2019 day 8 2019 day 8 addendum and a few more not listed.
     </div>
 
             <a href="/post/advent-2020-leadin/#disqus_thread"># COMMENTS</a>
@@ -401,7 +442,7 @@
 
     <div class="content post-summary">
         A friend&#39;s post brought my attention to a new graduate CS Education Certificate program. It&#39;s not a New York State program so isn&#39;t in competition with what I do but it&#39;s the type of program that I was afraid of. The type that will hurt CS education more than it will help. There was enough discussion following the Facebook post that I thought I&#39;d write about it here.
- Before talking about the program itself, one issue that came up multiple times in the Facebook thread is that old red herring - we can&#39;t teach teachers real CS because if they know the real deal they&#39;ll all go into industry.
+Before talking about the program itself, one issue that came up multiple times in the Facebook thread is that old red herring - we can&#39;t teach teachers real CS because if they know the real deal they&#39;ll all go into industry.
     </div>
 
             <a href="/post/teachers-can-learn-cs/#disqus_thread"># COMMENTS</a>
@@ -440,7 +481,7 @@
 
     <div class="content post-summary">
         Over on Facebook the semi-regular &#34;is APCS-A going to Python&#34; once again appeared. I&#39;m not going to get into Python vs Java. Each language giveth and each language taketh away but it got me thinking about the history of language changes.
- I titled this &#34;Language choices for APCS&#34; not APCS-A because back in the day it was just APCS. At some point that split with APCS-A being similar to what we have today and APCS-A being that plus a CS2 (data structures) class.
+I titled this &#34;Language choices for APCS&#34; not APCS-A because back in the day it was just APCS. At some point that split with APCS-A being similar to what we have today and APCS-A being that plus a CS2 (data structures) class.
     </div>
 
             <a href="/post/apcs-languages/#disqus_thread"># COMMENTS</a>
@@ -463,45 +504,6 @@
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/apcs">#apcs</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/post/election-thoughts/">Election Thoughts - feeling hope but still concerned</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        I don&#39;t usually talk politics on this blog but it is the news of the day. We truly are at a turning point in this country and we should all be concerned with the road we take.
- Yesterday the media outlets called the election for Biden/Harris. It&#39;s not over but I thought this would be as good a time as any to share some thoughts and more importantly concerns.
-    </div>
-
-            <a href="/post/election-thoughts/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2020-11-08</div>
-    
-    <div class="post-taxonomies">
-        
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/misc">misc</a></li>
-                
-            </ul>
-            
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/misc">#misc</a></li>
                     
                 </ul>
         

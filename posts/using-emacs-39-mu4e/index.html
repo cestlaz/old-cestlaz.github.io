@@ -14,25 +14,24 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs 39 - mu4e" />
 <meta property="og:description" content="I generally use three email accounts. My personal one, work one, and one for my non-profit. For a couple of years, I&#39;ve been using mu4e under Emacs for both my work and non-profit email accounts and gmail for my personal account.
- I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons:
- There are parts of my configuration that are copied from others and  I really don&#39;t understand." />
+I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons:
+There are parts of my configuration that are copied from others and I really don&#39;t understand." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-39-mu4e/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-24T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-12-24T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs 39 - mu4e"/>
 <meta name="twitter:description" content="I generally use three email accounts. My personal one, work one, and one for my non-profit. For a couple of years, I&#39;ve been using mu4e under Emacs for both my work and non-profit email accounts and gmail for my personal account.
- I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons:
- There are parts of my configuration that are copied from others and  I really don&#39;t understand."/>
+I&#39;ve had lots of requests for a video on what I do but I&#39;ve been hesitant for two reasons:
+There are parts of my configuration that are copied from others and I really don&#39;t understand."/>
 
 
 
@@ -120,10 +119,10 @@ I found his terrific blog post by <a href="https://twitter.com/robstewartUK">Rob
 mu4e</a>. Read it over. I basically followed his directions for setting up
 <a href="https://sourceforge.net/p/isync/isync/ci/master/tree/">mbsync</a>. To build from source under Linux, I used the sequence:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./autogen.sh
-./configure
-make
-sudo make install</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./autogen.sh
+</span></span><span style="display:flex;"><span>./configure
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 I followed Rob&#39;s instructions basically verbatim for the password and
@@ -146,7 +145,7 @@ used to build mbsync listed above.</p>
 Since I store my local email under a folder <code>Maildir</code>  which is what
 mu defaults to I can start using it by indexing my emails:</p>
 <div class="src src-bash">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mu index</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mu index</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 The video shows some examples of using mu from the command line and
@@ -206,7 +205,7 @@ Enjoy:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

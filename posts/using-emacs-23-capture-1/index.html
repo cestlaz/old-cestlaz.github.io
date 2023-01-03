@@ -14,29 +14,28 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Using Emacs - 23 - Org Capture 1" />
 <meta property="og:description" content="Org mode has an amazing feature - org-capture. I only started using it recently but it&#39;s really awesome.
- What took me so long?
- Probably that the manual seemed a little intimidating.
- It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
- recording blog ideas managing bookmarks taking short Notes managing my calendar." />
+What took me so long?
+Probably that the manual seemed a little intimidating.
+It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
+recording blog ideas managing bookmarks taking short Notes managing my calendar." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/posts/using-emacs-23-capture-1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-11-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2016-11-29T00:00:00+00:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs - 23 - Org Capture 1"/>
 <meta name="twitter:description" content="Org mode has an amazing feature - org-capture. I only started using it recently but it&#39;s really awesome.
- What took me so long?
- Probably that the manual seemed a little intimidating.
- It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
- recording blog ideas managing bookmarks taking short Notes managing my calendar."/>
+What took me so long?
+Probably that the manual seemed a little intimidating.
+It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
+recording blog ideas managing bookmarks taking short Notes managing my calendar."/>
 
 
 
@@ -104,8 +103,8 @@ what I use for:</p>
 </ul>
 <p>I use the binding:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(global-set-key (kbd <span style="color:#e6db74">&#34;C-c c&#34;</span>)
-<span style="color:#e6db74">&#39;org-capture</span>)</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;C-c c&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;org-capture</span>)</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 By default, running org-capture brings up a form to capture a &#34;task&#34;
@@ -115,27 +114,27 @@ information and then tell org-mode to store it where you want it.</p>
 <p>
 Here are my template settings.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-capture-templates
-<span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Appointment&#34;</span> entry (file  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span> <span style="color:#e6db74">&#34;Appointments&#34;</span>)
-<span style="color:#e6db74">&#34;* TODO %?\n:PROPERTIES:\n\n:END:\nDEADLINE: %^T \n %i\n&#34;</span>)
-(<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;Note&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/notes.org&#34;</span> <span style="color:#e6db74">&#34;Notes&#34;</span>)
-<span style="color:#e6db74">&#34;* Note %?\n%T&#34;</span>)
-(<span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#e6db74">&#34;Link&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/links.org&#34;</span> <span style="color:#e6db74">&#34;Links&#34;</span>)
-<span style="color:#e6db74">&#34;* %? %^L %^g \n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;To Do Item&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;To Do Items&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
-(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/Dropbox/journal.org&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\nEntered on %U\n  %i\n  %a&#34;</span>)
-(<span style="color:#e6db74">&#34;s&#34;</span> <span style="color:#e6db74">&#34;Screencast&#34;</span> entry (file <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/screencastnotes.org&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%i\n&#34;</span>)))</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-capture-templates
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Appointment&#34;</span> entry (file  <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/gcal.org&#34;</span> <span style="color:#e6db74">&#34;Appointments&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* TODO %?\n:PROPERTIES:\n\n:END:\nDEADLINE: %^T \n %i\n&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;Note&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/notes.org&#34;</span> <span style="color:#e6db74">&#34;Notes&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* Note %?\n%T&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#e6db74">&#34;Link&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/links.org&#34;</span> <span style="color:#e6db74">&#34;Links&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %? %^L %^g \n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;To Do Item&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;To Do Items&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/Dropbox/journal.org&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\nEntered on %U\n  %i\n  %a&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;s&#34;</span> <span style="color:#e6db74">&#34;Screencast&#34;</span> entry (file <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/screencastnotes.org&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%i\n&#34;</span>)))</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>
 Let&#39;s look at the <strong><strong>Blog</strong></strong> entry:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
-<span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)</code></pre></div></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;Blog idea&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Dropbox/orgfiles/i.org&#34;</span> <span style="color:#e6db74">&#34;Blog Topics:&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;* %?\n%T&#34;</span> :prepend <span style="color:#66d9ef">t</span>)</span></span></code></pre></div></span></span></code></pre></div>
 </div>
 <p>It&#39;s a list with a bunch of options. The first string <strong><strong>b</strong></strong> is the
 key to type to select this template, <strong><strong>Blog idea</strong></strong> is the actual name
@@ -215,7 +214,7 @@ Relevant links:</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -14,23 +14,24 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672592936" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1672780573" />
 
 
 
 <meta property="og:title" content="Zoom alternatives that aren&#39;t from MicroGoogle" />
 <meta property="og:description" content="As we scrambled to move online in March we used what we knew, what we heard of and what we were allowed. This usually meant Zoom, Google Meet, or Microsoft Teams.
- I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it." />
+I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it.
+Now that the emergency rush has passed we have time to see if there are some better alternatives." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cestlaz.github.io/post/bigbluebutton/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-05-25T16:33:17-04:00" />
 <meta property="article:modified_time" content="2020-05-25T16:33:17-04:00" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Zoom alternatives that aren&#39;t from MicroGoogle"/>
 <meta name="twitter:description" content="As we scrambled to move online in March we used what we knew, what we heard of and what we were allowed. This usually meant Zoom, Google Meet, or Microsoft Teams.
- I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it."/>
+I settled on Zoom. It worked and worked pretty well. There were a few things I felt they could improve on but given that Zoom wasn&#39;t designed as a teaching tool I&#39;ve been pretty happy with it.
+Now that the emergency rush has passed we have time to see if there are some better alternatives."/>
 
 
 
@@ -142,15 +143,15 @@ went to Google domains and added an entry for
 bigbluebutton.huntercs.org.</li>
 <li>I ran (all one line):</li>
 </ol>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g</code></pre></div>&gt;}}</p>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v xenial-22 -s bbbtest.huntercs.org -e zamansky@gmail.com -g</span></span></code></pre></div>&gt;}}</p>
 <p>
     This downloads and installs BBB and also uses <strong>certbot</strong> to set up
     ssl for secure connections.</p>
 <p>
 After this was done, I created an admin account:</p>
 <p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd greenlight/
-docker exec greenlight-v2 bundle exec rake admin:create</code></pre></div>&gt;}}</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd greenlight/
+</span></span><span style="display:flex;"><span>docker exec greenlight-v2 bundle exec rake admin:create</span></span></code></pre></div>&gt;}}</p>
 <p>
 At this point I was up and running so I went to the host and logged in
 using the admin credentials that the above command gave me.</p>
@@ -206,7 +207,7 @@ some very cool features for CS Teachers.</p>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
