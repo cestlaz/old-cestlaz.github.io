@@ -6,10 +6,150 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2023 14:30:36 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jan 2023 07:45:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>teachGPT</title>
+      <link>https://cestlaz.github.io/post/teachgpt/</link>
+      <pubDate>Thu, 12 Jan 2023 07:45:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teachgpt/</guid>
+      <description>
+&lt;p&gt;
+So, since we discussed &lt;a href=&#34;https://cestlaz.github.io/post/cheatgpt/&#34;&gt;cheating and chatGPT&lt;/a&gt; and decided that there
+shouldn&amp;#39;t be a ban, how can it or similar tools be used productively?&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+General use
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;The first go to seems to be as an alternative search engine. It hasn&amp;#39;t
+been uncommon seeing people say they use chatGPT instead of searching
+StackOverflow. This makes sense. ChatGPT gives answers and the natural
+language interface can make it easier to form some questions or ask
+for results in a particular format. Interesting though is that it
+seems, and I have no evidence for this, that people will more accept a
+&amp;#34;written text&amp;#34; answer from chatGPT as factual as opposed to a listed
+search result. This is worth thinking about since chatGPT doesn&amp;#39;t
+always give correct answers to questions so buyer beware.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+In non CS classes
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+For more interesting ideas, I&amp;#39;ll start outside of my comfort zone -
+non CS classes. One of the big fears of chatGPT is that it will write
+student essays. Why not leverage that as a feature, not a bug. As
+chatGPT to write an essay and then have students analyze and critique
+it.&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;ve all seen stories on how chatGPT sometimes gets the facts
+wrong. How about leveraging that? Do some fact checking.&lt;/p&gt;
+&lt;p&gt;
+I asked chatGPT to write an essay and to include at least three
+errors. It created a reasonable essays and at the bottom listed the
+errors. Of cousre, there could always be more. Take those essays and
+have the students not only critique but fact check. Better, don&amp;#39;t
+initially fact check but have students build arguments based on the
+documents you give them and let them learn to be critical of resources
+when they discover they&amp;#39;re not always correct.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m sure there are many more creative ways one can leverage generative
+systems like chatGPT in educational settings but now let&amp;#39;s move to CS
+classes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+In CS classes
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I wondered if chatGPT could help create problems. I asked it to create
+a parsons problem. That was an epic fail. It gave me a Java program in
+order. I guess I could then scramble the lines but that wasn&amp;#39;t the
+point.&lt;/p&gt;
+&lt;p&gt;
+On the other hand, the answers it gave could be used as code tracing
+examples so there may be some value there.&lt;/p&gt;
+&lt;p&gt;
+I also asked it to generate test questions and small programming
+assignments but I didn&amp;#39;t find the output useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+What else?
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+There&amp;#39;s also been talk about creating lessons to either support or one
+day replace teachers and with this, we&amp;#39;re a &lt;strong&gt;long&lt;/strong&gt; ways off.&lt;/p&gt;
+&lt;p&gt;
+I asked chatGPT to write lesson plans on a number CS and non CS topics
+and each time the result was the same.&lt;/p&gt;
+&lt;p&gt;
+I got a formulaic lesson plan that technically covered the material
+but I found them less than worthless. Yes, technically one could kind
+of sort of work off the lesson plan but they were bare bones - no
+interesting motivations, questions, possible tangents, or examples. No
+potential segues or pitfalls and certainly nothing specific for any
+teacher&amp;#39;s actual students.&lt;/p&gt;
+&lt;p&gt;
+To a non teacher the lesson plans might look alright but to any decent
+teacher, there worthless. If you&amp;#39;re a teacher, you already know the
+bare bones outline of any given lesson and if you don&amp;#39;t you shouldn&amp;#39;t
+be teaching that subject. What makes the lesson work is everything on
+top of the bare bones skeleton - the motivations, the examples, the
+activities and here, chatGPT is of no help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+The killer app
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So far, it looks like chatGPT can be useful but it certainly has
+limitations. I did find, however, the chatGPT killer app for
+education. By find, I mean I saw someone else tweet out the
+idea. Sorry I can&amp;#39;t give credit but I didn&amp;#39;t end up saving the link.&lt;/p&gt;
+&lt;p&gt;
+ChatGPT can be used to create all the garbage that administrators and
+politicians insist are important in education but are crap.&lt;/p&gt;
+&lt;p&gt;
+Hey, chatGPT: &amp;#34;Write me a lesson plan introducing loops that aligns to
+the New York State Computer Science and Digital Literacy Standards.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Hey, chatGPT: &amp;#34;Write me a sub lesson plan on conditional statements in
+Java.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+These are great. Sure, they&amp;#39;re lousy lesson plans but they&amp;#39;ll have the
+references to the standards that administrators and other education
+reformers love and now teachers don&amp;#39;t have to waste their time on it.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s the killer app!!!!!!!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Final thoughts
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So there it is. A few thoughts on how we can productively use tools
+like chatGPT. I&amp;#39;m sure there are more and better ones out there and
+I&amp;#39;d love to hear about them so feel free to share yours.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Cheating</title>
@@ -3105,74 +3245,6 @@ classroom beyond just a software repo and versioning.&lt;/p&gt;
 &lt;p&gt;
 Enjoy.&lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SNsjMKYoLr8&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What Is Good Teaching</title>
-      <link>https://cestlaz.github.io/post/what-is-good-teaching/</link>
-      <pubDate>Tue, 17 Sep 2019 17:13:57 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/what-is-good-teaching/</guid>
-      <description>&lt;p&gt;
-I had a conversation with my principal during my last year at
-Stuy. She said &amp;#34;whenever the superintendent or high level education
-people come and ask to see our best teachers I can never bring them to
-Jim&amp;#39;s class.&amp;#34; Everyone knows that Jim is the best. I describe him as
-&amp;#34;the teacher I aspire to be.&amp;#34;  What&amp;#39;s the problem? The problem is that
-Jim didn&amp;#39;t teach the way the powers that be wanted him to teach. He
-didn&amp;#39;t do discovery learning, kids didn&amp;#39;t work in groups, there&amp;#39;s
-typically nothing that you could check off on the &amp;#34;best way to teach&amp;#34;
-list. Jim&amp;#39;s an old school teacher. Teacher dominant. He leads the
-discussion, asks questions, circulates while the kids work on
-problems etc. Why does it work? A combination of things. He know his
-math, charisma, force of personality, empathy, and a lot of other
-factors. One could dismiss it as saying &amp;#34;it&amp;#39;s Stuy, it&amp;#39;s easy&amp;#34; but he
-was the best at a high needs school before he was the best at Stuy.&lt;/p&gt;
-&lt;p&gt;
-I was thinking about this for a few reasons. One is I watched &lt;a href=&#34;https://www.youtube.com/watch?v=g1ib43q3uXQ&amp;amp;list=WL&amp;amp;index=52&amp;amp;t=0s&#34;&gt;this&lt;/a&gt;
-video by &lt;a href=&#34;https://twitter.com/Felienne&#34;&gt;Felienne Hermans&lt;/a&gt;. It&amp;#39;s a good video, many good points. I
-particularly like when she talked about talking to a room of teachers
-about a new &amp;#34;discovery&amp;#34; about learning only to find that teachers have
-known it for decades. Basically, Felienne pushes back on the discovery
-learning and let them play that&amp;#39;s dominated the CS Education
-space. She talks about her success with direct instruction. Another is
-that we&amp;#39;re starting to see more acceptance and voices for
-direct instruction in the CS Ed space as a whole. &lt;/p&gt;
-&lt;p&gt;
-Personally, I think this is a good thing, after all, it&amp;#39;s more my
-style. On the other hand, I don&amp;#39;t want the pendulum to swing too
-far. I was talking to a history teacher at Stuy when they brought in
-the Danielson &lt;del&gt;nonsense&lt;/del&gt; Framework. She&amp;#39;s a good teacher but she was
-sheepish about Danielson. She said that Danielson worked for her - it
-aligned with the way she taught and made her seem like the absolute
-best. She was and is an excellent teacher but we all have holes in our
-game. She didn&amp;#39;t want to be held  up as an exemplar of great teaching
-where she knew that chances are there will be a successor to Danielson
-and chances are something else will be in vogue and she won&amp;#39;t be so
-officially terrific anymore. &lt;/p&gt;
-&lt;p&gt;
-Right now, direct instruction is coming back. Who knows if it will
-become the darling of the policy makers but regardless, a teaching
-style or technique&amp;#39;s value can&amp;#39;t be determined without considering
-other factors. The teacher&amp;#39;s personal style, the students, the
-resources, class time, and much more. &lt;/p&gt;
-&lt;p&gt;
-So, what is a teacher to do? Add all the tools to your toolbox. I&amp;#39;m
-not big on cooperative learning but I&amp;#39;ve peppered it in now and
-then. Sometimes, it&amp;#39;s best to have the students discover things,
-something you&amp;#39;ve got to tell them. Sometimes they should work on
-things solo, sometimes in teams. I&amp;#39;ve taught classes that were all
-projects and classes that had limited projects. Acquire all the tools
-and use them as YOU think best. It&amp;#39;s the teacher with the skin in the
-game. Not the policy makers, thought leaders, researchers, and
-influences. More importantly it&amp;#39;s the teacher that knows their
-students best - where they are, what they need and how to do the best
-they can given the limited resources they have. &lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m obviously not excusing teachers who do one side lectures or who
-just phone it in but the majority of teachers work hard to do it right
-and should be given the freedom to do just that.&lt;/p&gt;
 </description>
     </item>
     

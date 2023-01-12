@@ -6,10 +6,150 @@
     <description>C&#39;est la Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Jan 2023 06:42:45 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jan 2023 07:45:56 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>teachGPT</title>
+      <link>https://cestlaz.github.io/post/teachgpt/</link>
+      <pubDate>Thu, 12 Jan 2023 07:45:56 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/teachgpt/</guid>
+      <description>
+&lt;p&gt;
+So, since we discussed &lt;a href=&#34;https://cestlaz.github.io/post/cheatgpt/&#34;&gt;cheating and chatGPT&lt;/a&gt; and decided that there
+shouldn&amp;#39;t be a ban, how can it or similar tools be used productively?&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+General use
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;The first go to seems to be as an alternative search engine. It hasn&amp;#39;t
+been uncommon seeing people say they use chatGPT instead of searching
+StackOverflow. This makes sense. ChatGPT gives answers and the natural
+language interface can make it easier to form some questions or ask
+for results in a particular format. Interesting though is that it
+seems, and I have no evidence for this, that people will more accept a
+&amp;#34;written text&amp;#34; answer from chatGPT as factual as opposed to a listed
+search result. This is worth thinking about since chatGPT doesn&amp;#39;t
+always give correct answers to questions so buyer beware.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+In non CS classes
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+For more interesting ideas, I&amp;#39;ll start outside of my comfort zone -
+non CS classes. One of the big fears of chatGPT is that it will write
+student essays. Why not leverage that as a feature, not a bug. As
+chatGPT to write an essay and then have students analyze and critique
+it.&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;ve all seen stories on how chatGPT sometimes gets the facts
+wrong. How about leveraging that? Do some fact checking.&lt;/p&gt;
+&lt;p&gt;
+I asked chatGPT to write an essay and to include at least three
+errors. It created a reasonable essays and at the bottom listed the
+errors. Of cousre, there could always be more. Take those essays and
+have the students not only critique but fact check. Better, don&amp;#39;t
+initially fact check but have students build arguments based on the
+documents you give them and let them learn to be critical of resources
+when they discover they&amp;#39;re not always correct.&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m sure there are many more creative ways one can leverage generative
+systems like chatGPT in educational settings but now let&amp;#39;s move to CS
+classes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+In CS classes
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I wondered if chatGPT could help create problems. I asked it to create
+a parsons problem. That was an epic fail. It gave me a Java program in
+order. I guess I could then scramble the lines but that wasn&amp;#39;t the
+point.&lt;/p&gt;
+&lt;p&gt;
+On the other hand, the answers it gave could be used as code tracing
+examples so there may be some value there.&lt;/p&gt;
+&lt;p&gt;
+I also asked it to generate test questions and small programming
+assignments but I didn&amp;#39;t find the output useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+What else?
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+There&amp;#39;s also been talk about creating lessons to either support or one
+day replace teachers and with this, we&amp;#39;re a &lt;strong&gt;long&lt;/strong&gt; ways off.&lt;/p&gt;
+&lt;p&gt;
+I asked chatGPT to write lesson plans on a number CS and non CS topics
+and each time the result was the same.&lt;/p&gt;
+&lt;p&gt;
+I got a formulaic lesson plan that technically covered the material
+but I found them less than worthless. Yes, technically one could kind
+of sort of work off the lesson plan but they were bare bones - no
+interesting motivations, questions, possible tangents, or examples. No
+potential segues or pitfalls and certainly nothing specific for any
+teacher&amp;#39;s actual students.&lt;/p&gt;
+&lt;p&gt;
+To a non teacher the lesson plans might look alright but to any decent
+teacher, there worthless. If you&amp;#39;re a teacher, you already know the
+bare bones outline of any given lesson and if you don&amp;#39;t you shouldn&amp;#39;t
+be teaching that subject. What makes the lesson work is everything on
+top of the bare bones skeleton - the motivations, the examples, the
+activities and here, chatGPT is of no help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+The killer app
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So far, it looks like chatGPT can be useful but it certainly has
+limitations. I did find, however, the chatGPT killer app for
+education. By find, I mean I saw someone else tweet out the
+idea. Sorry I can&amp;#39;t give credit but I didn&amp;#39;t end up saving the link.&lt;/p&gt;
+&lt;p&gt;
+ChatGPT can be used to create all the garbage that administrators and
+politicians insist are important in education but are crap.&lt;/p&gt;
+&lt;p&gt;
+Hey, chatGPT: &amp;#34;Write me a lesson plan introducing loops that aligns to
+the New York State Computer Science and Digital Literacy Standards.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Hey, chatGPT: &amp;#34;Write me a sub lesson plan on conditional statements in
+Java.&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+These are great. Sure, they&amp;#39;re lousy lesson plans but they&amp;#39;ll have the
+references to the standards that administrators and other education
+reformers love and now teachers don&amp;#39;t have to waste their time on it.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s the killer app!!!!!!!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Final thoughts
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+So there it is. A few thoughts on how we can productively use tools
+like chatGPT. I&amp;#39;m sure there are more and better ones out there and
+I&amp;#39;d love to hear about them so feel free to share yours.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>CheatGPT</title>
@@ -4255,166 +4395,6 @@ So, do you have some real world examples like these that we can use to
 help motivate our students to really learn some of these subjects that
 at first glance are only useful to and through the technical
 interview? If so, please share.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Should CSforAll focus on entrepreneurship and jobs?</title>
-      <link>https://cestlaz.github.io/post/cs-for-jobs/</link>
-      <pubDate>Thu, 14 Apr 2022 14:41:05 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/cs-for-jobs/</guid>
-      <description>&lt;p&gt;
-Is CSforAll a jobs program? This came up again the other day.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I&amp;#39;m using a recent review as an excuse to ask more general questions.&lt;br&gt;&lt;br&gt;Is &lt;a href=&#34;https://twitter.com/hashtag/CSforAll?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CSforAll&lt;/a&gt; a jobs program or preparing future citizens? &lt;br&gt;&lt;br&gt;Does learning about CS belong just to STEM education?&lt;br&gt;&lt;br&gt;Should we only teach CS to Ss with math background, or can we teach CS to Ss who hate math? &lt;a href=&#34;https://t.co/k030BHoZ93&#34;&gt;https://t.co/k030BHoZ93&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mark Guzdial (@guzdial) &lt;a href=&#34;https://twitter.com/guzdial/status/1511340494462279684?ref_src=twsrc%5Etfw&#34;&gt;April 5, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-With one of the referenced tweets talking about CS salaries.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Median pay in tech jobs:&lt;br&gt;&lt;br&gt;Snap: $327,710&lt;br&gt;Google (Alphabet): $295,884&lt;br&gt;Facebook (Meta): $292,785&lt;br&gt;&lt;br&gt;All the more reason for public schools to teach computer science so that underserved populations have a chance at these jobs.&lt;/p&gt;&amp;mdash; Hadi Partovi (@hadip) &lt;a href=&#34;https://twitter.com/hadip/status/1512592779083280388?ref_src=twsrc%5Etfw&#34;&gt;April 9, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;
-I think Hadi&amp;#39;s numbers are a little high but that&amp;#39;s not really the
-point.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve actually been meaning to write about this for a while going back
-to &lt;a href=&#34;https://www.thisisgoingtobebig.com/blog/2019/1/6/sevens-dont-get-funded&#34;&gt;this really great post&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/ceonyc&#34;&gt;Charlie O&amp;#39;Donnell&lt;/a&gt; titled &lt;a href=&#34;https://www.thisisgoingtobebig.com/blog/2019/1/6/sevens-dont-get-funded&#34;&gt;Sevens Don&amp;#39;t Get
-Funded&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve seen arguments on all sides of this issue. On the one hand,
-people in the tech industry are big on the jobs side of things. This
-is in part because the more people who go into tech the more resources
-they have for their companies. I also think that a lot of the people
-on the tech side have seen tech work for them and allow for successful
-careers so they see CS education as providing others with a similar
-path. I also see a number of teachers with this view - they&amp;#39;re
-teaching kids in poverty and see this as a potential way out. Nothing
-wrong with this point of view and for CSforAll to really get anywhere
-it&amp;#39;s certainly helpful to have a region&amp;#39;s business leaders on board.&lt;/p&gt;
-&lt;p&gt;
-On the other side, I have many colleagues at Hunter and other
-intuitions who get offended at the merest mention that anything we
-teach be in any way practical as it hurts the purity of our academic
-mission. Needless to say, I&amp;#39;m not in  this extreme camp but I do think
-that CS should be much more than a jobs program.&lt;/p&gt;
-&lt;p&gt;
-This tension has been there from the begining. Are we teaching K12 CS
-for aspiring CS majors who will go into academia? Those who will be
-software engineers? Everybody else? Or a combination.&lt;/p&gt;
-&lt;p&gt;
-To complicate matters, at least in my experience is that the business
-push very frequently comes with a push for entrepreneurship. We need
-more kids starting their own tech companies. I suspect much of this is
-well meaning. They see the next big thing and would love to see a
-group of founders from the other side of the tracks figure it out.&lt;/p&gt;
-&lt;p&gt;
-In my time in CS Ed in NYC I&amp;#39;ve seen a tremendous push for
-entrepreneurship. Many programs that have touted themselves as CS
-programs were really entrepreneurship programs with a little tech and
-this concerns me.&lt;/p&gt;
-&lt;p&gt;
-This is where Charlie&amp;#39;s piece got me thinking.&lt;/p&gt;
-&lt;p&gt;
-Charlie says he gets around 2000 pitches in his inbox a year but only
-makes around 10 investments. This seems consistent with ratios I&amp;#39;ve
-seen for other venture capitalists. This means if you&amp;#39;re going to get
-that investment on your startup idea you&amp;#39;ve got to really stand out or
-to quote the article:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It might be that your company is a seven (out of 10)  — a perfectly acceptable, but
-not particularly exciting seven.&lt;/p&gt;
-&lt;p&gt;
-If you’re trying to be one of the best ten things I see in a
-year—worth risking LP capital on, then a seven just isn’t going to
-make it.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Even if you are funded, the majority of startups don&amp;#39;t succeed. I&amp;#39;ve
-read that 10% of startups provide nearly all the returns for a fund
-and other similar numbers indicating that failure is much more likely
-than success.&lt;/p&gt;
-&lt;p&gt;
-Now, if you&amp;#39;re a venture capitalist and looking at the big picture
-from the top, the more entrepreneurs the better but if you&amp;#39;re a kid
-from the lower economic rungs I don&amp;#39;t know if we should be pushing
-entrepreneurship as the ticket out.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m reminded of a friend of mine who does outreach, recruiting, and
-interviewing for his alma mater which is  one of the hardest
-institutions to gain acceptance to in the USA. On the one hand, he had
-a great experience and wants to share that with others. On the other
-hand, he also recognizes that for even the best student he pitches to,
-he&amp;#39;s likely to be building them up for disappointment.&lt;/p&gt;
-&lt;p&gt;
-As a teacher who&amp;#39;s worked with fragile kids, I can tell you that
-you&amp;#39;ve got to tread lightly here. Setting kids up for failure is more
-than bad, it&amp;#39;s dangerous.&lt;/p&gt;
-&lt;p&gt;
-If it were up to me, I&amp;#39;d put the &amp;#34;you can start a company&amp;#34; out there
-but in the background and if you want to focus on jobs then put the
-focus there, on the job - the fact that you&amp;#39;ll be able to put bread
-on the table regardless of how the economy turns and yes, you will be
-able to start your dream company if you want but you don&amp;#39;t have to do
-it out of the gate. Build your network, your skills, and, very
-importantly for kids climbing out of poverty, your safety nets and
-then start that company.&lt;/p&gt;
-&lt;p&gt;
-So, where do I stand overall with this? Basically the same place I
-stood when I designed Stuy&amp;#39;s intro to CS course or, as more than a
-couple of friends have termed the course &amp;#34;stuff Z likes.&amp;#34; Yes, I want
-to motivate kids to go further in CS but I know the majority won&amp;#39;t and
-probably shouldn&amp;#39;t, after all, it takes a village. I want to provide
-that motivation while also providing value to the rest. &lt;/p&gt;
-&lt;p&gt;
-At a very broad, basic level, people in different disciplines look at
-the world through different lenses. K12 CS should expose students with
-what the world can look like through a CS lens and how all the
-different lenses can relate, complement, and support each other. It
-should also teach practical tech related skills that should benefit
-all students. I&amp;#39;m not talking &amp;#34;using a word processor&amp;#34; here but more
-so programming. Digital citizenship should also be included. With all
-this it should also expose all the students with enough info so that
-those that want to go further in tech or CS are both excited to and
-prepared to do so.&lt;/p&gt;
-&lt;p&gt;
-At Stuy, we found that this could be done in a one semester 10th grade
-class. We&amp;#39;ve hand a huge number of kids end up going into tech and CS
-and come back later to tell us that it wasn&amp;#39;t on their radar at all
-until they took the required course. I&amp;#39;ve also had plenty of kids who
-went into other fields proclaim that their intro CS experience at Stuy
-was still one of their most valuable classes ever. Of course, if
-you&amp;#39;re offering more classes over more grade it opens many other
-possibilities - embedding in other subjects, integrating classes and
-more.&lt;/p&gt;
-&lt;p&gt;
-At the end of the day we&amp;#39;ll have a larger pool and a more diverse pool
-of students going into tech and for the majority of students, who
-won&amp;#39;t do pure tech, they&amp;#39;ll be more tech savvy, be able to use the
-mental and practical tools of the trade to suport them in whatever
-their endeavors turn out to be. &lt;/p&gt;
-&lt;p&gt;
-So, CSforAll in K12 isn&amp;#39;t about jobs. It&amp;#39;s about exposure and teaching
-some fundamentals. Setting kids up so that they will have a better
-idea as to if they want to go into tech and if they do they&amp;#39;ll be
-better prepared while at the same time giving all students the
-fundamentals of CS both in terms of problem solving and looking at the
-world and practical skills. &lt;/p&gt;
-&lt;p&gt;
-The funny thing, is that on the higher ed side, I think they have to
-go the other way and become more responsive to job demands. In spite
-of the way so many CS programs are designed, the majority of kids have
-no intention of going on to a higher degree and CS is one of the few
-disciplines where there is a direct path from college to a well paying
-job and that shouldn&amp;#39;t be ignored. You can keep your academic rigor
-and purity but at the same time the programs that acknowledge that
-the majority of their students will benefit from specific tools and
-skills will better serve their students. Practical and real world are
-not dirty words.&lt;/p&gt;
-&lt;p&gt;
-So, I&amp;#39;ve rambled on for a while and probably been a little all over
-the place but you know what, education is all over the place. We&amp;#39;re
-talking about taking young people and preparing them for life and
-their life journeys. That means different things for different people
-and so it should be with K12 CS. Not entirely a jobs program but yes,
-jobs are on the radar. Not entirely CS for CS but that&amp;#39;s there too. So
-is integration and support of other subject areas and more.&lt;/p&gt;
 </description>
     </item>
     
