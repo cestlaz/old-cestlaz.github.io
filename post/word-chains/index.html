@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1673880499" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674243742" />
 
 
 
@@ -201,7 +201,14 @@ can build a dictionary where the keys are the words and the values are
 all the words that follow the key. We can build this with a variation
 on our bag of words builder:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  words_raw <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a cleaned string with our text&#34;</span>
+</span></span><span style="display:flex;"><span>  words <span style="color:#f92672">=</span> words<span style="color:#f92672">.</span>raw<span style="color:#f92672">.</span>split()
+</span></span><span style="display:flex;"><span>  wordlists <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(words)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>      current_word <span style="color:#f92672">=</span> words[i]
+</span></span><span style="display:flex;"><span>      next_word <span style="color:#f92672">=</span> words[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>      wordlists<span style="color:#f92672">.</span>setdefault(current_word,[])
+</span></span><span style="display:flex;"><span>      wordlists<span style="color:#f92672">.</span>[current_word]<span style="color:#f92672">.</span>append(next_word)</span></span></code></pre></div>
 </div>
 <p>
 Note that we need a counting loop rather than just iterating over the
@@ -210,7 +217,11 @@ iteration.</p>
 <p>
 The (partial) value for the wordlists for the Book of Psalms would be:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  wordlists <span style="color:#f92672">=</span> {<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#e6db74">&#39;blessed&#39;</span> : [<span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;art&#39;</span>, <span style="color:#e6db74">&#39;be&#39;</span>, <span style="color:#f92672">...</span>],
+</span></span><span style="display:flex;"><span>               <span style="color:#e6db74">&#39;wealth&#39;</span> : [<span style="color:#e6db74">&#39;and&#39;</span>,<span style="color:#e6db74">&#39;and&#39;</span>,<span style="color:#e6db74">&#39;by&#39;</span>,<span style="color:#e6db74">&#39;to&#39;</span>],
+</span></span><span style="display:flex;"><span>               <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>  }</span></span></code></pre></div>
 </div>
 <p>
 At this point, generating text is easy. </p>
@@ -226,7 +237,14 @@ At this point, generating text is easy. </p>
 last word in the original text (as it can&#39;t find any &#34;next words&#34; but
 basically it will work. Here&#39;s the code:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  <span style="color:#75715e"># assume wordlists is the dictionary built as specified above</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># and that we&#39;re starting with the word &#34;blessed&#34;</span>
+</span></span><span style="display:flex;"><span>  current_word <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blessed&#34;</span>
+</span></span><span style="display:flex;"><span>  storylist <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(storylength):
+</span></span><span style="display:flex;"><span>      story<span style="color:#f92672">.</span>append(current_word)
+</span></span><span style="display:flex;"><span>      current_word <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>choice(wordlists[current_word])
+</span></span><span style="display:flex;"><span>  story <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join(storylist)</span></span></code></pre></div>
 </div>
 <p>
 The <code>random.choice()</code> randomly selects a word from a list. This is
@@ -245,7 +263,11 @@ the value.</p>
 For example, a partial dictionary based on this idea from Macbeth Act
 1 Scene 1 could be:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>  <span style="color:#75715e"># source -&gt; &#34;when shall we three meet again&#34;</span>
+</span></span><span style="display:flex;"><span>  tuple_dict <span style="color:#f92672">=</span> { (<span style="color:#e6db74">&#34;when&#34;</span>,<span style="color:#e6db74">&#34;shall&#34;</span>) : [<span style="color:#e6db74">&#34;we&#34;</span>],
+</span></span><span style="display:flex;"><span>                 (<span style="color:#e6db74">&#34;shall&#34;</span>,<span style="color:#e6db74">&#34;we&#34;</span>) : [<span style="color:#e6db74">&#34;three&#34;</span>],
+</span></span><span style="display:flex;"><span>                 (<span style="color:#e6db74">&#34;we&#34;</span>,<span style="color:#e6db74">&#34;three&#34;</span>) : [<span style="color:#e6db74">&#34;meet&#34;</span>],
+</span></span><span style="display:flex;"><span>                 (<span style="color:#e6db74">&#34;tree&#34;</span>,<span style="color:#e6db74">&#34;meet&#34;</span>) : [<span style="color:#e6db74">&#34;again&#34;</span>]}</span></span></code></pre></div>
 </div>
 <p>
 This takes a bit more work to build and also a bit more work to
