@@ -6,44 +6,10 @@
     <description>C&#39;est la Z (workflow)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 10:44:41 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/workflow/rss.xml" rel="self" type="application/rss" />
     
-    
-    <item>
-      <title>My project grading workflow</title>
-      <link>https://cestlaz.github.io/post/using-emacs-78-grading/</link>
-      <pubDate>Sun, 10 Oct 2021 10:44:41 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-78-grading/</guid>
-      <description>&lt;p&gt;
-Grading sucks. Even for a well crafted assignment it takes time and
-rarely does it give you the same insights into your students as you
-can get from just observing them and working with them, at least when
-the environment supports you doing so. &lt;/p&gt;
-&lt;p&gt;
-This leads lots of teachers to go to auto graders. I can&amp;#39;t bring
-myself going along with that. While assignments are imperfect and
-tedious to grade, they do provide some insight to your students and
-that&amp;#39;s an important part about being a teacher.&lt;/p&gt;
-&lt;p&gt;
-So, I always keep my eye out for ways to improve my project gradiing
-workflow.&lt;/p&gt;
-&lt;p&gt;
-In the video below, I step through my process. It&amp;#39;s mostly Emacs but I
-also use GitHub classroom and the terminal along the way.&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re here as for the Emacs, I&amp;#39;d any thoughts on alternatives or
-improvements.&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re here as a teacher, I&amp;#39;d love to hear what your flow is like
-and what tools you use.&lt;/p&gt;
-&lt;p&gt;
-Enjoy&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7HLVcQi8GGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
     
     <item>
       <title>Unit Tests Grading Workflow</title>

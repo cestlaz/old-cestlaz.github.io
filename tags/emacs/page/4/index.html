@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674246043" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674503883" />
 
 
 
@@ -76,37 +76,30 @@
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-60-restclient/">Using Emacs 60 - Restclient</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-24-capture-2/">Using Emacs - 24 - Org Capture 2</a></h1>
     </header>
 
     <div class="content post-summary">
-        I started to work on a web application the other day. It&#39;s nothing special but if I ever finish it, it will be a pretty complete project. The backend will be a REST API and I&#39;m planning on writing the frontend in Clojurescript. The problem with developing a web application like this is that you can&#39;t really write the front end until you have enough of the backend to provide data.
+        Not much in today&#39;s actual post. The video is a continuation of the last one on org-capture.
+The video goes over how I set things up to pop up a new frame to do a capture even if emacs isn&#39;t on screen (as long as it&#39;s running) by hitting F1. I would have preferred to bind to C-c c - the same as within emacs but I havn&#39;t figured out how to do that in Ubuntu or Mint Linux yet.
     </div>
 
-            <a href="/post/using-emacs-60-restclient/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-24-capture-2/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-10-25</div>
+        <div class="post-date">2016-12-03</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -118,37 +111,33 @@
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-59-markdown/">Using Emacs 59 - markdown</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-23-capture-1/">Using Emacs - 23 - Org Capture 1</a></h1>
     </header>
 
     <div class="content post-summary">
-        Org-mode is my markup of choice. I spend the vast majority of my time working on text files working in org-mode. Since GitHUb started rendering org-mode files in their site I&#39;ve also used org-mode for things like Readme files in my projects. I even force it on my students at times. When I make an assignment, I seed it with an org-mode file that they have to modify - that is - fill in things like their names, group members etc.
+        Org mode has an amazing feature - org-capture. I only started using it recently but it&#39;s really awesome.
+What took me so long?
+Probably that the manual seemed a little intimidating.
+It really isn&#39;t hard, though. Combined with what I&#39;ll go over in the next video and post (and a future one for Google calendar sync) it&#39;s what I use for:
+recording blog ideas managing bookmarks taking short Notes managing my calendar.
     </div>
 
-            <a href="/post/using-emacs-59-markdown/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-23-capture-1/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-10-18</div>
+        <div class="post-date">2016-11-29</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -160,38 +149,33 @@
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-58-lsp-mode/">Using Emacs 58 - lsp-mode</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-21-web-mode/">Using Emacs - 21 - web mode</a></h1>
     </header>
 
     <div class="content post-summary">
-        I&#39;ve been wanting to check out lsp-mode under Emacs for a while now. LSP stands for Language Protocol Service. The idea is that you have a standard interface between your editor and some language server. If you program in multiple languages and each has an LSP server you end up, in theory, with a simpler configuration and a consistent interface.
-This certainly sounds more appealing than how we did it in the old days where you have some ad hoc configuraiton for each language you work in.
+        Quick post today.
+The video goes over web-mode - my preferred weapon for html and all the goodies you embed in an html file.
+It&#39;s multi-modal so it acts sensibly regardless of wether you&#39;re editing html, css, javascript or even templates in a single file.
+Note: In the video, web-mode wasn&#39;t automatically inserting quotes. I had to set hte following variable to fix this:
+(setq web-mode-enable-auto-quoting t) Giving the final configuration I&#39;m currently using:
     </div>
 
-            <a href="/post/using-emacs-58-lsp-mode/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-21-web-mode/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-10-07</div>
+        <div class="post-date">2016-11-16</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -203,38 +187,32 @@ This certainly sounds more appealing than how we did it in the old days where yo
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-57-dired-narrow/">Using Emacs 57 Dired Narrow</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-22-emacsclient/">Using Emacs - 22 - emacsclient</a></h1>
     </header>
 
     <div class="content post-summary">
-        One of Emacs power features that I&#39;ve never quite gotten into is dired, the Directory Editor. I&#39;ve already done a video on the package. It&#39;s really cool and I do use it at times but I still haven&#39;t started using it for my day to day.
-Well, I just started using a couple of packages that might change this. They&#39;re part of a set of dired addons that you can check out at the dired hacks page.
+        Another quick hit today.
+This video is really setting the stage for hte next two, where I talk about org-mode capturing.
+Today, we&#39;re demoing the use of the emacs server and client.
+Back in the old days, emacs took a LOOONG time to load. A complex conviguration could take on the order of 10 to 20 seconds. This resulted in people loading emacs at the start of the day and leaving it up forever.
     </div>
 
-            <a href="/post/using-emacs-57-dired-narrow/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-22-emacsclient/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-04-07</div>
+        <div class="post-date">2016-11-16</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -246,37 +224,31 @@ Well, I just started using a couple of packages that might change this. They&#39
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-56-dictionaries/">Using Emacs Episode 56 - Dictionaries</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-20-yanking/">Using Emacs - 20 - yanking</a></h1>
     </header>
 
     <div class="content post-summary">
-        One of the great things about Emacs is that it&#39;s not just for writing programs. Sure, you can set it up as an IDE for just about every programming language under the sun but that&#39;s just the tip of the iceberg. I use Emacs for just about all my text processing. This includes writing blog posts, reading and writing emails, creating lesson plans and pretty much anything and everything having to do with text.
+        Today&#39;s video is a bit of a follow up on the last one as well as a few miscillaneous configuration.
+We got some comments on alternate ways to load a file if it exists - it&#39;s always cool to see how different people end up doing similar things.
+We then talk about three little configurations. Two I found out about reading Jon Sander&#39;s (jcs) blog Irreal. Jon&#39;s blog is a terrific source of emacs info - if you don&#39;t subscribe, you should.
     </div>
 
-            <a href="/post/using-emacs-56-dictionaries/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-20-yanking/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-01-28</div>
+        <div class="post-date">2016-11-13</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -288,38 +260,31 @@ Well, I just started using a couple of packages that might change this. They&#39
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-55-irony-completions/">Using Emacs Episode 55 - Irony Completions</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-19-live/">Using Emacs - 19 - moving to a live config</a></h1>
     </header>
 
     <div class="content post-summary">
-        Last year I put together a post and video on some basics of Emacs for C++ development. In the video I didn&#39;t quite get completions fully working. I also used ggtags in that video but find myself using dumb-jump more frequently.
-Here&#39;s a quick video showing how to set up irony-mode which uses libclang for completions. It&#39;s pretty slick. Now the only thing I think I&#39;m missing is header file completions.
+        Some of the videos I want to make are going to be much easier to do if I&#39;m working in my own account where my whole file tree is available.
+It&#39;s also a little annoying changing between my full emacs config and the one I&#39;m developing here.
+So, I decided to move to this config for my real config and as I make more videos move parts of my old configuration over to this new one.
     </div>
 
-            <a href="/post/using-emacs-55-irony-completions/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-19-live/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-01-21</div>
+        <div class="post-date">2016-11-10</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -331,37 +296,31 @@ Here&#39;s a quick video showing how to set up irony-mode which uses libclang fo
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-54-org-tables/">Using Emacs 54 Org Tables</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-18-narrow/">Using Emacs - 18 - Narrowing and iedit</a></h1>
     </header>
 
     <div class="content post-summary">
-        As you know I use Emacs for all sorts of things. In addition to coding, I use it for email, my schedule, note taking, and much much more. As part of my job at Hunter, I read and evaluate some of the Macaulay Honors College applications. I also have to evaluate all the applicants to my CS honors program. I described how I use Org-mode and Emacs to help with that here.
+        I meant to cover these last time but decided not to so as to keep the videos to about 10 minutes each.
+First up this time round is iedit - a really cool mode that lets you select all the instances of the marked selection at the same time and edit them all at once. By default it&#39;s bound to C-l.
+For example, let&#39;s say you had the following code:
     </div>
 
-            <a href="/post/using-emacs-54-org-tables/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-18-narrow/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2019-01-14</div>
+        <div class="post-date">2016-11-02</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -373,39 +332,32 @@ Here&#39;s a quick video showing how to set up irony-mode which uses libclang fo
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-53-emailing-org-agenda/">Using Emacs 53 Emailing Org Agenda</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-17-misc/">Using Emacs - 17 - misc small packages</a></h1>
     </header>
 
     <div class="content post-summary">
-        I use both org-mode and Google Calendar for scheduling. I like Google Calendar because:
-It&#39;s pretty universal so I can issue and accept calendar invites. It works well with my phone and other mobile devices. The rest of my family doesn&#39;t live in Emacs :-(. I prefer using org-mode beacuse:
-Emacs I prefer, for the most part, to control my data. I partially sync the two platforms. I&#39;ve already talked about syncing Google Calendar and org-mode.
+        I&#39;m working on getting enough of my real configuration into this series so that I can dump my current one and use this one all them time and grow it back up an episode at a time.
+I think we&#39;re almost there.
+This time, we&#39;re looking at a few small packages that I use all the time.
+Highlight line Mode (global-hl-line-mode t) this turns on highlight line mode. It makes it easy to see the line the cursor&#39;s on.
     </div>
 
-            <a href="/post/using-emacs-53-emailing-org-agenda/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-17-misc/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2018-11-03</div>
+        <div class="post-date">2016-10-28</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -417,38 +369,31 @@ Emacs I prefer, for the most part, to control my data. I partially sync the two 
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-52-eyebrowse/">Using Emacs Episode 52 - Eyebrowse</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-16-undo-tree/">Using Emacs - 16 - Undo Tree</a></h1>
     </header>
 
     <div class="content post-summary">
-        I was originally going to do a video on how I set things up so that I get an email every morning with my org-mode agenda but that&#39;s going to be something of an ordeal. I have to create a droploet on Digital Ocean, set up SyncThing and a mail server and lots of other things.
-I&#39;ll get to that video at some point but in the meantime I saw this thread on the Emacs subreddit.
+        If you use emacs, you should keep an eye on Jon Snader&#39;s blog, irreal.org. A few days he posted on Undo Tree - a package that extends Emacs&#39;s built in undo functionality.
+Basic emacs has undo, bound to C-/ or C-_ but that&#39;s about it. Undo tree, which you can set up with:
+(use-package undo-tree :ensure t :init (global-undo-tree-mode)) adds two key features. First is redo, which you get by adding the shift key to the undo keychords.
     </div>
 
-            <a href="/post/using-emacs-52-eyebrowse/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-16-undo-tree/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2018-10-30</div>
+        <div class="post-date">2016-10-09</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -460,32 +405,25 @@ I&#39;ll get to that video at some point but in the meantime I saw this thread o
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/post/using-emacs-51-dtd-org/">Using Emacs 51 - Day to day work with org-mode</a></h1>
+        <h1 class="post-title"><a href="/posts/user-friendly/">User friendly - I do not think that means what you think it means</a></h1>
     </header>
 
     <div class="content post-summary">
-        I can&#39;t believe that I haven&#39;t made a video since the beginning of summer!!!
-Part of the reason is that I haven&#39;t had any video ideas that have motivated me and the other reason is that the Fall is my busiest season.
-In any event, here&#39;s the latest installment.
-Take a look at how I use Emacs and more specifically org-mode for my day to day work. Sometimes I use the fancy power tools but to be honest, most of the time, I stick to the basics.
+        Saw this post the other day: Emacs is hurting Clojure and this response: Is Emacs Really HJard to Learn / Use.
+This called to mind those countless discussions about tools being user friendly. I&#39;m frequently on the unpopular side of these discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs fill-in-the-blank-editor-or-IDE and on and on.
+Don&#39;t use Emacs, it isn&#39;t user friendly. Don&#39;t use Linux, it isn&#39;t user friendly.
     </div>
 
-            <a href="/post/using-emacs-51-dtd-org/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/user-friendly/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2018-10-24</div>
+        <div class="post-date">2016-09-28</div>
     
     <div class="post-taxonomies">
         
-            <ul class="post-categories">
-                
-                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
-                
-            </ul>
-            
             
                 <ul class="post-tags">
                     
@@ -493,9 +431,11 @@ Take a look at how I use Emacs and more specifically org-mode for my day to day 
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
                     
-                        <li><a href="https://cestlaz.github.io/tags/org-mode">#org-mode</a></li>
+                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
                     
-                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
+                        <li><a href="https://cestlaz.github.io/tags/linux">#linux</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
                     
                 </ul>
         
