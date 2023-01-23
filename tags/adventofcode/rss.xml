@@ -6,10 +6,319 @@
     <description>C&#39;est la Z (adventofcode)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 09:02:09 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/adventofcode/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Advent Of Code 2019</title>
+      <link>https://cestlaz.github.io/post/advent-of-code-2019/</link>
+      <pubDate>Fri, 29 Nov 2019 09:02:09 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/advent-of-code-2019/</guid>
+      <description>&lt;p&gt;
+It&amp;#39;s almost December which means it&amp;#39;s almost time for &lt;a href=&#34;http:/adventofcode.com&#34;&gt;Advent of Code
+2019&lt;/a&gt;. Advent of code is an annual computer programming competition
+created and ruyn by &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt;. It&amp;#39;s been running since 2015. I&amp;#39;ve
+written about it before, mostly from a teacher&amp;#39;s point of view (&lt;a href=&#34;https://cestlaz.github.io/post/solve-a-to-solve-b/&#34;&gt;Solve A to Solve B&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/&#34;&gt;Data structures and Hidden Complexity&lt;/a&gt;, &lt;a href=&#34;https://cestlaz.github.io/posts/advent-2017-4-6/&#34;&gt;Tools can shape
+how we think&lt;/a&gt; and a few others). &lt;/p&gt;
+&lt;p&gt;
+Basically, Eric releases one poblem a day at midnight from Dec 1
+through Dec 25. Each problem has two parts with a correct solution to
+part 1 unlocking part 2. Problems can be solved using any language as
+each challenge just requires you to enter the correct result rather
+than you submitting code. This allows you to use any language or even
+no language at all.&lt;/p&gt;
+&lt;p&gt;
+In terms of difficulty, some problems are certainly doable by students
+in CS1 or even CS0. In fact, Eric takes great pains to keep from using
+CSSpeak so as to make the problems approachable even if you aren&amp;#39;t a
+CS major or professional.&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re a CS Teacher you can find some great lesson and problem
+ideas here. If you&amp;#39;re a student, they&amp;#39;re great interview prep and will
+stretch your problem solving capabilities. If you&amp;#39;re just a techie,
+they&amp;#39;re just fun challenges. &lt;/p&gt;
+&lt;p&gt;
+There aren&amp;#39;t any prizes so it&amp;#39;s all just for the fun of it. You can
+also get help and see great discussions on the challenges over on the
+Advent of Code &lt;a href=&#34;https://www.reddit.com/r/adventofcode/&#34;&gt;subreddit&lt;/a&gt;. Lots of people also put their solutions up
+online. I&amp;#39;ve never finished but you can find a bunch of my old
+solutions up on &lt;a href=&#34;https://github.com/zamansky?utf8=%25E2%259C%2593&amp;amp;tab=repositories&amp;amp;q=adve&amp;amp;type=&amp;amp;language=&#34;&gt;GitHub&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;
+Finally, you can get to the challenges from previous years by just
+adding the year to the url, that is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://adventofcode/2019&#34;&gt;&lt;a href=&#34;http://adventofcode.com/2019&#34;&gt;http://adventofcode.com/2019&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2018&#34;&gt;http://adventofcode.com/2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2017&#34;&gt;http://adventofcode.com/2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2016&#34;&gt;http://adventofcode.com/2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adventofcode.com/2015&#34;&gt;http://adventofcode.com/2015&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Finally, here&amp;#39;s a really interesting video by Eric on the whole AoC
+thing:&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34;
+src=&amp;#34;&lt;a href=&#34;https://www.youtube.com/embed/bS9882S0ZHs&#34;&gt;https://www.youtube.com/embed/bS9882S0ZHs&lt;/a&gt;&amp;#34; frameborder=&amp;#34;0&amp;#34;
+allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solve A To Solve B</title>
+      <link>https://cestlaz.github.io/post/solve-a-to-solve-b/</link>
+      <pubDate>Fri, 18 Jan 2019 19:36:59 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/solve-a-to-solve-b/</guid>
+      <description>&lt;p&gt;
+So many programming assignments involve a direct solution. Write a
+program to do this or write a problem to solve that. It&amp;#39;s pretty
+typical. There&amp;#39;s nothing wrong with assignments like these. They allow
+students to practice what they&amp;#39;ve been learning and it gives them the
+opportunity to create some cool programs. All the same, I like it when
+there&amp;#39;s an indirect problem. You&amp;#39;re faced with a problem but in order
+to solve it you first have to solve some other problem&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s why I liked &lt;a href=&#34;https://adventofcode.com/2018/day/10&#34;&gt;day 10&lt;/a&gt; from this year&amp;#39;s Advent of Code. &lt;/p&gt;
+&lt;p&gt;
+At it&amp;#39;s core the question presents you with a collection of points
+along with velocities in this form::&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+position=&amp;lt; 9,  1&amp;gt; velocity=&amp;lt; 0,  2&amp;gt;
+position=&amp;lt; 7,  0&amp;gt; velocity=&amp;lt;-1,  0&amp;gt;
+position=&amp;lt; 3, -2&amp;gt; velocity=&amp;lt;-1,  1&amp;gt;
+position=&amp;lt; 6, 10&amp;gt; velocity=&amp;lt;-2, -1&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+Each point moves by adding the x and y components if its velocity each
+second. For example, the last two points listed above - points (3,-2)
+nad (6,10) would be transformed overtime as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Point&lt;/th&gt;
+&lt;th&gt;Velocity&lt;/th&gt;
+&lt;th&gt;Second 0&lt;/th&gt;
+&lt;th&gt;Second 1&lt;/th&gt;
+&lt;th&gt;Second 2&lt;/th&gt;
+&lt;th&gt;Second 3&lt;/th&gt;
+&lt;th&gt;Second 4&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3, -2&lt;/td&gt;
+&lt;td&gt;-1,1&lt;/td&gt;
+&lt;td&gt;3,-2&lt;/td&gt;
+&lt;td&gt;2,-1&lt;/td&gt;
+&lt;td&gt;1,0&lt;/td&gt;
+&lt;td&gt;0,1&lt;/td&gt;
+&lt;td&gt;-1,2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6,10&lt;/td&gt;
+&lt;td&gt;-2,-1&lt;/td&gt;
+&lt;td&gt;6,10&lt;/td&gt;
+&lt;td&gt;4,9&lt;/td&gt;
+&lt;td&gt;2,8&lt;/td&gt;
+&lt;td&gt;0,7&lt;/td&gt;
+&lt;td&gt;-2 6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+At some point in time, if you look at the points on a grid they will
+spell out a message or at least a sequence of letters. The question
+asks you to figure out that message. There&amp;#39;s a complete example and a
+nice story around the problem on the &lt;a href=&#34;https://adventofcode.com/2018/day/10&#34;&gt;Advent of Code site&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;
+The first thought is probably to run this as a simulation. Set up a
+loop, update the point locations, visualize and see if you have an
+answer. This isn&amp;#39;t trivial for a beginner but it&amp;#39;s certainly
+approachable. It also has a big problem. Unless you happen to have
+some optical character recognition libaray handy you have to draw and
+look at the output on every change. Given that it could take thousands
+of iterations, this is not practical at all. &lt;/p&gt;
+&lt;p&gt;
+We can do better by solving another problem first. The key insight is
+that each point travels along a line. In fact, this problem is a great
+time to talk about a parametric representation of a line like &lt;/p&gt;
+&lt;p&gt;
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;&lt;a href=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&lt;/a&gt;&amp;#34;&amp;gt;
+&amp;lt;/script&amp;gt;&lt;/p&gt;
+&lt;p&gt;
+\(L=P+tV\) &lt;/p&gt;
+&lt;p&gt;
+Where \(P\)represents an \((x,y)\) point and \(V\) a direction vector
+\((dx,dy)\).&lt;/p&gt;
+&lt;p&gt;
+Regardless of where the points start, at some point all of them will
+be contained within your field of view after which they will continue
+along their paths outside of that field of view. We can look at a
+bounding box for all of the points and when that bounding box is
+smallest we should be at or close to our message.&lt;/p&gt;
+&lt;p&gt;
+This is readily accomplished. We can find a bounding box by finding the
+smallest and largest x and y coordinates for all the current points
+and using \((X_{min},Y_{min})\) and \((X_{max},Y_{max})\) as the
+diagonals of a bounding rectangle and then compare areas of these
+rectangles. They should decrease at first and then eventually
+increase. &lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,some_large_value,stepsize):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      new_pts &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transform(pts,time) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      bbox &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bounding_box(new_pts)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (area(bbox) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; area(previous_bbox)):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; we&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;re close to or at the smallest bounding box&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+We can start with a big &lt;code&gt;stepsize&lt;/code&gt; and then refine it down until we
+hone in on the smallest bounding box.&lt;/p&gt;
+&lt;p&gt;
+From there, we can transform all the points using the time that
+resulted in the smallest bounding box and then display the points to
+see our message. We might have to go through a small window of times
+since the actual message might just be close to the configuration
+yielded from the smallest bounding box. Of course that visualization
+takes some doing - the actual viewing window might not align with your
+screeen coordinates, they could all, for example, be negative so
+you&amp;#39;ll probably have to do one last transformation to translate and
+possibly scale the final points to make it all viewable.&lt;/p&gt;
+&lt;p&gt;
+When I first solved the problem, I just dumped the coordinates into a
+2 dimentional array and printed it but afterwards I wrote a little
+clojurescript html5 canvas visualization:&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://cestlaz.github.io/img/advent-2018-10.gif&#34; width=&#34;200px&#34; height=&#34;20px&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+So there it is. It&amp;#39;s not a trivial problem for beginners but it is doable. There&amp;#39;s a
+lot to deal with:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;parse the data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+This isn&amp;#39;t too bad. You could cover regular expressions but even
+without it isn&amp;#39;t too big of a deal. You could also just use an editor
+to extract the important data or preprocess this for the kids.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Figure out how to transform the points.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This also isn&amp;#39;t too bad. Just loop over all the points with &lt;code&gt;newpoint
+= oldpoint + t * velocity&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Figure out the bounding boxes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Also not too bad. Loop over all the points to find the smallest and
+largest x and y coordinates&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Set up a loop to find the smallest bounding box and hence the time
+that the message will appear.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and then finally:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;draw the points to visually inspect the answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This might be the most persnickety part. When I first coded it my
+output was upside down and backwards but good enough.&lt;/p&gt;
+&lt;p&gt;
+I can&amp;#39;t fully put my finger on it but I really enjoyed this problem. I
+hope you enjoyed my writeup. If you want to check out my solution for
+this (minus the clojurescript visualization) along with the other
+Advent of Code problems I finished this year you can find them &lt;a href=&#34;https://github.com/zamansky/advent2018&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advent of Code, Data Structures, and Hidden Complexity</title>
+      <link>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</link>
+      <pubDate>Sun, 30 Dec 2018 15:17:14 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/aoc-data-structures-hidden-complexity/</guid>
+      <description>&lt;p&gt;
+Since 2015, &lt;a href=&#34;https://twitter.com/ericwastl&#34;&gt;Eric Wastl&lt;/a&gt; has gifted us each December with &lt;a href=&#34;http://adventofcode.com&#34;&gt;Advent of
+Code&lt;/a&gt; - a 25 day programming competition that I very much enjoy. This
+year I haven&amp;#39;t been able to get to too many of the problems. I only
+completed the first two days on the day they were released, problem
+three a day late and then I didn&amp;#39;t get back to the problems until
+almost 12/25 - the final day of the competition. I&amp;#39;ve spent a bit of
+time over the break working through the problems. I&amp;#39;m currently
+through 9. I started working through the problems in Clojure - part of
+my yearly attempt to dive into the language but then did a few in
+Python just to speed up my progress.&lt;/p&gt;
+&lt;p&gt;
+Yesterday, I did &lt;a href=&#34;https://adventofcode.com/2018/day/9&#34;&gt;question 9&lt;/a&gt; which I found interesting as a teacher -
+so much so that I think I&amp;#39;ll assign at some point in the future.
+At the core of the problem you have to maintain a list of items
+inserting and deleting items at assorted locations. I threw together
+this solution:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;num_players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;431&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;last_score &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;70950&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 255&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;players &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(num_players&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;player&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;board&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;next_marble &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; next_marble &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; last_score:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; next_marble &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;#regular insert&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        L &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(board)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(index&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;L
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(index&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;L
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        board&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(index,next_marble)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        players[player]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;players[player]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; next_marble
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(index&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;len(board)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        players[player]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;players[player]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;board[index]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;del&lt;/span&gt; board[index]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    player&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(player&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;num_players
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    next_marble &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; next_marble &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(max(players))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+It worked and I got my first star. This unlocked part 2 which changed
+the number of marbles in the game from 70950 to 70950&amp;lt;b&amp;gt;00&amp;lt;/b&amp;gt;. This
+brings me to my first observation - hidden complexity. Seeing my input
+I knew my part 2 would be crazy slow. The solution requires you insert
+and delete into a list over and over again and I did it using a Python
+list and a Python list is backed by an array. This means that every
+insert and delete will be linear and I had a whole bunch of them.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s another great simple example of hidden complexity. Students and
+beginners use Python lists as if they were linked structures with
+direct indexing - the best of all worlds. It&amp;#39;s great if you&amp;#39;re dealing
+with small data sets but unless you&amp;#39;re careful things can get very
+slow very fast. It&amp;#39;s important that students learn about this and it
+appears that many don&amp;#39;t. &lt;/p&gt;
+&lt;p&gt;
+Even though I knew the program would take forever to run it was my bed
+time so I started it on part two and turned in for the night.&lt;/p&gt;
+&lt;p&gt;
+When I woke up I had an answer to part 2, entered it and earned my
+next star. &lt;/p&gt;
+&lt;p&gt;
+Of course I knew that the solution should really be written using a
+doubly linked list. The funny thing is that if you&amp;#39;re comfortable with
+creating dynamic data structures like linked lists, writing a solution
+using a doubly linked list and running it on part 2 actually takes a fraction of
+the time of writing the original solution and running it. To make
+sure, I did it. I decided to code it up in Java since I might assign
+something like this to my students in C++. You can check it out &lt;a href=&#34;https://github.com/zamansky/advent2018/tree/master/java&#34;&gt;here&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;
+The second take away was that it&amp;#39;s actually beneficial for students to
+be able comfortable with pointers and dynamic memory and while
+creating a linked list let alone a tree can be tricky at first, &lt;a href=&#34;https://cestlaz.github.io/posts/it-gets-easier-advent19/&#34;&gt;it
+does get easier.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+With all the debate going on over coding vs computational thinking vs
+CS it&amp;#39;s things like this - thinking about things like this that marks
+one of the ways a computer scientist is different from a programmer. &lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Tools can shape how we think</title>

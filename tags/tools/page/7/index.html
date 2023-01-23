@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674503883" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674504503" />
 
 
 
@@ -76,23 +76,22 @@
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-3-elisp/">Using Emacs - 3 - How to think about Emacs</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-34-ibuffer-emmet/">Using Emacs - 34 - ibuffer and emmet</a></h1>
     </header>
 
     <div class="content post-summary">
-        Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
-In some ways, it&#39;s like those new fangled interactive programming environments where you type in code and the updates are reflected instantly.
-In this video, I try to explain the way I think about Emacs and why it&#39;s so cool.
-The only change we made to our configuration was adding:
+        A couple of quick, unrelated packages today.
+first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
+Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it. You can navigate that buffer and hit enter on a particular buffer to go to it.
     </div>
 
-            <a href="/posts/using-emacs-3-elisp/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-34-ibuffer-emmet/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-05-23</div>
+        <div class="post-date">2017-06-15</div>
     
     <div class="post-taxonomies">
         
@@ -113,22 +112,59 @@ The only change we made to our configuration was adding:
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-4-buffers/">Using Emacs - 4 - Buffers</a></h1>
+        <h1 class="post-title"><a href="/posts/python-editors/">Python - Editor or IDE</a></h1>
     </header>
 
     <div class="content post-summary">
-        Now that we&#39;re past the intro material, we&#39;ll start looking at emacs features one at a time. This will let you focus on using the one feature we&#39;re covering, fit it into your work flow, and really get comfortable with it.
-This time we&#39;ll dive into using Emacs effectively with buffers.
-Watch the video and then make a real effort to use buffers over the next few emacs sessions. Before you know it, they&#39;ll be a natural part of your work flow.
+        Earlier today I read Garth Flint&#39;s latest post on choosing a Python environment for his classes. While our classes and populations are different it looks like Garth and I share a lot of thoughts on the subject.
+I started to write a comment to leave on Garth&#39;s blog but since it was getting a little long I thought I&#39;d write it up as a post.
+The question of development environment can be an important one and can make a big difference.
     </div>
 
-            <a href="/posts/using-emacs-4-buffers/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/python-editors/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-05-23</div>
+        <div class="post-date">2017-05-25</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/teaching">#teaching</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/using-emacs-33-projectile-jump/">Using Emacs - 33 - projectile, dumb-jump</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
+Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
+Here&#39;s my configuration:
+;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on)) Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named .
+    </div>
+
+            <a href="/posts/using-emacs-33-projectile-jump/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2017-04-28</div>
     
     <div class="post-taxonomies">
         
@@ -149,23 +185,160 @@ Watch the video and then make a real effort to use buffers over the next few ema
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-2-org/">Using Emacs - Intro to Org Mode</a></h1>
+        <h1 class="post-title"><a href="/posts/sigcse-2017-github-4/">GitHub as a tool for education</a></h1>
     </header>
 
     <div class="content post-summary">
-        This video is a brief introduction to org-mode, a mode I use for all sorts of things.
-We&#39;ll dive into org-mode later in the series. Right now I just want you to see the basics since we&#39;ll be using org-mode for any notes that are written up during this series.
-Actually, all my blog posts are written in org-mode.
-Here are the important lines to add to your Emacs init.
+        When I started using git and GitHub with my students it was a natural progression having started with started with CVS and then, as technology changed moving through Subversion and then Mercurial. It was all about using sensible professional software development techniques while making it easier for students to submit work and for me to evaluate their submissions.
+Over time, I found that git and GitHub in fact provided some extra support for educators right out of the box.
     </div>
 
-            <a href="/posts/using-emacs-2-org/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/sigcse-2017-github-4/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-05-23</div>
+        <div class="post-date">2017-04-11</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/pedagogy">#pedagogy</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/sigcse-2017-github-3/">SIGCSE 2017 - a path to github part 3</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        I wanted to write this up earlier but, as so frequently happens all my dormant work projects decided it was time to rise up and demand instant attention.
+When we left off, we had students pulling code and submitting homework via github.
+Form here, it&#39;s an easy step to have them working on a small project in their own repo. In fact, sometimes, I&#39;ll jump right to a two person project where one person creates the repo and invites the other (and me) as a collaborator.
+    </div>
+
+            <a href="/posts/sigcse-2017-github-3/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2017-03-30</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/sigcse-2017-github-2/">SIGCSE 2017 - a path to github part 2</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Note: Just for some quick context. The process I started to describe in the last post and continue here chronicles what I did at Stuy with high schoolers. Now that I&#39;m at Hunter college, I&#39;m adapting the process but the overarching themes remain the same.
+Post starts here: Now that your students have been pulling the classcode repo regularly it&#39;s time to move to the next step - adding and pushing files to a repo.
+    </div>
+
+            <a href="/posts/sigcse-2017-github-2/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2017-03-19</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/sigcse-2017-github-1/">SIGCSE 2017 - a path to github part 1</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        Both at and prior to SIGCSE 2017, I promised to write up the steps I take to introduce and use revision control systems in my classes.
+This series is not meant to be a git or GitHub tutorial. There are plenty of those already (two of which I&#39;ve linked to below). This is about the process I use with my students to get them up to speed.
+As with any new tool, there will be some resistance but once git saves them once, they get religion.
+    </div>
+
+            <a href="/posts/sigcse-2017-github-1/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2017-03-16</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/cs">#cs</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+        <article class="post-list">
+    <header>
+        <h1 class="post-title"><a href="/posts/using-emacs-32-cpp/">Using Emacs - 32 - C&#43;&#43;</a></h1>
+    </header>
+
+    <div class="content post-summary">
+        This video is specifically for my students or any students out there who are starting with C++ and emacs. The videos also longer than usual, coming in at a little over 20 minutes.
+The big difference is instead of building on my existing config, the code at the bottom is a complete standalone configuration. It&#39;s all pulled from the main config with one additional package.
+By taking the code at the bottom and putting in into a file named init.
+    </div>
+
+            <a href="/posts/using-emacs-32-cpp/#disqus_thread"># COMMENTS</a>
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2017-03-04</div>
     
     <div class="post-taxonomies">
         
@@ -186,21 +359,21 @@ Here are the important lines to add to your Emacs init.
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-introduction/">Using Emacs - Introduction</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-31-elfeed-3/">Using Emacs - 31 - elfeed part 3 - macros</a></h1>
     </header>
 
     <div class="content post-summary">
-        I&#39;m sure I&#39;ve mentioned that I&#39;ve been an Emacs wonk for decades. Since the mid-80&#39;s in fact. I&#39;ve spent time using other editors, word processors, and development tools but always find my way back.
-I recommend that budding computer science students develop a good tool set and encourage them to explore Emacs but while it&#39;s pretty easy to load Emacs and find your way around, particularly if you use the mouse and menus there isn&#39;t a clear path to take you from beginner to using it as an efficient tool let alone customizing it.
+        In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
+Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra.
     </div>
 
-            <a href="/posts/using-emacs-introduction/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-31-elfeed-3/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-05-23</div>
+        <div class="post-date">2017-03-01</div>
     
     <div class="post-taxonomies">
         
@@ -221,23 +394,22 @@ I recommend that budding computer science students develop a good tool set and e
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-1-setup/">Using Emacs - Setting up the Package Manager</a></h1>
+        <h1 class="post-title"><a href="/posts/using-emacs-30-elfeed-2/">Using Emacs - 30 - elfeed part 2 - Hydras</a></h1>
     </header>
 
     <div class="content post-summary">
-        This video will step you through setting up Emacs to use MELPA for packages.
-We configured emacs by creating a folder named .emacs.d and creating a file within it named init.el.
-Here&#39;s the contents of that file:
-(setq inhibit-startup-message t) (require &#39;package) (setq package-enable-at-startup nil) (add-to-list &#39;package-archives &#39;(&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)) (package-initialize) ;; Bootstrap `use-package&#39; (unless (package-installed-p &#39;use-package) (package-refresh-contents) (package-install &#39;use-package)) (use-package try :ensure t) (use-package which-key :ensure t :config (which-key-mode)) The last two inituse-package clauses install two helpful packages:
+        In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
+It&#39;s emacs so there has to be a solution.
+Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages.
     </div>
 
-            <a href="/posts/using-emacs-1-setup/#disqus_thread"># COMMENTS</a>
+            <a href="/posts/using-emacs-30-elfeed-2/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-05-23</div>
+        <div class="post-date">2017-02-25</div>
     
     <div class="post-taxonomies">
         
@@ -245,213 +417,6 @@ Here&#39;s the contents of that file:
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/collaborative-coding-or-cheating/">Collaborative Coding or Cheating</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        I haven&#39;t been teaching this past semester. That&#39;s why I haven&#39;t been writing much about lessons. I miss working with students but that will resume in the fall and this semester has allowed me to get a jump on new projects.
-It&#39;s also allowed me to look at some student issues from a bit of a distance.
-One issue that keeps coming up is cheating.
-Some of it, classroom cheating.
-    </div>
-
-            <a href="/posts/collaborative-coding-or-cheating/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-20</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cheating">#cheating</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/policy">#policy</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/git">#git</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/github">#github</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/shell-short-tagging/">Shell short - tagging old posts in Nikola</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        Quick post to add to the recent command line fu I&#39;ve been writing about.
-Douglas Peterson had another Whatever happened to post. This time on Logo. I wanted to reply, talk about NetLogo and link to some of my old NetLogo posts to help show how cool it is.
-Nikola supports tags, makes a nice tags page and for each tag, a nice page of all the links.
-Nikola has a plugin tags which lets you manage tags from the command line.
-    </div>
-
-            <a href="/posts/shell-short-tagging/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-15</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/linux">#linux</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/nikola">#nikola</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/bash-scripting/">BASH scripting?</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        Over in the Facebook AP Computer Science Teachers group someone asked for thoughts on covering BASH scripting as a post AP topic.
-A number of us made suggestions. I linked to this old blog post.
-One group member said she asked around for similar suggestions and the response she got was &#34;vi and awk.&#34; I wanted to jokingly respond &#34;and after they suggested that they got into their time machine and went back to the 70&#39;s.
-    </div>
-
-            <a href="/posts/bash-scripting/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-12</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/linux">#linux</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/duplicate-emails/">REPOST - Shell games - who confirmed attendance</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        Repost This is a repost from March 2015. It didn&#39;t transfer when I rebooted the blog.
-Original Quick post on why I love the Unix command line.
-We&#39;re busy organizing CSTUY&#39;s first hackathon. It&#39;s going to be at SumAll, where we hold our weekly hacking sessions but while taking registration, we had a little program.
-The kids signed up on a Google doc but we all know the story – when people sign up for a free event, even one with free food and t-shirts, many don&#39;t show.
-    </div>
-
-            <a href="/posts/duplicate-emails/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-12</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/linux">#linux</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-
-    
-        <article class="post-list">
-    <header>
-        <h1 class="post-title"><a href="/posts/teaching_html/">Should We Teach HTML?</a></h1>
-    </header>
-
-    <div class="content post-summary">
-        Yesterday, Doug Peterson wrote a &#34;Whatever happened to&#34; post subtitled HTML as an essential 21st Century skill? It&#39;s a nice post.
-I left a comment but thought I&#39;d elaborate here.
-No, knowing HTML is not programming - it&#39;s markup. Even so, when I help people design CS programs, I&#39;ll frequently recommend starting with HTML or at least introducing it early.
-Why?
-It&#39;s a gateway and not just to programming.
-    </div>
-
-            <a href="/posts/teaching_html/#disqus_thread"># COMMENTS</a>
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date">2016-05-09</div>
-    
-    <div class="post-taxonomies">
-        
-            
-                <ul class="post-tags">
-                    
-                        <li><a href="https://cestlaz.github.io/tags/shell">#shell</a></li>
-                    
-                        <li><a href="https://cestlaz.github.io/tags/cli">#cli</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
                     

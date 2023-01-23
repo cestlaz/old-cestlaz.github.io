@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674503883" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1674504503" />
 
 
 
@@ -76,31 +76,38 @@
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-34-ibuffer-emmet/">Using Emacs - 34 - ibuffer and emmet</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-70-org-protocol/">Using Emacs 70 Org Protocol</a></h1>
     </header>
 
     <div class="content post-summary">
-        A couple of quick, unrelated packages today.
-first up, ibuffer. If you keep Emacs open all the time, you&#39;ll start to accumulate buffers. Last time, I talked about using projectile and how that can help when navigating between buffers. IBuffer is another one.
-Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up a buffer with all the buffers listed inside it. You can navigate that buffer and hit enter on a particular buffer to go to it.
+        I spent part of today cleaning up my Emacs workflow. Specifically, how I capture emails and links into org-mode
+I already wrote about how I used org-capture (here and here). It&#39;s pretty clean and easy but there was one thing that always nagged at me. When I capture from mu4e within Emacs by hitting C-c m it&#39;s set up to automatically populate the capture template with a link to the email labelled with the email&#39;s subject.
     </div>
 
-            <a href="/posts/using-emacs-34-ibuffer-emmet/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-70-org-protocol/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-06-15</div>
+        <div class="post-date">2020-03-27</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -112,32 +119,37 @@ Out of the box, C-x C-b is bound to the Emacs list-buffers command. It brings up
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-33-projectile-jump/">Using Emacs - 33 - projectile, dumb-jump</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-69-floobits/">Using Emacs 69 Floobits</a></h1>
     </header>
 
     <div class="content post-summary">
-        If you keep Emacs open all the time you end up accumulating lots of buffers. That can make navigating a little bit awkward.
-Projectile is a really nice package that makes navigating in and between projects much easier. I also have counsel-projectile installed.
-Here&#39;s my configuration:
-;; projectile (use-package projectile :ensure t :config (projectile-global-mode) (setq projectile-completion-system &#39;ivy)) (use-package counsel-projectile :ensure t :config (counsel-projectile-on)) Projectile considers a sub-directory tree to be a project if it&#39;s a git or other source control repo, if it&#39;s created by tool like lein, maven, or sbt, or if you put an empty file named .
+        Hunter, like most other schools has gone remote. I taught my first two online classes on Thursday. Currently, I&#39;m using Zoom for synchronous stuff and a mailing list and slack for async. There are still some missing pieces. When we&#39;re all together, it&#39;s easy to look at a student&#39;s work and talk them through issues. It&#39;s also easy to get students to work together, at least to a point. With everyone locked up in their own homes, real time collaboration is harder.
     </div>
 
-            <a href="/posts/using-emacs-33-projectile-jump/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-69-floobits/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-04-28</div>
+        <div class="post-date">2020-03-21</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -149,31 +161,38 @@ Here&#39;s my configuration:
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-32-cpp/">Using Emacs - 32 - C&#43;&#43;</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-68-tramp-org-publish/">Using Emacs Episode 68 - Tramp and org-publish</a></h1>
     </header>
 
     <div class="content post-summary">
-        This video is specifically for my students or any students out there who are starting with C++ and emacs. The videos also longer than usual, coming in at a little over 20 minutes.
-The big difference is instead of building on my existing config, the code at the bottom is a complete standalone configuration. It&#39;s all pulled from the main config with one additional package.
-By taking the code at the bottom and putting in into a file named init.
+        I maintain a couple of small simple web sites. One provides information about my undergraduate honors CS program and another that isn&#39;t live yet is a FAQ for my CS teacher certification program. Traditionally I would use ssh to connect to the host machine, fire up Emacs and edit the html files to update the sites. I always forget that with Emacs we can do better.
+One way is with Tramp Mode.
     </div>
 
-            <a href="/posts/using-emacs-32-cpp/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-68-tramp-org-publish/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-03-04</div>
+        <div class="post-date">2020-03-14</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -185,30 +204,37 @@ By taking the code at the bottom and putting in into a file named init.
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-31-elfeed-3/">Using Emacs - 31 - elfeed part 3 - macros</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-67-emacs-rant/">Using Emacs Episode 67 - Emacs vs Vi a rant with some historical perspective</a></h1>
     </header>
 
     <div class="content post-summary">
-        In part 2 I talked about how I used Hyrdas to quickly navigate through elfeed tags. It was a nice step up but the fact that I still had to manually edit my configuration code for every new tag to update the hydra was a problem.
-Basically, I had to somehow or other, take a list of all the active tags and with it build a defhydra command that will then make my Hydra.
+        I&#39;ve been meaning to do my version of the Emacs VI rant for a while. A few years ago I staged out a video showing what it would be like for a beginner to start with Emacs, Vim, Atom, and Sublime Text but decided it would be long, unwieldy and clunky to present - particularly when it came to customization. I tabled it for a while but recently have been seeing a bunch of threads, videos and posts talking about Emacs and Vim.
     </div>
 
-            <a href="/posts/using-emacs-31-elfeed-3/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-67-emacs-rant/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-03-01</div>
+        <div class="post-date">2020-02-23</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -220,31 +246,38 @@ Basically, I had to somehow or other, take a list of all the active tags and wit
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-30-elfeed-2/">Using Emacs - 30 - elfeed part 2 - Hydras</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-66-eshell-elisp/">Using Emacs 66 - an eshell switcher in elisp</a></h1>
     </header>
 
     <div class="content post-summary">
-        In part 1, I talked about elfeed, a really awesome feed reader for emacs. Generally, I&#39;m really liking it but there&#39;s been one problem - not being able to navigate quickly between groups of feeds with a keystroke or two.
-It&#39;s emacs so there has to be a solution.
-Enter hydra - a terrific emacs package from the same guy who brought us swiper, another one of my favorite emacs packages.
+        I thought it was time to give eshell in Emacs another try. It has some pretty cool features but for whatever reason, I&#39;ve never really been able to adopt Emacs as my go to shell.
+Eshell out of the box is pretty cool but could use some enhancements. When launching at login it doesn&#39;t know about the path you set in your .bashrc or .zshrc in my case files. It just seemed to have problems with paths in general but that was fixed with the exce-path-from-shell package.
     </div>
 
-            <a href="/posts/using-emacs-30-elfeed-2/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-66-eshell-elisp/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-02-25</div>
+        <div class="post-date">2020-02-08</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -256,31 +289,38 @@ Enter hydra - a terrific emacs package from the same guy who brought us swiper, 
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-29-elfeed/">Using Emacs - 29 -elfeed part 1</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-65-live-python/">Using Emacs 65 - Live Python</a></h1>
     </header>
 
     <div class="content post-summary">
-        Since the demise of Google Reader, I&#39;ve been using Feedly to read my streams. Feedly&#39;s a nice product and it&#39;s been working well for me for quite some time.
-A few days ago, I decided to see what emacs had to offer on the feed reader front. One solution was Gnus but then I&#39;ve never been able to get my head around Gnus. Another was elfeed.
-I thought I&#39;d give elfeed a go.
+        The other day I stumbled upon Emacs&#39;s Live Coding plugin. It takes interactive coding up to the next level. Normally, when you code Python, if you&#39;re working in a REPL, every time you hit &lt;Enter&gt; the line you just typed is evaluated. When you&#39;re working ina source file, you&#39;re just editing until you send the file into a Python interpreter.
+With this module, your file is continually evaluated as you type and it shows you the results in a side window.
     </div>
 
-            <a href="/posts/using-emacs-29-elfeed/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-65-live-python/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-02-22</div>
+        <div class="post-date">2020-02-02</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -292,31 +332,38 @@ I thought I&#39;d give elfeed a go.
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-28-rectangles/">Using Emacs - 28 -Rectangles</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-64-notmuch/">Using Emacs 64 - Notmuch</a></h1>
     </header>
 
     <div class="content post-summary">
-        One of my favorite but little used emacs features is rectangular editing. It&#39;s little used because I don&#39;t need it all that often. It&#39;s one of my favorites because when I do need it, it&#39;s just so amazingly useful.
-The idea is you can mark a rectangle of text, cut it and later paste it. This means that if you have three columns of text:
-a b c d e f g h i j k l You can easily mark the middle column (b e h k) or even just the b e and h, cut it and paste it elsewhere as a rectangle.
+        I&#39;ve been using the gmail web interface for a long time. My first email or at least the oldest one still in the system dates back to Oct 18, 2004 7:29am. It was a letter to a buddy about an indoor turkey fryer and if he needed a lift to Fairway the following morning to shop.
+Before that, I used my Panix shell account - probably with PINE. Work email was using my own servers at Stuy along with either PINE or Emacs using VM mode which has long been deprecated.
     </div>
 
-            <a href="/posts/using-emacs-28-rectangles/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-64-notmuch/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-02-09</div>
+        <div class="post-date">2020-01-18</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -328,29 +375,38 @@ a b c d e f g h i j k l You can easily mark the middle column (b e h k) or even 
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-27-shell/">Using Emacs - 27 - shell and eshell</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-63-clojurescript/">Using Emacs 63 ClojureScript</a></h1>
     </header>
 
     <div class="content post-summary">
-        While I use emacs for all all sorts of things, one of the things I haven&#39;t done much is run shells from within emacs. I&#39;m not sure why. I&#39;m a command line wonk and adding command line goodness and emacs together seems like a natural. Maybe it&#39;s because back in the day I spent a lot of time on MS-DOS systems. You could get a reasonable Unixy facsimile using tools like the MKS toolkit and I like so many other young computer scientists wrote our own small shells when we learned C so I used that insted of command.
+        I&#39;ve been playing with ClojureScipt for my web projects recently and really like it. Much more fun than any of the JavaScript frameworks I&#39;ve used. Still, getting started was somewhat difficult due to the number of options in tooling and uneven documentation and learning resources.
+Here&#39;s a video that shows how I use Emacs for ClojureScript development but the focus of the video is on how to get started with ClojureScript and Emacs takes a back seat other than an example of my workflow.
     </div>
 
-            <a href="/posts/using-emacs-27-shell/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-63-clojurescript/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-01-27</div>
+        <div class="post-date">2020-01-09</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -362,30 +418,38 @@ a b c d e f g h i j k l You can easily mark the middle column (b e h k) or even 
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-26-gcal/">Using Emacs - 26 - Google Calendar, Org Agenda</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-62-magit-forge/">Using Emacs 62 Magit Forge</a></h1>
     </header>
 
     <div class="content post-summary">
-        A while ago I did a couple of videos on how I use org-capture (part 1, part 2). I didn&#39;t get into a big part of org-capture - how I use org-mode and capture to manage my calendar and todo lists.
-I was waiting to see if I liked my current setup - using org-gcal to sync with my Google Calendar for appointments while using my main org file for my todo list.
+        Ever since I started looking at Magit as a &#34;git dashboard&#34; instead of as a &#34;git interface&#34; it&#39;s been yet another Emacs killer app to me. I just recently started playing with forge which allows Magit to interface and interact with git &#34;forges&#34; like GitHub. This allows you to work on issues and pull requests without ever leaving Emacs.
+Here&#39;s a video on how easy it is. The video doesn&#39;t show this but the first time you fire forge up it will prompt you for credentials.
     </div>
 
-            <a href="/posts/using-emacs-26-gcal/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-62-magit-forge/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2017-01-05</div>
+        <div class="post-date">2019-11-19</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
@@ -397,32 +461,37 @@ I was waiting to see if I liked my current setup - using org-gcal to sync with m
     
         <article class="post-list">
     <header>
-        <h1 class="post-title"><a href="/posts/using-emacs-25-tramp/">Using Emacs - 25 - Tramp</a></h1>
+        <h1 class="post-title"><a href="/post/using-emacs-61-org-msg/">Using Emacs 61 - org-msg</a></h1>
     </header>
 
     <div class="content post-summary">
-        Today&#39;s video talks about using emacs Tramp mode.
-Tramp mode allows you to edit remote files using your local emacs. I usually do this over ssh.
-To edit a file on a machine www.cstuy.org I would first find-file using C-c C-f and then for the file name to open:
-/ssh:www.cstuy.org:/home/zamansky/sc/testfile this would open the file testfile in the absolute directory /home/zamansky/sc. If my username on the remote machine is different:
+        By living in Emacs I get a consistent interface across all sorts of tasks - programming, lesson planning, making presentations, preparing documents, and yes, even email. I&#39;ve been using mu4e as my Emacs email client for a while now. Currently, I&#39;m using Emacs for my work email and Gmail for personal. I&#39;ve been thinking of going whole hog to mu4e and possibly migrating from Gmail to a new email provider for the personal stuff but there are still a few pain points with Emacs email:
     </div>
 
-            <a href="/posts/using-emacs-25-tramp/#disqus_thread"># COMMENTS</a>
+            <a href="/post/using-emacs-61-org-msg/#disqus_thread"># COMMENTS</a>
     
 
 
 <div class="post-info">
     
-        <div class="post-date">2016-12-26</div>
+        <div class="post-date">2019-11-16</div>
     
     <div class="post-taxonomies">
         
+            <ul class="post-categories">
+                
+                    <li><a href="https://cestlaz.github.io/categories/emacs">emacs</a></li>
+                
+            </ul>
+            
             
                 <ul class="post-tags">
                     
                         <li><a href="https://cestlaz.github.io/tags/emacs">#emacs</a></li>
                     
                         <li><a href="https://cestlaz.github.io/tags/tools">#tools</a></li>
+                    
+                        <li><a href="https://cestlaz.github.io/tags/productivity">#productivity</a></li>
                     
                 </ul>
         
