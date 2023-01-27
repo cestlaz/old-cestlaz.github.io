@@ -6,10 +6,77 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Jan 2023 14:29:45 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jan 2023 09:49:07 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>First Day Final Semester</title>
+      <link>https://cestlaz.github.io/post/first-day-last-semester/</link>
+      <pubDate>Fri, 27 Jan 2023 09:49:07 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/first-day-last-semester/</guid>
+      <description>&lt;p&gt;
+So, yesterday was the first day of the semester. Since I&amp;#39;m retiring,
+it&amp;#39;s my last first day at Hunter.&lt;/p&gt;
+&lt;p&gt;
+Felt pretty good. I think knowing that I&amp;#39;ll get a break after the term
+has alleviated some of the burnout for now.&lt;/p&gt;
+&lt;p&gt;
+What will I be focusing on in class this last time around?&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m teaching three classes.&lt;/p&gt;
+&lt;p&gt;
+First up is my undergraduate data structures. To be honest, I&amp;#39;m not
+looking at anything special there - just business as usual. I enjoyed
+working with this group last semester in their CS1 class so this is
+just a continuation. I&amp;#39;ll try to bring the usual extras I bring to DS
+classes - interesting applications of the data structures and
+algorithms and work on prepping for the technical interview but I
+don&amp;#39;t think I&amp;#39;ll be paying attention to anything different than any
+other semester.&lt;/p&gt;
+&lt;p&gt;
+My CS1 recitation though, is going to take more thought. Of the three
+undergraduate classes I cycle through, CS0 in Python, this CS1
+lab/recitation, and Data Structures, this class is the one where I
+have and exercise the most freedom. I do a good deal of work with the
+class on practical programming and software engineering as well as
+looking at some more advanced topics than the regular
+sections. Passing off my data structures class to the &amp;#34;next guy&amp;#34; will
+be pretty straightforward but this class has been customized enough
+that I have to really thin about and document what should be kept
+regardless of the new instructor and what&amp;#39;s really extraneous. &lt;/p&gt;
+&lt;p&gt;
+We can probably drop the CS extras I do - as much as I like them, the
+truth is that another CS instructor might prefer other advanced
+topics.&lt;/p&gt;
+&lt;p&gt;
+The Software Engineering stuff, though, I think I&amp;#39;ve been doing
+particularly well and should probably be kept as is. I&amp;#39;ve really got
+to document all of this and prepare for the hand off.&lt;/p&gt;
+&lt;p&gt;
+My third class is a topics class for the Masters students and working
+teachers in my certification program. That should be fun. Last year, I
+enjoyed all the student presentations and got some great new ideas
+should I teach any of the topics in the future. this time around
+should be the same.&lt;/p&gt;
+&lt;p&gt;
+The thing I have to focus on is that I have to make sure to document
+the aspects of the class that will potentially be tested on the
+forthcoming CST. That&amp;#39;s the states Content Specialty Test. This group
+will probably be exempt since they&amp;#39;ll finish off before the exam is
+released but future cohorts will have to sit for the exam in order to
+earn their state CS certification. I&amp;#39;ll have to document all the
+little annoying things that could be on the exam for future reference
+so that the next person running the program makes sure they&amp;#39;re all
+covered when next this class runs.&lt;/p&gt;
+&lt;p&gt;
+So that&amp;#39;s pretty much it.&lt;/p&gt;
+&lt;p&gt;
+First week down and twelve more to go.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>chatGPT TOC</title>
@@ -4159,59 +4226,6 @@ So, now that this past semester is in the books I&amp;#39;ll be spending the
 next few weeks getting the team together and planning out how we&amp;#39;re
 going to wrangle the group of 60 we&amp;#39;ll be working with this
 summer. Should be fun.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Put It In The Books</title>
-      <link>https://cestlaz.github.io/post/put-it-in-the-books/</link>
-      <pubDate>Fri, 20 May 2022 17:20:10 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/put-it-in-the-books/</guid>
-      <description>&lt;p&gt;
-Just finished entering grades closing out my 32nd year teaching.&lt;/p&gt;
-&lt;p&gt;
-Whew!&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s been a hard year for me and I&amp;#39;m sure even harder for the K12
-teachers out there. Still this year I&amp;#39;m really missing what I was oh
-so many years ago - a regular teacher.&lt;/p&gt;
-&lt;p&gt;
-Teaching from September through June is a beast and from my first day
-on the job I had to work ten times harder than I ever had to as a
-software engineer and was commensurately exhausted. In spite of what
-the &amp;#34;real world&amp;#34; says teachers need their summers to recharge the
-batteries. This isn&amp;#39;t to say that teachers don&amp;#39;t work over the
-summer - they lesson plan, attend PD and in fact a bunch of them will
-be with me, working towards their NY State CS teaching certification.&lt;/p&gt;
-&lt;p&gt;
-Now, I&amp;#39;m also technically on a school year contract so why do I wish I
-was a regular teacher? Because once you enter those final grades, you
-put the past to bed. Once I clicked on &amp;#34;post grades&amp;#34; in CUNYFirst I
-thought about that. Early in my career, before I had to deal with
-building Stuy&amp;#39;s CS program and otherwise getting involved in the
-movement, once those grades were entered I was done. I could mentally
-turn off. My responsibilities to student and school were done and I&amp;#39;d
-have a couple of months before the next go around. &lt;/p&gt;
-&lt;p&gt;
-I noted that I should have been feeling that but wasn&amp;#39;t. Why not?
-Because I&amp;#39;m still immersed in dealing with issues for my advanced
-certificate program - working on scholarship issues, getting the
-teachers, making sure they&amp;#39;re up to speed, finding instructors under
-some draconian restrictions placed on me by both Hunter and the staet,
-andto be honest, the self imposed stress of feeling responsible for
-making everything work.&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s been a while since I&amp;#39;ve &amp;#34;just taught&amp;#34; and maybe would like to get
-back to that but even then, all this is making me seriously think
-about that possible (probable?) retirement in a year to scale things
-back or change things up.&lt;/p&gt;
-&lt;p&gt;
-In any event, ploughing ahead with the teacher certification program
-this month to get things in order and then teaching through
-July. Should get a week or two of downtime in August so that&amp;#39;ll be the
-time to reflect on the year in depth. Until then it&amp;#39;s nose to the
-grindstone.&lt;/p&gt;
 </description>
     </item>
     
