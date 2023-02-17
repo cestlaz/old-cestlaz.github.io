@@ -6,10 +6,112 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2023 09:49:07 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 17 Feb 2023 10:00:05 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Motivating Students in CS Class</title>
+      <link>https://cestlaz.github.io/post/motivating-students/</link>
+      <pubDate>Fri, 17 Feb 2023 10:00:05 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/motivating-students/</guid>
+      <description>&lt;p&gt;
+A teacher in one of my networks posted a question earlier today -
+&amp;#34;have you had any challenges or trouble with motivating kids in your
+classes?&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Not a new question and  I&amp;#39;m sure for any teacher with any level of
+experience the answer is a resounding &lt;strong&gt;yes&lt;/strong&gt;. I don&amp;#39;t care who you
+are. Not all of your students are motivated all the time.&lt;/p&gt;
+&lt;p&gt;
+This can particularly be a problem when a teacher switches over from
+teaching an elective or selective to a required class but it might not
+be. I had to deal with this when I was able to get Stuy to require the
+intro course I designed. It was an adjustment but not really too big a
+deal. If anything, more students ended up getting turned on to CS than
+turned off and since even as an elective, there were always some
+unmotivated students. The adjustment was overcoming the reticence of
+students being &amp;#34;forced&amp;#34; to be there as opposed to students who might
+have taken an elective for the wrong reasons.&lt;/p&gt;
+&lt;p&gt;
+Anyway, back to the problem.&lt;/p&gt;
+&lt;p&gt;
+CS can be many things but in K12 it frequently involves programming
+and since that was what the initial question was referring to, we&amp;#39;ll
+stick to that.&lt;/p&gt;
+&lt;p&gt;
+Some students will be motivated by programming in and of
+itself. They might see it as a creative art. That&amp;#39;s great but they&amp;#39;re
+the easy ones.&lt;/p&gt;
+&lt;p&gt;
+Beyond that, programming is usually used for one of two
+things. Solving problems and/or building things. You could also add
+for telling stories or communicating ideas but you might put those
+under building things.&lt;/p&gt;
+&lt;p&gt;
+Looking at programming through those lenses can also motivate more
+students.&lt;/p&gt;
+&lt;p&gt;
+From there, we get to the fine tuning.&lt;/p&gt;
+&lt;p&gt;
+What will scratch a student&amp;#39;s itch. They might not care for coding but
+they might have some problem they want to solve of thing they want to
+build. When I was very young and just teaching myself to program I was
+of an age when a favored pastime was making fun of your friend&amp;#39;s
+mother. So, what did my clique do? We wrote &amp;#34;The Mother Game&amp;#34; - a
+stupid little program to insult each others moms. True, we were
+already motivated since we were teaching ourselves but we went much
+farther doing that silly game than if we were solving some textbook
+problem.&lt;/p&gt;
+&lt;p&gt;
+Sometimes collaboration can help. Of friends and I who wroet &amp;#34;The
+Mother Game,&amp;#34; two of us were techies but one wasn&amp;#39;t but the third got
+caught up in the group activity.&lt;/p&gt;
+&lt;p&gt;
+Of course we still have to remember that one size will not fit
+all. Something that motivates student A might not motivate student B
+and what motivates the teacher will almost certainly not motivate
+everyone in class (I&amp;#39;m looking at you, gamification people). Sure,
+games are fun for some but not everyone. Same with sports, current
+events, fashion and any other topic. As a teacher you can mix it up
+and give individual choice when possible and all of that can help.&lt;/p&gt;
+&lt;p&gt;
+One thing to remember though is that even when we&amp;#39;re having trouble
+motivating all of our students we still have it much easier in that
+regard than many other subject teachers. A language teacher is
+limited by their class level&amp;#39;s vocabulary. In math, you can solve
+problems but only with the math they&amp;#39;ve learned so far which we know
+rarely translates to natural motivation. I love history but many
+students don&amp;#39;t and history classes are frequently very strictly
+constrained so teachers might not have the freedom they want to
+motivate as many students as they could otherwise.&lt;/p&gt;
+&lt;p&gt;
+And of course, public school teachers with large classes will have a
+&lt;strong&gt;much&lt;/strong&gt; harder time than private school teachers who only meet with a
+handful at a time.&lt;/p&gt;
+&lt;p&gt;
+Before closing, I should also mention that some teachers will have an
+easier time than others due to their own personalities. Some teachers
+are charismatic or otherwise succeed by &amp;#34;force of personality.&amp;#34; It
+seems that students more want to please some teachers than others and
+that is also a form of motivation. I&amp;#39;m not saying it&amp;#39;s a great long
+term one but I do want to acknowledge it.&lt;/p&gt;
+&lt;p&gt;
+So, to close I also want to remind teachers that no matter what you do
+you are &lt;strong&gt;not&lt;/strong&gt; going to motivate all students and &lt;strong&gt;not&lt;/strong&gt; all the
+time. You might read facebook posts by miracle teachers who only share
+successes or &amp;#34;thought leaders&amp;#34; who talk the talk but don&amp;#39;t walk the
+walk but the truth is nobody bats 1000. In baseball, you can fail at
+the plate two third of the time and you&amp;#39;re a hall of famer. Good
+teachers will do better than that but as I said, nobody bats 1000. Win
+as much as you can but don&amp;#39;t beat yourself up because you can&amp;#39;t reach
+everyone all the time. Strive to do better throughout your career and
+when the dust settles you&amp;#39;ll see that your successes far outweigh the
+times when you weren&amp;#39;t as happy with your results.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>First Day Final Semester</title>
@@ -3211,86 +3313,6 @@ like.&lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;ll tackle the report in the next post and we&amp;#39;ll look at some of the
 resources available on the CS side.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Teacher Centric Teaching</title>
-      <link>https://cestlaz.github.io/post/teacher-centric-teaching/</link>
-      <pubDate>Tue, 14 Jan 2020 08:27:09 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/teacher-centric-teaching/</guid>
-      <description>&lt;p&gt;
-Every few years the experts give us some new magic bullet, some new
- &lt;del&gt;teaching fad&lt;/del&gt; research based pedagogical technique. Teachers are
- trained in it, forced to use it - frequently as a one size fits
- all. If we do, we&amp;#39;re good teachers, if we don&amp;#39;t we get the dreaded
- ineffective on our annual ratings.&lt;/p&gt;
-&lt;p&gt;
-I was reminded of this when reading &lt;a href=&#34;https://twitter.com/guzdial&#34;&gt;Mark Guzdial&lt;/a&gt;&amp;#39;s recent blog post on
-&lt;a href=&#34;https://computinged.wordpress.com/2020/01/13/computing-education-lessons-learned-from-the-2010s-what-i-got-wrong/&#34;&gt;things he got wrong&lt;/a&gt; in Computing Education. It&amp;#39;s a really great
-post. Mark mentioned &lt;a href=&#34;https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_education)&#34;&gt;constructivism&lt;/a&gt; and it made me think of a few
-years ago when constructivism was all the rage. If you didn&amp;#39;t set your
-class up for &lt;a href=&#34;https://en.wikipedia.org/wiki/Discovery_learning&#34;&gt;discovery learning&lt;/a&gt; all the time you were clearly a bad
-teacher. I&amp;#39;d sit on on CS PD sessions, listen to principals and
-supervisors talk about what they wanted to see in classes and on and
-on.&lt;/p&gt;
-&lt;p&gt;
-If you weren&amp;#39;t a constructivist educator you weren&amp;#39;t a good educator.&lt;/p&gt;
-&lt;p&gt;
-Of course a few years earlier it was something else.&lt;/p&gt;
-&lt;p&gt;
-Back when I started it was cooperative learning and
-cooperative learning isn&amp;#39;t just group work - you had to follow the
-formula. Each student in a group had a role, there were specific
-stages of work and everything had to be just so.&lt;/p&gt;
-&lt;p&gt;
-There were other fads along the way. &lt;/p&gt;
-&lt;p&gt;
-If you were lucky and had a good supervisor you didn&amp;#39;t have to worry
-about the fads, the research, the nonsense. You could focus on your
-development as a teacher. They might work with you on questioning, for
-instance - regardless of the flavor of the month, a teacher will ask
-questions and facilitate discussion and they will surely insulate you
-from whatever nonsense the bean counters want to see as long as you&amp;#39;re
-doing right by your students. On the other hand, a bad supervisor
-would mean stressful set up observations.&lt;/p&gt;
-&lt;p&gt;
-Even without Mark&amp;#39;s post, I&amp;#39;ve been thinking about this a lot since
-we&amp;#39;re about to launch our CS Teacher Certification programs at
-Hunter so I&amp;#39;ve been thinking about these fads from a teacher
-preparation point of view. &lt;/p&gt;
-&lt;p&gt;
-Many of these fads have some value - they&amp;#39;re tools in the toolbelt to
-be used as needed. The problem is that supervisors, and in my
-experience, professional development and teacher preparation programs
-make teaching 100% about the student. While the student is in fact the
-customer and who&amp;#39;s development is the goal of our work, you can&amp;#39;t
-ignore other factors. Environment and resources are two of these other
-factors and a big one is the teachers individual strengths,
-weaknesses, and tendencies.&lt;/p&gt;
-&lt;p&gt;
-Cooperative Learning never really worked for me - at least not whole
-hog. As a &amp;#34;Cooperative Learning teacher&amp;#34; I&amp;#39;d be meh at best. On the
-other hand, I&amp;#39;ve taken plays from the cooperative learning playbook
-and applied them as I&amp;#39;ve seen useful. Sometimes it didn&amp;#39;t work,
-sometimes to great effect.&lt;/p&gt;
-&lt;p&gt;
-As a teacher, I always took the advice of one of my early fencing
-mentors. I was receiving conflicting advice from multiple well
-respected coaches and more experienced fencers. My mentor said &amp;#34;listen
-to what they all have to say, think about it, figure out what best
-will work for you and do that.&amp;#34;&lt;/p&gt;
-&lt;p&gt;
-As to running my teacher prep programs, I&amp;#39;m going to do my best to
-make sure that we do recognize that teachers bring different things to
-the table and it will my job to help them maximize their
-effectiveness. This means that we can&amp;#39;t blindly follow the favored
-teaching techniques du jour but rather we have to look at all sorts of
-methods and combine them with our teachers strengths, abilities, and
-tendencies, and their specific classroom situations.&lt;/p&gt;
-&lt;p&gt;
-It should be fun.&lt;/p&gt;
 </description>
     </item>
     

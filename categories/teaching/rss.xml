@@ -6,10 +6,112 @@
     <description>C&#39;est la Z (teaching)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2023 09:49:07 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 17 Feb 2023 10:00:05 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/categories/teaching/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Motivating Students in CS Class</title>
+      <link>https://cestlaz.github.io/post/motivating-students/</link>
+      <pubDate>Fri, 17 Feb 2023 10:00:05 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/motivating-students/</guid>
+      <description>&lt;p&gt;
+A teacher in one of my networks posted a question earlier today -
+&amp;#34;have you had any challenges or trouble with motivating kids in your
+classes?&amp;#34;&lt;/p&gt;
+&lt;p&gt;
+Not a new question and  I&amp;#39;m sure for any teacher with any level of
+experience the answer is a resounding &lt;strong&gt;yes&lt;/strong&gt;. I don&amp;#39;t care who you
+are. Not all of your students are motivated all the time.&lt;/p&gt;
+&lt;p&gt;
+This can particularly be a problem when a teacher switches over from
+teaching an elective or selective to a required class but it might not
+be. I had to deal with this when I was able to get Stuy to require the
+intro course I designed. It was an adjustment but not really too big a
+deal. If anything, more students ended up getting turned on to CS than
+turned off and since even as an elective, there were always some
+unmotivated students. The adjustment was overcoming the reticence of
+students being &amp;#34;forced&amp;#34; to be there as opposed to students who might
+have taken an elective for the wrong reasons.&lt;/p&gt;
+&lt;p&gt;
+Anyway, back to the problem.&lt;/p&gt;
+&lt;p&gt;
+CS can be many things but in K12 it frequently involves programming
+and since that was what the initial question was referring to, we&amp;#39;ll
+stick to that.&lt;/p&gt;
+&lt;p&gt;
+Some students will be motivated by programming in and of
+itself. They might see it as a creative art. That&amp;#39;s great but they&amp;#39;re
+the easy ones.&lt;/p&gt;
+&lt;p&gt;
+Beyond that, programming is usually used for one of two
+things. Solving problems and/or building things. You could also add
+for telling stories or communicating ideas but you might put those
+under building things.&lt;/p&gt;
+&lt;p&gt;
+Looking at programming through those lenses can also motivate more
+students.&lt;/p&gt;
+&lt;p&gt;
+From there, we get to the fine tuning.&lt;/p&gt;
+&lt;p&gt;
+What will scratch a student&amp;#39;s itch. They might not care for coding but
+they might have some problem they want to solve of thing they want to
+build. When I was very young and just teaching myself to program I was
+of an age when a favored pastime was making fun of your friend&amp;#39;s
+mother. So, what did my clique do? We wrote &amp;#34;The Mother Game&amp;#34; - a
+stupid little program to insult each others moms. True, we were
+already motivated since we were teaching ourselves but we went much
+farther doing that silly game than if we were solving some textbook
+problem.&lt;/p&gt;
+&lt;p&gt;
+Sometimes collaboration can help. Of friends and I who wroet &amp;#34;The
+Mother Game,&amp;#34; two of us were techies but one wasn&amp;#39;t but the third got
+caught up in the group activity.&lt;/p&gt;
+&lt;p&gt;
+Of course we still have to remember that one size will not fit
+all. Something that motivates student A might not motivate student B
+and what motivates the teacher will almost certainly not motivate
+everyone in class (I&amp;#39;m looking at you, gamification people). Sure,
+games are fun for some but not everyone. Same with sports, current
+events, fashion and any other topic. As a teacher you can mix it up
+and give individual choice when possible and all of that can help.&lt;/p&gt;
+&lt;p&gt;
+One thing to remember though is that even when we&amp;#39;re having trouble
+motivating all of our students we still have it much easier in that
+regard than many other subject teachers. A language teacher is
+limited by their class level&amp;#39;s vocabulary. In math, you can solve
+problems but only with the math they&amp;#39;ve learned so far which we know
+rarely translates to natural motivation. I love history but many
+students don&amp;#39;t and history classes are frequently very strictly
+constrained so teachers might not have the freedom they want to
+motivate as many students as they could otherwise.&lt;/p&gt;
+&lt;p&gt;
+And of course, public school teachers with large classes will have a
+&lt;strong&gt;much&lt;/strong&gt; harder time than private school teachers who only meet with a
+handful at a time.&lt;/p&gt;
+&lt;p&gt;
+Before closing, I should also mention that some teachers will have an
+easier time than others due to their own personalities. Some teachers
+are charismatic or otherwise succeed by &amp;#34;force of personality.&amp;#34; It
+seems that students more want to please some teachers than others and
+that is also a form of motivation. I&amp;#39;m not saying it&amp;#39;s a great long
+term one but I do want to acknowledge it.&lt;/p&gt;
+&lt;p&gt;
+So, to close I also want to remind teachers that no matter what you do
+you are &lt;strong&gt;not&lt;/strong&gt; going to motivate all students and &lt;strong&gt;not&lt;/strong&gt; all the
+time. You might read facebook posts by miracle teachers who only share
+successes or &amp;#34;thought leaders&amp;#34; who talk the talk but don&amp;#39;t walk the
+walk but the truth is nobody bats 1000. In baseball, you can fail at
+the plate two third of the time and you&amp;#39;re a hall of famer. Good
+teachers will do better than that but as I said, nobody bats 1000. Win
+as much as you can but don&amp;#39;t beat yourself up because you can&amp;#39;t reach
+everyone all the time. Strive to do better throughout your career and
+when the dust settles you&amp;#39;ll see that your successes far outweigh the
+times when you weren&amp;#39;t as happy with your results.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>First Day Final Semester</title>
@@ -3163,112 +3265,6 @@ convert the long string of text into a list of words:&lt;/p&gt;
 &lt;p&gt;
 Now we&amp;#39;re ready to start building our bag of words but that&amp;#39;s a post
 for another day.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Early Ap Registration - it&#39;s, um, for the kids</title>
-      <link>https://cestlaz.github.io/post/early-ap-registration-for-the-kids/</link>
-      <pubDate>Wed, 06 Feb 2019 08:08:38 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/early-ap-registration-for-the-kids/</guid>
-      <description>&lt;p&gt;
-I stumbled upon a thread over in the APCS-A Facebook group the other
-day. It seems that the College Board is making some changes in their
-&lt;a href=&#34;https://apcentral.collegeboard.org/about-ap/news-changes/ap-2019&#34;&gt;registration timeline&lt;/a&gt;. In the past, students registered for the exam
-sometime in March with the exams administered in May. The new changes
-include requiring registration in November along with $40 late
-registration and cancellation fees.&lt;/p&gt;
-&lt;p&gt;
-The College Board is, of course, spinning this as for &lt;a href=&#34;https://www.youtube.com/watch?v=3MCNEYCZWqw&amp;amp;feature=youtu.be&amp;amp;fbclid=IwAR04Uuj7vpHoYU_8jMjw00YpAPXp7gi3MDGdTKhzpUXv7mI0OILW01KyzvA%0A&#34;&gt;the student&amp;#39;s
-benefit&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;
-At least a portion of the teaching community thinks otherwise and has
-in fact started &lt;a href=&#34;https://www.change.org/p/demand-the-college-board-not-mandate-fall-ap-exam-requirements-and-deadlines&#34;&gt;this petition&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-To me this is just another money grab by the College Board - an
-organization that already has way too much influence over high school
-education.&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s take a look at what the College Board actually brings to the
-table. They offer an exam. A single exam in each subject offered
-that&amp;#39;s supposed to in 3 hours encapsulate an entire years&amp;#39;s worth of
-learning and from that, colleges might give  a student placement or
-credit.&lt;/p&gt;
-&lt;p&gt;
-But you say &amp;#34;they offer so much more.&amp;#34; Do they?&lt;/p&gt;
-&lt;p&gt;
-Teacher&amp;#39;s have to submit syllabi and the college board approves
-them. They offer samples but so do text book authors and third party
-organizations. In my case I rolled my own. The teacher also develops
-the course. Does the College Board provide materials? I guess, but so
-do those same groups that provide curricula. The college board
-certainly doesn&amp;#39;t define the subject. Last I checked Calculus, was
-pretty well defined way before the AP program. So was 
-Chemistry, and most other subjects. Actually, due to their outsized
-influence they do define the subset of the subject in some cases and
-we should really be questioning this influence. Finally, the teacher does
-the actual hard job of teaching the class. &lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m  just not seeing the value added. &lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;re already seeing schools require that students take the exam to be
-in the class or provide &amp;#34;incentives&amp;#34; like a credit or grade bump for
-taking the exam or even removing the AP designation from the
-transcript if the student doesn&amp;#39;t take the exam. Doing any of these is
-just plain wrong. By all means explain the advantages and
-disadvantages of taking the exam but to essentially force a student to
-fork over money and personal data to an outside independent agency is
-just plain wrong. &lt;/p&gt;
-&lt;p&gt;
-But you say that students in many districts don&amp;#39;t have to pay. &lt;/p&gt;
-&lt;p&gt;
-This is even more insidious.&lt;/p&gt;
-&lt;p&gt;
-Now it&amp;#39;s the taxpayer on the hook and the College Board has
-successfully created an everlasting cash pipeline from the public into
-private coffers while providing questionable value.&lt;/p&gt;
-&lt;p&gt;
-If you don&amp;#39;t agree with me and think that these requirements or
-incentives  are fine ask yourself this: If you had a child in a class
-and the teacher said &amp;#34;your child has to sit in a room with a friend of
-mine for three hours, give them $100 and personal data and I will give
-your child a higher grade&amp;#34; you&amp;#39;d be outraged. &lt;/p&gt;
-&lt;p&gt;
-Spending three hours taking an external exam has no bearing on what a
-student did or didn&amp;#39;t do in the class so the grades, credits etc
-should be the same whether or not the kid took the AP exam.&lt;/p&gt;
-&lt;p&gt;
-Let&amp;#39;s get back to the early registration changes. Currently kids
-register for the AP exam in March. By then students might know what
-college they&amp;#39;re likely to go to. They&amp;#39;ll know if the AP exam is of any
-use to them. In November they don&amp;#39;t. I frequently lost some high
-scores on AP exams because I had top students who were accepted early
-to schools that didn&amp;#39;t award credit. I also lost a couple of low
-scores of students that for whatever reasons had no chance at getting
-a 3 or higher so opted not to sit for the exam. I guess the College Board came up
-with a good way to get money for those kids without providing value in
-return.&lt;/p&gt;
-&lt;p&gt;
-Then there are block scheduled schools or other situations where kids
-don&amp;#39;t start the class until after the new November deadline.&lt;/p&gt;
-&lt;p&gt;
-Finally, let&amp;#39;s talk a bit about the College Board&amp;#39;s claim that this is
-all for the students. The video talks about students doing better if
-they signed up earlier. I&amp;#39;m skeptical but even if it&amp;#39;s true, is &amp;#34;doing
-better on the AP exam&amp;#34; the goal we have for our students. How about
-learning our subject area or being inspired to continue on with it.&lt;/p&gt;
-&lt;p&gt;
-In the video, teachers talk about how the kids are more motivated and
-focused because the exam. This is getting to sound a lot like the
-inane focus on high stakes test where the test is the goal. Is the
-motivation that &amp;#34;you paid the $100&amp;#34; so it&amp;#39;s wasted if you don&amp;#39;t do
-well or &amp;#34;the school paid $100&amp;#34; so we&amp;#39;ll guilt you into studying more?
-Sorry, as teachers we can do better.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m sure I&amp;#39;ll get some flak for writing this but I also suspect that
-there are many teachers who agree with me that the College Board is
-not looking out for students but rather themselves.&lt;/p&gt;
 </description>
     </item>
     
