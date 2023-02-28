@@ -6,10 +6,107 @@
     <description>C&#39;est la Z (tools)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2023 06:48:49 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 28 Feb 2023 11:33:22 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/tags/tools/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>AI as a programmers aide</title>
+      <link>https://cestlaz.github.io/post/ai-in-programming/</link>
+      <pubDate>Tue, 28 Feb 2023 11:33:22 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/ai-in-programming/</guid>
+      <description>&lt;p&gt;
+ChatGPT in education has been all the rage but there&amp;#39;s another twist
+on AI that was getting some buzz even earlier - AI based code
+completions. GitHub&amp;#39;s Copilot has gotten the most air time but there
+are others out there as well.&lt;/p&gt;
+&lt;p&gt;
+When you code with Copilot, you type in a function name and maybe a
+comment above it and the AI system will fill in the function.&lt;/p&gt;
+&lt;p&gt;
+A canonical example seems to be Mergesort. Type in mergesort, hit the
+magic key, and the function appears.&lt;/p&gt;
+&lt;p&gt;
+I was asked by a friend how this might affect teaching programming and
+I&amp;#39;ve been thinking about it for a while.&lt;/p&gt;
+&lt;p&gt;
+I was going to share my thoughts today but realized that first, we
+have to talk about products like Copilot as a programmers aid and then
+we can talk about it as a learning tool. Today, we&amp;#39;ll cover the former
+and next post the latter.&lt;/p&gt;
+&lt;p&gt;
+Now, I&amp;#39;m not a professional programmer - at least I haven&amp;#39;t been one since
+before I started teaching. I&amp;#39;ve done personal projects, some one off
+contracts and a few applications for work but I haven&amp;#39;t written one of
+those since I wrote a resume/interview managing system when Hunter won
+the CUNY2X grant.&lt;/p&gt;
+&lt;p&gt;
+Even so, I think I&amp;#39;ve got a few thoughts worth sharing.&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s first consider what these tools can do right now.&lt;/p&gt;
+&lt;p&gt;
+I started by playing with the mergesort exampe. I asked for it and the
+AI&amp;#39;s obliged. This could be seen as a time saver but is it? It turned
+out every time I tried I got a good basic mergesort but the merge part
+was always another function call - still had to write or generate
+that so it&amp;#39;s not just specify and move on. It&amp;#39;s specify, verify, and
+then either tweak or move on. It also wasn&amp;#39;t optimized in any way. You
+can decide for yourself if that&amp;#39;s good or bad. &lt;/p&gt;
+&lt;p&gt;
+A pro can tell me if using Copilot in this sense is a
+time saver but I&amp;#39;m not so sure. Even if it is, wouldn&amp;#39;t most
+programmers just use the built in sort function? It seems like in this
+sense, tools like Copilot are like using a library but with inline
+expansion and without verification. A mixed bag at best.&lt;/p&gt;
+&lt;p&gt;
+Even if the AI always got it right and was clear I wonder how much
+time would really be saved. Most of my time programming is spent
+thinking and editing and Copilot is about the generating. I don&amp;#39;t
+doubt that it can be useful but in it&amp;#39;s current state, maybe not so
+much.&lt;/p&gt;
+&lt;p&gt;
+The big benefit using it this way is if you ask it to write something
+that you don&amp;#39;t know how to write but is that really a good idea given
+that the code still has to be verified?&lt;/p&gt;
+&lt;p&gt;
+The other sense I&amp;#39;ve seen these tools used in is more like how Gmail
+autocompletes sentences in your email. Again, very cool but I&amp;#39;m not
+sure how useful. For the Gmail stuff, I always see the completions but
+almost always just continue typing. I guess it&amp;#39;s similar to how a fast
+typist frequently won&amp;#39;t fix errors, they&amp;#39;ll retype them. For example,
+if you accidentally type Froderick instead of Frederick, a fast typist
+probably wouldn&amp;#39;t fix the o. They&amp;#39;d probably delete the word backwards
+and retype it. More keystrokes but they stay in the flow. &lt;/p&gt;
+&lt;p&gt;
+So, right now these tools seem cool but maybe not all that useful. I
+could see benefit today by having them generate language idioms like
+&amp;#34;sum a list&amp;#34; - things that templates and current autocomplete can&amp;#39;t
+quite do but can be verified on the fly in no time but that&amp;#39;s about it.&lt;/p&gt;
+&lt;p&gt;
+In the future, however things could change.&lt;/p&gt;
+&lt;p&gt;
+The idea that at some point one could generate code from a description
+is pretty appealing. Of course, that brings a challenge that many
+beginner programmers have to deal with - specification. I tell my
+students all the time &amp;#34;Computers are lousy at doing what you want them
+to do but great at doing what you tell them to do.&amp;#34; Writing a program
+for these not-yet-existing AIs will be all about writing
+specifications and the specification will turn into our program. This
+really isn&amp;#39;t too different than what goes on today. A for loop is a
+higher level specification for some gotos and conditionals. A foreach,
+a higher level specification of a for and when you add in Lisp like
+higher level functions like map and filter that&amp;#39;s higher level
+still. An AI like a future generation of Copilot can be just that.&lt;/p&gt;
+&lt;p&gt;
+My verdict? Are they cool? Yes. An aid to productivity? I&amp;#39;m not
+sure. Will they get there? Probably but I don&amp;#39;t know when.&lt;/p&gt;
+&lt;p&gt;
+Next time, we&amp;#39;ll talk about how these tools can change the landscape
+of teaching and learning programming.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A poor craftsman blames his tools</title>
@@ -3207,112 +3304,6 @@ table formulas and the Org-mode &lt;a href=&#34;https://orgmode.org/manual/The-S
 &lt;p&gt;
 Enjoy!&lt;/p&gt;
   &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/5vGGgfs0q3k&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Emacs 53 Emailing Org Agenda</title>
-      <link>https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/</link>
-      <pubDate>Sat, 03 Nov 2018 08:55:23 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/using-emacs-53-emailing-org-agenda/</guid>
-      <description>&lt;p&gt;
-I use both org-mode and Google Calendar for scheduling. I like Google
-Calendar because:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It&amp;#39;s pretty universal so I can issue and accept calendar invites.&lt;/li&gt;
-&lt;li&gt;It works well with my phone and other mobile devices.&lt;/li&gt;
-&lt;li&gt;The rest of my family doesn&amp;#39;t live in Emacs :-(.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I prefer using org-mode beacuse:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Emacs&lt;/li&gt;
-&lt;li&gt;I prefer, for the most part, to control my data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I partially sync the two platforms. I&amp;#39;ve already talked about &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;syncing
-Google Calendar and org-mode&lt;/a&gt;. Right now, I&amp;#39;m just pulling from Google
-rather than also pushing up from org-mode because I&amp;#39;m still getting
-double entry issues. This means that I have my entire schedule in
-Emacs but only part of it in my Google calendar.&lt;/p&gt;
-&lt;p&gt;
-To help resolve the problem, I do a few things. First, I sync my
-orgfiles on all my computers. I used to do this with Dropbox but am
-now moving over to &lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt;. I also like to set up a &lt;a href=&#34;http://digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;
-droplet so that I have a single machine that&amp;#39;s always on.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve set things up to have that droplet send me an email with my
-agenda. It turns out that org has commands to do things with Emacs
-from the command line:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;org-batch-agenda&lt;/li&gt;
-&lt;li&gt;org-batch-store-agenda-views&lt;/li&gt;
-&lt;li&gt;org-batch-agenda-csv &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They can be run from the command line to output a formatted agenda as
-a string:&lt;/p&gt;
-&lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-or as csv:&lt;/p&gt;
-&lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;emacs --batch -l ~/.emacs.d/init.el  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda-csv &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;table&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;gcal&lt;/td&gt;
-&lt;td&gt;Stuy recruiting&lt;/td&gt;
-&lt;td&gt;2018-10-29&lt;/td&gt;
-&lt;td&gt;15:40-16:40&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gcal&lt;/td&gt;
-&lt;td&gt;RBS Workshop 3&lt;/td&gt;
-&lt;td&gt;2018-10-29&lt;/td&gt;
-&lt;td&gt;17:30-21:00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gcal&lt;/td&gt;
-&lt;td&gt;FDR High School&lt;/td&gt;
-&lt;td&gt;2018-10-30&lt;/td&gt;
-&lt;td&gt;7:45- 8:45&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;soe-cal&lt;/td&gt;
-&lt;td&gt;ACERT -  LUNCH  SEMINAR&lt;/td&gt;
-&lt;td&gt;2018-10-30&lt;/td&gt;
-&lt;td&gt;12:00-14:00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gcal&lt;/td&gt;
-&lt;td&gt;Maxim Vengerov Carnegie Hall&lt;/td&gt;
-&lt;td&gt;2018-10-30&lt;/td&gt;
-&lt;td&gt;20:00-21:00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-Note that you have to specify the location of the startup file
-(~/emacs.d/init.e;) since when you run emacs in batch mode it won&amp;#39;t
-load your normal config by default&lt;/p&gt;
-&lt;p&gt;
-In the video you&amp;#39;ll see how I use my DigitalOcean dropplet, set up
-with the Postfix mail server and Syncthing to send me an email with my
-agenda every morning.&lt;/p&gt;
-&lt;p&gt;
-The command I actually use to send the email is:&lt;/p&gt;
-&lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/emacs --batch -l ~/.emacs  -eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(org-batch-agenda &amp;#34;a&amp;#34; org-agenda-span 14)&amp;#39;&lt;/span&gt; 2&amp;gt;/dev/null | mail -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mike&amp;#39;s Agenda for &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\%A \%D&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; zamansky@gmail.com&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;
-which I put in a crontab entry to get it to run every day.&lt;/p&gt;
-&lt;p&gt;
-If people want, I can make a runthrough of setting up the actual
-dropplet and SyncThing.&lt;/p&gt;
-&lt;p&gt;
-Enjoy!&lt;/p&gt;
-  &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wus8R1TWYZ4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
