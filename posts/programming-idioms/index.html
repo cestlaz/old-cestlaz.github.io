@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="https://cestlaz.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://cestlaz.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1677614227" />
+<link rel="stylesheet" href="https://cestlaz.github.io/css/style.css?rnd=1678133990" />
 
 
 
@@ -95,7 +95,14 @@ see recurring and related patterns and programming idioms gives us a
 name to apply to many beginner patterns. An early idiom might be
 &#34;finding the smallest in a list:&#34;</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dataset <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>min_index  <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,len(dataset)):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> dataset[i] <span style="color:#f92672">&lt;</span> dataset[min_index]:
+</span></span><span style="display:flex;"><span>min_index <span style="color:#f92672">=</span> i</span></span></code></pre></div>
 </div>
 <p>
 Another is the very similar and more general &#34;do something on every
@@ -113,25 +120,35 @@ concept.</p>
 When students learn about list comprehensions in python they&#39;ll
 rewrite the &#34;do something…&#34; more like this:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[ f(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> dataset]</span></span></code></pre></div>
 </div>
 <p>
 but the pattern or idea is the same.</p>
 <p>
 Other early idioms might include swapping variables:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tmp <span style="color:#f92672">=</span> a
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> b
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> tmp</span></span></code></pre></div>
 </div>
 <p>
 and loops until an exit condition are met:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (not_exit_condidtion):
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># do stuff</span>
+</span></span><span style="display:flex;"><span>modify variable that checks exit condition</span></span></code></pre></div>
 </div>
 <p>
 Even more difficult concepts like recursion can be described in an
 idiomatic way:</p>
 <div class="src src-python">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> BASE_CASE:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> something
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>new_x <span style="color:#f92672">=</span> modify_to_eventually_get_to_base_case(x)
+</span></span><span style="display:flex;"><span>f(new_x)</span></span></code></pre></div>
 </div>
 <p>
 Patterns like these, or idioms, come up over and over again. We don&#39;t

@@ -6,10 +6,149 @@
     <description>C&#39;est la Z (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Feb 2023 11:33:22 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 28 Feb 2023 14:50:07 -0400</lastBuildDate>
     
     <atom:link href="https://cestlaz.github.io/post/rss.xml" rel="self" type="application/rss" />
     
+    
+    <item>
+      <title>Copilot and similar types of AI in learning CS</title>
+      <link>https://cestlaz.github.io/post/ai-in-learning-cs/</link>
+      <pubDate>Tue, 28 Feb 2023 14:50:07 -0400</pubDate>
+      
+      <guid>https://cestlaz.github.io/post/ai-in-learning-cs/</guid>
+      <description>&lt;p&gt;
+So it seems like Copilot and similar will be beneficial to programmers
+but the question remains as to how beneficial. Will it be incremental
+change or will it be a game changer?&lt;/p&gt;
+&lt;p&gt;
+Today we&amp;#39;ll look at how it will affect teaching and learning CS.&lt;/p&gt;
+&lt;p&gt;
+It seems pretty clear that one group of learners will benefit from
+things like copilot - people who are already strong programmers who
+are learning something new. Like autocomplete on steroids it will free
+those programmers of having to look everything up all the time. I
+guess a second group that will benefit will be autodidacts but they&amp;#39;ll
+thrive no matter what and when we&amp;#39;re talking about opportunity and
+equity we&amp;#39;ve got to focus on everyone else.&lt;/p&gt;
+&lt;p&gt;
+For everyone else, particularly those learning in classes using
+copilot will have certain benefits but the real question isn&amp;#39;t &amp;#34;is
+there an advantage&amp;#34; but rather a costs benefits analysis.&lt;/p&gt;
+&lt;p&gt;
+Since copilot can be thought of as autocomplete on steroids we can
+compare the discord that goes on when discussing IDEs with
+autocomplete. &lt;/p&gt;
+&lt;p&gt;
+Some teachers thing autocomplete is great and don&amp;#39;t see any downside
+to students using editors that support it. Others feel that it&amp;#39;s
+important for students to type everything out.&lt;/p&gt;
+&lt;p&gt;
+On the one hand, you can have autocomplete for things like
+&lt;strong&gt;system.out.writeln&lt;/strong&gt; - type &lt;strong&gt;writeln&lt;/strong&gt; and hit tab and you&amp;#39;re done. One
+could argue that if you&amp;#39;re ever in an environment without autocomplete
+you&amp;#39;d be screwed but if you think about it, there&amp;#39;s no deeper
+understanding if you type &lt;strong&gt;system.out.writeln&lt;/strong&gt; vs &lt;strong&gt;writeln&lt;/strong&gt;
+particularly for beginners where the system.out is boilerplate.&lt;/p&gt;
+&lt;p&gt;
+On the other hand typing &lt;strong&gt;for&lt;/strong&gt; and having that complete to a for loop
+is different than actually typing out the complete loop. One could
+argue that typing for and then tab is just a higher level of
+abstraction but I&amp;#39;d argue that it&amp;#39;s important to understand what&amp;#39;s
+going on with the loop first. This is where I&amp;#39;m not sure if the
+autocompletion is the right way to go.&lt;/p&gt;
+&lt;p&gt;
+Ideally, I&amp;#39;d love to see students &amp;#34;level up&amp;#34; - after typing out for
+loops for a bit they can unlock the for loop autocomplete feature -
+hey - now that&amp;#39;s an idea for a student ide!!!&lt;/p&gt;
+&lt;p&gt;
+I know that some people also feel that hand writing things is an aide
+to learning. If that&amp;#39;s so, is typing as well? Is writing a for loop by
+hand then then typing better? Is typing it all out better than just
+drag and dropping a block? I don&amp;#39;t know the answer to any of these but
+I think they&amp;#39;re interesting questions.&lt;/p&gt;
+&lt;p&gt;
+The question, or at least one of the questions about using copilot in
+teaching and learning is the same but copilot takes it to the next
+level. Instead of typing &lt;strong&gt;for&lt;/strong&gt; tab and getting a for loop you can type
+&lt;strong&gt;// sum the values of an integer array ar&lt;/strong&gt; - you can use it to
+complete programming &lt;a href=&#34;https://cestlaz.github.io/posts/programming-idioms/&#34;&gt;idioms&lt;/a&gt; or even complete functions.&lt;/p&gt;
+&lt;p&gt;
+Bigger time concepts but the same basic ideas.&lt;/p&gt;
+&lt;p&gt;
+There is another question that I think is going to get lost in the
+shuffle though. Even if we decide that using copilot like technologies
+is an absolute win, will there be unintended consequences. Will other
+things be lost.&lt;/p&gt;
+&lt;p&gt;
+This has happen time and again.&lt;/p&gt;
+&lt;p&gt;
+In CS, when APCS-A/B went from C++ to Java we lost memory
+management. This was good in certain ways but memory management is an
+important concept for computer science students to understand. Take it
+out of CS1 and CS2 and you have to put it back somewhere else. From
+what the people doing the hiring in tech in the years following 5
+years after the switch, it wasn&amp;#39;t always put back or put back
+effectively. This isn&amp;#39;t a surprise since every college does things
+their own way and if a student places out of one or more courses with
+AP credit, well, they might miss something critical or be less well
+prepared for it when it does appear.&lt;/p&gt;
+&lt;p&gt;
+The other big example I always use is from math. Calculators. No, I&amp;#39;m
+not going to say that having students work out hard arithmetic by hand
+was a good and important thing. I&amp;#39;m talking about interpolation.&lt;/p&gt;
+&lt;p&gt;
+Prior to calculators, when our students learned about logs or trig
+functions they had log and trig tables. The tables only had so many
+entries so students had to find values between the entries and they
+invariable did have to, they learned and used linear interpolation.&lt;/p&gt;
+&lt;p&gt;
+If you think about it, that might have been the most useful real life
+math skill taught in high school math at the time. Certainly it was up
+there.&lt;/p&gt;
+&lt;p&gt;
+Hello calculators, goodbye trig and log tables. Goodbye learning
+interpolation. That&amp;#39;s a skill that&amp;#39;s been lost to students for now
+almost a quarter of a century. Sure, students can and have been
+functioning with knowing interpolation but when you look at the math
+that has and hasn&amp;#39;t been taught I&amp;#39;m fairly confident in saying that
+when we stopped teaching interpolation something was lost.&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s my fear of copilot type technologies.&lt;/p&gt;
+&lt;p&gt;
+When we teach mergesort we&amp;#39;re not just teaching mergesort. We&amp;#39;re
+teaching the concept of divide and conquer algorithms. We&amp;#39;re
+discussing run time. We&amp;#39;re looking at sorting in place or not. We also
+have a platform to discuss solving problems that make use of different
+but similar algorithms.&lt;/p&gt;
+&lt;p&gt;
+When we solve a dynamic programming problem we&amp;#39;re not solving a
+specific problem but we&amp;#39;re teaching a general method of problem
+solving.&lt;/p&gt;
+&lt;p&gt;
+At a smaller scale level, when beginners program they make errors. Now
+error messages aren&amp;#39;t particularly helpful but learning how to read
+them and fix ones errors is yet another manner of problem solving
+we&amp;#39;re teaching. Some may argue that error messages will get better in
+the future. Well, I&amp;#39;ve been programming for decades and while they&amp;#39;re
+a little better than from way back, they&amp;#39;ve got a way to go. Besides
+the problem sometimes isnot so much that the error is bad but that
+students don&amp;#39;t take the time to read through the (admittedly overly
+complex) wall of text. Solving unexpected errors, reading
+documentation, searching for solutions. These are all things we&amp;#39;re
+teaching beyond just the coding. &lt;/p&gt;
+&lt;p&gt;
+Copilot might make for faster coding but how much of our ability to
+teach that more important problem solving will be lost?&lt;/p&gt;
+&lt;p&gt;
+Of course the answer might be none or it might be that the benefits
+might outweigh the costs but educators should pay close attention not
+to the superficial but very cool way that copilot replaces a short
+prompt with a long coded solution but rather to what we&amp;#39;re really
+trying to teach our kids beyond grunt coding and how will copilot
+affect that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>AI as a programmers aide</title>
@@ -4240,73 +4379,6 @@ October so, as many of you know, we&amp;#39;ve got some potential big changes to
 consider. More on that though once the year starts.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CoTeaching - learning from colleagues</title>
-      <link>https://cestlaz.github.io/post/co-teach/</link>
-      <pubDate>Thu, 28 Jul 2022 12:49:50 -0400</pubDate>
-      
-      <guid>https://cestlaz.github.io/post/co-teach/</guid>
-      <description>&lt;p&gt;
-A few weeks ago I wrote on how &lt;a href=&#34;https://cestlaz.github.io/post/workshop-a-lesson/&#34;&gt;you can&amp;#39;t workshop a lesson&lt;/a&gt;. Besides
-the slow feedback loop, teachers largely work alone. Between classes,
-teachers might have a small bit of time to collaborate and bounce
-around ideas but with a HS teacher typically having 5 classes a day +
-professional assignment there&amp;#39;s not a lot of time.&lt;/p&gt;
-&lt;p&gt;
-CS teachers typically have it worse as they might be the only CS
-teacher in their building. My hope is that this current cohort of
-Hunter CS Ed students, like earlier cohorts form their own support
-network but that&amp;#39;s not what I&amp;#39;m writing about today.&lt;/p&gt;
-&lt;p&gt;
-As you know, for the past month I&amp;#39;ve been working my CS Teacher
-certification program. We&amp;#39;ve got close to 60 participants. This means
-we were able to engage 2 teachers per class. Truth be told, I&amp;#39;ve got a
-great team and the whole crew is supporting each other in all of the
-classes, not just the one they&amp;#39;re teaching.&lt;/p&gt;
-&lt;p&gt;
-The end result is that we&amp;#39;re all working harder but we also get to
-teach together and, in fact, at least partially workshop our lessons.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m loving it because the one thing I really miss teaching at Hunter
-is my teaching team. I&amp;#39;m the only person doing what I do at Hunter so,
-just like so many other CS teachers, I&amp;#39;m on an island.&lt;/p&gt;
-&lt;p&gt;
-When Sam was talking about run time analysis, he had a really nice way
-of exploring the run time of the n^2 sorts. I think I do a pretty good
-job when teaching this but I loved the way Sam developed and
-communicated the topic. Likewise, he did a unit on Expression Trees
-which was very different from my approach to trees. We had plenty of
-time before he did these units to discuss them and afterwards to
-debrief. I&amp;#39;m 100% stealing some of this when they come up in my
-classes.&lt;/p&gt;
-&lt;p&gt;
-Not to just be a taker, Sam really liked the way I introduced and
-developed linked list and will be stealing that from me on his next
-iteration.&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s being able to work with other teachers like this that makes
-running the summer program special. On the other hand, the workload is
-far to great to be sustainable. This is also the kind of thing that
-teachers should be given the time to do. Giving teachers time to work
-together in their schools is worth so much more than the professional
-developments that schools usually offer and require.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m hoping that the program participants, in addition to the core
-material in our classes are also reflecting on how each of the
-instructors are running parts of the classes. Not saying that we&amp;#39;re
-hitting everything out of the park but a fair and careful analysis of
-how we teach a subject and comparing it with what they do can provide
-an extra layer of development beyond what&amp;#39;s formally in the classes.&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;d actually highlight this more had the state not decided, in their
-infinite wisdom that we couldn&amp;#39;t merge our CS and CS Ed classes. We
-did that for cohort 1 and it was extremely effective.&lt;/p&gt;
-&lt;p&gt;
-In any event, it&amp;#39;s been a very full month with a couple more days to
-go but thought this was something worth shareing about now.&lt;/p&gt;
 </description>
     </item>
     
